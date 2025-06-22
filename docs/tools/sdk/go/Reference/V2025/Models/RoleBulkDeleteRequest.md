@@ -4,18 +4,25 @@ title: RoleBulkDeleteRequest
 pagination_label: RoleBulkDeleteRequest
 sidebar_label: RoleBulkDeleteRequest
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleBulkDeleteRequest', 'V2025RoleBulkDeleteRequest'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'RoleBulkDeleteRequest', 'V2025RoleBulkDeleteRequest']
 slug: /tools/sdk/go/v2025/models/role-bulk-delete-request
-tags: ['SDK', 'Software Development Kit', 'RoleBulkDeleteRequest', 'V2025RoleBulkDeleteRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleBulkDeleteRequest',
+    'V2025RoleBulkDeleteRequest',
+  ]
 ---
 
 # RoleBulkDeleteRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**RoleIds** | **[]string** | List of IDs of Roles to be deleted. | 
+| Name        | Type         | Description                         | Notes |
+| ----------- | ------------ | ----------------------------------- | ----- |
+| **RoleIds** | **[]string** | List of IDs of Roles to be deleted. |
 
 ## Methods
 
@@ -23,18 +30,13 @@ Name | Type | Description | Notes
 
 `func NewRoleBulkDeleteRequest(roleIds []string, ) *RoleBulkDeleteRequest`
 
-NewRoleBulkDeleteRequest instantiates a new RoleBulkDeleteRequest object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleBulkDeleteRequest instantiates a new RoleBulkDeleteRequest object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleBulkDeleteRequestWithDefaults
 
 `func NewRoleBulkDeleteRequestWithDefaults() *RoleBulkDeleteRequest`
 
-NewRoleBulkDeleteRequestWithDefaults instantiates a new RoleBulkDeleteRequest object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleBulkDeleteRequestWithDefaults instantiates a new RoleBulkDeleteRequest object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetRoleIds
 
@@ -46,14 +48,10 @@ GetRoleIds returns the RoleIds field if non-nil, zero value otherwise.
 
 `func (o *RoleBulkDeleteRequest) GetRoleIdsOk() (*[]string, bool)`
 
-GetRoleIdsOk returns a tuple with the RoleIds field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRoleIdsOk returns a tuple with the RoleIds field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRoleIds
 
 `func (o *RoleBulkDeleteRequest) SetRoleIds(v []string)`
 
 SetRoleIds sets RoleIds field to given value.
-
-
-

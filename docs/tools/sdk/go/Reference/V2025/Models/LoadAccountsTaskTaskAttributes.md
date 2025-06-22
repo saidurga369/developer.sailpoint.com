@@ -4,19 +4,32 @@ title: LoadAccountsTaskTaskAttributes
 pagination_label: LoadAccountsTaskTaskAttributes
 sidebar_label: LoadAccountsTaskTaskAttributes
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'LoadAccountsTaskTaskAttributes', 'V2025LoadAccountsTaskTaskAttributes'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'LoadAccountsTaskTaskAttributes',
+    'V2025LoadAccountsTaskTaskAttributes',
+  ]
 slug: /tools/sdk/go/v2025/models/load-accounts-task-task-attributes
-tags: ['SDK', 'Software Development Kit', 'LoadAccountsTaskTaskAttributes', 'V2025LoadAccountsTaskTaskAttributes']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'LoadAccountsTaskTaskAttributes',
+    'V2025LoadAccountsTaskTaskAttributes',
+  ]
 ---
 
 # LoadAccountsTaskTaskAttributes
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**AppId** | Pointer to **string** | The id of the source | [optional] 
-**OptimizedAggregation** | Pointer to **string** | The indicator if the aggregation process was enabled/disabled for the aggregation job | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **AppId** | Pointer to **string** | The id of the source | [optional] |
+| **OptimizedAggregation** | Pointer to **string** | The indicator if the aggregation process was enabled/disabled for the aggregation job | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewLoadAccountsTaskTaskAttributes() *LoadAccountsTaskTaskAttributes`
 
-NewLoadAccountsTaskTaskAttributes instantiates a new LoadAccountsTaskTaskAttributes object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewLoadAccountsTaskTaskAttributes instantiates a new LoadAccountsTaskTaskAttributes object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewLoadAccountsTaskTaskAttributesWithDefaults
 
 `func NewLoadAccountsTaskTaskAttributesWithDefaults() *LoadAccountsTaskTaskAttributes`
 
-NewLoadAccountsTaskTaskAttributesWithDefaults instantiates a new LoadAccountsTaskTaskAttributes object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewLoadAccountsTaskTaskAttributesWithDefaults instantiates a new LoadAccountsTaskTaskAttributes object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetAppId
 
@@ -47,8 +55,7 @@ GetAppId returns the AppId field if non-nil, zero value otherwise.
 
 `func (o *LoadAccountsTaskTaskAttributes) GetAppIdOk() (*string, bool)`
 
-GetAppIdOk returns a tuple with the AppId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAppIdOk returns a tuple with the AppId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAppId
 
@@ -72,8 +79,7 @@ GetOptimizedAggregation returns the OptimizedAggregation field if non-nil, zero 
 
 `func (o *LoadAccountsTaskTaskAttributes) GetOptimizedAggregationOk() (*string, bool)`
 
-GetOptimizedAggregationOk returns a tuple with the OptimizedAggregation field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOptimizedAggregationOk returns a tuple with the OptimizedAggregation field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOptimizedAggregation
 
@@ -86,5 +92,3 @@ SetOptimizedAggregation sets OptimizedAggregation field to given value.
 `func (o *LoadAccountsTaskTaskAttributes) HasOptimizedAggregation() bool`
 
 HasOptimizedAggregation returns a boolean if a field has been set.
-
-

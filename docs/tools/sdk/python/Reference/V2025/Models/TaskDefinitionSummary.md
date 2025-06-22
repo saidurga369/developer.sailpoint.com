@@ -4,9 +4,22 @@ title: TaskDefinitionSummary
 pagination_label: TaskDefinitionSummary
 sidebar_label: TaskDefinitionSummary
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'TaskDefinitionSummary', 'V2025TaskDefinitionSummary'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'TaskDefinitionSummary',
+    'V2025TaskDefinitionSummary',
+  ]
 slug: /tools/sdk/python/v2025/models/task-definition-summary
-tags: ['SDK', 'Software Development Kit', 'TaskDefinitionSummary', 'V2025TaskDefinitionSummary']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'TaskDefinitionSummary',
+    'V2025TaskDefinitionSummary',
+  ]
 ---
 
 # TaskDefinitionSummary
@@ -15,14 +28,15 @@ Definition of a type of task, used to invoke tasks
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | System-generated unique ID of the TaskDefinition | [required]
-**unique_name** | **str** | Name of the TaskDefinition | [required]
-**description** | **str** | Description of the TaskDefinition | [required]
-**parent_name** | **str** | Name of the parent of the TaskDefinition | [required]
-**executor** | **str** | Executor of the TaskDefinition | [required]
-**arguments** | **map[string]object** | Formal parameters of the TaskDefinition, without values | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | System-generated unique ID of the TaskDefinition | [required] |
+| **unique_name** | **str** | Name of the TaskDefinition | [required] |
+| **description** | **str** | Description of the TaskDefinition | [required] |
+| **parent_name** | **str** | Name of the parent of the TaskDefinition | [required] |
+| **executor** | **str** | Executor of the TaskDefinition | [required] |
+| **arguments** | **map[string]object** | Formal parameters of the TaskDefinition, without values | [required] |
+
 }
 
 ## Example
@@ -40,5 +54,5 @@ arguments={mantisExecutor=com.sailpoint.mantis.sources.task.AccountAggregationTa
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

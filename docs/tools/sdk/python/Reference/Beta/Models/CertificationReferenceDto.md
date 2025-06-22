@@ -4,9 +4,22 @@ title: CertificationReferenceDto
 pagination_label: CertificationReferenceDto
 sidebar_label: CertificationReferenceDto
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'CertificationReferenceDto', 'BetaCertificationReferenceDto'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'CertificationReferenceDto',
+    'BetaCertificationReferenceDto',
+  ]
 slug: /tools/sdk/python/beta/models/certification-reference-dto
-tags: ['SDK', 'Software Development Kit', 'CertificationReferenceDto', 'BetaCertificationReferenceDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CertificationReferenceDto',
+    'BetaCertificationReferenceDto',
+  ]
 ---
 
 # CertificationReferenceDto
@@ -15,11 +28,12 @@ Certification for review.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'CERTIFICATION' ] | DTO type of certification for review. | [optional] 
-**id** | **str** | ID of certification for review. | [optional] 
-**name** | **str** | Display name of certification for review. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'CERTIFICATION' ] | DTO type of certification for review. | [optional] |
+| **id** | **str** | ID of certification for review. | [optional] |
+| **name** | **str** | Display name of certification for review. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Manager Access for Michael Michaels'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

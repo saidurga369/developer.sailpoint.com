@@ -4,22 +4,35 @@ title: ReportResultReference
 pagination_label: ReportResultReference
 sidebar_label: ReportResultReference
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ReportResultReference', 'V2025ReportResultReference'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ReportResultReference',
+    'V2025ReportResultReference',
+  ]
 slug: /tools/sdk/python/v2025/models/report-result-reference
-tags: ['SDK', 'Software Development Kit', 'ReportResultReference', 'V2025ReportResultReference']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ReportResultReference',
+    'V2025ReportResultReference',
+  ]
 ---
 
 # ReportResultReference
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'REPORT_RESULT' ] | SOD policy violation report result DTO type. | [optional] 
-**id** | **str** | SOD policy violation report result ID. | [optional] 
-**name** | **str** | Human-readable name of the SOD policy violation report result. | [optional] 
-**status** |  **Enum** [  'SUCCESS',    'WARNING',    'ERROR',    'TERMINATED',    'TEMP_ERROR',    'PENDING' ] | Status of a SOD policy violation report. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'REPORT_RESULT' ] | SOD policy violation report result DTO type. | [optional] |
+| **id** | **str** | SOD policy violation report result ID. | [optional] |
+| **name** | **str** | Human-readable name of the SOD policy violation report result. | [optional] |
+| **status** | **Enum** [ 'SUCCESS', 'WARNING', 'ERROR', 'TERMINATED', 'TEMP_ERROR', 'PENDING' ] | Status of a SOD policy violation report. | [optional] |
+
 }
 
 ## Example
@@ -35,5 +48,5 @@ status='PENDING'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

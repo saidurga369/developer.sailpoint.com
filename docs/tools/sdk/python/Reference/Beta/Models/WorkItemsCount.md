@@ -4,19 +4,20 @@ title: WorkItemsCount
 pagination_label: WorkItemsCount
 sidebar_label: WorkItemsCount
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'WorkItemsCount', 'BetaWorkItemsCount'] 
+keywords: ['python', 'Python', 'sdk', 'WorkItemsCount', 'BetaWorkItemsCount']
 slug: /tools/sdk/python/beta/models/work-items-count
-tags: ['SDK', 'Software Development Kit', 'WorkItemsCount', 'BetaWorkItemsCount']
+tags:
+  ['SDK', 'Software Development Kit', 'WorkItemsCount', 'BetaWorkItemsCount']
 ---
 
 # WorkItemsCount
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**count** | **int** | The count of work items | [optional] 
+| Name      | Type    | Description             | Notes      |
+| --------- | ------- | ----------------------- | ---------- |
+| **count** | **int** | The count of work items | [optional] |
+
 }
 
 ## Example
@@ -29,5 +30,5 @@ count=29
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

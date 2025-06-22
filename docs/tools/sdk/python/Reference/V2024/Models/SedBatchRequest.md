@@ -4,9 +4,10 @@ title: SedBatchRequest
 pagination_label: SedBatchRequest
 sidebar_label: SedBatchRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SedBatchRequest', 'V2024SedBatchRequest'] 
+keywords: ['python', 'Python', 'sdk', 'SedBatchRequest', 'V2024SedBatchRequest']
 slug: /tools/sdk/python/v2024/models/sed-batch-request
-tags: ['SDK', 'Software Development Kit', 'SedBatchRequest', 'V2024SedBatchRequest']
+tags:
+  ['SDK', 'Software Development Kit', 'SedBatchRequest', 'V2024SedBatchRequest']
 ---
 
 # SedBatchRequest
@@ -15,11 +16,12 @@ Sed Batch Request
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**entitlements** | **[]str** | list of entitlement ids | [optional] 
-**seds** | **[]str** | list of sed ids | [optional] 
-**search_criteria** | [**map[string]SearchCriteria**](search-criteria) | Search criteria for the batch request. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **entitlements** | **[]str** | list of entitlement ids | [optional] |
+| **seds** | **[]str** | list of sed ids | [optional] |
+| **search_criteria** | [**map[string]SearchCriteria**](search-criteria) | Search criteria for the batch request. | [optional] |
+
 }
 
 ## Example
@@ -36,20 +38,20 @@ seds=[
                     ],
 search_criteria={
                     'key' : sailpoint.v2024.models.search_criteria.SearchCriteria(
-                        indices = [entitlements], 
-                        filters = {status={type=TERMS, terms=[active, inactive]}}, 
-                        query = sailpoint.v2024.models.search_criteria_query.SearchCriteria_query(), 
-                        query_type = 'TEXT', 
+                        indices = [entitlements],
+                        filters = {status={type=TERMS, terms=[active, inactive]}},
+                        query = sailpoint.v2024.models.search_criteria_query.SearchCriteria_query(),
+                        query_type = 'TEXT',
                         text_query = sailpoint.v2024.models.search_criteria_text_query.SearchCriteria_textQuery(
-                            terms = [admin, user], 
-                            fields = [role, name], 
-                            match_any = True, ), 
-                        include_nested = True, 
-                        sort = [name:asc, createdAt:desc], 
+                            terms = [admin, user],
+                            fields = [role, name],
+                            match_any = True, ),
+                        include_nested = True,
+                        sort = [name:asc, createdAt:desc],
                         search_after = [12345, 67890], )
                     }
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

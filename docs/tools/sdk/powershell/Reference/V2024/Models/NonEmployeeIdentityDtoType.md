@@ -4,21 +4,30 @@ title: NonEmployeeIdentityDtoType
 pagination_label: NonEmployeeIdentityDtoType
 sidebar_label: NonEmployeeIdentityDtoType
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'NonEmployeeIdentityDtoType', 'V2024NonEmployeeIdentityDtoType'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'NonEmployeeIdentityDtoType',
+    'V2024NonEmployeeIdentityDtoType',
+  ]
 slug: /tools/sdk/powershell/v2024/models/non-employee-identity-dto-type
-tags: ['SDK', 'Software Development Kit', 'NonEmployeeIdentityDtoType', 'V2024NonEmployeeIdentityDtoType']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NonEmployeeIdentityDtoType',
+    'V2024NonEmployeeIdentityDtoType',
+  ]
 ---
-
 
 # NonEmployeeIdentityDtoType
 
 ## Enum
 
+- `GOVERNANCE_GROUP` (value: `"GOVERNANCE_GROUP"`)
 
-* `GOVERNANCE_GROUP` (value: `"GOVERNANCE_GROUP"`)
+- `IDENTITY` (value: `"IDENTITY"`)
 
-* `IDENTITY` (value: `"IDENTITY"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

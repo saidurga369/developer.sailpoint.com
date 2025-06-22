@@ -3,7 +3,7 @@ import styles from './styles.module.css';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import ThemedImage from '@theme/ThemedImage';
-import { addDarkToFileName } from '../../../util/util';
+import {addDarkToFileName} from '../../../util/util';
 
 export interface HomepageCardProps {
   link: string;
@@ -12,7 +12,12 @@ export interface HomepageCardProps {
   product: 'isc' | 'iiq';
 }
 
-const HomepageCard: React.FC<HomepageCardProps> = ({ link, title, image, product }) => {
+const HomepageCard: React.FC<HomepageCardProps> = ({
+  link,
+  title,
+  image,
+  product,
+}) => {
   const productStyles = product === 'isc' ? styles.idn : styles.iiq;
 
   return (

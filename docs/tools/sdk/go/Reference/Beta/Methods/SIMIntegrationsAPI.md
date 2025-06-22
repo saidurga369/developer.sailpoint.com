@@ -4,51 +4,49 @@ title: SIMIntegrations
 pagination_label: SIMIntegrations
 sidebar_label: SIMIntegrations
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SIMIntegrations', 'BetaSIMIntegrations'] 
+keywords: ['go', 'Golang', 'sdk', 'SIMIntegrations', 'BetaSIMIntegrations']
 slug: /tools/sdk/go/beta/methods/sim-integrations
-tags: ['SDK', 'Software Development Kit', 'SIMIntegrations', 'BetaSIMIntegrations']
+tags:
+  ['SDK', 'Software Development Kit', 'SIMIntegrations', 'BetaSIMIntegrations']
 ---
 
 # SIMIntegrationsAPI
-  Use this API to administer IdentityNow&#39;s Service Integration Module, or SIM integration with ServiceNow, so that it converts IdentityNow provisioning actions into tickets in ServiceNow.
+
+Use this API to administer IdentityNow&#39;s Service Integration Module, or SIM integration with ServiceNow, so that it converts IdentityNow provisioning actions into tickets in ServiceNow.
 
 ServiceNow is a software platform that supports IT service management and automates common business processes for requesting and fulfilling service requests across a business enterprise.
 
 You must have an IdentityNow ServiceNow ServiceDesk license to use this integration. Contact your Customer Success Manager for more information.
 
 Service Desk integration for IdentityNow and in deprecation - not available for new implementation, as of July 21st, 2021. As per SailPoint’s [support policy](https://community.sailpoint.com/t5/Connector-Directory/SailPoint-Support-Policy-for-Connectivity/ta-p/79422), all existing SailPoint IdentityNow customers using this legacy integration will be supported until July 2022.
- 
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/beta*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create-sim-integration**](#create-sim-integration) | **Post** `/sim-integrations` | Create new sim integration
-[**delete-sim-integration**](#delete-sim-integration) | **Delete** `/sim-integrations/{id}` | Delete a sim integration
-[**get-sim-integration**](#get-sim-integration) | **Get** `/sim-integrations/{id}` | Get a sim integration details.
-[**get-sim-integrations**](#get-sim-integrations) | **Get** `/sim-integrations` | List the existing sim integrations.
-[**patch-before-provisioning-rule**](#patch-before-provisioning-rule) | **Patch** `/sim-integrations/{id}/beforeProvisioningRule` | Patch a sim beforeprovisioningrule attribute.
-[**patch-sim-attributes**](#patch-sim-attributes) | **Patch** `/sim-integrations/{id}` | Patch a sim attribute.
-[**put-sim-integration**](#put-sim-integration) | **Put** `/sim-integrations/{id}` | Update an existing sim integration
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**create-sim-integration**](#create-sim-integration) | **Post** `/sim-integrations` | Create new sim integration |
+| [**delete-sim-integration**](#delete-sim-integration) | **Delete** `/sim-integrations/{id}` | Delete a sim integration |
+| [**get-sim-integration**](#get-sim-integration) | **Get** `/sim-integrations/{id}` | Get a sim integration details. |
+| [**get-sim-integrations**](#get-sim-integrations) | **Get** `/sim-integrations` | List the existing sim integrations. |
+| [**patch-before-provisioning-rule**](#patch-before-provisioning-rule) | **Patch** `/sim-integrations/{id}/beforeProvisioningRule` | Patch a sim beforeprovisioningrule attribute. |
+| [**patch-sim-attributes**](#patch-sim-attributes) | **Patch** `/sim-integrations/{id}` | Patch a sim attribute. |
+| [**put-sim-integration**](#put-sim-integration) | **Put** `/sim-integrations/{id}` | Update an existing sim integration |
 
 ## create-sim-integration
-Create new sim integration
-Create a new SIM Integrations.  A token with Org Admin or Service Desk Admin authority is required to access this endpoint.
+
+Create new sim integration Create a new SIM Integrations. A token with Org Admin or Service Desk Admin authority is required to access this endpoint.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/create-sim-integration)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCreateSIMIntegrationRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **simIntegrationDetails** | [**SimIntegrationDetails**](../models/sim-integration-details) | DTO containing the details of the SIM integration | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **simIntegrationDetails** | [**SimIntegrationDetails**](../models/sim-integration-details) | DTO containing the details of the SIM integration |
 
 ### Return type
 
@@ -98,7 +96,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -116,31 +114,28 @@ func main() {
 [[Back to top]](#)
 
 ## delete-sim-integration
-Delete a sim integration
-Get the details of a SIM integration. A token with Org Admin or Service Desk Admin authority is required to access this endpoint.
+
+Delete a sim integration Get the details of a SIM integration. A token with Org Admin or Service Desk Admin authority is required to access this endpoint.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/delete-sim-integration)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The id of the integration to delete. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The id of the integration to delete. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteSIMIntegrationRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -156,15 +151,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `12345` // string | The id of the integration to delete. # string | The id of the integration to delete.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -174,34 +169,31 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `SIMIntegrationsAPI.DeleteSIMIntegration``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## get-sim-integration
-Get a sim integration details.
-Get the details of a SIM integration. A token with Org Admin or Service Desk Admin authority is required to access this endpoint.
+
+Get a sim integration details. Get the details of a SIM integration. A token with Org Admin or Service Desk Admin authority is required to access this endpoint.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-sim-integration)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The id of the integration. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The id of the integration. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetSIMIntegrationRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -221,15 +213,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `12345` // string | The id of the integration. # string | The id of the integration.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -247,8 +239,8 @@ func main() {
 [[Back to top]](#)
 
 ## get-sim-integrations
-List the existing sim integrations.
-List the existing SIM integrations. A token with Org Admin or Service Desk Admin authority is required to access this endpoint.
+
+List the existing sim integrations. List the existing SIM integrations. A token with Org Admin or Service Desk Admin authority is required to access this endpoint.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-sim-integrations)
 
@@ -259,7 +251,6 @@ This endpoint does not need any parameter.
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetSIMIntegrationsRequest struct via the builder pattern
-
 
 ### Return type
 
@@ -279,14 +270,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -304,28 +295,26 @@ func main() {
 [[Back to top]](#)
 
 ## patch-before-provisioning-rule
-Patch a sim beforeprovisioningrule attribute.
-Patch a SIM beforeProvisioningRule attribute given a JsonPatch object. A token with Org Admin or Service Desk Admin authority is required to access this endpoint.
+
+Patch a sim beforeprovisioningrule attribute. Patch a SIM beforeProvisioningRule attribute given a JsonPatch object. A token with Org Admin or Service Desk Admin authority is required to access this endpoint.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/patch-before-provisioning-rule)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | SIM integration id | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | SIM integration id |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiPatchBeforeProvisioningRuleRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **jsonPatch** | [**JsonPatch**](../models/json-patch) | The JsonPatch object that describes the changes of SIM beforeProvisioningRule. | 
+**jsonPatch** | [**JsonPatch**](../models/json-patch) | The JsonPatch object that describes the changes of SIM beforeProvisioningRule. |
 
 ### Return type
 
@@ -359,7 +348,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -377,28 +366,26 @@ func main() {
 [[Back to top]](#)
 
 ## patch-sim-attributes
-Patch a sim attribute.
-Patch a SIM attribute given a JsonPatch object. A token with Org Admin or Service Desk Admin authority is required to access this endpoint.
+
+Patch a sim attribute. Patch a SIM attribute given a JsonPatch object. A token with Org Admin or Service Desk Admin authority is required to access this endpoint.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/patch-sim-attributes)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | SIM integration id | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | SIM integration id |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiPatchSIMAttributesRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **jsonPatch** | [**JsonPatch**](../models/json-patch) | The JsonPatch object that describes the changes of SIM | 
+**jsonPatch** | [**JsonPatch**](../models/json-patch) | The JsonPatch object that describes the changes of SIM |
 
 ### Return type
 
@@ -432,7 +419,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -450,28 +437,26 @@ func main() {
 [[Back to top]](#)
 
 ## put-sim-integration
-Update an existing sim integration
-Update an existing SIM integration.  A token with Org Admin or Service Desk Admin authority is required to access this endpoint.
+
+Update an existing sim integration Update an existing SIM integration. A token with Org Admin or Service Desk Admin authority is required to access this endpoint.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/put-sim-integration)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The id of the integration. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The id of the integration. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiPutSIMIntegrationRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **simIntegrationDetails** | [**SimIntegrationDetails**](../models/sim-integration-details) | The full DTO of the integration containing the updated model | 
+**simIntegrationDetails** | [**SimIntegrationDetails**](../models/sim-integration-details) | The full DTO of the integration containing the updated model |
 
 ### Return type
 
@@ -522,7 +507,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -538,4 +523,3 @@ func main() {
 ```
 
 [[Back to top]](#)
-

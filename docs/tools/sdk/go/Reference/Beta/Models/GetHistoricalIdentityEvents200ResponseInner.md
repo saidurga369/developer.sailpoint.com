@@ -4,32 +4,45 @@ title: GetHistoricalIdentityEvents200ResponseInner
 pagination_label: GetHistoricalIdentityEvents200ResponseInner
 sidebar_label: GetHistoricalIdentityEvents200ResponseInner
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'GetHistoricalIdentityEvents200ResponseInner', 'BetaGetHistoricalIdentityEvents200ResponseInner'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'GetHistoricalIdentityEvents200ResponseInner',
+    'BetaGetHistoricalIdentityEvents200ResponseInner',
+  ]
 slug: /tools/sdk/go/beta/models/get-historical-identity-events200-response-inner
-tags: ['SDK', 'Software Development Kit', 'GetHistoricalIdentityEvents200ResponseInner', 'BetaGetHistoricalIdentityEvents200ResponseInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'GetHistoricalIdentityEvents200ResponseInner',
+    'BetaGetHistoricalIdentityEvents200ResponseInner',
+  ]
 ---
 
 # GetHistoricalIdentityEvents200ResponseInner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**AccessItem** | Pointer to [**AccessItemAssociatedAccessItem**](access-item-associated-access-item) |  | [optional] 
-**IdentityId** | Pointer to **string** | the identity id | [optional] 
-**EventType** | Pointer to **string** | the event type | [optional] 
-**Dt** | Pointer to **string** | the date of event | [optional] 
-**GovernanceEvent** | Pointer to [**CorrelatedGovernanceEvent**](correlated-governance-event) |  | [optional] 
-**Changes** | Pointer to [**[]AttributeChange**](attribute-change) |  | [optional] 
-**AccessRequest** | Pointer to [**AccessRequestResponse1**](access-request-response1) |  | [optional] 
-**CertificationId** | Pointer to **string** | the id of the certification item | [optional] 
-**CertificationName** | Pointer to **string** | the certification item name | [optional] 
-**SignedDate** | Pointer to **string** | the date ceritification was signed | [optional] 
-**Certifiers** | Pointer to [**[]CertifierResponse**](certifier-response) | this field is deprecated and may go away | [optional] 
-**Reviewers** | Pointer to [**[]CertifierResponse**](certifier-response) | The list of identities who review this certification | [optional] 
-**Signer** | Pointer to [**CertifierResponse**](certifier-response) |  | [optional] 
-**Account** | Pointer to [**AccountStatusChangedAccount**](account-status-changed-account) |  | [optional] 
-**StatusChange** | Pointer to [**AccountStatusChangedStatusChange**](account-status-changed-status-change) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **AccessItem** | Pointer to [**AccessItemAssociatedAccessItem**](access-item-associated-access-item) |  | [optional] |
+| **IdentityId** | Pointer to **string** | the identity id | [optional] |
+| **EventType** | Pointer to **string** | the event type | [optional] |
+| **Dt** | Pointer to **string** | the date of event | [optional] |
+| **GovernanceEvent** | Pointer to [**CorrelatedGovernanceEvent**](correlated-governance-event) |  | [optional] |
+| **Changes** | Pointer to [**[]AttributeChange**](attribute-change) |  | [optional] |
+| **AccessRequest** | Pointer to [**AccessRequestResponse1**](access-request-response1) |  | [optional] |
+| **CertificationId** | Pointer to **string** | the id of the certification item | [optional] |
+| **CertificationName** | Pointer to **string** | the certification item name | [optional] |
+| **SignedDate** | Pointer to **string** | the date ceritification was signed | [optional] |
+| **Certifiers** | Pointer to [**[]CertifierResponse**](certifier-response) | this field is deprecated and may go away | [optional] |
+| **Reviewers** | Pointer to [**[]CertifierResponse**](certifier-response) | The list of identities who review this certification | [optional] |
+| **Signer** | Pointer to [**CertifierResponse**](certifier-response) |  | [optional] |
+| **Account** | Pointer to [**AccountStatusChangedAccount**](account-status-changed-account) |  | [optional] |
+| **StatusChange** | Pointer to [**AccountStatusChangedStatusChange**](account-status-changed-status-change) |  | [optional] |
 
 ## Methods
 
@@ -37,18 +50,13 @@ Name | Type | Description | Notes
 
 `func NewGetHistoricalIdentityEvents200ResponseInner() *GetHistoricalIdentityEvents200ResponseInner`
 
-NewGetHistoricalIdentityEvents200ResponseInner instantiates a new GetHistoricalIdentityEvents200ResponseInner object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewGetHistoricalIdentityEvents200ResponseInner instantiates a new GetHistoricalIdentityEvents200ResponseInner object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewGetHistoricalIdentityEvents200ResponseInnerWithDefaults
 
 `func NewGetHistoricalIdentityEvents200ResponseInnerWithDefaults() *GetHistoricalIdentityEvents200ResponseInner`
 
-NewGetHistoricalIdentityEvents200ResponseInnerWithDefaults instantiates a new GetHistoricalIdentityEvents200ResponseInner object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewGetHistoricalIdentityEvents200ResponseInnerWithDefaults instantiates a new GetHistoricalIdentityEvents200ResponseInner object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetAccessItem
 
@@ -60,8 +68,7 @@ GetAccessItem returns the AccessItem field if non-nil, zero value otherwise.
 
 `func (o *GetHistoricalIdentityEvents200ResponseInner) GetAccessItemOk() (*AccessItemAssociatedAccessItem, bool)`
 
-GetAccessItemOk returns a tuple with the AccessItem field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessItemOk returns a tuple with the AccessItem field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessItem
 
@@ -85,8 +92,7 @@ GetIdentityId returns the IdentityId field if non-nil, zero value otherwise.
 
 `func (o *GetHistoricalIdentityEvents200ResponseInner) GetIdentityIdOk() (*string, bool)`
 
-GetIdentityIdOk returns a tuple with the IdentityId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityIdOk returns a tuple with the IdentityId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityId
 
@@ -110,8 +116,7 @@ GetEventType returns the EventType field if non-nil, zero value otherwise.
 
 `func (o *GetHistoricalIdentityEvents200ResponseInner) GetEventTypeOk() (*string, bool)`
 
-GetEventTypeOk returns a tuple with the EventType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEventTypeOk returns a tuple with the EventType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEventType
 
@@ -135,8 +140,7 @@ GetDt returns the Dt field if non-nil, zero value otherwise.
 
 `func (o *GetHistoricalIdentityEvents200ResponseInner) GetDtOk() (*string, bool)`
 
-GetDtOk returns a tuple with the Dt field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDtOk returns a tuple with the Dt field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDt
 
@@ -160,8 +164,7 @@ GetGovernanceEvent returns the GovernanceEvent field if non-nil, zero value othe
 
 `func (o *GetHistoricalIdentityEvents200ResponseInner) GetGovernanceEventOk() (*CorrelatedGovernanceEvent, bool)`
 
-GetGovernanceEventOk returns a tuple with the GovernanceEvent field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetGovernanceEventOk returns a tuple with the GovernanceEvent field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetGovernanceEvent
 
@@ -185,8 +188,7 @@ GetChanges returns the Changes field if non-nil, zero value otherwise.
 
 `func (o *GetHistoricalIdentityEvents200ResponseInner) GetChangesOk() (*[]AttributeChange, bool)`
 
-GetChangesOk returns a tuple with the Changes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetChangesOk returns a tuple with the Changes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetChanges
 
@@ -210,8 +212,7 @@ GetAccessRequest returns the AccessRequest field if non-nil, zero value otherwis
 
 `func (o *GetHistoricalIdentityEvents200ResponseInner) GetAccessRequestOk() (*AccessRequestResponse1, bool)`
 
-GetAccessRequestOk returns a tuple with the AccessRequest field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessRequestOk returns a tuple with the AccessRequest field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessRequest
 
@@ -235,8 +236,7 @@ GetCertificationId returns the CertificationId field if non-nil, zero value othe
 
 `func (o *GetHistoricalIdentityEvents200ResponseInner) GetCertificationIdOk() (*string, bool)`
 
-GetCertificationIdOk returns a tuple with the CertificationId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCertificationIdOk returns a tuple with the CertificationId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCertificationId
 
@@ -260,8 +260,7 @@ GetCertificationName returns the CertificationName field if non-nil, zero value 
 
 `func (o *GetHistoricalIdentityEvents200ResponseInner) GetCertificationNameOk() (*string, bool)`
 
-GetCertificationNameOk returns a tuple with the CertificationName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCertificationNameOk returns a tuple with the CertificationName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCertificationName
 
@@ -285,8 +284,7 @@ GetSignedDate returns the SignedDate field if non-nil, zero value otherwise.
 
 `func (o *GetHistoricalIdentityEvents200ResponseInner) GetSignedDateOk() (*string, bool)`
 
-GetSignedDateOk returns a tuple with the SignedDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSignedDateOk returns a tuple with the SignedDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSignedDate
 
@@ -310,8 +308,7 @@ GetCertifiers returns the Certifiers field if non-nil, zero value otherwise.
 
 `func (o *GetHistoricalIdentityEvents200ResponseInner) GetCertifiersOk() (*[]CertifierResponse, bool)`
 
-GetCertifiersOk returns a tuple with the Certifiers field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCertifiersOk returns a tuple with the Certifiers field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCertifiers
 
@@ -335,8 +332,7 @@ GetReviewers returns the Reviewers field if non-nil, zero value otherwise.
 
 `func (o *GetHistoricalIdentityEvents200ResponseInner) GetReviewersOk() (*[]CertifierResponse, bool)`
 
-GetReviewersOk returns a tuple with the Reviewers field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReviewersOk returns a tuple with the Reviewers field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReviewers
 
@@ -360,8 +356,7 @@ GetSigner returns the Signer field if non-nil, zero value otherwise.
 
 `func (o *GetHistoricalIdentityEvents200ResponseInner) GetSignerOk() (*CertifierResponse, bool)`
 
-GetSignerOk returns a tuple with the Signer field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSignerOk returns a tuple with the Signer field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSigner
 
@@ -385,8 +380,7 @@ GetAccount returns the Account field if non-nil, zero value otherwise.
 
 `func (o *GetHistoricalIdentityEvents200ResponseInner) GetAccountOk() (*AccountStatusChangedAccount, bool)`
 
-GetAccountOk returns a tuple with the Account field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountOk returns a tuple with the Account field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccount
 
@@ -410,8 +404,7 @@ GetStatusChange returns the StatusChange field if non-nil, zero value otherwise.
 
 `func (o *GetHistoricalIdentityEvents200ResponseInner) GetStatusChangeOk() (*AccountStatusChangedStatusChange, bool)`
 
-GetStatusChangeOk returns a tuple with the StatusChange field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusChangeOk returns a tuple with the StatusChange field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatusChange
 
@@ -424,5 +417,3 @@ SetStatusChange sets StatusChange field to given value.
 `func (o *GetHistoricalIdentityEvents200ResponseInner) HasStatusChange() bool`
 
 HasStatusChange returns a boolean if a field has been set.
-
-

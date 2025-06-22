@@ -4,22 +4,35 @@ title: NonEmployeeSourceLiteWithSchemaAttributes
 pagination_label: NonEmployeeSourceLiteWithSchemaAttributes
 sidebar_label: NonEmployeeSourceLiteWithSchemaAttributes
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'NonEmployeeSourceLiteWithSchemaAttributes', 'V2024NonEmployeeSourceLiteWithSchemaAttributes'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'NonEmployeeSourceLiteWithSchemaAttributes',
+    'V2024NonEmployeeSourceLiteWithSchemaAttributes',
+  ]
 slug: /tools/sdk/go/v2024/models/non-employee-source-lite-with-schema-attributes
-tags: ['SDK', 'Software Development Kit', 'NonEmployeeSourceLiteWithSchemaAttributes', 'V2024NonEmployeeSourceLiteWithSchemaAttributes']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NonEmployeeSourceLiteWithSchemaAttributes',
+    'V2024NonEmployeeSourceLiteWithSchemaAttributes',
+  ]
 ---
 
 # NonEmployeeSourceLiteWithSchemaAttributes
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Non-Employee source id. | [optional] 
-**SourceId** | Pointer to **string** | Source Id associated with this non-employee source. | [optional] 
-**Name** | Pointer to **string** | Source name associated with this non-employee source. | [optional] 
-**Description** | Pointer to **string** | Source description associated with this non-employee source. | [optional] 
-**SchemaAttributes** | Pointer to [**[]NonEmployeeSchemaAttribute**](non-employee-schema-attribute) | List of schema attributes associated with this non-employee source. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Non-Employee source id. | [optional] |
+| **SourceId** | Pointer to **string** | Source Id associated with this non-employee source. | [optional] |
+| **Name** | Pointer to **string** | Source name associated with this non-employee source. | [optional] |
+| **Description** | Pointer to **string** | Source description associated with this non-employee source. | [optional] |
+| **SchemaAttributes** | Pointer to [**[]NonEmployeeSchemaAttribute**](non-employee-schema-attribute) | List of schema attributes associated with this non-employee source. | [optional] |
 
 ## Methods
 
@@ -27,18 +40,13 @@ Name | Type | Description | Notes
 
 `func NewNonEmployeeSourceLiteWithSchemaAttributes() *NonEmployeeSourceLiteWithSchemaAttributes`
 
-NewNonEmployeeSourceLiteWithSchemaAttributes instantiates a new NonEmployeeSourceLiteWithSchemaAttributes object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewNonEmployeeSourceLiteWithSchemaAttributes instantiates a new NonEmployeeSourceLiteWithSchemaAttributes object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewNonEmployeeSourceLiteWithSchemaAttributesWithDefaults
 
 `func NewNonEmployeeSourceLiteWithSchemaAttributesWithDefaults() *NonEmployeeSourceLiteWithSchemaAttributes`
 
-NewNonEmployeeSourceLiteWithSchemaAttributesWithDefaults instantiates a new NonEmployeeSourceLiteWithSchemaAttributes object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewNonEmployeeSourceLiteWithSchemaAttributesWithDefaults instantiates a new NonEmployeeSourceLiteWithSchemaAttributes object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -50,8 +58,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeSourceLiteWithSchemaAttributes) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -75,8 +82,7 @@ GetSourceId returns the SourceId field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeSourceLiteWithSchemaAttributes) GetSourceIdOk() (*string, bool)`
 
-GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceId
 
@@ -100,8 +106,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeSourceLiteWithSchemaAttributes) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -125,8 +130,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeSourceLiteWithSchemaAttributes) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -150,8 +154,7 @@ GetSchemaAttributes returns the SchemaAttributes field if non-nil, zero value ot
 
 `func (o *NonEmployeeSourceLiteWithSchemaAttributes) GetSchemaAttributesOk() (*[]NonEmployeeSchemaAttribute, bool)`
 
-GetSchemaAttributesOk returns a tuple with the SchemaAttributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSchemaAttributesOk returns a tuple with the SchemaAttributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSchemaAttributes
 
@@ -164,5 +167,3 @@ SetSchemaAttributes sets SchemaAttributes field to given value.
 `func (o *NonEmployeeSourceLiteWithSchemaAttributes) HasSchemaAttributes() bool`
 
 HasSchemaAttributes returns a boolean if a field has been set.
-
-

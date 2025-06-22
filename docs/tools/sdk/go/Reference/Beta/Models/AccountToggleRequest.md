@@ -4,19 +4,26 @@ title: AccountToggleRequest
 pagination_label: AccountToggleRequest
 sidebar_label: AccountToggleRequest
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccountToggleRequest', 'BetaAccountToggleRequest'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'AccountToggleRequest', 'BetaAccountToggleRequest']
 slug: /tools/sdk/go/beta/models/account-toggle-request
-tags: ['SDK', 'Software Development Kit', 'AccountToggleRequest', 'BetaAccountToggleRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountToggleRequest',
+    'BetaAccountToggleRequest',
+  ]
 ---
 
 # AccountToggleRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ExternalVerificationId** | Pointer to **string** | If set, an external process validates that the user wants to proceed with this request. | [optional] 
-**ForceProvisioning** | Pointer to **bool** | If set, provisioning updates the account attribute at the source.   This option is used when the account is not synced to ensure the attribute is updated. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ExternalVerificationId** | Pointer to **string** | If set, an external process validates that the user wants to proceed with this request. | [optional] |
+| **ForceProvisioning** | Pointer to **bool** | If set, provisioning updates the account attribute at the source. This option is used when the account is not synced to ensure the attribute is updated. | [optional] |
 
 ## Methods
 
@@ -24,18 +31,13 @@ Name | Type | Description | Notes
 
 `func NewAccountToggleRequest() *AccountToggleRequest`
 
-NewAccountToggleRequest instantiates a new AccountToggleRequest object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccountToggleRequest instantiates a new AccountToggleRequest object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccountToggleRequestWithDefaults
 
 `func NewAccountToggleRequestWithDefaults() *AccountToggleRequest`
 
-NewAccountToggleRequestWithDefaults instantiates a new AccountToggleRequest object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccountToggleRequestWithDefaults instantiates a new AccountToggleRequest object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetExternalVerificationId
 
@@ -47,8 +49,7 @@ GetExternalVerificationId returns the ExternalVerificationId field if non-nil, z
 
 `func (o *AccountToggleRequest) GetExternalVerificationIdOk() (*string, bool)`
 
-GetExternalVerificationIdOk returns a tuple with the ExternalVerificationId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetExternalVerificationIdOk returns a tuple with the ExternalVerificationId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetExternalVerificationId
 
@@ -72,8 +73,7 @@ GetForceProvisioning returns the ForceProvisioning field if non-nil, zero value 
 
 `func (o *AccountToggleRequest) GetForceProvisioningOk() (*bool, bool)`
 
-GetForceProvisioningOk returns a tuple with the ForceProvisioning field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetForceProvisioningOk returns a tuple with the ForceProvisioning field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetForceProvisioning
 
@@ -86,5 +86,3 @@ SetForceProvisioning sets ForceProvisioning field to given value.
 `func (o *AccountToggleRequest) HasForceProvisioning() bool`
 
 HasForceProvisioning returns a boolean if a field has been set.
-
-

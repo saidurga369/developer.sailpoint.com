@@ -4,24 +4,31 @@ title: RoleInsightsSummary
 pagination_label: RoleInsightsSummary
 sidebar_label: RoleInsightsSummary
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RoleInsightsSummary', 'V2024RoleInsightsSummary'] 
+keywords:
+  ['python', 'Python', 'sdk', 'RoleInsightsSummary', 'V2024RoleInsightsSummary']
 slug: /tools/sdk/python/v2024/models/role-insights-summary
-tags: ['SDK', 'Software Development Kit', 'RoleInsightsSummary', 'V2024RoleInsightsSummary']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleInsightsSummary',
+    'V2024RoleInsightsSummary',
+  ]
 ---
 
 # RoleInsightsSummary
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**number_of_updates** | **int** | Total number of roles with updates | [optional] 
-**last_generated** | **datetime** | The date-time role insights were last found. | [optional] 
-**entitlements_included_in_roles** | **int** | The number of entitlements included in roles (vs free radicals). | [optional] 
-**total_number_of_entitlements** | **int** | The total number of entitlements. | [optional] 
-**identities_with_access_via_roles** | **int** | The number of identities in roles vs. identities with just entitlements and not in roles. | [optional] 
-**total_number_of_identities** | **int** | The total number of identities. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **number_of_updates** | **int** | Total number of roles with updates | [optional] |
+| **last_generated** | **datetime** | The date-time role insights were last found. | [optional] |
+| **entitlements_included_in_roles** | **int** | The number of entitlements included in roles (vs free radicals). | [optional] |
+| **total_number_of_entitlements** | **int** | The total number of entitlements. | [optional] |
+| **identities_with_access_via_roles** | **int** | The number of identities in roles vs. identities with just entitlements and not in roles. | [optional] |
+| **total_number_of_identities** | **int** | The total number of identities. | [optional] |
+
 }
 
 ## Example
@@ -39,5 +46,5 @@ total_number_of_identities=980
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

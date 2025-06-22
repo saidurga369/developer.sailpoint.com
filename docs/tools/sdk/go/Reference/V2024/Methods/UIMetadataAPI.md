@@ -4,51 +4,42 @@ title: UIMetadata
 pagination_label: UIMetadata
 sidebar_label: UIMetadata
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'UIMetadata', 'V2024UIMetadata'] 
+keywords: ['go', 'Golang', 'sdk', 'UIMetadata', 'V2024UIMetadata']
 slug: /tools/sdk/go/v2024/methods/ui-metadata
 tags: ['SDK', 'Software Development Kit', 'UIMetadata', 'V2024UIMetadata']
 ---
 
 # UIMetadataAPI
-  API for managing UI Metadata. Use this API to manage metadata about your User Interface.
-For example you can set the iFrameWhitelist parameter to permit another domain to encapsulate IDN within an iframe or set the usernameEmptyText to change the placeholder text for Username on your tenant&#39;s login screen. 
-All URIs are relative to *https://sailpoint.api.identitynow.com/v2024*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**get-tenant-ui-metadata**](#get-tenant-ui-metadata) | **Get** `/ui-metadata/tenant` | Get a tenant ui metadata
-[**set-tenant-ui-metadata**](#set-tenant-ui-metadata) | **Put** `/ui-metadata/tenant` | Update tenant ui metadata
+API for managing UI Metadata. Use this API to manage metadata about your User Interface. For example you can set the iFrameWhitelist parameter to permit another domain to encapsulate IDN within an iframe or set the usernameEmptyText to change the placeholder text for Username on your tenant&#39;s login screen. All URIs are relative to *https://sailpoint.api.identitynow.com/v2024*
 
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**get-tenant-ui-metadata**](#get-tenant-ui-metadata) | **Get** `/ui-metadata/tenant` | Get a tenant ui metadata |
+| [**set-tenant-ui-metadata**](#set-tenant-ui-metadata) | **Put** `/ui-metadata/tenant` | Update tenant ui metadata |
 
 ## get-tenant-ui-metadata
-:::warning experimental 
-This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint.
-:::
-:::tip setting x-sailpoint-experimental header
- on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK.
- Example:
- ```go
-   configuration = Configuration()
-   configuration.experimental = True
- ```
-:::
-Get a tenant ui metadata
-This API endpoint retrieves UI metadata configured for your tenant.
+
+:::warning experimental This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint. ::: :::tip setting x-sailpoint-experimental header on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK. Example:
+
+```go
+  configuration = Configuration()
+  configuration.experimental = True
+```
+
+::: Get a tenant ui metadata This API endpoint retrieves UI metadata configured for your tenant.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/get-tenant-ui-metadata)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetTenantUiMetadataRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;] |
 
 ### Return type
 
@@ -68,15 +59,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     xSailPointExperimental := `true` // string | Use this header to enable this experimental API. (default to "true") # string | Use this header to enable this experimental API. (default to "true")
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -94,35 +85,28 @@ func main() {
 [[Back to top]](#)
 
 ## set-tenant-ui-metadata
-:::warning experimental 
-This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint.
-:::
-:::tip setting x-sailpoint-experimental header
- on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK.
- Example:
- ```go
-   configuration = Configuration()
-   configuration.experimental = True
- ```
-:::
-Update tenant ui metadata
-This API endpoint updates UI metadata for your tenant. These changes may require up to 5 minutes to take effect on the UI.
+
+:::warning experimental This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint. ::: :::tip setting x-sailpoint-experimental header on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK. Example:
+
+```go
+  configuration = Configuration()
+  configuration.experimental = True
+```
+
+::: Update tenant ui metadata This API endpoint updates UI metadata for your tenant. These changes may require up to 5 minutes to take effect on the UI.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/set-tenant-ui-metadata)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSetTenantUiMetadataRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;]
- **tenantUiMetadataItemUpdateRequest** | [**TenantUiMetadataItemUpdateRequest**](../models/tenant-ui-metadata-item-update-request) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;] |
+| **tenantUiMetadataItemUpdateRequest** | [**TenantUiMetadataItemUpdateRequest**](../models/tenant-ui-metadata-item-update-request) |  |
 
 ### Return type
 
@@ -153,14 +137,14 @@ func main() {
           "usernameEmptyText" : "Please provide your work email address...",
           "usernameLabel" : "Email",
           "iframeWhiteList" : "http://example.com http://example2.com"
-        }`) // TenantUiMetadataItemUpdateRequest | 
+        }`) // TenantUiMetadataItemUpdateRequest |
 
     var tenantUiMetadataItemUpdateRequest v2024.TenantUiMetadataItemUpdateRequest
     if err := json.Unmarshal(tenantuimetadataitemupdaterequest, &tenantUiMetadataItemUpdateRequest); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -176,4 +160,3 @@ func main() {
 ```
 
 [[Back to top]](#)
-

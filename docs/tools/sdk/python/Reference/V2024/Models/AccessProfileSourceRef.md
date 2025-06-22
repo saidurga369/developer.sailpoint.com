@@ -4,21 +4,34 @@ title: AccessProfileSourceRef
 pagination_label: AccessProfileSourceRef
 sidebar_label: AccessProfileSourceRef
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccessProfileSourceRef', 'V2024AccessProfileSourceRef'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccessProfileSourceRef',
+    'V2024AccessProfileSourceRef',
+  ]
 slug: /tools/sdk/python/v2024/models/access-profile-source-ref
-tags: ['SDK', 'Software Development Kit', 'AccessProfileSourceRef', 'V2024AccessProfileSourceRef']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessProfileSourceRef',
+    'V2024AccessProfileSourceRef',
+  ]
 ---
 
 # AccessProfileSourceRef
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | ID of the source the access profile is associated with. | [optional] 
-**type** |  **Enum** [  'SOURCE' ] | Source's DTO type. | [optional] 
-**name** | **str** | Source name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | ID of the source the access profile is associated with. | [optional] |
+| **type** | **Enum** [ 'SOURCE' ] | Source's DTO type. | [optional] |
+| **name** | **str** | Source name. | [optional] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ name='ODS-AD-SOURCE'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

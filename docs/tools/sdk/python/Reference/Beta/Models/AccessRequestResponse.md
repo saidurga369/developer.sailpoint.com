@@ -4,20 +4,33 @@ title: AccessRequestResponse
 pagination_label: AccessRequestResponse
 sidebar_label: AccessRequestResponse
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccessRequestResponse', 'BetaAccessRequestResponse'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccessRequestResponse',
+    'BetaAccessRequestResponse',
+  ]
 slug: /tools/sdk/python/beta/models/access-request-response
-tags: ['SDK', 'Software Development Kit', 'AccessRequestResponse', 'BetaAccessRequestResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessRequestResponse',
+    'BetaAccessRequestResponse',
+  ]
 ---
 
 # AccessRequestResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**new_requests** | [**[]AccessRequestTracking**](access-request-tracking) | A list of new access request tracking data mapped to the values requested. | [optional] 
-**existing_requests** | [**[]AccessRequestTracking**](access-request-tracking) | A list of existing access request tracking data mapped to the values requested.  This indicates access has already been requested for this item. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **new_requests** | [**[]AccessRequestTracking**](access-request-tracking) | A list of new access request tracking data mapped to the values requested. | [optional] |
+| **existing_requests** | [**[]AccessRequestTracking**](access-request-tracking) | A list of existing access request tracking data mapped to the values requested. This indicates access has already been requested for this item. | [optional] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ existing_requests=[{requestedFor=899fd612ecfc4cf3bf48f14d0afdef89, requestedItem
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

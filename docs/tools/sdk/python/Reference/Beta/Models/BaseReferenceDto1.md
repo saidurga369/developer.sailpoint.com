@@ -4,20 +4,27 @@ title: BaseReferenceDto1
 pagination_label: BaseReferenceDto1
 sidebar_label: BaseReferenceDto1
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'BaseReferenceDto1', 'BetaBaseReferenceDto1'] 
+keywords:
+  ['python', 'Python', 'sdk', 'BaseReferenceDto1', 'BetaBaseReferenceDto1']
 slug: /tools/sdk/python/beta/models/base-reference-dto1
-tags: ['SDK', 'Software Development Kit', 'BaseReferenceDto1', 'BetaBaseReferenceDto1']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'BaseReferenceDto1',
+    'BetaBaseReferenceDto1',
+  ]
 ---
 
 # BaseReferenceDto1
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | the application ID | [optional] 
-**name** | **str** | the application name | [optional] 
+| Name     | Type    | Description          | Notes      |
+| -------- | ------- | -------------------- | ---------- |
+| **id**   | **str** | the application ID   | [optional] |
+| **name** | **str** | the application name | [optional] |
+
 }
 
 ## Example
@@ -31,5 +38,5 @@ name='Github'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

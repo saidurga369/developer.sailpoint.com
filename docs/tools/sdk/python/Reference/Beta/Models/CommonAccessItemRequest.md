@@ -4,20 +4,33 @@ title: CommonAccessItemRequest
 pagination_label: CommonAccessItemRequest
 sidebar_label: CommonAccessItemRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'CommonAccessItemRequest', 'BetaCommonAccessItemRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'CommonAccessItemRequest',
+    'BetaCommonAccessItemRequest',
+  ]
 slug: /tools/sdk/python/beta/models/common-access-item-request
-tags: ['SDK', 'Software Development Kit', 'CommonAccessItemRequest', 'BetaCommonAccessItemRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CommonAccessItemRequest',
+    'BetaCommonAccessItemRequest',
+  ]
 ---
 
 # CommonAccessItemRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**access** | [**CommonAccessItemAccess**](common-access-item-access) |  | [optional] 
-**status** | [**CommonAccessItemState**](common-access-item-state) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **access** | [**CommonAccessItemAccess**](common-access-item-access) |  | [optional] |
+| **status** | [**CommonAccessItemState**](common-access-item-state) |  | [optional] |
+
 }
 
 ## Example
@@ -27,15 +40,15 @@ from sailpoint.beta.models.common_access_item_request import CommonAccessItemReq
 
 common_access_item_request = CommonAccessItemRequest(
 access=sailpoint.beta.models.common_access_item_access.CommonAccessItemAccess(
-                    id = '', 
-                    type = 'ACCESS_PROFILE', 
-                    name = '', 
-                    description = '', 
-                    owner_name = '', 
+                    id = '',
+                    type = 'ACCESS_PROFILE',
+                    name = '',
+                    description = '',
+                    owner_name = '',
                     owner_id = '', ),
 status='CONFIRMED'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

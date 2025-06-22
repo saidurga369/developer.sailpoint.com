@@ -4,20 +4,33 @@ title: UpdateMultiHostSourcesRequestInner
 pagination_label: UpdateMultiHostSourcesRequestInner
 sidebar_label: UpdateMultiHostSourcesRequestInner
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'UpdateMultiHostSourcesRequestInner', 'V2025UpdateMultiHostSourcesRequestInner'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'UpdateMultiHostSourcesRequestInner',
+    'V2025UpdateMultiHostSourcesRequestInner',
+  ]
 slug: /tools/sdk/go/v2025/models/update-multi-host-sources-request-inner
-tags: ['SDK', 'Software Development Kit', 'UpdateMultiHostSourcesRequestInner', 'V2025UpdateMultiHostSourcesRequestInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'UpdateMultiHostSourcesRequestInner',
+    'V2025UpdateMultiHostSourcesRequestInner',
+  ]
 ---
 
 # UpdateMultiHostSourcesRequestInner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Op** | **string** | The operation to be performed | 
-**Path** | **string** | A string JSON Pointer representing the target path to an element to be affected by the operation | 
-**Value** | Pointer to [**UpdateMultiHostSourcesRequestInnerValue**](update-multi-host-sources-request-inner-value) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Op** | **string** | The operation to be performed |
+| **Path** | **string** | A string JSON Pointer representing the target path to an element to be affected by the operation |
+| **Value** | Pointer to [**UpdateMultiHostSourcesRequestInnerValue**](update-multi-host-sources-request-inner-value) |  | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewUpdateMultiHostSourcesRequestInner(op string, path string, ) *UpdateMultiHostSourcesRequestInner`
 
-NewUpdateMultiHostSourcesRequestInner instantiates a new UpdateMultiHostSourcesRequestInner object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewUpdateMultiHostSourcesRequestInner instantiates a new UpdateMultiHostSourcesRequestInner object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewUpdateMultiHostSourcesRequestInnerWithDefaults
 
 `func NewUpdateMultiHostSourcesRequestInnerWithDefaults() *UpdateMultiHostSourcesRequestInner`
 
-NewUpdateMultiHostSourcesRequestInnerWithDefaults instantiates a new UpdateMultiHostSourcesRequestInner object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewUpdateMultiHostSourcesRequestInnerWithDefaults instantiates a new UpdateMultiHostSourcesRequestInner object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetOp
 
@@ -48,15 +56,13 @@ GetOp returns the Op field if non-nil, zero value otherwise.
 
 `func (o *UpdateMultiHostSourcesRequestInner) GetOpOk() (*string, bool)`
 
-GetOpOk returns a tuple with the Op field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOpOk returns a tuple with the Op field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOp
 
 `func (o *UpdateMultiHostSourcesRequestInner) SetOp(v string)`
 
 SetOp sets Op field to given value.
-
 
 ### GetPath
 
@@ -68,15 +74,13 @@ GetPath returns the Path field if non-nil, zero value otherwise.
 
 `func (o *UpdateMultiHostSourcesRequestInner) GetPathOk() (*string, bool)`
 
-GetPathOk returns a tuple with the Path field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPathOk returns a tuple with the Path field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPath
 
 `func (o *UpdateMultiHostSourcesRequestInner) SetPath(v string)`
 
 SetPath sets Path field to given value.
-
 
 ### GetValue
 
@@ -88,8 +92,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *UpdateMultiHostSourcesRequestInner) GetValueOk() (*UpdateMultiHostSourcesRequestInnerValue, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -102,5 +105,3 @@ SetValue sets Value field to given value.
 `func (o *UpdateMultiHostSourcesRequestInner) HasValue() bool`
 
 HasValue returns a boolean if a field has been set.
-
-

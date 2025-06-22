@@ -4,29 +4,42 @@ title: ConnectorRuleUpdateRequest
 pagination_label: ConnectorRuleUpdateRequest
 sidebar_label: ConnectorRuleUpdateRequest
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'ConnectorRuleUpdateRequest', 'BetaConnectorRuleUpdateRequest'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'ConnectorRuleUpdateRequest',
+    'BetaConnectorRuleUpdateRequest',
+  ]
 slug: /tools/sdk/powershell/beta/models/connector-rule-update-request
-tags: ['SDK', 'Software Development Kit', 'ConnectorRuleUpdateRequest', 'BetaConnectorRuleUpdateRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ConnectorRuleUpdateRequest',
+    'BetaConnectorRuleUpdateRequest',
+  ]
 ---
-
 
 # ConnectorRuleUpdateRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | **String** | the name of the rule | [required]
-**Description** | **String** | a description of the rule's purpose | [optional] 
-**Type** |  **Enum** [  "BuildMap",    "ConnectorAfterCreate",    "ConnectorAfterDelete",    "ConnectorAfterModify",    "ConnectorBeforeCreate",    "ConnectorBeforeDelete",    "ConnectorBeforeModify",    "JDBCBuildMap",    "JDBCOperationProvisioning",    "JDBCProvision",    "PeopleSoftHRMSBuildMap",    "PeopleSoftHRMSOperationProvisioning",    "PeopleSoftHRMSProvision",    "RACFPermissionCustomization",    "SAPBuildMap",    "SapHrManagerRule",    "SapHrOperationProvisioning",    "SapHrProvision",    "SuccessFactorsOperationProvisioning",    "WebServiceAfterOperationRule",    "WebServiceBeforeOperationRule",    "ResourceObjectCustomization" ] | the type of rule | [required]
-**Signature** | [**ConnectorRuleCreateRequestSignature**](connector-rule-create-request-signature) |  | [optional] 
-**SourceCode** | [**SourceCode**](source-code) |  | [required]
-**Attributes** | [**SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | a map of string to objects | [optional] 
-**Id** | **String** | the ID of the rule to update | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | **String** | the name of the rule | [required] |
+| **Description** | **String** | a description of the rule's purpose | [optional] |
+| **Type** | **Enum** [ "BuildMap", "ConnectorAfterCreate", "ConnectorAfterDelete", "ConnectorAfterModify", "ConnectorBeforeCreate", "ConnectorBeforeDelete", "ConnectorBeforeModify", "JDBCBuildMap", "JDBCOperationProvisioning", "JDBCProvision", "PeopleSoftHRMSBuildMap", "PeopleSoftHRMSOperationProvisioning", "PeopleSoftHRMSProvision", "RACFPermissionCustomization", "SAPBuildMap", "SapHrManagerRule", "SapHrOperationProvisioning", "SapHrProvision", "SuccessFactorsOperationProvisioning", "WebServiceAfterOperationRule", "WebServiceBeforeOperationRule", "ResourceObjectCustomization" ] | the type of rule | [required] |
+| **Signature** | [**ConnectorRuleCreateRequestSignature**](connector-rule-create-request-signature) |  | [optional] |
+| **SourceCode** | [**SourceCode**](source-code) |  | [required] |
+| **Attributes** | [**SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | a map of string to objects | [optional] |
+| **Id** | **String** | the ID of the rule to update | [required] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $ConnectorRuleUpdateRequest = Initialize-BetaConnectorRuleUpdateRequest  -Name WebServiceBeforeOperationRule `
  -Description This rule does that `
@@ -38,10 +51,9 @@ $ConnectorRuleUpdateRequest = Initialize-BetaConnectorRuleUpdateRequest  -Name W
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $ConnectorRuleUpdateRequest | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

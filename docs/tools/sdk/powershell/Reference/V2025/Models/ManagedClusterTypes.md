@@ -4,21 +4,30 @@ title: ManagedClusterTypes
 pagination_label: ManagedClusterTypes
 sidebar_label: ManagedClusterTypes
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'ManagedClusterTypes', 'V2025ManagedClusterTypes'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'ManagedClusterTypes',
+    'V2025ManagedClusterTypes',
+  ]
 slug: /tools/sdk/powershell/v2025/models/managed-cluster-types
-tags: ['SDK', 'Software Development Kit', 'ManagedClusterTypes', 'V2025ManagedClusterTypes']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ManagedClusterTypes',
+    'V2025ManagedClusterTypes',
+  ]
 ---
-
 
 # ManagedClusterTypes
 
 ## Enum
 
+- `idn` (value: `"idn"`)
 
-* `idn` (value: `"idn"`)
+- `iai` (value: `"iai"`)
 
-* `iai` (value: `"iai"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

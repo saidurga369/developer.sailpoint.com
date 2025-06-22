@@ -4,45 +4,51 @@ title: VendorConnectorMappings
 pagination_label: VendorConnectorMappings
 sidebar_label: VendorConnectorMappings
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'VendorConnectorMappings', 'V2024VendorConnectorMappings'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'VendorConnectorMappings',
+    'V2024VendorConnectorMappings',
+  ]
 slug: /tools/sdk/go/v2024/methods/vendor-connector-mappings
-tags: ['SDK', 'Software Development Kit', 'VendorConnectorMappings', 'V2024VendorConnectorMappings']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'VendorConnectorMappings',
+    'V2024VendorConnectorMappings',
+  ]
 ---
 
 # VendorConnectorMappingsAPI
-  Vendors use ISC connectors to connect their source data to ISC, but the data in their source and the data in ISC may be stored in different formats. 
-Connector mappings allow vendors to match their data on both sides of the connection. 
-The vendors can then track and manage access across their sources from ISC. 
-This API allows you to create and manage these vendor connector mappings. 
- 
+
+Vendors use ISC connectors to connect their source data to ISC, but the data in their source and the data in ISC may be stored in different formats. Connector mappings allow vendors to match their data on both sides of the connection. The vendors can then track and manage access across their sources from ISC. This API allows you to create and manage these vendor connector mappings.
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/v2024*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create-vendor-connector-mapping**](#create-vendor-connector-mapping) | **Post** `/vendor-connector-mappings` | Create vendor connector mapping
-[**delete-vendor-connector-mapping**](#delete-vendor-connector-mapping) | **Delete** `/vendor-connector-mappings` | Delete vendor connector mapping
-[**get-vendor-connector-mappings**](#get-vendor-connector-mappings) | **Get** `/vendor-connector-mappings` | List vendor connector mappings
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**create-vendor-connector-mapping**](#create-vendor-connector-mapping) | **Post** `/vendor-connector-mappings` | Create vendor connector mapping |
+| [**delete-vendor-connector-mapping**](#delete-vendor-connector-mapping) | **Delete** `/vendor-connector-mappings` | Delete vendor connector mapping |
+| [**get-vendor-connector-mappings**](#get-vendor-connector-mappings) | **Get** `/vendor-connector-mappings` | List vendor connector mappings |
 
 ## create-vendor-connector-mapping
-Create vendor connector mapping
-Create a new mapping between a SaaS vendor and an ISC connector to establish correlation paths.
 
+Create vendor connector mapping Create a new mapping between a SaaS vendor and an ISC connector to establish correlation paths.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/create-vendor-connector-mapping)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCreateVendorConnectorMappingRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **vendorConnectorMapping** | [**VendorConnectorMapping**](../models/vendor-connector-mapping) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **vendorConnectorMapping** | [**VendorConnectorMapping**](../models/vendor-connector-mapping) |  |
 
 ### Return type
 
@@ -90,14 +96,14 @@ func main() {
             "Valid" : true,
             "Time" : "2024-03-14T12:56:19.391294Z"
           }
-        }`) // VendorConnectorMapping | 
+        }`) // VendorConnectorMapping |
 
     var vendorConnectorMapping v2024.VendorConnectorMapping
     if err := json.Unmarshal(vendorconnectormapping, &vendorConnectorMapping); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -115,24 +121,20 @@ func main() {
 [[Back to top]](#)
 
 ## delete-vendor-connector-mapping
-Delete vendor connector mapping
-Soft delete a mapping between a SaaS vendor and an ISC connector, removing the established correlation.
 
+Delete vendor connector mapping Soft delete a mapping between a SaaS vendor and an ISC connector, removing the established correlation.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/delete-vendor-connector-mapping)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteVendorConnectorMappingRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **vendorConnectorMapping** | [**VendorConnectorMapping**](../models/vendor-connector-mapping) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **vendorConnectorMapping** | [**VendorConnectorMapping**](../models/vendor-connector-mapping) |  |
 
 ### Return type
 
@@ -180,14 +182,14 @@ func main() {
             "Valid" : true,
             "Time" : "2024-03-14T12:56:19.391294Z"
           }
-        }`) // VendorConnectorMapping | 
+        }`) // VendorConnectorMapping |
 
     var vendorConnectorMapping v2024.VendorConnectorMapping
     if err := json.Unmarshal(vendorconnectormapping, &vendorConnectorMapping); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -205,9 +207,8 @@ func main() {
 [[Back to top]](#)
 
 ## get-vendor-connector-mappings
-List vendor connector mappings
-Get a list of mappings between SaaS vendors and ISC connectors, detailing the connections established for correlation.
 
+List vendor connector mappings Get a list of mappings between SaaS vendors and ISC connectors, detailing the connections established for correlation.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/get-vendor-connector-mappings)
 
@@ -218,7 +219,6 @@ This endpoint does not need any parameter.
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetVendorConnectorMappingsRequest struct via the builder pattern
-
 
 ### Return type
 
@@ -238,14 +238,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -261,4 +261,3 @@ func main() {
 ```
 
 [[Back to top]](#)
-

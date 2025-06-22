@@ -4,27 +4,28 @@ title: RequestableObject
 pagination_label: RequestableObject
 sidebar_label: RequestableObject
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RequestableObject', 'RequestableObject'] 
+keywords: ['go', 'Golang', 'sdk', 'RequestableObject', 'RequestableObject']
 slug: /tools/sdk/go/v3/models/requestable-object
-tags: ['SDK', 'Software Development Kit', 'RequestableObject', 'RequestableObject']
+tags:
+  ['SDK', 'Software Development Kit', 'RequestableObject', 'RequestableObject']
 ---
 
 # RequestableObject
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Id of the requestable object itself | [optional] 
-**Name** | Pointer to **string** | Human-readable display name of the requestable object | [optional] 
-**Created** | Pointer to **SailPointTime** | The time when the requestable object was created | [optional] 
-**Modified** | Pointer to **NullableTime** | The time when the requestable object was last modified | [optional] 
-**Description** | Pointer to **NullableString** | Description of the requestable object. | [optional] 
-**Type** | Pointer to [**RequestableObjectType**](requestable-object-type) |  | [optional] 
-**RequestStatus** | Pointer to [**RequestableObjectRequestStatus**](requestable-object-request-status) |  | [optional] 
-**IdentityRequestId** | Pointer to **NullableString** | If *requestStatus* is *PENDING*, indicates the id of the associated account activity. | [optional] 
-**OwnerRef** | Pointer to [**NullableIdentityReferenceWithNameAndEmail**](identity-reference-with-name-and-email) |  | [optional] 
-**RequestCommentsRequired** | Pointer to **bool** | Whether the requester must provide comments when requesting the object. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Id of the requestable object itself | [optional] |
+| **Name** | Pointer to **string** | Human-readable display name of the requestable object | [optional] |
+| **Created** | Pointer to **SailPointTime** | The time when the requestable object was created | [optional] |
+| **Modified** | Pointer to **NullableTime** | The time when the requestable object was last modified | [optional] |
+| **Description** | Pointer to **NullableString** | Description of the requestable object. | [optional] |
+| **Type** | Pointer to [**RequestableObjectType**](requestable-object-type) |  | [optional] |
+| **RequestStatus** | Pointer to [**RequestableObjectRequestStatus**](requestable-object-request-status) |  | [optional] |
+| **IdentityRequestId** | Pointer to **NullableString** | If _requestStatus_ is _PENDING_, indicates the id of the associated account activity. | [optional] |
+| **OwnerRef** | Pointer to [**NullableIdentityReferenceWithNameAndEmail**](identity-reference-with-name-and-email) |  | [optional] |
+| **RequestCommentsRequired** | Pointer to **bool** | Whether the requester must provide comments when requesting the object. | [optional] |
 
 ## Methods
 
@@ -32,18 +33,13 @@ Name | Type | Description | Notes
 
 `func NewRequestableObject() *RequestableObject`
 
-NewRequestableObject instantiates a new RequestableObject object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRequestableObject instantiates a new RequestableObject object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRequestableObjectWithDefaults
 
 `func NewRequestableObjectWithDefaults() *RequestableObject`
 
-NewRequestableObjectWithDefaults instantiates a new RequestableObject object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRequestableObjectWithDefaults instantiates a new RequestableObject object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -55,8 +51,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *RequestableObject) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -80,8 +75,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *RequestableObject) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -105,8 +99,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *RequestableObject) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -130,8 +123,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *RequestableObject) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -149,12 +141,14 @@ HasModified returns a boolean if a field has been set.
 
 `func (o *RequestableObject) SetModifiedNil(b bool)`
 
- SetModifiedNil sets the value for Modified to be an explicit nil
+SetModifiedNil sets the value for Modified to be an explicit nil
 
 ### UnsetModified
+
 `func (o *RequestableObject) UnsetModified()`
 
 UnsetModified ensures that no value is present for Modified, not even an explicit nil
+
 ### GetDescription
 
 `func (o *RequestableObject) GetDescription() string`
@@ -165,8 +159,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *RequestableObject) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -184,12 +177,14 @@ HasDescription returns a boolean if a field has been set.
 
 `func (o *RequestableObject) SetDescriptionNil(b bool)`
 
- SetDescriptionNil sets the value for Description to be an explicit nil
+SetDescriptionNil sets the value for Description to be an explicit nil
 
 ### UnsetDescription
+
 `func (o *RequestableObject) UnsetDescription()`
 
 UnsetDescription ensures that no value is present for Description, not even an explicit nil
+
 ### GetType
 
 `func (o *RequestableObject) GetType() RequestableObjectType`
@@ -200,8 +195,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *RequestableObject) GetTypeOk() (*RequestableObjectType, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -225,8 +219,7 @@ GetRequestStatus returns the RequestStatus field if non-nil, zero value otherwis
 
 `func (o *RequestableObject) GetRequestStatusOk() (*RequestableObjectRequestStatus, bool)`
 
-GetRequestStatusOk returns a tuple with the RequestStatus field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestStatusOk returns a tuple with the RequestStatus field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequestStatus
 
@@ -250,8 +243,7 @@ GetIdentityRequestId returns the IdentityRequestId field if non-nil, zero value 
 
 `func (o *RequestableObject) GetIdentityRequestIdOk() (*string, bool)`
 
-GetIdentityRequestIdOk returns a tuple with the IdentityRequestId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityRequestIdOk returns a tuple with the IdentityRequestId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityRequestId
 
@@ -269,12 +261,14 @@ HasIdentityRequestId returns a boolean if a field has been set.
 
 `func (o *RequestableObject) SetIdentityRequestIdNil(b bool)`
 
- SetIdentityRequestIdNil sets the value for IdentityRequestId to be an explicit nil
+SetIdentityRequestIdNil sets the value for IdentityRequestId to be an explicit nil
 
 ### UnsetIdentityRequestId
+
 `func (o *RequestableObject) UnsetIdentityRequestId()`
 
 UnsetIdentityRequestId ensures that no value is present for IdentityRequestId, not even an explicit nil
+
 ### GetOwnerRef
 
 `func (o *RequestableObject) GetOwnerRef() IdentityReferenceWithNameAndEmail`
@@ -285,8 +279,7 @@ GetOwnerRef returns the OwnerRef field if non-nil, zero value otherwise.
 
 `func (o *RequestableObject) GetOwnerRefOk() (*IdentityReferenceWithNameAndEmail, bool)`
 
-GetOwnerRefOk returns a tuple with the OwnerRef field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerRefOk returns a tuple with the OwnerRef field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwnerRef
 
@@ -304,12 +297,14 @@ HasOwnerRef returns a boolean if a field has been set.
 
 `func (o *RequestableObject) SetOwnerRefNil(b bool)`
 
- SetOwnerRefNil sets the value for OwnerRef to be an explicit nil
+SetOwnerRefNil sets the value for OwnerRef to be an explicit nil
 
 ### UnsetOwnerRef
+
 `func (o *RequestableObject) UnsetOwnerRef()`
 
 UnsetOwnerRef ensures that no value is present for OwnerRef, not even an explicit nil
+
 ### GetRequestCommentsRequired
 
 `func (o *RequestableObject) GetRequestCommentsRequired() bool`
@@ -320,8 +315,7 @@ GetRequestCommentsRequired returns the RequestCommentsRequired field if non-nil,
 
 `func (o *RequestableObject) GetRequestCommentsRequiredOk() (*bool, bool)`
 
-GetRequestCommentsRequiredOk returns a tuple with the RequestCommentsRequired field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestCommentsRequiredOk returns a tuple with the RequestCommentsRequired field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequestCommentsRequired
 
@@ -334,5 +328,3 @@ SetRequestCommentsRequired sets RequestCommentsRequired field to given value.
 `func (o *RequestableObject) HasRequestCommentsRequired() bool`
 
 HasRequestCommentsRequired returns a boolean if a field has been set.
-
-

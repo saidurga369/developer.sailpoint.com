@@ -4,19 +4,26 @@ title: ResourceBundleMessage
 pagination_label: ResourceBundleMessage
 sidebar_label: ResourceBundleMessage
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ResourceBundleMessage', 'BetaResourceBundleMessage'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'ResourceBundleMessage', 'BetaResourceBundleMessage']
 slug: /tools/sdk/go/beta/models/resource-bundle-message
-tags: ['SDK', 'Software Development Kit', 'ResourceBundleMessage', 'BetaResourceBundleMessage']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ResourceBundleMessage',
+    'BetaResourceBundleMessage',
+  ]
 ---
 
 # ResourceBundleMessage
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Key** | Pointer to **string** | The key of the message | [optional] 
-**Format** | Pointer to **string** | The format of the message | [optional] 
+| Name       | Type                  | Description               | Notes      |
+| ---------- | --------------------- | ------------------------- | ---------- |
+| **Key**    | Pointer to **string** | The key of the message    | [optional] |
+| **Format** | Pointer to **string** | The format of the message | [optional] |
 
 ## Methods
 
@@ -24,18 +31,13 @@ Name | Type | Description | Notes
 
 `func NewResourceBundleMessage() *ResourceBundleMessage`
 
-NewResourceBundleMessage instantiates a new ResourceBundleMessage object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewResourceBundleMessage instantiates a new ResourceBundleMessage object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewResourceBundleMessageWithDefaults
 
 `func NewResourceBundleMessageWithDefaults() *ResourceBundleMessage`
 
-NewResourceBundleMessageWithDefaults instantiates a new ResourceBundleMessage object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewResourceBundleMessageWithDefaults instantiates a new ResourceBundleMessage object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetKey
 
@@ -47,8 +49,7 @@ GetKey returns the Key field if non-nil, zero value otherwise.
 
 `func (o *ResourceBundleMessage) GetKeyOk() (*string, bool)`
 
-GetKeyOk returns a tuple with the Key field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetKeyOk returns a tuple with the Key field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetKey
 
@@ -72,8 +73,7 @@ GetFormat returns the Format field if non-nil, zero value otherwise.
 
 `func (o *ResourceBundleMessage) GetFormatOk() (*string, bool)`
 
-GetFormatOk returns a tuple with the Format field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFormatOk returns a tuple with the Format field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFormat
 
@@ -86,5 +86,3 @@ SetFormat sets Format field to given value.
 `func (o *ResourceBundleMessage) HasFormat() bool`
 
 HasFormat returns a boolean if a field has been set.
-
-

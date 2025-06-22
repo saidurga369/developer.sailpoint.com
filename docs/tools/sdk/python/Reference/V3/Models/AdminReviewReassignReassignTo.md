@@ -4,20 +4,33 @@ title: AdminReviewReassignReassignTo
 pagination_label: AdminReviewReassignReassignTo
 sidebar_label: AdminReviewReassignReassignTo
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AdminReviewReassignReassignTo', 'AdminReviewReassignReassignTo'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AdminReviewReassignReassignTo',
+    'AdminReviewReassignReassignTo',
+  ]
 slug: /tools/sdk/python/v3/models/admin-review-reassign-reassign-to
-tags: ['SDK', 'Software Development Kit', 'AdminReviewReassignReassignTo', 'AdminReviewReassignReassignTo']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AdminReviewReassignReassignTo',
+    'AdminReviewReassignReassignTo',
+  ]
 ---
 
 # AdminReviewReassignReassignTo
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The identity ID to which the review is being assigned. | [optional] 
-**type** |  **Enum** [  'IDENTITY' ] | The type of the ID provided. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The identity ID to which the review is being assigned. | [optional] |
+| **type** | **Enum** [ 'IDENTITY' ] | The type of the ID provided. | [optional] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ type='IDENTITY'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

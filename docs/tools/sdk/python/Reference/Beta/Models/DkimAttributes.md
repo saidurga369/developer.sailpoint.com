@@ -4,9 +4,10 @@ title: DkimAttributes
 pagination_label: DkimAttributes
 sidebar_label: DkimAttributes
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'DkimAttributes', 'BetaDkimAttributes'] 
+keywords: ['python', 'Python', 'sdk', 'DkimAttributes', 'BetaDkimAttributes']
 slug: /tools/sdk/python/beta/models/dkim-attributes
-tags: ['SDK', 'Software Development Kit', 'DkimAttributes', 'BetaDkimAttributes']
+tags:
+  ['SDK', 'Software Development Kit', 'DkimAttributes', 'BetaDkimAttributes']
 ---
 
 # DkimAttributes
@@ -15,13 +16,14 @@ DKIM attributes for a domain or identity
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | UUID associated with domain to be verified | [optional] 
-**address** | **str** | The identity or domain address | [optional] 
-**dkim_enabled** | **bool** | Whether or not DKIM has been enabled for this domain / identity | [optional] [default to False]
-**dkim_tokens** | **[]str** | The tokens to be added to a DNS for verification | [optional] 
-**dkim_verification_status** | **str** | The current status if the domain /identity has been verified. Ie Success, Failed, Pending | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | UUID associated with domain to be verified | [optional] |
+| **address** | **str** | The identity or domain address | [optional] |
+| **dkim_enabled** | **bool** | Whether or not DKIM has been enabled for this domain / identity | [optional] [default to False] |
+| **dkim_tokens** | **[]str** | The tokens to be added to a DNS for verification | [optional] |
+| **dkim_verification_status** | **str** | The current status if the domain /identity has been verified. Ie Success, Failed, Pending | [optional] |
+
 }
 
 ## Example
@@ -38,5 +40,5 @@ dkim_verification_status='Success'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

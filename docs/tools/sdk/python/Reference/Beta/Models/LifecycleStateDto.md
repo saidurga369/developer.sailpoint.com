@@ -4,20 +4,27 @@ title: LifecycleStateDto
 pagination_label: LifecycleStateDto
 sidebar_label: LifecycleStateDto
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'LifecycleStateDto', 'BetaLifecycleStateDto'] 
+keywords:
+  ['python', 'Python', 'sdk', 'LifecycleStateDto', 'BetaLifecycleStateDto']
 slug: /tools/sdk/python/beta/models/lifecycle-state-dto
-tags: ['SDK', 'Software Development Kit', 'LifecycleStateDto', 'BetaLifecycleStateDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'LifecycleStateDto',
+    'BetaLifecycleStateDto',
+  ]
 ---
 
 # LifecycleStateDto
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**state_name** | **str** | The name of the lifecycle state | [required]
-**manually_updated** | **bool** | Whether the lifecycle state has been manually or automatically set | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **state_name** | **str** | The name of the lifecycle state | [required] |
+| **manually_updated** | **bool** | Whether the lifecycle state has been manually or automatically set | [required] |
+
 }
 
 ## Example
@@ -31,5 +38,5 @@ manually_updated=True
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

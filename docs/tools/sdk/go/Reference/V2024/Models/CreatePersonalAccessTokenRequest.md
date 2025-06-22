@@ -4,20 +4,33 @@ title: CreatePersonalAccessTokenRequest
 pagination_label: CreatePersonalAccessTokenRequest
 sidebar_label: CreatePersonalAccessTokenRequest
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'CreatePersonalAccessTokenRequest', 'V2024CreatePersonalAccessTokenRequest'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'CreatePersonalAccessTokenRequest',
+    'V2024CreatePersonalAccessTokenRequest',
+  ]
 slug: /tools/sdk/go/v2024/models/create-personal-access-token-request
-tags: ['SDK', 'Software Development Kit', 'CreatePersonalAccessTokenRequest', 'V2024CreatePersonalAccessTokenRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CreatePersonalAccessTokenRequest',
+    'V2024CreatePersonalAccessTokenRequest',
+  ]
 ---
 
 # CreatePersonalAccessTokenRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | **string** | The name of the personal access token (PAT) to be created. Cannot be the same as another PAT owned by the user for whom this PAT is being created. | 
-**Scope** | Pointer to **[]string** | Scopes of the personal  access token. If no scope is specified, the token will be created with the default scope \"sp:scopes:all\". This means the personal access token will have all the rights of the owner who created it. | [optional] 
-**AccessTokenValiditySeconds** | Pointer to **int32** | Number of seconds an access token is valid when generated using this Personal Access Token. If no value is specified, the token will be created with the default value of 43200. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | **string** | The name of the personal access token (PAT) to be created. Cannot be the same as another PAT owned by the user for whom this PAT is being created. |
+| **Scope** | Pointer to **[]string** | Scopes of the personal access token. If no scope is specified, the token will be created with the default scope \"sp:scopes:all\". This means the personal access token will have all the rights of the owner who created it. | [optional] |
+| **AccessTokenValiditySeconds** | Pointer to **int32** | Number of seconds an access token is valid when generated using this Personal Access Token. If no value is specified, the token will be created with the default value of 43200. | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewCreatePersonalAccessTokenRequest(name string, ) *CreatePersonalAccessTokenRequest`
 
-NewCreatePersonalAccessTokenRequest instantiates a new CreatePersonalAccessTokenRequest object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewCreatePersonalAccessTokenRequest instantiates a new CreatePersonalAccessTokenRequest object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewCreatePersonalAccessTokenRequestWithDefaults
 
 `func NewCreatePersonalAccessTokenRequestWithDefaults() *CreatePersonalAccessTokenRequest`
 
-NewCreatePersonalAccessTokenRequestWithDefaults instantiates a new CreatePersonalAccessTokenRequest object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewCreatePersonalAccessTokenRequestWithDefaults instantiates a new CreatePersonalAccessTokenRequest object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -48,15 +56,13 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *CreatePersonalAccessTokenRequest) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
 `func (o *CreatePersonalAccessTokenRequest) SetName(v string)`
 
 SetName sets Name field to given value.
-
 
 ### GetScope
 
@@ -68,8 +74,7 @@ GetScope returns the Scope field if non-nil, zero value otherwise.
 
 `func (o *CreatePersonalAccessTokenRequest) GetScopeOk() (*[]string, bool)`
 
-GetScopeOk returns a tuple with the Scope field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetScopeOk returns a tuple with the Scope field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetScope
 
@@ -87,12 +92,14 @@ HasScope returns a boolean if a field has been set.
 
 `func (o *CreatePersonalAccessTokenRequest) SetScopeNil(b bool)`
 
- SetScopeNil sets the value for Scope to be an explicit nil
+SetScopeNil sets the value for Scope to be an explicit nil
 
 ### UnsetScope
+
 `func (o *CreatePersonalAccessTokenRequest) UnsetScope()`
 
 UnsetScope ensures that no value is present for Scope, not even an explicit nil
+
 ### GetAccessTokenValiditySeconds
 
 `func (o *CreatePersonalAccessTokenRequest) GetAccessTokenValiditySeconds() int32`
@@ -103,8 +110,7 @@ GetAccessTokenValiditySeconds returns the AccessTokenValiditySeconds field if no
 
 `func (o *CreatePersonalAccessTokenRequest) GetAccessTokenValiditySecondsOk() (*int32, bool)`
 
-GetAccessTokenValiditySecondsOk returns a tuple with the AccessTokenValiditySeconds field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessTokenValiditySecondsOk returns a tuple with the AccessTokenValiditySeconds field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessTokenValiditySeconds
 
@@ -117,5 +123,3 @@ SetAccessTokenValiditySeconds sets AccessTokenValiditySeconds field to given val
 `func (o *CreatePersonalAccessTokenRequest) HasAccessTokenValiditySeconds() bool`
 
 HasAccessTokenValiditySeconds returns a boolean if a field has been set.
-
-

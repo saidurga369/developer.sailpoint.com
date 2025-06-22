@@ -4,9 +4,22 @@ title: SavedSearchCompleteSearchResultsIdentity
 pagination_label: SavedSearchCompleteSearchResultsIdentity
 sidebar_label: SavedSearchCompleteSearchResultsIdentity
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SavedSearchCompleteSearchResultsIdentity', 'V2024SavedSearchCompleteSearchResultsIdentity'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'SavedSearchCompleteSearchResultsIdentity',
+    'V2024SavedSearchCompleteSearchResultsIdentity',
+  ]
 slug: /tools/sdk/python/v2024/models/saved-search-complete-search-results-identity
-tags: ['SDK', 'Software Development Kit', 'SavedSearchCompleteSearchResultsIdentity', 'V2024SavedSearchCompleteSearchResultsIdentity']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SavedSearchCompleteSearchResultsIdentity',
+    'V2024SavedSearchCompleteSearchResultsIdentity',
+  ]
 ---
 
 # SavedSearchCompleteSearchResultsIdentity
@@ -15,11 +28,12 @@ A table of identities that match the search criteria.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**count** | **str** | The number of rows in the table. | [required]
-**noun** | **str** | The type of object represented in the table. | [required]
-**preview** | **[]List[str]** | A sample of the data in the table. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **count** | **str** | The number of rows in the table. | [required] |
+| **noun** | **str** | The type of object represented in the table. | [required] |
+| **preview** | **[]List[str]** | A sample of the data in the table. | [required] |
+
 }
 
 ## Example
@@ -36,5 +50,5 @@ preview=[
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

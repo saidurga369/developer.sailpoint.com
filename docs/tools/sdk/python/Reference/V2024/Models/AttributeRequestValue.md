@@ -4,9 +4,22 @@ title: AttributeRequestValue
 pagination_label: AttributeRequestValue
 sidebar_label: AttributeRequestValue
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AttributeRequestValue', 'V2024AttributeRequestValue'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AttributeRequestValue',
+    'V2024AttributeRequestValue',
+  ]
 slug: /tools/sdk/python/v2024/models/attribute-request-value
-tags: ['SDK', 'Software Development Kit', 'AttributeRequestValue', 'V2024AttributeRequestValue']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AttributeRequestValue',
+    'V2024AttributeRequestValue',
+  ]
 ---
 
 # AttributeRequestValue
@@ -15,8 +28,9 @@ Value of attribute.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
+
 }
 
 ## Example
@@ -28,5 +42,5 @@ attribute_request_value = AttributeRequestValue(
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

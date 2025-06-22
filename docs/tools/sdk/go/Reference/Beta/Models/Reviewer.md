@@ -4,7 +4,7 @@ title: Reviewer
 pagination_label: Reviewer
 sidebar_label: Reviewer
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Reviewer', 'BetaReviewer'] 
+keywords: ['go', 'Golang', 'sdk', 'Reviewer', 'BetaReviewer']
 slug: /tools/sdk/go/beta/models/reviewer
 tags: ['SDK', 'Software Development Kit', 'Reviewer', 'BetaReviewer']
 ---
@@ -13,12 +13,12 @@ tags: ['SDK', 'Software Development Kit', 'Reviewer', 'BetaReviewer']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | **string** | Reviewer's DTO type. | 
-**Id** | **string** | Reviewer's ID. | 
-**Name** | **string** | Reviewer's display name. | 
-**Email** | Pointer to **NullableString** | Reviewing identity's email. This is only applicable to reviewers of the `IDENTITY` type. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | **string** | Reviewer's DTO type. |
+| **Id** | **string** | Reviewer's ID. |
+| **Name** | **string** | Reviewer's display name. |
+| **Email** | Pointer to **NullableString** | Reviewing identity's email. This is only applicable to reviewers of the `IDENTITY` type. | [optional] |
 
 ## Methods
 
@@ -26,18 +26,13 @@ Name | Type | Description | Notes
 
 `func NewReviewer(type_ string, id string, name string, ) *Reviewer`
 
-NewReviewer instantiates a new Reviewer object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewReviewer instantiates a new Reviewer object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewReviewerWithDefaults
 
 `func NewReviewerWithDefaults() *Reviewer`
 
-NewReviewerWithDefaults instantiates a new Reviewer object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewReviewerWithDefaults instantiates a new Reviewer object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -49,15 +44,13 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *Reviewer) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
 `func (o *Reviewer) SetType(v string)`
 
 SetType sets Type field to given value.
-
 
 ### GetId
 
@@ -69,15 +62,13 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *Reviewer) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
 `func (o *Reviewer) SetId(v string)`
 
 SetId sets Id field to given value.
-
 
 ### GetName
 
@@ -89,15 +80,13 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *Reviewer) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
 `func (o *Reviewer) SetName(v string)`
 
 SetName sets Name field to given value.
-
 
 ### GetEmail
 
@@ -109,8 +98,7 @@ GetEmail returns the Email field if non-nil, zero value otherwise.
 
 `func (o *Reviewer) GetEmailOk() (*string, bool)`
 
-GetEmailOk returns a tuple with the Email field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEmailOk returns a tuple with the Email field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEmail
 
@@ -128,10 +116,10 @@ HasEmail returns a boolean if a field has been set.
 
 `func (o *Reviewer) SetEmailNil(b bool)`
 
- SetEmailNil sets the value for Email to be an explicit nil
+SetEmailNil sets the value for Email to be an explicit nil
 
 ### UnsetEmail
+
 `func (o *Reviewer) UnsetEmail()`
 
 UnsetEmail ensures that no value is present for Email, not even an explicit nil
-

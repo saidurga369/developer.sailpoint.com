@@ -18,6 +18,7 @@ JSONpath is a language for querying data in a JSON object.
 The `jsonpath` command makes it easy to evaluate JSONpath queries from within the SailPoint CLI. At this time, the `jsonpath` command only supports the workflows JSONpath operators [documented here](https://github.com/celene-isip-sp/jsonslice?tab=readme-ov-file#expressions).
 
 - [evaluate](#evaluate-jsonpath)
+
   - [File path](#file-path)
   - [Path](#path)
 

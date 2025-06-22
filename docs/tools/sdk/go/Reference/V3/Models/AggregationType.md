@@ -4,7 +4,7 @@ title: AggregationType
 pagination_label: AggregationType
 sidebar_label: AggregationType
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AggregationType', 'AggregationType'] 
+keywords: ['go', 'Golang', 'sdk', 'AggregationType', 'AggregationType']
 slug: /tools/sdk/go/v3/models/aggregation-type
 tags: ['SDK', 'Software Development Kit', 'AggregationType', 'AggregationType']
 ---
@@ -13,9 +13,6 @@ tags: ['SDK', 'Software Development Kit', 'AggregationType', 'AggregationType']
 
 ## Enum
 
+- `DSL` (value: `"DSL"`)
 
-* `DSL` (value: `"DSL"`)
-
-* `SAILPOINT` (value: `"SAILPOINT"`)
-
-
+- `SAILPOINT` (value: `"SAILPOINT"`)

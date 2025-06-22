@@ -4,21 +4,22 @@ title: IdentitySummary
 pagination_label: IdentitySummary
 sidebar_label: IdentitySummary
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IdentitySummary', 'V2025IdentitySummary'] 
+keywords: ['go', 'Golang', 'sdk', 'IdentitySummary', 'V2025IdentitySummary']
 slug: /tools/sdk/go/v2025/models/identity-summary
-tags: ['SDK', 'Software Development Kit', 'IdentitySummary', 'V2025IdentitySummary']
+tags:
+  ['SDK', 'Software Development Kit', 'IdentitySummary', 'V2025IdentitySummary']
 ---
 
 # IdentitySummary
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | ID of this identity summary | [optional] 
-**Name** | Pointer to **string** | Human-readable display name of identity | [optional] 
-**IdentityId** | Pointer to **string** | ID of the identity that this summary represents | [optional] 
-**Completed** | Pointer to **bool** | Indicates if all access items for this summary have been decided on | [optional] [default to false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | ID of this identity summary | [optional] |
+| **Name** | Pointer to **string** | Human-readable display name of identity | [optional] |
+| **IdentityId** | Pointer to **string** | ID of the identity that this summary represents | [optional] |
+| **Completed** | Pointer to **bool** | Indicates if all access items for this summary have been decided on | [optional] [default to false] |
 
 ## Methods
 
@@ -26,18 +27,13 @@ Name | Type | Description | Notes
 
 `func NewIdentitySummary() *IdentitySummary`
 
-NewIdentitySummary instantiates a new IdentitySummary object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewIdentitySummary instantiates a new IdentitySummary object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewIdentitySummaryWithDefaults
 
 `func NewIdentitySummaryWithDefaults() *IdentitySummary`
 
-NewIdentitySummaryWithDefaults instantiates a new IdentitySummary object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewIdentitySummaryWithDefaults instantiates a new IdentitySummary object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -49,8 +45,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *IdentitySummary) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -74,8 +69,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *IdentitySummary) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -99,8 +93,7 @@ GetIdentityId returns the IdentityId field if non-nil, zero value otherwise.
 
 `func (o *IdentitySummary) GetIdentityIdOk() (*string, bool)`
 
-GetIdentityIdOk returns a tuple with the IdentityId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityIdOk returns a tuple with the IdentityId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityId
 
@@ -124,8 +117,7 @@ GetCompleted returns the Completed field if non-nil, zero value otherwise.
 
 `func (o *IdentitySummary) GetCompletedOk() (*bool, bool)`
 
-GetCompletedOk returns a tuple with the Completed field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCompletedOk returns a tuple with the Completed field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCompleted
 
@@ -138,5 +130,3 @@ SetCompleted sets Completed field to given value.
 `func (o *IdentitySummary) HasCompleted() bool`
 
 HasCompleted returns a boolean if a field has been set.
-
-

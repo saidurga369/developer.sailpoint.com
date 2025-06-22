@@ -4,18 +4,31 @@ title: AccountsSelectionResponse
 pagination_label: AccountsSelectionResponse
 sidebar_label: AccountsSelectionResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccountsSelectionResponse', 'V2025AccountsSelectionResponse'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'AccountsSelectionResponse',
+    'V2025AccountsSelectionResponse',
+  ]
 slug: /tools/sdk/go/v2025/models/accounts-selection-response
-tags: ['SDK', 'Software Development Kit', 'AccountsSelectionResponse', 'V2025AccountsSelectionResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountsSelectionResponse',
+    'V2025AccountsSelectionResponse',
+  ]
 ---
 
 # AccountsSelectionResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Identities** | Pointer to [**[]IdentityAccountSelections**](identity-account-selections) | A list of available account selections per identity in the request, for all the requested items | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Identities** | Pointer to [**[]IdentityAccountSelections**](identity-account-selections) | A list of available account selections per identity in the request, for all the requested items | [optional] |
 
 ## Methods
 
@@ -23,18 +36,13 @@ Name | Type | Description | Notes
 
 `func NewAccountsSelectionResponse() *AccountsSelectionResponse`
 
-NewAccountsSelectionResponse instantiates a new AccountsSelectionResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccountsSelectionResponse instantiates a new AccountsSelectionResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccountsSelectionResponseWithDefaults
 
 `func NewAccountsSelectionResponseWithDefaults() *AccountsSelectionResponse`
 
-NewAccountsSelectionResponseWithDefaults instantiates a new AccountsSelectionResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccountsSelectionResponseWithDefaults instantiates a new AccountsSelectionResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetIdentities
 
@@ -46,8 +54,7 @@ GetIdentities returns the Identities field if non-nil, zero value otherwise.
 
 `func (o *AccountsSelectionResponse) GetIdentitiesOk() (*[]IdentityAccountSelections, bool)`
 
-GetIdentitiesOk returns a tuple with the Identities field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentitiesOk returns a tuple with the Identities field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentities
 
@@ -60,5 +67,3 @@ SetIdentities sets Identities field to given value.
 `func (o *AccountsSelectionResponse) HasIdentities() bool`
 
 HasIdentities returns a boolean if a field has been set.
-
-

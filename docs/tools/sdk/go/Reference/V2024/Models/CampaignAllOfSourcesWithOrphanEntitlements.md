@@ -4,20 +4,33 @@ title: CampaignAllOfSourcesWithOrphanEntitlements
 pagination_label: CampaignAllOfSourcesWithOrphanEntitlements
 sidebar_label: CampaignAllOfSourcesWithOrphanEntitlements
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'CampaignAllOfSourcesWithOrphanEntitlements', 'V2024CampaignAllOfSourcesWithOrphanEntitlements'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'CampaignAllOfSourcesWithOrphanEntitlements',
+    'V2024CampaignAllOfSourcesWithOrphanEntitlements',
+  ]
 slug: /tools/sdk/go/v2024/models/campaign-all-of-sources-with-orphan-entitlements
-tags: ['SDK', 'Software Development Kit', 'CampaignAllOfSourcesWithOrphanEntitlements', 'V2024CampaignAllOfSourcesWithOrphanEntitlements']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CampaignAllOfSourcesWithOrphanEntitlements',
+    'V2024CampaignAllOfSourcesWithOrphanEntitlements',
+  ]
 ---
 
 # CampaignAllOfSourcesWithOrphanEntitlements
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Id of the source | [optional] 
-**Type** | Pointer to **string** | Type | [optional] 
-**Name** | Pointer to **string** | Name of the source | [optional] 
+| Name     | Type                  | Description        | Notes      |
+| -------- | --------------------- | ------------------ | ---------- |
+| **Id**   | Pointer to **string** | Id of the source   | [optional] |
+| **Type** | Pointer to **string** | Type               | [optional] |
+| **Name** | Pointer to **string** | Name of the source | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewCampaignAllOfSourcesWithOrphanEntitlements() *CampaignAllOfSourcesWithOrphanEntitlements`
 
-NewCampaignAllOfSourcesWithOrphanEntitlements instantiates a new CampaignAllOfSourcesWithOrphanEntitlements object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewCampaignAllOfSourcesWithOrphanEntitlements instantiates a new CampaignAllOfSourcesWithOrphanEntitlements object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewCampaignAllOfSourcesWithOrphanEntitlementsWithDefaults
 
 `func NewCampaignAllOfSourcesWithOrphanEntitlementsWithDefaults() *CampaignAllOfSourcesWithOrphanEntitlements`
 
-NewCampaignAllOfSourcesWithOrphanEntitlementsWithDefaults instantiates a new CampaignAllOfSourcesWithOrphanEntitlements object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewCampaignAllOfSourcesWithOrphanEntitlementsWithDefaults instantiates a new CampaignAllOfSourcesWithOrphanEntitlements object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -48,8 +56,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *CampaignAllOfSourcesWithOrphanEntitlements) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -73,8 +80,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *CampaignAllOfSourcesWithOrphanEntitlements) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -98,8 +104,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *CampaignAllOfSourcesWithOrphanEntitlements) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -112,5 +117,3 @@ SetName sets Name field to given value.
 `func (o *CampaignAllOfSourcesWithOrphanEntitlements) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

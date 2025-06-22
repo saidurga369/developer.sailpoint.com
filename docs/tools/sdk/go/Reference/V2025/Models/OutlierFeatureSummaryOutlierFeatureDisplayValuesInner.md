@@ -4,20 +4,33 @@ title: OutlierFeatureSummaryOutlierFeatureDisplayValuesInner
 pagination_label: OutlierFeatureSummaryOutlierFeatureDisplayValuesInner
 sidebar_label: OutlierFeatureSummaryOutlierFeatureDisplayValuesInner
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'OutlierFeatureSummaryOutlierFeatureDisplayValuesInner', 'V2025OutlierFeatureSummaryOutlierFeatureDisplayValuesInner'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'OutlierFeatureSummaryOutlierFeatureDisplayValuesInner',
+    'V2025OutlierFeatureSummaryOutlierFeatureDisplayValuesInner',
+  ]
 slug: /tools/sdk/go/v2025/models/outlier-feature-summary-outlier-feature-display-values-inner
-tags: ['SDK', 'Software Development Kit', 'OutlierFeatureSummaryOutlierFeatureDisplayValuesInner', 'V2025OutlierFeatureSummaryOutlierFeatureDisplayValuesInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'OutlierFeatureSummaryOutlierFeatureDisplayValuesInner',
+    'V2025OutlierFeatureSummaryOutlierFeatureDisplayValuesInner',
+  ]
 ---
 
 # OutlierFeatureSummaryOutlierFeatureDisplayValuesInner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**DisplayName** | Pointer to **string** | display name | [optional] 
-**Value** | Pointer to **string** | value | [optional] 
-**ValueType** | Pointer to [**OutlierValueType**](outlier-value-type) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **DisplayName** | Pointer to **string** | display name | [optional] |
+| **Value** | Pointer to **string** | value | [optional] |
+| **ValueType** | Pointer to [**OutlierValueType**](outlier-value-type) |  | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewOutlierFeatureSummaryOutlierFeatureDisplayValuesInner() *OutlierFeatureSummaryOutlierFeatureDisplayValuesInner`
 
-NewOutlierFeatureSummaryOutlierFeatureDisplayValuesInner instantiates a new OutlierFeatureSummaryOutlierFeatureDisplayValuesInner object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewOutlierFeatureSummaryOutlierFeatureDisplayValuesInner instantiates a new OutlierFeatureSummaryOutlierFeatureDisplayValuesInner object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewOutlierFeatureSummaryOutlierFeatureDisplayValuesInnerWithDefaults
 
 `func NewOutlierFeatureSummaryOutlierFeatureDisplayValuesInnerWithDefaults() *OutlierFeatureSummaryOutlierFeatureDisplayValuesInner`
 
-NewOutlierFeatureSummaryOutlierFeatureDisplayValuesInnerWithDefaults instantiates a new OutlierFeatureSummaryOutlierFeatureDisplayValuesInner object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewOutlierFeatureSummaryOutlierFeatureDisplayValuesInnerWithDefaults instantiates a new OutlierFeatureSummaryOutlierFeatureDisplayValuesInner object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetDisplayName
 
@@ -48,8 +56,7 @@ GetDisplayName returns the DisplayName field if non-nil, zero value otherwise.
 
 `func (o *OutlierFeatureSummaryOutlierFeatureDisplayValuesInner) GetDisplayNameOk() (*string, bool)`
 
-GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayName
 
@@ -73,8 +80,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *OutlierFeatureSummaryOutlierFeatureDisplayValuesInner) GetValueOk() (*string, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -98,8 +104,7 @@ GetValueType returns the ValueType field if non-nil, zero value otherwise.
 
 `func (o *OutlierFeatureSummaryOutlierFeatureDisplayValuesInner) GetValueTypeOk() (*OutlierValueType, bool)`
 
-GetValueTypeOk returns a tuple with the ValueType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueTypeOk returns a tuple with the ValueType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValueType
 
@@ -112,5 +117,3 @@ SetValueType sets ValueType field to given value.
 `func (o *OutlierFeatureSummaryOutlierFeatureDisplayValuesInner) HasValueType() bool`
 
 HasValueType returns a boolean if a field has been set.
-
-

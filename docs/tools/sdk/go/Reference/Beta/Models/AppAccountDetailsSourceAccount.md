@@ -4,22 +4,35 @@ title: AppAccountDetailsSourceAccount
 pagination_label: AppAccountDetailsSourceAccount
 sidebar_label: AppAccountDetailsSourceAccount
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AppAccountDetailsSourceAccount', 'BetaAppAccountDetailsSourceAccount'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'AppAccountDetailsSourceAccount',
+    'BetaAppAccountDetailsSourceAccount',
+  ]
 slug: /tools/sdk/go/beta/models/app-account-details-source-account
-tags: ['SDK', 'Software Development Kit', 'AppAccountDetailsSourceAccount', 'BetaAppAccountDetailsSourceAccount']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AppAccountDetailsSourceAccount',
+    'BetaAppAccountDetailsSourceAccount',
+  ]
 ---
 
 # AppAccountDetailsSourceAccount
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The account ID | [optional] 
-**NativeIdentity** | Pointer to **string** | The native identity of account | [optional] 
-**DisplayName** | Pointer to **string** | The display name of account | [optional] 
-**SourceId** | Pointer to **string** | The source ID of account | [optional] 
-**SourceDisplayName** | Pointer to **string** | The source name of account | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The account ID | [optional] |
+| **NativeIdentity** | Pointer to **string** | The native identity of account | [optional] |
+| **DisplayName** | Pointer to **string** | The display name of account | [optional] |
+| **SourceId** | Pointer to **string** | The source ID of account | [optional] |
+| **SourceDisplayName** | Pointer to **string** | The source name of account | [optional] |
 
 ## Methods
 
@@ -27,18 +40,13 @@ Name | Type | Description | Notes
 
 `func NewAppAccountDetailsSourceAccount() *AppAccountDetailsSourceAccount`
 
-NewAppAccountDetailsSourceAccount instantiates a new AppAccountDetailsSourceAccount object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAppAccountDetailsSourceAccount instantiates a new AppAccountDetailsSourceAccount object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAppAccountDetailsSourceAccountWithDefaults
 
 `func NewAppAccountDetailsSourceAccountWithDefaults() *AppAccountDetailsSourceAccount`
 
-NewAppAccountDetailsSourceAccountWithDefaults instantiates a new AppAccountDetailsSourceAccount object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAppAccountDetailsSourceAccountWithDefaults instantiates a new AppAccountDetailsSourceAccount object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -50,8 +58,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *AppAccountDetailsSourceAccount) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -75,8 +82,7 @@ GetNativeIdentity returns the NativeIdentity field if non-nil, zero value otherw
 
 `func (o *AppAccountDetailsSourceAccount) GetNativeIdentityOk() (*string, bool)`
 
-GetNativeIdentityOk returns a tuple with the NativeIdentity field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNativeIdentityOk returns a tuple with the NativeIdentity field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNativeIdentity
 
@@ -100,8 +106,7 @@ GetDisplayName returns the DisplayName field if non-nil, zero value otherwise.
 
 `func (o *AppAccountDetailsSourceAccount) GetDisplayNameOk() (*string, bool)`
 
-GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayName
 
@@ -125,8 +130,7 @@ GetSourceId returns the SourceId field if non-nil, zero value otherwise.
 
 `func (o *AppAccountDetailsSourceAccount) GetSourceIdOk() (*string, bool)`
 
-GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceId
 
@@ -150,8 +154,7 @@ GetSourceDisplayName returns the SourceDisplayName field if non-nil, zero value 
 
 `func (o *AppAccountDetailsSourceAccount) GetSourceDisplayNameOk() (*string, bool)`
 
-GetSourceDisplayNameOk returns a tuple with the SourceDisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceDisplayNameOk returns a tuple with the SourceDisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceDisplayName
 
@@ -164,5 +167,3 @@ SetSourceDisplayName sets SourceDisplayName field to given value.
 `func (o *AppAccountDetailsSourceAccount) HasSourceDisplayName() bool`
 
 HasSourceDisplayName returns a boolean if a field has been set.
-
-

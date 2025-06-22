@@ -4,21 +4,21 @@ title: FormOwner
 pagination_label: FormOwner
 sidebar_label: FormOwner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'FormOwner', 'V2025FormOwner'] 
+keywords: ['python', 'Python', 'sdk', 'FormOwner', 'V2025FormOwner']
 slug: /tools/sdk/python/v2025/models/form-owner
 tags: ['SDK', 'Software Development Kit', 'FormOwner', 'V2025FormOwner']
 ---
 
 # FormOwner
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] | FormOwnerType value. IDENTITY FormOwnerTypeIdentity | [optional] 
-**id** | **str** | Unique identifier of the form's owner. | [optional] 
-**name** | **str** | Name of the form's owner. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'IDENTITY' ] | FormOwnerType value. IDENTITY FormOwnerTypeIdentity | [optional] |
+| **id** | **str** | Unique identifier of the form's owner. | [optional] |
+| **name** | **str** | Name of the form's owner. | [optional] |
+
 }
 
 ## Example
@@ -33,5 +33,5 @@ name='Grant Smith'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

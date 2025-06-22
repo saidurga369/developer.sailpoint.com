@@ -4,9 +4,22 @@ title: ImportAccountsRequest1
 pagination_label: ImportAccountsRequest1
 sidebar_label: ImportAccountsRequest1
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ImportAccountsRequest1', 'BetaImportAccountsRequest1'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ImportAccountsRequest1',
+    'BetaImportAccountsRequest1',
+  ]
 slug: /tools/sdk/python/beta/models/import-accounts-request1
-tags: ['SDK', 'Software Development Kit', 'ImportAccountsRequest1', 'BetaImportAccountsRequest1']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ImportAccountsRequest1',
+    'BetaImportAccountsRequest1',
+  ]
 ---
 
 # ImportAccountsRequest1
@@ -15,9 +28,10 @@ This content type is provided for compatibility with services that don't support
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**disable_optimization** |  **Enum** [  'true',    'false' ] | Use this flag to reprocess every account whether or not the data has changed. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **disable_optimization** | **Enum** [ 'true', 'false' ] | Use this flag to reprocess every account whether or not the data has changed. | [optional] |
+
 }
 
 ## Example
@@ -30,5 +44,5 @@ disable_optimization='true'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,26 +4,27 @@ title: ReviewableRole
 pagination_label: ReviewableRole
 sidebar_label: ReviewableRole
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ReviewableRole', 'V2025ReviewableRole'] 
+keywords: ['go', 'Golang', 'sdk', 'ReviewableRole', 'V2025ReviewableRole']
 slug: /tools/sdk/go/v2025/models/reviewable-role
-tags: ['SDK', 'Software Development Kit', 'ReviewableRole', 'V2025ReviewableRole']
+tags:
+  ['SDK', 'Software Development Kit', 'ReviewableRole', 'V2025ReviewableRole']
 ---
 
 # ReviewableRole
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The id for the Role | [optional] 
-**Name** | Pointer to **string** | The name of the Role | [optional] 
-**Description** | Pointer to **string** | Information about the Role | [optional] 
-**Privileged** | Pointer to **bool** | Indicates if the entitlement is a privileged entitlement | [optional] 
-**Owner** | Pointer to [**NullableIdentityReferenceWithNameAndEmail**](identity-reference-with-name-and-email) |  | [optional] 
-**Revocable** | Pointer to **bool** | Indicates whether the Role can be revoked or requested | [optional] 
-**EndDate** | Pointer to **SailPointTime** | The date when a user's access expires. | [optional] 
-**AccessProfiles** | Pointer to [**[]ReviewableAccessProfile**](reviewable-access-profile) | The list of Access Profiles associated with this Role | [optional] 
-**Entitlements** | Pointer to [**[]ReviewableEntitlement**](reviewable-entitlement) | The list of entitlements associated with this Role | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The id for the Role | [optional] |
+| **Name** | Pointer to **string** | The name of the Role | [optional] |
+| **Description** | Pointer to **string** | Information about the Role | [optional] |
+| **Privileged** | Pointer to **bool** | Indicates if the entitlement is a privileged entitlement | [optional] |
+| **Owner** | Pointer to [**NullableIdentityReferenceWithNameAndEmail**](identity-reference-with-name-and-email) |  | [optional] |
+| **Revocable** | Pointer to **bool** | Indicates whether the Role can be revoked or requested | [optional] |
+| **EndDate** | Pointer to **SailPointTime** | The date when a user's access expires. | [optional] |
+| **AccessProfiles** | Pointer to [**[]ReviewableAccessProfile**](reviewable-access-profile) | The list of Access Profiles associated with this Role | [optional] |
+| **Entitlements** | Pointer to [**[]ReviewableEntitlement**](reviewable-entitlement) | The list of entitlements associated with this Role | [optional] |
 
 ## Methods
 
@@ -31,18 +32,13 @@ Name | Type | Description | Notes
 
 `func NewReviewableRole() *ReviewableRole`
 
-NewReviewableRole instantiates a new ReviewableRole object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewReviewableRole instantiates a new ReviewableRole object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewReviewableRoleWithDefaults
 
 `func NewReviewableRoleWithDefaults() *ReviewableRole`
 
-NewReviewableRoleWithDefaults instantiates a new ReviewableRole object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewReviewableRoleWithDefaults instantiates a new ReviewableRole object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -54,8 +50,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *ReviewableRole) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -79,8 +74,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *ReviewableRole) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -104,8 +98,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *ReviewableRole) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -129,8 +122,7 @@ GetPrivileged returns the Privileged field if non-nil, zero value otherwise.
 
 `func (o *ReviewableRole) GetPrivilegedOk() (*bool, bool)`
 
-GetPrivilegedOk returns a tuple with the Privileged field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPrivilegedOk returns a tuple with the Privileged field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPrivileged
 
@@ -154,8 +146,7 @@ GetOwner returns the Owner field if non-nil, zero value otherwise.
 
 `func (o *ReviewableRole) GetOwnerOk() (*IdentityReferenceWithNameAndEmail, bool)`
 
-GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwner
 
@@ -173,12 +164,14 @@ HasOwner returns a boolean if a field has been set.
 
 `func (o *ReviewableRole) SetOwnerNil(b bool)`
 
- SetOwnerNil sets the value for Owner to be an explicit nil
+SetOwnerNil sets the value for Owner to be an explicit nil
 
 ### UnsetOwner
+
 `func (o *ReviewableRole) UnsetOwner()`
 
 UnsetOwner ensures that no value is present for Owner, not even an explicit nil
+
 ### GetRevocable
 
 `func (o *ReviewableRole) GetRevocable() bool`
@@ -189,8 +182,7 @@ GetRevocable returns the Revocable field if non-nil, zero value otherwise.
 
 `func (o *ReviewableRole) GetRevocableOk() (*bool, bool)`
 
-GetRevocableOk returns a tuple with the Revocable field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRevocableOk returns a tuple with the Revocable field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRevocable
 
@@ -214,8 +206,7 @@ GetEndDate returns the EndDate field if non-nil, zero value otherwise.
 
 `func (o *ReviewableRole) GetEndDateOk() (*SailPointTime, bool)`
 
-GetEndDateOk returns a tuple with the EndDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEndDateOk returns a tuple with the EndDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEndDate
 
@@ -239,8 +230,7 @@ GetAccessProfiles returns the AccessProfiles field if non-nil, zero value otherw
 
 `func (o *ReviewableRole) GetAccessProfilesOk() (*[]ReviewableAccessProfile, bool)`
 
-GetAccessProfilesOk returns a tuple with the AccessProfiles field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessProfilesOk returns a tuple with the AccessProfiles field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessProfiles
 
@@ -264,8 +254,7 @@ GetEntitlements returns the Entitlements field if non-nil, zero value otherwise.
 
 `func (o *ReviewableRole) GetEntitlementsOk() (*[]ReviewableEntitlement, bool)`
 
-GetEntitlementsOk returns a tuple with the Entitlements field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEntitlementsOk returns a tuple with the Entitlements field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEntitlements
 
@@ -278,5 +267,3 @@ SetEntitlements sets Entitlements field to given value.
 `func (o *ReviewableRole) HasEntitlements() bool`
 
 HasEntitlements returns a boolean if a field has been set.
-
-

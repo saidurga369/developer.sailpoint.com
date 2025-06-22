@@ -4,25 +4,38 @@ title: SavedSearchCompleteSearchResults
 pagination_label: SavedSearchCompleteSearchResults
 sidebar_label: SavedSearchCompleteSearchResults
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'SavedSearchCompleteSearchResults', 'V2024SavedSearchCompleteSearchResults'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'SavedSearchCompleteSearchResults',
+    'V2024SavedSearchCompleteSearchResults',
+  ]
 slug: /tools/sdk/powershell/v2024/models/saved-search-complete-search-results
-tags: ['SDK', 'Software Development Kit', 'SavedSearchCompleteSearchResults', 'V2024SavedSearchCompleteSearchResults']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SavedSearchCompleteSearchResults',
+    'V2024SavedSearchCompleteSearchResults',
+  ]
 ---
-
 
 # SavedSearchCompleteSearchResults
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Account** | [**SavedSearchCompleteSearchResultsAccount**](saved-search-complete-search-results-account) |  | [optional] 
-**Entitlement** | [**SavedSearchCompleteSearchResultsEntitlement**](saved-search-complete-search-results-entitlement) |  | [optional] 
-**Identity** | [**SavedSearchCompleteSearchResultsIdentity**](saved-search-complete-search-results-identity) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Account** | [**SavedSearchCompleteSearchResultsAccount**](saved-search-complete-search-results-account) |  | [optional] |
+| **Entitlement** | [**SavedSearchCompleteSearchResultsEntitlement**](saved-search-complete-search-results-entitlement) |  | [optional] |
+| **Identity** | [**SavedSearchCompleteSearchResultsIdentity**](saved-search-complete-search-results-identity) |  | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $SavedSearchCompleteSearchResults = Initialize-V2024SavedSearchCompleteSearchResults  -Account null `
  -Entitlement null `
@@ -30,10 +43,9 @@ $SavedSearchCompleteSearchResults = Initialize-V2024SavedSearchCompleteSearchRes
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $SavedSearchCompleteSearchResults | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

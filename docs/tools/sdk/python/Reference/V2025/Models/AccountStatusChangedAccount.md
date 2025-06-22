@@ -4,25 +4,38 @@ title: AccountStatusChangedAccount
 pagination_label: AccountStatusChangedAccount
 sidebar_label: AccountStatusChangedAccount
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccountStatusChangedAccount', 'V2025AccountStatusChangedAccount'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccountStatusChangedAccount',
+    'V2025AccountStatusChangedAccount',
+  ]
 slug: /tools/sdk/python/v2025/models/account-status-changed-account
-tags: ['SDK', 'Software Development Kit', 'AccountStatusChangedAccount', 'V2025AccountStatusChangedAccount']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountStatusChangedAccount',
+    'V2025AccountStatusChangedAccount',
+  ]
 ---
 
 # AccountStatusChangedAccount
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | the ID of the account in the database | [optional] 
-**native_identity** | **str** | the native identifier of the account | [optional] 
-**display_name** | **str** | the display name of the account | [optional] 
-**source_id** | **str** | the ID of the source for this account | [optional] 
-**source_name** | **str** | the name of the source for this account | [optional] 
-**entitlement_count** | **int** | the number of entitlements on this account | [optional] 
-**access_type** | **str** | this value is always \"account\" | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | the ID of the account in the database | [optional] |
+| **native_identity** | **str** | the native identifier of the account | [optional] |
+| **display_name** | **str** | the display name of the account | [optional] |
+| **source_id** | **str** | the ID of the source for this account | [optional] |
+| **source_name** | **str** | the name of the source for this account | [optional] |
+| **entitlement_count** | **int** | the number of entitlements on this account | [optional] |
+| **access_type** | **str** | this value is always \"account\" | [optional] |
+
 }
 
 ## Example
@@ -41,5 +54,5 @@ access_type=''
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

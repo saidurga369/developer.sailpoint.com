@@ -4,32 +4,45 @@ title: LoadAccountsTaskTask
 pagination_label: LoadAccountsTaskTask
 sidebar_label: LoadAccountsTaskTask
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'LoadAccountsTaskTask', 'BetaLoadAccountsTaskTask'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'LoadAccountsTaskTask',
+    'BetaLoadAccountsTaskTask',
+  ]
 slug: /tools/sdk/python/beta/models/load-accounts-task-task
-tags: ['SDK', 'Software Development Kit', 'LoadAccountsTaskTask', 'BetaLoadAccountsTaskTask']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'LoadAccountsTaskTask',
+    'BetaLoadAccountsTaskTask',
+  ]
 ---
 
 # LoadAccountsTaskTask
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | System-generated unique ID of the task this taskStatus represents | [optional] 
-**type** | **str** | Type of task this task represents | [optional] 
-**name** | **str** | The name of the aggregation process | [optional] 
-**description** | **str** | The description of the task | [optional] 
-**launcher** | **str** | The user who initiated the task | [optional] 
-**created** | **datetime** | The Task creation date | [optional] 
-**launched** | **datetime** | The task start date | [optional] 
-**completed** | **datetime** | The task completion date | [optional] 
-**completion_status** |  **Enum** [  'SUCCESS',    'WARNING',    'ERROR',    'TERMINATED',    'TEMP_ERROR' ] | Task completion status. | [optional] 
-**parent_name** | **str** | Name of the parent task if exists. | [optional] 
-**messages** | [**[]LoadAccountsTaskTaskMessagesInner**](load-accounts-task-task-messages-inner) | List of the messages dedicated to the report.  From task definition perspective here usually should be warnings or errors. | [optional] 
-**progress** | **str** | Current task state. | [optional] 
-**attributes** | [**LoadAccountsTaskTaskAttributes**](load-accounts-task-task-attributes) |  | [optional] 
-**returns** | [**[]LoadAccountsTaskTaskReturnsInner**](load-accounts-task-task-returns-inner) | Return values from the task | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | System-generated unique ID of the task this taskStatus represents | [optional] |
+| **type** | **str** | Type of task this task represents | [optional] |
+| **name** | **str** | The name of the aggregation process | [optional] |
+| **description** | **str** | The description of the task | [optional] |
+| **launcher** | **str** | The user who initiated the task | [optional] |
+| **created** | **datetime** | The Task creation date | [optional] |
+| **launched** | **datetime** | The task start date | [optional] |
+| **completed** | **datetime** | The task completion date | [optional] |
+| **completion_status** | **Enum** [ 'SUCCESS', 'WARNING', 'ERROR', 'TERMINATED', 'TEMP_ERROR' ] | Task completion status. | [optional] |
+| **parent_name** | **str** | Name of the parent task if exists. | [optional] |
+| **messages** | [**[]LoadAccountsTaskTaskMessagesInner**](load-accounts-task-task-messages-inner) | List of the messages dedicated to the report. From task definition perspective here usually should be warnings or errors. | [optional] |
+| **progress** | **str** | Current task state. | [optional] |
+| **attributes** | [**LoadAccountsTaskTaskAttributes**](load-accounts-task-task-attributes) |  | [optional] |
+| **returns** | [**[]LoadAccountsTaskTaskReturnsInner**](load-accounts-task-task-returns-inner) | Return values from the task | [optional] |
+
 }
 
 ## Example
@@ -59,5 +72,5 @@ returns=[
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

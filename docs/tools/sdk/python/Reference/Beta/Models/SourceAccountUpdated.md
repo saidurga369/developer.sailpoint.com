@@ -4,26 +4,39 @@ title: SourceAccountUpdated
 pagination_label: SourceAccountUpdated
 sidebar_label: SourceAccountUpdated
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SourceAccountUpdated', 'BetaSourceAccountUpdated'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'SourceAccountUpdated',
+    'BetaSourceAccountUpdated',
+  ]
 slug: /tools/sdk/python/beta/models/source-account-updated
-tags: ['SDK', 'Software Development Kit', 'SourceAccountUpdated', 'BetaSourceAccountUpdated']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SourceAccountUpdated',
+    'BetaSourceAccountUpdated',
+  ]
 ---
 
 # SourceAccountUpdated
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**uuid** | **str** | Identity's universal unique identifier (UUID) on the source. The source system generates the UUID. | [required]
-**id** | **str** | SailPoint generated unique identifier. | [required]
-**native_identifier** | **str** | Account's unique ID on the source. | [required]
-**source_id** | **str** | Source ID. | [required]
-**source_name** | **str** | Source name. | [required]
-**identity_id** | **str** | ID of the identity correlated with the account. | [required]
-**identity_name** | **str** | Name of the identity correlated with the account. | [required]
-**attributes** | **map[string]object** | Account attributes. The attributes' contents depend on the source's account schema. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **uuid** | **str** | Identity's universal unique identifier (UUID) on the source. The source system generates the UUID. | [required] |
+| **id** | **str** | SailPoint generated unique identifier. | [required] |
+| **native_identifier** | **str** | Account's unique ID on the source. | [required] |
+| **source_id** | **str** | Source ID. | [required] |
+| **source_name** | **str** | Source name. | [required] |
+| **identity_id** | **str** | ID of the identity correlated with the account. | [required] |
+| **identity_name** | **str** | Name of the identity correlated with the account. | [required] |
+| **attributes** | **map[string]object** | Account attributes. The attributes' contents depend on the source's account schema. | [required] |
+
 }
 
 ## Example
@@ -43,5 +56,5 @@ attributes={firstname=John, lastname=Doe, email=john.doe@gmail.com, department=S
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

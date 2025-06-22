@@ -4,23 +4,22 @@ title: Tenant
 pagination_label: Tenant
 sidebar_label: Tenant
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Tenant', 'V2025Tenant'] 
+keywords: ['go', 'Golang', 'sdk', 'Tenant', 'V2025Tenant']
 slug: /tools/sdk/go/v2025/methods/tenant
 tags: ['SDK', 'Software Development Kit', 'Tenant', 'V2025Tenant']
 ---
 
 # TenantAPI
-  API for reading tenant details. 
-All URIs are relative to *https://sailpoint.api.identitynow.com/v2025*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**get-tenant**](#get-tenant) | **Get** `/tenant` | Get tenant information.
+API for reading tenant details. All URIs are relative to *https://sailpoint.api.identitynow.com/v2025*
 
+| Method                        | HTTP request      | Description             |
+| ----------------------------- | ----------------- | ----------------------- |
+| [**get-tenant**](#get-tenant) | **Get** `/tenant` | Get tenant information. |
 
 ## get-tenant
-Get tenant information.
-This rest endpoint can be used to retrieve tenant details.
+
+Get tenant information. This rest endpoint can be used to retrieve tenant details.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/get-tenant)
 
@@ -31,7 +30,6 @@ This endpoint does not need any parameter.
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetTenantRequest struct via the builder pattern
-
 
 ### Return type
 
@@ -51,14 +49,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -74,4 +72,3 @@ func main() {
 ```
 
 [[Back to top]](#)
-

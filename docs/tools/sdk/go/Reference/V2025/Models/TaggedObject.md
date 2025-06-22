@@ -4,7 +4,7 @@ title: TaggedObject
 pagination_label: TaggedObject
 sidebar_label: TaggedObject
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'TaggedObject', 'V2025TaggedObject'] 
+keywords: ['go', 'Golang', 'sdk', 'TaggedObject', 'V2025TaggedObject']
 slug: /tools/sdk/go/v2025/models/tagged-object
 tags: ['SDK', 'Software Development Kit', 'TaggedObject', 'V2025TaggedObject']
 ---
@@ -13,10 +13,10 @@ tags: ['SDK', 'Software Development Kit', 'TaggedObject', 'V2025TaggedObject']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ObjectRef** | Pointer to [**TaggedObjectDto**](tagged-object-dto) |  | [optional] 
-**Tags** | Pointer to **[]string** | Labels to be applied to an Object | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ObjectRef** | Pointer to [**TaggedObjectDto**](tagged-object-dto) |  | [optional] |
+| **Tags** | Pointer to **[]string** | Labels to be applied to an Object | [optional] |
 
 ## Methods
 
@@ -24,18 +24,13 @@ Name | Type | Description | Notes
 
 `func NewTaggedObject() *TaggedObject`
 
-NewTaggedObject instantiates a new TaggedObject object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewTaggedObject instantiates a new TaggedObject object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewTaggedObjectWithDefaults
 
 `func NewTaggedObjectWithDefaults() *TaggedObject`
 
-NewTaggedObjectWithDefaults instantiates a new TaggedObject object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewTaggedObjectWithDefaults instantiates a new TaggedObject object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetObjectRef
 
@@ -47,8 +42,7 @@ GetObjectRef returns the ObjectRef field if non-nil, zero value otherwise.
 
 `func (o *TaggedObject) GetObjectRefOk() (*TaggedObjectDto, bool)`
 
-GetObjectRefOk returns a tuple with the ObjectRef field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetObjectRefOk returns a tuple with the ObjectRef field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetObjectRef
 
@@ -72,8 +66,7 @@ GetTags returns the Tags field if non-nil, zero value otherwise.
 
 `func (o *TaggedObject) GetTagsOk() (*[]string, bool)`
 
-GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTags
 
@@ -86,5 +79,3 @@ SetTags sets Tags field to given value.
 `func (o *TaggedObject) HasTags() bool`
 
 HasTags returns a boolean if a field has been set.
-
-

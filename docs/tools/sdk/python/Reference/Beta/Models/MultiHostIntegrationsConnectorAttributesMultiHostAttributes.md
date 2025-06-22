@@ -4,9 +4,22 @@ title: MultiHostIntegrationsConnectorAttributesMultiHostAttributes
 pagination_label: MultiHostIntegrationsConnectorAttributesMultiHostAttributes
 sidebar_label: MultiHostIntegrationsConnectorAttributesMultiHostAttributes
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'MultiHostIntegrationsConnectorAttributesMultiHostAttributes', 'BetaMultiHostIntegrationsConnectorAttributesMultiHostAttributes'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'MultiHostIntegrationsConnectorAttributesMultiHostAttributes',
+    'BetaMultiHostIntegrationsConnectorAttributesMultiHostAttributes',
+  ]
 slug: /tools/sdk/python/beta/models/multi-host-integrations-connector-attributes-multi-host-attributes
-tags: ['SDK', 'Software Development Kit', 'MultiHostIntegrationsConnectorAttributesMultiHostAttributes', 'BetaMultiHostIntegrationsConnectorAttributesMultiHostAttributes']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'MultiHostIntegrationsConnectorAttributesMultiHostAttributes',
+    'BetaMultiHostIntegrationsConnectorAttributesMultiHostAttributes',
+  ]
 ---
 
 # MultiHostIntegrationsConnectorAttributesMultiHostAttributes
@@ -15,12 +28,13 @@ Attributes of Multi-Host Integration
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**password** | **str** | Password. | [optional] 
-**connector_files** | **str** | Connector file. | [optional] 
-**auth_type** | **str** | Authentication type. | [optional] 
-**user** | **str** | Username. | [optional] 
+| Name                | Type    | Description          | Notes      |
+| ------------------- | ------- | -------------------- | ---------- |
+| **password**        | **str** | Password.            | [optional] |
+| **connector_files** | **str** | Connector file.      | [optional] |
+| **auth_type**       | **str** | Authentication type. | [optional] |
+| **user**            | **str** | Username.            | [optional] |
+
 }
 
 ## Example
@@ -36,5 +50,5 @@ user='My Username'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

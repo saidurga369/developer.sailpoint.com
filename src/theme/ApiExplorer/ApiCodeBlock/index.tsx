@@ -1,9 +1,9 @@
-import React, { isValidElement, ReactNode } from "react";
+import React, {isValidElement, ReactNode} from 'react';
 
-import { CodeBlockProps } from "@docusaurus/theme-common/internal";
-import useIsBrowser from "@docusaurus/useIsBrowser";
-import ElementContent from "@theme/ApiExplorer/ApiCodeBlock/Content/Element";
-import StringContent from "@theme/ApiExplorer/ApiCodeBlock/Content/String";
+import {CodeBlockProps} from '@docusaurus/theme-common/internal';
+import useIsBrowser from '@docusaurus/useIsBrowser';
+import ElementContent from '@theme/ApiExplorer/ApiCodeBlock/Content/Element';
+import StringContent from '@theme/ApiExplorer/ApiCodeBlock/Content/String';
 
 /**
  * Best attempt to make the children a plain string so it is copyable. If there
@@ -16,7 +16,7 @@ function maybeStringifyChildren(children: ReactNode): ReactNode {
     return children;
   }
   // The children is now guaranteed to be one/more plain strings
-  return Array.isArray(children) ? children.join("") : (children as string);
+  return Array.isArray(children) ? children.join('') : (children as string);
 }
 export default function ApiCodeBlock({
   children: rawChildren,
@@ -29,7 +29,7 @@ export default function ApiCodeBlock({
   const isBrowser = useIsBrowser();
   const children = maybeStringifyChildren(rawChildren);
   const CodeBlockComp =
-    typeof children === "string" ? StringContent : ElementContent;
+    typeof children === 'string' ? StringContent : ElementContent;
   return (
     <CodeBlockComp key={String(isBrowser)} {...props}>
       {children as string}

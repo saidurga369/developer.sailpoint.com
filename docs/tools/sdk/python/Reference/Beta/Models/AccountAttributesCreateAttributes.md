@@ -4,9 +4,22 @@ title: AccountAttributesCreateAttributes
 pagination_label: AccountAttributesCreateAttributes
 sidebar_label: AccountAttributesCreateAttributes
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccountAttributesCreateAttributes', 'BetaAccountAttributesCreateAttributes'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccountAttributesCreateAttributes',
+    'BetaAccountAttributesCreateAttributes',
+  ]
 slug: /tools/sdk/python/beta/models/account-attributes-create-attributes
-tags: ['SDK', 'Software Development Kit', 'AccountAttributesCreateAttributes', 'BetaAccountAttributesCreateAttributes']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountAttributesCreateAttributes',
+    'BetaAccountAttributesCreateAttributes',
+  ]
 ---
 
 # AccountAttributesCreateAttributes
@@ -15,9 +28,10 @@ The schema attribute values for the account
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**source_id** | **str** | Target source to create an account | [required]
+| Name          | Type    | Description                        | Notes      |
+| ------------- | ------- | ---------------------------------- | ---------- |
+| **source_id** | **str** | Target source to create an account | [required] |
+
 }
 
 ## Example
@@ -30,5 +44,5 @@ source_id='34bfcbe116c9407464af37acbaf7a4dc'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

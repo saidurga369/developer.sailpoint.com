@@ -4,46 +4,42 @@ title: ManagedClients
 pagination_label: ManagedClients
 sidebar_label: ManagedClients
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ManagedClients', 'V2025ManagedClients'] 
+keywords: ['go', 'Golang', 'sdk', 'ManagedClients', 'V2025ManagedClients']
 slug: /tools/sdk/go/v2025/methods/managed-clients
-tags: ['SDK', 'Software Development Kit', 'ManagedClients', 'V2025ManagedClients']
+tags:
+  ['SDK', 'Software Development Kit', 'ManagedClients', 'V2025ManagedClients']
 ---
 
 # ManagedClientsAPI
-  Use this API to implement managed client functionality. 
-With this functionality in place, administrators can modify and delete existing managed clients, create new ones, and view and make changes to their log configurations.
- 
+
+Use this API to implement managed client functionality. With this functionality in place, administrators can modify and delete existing managed clients, create new ones, and view and make changes to their log configurations.
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/v2025*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create-managed-client**](#create-managed-client) | **Post** `/managed-clients` | Create managed client
-[**delete-managed-client**](#delete-managed-client) | **Delete** `/managed-clients/{id}` | Delete managed client
-[**get-managed-client**](#get-managed-client) | **Get** `/managed-clients/{id}` | Get managed client
-[**get-managed-client-status**](#get-managed-client-status) | **Get** `/managed-clients/{id}/status` | Get managed client status
-[**get-managed-clients**](#get-managed-clients) | **Get** `/managed-clients` | Get managed clients
-[**update-managed-client**](#update-managed-client) | **Patch** `/managed-clients/{id}` | Update managed client
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**create-managed-client**](#create-managed-client) | **Post** `/managed-clients` | Create managed client |
+| [**delete-managed-client**](#delete-managed-client) | **Delete** `/managed-clients/{id}` | Delete managed client |
+| [**get-managed-client**](#get-managed-client) | **Get** `/managed-clients/{id}` | Get managed client |
+| [**get-managed-client-status**](#get-managed-client-status) | **Get** `/managed-clients/{id}/status` | Get managed client status |
+| [**get-managed-clients**](#get-managed-clients) | **Get** `/managed-clients` | Get managed clients |
+| [**update-managed-client**](#update-managed-client) | **Patch** `/managed-clients/{id}` | Update managed client |
 
 ## create-managed-client
-Create managed client
-Create a new managed client.
-The API returns a result that includes the managed client ID.
+
+Create managed client Create a new managed client. The API returns a result that includes the managed client ID.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/create-managed-client)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCreateManagedClientRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **managedClientRequest** | [**ManagedClientRequest**](../models/managed-client-request) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **managedClientRequest** | [**ManagedClientRequest**](../models/managed-client-request) |  |
 
 ### Return type
 
@@ -74,14 +70,14 @@ func main() {
           "description" : "A short description of the ManagedClient",
           "clusterId" : "aClusterId",
           "type" : "VA"
-        }`) // ManagedClientRequest | 
+        }`) // ManagedClientRequest |
 
     var managedClientRequest v2025.ManagedClientRequest
     if err := json.Unmarshal(managedclientrequest, &managedClientRequest); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -99,31 +95,28 @@ func main() {
 [[Back to top]](#)
 
 ## delete-managed-client
-Delete managed client
-Delete an existing managed client.
+
+Delete managed client Delete an existing managed client.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/delete-managed-client)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Managed client ID. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Managed client ID. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteManagedClientRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -139,15 +132,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `4440278c-0ce2-41ee-a0a9-f5cfd5e8d3b7` // string | Managed client ID. # string | Managed client ID.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -157,34 +150,31 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `ManagedClientsAPI.DeleteManagedClient``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## get-managed-client
-Get managed client
-Get managed client by ID. 
+
+Get managed client Get managed client by ID.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/get-managed-client)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Managed client ID. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Managed client ID. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetManagedClientRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -204,15 +194,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `4440278c-0ce2-41ee-a0a9-f5cfd5e8d3b7` // string | Managed client ID. # string | Managed client ID.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -230,28 +220,26 @@ func main() {
 [[Back to top]](#)
 
 ## get-managed-client-status
-Get managed client status
-Get a managed client's status, using its ID.
+
+Get managed client status Get a managed client's status, using its ID.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/get-managed-client-status)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Managed client ID to get status for. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Managed client ID to get status for. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetManagedClientStatusRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **type_** | [**ManagedClientType**](../models/managed-client-type) | Managed client type to get status for. | 
+**type\_** | [**ManagedClientType**](../models/managed-client-type) | Managed client type to get status for. |
 
 ### Return type
 
@@ -271,8 +259,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -280,7 +268,7 @@ func main() {
     id := `aClientId` // string | Managed client ID to get status for. # string | Managed client ID to get status for.
     type_ :=  // ManagedClientType | Managed client type to get status for. # ManagedClientType | Managed client type to get status for.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -298,26 +286,23 @@ func main() {
 [[Back to top]](#)
 
 ## get-managed-clients
-Get managed clients
-List managed clients.
+
+Get managed clients List managed clients.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/get-managed-clients)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetManagedClientsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq*  **name**: *eq*  **clientId**: *eq*  **clusterId**: *eq* | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
+| **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false] |
+| **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **id**: _eq_ **name**: _eq_ **clientId**: _eq_ **clusterId**: _eq_ |
 
 ### Return type
 
@@ -337,8 +322,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -348,7 +333,7 @@ func main() {
     count := true // bool | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to false) # bool | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to false)
     filters := `name eq "client name"` // string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq*  **name**: *eq*  **clientId**: *eq*  **clusterId**: *eq* (optional) # string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq*  **name**: *eq*  **clientId**: *eq*  **clusterId**: *eq* (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -366,28 +351,26 @@ func main() {
 [[Back to top]](#)
 
 ## update-managed-client
-Update managed client
-Update an existing managed client.
+
+Update managed client Update an existing managed client.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/update-managed-client)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Managed client ID. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Managed client ID. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiUpdateManagedClientRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **jsonPatchOperation** | [**[]JsonPatchOperation**](../models/json-patch-operation) | JSONPatch payload used to update the object. | 
+**jsonPatchOperation** | [**[]JsonPatchOperation**](../models/json-patch-operation) | JSONPatch payload used to update the object. |
 
 ### Return type
 
@@ -421,7 +404,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -437,4 +420,3 @@ func main() {
 ```
 
 [[Back to top]](#)
-

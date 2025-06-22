@@ -4,27 +4,40 @@ title: RequestedAccountRef
 pagination_label: RequestedAccountRef
 sidebar_label: RequestedAccountRef
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'RequestedAccountRef', 'BetaRequestedAccountRef'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'RequestedAccountRef',
+    'BetaRequestedAccountRef',
+  ]
 slug: /tools/sdk/powershell/beta/models/requested-account-ref
-tags: ['SDK', 'Software Development Kit', 'RequestedAccountRef', 'BetaRequestedAccountRef']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RequestedAccountRef',
+    'BetaRequestedAccountRef',
+  ]
 ---
-
 
 # RequestedAccountRef
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | **String** | Display name of the account for the user | [optional] 
-**Type** | [**DtoType**](dto-type) |  | [optional] 
-**AccountUuid** | **String** | The uuid for the account | [optional] 
-**AccountId** | **String** | The native identity for the account | [optional] 
-**SourceName** | **String** | Display name of the source for the account | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | **String** | Display name of the account for the user | [optional] |
+| **Type** | [**DtoType**](dto-type) |  | [optional] |
+| **AccountUuid** | **String** | The uuid for the account | [optional] |
+| **AccountId** | **String** | The native identity for the account | [optional] |
+| **SourceName** | **String** | Display name of the source for the account | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $RequestedAccountRef = Initialize-BetaRequestedAccountRef  -Name Glen.067da3248e914 `
  -Type null `
@@ -34,10 +47,9 @@ $RequestedAccountRef = Initialize-BetaRequestedAccountRef  -Name Glen.067da3248e
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $RequestedAccountRef | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

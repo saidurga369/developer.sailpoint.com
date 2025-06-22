@@ -4,21 +4,34 @@ title: SearchExportReportArguments
 pagination_label: SearchExportReportArguments
 sidebar_label: SearchExportReportArguments
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SearchExportReportArguments', 'SearchExportReportArguments'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'SearchExportReportArguments',
+    'SearchExportReportArguments',
+  ]
 slug: /tools/sdk/go/v3/models/search-export-report-arguments
-tags: ['SDK', 'Software Development Kit', 'SearchExportReportArguments', 'SearchExportReportArguments']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SearchExportReportArguments',
+    'SearchExportReportArguments',
+  ]
 ---
 
 # SearchExportReportArguments
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Indices** | Pointer to [**[]Index**](index) | The names of the Elasticsearch indices in which to search. If none are provided, then all indices will be searched. | [optional] 
-**Query** | **string** | The query using the Elasticsearch [Query String Query](https://www.elastic.co/guide/en/elasticsearch/reference/5.2/query-dsl-query-string-query.html#query-string) syntax from the Query DSL extended by SailPoint to support Nested queries. | 
-**Columns** | Pointer to **string** | Comma separated string consisting of technical attribute names of fields to include in report.  Use `access.spread`, `apps.spread`, `accounts.spread` to include respective identity access details.  Use `accessProfiles.spread` to unclude access profile details.  Use `entitlements.spread` to include entitlement details.  | [optional] 
-**Sort** | Pointer to **[]string** | The fields to be used to sort the search results. Use + or - to specify the sort direction. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Indices** | Pointer to [**[]Index**](index) | The names of the Elasticsearch indices in which to search. If none are provided, then all indices will be searched. | [optional] |
+| **Query** | **string** | The query using the Elasticsearch [Query String Query](https://www.elastic.co/guide/en/elasticsearch/reference/5.2/query-dsl-query-string-query.html#query-string) syntax from the Query DSL extended by SailPoint to support Nested queries. |
+| **Columns** | Pointer to **string** | Comma separated string consisting of technical attribute names of fields to include in report. Use `access.spread`, `apps.spread`, `accounts.spread` to include respective identity access details. Use `accessProfiles.spread` to unclude access profile details. Use `entitlements.spread` to include entitlement details. | [optional] |
+| **Sort** | Pointer to **[]string** | The fields to be used to sort the search results. Use + or - to specify the sort direction. | [optional] |
 
 ## Methods
 
@@ -26,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewSearchExportReportArguments(query string, ) *SearchExportReportArguments`
 
-NewSearchExportReportArguments instantiates a new SearchExportReportArguments object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSearchExportReportArguments instantiates a new SearchExportReportArguments object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSearchExportReportArgumentsWithDefaults
 
 `func NewSearchExportReportArgumentsWithDefaults() *SearchExportReportArguments`
 
-NewSearchExportReportArgumentsWithDefaults instantiates a new SearchExportReportArguments object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSearchExportReportArgumentsWithDefaults instantiates a new SearchExportReportArguments object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetIndices
 
@@ -49,8 +57,7 @@ GetIndices returns the Indices field if non-nil, zero value otherwise.
 
 `func (o *SearchExportReportArguments) GetIndicesOk() (*[]Index, bool)`
 
-GetIndicesOk returns a tuple with the Indices field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIndicesOk returns a tuple with the Indices field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIndices
 
@@ -74,15 +81,13 @@ GetQuery returns the Query field if non-nil, zero value otherwise.
 
 `func (o *SearchExportReportArguments) GetQueryOk() (*string, bool)`
 
-GetQueryOk returns a tuple with the Query field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetQueryOk returns a tuple with the Query field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetQuery
 
 `func (o *SearchExportReportArguments) SetQuery(v string)`
 
 SetQuery sets Query field to given value.
-
 
 ### GetColumns
 
@@ -94,8 +99,7 @@ GetColumns returns the Columns field if non-nil, zero value otherwise.
 
 `func (o *SearchExportReportArguments) GetColumnsOk() (*string, bool)`
 
-GetColumnsOk returns a tuple with the Columns field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetColumnsOk returns a tuple with the Columns field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetColumns
 
@@ -119,8 +123,7 @@ GetSort returns the Sort field if non-nil, zero value otherwise.
 
 `func (o *SearchExportReportArguments) GetSortOk() (*[]string, bool)`
 
-GetSortOk returns a tuple with the Sort field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSortOk returns a tuple with the Sort field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSort
 
@@ -133,5 +136,3 @@ SetSort sets Sort field to given value.
 `func (o *SearchExportReportArguments) HasSort() bool`
 
 HasSort returns a boolean if a field has been set.
-
-

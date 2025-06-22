@@ -4,30 +4,30 @@ title: Trigger
 pagination_label: Trigger
 sidebar_label: Trigger
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'Trigger', 'V2025Trigger'] 
+keywords: ['powershell', 'PowerShell', 'sdk', 'Trigger', 'V2025Trigger']
 slug: /tools/sdk/powershell/v2025/models/trigger
 tags: ['SDK', 'Software Development Kit', 'Trigger', 'V2025Trigger']
 ---
-
 
 # Trigger
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | Unique identifier of the trigger. | [required]
-**Name** | **String** | Trigger Name. | [required]
-**Type** | [**TriggerType**](trigger-type) |  | [required]
-**Description** | **String** | Trigger Description. | [optional] 
-**InputSchema** | **String** | The JSON schema of the payload that will be sent by the trigger to the subscribed service. | [required]
-**ExampleInput** | [**TriggerExampleInput**](trigger-example-input) |  | [required]
-**OutputSchema** | **String** | The JSON schema of the response that will be sent by the subscribed service to the trigger in response to an event.  This only applies to a trigger type of `REQUEST_RESPONSE`. | [optional] 
-**ExampleOutput** | [**TriggerExampleOutput**](trigger-example-output) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | Unique identifier of the trigger. | [required] |
+| **Name** | **String** | Trigger Name. | [required] |
+| **Type** | [**TriggerType**](trigger-type) |  | [required] |
+| **Description** | **String** | Trigger Description. | [optional] |
+| **InputSchema** | **String** | The JSON schema of the payload that will be sent by the trigger to the subscribed service. | [required] |
+| **ExampleInput** | [**TriggerExampleInput**](trigger-example-input) |  | [required] |
+| **OutputSchema** | **String** | The JSON schema of the response that will be sent by the subscribed service to the trigger in response to an event. This only applies to a trigger type of `REQUEST_RESPONSE`. | [optional] |
+| **ExampleOutput** | [**TriggerExampleOutput**](trigger-example-output) |  | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $Trigger = Initialize-V2025Trigger  -Id idn:access-request-dynamic-approver `
  -Name Access Request Dynamic Approver `
@@ -40,10 +40,9 @@ $Trigger = Initialize-V2025Trigger  -Id idn:access-request-dynamic-approver `
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $Trigger | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

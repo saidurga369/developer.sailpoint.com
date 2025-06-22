@@ -4,9 +4,16 @@ title: ProvisioningConfig
 pagination_label: ProvisioningConfig
 sidebar_label: ProvisioningConfig
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ProvisioningConfig', 'ProvisioningConfig'] 
+keywords:
+  ['python', 'Python', 'sdk', 'ProvisioningConfig', 'ProvisioningConfig']
 slug: /tools/sdk/python/v3/models/provisioning-config
-tags: ['SDK', 'Software Development Kit', 'ProvisioningConfig', 'ProvisioningConfig']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ProvisioningConfig',
+    'ProvisioningConfig',
+  ]
 ---
 
 # ProvisioningConfig
@@ -15,13 +22,14 @@ Specification of a Service Desk integration provisioning configuration.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**universal_manager** | **bool** | Specifies whether this configuration is used to manage provisioning requests for all sources from the org.  If true, no managedResourceRefs are allowed. | [optional] [readonly] [default to False]
-**managed_resource_refs** | [**[]ServiceDeskSource**](service-desk-source) | References to sources for the Service Desk integration template.  May only be specified if universalManager is false. | [optional] 
-**plan_initializer_script** | [**ProvisioningConfigPlanInitializerScript**](provisioning-config-plan-initializer-script) |  | [optional] 
-**no_provisioning_requests** | **bool** | Name of an attribute that when true disables the saving of ProvisioningRequest objects whenever plans are sent through this integration. | [optional] [default to False]
-**provisioning_request_expiration** | **int** | When saving pending requests is enabled, this defines the number of hours the request is allowed to live before it is considered expired and no longer affects plan compilation. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **universal_manager** | **bool** | Specifies whether this configuration is used to manage provisioning requests for all sources from the org. If true, no managedResourceRefs are allowed. | [optional] [readonly] [default to False] |
+| **managed_resource_refs** | [**[]ServiceDeskSource**](service-desk-source) | References to sources for the Service Desk integration template. May only be specified if universalManager is false. | [optional] |
+| **plan_initializer_script** | [**ProvisioningConfigPlanInitializerScript**](provisioning-config-plan-initializer-script) |  | [optional] |
+| **no_provisioning_requests** | **bool** | Name of an attribute that when true disables the saving of ProvisioningRequest objects whenever plans are sent through this integration. | [optional] [default to False] |
+| **provisioning_request_expiration** | **int** | When saving pending requests is enabled, this defines the number of hours the request is allowed to live before it is considered expired and no longer affects plan compilation. | [optional] |
+
 }
 
 ## Example
@@ -40,5 +48,5 @@ provisioning_request_expiration=7
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

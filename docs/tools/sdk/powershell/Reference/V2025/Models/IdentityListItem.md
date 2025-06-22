@@ -4,28 +4,41 @@ title: IdentityListItem
 pagination_label: IdentityListItem
 sidebar_label: IdentityListItem
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'IdentityListItem', 'V2025IdentityListItem'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'IdentityListItem',
+    'V2025IdentityListItem',
+  ]
 slug: /tools/sdk/powershell/v2025/models/identity-list-item
-tags: ['SDK', 'Software Development Kit', 'IdentityListItem', 'V2025IdentityListItem']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityListItem',
+    'V2025IdentityListItem',
+  ]
 ---
-
 
 # IdentityListItem
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | the identity ID | [optional] 
-**DisplayName** | **String** | the display name of the identity | [optional] 
-**FirstName** | **String** | the first name of the identity | [optional] 
-**LastName** | **String** | the last name of the identity | [optional] 
-**Active** | **Boolean** | indicates if an identity is active or not | [optional] [default to $true]
-**DeletedDate** | **String** | the date when the identity was deleted | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | the identity ID | [optional] |
+| **DisplayName** | **String** | the display name of the identity | [optional] |
+| **FirstName** | **String** | the first name of the identity | [optional] |
+| **LastName** | **String** | the last name of the identity | [optional] |
+| **Active** | **Boolean** | indicates if an identity is active or not | [optional] [default to $true] |
+| **DeletedDate** | **String** | the date when the identity was deleted | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $IdentityListItem = Initialize-V2025IdentityListItem  -Id bc693f07e7b645539626c25954c58554 `
  -DisplayName Adam Zampa `
@@ -36,10 +49,9 @@ $IdentityListItem = Initialize-V2025IdentityListItem  -Id bc693f07e7b645539626c2
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $IdentityListItem | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

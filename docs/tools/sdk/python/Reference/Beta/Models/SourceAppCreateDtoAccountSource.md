@@ -4,21 +4,34 @@ title: SourceAppCreateDtoAccountSource
 pagination_label: SourceAppCreateDtoAccountSource
 sidebar_label: SourceAppCreateDtoAccountSource
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SourceAppCreateDtoAccountSource', 'BetaSourceAppCreateDtoAccountSource'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'SourceAppCreateDtoAccountSource',
+    'BetaSourceAppCreateDtoAccountSource',
+  ]
 slug: /tools/sdk/python/beta/models/source-app-create-dto-account-source
-tags: ['SDK', 'Software Development Kit', 'SourceAppCreateDtoAccountSource', 'BetaSourceAppCreateDtoAccountSource']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SourceAppCreateDtoAccountSource',
+    'BetaSourceAppCreateDtoAccountSource',
+  ]
 ---
 
 # SourceAppCreateDtoAccountSource
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The source ID | [required]
-**type** | **str** | The source type, will always be \"SOURCE\" | [optional] 
-**name** | **str** | The source name | [optional] 
+| Name     | Type    | Description                                | Notes      |
+| -------- | ------- | ------------------------------------------ | ---------- |
+| **id**   | **str** | The source ID                              | [required] |
+| **type** | **str** | The source type, will always be \"SOURCE\" | [optional] |
+| **name** | **str** | The source name                            | [optional] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ name='ODS-AD-Source'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

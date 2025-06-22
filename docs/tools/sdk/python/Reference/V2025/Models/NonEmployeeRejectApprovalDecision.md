@@ -4,19 +4,32 @@ title: NonEmployeeRejectApprovalDecision
 pagination_label: NonEmployeeRejectApprovalDecision
 sidebar_label: NonEmployeeRejectApprovalDecision
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'NonEmployeeRejectApprovalDecision', 'V2025NonEmployeeRejectApprovalDecision'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'NonEmployeeRejectApprovalDecision',
+    'V2025NonEmployeeRejectApprovalDecision',
+  ]
 slug: /tools/sdk/python/v2025/models/non-employee-reject-approval-decision
-tags: ['SDK', 'Software Development Kit', 'NonEmployeeRejectApprovalDecision', 'V2025NonEmployeeRejectApprovalDecision']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NonEmployeeRejectApprovalDecision',
+    'V2025NonEmployeeRejectApprovalDecision',
+  ]
 ---
 
 # NonEmployeeRejectApprovalDecision
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**comment** | **str** | Comment on the approval item. | [required]
+| Name        | Type    | Description                   | Notes      |
+| ----------- | ------- | ----------------------------- | ---------- |
+| **comment** | **str** | Comment on the approval item. | [required] |
+
 }
 
 ## Example
@@ -29,5 +42,5 @@ comment='approved'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

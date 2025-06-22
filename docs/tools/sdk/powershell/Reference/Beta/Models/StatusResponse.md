@@ -4,27 +4,29 @@ title: StatusResponse
 pagination_label: StatusResponse
 sidebar_label: StatusResponse
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'StatusResponse', 'BetaStatusResponse'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'StatusResponse', 'BetaStatusResponse']
 slug: /tools/sdk/powershell/beta/models/status-response
-tags: ['SDK', 'Software Development Kit', 'StatusResponse', 'BetaStatusResponse']
+tags:
+  ['SDK', 'Software Development Kit', 'StatusResponse', 'BetaStatusResponse']
 ---
-
 
 # StatusResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | ID of the source | [optional] [readonly] 
-**Name** | **String** | Name of the source | [optional] [readonly] 
-**Status** |  **Enum** [  "SUCCESS",    "FAILURE" ] | The status of the health check. | [optional] [readonly] 
-**ElapsedMillis** | **Int32** | The number of milliseconds spent on the entire request. | [optional] [readonly] 
-**Details** | [**SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | The document contains the results of the health check. The schema of this document depends on the type of source used.  | [optional] [readonly] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | ID of the source | [optional] [readonly] |
+| **Name** | **String** | Name of the source | [optional] [readonly] |
+| **Status** | **Enum** [ "SUCCESS", "FAILURE" ] | The status of the health check. | [optional] [readonly] |
+| **ElapsedMillis** | **Int32** | The number of milliseconds spent on the entire request. | [optional] [readonly] |
+| **Details** | [**SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | The document contains the results of the health check. The schema of this document depends on the type of source used. | [optional] [readonly] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $StatusResponse = Initialize-BetaStatusResponse  -Id 2c91808568c529c60168cca6f90c1313 `
  -Name ODS-AD-Test [source-999999] `
@@ -34,10 +36,9 @@ $StatusResponse = Initialize-BetaStatusResponse  -Id 2c91808568c529c60168cca6f90
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $StatusResponse | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

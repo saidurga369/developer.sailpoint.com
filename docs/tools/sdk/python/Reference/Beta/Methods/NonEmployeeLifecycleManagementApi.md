@@ -4,111 +4,117 @@ title: Non_Employee_Lifecycle_Management
 pagination_label: Non_Employee_Lifecycle_Management
 sidebar_label: Non_Employee_Lifecycle_Management
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'Non_Employee_Lifecycle_Management', 'BetaNon_Employee_Lifecycle_Management'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'Non_Employee_Lifecycle_Management',
+    'BetaNon_Employee_Lifecycle_Management',
+  ]
 slug: /tools/sdk/python/beta/methods/non-employee-lifecycle-management
-tags: ['SDK', 'Software Development Kit', 'Non_Employee_Lifecycle_Management', 'BetaNon_Employee_Lifecycle_Management']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'Non_Employee_Lifecycle_Management',
+    'BetaNon_Employee_Lifecycle_Management',
+  ]
 ---
 
 # sailpoint.beta.NonEmployeeLifecycleManagementApi
-  Use this API to implement non-employee lifecycle management functionality.
-With this functionality in place, administrators can create non-employee records and configure them for use in their organizations.
-This allows organizations to provide secure access to non-employees and control that access.
 
-The &#39;non-employee&#39; term refers to any consultant, contractor, intern, or other user in an organization who is not a full-time permanent employee.
-Organizations can track non-employees&#39; access and activity in Identity Security Cloud by creating and maintaining non-employee sources.
-Organizations can have a maximum of 50 non-employee sources.
+Use this API to implement non-employee lifecycle management functionality. With this functionality in place, administrators can create non-employee records and configure them for use in their organizations. This allows organizations to provide secure access to non-employees and control that access.
+
+The &#39;non-employee&#39; term refers to any consultant, contractor, intern, or other user in an organization who is not a full-time permanent employee. Organizations can track non-employees&#39; access and activity in Identity Security Cloud by creating and maintaining non-employee sources. Organizations can have a maximum of 50 non-employee sources.
 
 By using SailPoint&#39;s Non-Employee Lifecycle Management functionality, you agree to the following:
 
-- SailPoint is not responsible for storing sensitive data.
-You may only add account attributes to non-employee identities that are necessary for business operations and are consistent with your contractual limitations on data that may be sent or stored in Identity Security Cloud.
+- SailPoint is not responsible for storing sensitive data. You may only add account attributes to non-employee identities that are necessary for business operations and are consistent with your contractual limitations on data that may be sent or stored in Identity Security Cloud.
 
 - You are responsible for regularly downloading your list of non-employee accounts for all the sources you create and storing this list of accounts in a managed location to maintain an authoritative system of record and backup data for these accounts.
 
 To manage non-employees in Identity Security Cloud, administrators must create a non-employee source and add accounts to the source.
 
-To create a non-employee source in Identity Security Cloud, administrators must use the Admin panel to go to Connections &gt; Sources.
-They must then specify &#39;Non-Employee&#39; in the &#39;Source Type&#39; field.
-Refer to [Creating a Non-Employee Source](https://documentation.sailpoint.com/saas/help/common/non-employee-mgmt.html#creating-a-non-employee-source) for more details about how to create non-employee sources.
+To create a non-employee source in Identity Security Cloud, administrators must use the Admin panel to go to Connections &gt; Sources. They must then specify &#39;Non-Employee&#39; in the &#39;Source Type&#39; field. Refer to [Creating a Non-Employee Source](https://documentation.sailpoint.com/saas/help/common/non-employee-mgmt.html#creating-a-non-employee-source) for more details about how to create non-employee sources.
 
-To add accounts to a non-employee source in Identity Security Cloud, administrators can select the non-employee source and add the accounts.
-They can also use the &#39;Manage Non-Employees&#39; widget on their user dashboards to reach the list of sources and then select the non-employee source they want to add the accounts to.
+To add accounts to a non-employee source in Identity Security Cloud, administrators can select the non-employee source and add the accounts. They can also use the &#39;Manage Non-Employees&#39; widget on their user dashboards to reach the list of sources and then select the non-employee source they want to add the accounts to.
 
-Administrators can either add accounts individually or in bulk. Each non-employee source can have a maximum of 20,000 accounts.
-To add accounts in bulk, they must select the &#39;Bulk Upload&#39; option and upload a CSV file.
-Refer to [Adding Accounts](https://documentation.sailpoint.com/saas/help/common/non-employee-mgmt.html#adding-accounts) for more details about how to add accounts to non-employee sources.
+Administrators can either add accounts individually or in bulk. Each non-employee source can have a maximum of 20,000 accounts. To add accounts in bulk, they must select the &#39;Bulk Upload&#39; option and upload a CSV file. Refer to [Adding Accounts](https://documentation.sailpoint.com/saas/help/common/non-employee-mgmt.html#adding-accounts) for more details about how to add accounts to non-employee sources.
 
 Once administrators have created the non-employee source and added accounts to it, they can create identity profiles to generate identities for the non-employee accounts and manage the non-employee identities the same way they would any other identities.
 
 Refer to [Managing Non-Employee Sources and Accounts](https://documentation.sailpoint.com/saas/help/common/non-employee-mgmt.html) for more information about non-employee lifecycle management.
- 
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/beta*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**approve-non-employee-request**](#approve-non-employee-request) | **POST** `/non-employee-approvals/{id}/approve` | Approve a non-employee request
-[**create-non-employee-record**](#create-non-employee-record) | **POST** `/non-employee-records` | Create non-employee record
-[**create-non-employee-request**](#create-non-employee-request) | **POST** `/non-employee-requests` | Create non-employee request
-[**create-non-employee-source**](#create-non-employee-source) | **POST** `/non-employee-sources` | Create non-employee source
-[**create-non-employee-source-schema-attributes**](#create-non-employee-source-schema-attributes) | **POST** `/non-employee-sources/{sourceId}/schema-attributes` | Create non-employee source schema attribute
-[**delete-non-employee-record**](#delete-non-employee-record) | **DELETE** `/non-employee-records/{id}` | Delete non-employee record
-[**delete-non-employee-record-in-bulk**](#delete-non-employee-record-in-bulk) | **POST** `/non-employee-records/bulk-delete` | Delete multiple non-employee records
-[**delete-non-employee-request**](#delete-non-employee-request) | **DELETE** `/non-employee-requests/{id}` | Delete non-employee request
-[**delete-non-employee-schema-attribute**](#delete-non-employee-schema-attribute) | **DELETE** `/non-employee-sources/{sourceId}/schema-attributes/{attributeId}` | Delete non-employee source&#39;s schema attribute
-[**delete-non-employee-source**](#delete-non-employee-source) | **DELETE** `/non-employee-sources/{sourceId}` | Delete non-employee source
-[**delete-non-employee-source-schema-attributes**](#delete-non-employee-source-schema-attributes) | **DELETE** `/non-employee-sources/{sourceId}/schema-attributes` | Delete all custom schema attributes
-[**export-non-employee-records**](#export-non-employee-records) | **GET** `/non-employee-sources/{id}/non-employees/download` | Exports non-employee records to csv
-[**export-non-employee-source-schema-template**](#export-non-employee-source-schema-template) | **GET** `/non-employee-sources/{id}/schema-attributes-template/download` | Exports source schema template
-[**get-non-employee-approval**](#get-non-employee-approval) | **GET** `/non-employee-approvals/{id}` | Get a non-employee approval item detail
-[**get-non-employee-approval-summary**](#get-non-employee-approval-summary) | **GET** `/non-employee-approvals/summary/{requested-for}` | Get summary of non-employee approval requests
-[**get-non-employee-bulk-upload-status**](#get-non-employee-bulk-upload-status) | **GET** `/non-employee-sources/{id}/non-employee-bulk-upload/status` | Bulk upload status on source
-[**get-non-employee-record**](#get-non-employee-record) | **GET** `/non-employee-records/{id}` | Get a non-employee record
-[**get-non-employee-request**](#get-non-employee-request) | **GET** `/non-employee-requests/{id}` | Get a non-employee request
-[**get-non-employee-request-summary**](#get-non-employee-request-summary) | **GET** `/non-employee-requests/summary/{requested-for}` | Get summary of non-employee requests
-[**get-non-employee-schema-attribute**](#get-non-employee-schema-attribute) | **GET** `/non-employee-sources/{sourceId}/schema-attributes/{attributeId}` | Get schema attribute non-employee source
-[**get-non-employee-source**](#get-non-employee-source) | **GET** `/non-employee-sources/{sourceId}` | Get a non-employee source
-[**get-non-employee-source-schema-attributes**](#get-non-employee-source-schema-attributes) | **GET** `/non-employee-sources/{sourceId}/schema-attributes` | List schema attributes non-employee source
-[**import-non-employee-records-in-bulk**](#import-non-employee-records-in-bulk) | **POST** `/non-employee-sources/{id}/non-employee-bulk-upload` | Imports, or updates, non-employee records
-[**list-non-employee-approval**](#list-non-employee-approval) | **GET** `/non-employee-approvals` | Get list of non-employee approval requests
-[**list-non-employee-records**](#list-non-employee-records) | **GET** `/non-employee-records` | List non-employee records
-[**list-non-employee-requests**](#list-non-employee-requests) | **GET** `/non-employee-requests` | List non-employee requests
-[**list-non-employee-sources**](#list-non-employee-sources) | **GET** `/non-employee-sources` | List non-employee sources
-[**patch-non-employee-record**](#patch-non-employee-record) | **PATCH** `/non-employee-records/{id}` | Patch non-employee record
-[**patch-non-employee-schema-attribute**](#patch-non-employee-schema-attribute) | **PATCH** `/non-employee-sources/{sourceId}/schema-attributes/{attributeId}` | Patch non-employee source&#39;s schema attribute
-[**patch-non-employee-source**](#patch-non-employee-source) | **PATCH** `/non-employee-sources/{sourceId}` | Patch a non-employee source
-[**reject-non-employee-request**](#reject-non-employee-request) | **POST** `/non-employee-approvals/{id}/reject` | Reject a non-employee request
-[**update-non-employee-record**](#update-non-employee-record) | **PUT** `/non-employee-records/{id}` | Update non-employee record
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**approve-non-employee-request**](#approve-non-employee-request) | **POST** `/non-employee-approvals/{id}/approve` | Approve a non-employee request |
+| [**create-non-employee-record**](#create-non-employee-record) | **POST** `/non-employee-records` | Create non-employee record |
+| [**create-non-employee-request**](#create-non-employee-request) | **POST** `/non-employee-requests` | Create non-employee request |
+| [**create-non-employee-source**](#create-non-employee-source) | **POST** `/non-employee-sources` | Create non-employee source |
+| [**create-non-employee-source-schema-attributes**](#create-non-employee-source-schema-attributes) | **POST** `/non-employee-sources/{sourceId}/schema-attributes` | Create non-employee source schema attribute |
+| [**delete-non-employee-record**](#delete-non-employee-record) | **DELETE** `/non-employee-records/{id}` | Delete non-employee record |
+| [**delete-non-employee-record-in-bulk**](#delete-non-employee-record-in-bulk) | **POST** `/non-employee-records/bulk-delete` | Delete multiple non-employee records |
+| [**delete-non-employee-request**](#delete-non-employee-request) | **DELETE** `/non-employee-requests/{id}` | Delete non-employee request |
+| [**delete-non-employee-schema-attribute**](#delete-non-employee-schema-attribute) | **DELETE** `/non-employee-sources/{sourceId}/schema-attributes/{attributeId}` | Delete non-employee source&#39;s schema attribute |
+| [**delete-non-employee-source**](#delete-non-employee-source) | **DELETE** `/non-employee-sources/{sourceId}` | Delete non-employee source |
+| [**delete-non-employee-source-schema-attributes**](#delete-non-employee-source-schema-attributes) | **DELETE** `/non-employee-sources/{sourceId}/schema-attributes` | Delete all custom schema attributes |
+| [**export-non-employee-records**](#export-non-employee-records) | **GET** `/non-employee-sources/{id}/non-employees/download` | Exports non-employee records to csv |
+| [**export-non-employee-source-schema-template**](#export-non-employee-source-schema-template) | **GET** `/non-employee-sources/{id}/schema-attributes-template/download` | Exports source schema template |
+| [**get-non-employee-approval**](#get-non-employee-approval) | **GET** `/non-employee-approvals/{id}` | Get a non-employee approval item detail |
+| [**get-non-employee-approval-summary**](#get-non-employee-approval-summary) | **GET** `/non-employee-approvals/summary/{requested-for}` | Get summary of non-employee approval requests |
+| [**get-non-employee-bulk-upload-status**](#get-non-employee-bulk-upload-status) | **GET** `/non-employee-sources/{id}/non-employee-bulk-upload/status` | Bulk upload status on source |
+| [**get-non-employee-record**](#get-non-employee-record) | **GET** `/non-employee-records/{id}` | Get a non-employee record |
+| [**get-non-employee-request**](#get-non-employee-request) | **GET** `/non-employee-requests/{id}` | Get a non-employee request |
+| [**get-non-employee-request-summary**](#get-non-employee-request-summary) | **GET** `/non-employee-requests/summary/{requested-for}` | Get summary of non-employee requests |
+| [**get-non-employee-schema-attribute**](#get-non-employee-schema-attribute) | **GET** `/non-employee-sources/{sourceId}/schema-attributes/{attributeId}` | Get schema attribute non-employee source |
+| [**get-non-employee-source**](#get-non-employee-source) | **GET** `/non-employee-sources/{sourceId}` | Get a non-employee source |
+| [**get-non-employee-source-schema-attributes**](#get-non-employee-source-schema-attributes) | **GET** `/non-employee-sources/{sourceId}/schema-attributes` | List schema attributes non-employee source |
+| [**import-non-employee-records-in-bulk**](#import-non-employee-records-in-bulk) | **POST** `/non-employee-sources/{id}/non-employee-bulk-upload` | Imports, or updates, non-employee records |
+| [**list-non-employee-approval**](#list-non-employee-approval) | **GET** `/non-employee-approvals` | Get list of non-employee approval requests |
+| [**list-non-employee-records**](#list-non-employee-records) | **GET** `/non-employee-records` | List non-employee records |
+| [**list-non-employee-requests**](#list-non-employee-requests) | **GET** `/non-employee-requests` | List non-employee requests |
+| [**list-non-employee-sources**](#list-non-employee-sources) | **GET** `/non-employee-sources` | List non-employee sources |
+| [**patch-non-employee-record**](#patch-non-employee-record) | **PATCH** `/non-employee-records/{id}` | Patch non-employee record |
+| [**patch-non-employee-schema-attribute**](#patch-non-employee-schema-attribute) | **PATCH** `/non-employee-sources/{sourceId}/schema-attributes/{attributeId}` | Patch non-employee source&#39;s schema attribute |
+| [**patch-non-employee-source**](#patch-non-employee-source) | **PATCH** `/non-employee-sources/{sourceId}` | Patch a non-employee source |
+| [**reject-non-employee-request**](#reject-non-employee-request) | **POST** `/non-employee-approvals/{id}/reject` | Reject a non-employee request |
+| [**update-non-employee-record**](#update-non-employee-record) | **PUT** `/non-employee-records/{id}` | Update non-employee record |
 
 ## approve-non-employee-request
-Approve a non-employee request
-Approves a non-employee approval request and notifies the next approver.
+
+Approve a non-employee request Approves a non-employee approval request and notifies the next approver.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/approve-non-employee-request)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | id | **str** | True  | Non-Employee approval item id (UUID)
- Body  | non_employee_approval_decision | [**NonEmployeeApprovalDecision**](../models/non-employee-approval-decision) | True  | 
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | id | **str** | True | Non-Employee approval item id (UUID) |
+| Body | non_employee_approval_decision | [**NonEmployeeApprovalDecision**](../models/non-employee-approval-decision) | True |
 
 ### Return type
+
 [**NonEmployeeApprovalItem**](../models/non-employee-approval-item)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Non-Employee approval item object. | NonEmployeeApprovalItem |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Non-Employee approval item object. | NonEmployeeApprovalItem | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json
- - **Accept**: application/json
+
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### Example
 
@@ -125,7 +131,7 @@ with ApiClient(configuration) as api_client:
     id = 'id_example' # str | Non-Employee approval item id (UUID) # str | Non-Employee approval item id (UUID)
     non_employee_approval_decision = '''{
           "comment" : "comment"
-        }''' # NonEmployeeApprovalDecision | 
+        }''' # NonEmployeeApprovalDecision |
 
     try:
         # Approve a non-employee request
@@ -139,40 +145,39 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->approve_non_employee_request: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## create-non-employee-record
-Create non-employee record
-This request will create a non-employee record.
-Request will require the following security scope:
-'idn:nesr:create'
+
+Create non-employee record This request will create a non-employee record. Request will require the following security scope: 'idn:nesr:create'
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/create-non-employee-record)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
- Body  | non_employee_request_body | [**NonEmployeeRequestBody**](../models/non-employee-request-body) | True  | Non-Employee record creation request body.
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Body | non_employee_request_body | [**NonEmployeeRequestBody**](../models/non-employee-request-body) | True | Non-Employee record creation request body. |
 
 ### Return type
+
 [**NonEmployeeRecord**](../models/non-employee-record)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Created non-employee record. | NonEmployeeRecord |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Created non-employee record. | NonEmployeeRecord | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json
- - **Accept**: application/json
+
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### Example
 
@@ -213,38 +218,39 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->create_non_employee_record: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## create-non-employee-request
-Create non-employee request
-This request will create a non-employee request and notify the approver
+
+Create non-employee request This request will create a non-employee request and notify the approver
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/create-non-employee-request)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
- Body  | non_employee_request_body | [**NonEmployeeRequestBody**](../models/non-employee-request-body) | True  | Non-Employee creation request body
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Body | non_employee_request_body | [**NonEmployeeRequestBody**](../models/non-employee-request-body) | True | Non-Employee creation request body |
 
 ### Return type
+
 [**NonEmployeeRequest**](../models/non-employee-request)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Non-Employee request creation object | NonEmployeeRequest |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Non-Employee request creation object | NonEmployeeRequest | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json
- - **Accept**: application/json
+
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### Example
 
@@ -285,38 +291,39 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->create_non_employee_request: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## create-non-employee-source
-Create non-employee source
-Create a non-employee source.
+
+Create non-employee source Create a non-employee source.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/create-non-employee-source)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
- Body  | non_employee_source_request_body | [**NonEmployeeSourceRequestBody**](../models/non-employee-source-request-body) | True  | Non-Employee source creation request body.
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Body | non_employee_source_request_body | [**NonEmployeeSourceRequestBody**](../models/non-employee-source-request-body) | True | Non-Employee source creation request body. |
 
 ### Return type
+
 [**NonEmployeeSourceWithCloudExternalId**](../models/non-employee-source-with-cloud-external-id)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Created non-employee source. | NonEmployeeSourceWithCloudExternalId |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Created non-employee source. | NonEmployeeSourceWithCloudExternalId | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json
- - **Accept**: application/json
+
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### Example
 
@@ -369,39 +376,40 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->create_non_employee_source: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## create-non-employee-source-schema-attributes
-Create non-employee source schema attribute
-This API creates a new schema attribute for Non-Employee Source. The schema technical name must be unique in the source. Attempts to create a schema attribute with an existing name will result in a "400.1.409 Reference conflict" response. At most, 10 custom attributes can be created per schema. Attempts to create more than 10 will result in a "400.1.4 Limit violation" response.
+
+Create non-employee source schema attribute This API creates a new schema attribute for Non-Employee Source. The schema technical name must be unique in the source. Attempts to create a schema attribute with an existing name will result in a "400.1.409 Reference conflict" response. At most, 10 custom attributes can be created per schema. Attempts to create more than 10 will result in a "400.1.4 Limit violation" response.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/create-non-employee-source-schema-attributes)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | source_id | **str** | True  | The Source id
- Body  | non_employee_schema_attribute_body | [**NonEmployeeSchemaAttributeBody**](../models/non-employee-schema-attribute-body) | True  | 
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | source_id | **str** | True | The Source id |
+| Body | non_employee_schema_attribute_body | [**NonEmployeeSchemaAttributeBody**](../models/non-employee-schema-attribute-body) | True |
 
 ### Return type
+
 [**NonEmployeeSchemaAttribute**](../models/non-employee-schema-attribute)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Schema Attribute created. | NonEmployeeSchemaAttribute |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Schema Attribute created. | NonEmployeeSchemaAttribute | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json
- - **Accept**: application/json
+
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### Example
 
@@ -423,7 +431,7 @@ with ApiClient(configuration) as api_client:
           "type" : "TEXT",
           "technicalName" : "account.name",
           "required" : true
-        }''' # NonEmployeeSchemaAttributeBody | 
+        }''' # NonEmployeeSchemaAttributeBody |
 
     try:
         # Create non-employee source schema attribute
@@ -437,38 +445,39 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->create_non_employee_source_schema_attributes: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## delete-non-employee-record
-Delete non-employee record
-This request will delete a non-employee record.
+
+Delete non-employee record This request will delete a non-employee record.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/delete-non-employee-record)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | id | **str** | True  | Non-Employee record id (UUID)
+| Param Type | Name | Data Type | Required | Description                   |
+| ---------- | ---- | --------- | -------- | ----------------------------- |
+| Path       | id   | **str**   | True     | Non-Employee record id (UUID) |
 
 ### Return type
- (empty response body)
+
+(empty response body)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-204 | No content - indicates the request was successful but there is no content to be returned in the response. |  |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 204 | No content - indicates the request was successful but there is no content to be returned in the response. |  | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -484,7 +493,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Delete non-employee record
-        
+
         NonEmployeeLifecycleManagementApi(api_client).delete_non_employee_record(id=id)
         # Below is a request that includes all optional parameters
         # NonEmployeeLifecycleManagementApi(api_client).delete_non_employee_record(id)
@@ -492,40 +501,39 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->delete_non_employee_record: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## delete-non-employee-record-in-bulk
-Delete multiple non-employee records
-This request will delete multiple non-employee records based on the non-employee ids provided.
-Request will require the following scope:
-'idn:nesr:delete'
+
+Delete multiple non-employee records This request will delete multiple non-employee records based on the non-employee ids provided. Request will require the following scope: 'idn:nesr:delete'
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/delete-non-employee-record-in-bulk)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
- Body  | delete_non_employee_record_in_bulk_request | [**DeleteNonEmployeeRecordInBulkRequest**](../models/delete-non-employee-record-in-bulk-request) | True  | Non-Employee bulk delete request body.
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Body | delete_non_employee_record_in_bulk_request | [**DeleteNonEmployeeRecordInBulkRequest**](../models/delete-non-employee-record-in-bulk-request) | True | Non-Employee bulk delete request body. |
 
 ### Return type
- (empty response body)
+
+(empty response body)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-204 | No content - indicates the request was successful but there is no content to be returned in the response. |  |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 204 | No content - indicates the request was successful but there is no content to be returned in the response. |  | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json
- - **Accept**: application/json
+
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### Example
 
@@ -550,39 +558,40 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->delete_non_employee_record_in_bulk: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## delete-non-employee-request
-Delete non-employee request
-This request will delete a non-employee request.
+
+Delete non-employee request This request will delete a non-employee request.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/delete-non-employee-request)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | id | **str** | True  | Non-Employee request id in the UUID format
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | id | **str** | True | Non-Employee request id in the UUID format |
 
 ### Return type
- (empty response body)
+
+(empty response body)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-204 | No content - indicates the request was successful but there is no content to be returned in the response. |  |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 204 | No content - indicates the request was successful but there is no content to be returned in the response. |  | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -598,7 +607,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Delete non-employee request
-        
+
         NonEmployeeLifecycleManagementApi(api_client).delete_non_employee_request(id=id)
         # Below is a request that includes all optional parameters
         # NonEmployeeLifecycleManagementApi(api_client).delete_non_employee_request(id)
@@ -606,40 +615,40 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->delete_non_employee_request: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## delete-non-employee-schema-attribute
-Delete non-employee source's schema attribute
-This end-point deletes a specific schema attribute for a non-employee source.
 
+Delete non-employee source's schema attribute This end-point deletes a specific schema attribute for a non-employee source.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/delete-non-employee-schema-attribute)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | attribute_id | **str** | True  | The Schema Attribute Id (UUID)
-Path   | source_id | **str** | True  | The Source id
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | attribute_id | **str** | True | The Schema Attribute Id (UUID) |
+| Path | source_id | **str** | True | The Source id |
 
 ### Return type
- (empty response body)
+
+(empty response body)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-204 | No content - indicates the request was successful but there is no content to be returned in the response. |  |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 204 | No content - indicates the request was successful but there is no content to be returned in the response. |  | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -656,7 +665,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Delete non-employee source's schema attribute
-        
+
         NonEmployeeLifecycleManagementApi(api_client).delete_non_employee_schema_attribute(attribute_id=attribute_id, source_id=source_id)
         # Below is a request that includes all optional parameters
         # NonEmployeeLifecycleManagementApi(api_client).delete_non_employee_schema_attribute(attribute_id, source_id)
@@ -664,38 +673,39 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->delete_non_employee_schema_attribute: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## delete-non-employee-source
-Delete non-employee source
-This request will delete a non-employee source.
+
+Delete non-employee source This request will delete a non-employee source.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/delete-non-employee-source)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | source_id | **str** | True  | Source Id
+| Param Type | Name      | Data Type | Required | Description |
+| ---------- | --------- | --------- | -------- | ----------- |
+| Path       | source_id | **str**   | True     | Source Id   |
 
 ### Return type
- (empty response body)
+
+(empty response body)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-204 | No content - indicates the request was successful but there is no content to be returned in the response. |  |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 204 | No content - indicates the request was successful but there is no content to be returned in the response. |  | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -711,7 +721,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Delete non-employee source
-        
+
         NonEmployeeLifecycleManagementApi(api_client).delete_non_employee_source(source_id=source_id)
         # Below is a request that includes all optional parameters
         # NonEmployeeLifecycleManagementApi(api_client).delete_non_employee_source(source_id)
@@ -719,38 +729,39 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->delete_non_employee_source: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## delete-non-employee-source-schema-attributes
-Delete all custom schema attributes
-This end-point deletes all custom schema attributes for a non-employee source.
+
+Delete all custom schema attributes This end-point deletes all custom schema attributes for a non-employee source.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/delete-non-employee-source-schema-attributes)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | source_id | **str** | True  | The Source id
+| Param Type | Name      | Data Type | Required | Description   |
+| ---------- | --------- | --------- | -------- | ------------- |
+| Path       | source_id | **str**   | True     | The Source id |
 
 ### Return type
- (empty response body)
+
+(empty response body)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-204 | No content - indicates the request was successful but there is no content to be returned in the response. |  |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 204 | No content - indicates the request was successful but there is no content to be returned in the response. |  | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -766,7 +777,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Delete all custom schema attributes
-        
+
         NonEmployeeLifecycleManagementApi(api_client).delete_non_employee_source_schema_attributes(source_id=source_id)
         # Below is a request that includes all optional parameters
         # NonEmployeeLifecycleManagementApi(api_client).delete_non_employee_source_schema_attributes(source_id)
@@ -774,39 +785,40 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->delete_non_employee_source_schema_attributes: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## export-non-employee-records
-Exports non-employee records to csv
-This requests a CSV download for all non-employees from a provided source.
+
+Exports non-employee records to csv This requests a CSV download for all non-employees from a provided source.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/export-non-employee-records)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | id | **str** | True  | Source Id (UUID)
+| Param Type | Name | Data Type | Required | Description      |
+| ---------- | ---- | --------- | -------- | ---------------- |
+| Path       | id   | **str**   | True     | Source Id (UUID) |
 
 ### Return type
- (empty response body)
+
+(empty response body)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Exported CSV |  |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Exported CSV |  | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: text/csv, application/json
+
+- **Content-Type**: Not defined
+- **Accept**: text/csv, application/json
 
 ### Example
 
@@ -822,7 +834,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Exports non-employee records to csv
-        
+
         NonEmployeeLifecycleManagementApi(api_client).export_non_employee_records(id=id)
         # Below is a request that includes all optional parameters
         # NonEmployeeLifecycleManagementApi(api_client).export_non_employee_records(id)
@@ -830,41 +842,40 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->export_non_employee_records: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## export-non-employee-source-schema-template
-Exports source schema template
-This requests a download for the Source Schema Template for a provided source.
-Request will require the following security scope:
-idn:nesr:read'
+
+Exports source schema template This requests a download for the Source Schema Template for a provided source. Request will require the following security scope: idn:nesr:read'
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/export-non-employee-source-schema-template)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | id | **str** | True  | Source Id (UUID)
+| Param Type | Name | Data Type | Required | Description      |
+| ---------- | ---- | --------- | -------- | ---------------- |
+| Path       | id   | **str**   | True     | Source Id (UUID) |
 
 ### Return type
- (empty response body)
+
+(empty response body)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Exported Source Schema Template |  |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Exported Source Schema Template |  | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: text/csv, application/json
+
+- **Content-Type**: Not defined
+- **Accept**: text/csv, application/json
 
 ### Example
 
@@ -880,7 +891,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Exports source schema template
-        
+
         NonEmployeeLifecycleManagementApi(api_client).export_non_employee_source_schema_template(id=id)
         # Below is a request that includes all optional parameters
         # NonEmployeeLifecycleManagementApi(api_client).export_non_employee_source_schema_template(id)
@@ -888,39 +899,40 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->export_non_employee_source_schema_template: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## get-non-employee-approval
-Get a non-employee approval item detail
-Approves a non-employee approval request and notifies the next approver.
+
+Get a non-employee approval item detail Approves a non-employee approval request and notifies the next approver.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-non-employee-approval)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | id | **str** | True  | Non-Employee approval item id (UUID)
-  Query | include_detail | **str** |   (optional) | The object nonEmployeeRequest will not be included detail when set to false. *Default value is true*
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | id | **str** | True | Non-Employee approval item id (UUID) |
+| Query | include_detail | **str** | (optional) | The object nonEmployeeRequest will not be included detail when set to false. _Default value is true_ |
 
 ### Return type
+
 [**NonEmployeeApprovalItemDetail**](../models/non-employee-approval-item-detail)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Non-Employee approval item object. | NonEmployeeApprovalItemDetail |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Non-Employee approval item object. | NonEmployeeApprovalItemDetail | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -938,7 +950,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Get a non-employee approval item detail
-        
+
         results = NonEmployeeLifecycleManagementApi(api_client).get_non_employee_approval(id=id)
         # Below is a request that includes all optional parameters
         # results = NonEmployeeLifecycleManagementApi(api_client).get_non_employee_approval(id, include_detail)
@@ -948,38 +960,39 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->get_non_employee_approval: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## get-non-employee-approval-summary
-Get summary of non-employee approval requests
-This request will retrieve a summary of non-employee approval requests. There are two contextual uses for the `requested-for` path parameter: 1. The current user is the Org Admin, in which case he or she may request a summary of all non-employee approval requests assigned to a particular approver by passing in that approver's id. 2. The current user is an approver, in which case "me" should be provided as the `requested-for` value. This will provide the approver with a summary of the approval items assigned to him or her.
+
+Get summary of non-employee approval requests This request will retrieve a summary of non-employee approval requests. There are two contextual uses for the `requested-for` path parameter: 1. The current user is the Org Admin, in which case he or she may request a summary of all non-employee approval requests assigned to a particular approver by passing in that approver's id. 2. The current user is an approver, in which case "me" should be provided as the `requested-for` value. This will provide the approver with a summary of the approval items assigned to him or her.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-non-employee-approval-summary)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | requested_for | **str** | True  | The identity (UUID) of the approver for whom for whom the summary is being retrieved. Use \"me\" instead to indicate the current user.
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | requested_for | **str** | True | The identity (UUID) of the approver for whom for whom the summary is being retrieved. Use \"me\" instead to indicate the current user. |
 
 ### Return type
+
 [**NonEmployeeApprovalSummary**](../models/non-employee-approval-summary)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | summary of non-employee approval requests | NonEmployeeApprovalSummary |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | summary of non-employee approval requests | NonEmployeeApprovalSummary | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -996,7 +1009,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Get summary of non-employee approval requests
-        
+
         results = NonEmployeeLifecycleManagementApi(api_client).get_non_employee_approval_summary(requested_for=requested_for)
         # Below is a request that includes all optional parameters
         # results = NonEmployeeLifecycleManagementApi(api_client).get_non_employee_approval_summary(requested_for)
@@ -1006,39 +1019,39 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->get_non_employee_approval_summary: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## get-non-employee-bulk-upload-status
-Bulk upload status on source
-The nonEmployeeBulkUploadStatus API returns the status of the newest bulk upload job for the specified source.
 
+Bulk upload status on source The nonEmployeeBulkUploadStatus API returns the status of the newest bulk upload job for the specified source.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-non-employee-bulk-upload-status)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | id | **str** | True  | Source ID (UUID)
+| Param Type | Name | Data Type | Required | Description      |
+| ---------- | ---- | --------- | -------- | ---------------- |
+| Path       | id   | **str**   | True     | Source ID (UUID) |
 
 ### Return type
+
 [**NonEmployeeBulkUploadStatus**](../models/non-employee-bulk-upload-status)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Status of the newest bulk-upload job, if any. | NonEmployeeBulkUploadStatus |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Status of the newest bulk-upload job, if any. | NonEmployeeBulkUploadStatus | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -1055,7 +1068,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Bulk upload status on source
-        
+
         results = NonEmployeeLifecycleManagementApi(api_client).get_non_employee_bulk_upload_status(id=id)
         # Below is a request that includes all optional parameters
         # results = NonEmployeeLifecycleManagementApi(api_client).get_non_employee_bulk_upload_status(id)
@@ -1065,38 +1078,39 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->get_non_employee_bulk_upload_status: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## get-non-employee-record
-Get a non-employee record
-This gets a non-employee record.
+
+Get a non-employee record This gets a non-employee record.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-non-employee-record)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | id | **str** | True  | Non-Employee record id (UUID)
+| Param Type | Name | Data Type | Required | Description                   |
+| ---------- | ---- | --------- | -------- | ----------------------------- |
+| Path       | id   | **str**   | True     | Non-Employee record id (UUID) |
 
 ### Return type
+
 [**NonEmployeeRecord**](../models/non-employee-record)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Non-Employee record object | NonEmployeeRecord |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Non-Employee record object | NonEmployeeRecord | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -1113,7 +1127,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Get a non-employee record
-        
+
         results = NonEmployeeLifecycleManagementApi(api_client).get_non_employee_record(id=id)
         # Below is a request that includes all optional parameters
         # results = NonEmployeeLifecycleManagementApi(api_client).get_non_employee_record(id)
@@ -1123,39 +1137,40 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->get_non_employee_record: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## get-non-employee-request
-Get a non-employee request
-This gets a non-employee request.
+
+Get a non-employee request This gets a non-employee request.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-non-employee-request)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | id | **str** | True  | Non-Employee request id (UUID)
+| Param Type | Name | Data Type | Required | Description                    |
+| ---------- | ---- | --------- | -------- | ------------------------------ |
+| Path       | id   | **str**   | True     | Non-Employee request id (UUID) |
 
 ### Return type
+
 [**NonEmployeeRequest**](../models/non-employee-request)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Non-Employee request object. | NonEmployeeRequest |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Non-Employee request object. | NonEmployeeRequest | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -1172,7 +1187,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Get a non-employee request
-        
+
         results = NonEmployeeLifecycleManagementApi(api_client).get_non_employee_request(id=id)
         # Below is a request that includes all optional parameters
         # results = NonEmployeeLifecycleManagementApi(api_client).get_non_employee_request(id)
@@ -1182,38 +1197,39 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->get_non_employee_request: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## get-non-employee-request-summary
-Get summary of non-employee requests
-This request will retrieve a summary of non-employee requests. There are two contextual uses for the `requested-for` path parameter: 1. The current user is the Org Admin, in which case he or she may request a summary of all non-employee approval requests assigned to a particular account manager by passing in that manager's id. 2. The current user is an account manager, in which case "me" should be provided as the `requested-for` value. This will provide the user with a summary of the non-employee requests in the source(s) he or she manages.
+
+Get summary of non-employee requests This request will retrieve a summary of non-employee requests. There are two contextual uses for the `requested-for` path parameter: 1. The current user is the Org Admin, in which case he or she may request a summary of all non-employee approval requests assigned to a particular account manager by passing in that manager's id. 2. The current user is an account manager, in which case "me" should be provided as the `requested-for` value. This will provide the user with a summary of the non-employee requests in the source(s) he or she manages.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-non-employee-request-summary)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | requested_for | **str** | True  | The identity (UUID) of the non-employee account manager for whom the summary is being retrieved. Use \"me\" instead to indicate the current user.
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | requested_for | **str** | True | The identity (UUID) of the non-employee account manager for whom the summary is being retrieved. Use \"me\" instead to indicate the current user. |
 
 ### Return type
+
 [**NonEmployeeRequestSummary**](../models/non-employee-request-summary)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Non-Employee request summary object. | NonEmployeeRequestSummary |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Non-Employee request summary object. | NonEmployeeRequestSummary | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -1230,7 +1246,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Get summary of non-employee requests
-        
+
         results = NonEmployeeLifecycleManagementApi(api_client).get_non_employee_request_summary(requested_for=requested_for)
         # Below is a request that includes all optional parameters
         # results = NonEmployeeLifecycleManagementApi(api_client).get_non_employee_request_summary(requested_for)
@@ -1240,39 +1256,40 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->get_non_employee_request_summary: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## get-non-employee-schema-attribute
-Get schema attribute non-employee source
-This API gets a schema attribute by Id for the specified Non-Employee SourceId.
+
+Get schema attribute non-employee source This API gets a schema attribute by Id for the specified Non-Employee SourceId.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-non-employee-schema-attribute)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | attribute_id | **str** | True  | The Schema Attribute Id (UUID)
-Path   | source_id | **str** | True  | The Source id
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | attribute_id | **str** | True | The Schema Attribute Id (UUID) |
+| Path | source_id | **str** | True | The Source id |
 
 ### Return type
+
 [**NonEmployeeSchemaAttribute**](../models/non-employee-schema-attribute)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | The Schema Attribute | NonEmployeeSchemaAttribute |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | The Schema Attribute | NonEmployeeSchemaAttribute | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -1290,7 +1307,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Get schema attribute non-employee source
-        
+
         results = NonEmployeeLifecycleManagementApi(api_client).get_non_employee_schema_attribute(attribute_id=attribute_id, source_id=source_id)
         # Below is a request that includes all optional parameters
         # results = NonEmployeeLifecycleManagementApi(api_client).get_non_employee_schema_attribute(attribute_id, source_id)
@@ -1300,38 +1317,39 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->get_non_employee_schema_attribute: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## get-non-employee-source
-Get a non-employee source
-This gets a non-employee source.
+
+Get a non-employee source This gets a non-employee source.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-non-employee-source)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | source_id | **str** | True  | Source Id
+| Param Type | Name      | Data Type | Required | Description |
+| ---------- | --------- | --------- | -------- | ----------- |
+| Path       | source_id | **str**   | True     | Source Id   |
 
 ### Return type
+
 [**NonEmployeeSource**](../models/non-employee-source)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Non-Employee source object. | NonEmployeeSource |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Non-Employee source object. | NonEmployeeSource | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -1348,7 +1366,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Get a non-employee source
-        
+
         results = NonEmployeeLifecycleManagementApi(api_client).get_non_employee_source(source_id=source_id)
         # Below is a request that includes all optional parameters
         # results = NonEmployeeLifecycleManagementApi(api_client).get_non_employee_source(source_id)
@@ -1358,39 +1376,40 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->get_non_employee_source: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## get-non-employee-source-schema-attributes
-List schema attributes non-employee source
-This API gets the list of schema attributes for the specified Non-Employee SourceId. There are 8 mandatory attributes added to each new Non-Employee Source automatically. Additionaly, user can add up to 10 custom attributes. This interface returns all the mandatory attributes followed by any custom attributes. At most, a total of 18 attributes will be returned.
+
+List schema attributes non-employee source This API gets the list of schema attributes for the specified Non-Employee SourceId. There are 8 mandatory attributes added to each new Non-Employee Source automatically. Additionaly, user can add up to 10 custom attributes. This interface returns all the mandatory attributes followed by any custom attributes. At most, a total of 18 attributes will be returned.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-non-employee-source-schema-attributes)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | source_id | **str** | True  | The Source id
+| Param Type | Name      | Data Type | Required | Description   |
+| ---------- | --------- | --------- | -------- | ------------- |
+| Path       | source_id | **str**   | True     | The Source id |
 
 ### Return type
+
 [**List[NonEmployeeSchemaAttribute]**](../models/non-employee-schema-attribute)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | A list of Schema Attributes | List[NonEmployeeSchemaAttribute] |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | A list of Schema Attributes | List[NonEmployeeSchemaAttribute] | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -1407,7 +1426,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # List schema attributes non-employee source
-        
+
         results = NonEmployeeLifecycleManagementApi(api_client).get_non_employee_source_schema_attributes(source_id=source_id)
         # Below is a request that includes all optional parameters
         # results = NonEmployeeLifecycleManagementApi(api_client).get_non_employee_source_schema_attributes(source_id)
@@ -1418,42 +1437,41 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->get_non_employee_source_schema_attributes: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## import-non-employee-records-in-bulk
-Imports, or updates, non-employee records
-This post will import, or update, Non-Employee records found in the CSV.
-Request will need the following security scope:
-'idn:nesr:create'
+
+Imports, or updates, non-employee records This post will import, or update, Non-Employee records found in the CSV. Request will need the following security scope: 'idn:nesr:create'
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/import-non-employee-records-in-bulk)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | id | **str** | True  | Source Id (UUID)
-   | data | **bytearray** | True  | 
+| Param Type | Name          | Data Type | Required | Description      |
+| ---------- | ------------- | --------- | -------- | ---------------- |
+| Path       | id            | **str**   | True     | Source Id (UUID) |
+| data       | **bytearray** | True      |
 
 ### Return type
+
 [**NonEmployeeBulkUploadJob**](../models/non-employee-bulk-upload-job)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-202 | The CSV was accepted to be bulk inserted now or at a later time. | NonEmployeeBulkUploadJob |  -  |
-400 | Client Error - Returned if the request body is invalid. The response body will contain the list of specific errors with one on each line.  | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 202 | The CSV was accepted to be bulk inserted now or at a later time. | NonEmployeeBulkUploadJob | - |
+| 400 | Client Error - Returned if the request body is invalid. The response body will contain the list of specific errors with one on each line. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: multipart/form-data
- - **Accept**: application/json
+
+- **Content-Type**: multipart/form-data
+- **Accept**: application/json
 
 ### Example
 
@@ -1467,11 +1485,11 @@ configuration = Configuration()
 
 with ApiClient(configuration) as api_client:
     id = 'e136567de87e4d029e60b3c3c55db56d' # str | Source Id (UUID) # str | Source Id (UUID)
-    data = None # bytearray |  # bytearray | 
+    data = None # bytearray |  # bytearray |
 
     try:
         # Imports, or updates, non-employee records
-        
+
         results = NonEmployeeLifecycleManagementApi(api_client).import_non_employee_records_in_bulk(id=id, data=data)
         # Below is a request that includes all optional parameters
         # results = NonEmployeeLifecycleManagementApi(api_client).import_non_employee_records_in_bulk(id, data)
@@ -1481,43 +1499,44 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->import_non_employee_records_in_bulk: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## list-non-employee-approval
-Get list of non-employee approval requests
-This gets a list of non-employee approval requests.
+
+Get list of non-employee approval requests This gets a list of non-employee approval requests.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/list-non-employee-approval)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-  Query | requested_for | **str** |   (optional) | The identity for whom the request was made. *me* indicates the current user.
-  Query | limit | **int** |   (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | offset | **int** |   (optional) (default to 0) | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | count | **bool** |   (optional) (default to False) | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | filters | **str** |   (optional) | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **approvalStatus**: *eq*
-  Query | sorters | **str** |   (optional) | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **created, modified**
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Query | requested_for | **str** | (optional) | The identity for whom the request was made. _me_ indicates the current user. |
+| Query | limit | **int** | (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | offset | **int** | (optional) (default to 0) | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | count | **bool** | (optional) (default to False) | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | filters | **str** | (optional) | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **approvalStatus**: _eq_ |
+| Query | sorters | **str** | (optional) | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results) Sorting is supported for the following fields: **created, modified** |
 
 ### Return type
+
 [**List[NonEmployeeApprovalItem]**](../models/non-employee-approval-item)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | List of approval items. | List[NonEmployeeApprovalItem] |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | List of approval items. | List[NonEmployeeApprovalItem] | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -1539,7 +1558,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Get list of non-employee approval requests
-        
+
         results = NonEmployeeLifecycleManagementApi(api_client).list_non_employee_approval()
         # Below is a request that includes all optional parameters
         # results = NonEmployeeLifecycleManagementApi(api_client).list_non_employee_approval(requested_for, limit, offset, count, filters, sorters)
@@ -1550,42 +1569,43 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->list_non_employee_approval: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## list-non-employee-records
-List non-employee records
-This gets a list of non-employee records.
+
+List non-employee records This gets a list of non-employee records.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/list-non-employee-records)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-  Query | limit | **int** |   (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | offset | **int** |   (optional) (default to 0) | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | count | **bool** |   (optional) (default to False) | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | sorters | **str** |   (optional) | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **id, accountName, sourceId, manager, firstName, lastName, email, phone, startDate, endDate, created, modified**
-  Query | filters | **str** |   (optional) | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **sourceId**: *eq*
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Query | limit | **int** | (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | offset | **int** | (optional) (default to 0) | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | count | **bool** | (optional) (default to False) | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | sorters | **str** | (optional) | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results) Sorting is supported for the following fields: **id, accountName, sourceId, manager, firstName, lastName, email, phone, startDate, endDate, created, modified** |
+| Query | filters | **str** | (optional) | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **sourceId**: _eq_ |
 
 ### Return type
+
 [**List[NonEmployeeRecord]**](../models/non-employee-record)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Non-Employee record objects | List[NonEmployeeRecord] |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Non-Employee record objects | List[NonEmployeeRecord] | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -1606,7 +1626,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # List non-employee records
-        
+
         results = NonEmployeeLifecycleManagementApi(api_client).list_non_employee_records()
         # Below is a request that includes all optional parameters
         # results = NonEmployeeLifecycleManagementApi(api_client).list_non_employee_records(limit, offset, count, sorters, filters)
@@ -1617,43 +1637,44 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->list_non_employee_records: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## list-non-employee-requests
-List non-employee requests
-This gets a list of non-employee requests.
+
+List non-employee requests This gets a list of non-employee requests.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/list-non-employee-requests)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-  Query | requested_for | **str** | True  | The identity for whom the request was made. *me* indicates the current user.
-  Query | limit | **int** |   (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | offset | **int** |   (optional) (default to 0) | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | count | **bool** |   (optional) (default to False) | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | sorters | **str** |   (optional) | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **created, approvalStatus, firstName, lastName, email, phone, accountName, startDate, endDate**
-  Query | filters | **str** |   (optional) | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **sourceId**: *eq*
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Query | requested_for | **str** | True | The identity for whom the request was made. _me_ indicates the current user. |
+| Query | limit | **int** | (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | offset | **int** | (optional) (default to 0) | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | count | **bool** | (optional) (default to False) | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | sorters | **str** | (optional) | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results) Sorting is supported for the following fields: **created, approvalStatus, firstName, lastName, email, phone, accountName, startDate, endDate** |
+| Query | filters | **str** | (optional) | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **sourceId**: _eq_ |
 
 ### Return type
+
 [**List[NonEmployeeRequest]**](../models/non-employee-request)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | List of non-employee request objects. | List[NonEmployeeRequest] |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | List of non-employee request objects. | List[NonEmployeeRequest] | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -1675,7 +1696,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # List non-employee requests
-        
+
         results = NonEmployeeLifecycleManagementApi(api_client).list_non_employee_requests(requested_for=requested_for)
         # Below is a request that includes all optional parameters
         # results = NonEmployeeLifecycleManagementApi(api_client).list_non_employee_requests(requested_for, limit, offset, count, sorters, filters)
@@ -1686,45 +1707,47 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->list_non_employee_requests: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## list-non-employee-sources
-List non-employee sources
-Get a list of non-employee sources. There are two contextual uses for the `requested-for` path parameter: 
-  1. If the user has the role context of `idn:nesr:read`, he or she may request a list sources assigned to a particular account manager by passing in that manager's `id`.
-  2. If the current user is an account manager, the user should provide 'me' as the `requested-for` value. Doing so provide the user with a list of the sources he or she owns.
+
+List non-employee sources Get a list of non-employee sources. There are two contextual uses for the `requested-for` path parameter:
+
+1. If the user has the role context of `idn:nesr:read`, he or she may request a list sources assigned to a particular account manager by passing in that manager's `id`.
+2. If the current user is an account manager, the user should provide 'me' as the `requested-for` value. Doing so provide the user with a list of the sources he or she owns.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/list-non-employee-sources)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-  Query | limit | **int** |   (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | offset | **int** |   (optional) (default to 0) | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | count | **bool** |   (optional) (default to False) | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | requested_for | **str** |   (optional) | Identity the request was made for. Use 'me' to indicate the current user.
-  Query | non_employee_count | **bool** |   (optional) (default to False) | Flag that determines whether the API will return a non-employee count associated with the source.
-  Query | sorters | **str** |   (optional) | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **name, created, sourceId**
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Query | limit | **int** | (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | offset | **int** | (optional) (default to 0) | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | count | **bool** | (optional) (default to False) | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | requested_for | **str** | (optional) | Identity the request was made for. Use 'me' to indicate the current user. |
+| Query | non_employee_count | **bool** | (optional) (default to False) | Flag that determines whether the API will return a non-employee count associated with the source. |
+| Query | sorters | **str** | (optional) | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results) Sorting is supported for the following fields: **name, created, sourceId** |
 
 ### Return type
+
 [**List[NonEmployeeSourceWithNECount]**](../models/non-employee-source-with-ne-count)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | List of non-employee source objects. | List[NonEmployeeSourceWithNECount] |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | List of non-employee source objects. | List[NonEmployeeSourceWithNECount] | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -1746,7 +1769,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # List non-employee sources
-        
+
         results = NonEmployeeLifecycleManagementApi(api_client).list_non_employee_sources()
         # Below is a request that includes all optional parameters
         # results = NonEmployeeLifecycleManagementApi(api_client).list_non_employee_sources(limit, offset, count, requested_for, non_employee_count, sorters)
@@ -1757,40 +1780,41 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->list_non_employee_sources: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## patch-non-employee-record
-Patch non-employee record
-This request will patch a non-employee record.
+
+Patch non-employee record This request will patch a non-employee record.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/patch-non-employee-record)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | id | **str** | True  | Non-employee record id (UUID)
- Body  | json_patch_operation | [**[]JsonPatchOperation**](../models/json-patch-operation) | True  | A list of non-employee update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard. Attributes are restricted by user type. Owner of source can update end date. Organization admins can update all available fields.
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | id | **str** | True | Non-employee record id (UUID) |
+| Body | json_patch_operation | [**[]JsonPatchOperation**](../models/json-patch-operation) | True | A list of non-employee update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard. Attributes are restricted by user type. Owner of source can update end date. Organization admins can update all available fields. |
 
 ### Return type
+
 [**NonEmployeeRecord**](../models/non-employee-record)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | A patched non-employee record. | NonEmployeeRecord |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | A patched non-employee record. | NonEmployeeRecord | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json-patch+json
- - **Accept**: application/json
+
+- **Content-Type**: application/json-patch+json
+- **Accept**: application/json
 
 ### Example
 
@@ -1819,42 +1843,42 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->patch_non_employee_record: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## patch-non-employee-schema-attribute
-Patch non-employee source's schema attribute
-This end-point patches a specific schema attribute for a non-employee SourceId.
 
+Patch non-employee source's schema attribute This end-point patches a specific schema attribute for a non-employee SourceId.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/patch-non-employee-schema-attribute)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | attribute_id | **str** | True  | The Schema Attribute Id (UUID)
-Path   | source_id | **str** | True  | The Source id
- Body  | json_patch_operation | [**[]JsonPatchOperation**](../models/json-patch-operation) | True  | A list of schema attribute update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard. The following properties are allowed for update ':' 'label', 'helpText', 'placeholder', 'required'.
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | attribute_id | **str** | True | The Schema Attribute Id (UUID) |
+| Path | source_id | **str** | True | The Source id |
+| Body | json_patch_operation | [**[]JsonPatchOperation**](../models/json-patch-operation) | True | A list of schema attribute update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard. The following properties are allowed for update ':' 'label', 'helpText', 'placeholder', 'required'. |
 
 ### Return type
+
 [**NonEmployeeSchemaAttribute**](../models/non-employee-schema-attribute)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | The Schema Attribute was successfully patched. | NonEmployeeSchemaAttribute |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | The Schema Attribute was successfully patched. | NonEmployeeSchemaAttribute | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json-patch+json
- - **Accept**: application/json
+
+- **Content-Type**: application/json-patch+json
+- **Accept**: application/json
 
 ### Example
 
@@ -1884,39 +1908,40 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->patch_non_employee_schema_attribute: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## patch-non-employee-source
-Patch a non-employee source
-patch a non-employee source. (Partial Update)  Patchable field: **name, description, approvers, accountManagers**
+
+Patch a non-employee source patch a non-employee source. (Partial Update) Patchable field: **name, description, approvers, accountManagers**
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/patch-non-employee-source)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | source_id | **str** | True  | Source Id
- Body  | json_patch_operation | [**[]JsonPatchOperation**](../models/json-patch-operation) | True  | A list of non-employee source update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard.
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | source_id | **str** | True | Source Id |
+| Body | json_patch_operation | [**[]JsonPatchOperation**](../models/json-patch-operation) | True | A list of non-employee source update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard. |
 
 ### Return type
+
 [**NonEmployeeSource**](../models/non-employee-source)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | A patched non-employee source object. | NonEmployeeSource |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | A patched non-employee source object. | NonEmployeeSource | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json-patch+json
- - **Accept**: application/json
+
+- **Content-Type**: application/json-patch+json
+- **Accept**: application/json
 
 ### Example
 
@@ -1945,39 +1970,40 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->patch_non_employee_source: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## reject-non-employee-request
-Reject a non-employee request
-This endpoint will reject an approval item request and notify user.
+
+Reject a non-employee request This endpoint will reject an approval item request and notify user.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/reject-non-employee-request)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | id | **str** | True  | Non-Employee approval item id (UUID)
- Body  | non_employee_reject_approval_decision | [**NonEmployeeRejectApprovalDecision**](../models/non-employee-reject-approval-decision) | True  | 
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | id | **str** | True | Non-Employee approval item id (UUID) |
+| Body | non_employee_reject_approval_decision | [**NonEmployeeRejectApprovalDecision**](../models/non-employee-reject-approval-decision) | True |
 
 ### Return type
+
 [**NonEmployeeApprovalItem**](../models/non-employee-approval-item)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Non-Employee approval item object. | NonEmployeeApprovalItem |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Non-Employee approval item object. | NonEmployeeApprovalItem | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json
- - **Accept**: application/json
+
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### Example
 
@@ -1994,7 +2020,7 @@ with ApiClient(configuration) as api_client:
     id = 'id_example' # str | Non-Employee approval item id (UUID) # str | Non-Employee approval item id (UUID)
     non_employee_reject_approval_decision = '''{
           "comment" : "comment"
-        }''' # NonEmployeeRejectApprovalDecision | 
+        }''' # NonEmployeeRejectApprovalDecision |
 
     try:
         # Reject a non-employee request
@@ -2008,40 +2034,41 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->reject_non_employee_request: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## update-non-employee-record
-Update non-employee record
-This request will update a non-employee record.
+
+Update non-employee record This request will update a non-employee record.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/update-non-employee-record)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | id | **str** | True  | Non-employee record id (UUID)
- Body  | non_employee_request_body | [**NonEmployeeRequestBody**](../models/non-employee-request-body) | True  | Non-employee record creation request body. Attributes are restricted by user type. Owner of source can update end date. Organization admins can update all available fields.
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | id | **str** | True | Non-employee record id (UUID) |
+| Body | non_employee_request_body | [**NonEmployeeRequestBody**](../models/non-employee-request-body) | True | Non-employee record creation request body. Attributes are restricted by user type. Owner of source can update end date. Organization admins can update all available fields. |
 
 ### Return type
+
 [**NonEmployeeRecord**](../models/non-employee-record)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | An updated non-employee record. | NonEmployeeRecord |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | An updated non-employee record. | NonEmployeeRecord | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json
- - **Accept**: application/json
+
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### Example
 
@@ -2083,9 +2110,4 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling NonEmployeeLifecycleManagementApi->update_non_employee_record: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
-
-
-
+[[Back to top]](#)

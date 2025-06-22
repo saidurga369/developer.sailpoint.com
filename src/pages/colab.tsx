@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import Layout from '@theme/Layout';
 import MarketplaceBanner from '../components/marketplace/MarketplaceBanner';
 import Link from '@docusaurus/Link';
@@ -49,8 +49,12 @@ const Marketplace: React.FC = () => {
           <div className={styles.mainCard}>
             <div className={styles.contentContainer}>
               <div className={styles.gettingStartedText}>
-                <div className={styles.gettingStartedOne}>CoLab marketplace</div>
-                <div className={styles.gettingStartedTwo}>What is the CoLab?</div>
+                <div className={styles.gettingStartedOne}>
+                  CoLab marketplace
+                </div>
+                <div className={styles.gettingStartedTwo}>
+                  What is the CoLab?
+                </div>
                 <div className={styles.gettingStartedThree}>
                   <span>
                     The community CoLab is a place where members of our
@@ -75,8 +79,7 @@ const Marketplace: React.FC = () => {
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
+                allowFullScreen></iframe>
             </div>
           </div>
         </div>
@@ -89,7 +92,11 @@ const Marketplace: React.FC = () => {
                   View All &#8594;
                 </Link>
               </div>
-              <MarketplaceCards filterCallback={workflows} limit={5} multiple={true} />
+              <MarketplaceCards
+                filterCallback={workflows}
+                limit={5}
+                multiple={true}
+              />
             </div>
 
             <div className={styles.cardContainer}>
@@ -99,7 +106,11 @@ const Marketplace: React.FC = () => {
                   View All &#8594;
                 </Link>
               </div>
-              <MarketplaceCards filterCallback={saas} limit={5} multiple={true} />
+              <MarketplaceCards
+                filterCallback={saas}
+                limit={5}
+                multiple={true}
+              />
             </div>
 
             <div className={styles.cardContainer}>
@@ -109,7 +120,11 @@ const Marketplace: React.FC = () => {
                   View All &#8594;
                 </Link>
               </div>
-              <MarketplaceCards filterCallback={communityTools} limit={5} multiple={true} />
+              <MarketplaceCards
+                filterCallback={communityTools}
+                limit={5}
+                multiple={true}
+              />
             </div>
 
             <div className={styles.cardContainer}>
@@ -119,7 +134,11 @@ const Marketplace: React.FC = () => {
                   View All &#8594;
                 </Link>
               </div>
-              <MarketplaceCards filterCallback={rules} limit={5} multiple={true} />
+              <MarketplaceCards
+                filterCallback={rules}
+                limit={5}
+                multiple={true}
+              />
             </div>
 
             <div className={styles.cardContainer}>
@@ -129,7 +148,11 @@ const Marketplace: React.FC = () => {
                   View All &#8594;
                 </Link>
               </div>
-              <MarketplaceCards filterCallback={transforms} limit={5} multiple={true} />
+              <MarketplaceCards
+                filterCallback={transforms}
+                limit={5}
+                multiple={true}
+              />
             </div>
 
             <div className={styles.cardContainer}>
@@ -139,7 +162,11 @@ const Marketplace: React.FC = () => {
                   View All &#8594;
                 </Link>
               </div>
-              <MarketplaceCards filterCallback={plugins} limit={5} multiple={true} />
+              <MarketplaceCards
+                filterCallback={plugins}
+                limit={5}
+                multiple={true}
+              />
             </div>
           </div>
         </div>

@@ -4,19 +4,32 @@ title: DataAccessImpactScore
 pagination_label: DataAccessImpactScore
 sidebar_label: DataAccessImpactScore
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'DataAccessImpactScore', 'V2025DataAccessImpactScore'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'DataAccessImpactScore',
+    'V2025DataAccessImpactScore',
+  ]
 slug: /tools/sdk/python/v2025/models/data-access-impact-score
-tags: ['SDK', 'Software Development Kit', 'DataAccessImpactScore', 'V2025DataAccessImpactScore']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'DataAccessImpactScore',
+    'V2025DataAccessImpactScore',
+  ]
 ---
 
 # DataAccessImpactScore
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**value** | **str** | Impact Score for this data | [optional] 
+| Name      | Type    | Description                | Notes      |
+| --------- | ------- | -------------------------- | ---------- |
+| **value** | **str** | Impact Score for this data | [optional] |
+
 }
 
 ## Example
@@ -29,5 +42,5 @@ value='Medium'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

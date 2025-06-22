@@ -4,21 +4,22 @@ title: AttributeChange
 pagination_label: AttributeChange
 sidebar_label: AttributeChange
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AttributeChange', 'V2025AttributeChange'] 
+keywords: ['python', 'Python', 'sdk', 'AttributeChange', 'V2025AttributeChange']
 slug: /tools/sdk/python/v2025/models/attribute-change
-tags: ['SDK', 'Software Development Kit', 'AttributeChange', 'V2025AttributeChange']
+tags:
+  ['SDK', 'Software Development Kit', 'AttributeChange', 'V2025AttributeChange']
 ---
 
 # AttributeChange
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | the attribute name | [optional] 
-**previous_value** | **str** | the old value of attribute | [optional] 
-**new_value** | **str** | the new value of attribute | [optional] 
+| Name               | Type    | Description                | Notes      |
+| ------------------ | ------- | -------------------------- | ---------- |
+| **name**           | **str** | the attribute name         | [optional] |
+| **previous_value** | **str** | the old value of attribute | [optional] |
+| **new_value**      | **str** | the new value of attribute | [optional] |
+
 }
 
 ## Example
@@ -33,5 +34,5 @@ new_value=''
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

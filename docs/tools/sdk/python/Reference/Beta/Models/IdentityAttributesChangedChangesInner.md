@@ -4,21 +4,34 @@ title: IdentityAttributesChangedChangesInner
 pagination_label: IdentityAttributesChangedChangesInner
 sidebar_label: IdentityAttributesChangedChangesInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentityAttributesChangedChangesInner', 'BetaIdentityAttributesChangedChangesInner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'IdentityAttributesChangedChangesInner',
+    'BetaIdentityAttributesChangedChangesInner',
+  ]
 slug: /tools/sdk/python/beta/models/identity-attributes-changed-changes-inner
-tags: ['SDK', 'Software Development Kit', 'IdentityAttributesChangedChangesInner', 'BetaIdentityAttributesChangedChangesInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityAttributesChangedChangesInner',
+    'BetaIdentityAttributesChangedChangesInner',
+  ]
 ---
 
 # IdentityAttributesChangedChangesInner
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**attribute** | **str** | Identity attribute's name. | [required]
-**old_value** | [**IdentityAttributesChangedChangesInnerOldValue**](identity-attributes-changed-changes-inner-old-value) |  | [optional] 
-**new_value** | [**IdentityAttributesChangedChangesInnerNewValue**](identity-attributes-changed-changes-inner-new-value) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **attribute** | **str** | Identity attribute's name. | [required] |
+| **old_value** | [**IdentityAttributesChangedChangesInnerOldValue**](identity-attributes-changed-changes-inner-old-value) |  | [optional] |
+| **new_value** | [**IdentityAttributesChangedChangesInnerNewValue**](identity-attributes-changed-changes-inner-new-value) |  | [optional] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ new_value=marketing
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

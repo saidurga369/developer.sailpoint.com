@@ -4,9 +4,22 @@ title: IdentityCreatedIdentity
 pagination_label: IdentityCreatedIdentity
 sidebar_label: IdentityCreatedIdentity
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentityCreatedIdentity', 'V2024IdentityCreatedIdentity'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'IdentityCreatedIdentity',
+    'V2024IdentityCreatedIdentity',
+  ]
 slug: /tools/sdk/python/v2024/models/identity-created-identity
-tags: ['SDK', 'Software Development Kit', 'IdentityCreatedIdentity', 'V2024IdentityCreatedIdentity']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityCreatedIdentity',
+    'V2024IdentityCreatedIdentity',
+  ]
 ---
 
 # IdentityCreatedIdentity
@@ -15,11 +28,12 @@ Created identity.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] | Created identity's DTO type. | [required]
-**id** | **str** | Created identity ID. | [required]
-**name** | **str** | Created identity's display name. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'IDENTITY' ] | Created identity's DTO type. | [required] |
+| **id** | **str** | Created identity ID. | [required] |
+| **name** | **str** | Created identity's display name. | [required] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Michael Michaels'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

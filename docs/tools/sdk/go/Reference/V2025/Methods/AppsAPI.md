@@ -4,65 +4,57 @@ title: Apps
 pagination_label: Apps
 sidebar_label: Apps
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Apps', 'V2025Apps'] 
+keywords: ['go', 'Golang', 'sdk', 'Apps', 'V2025Apps']
 slug: /tools/sdk/go/v2025/methods/apps
 tags: ['SDK', 'Software Development Kit', 'Apps', 'V2025Apps']
 ---
 
 # AppsAPI
-  Use this API to implement source application functionality. 
-With this functionality in place, you can create, customize, and manage applications within sources.
- 
+
+Use this API to implement source application functionality. With this functionality in place, you can create, customize, and manage applications within sources.
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/v2025*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create-source-app**](#create-source-app) | **Post** `/source-apps` | Create source app
-[**delete-access-profiles-from-source-app-by-bulk**](#delete-access-profiles-from-source-app-by-bulk) | **Post** `/source-apps/{id}/access-profiles/bulk-remove` | Bulk remove access profiles from the specified source app
-[**delete-source-app**](#delete-source-app) | **Delete** `/source-apps/{id}` | Delete source app by id
-[**get-source-app**](#get-source-app) | **Get** `/source-apps/{id}` | Get source app by id
-[**list-access-profiles-for-source-app**](#list-access-profiles-for-source-app) | **Get** `/source-apps/{id}/access-profiles` | List access profiles for the specified source app
-[**list-all-source-app**](#list-all-source-app) | **Get** `/source-apps/all` | List all source apps
-[**list-all-user-apps**](#list-all-user-apps) | **Get** `/user-apps/all` | List all user apps
-[**list-assigned-source-app**](#list-assigned-source-app) | **Get** `/source-apps/assigned` | List assigned source apps
-[**list-available-accounts-for-user-app**](#list-available-accounts-for-user-app) | **Get** `/user-apps/{id}/available-accounts` | List available accounts for user app
-[**list-available-source-apps**](#list-available-source-apps) | **Get** `/source-apps` | List available source apps
-[**list-owned-user-apps**](#list-owned-user-apps) | **Get** `/user-apps` | List owned user apps
-[**patch-source-app**](#patch-source-app) | **Patch** `/source-apps/{id}` | Patch source app by id
-[**patch-user-app**](#patch-user-app) | **Patch** `/user-apps/{id}` | Patch user app by id
-[**update-source-apps-in-bulk**](#update-source-apps-in-bulk) | **Post** `/source-apps/bulk-update` | Bulk update source apps
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**create-source-app**](#create-source-app) | **Post** `/source-apps` | Create source app |
+| [**delete-access-profiles-from-source-app-by-bulk**](#delete-access-profiles-from-source-app-by-bulk) | **Post** `/source-apps/{id}/access-profiles/bulk-remove` | Bulk remove access profiles from the specified source app |
+| [**delete-source-app**](#delete-source-app) | **Delete** `/source-apps/{id}` | Delete source app by id |
+| [**get-source-app**](#get-source-app) | **Get** `/source-apps/{id}` | Get source app by id |
+| [**list-access-profiles-for-source-app**](#list-access-profiles-for-source-app) | **Get** `/source-apps/{id}/access-profiles` | List access profiles for the specified source app |
+| [**list-all-source-app**](#list-all-source-app) | **Get** `/source-apps/all` | List all source apps |
+| [**list-all-user-apps**](#list-all-user-apps) | **Get** `/user-apps/all` | List all user apps |
+| [**list-assigned-source-app**](#list-assigned-source-app) | **Get** `/source-apps/assigned` | List assigned source apps |
+| [**list-available-accounts-for-user-app**](#list-available-accounts-for-user-app) | **Get** `/user-apps/{id}/available-accounts` | List available accounts for user app |
+| [**list-available-source-apps**](#list-available-source-apps) | **Get** `/source-apps` | List available source apps |
+| [**list-owned-user-apps**](#list-owned-user-apps) | **Get** `/user-apps` | List owned user apps |
+| [**patch-source-app**](#patch-source-app) | **Patch** `/source-apps/{id}` | Patch source app by id |
+| [**patch-user-app**](#patch-user-app) | **Patch** `/user-apps/{id}` | Patch user app by id |
+| [**update-source-apps-in-bulk**](#update-source-apps-in-bulk) | **Post** `/source-apps/bulk-update` | Bulk update source apps |
 
 ## create-source-app
-:::warning experimental 
-This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint.
-:::
-:::tip setting x-sailpoint-experimental header
- on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK.
- Example:
- ```go
-   configuration = Configuration()
-   configuration.experimental = True
- ```
-:::
-Create source app
-This endpoint creates a source app using the given source app payload
+
+:::warning experimental This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint. ::: :::tip setting x-sailpoint-experimental header on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK. Example:
+
+```go
+  configuration = Configuration()
+  configuration.experimental = True
+```
+
+::: Create source app This endpoint creates a source app using the given source app payload
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/create-source-app)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCreateSourceAppRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;]
- **sourceAppCreateDto** | [**SourceAppCreateDto**](../models/source-app-create-dto) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;] |
+| **sourceAppCreateDto** | [**SourceAppCreateDto**](../models/source-app-create-dto) |  |
 
 ### Return type
 
@@ -98,14 +90,14 @@ func main() {
             "type" : "SOURCE"
           },
           "matchAllAccounts" : true
-        }`) // SourceAppCreateDto | 
+        }`) // SourceAppCreateDto |
 
     var sourceAppCreateDto v2025.SourceAppCreateDto
     if err := json.Unmarshal(sourceappcreatedto, &sourceAppCreateDto); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -123,41 +115,33 @@ func main() {
 [[Back to top]](#)
 
 ## delete-access-profiles-from-source-app-by-bulk
-:::warning experimental 
-This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint.
-:::
-:::tip setting x-sailpoint-experimental header
- on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK.
- Example:
- ```go
-   configuration = Configuration()
-   configuration.experimental = True
- ```
-:::
-Bulk remove access profiles from the specified source app
-This API returns the final list of access profiles for the specified source app after removing
+
+:::warning experimental This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint. ::: :::tip setting x-sailpoint-experimental header on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK. Example:
+
+```go
+  configuration = Configuration()
+  configuration.experimental = True
+```
+
+::: Bulk remove access profiles from the specified source app This API returns the final list of access profiles for the specified source app after removing
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/delete-access-profiles-from-source-app-by-bulk)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | ID of the source app | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | ID of the source app |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteAccessProfilesFromSourceAppByBulkRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;]
- **requestBody** | **[]string** |  | 
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
+**xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;] **requestBody** | **[]string** | | **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
 
 ### Return type
 
@@ -185,7 +169,7 @@ import (
 func main() {
     id := `2c91808a7813090a017814121e121518` // string | ID of the source app # string | ID of the source app
     xSailPointExperimental := `true` // string | Use this header to enable this experimental API. (default to "true") # string | Use this header to enable this experimental API. (default to "true")
-    requestbody := []byte(`[c9575abb5e3a4e3db82b2f989a738aa2, c9dc28e148a24d65b3ccb5fb8ca5ddd9]`) // []string | 
+    requestbody := []byte(`[c9575abb5e3a4e3db82b2f989a738aa2, c9dc28e148a24d65b3ccb5fb8ca5ddd9]`) // []string |
     limit := 250 // int32 | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 250) # int32 | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 250)
 
     var requestBody []v2025.RequestBody
@@ -193,7 +177,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -211,39 +195,33 @@ func main() {
 [[Back to top]](#)
 
 ## delete-source-app
-:::warning experimental 
-This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint.
-:::
-:::tip setting x-sailpoint-experimental header
- on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK.
- Example:
- ```go
-   configuration = Configuration()
-   configuration.experimental = True
- ```
-:::
-Delete source app by id
-Use this API to delete a specific source app
+
+:::warning experimental This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint. ::: :::tip setting x-sailpoint-experimental header on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK. Example:
+
+```go
+  configuration = Configuration()
+  configuration.experimental = True
+```
+
+::: Delete source app by id Use this API to delete a specific source app
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/delete-source-app)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | source app ID. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | source app ID. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteSourceAppRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;]
+**xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;]
 
 ### Return type
 
@@ -263,8 +241,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -272,7 +250,7 @@ func main() {
     id := `2c9180835d191a86015d28455b4a2329` // string | source app ID. # string | source app ID.
     xSailPointExperimental := `true` // string | Use this header to enable this experimental API. (default to "true") # string | Use this header to enable this experimental API. (default to "true")
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -290,39 +268,33 @@ func main() {
 [[Back to top]](#)
 
 ## get-source-app
-:::warning experimental 
-This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint.
-:::
-:::tip setting x-sailpoint-experimental header
- on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK.
- Example:
- ```go
-   configuration = Configuration()
-   configuration.experimental = True
- ```
-:::
-Get source app by id
-This API returns a source app by its ID.
+
+:::warning experimental This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint. ::: :::tip setting x-sailpoint-experimental header on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK. Example:
+
+```go
+  configuration = Configuration()
+  configuration.experimental = True
+```
+
+::: Get source app by id This API returns a source app by its ID.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/get-source-app)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | ID of the source app | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | ID of the source app |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetSourceAppRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;]
+**xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;]
 
 ### Return type
 
@@ -342,8 +314,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -351,7 +323,7 @@ func main() {
     id := `2c91808a7813090a017814121e121518` // string | ID of the source app # string | ID of the source app
     xSailPointExperimental := `true` // string | Use this header to enable this experimental API. (default to "true") # string | Use this header to enable this experimental API. (default to "true")
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -369,42 +341,33 @@ func main() {
 [[Back to top]](#)
 
 ## list-access-profiles-for-source-app
-:::warning experimental 
-This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint.
-:::
-:::tip setting x-sailpoint-experimental header
- on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK.
- Example:
- ```go
-   configuration = Configuration()
-   configuration.experimental = True
- ```
-:::
-List access profiles for the specified source app
-This API returns the list of access profiles for the specified source app
+
+:::warning experimental This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint. ::: :::tip setting x-sailpoint-experimental header on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK. Example:
+
+```go
+  configuration = Configuration()
+  configuration.experimental = True
+```
+
+::: List access profiles for the specified source app This API returns the list of access profiles for the specified source app
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/list-access-profiles-for-source-app)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | ID of the source app | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | ID of the source app |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListAccessProfilesForSourceAppRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;]
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, in*  **name**: *eq, in*  **created**: *gt, lt, ge, le*  **modified**: *gt, lt, ge, le* | 
+**xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;] **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **id**: _eq, in_ **name**: _eq, in_ **created**: _gt, lt, ge, le_ **modified**: _gt, lt, ge, le_ |
 
 ### Return type
 
@@ -424,8 +387,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -436,7 +399,7 @@ func main() {
     offset := 0 // int32 | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 0) # int32 | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 0)
     filters := `name eq "developer access profile"` // string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, in*  **name**: *eq, in*  **created**: *gt, lt, ge, le*  **modified**: *gt, lt, ge, le* (optional) # string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, in*  **name**: *eq, in*  **created**: *gt, lt, ge, le*  **modified**: *gt, lt, ge, le* (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -454,39 +417,32 @@ func main() {
 [[Back to top]](#)
 
 ## list-all-source-app
-:::warning experimental 
-This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint.
-:::
-:::tip setting x-sailpoint-experimental header
- on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK.
- Example:
- ```go
-   configuration = Configuration()
-   configuration.experimental = True
- ```
-:::
-List all source apps
-This API returns the list of all source apps for the org.    
+
+:::warning experimental This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint. ::: :::tip setting x-sailpoint-experimental header on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK. Example:
+
+```go
+  configuration = Configuration()
+  configuration.experimental = True
+```
+
+::: List all source apps This API returns the list of all source apps for the org.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/list-all-source-app)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListAllSourceAppRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;]
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **id, name, created, modified, owner.id, accountSource.id** | 
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, in*  **name**: *eq, in, co, sw*  **created**: *gt, lt, ge, le*  **modified**: *gt, lt, ge, le*  **owner.id**: *eq, in*  **accountSource.id**: *eq, in*  **enabled**: *eq* | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;] |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
+| **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false] |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
+| **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results) Sorting is supported for the following fields: **id, name, created, modified, owner.id, accountSource.id** |
+| **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **id**: _eq, in_ **name**: _eq, in, co, sw_ **created**: _gt, lt, ge, le_ **modified**: _gt, lt, ge, le_ **owner.id**: _eq, in_ **accountSource.id**: _eq, in_ **enabled**: _eq_ |
 
 ### Return type
 
@@ -506,8 +462,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -519,7 +475,7 @@ func main() {
     sorters := `name,-modified` // string | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **id, name, created, modified, owner.id, accountSource.id** (optional) # string | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **id, name, created, modified, owner.id, accountSource.id** (optional)
     filters := `enabled eq true` // string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, in*  **name**: *eq, in, co, sw*  **created**: *gt, lt, ge, le*  **modified**: *gt, lt, ge, le*  **owner.id**: *eq, in*  **accountSource.id**: *eq, in*  **enabled**: *eq* (optional) # string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, in*  **name**: *eq, in, co, sw*  **created**: *gt, lt, ge, le*  **modified**: *gt, lt, ge, le*  **owner.id**: *eq, in*  **accountSource.id**: *eq, in*  **enabled**: *eq* (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -537,39 +493,31 @@ func main() {
 [[Back to top]](#)
 
 ## list-all-user-apps
-:::warning experimental 
-This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint.
-:::
-:::tip setting x-sailpoint-experimental header
- on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK.
- Example:
- ```go
-   configuration = Configuration()
-   configuration.experimental = True
- ```
-:::
-List all user apps
-This API returns the list of all user apps with specified filters.
-This API must be used with **filters** query parameter.
+
+:::warning experimental This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint. ::: :::tip setting x-sailpoint-experimental header on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK. Example:
+
+```go
+  configuration = Configuration()
+  configuration.experimental = True
+```
+
+::: List all user apps This API returns the list of all user apps with specified filters. This API must be used with **filters** query parameter.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/list-all-user-apps)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListAllUserAppsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq*  **ownerId**: *eq*  **ownerName**: *eq, sw*  **ownerAlias**: *eq, sw*  **accountId**: *eq*  **sourceAppId**: *eq* | 
- **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;]
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **id**: _eq_ **ownerId**: _eq_ **ownerName**: _eq, sw_ **ownerAlias**: _eq, sw_ **accountId**: _eq_ **sourceAppId**: _eq_ |
+| **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;] |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
+| **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false] |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
 
 ### Return type
 
@@ -589,8 +537,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -601,7 +549,7 @@ func main() {
     count := true // bool | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to false) # bool | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to false)
     offset := 0 // int32 | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 0) # int32 | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 0)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -619,39 +567,32 @@ func main() {
 [[Back to top]](#)
 
 ## list-assigned-source-app
-:::warning experimental 
-This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint.
-:::
-:::tip setting x-sailpoint-experimental header
- on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK.
- Example:
- ```go
-   configuration = Configuration()
-   configuration.experimental = True
- ```
-:::
-List assigned source apps
-This API returns the list of source apps assigned for logged in user.
+
+:::warning experimental This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint. ::: :::tip setting x-sailpoint-experimental header on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK. Example:
+
+```go
+  configuration = Configuration()
+  configuration.experimental = True
+```
+
+::: List assigned source apps This API returns the list of source apps assigned for logged in user.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/list-assigned-source-app)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListAssignedSourceAppRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;]
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **id, name, created, modified, accountSource.id** | 
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, in*  **name**: *eq, in, co, sw*  **created**: *gt, lt, ge, le*  **modified**: *gt, lt, ge, le*  **accountSource.id**: *eq, in* | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;] |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
+| **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false] |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
+| **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results) Sorting is supported for the following fields: **id, name, created, modified, accountSource.id** |
+| **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **id**: _eq, in_ **name**: _eq, in, co, sw_ **created**: _gt, lt, ge, le_ **modified**: _gt, lt, ge, le_ **accountSource.id**: _eq, in_ |
 
 ### Return type
 
@@ -671,8 +612,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -684,7 +625,7 @@ func main() {
     sorters := `name,-modified` // string | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **id, name, created, modified, accountSource.id** (optional) # string | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **id, name, created, modified, accountSource.id** (optional)
     filters := `name eq "source app name"` // string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, in*  **name**: *eq, in, co, sw*  **created**: *gt, lt, ge, le*  **modified**: *gt, lt, ge, le*  **accountSource.id**: *eq, in* (optional) # string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, in*  **name**: *eq, in, co, sw*  **created**: *gt, lt, ge, le*  **modified**: *gt, lt, ge, le*  **accountSource.id**: *eq, in* (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -702,41 +643,33 @@ func main() {
 [[Back to top]](#)
 
 ## list-available-accounts-for-user-app
-:::warning experimental 
-This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint.
-:::
-:::tip setting x-sailpoint-experimental header
- on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK.
- Example:
- ```go
-   configuration = Configuration()
-   configuration.experimental = True
- ```
-:::
-List available accounts for user app
-This API returns the list of available accounts for the specified user app. The user app needs to belong lo logged in user.
+
+:::warning experimental This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint. ::: :::tip setting x-sailpoint-experimental header on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK. Example:
+
+```go
+  configuration = Configuration()
+  configuration.experimental = True
+```
+
+::: List available accounts for user app This API returns the list of available accounts for the specified user app. The user app needs to belong lo logged in user.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/list-available-accounts-for-user-app)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | ID of the user app | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | ID of the user app |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListAvailableAccountsForUserAppRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;]
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
+**xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;] **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
 
 ### Return type
 
@@ -756,8 +689,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -767,7 +700,7 @@ func main() {
     limit := 250 // int32 | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 250) # int32 | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 250)
     count := true // bool | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to false) # bool | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to false)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -785,39 +718,32 @@ func main() {
 [[Back to top]](#)
 
 ## list-available-source-apps
-:::warning experimental 
-This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint.
-:::
-:::tip setting x-sailpoint-experimental header
- on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK.
- Example:
- ```go
-   configuration = Configuration()
-   configuration.experimental = True
- ```
-:::
-List available source apps
-This API returns the list of source apps available for access request.
+
+:::warning experimental This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint. ::: :::tip setting x-sailpoint-experimental header on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK. Example:
+
+```go
+  configuration = Configuration()
+  configuration.experimental = True
+```
+
+::: List available source apps This API returns the list of source apps available for access request.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/list-available-source-apps)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListAvailableSourceAppsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;]
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **id, name, created, modified, owner.id, accountSource.id** | 
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, in*  **name**: *eq, in, co, sw*  **created**: *gt, lt, ge, le*  **modified**: *gt, lt, ge, le*  **accountSource.id**: *eq, in* | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;] |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
+| **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false] |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
+| **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results) Sorting is supported for the following fields: **id, name, created, modified, owner.id, accountSource.id** |
+| **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **id**: _eq, in_ **name**: _eq, in, co, sw_ **created**: _gt, lt, ge, le_ **modified**: _gt, lt, ge, le_ **accountSource.id**: _eq, in_ |
 
 ### Return type
 
@@ -837,8 +763,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -850,7 +776,7 @@ func main() {
     sorters := `name,-modified` // string | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **id, name, created, modified, owner.id, accountSource.id** (optional) # string | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **id, name, created, modified, owner.id, accountSource.id** (optional)
     filters := `name eq "source app name"` // string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, in*  **name**: *eq, in, co, sw*  **created**: *gt, lt, ge, le*  **modified**: *gt, lt, ge, le*  **accountSource.id**: *eq, in* (optional) # string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, in*  **name**: *eq, in, co, sw*  **created**: *gt, lt, ge, le*  **modified**: *gt, lt, ge, le*  **accountSource.id**: *eq, in* (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -868,38 +794,31 @@ func main() {
 [[Back to top]](#)
 
 ## list-owned-user-apps
-:::warning experimental 
-This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint.
-:::
-:::tip setting x-sailpoint-experimental header
- on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK.
- Example:
- ```go
-   configuration = Configuration()
-   configuration.experimental = True
- ```
-:::
-List owned user apps
-This API returns the list of user apps assigned to logged in user
+
+:::warning experimental This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint. ::: :::tip setting x-sailpoint-experimental header on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK. Example:
+
+```go
+  configuration = Configuration()
+  configuration.experimental = True
+```
+
+::: List owned user apps This API returns the list of user apps assigned to logged in user
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/list-owned-user-apps)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListOwnedUserAppsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;]
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq*  **ownerName**: *eq, sw*  **ownerAlias**: *eq, sw*  **accountId**: *eq*  **sourceAppId**: *eq* | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;] |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
+| **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false] |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
+| **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **id**: _eq_ **ownerName**: _eq, sw_ **ownerAlias**: _eq, sw_ **accountId**: _eq_ **sourceAppId**: _eq_ |
 
 ### Return type
 
@@ -919,8 +838,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -931,7 +850,7 @@ func main() {
     offset := 0 // int32 | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 0) # int32 | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 0)
     filters := `name eq "user app name"` // string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq*  **ownerName**: *eq, sw*  **ownerAlias**: *eq, sw*  **accountId**: *eq*  **sourceAppId**: *eq* (optional) # string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq*  **ownerName**: *eq, sw*  **ownerAlias**: *eq, sw*  **accountId**: *eq*  **sourceAppId**: *eq* (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -949,42 +868,33 @@ func main() {
 [[Back to top]](#)
 
 ## patch-source-app
-:::warning experimental 
-This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint.
-:::
-:::tip setting x-sailpoint-experimental header
- on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK.
- Example:
- ```go
-   configuration = Configuration()
-   configuration.experimental = True
- ```
-:::
-Patch source app by id
-This API updates an existing source app using [JSON Patch](https://tools.ietf.org/html/rfc6902) syntax.
-The following fields are patchable: **name**, **description**, **enabled**, **owner**, **provisionRequestEnabled**, **appCenterEnabled**, **accountSource**,  **matchAllAccounts** and **accessProfiles**.
-Name, description and owner can't be empty or null.
+
+:::warning experimental This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint. ::: :::tip setting x-sailpoint-experimental header on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK. Example:
+
+```go
+  configuration = Configuration()
+  configuration.experimental = True
+```
+
+::: Patch source app by id This API updates an existing source app using [JSON Patch](https://tools.ietf.org/html/rfc6902) syntax. The following fields are patchable: **name**, **description**, **enabled**, **owner**, **provisionRequestEnabled**, **appCenterEnabled**, **accountSource**, **matchAllAccounts** and **accessProfiles**. Name, description and owner can't be empty or null.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/patch-source-app)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | ID of the source app to patch | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | ID of the source app to patch |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiPatchSourceAppRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;]
- **jsonPatchOperation** | [**[]JsonPatchOperation**](../models/json-patch-operation) |  | 
+**xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;] **jsonPatchOperation** | [**[]JsonPatchOperation**](../models/json-patch-operation) | |
 
 ### Return type
 
@@ -1004,8 +914,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -1014,7 +924,7 @@ func main() {
     xSailPointExperimental := `true` // string | Use this header to enable this experimental API. (default to "true") # string | Use this header to enable this experimental API. (default to "true")
     jsonpatchoperation := []byte(`[{op=replace, path=/enabled, value=true}, {op=replace, path=/matchAllAccounts, value=true}]`) // []JsonPatchOperation |  (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1032,41 +942,33 @@ func main() {
 [[Back to top]](#)
 
 ## patch-user-app
-:::warning experimental 
-This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint.
-:::
-:::tip setting x-sailpoint-experimental header
- on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK.
- Example:
- ```go
-   configuration = Configuration()
-   configuration.experimental = True
- ```
-:::
-Patch user app by id
-This API updates an existing user app using [JSON Patch](https://tools.ietf.org/html/rfc6902) syntax.
-The following fields are patchable: **account**
+
+:::warning experimental This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint. ::: :::tip setting x-sailpoint-experimental header on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK. Example:
+
+```go
+  configuration = Configuration()
+  configuration.experimental = True
+```
+
+::: Patch user app by id This API updates an existing user app using [JSON Patch](https://tools.ietf.org/html/rfc6902) syntax. The following fields are patchable: **account**
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/patch-user-app)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | ID of the user app to patch | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | ID of the user app to patch |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiPatchUserAppRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;]
- **jsonPatchOperation** | [**[]JsonPatchOperation**](../models/json-patch-operation) |  | 
+**xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;] **jsonPatchOperation** | [**[]JsonPatchOperation**](../models/json-patch-operation) | |
 
 ### Return type
 
@@ -1086,8 +988,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -1096,7 +998,7 @@ func main() {
     xSailPointExperimental := `true` // string | Use this header to enable this experimental API. (default to "true") # string | Use this header to enable this experimental API. (default to "true")
     jsonpatchoperation := []byte(``) // []JsonPatchOperation |  (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1114,41 +1016,32 @@ func main() {
 [[Back to top]](#)
 
 ## update-source-apps-in-bulk
-:::warning experimental 
-This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint.
-:::
-:::tip setting x-sailpoint-experimental header
- on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK.
- Example:
- ```go
-   configuration = Configuration()
-   configuration.experimental = True
- ```
-:::
-Bulk update source apps
-This API updates source apps using [JSON Patch](https://tools.ietf.org/html/rfc6902) syntax.  It can update up to 50 source apps in a batch.
-The following fields can be updated: **name**, **description**, **enabled**, **owner**, **provisionRequestEnabled**, **appCenterEnabled**, **accountSource**,  **matchAllAccounts**, and **accessProfiles**.
-Name, description and owner can't be empty or null.
+
+:::warning experimental This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint. ::: :::tip setting x-sailpoint-experimental header on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK. Example:
+
+```go
+  configuration = Configuration()
+  configuration.experimental = True
+```
+
+::: Bulk update source apps This API updates source apps using [JSON Patch](https://tools.ietf.org/html/rfc6902) syntax. It can update up to 50 source apps in a batch. The following fields can be updated: **name**, **description**, **enabled**, **owner**, **provisionRequestEnabled**, **appCenterEnabled**, **accountSource**, **matchAllAccounts**, and **accessProfiles**. Name, description and owner can't be empty or null.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/update-source-apps-in-bulk)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiUpdateSourceAppsInBulkRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;]
- **sourceAppBulkUpdateRequest** | [**SourceAppBulkUpdateRequest**](../models/source-app-bulk-update-request) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;] |
+| **sourceAppBulkUpdateRequest** | [**SourceAppBulkUpdateRequest**](../models/source-app-bulk-update-request) |  |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -1164,8 +1057,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -1184,7 +1077,7 @@ func main() {
           } ]
         }`) // SourceAppBulkUpdateRequest |  (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1194,9 +1087,8 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `AppsAPI.UpdateSourceAppsInBulk``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
-

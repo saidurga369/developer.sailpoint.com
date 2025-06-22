@@ -4,27 +4,40 @@ title: NonEmployeeBulkUploadJob
 pagination_label: NonEmployeeBulkUploadJob
 sidebar_label: NonEmployeeBulkUploadJob
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'NonEmployeeBulkUploadJob', 'BetaNonEmployeeBulkUploadJob'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'NonEmployeeBulkUploadJob',
+    'BetaNonEmployeeBulkUploadJob',
+  ]
 slug: /tools/sdk/powershell/beta/models/non-employee-bulk-upload-job
-tags: ['SDK', 'Software Development Kit', 'NonEmployeeBulkUploadJob', 'BetaNonEmployeeBulkUploadJob']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NonEmployeeBulkUploadJob',
+    'BetaNonEmployeeBulkUploadJob',
+  ]
 ---
-
 
 # NonEmployeeBulkUploadJob
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | The bulk upload job's ID. (UUID) | [optional] 
-**SourceId** | **String** | The ID of the source to bulk-upload non-employees to. (UUID) | [optional] 
-**Created** | **System.DateTime** | The date-time the job was submitted. | [optional] 
-**Modified** | **System.DateTime** | The date-time that the job was last updated. | [optional] 
-**Status** |  **Enum** [  "PENDING",    "IN_PROGRESS",    "COMPLETED",    "ERROR" ] | Returns the following values indicating the progress or result of the bulk upload job. ""PENDING"" means the job is queued and waiting to be processed. ""IN_PROGRESS"" means the job is currently being processed. ""COMPLETED"" means the job has been completed without any errors. ""ERROR"" means the job failed to process with errors.  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | The bulk upload job's ID. (UUID) | [optional] |
+| **SourceId** | **String** | The ID of the source to bulk-upload non-employees to. (UUID) | [optional] |
+| **Created** | **System.DateTime** | The date-time the job was submitted. | [optional] |
+| **Modified** | **System.DateTime** | The date-time that the job was last updated. | [optional] |
+| **Status** | **Enum** [ "PENDING", "IN_PROGRESS", "COMPLETED", "ERROR" ] | Returns the following values indicating the progress or result of the bulk upload job. ""PENDING"" means the job is queued and waiting to be processed. ""IN_PROGRESS"" means the job is currently being processed. ""COMPLETED"" means the job has been completed without any errors. ""ERROR"" means the job failed to process with errors. | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $NonEmployeeBulkUploadJob = Initialize-BetaNonEmployeeBulkUploadJob  -Id 2c91808568c529c60168cca6f90cffff `
  -SourceId 2c91808568c529c60168cca6f90c1313 `
@@ -34,10 +47,9 @@ $NonEmployeeBulkUploadJob = Initialize-BetaNonEmployeeBulkUploadJob  -Id 2c91808
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $NonEmployeeBulkUploadJob | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

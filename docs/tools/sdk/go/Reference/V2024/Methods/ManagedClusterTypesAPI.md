@@ -4,46 +4,47 @@ title: ManagedClusterTypes
 pagination_label: ManagedClusterTypes
 sidebar_label: ManagedClusterTypes
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ManagedClusterTypes', 'V2024ManagedClusterTypes'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'ManagedClusterTypes', 'V2024ManagedClusterTypes']
 slug: /tools/sdk/go/v2024/methods/managed-cluster-types
-tags: ['SDK', 'Software Development Kit', 'ManagedClusterTypes', 'V2024ManagedClusterTypes']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ManagedClusterTypes',
+    'V2024ManagedClusterTypes',
+  ]
 ---
 
 # ManagedClusterTypesAPI
-  Use this API to implement managed cluster types functionality. 
-With this functionality in place, administrators can modify and delete existing managed cluster types and create new ones.
- 
+
+Use this API to implement managed cluster types functionality. With this functionality in place, administrators can modify and delete existing managed cluster types and create new ones.
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/v2024*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create-managed-cluster-type**](#create-managed-cluster-type) | **Post** `/managed-cluster-types` | Create new managed cluster type
-[**delete-managed-cluster-type**](#delete-managed-cluster-type) | **Delete** `/managed-cluster-types/{id}` | Delete a managed cluster type
-[**get-managed-cluster-type**](#get-managed-cluster-type) | **Get** `/managed-cluster-types/{id}` | Get a managed cluster type
-[**get-managed-cluster-types**](#get-managed-cluster-types) | **Get** `/managed-cluster-types` | Get managed cluster types
-[**update-managed-cluster-type**](#update-managed-cluster-type) | **Patch** `/managed-cluster-types/{id}` | Update a managed cluster type
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**create-managed-cluster-type**](#create-managed-cluster-type) | **Post** `/managed-cluster-types` | Create new managed cluster type |
+| [**delete-managed-cluster-type**](#delete-managed-cluster-type) | **Delete** `/managed-cluster-types/{id}` | Delete a managed cluster type |
+| [**get-managed-cluster-type**](#get-managed-cluster-type) | **Get** `/managed-cluster-types/{id}` | Get a managed cluster type |
+| [**get-managed-cluster-types**](#get-managed-cluster-types) | **Get** `/managed-cluster-types` | Get managed cluster types |
+| [**update-managed-cluster-type**](#update-managed-cluster-type) | **Patch** `/managed-cluster-types/{id}` | Update a managed cluster type |
 
 ## create-managed-cluster-type
-Create new managed cluster type
-Create a new Managed Cluster Type.
-AMS Security: Devops, Internal A token with SaaS Platform Internal or DevOps is required to access this endpoint.
-The API returns a result that includes the Managed Cluster Type ID
+
+Create new managed cluster type Create a new Managed Cluster Type. AMS Security: Devops, Internal A token with SaaS Platform Internal or DevOps is required to access this endpoint. The API returns a result that includes the Managed Cluster Type ID
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/create-managed-cluster-type)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCreateManagedClusterTypeRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **managedClusterType** | [**ManagedClusterType**](../models/managed-cluster-type) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **managedClusterType** | [**ManagedClusterType**](../models/managed-cluster-type) |  |
 
 ### Return type
 
@@ -75,14 +76,14 @@ func main() {
           "org" : "denali-cjh",
           "id" : "aClusterTypeId",
           "type" : "idn"
-        }`) // ManagedClusterType | 
+        }`) // ManagedClusterType |
 
     var managedClusterType v2024.ManagedClusterType
     if err := json.Unmarshal(managedclustertype, &managedClusterType); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -100,32 +101,28 @@ func main() {
 [[Back to top]](#)
 
 ## delete-managed-cluster-type
-Delete a managed cluster type
-Delete an existing Managed Cluster Type.
-AMS Security: Devops, Internal A token with SaaS Platform Internal or DevOps is required to access this endpoint.
+
+Delete a managed cluster type Delete an existing Managed Cluster Type. AMS Security: Devops, Internal A token with SaaS Platform Internal or DevOps is required to access this endpoint.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/delete-managed-cluster-type)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The Managed Cluster Type ID | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The Managed Cluster Type ID |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteManagedClusterTypeRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -141,15 +138,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `aClusterTypeId` // string | The Managed Cluster Type ID # string | The Managed Cluster Type ID
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -159,35 +156,31 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `ManagedClusterTypesAPI.DeleteManagedClusterType``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## get-managed-cluster-type
-Get a managed cluster type
-Get a Managed Cluster Type.
-AMS Security: Devops, Internal A token with SaaS Platform Internal or DevOps is required to access this endpoint.
+
+Get a managed cluster type Get a Managed Cluster Type. AMS Security: Devops, Internal A token with SaaS Platform Internal or DevOps is required to access this endpoint.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/get-managed-cluster-type)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The Managed Cluster Type ID | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The Managed Cluster Type ID |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetManagedClusterTypeRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -207,15 +200,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `aClusterTypeId` // string | The Managed Cluster Type ID # string | The Managed Cluster Type ID
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -233,28 +226,24 @@ func main() {
 [[Back to top]](#)
 
 ## get-managed-cluster-types
-Get managed cluster types
-Get a list of Managed Cluster Types.
-AMS Security: Devops, Internal A token with SaaS Platform Internal or DevOps is required to access this endpoint.
+
+Get managed cluster types Get a list of Managed Cluster Types. AMS Security: Devops, Internal A token with SaaS Platform Internal or DevOps is required to access this endpoint.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/get-managed-cluster-types)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetManagedClusterTypesRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **type_** | **string** | Type descriptor | 
- **pod** | **string** | Pinned pod (or default) | 
- **org** | **string** | Pinned org (or default) | 
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type\_** | **string** | Type descriptor |
+| **pod** | **string** | Pinned pod (or default) |
+| **org** | **string** | Pinned org (or default) |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
 
 ### Return type
 
@@ -274,8 +263,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -286,7 +275,7 @@ func main() {
     offset := 0 // int32 | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 0) # int32 | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 0)
     limit := 250 // int32 | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 250) # int32 | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 250)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -304,29 +293,26 @@ func main() {
 [[Back to top]](#)
 
 ## update-managed-cluster-type
-Update a managed cluster type
-Update an existing Managed Cluster Type.
-AMS Security: Devops, Internal A token with SaaS Platform Internal or DevOps is required to access this endpoint.
+
+Update a managed cluster type Update an existing Managed Cluster Type. AMS Security: Devops, Internal A token with SaaS Platform Internal or DevOps is required to access this endpoint.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/update-managed-cluster-type)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The Managed Cluster Type ID | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The Managed Cluster Type ID |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiUpdateManagedClusterTypeRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **jsonPatch** | [**JsonPatch**](../models/json-patch) | The JSONPatch payload used to update the schema. | 
+**jsonPatch** | [**JsonPatch**](../models/json-patch) | The JSONPatch payload used to update the schema. |
 
 ### Return type
 
@@ -370,7 +356,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -386,4 +372,3 @@ func main() {
 ```
 
 [[Back to top]](#)
-

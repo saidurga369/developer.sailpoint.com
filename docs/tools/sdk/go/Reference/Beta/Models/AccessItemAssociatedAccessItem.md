@@ -4,36 +4,49 @@ title: AccessItemAssociatedAccessItem
 pagination_label: AccessItemAssociatedAccessItem
 sidebar_label: AccessItemAssociatedAccessItem
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessItemAssociatedAccessItem', 'BetaAccessItemAssociatedAccessItem'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'AccessItemAssociatedAccessItem',
+    'BetaAccessItemAssociatedAccessItem',
+  ]
 slug: /tools/sdk/go/beta/models/access-item-associated-access-item
-tags: ['SDK', 'Software Development Kit', 'AccessItemAssociatedAccessItem', 'BetaAccessItemAssociatedAccessItem']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessItemAssociatedAccessItem',
+    'BetaAccessItemAssociatedAccessItem',
+  ]
 ---
 
 # AccessItemAssociatedAccessItem
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**AccessType** | Pointer to **string** | the access item type. role in this case | [optional] 
-**Id** | Pointer to **string** | the access item id | [optional] 
-**Name** | Pointer to **string** | the access profile name | [optional] 
-**SourceName** | Pointer to **string** | the associated source name if it exists | [optional] 
-**SourceId** | Pointer to **string** | the id of the source | [optional] 
-**Description** | Pointer to **string** | the description for the role | [optional] 
-**DisplayName** | Pointer to **string** | the role display name | [optional] 
-**EntitlementCount** | Pointer to **string** | the number of entitlements the account will create | [optional] 
-**AppDisplayName** | Pointer to **string** | the name of | [optional] 
-**RemoveDate** | Pointer to **string** | the date the role is no longer assigned to the specified identity | [optional] 
-**Standalone** | **bool** | indicates whether the entitlement is standalone | 
-**Revocable** | **bool** | indicates whether the role is revocable | 
-**NativeIdentity** | Pointer to **string** | the native identifier used to uniquely identify an acccount | [optional] 
-**AppRoleId** | Pointer to **string** | the app role id | [optional] 
-**Attribute** | Pointer to **string** | the entitlement attribute | [optional] 
-**Value** | Pointer to **string** | the associated value | [optional] 
-**EntitlementType** | Pointer to **string** | the type of entitlement | [optional] 
-**Privileged** | **bool** | indicates whether the entitlement is privileged | 
-**CloudGoverned** | **bool** | indicates whether the entitlement is cloud governed | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **AccessType** | Pointer to **string** | the access item type. role in this case | [optional] |
+| **Id** | Pointer to **string** | the access item id | [optional] |
+| **Name** | Pointer to **string** | the access profile name | [optional] |
+| **SourceName** | Pointer to **string** | the associated source name if it exists | [optional] |
+| **SourceId** | Pointer to **string** | the id of the source | [optional] |
+| **Description** | Pointer to **string** | the description for the role | [optional] |
+| **DisplayName** | Pointer to **string** | the role display name | [optional] |
+| **EntitlementCount** | Pointer to **string** | the number of entitlements the account will create | [optional] |
+| **AppDisplayName** | Pointer to **string** | the name of | [optional] |
+| **RemoveDate** | Pointer to **string** | the date the role is no longer assigned to the specified identity | [optional] |
+| **Standalone** | **bool** | indicates whether the entitlement is standalone |
+| **Revocable** | **bool** | indicates whether the role is revocable |
+| **NativeIdentity** | Pointer to **string** | the native identifier used to uniquely identify an acccount | [optional] |
+| **AppRoleId** | Pointer to **string** | the app role id | [optional] |
+| **Attribute** | Pointer to **string** | the entitlement attribute | [optional] |
+| **Value** | Pointer to **string** | the associated value | [optional] |
+| **EntitlementType** | Pointer to **string** | the type of entitlement | [optional] |
+| **Privileged** | **bool** | indicates whether the entitlement is privileged |
+| **CloudGoverned** | **bool** | indicates whether the entitlement is cloud governed |
 
 ## Methods
 
@@ -41,18 +54,13 @@ Name | Type | Description | Notes
 
 `func NewAccessItemAssociatedAccessItem(standalone bool, revocable bool, privileged bool, cloudGoverned bool, ) *AccessItemAssociatedAccessItem`
 
-NewAccessItemAssociatedAccessItem instantiates a new AccessItemAssociatedAccessItem object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessItemAssociatedAccessItem instantiates a new AccessItemAssociatedAccessItem object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessItemAssociatedAccessItemWithDefaults
 
 `func NewAccessItemAssociatedAccessItemWithDefaults() *AccessItemAssociatedAccessItem`
 
-NewAccessItemAssociatedAccessItemWithDefaults instantiates a new AccessItemAssociatedAccessItem object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessItemAssociatedAccessItemWithDefaults instantiates a new AccessItemAssociatedAccessItem object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetAccessType
 
@@ -64,8 +72,7 @@ GetAccessType returns the AccessType field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAssociatedAccessItem) GetAccessTypeOk() (*string, bool)`
 
-GetAccessTypeOk returns a tuple with the AccessType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessTypeOk returns a tuple with the AccessType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessType
 
@@ -89,8 +96,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAssociatedAccessItem) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -114,8 +120,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAssociatedAccessItem) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -139,8 +144,7 @@ GetSourceName returns the SourceName field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAssociatedAccessItem) GetSourceNameOk() (*string, bool)`
 
-GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceName
 
@@ -164,8 +168,7 @@ GetSourceId returns the SourceId field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAssociatedAccessItem) GetSourceIdOk() (*string, bool)`
 
-GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceId
 
@@ -189,8 +192,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAssociatedAccessItem) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -214,8 +216,7 @@ GetDisplayName returns the DisplayName field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAssociatedAccessItem) GetDisplayNameOk() (*string, bool)`
 
-GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayName
 
@@ -239,8 +240,7 @@ GetEntitlementCount returns the EntitlementCount field if non-nil, zero value ot
 
 `func (o *AccessItemAssociatedAccessItem) GetEntitlementCountOk() (*string, bool)`
 
-GetEntitlementCountOk returns a tuple with the EntitlementCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEntitlementCountOk returns a tuple with the EntitlementCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEntitlementCount
 
@@ -264,8 +264,7 @@ GetAppDisplayName returns the AppDisplayName field if non-nil, zero value otherw
 
 `func (o *AccessItemAssociatedAccessItem) GetAppDisplayNameOk() (*string, bool)`
 
-GetAppDisplayNameOk returns a tuple with the AppDisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAppDisplayNameOk returns a tuple with the AppDisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAppDisplayName
 
@@ -289,8 +288,7 @@ GetRemoveDate returns the RemoveDate field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAssociatedAccessItem) GetRemoveDateOk() (*string, bool)`
 
-GetRemoveDateOk returns a tuple with the RemoveDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRemoveDateOk returns a tuple with the RemoveDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRemoveDate
 
@@ -314,15 +312,13 @@ GetStandalone returns the Standalone field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAssociatedAccessItem) GetStandaloneOk() (*bool, bool)`
 
-GetStandaloneOk returns a tuple with the Standalone field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStandaloneOk returns a tuple with the Standalone field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStandalone
 
 `func (o *AccessItemAssociatedAccessItem) SetStandalone(v bool)`
 
 SetStandalone sets Standalone field to given value.
-
 
 ### GetRevocable
 
@@ -334,15 +330,13 @@ GetRevocable returns the Revocable field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAssociatedAccessItem) GetRevocableOk() (*bool, bool)`
 
-GetRevocableOk returns a tuple with the Revocable field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRevocableOk returns a tuple with the Revocable field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRevocable
 
 `func (o *AccessItemAssociatedAccessItem) SetRevocable(v bool)`
 
 SetRevocable sets Revocable field to given value.
-
 
 ### GetNativeIdentity
 
@@ -354,8 +348,7 @@ GetNativeIdentity returns the NativeIdentity field if non-nil, zero value otherw
 
 `func (o *AccessItemAssociatedAccessItem) GetNativeIdentityOk() (*string, bool)`
 
-GetNativeIdentityOk returns a tuple with the NativeIdentity field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNativeIdentityOk returns a tuple with the NativeIdentity field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNativeIdentity
 
@@ -379,8 +372,7 @@ GetAppRoleId returns the AppRoleId field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAssociatedAccessItem) GetAppRoleIdOk() (*string, bool)`
 
-GetAppRoleIdOk returns a tuple with the AppRoleId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAppRoleIdOk returns a tuple with the AppRoleId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAppRoleId
 
@@ -404,8 +396,7 @@ GetAttribute returns the Attribute field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAssociatedAccessItem) GetAttributeOk() (*string, bool)`
 
-GetAttributeOk returns a tuple with the Attribute field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributeOk returns a tuple with the Attribute field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttribute
 
@@ -429,8 +420,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAssociatedAccessItem) GetValueOk() (*string, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -454,8 +444,7 @@ GetEntitlementType returns the EntitlementType field if non-nil, zero value othe
 
 `func (o *AccessItemAssociatedAccessItem) GetEntitlementTypeOk() (*string, bool)`
 
-GetEntitlementTypeOk returns a tuple with the EntitlementType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEntitlementTypeOk returns a tuple with the EntitlementType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEntitlementType
 
@@ -479,15 +468,13 @@ GetPrivileged returns the Privileged field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAssociatedAccessItem) GetPrivilegedOk() (*bool, bool)`
 
-GetPrivilegedOk returns a tuple with the Privileged field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPrivilegedOk returns a tuple with the Privileged field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPrivileged
 
 `func (o *AccessItemAssociatedAccessItem) SetPrivileged(v bool)`
 
 SetPrivileged sets Privileged field to given value.
-
 
 ### GetCloudGoverned
 
@@ -499,14 +486,10 @@ GetCloudGoverned returns the CloudGoverned field if non-nil, zero value otherwis
 
 `func (o *AccessItemAssociatedAccessItem) GetCloudGovernedOk() (*bool, bool)`
 
-GetCloudGovernedOk returns a tuple with the CloudGoverned field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCloudGovernedOk returns a tuple with the CloudGoverned field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCloudGoverned
 
 `func (o *AccessItemAssociatedAccessItem) SetCloudGoverned(v bool)`
 
 SetCloudGoverned sets CloudGoverned field to given value.
-
-
-

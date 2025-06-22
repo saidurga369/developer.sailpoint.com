@@ -4,21 +4,34 @@ title: SessionConfiguration
 pagination_label: SessionConfiguration
 sidebar_label: SessionConfiguration
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SessionConfiguration', 'V2024SessionConfiguration'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'SessionConfiguration',
+    'V2024SessionConfiguration',
+  ]
 slug: /tools/sdk/python/v2024/models/session-configuration
-tags: ['SDK', 'Software Development Kit', 'SessionConfiguration', 'V2024SessionConfiguration']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SessionConfiguration',
+    'V2024SessionConfiguration',
+  ]
 ---
 
 # SessionConfiguration
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**max_idle_time** | **int** | The maximum time in minutes a session can be idle. | [optional] 
-**remember_me** | **bool** | Denotes if 'remember me' is enabled. | [optional] [default to False]
-**max_session_time** | **int** | The maximum allowable session time in minutes. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **max_idle_time** | **int** | The maximum time in minutes a session can be idle. | [optional] |
+| **remember_me** | **bool** | Denotes if 'remember me' is enabled. | [optional] [default to False] |
+| **max_session_time** | **int** | The maximum allowable session time in minutes. | [optional] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ max_session_time=45
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,7 +4,7 @@ title: Aggregations
 pagination_label: Aggregations
 sidebar_label: Aggregations
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Aggregations', 'V2025Aggregations'] 
+keywords: ['go', 'Golang', 'sdk', 'Aggregations', 'V2025Aggregations']
 slug: /tools/sdk/go/v2025/models/aggregations
 tags: ['SDK', 'Software Development Kit', 'Aggregations', 'V2025Aggregations']
 ---
@@ -13,12 +13,12 @@ tags: ['SDK', 'Software Development Kit', 'Aggregations', 'V2025Aggregations']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Nested** | Pointer to [**NestedAggregation**](nested-aggregation) |  | [optional] 
-**Metric** | Pointer to [**MetricAggregation**](metric-aggregation) |  | [optional] 
-**Filter** | Pointer to [**FilterAggregation**](filter-aggregation) |  | [optional] 
-**Bucket** | Pointer to [**BucketAggregation**](bucket-aggregation) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Nested** | Pointer to [**NestedAggregation**](nested-aggregation) |  | [optional] |
+| **Metric** | Pointer to [**MetricAggregation**](metric-aggregation) |  | [optional] |
+| **Filter** | Pointer to [**FilterAggregation**](filter-aggregation) |  | [optional] |
+| **Bucket** | Pointer to [**BucketAggregation**](bucket-aggregation) |  | [optional] |
 
 ## Methods
 
@@ -26,18 +26,13 @@ Name | Type | Description | Notes
 
 `func NewAggregations() *Aggregations`
 
-NewAggregations instantiates a new Aggregations object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAggregations instantiates a new Aggregations object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAggregationsWithDefaults
 
 `func NewAggregationsWithDefaults() *Aggregations`
 
-NewAggregationsWithDefaults instantiates a new Aggregations object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAggregationsWithDefaults instantiates a new Aggregations object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetNested
 
@@ -49,8 +44,7 @@ GetNested returns the Nested field if non-nil, zero value otherwise.
 
 `func (o *Aggregations) GetNestedOk() (*NestedAggregation, bool)`
 
-GetNestedOk returns a tuple with the Nested field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNestedOk returns a tuple with the Nested field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNested
 
@@ -74,8 +68,7 @@ GetMetric returns the Metric field if non-nil, zero value otherwise.
 
 `func (o *Aggregations) GetMetricOk() (*MetricAggregation, bool)`
 
-GetMetricOk returns a tuple with the Metric field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMetricOk returns a tuple with the Metric field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMetric
 
@@ -99,8 +92,7 @@ GetFilter returns the Filter field if non-nil, zero value otherwise.
 
 `func (o *Aggregations) GetFilterOk() (*FilterAggregation, bool)`
 
-GetFilterOk returns a tuple with the Filter field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFilterOk returns a tuple with the Filter field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFilter
 
@@ -124,8 +116,7 @@ GetBucket returns the Bucket field if non-nil, zero value otherwise.
 
 `func (o *Aggregations) GetBucketOk() (*BucketAggregation, bool)`
 
-GetBucketOk returns a tuple with the Bucket field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetBucketOk returns a tuple with the Bucket field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetBucket
 
@@ -138,5 +129,3 @@ SetBucket sets Bucket field to given value.
 `func (o *Aggregations) HasBucket() bool`
 
 HasBucket returns a boolean if a field has been set.
-
-

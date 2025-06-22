@@ -4,25 +4,38 @@ title: CertificationReferenceDto
 pagination_label: CertificationReferenceDto
 sidebar_label: CertificationReferenceDto
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'CertificationReferenceDto', 'BetaCertificationReferenceDto'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'CertificationReferenceDto',
+    'BetaCertificationReferenceDto',
+  ]
 slug: /tools/sdk/powershell/beta/models/certification-reference-dto
-tags: ['SDK', 'Software Development Kit', 'CertificationReferenceDto', 'BetaCertificationReferenceDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CertificationReferenceDto',
+    'BetaCertificationReferenceDto',
+  ]
 ---
-
 
 # CertificationReferenceDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** |  **Enum** [  "CERTIFICATION" ] | DTO type of certification for review. | [optional] 
-**Id** | **String** | ID of certification for review. | [optional] 
-**Name** | **String** | Display name of certification for review. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | **Enum** [ "CERTIFICATION" ] | DTO type of certification for review. | [optional] |
+| **Id** | **String** | ID of certification for review. | [optional] |
+| **Name** | **String** | Display name of certification for review. | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $CertificationReferenceDto = Initialize-BetaCertificationReferenceDto  -Type IDENTITY `
  -Id 7589a83cec4b4f138ce56c1a5ef0756d `
@@ -30,10 +43,9 @@ $CertificationReferenceDto = Initialize-BetaCertificationReferenceDto  -Type IDE
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $CertificationReferenceDto | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

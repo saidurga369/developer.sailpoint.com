@@ -4,21 +4,34 @@ title: MultiHostIntegrationsConnectorAttributesMultiHostAttributes
 pagination_label: MultiHostIntegrationsConnectorAttributesMultiHostAttributes
 sidebar_label: MultiHostIntegrationsConnectorAttributesMultiHostAttributes
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'MultiHostIntegrationsConnectorAttributesMultiHostAttributes', 'BetaMultiHostIntegrationsConnectorAttributesMultiHostAttributes'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'MultiHostIntegrationsConnectorAttributesMultiHostAttributes',
+    'BetaMultiHostIntegrationsConnectorAttributesMultiHostAttributes',
+  ]
 slug: /tools/sdk/go/beta/models/multi-host-integrations-connector-attributes-multi-host-attributes
-tags: ['SDK', 'Software Development Kit', 'MultiHostIntegrationsConnectorAttributesMultiHostAttributes', 'BetaMultiHostIntegrationsConnectorAttributesMultiHostAttributes']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'MultiHostIntegrationsConnectorAttributesMultiHostAttributes',
+    'BetaMultiHostIntegrationsConnectorAttributesMultiHostAttributes',
+  ]
 ---
 
 # MultiHostIntegrationsConnectorAttributesMultiHostAttributes
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Password** | Pointer to **string** | Password. | [optional] 
-**ConnectorFiles** | Pointer to **string** | Connector file. | [optional] 
-**AuthType** | Pointer to **string** | Authentication type. | [optional] 
-**User** | Pointer to **string** | Username. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Password** | Pointer to **string** | Password. | [optional] |
+| **ConnectorFiles** | Pointer to **string** | Connector file. | [optional] |
+| **AuthType** | Pointer to **string** | Authentication type. | [optional] |
+| **User** | Pointer to **string** | Username. | [optional] |
 
 ## Methods
 
@@ -26,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewMultiHostIntegrationsConnectorAttributesMultiHostAttributes() *MultiHostIntegrationsConnectorAttributesMultiHostAttributes`
 
-NewMultiHostIntegrationsConnectorAttributesMultiHostAttributes instantiates a new MultiHostIntegrationsConnectorAttributesMultiHostAttributes object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewMultiHostIntegrationsConnectorAttributesMultiHostAttributes instantiates a new MultiHostIntegrationsConnectorAttributesMultiHostAttributes object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewMultiHostIntegrationsConnectorAttributesMultiHostAttributesWithDefaults
 
 `func NewMultiHostIntegrationsConnectorAttributesMultiHostAttributesWithDefaults() *MultiHostIntegrationsConnectorAttributesMultiHostAttributes`
 
-NewMultiHostIntegrationsConnectorAttributesMultiHostAttributesWithDefaults instantiates a new MultiHostIntegrationsConnectorAttributesMultiHostAttributes object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewMultiHostIntegrationsConnectorAttributesMultiHostAttributesWithDefaults instantiates a new MultiHostIntegrationsConnectorAttributesMultiHostAttributes object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetPassword
 
@@ -49,8 +57,7 @@ GetPassword returns the Password field if non-nil, zero value otherwise.
 
 `func (o *MultiHostIntegrationsConnectorAttributesMultiHostAttributes) GetPasswordOk() (*string, bool)`
 
-GetPasswordOk returns a tuple with the Password field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPasswordOk returns a tuple with the Password field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPassword
 
@@ -74,8 +81,7 @@ GetConnectorFiles returns the ConnectorFiles field if non-nil, zero value otherw
 
 `func (o *MultiHostIntegrationsConnectorAttributesMultiHostAttributes) GetConnectorFilesOk() (*string, bool)`
 
-GetConnectorFilesOk returns a tuple with the ConnectorFiles field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConnectorFilesOk returns a tuple with the ConnectorFiles field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConnectorFiles
 
@@ -99,8 +105,7 @@ GetAuthType returns the AuthType field if non-nil, zero value otherwise.
 
 `func (o *MultiHostIntegrationsConnectorAttributesMultiHostAttributes) GetAuthTypeOk() (*string, bool)`
 
-GetAuthTypeOk returns a tuple with the AuthType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAuthTypeOk returns a tuple with the AuthType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAuthType
 
@@ -124,8 +129,7 @@ GetUser returns the User field if non-nil, zero value otherwise.
 
 `func (o *MultiHostIntegrationsConnectorAttributesMultiHostAttributes) GetUserOk() (*string, bool)`
 
-GetUserOk returns a tuple with the User field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUserOk returns a tuple with the User field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUser
 
@@ -138,5 +142,3 @@ SetUser sets User field to given value.
 `func (o *MultiHostIntegrationsConnectorAttributesMultiHostAttributes) HasUser() bool`
 
 HasUser returns a boolean if a field has been set.
-
-

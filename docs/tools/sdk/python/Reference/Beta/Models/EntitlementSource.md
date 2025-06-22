@@ -4,21 +4,28 @@ title: EntitlementSource
 pagination_label: EntitlementSource
 sidebar_label: EntitlementSource
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'EntitlementSource', 'BetaEntitlementSource'] 
+keywords:
+  ['python', 'Python', 'sdk', 'EntitlementSource', 'BetaEntitlementSource']
 slug: /tools/sdk/python/beta/models/entitlement-source
-tags: ['SDK', 'Software Development Kit', 'EntitlementSource', 'BetaEntitlementSource']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'EntitlementSource',
+    'BetaEntitlementSource',
+  ]
 ---
 
 # EntitlementSource
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The source ID | [optional] 
-**type** | **str** | The source type, will always be \"SOURCE\" | [optional] 
-**name** | **str** | The source name | [optional] 
+| Name     | Type    | Description                                | Notes      |
+| -------- | ------- | ------------------------------------------ | ---------- |
+| **id**   | **str** | The source ID                              | [optional] |
+| **type** | **str** | The source type, will always be \"SOURCE\" | [optional] |
+| **name** | **str** | The source name                            | [optional] |
+
 }
 
 ## Example
@@ -33,5 +40,5 @@ name='ODS-AD-Source'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

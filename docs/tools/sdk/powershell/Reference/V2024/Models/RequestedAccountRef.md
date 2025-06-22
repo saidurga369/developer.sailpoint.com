@@ -4,27 +4,40 @@ title: RequestedAccountRef
 pagination_label: RequestedAccountRef
 sidebar_label: RequestedAccountRef
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'RequestedAccountRef', 'V2024RequestedAccountRef'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'RequestedAccountRef',
+    'V2024RequestedAccountRef',
+  ]
 slug: /tools/sdk/powershell/v2024/models/requested-account-ref
-tags: ['SDK', 'Software Development Kit', 'RequestedAccountRef', 'V2024RequestedAccountRef']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RequestedAccountRef',
+    'V2024RequestedAccountRef',
+  ]
 ---
-
 
 # RequestedAccountRef
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | **String** | Display name of the account for the user | [optional] 
-**Type** | [**DtoType**](dto-type) |  | [optional] 
-**AccountUuid** | **String** | The uuid for the account | [optional] 
-**AccountId** | **String** | The native identity for the account | [optional] 
-**SourceName** | **String** | Display name of the source for the account | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | **String** | Display name of the account for the user | [optional] |
+| **Type** | [**DtoType**](dto-type) |  | [optional] |
+| **AccountUuid** | **String** | The uuid for the account | [optional] |
+| **AccountId** | **String** | The native identity for the account | [optional] |
+| **SourceName** | **String** | Display name of the source for the account | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $RequestedAccountRef = Initialize-V2024RequestedAccountRef  -Name Glen.067da3248e914 `
  -Type null `
@@ -34,10 +47,9 @@ $RequestedAccountRef = Initialize-V2024RequestedAccountRef  -Name Glen.067da3248
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $RequestedAccountRef | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

@@ -4,20 +4,27 @@ title: AuthProfileSummary
 pagination_label: AuthProfileSummary
 sidebar_label: AuthProfileSummary
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AuthProfileSummary', 'V2024AuthProfileSummary'] 
+keywords:
+  ['python', 'Python', 'sdk', 'AuthProfileSummary', 'V2024AuthProfileSummary']
 slug: /tools/sdk/python/v2024/models/auth-profile-summary
-tags: ['SDK', 'Software Development Kit', 'AuthProfileSummary', 'V2024AuthProfileSummary']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AuthProfileSummary',
+    'V2024AuthProfileSummary',
+  ]
 ---
 
 # AuthProfileSummary
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**tenant** | **str** | Tenant name. | [optional] 
-**id** | **str** | Identity ID. | [optional] 
+| Name       | Type    | Description  | Notes      |
+| ---------- | ------- | ------------ | ---------- |
+| **tenant** | **str** | Tenant name. | [optional] |
+| **id**     | **str** | Identity ID. | [optional] |
+
 }
 
 ## Example
@@ -31,5 +38,5 @@ id='2c91808458ae7a4f0158b1bbf8af0628'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

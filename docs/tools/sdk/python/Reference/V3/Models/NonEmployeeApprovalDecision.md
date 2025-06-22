@@ -4,19 +4,32 @@ title: NonEmployeeApprovalDecision
 pagination_label: NonEmployeeApprovalDecision
 sidebar_label: NonEmployeeApprovalDecision
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'NonEmployeeApprovalDecision', 'NonEmployeeApprovalDecision'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'NonEmployeeApprovalDecision',
+    'NonEmployeeApprovalDecision',
+  ]
 slug: /tools/sdk/python/v3/models/non-employee-approval-decision
-tags: ['SDK', 'Software Development Kit', 'NonEmployeeApprovalDecision', 'NonEmployeeApprovalDecision']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NonEmployeeApprovalDecision',
+    'NonEmployeeApprovalDecision',
+  ]
 ---
 
 # NonEmployeeApprovalDecision
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**comment** | **str** | Comment on the approval item. | [optional] 
+| Name        | Type    | Description                   | Notes      |
+| ----------- | ------- | ----------------------------- | ---------- |
+| **comment** | **str** | Comment on the approval item. | [optional] |
+
 }
 
 ## Example
@@ -29,5 +42,5 @@ comment='Approved by manager'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

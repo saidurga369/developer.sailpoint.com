@@ -4,24 +4,37 @@ title: AccessRequestDynamicApproverRequestedItemsInner
 pagination_label: AccessRequestDynamicApproverRequestedItemsInner
 sidebar_label: AccessRequestDynamicApproverRequestedItemsInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccessRequestDynamicApproverRequestedItemsInner', 'BetaAccessRequestDynamicApproverRequestedItemsInner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccessRequestDynamicApproverRequestedItemsInner',
+    'BetaAccessRequestDynamicApproverRequestedItemsInner',
+  ]
 slug: /tools/sdk/python/beta/models/access-request-dynamic-approver-requested-items-inner
-tags: ['SDK', 'Software Development Kit', 'AccessRequestDynamicApproverRequestedItemsInner', 'BetaAccessRequestDynamicApproverRequestedItemsInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessRequestDynamicApproverRequestedItemsInner',
+    'BetaAccessRequestDynamicApproverRequestedItemsInner',
+  ]
 ---
 
 # AccessRequestDynamicApproverRequestedItemsInner
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Access item's unique identifier. | [required]
-**name** | **str** | Access item's name. | [required]
-**description** | **str** | Access item's extended description. | [optional] 
-**type** |  **Enum** [  'ACCESS_PROFILE',    'ROLE',    'ENTITLEMENT' ] | Type of access item being requested. | [required]
-**operation** |  **Enum** [  'Add',    'Remove' ] | Action to perform on the requested access item. | [required]
-**comment** | **str** | Comment from the requester about why the access is necessary. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | Access item's unique identifier. | [required] |
+| **name** | **str** | Access item's name. | [required] |
+| **description** | **str** | Access item's extended description. | [optional] |
+| **type** | **Enum** [ 'ACCESS_PROFILE', 'ROLE', 'ENTITLEMENT' ] | Type of access item being requested. | [required] |
+| **operation** | **Enum** [ 'Add', 'Remove' ] | Action to perform on the requested access item. | [required] |
+| **comment** | **str** | Comment from the requester about why the access is necessary. | [optional] |
+
 }
 
 ## Example
@@ -39,5 +52,5 @@ comment='William needs this access for his day to day job activities.'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

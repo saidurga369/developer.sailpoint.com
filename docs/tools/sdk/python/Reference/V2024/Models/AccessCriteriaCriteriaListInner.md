@@ -4,21 +4,34 @@ title: AccessCriteriaCriteriaListInner
 pagination_label: AccessCriteriaCriteriaListInner
 sidebar_label: AccessCriteriaCriteriaListInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccessCriteriaCriteriaListInner', 'V2024AccessCriteriaCriteriaListInner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccessCriteriaCriteriaListInner',
+    'V2024AccessCriteriaCriteriaListInner',
+  ]
 slug: /tools/sdk/python/v2024/models/access-criteria-criteria-list-inner
-tags: ['SDK', 'Software Development Kit', 'AccessCriteriaCriteriaListInner', 'V2024AccessCriteriaCriteriaListInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessCriteriaCriteriaListInner',
+    'V2024AccessCriteriaCriteriaListInner',
+  ]
 ---
 
 # AccessCriteriaCriteriaListInner
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'ENTITLEMENT' ] | Type of the propery to which this reference applies to | [optional] 
-**id** | **str** | ID of the object to which this reference applies to | [optional] 
-**name** | **str** | Human-readable display name of the object to which this reference applies to | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'ENTITLEMENT' ] | Type of the propery to which this reference applies to | [optional] |
+| **id** | **str** | ID of the object to which this reference applies to | [optional] |
+| **name** | **str** | Human-readable display name of the object to which this reference applies to | [optional] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ name='Administrator'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

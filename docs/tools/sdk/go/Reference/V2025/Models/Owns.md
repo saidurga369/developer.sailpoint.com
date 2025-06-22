@@ -4,7 +4,7 @@ title: Owns
 pagination_label: Owns
 sidebar_label: Owns
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Owns', 'V2025Owns'] 
+keywords: ['go', 'Golang', 'sdk', 'Owns', 'V2025Owns']
 slug: /tools/sdk/go/v2025/models/owns
 tags: ['SDK', 'Software Development Kit', 'Owns', 'V2025Owns']
 ---
@@ -13,15 +13,15 @@ tags: ['SDK', 'Software Development Kit', 'Owns', 'V2025Owns']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Sources** | Pointer to [**[]Reference**](reference) |  | [optional] 
-**Entitlements** | Pointer to [**[]Reference**](reference) |  | [optional] 
-**AccessProfiles** | Pointer to [**[]Reference**](reference) |  | [optional] 
-**Roles** | Pointer to [**[]Reference**](reference) |  | [optional] 
-**Apps** | Pointer to [**[]Reference**](reference) |  | [optional] 
-**GovernanceGroups** | Pointer to [**[]Reference**](reference) |  | [optional] 
-**FallbackApprover** | Pointer to **bool** |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Sources** | Pointer to [**[]Reference**](reference) |  | [optional] |
+| **Entitlements** | Pointer to [**[]Reference**](reference) |  | [optional] |
+| **AccessProfiles** | Pointer to [**[]Reference**](reference) |  | [optional] |
+| **Roles** | Pointer to [**[]Reference**](reference) |  | [optional] |
+| **Apps** | Pointer to [**[]Reference**](reference) |  | [optional] |
+| **GovernanceGroups** | Pointer to [**[]Reference**](reference) |  | [optional] |
+| **FallbackApprover** | Pointer to **bool** |  | [optional] |
 
 ## Methods
 
@@ -29,18 +29,13 @@ Name | Type | Description | Notes
 
 `func NewOwns() *Owns`
 
-NewOwns instantiates a new Owns object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewOwns instantiates a new Owns object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewOwnsWithDefaults
 
 `func NewOwnsWithDefaults() *Owns`
 
-NewOwnsWithDefaults instantiates a new Owns object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewOwnsWithDefaults instantiates a new Owns object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetSources
 
@@ -52,8 +47,7 @@ GetSources returns the Sources field if non-nil, zero value otherwise.
 
 `func (o *Owns) GetSourcesOk() (*[]Reference, bool)`
 
-GetSourcesOk returns a tuple with the Sources field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourcesOk returns a tuple with the Sources field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSources
 
@@ -77,8 +71,7 @@ GetEntitlements returns the Entitlements field if non-nil, zero value otherwise.
 
 `func (o *Owns) GetEntitlementsOk() (*[]Reference, bool)`
 
-GetEntitlementsOk returns a tuple with the Entitlements field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEntitlementsOk returns a tuple with the Entitlements field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEntitlements
 
@@ -102,8 +95,7 @@ GetAccessProfiles returns the AccessProfiles field if non-nil, zero value otherw
 
 `func (o *Owns) GetAccessProfilesOk() (*[]Reference, bool)`
 
-GetAccessProfilesOk returns a tuple with the AccessProfiles field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessProfilesOk returns a tuple with the AccessProfiles field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessProfiles
 
@@ -127,8 +119,7 @@ GetRoles returns the Roles field if non-nil, zero value otherwise.
 
 `func (o *Owns) GetRolesOk() (*[]Reference, bool)`
 
-GetRolesOk returns a tuple with the Roles field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRolesOk returns a tuple with the Roles field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRoles
 
@@ -152,8 +143,7 @@ GetApps returns the Apps field if non-nil, zero value otherwise.
 
 `func (o *Owns) GetAppsOk() (*[]Reference, bool)`
 
-GetAppsOk returns a tuple with the Apps field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAppsOk returns a tuple with the Apps field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApps
 
@@ -177,8 +167,7 @@ GetGovernanceGroups returns the GovernanceGroups field if non-nil, zero value ot
 
 `func (o *Owns) GetGovernanceGroupsOk() (*[]Reference, bool)`
 
-GetGovernanceGroupsOk returns a tuple with the GovernanceGroups field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetGovernanceGroupsOk returns a tuple with the GovernanceGroups field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetGovernanceGroups
 
@@ -202,8 +191,7 @@ GetFallbackApprover returns the FallbackApprover field if non-nil, zero value ot
 
 `func (o *Owns) GetFallbackApproverOk() (*bool, bool)`
 
-GetFallbackApproverOk returns a tuple with the FallbackApprover field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFallbackApproverOk returns a tuple with the FallbackApprover field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFallbackApprover
 
@@ -216,5 +204,3 @@ SetFallbackApprover sets FallbackApprover field to given value.
 `func (o *Owns) HasFallbackApprover() bool`
 
 HasFallbackApprover returns a boolean if a field has been set.
-
-

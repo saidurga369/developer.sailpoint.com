@@ -4,23 +4,30 @@ title: RequestedAccountRef
 pagination_label: RequestedAccountRef
 sidebar_label: RequestedAccountRef
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RequestedAccountRef', 'V2025RequestedAccountRef'] 
+keywords:
+  ['python', 'Python', 'sdk', 'RequestedAccountRef', 'V2025RequestedAccountRef']
 slug: /tools/sdk/python/v2025/models/requested-account-ref
-tags: ['SDK', 'Software Development Kit', 'RequestedAccountRef', 'V2025RequestedAccountRef']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RequestedAccountRef',
+    'V2025RequestedAccountRef',
+  ]
 ---
 
 # RequestedAccountRef
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | Display name of the account for the user | [optional] 
-**type** | [**DtoType**](dto-type) |  | [optional] 
-**account_uuid** | **str** | The uuid for the account | [optional] 
-**account_id** | **str** | The native identity for the account | [optional] 
-**source_name** | **str** | Display name of the source for the account | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **name** | **str** | Display name of the account for the user | [optional] |
+| **type** | [**DtoType**](dto-type) |  | [optional] |
+| **account_uuid** | **str** | The uuid for the account | [optional] |
+| **account_id** | **str** | The native identity for the account | [optional] |
+| **source_name** | **str** | Display name of the source for the account | [optional] |
+
 }
 
 ## Example
@@ -37,5 +44,5 @@ source_name='Multi Account AD source name'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,20 +4,26 @@ title: SedApprovalStatus
 pagination_label: SedApprovalStatus
 sidebar_label: SedApprovalStatus
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SedApprovalStatus', 'BetaSedApprovalStatus'] 
+keywords: ['go', 'Golang', 'sdk', 'SedApprovalStatus', 'BetaSedApprovalStatus']
 slug: /tools/sdk/go/beta/models/sed-approval-status
-tags: ['SDK', 'Software Development Kit', 'SedApprovalStatus', 'BetaSedApprovalStatus']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SedApprovalStatus',
+    'BetaSedApprovalStatus',
+  ]
 ---
 
 # SedApprovalStatus
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**FailedReason** | Pointer to **string** | failed reason will be display if status is failed | [optional] 
-**Id** | Pointer to **string** | Sed id | [optional] 
-**Status** | Pointer to **string** | SUCCESS | FAILED | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- | --- |
+| **FailedReason** | Pointer to **string** | failed reason will be display if status is failed | [optional] |
+| **Id** | Pointer to **string** | Sed id | [optional] |
+| **Status** | Pointer to **string** | SUCCESS | FAILED | [optional] |
 
 ## Methods
 
@@ -25,18 +31,13 @@ Name | Type | Description | Notes
 
 `func NewSedApprovalStatus() *SedApprovalStatus`
 
-NewSedApprovalStatus instantiates a new SedApprovalStatus object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSedApprovalStatus instantiates a new SedApprovalStatus object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSedApprovalStatusWithDefaults
 
 `func NewSedApprovalStatusWithDefaults() *SedApprovalStatus`
 
-NewSedApprovalStatusWithDefaults instantiates a new SedApprovalStatus object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSedApprovalStatusWithDefaults instantiates a new SedApprovalStatus object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetFailedReason
 
@@ -48,8 +49,7 @@ GetFailedReason returns the FailedReason field if non-nil, zero value otherwise.
 
 `func (o *SedApprovalStatus) GetFailedReasonOk() (*string, bool)`
 
-GetFailedReasonOk returns a tuple with the FailedReason field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFailedReasonOk returns a tuple with the FailedReason field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFailedReason
 
@@ -73,8 +73,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *SedApprovalStatus) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -98,8 +97,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *SedApprovalStatus) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -112,5 +110,3 @@ SetStatus sets Status field to given value.
 `func (o *SedApprovalStatus) HasStatus() bool`
 
 HasStatus returns a boolean if a field has been set.
-
-

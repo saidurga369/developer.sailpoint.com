@@ -4,19 +4,32 @@ title: WorkgroupBulkDeleteRequest
 pagination_label: WorkgroupBulkDeleteRequest
 sidebar_label: WorkgroupBulkDeleteRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'WorkgroupBulkDeleteRequest', 'BetaWorkgroupBulkDeleteRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'WorkgroupBulkDeleteRequest',
+    'BetaWorkgroupBulkDeleteRequest',
+  ]
 slug: /tools/sdk/python/beta/models/workgroup-bulk-delete-request
-tags: ['SDK', 'Software Development Kit', 'WorkgroupBulkDeleteRequest', 'BetaWorkgroupBulkDeleteRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'WorkgroupBulkDeleteRequest',
+    'BetaWorkgroupBulkDeleteRequest',
+  ]
 ---
 
 # WorkgroupBulkDeleteRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ids** | **[]str** | List of IDs of Governance Groups to be deleted. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ids** | **[]str** | List of IDs of Governance Groups to be deleted. | [optional] |
+
 }
 
 ## Example
@@ -29,5 +42,5 @@ ids=[567a697e-885b-495a-afc5-d55e1c23a302, c7b0f7b2-1e78-4063-b294-a555333dacd2]
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

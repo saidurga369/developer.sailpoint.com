@@ -4,20 +4,33 @@ title: IdentityProfile1AllOfAuthoritativeSource
 pagination_label: IdentityProfile1AllOfAuthoritativeSource
 sidebar_label: IdentityProfile1AllOfAuthoritativeSource
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IdentityProfile1AllOfAuthoritativeSource', 'BetaIdentityProfile1AllOfAuthoritativeSource'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'IdentityProfile1AllOfAuthoritativeSource',
+    'BetaIdentityProfile1AllOfAuthoritativeSource',
+  ]
 slug: /tools/sdk/go/beta/models/identity-profile1-all-of-authoritative-source
-tags: ['SDK', 'Software Development Kit', 'IdentityProfile1AllOfAuthoritativeSource', 'BetaIdentityProfile1AllOfAuthoritativeSource']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityProfile1AllOfAuthoritativeSource',
+    'BetaIdentityProfile1AllOfAuthoritativeSource',
+  ]
 ---
 
 # IdentityProfile1AllOfAuthoritativeSource
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | Authoritative source's object type. | [optional] 
-**Id** | Pointer to **string** | Authoritative source's ID. | [optional] 
-**Name** | Pointer to **string** | Authoritative source's name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to **string** | Authoritative source's object type. | [optional] |
+| **Id** | Pointer to **string** | Authoritative source's ID. | [optional] |
+| **Name** | Pointer to **string** | Authoritative source's name. | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewIdentityProfile1AllOfAuthoritativeSource() *IdentityProfile1AllOfAuthoritativeSource`
 
-NewIdentityProfile1AllOfAuthoritativeSource instantiates a new IdentityProfile1AllOfAuthoritativeSource object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewIdentityProfile1AllOfAuthoritativeSource instantiates a new IdentityProfile1AllOfAuthoritativeSource object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewIdentityProfile1AllOfAuthoritativeSourceWithDefaults
 
 `func NewIdentityProfile1AllOfAuthoritativeSourceWithDefaults() *IdentityProfile1AllOfAuthoritativeSource`
 
-NewIdentityProfile1AllOfAuthoritativeSourceWithDefaults instantiates a new IdentityProfile1AllOfAuthoritativeSource object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewIdentityProfile1AllOfAuthoritativeSourceWithDefaults instantiates a new IdentityProfile1AllOfAuthoritativeSource object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -48,8 +56,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *IdentityProfile1AllOfAuthoritativeSource) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -73,8 +80,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *IdentityProfile1AllOfAuthoritativeSource) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -98,8 +104,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *IdentityProfile1AllOfAuthoritativeSource) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -112,5 +117,3 @@ SetName sets Name field to given value.
 `func (o *IdentityProfile1AllOfAuthoritativeSource) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

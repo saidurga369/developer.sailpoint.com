@@ -4,18 +4,31 @@ title: EntitlementAccessModelMetadata
 pagination_label: EntitlementAccessModelMetadata
 sidebar_label: EntitlementAccessModelMetadata
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'EntitlementAccessModelMetadata', 'V2024EntitlementAccessModelMetadata'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'EntitlementAccessModelMetadata',
+    'V2024EntitlementAccessModelMetadata',
+  ]
 slug: /tools/sdk/go/v2024/models/entitlement-access-model-metadata
-tags: ['SDK', 'Software Development Kit', 'EntitlementAccessModelMetadata', 'V2024EntitlementAccessModelMetadata']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'EntitlementAccessModelMetadata',
+    'V2024EntitlementAccessModelMetadata',
+  ]
 ---
 
 # EntitlementAccessModelMetadata
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Attributes** | Pointer to [**[]AccessModelMetadata**](access-model-metadata) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Attributes** | Pointer to [**[]AccessModelMetadata**](access-model-metadata) |  | [optional] |
 
 ## Methods
 
@@ -23,18 +36,13 @@ Name | Type | Description | Notes
 
 `func NewEntitlementAccessModelMetadata() *EntitlementAccessModelMetadata`
 
-NewEntitlementAccessModelMetadata instantiates a new EntitlementAccessModelMetadata object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewEntitlementAccessModelMetadata instantiates a new EntitlementAccessModelMetadata object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewEntitlementAccessModelMetadataWithDefaults
 
 `func NewEntitlementAccessModelMetadataWithDefaults() *EntitlementAccessModelMetadata`
 
-NewEntitlementAccessModelMetadataWithDefaults instantiates a new EntitlementAccessModelMetadata object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewEntitlementAccessModelMetadataWithDefaults instantiates a new EntitlementAccessModelMetadata object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetAttributes
 
@@ -46,8 +54,7 @@ GetAttributes returns the Attributes field if non-nil, zero value otherwise.
 
 `func (o *EntitlementAccessModelMetadata) GetAttributesOk() (*[]AccessModelMetadata, bool)`
 
-GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributes
 
@@ -60,5 +67,3 @@ SetAttributes sets Attributes field to given value.
 `func (o *EntitlementAccessModelMetadata) HasAttributes() bool`
 
 HasAttributes returns a boolean if a field has been set.
-
-

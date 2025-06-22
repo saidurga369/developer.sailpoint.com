@@ -40,7 +40,6 @@
     "sentence-case-v2024": "node src/components/updateSpecsSentenceCase.js static/code-examples/v2024/v2024.yaml",
     "sentence-case-v2025": "node src/components/updateSpecsSentenceCase.js static/code-examples/v2025/v2025.yaml",
     "sentence-case-all": "npm run sentence-case-beta && npm run sentence-case-v3 && npm run sentence-case-v2024 && npm run sentence-case-v2025"
-
   },
   "dependencies": {
     "@docusaurus/faster": "3.8.1",

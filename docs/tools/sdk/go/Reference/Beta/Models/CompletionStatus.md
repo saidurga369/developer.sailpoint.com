@@ -4,22 +4,25 @@ title: CompletionStatus
 pagination_label: CompletionStatus
 sidebar_label: CompletionStatus
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'CompletionStatus', 'BetaCompletionStatus'] 
+keywords: ['go', 'Golang', 'sdk', 'CompletionStatus', 'BetaCompletionStatus']
 slug: /tools/sdk/go/beta/models/completion-status
-tags: ['SDK', 'Software Development Kit', 'CompletionStatus', 'BetaCompletionStatus']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CompletionStatus',
+    'BetaCompletionStatus',
+  ]
 ---
 
 # CompletionStatus
 
 ## Enum
 
+- `SUCCESS` (value: `"SUCCESS"`)
 
-* `SUCCESS` (value: `"SUCCESS"`)
+- `FAILURE` (value: `"FAILURE"`)
 
-* `FAILURE` (value: `"FAILURE"`)
+- `INCOMPLETE` (value: `"INCOMPLETE"`)
 
-* `INCOMPLETE` (value: `"INCOMPLETE"`)
-
-* `PENDING` (value: `"PENDING"`)
-
-
+- `PENDING` (value: `"PENDING"`)

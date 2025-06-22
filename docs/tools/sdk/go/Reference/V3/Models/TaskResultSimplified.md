@@ -4,24 +4,31 @@ title: TaskResultSimplified
 pagination_label: TaskResultSimplified
 sidebar_label: TaskResultSimplified
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'TaskResultSimplified', 'TaskResultSimplified'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'TaskResultSimplified', 'TaskResultSimplified']
 slug: /tools/sdk/go/v3/models/task-result-simplified
-tags: ['SDK', 'Software Development Kit', 'TaskResultSimplified', 'TaskResultSimplified']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'TaskResultSimplified',
+    'TaskResultSimplified',
+  ]
 ---
 
 # TaskResultSimplified
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Task identifier | [optional] 
-**Name** | Pointer to **string** | Task name | [optional] 
-**Description** | Pointer to **string** | Task description | [optional] 
-**Launcher** | Pointer to **string** | User or process who launched the task | [optional] 
-**Completed** | Pointer to **SailPointTime** | Date time of completion | [optional] 
-**Launched** | Pointer to **SailPointTime** | Date time when the task was launched | [optional] 
-**CompletionStatus** | Pointer to **string** | Task result status | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Task identifier | [optional] |
+| **Name** | Pointer to **string** | Task name | [optional] |
+| **Description** | Pointer to **string** | Task description | [optional] |
+| **Launcher** | Pointer to **string** | User or process who launched the task | [optional] |
+| **Completed** | Pointer to **SailPointTime** | Date time of completion | [optional] |
+| **Launched** | Pointer to **SailPointTime** | Date time when the task was launched | [optional] |
+| **CompletionStatus** | Pointer to **string** | Task result status | [optional] |
 
 ## Methods
 
@@ -29,18 +36,13 @@ Name | Type | Description | Notes
 
 `func NewTaskResultSimplified() *TaskResultSimplified`
 
-NewTaskResultSimplified instantiates a new TaskResultSimplified object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewTaskResultSimplified instantiates a new TaskResultSimplified object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewTaskResultSimplifiedWithDefaults
 
 `func NewTaskResultSimplifiedWithDefaults() *TaskResultSimplified`
 
-NewTaskResultSimplifiedWithDefaults instantiates a new TaskResultSimplified object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewTaskResultSimplifiedWithDefaults instantiates a new TaskResultSimplified object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -52,8 +54,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *TaskResultSimplified) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -77,8 +78,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *TaskResultSimplified) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -102,8 +102,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *TaskResultSimplified) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -127,8 +126,7 @@ GetLauncher returns the Launcher field if non-nil, zero value otherwise.
 
 `func (o *TaskResultSimplified) GetLauncherOk() (*string, bool)`
 
-GetLauncherOk returns a tuple with the Launcher field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLauncherOk returns a tuple with the Launcher field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLauncher
 
@@ -152,8 +150,7 @@ GetCompleted returns the Completed field if non-nil, zero value otherwise.
 
 `func (o *TaskResultSimplified) GetCompletedOk() (*SailPointTime, bool)`
 
-GetCompletedOk returns a tuple with the Completed field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCompletedOk returns a tuple with the Completed field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCompleted
 
@@ -177,8 +174,7 @@ GetLaunched returns the Launched field if non-nil, zero value otherwise.
 
 `func (o *TaskResultSimplified) GetLaunchedOk() (*SailPointTime, bool)`
 
-GetLaunchedOk returns a tuple with the Launched field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLaunchedOk returns a tuple with the Launched field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLaunched
 
@@ -202,8 +198,7 @@ GetCompletionStatus returns the CompletionStatus field if non-nil, zero value ot
 
 `func (o *TaskResultSimplified) GetCompletionStatusOk() (*string, bool)`
 
-GetCompletionStatusOk returns a tuple with the CompletionStatus field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCompletionStatusOk returns a tuple with the CompletionStatus field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCompletionStatus
 
@@ -216,5 +211,3 @@ SetCompletionStatus sets CompletionStatus field to given value.
 `func (o *TaskResultSimplified) HasCompletionStatus() bool`
 
 HasCompletionStatus returns a boolean if a field has been set.
-
-

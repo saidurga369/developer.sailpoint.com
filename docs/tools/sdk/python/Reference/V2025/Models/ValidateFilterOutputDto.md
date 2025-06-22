@@ -4,21 +4,34 @@ title: ValidateFilterOutputDto
 pagination_label: ValidateFilterOutputDto
 sidebar_label: ValidateFilterOutputDto
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ValidateFilterOutputDto', 'V2025ValidateFilterOutputDto'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ValidateFilterOutputDto',
+    'V2025ValidateFilterOutputDto',
+  ]
 slug: /tools/sdk/python/v2025/models/validate-filter-output-dto
-tags: ['SDK', 'Software Development Kit', 'ValidateFilterOutputDto', 'V2025ValidateFilterOutputDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ValidateFilterOutputDto',
+    'V2025ValidateFilterOutputDto',
+  ]
 ---
 
 # ValidateFilterOutputDto
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**is_valid** | **bool** | When this field is true, the filter expression is valid against the input. | [optional] [default to False]
-**is_valid_json_path** | **bool** | When this field is true, the filter expression is using a valid JSON path. | [optional] [default to False]
-**is_path_exist** | **bool** | When this field is true, the filter expression is using an existing path. | [optional] [default to False]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **is_valid** | **bool** | When this field is true, the filter expression is valid against the input. | [optional] [default to False] |
+| **is_valid_json_path** | **bool** | When this field is true, the filter expression is using a valid JSON path. | [optional] [default to False] |
+| **is_path_exist** | **bool** | When this field is true, the filter expression is using an existing path. | [optional] [default to False] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ is_path_exist=True
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,42 +4,52 @@ title: WorkItemTypeManualWorkItems
 pagination_label: WorkItemTypeManualWorkItems
 sidebar_label: WorkItemTypeManualWorkItems
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'WorkItemTypeManualWorkItems', 'V2024WorkItemTypeManualWorkItems'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'WorkItemTypeManualWorkItems',
+    'V2024WorkItemTypeManualWorkItems',
+  ]
 slug: /tools/sdk/go/v2024/models/work-item-type-manual-work-items
-tags: ['SDK', 'Software Development Kit', 'WorkItemTypeManualWorkItems', 'V2024WorkItemTypeManualWorkItems']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'WorkItemTypeManualWorkItems',
+    'V2024WorkItemTypeManualWorkItems',
+  ]
 ---
 
 # WorkItemTypeManualWorkItems
 
 ## Enum
 
+- `GENERIC` (value: `"Generic"`)
 
-* `GENERIC` (value: `"Generic"`)
+- `CERTIFICATION` (value: `"Certification"`)
 
-* `CERTIFICATION` (value: `"Certification"`)
+- `REMEDIATION` (value: `"Remediation"`)
 
-* `REMEDIATION` (value: `"Remediation"`)
+- `DELEGATION` (value: `"Delegation"`)
 
-* `DELEGATION` (value: `"Delegation"`)
+- `APPROVAL` (value: `"Approval"`)
 
-* `APPROVAL` (value: `"Approval"`)
+- `VIOLATION_REVIEW` (value: `"ViolationReview"`)
 
-* `VIOLATION_REVIEW` (value: `"ViolationReview"`)
+- `FORM` (value: `"Form"`)
 
-* `FORM` (value: `"Form"`)
+- `POLICY_VIOLOATION` (value: `"PolicyVioloation"`)
 
-* `POLICY_VIOLOATION` (value: `"PolicyVioloation"`)
+- `CHALLENGE` (value: `"Challenge"`)
 
-* `CHALLENGE` (value: `"Challenge"`)
+- `IMPACT_ANALYSIS` (value: `"ImpactAnalysis"`)
 
-* `IMPACT_ANALYSIS` (value: `"ImpactAnalysis"`)
+- `SIGNOFF` (value: `"Signoff"`)
 
-* `SIGNOFF` (value: `"Signoff"`)
+- `EVENT` (value: `"Event"`)
 
-* `EVENT` (value: `"Event"`)
+- `MANUAL_ACTION` (value: `"ManualAction"`)
 
-* `MANUAL_ACTION` (value: `"ManualAction"`)
-
-* `TEST` (value: `"Test"`)
-
-
+- `TEST` (value: `"Test"`)

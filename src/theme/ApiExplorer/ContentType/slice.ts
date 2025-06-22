@@ -1,4 +1,4 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 
 export interface State {
   value: string;
@@ -8,7 +8,7 @@ export interface State {
 const initialState: State = {} as any;
 
 export const slice = createSlice({
-  name: "contentType",
+  name: 'contentType',
   initialState,
   reducers: {
     setContentType: (state, action: PayloadAction<string>) => {
@@ -17,6 +17,6 @@ export const slice = createSlice({
   },
 });
 
-export const { setContentType } = slice.actions;
+export const {setContentType} = slice.actions;
 
 export default slice.reducer;

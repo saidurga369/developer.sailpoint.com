@@ -4,20 +4,21 @@ title: EntitlementRef1
 pagination_label: EntitlementRef1
 sidebar_label: EntitlementRef1
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'EntitlementRef1', 'V2025EntitlementRef1'] 
+keywords: ['go', 'Golang', 'sdk', 'EntitlementRef1', 'V2025EntitlementRef1']
 slug: /tools/sdk/go/v2025/models/entitlement-ref1
-tags: ['SDK', 'Software Development Kit', 'EntitlementRef1', 'V2025EntitlementRef1']
+tags:
+  ['SDK', 'Software Development Kit', 'EntitlementRef1', 'V2025EntitlementRef1']
 ---
 
 # EntitlementRef1
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | Entitlement's DTO type. | [optional] 
-**Id** | Pointer to **string** | Entitlement's ID. | [optional] 
-**Name** | Pointer to **string** | Entitlement's display name. | [optional] 
+| Name     | Type                  | Description                 | Notes      |
+| -------- | --------------------- | --------------------------- | ---------- |
+| **Type** | Pointer to **string** | Entitlement's DTO type.     | [optional] |
+| **Id**   | Pointer to **string** | Entitlement's ID.           | [optional] |
+| **Name** | Pointer to **string** | Entitlement's display name. | [optional] |
 
 ## Methods
 
@@ -25,18 +26,13 @@ Name | Type | Description | Notes
 
 `func NewEntitlementRef1() *EntitlementRef1`
 
-NewEntitlementRef1 instantiates a new EntitlementRef1 object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewEntitlementRef1 instantiates a new EntitlementRef1 object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewEntitlementRef1WithDefaults
 
 `func NewEntitlementRef1WithDefaults() *EntitlementRef1`
 
-NewEntitlementRef1WithDefaults instantiates a new EntitlementRef1 object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewEntitlementRef1WithDefaults instantiates a new EntitlementRef1 object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -48,8 +44,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *EntitlementRef1) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -73,8 +68,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *EntitlementRef1) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -98,8 +92,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *EntitlementRef1) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -112,5 +105,3 @@ SetName sets Name field to given value.
 `func (o *EntitlementRef1) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

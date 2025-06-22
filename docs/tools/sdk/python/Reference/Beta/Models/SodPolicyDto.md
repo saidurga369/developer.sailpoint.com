@@ -4,7 +4,7 @@ title: SodPolicyDto
 pagination_label: SodPolicyDto
 sidebar_label: SodPolicyDto
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SodPolicyDto', 'BetaSodPolicyDto'] 
+keywords: ['python', 'Python', 'sdk', 'SodPolicyDto', 'BetaSodPolicyDto']
 slug: /tools/sdk/python/beta/models/sod-policy-dto
 tags: ['SDK', 'Software Development Kit', 'SodPolicyDto', 'BetaSodPolicyDto']
 ---
@@ -15,11 +15,12 @@ SOD policy.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'SOD_POLICY' ] | SOD policy DTO type. | [optional] 
-**id** | **str** | SOD policy ID. | [optional] 
-**name** | **str** | SOD policy display name. | [optional] 
+| Name     | Type                      | Description              | Notes      |
+| -------- | ------------------------- | ------------------------ | ---------- |
+| **type** | **Enum** [ 'SOD_POLICY' ] | SOD policy DTO type.     | [optional] |
+| **id**   | **str**                   | SOD policy ID.           | [optional] |
+| **name** | **str**                   | SOD policy display name. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +35,5 @@ name='Business SOD Policy'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

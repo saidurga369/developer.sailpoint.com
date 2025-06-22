@@ -4,20 +4,33 @@ title: AccessProfileSourceRef
 pagination_label: AccessProfileSourceRef
 sidebar_label: AccessProfileSourceRef
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessProfileSourceRef', 'BetaAccessProfileSourceRef'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'AccessProfileSourceRef',
+    'BetaAccessProfileSourceRef',
+  ]
 slug: /tools/sdk/go/beta/models/access-profile-source-ref
-tags: ['SDK', 'Software Development Kit', 'AccessProfileSourceRef', 'BetaAccessProfileSourceRef']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessProfileSourceRef',
+    'BetaAccessProfileSourceRef',
+  ]
 ---
 
 # AccessProfileSourceRef
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | ID of the source the access profile is associated with. | [optional] 
-**Type** | Pointer to **string** | Source's DTO type. | [optional] 
-**Name** | Pointer to **string** | Source name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | ID of the source the access profile is associated with. | [optional] |
+| **Type** | Pointer to **string** | Source's DTO type. | [optional] |
+| **Name** | Pointer to **string** | Source name. | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewAccessProfileSourceRef() *AccessProfileSourceRef`
 
-NewAccessProfileSourceRef instantiates a new AccessProfileSourceRef object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessProfileSourceRef instantiates a new AccessProfileSourceRef object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessProfileSourceRefWithDefaults
 
 `func NewAccessProfileSourceRefWithDefaults() *AccessProfileSourceRef`
 
-NewAccessProfileSourceRefWithDefaults instantiates a new AccessProfileSourceRef object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessProfileSourceRefWithDefaults instantiates a new AccessProfileSourceRef object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -48,8 +56,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *AccessProfileSourceRef) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -73,8 +80,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *AccessProfileSourceRef) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -98,8 +104,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *AccessProfileSourceRef) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -112,5 +117,3 @@ SetName sets Name field to given value.
 `func (o *AccessProfileSourceRef) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

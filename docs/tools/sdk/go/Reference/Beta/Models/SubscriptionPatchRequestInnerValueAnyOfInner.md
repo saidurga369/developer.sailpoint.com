@@ -4,17 +4,30 @@ title: SubscriptionPatchRequestInnerValueAnyOfInner
 pagination_label: SubscriptionPatchRequestInnerValueAnyOfInner
 sidebar_label: SubscriptionPatchRequestInnerValueAnyOfInner
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SubscriptionPatchRequestInnerValueAnyOfInner', 'BetaSubscriptionPatchRequestInnerValueAnyOfInner'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'SubscriptionPatchRequestInnerValueAnyOfInner',
+    'BetaSubscriptionPatchRequestInnerValueAnyOfInner',
+  ]
 slug: /tools/sdk/go/beta/models/subscription-patch-request-inner-value-any-of-inner
-tags: ['SDK', 'Software Development Kit', 'SubscriptionPatchRequestInnerValueAnyOfInner', 'BetaSubscriptionPatchRequestInnerValueAnyOfInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SubscriptionPatchRequestInnerValueAnyOfInner',
+    'BetaSubscriptionPatchRequestInnerValueAnyOfInner',
+  ]
 ---
 
 # SubscriptionPatchRequestInnerValueAnyOfInner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ## Methods
 
@@ -22,17 +35,10 @@ Name | Type | Description | Notes
 
 `func NewSubscriptionPatchRequestInnerValueAnyOfInner() *SubscriptionPatchRequestInnerValueAnyOfInner`
 
-NewSubscriptionPatchRequestInnerValueAnyOfInner instantiates a new SubscriptionPatchRequestInnerValueAnyOfInner object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSubscriptionPatchRequestInnerValueAnyOfInner instantiates a new SubscriptionPatchRequestInnerValueAnyOfInner object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSubscriptionPatchRequestInnerValueAnyOfInnerWithDefaults
 
 `func NewSubscriptionPatchRequestInnerValueAnyOfInnerWithDefaults() *SubscriptionPatchRequestInnerValueAnyOfInner`
 
-NewSubscriptionPatchRequestInnerValueAnyOfInnerWithDefaults instantiates a new SubscriptionPatchRequestInnerValueAnyOfInner object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
-
-
+NewSubscriptionPatchRequestInnerValueAnyOfInnerWithDefaults instantiates a new SubscriptionPatchRequestInnerValueAnyOfInner object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set

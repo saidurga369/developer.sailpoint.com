@@ -4,35 +4,36 @@ title: BackupResponse1
 pagination_label: BackupResponse1
 sidebar_label: BackupResponse1
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'BackupResponse1', 'V2025BackupResponse1'] 
+keywords: ['python', 'Python', 'sdk', 'BackupResponse1', 'V2025BackupResponse1']
 slug: /tools/sdk/python/v2025/models/backup-response1
-tags: ['SDK', 'Software Development Kit', 'BackupResponse1', 'V2025BackupResponse1']
+tags:
+  ['SDK', 'Software Development Kit', 'BackupResponse1', 'V2025BackupResponse1']
 ---
 
 # BackupResponse1
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**job_id** | **str** | Unique id assigned to this backup. | [optional] 
-**status** |  **Enum** [  'NOT_STARTED',    'IN_PROGRESS',    'COMPLETE',    'CANCELLED',    'FAILED' ] | Status of the backup. | [optional] 
-**type** |  **Enum** [  'BACKUP' ] | Type of the job, will always be BACKUP for this type of job. | [optional] 
-**tenant** | **str** | The name of the tenant performing the upload | [optional] 
-**requester_name** | **str** | The name of the requester. | [optional] 
-**file_exists** | **bool** | Whether or not a file was created and stored for this backup. | [optional] [default to True]
-**created** | **datetime** | The time the job was started. | [optional] 
-**modified** | **datetime** | The time of the last update to the job. | [optional] 
-**completed** | **datetime** | The time the job was completed. | [optional] 
-**name** | **str** | The name assigned to the upload file in the request body. | [optional] 
-**user_can_delete** | **bool** | Whether this backup can be deleted by a regular user. | [optional] [default to True]
-**is_partial** | **bool** | Whether this backup contains all supported object types or only some of them. | [optional] [default to False]
-**backup_type** |  **Enum** [  'UPLOADED',    'AUTOMATED',    'MANUAL' ] | Denotes how this backup was created. - MANUAL - The backup was created by a user. - AUTOMATED - The backup was created by devops. - AUTOMATED_DRAFT - The backup was created during a draft process. - UPLOADED - The backup was created by uploading an existing configuration file. | [optional] 
-**options** | [**BackupOptions1**](backup-options1) |  | [optional] 
-**hydration_status** |  **Enum** [  'HYDRATED',    'NOT_HYDRATED' ] | Whether the object details of this backup are ready. | [optional] 
-**total_object_count** | **int** | Number of objects contained in this backup. | [optional] 
-**cloud_storage_status** |  **Enum** [  'SYNCED',    'NOT_SYNCED',    'SYNC_FAILED' ] | Whether this backup has been transferred to a customer storage location. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **job_id** | **str** | Unique id assigned to this backup. | [optional] |
+| **status** | **Enum** [ 'NOT_STARTED', 'IN_PROGRESS', 'COMPLETE', 'CANCELLED', 'FAILED' ] | Status of the backup. | [optional] |
+| **type** | **Enum** [ 'BACKUP' ] | Type of the job, will always be BACKUP for this type of job. | [optional] |
+| **tenant** | **str** | The name of the tenant performing the upload | [optional] |
+| **requester_name** | **str** | The name of the requester. | [optional] |
+| **file_exists** | **bool** | Whether or not a file was created and stored for this backup. | [optional] [default to True] |
+| **created** | **datetime** | The time the job was started. | [optional] |
+| **modified** | **datetime** | The time of the last update to the job. | [optional] |
+| **completed** | **datetime** | The time the job was completed. | [optional] |
+| **name** | **str** | The name assigned to the upload file in the request body. | [optional] |
+| **user_can_delete** | **bool** | Whether this backup can be deleted by a regular user. | [optional] [default to True] |
+| **is_partial** | **bool** | Whether this backup contains all supported object types or only some of them. | [optional] [default to False] |
+| **backup_type** | **Enum** [ 'UPLOADED', 'AUTOMATED', 'MANUAL' ] | Denotes how this backup was created. - MANUAL - The backup was created by a user. - AUTOMATED - The backup was created by devops. - AUTOMATED_DRAFT - The backup was created during a draft process. - UPLOADED - The backup was created by uploading an existing configuration file. | [optional] |
+| **options** | [**BackupOptions1**](backup-options1) |  | [optional] |
+| **hydration_status** | **Enum** [ 'HYDRATED', 'NOT_HYDRATED' ] | Whether the object details of this backup are ready. | [optional] |
+| **total_object_count** | **int** | Number of objects contained in this backup. | [optional] |
+| **cloud_storage_status** | **Enum** [ 'SYNCED', 'NOT_SYNCED', 'SYNC_FAILED' ] | Whether this backup has been transferred to a customer storage location. | [optional] |
+
 }
 
 ## Example
@@ -57,7 +58,7 @@ backup_type='MANUAL',
 options=sailpoint.v2025.models.backup_options_1.BackupOptions_1(
                     include_types = [
                         'TRIGGER_SUBSCRIPTION'
-                        ], 
+                        ],
                     object_options = {TRIGGER_SUBSCRIPTION={includedNames=[Trigger Subscription name]}}, ),
 hydration_status='NOT_HYDRATED',
 total_object_count=10,
@@ -65,5 +66,5 @@ cloud_storage_status='SYNCED'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

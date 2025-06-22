@@ -4,23 +4,30 @@ title: RoleInsightsRole
 pagination_label: RoleInsightsRole
 sidebar_label: RoleInsightsRole
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RoleInsightsRole', 'BetaRoleInsightsRole'] 
+keywords:
+  ['python', 'Python', 'sdk', 'RoleInsightsRole', 'BetaRoleInsightsRole']
 slug: /tools/sdk/python/beta/models/role-insights-role
-tags: ['SDK', 'Software Development Kit', 'RoleInsightsRole', 'BetaRoleInsightsRole']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleInsightsRole',
+    'BetaRoleInsightsRole',
+  ]
 ---
 
 # RoleInsightsRole
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | Role name | [optional] 
-**id** | **str** | Role id | [optional] 
-**description** | **str** | Role description | [optional] 
-**owner_name** | **str** | Role owner name | [optional] 
-**owner_id** | **str** | Role owner id | [optional] 
+| Name            | Type    | Description      | Notes      |
+| --------------- | ------- | ---------------- | ---------- |
+| **name**        | **str** | Role name        | [optional] |
+| **id**          | **str** | Role id          | [optional] |
+| **description** | **str** | Role description | [optional] |
+| **owner_name**  | **str** | Role owner name  | [optional] |
+| **owner_id**    | **str** | Role owner id    | [optional] |
+
 }
 
 ## Example
@@ -37,5 +44,5 @@ owner_id='1467e61e-f284-439c-ba2d-c6cc11cf0941'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

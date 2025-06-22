@@ -4,23 +4,30 @@ title: RoleInsightsSummary
 pagination_label: RoleInsightsSummary
 sidebar_label: RoleInsightsSummary
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleInsightsSummary', 'BetaRoleInsightsSummary'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'RoleInsightsSummary', 'BetaRoleInsightsSummary']
 slug: /tools/sdk/go/beta/models/role-insights-summary
-tags: ['SDK', 'Software Development Kit', 'RoleInsightsSummary', 'BetaRoleInsightsSummary']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleInsightsSummary',
+    'BetaRoleInsightsSummary',
+  ]
 ---
 
 # RoleInsightsSummary
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**NumberOfUpdates** | Pointer to **int32** | Total number of roles with updates | [optional] 
-**LastGenerated** | Pointer to **SailPointTime** | The date-time role insights were last found. | [optional] 
-**EntitlementsIncludedInRoles** | Pointer to **int32** | The number of entitlements included in roles (vs free radicals). | [optional] 
-**TotalNumberOfEntitlements** | Pointer to **int32** | The total number of entitlements. | [optional] 
-**IdentitiesWithAccessViaRoles** | Pointer to **int32** | The number of identities in roles vs. identities with just entitlements and not in roles. | [optional] 
-**TotalNumberOfIdentities** | Pointer to **int32** | The total number of identities. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **NumberOfUpdates** | Pointer to **int32** | Total number of roles with updates | [optional] |
+| **LastGenerated** | Pointer to **SailPointTime** | The date-time role insights were last found. | [optional] |
+| **EntitlementsIncludedInRoles** | Pointer to **int32** | The number of entitlements included in roles (vs free radicals). | [optional] |
+| **TotalNumberOfEntitlements** | Pointer to **int32** | The total number of entitlements. | [optional] |
+| **IdentitiesWithAccessViaRoles** | Pointer to **int32** | The number of identities in roles vs. identities with just entitlements and not in roles. | [optional] |
+| **TotalNumberOfIdentities** | Pointer to **int32** | The total number of identities. | [optional] |
 
 ## Methods
 
@@ -28,18 +35,13 @@ Name | Type | Description | Notes
 
 `func NewRoleInsightsSummary() *RoleInsightsSummary`
 
-NewRoleInsightsSummary instantiates a new RoleInsightsSummary object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleInsightsSummary instantiates a new RoleInsightsSummary object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleInsightsSummaryWithDefaults
 
 `func NewRoleInsightsSummaryWithDefaults() *RoleInsightsSummary`
 
-NewRoleInsightsSummaryWithDefaults instantiates a new RoleInsightsSummary object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleInsightsSummaryWithDefaults instantiates a new RoleInsightsSummary object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetNumberOfUpdates
 
@@ -51,8 +53,7 @@ GetNumberOfUpdates returns the NumberOfUpdates field if non-nil, zero value othe
 
 `func (o *RoleInsightsSummary) GetNumberOfUpdatesOk() (*int32, bool)`
 
-GetNumberOfUpdatesOk returns a tuple with the NumberOfUpdates field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNumberOfUpdatesOk returns a tuple with the NumberOfUpdates field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNumberOfUpdates
 
@@ -76,8 +77,7 @@ GetLastGenerated returns the LastGenerated field if non-nil, zero value otherwis
 
 `func (o *RoleInsightsSummary) GetLastGeneratedOk() (*SailPointTime, bool)`
 
-GetLastGeneratedOk returns a tuple with the LastGenerated field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLastGeneratedOk returns a tuple with the LastGenerated field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLastGenerated
 
@@ -101,8 +101,7 @@ GetEntitlementsIncludedInRoles returns the EntitlementsIncludedInRoles field if 
 
 `func (o *RoleInsightsSummary) GetEntitlementsIncludedInRolesOk() (*int32, bool)`
 
-GetEntitlementsIncludedInRolesOk returns a tuple with the EntitlementsIncludedInRoles field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEntitlementsIncludedInRolesOk returns a tuple with the EntitlementsIncludedInRoles field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEntitlementsIncludedInRoles
 
@@ -126,8 +125,7 @@ GetTotalNumberOfEntitlements returns the TotalNumberOfEntitlements field if non-
 
 `func (o *RoleInsightsSummary) GetTotalNumberOfEntitlementsOk() (*int32, bool)`
 
-GetTotalNumberOfEntitlementsOk returns a tuple with the TotalNumberOfEntitlements field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTotalNumberOfEntitlementsOk returns a tuple with the TotalNumberOfEntitlements field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTotalNumberOfEntitlements
 
@@ -151,8 +149,7 @@ GetIdentitiesWithAccessViaRoles returns the IdentitiesWithAccessViaRoles field i
 
 `func (o *RoleInsightsSummary) GetIdentitiesWithAccessViaRolesOk() (*int32, bool)`
 
-GetIdentitiesWithAccessViaRolesOk returns a tuple with the IdentitiesWithAccessViaRoles field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentitiesWithAccessViaRolesOk returns a tuple with the IdentitiesWithAccessViaRoles field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentitiesWithAccessViaRoles
 
@@ -176,8 +173,7 @@ GetTotalNumberOfIdentities returns the TotalNumberOfIdentities field if non-nil,
 
 `func (o *RoleInsightsSummary) GetTotalNumberOfIdentitiesOk() (*int32, bool)`
 
-GetTotalNumberOfIdentitiesOk returns a tuple with the TotalNumberOfIdentities field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTotalNumberOfIdentitiesOk returns a tuple with the TotalNumberOfIdentities field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTotalNumberOfIdentities
 
@@ -190,5 +186,3 @@ SetTotalNumberOfIdentities sets TotalNumberOfIdentities field to given value.
 `func (o *RoleInsightsSummary) HasTotalNumberOfIdentities() bool`
 
 HasTotalNumberOfIdentities returns a boolean if a field has been set.
-
-

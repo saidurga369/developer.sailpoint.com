@@ -4,17 +4,30 @@ title: ContextAttributeDtoValue
 pagination_label: ContextAttributeDtoValue
 sidebar_label: ContextAttributeDtoValue
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ContextAttributeDtoValue', 'BetaContextAttributeDtoValue'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ContextAttributeDtoValue',
+    'BetaContextAttributeDtoValue',
+  ]
 slug: /tools/sdk/go/beta/models/context-attribute-dto-value
-tags: ['SDK', 'Software Development Kit', 'ContextAttributeDtoValue', 'BetaContextAttributeDtoValue']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ContextAttributeDtoValue',
+    'BetaContextAttributeDtoValue',
+  ]
 ---
 
 # ContextAttributeDtoValue
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ## Methods
 
@@ -22,17 +35,10 @@ Name | Type | Description | Notes
 
 `func NewContextAttributeDtoValue() *ContextAttributeDtoValue`
 
-NewContextAttributeDtoValue instantiates a new ContextAttributeDtoValue object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewContextAttributeDtoValue instantiates a new ContextAttributeDtoValue object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewContextAttributeDtoValueWithDefaults
 
 `func NewContextAttributeDtoValueWithDefaults() *ContextAttributeDtoValue`
 
-NewContextAttributeDtoValueWithDefaults instantiates a new ContextAttributeDtoValue object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
-
-
+NewContextAttributeDtoValueWithDefaults instantiates a new ContextAttributeDtoValue object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set

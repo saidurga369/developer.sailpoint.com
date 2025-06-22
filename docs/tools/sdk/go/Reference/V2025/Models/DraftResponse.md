@@ -4,7 +4,7 @@ title: DraftResponse
 pagination_label: DraftResponse
 sidebar_label: DraftResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'DraftResponse', 'V2025DraftResponse'] 
+keywords: ['go', 'Golang', 'sdk', 'DraftResponse', 'V2025DraftResponse']
 slug: /tools/sdk/go/v2025/models/draft-response
 tags: ['SDK', 'Software Development Kit', 'DraftResponse', 'V2025DraftResponse']
 ---
@@ -13,24 +13,24 @@ tags: ['SDK', 'Software Development Kit', 'DraftResponse', 'V2025DraftResponse']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**JobId** | Pointer to **string** | Unique id assigned to this job. | [optional] 
-**Status** | Pointer to **string** | Status of the job. | [optional] 
-**Type** | Pointer to **string** | Type of the job, will always be CREATE_DRAFT for this type of job. | [optional] 
-**Message** | Pointer to **string** | Message providing information about the outcome of the draft process. | [optional] 
-**RequesterName** | Pointer to **string** | The name of user that that initiated the draft process. | [optional] 
-**FileExists** | Pointer to **bool** | Whether or not a file was generated for this draft. | [optional] [default to true]
-**Created** | Pointer to **SailPointTime** | The time the job was started. | [optional] 
-**Modified** | Pointer to **SailPointTime** | The time of the last update to the job. | [optional] 
-**Completed** | Pointer to **SailPointTime** | The time the job was completed. | [optional] 
-**Name** | Pointer to **string** | Name of the draft. | [optional] 
-**SourceTenant** | Pointer to **string** | Tenant owner of the backup from which the draft was generated. | [optional] 
-**SourceBackupId** | Pointer to **string** | Id of the backup from which the draft was generated. | [optional] 
-**SourceBackupName** | Pointer to **string** | Name of the backup from which the draft was generated. | [optional] 
-**Mode** | Pointer to **string** | Denotes the origin of the source backup from which the draft was generated. - RESTORE - Same tenant. - PROMOTE - Different tenant. - UPLOAD - Uploaded configuration. | [optional] 
-**ApprovalStatus** | Pointer to **string** | Approval status of the draft used to determine whether or not the draft can be deployed. | [optional] 
-**ApprovalComment** | Pointer to [**[]ApprovalComment**](approval-comment) | List of comments that have been exchanged between an approval requester and an approver. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **JobId** | Pointer to **string** | Unique id assigned to this job. | [optional] |
+| **Status** | Pointer to **string** | Status of the job. | [optional] |
+| **Type** | Pointer to **string** | Type of the job, will always be CREATE_DRAFT for this type of job. | [optional] |
+| **Message** | Pointer to **string** | Message providing information about the outcome of the draft process. | [optional] |
+| **RequesterName** | Pointer to **string** | The name of user that that initiated the draft process. | [optional] |
+| **FileExists** | Pointer to **bool** | Whether or not a file was generated for this draft. | [optional] [default to true] |
+| **Created** | Pointer to **SailPointTime** | The time the job was started. | [optional] |
+| **Modified** | Pointer to **SailPointTime** | The time of the last update to the job. | [optional] |
+| **Completed** | Pointer to **SailPointTime** | The time the job was completed. | [optional] |
+| **Name** | Pointer to **string** | Name of the draft. | [optional] |
+| **SourceTenant** | Pointer to **string** | Tenant owner of the backup from which the draft was generated. | [optional] |
+| **SourceBackupId** | Pointer to **string** | Id of the backup from which the draft was generated. | [optional] |
+| **SourceBackupName** | Pointer to **string** | Name of the backup from which the draft was generated. | [optional] |
+| **Mode** | Pointer to **string** | Denotes the origin of the source backup from which the draft was generated. - RESTORE - Same tenant. - PROMOTE - Different tenant. - UPLOAD - Uploaded configuration. | [optional] |
+| **ApprovalStatus** | Pointer to **string** | Approval status of the draft used to determine whether or not the draft can be deployed. | [optional] |
+| **ApprovalComment** | Pointer to [**[]ApprovalComment**](approval-comment) | List of comments that have been exchanged between an approval requester and an approver. | [optional] |
 
 ## Methods
 
@@ -38,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewDraftResponse() *DraftResponse`
 
-NewDraftResponse instantiates a new DraftResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewDraftResponse instantiates a new DraftResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewDraftResponseWithDefaults
 
 `func NewDraftResponseWithDefaults() *DraftResponse`
 
-NewDraftResponseWithDefaults instantiates a new DraftResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewDraftResponseWithDefaults instantiates a new DraftResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetJobId
 
@@ -61,8 +56,7 @@ GetJobId returns the JobId field if non-nil, zero value otherwise.
 
 `func (o *DraftResponse) GetJobIdOk() (*string, bool)`
 
-GetJobIdOk returns a tuple with the JobId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetJobIdOk returns a tuple with the JobId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetJobId
 
@@ -86,8 +80,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *DraftResponse) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -111,8 +104,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *DraftResponse) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -136,8 +128,7 @@ GetMessage returns the Message field if non-nil, zero value otherwise.
 
 `func (o *DraftResponse) GetMessageOk() (*string, bool)`
 
-GetMessageOk returns a tuple with the Message field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMessageOk returns a tuple with the Message field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMessage
 
@@ -161,8 +152,7 @@ GetRequesterName returns the RequesterName field if non-nil, zero value otherwis
 
 `func (o *DraftResponse) GetRequesterNameOk() (*string, bool)`
 
-GetRequesterNameOk returns a tuple with the RequesterName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequesterNameOk returns a tuple with the RequesterName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequesterName
 
@@ -186,8 +176,7 @@ GetFileExists returns the FileExists field if non-nil, zero value otherwise.
 
 `func (o *DraftResponse) GetFileExistsOk() (*bool, bool)`
 
-GetFileExistsOk returns a tuple with the FileExists field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFileExistsOk returns a tuple with the FileExists field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFileExists
 
@@ -211,8 +200,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *DraftResponse) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -236,8 +224,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *DraftResponse) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -261,8 +248,7 @@ GetCompleted returns the Completed field if non-nil, zero value otherwise.
 
 `func (o *DraftResponse) GetCompletedOk() (*SailPointTime, bool)`
 
-GetCompletedOk returns a tuple with the Completed field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCompletedOk returns a tuple with the Completed field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCompleted
 
@@ -286,8 +272,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *DraftResponse) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -311,8 +296,7 @@ GetSourceTenant returns the SourceTenant field if non-nil, zero value otherwise.
 
 `func (o *DraftResponse) GetSourceTenantOk() (*string, bool)`
 
-GetSourceTenantOk returns a tuple with the SourceTenant field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceTenantOk returns a tuple with the SourceTenant field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceTenant
 
@@ -336,8 +320,7 @@ GetSourceBackupId returns the SourceBackupId field if non-nil, zero value otherw
 
 `func (o *DraftResponse) GetSourceBackupIdOk() (*string, bool)`
 
-GetSourceBackupIdOk returns a tuple with the SourceBackupId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceBackupIdOk returns a tuple with the SourceBackupId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceBackupId
 
@@ -361,8 +344,7 @@ GetSourceBackupName returns the SourceBackupName field if non-nil, zero value ot
 
 `func (o *DraftResponse) GetSourceBackupNameOk() (*string, bool)`
 
-GetSourceBackupNameOk returns a tuple with the SourceBackupName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceBackupNameOk returns a tuple with the SourceBackupName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceBackupName
 
@@ -386,8 +368,7 @@ GetMode returns the Mode field if non-nil, zero value otherwise.
 
 `func (o *DraftResponse) GetModeOk() (*string, bool)`
 
-GetModeOk returns a tuple with the Mode field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModeOk returns a tuple with the Mode field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMode
 
@@ -411,8 +392,7 @@ GetApprovalStatus returns the ApprovalStatus field if non-nil, zero value otherw
 
 `func (o *DraftResponse) GetApprovalStatusOk() (*string, bool)`
 
-GetApprovalStatusOk returns a tuple with the ApprovalStatus field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApprovalStatusOk returns a tuple with the ApprovalStatus field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApprovalStatus
 
@@ -436,8 +416,7 @@ GetApprovalComment returns the ApprovalComment field if non-nil, zero value othe
 
 `func (o *DraftResponse) GetApprovalCommentOk() (*[]ApprovalComment, bool)`
 
-GetApprovalCommentOk returns a tuple with the ApprovalComment field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApprovalCommentOk returns a tuple with the ApprovalComment field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApprovalComment
 
@@ -450,5 +429,3 @@ SetApprovalComment sets ApprovalComment field to given value.
 `func (o *DraftResponse) HasApprovalComment() bool`
 
 HasApprovalComment returns a boolean if a field has been set.
-
-

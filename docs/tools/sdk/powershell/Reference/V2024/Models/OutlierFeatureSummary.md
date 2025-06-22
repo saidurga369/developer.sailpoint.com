@@ -4,30 +4,43 @@ title: OutlierFeatureSummary
 pagination_label: OutlierFeatureSummary
 sidebar_label: OutlierFeatureSummary
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'OutlierFeatureSummary', 'V2024OutlierFeatureSummary'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'OutlierFeatureSummary',
+    'V2024OutlierFeatureSummary',
+  ]
 slug: /tools/sdk/powershell/v2024/models/outlier-feature-summary
-tags: ['SDK', 'Software Development Kit', 'OutlierFeatureSummary', 'V2024OutlierFeatureSummary']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'OutlierFeatureSummary',
+    'V2024OutlierFeatureSummary',
+  ]
 ---
-
 
 # OutlierFeatureSummary
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ContributingFeatureName** | **String** | Contributing feature name | [optional] 
-**IdentityOutlierDisplayName** | **String** | Identity display name | [optional] 
-**OutlierFeatureDisplayValues** | [**[]OutlierFeatureSummaryOutlierFeatureDisplayValuesInner**](outlier-feature-summary-outlier-feature-display-values-inner) |  | [optional] 
-**FeatureDefinition** | **String** | Definition of the feature | [optional] 
-**FeatureExplanation** | **String** | Detailed explanation of the feature | [optional] 
-**PeerDisplayName** | **String** | outlier's peer identity display name | [optional] 
-**PeerIdentityId** | **String** | outlier's peer identity id | [optional] 
-**AccessItemReference** | [**SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | Access Item reference | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ContributingFeatureName** | **String** | Contributing feature name | [optional] |
+| **IdentityOutlierDisplayName** | **String** | Identity display name | [optional] |
+| **OutlierFeatureDisplayValues** | [**[]OutlierFeatureSummaryOutlierFeatureDisplayValuesInner**](outlier-feature-summary-outlier-feature-display-values-inner) |  | [optional] |
+| **FeatureDefinition** | **String** | Definition of the feature | [optional] |
+| **FeatureExplanation** | **String** | Detailed explanation of the feature | [optional] |
+| **PeerDisplayName** | **String** | outlier's peer identity display name | [optional] |
+| **PeerIdentityId** | **String** | outlier's peer identity id | [optional] |
+| **AccessItemReference** | [**SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | Access Item reference | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $OutlierFeatureSummary = Initialize-V2024OutlierFeatureSummary  -ContributingFeatureName Rare Access `
  -IdentityOutlierDisplayName John Smith `
@@ -40,10 +53,9 @@ $OutlierFeatureSummary = Initialize-V2024OutlierFeatureSummary  -ContributingFea
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $OutlierFeatureSummary | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

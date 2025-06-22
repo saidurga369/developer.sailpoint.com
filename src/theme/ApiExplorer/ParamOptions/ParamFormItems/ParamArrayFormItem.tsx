@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState} from 'react';
 
-import { ErrorMessage } from "@hookform/error-message";
-import { nanoid } from "@reduxjs/toolkit";
-import FormSelect from "@theme/ApiExplorer/FormSelect";
-import FormTextInput from "@theme/ApiExplorer/FormTextInput";
-import { Param, setParam } from "@theme/ApiExplorer/ParamOptions/slice";
-import { useTypedDispatch } from "@theme/ApiItem/hooks";
-import { Controller, useFormContext } from "react-hook-form";
+import {ErrorMessage} from '@hookform/error-message';
+import {nanoid} from '@reduxjs/toolkit';
+import FormSelect from '@theme/ApiExplorer/FormSelect';
+import FormTextInput from '@theme/ApiExplorer/FormTextInput';
+import {Param, setParam} from '@theme/ApiExplorer/ParamOptions/slice';
+import {useTypedDispatch} from '@theme/ApiItem/hooks';
+import {Controller, useFormContext} from 'react-hook-form';
 
 export interface ParamProps {
   param: Param;
@@ -15,14 +15,14 @@ export interface ParamProps {
 function ArrayItem({
   param,
   onChange,
-}: ParamProps & { onChange(value?: string): any }) {
-  if (param.schema?.items?.type === "boolean") {
+}: ParamProps & {onChange(value?: string): any}) {
+  if (param.schema?.items?.type === 'boolean') {
     return (
       <FormSelect
-        options={["---", "true", "false"]}
+        options={['---', 'true', 'false']}
         onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
           const val = e.target.value;
-          onChange(val === "---" ? undefined : val);
+          onChange(val === '---' ? undefined : val);
         }}
       />
     );
@@ -38,13 +38,13 @@ function ArrayItem({
   );
 }
 
-export default function ParamArrayFormItem({ param }: ParamProps) {
-  const [items, setItems] = useState<{ id: string; value?: string }[]>([]);
+export default function ParamArrayFormItem({param}: ParamProps) {
+  const [items, setItems] = useState<{id: string; value?: string}[]>([]);
   const dispatch = useTypedDispatch();
 
   const {
     control,
-    formState: { errors },
+    formState: {errors},
   } = useFormContext();
 
   const showErrorMessage = errors?.paramArray?.message;
@@ -67,23 +67,23 @@ export default function ParamArrayFormItem({ param }: ParamProps) {
       setParam({
         ...param,
         value: values.length > 0 ? values : undefined,
-      })
+      }),
     );
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [items]);
 
-  function handleDeleteItem(itemToDelete: { id: string }) {
+  function handleDeleteItem(itemToDelete: {id: string}) {
     return () => {
       const newItems = items.filter((i) => i.id !== itemToDelete.id);
       setItems(newItems);
     };
   }
 
-  function handleChangeItem(itemToUpdate: { id: string }, onChange: any) {
+  function handleChangeItem(itemToUpdate: {id: string}, onChange: any) {
     return (value: string) => {
       const newItems = items.map((i) => {
         if (i.id === itemToUpdate.id) {
-          return { ...i, value: value };
+          return {...i, value: value};
         }
         return i;
       });
@@ -96,20 +96,19 @@ export default function ParamArrayFormItem({ param }: ParamProps) {
     <>
       <Controller
         control={control}
-        rules={{ required: param.required ? "This field is required" : false }}
+        rules={{required: param.required ? 'This field is required' : false}}
         name="paramArray"
-        render={({ field: { onChange, name } }) => (
+        render={({field: {onChange, name}}) => (
           <>
             {items.map((item) => (
-              <div key={item.id} style={{ display: "flex" }}>
+              <div key={item.id} style={{display: 'flex'}}>
                 <ArrayItem
                   param={param}
                   onChange={handleChangeItem(item, onChange)}
                 />
                 <button
                   className="openapi-explorer__delete-btn"
-                  onClick={handleDeleteItem(item)}
-                >
+                  onClick={handleDeleteItem(item)}>
                   <svg
                     focusable="false"
                     preserveAspectRatio="xMidYMid meet"
@@ -118,8 +117,7 @@ export default function ParamArrayFormItem({ param }: ParamProps) {
                     width="16"
                     height="16"
                     viewBox="0 0 32 32"
-                    aria-hidden="true"
-                  >
+                    aria-hidden="true">
                     <path d="M24 9.4L22.6 8 16 14.6 9.4 8 8 9.4 14.6 16 8 22.6 9.4 24 16 17.4 22.6 24 24 22.6 17.4 16 24 9.4z"></path>
                     <title>Delete</title>
                   </svg>
@@ -128,8 +126,7 @@ export default function ParamArrayFormItem({ param }: ParamProps) {
             ))}
             <button
               className="openapi-explorer__thin-btn"
-              onClick={handleAddItem}
-            >
+              onClick={handleAddItem}>
               Add item
             </button>
           </>
@@ -139,7 +136,7 @@ export default function ParamArrayFormItem({ param }: ParamProps) {
         <ErrorMessage
           errors={errors}
           name="paramArray"
-          render={({ message }) => (
+          render={({message}) => (
             <div className="openapi-explorer__input-error">{message}</div>
           )}
         />

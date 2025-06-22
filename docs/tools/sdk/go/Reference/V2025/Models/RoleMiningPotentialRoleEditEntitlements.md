@@ -4,19 +4,32 @@ title: RoleMiningPotentialRoleEditEntitlements
 pagination_label: RoleMiningPotentialRoleEditEntitlements
 sidebar_label: RoleMiningPotentialRoleEditEntitlements
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleMiningPotentialRoleEditEntitlements', 'V2025RoleMiningPotentialRoleEditEntitlements'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'RoleMiningPotentialRoleEditEntitlements',
+    'V2025RoleMiningPotentialRoleEditEntitlements',
+  ]
 slug: /tools/sdk/go/v2025/models/role-mining-potential-role-edit-entitlements
-tags: ['SDK', 'Software Development Kit', 'RoleMiningPotentialRoleEditEntitlements', 'V2025RoleMiningPotentialRoleEditEntitlements']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningPotentialRoleEditEntitlements',
+    'V2025RoleMiningPotentialRoleEditEntitlements',
+  ]
 ---
 
 # RoleMiningPotentialRoleEditEntitlements
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Ids** | Pointer to **[]string** | The list of entitlement ids to be edited | [optional] 
-**Exclude** | Pointer to **bool** | If true, add ids to be exclusion list. If false, remove ids from the exclusion list. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Ids** | Pointer to **[]string** | The list of entitlement ids to be edited | [optional] |
+| **Exclude** | Pointer to **bool** | If true, add ids to be exclusion list. If false, remove ids from the exclusion list. | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewRoleMiningPotentialRoleEditEntitlements() *RoleMiningPotentialRoleEditEntitlements`
 
-NewRoleMiningPotentialRoleEditEntitlements instantiates a new RoleMiningPotentialRoleEditEntitlements object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleMiningPotentialRoleEditEntitlements instantiates a new RoleMiningPotentialRoleEditEntitlements object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleMiningPotentialRoleEditEntitlementsWithDefaults
 
 `func NewRoleMiningPotentialRoleEditEntitlementsWithDefaults() *RoleMiningPotentialRoleEditEntitlements`
 
-NewRoleMiningPotentialRoleEditEntitlementsWithDefaults instantiates a new RoleMiningPotentialRoleEditEntitlements object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleMiningPotentialRoleEditEntitlementsWithDefaults instantiates a new RoleMiningPotentialRoleEditEntitlements object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetIds
 
@@ -47,8 +55,7 @@ GetIds returns the Ids field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningPotentialRoleEditEntitlements) GetIdsOk() (*[]string, bool)`
 
-GetIdsOk returns a tuple with the Ids field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdsOk returns a tuple with the Ids field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIds
 
@@ -72,8 +79,7 @@ GetExclude returns the Exclude field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningPotentialRoleEditEntitlements) GetExcludeOk() (*bool, bool)`
 
-GetExcludeOk returns a tuple with the Exclude field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetExcludeOk returns a tuple with the Exclude field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetExclude
 
@@ -86,5 +92,3 @@ SetExclude sets Exclude field to given value.
 `func (o *RoleMiningPotentialRoleEditEntitlements) HasExclude() bool`
 
 HasExclude returns a boolean if a field has been set.
-
-

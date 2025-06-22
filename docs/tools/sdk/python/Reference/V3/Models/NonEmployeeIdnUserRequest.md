@@ -4,19 +4,32 @@ title: NonEmployeeIdnUserRequest
 pagination_label: NonEmployeeIdnUserRequest
 sidebar_label: NonEmployeeIdnUserRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'NonEmployeeIdnUserRequest', 'NonEmployeeIdnUserRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'NonEmployeeIdnUserRequest',
+    'NonEmployeeIdnUserRequest',
+  ]
 slug: /tools/sdk/python/v3/models/non-employee-idn-user-request
-tags: ['SDK', 'Software Development Kit', 'NonEmployeeIdnUserRequest', 'NonEmployeeIdnUserRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NonEmployeeIdnUserRequest',
+    'NonEmployeeIdnUserRequest',
+  ]
 ---
 
 # NonEmployeeIdnUserRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Identity id. | [required]
+| Name   | Type    | Description  | Notes      |
+| ------ | ------- | ------------ | ---------- |
+| **id** | **str** | Identity id. | [required] |
+
 }
 
 ## Example
@@ -29,5 +42,5 @@ id='2c91808570313110017040b06f344ec9'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

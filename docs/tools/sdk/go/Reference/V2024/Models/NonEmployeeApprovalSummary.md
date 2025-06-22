@@ -4,20 +4,33 @@ title: NonEmployeeApprovalSummary
 pagination_label: NonEmployeeApprovalSummary
 sidebar_label: NonEmployeeApprovalSummary
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'NonEmployeeApprovalSummary', 'V2024NonEmployeeApprovalSummary'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'NonEmployeeApprovalSummary',
+    'V2024NonEmployeeApprovalSummary',
+  ]
 slug: /tools/sdk/go/v2024/models/non-employee-approval-summary
-tags: ['SDK', 'Software Development Kit', 'NonEmployeeApprovalSummary', 'V2024NonEmployeeApprovalSummary']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NonEmployeeApprovalSummary',
+    'V2024NonEmployeeApprovalSummary',
+  ]
 ---
 
 # NonEmployeeApprovalSummary
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Approved** | Pointer to **int32** | The number of approved non-employee approval requests. | [optional] 
-**Pending** | Pointer to **int32** | The number of pending non-employee approval requests. | [optional] 
-**Rejected** | Pointer to **int32** | The number of rejected non-employee approval requests. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Approved** | Pointer to **int32** | The number of approved non-employee approval requests. | [optional] |
+| **Pending** | Pointer to **int32** | The number of pending non-employee approval requests. | [optional] |
+| **Rejected** | Pointer to **int32** | The number of rejected non-employee approval requests. | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewNonEmployeeApprovalSummary() *NonEmployeeApprovalSummary`
 
-NewNonEmployeeApprovalSummary instantiates a new NonEmployeeApprovalSummary object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewNonEmployeeApprovalSummary instantiates a new NonEmployeeApprovalSummary object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewNonEmployeeApprovalSummaryWithDefaults
 
 `func NewNonEmployeeApprovalSummaryWithDefaults() *NonEmployeeApprovalSummary`
 
-NewNonEmployeeApprovalSummaryWithDefaults instantiates a new NonEmployeeApprovalSummary object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewNonEmployeeApprovalSummaryWithDefaults instantiates a new NonEmployeeApprovalSummary object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetApproved
 
@@ -48,8 +56,7 @@ GetApproved returns the Approved field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeApprovalSummary) GetApprovedOk() (*int32, bool)`
 
-GetApprovedOk returns a tuple with the Approved field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApprovedOk returns a tuple with the Approved field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApproved
 
@@ -73,8 +80,7 @@ GetPending returns the Pending field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeApprovalSummary) GetPendingOk() (*int32, bool)`
 
-GetPendingOk returns a tuple with the Pending field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPendingOk returns a tuple with the Pending field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPending
 
@@ -98,8 +104,7 @@ GetRejected returns the Rejected field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeApprovalSummary) GetRejectedOk() (*int32, bool)`
 
-GetRejectedOk returns a tuple with the Rejected field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRejectedOk returns a tuple with the Rejected field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRejected
 
@@ -112,5 +117,3 @@ SetRejected sets Rejected field to given value.
 `func (o *NonEmployeeApprovalSummary) HasRejected() bool`
 
 HasRejected returns a boolean if a field has been set.
-
-

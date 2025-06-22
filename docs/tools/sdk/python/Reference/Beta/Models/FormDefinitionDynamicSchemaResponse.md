@@ -4,19 +4,32 @@ title: FormDefinitionDynamicSchemaResponse
 pagination_label: FormDefinitionDynamicSchemaResponse
 sidebar_label: FormDefinitionDynamicSchemaResponse
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'FormDefinitionDynamicSchemaResponse', 'BetaFormDefinitionDynamicSchemaResponse'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'FormDefinitionDynamicSchemaResponse',
+    'BetaFormDefinitionDynamicSchemaResponse',
+  ]
 slug: /tools/sdk/python/beta/models/form-definition-dynamic-schema-response
-tags: ['SDK', 'Software Development Kit', 'FormDefinitionDynamicSchemaResponse', 'BetaFormDefinitionDynamicSchemaResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'FormDefinitionDynamicSchemaResponse',
+    'BetaFormDefinitionDynamicSchemaResponse',
+  ]
 ---
 
 # FormDefinitionDynamicSchemaResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**output_schema** | **map[string]object** | OutputSchema holds a JSON schema generated dynamically | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **output_schema** | **map[string]object** | OutputSchema holds a JSON schema generated dynamically | [optional] |
+
 }
 
 ## Example
@@ -29,5 +42,5 @@ output_schema={outputSchema={$schema=https://json-schema.org/draft/2020-12/schem
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

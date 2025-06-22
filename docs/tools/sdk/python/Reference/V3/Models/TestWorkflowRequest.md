@@ -4,19 +4,26 @@ title: TestWorkflowRequest
 pagination_label: TestWorkflowRequest
 sidebar_label: TestWorkflowRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'TestWorkflowRequest', 'TestWorkflowRequest'] 
+keywords:
+  ['python', 'Python', 'sdk', 'TestWorkflowRequest', 'TestWorkflowRequest']
 slug: /tools/sdk/python/v3/models/test-workflow-request
-tags: ['SDK', 'Software Development Kit', 'TestWorkflowRequest', 'TestWorkflowRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'TestWorkflowRequest',
+    'TestWorkflowRequest',
+  ]
 ---
 
 # TestWorkflowRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**input** | **object** | The test input for the workflow. | [required]
+| Name      | Type       | Description                      | Notes      |
+| --------- | ---------- | -------------------------------- | ---------- |
+| **input** | **object** | The test input for the workflow. | [required] |
+
 }
 
 ## Example
@@ -29,5 +36,5 @@ input=None
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,21 +4,34 @@ title: RequestedItemStatusPreApprovalTriggerDetails
 pagination_label: RequestedItemStatusPreApprovalTriggerDetails
 sidebar_label: RequestedItemStatusPreApprovalTriggerDetails
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RequestedItemStatusPreApprovalTriggerDetails', 'RequestedItemStatusPreApprovalTriggerDetails'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'RequestedItemStatusPreApprovalTriggerDetails',
+    'RequestedItemStatusPreApprovalTriggerDetails',
+  ]
 slug: /tools/sdk/python/v3/models/requested-item-status-pre-approval-trigger-details
-tags: ['SDK', 'Software Development Kit', 'RequestedItemStatusPreApprovalTriggerDetails', 'RequestedItemStatusPreApprovalTriggerDetails']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RequestedItemStatusPreApprovalTriggerDetails',
+    'RequestedItemStatusPreApprovalTriggerDetails',
+  ]
 ---
 
 # RequestedItemStatusPreApprovalTriggerDetails
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**comment** | **str** | Comment left for the pre-approval decision | [optional] 
-**reviewer** | **str** | The reviewer of the pre-approval decision | [optional] 
-**decision** |  **Enum** [  'APPROVED',    'REJECTED' ] | The decision of the pre-approval trigger | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **comment** | **str** | Comment left for the pre-approval decision | [optional] |
+| **reviewer** | **str** | The reviewer of the pre-approval decision | [optional] |
+| **decision** | **Enum** [ 'APPROVED', 'REJECTED' ] | The decision of the pre-approval trigger | [optional] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ decision='APPROVED'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

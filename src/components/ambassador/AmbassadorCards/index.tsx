@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from './styles.module.css';
 import AmbassadorCard from '../AmbassadorCard';
 import NewtonsCradle from '../../newtonsCradle';
-import { discourseBaseURL, developerWebsiteDomain } from '../../../util/util';
+import {discourseBaseURL, developerWebsiteDomain} from '../../../util/util';
 
 import {
   getAmbassadors,
@@ -60,7 +60,7 @@ interface AmbassadorData {
   points?: number;
 }
 
-const AmbassadorCards: React.FC<AmbassadorCardsProps> = ({ expert }) => {
+const AmbassadorCards: React.FC<AmbassadorCardsProps> = ({expert}) => {
   const [cardData, setCardData] = useState<AmbassadorData[] | undefined>();
   const [loadingCards, setLoadingCards] = useState<boolean>(true);
 
@@ -77,12 +77,12 @@ const AmbassadorCards: React.FC<AmbassadorCardsProps> = ({ expert }) => {
 
         if (data.members) {
           const memberDetails: AmbassadorDetails = await getAmbassadorDetails(
-            data.members.map((item: AmbassadorMember) => item.id)
+            data.members.map((item: AmbassadorMember) => item.id),
           );
 
           for (const member of data.members) {
             const memberDetail = memberDetails.users.find(
-              (item) => item.id === member.id
+              (item) => item.id === member.id,
             );
 
             if (
@@ -90,7 +90,10 @@ const AmbassadorCards: React.FC<AmbassadorCardsProps> = ({ expert }) => {
               memberDetail?.bio_excerpt &&
               memberDetail.bio_excerpt.length > 150
             ) {
-              const transformedMember = await getMemberList(member, memberDetail);
+              const transformedMember = await getMemberList(
+                member,
+                memberDetail,
+              );
               resultset.push(transformedMember);
             }
 
@@ -147,7 +150,7 @@ const AmbassadorCards: React.FC<AmbassadorCardsProps> = ({ expert }) => {
 
 async function getMemberList(
   member: AmbassadorMember,
-  details: AmbassadorDetails['users'][0]
+  details: AmbassadorDetails['users'][0],
 ): Promise<AmbassadorData> {
   return {
     name: member.name,
@@ -155,7 +158,7 @@ async function getMemberList(
     title: member.title,
     bio: details.bio_excerpt,
     member_since:
-      new Date(member.added_at).toLocaleString('default', { month: 'long' }) +
+      new Date(member.added_at).toLocaleString('default', {month: 'long'}) +
       ' ' +
       new Date(member.added_at).getFullYear().toString(),
     badge_count: details.badge_count,
@@ -168,7 +171,10 @@ async function getMemberList(
 
 function getAvatarURL(avatar: string): string {
   if (avatar.includes(developerWebsiteDomain())) {
-    return `https://${developerWebsiteDomain()}${avatar.replace('{size}', '120')}`;
+    return `https://${developerWebsiteDomain()}${avatar.replace(
+      '{size}',
+      '120',
+    )}`;
   } else {
     return avatar.replace('{size}', '120');
   }

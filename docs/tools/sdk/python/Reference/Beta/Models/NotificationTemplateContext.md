@@ -4,21 +4,34 @@ title: NotificationTemplateContext
 pagination_label: NotificationTemplateContext
 sidebar_label: NotificationTemplateContext
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'NotificationTemplateContext', 'BetaNotificationTemplateContext'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'NotificationTemplateContext',
+    'BetaNotificationTemplateContext',
+  ]
 slug: /tools/sdk/python/beta/models/notification-template-context
-tags: ['SDK', 'Software Development Kit', 'NotificationTemplateContext', 'BetaNotificationTemplateContext']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NotificationTemplateContext',
+    'BetaNotificationTemplateContext',
+  ]
 ---
 
 # NotificationTemplateContext
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**attributes** | **map[string]object** | A JSON object that stores the context. | [optional] 
-**created** | **datetime** | When the global context was created | [optional] 
-**modified** | **datetime** | When the global context was last modified | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **attributes** | **map[string]object** | A JSON object that stores the context. | [optional] |
+| **created** | **datetime** | When the global context was created | [optional] |
+| **modified** | **datetime** | When the global context was last modified | [optional] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ modified='2020-04-15T16:16:47.525Z'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

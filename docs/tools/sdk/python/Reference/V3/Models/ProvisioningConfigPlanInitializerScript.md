@@ -4,9 +4,22 @@ title: ProvisioningConfigPlanInitializerScript
 pagination_label: ProvisioningConfigPlanInitializerScript
 sidebar_label: ProvisioningConfigPlanInitializerScript
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ProvisioningConfigPlanInitializerScript', 'ProvisioningConfigPlanInitializerScript'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ProvisioningConfigPlanInitializerScript',
+    'ProvisioningConfigPlanInitializerScript',
+  ]
 slug: /tools/sdk/python/v3/models/provisioning-config-plan-initializer-script
-tags: ['SDK', 'Software Development Kit', 'ProvisioningConfigPlanInitializerScript', 'ProvisioningConfigPlanInitializerScript']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ProvisioningConfigPlanInitializerScript',
+    'ProvisioningConfigPlanInitializerScript',
+  ]
 ---
 
 # ProvisioningConfigPlanInitializerScript
@@ -15,9 +28,10 @@ This is a reference to a plan initializer script.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**source** | **str** | This is a Rule that allows provisioning instruction changes. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **source** | **str** | This is a Rule that allows provisioning instruction changes. | [optional] |
+
 }
 
 ## Example
@@ -31,5 +45,5 @@ source='<?xml version='1.0' encoding='UTF-8'?>\r\n<!DOCTYPE Rule PUBLIC \"sailpo
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

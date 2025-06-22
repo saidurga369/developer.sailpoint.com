@@ -4,21 +4,22 @@ title: ExportOptions1
 pagination_label: ExportOptions1
 sidebar_label: ExportOptions1
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ExportOptions1', 'V2024ExportOptions1'] 
+keywords: ['python', 'Python', 'sdk', 'ExportOptions1', 'V2024ExportOptions1']
 slug: /tools/sdk/python/v2024/models/export-options1
-tags: ['SDK', 'Software Development Kit', 'ExportOptions1', 'V2024ExportOptions1']
+tags:
+  ['SDK', 'Software Development Kit', 'ExportOptions1', 'V2024ExportOptions1']
 ---
 
 # ExportOptions1
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**exclude_types** | **[]str** | Object type names to be excluded from an sp-config export command. | [optional] 
-**include_types** | **[]str** | Object type names to be included in an sp-config export command. IncludeTypes takes precedence over excludeTypes. | [optional] 
-**object_options** | [**map[string]ObjectExportImportOptions**](object-export-import-options) | Additional options targeting specific objects related to each item in the includeTypes field | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **exclude_types** | **[]str** | Object type names to be excluded from an sp-config export command. | [optional] |
+| **include_types** | **[]str** | Object type names to be included in an sp-config export command. IncludeTypes takes precedence over excludeTypes. | [optional] |
+| **object_options** | [**map[string]ObjectExportImportOptions**](object-export-import-options) | Additional options targeting specific objects related to each item in the includeTypes field | [optional] |
+
 }
 
 ## Example
@@ -37,5 +38,5 @@ object_options={TRIGGER_SUBSCRIPTION={includedIds=[be9e116d-08e1-49fc-ab7f-fa585
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

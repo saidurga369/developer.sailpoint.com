@@ -4,39 +4,40 @@ title: ManagedClient
 pagination_label: ManagedClient
 sidebar_label: ManagedClient
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'ManagedClient', 'BetaManagedClient'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'ManagedClient', 'BetaManagedClient']
 slug: /tools/sdk/powershell/beta/models/managed-client
 tags: ['SDK', 'Software Development Kit', 'ManagedClient', 'BetaManagedClient']
 ---
-
 
 # ManagedClient
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | ManagedClient ID | [optional] [readonly] 
-**AlertKey** | **String** | ManagedClient alert key | [optional] [readonly] 
-**ApiGatewayBaseUrl** | **String** | ManagedClient gateway base url | [optional] [readonly] 
-**CcId** | **Int64** | Previous CC ID to be used in data migration. (This field will be deleted after CC migration!) | [optional] 
-**ClientId** | **String** | The client ID used in API management | [required]
-**ClusterId** | **String** | Cluster ID that the ManagedClient is linked to | [required]
-**Cookbook** | **String** | VA cookbook | [optional] [readonly] 
-**Description** | **String** | ManagedClient description | [required]
-**IpAddress** | **String** | The public IP address of the ManagedClient | [optional] [readonly] 
-**LastSeen** | **System.DateTime** | When the ManagedClient was last seen by the server | [optional] [readonly] 
-**Name** | **String** | ManagedClient name | [optional] 
-**SinceLastSeen** | **String** | Milliseconds since the ManagedClient has polled the server | [optional] [readonly] 
-**Status** | [**ManagedClientStatusEnum**](managed-client-status-enum) | Status of the ManagedClient | [optional] [readonly] 
-**Type** | **String** | Type of the ManagedClient (VA, CCG) | [required]
-**VaDownloadUrl** | **String** | ManagedClient VA download URL | [optional] [readonly] 
-**VaVersion** | **String** | Version that the ManagedClient's VA is running | [optional] [readonly] 
-**Secret** | **String** | Client's apiKey | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | ManagedClient ID | [optional] [readonly] |
+| **AlertKey** | **String** | ManagedClient alert key | [optional] [readonly] |
+| **ApiGatewayBaseUrl** | **String** | ManagedClient gateway base url | [optional] [readonly] |
+| **CcId** | **Int64** | Previous CC ID to be used in data migration. (This field will be deleted after CC migration!) | [optional] |
+| **ClientId** | **String** | The client ID used in API management | [required] |
+| **ClusterId** | **String** | Cluster ID that the ManagedClient is linked to | [required] |
+| **Cookbook** | **String** | VA cookbook | [optional] [readonly] |
+| **Description** | **String** | ManagedClient description | [required] |
+| **IpAddress** | **String** | The public IP address of the ManagedClient | [optional] [readonly] |
+| **LastSeen** | **System.DateTime** | When the ManagedClient was last seen by the server | [optional] [readonly] |
+| **Name** | **String** | ManagedClient name | [optional] |
+| **SinceLastSeen** | **String** | Milliseconds since the ManagedClient has polled the server | [optional] [readonly] |
+| **Status** | [**ManagedClientStatusEnum**](managed-client-status-enum) | Status of the ManagedClient | [optional] [readonly] |
+| **Type** | **String** | Type of the ManagedClient (VA, CCG) | [required] |
+| **VaDownloadUrl** | **String** | ManagedClient VA download URL | [optional] [readonly] |
+| **VaVersion** | **String** | Version that the ManagedClient's VA is running | [optional] [readonly] |
+| **Secret** | **String** | Client's apiKey | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $ManagedClient = Initialize-BetaManagedClient  -Id aClientId `
  -AlertKey anAlertKey `
@@ -58,10 +59,9 @@ $ManagedClient = Initialize-BetaManagedClient  -Id aClientId `
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $ManagedClient | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

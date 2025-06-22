@@ -4,25 +4,31 @@ title: NonEmployeeSource
 pagination_label: NonEmployeeSource
 sidebar_label: NonEmployeeSource
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'NonEmployeeSource', 'V2024NonEmployeeSource'] 
+keywords: ['go', 'Golang', 'sdk', 'NonEmployeeSource', 'V2024NonEmployeeSource']
 slug: /tools/sdk/go/v2024/models/non-employee-source
-tags: ['SDK', 'Software Development Kit', 'NonEmployeeSource', 'V2024NonEmployeeSource']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NonEmployeeSource',
+    'V2024NonEmployeeSource',
+  ]
 ---
 
 # NonEmployeeSource
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Non-Employee source id. | [optional] 
-**SourceId** | Pointer to **string** | Source Id associated with this non-employee source. | [optional] 
-**Name** | Pointer to **string** | Source name associated with this non-employee source. | [optional] 
-**Description** | Pointer to **string** | Source description associated with this non-employee source. | [optional] 
-**Approvers** | Pointer to [**[]NonEmployeeIdentityReferenceWithId**](non-employee-identity-reference-with-id) | List of approvers | [optional] 
-**AccountManagers** | Pointer to [**[]NonEmployeeIdentityReferenceWithId**](non-employee-identity-reference-with-id) | List of account managers | [optional] 
-**Modified** | Pointer to **SailPointTime** | When the request was last modified. | [optional] 
-**Created** | Pointer to **SailPointTime** | When the request was created. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Non-Employee source id. | [optional] |
+| **SourceId** | Pointer to **string** | Source Id associated with this non-employee source. | [optional] |
+| **Name** | Pointer to **string** | Source name associated with this non-employee source. | [optional] |
+| **Description** | Pointer to **string** | Source description associated with this non-employee source. | [optional] |
+| **Approvers** | Pointer to [**[]NonEmployeeIdentityReferenceWithId**](non-employee-identity-reference-with-id) | List of approvers | [optional] |
+| **AccountManagers** | Pointer to [**[]NonEmployeeIdentityReferenceWithId**](non-employee-identity-reference-with-id) | List of account managers | [optional] |
+| **Modified** | Pointer to **SailPointTime** | When the request was last modified. | [optional] |
+| **Created** | Pointer to **SailPointTime** | When the request was created. | [optional] |
 
 ## Methods
 
@@ -30,18 +36,13 @@ Name | Type | Description | Notes
 
 `func NewNonEmployeeSource() *NonEmployeeSource`
 
-NewNonEmployeeSource instantiates a new NonEmployeeSource object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewNonEmployeeSource instantiates a new NonEmployeeSource object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewNonEmployeeSourceWithDefaults
 
 `func NewNonEmployeeSourceWithDefaults() *NonEmployeeSource`
 
-NewNonEmployeeSourceWithDefaults instantiates a new NonEmployeeSource object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewNonEmployeeSourceWithDefaults instantiates a new NonEmployeeSource object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -53,8 +54,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeSource) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -78,8 +78,7 @@ GetSourceId returns the SourceId field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeSource) GetSourceIdOk() (*string, bool)`
 
-GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceId
 
@@ -103,8 +102,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeSource) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -128,8 +126,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeSource) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -153,8 +150,7 @@ GetApprovers returns the Approvers field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeSource) GetApproversOk() (*[]NonEmployeeIdentityReferenceWithId, bool)`
 
-GetApproversOk returns a tuple with the Approvers field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApproversOk returns a tuple with the Approvers field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApprovers
 
@@ -178,8 +174,7 @@ GetAccountManagers returns the AccountManagers field if non-nil, zero value othe
 
 `func (o *NonEmployeeSource) GetAccountManagersOk() (*[]NonEmployeeIdentityReferenceWithId, bool)`
 
-GetAccountManagersOk returns a tuple with the AccountManagers field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountManagersOk returns a tuple with the AccountManagers field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountManagers
 
@@ -203,8 +198,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeSource) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -228,8 +222,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeSource) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -242,5 +235,3 @@ SetCreated sets Created field to given value.
 `func (o *NonEmployeeSource) HasCreated() bool`
 
 HasCreated returns a boolean if a field has been set.
-
-

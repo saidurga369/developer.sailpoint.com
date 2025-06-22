@@ -4,20 +4,27 @@ title: KbaAnswerRequestItem
 pagination_label: KbaAnswerRequestItem
 sidebar_label: KbaAnswerRequestItem
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'KbaAnswerRequestItem', 'KbaAnswerRequestItem'] 
+keywords:
+  ['python', 'Python', 'sdk', 'KbaAnswerRequestItem', 'KbaAnswerRequestItem']
 slug: /tools/sdk/python/v3/models/kba-answer-request-item
-tags: ['SDK', 'Software Development Kit', 'KbaAnswerRequestItem', 'KbaAnswerRequestItem']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'KbaAnswerRequestItem',
+    'KbaAnswerRequestItem',
+  ]
 ---
 
 # KbaAnswerRequestItem
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Question Id | [required]
-**answer** | **str** | An answer for the KBA question | [required]
+| Name       | Type    | Description                    | Notes      |
+| ---------- | ------- | ------------------------------ | ---------- |
+| **id**     | **str** | Question Id                    | [required] |
+| **answer** | **str** | An answer for the KBA question | [required] |
+
 }
 
 ## Example
@@ -31,5 +38,5 @@ answer='Your answer'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

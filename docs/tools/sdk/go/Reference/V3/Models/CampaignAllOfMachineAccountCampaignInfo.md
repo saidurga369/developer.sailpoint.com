@@ -4,19 +4,32 @@ title: CampaignAllOfMachineAccountCampaignInfo
 pagination_label: CampaignAllOfMachineAccountCampaignInfo
 sidebar_label: CampaignAllOfMachineAccountCampaignInfo
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'CampaignAllOfMachineAccountCampaignInfo', 'CampaignAllOfMachineAccountCampaignInfo'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'CampaignAllOfMachineAccountCampaignInfo',
+    'CampaignAllOfMachineAccountCampaignInfo',
+  ]
 slug: /tools/sdk/go/v3/models/campaign-all-of-machine-account-campaign-info
-tags: ['SDK', 'Software Development Kit', 'CampaignAllOfMachineAccountCampaignInfo', 'CampaignAllOfMachineAccountCampaignInfo']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CampaignAllOfMachineAccountCampaignInfo',
+    'CampaignAllOfMachineAccountCampaignInfo',
+  ]
 ---
 
 # CampaignAllOfMachineAccountCampaignInfo
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**SourceIds** | Pointer to **[]string** | The list of sources to be included in the campaign. | [optional] 
-**ReviewerType** | Pointer to **string** | The reviewer's type. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **SourceIds** | Pointer to **[]string** | The list of sources to be included in the campaign. | [optional] |
+| **ReviewerType** | Pointer to **string** | The reviewer's type. | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewCampaignAllOfMachineAccountCampaignInfo() *CampaignAllOfMachineAccountCampaignInfo`
 
-NewCampaignAllOfMachineAccountCampaignInfo instantiates a new CampaignAllOfMachineAccountCampaignInfo object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewCampaignAllOfMachineAccountCampaignInfo instantiates a new CampaignAllOfMachineAccountCampaignInfo object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewCampaignAllOfMachineAccountCampaignInfoWithDefaults
 
 `func NewCampaignAllOfMachineAccountCampaignInfoWithDefaults() *CampaignAllOfMachineAccountCampaignInfo`
 
-NewCampaignAllOfMachineAccountCampaignInfoWithDefaults instantiates a new CampaignAllOfMachineAccountCampaignInfo object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewCampaignAllOfMachineAccountCampaignInfoWithDefaults instantiates a new CampaignAllOfMachineAccountCampaignInfo object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetSourceIds
 
@@ -47,8 +55,7 @@ GetSourceIds returns the SourceIds field if non-nil, zero value otherwise.
 
 `func (o *CampaignAllOfMachineAccountCampaignInfo) GetSourceIdsOk() (*[]string, bool)`
 
-GetSourceIdsOk returns a tuple with the SourceIds field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceIdsOk returns a tuple with the SourceIds field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceIds
 
@@ -72,8 +79,7 @@ GetReviewerType returns the ReviewerType field if non-nil, zero value otherwise.
 
 `func (o *CampaignAllOfMachineAccountCampaignInfo) GetReviewerTypeOk() (*string, bool)`
 
-GetReviewerTypeOk returns a tuple with the ReviewerType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReviewerTypeOk returns a tuple with the ReviewerType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReviewerType
 
@@ -86,5 +92,3 @@ SetReviewerType sets ReviewerType field to given value.
 `func (o *CampaignAllOfMachineAccountCampaignInfo) HasReviewerType() bool`
 
 HasReviewerType returns a boolean if a field has been set.
-
-

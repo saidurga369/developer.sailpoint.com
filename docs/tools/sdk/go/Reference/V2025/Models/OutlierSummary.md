@@ -4,22 +4,23 @@ title: OutlierSummary
 pagination_label: OutlierSummary
 sidebar_label: OutlierSummary
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'OutlierSummary', 'V2025OutlierSummary'] 
+keywords: ['go', 'Golang', 'sdk', 'OutlierSummary', 'V2025OutlierSummary']
 slug: /tools/sdk/go/v2025/models/outlier-summary
-tags: ['SDK', 'Software Development Kit', 'OutlierSummary', 'V2025OutlierSummary']
+tags:
+  ['SDK', 'Software Development Kit', 'OutlierSummary', 'V2025OutlierSummary']
 ---
 
 # OutlierSummary
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | The type of outlier summary | [optional] 
-**SnapshotDate** | Pointer to **SailPointTime** | The date the bulk outlier detection ran/snapshot was created | [optional] 
-**TotalOutliers** | Pointer to **int32** | Total number of outliers for the customer making the request | [optional] 
-**TotalIdentities** | Pointer to **int32** | Total number of identities for the customer making the request | [optional] 
-**TotalIgnored** | Pointer to **int32** |  | [optional] [default to 0]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to **string** | The type of outlier summary | [optional] |
+| **SnapshotDate** | Pointer to **SailPointTime** | The date the bulk outlier detection ran/snapshot was created | [optional] |
+| **TotalOutliers** | Pointer to **int32** | Total number of outliers for the customer making the request | [optional] |
+| **TotalIdentities** | Pointer to **int32** | Total number of identities for the customer making the request | [optional] |
+| **TotalIgnored** | Pointer to **int32** |  | [optional] [default to 0] |
 
 ## Methods
 
@@ -27,18 +28,13 @@ Name | Type | Description | Notes
 
 `func NewOutlierSummary() *OutlierSummary`
 
-NewOutlierSummary instantiates a new OutlierSummary object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewOutlierSummary instantiates a new OutlierSummary object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewOutlierSummaryWithDefaults
 
 `func NewOutlierSummaryWithDefaults() *OutlierSummary`
 
-NewOutlierSummaryWithDefaults instantiates a new OutlierSummary object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewOutlierSummaryWithDefaults instantiates a new OutlierSummary object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -50,8 +46,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *OutlierSummary) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -75,8 +70,7 @@ GetSnapshotDate returns the SnapshotDate field if non-nil, zero value otherwise.
 
 `func (o *OutlierSummary) GetSnapshotDateOk() (*SailPointTime, bool)`
 
-GetSnapshotDateOk returns a tuple with the SnapshotDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSnapshotDateOk returns a tuple with the SnapshotDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSnapshotDate
 
@@ -100,8 +94,7 @@ GetTotalOutliers returns the TotalOutliers field if non-nil, zero value otherwis
 
 `func (o *OutlierSummary) GetTotalOutliersOk() (*int32, bool)`
 
-GetTotalOutliersOk returns a tuple with the TotalOutliers field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTotalOutliersOk returns a tuple with the TotalOutliers field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTotalOutliers
 
@@ -125,8 +118,7 @@ GetTotalIdentities returns the TotalIdentities field if non-nil, zero value othe
 
 `func (o *OutlierSummary) GetTotalIdentitiesOk() (*int32, bool)`
 
-GetTotalIdentitiesOk returns a tuple with the TotalIdentities field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTotalIdentitiesOk returns a tuple with the TotalIdentities field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTotalIdentities
 
@@ -150,8 +142,7 @@ GetTotalIgnored returns the TotalIgnored field if non-nil, zero value otherwise.
 
 `func (o *OutlierSummary) GetTotalIgnoredOk() (*int32, bool)`
 
-GetTotalIgnoredOk returns a tuple with the TotalIgnored field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTotalIgnoredOk returns a tuple with the TotalIgnored field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTotalIgnored
 
@@ -164,5 +155,3 @@ SetTotalIgnored sets TotalIgnored field to given value.
 `func (o *OutlierSummary) HasTotalIgnored() bool`
 
 HasTotalIgnored returns a boolean if a field has been set.
-
-

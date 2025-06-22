@@ -4,9 +4,22 @@ title: RoleMetadataBulkUpdateByFilterRequest
 pagination_label: RoleMetadataBulkUpdateByFilterRequest
 sidebar_label: RoleMetadataBulkUpdateByFilterRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RoleMetadataBulkUpdateByFilterRequest', 'V2024RoleMetadataBulkUpdateByFilterRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'RoleMetadataBulkUpdateByFilterRequest',
+    'V2024RoleMetadataBulkUpdateByFilterRequest',
+  ]
 slug: /tools/sdk/python/v2024/models/role-metadata-bulk-update-by-filter-request
-tags: ['SDK', 'Software Development Kit', 'RoleMetadataBulkUpdateByFilterRequest', 'V2024RoleMetadataBulkUpdateByFilterRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMetadataBulkUpdateByFilterRequest',
+    'V2024RoleMetadataBulkUpdateByFilterRequest',
+  ]
 ---
 
 # RoleMetadataBulkUpdateByFilterRequest
@@ -15,12 +28,13 @@ This API initialize a a Bulk update by filter request of Role metadata. The maxi
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**filters** | **str** | Filtering is supported for the following fields and operators:  **id** : *eq, in*  **name** : *eq, sw*  **created** : *gt, lt, ge, le*  **modified** : *gt, lt, ge, le*  **owner.id** : *eq, in*  **requestable** : *eq* | [required]
-**operation** |  **Enum** [  'ADD',    'REMOVE',    'REPLACE' ] | The operation to be performed | [required]
-**replace_scope** |  **Enum** [  'ALL',    'ATTRIBUTE' ] | The choice of update scope. | [optional] 
-**values** | [**[]RoleMetadataBulkUpdateByFilterRequestValuesInner**](role-metadata-bulk-update-by-filter-request-values-inner) | The metadata to be updated, including attribute key and value. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **filters** | **str** | Filtering is supported for the following fields and operators: **id** : _eq, in_ **name** : _eq, sw_ **created** : _gt, lt, ge, le_ **modified** : _gt, lt, ge, le_ **owner.id** : _eq, in_ **requestable** : _eq_ | [required] |
+| **operation** | **Enum** [ 'ADD', 'REMOVE', 'REPLACE' ] | The operation to be performed | [required] |
+| **replace_scope** | **Enum** [ 'ALL', 'ATTRIBUTE' ] | The choice of update scope. | [optional] |
+| **values** | [**[]RoleMetadataBulkUpdateByFilterRequestValuesInner**](role-metadata-bulk-update-by-filter-request-values-inner) | The metadata to be updated, including attribute key and value. | [required] |
+
 }
 
 ## Example
@@ -36,5 +50,5 @@ values=[{attribute=iscFederalClassifications, values=[topSecret]}]
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,19 +4,32 @@ title: ManagedClusterAttributes
 pagination_label: ManagedClusterAttributes
 sidebar_label: ManagedClusterAttributes
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ManagedClusterAttributes', 'ManagedClusterAttributes'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ManagedClusterAttributes',
+    'ManagedClusterAttributes',
+  ]
 slug: /tools/sdk/go/v3/models/managed-cluster-attributes
-tags: ['SDK', 'Software Development Kit', 'ManagedClusterAttributes', 'ManagedClusterAttributes']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ManagedClusterAttributes',
+    'ManagedClusterAttributes',
+  ]
 ---
 
 # ManagedClusterAttributes
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Queue** | Pointer to [**ManagedClusterQueue**](managed-cluster-queue) |  | [optional] 
-**Keystore** | Pointer to **NullableString** | ManagedCluster keystore for spConnectCluster type | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Queue** | Pointer to [**ManagedClusterQueue**](managed-cluster-queue) |  | [optional] |
+| **Keystore** | Pointer to **NullableString** | ManagedCluster keystore for spConnectCluster type | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewManagedClusterAttributes() *ManagedClusterAttributes`
 
-NewManagedClusterAttributes instantiates a new ManagedClusterAttributes object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewManagedClusterAttributes instantiates a new ManagedClusterAttributes object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewManagedClusterAttributesWithDefaults
 
 `func NewManagedClusterAttributesWithDefaults() *ManagedClusterAttributes`
 
-NewManagedClusterAttributesWithDefaults instantiates a new ManagedClusterAttributes object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewManagedClusterAttributesWithDefaults instantiates a new ManagedClusterAttributes object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetQueue
 
@@ -47,8 +55,7 @@ GetQueue returns the Queue field if non-nil, zero value otherwise.
 
 `func (o *ManagedClusterAttributes) GetQueueOk() (*ManagedClusterQueue, bool)`
 
-GetQueueOk returns a tuple with the Queue field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetQueueOk returns a tuple with the Queue field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetQueue
 
@@ -72,8 +79,7 @@ GetKeystore returns the Keystore field if non-nil, zero value otherwise.
 
 `func (o *ManagedClusterAttributes) GetKeystoreOk() (*string, bool)`
 
-GetKeystoreOk returns a tuple with the Keystore field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetKeystoreOk returns a tuple with the Keystore field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetKeystore
 
@@ -91,10 +97,10 @@ HasKeystore returns a boolean if a field has been set.
 
 `func (o *ManagedClusterAttributes) SetKeystoreNil(b bool)`
 
- SetKeystoreNil sets the value for Keystore to be an explicit nil
+SetKeystoreNil sets the value for Keystore to be an explicit nil
 
 ### UnsetKeystore
+
 `func (o *ManagedClusterAttributes) UnsetKeystore()`
 
 UnsetKeystore ensures that no value is present for Keystore, not even an explicit nil
-

@@ -4,24 +4,37 @@ title: CommonAccessItemResponse
 pagination_label: CommonAccessItemResponse
 sidebar_label: CommonAccessItemResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'CommonAccessItemResponse', 'BetaCommonAccessItemResponse'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'CommonAccessItemResponse',
+    'BetaCommonAccessItemResponse',
+  ]
 slug: /tools/sdk/go/beta/models/common-access-item-response
-tags: ['SDK', 'Software Development Kit', 'CommonAccessItemResponse', 'BetaCommonAccessItemResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CommonAccessItemResponse',
+    'BetaCommonAccessItemResponse',
+  ]
 ---
 
 # CommonAccessItemResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Common Access Item ID | [optional] 
-**Access** | Pointer to [**CommonAccessItemAccess**](common-access-item-access) |  | [optional] 
-**Status** | Pointer to [**CommonAccessItemState**](common-access-item-state) |  | [optional] 
-**LastUpdated** | Pointer to **string** |  | [optional] 
-**ReviewedByUser** | Pointer to **bool** |  | [optional] 
-**LastReviewed** | Pointer to **string** |  | [optional] 
-**CreatedByUser** | Pointer to **string** |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Common Access Item ID | [optional] |
+| **Access** | Pointer to [**CommonAccessItemAccess**](common-access-item-access) |  | [optional] |
+| **Status** | Pointer to [**CommonAccessItemState**](common-access-item-state) |  | [optional] |
+| **LastUpdated** | Pointer to **string** |  | [optional] |
+| **ReviewedByUser** | Pointer to **bool** |  | [optional] |
+| **LastReviewed** | Pointer to **string** |  | [optional] |
+| **CreatedByUser** | Pointer to **string** |  | [optional] |
 
 ## Methods
 
@@ -29,18 +42,13 @@ Name | Type | Description | Notes
 
 `func NewCommonAccessItemResponse() *CommonAccessItemResponse`
 
-NewCommonAccessItemResponse instantiates a new CommonAccessItemResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewCommonAccessItemResponse instantiates a new CommonAccessItemResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewCommonAccessItemResponseWithDefaults
 
 `func NewCommonAccessItemResponseWithDefaults() *CommonAccessItemResponse`
 
-NewCommonAccessItemResponseWithDefaults instantiates a new CommonAccessItemResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewCommonAccessItemResponseWithDefaults instantiates a new CommonAccessItemResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -52,8 +60,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *CommonAccessItemResponse) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -77,8 +84,7 @@ GetAccess returns the Access field if non-nil, zero value otherwise.
 
 `func (o *CommonAccessItemResponse) GetAccessOk() (*CommonAccessItemAccess, bool)`
 
-GetAccessOk returns a tuple with the Access field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessOk returns a tuple with the Access field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccess
 
@@ -102,8 +108,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *CommonAccessItemResponse) GetStatusOk() (*CommonAccessItemState, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -127,8 +132,7 @@ GetLastUpdated returns the LastUpdated field if non-nil, zero value otherwise.
 
 `func (o *CommonAccessItemResponse) GetLastUpdatedOk() (*string, bool)`
 
-GetLastUpdatedOk returns a tuple with the LastUpdated field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLastUpdatedOk returns a tuple with the LastUpdated field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLastUpdated
 
@@ -152,8 +156,7 @@ GetReviewedByUser returns the ReviewedByUser field if non-nil, zero value otherw
 
 `func (o *CommonAccessItemResponse) GetReviewedByUserOk() (*bool, bool)`
 
-GetReviewedByUserOk returns a tuple with the ReviewedByUser field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReviewedByUserOk returns a tuple with the ReviewedByUser field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReviewedByUser
 
@@ -177,8 +180,7 @@ GetLastReviewed returns the LastReviewed field if non-nil, zero value otherwise.
 
 `func (o *CommonAccessItemResponse) GetLastReviewedOk() (*string, bool)`
 
-GetLastReviewedOk returns a tuple with the LastReviewed field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLastReviewedOk returns a tuple with the LastReviewed field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLastReviewed
 
@@ -202,8 +204,7 @@ GetCreatedByUser returns the CreatedByUser field if non-nil, zero value otherwis
 
 `func (o *CommonAccessItemResponse) GetCreatedByUserOk() (*string, bool)`
 
-GetCreatedByUserOk returns a tuple with the CreatedByUser field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedByUserOk returns a tuple with the CreatedByUser field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreatedByUser
 
@@ -216,5 +217,3 @@ SetCreatedByUser sets CreatedByUser field to given value.
 `func (o *CommonAccessItemResponse) HasCreatedByUser() bool`
 
 HasCreatedByUser returns a boolean if a field has been set.
-
-

@@ -4,9 +4,22 @@ title: AccessProfileUsageUsedByInner
 pagination_label: AccessProfileUsageUsedByInner
 sidebar_label: AccessProfileUsageUsedByInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccessProfileUsageUsedByInner', 'V2024AccessProfileUsageUsedByInner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccessProfileUsageUsedByInner',
+    'V2024AccessProfileUsageUsedByInner',
+  ]
 slug: /tools/sdk/python/v2024/models/access-profile-usage-used-by-inner
-tags: ['SDK', 'Software Development Kit', 'AccessProfileUsageUsedByInner', 'V2024AccessProfileUsageUsedByInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessProfileUsageUsedByInner',
+    'V2024AccessProfileUsageUsedByInner',
+  ]
 ---
 
 # AccessProfileUsageUsedByInner
@@ -15,11 +28,12 @@ Role using the access profile.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'ROLE' ] | DTO type of role using the access profile. | [optional] 
-**id** | **str** | ID of role using the access profile. | [optional] 
-**name** | **str** | Display name of role using the access profile. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'ROLE' ] | DTO type of role using the access profile. | [optional] |
+| **id** | **str** | ID of role using the access profile. | [optional] |
+| **name** | **str** | Display name of role using the access profile. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Manager Role'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

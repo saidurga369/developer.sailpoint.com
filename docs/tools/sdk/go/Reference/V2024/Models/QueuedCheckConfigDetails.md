@@ -4,19 +4,32 @@ title: QueuedCheckConfigDetails
 pagination_label: QueuedCheckConfigDetails
 sidebar_label: QueuedCheckConfigDetails
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'QueuedCheckConfigDetails', 'V2024QueuedCheckConfigDetails'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'QueuedCheckConfigDetails',
+    'V2024QueuedCheckConfigDetails',
+  ]
 slug: /tools/sdk/go/v2024/models/queued-check-config-details
-tags: ['SDK', 'Software Development Kit', 'QueuedCheckConfigDetails', 'V2024QueuedCheckConfigDetails']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'QueuedCheckConfigDetails',
+    'V2024QueuedCheckConfigDetails',
+  ]
 ---
 
 # QueuedCheckConfigDetails
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ProvisioningStatusCheckIntervalMinutes** | **string** | Interval in minutes between status checks | 
-**ProvisioningMaxStatusCheckDays** | **string** | Maximum number of days to check | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ProvisioningStatusCheckIntervalMinutes** | **string** | Interval in minutes between status checks |
+| **ProvisioningMaxStatusCheckDays** | **string** | Maximum number of days to check |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewQueuedCheckConfigDetails(provisioningStatusCheckIntervalMinutes string, provisioningMaxStatusCheckDays string, ) *QueuedCheckConfigDetails`
 
-NewQueuedCheckConfigDetails instantiates a new QueuedCheckConfigDetails object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewQueuedCheckConfigDetails instantiates a new QueuedCheckConfigDetails object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewQueuedCheckConfigDetailsWithDefaults
 
 `func NewQueuedCheckConfigDetailsWithDefaults() *QueuedCheckConfigDetails`
 
-NewQueuedCheckConfigDetailsWithDefaults instantiates a new QueuedCheckConfigDetails object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewQueuedCheckConfigDetailsWithDefaults instantiates a new QueuedCheckConfigDetails object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetProvisioningStatusCheckIntervalMinutes
 
@@ -47,15 +55,13 @@ GetProvisioningStatusCheckIntervalMinutes returns the ProvisioningStatusCheckInt
 
 `func (o *QueuedCheckConfigDetails) GetProvisioningStatusCheckIntervalMinutesOk() (*string, bool)`
 
-GetProvisioningStatusCheckIntervalMinutesOk returns a tuple with the ProvisioningStatusCheckIntervalMinutes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProvisioningStatusCheckIntervalMinutesOk returns a tuple with the ProvisioningStatusCheckIntervalMinutes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProvisioningStatusCheckIntervalMinutes
 
 `func (o *QueuedCheckConfigDetails) SetProvisioningStatusCheckIntervalMinutes(v string)`
 
 SetProvisioningStatusCheckIntervalMinutes sets ProvisioningStatusCheckIntervalMinutes field to given value.
-
 
 ### GetProvisioningMaxStatusCheckDays
 
@@ -67,14 +73,10 @@ GetProvisioningMaxStatusCheckDays returns the ProvisioningMaxStatusCheckDays fie
 
 `func (o *QueuedCheckConfigDetails) GetProvisioningMaxStatusCheckDaysOk() (*string, bool)`
 
-GetProvisioningMaxStatusCheckDaysOk returns a tuple with the ProvisioningMaxStatusCheckDays field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProvisioningMaxStatusCheckDaysOk returns a tuple with the ProvisioningMaxStatusCheckDays field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProvisioningMaxStatusCheckDays
 
 `func (o *QueuedCheckConfigDetails) SetProvisioningMaxStatusCheckDays(v string)`
 
 SetProvisioningMaxStatusCheckDays sets ProvisioningMaxStatusCheckDays field to given value.
-
-
-

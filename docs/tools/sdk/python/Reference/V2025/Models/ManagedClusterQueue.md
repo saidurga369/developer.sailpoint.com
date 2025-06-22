@@ -4,9 +4,16 @@ title: ManagedClusterQueue
 pagination_label: ManagedClusterQueue
 sidebar_label: ManagedClusterQueue
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ManagedClusterQueue', 'V2025ManagedClusterQueue'] 
+keywords:
+  ['python', 'Python', 'sdk', 'ManagedClusterQueue', 'V2025ManagedClusterQueue']
 slug: /tools/sdk/python/v2025/models/managed-cluster-queue
-tags: ['SDK', 'Software Development Kit', 'ManagedClusterQueue', 'V2025ManagedClusterQueue']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ManagedClusterQueue',
+    'V2025ManagedClusterQueue',
+  ]
 ---
 
 # ManagedClusterQueue
@@ -15,10 +22,11 @@ Managed Cluster key pair for Cluster
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | ManagedCluster queue name | [optional] 
-**region** | **str** | ManagedCluster queue aws region | [optional] 
+| Name       | Type    | Description                     | Notes      |
+| ---------- | ------- | ------------------------------- | ---------- |
+| **name**   | **str** | ManagedCluster queue name       | [optional] |
+| **region** | **str** | ManagedCluster queue aws region | [optional] |
+
 }
 
 ## Example
@@ -32,5 +40,5 @@ region='us-east-1'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

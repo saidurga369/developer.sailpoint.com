@@ -4,21 +4,34 @@ title: EntitlementSourceResetBaseReferenceDto
 pagination_label: EntitlementSourceResetBaseReferenceDto
 sidebar_label: EntitlementSourceResetBaseReferenceDto
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'EntitlementSourceResetBaseReferenceDto', 'BetaEntitlementSourceResetBaseReferenceDto'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'EntitlementSourceResetBaseReferenceDto',
+    'BetaEntitlementSourceResetBaseReferenceDto',
+  ]
 slug: /tools/sdk/python/beta/models/entitlement-source-reset-base-reference-dto
-tags: ['SDK', 'Software Development Kit', 'EntitlementSourceResetBaseReferenceDto', 'BetaEntitlementSourceResetBaseReferenceDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'EntitlementSourceResetBaseReferenceDto',
+    'BetaEntitlementSourceResetBaseReferenceDto',
+  ]
 ---
 
 # EntitlementSourceResetBaseReferenceDto
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** | **str** | The DTO type | [optional] 
-**id** | **str** | The task ID of the object to which this reference applies | [optional] 
-**name** | **str** | Human-readable display name of the object to which this reference applies | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **str** | The DTO type | [optional] |
+| **id** | **str** | The task ID of the object to which this reference applies | [optional] |
+| **name** | **str** | Human-readable display name of the object to which this reference applies | [optional] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ name='Entitlement Source Reset'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

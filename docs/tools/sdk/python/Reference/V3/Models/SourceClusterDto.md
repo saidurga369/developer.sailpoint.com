@@ -4,9 +4,10 @@ title: SourceClusterDto
 pagination_label: SourceClusterDto
 sidebar_label: SourceClusterDto
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SourceClusterDto', 'SourceClusterDto'] 
+keywords: ['python', 'Python', 'sdk', 'SourceClusterDto', 'SourceClusterDto']
 slug: /tools/sdk/python/v3/models/source-cluster-dto
-tags: ['SDK', 'Software Development Kit', 'SourceClusterDto', 'SourceClusterDto']
+tags:
+  ['SDK', 'Software Development Kit', 'SourceClusterDto', 'SourceClusterDto']
 ---
 
 # SourceClusterDto
@@ -15,11 +16,12 @@ Source cluster.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'CLUSTER' ] | Source cluster DTO type. | [optional] 
-**id** | **str** | Source cluster ID. | [optional] 
-**name** | **str** | Source cluster display name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'CLUSTER' ] | Source cluster DTO type. | [optional] |
+| **id** | **str** | Source cluster ID. | [optional] |
+| **name** | **str** | Source cluster display name. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +36,5 @@ name='Training VA'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

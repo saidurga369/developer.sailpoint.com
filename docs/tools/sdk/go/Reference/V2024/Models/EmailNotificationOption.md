@@ -4,21 +4,34 @@ title: EmailNotificationOption
 pagination_label: EmailNotificationOption
 sidebar_label: EmailNotificationOption
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'EmailNotificationOption', 'V2024EmailNotificationOption'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'EmailNotificationOption',
+    'V2024EmailNotificationOption',
+  ]
 slug: /tools/sdk/go/v2024/models/email-notification-option
-tags: ['SDK', 'Software Development Kit', 'EmailNotificationOption', 'V2024EmailNotificationOption']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'EmailNotificationOption',
+    'V2024EmailNotificationOption',
+  ]
 ---
 
 # EmailNotificationOption
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**NotifyManagers** | Pointer to **bool** | If true, then the manager is notified of the lifecycle state change. | [optional] [default to false]
-**NotifyAllAdmins** | Pointer to **bool** | If true, then all the admins are notified of the lifecycle state change. | [optional] [default to false]
-**NotifySpecificUsers** | Pointer to **bool** | If true, then the users specified in \"emailAddressList\" below are notified of lifecycle state change. | [optional] [default to false]
-**EmailAddressList** | Pointer to **[]string** | List of user email addresses. If \"notifySpecificUsers\" option is true, then these users are notified of lifecycle state change. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **NotifyManagers** | Pointer to **bool** | If true, then the manager is notified of the lifecycle state change. | [optional] [default to false] |
+| **NotifyAllAdmins** | Pointer to **bool** | If true, then all the admins are notified of the lifecycle state change. | [optional] [default to false] |
+| **NotifySpecificUsers** | Pointer to **bool** | If true, then the users specified in \"emailAddressList\" below are notified of lifecycle state change. | [optional] [default to false] |
+| **EmailAddressList** | Pointer to **[]string** | List of user email addresses. If \"notifySpecificUsers\" option is true, then these users are notified of lifecycle state change. | [optional] |
 
 ## Methods
 
@@ -26,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewEmailNotificationOption() *EmailNotificationOption`
 
-NewEmailNotificationOption instantiates a new EmailNotificationOption object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewEmailNotificationOption instantiates a new EmailNotificationOption object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewEmailNotificationOptionWithDefaults
 
 `func NewEmailNotificationOptionWithDefaults() *EmailNotificationOption`
 
-NewEmailNotificationOptionWithDefaults instantiates a new EmailNotificationOption object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewEmailNotificationOptionWithDefaults instantiates a new EmailNotificationOption object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetNotifyManagers
 
@@ -49,8 +57,7 @@ GetNotifyManagers returns the NotifyManagers field if non-nil, zero value otherw
 
 `func (o *EmailNotificationOption) GetNotifyManagersOk() (*bool, bool)`
 
-GetNotifyManagersOk returns a tuple with the NotifyManagers field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNotifyManagersOk returns a tuple with the NotifyManagers field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNotifyManagers
 
@@ -74,8 +81,7 @@ GetNotifyAllAdmins returns the NotifyAllAdmins field if non-nil, zero value othe
 
 `func (o *EmailNotificationOption) GetNotifyAllAdminsOk() (*bool, bool)`
 
-GetNotifyAllAdminsOk returns a tuple with the NotifyAllAdmins field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNotifyAllAdminsOk returns a tuple with the NotifyAllAdmins field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNotifyAllAdmins
 
@@ -99,8 +105,7 @@ GetNotifySpecificUsers returns the NotifySpecificUsers field if non-nil, zero va
 
 `func (o *EmailNotificationOption) GetNotifySpecificUsersOk() (*bool, bool)`
 
-GetNotifySpecificUsersOk returns a tuple with the NotifySpecificUsers field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNotifySpecificUsersOk returns a tuple with the NotifySpecificUsers field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNotifySpecificUsers
 
@@ -124,8 +129,7 @@ GetEmailAddressList returns the EmailAddressList field if non-nil, zero value ot
 
 `func (o *EmailNotificationOption) GetEmailAddressListOk() (*[]string, bool)`
 
-GetEmailAddressListOk returns a tuple with the EmailAddressList field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEmailAddressListOk returns a tuple with the EmailAddressList field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEmailAddressList
 
@@ -138,5 +142,3 @@ SetEmailAddressList sets EmailAddressList field to given value.
 `func (o *EmailNotificationOption) HasEmailAddressList() bool`
 
 HasEmailAddressList returns a boolean if a field has been set.
-
-

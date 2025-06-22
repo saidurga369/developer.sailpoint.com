@@ -4,81 +4,69 @@ title: SODPolicies
 pagination_label: SODPolicies
 sidebar_label: SODPolicies
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SODPolicies', 'SODPolicies'] 
+keywords: ['go', 'Golang', 'sdk', 'SODPolicies', 'SODPolicies']
 slug: /tools/sdk/go/v3/methods/sod-policies
 tags: ['SDK', 'Software Development Kit', 'SODPolicies', 'SODPolicies']
 ---
 
 # SODPoliciesAPI
-  Use this API to implement and manage &quot;separation of duties&quot; (SOD) policies. 
-With SOD policy functionality in place, administrators can organize the access in their tenants to prevent individuals from gaining conflicting or excessive access. 
+
+Use this API to implement and manage &quot;separation of duties&quot; (SOD) policies. With SOD policy functionality in place, administrators can organize the access in their tenants to prevent individuals from gaining conflicting or excessive access.
 
 &quot;Separation of duties&quot; refers to the concept that people shouldn&#39;t have conflicting sets of access - all their access should be configured in a way that protects your organization&#39;s assets and data.  
-For example, people who record monetary transactions shouldn&#39;t be able to issue payment for those transactions.
-Any changes to major system configurations should be approved by someone other than the person requesting the change. 
+For example, people who record monetary transactions shouldn&#39;t be able to issue payment for those transactions. Any changes to major system configurations should be approved by someone other than the person requesting the change.
 
-Organizations can use &quot;separation of duties&quot; (SOD) policies to enforce and track their internal security rules throughout their tenants.
-These SOD policies limit each user&#39;s involvement in important processes and protects the organization from individuals gaining excessive access. 
+Organizations can use &quot;separation of duties&quot; (SOD) policies to enforce and track their internal security rules throughout their tenants. These SOD policies limit each user&#39;s involvement in important processes and protects the organization from individuals gaining excessive access.
 
-To create SOD policies in Identity Security Cloud, administrators use &#39;Search&#39; and then access &#39;Policies&#39;.
-To create a policy, they must configure two lists of access items. Each access item can only be added to one of the two lists.
-They can search for the entitlements they want to add to these access lists.
+To create SOD policies in Identity Security Cloud, administrators use &#39;Search&#39; and then access &#39;Policies&#39;. To create a policy, they must configure two lists of access items. Each access item can only be added to one of the two lists. They can search for the entitlements they want to add to these access lists.
 
-&gt;Note: You can have a maximum of 500 policies of any type (including general policies) in your organization. In each access-based SOD policy, you can have a maximum of 50 entitlements in each access list.  
+&gt;Note: You can have a maximum of 500 policies of any type (including general policies) in your organization. In each access-based SOD policy, you can have a maximum of 50 entitlements in each access list.
 
-Once a SOD policy is in place, if an identity has access items on both lists, a SOD violation will trigger. 
-These violations are included in SOD violation reports that other users will see in emails at regular intervals if they&#39;re subscribed to the SOD policy.
-The other users can then better help to enforce these SOD policies. 
+Once a SOD policy is in place, if an identity has access items on both lists, a SOD violation will trigger. These violations are included in SOD violation reports that other users will see in emails at regular intervals if they&#39;re subscribed to the SOD policy. The other users can then better help to enforce these SOD policies.
 
-To create a subscription to a SOD policy in Identity Security Cloud, administrators use &#39;Search&#39; and then access &#39;Layers&#39;.
-They can create a subscription to the policy and schedule it to run at a regular interval. 
+To create a subscription to a SOD policy in Identity Security Cloud, administrators use &#39;Search&#39; and then access &#39;Layers&#39;. They can create a subscription to the policy and schedule it to run at a regular interval.
 
-Refer to [Managing Policies](https://documentation.sailpoint.com/saas/help/sod/manage-policies.html) for more information about SOD policies. 
+Refer to [Managing Policies](https://documentation.sailpoint.com/saas/help/sod/manage-policies.html) for more information about SOD policies.
 
 Refer to [Subscribe to a SOD Policy](https://documentation.sailpoint.com/saas/help/sod/policy-violations.html#subscribe-to-an-sod-policy) for more information about SOD policy subscriptions.
- 
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/v3*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create-sod-policy**](#create-sod-policy) | **Post** `/sod-policies` | Create sod policy
-[**delete-sod-policy**](#delete-sod-policy) | **Delete** `/sod-policies/{id}` | Delete sod policy by id
-[**delete-sod-policy-schedule**](#delete-sod-policy-schedule) | **Delete** `/sod-policies/{id}/schedule` | Delete sod policy schedule
-[**get-custom-violation-report**](#get-custom-violation-report) | **Get** `/sod-violation-report/{reportResultId}/download/{fileName}` | Download custom violation report
-[**get-default-violation-report**](#get-default-violation-report) | **Get** `/sod-violation-report/{reportResultId}/download` | Download violation report
-[**get-sod-all-report-run-status**](#get-sod-all-report-run-status) | **Get** `/sod-violation-report` | Get multi-report run task status
-[**get-sod-policy**](#get-sod-policy) | **Get** `/sod-policies/{id}` | Get sod policy by id
-[**get-sod-policy-schedule**](#get-sod-policy-schedule) | **Get** `/sod-policies/{id}/schedule` | Get sod policy schedule
-[**get-sod-violation-report-run-status**](#get-sod-violation-report-run-status) | **Get** `/sod-policies/sod-violation-report-status/{reportResultId}` | Get violation report run status
-[**get-sod-violation-report-status**](#get-sod-violation-report-status) | **Get** `/sod-policies/{id}/violation-report` | Get sod violation report status
-[**list-sod-policies**](#list-sod-policies) | **Get** `/sod-policies` | List sod policies
-[**patch-sod-policy**](#patch-sod-policy) | **Patch** `/sod-policies/{id}` | Patch sod policy by id
-[**put-policy-schedule**](#put-policy-schedule) | **Put** `/sod-policies/{id}/schedule` | Update sod policy schedule
-[**put-sod-policy**](#put-sod-policy) | **Put** `/sod-policies/{id}` | Update sod policy by id
-[**start-evaluate-sod-policy**](#start-evaluate-sod-policy) | **Post** `/sod-policies/{id}/evaluate` | Evaluate one policy by id
-[**start-sod-all-policies-for-org**](#start-sod-all-policies-for-org) | **Post** `/sod-violation-report/run` | Runs all policies for org
-[**start-sod-policy**](#start-sod-policy) | **Post** `/sod-policies/{id}/violation-report/run` | Runs sod policy violation report
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**create-sod-policy**](#create-sod-policy) | **Post** `/sod-policies` | Create sod policy |
+| [**delete-sod-policy**](#delete-sod-policy) | **Delete** `/sod-policies/{id}` | Delete sod policy by id |
+| [**delete-sod-policy-schedule**](#delete-sod-policy-schedule) | **Delete** `/sod-policies/{id}/schedule` | Delete sod policy schedule |
+| [**get-custom-violation-report**](#get-custom-violation-report) | **Get** `/sod-violation-report/{reportResultId}/download/{fileName}` | Download custom violation report |
+| [**get-default-violation-report**](#get-default-violation-report) | **Get** `/sod-violation-report/{reportResultId}/download` | Download violation report |
+| [**get-sod-all-report-run-status**](#get-sod-all-report-run-status) | **Get** `/sod-violation-report` | Get multi-report run task status |
+| [**get-sod-policy**](#get-sod-policy) | **Get** `/sod-policies/{id}` | Get sod policy by id |
+| [**get-sod-policy-schedule**](#get-sod-policy-schedule) | **Get** `/sod-policies/{id}/schedule` | Get sod policy schedule |
+| [**get-sod-violation-report-run-status**](#get-sod-violation-report-run-status) | **Get** `/sod-policies/sod-violation-report-status/{reportResultId}` | Get violation report run status |
+| [**get-sod-violation-report-status**](#get-sod-violation-report-status) | **Get** `/sod-policies/{id}/violation-report` | Get sod violation report status |
+| [**list-sod-policies**](#list-sod-policies) | **Get** `/sod-policies` | List sod policies |
+| [**patch-sod-policy**](#patch-sod-policy) | **Patch** `/sod-policies/{id}` | Patch sod policy by id |
+| [**put-policy-schedule**](#put-policy-schedule) | **Put** `/sod-policies/{id}/schedule` | Update sod policy schedule |
+| [**put-sod-policy**](#put-sod-policy) | **Put** `/sod-policies/{id}` | Update sod policy by id |
+| [**start-evaluate-sod-policy**](#start-evaluate-sod-policy) | **Post** `/sod-policies/{id}/evaluate` | Evaluate one policy by id |
+| [**start-sod-all-policies-for-org**](#start-sod-all-policies-for-org) | **Post** `/sod-violation-report/run` | Runs all policies for org |
+| [**start-sod-policy**](#start-sod-policy) | **Post** `/sod-policies/{id}/violation-report/run` | Runs sod policy violation report |
 
 ## create-sod-policy
-Create sod policy
-This creates both General and Conflicting Access Based policy, with a limit of 50 entitlements for each (left & right) criteria for Conflicting Access Based SOD policy.
-Requires role of ORG_ADMIN.
+
+Create sod policy This creates both General and Conflicting Access Based policy, with a limit of 50 entitlements for each (left & right) criteria for Conflicting Access Based SOD policy. Requires role of ORG_ADMIN.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/create-sod-policy)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCreateSodPolicyRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **sodPolicy** | [**SodPolicy**](../models/sod-policy) |  | 
+| Name          | Type                                  | Description | Notes |
+| ------------- | ------------------------------------- | ----------- | ----- |
+| **sodPolicy** | [**SodPolicy**](../models/sod-policy) |             |
 
 ### Return type
 
@@ -159,14 +147,14 @@ func main() {
           "id" : "0f11f2a4-7c94-4bf3-a2bd-742580fe3bde",
           "state" : "ENFORCED",
           "externalPolicyReference" : "XYZ policy"
-        }`) // SodPolicy | 
+        }`) // SodPolicy |
 
     var sodPolicy v3.SodPolicy
     if err := json.Unmarshal(sodpolicy, &sodPolicy); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -184,33 +172,30 @@ func main() {
 [[Back to top]](#)
 
 ## delete-sod-policy
-Delete sod policy by id
-This deletes a specified SOD policy.
-Requires role of ORG_ADMIN.
+
+Delete sod policy by id This deletes a specified SOD policy. Requires role of ORG_ADMIN.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/delete-sod-policy)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The ID of the SOD Policy to delete. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The ID of the SOD Policy to delete. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteSodPolicyRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **logical** | **bool** | Indicates whether this is a soft delete (logical true) or a hard delete.  Soft delete marks the policy as deleted and just save it with this status. It could be fully deleted or recovered further.  Hard delete vise versa permanently delete SOD request during this call. | [default to true]
+**logical** | **bool** | Indicates whether this is a soft delete (logical true) or a hard delete. Soft delete marks the policy as deleted and just save it with this status. It could be fully deleted or recovered further. Hard delete vise versa permanently delete SOD request during this call. | [default to true]
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -226,8 +211,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -235,7 +220,7 @@ func main() {
     id := `ef38f943-47e9-4562-b5bb-8424a56397d8` // string | The ID of the SOD Policy to delete. # string | The ID of the SOD Policy to delete.
     logical := true // bool | Indicates whether this is a soft delete (logical true) or a hard delete.  Soft delete marks the policy as deleted and just save it with this status. It could be fully deleted or recovered further.  Hard delete vise versa permanently delete SOD request during this call. (optional) (default to true) # bool | Indicates whether this is a soft delete (logical true) or a hard delete.  Soft delete marks the policy as deleted and just save it with this status. It could be fully deleted or recovered further.  Hard delete vise versa permanently delete SOD request during this call. (optional) (default to true)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -245,38 +230,35 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `SODPoliciesAPI.DeleteSodPolicy``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## delete-sod-policy-schedule
-Delete sod policy schedule
-This deletes schedule for a specified SOD policy by ID.
+
+Delete sod policy schedule This deletes schedule for a specified SOD policy by ID.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/delete-sod-policy-schedule)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The ID of the SOD policy the schedule must be deleted for. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The ID of the SOD policy the schedule must be deleted for. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteSodPolicyScheduleRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -292,15 +274,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `ef38f943-47e9-4562-b5bb-8424a56397d8` // string | The ID of the SOD policy the schedule must be deleted for. # string | The ID of the SOD policy the schedule must be deleted for.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -310,40 +292,36 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `SODPoliciesAPI.DeleteSodPolicySchedule``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## get-custom-violation-report
-Download custom violation report
-This allows to download a specified named violation report for a given report reference.
+
+Download custom violation report This allows to download a specified named violation report for a given report reference.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/get-custom-violation-report)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**reportResultId** | **string** | The ID of the report reference to download. | 
-**fileName** | **string** | Custom Name for the  file. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **reportResultId** | **string** | The ID of the report reference to download. |
+| **fileName** | **string** | Custom Name for the file. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetCustomViolationReportRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
-[***os.File**](https://pkg.go.dev/os)
+[**\*os.File**](https://pkg.go.dev/os)
 
 ### HTTP request headers
 
@@ -359,8 +337,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -368,7 +346,7 @@ func main() {
     reportResultId := `ef38f94347e94562b5bb8424a56397d8` // string | The ID of the report reference to download. # string | The ID of the report reference to download.
     fileName := `custom-name` // string | Custom Name for the  file. # string | Custom Name for the  file.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -386,31 +364,28 @@ func main() {
 [[Back to top]](#)
 
 ## get-default-violation-report
-Download violation report
-This allows to download a violation report for a given report reference.
+
+Download violation report This allows to download a violation report for a given report reference.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/get-default-violation-report)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**reportResultId** | **string** | The ID of the report reference to download. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **reportResultId** | **string** | The ID of the report reference to download. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetDefaultViolationReportRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
-[***os.File**](https://pkg.go.dev/os)
+[**\*os.File**](https://pkg.go.dev/os)
 
 ### HTTP request headers
 
@@ -426,15 +401,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     reportResultId := `ef38f94347e94562b5bb8424a56397d8` // string | The ID of the report reference to download. # string | The ID of the report reference to download.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -452,8 +427,8 @@ func main() {
 [[Back to top]](#)
 
 ## get-sod-all-report-run-status
-Get multi-report run task status
-This endpoint gets the status for a violation report for all policy run.
+
+Get multi-report run task status This endpoint gets the status for a violation report for all policy run.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/get-sod-all-report-run-status)
 
@@ -464,7 +439,6 @@ This endpoint does not need any parameter.
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetSodAllReportRunStatusRequest struct via the builder pattern
-
 
 ### Return type
 
@@ -484,14 +458,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -509,28 +483,24 @@ func main() {
 [[Back to top]](#)
 
 ## get-sod-policy
-Get sod policy by id
-This gets specified SOD policy.
-Requires role of ORG_ADMIN.
+
+Get sod policy by id This gets specified SOD policy. Requires role of ORG_ADMIN.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/get-sod-policy)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The ID of the SOD Policy to retrieve. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The ID of the SOD Policy to retrieve. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetSodPolicyRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -550,15 +520,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `ef38f943-47e9-4562-b5bb-8424a56397d8` // string | The ID of the SOD Policy to retrieve. # string | The ID of the SOD Policy to retrieve.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -576,27 +546,24 @@ func main() {
 [[Back to top]](#)
 
 ## get-sod-policy-schedule
-Get sod policy schedule
-This endpoint gets a specified SOD policy's schedule.
+
+Get sod policy schedule This endpoint gets a specified SOD policy's schedule.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/get-sod-policy-schedule)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The ID of the SOD policy schedule to retrieve. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The ID of the SOD policy schedule to retrieve. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetSodPolicyScheduleRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -616,15 +583,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `ef38f943-47e9-4562-b5bb-8424a56397d8` // string | The ID of the SOD policy schedule to retrieve. # string | The ID of the SOD policy schedule to retrieve.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -642,27 +609,24 @@ func main() {
 [[Back to top]](#)
 
 ## get-sod-violation-report-run-status
-Get violation report run status
-This gets the status for a violation report run task that has already been invoked.
+
+Get violation report run status This gets the status for a violation report run task that has already been invoked.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/get-sod-violation-report-run-status)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**reportResultId** | **string** | The ID of the report reference to retrieve. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **reportResultId** | **string** | The ID of the report reference to retrieve. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetSodViolationReportRunStatusRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -682,15 +646,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     reportResultId := `2e8d8180-24bc-4d21-91c6-7affdb473b0d` // string | The ID of the report reference to retrieve. # string | The ID of the report reference to retrieve.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -708,27 +672,24 @@ func main() {
 [[Back to top]](#)
 
 ## get-sod-violation-report-status
-Get sod violation report status
-This gets the status for a violation report run task that has already been invoked.
+
+Get sod violation report status This gets the status for a violation report run task that has already been invoked.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/get-sod-violation-report-status)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The ID of the violation report to retrieve status for. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The ID of the violation report to retrieve status for. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetSodViolationReportStatusRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -748,15 +709,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `ef38f943-47e9-4562-b5bb-8424a56397d8` // string | The ID of the violation report to retrieve status for. # string | The ID of the violation report to retrieve status for.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -774,28 +735,24 @@ func main() {
 [[Back to top]](#)
 
 ## list-sod-policies
-List sod policies
-This gets list of all SOD policies.
-Requires role of ORG_ADMIN
+
+List sod policies This gets list of all SOD policies. Requires role of ORG_ADMIN
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/list-sod-policies)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListSodPoliciesRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, in*  **name**: *eq, in*  **state**: *eq, in* | 
- **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **id, name, created, modified, description** | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
+| **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false] |
+| **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **id**: _eq, in_ **name**: _eq, in_ **state**: _eq, in_ |
+| **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results) Sorting is supported for the following fields: **id, name, created, modified, description** |
 
 ### Return type
 
@@ -815,8 +772,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -827,7 +784,7 @@ func main() {
     filters := `id eq "bc693f07e7b645539626c25954c58554"` // string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, in*  **name**: *eq, in*  **state**: *eq, in* (optional) # string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, in*  **name**: *eq, in*  **state**: *eq, in* (optional)
     sorters := `id,name` // string | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **id, name, created, modified, description** (optional) # string | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **id, name, created, modified, description** (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -845,30 +802,26 @@ func main() {
 [[Back to top]](#)
 
 ## patch-sod-policy
-Patch sod policy by id
-Allows updating SOD Policy fields other than ["id","created","creatorId","policyQuery","type"] using the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard.
-Requires role of ORG_ADMIN.
-This endpoint can only patch CONFLICTING_ACCESS_BASED type policies. Do not use this endpoint to patch general policies - doing so will build an API exception. 
+
+Patch sod policy by id Allows updating SOD Policy fields other than ["id","created","creatorId","policyQuery","type"] using the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard. Requires role of ORG_ADMIN. This endpoint can only patch CONFLICTING_ACCESS_BASED type policies. Do not use this endpoint to patch general policies - doing so will build an API exception.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/patch-sod-policy)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The ID of the SOD policy being modified. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The ID of the SOD policy being modified. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiPatchSodPolicyRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **jsonPatchOperation** | [**[]JsonPatchOperation**](../models/json-patch-operation) | A list of SOD Policy update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard.  The following fields are patchable: * name * description * ownerRef * externalPolicyReference * compensatingControls * correctionAdvice * state * tags * violationOwnerAssignmentConfig * scheduled * conflictingAccessCriteria  | 
+**jsonPatchOperation** | [**[]JsonPatchOperation**](../models/json-patch-operation) | A list of SOD Policy update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard. The following fields are patchable: _ name _ description _ ownerRef _ externalPolicyReference _ compensatingControls _ correctionAdvice _ state _ tags _ violationOwnerAssignmentConfig _ scheduled \* conflictingAccessCriteria |
 
 ### Return type
 
@@ -895,14 +848,14 @@ import (
 
 func main() {
     id := `2c918083-5d19-1a86-015d-28455b4a2329` // string | The ID of the SOD policy being modified. # string | The ID of the SOD policy being modified.
-    jsonpatchoperation := []byte(`[{op=replace, path=/description, value=Modified description}, {op=replace, path=/conflictingAccessCriteria/leftCriteria/name, value=money-in-modified}, {op=replace, path=/conflictingAccessCriteria/rightCriteria, value={name=money-out-modified, criteriaList=[{type=ENTITLEMENT, id=2c918087682f9a86016839c0509c1ab2}]}}]`) // []JsonPatchOperation | A list of SOD Policy update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard.  The following fields are patchable: * name * description * ownerRef * externalPolicyReference * compensatingControls * correctionAdvice * state * tags * violationOwnerAssignmentConfig * scheduled * conflictingAccessCriteria 
+    jsonpatchoperation := []byte(`[{op=replace, path=/description, value=Modified description}, {op=replace, path=/conflictingAccessCriteria/leftCriteria/name, value=money-in-modified}, {op=replace, path=/conflictingAccessCriteria/rightCriteria, value={name=money-out-modified, criteriaList=[{type=ENTITLEMENT, id=2c918087682f9a86016839c0509c1ab2}]}}]`) // []JsonPatchOperation | A list of SOD Policy update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard.  The following fields are patchable: * name * description * ownerRef * externalPolicyReference * compensatingControls * correctionAdvice * state * tags * violationOwnerAssignmentConfig * scheduled * conflictingAccessCriteria
 
     var jsonPatchOperation []v3.JsonPatchOperation
     if err := json.Unmarshal(jsonpatchoperation, &jsonPatchOperation); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -920,28 +873,26 @@ func main() {
 [[Back to top]](#)
 
 ## put-policy-schedule
-Update sod policy schedule
-This updates schedule for a specified SOD policy.
+
+Update sod policy schedule This updates schedule for a specified SOD policy.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/put-policy-schedule)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The ID of the SOD policy to update its schedule. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The ID of the SOD policy to update its schedule. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiPutPolicyScheduleRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **sodPolicySchedule** | [**SodPolicySchedule**](../models/sod-policy-schedule) |  | 
+**sodPolicySchedule** | [**SodPolicySchedule**](../models/sod-policy-schedule) | |
 
 ### Return type
 
@@ -1005,14 +956,14 @@ func main() {
           "modified" : "2020-01-01T00:00:00Z",
           "description" : "Schedule for policy xyz",
           "emailEmptyResults" : false
-        }`) // SodPolicySchedule | 
+        }`) // SodPolicySchedule |
 
     var sodPolicySchedule v3.SodPolicySchedule
     if err := json.Unmarshal(sodpolicyschedule, &sodPolicySchedule); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1030,29 +981,26 @@ func main() {
 [[Back to top]](#)
 
 ## put-sod-policy
-Update sod policy by id
-This updates a specified SOD policy.
-Requires role of ORG_ADMIN.
+
+Update sod policy by id This updates a specified SOD policy. Requires role of ORG_ADMIN.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/put-sod-policy)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The ID of the SOD policy to update. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The ID of the SOD policy to update. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiPutSodPolicyRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **sodPolicy** | [**SodPolicy**](../models/sod-policy) |  | 
+**sodPolicy** | [**SodPolicy**](../models/sod-policy) | |
 
 ### Return type
 
@@ -1134,14 +1082,14 @@ func main() {
           "id" : "0f11f2a4-7c94-4bf3-a2bd-742580fe3bde",
           "state" : "ENFORCED",
           "externalPolicyReference" : "XYZ policy"
-        }`) // SodPolicy | 
+        }`) // SodPolicy |
 
     var sodPolicy v3.SodPolicy
     if err := json.Unmarshal(sodpolicy, &sodPolicy); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1159,27 +1107,24 @@ func main() {
 [[Back to top]](#)
 
 ## start-evaluate-sod-policy
-Evaluate one policy by id
-Runs the scheduled report for the policy retrieved by passed policy ID.  The report schedule is fetched from the policy retrieved by ID.
+
+Evaluate one policy by id Runs the scheduled report for the policy retrieved by passed policy ID. The report schedule is fetched from the policy retrieved by ID.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/start-evaluate-sod-policy)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The SOD policy ID to run. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The SOD policy ID to run. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiStartEvaluateSodPolicyRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -1199,15 +1144,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `ef38f943-47e9-4562-b5bb-8424a56397d8` // string | The SOD policy ID to run. # string | The SOD policy ID to run.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1225,23 +1170,20 @@ func main() {
 [[Back to top]](#)
 
 ## start-sod-all-policies-for-org
-Runs all policies for org
-Runs multi-policy report for the org. If a policy reports more than 5000 violations, the report mentions that the violation limit was exceeded for that policy. If the request is empty, the report runs for all policies. Otherwise, the report runs for only the filtered policy list provided.
+
+Runs all policies for org Runs multi-policy report for the org. If a policy reports more than 5000 violations, the report mentions that the violation limit was exceeded for that policy. If the request is empty, the report runs for all policies. Otherwise, the report runs for only the filtered policy list provided.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/start-sod-all-policies-for-org)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiStartSodAllPoliciesForOrgRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **multiPolicyRequest** | [**MultiPolicyRequest**](../models/multi-policy-request) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **multiPolicyRequest** | [**MultiPolicyRequest**](../models/multi-policy-request) |  |
 
 ### Return type
 
@@ -1261,8 +1203,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -1271,7 +1213,7 @@ func main() {
           "filteredPolicyList" : [ "[b868cd40-ffa4-4337-9c07-1a51846cfa94, 63a07a7b-39a4-48aa-956d-50c827deba2a]", "[b868cd40-ffa4-4337-9c07-1a51846cfa94, 63a07a7b-39a4-48aa-956d-50c827deba2a]" ]
         }`) // MultiPolicyRequest |  (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1289,27 +1231,24 @@ func main() {
 [[Back to top]](#)
 
 ## start-sod-policy
-Runs sod policy violation report
-This invokes processing of violation report for given SOD policy. If the policy reports more than 5000 violations, the report returns with violation limit exceeded message.
+
+Runs sod policy violation report This invokes processing of violation report for given SOD policy. If the policy reports more than 5000 violations, the report returns with violation limit exceeded message.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/start-sod-policy)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The SOD policy ID to run. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The SOD policy ID to run. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiStartSodPolicyRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -1329,15 +1268,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `ef38f943-47e9-4562-b5bb-8424a56397d8` // string | The SOD policy ID to run. # string | The SOD policy ID to run.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1353,4 +1292,3 @@ func main() {
 ```
 
 [[Back to top]](#)
-

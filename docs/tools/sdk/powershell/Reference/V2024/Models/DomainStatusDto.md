@@ -4,27 +4,29 @@ title: DomainStatusDto
 pagination_label: DomainStatusDto
 sidebar_label: DomainStatusDto
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'DomainStatusDto', 'V2024DomainStatusDto'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'DomainStatusDto', 'V2024DomainStatusDto']
 slug: /tools/sdk/powershell/v2024/models/domain-status-dto
-tags: ['SDK', 'Software Development Kit', 'DomainStatusDto', 'V2024DomainStatusDto']
+tags:
+  ['SDK', 'Software Development Kit', 'DomainStatusDto', 'V2024DomainStatusDto']
 ---
-
 
 # DomainStatusDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | New UUID associated with domain to be verified | [optional] 
-**Domain** | **String** | A domain address | [optional] 
-**DkimEnabled** | [**SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | DKIM is enabled for this domain | [optional] 
-**DkimTokens** | **[]String** | DKIM tokens required for authentication | [optional] 
-**DkimVerificationStatus** | **String** | Status of DKIM authentication | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | New UUID associated with domain to be verified | [optional] |
+| **Domain** | **String** | A domain address | [optional] |
+| **DkimEnabled** | [**SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | DKIM is enabled for this domain | [optional] |
+| **DkimTokens** | **[]String** | DKIM tokens required for authentication | [optional] |
+| **DkimVerificationStatus** | **String** | Status of DKIM authentication | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $DomainStatusDto = Initialize-V2024DomainStatusDto  -Id 123b45b0-aaaa-bbbb-a7db-123456a56abc `
  -Domain sailpoint.com `
@@ -34,10 +36,9 @@ $DomainStatusDto = Initialize-V2024DomainStatusDto  -Id 123b45b0-aaaa-bbbb-a7db-
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $DomainStatusDto | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

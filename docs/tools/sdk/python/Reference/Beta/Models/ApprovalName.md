@@ -4,7 +4,7 @@ title: ApprovalName
 pagination_label: ApprovalName
 sidebar_label: ApprovalName
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ApprovalName', 'BetaApprovalName'] 
+keywords: ['python', 'Python', 'sdk', 'ApprovalName', 'BetaApprovalName']
 slug: /tools/sdk/python/beta/models/approval-name
 tags: ['SDK', 'Software Development Kit', 'ApprovalName', 'BetaApprovalName']
 ---
@@ -15,10 +15,11 @@ Approval Name Object
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**value** | **str** | Name of the approval | [optional] 
-**locale** | **str** | What locale the name of the approval is using | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **value** | **str** | Name of the approval | [optional] |
+| **locale** | **str** | What locale the name of the approval is using | [optional] |
+
 }
 
 ## Example
@@ -32,5 +33,5 @@ locale='en_US'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

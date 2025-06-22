@@ -4,22 +4,35 @@ title: TemplateSlackAutoApprovalData
 pagination_label: TemplateSlackAutoApprovalData
 sidebar_label: TemplateSlackAutoApprovalData
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'TemplateSlackAutoApprovalData', 'BetaTemplateSlackAutoApprovalData'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'TemplateSlackAutoApprovalData',
+    'BetaTemplateSlackAutoApprovalData',
+  ]
 slug: /tools/sdk/go/beta/models/template-slack-auto-approval-data
-tags: ['SDK', 'Software Development Kit', 'TemplateSlackAutoApprovalData', 'BetaTemplateSlackAutoApprovalData']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'TemplateSlackAutoApprovalData',
+    'BetaTemplateSlackAutoApprovalData',
+  ]
 ---
 
 # TemplateSlackAutoApprovalData
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**IsAutoApproved** | Pointer to **NullableString** |  | [optional] 
-**ItemId** | Pointer to **NullableString** |  | [optional] 
-**ItemType** | Pointer to **NullableString** |  | [optional] 
-**AutoApprovalMessageJSON** | Pointer to **NullableString** |  | [optional] 
-**AutoApprovalTitle** | Pointer to **NullableString** |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **IsAutoApproved** | Pointer to **NullableString** |  | [optional] |
+| **ItemId** | Pointer to **NullableString** |  | [optional] |
+| **ItemType** | Pointer to **NullableString** |  | [optional] |
+| **AutoApprovalMessageJSON** | Pointer to **NullableString** |  | [optional] |
+| **AutoApprovalTitle** | Pointer to **NullableString** |  | [optional] |
 
 ## Methods
 
@@ -27,18 +40,13 @@ Name | Type | Description | Notes
 
 `func NewTemplateSlackAutoApprovalData() *TemplateSlackAutoApprovalData`
 
-NewTemplateSlackAutoApprovalData instantiates a new TemplateSlackAutoApprovalData object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewTemplateSlackAutoApprovalData instantiates a new TemplateSlackAutoApprovalData object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewTemplateSlackAutoApprovalDataWithDefaults
 
 `func NewTemplateSlackAutoApprovalDataWithDefaults() *TemplateSlackAutoApprovalData`
 
-NewTemplateSlackAutoApprovalDataWithDefaults instantiates a new TemplateSlackAutoApprovalData object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewTemplateSlackAutoApprovalDataWithDefaults instantiates a new TemplateSlackAutoApprovalData object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetIsAutoApproved
 
@@ -50,8 +58,7 @@ GetIsAutoApproved returns the IsAutoApproved field if non-nil, zero value otherw
 
 `func (o *TemplateSlackAutoApprovalData) GetIsAutoApprovedOk() (*string, bool)`
 
-GetIsAutoApprovedOk returns a tuple with the IsAutoApproved field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIsAutoApprovedOk returns a tuple with the IsAutoApproved field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIsAutoApproved
 
@@ -69,12 +76,14 @@ HasIsAutoApproved returns a boolean if a field has been set.
 
 `func (o *TemplateSlackAutoApprovalData) SetIsAutoApprovedNil(b bool)`
 
- SetIsAutoApprovedNil sets the value for IsAutoApproved to be an explicit nil
+SetIsAutoApprovedNil sets the value for IsAutoApproved to be an explicit nil
 
 ### UnsetIsAutoApproved
+
 `func (o *TemplateSlackAutoApprovalData) UnsetIsAutoApproved()`
 
 UnsetIsAutoApproved ensures that no value is present for IsAutoApproved, not even an explicit nil
+
 ### GetItemId
 
 `func (o *TemplateSlackAutoApprovalData) GetItemId() string`
@@ -85,8 +94,7 @@ GetItemId returns the ItemId field if non-nil, zero value otherwise.
 
 `func (o *TemplateSlackAutoApprovalData) GetItemIdOk() (*string, bool)`
 
-GetItemIdOk returns a tuple with the ItemId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetItemIdOk returns a tuple with the ItemId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetItemId
 
@@ -104,12 +112,14 @@ HasItemId returns a boolean if a field has been set.
 
 `func (o *TemplateSlackAutoApprovalData) SetItemIdNil(b bool)`
 
- SetItemIdNil sets the value for ItemId to be an explicit nil
+SetItemIdNil sets the value for ItemId to be an explicit nil
 
 ### UnsetItemId
+
 `func (o *TemplateSlackAutoApprovalData) UnsetItemId()`
 
 UnsetItemId ensures that no value is present for ItemId, not even an explicit nil
+
 ### GetItemType
 
 `func (o *TemplateSlackAutoApprovalData) GetItemType() string`
@@ -120,8 +130,7 @@ GetItemType returns the ItemType field if non-nil, zero value otherwise.
 
 `func (o *TemplateSlackAutoApprovalData) GetItemTypeOk() (*string, bool)`
 
-GetItemTypeOk returns a tuple with the ItemType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetItemTypeOk returns a tuple with the ItemType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetItemType
 
@@ -139,12 +148,14 @@ HasItemType returns a boolean if a field has been set.
 
 `func (o *TemplateSlackAutoApprovalData) SetItemTypeNil(b bool)`
 
- SetItemTypeNil sets the value for ItemType to be an explicit nil
+SetItemTypeNil sets the value for ItemType to be an explicit nil
 
 ### UnsetItemType
+
 `func (o *TemplateSlackAutoApprovalData) UnsetItemType()`
 
 UnsetItemType ensures that no value is present for ItemType, not even an explicit nil
+
 ### GetAutoApprovalMessageJSON
 
 `func (o *TemplateSlackAutoApprovalData) GetAutoApprovalMessageJSON() string`
@@ -155,8 +166,7 @@ GetAutoApprovalMessageJSON returns the AutoApprovalMessageJSON field if non-nil,
 
 `func (o *TemplateSlackAutoApprovalData) GetAutoApprovalMessageJSONOk() (*string, bool)`
 
-GetAutoApprovalMessageJSONOk returns a tuple with the AutoApprovalMessageJSON field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAutoApprovalMessageJSONOk returns a tuple with the AutoApprovalMessageJSON field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAutoApprovalMessageJSON
 
@@ -174,12 +184,14 @@ HasAutoApprovalMessageJSON returns a boolean if a field has been set.
 
 `func (o *TemplateSlackAutoApprovalData) SetAutoApprovalMessageJSONNil(b bool)`
 
- SetAutoApprovalMessageJSONNil sets the value for AutoApprovalMessageJSON to be an explicit nil
+SetAutoApprovalMessageJSONNil sets the value for AutoApprovalMessageJSON to be an explicit nil
 
 ### UnsetAutoApprovalMessageJSON
+
 `func (o *TemplateSlackAutoApprovalData) UnsetAutoApprovalMessageJSON()`
 
 UnsetAutoApprovalMessageJSON ensures that no value is present for AutoApprovalMessageJSON, not even an explicit nil
+
 ### GetAutoApprovalTitle
 
 `func (o *TemplateSlackAutoApprovalData) GetAutoApprovalTitle() string`
@@ -190,8 +202,7 @@ GetAutoApprovalTitle returns the AutoApprovalTitle field if non-nil, zero value 
 
 `func (o *TemplateSlackAutoApprovalData) GetAutoApprovalTitleOk() (*string, bool)`
 
-GetAutoApprovalTitleOk returns a tuple with the AutoApprovalTitle field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAutoApprovalTitleOk returns a tuple with the AutoApprovalTitle field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAutoApprovalTitle
 
@@ -209,10 +220,10 @@ HasAutoApprovalTitle returns a boolean if a field has been set.
 
 `func (o *TemplateSlackAutoApprovalData) SetAutoApprovalTitleNil(b bool)`
 
- SetAutoApprovalTitleNil sets the value for AutoApprovalTitle to be an explicit nil
+SetAutoApprovalTitleNil sets the value for AutoApprovalTitle to be an explicit nil
 
 ### UnsetAutoApprovalTitle
+
 `func (o *TemplateSlackAutoApprovalData) UnsetAutoApprovalTitle()`
 
 UnsetAutoApprovalTitle ensures that no value is present for AutoApprovalTitle, not even an explicit nil
-

@@ -4,29 +4,30 @@ title: LifecycleState
 pagination_label: LifecycleState
 sidebar_label: LifecycleState
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'LifecycleState', 'V2024LifecycleState'] 
+keywords: ['go', 'Golang', 'sdk', 'LifecycleState', 'V2024LifecycleState']
 slug: /tools/sdk/go/v2024/models/lifecycle-state
-tags: ['SDK', 'Software Development Kit', 'LifecycleState', 'V2024LifecycleState']
+tags:
+  ['SDK', 'Software Development Kit', 'LifecycleState', 'V2024LifecycleState']
 ---
 
 # LifecycleState
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | System-generated unique ID of the Object | [optional] [readonly] 
-**Name** | **NullableString** | Name of the Object | 
-**Created** | Pointer to **SailPointTime** | Creation date of the Object | [optional] [readonly] 
-**Modified** | Pointer to **SailPointTime** | Last modification date of the Object | [optional] [readonly] 
-**Enabled** | Pointer to **bool** | Indicates whether the lifecycle state is enabled or disabled. | [optional] [default to false]
-**TechnicalName** | **string** | The lifecycle state's technical name. This is for internal use. | 
-**Description** | Pointer to **NullableString** | Lifecycle state's description. | [optional] 
-**IdentityCount** | Pointer to **int32** | Number of identities that have the lifecycle state. | [optional] [readonly] 
-**EmailNotificationOption** | Pointer to [**EmailNotificationOption**](email-notification-option) |  | [optional] 
-**AccountActions** | Pointer to [**[]AccountAction**](account-action) |  | [optional] 
-**AccessProfileIds** | Pointer to **[]string** | List of unique access-profile IDs that are associated with the lifecycle state. | [optional] 
-**IdentityState** | Pointer to **NullableString** | The lifecycle state's associated identity state. This field is generally 'null'. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | System-generated unique ID of the Object | [optional] [readonly] |
+| **Name** | **NullableString** | Name of the Object |
+| **Created** | Pointer to **SailPointTime** | Creation date of the Object | [optional] [readonly] |
+| **Modified** | Pointer to **SailPointTime** | Last modification date of the Object | [optional] [readonly] |
+| **Enabled** | Pointer to **bool** | Indicates whether the lifecycle state is enabled or disabled. | [optional] [default to false] |
+| **TechnicalName** | **string** | The lifecycle state's technical name. This is for internal use. |
+| **Description** | Pointer to **NullableString** | Lifecycle state's description. | [optional] |
+| **IdentityCount** | Pointer to **int32** | Number of identities that have the lifecycle state. | [optional] [readonly] |
+| **EmailNotificationOption** | Pointer to [**EmailNotificationOption**](email-notification-option) |  | [optional] |
+| **AccountActions** | Pointer to [**[]AccountAction**](account-action) |  | [optional] |
+| **AccessProfileIds** | Pointer to **[]string** | List of unique access-profile IDs that are associated with the lifecycle state. | [optional] |
+| **IdentityState** | Pointer to **NullableString** | The lifecycle state's associated identity state. This field is generally 'null'. | [optional] |
 
 ## Methods
 
@@ -34,18 +35,13 @@ Name | Type | Description | Notes
 
 `func NewLifecycleState(name NullableString, technicalName string, ) *LifecycleState`
 
-NewLifecycleState instantiates a new LifecycleState object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewLifecycleState instantiates a new LifecycleState object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewLifecycleStateWithDefaults
 
 `func NewLifecycleStateWithDefaults() *LifecycleState`
 
-NewLifecycleStateWithDefaults instantiates a new LifecycleState object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewLifecycleStateWithDefaults instantiates a new LifecycleState object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -57,8 +53,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *LifecycleState) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -82,8 +77,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *LifecycleState) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -91,17 +85,18 @@ and a boolean to check if the value has been set.
 
 SetName sets Name field to given value.
 
-
 ### SetNameNil
 
 `func (o *LifecycleState) SetNameNil(b bool)`
 
- SetNameNil sets the value for Name to be an explicit nil
+SetNameNil sets the value for Name to be an explicit nil
 
 ### UnsetName
+
 `func (o *LifecycleState) UnsetName()`
 
 UnsetName ensures that no value is present for Name, not even an explicit nil
+
 ### GetCreated
 
 `func (o *LifecycleState) GetCreated() SailPointTime`
@@ -112,8 +107,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *LifecycleState) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -137,8 +131,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *LifecycleState) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -162,8 +155,7 @@ GetEnabled returns the Enabled field if non-nil, zero value otherwise.
 
 `func (o *LifecycleState) GetEnabledOk() (*bool, bool)`
 
-GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEnabled
 
@@ -187,15 +179,13 @@ GetTechnicalName returns the TechnicalName field if non-nil, zero value otherwis
 
 `func (o *LifecycleState) GetTechnicalNameOk() (*string, bool)`
 
-GetTechnicalNameOk returns a tuple with the TechnicalName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTechnicalNameOk returns a tuple with the TechnicalName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTechnicalName
 
 `func (o *LifecycleState) SetTechnicalName(v string)`
 
 SetTechnicalName sets TechnicalName field to given value.
-
 
 ### GetDescription
 
@@ -207,8 +197,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *LifecycleState) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -226,12 +215,14 @@ HasDescription returns a boolean if a field has been set.
 
 `func (o *LifecycleState) SetDescriptionNil(b bool)`
 
- SetDescriptionNil sets the value for Description to be an explicit nil
+SetDescriptionNil sets the value for Description to be an explicit nil
 
 ### UnsetDescription
+
 `func (o *LifecycleState) UnsetDescription()`
 
 UnsetDescription ensures that no value is present for Description, not even an explicit nil
+
 ### GetIdentityCount
 
 `func (o *LifecycleState) GetIdentityCount() int32`
@@ -242,8 +233,7 @@ GetIdentityCount returns the IdentityCount field if non-nil, zero value otherwis
 
 `func (o *LifecycleState) GetIdentityCountOk() (*int32, bool)`
 
-GetIdentityCountOk returns a tuple with the IdentityCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityCountOk returns a tuple with the IdentityCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityCount
 
@@ -267,8 +257,7 @@ GetEmailNotificationOption returns the EmailNotificationOption field if non-nil,
 
 `func (o *LifecycleState) GetEmailNotificationOptionOk() (*EmailNotificationOption, bool)`
 
-GetEmailNotificationOptionOk returns a tuple with the EmailNotificationOption field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEmailNotificationOptionOk returns a tuple with the EmailNotificationOption field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEmailNotificationOption
 
@@ -292,8 +281,7 @@ GetAccountActions returns the AccountActions field if non-nil, zero value otherw
 
 `func (o *LifecycleState) GetAccountActionsOk() (*[]AccountAction, bool)`
 
-GetAccountActionsOk returns a tuple with the AccountActions field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountActionsOk returns a tuple with the AccountActions field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountActions
 
@@ -317,8 +305,7 @@ GetAccessProfileIds returns the AccessProfileIds field if non-nil, zero value ot
 
 `func (o *LifecycleState) GetAccessProfileIdsOk() (*[]string, bool)`
 
-GetAccessProfileIdsOk returns a tuple with the AccessProfileIds field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessProfileIdsOk returns a tuple with the AccessProfileIds field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessProfileIds
 
@@ -342,8 +329,7 @@ GetIdentityState returns the IdentityState field if non-nil, zero value otherwis
 
 `func (o *LifecycleState) GetIdentityStateOk() (*string, bool)`
 
-GetIdentityStateOk returns a tuple with the IdentityState field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityStateOk returns a tuple with the IdentityState field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityState
 
@@ -361,10 +347,10 @@ HasIdentityState returns a boolean if a field has been set.
 
 `func (o *LifecycleState) SetIdentityStateNil(b bool)`
 
- SetIdentityStateNil sets the value for IdentityState to be an explicit nil
+SetIdentityStateNil sets the value for IdentityState to be an explicit nil
 
 ### UnsetIdentityState
+
 `func (o *LifecycleState) UnsetIdentityState()`
 
 UnsetIdentityState ensures that no value is present for IdentityState, not even an explicit nil
-

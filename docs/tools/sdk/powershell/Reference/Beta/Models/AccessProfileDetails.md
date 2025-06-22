@@ -4,45 +4,58 @@ title: AccessProfileDetails
 pagination_label: AccessProfileDetails
 sidebar_label: AccessProfileDetails
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'AccessProfileDetails', 'BetaAccessProfileDetails'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'AccessProfileDetails',
+    'BetaAccessProfileDetails',
+  ]
 slug: /tools/sdk/powershell/beta/models/access-profile-details
-tags: ['SDK', 'Software Development Kit', 'AccessProfileDetails', 'BetaAccessProfileDetails']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessProfileDetails',
+    'BetaAccessProfileDetails',
+  ]
 ---
-
 
 # AccessProfileDetails
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | The ID of the Access Profile | [optional] 
-**Name** | **String** | Name of the Access Profile | [optional] 
-**Description** | **String** | Information about the Access Profile | [optional] 
-**Created** | **System.DateTime** | Date the Access Profile was created | [optional] 
-**Modified** | **System.DateTime** | Date the Access Profile was last modified. | [optional] 
-**Disabled** | **Boolean** | Whether the Access Profile is enabled. | [optional] [default to $true]
-**Requestable** | **Boolean** | Whether the Access Profile is requestable via access request. | [optional] [default to $false]
-**Protected** | **Boolean** | Whether the Access Profile is protected. | [optional] [default to $false]
-**OwnerId** | **String** | The owner ID of the Access Profile | [optional] 
-**SourceId** | **Int64** | The source ID of the Access Profile | [optional] 
-**SourceName** | **String** | The source name of the Access Profile | [optional] 
-**AppId** | **Int64** | The source app ID of the Access Profile | [optional] 
-**AppName** | **String** | The source app name of the Access Profile | [optional] 
-**ApplicationId** | **String** | The id of the application | [optional] 
-**Type** | **String** | The type of the access profile | [optional] 
-**Entitlements** | **[]String** | List of IDs of entitlements | [optional] 
-**EntitlementCount** | **Int32** | The number of entitlements in the access profile | [optional] 
-**Segments** | **[]String** | List of IDs of segments, if any, to which this Access Profile is assigned. | [optional] 
-**ApprovalSchemes** | **String** | Comma-separated list of approval schemes. Each approval scheme is one of - manager - appOwner - sourceOwner - accessProfileOwner - workgroup:&lt;workgroupId&gt;  | [optional] 
-**RevokeRequestApprovalSchemes** | **String** | Comma-separated list of revoke request approval schemes. Each approval scheme is one of - manager - sourceOwner - accessProfileOwner - workgroup:&lt;workgroupId&gt;  | [optional] 
-**RequestCommentsRequired** | **Boolean** | Whether the access profile require request comment for access request. | [optional] [default to $false]
-**DeniedCommentsRequired** | **Boolean** | Whether denied comment is required when access request is denied. | [optional] [default to $false]
-**AccountSelector** | [**AccessProfileDetailsAccountSelector**](access-profile-details-account-selector) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | The ID of the Access Profile | [optional] |
+| **Name** | **String** | Name of the Access Profile | [optional] |
+| **Description** | **String** | Information about the Access Profile | [optional] |
+| **Created** | **System.DateTime** | Date the Access Profile was created | [optional] |
+| **Modified** | **System.DateTime** | Date the Access Profile was last modified. | [optional] |
+| **Disabled** | **Boolean** | Whether the Access Profile is enabled. | [optional] [default to $true] |
+| **Requestable** | **Boolean** | Whether the Access Profile is requestable via access request. | [optional] [default to $false] |
+| **Protected** | **Boolean** | Whether the Access Profile is protected. | [optional] [default to $false] |
+| **OwnerId** | **String** | The owner ID of the Access Profile | [optional] |
+| **SourceId** | **Int64** | The source ID of the Access Profile | [optional] |
+| **SourceName** | **String** | The source name of the Access Profile | [optional] |
+| **AppId** | **Int64** | The source app ID of the Access Profile | [optional] |
+| **AppName** | **String** | The source app name of the Access Profile | [optional] |
+| **ApplicationId** | **String** | The id of the application | [optional] |
+| **Type** | **String** | The type of the access profile | [optional] |
+| **Entitlements** | **[]String** | List of IDs of entitlements | [optional] |
+| **EntitlementCount** | **Int32** | The number of entitlements in the access profile | [optional] |
+| **Segments** | **[]String** | List of IDs of segments, if any, to which this Access Profile is assigned. | [optional] |
+| **ApprovalSchemes** | **String** | Comma-separated list of approval schemes. Each approval scheme is one of - manager - appOwner - sourceOwner - accessProfileOwner - workgroup:&lt;workgroupId&gt; | [optional] |
+| **RevokeRequestApprovalSchemes** | **String** | Comma-separated list of revoke request approval schemes. Each approval scheme is one of - manager - sourceOwner - accessProfileOwner - workgroup:&lt;workgroupId&gt; | [optional] |
+| **RequestCommentsRequired** | **Boolean** | Whether the access profile require request comment for access request. | [optional] [default to $false] |
+| **DeniedCommentsRequired** | **Boolean** | Whether denied comment is required when access request is denied. | [optional] [default to $false] |
+| **AccountSelector** | [**AccessProfileDetailsAccountSelector**](access-profile-details-account-selector) |  | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $AccessProfileDetails = Initialize-BetaAccessProfileDetails  -Id 2c91808a7190d06e01719938fcd20792 `
  -Name Employee-database-read-write `
@@ -70,10 +83,9 @@ $AccessProfileDetails = Initialize-BetaAccessProfileDetails  -Id 2c91808a7190d06
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $AccessProfileDetails | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

@@ -4,9 +4,22 @@ title: IdentityPreviewResponseIdentity
 pagination_label: IdentityPreviewResponseIdentity
 sidebar_label: IdentityPreviewResponseIdentity
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentityPreviewResponseIdentity', 'IdentityPreviewResponseIdentity'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'IdentityPreviewResponseIdentity',
+    'IdentityPreviewResponseIdentity',
+  ]
 slug: /tools/sdk/python/v3/models/identity-preview-response-identity
-tags: ['SDK', 'Software Development Kit', 'IdentityPreviewResponseIdentity', 'IdentityPreviewResponseIdentity']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityPreviewResponseIdentity',
+    'IdentityPreviewResponseIdentity',
+  ]
 ---
 
 # IdentityPreviewResponseIdentity
@@ -15,11 +28,12 @@ Identity's basic details.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] | Identity's DTO type. | [optional] 
-**id** | **str** | Identity ID. | [optional] 
-**name** | **str** | Identity's display name. | [optional] 
+| Name     | Type                    | Description              | Notes      |
+| -------- | ----------------------- | ------------------------ | ---------- |
+| **type** | **Enum** [ 'IDENTITY' ] | Identity's DTO type.     | [optional] |
+| **id**   | **str**                 | Identity ID.             | [optional] |
+| **name** | **str**                 | Identity's display name. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Michael Michaels'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

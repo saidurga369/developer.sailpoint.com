@@ -4,9 +4,22 @@ title: CampaignGeneratedCampaignCampaignOwner
 pagination_label: CampaignGeneratedCampaignCampaignOwner
 sidebar_label: CampaignGeneratedCampaignCampaignOwner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'CampaignGeneratedCampaignCampaignOwner', 'BetaCampaignGeneratedCampaignCampaignOwner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'CampaignGeneratedCampaignCampaignOwner',
+    'BetaCampaignGeneratedCampaignCampaignOwner',
+  ]
 slug: /tools/sdk/python/beta/models/campaign-generated-campaign-campaign-owner
-tags: ['SDK', 'Software Development Kit', 'CampaignGeneratedCampaignCampaignOwner', 'BetaCampaignGeneratedCampaignCampaignOwner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CampaignGeneratedCampaignCampaignOwner',
+    'BetaCampaignGeneratedCampaignCampaignOwner',
+  ]
 ---
 
 # CampaignGeneratedCampaignCampaignOwner
@@ -15,11 +28,12 @@ Identity who owns the campaign.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Identity's unique ID. | [required]
-**display_name** | **str** | Identity's name. | [required]
-**email** | **str** | Identity's primary email address. | [required]
+| Name             | Type    | Description                       | Notes      |
+| ---------------- | ------- | --------------------------------- | ---------- |
+| **id**           | **str** | Identity's unique ID.             | [required] |
+| **display_name** | **str** | Identity's name.                  | [required] |
+| **email**        | **str** | Identity's primary email address. | [required] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ email='albert.albertson@example.com'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

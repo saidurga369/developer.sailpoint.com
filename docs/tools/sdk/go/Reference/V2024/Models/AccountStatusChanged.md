@@ -4,22 +4,29 @@ title: AccountStatusChanged
 pagination_label: AccountStatusChanged
 sidebar_label: AccountStatusChanged
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccountStatusChanged', 'V2024AccountStatusChanged'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'AccountStatusChanged', 'V2024AccountStatusChanged']
 slug: /tools/sdk/go/v2024/models/account-status-changed
-tags: ['SDK', 'Software Development Kit', 'AccountStatusChanged', 'V2024AccountStatusChanged']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountStatusChanged',
+    'V2024AccountStatusChanged',
+  ]
 ---
 
 # AccountStatusChanged
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**EventType** | Pointer to **string** | the event type | [optional] 
-**IdentityId** | Pointer to **string** | the identity id | [optional] 
-**Dt** | Pointer to **string** | the date of event | [optional] 
-**Account** | Pointer to [**AccountStatusChangedAccount**](account-status-changed-account) |  | [optional] 
-**StatusChange** | Pointer to [**AccountStatusChangedStatusChange**](account-status-changed-status-change) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **EventType** | Pointer to **string** | the event type | [optional] |
+| **IdentityId** | Pointer to **string** | the identity id | [optional] |
+| **Dt** | Pointer to **string** | the date of event | [optional] |
+| **Account** | Pointer to [**AccountStatusChangedAccount**](account-status-changed-account) |  | [optional] |
+| **StatusChange** | Pointer to [**AccountStatusChangedStatusChange**](account-status-changed-status-change) |  | [optional] |
 
 ## Methods
 
@@ -27,18 +34,13 @@ Name | Type | Description | Notes
 
 `func NewAccountStatusChanged() *AccountStatusChanged`
 
-NewAccountStatusChanged instantiates a new AccountStatusChanged object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccountStatusChanged instantiates a new AccountStatusChanged object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccountStatusChangedWithDefaults
 
 `func NewAccountStatusChangedWithDefaults() *AccountStatusChanged`
 
-NewAccountStatusChangedWithDefaults instantiates a new AccountStatusChanged object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccountStatusChangedWithDefaults instantiates a new AccountStatusChanged object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetEventType
 
@@ -50,8 +52,7 @@ GetEventType returns the EventType field if non-nil, zero value otherwise.
 
 `func (o *AccountStatusChanged) GetEventTypeOk() (*string, bool)`
 
-GetEventTypeOk returns a tuple with the EventType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEventTypeOk returns a tuple with the EventType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEventType
 
@@ -75,8 +76,7 @@ GetIdentityId returns the IdentityId field if non-nil, zero value otherwise.
 
 `func (o *AccountStatusChanged) GetIdentityIdOk() (*string, bool)`
 
-GetIdentityIdOk returns a tuple with the IdentityId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityIdOk returns a tuple with the IdentityId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityId
 
@@ -100,8 +100,7 @@ GetDt returns the Dt field if non-nil, zero value otherwise.
 
 `func (o *AccountStatusChanged) GetDtOk() (*string, bool)`
 
-GetDtOk returns a tuple with the Dt field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDtOk returns a tuple with the Dt field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDt
 
@@ -125,8 +124,7 @@ GetAccount returns the Account field if non-nil, zero value otherwise.
 
 `func (o *AccountStatusChanged) GetAccountOk() (*AccountStatusChangedAccount, bool)`
 
-GetAccountOk returns a tuple with the Account field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountOk returns a tuple with the Account field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccount
 
@@ -150,8 +148,7 @@ GetStatusChange returns the StatusChange field if non-nil, zero value otherwise.
 
 `func (o *AccountStatusChanged) GetStatusChangeOk() (*AccountStatusChangedStatusChange, bool)`
 
-GetStatusChangeOk returns a tuple with the StatusChange field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusChangeOk returns a tuple with the StatusChange field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatusChange
 
@@ -164,5 +161,3 @@ SetStatusChange sets StatusChange field to given value.
 `func (o *AccountStatusChanged) HasStatusChange() bool`
 
 HasStatusChange returns a boolean if a field has been set.
-
-

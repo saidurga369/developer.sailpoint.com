@@ -4,19 +4,32 @@ title: DependantConnectionsMissingDto
 pagination_label: DependantConnectionsMissingDto
 sidebar_label: DependantConnectionsMissingDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'DependantConnectionsMissingDto', 'V2025DependantConnectionsMissingDto'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'DependantConnectionsMissingDto',
+    'V2025DependantConnectionsMissingDto',
+  ]
 slug: /tools/sdk/go/v2025/models/dependant-connections-missing-dto
-tags: ['SDK', 'Software Development Kit', 'DependantConnectionsMissingDto', 'V2025DependantConnectionsMissingDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'DependantConnectionsMissingDto',
+    'V2025DependantConnectionsMissingDto',
+  ]
 ---
 
 # DependantConnectionsMissingDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**DependencyType** | Pointer to **string** | The type of dependency type that is missing in the SourceConnections | [optional] 
-**Reason** | Pointer to **string** | The reason why this dependency is missing | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **DependencyType** | Pointer to **string** | The type of dependency type that is missing in the SourceConnections | [optional] |
+| **Reason** | Pointer to **string** | The reason why this dependency is missing | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewDependantConnectionsMissingDto() *DependantConnectionsMissingDto`
 
-NewDependantConnectionsMissingDto instantiates a new DependantConnectionsMissingDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewDependantConnectionsMissingDto instantiates a new DependantConnectionsMissingDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewDependantConnectionsMissingDtoWithDefaults
 
 `func NewDependantConnectionsMissingDtoWithDefaults() *DependantConnectionsMissingDto`
 
-NewDependantConnectionsMissingDtoWithDefaults instantiates a new DependantConnectionsMissingDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewDependantConnectionsMissingDtoWithDefaults instantiates a new DependantConnectionsMissingDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetDependencyType
 
@@ -47,8 +55,7 @@ GetDependencyType returns the DependencyType field if non-nil, zero value otherw
 
 `func (o *DependantConnectionsMissingDto) GetDependencyTypeOk() (*string, bool)`
 
-GetDependencyTypeOk returns a tuple with the DependencyType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDependencyTypeOk returns a tuple with the DependencyType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDependencyType
 
@@ -72,8 +79,7 @@ GetReason returns the Reason field if non-nil, zero value otherwise.
 
 `func (o *DependantConnectionsMissingDto) GetReasonOk() (*string, bool)`
 
-GetReasonOk returns a tuple with the Reason field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReasonOk returns a tuple with the Reason field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReason
 
@@ -86,5 +92,3 @@ SetReason sets Reason field to given value.
 `func (o *DependantConnectionsMissingDto) HasReason() bool`
 
 HasReason returns a boolean if a field has been set.
-
-

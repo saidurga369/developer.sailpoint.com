@@ -4,22 +4,35 @@ title: RecommendationRequestDto
 pagination_label: RecommendationRequestDto
 sidebar_label: RecommendationRequestDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RecommendationRequestDto', 'V2025RecommendationRequestDto'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'RecommendationRequestDto',
+    'V2025RecommendationRequestDto',
+  ]
 slug: /tools/sdk/go/v2025/models/recommendation-request-dto
-tags: ['SDK', 'Software Development Kit', 'RecommendationRequestDto', 'V2025RecommendationRequestDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RecommendationRequestDto',
+    'V2025RecommendationRequestDto',
+  ]
 ---
 
 # RecommendationRequestDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Requests** | Pointer to [**[]RecommendationRequest**](recommendation-request) |  | [optional] 
-**ExcludeInterpretations** | Pointer to **bool** | Exclude interpretations in the response if \"true\". Return interpretations in the response if this attribute is not specified. | [optional] [default to false]
-**IncludeTranslationMessages** | Pointer to **bool** | When set to true, the calling system uses the translated messages for the specified language | [optional] [default to false]
-**IncludeDebugInformation** | Pointer to **bool** | Returns the recommender calculations if set to true | [optional] [default to false]
-**PrescribeMode** | Pointer to **bool** | When set to true, uses prescribedRulesRecommenderConfig to get identity attributes and peer group threshold instead of standard config. | [optional] [default to false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Requests** | Pointer to [**[]RecommendationRequest**](recommendation-request) |  | [optional] |
+| **ExcludeInterpretations** | Pointer to **bool** | Exclude interpretations in the response if \"true\". Return interpretations in the response if this attribute is not specified. | [optional] [default to false] |
+| **IncludeTranslationMessages** | Pointer to **bool** | When set to true, the calling system uses the translated messages for the specified language | [optional] [default to false] |
+| **IncludeDebugInformation** | Pointer to **bool** | Returns the recommender calculations if set to true | [optional] [default to false] |
+| **PrescribeMode** | Pointer to **bool** | When set to true, uses prescribedRulesRecommenderConfig to get identity attributes and peer group threshold instead of standard config. | [optional] [default to false] |
 
 ## Methods
 
@@ -27,18 +40,13 @@ Name | Type | Description | Notes
 
 `func NewRecommendationRequestDto() *RecommendationRequestDto`
 
-NewRecommendationRequestDto instantiates a new RecommendationRequestDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRecommendationRequestDto instantiates a new RecommendationRequestDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRecommendationRequestDtoWithDefaults
 
 `func NewRecommendationRequestDtoWithDefaults() *RecommendationRequestDto`
 
-NewRecommendationRequestDtoWithDefaults instantiates a new RecommendationRequestDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRecommendationRequestDtoWithDefaults instantiates a new RecommendationRequestDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetRequests
 
@@ -50,8 +58,7 @@ GetRequests returns the Requests field if non-nil, zero value otherwise.
 
 `func (o *RecommendationRequestDto) GetRequestsOk() (*[]RecommendationRequest, bool)`
 
-GetRequestsOk returns a tuple with the Requests field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestsOk returns a tuple with the Requests field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequests
 
@@ -75,8 +82,7 @@ GetExcludeInterpretations returns the ExcludeInterpretations field if non-nil, z
 
 `func (o *RecommendationRequestDto) GetExcludeInterpretationsOk() (*bool, bool)`
 
-GetExcludeInterpretationsOk returns a tuple with the ExcludeInterpretations field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetExcludeInterpretationsOk returns a tuple with the ExcludeInterpretations field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetExcludeInterpretations
 
@@ -100,8 +106,7 @@ GetIncludeTranslationMessages returns the IncludeTranslationMessages field if no
 
 `func (o *RecommendationRequestDto) GetIncludeTranslationMessagesOk() (*bool, bool)`
 
-GetIncludeTranslationMessagesOk returns a tuple with the IncludeTranslationMessages field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIncludeTranslationMessagesOk returns a tuple with the IncludeTranslationMessages field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIncludeTranslationMessages
 
@@ -125,8 +130,7 @@ GetIncludeDebugInformation returns the IncludeDebugInformation field if non-nil,
 
 `func (o *RecommendationRequestDto) GetIncludeDebugInformationOk() (*bool, bool)`
 
-GetIncludeDebugInformationOk returns a tuple with the IncludeDebugInformation field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIncludeDebugInformationOk returns a tuple with the IncludeDebugInformation field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIncludeDebugInformation
 
@@ -150,8 +154,7 @@ GetPrescribeMode returns the PrescribeMode field if non-nil, zero value otherwis
 
 `func (o *RecommendationRequestDto) GetPrescribeModeOk() (*bool, bool)`
 
-GetPrescribeModeOk returns a tuple with the PrescribeMode field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPrescribeModeOk returns a tuple with the PrescribeMode field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPrescribeMode
 
@@ -164,5 +167,3 @@ SetPrescribeMode sets PrescribeMode field to given value.
 `func (o *RecommendationRequestDto) HasPrescribeMode() bool`
 
 HasPrescribeMode returns a boolean if a field has been set.
-
-

@@ -4,7 +4,7 @@ title: WorkItemState
 pagination_label: WorkItemState
 sidebar_label: WorkItemState
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'WorkItemState', 'V2024WorkItemState'] 
+keywords: ['go', 'Golang', 'sdk', 'WorkItemState', 'V2024WorkItemState']
 slug: /tools/sdk/go/v2024/models/work-item-state
 tags: ['SDK', 'Software Development Kit', 'WorkItemState', 'V2024WorkItemState']
 ---
@@ -13,17 +13,14 @@ tags: ['SDK', 'Software Development Kit', 'WorkItemState', 'V2024WorkItemState']
 
 ## Enum
 
+- `FINISHED` (value: `"Finished"`)
 
-* `FINISHED` (value: `"Finished"`)
+- `REJECTED` (value: `"Rejected"`)
 
-* `REJECTED` (value: `"Rejected"`)
+- `RETURNED` (value: `"Returned"`)
 
-* `RETURNED` (value: `"Returned"`)
+- `EXPIRED` (value: `"Expired"`)
 
-* `EXPIRED` (value: `"Expired"`)
+- `PENDING` (value: `"Pending"`)
 
-* `PENDING` (value: `"Pending"`)
-
-* `CANCELED` (value: `"Canceled"`)
-
-
+- `CANCELED` (value: `"Canceled"`)

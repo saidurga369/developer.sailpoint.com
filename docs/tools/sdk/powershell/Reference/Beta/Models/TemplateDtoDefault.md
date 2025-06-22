@@ -4,35 +4,48 @@ title: TemplateDtoDefault
 pagination_label: TemplateDtoDefault
 sidebar_label: TemplateDtoDefault
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'TemplateDtoDefault', 'BetaTemplateDtoDefault'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'TemplateDtoDefault',
+    'BetaTemplateDtoDefault',
+  ]
 slug: /tools/sdk/powershell/beta/models/template-dto-default
-tags: ['SDK', 'Software Development Kit', 'TemplateDtoDefault', 'BetaTemplateDtoDefault']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'TemplateDtoDefault',
+    'BetaTemplateDtoDefault',
+  ]
 ---
-
 
 # TemplateDtoDefault
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Key** | **String** | The key of the default template | [optional] 
-**Name** | **String** | The name of the default template | [optional] 
-**Medium** |  **Enum** [  "EMAIL",    "PHONE",    "SMS",    "SLACK",    "TEAMS" ] | The message medium. More mediums may be added in the future. | [optional] 
-**Locale** | **String** | The locale for the message text, a BCP 47 language tag. | [optional] 
-**Subject** | **String** | The subject of the default template | [optional] 
-**Header** | **String** | The header value is now located within the body field. If included with non-null values, will result in a 400. | [optional] 
-**Body** | **String** | The body of the default template | [optional] 
-**Footer** | **String** | The footer value is now located within the body field. If included with non-null values, will result in a 400. | [optional] 
-**VarFrom** | **String** | The ""From:"" address of the default template | [optional] 
-**ReplyTo** | **String** | The ""Reply To"" field of the default template | [optional] 
-**Description** | **String** | The description of the default template | [optional] 
-**SlackTemplate** | [**TemplateSlack**](template-slack) |  | [optional] 
-**TeamsTemplate** | [**TemplateTeams**](template-teams) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Key** | **String** | The key of the default template | [optional] |
+| **Name** | **String** | The name of the default template | [optional] |
+| **Medium** | **Enum** [ "EMAIL", "PHONE", "SMS", "SLACK", "TEAMS" ] | The message medium. More mediums may be added in the future. | [optional] |
+| **Locale** | **String** | The locale for the message text, a BCP 47 language tag. | [optional] |
+| **Subject** | **String** | The subject of the default template | [optional] |
+| **Header** | **String** | The header value is now located within the body field. If included with non-null values, will result in a 400. | [optional] |
+| **Body** | **String** | The body of the default template | [optional] |
+| **Footer** | **String** | The footer value is now located within the body field. If included with non-null values, will result in a 400. | [optional] |
+| **VarFrom** | **String** | The ""From:"" address of the default template | [optional] |
+| **ReplyTo** | **String** | The ""Reply To"" field of the default template | [optional] |
+| **Description** | **String** | The description of the default template | [optional] |
+| **SlackTemplate** | [**TemplateSlack**](template-slack) |  | [optional] |
+| **TeamsTemplate** | [**TemplateTeams**](template-teams) |  | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $TemplateDtoDefault = Initialize-BetaTemplateDtoDefault  -Key cloud_manual_work_item_summary `
  -Name Task Manager Subscription `
@@ -50,10 +63,9 @@ $TemplateDtoDefault = Initialize-BetaTemplateDtoDefault  -Key cloud_manual_work_
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $TemplateDtoDefault | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

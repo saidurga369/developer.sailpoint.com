@@ -5,9 +5,10 @@ pagination_label: Standard Collection Parameters
 sidebar_label: Standard Collection Parameters
 sidebar_position: 5
 sidebar_class_name: standardCollectionParameters
-keywords: ['standard collection parameters','filter','pagination','paginate','sort']
+keywords:
+  ['standard collection parameters', 'filter', 'pagination', 'paginate', 'sort']
 description: ISC API pagination, filtering, and sorting.
-tags: ['Standard Collection Parameters','Filter','Sort','Pagination']
+tags: ['Standard Collection Parameters', 'Filter', 'Sort', 'Pagination']
 slug: api/v2024/standard-collection-parameters
 ---
 

@@ -4,7 +4,7 @@ title: DataSegment
 pagination_label: DataSegment
 sidebar_label: DataSegment
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'DataSegment', 'V2025DataSegment'] 
+keywords: ['go', 'Golang', 'sdk', 'DataSegment', 'V2025DataSegment']
 slug: /tools/sdk/go/v2025/models/data-segment
 tags: ['SDK', 'Software Development Kit', 'DataSegment', 'V2025DataSegment']
 ---
@@ -13,19 +13,19 @@ tags: ['SDK', 'Software Development Kit', 'DataSegment', 'V2025DataSegment']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The segment's ID. | [optional] 
-**Name** | Pointer to **string** | The segment's business name. | [optional] 
-**Created** | Pointer to **SailPointTime** | The time when the segment is created. | [optional] 
-**Modified** | Pointer to **SailPointTime** | The time when the segment is modified. | [optional] 
-**Description** | Pointer to **string** | The segment's optional description. | [optional] 
-**Scopes** | Pointer to [**[]Scope**](scope) | List of Scopes that are assigned to the segment | [optional] 
-**MemberSelection** | Pointer to [**[]Ref**](ref) | List of Identities that are assigned to the segment | [optional] 
-**MemberFilter** | Pointer to [**VisibilityCriteria**](visibility-criteria) |  | [optional] 
-**Membership** | Pointer to [**MembershipType**](membership-type) |  | [optional] 
-**Enabled** | Pointer to **bool** | This boolean indicates whether the segment is currently active. Inactive segments have no effect. | [optional] [default to false]
-**Published** | Pointer to **bool** | This boolean indicates whether the segment is being applied to the accounts. If unpublished its being actively modified to until published | [optional] [default to false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The segment's ID. | [optional] |
+| **Name** | Pointer to **string** | The segment's business name. | [optional] |
+| **Created** | Pointer to **SailPointTime** | The time when the segment is created. | [optional] |
+| **Modified** | Pointer to **SailPointTime** | The time when the segment is modified. | [optional] |
+| **Description** | Pointer to **string** | The segment's optional description. | [optional] |
+| **Scopes** | Pointer to [**[]Scope**](scope) | List of Scopes that are assigned to the segment | [optional] |
+| **MemberSelection** | Pointer to [**[]Ref**](ref) | List of Identities that are assigned to the segment | [optional] |
+| **MemberFilter** | Pointer to [**VisibilityCriteria**](visibility-criteria) |  | [optional] |
+| **Membership** | Pointer to [**MembershipType**](membership-type) |  | [optional] |
+| **Enabled** | Pointer to **bool** | This boolean indicates whether the segment is currently active. Inactive segments have no effect. | [optional] [default to false] |
+| **Published** | Pointer to **bool** | This boolean indicates whether the segment is being applied to the accounts. If unpublished its being actively modified to until published | [optional] [default to false] |
 
 ## Methods
 
@@ -33,18 +33,13 @@ Name | Type | Description | Notes
 
 `func NewDataSegment() *DataSegment`
 
-NewDataSegment instantiates a new DataSegment object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewDataSegment instantiates a new DataSegment object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewDataSegmentWithDefaults
 
 `func NewDataSegmentWithDefaults() *DataSegment`
 
-NewDataSegmentWithDefaults instantiates a new DataSegment object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewDataSegmentWithDefaults instantiates a new DataSegment object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -56,8 +51,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *DataSegment) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -81,8 +75,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *DataSegment) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -106,8 +99,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *DataSegment) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -131,8 +123,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *DataSegment) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -156,8 +147,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *DataSegment) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -181,8 +171,7 @@ GetScopes returns the Scopes field if non-nil, zero value otherwise.
 
 `func (o *DataSegment) GetScopesOk() (*[]Scope, bool)`
 
-GetScopesOk returns a tuple with the Scopes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetScopesOk returns a tuple with the Scopes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetScopes
 
@@ -206,8 +195,7 @@ GetMemberSelection returns the MemberSelection field if non-nil, zero value othe
 
 `func (o *DataSegment) GetMemberSelectionOk() (*[]Ref, bool)`
 
-GetMemberSelectionOk returns a tuple with the MemberSelection field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMemberSelectionOk returns a tuple with the MemberSelection field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMemberSelection
 
@@ -231,8 +219,7 @@ GetMemberFilter returns the MemberFilter field if non-nil, zero value otherwise.
 
 `func (o *DataSegment) GetMemberFilterOk() (*VisibilityCriteria, bool)`
 
-GetMemberFilterOk returns a tuple with the MemberFilter field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMemberFilterOk returns a tuple with the MemberFilter field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMemberFilter
 
@@ -256,8 +243,7 @@ GetMembership returns the Membership field if non-nil, zero value otherwise.
 
 `func (o *DataSegment) GetMembershipOk() (*MembershipType, bool)`
 
-GetMembershipOk returns a tuple with the Membership field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMembershipOk returns a tuple with the Membership field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMembership
 
@@ -281,8 +267,7 @@ GetEnabled returns the Enabled field if non-nil, zero value otherwise.
 
 `func (o *DataSegment) GetEnabledOk() (*bool, bool)`
 
-GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEnabled
 
@@ -306,8 +291,7 @@ GetPublished returns the Published field if non-nil, zero value otherwise.
 
 `func (o *DataSegment) GetPublishedOk() (*bool, bool)`
 
-GetPublishedOk returns a tuple with the Published field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPublishedOk returns a tuple with the Published field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPublished
 
@@ -320,5 +304,3 @@ SetPublished sets Published field to given value.
 `func (o *DataSegment) HasPublished() bool`
 
 HasPublished returns a boolean if a field has been set.
-
-

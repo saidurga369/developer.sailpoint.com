@@ -4,9 +4,22 @@ title: OwnerReferenceSegments
 pagination_label: OwnerReferenceSegments
 sidebar_label: OwnerReferenceSegments
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'OwnerReferenceSegments', 'V2025OwnerReferenceSegments'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'OwnerReferenceSegments',
+    'V2025OwnerReferenceSegments',
+  ]
 slug: /tools/sdk/python/v2025/models/owner-reference-segments
-tags: ['SDK', 'Software Development Kit', 'OwnerReferenceSegments', 'V2025OwnerReferenceSegments']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'OwnerReferenceSegments',
+    'V2025OwnerReferenceSegments',
+  ]
 ---
 
 # OwnerReferenceSegments
@@ -15,11 +28,12 @@ The owner of this object.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] | Owner type. This field must be either left null or set to 'IDENTITY' on input, otherwise a 400 Bad Request error will result. | [optional] 
-**id** | **str** | Identity id | [optional] 
-**name** | **str** | Human-readable display name of the owner. It may be left null or omitted in a POST or PATCH. If set, it must match the current value of the owner's display name, otherwise a 400 Bad Request error will result. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'IDENTITY' ] | Owner type. This field must be either left null or set to 'IDENTITY' on input, otherwise a 400 Bad Request error will result. | [optional] |
+| **id** | **str** | Identity id | [optional] |
+| **name** | **str** | Human-readable display name of the owner. It may be left null or omitted in a POST or PATCH. If set, it must match the current value of the owner's display name, otherwise a 400 Bad Request error will result. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='support'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

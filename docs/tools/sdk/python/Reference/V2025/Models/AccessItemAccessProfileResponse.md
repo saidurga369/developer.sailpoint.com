@@ -4,30 +4,43 @@ title: AccessItemAccessProfileResponse
 pagination_label: AccessItemAccessProfileResponse
 sidebar_label: AccessItemAccessProfileResponse
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccessItemAccessProfileResponse', 'V2025AccessItemAccessProfileResponse'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccessItemAccessProfileResponse',
+    'V2025AccessItemAccessProfileResponse',
+  ]
 slug: /tools/sdk/python/v2025/models/access-item-access-profile-response
-tags: ['SDK', 'Software Development Kit', 'AccessItemAccessProfileResponse', 'V2025AccessItemAccessProfileResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessItemAccessProfileResponse',
+    'V2025AccessItemAccessProfileResponse',
+  ]
 ---
 
 # AccessItemAccessProfileResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**access_type** | **str** | the access item type. accessProfile in this case | [optional] 
-**id** | **str** | the access item id | [optional] 
-**name** | **str** | the access profile name | [optional] 
-**source_name** | **str** | the name of the source | [optional] 
-**source_id** | **str** | the id of the source | [optional] 
-**description** | **str** | the description for the access profile | [optional] 
-**display_name** | **str** | the display name of the identity | [optional] 
-**entitlement_count** | **str** | the number of entitlements the access profile will create | [optional] 
-**app_display_name** | **str** | the name of | [optional] 
-**remove_date** | **str** | the date the access profile is no longer assigned to the specified identity | [optional] 
-**standalone** | **bool** | indicates whether the access profile is standalone | [required]
-**revocable** | **bool** | indicates whether the access profile is | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **access_type** | **str** | the access item type. accessProfile in this case | [optional] |
+| **id** | **str** | the access item id | [optional] |
+| **name** | **str** | the access profile name | [optional] |
+| **source_name** | **str** | the name of the source | [optional] |
+| **source_id** | **str** | the id of the source | [optional] |
+| **description** | **str** | the description for the access profile | [optional] |
+| **display_name** | **str** | the display name of the identity | [optional] |
+| **entitlement_count** | **str** | the number of entitlements the access profile will create | [optional] |
+| **app_display_name** | **str** | the name of | [optional] |
+| **remove_date** | **str** | the date the access profile is no longer assigned to the specified identity | [optional] |
+| **standalone** | **bool** | indicates whether the access profile is standalone | [required] |
+| **revocable** | **bool** | indicates whether the access profile is | [required] |
+
 }
 
 ## Example
@@ -51,5 +64,5 @@ revocable=True
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

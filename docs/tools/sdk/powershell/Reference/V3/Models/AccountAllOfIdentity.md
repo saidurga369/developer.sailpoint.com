@@ -4,25 +4,38 @@ title: AccountAllOfIdentity
 pagination_label: AccountAllOfIdentity
 sidebar_label: AccountAllOfIdentity
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'AccountAllOfIdentity', 'AccountAllOfIdentity'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'AccountAllOfIdentity',
+    'AccountAllOfIdentity',
+  ]
 slug: /tools/sdk/powershell/v3/models/account-all-of-identity
-tags: ['SDK', 'Software Development Kit', 'AccountAllOfIdentity', 'AccountAllOfIdentity']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountAllOfIdentity',
+    'AccountAllOfIdentity',
+  ]
 ---
-
 
 # AccountAllOfIdentity
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | The ID of the identity | [optional] 
-**Type** |  **Enum** [  "IDENTITY" ] | The type of object being referenced | [optional] 
-**Name** | **String** | display name of identity | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | The ID of the identity | [optional] |
+| **Type** | **Enum** [ "IDENTITY" ] | The type of object being referenced | [optional] |
+| **Name** | **String** | display name of identity | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $AccountAllOfIdentity = Initialize-AccountAllOfIdentity  -Id 2c918084660f45d6016617daa9210584 `
  -Type IDENTITY `
@@ -30,10 +43,9 @@ $AccountAllOfIdentity = Initialize-AccountAllOfIdentity  -Id 2c918084660f45d6016
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $AccountAllOfIdentity | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

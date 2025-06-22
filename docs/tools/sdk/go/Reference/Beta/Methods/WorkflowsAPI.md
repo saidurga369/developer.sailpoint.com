@@ -4,64 +4,61 @@ title: Workflows
 pagination_label: Workflows
 sidebar_label: Workflows
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Workflows', 'BetaWorkflows'] 
+keywords: ['go', 'Golang', 'sdk', 'Workflows', 'BetaWorkflows']
 slug: /tools/sdk/go/beta/methods/workflows
 tags: ['SDK', 'Software Development Kit', 'Workflows', 'BetaWorkflows']
 ---
 
 # WorkflowsAPI
-  Workflows allow administrators to create custom automation scripts directly within Identity Security Cloud.  These automation scripts respond to [event triggers](https://developer.sailpoint.com/docs/extensibility/event-triggers/#how-to-get-started-with-event-triggers) and perform a series of actions to perform tasks that are either too cumbersome or not available in the Identity Security Cloud UI.  Workflows can be configured via a graphical user interface within Identity Security Cloud, or by creating and uploading a JSON formatted script to the Workflow service.  The Workflows API collection provides the necessary functionality to create, manage, and test your workflows via REST.
- 
+
+Workflows allow administrators to create custom automation scripts directly within Identity Security Cloud. These automation scripts respond to [event triggers](https://developer.sailpoint.com/docs/extensibility/event-triggers/#how-to-get-started-with-event-triggers) and perform a series of actions to perform tasks that are either too cumbersome or not available in the Identity Security Cloud UI. Workflows can be configured via a graphical user interface within Identity Security Cloud, or by creating and uploading a JSON formatted script to the Workflow service. The Workflows API collection provides the necessary functionality to create, manage, and test your workflows via REST.
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/beta*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**cancel-workflow-execution**](#cancel-workflow-execution) | **Post** `/workflow-executions/{id}/cancel` | Cancel workflow execution by id
-[**create-workflow**](#create-workflow) | **Post** `/workflows` | Create workflow
-[**delete-workflow**](#delete-workflow) | **Delete** `/workflows/{id}` | Delete workflow by id
-[**get-workflow**](#get-workflow) | **Get** `/workflows/{id}` | Get workflow by id
-[**get-workflow-execution**](#get-workflow-execution) | **Get** `/workflow-executions/{id}` | Get workflow execution
-[**get-workflow-execution-history**](#get-workflow-execution-history) | **Get** `/workflow-executions/{id}/history` | Get workflow execution history
-[**get-workflow-executions**](#get-workflow-executions) | **Get** `/workflows/{id}/executions` | List workflow executions
-[**list-complete-workflow-library**](#list-complete-workflow-library) | **Get** `/workflow-library` | List complete workflow library
-[**list-workflow-library-actions**](#list-workflow-library-actions) | **Get** `/workflow-library/actions` | List workflow library actions
-[**list-workflow-library-operators**](#list-workflow-library-operators) | **Get** `/workflow-library/operators` | List workflow library operators
-[**list-workflow-library-triggers**](#list-workflow-library-triggers) | **Get** `/workflow-library/triggers` | List workflow library triggers
-[**list-workflows**](#list-workflows) | **Get** `/workflows` | List workflows
-[**patch-workflow**](#patch-workflow) | **Patch** `/workflows/{id}` | Patch workflow
-[**post-external-execute-workflow**](#post-external-execute-workflow) | **Post** `/workflows/execute/external/{id}` | Execute workflow via external trigger
-[**post-workflow-external-trigger**](#post-workflow-external-trigger) | **Post** `/workflows/{id}/external/oauth-clients` | Generate external trigger oauth client
-[**put-workflow**](#put-workflow) | **Put** `/workflows/{id}` | Update workflow
-[**test-external-execute-workflow**](#test-external-execute-workflow) | **Post** `/workflows/execute/external/{id}/test` | Test workflow via external trigger
-[**test-workflow**](#test-workflow) | **Post** `/workflows/{id}/test` | Test workflow by id
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**cancel-workflow-execution**](#cancel-workflow-execution) | **Post** `/workflow-executions/{id}/cancel` | Cancel workflow execution by id |
+| [**create-workflow**](#create-workflow) | **Post** `/workflows` | Create workflow |
+| [**delete-workflow**](#delete-workflow) | **Delete** `/workflows/{id}` | Delete workflow by id |
+| [**get-workflow**](#get-workflow) | **Get** `/workflows/{id}` | Get workflow by id |
+| [**get-workflow-execution**](#get-workflow-execution) | **Get** `/workflow-executions/{id}` | Get workflow execution |
+| [**get-workflow-execution-history**](#get-workflow-execution-history) | **Get** `/workflow-executions/{id}/history` | Get workflow execution history |
+| [**get-workflow-executions**](#get-workflow-executions) | **Get** `/workflows/{id}/executions` | List workflow executions |
+| [**list-complete-workflow-library**](#list-complete-workflow-library) | **Get** `/workflow-library` | List complete workflow library |
+| [**list-workflow-library-actions**](#list-workflow-library-actions) | **Get** `/workflow-library/actions` | List workflow library actions |
+| [**list-workflow-library-operators**](#list-workflow-library-operators) | **Get** `/workflow-library/operators` | List workflow library operators |
+| [**list-workflow-library-triggers**](#list-workflow-library-triggers) | **Get** `/workflow-library/triggers` | List workflow library triggers |
+| [**list-workflows**](#list-workflows) | **Get** `/workflows` | List workflows |
+| [**patch-workflow**](#patch-workflow) | **Patch** `/workflows/{id}` | Patch workflow |
+| [**post-external-execute-workflow**](#post-external-execute-workflow) | **Post** `/workflows/execute/external/{id}` | Execute workflow via external trigger |
+| [**post-workflow-external-trigger**](#post-workflow-external-trigger) | **Post** `/workflows/{id}/external/oauth-clients` | Generate external trigger oauth client |
+| [**put-workflow**](#put-workflow) | **Put** `/workflows/{id}` | Update workflow |
+| [**test-external-execute-workflow**](#test-external-execute-workflow) | **Post** `/workflows/execute/external/{id}/test` | Test workflow via external trigger |
+| [**test-workflow**](#test-workflow) | **Post** `/workflows/{id}/test` | Test workflow by id |
 
 ## cancel-workflow-execution
-Cancel workflow execution by id
-Use this API to cancel a running workflow execution.
+
+Cancel workflow execution by id Use this API to cancel a running workflow execution.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/cancel-workflow-execution)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The workflow execution ID | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The workflow execution ID |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCancelWorkflowExecutionRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -77,15 +74,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `c17bea3a-574d-453c-9e04-4365fbf5af0b` // string | The workflow execution ID # string | The workflow execution ID
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -95,30 +92,27 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `WorkflowsAPI.CancelWorkflowExecution``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## create-workflow
-Create workflow
-Create a new workflow with the desired trigger and steps specified in the request body.
+
+Create workflow Create a new workflow with the desired trigger and steps specified in the request body.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/create-workflow)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCreateWorkflowRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **createWorkflowRequest** | [**CreateWorkflowRequest**](../models/create-workflow-request) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **createWorkflowRequest** | [**CreateWorkflowRequest**](../models/create-workflow-request) |  |
 
 ### Return type
 
@@ -144,14 +138,14 @@ import (
 )
 
 func main() {
-    createworkflowrequest := []byte(`{name=Send Email, owner={type=IDENTITY, id=2c91808568c529c60168cca6f90c1313, name=William Wilson}, description=Send an email to the identity who's attributes changed., definition={start=Send Email Test, steps={Send Email={actionId=sp:send-email, attributes={body=This is a test, from=sailpoint@sailpoint.com, recipientId.$=$.identity.id, subject=test}, nextStep=success, selectResult=null, type=action}, success={type=success}}}, enabled=false, trigger={type=EVENT, attributes={id=idn:identity-attributes-changed, filter=$.changes[?(@.attribute == 'manager')]}}}`) // CreateWorkflowRequest | 
+    createworkflowrequest := []byte(`{name=Send Email, owner={type=IDENTITY, id=2c91808568c529c60168cca6f90c1313, name=William Wilson}, description=Send an email to the identity who's attributes changed., definition={start=Send Email Test, steps={Send Email={actionId=sp:send-email, attributes={body=This is a test, from=sailpoint@sailpoint.com, recipientId.$=$.identity.id, subject=test}, nextStep=success, selectResult=null, type=action}, success={type=success}}}, enabled=false, trigger={type=EVENT, attributes={id=idn:identity-attributes-changed, filter=$.changes[?(@.attribute == 'manager')]}}}`) // CreateWorkflowRequest |
 
     var createWorkflowRequest beta.CreateWorkflowRequest
     if err := json.Unmarshal(createworkflowrequest, &createWorkflowRequest); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -169,31 +163,28 @@ func main() {
 [[Back to top]](#)
 
 ## delete-workflow
-Delete workflow by id
-Delete a workflow.  **Enabled workflows cannot be deleted**.  They must first be disabled.
+
+Delete workflow by id Delete a workflow. **Enabled workflows cannot be deleted**. They must first be disabled.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/delete-workflow)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Id of the Workflow | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Id of the Workflow |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteWorkflowRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -209,15 +200,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `c17bea3a-574d-453c-9e04-4365fbf5af0b` // string | Id of the Workflow # string | Id of the Workflow
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -227,35 +218,33 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `WorkflowsAPI.DeleteWorkflow``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## get-workflow
-Get workflow by id
-Get a single workflow by id.
+
+Get workflow by id Get a single workflow by id.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-workflow)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Id of the workflow | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Id of the workflow |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetWorkflowRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **workflowMetrics** | **bool** | disable workflow metrics | [default to true]
+**workflowMetrics** | **bool** | disable workflow metrics | [default to true]
 
 ### Return type
 
@@ -275,8 +264,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -284,7 +273,7 @@ func main() {
     id := `c17bea3a-574d-453c-9e04-4365fbf5af0b` // string | Id of the workflow # string | Id of the workflow
     workflowMetrics := false // bool | disable workflow metrics (optional) (default to true) # bool | disable workflow metrics (optional) (default to true)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -302,27 +291,24 @@ func main() {
 [[Back to top]](#)
 
 ## get-workflow-execution
-Get workflow execution
-Get a single workflow execution. Workflow executions are available for up to 90 days before being archived. If you attempt to access a workflow execution that has been archived, you will receive a "404 Not Found" response.
+
+Get workflow execution Get a single workflow execution. Workflow executions are available for up to 90 days before being archived. If you attempt to access a workflow execution that has been archived, you will receive a "404 Not Found" response.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-workflow-execution)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Workflow execution ID. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Workflow execution ID. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetWorkflowExecutionRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -342,15 +328,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `c17bea3a-574d-453c-9e04-4365fbf5af0b` // string | Workflow execution ID. # string | Workflow execution ID.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -368,27 +354,24 @@ func main() {
 [[Back to top]](#)
 
 ## get-workflow-execution-history
-Get workflow execution history
-Get a detailed history of a single workflow execution.  Workflow executions are available for up to 90 days before being archived.  If you attempt to access a workflow execution that has been archived, you will receive a 404 Not Found.
+
+Get workflow execution history Get a detailed history of a single workflow execution. Workflow executions are available for up to 90 days before being archived. If you attempt to access a workflow execution that has been archived, you will receive a 404 Not Found.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-workflow-execution-history)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Id of the workflow execution | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Id of the workflow execution |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetWorkflowExecutionHistoryRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -408,15 +391,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `c17bea3a-574d-453c-9e04-4365fbf5af0b` // string | Id of the workflow execution # string | Id of the workflow execution
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -434,41 +417,34 @@ func main() {
 [[Back to top]](#)
 
 ## get-workflow-executions
-List workflow executions
-Use this API to list a specified workflow's executions. Workflow executions are available for up to 90 days before being archived. By default, you can get a maximum of 250 executions.  To get executions past the first 250 records, you can do the following: 
-1. Use the [Get Workflows](https://developer.sailpoint.com/idn/api/beta/list-workflows) endpoint to get your workflows. 
-2. Get your workflow ID from the response. 
-3. You can then do either of the following: 
 
-  - Filter to find relevant workflow executions.
-  For example, you can filter for failed workflow executions: `GET /workflows/:workflowID/executions?filters=status eq "Failed"`
+List workflow executions Use this API to list a specified workflow's executions. Workflow executions are available for up to 90 days before being archived. By default, you can get a maximum of 250 executions. To get executions past the first 250 records, you can do the following:
 
-  - Paginate through results with the `offset` parameter. 
-  For example, you can page through 50 executions per page and use that as a way to get to the records past the first 250. 
-  Refer to [Paginating Results](https://developer.sailpoint.com/idn/api/standard-collection-parameters#paginating-results) for more information about the query parameters you can use to achieve pagination. 
+1. Use the [Get Workflows](https://developer.sailpoint.com/idn/api/beta/list-workflows) endpoint to get your workflows.
+2. Get your workflow ID from the response.
+3. You can then do either of the following:
+
+- Filter to find relevant workflow executions. For example, you can filter for failed workflow executions: `GET /workflows/:workflowID/executions?filters=status eq "Failed"`
+
+- Paginate through results with the `offset` parameter. For example, you can page through 50 executions per page and use that as a way to get to the records past the first 250. Refer to [Paginating Results](https://developer.sailpoint.com/idn/api/standard-collection-parameters#paginating-results) for more information about the query parameters you can use to achieve pagination.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-workflow-executions)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Workflow ID. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Workflow ID. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetWorkflowExecutionsRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **startTime**: *eq, lt, le, gt, ge*  **status**: *eq* | 
+**limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false] **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **startTime**: _eq, lt, le, gt, ge_ **status**: _eq_ |
 
 ### Return type
 
@@ -488,8 +464,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -500,7 +476,7 @@ func main() {
     count := true // bool | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to false) # bool | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to false)
     filters := `status eq "Failed"` // string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **startTime**: *eq, lt, le, gt, ge*  **status**: *eq* (optional) # string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **startTime**: *eq, lt, le, gt, ge*  **status**: *eq* (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -518,24 +494,21 @@ func main() {
 [[Back to top]](#)
 
 ## list-complete-workflow-library
-List complete workflow library
-This lists all triggers, actions, and operators in the library
+
+List complete workflow library This lists all triggers, actions, and operators in the library
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/list-complete-workflow-library)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListCompleteWorkflowLibraryRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
 
 ### Return type
 
@@ -555,8 +528,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -564,7 +537,7 @@ func main() {
     limit := 250 // int32 | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 250) # int32 | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 250)
     offset := 0 // int32 | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 0) # int32 | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 0)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -582,25 +555,22 @@ func main() {
 [[Back to top]](#)
 
 ## list-workflow-library-actions
-List workflow library actions
-This lists the workflow actions available to you.
+
+List workflow library actions This lists the workflow actions available to you.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/list-workflow-library-actions)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListWorkflowLibraryActionsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq* | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
+| **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **id**: _eq_ |
 
 ### Return type
 
@@ -620,8 +590,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -630,7 +600,7 @@ func main() {
     offset := 0 // int32 | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 0) # int32 | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 0)
     filters := `id eq "sp:create-campaign"` // string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq* (optional) # string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq* (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -648,8 +618,8 @@ func main() {
 [[Back to top]](#)
 
 ## list-workflow-library-operators
-List workflow library operators
-This lists the workflow operators available to you
+
+List workflow library operators This lists the workflow operators available to you
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/list-workflow-library-operators)
 
@@ -660,7 +630,6 @@ This endpoint does not need any parameter.
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListWorkflowLibraryOperatorsRequest struct via the builder pattern
-
 
 ### Return type
 
@@ -680,14 +649,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -705,25 +674,22 @@ func main() {
 [[Back to top]](#)
 
 ## list-workflow-library-triggers
-List workflow library triggers
-This lists the workflow triggers available to you
+
+List workflow library triggers This lists the workflow triggers available to you
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/list-workflow-library-triggers)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListWorkflowLibraryTriggersRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq* | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
+| **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **id**: _eq_ |
 
 ### Return type
 
@@ -743,8 +709,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -753,7 +719,7 @@ func main() {
     offset := 0 // int32 | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 0) # int32 | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 0)
     filters := `id eq "idn:identity-attributes-changed"` // string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq* (optional) # string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq* (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -771,26 +737,23 @@ func main() {
 [[Back to top]](#)
 
 ## list-workflows
-List workflows
-List all workflows in the tenant.
+
+List workflows List all workflows in the tenant.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/list-workflows)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListWorkflowsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **triggerId** | **string** | Trigger ID | 
- **connectorInstanceId** | **string** | Connector Instance ID | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
+| **triggerId** | **string** | Trigger ID |
+| **connectorInstanceId** | **string** | Connector Instance ID |
 
 ### Return type
 
@@ -810,8 +773,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -821,7 +784,7 @@ func main() {
     triggerId := `idn:identity-created` // string | Trigger ID (optional) # string | Trigger ID (optional)
     connectorInstanceId := `28541fec-bb81-4ad4-88ef-0f7d213adcad` // string | Connector Instance ID (optional) # string | Connector Instance ID (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -839,28 +802,26 @@ func main() {
 [[Back to top]](#)
 
 ## patch-workflow
-Patch workflow
-Partially update an existing Workflow using [JSON Patch](https://tools.ietf.org/html/rfc6902) syntax.
+
+Patch workflow Partially update an existing Workflow using [JSON Patch](https://tools.ietf.org/html/rfc6902) syntax.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/patch-workflow)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Id of the Workflow | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Id of the Workflow |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiPatchWorkflowRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **jsonPatchOperation** | [**[]JsonPatchOperation**](../models/json-patch-operation) |  | 
+**jsonPatchOperation** | [**[]JsonPatchOperation**](../models/json-patch-operation) | |
 
 ### Return type
 
@@ -887,14 +848,14 @@ import (
 
 func main() {
     id := `c17bea3a-574d-453c-9e04-4365fbf5af0b` // string | Id of the Workflow # string | Id of the Workflow
-    jsonpatchoperation := []byte(`[{op=replace, path=/name, value=Send Email}, {op=replace, path=/owner, value={type=IDENTITY, id=2c91808568c529c60168cca6f90c1313, name=William Wilson}}, {op=replace, path=/description, value=Send an email to the identity who's attributes changed.}, {op=replace, path=/enabled, value=false}, {op=replace, path=/definition, value={start=Send Email Test, steps={Send Email={actionId=sp:send-email, attributes={body=This is a test, from=sailpoint@sailpoint.com, recipientId.$=$.identity.id, subject=test}, nextStep=success, selectResult=null, type=action}, success={type=success}}}}, {op=replace, path=/trigger, value={type=EVENT, attributes={id=idn:identity-attributes-changed}}}]`) // []JsonPatchOperation | 
+    jsonpatchoperation := []byte(`[{op=replace, path=/name, value=Send Email}, {op=replace, path=/owner, value={type=IDENTITY, id=2c91808568c529c60168cca6f90c1313, name=William Wilson}}, {op=replace, path=/description, value=Send an email to the identity who's attributes changed.}, {op=replace, path=/enabled, value=false}, {op=replace, path=/definition, value={start=Send Email Test, steps={Send Email={actionId=sp:send-email, attributes={body=This is a test, from=sailpoint@sailpoint.com, recipientId.$=$.identity.id, subject=test}, nextStep=success, selectResult=null, type=action}, success={type=success}}}}, {op=replace, path=/trigger, value={type=EVENT, attributes={id=idn:identity-attributes-changed}}}]`) // []JsonPatchOperation |
 
     var jsonPatchOperation []beta.JsonPatchOperation
     if err := json.Unmarshal(jsonpatchoperation, &jsonPatchOperation); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -912,28 +873,26 @@ func main() {
 [[Back to top]](#)
 
 ## post-external-execute-workflow
-Execute workflow via external trigger
-This endpoint allows a service outside of IdentityNow to initiate a workflow that uses the "External Trigger" step.  The external service will invoke this endpoint with the input data it wants to send to the workflow in the body.
+
+Execute workflow via external trigger This endpoint allows a service outside of IdentityNow to initiate a workflow that uses the "External Trigger" step. The external service will invoke this endpoint with the input data it wants to send to the workflow in the body.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/post-external-execute-workflow)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Id of the workflow | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Id of the workflow |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiPostExternalExecuteWorkflowRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **postExternalExecuteWorkflowRequest** | [**PostExternalExecuteWorkflowRequest**](../models/post-external-execute-workflow-request) |  | 
+**postExternalExecuteWorkflowRequest** | [**PostExternalExecuteWorkflowRequest**](../models/post-external-execute-workflow-request) | |
 
 ### Return type
 
@@ -953,8 +912,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -962,7 +921,7 @@ func main() {
     id := `c17bea3a-574d-453c-9e04-4365fbf5af0b` // string | Id of the workflow # string | Id of the workflow
     postexternalexecuteworkflowrequest := []byte(``) // PostExternalExecuteWorkflowRequest |  (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -980,27 +939,24 @@ func main() {
 [[Back to top]](#)
 
 ## post-workflow-external-trigger
-Generate external trigger oauth client
-Create OAuth client ID, client secret, and callback URL for use in an external trigger.  External triggers will need this information to generate an access token to authenticate to the callback URL and submit a trigger payload that will initiate the workflow.
+
+Generate external trigger oauth client Create OAuth client ID, client secret, and callback URL for use in an external trigger. External triggers will need this information to generate an access token to authenticate to the callback URL and submit a trigger payload that will initiate the workflow.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/post-workflow-external-trigger)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Id of the workflow | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Id of the workflow |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiPostWorkflowExternalTriggerRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -1020,15 +976,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `c17bea3a-574d-453c-9e04-4365fbf5af0b` // string | Id of the workflow # string | Id of the workflow
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1046,28 +1002,26 @@ func main() {
 [[Back to top]](#)
 
 ## put-workflow
-Update workflow
-Perform a full update of a workflow.  The updated workflow object is returned in the response.
+
+Update workflow Perform a full update of a workflow. The updated workflow object is returned in the response.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/put-workflow)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Id of the Workflow | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Id of the Workflow |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiPutWorkflowRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **workflowBody** | [**WorkflowBody**](../models/workflow-body) |  | 
+**workflowBody** | [**WorkflowBody**](../models/workflow-body) | |
 
 ### Return type
 
@@ -1127,14 +1081,14 @@ func main() {
             "type" : "EVENT"
           },
           "enabled" : false
-        }`) // WorkflowBody | 
+        }`) // WorkflowBody |
 
     var workflowBody beta.WorkflowBody
     if err := json.Unmarshal(workflowbody, &workflowBody); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1152,28 +1106,26 @@ func main() {
 [[Back to top]](#)
 
 ## test-external-execute-workflow
-Test workflow via external trigger
-Validate a workflow with an "External Trigger" can receive input.  The response includes the input that the workflow received, which can be used to validate that the input is intact when it reaches the workflow.
+
+Test workflow via external trigger Validate a workflow with an "External Trigger" can receive input. The response includes the input that the workflow received, which can be used to validate that the input is intact when it reaches the workflow.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/test-external-execute-workflow)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Id of the workflow | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Id of the workflow |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiTestExternalExecuteWorkflowRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **testExternalExecuteWorkflowRequest** | [**TestExternalExecuteWorkflowRequest**](../models/test-external-execute-workflow-request) |  | 
+**testExternalExecuteWorkflowRequest** | [**TestExternalExecuteWorkflowRequest**](../models/test-external-execute-workflow-request) | |
 
 ### Return type
 
@@ -1193,8 +1145,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -1202,7 +1154,7 @@ func main() {
     id := `c17bea3a-574d-453c-9e04-4365fbf5af0b` // string | Id of the workflow # string | Id of the workflow
     testexternalexecuteworkflowrequest := []byte(``) // TestExternalExecuteWorkflowRequest |  (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1220,30 +1172,26 @@ func main() {
 [[Back to top]](#)
 
 ## test-workflow
-Test workflow by id
-Test a workflow with the provided input data.  The input data should resemble the input that the trigger will send the workflow.  See the [event trigger documentation](https://developer.sailpoint.com/idn/docs/event-triggers/available) for an example input for the trigger that initiates this workflow.
-This endpoint will return an execution ID, which can be used to lookup more information about the execution using the `Get a Workflow Execution` endpoint.
-**This will cause a live run of the workflow, which could result in unintended modifications to your IDN tenant.**
+
+Test workflow by id Test a workflow with the provided input data. The input data should resemble the input that the trigger will send the workflow. See the [event trigger documentation](https://developer.sailpoint.com/idn/docs/event-triggers/available) for an example input for the trigger that initiates this workflow. This endpoint will return an execution ID, which can be used to lookup more information about the execution using the `Get a Workflow Execution` endpoint. **This will cause a live run of the workflow, which could result in unintended modifications to your IDN tenant.**
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/test-workflow)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Id of the workflow | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Id of the workflow |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiTestWorkflowRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **testWorkflowRequest** | [**TestWorkflowRequest**](../models/test-workflow-request) |  | 
+**testWorkflowRequest** | [**TestWorkflowRequest**](../models/test-workflow-request) | |
 
 ### Return type
 
@@ -1270,14 +1218,14 @@ import (
 
 func main() {
     id := `c17bea3a-574d-453c-9e04-4365fbf5af0b` // string | Id of the workflow # string | Id of the workflow
-    testworkflowrequest := []byte(`{input={identity={id=ee769173319b41d19ccec6cea52f237b, name=john.doe, type=IDENTITY}, changes=[{attribute=department, oldValue=sales, newValue=marketing}, {attribute=manager, oldValue={id=ee769173319b41d19ccec6c235423237b, name=nice.guy, type=IDENTITY}, newValue={id=ee769173319b41d19ccec6c235423236c, name=mean.guy, type=IDENTITY}}, {attribute=email, oldValue=john.doe@hotmail.com, newValue=john.doe@gmail.com}]}}`) // TestWorkflowRequest | 
+    testworkflowrequest := []byte(`{input={identity={id=ee769173319b41d19ccec6cea52f237b, name=john.doe, type=IDENTITY}, changes=[{attribute=department, oldValue=sales, newValue=marketing}, {attribute=manager, oldValue={id=ee769173319b41d19ccec6c235423237b, name=nice.guy, type=IDENTITY}, newValue={id=ee769173319b41d19ccec6c235423236c, name=mean.guy, type=IDENTITY}}, {attribute=email, oldValue=john.doe@hotmail.com, newValue=john.doe@gmail.com}]}}`) // TestWorkflowRequest |
 
     var testWorkflowRequest beta.TestWorkflowRequest
     if err := json.Unmarshal(testworkflowrequest, &testWorkflowRequest); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1293,4 +1241,3 @@ func main() {
 ```
 
 [[Back to top]](#)
-

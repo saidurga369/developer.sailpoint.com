@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import styles from './styles.module.css';
 import VideoCard from '../VideoCard';
 import {
@@ -7,11 +7,11 @@ import {
   developerWebsiteDomain,
 } from '../../../util/util';
 import NewtonsCradle from '../../newtonsCradle';
-import { getVideoPosts } from '../../../services/DiscourseService';
+import {getVideoPosts} from '../../../services/DiscourseService';
 
 // Define the props interface
 interface VideoCardsProps {
-  filterCallback: { tags?: string[] };
+  filterCallback: {tags?: string[]};
   limit?: number;
   featured?: boolean;
 }
@@ -28,7 +28,11 @@ interface VideoPost {
   url: string;
 }
 
-const VideoCards: React.FC<VideoCardsProps> = ({ filterCallback, limit, featured }) => {
+const VideoCards: React.FC<VideoCardsProps> = ({
+  filterCallback,
+  limit,
+  featured,
+}) => {
   const [cardData, setCardData] = useState<VideoPost[] | undefined>();
   const [loadingCards, setLoadingCards] = useState<boolean>(true);
 
@@ -42,7 +46,7 @@ const VideoCards: React.FC<VideoCardsProps> = ({ filterCallback, limit, featured
     const lastSegment = videoUrl.split('/').pop() || '';
     const page = lastSegment.replace('.html', '');
     const description = parts.length > 1 ? parts[1].trim() : '';
-    return { videoUrl, description, page };
+    return {videoUrl, description, page};
   };
 
   const shortenTitle = (title: string): string => {
@@ -57,16 +61,18 @@ const VideoCards: React.FC<VideoCardsProps> = ({ filterCallback, limit, featured
     if (data.topic_list) {
       for (const topic of data.topic_list.topics) {
         if (topic.tags.length > 0) {
-          let { videoUrl, description } = parseVideoDetails(topic.excerpt);
+          let {videoUrl, description} = parseVideoDetails(topic.excerpt);
           let thumbnail = videoUrl.replace('.html', '.jpg');
           let avatar = '';
           let username = '';
           let ogPoster = topic.posters.find((poster: any) =>
-            poster.description.includes('Original Poster')
+            poster.description.includes('Original Poster'),
           );
 
           if (ogPoster) {
-            let user = data.users.find((user: any) => user.id === ogPoster.user_id);
+            let user = data.users.find(
+              (user: any) => user.id === ogPoster.user_id,
+            );
             if (user) {
               username = user.name;
               avatar = getAvatarURL(user.avatar_template);
@@ -107,11 +113,17 @@ const VideoCards: React.FC<VideoCardsProps> = ({ filterCallback, limit, featured
   return (
     <div className={featured ? undefined : styles.center}>
       {loadingCards ? (
-        <div className={featured ? styles.featuredSpinnerCenter : styles.spinnerCenter}>
+        <div
+          className={
+            featured ? styles.featuredSpinnerCenter : styles.spinnerCenter
+          }>
           <NewtonsCradle />
         </div>
       ) : cardData && cardData.length > 0 ? (
-        <div className={featured ? styles.featuredGridContainer : styles.gridContainer}>
+        <div
+          className={
+            featured ? styles.featuredGridContainer : styles.gridContainer
+          }>
           {cardData.map((a) => (
             <VideoCard
               featured={featured}

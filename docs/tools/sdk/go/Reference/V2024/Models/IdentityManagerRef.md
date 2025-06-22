@@ -4,20 +4,27 @@ title: IdentityManagerRef
 pagination_label: IdentityManagerRef
 sidebar_label: IdentityManagerRef
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IdentityManagerRef', 'V2024IdentityManagerRef'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'IdentityManagerRef', 'V2024IdentityManagerRef']
 slug: /tools/sdk/go/v2024/models/identity-manager-ref
-tags: ['SDK', 'Software Development Kit', 'IdentityManagerRef', 'V2024IdentityManagerRef']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityManagerRef',
+    'V2024IdentityManagerRef',
+  ]
 ---
 
 # IdentityManagerRef
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | DTO type of identity's manager | [optional] 
-**Id** | Pointer to **string** | ID of identity's manager | [optional] 
-**Name** | Pointer to **string** | Human-readable display name of identity's manager | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to **string** | DTO type of identity's manager | [optional] |
+| **Id** | Pointer to **string** | ID of identity's manager | [optional] |
+| **Name** | Pointer to **string** | Human-readable display name of identity's manager | [optional] |
 
 ## Methods
 
@@ -25,18 +32,13 @@ Name | Type | Description | Notes
 
 `func NewIdentityManagerRef() *IdentityManagerRef`
 
-NewIdentityManagerRef instantiates a new IdentityManagerRef object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewIdentityManagerRef instantiates a new IdentityManagerRef object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewIdentityManagerRefWithDefaults
 
 `func NewIdentityManagerRefWithDefaults() *IdentityManagerRef`
 
-NewIdentityManagerRefWithDefaults instantiates a new IdentityManagerRef object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewIdentityManagerRefWithDefaults instantiates a new IdentityManagerRef object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -48,8 +50,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *IdentityManagerRef) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -73,8 +74,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *IdentityManagerRef) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -98,8 +98,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *IdentityManagerRef) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -112,5 +111,3 @@ SetName sets Name field to given value.
 `func (o *IdentityManagerRef) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

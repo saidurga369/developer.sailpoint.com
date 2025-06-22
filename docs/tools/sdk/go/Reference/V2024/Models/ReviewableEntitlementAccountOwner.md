@@ -4,20 +4,33 @@ title: ReviewableEntitlementAccountOwner
 pagination_label: ReviewableEntitlementAccountOwner
 sidebar_label: ReviewableEntitlementAccountOwner
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ReviewableEntitlementAccountOwner', 'V2024ReviewableEntitlementAccountOwner'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ReviewableEntitlementAccountOwner',
+    'V2024ReviewableEntitlementAccountOwner',
+  ]
 slug: /tools/sdk/go/v2024/models/reviewable-entitlement-account-owner
-tags: ['SDK', 'Software Development Kit', 'ReviewableEntitlementAccountOwner', 'V2024ReviewableEntitlementAccountOwner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ReviewableEntitlementAccountOwner',
+    'V2024ReviewableEntitlementAccountOwner',
+  ]
 ---
 
 # ReviewableEntitlementAccountOwner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **NullableString** | The id associated with the machine account owner | [optional] 
-**Type** | Pointer to **string** | An enumeration of the types of Owner supported within the IdentityNow infrastructure. | [optional] 
-**DisplayName** | Pointer to **NullableString** | The machine account owner's display name | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **NullableString** | The id associated with the machine account owner | [optional] |
+| **Type** | Pointer to **string** | An enumeration of the types of Owner supported within the IdentityNow infrastructure. | [optional] |
+| **DisplayName** | Pointer to **NullableString** | The machine account owner's display name | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewReviewableEntitlementAccountOwner() *ReviewableEntitlementAccountOwner`
 
-NewReviewableEntitlementAccountOwner instantiates a new ReviewableEntitlementAccountOwner object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewReviewableEntitlementAccountOwner instantiates a new ReviewableEntitlementAccountOwner object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewReviewableEntitlementAccountOwnerWithDefaults
 
 `func NewReviewableEntitlementAccountOwnerWithDefaults() *ReviewableEntitlementAccountOwner`
 
-NewReviewableEntitlementAccountOwnerWithDefaults instantiates a new ReviewableEntitlementAccountOwner object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewReviewableEntitlementAccountOwnerWithDefaults instantiates a new ReviewableEntitlementAccountOwner object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -48,8 +56,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *ReviewableEntitlementAccountOwner) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -67,12 +74,14 @@ HasId returns a boolean if a field has been set.
 
 `func (o *ReviewableEntitlementAccountOwner) SetIdNil(b bool)`
 
- SetIdNil sets the value for Id to be an explicit nil
+SetIdNil sets the value for Id to be an explicit nil
 
 ### UnsetId
+
 `func (o *ReviewableEntitlementAccountOwner) UnsetId()`
 
 UnsetId ensures that no value is present for Id, not even an explicit nil
+
 ### GetType
 
 `func (o *ReviewableEntitlementAccountOwner) GetType() string`
@@ -83,8 +92,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *ReviewableEntitlementAccountOwner) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -108,8 +116,7 @@ GetDisplayName returns the DisplayName field if non-nil, zero value otherwise.
 
 `func (o *ReviewableEntitlementAccountOwner) GetDisplayNameOk() (*string, bool)`
 
-GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayName
 
@@ -127,10 +134,10 @@ HasDisplayName returns a boolean if a field has been set.
 
 `func (o *ReviewableEntitlementAccountOwner) SetDisplayNameNil(b bool)`
 
- SetDisplayNameNil sets the value for DisplayName to be an explicit nil
+SetDisplayNameNil sets the value for DisplayName to be an explicit nil
 
 ### UnsetDisplayName
+
 `func (o *ReviewableEntitlementAccountOwner) UnsetDisplayName()`
 
 UnsetDisplayName ensures that no value is present for DisplayName, not even an explicit nil
-

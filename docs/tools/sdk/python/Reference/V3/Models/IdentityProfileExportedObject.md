@@ -4,9 +4,22 @@ title: IdentityProfileExportedObject
 pagination_label: IdentityProfileExportedObject
 sidebar_label: IdentityProfileExportedObject
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentityProfileExportedObject', 'IdentityProfileExportedObject'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'IdentityProfileExportedObject',
+    'IdentityProfileExportedObject',
+  ]
 slug: /tools/sdk/python/v3/models/identity-profile-exported-object
-tags: ['SDK', 'Software Development Kit', 'IdentityProfileExportedObject', 'IdentityProfileExportedObject']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityProfileExportedObject',
+    'IdentityProfileExportedObject',
+  ]
 ---
 
 # IdentityProfileExportedObject
@@ -15,11 +28,12 @@ Identity profile exported object.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**version** | **int** | Version or object from the target service. | [optional] 
-**var_self** | [**IdentityProfileExportedObjectSelf**](identity-profile-exported-object-self) |  | [optional] 
-**object** | [**IdentityProfile**](identity-profile) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **version** | **int** | Version or object from the target service. | [optional] |
+| **var_self** | [**IdentityProfileExportedObjectSelf**](identity-profile-exported-object-self) |  | [optional] |
+| **object** | [**IdentityProfile**](identity-profile) |  | [optional] |
+
 }
 
 ## Example
@@ -30,12 +44,12 @@ from sailpoint.v3.models.identity_profile_exported_object import IdentityProfile
 identity_profile_exported_object = IdentityProfileExportedObject(
 version=1,
 var_self=sailpoint.v3.models.identity_profile_exported_object_self.IdentityProfileExportedObject_self(
-                    type = 'SOURCE', 
-                    id = '2c9180835d191a86015d28455b4b232a', 
+                    type = 'SOURCE',
+                    id = '2c9180835d191a86015d28455b4b232a',
                     name = 'HR Active Directory', ),
 object=
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

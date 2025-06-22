@@ -4,19 +4,32 @@ title: LoadUncorrelatedAccountsTaskTaskAttributes
 pagination_label: LoadUncorrelatedAccountsTaskTaskAttributes
 sidebar_label: LoadUncorrelatedAccountsTaskTaskAttributes
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'LoadUncorrelatedAccountsTaskTaskAttributes', 'BetaLoadUncorrelatedAccountsTaskTaskAttributes'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'LoadUncorrelatedAccountsTaskTaskAttributes',
+    'BetaLoadUncorrelatedAccountsTaskTaskAttributes',
+  ]
 slug: /tools/sdk/go/beta/models/load-uncorrelated-accounts-task-task-attributes
-tags: ['SDK', 'Software Development Kit', 'LoadUncorrelatedAccountsTaskTaskAttributes', 'BetaLoadUncorrelatedAccountsTaskTaskAttributes']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'LoadUncorrelatedAccountsTaskTaskAttributes',
+    'BetaLoadUncorrelatedAccountsTaskTaskAttributes',
+  ]
 ---
 
 # LoadUncorrelatedAccountsTaskTaskAttributes
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**QpocJobId** | Pointer to **string** | The id of qpoc job | [optional] 
-**TaskStartDelay** | Pointer to **map[string]interface{}** | the task start delay value | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **QpocJobId** | Pointer to **string** | The id of qpoc job | [optional] |
+| **TaskStartDelay** | Pointer to **map[string]interface{}** | the task start delay value | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewLoadUncorrelatedAccountsTaskTaskAttributes() *LoadUncorrelatedAccountsTaskTaskAttributes`
 
-NewLoadUncorrelatedAccountsTaskTaskAttributes instantiates a new LoadUncorrelatedAccountsTaskTaskAttributes object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewLoadUncorrelatedAccountsTaskTaskAttributes instantiates a new LoadUncorrelatedAccountsTaskTaskAttributes object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewLoadUncorrelatedAccountsTaskTaskAttributesWithDefaults
 
 `func NewLoadUncorrelatedAccountsTaskTaskAttributesWithDefaults() *LoadUncorrelatedAccountsTaskTaskAttributes`
 
-NewLoadUncorrelatedAccountsTaskTaskAttributesWithDefaults instantiates a new LoadUncorrelatedAccountsTaskTaskAttributes object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewLoadUncorrelatedAccountsTaskTaskAttributesWithDefaults instantiates a new LoadUncorrelatedAccountsTaskTaskAttributes object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetQpocJobId
 
@@ -47,8 +55,7 @@ GetQpocJobId returns the QpocJobId field if non-nil, zero value otherwise.
 
 `func (o *LoadUncorrelatedAccountsTaskTaskAttributes) GetQpocJobIdOk() (*string, bool)`
 
-GetQpocJobIdOk returns a tuple with the QpocJobId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetQpocJobIdOk returns a tuple with the QpocJobId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetQpocJobId
 
@@ -72,8 +79,7 @@ GetTaskStartDelay returns the TaskStartDelay field if non-nil, zero value otherw
 
 `func (o *LoadUncorrelatedAccountsTaskTaskAttributes) GetTaskStartDelayOk() (*map[string]interface{}, bool)`
 
-GetTaskStartDelayOk returns a tuple with the TaskStartDelay field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTaskStartDelayOk returns a tuple with the TaskStartDelay field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTaskStartDelay
 
@@ -86,5 +92,3 @@ SetTaskStartDelay sets TaskStartDelay field to given value.
 `func (o *LoadUncorrelatedAccountsTaskTaskAttributes) HasTaskStartDelay() bool`
 
 HasTaskStartDelay returns a boolean if a field has been set.
-
-

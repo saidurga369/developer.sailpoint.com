@@ -4,20 +4,33 @@ title: EntitlementBulkUpdateRequest
 pagination_label: EntitlementBulkUpdateRequest
 sidebar_label: EntitlementBulkUpdateRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'EntitlementBulkUpdateRequest', 'V2024EntitlementBulkUpdateRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'EntitlementBulkUpdateRequest',
+    'V2024EntitlementBulkUpdateRequest',
+  ]
 slug: /tools/sdk/python/v2024/models/entitlement-bulk-update-request
-tags: ['SDK', 'Software Development Kit', 'EntitlementBulkUpdateRequest', 'V2024EntitlementBulkUpdateRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'EntitlementBulkUpdateRequest',
+    'V2024EntitlementBulkUpdateRequest',
+  ]
 ---
 
 # EntitlementBulkUpdateRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**entitlement_ids** | **[]str** | List of entitlement ids to update | [required]
-**json_patch** | [**[]JsonPatchOperation**](json-patch-operation) |  | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **entitlement_ids** | **[]str** | List of entitlement ids to update | [required] |
+| **json_patch** | [**[]JsonPatchOperation**](json-patch-operation) |  | [required] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ json_patch=[{op=replace, path=/privileged, value=false}, {op=replace, path=/requ
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

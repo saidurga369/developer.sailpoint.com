@@ -4,20 +4,33 @@ title: PasswordPolicyHoldersDtoAttributesIdentityAttrInner
 pagination_label: PasswordPolicyHoldersDtoAttributesIdentityAttrInner
 sidebar_label: PasswordPolicyHoldersDtoAttributesIdentityAttrInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'PasswordPolicyHoldersDtoAttributesIdentityAttrInner', 'V2024PasswordPolicyHoldersDtoAttributesIdentityAttrInner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'PasswordPolicyHoldersDtoAttributesIdentityAttrInner',
+    'V2024PasswordPolicyHoldersDtoAttributesIdentityAttrInner',
+  ]
 slug: /tools/sdk/python/v2024/models/password-policy-holders-dto-attributes-identity-attr-inner
-tags: ['SDK', 'Software Development Kit', 'PasswordPolicyHoldersDtoAttributesIdentityAttrInner', 'V2024PasswordPolicyHoldersDtoAttributesIdentityAttrInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PasswordPolicyHoldersDtoAttributesIdentityAttrInner',
+    'V2024PasswordPolicyHoldersDtoAttributesIdentityAttrInner',
+  ]
 ---
 
 # PasswordPolicyHoldersDtoAttributesIdentityAttrInner
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | Attribute's name | [optional] 
-**value** | **str** | Attribute's value | [optional] 
+| Name      | Type    | Description       | Notes      |
+| --------- | ------- | ----------------- | ---------- |
+| **name**  | **str** | Attribute's name  | [optional] |
+| **value** | **str** | Attribute's value | [optional] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ value='Canada'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

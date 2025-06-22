@@ -4,9 +4,10 @@ title: CommentDtoAuthor
 pagination_label: CommentDtoAuthor
 sidebar_label: CommentDtoAuthor
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'CommentDtoAuthor', 'CommentDtoAuthor'] 
+keywords: ['python', 'Python', 'sdk', 'CommentDtoAuthor', 'CommentDtoAuthor']
 slug: /tools/sdk/python/v3/models/comment-dto-author
-tags: ['SDK', 'Software Development Kit', 'CommentDtoAuthor', 'CommentDtoAuthor']
+tags:
+  ['SDK', 'Software Development Kit', 'CommentDtoAuthor', 'CommentDtoAuthor']
 ---
 
 # CommentDtoAuthor
@@ -15,11 +16,12 @@ Author of the comment
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] | The type of object | [optional] 
-**id** | **str** | The unique ID of the object | [optional] 
-**name** | **str** | The display name of the object | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'IDENTITY' ] | The type of object | [optional] |
+| **id** | **str** | The unique ID of the object | [optional] |
+| **name** | **str** | The display name of the object | [optional] |
+
 }
 
 ## Example
@@ -34,5 +36,5 @@ name='john.doe'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

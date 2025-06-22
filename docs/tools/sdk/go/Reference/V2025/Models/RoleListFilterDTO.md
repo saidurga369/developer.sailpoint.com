@@ -4,19 +4,25 @@ title: RoleListFilterDTO
 pagination_label: RoleListFilterDTO
 sidebar_label: RoleListFilterDTO
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleListFilterDTO', 'V2025RoleListFilterDTO'] 
+keywords: ['go', 'Golang', 'sdk', 'RoleListFilterDTO', 'V2025RoleListFilterDTO']
 slug: /tools/sdk/go/v2025/models/role-list-filter-dto
-tags: ['SDK', 'Software Development Kit', 'RoleListFilterDTO', 'V2025RoleListFilterDTO']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleListFilterDTO',
+    'V2025RoleListFilterDTO',
+  ]
 ---
 
 # RoleListFilterDTO
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Filters** | Pointer to **NullableString** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators:  **id**: *eq, in*  **name**: *eq, sw*  **created**: *gt, lt, ge, le*  **modified**: *gt, lt, ge, le*  **owner.id**: *eq, in*  **requestable**: *eq* | [optional] 
-**AmmKeyValues** | Pointer to [**[]RoleListFilterDTOAmmKeyValuesInner**](role-list-filter-dto-amm-key-values-inner) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Filters** | Pointer to **NullableString** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **id**: _eq, in_ **name**: _eq, sw_ **created**: _gt, lt, ge, le_ **modified**: _gt, lt, ge, le_ **owner.id**: _eq, in_ **requestable**: _eq_ | [optional] |
+| **AmmKeyValues** | Pointer to [**[]RoleListFilterDTOAmmKeyValuesInner**](role-list-filter-dto-amm-key-values-inner) |  | [optional] |
 
 ## Methods
 
@@ -24,18 +30,13 @@ Name | Type | Description | Notes
 
 `func NewRoleListFilterDTO() *RoleListFilterDTO`
 
-NewRoleListFilterDTO instantiates a new RoleListFilterDTO object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleListFilterDTO instantiates a new RoleListFilterDTO object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleListFilterDTOWithDefaults
 
 `func NewRoleListFilterDTOWithDefaults() *RoleListFilterDTO`
 
-NewRoleListFilterDTOWithDefaults instantiates a new RoleListFilterDTO object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleListFilterDTOWithDefaults instantiates a new RoleListFilterDTO object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetFilters
 
@@ -47,8 +48,7 @@ GetFilters returns the Filters field if non-nil, zero value otherwise.
 
 `func (o *RoleListFilterDTO) GetFiltersOk() (*string, bool)`
 
-GetFiltersOk returns a tuple with the Filters field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFiltersOk returns a tuple with the Filters field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFilters
 
@@ -66,12 +66,14 @@ HasFilters returns a boolean if a field has been set.
 
 `func (o *RoleListFilterDTO) SetFiltersNil(b bool)`
 
- SetFiltersNil sets the value for Filters to be an explicit nil
+SetFiltersNil sets the value for Filters to be an explicit nil
 
 ### UnsetFilters
+
 `func (o *RoleListFilterDTO) UnsetFilters()`
 
 UnsetFilters ensures that no value is present for Filters, not even an explicit nil
+
 ### GetAmmKeyValues
 
 `func (o *RoleListFilterDTO) GetAmmKeyValues() []RoleListFilterDTOAmmKeyValuesInner`
@@ -82,8 +84,7 @@ GetAmmKeyValues returns the AmmKeyValues field if non-nil, zero value otherwise.
 
 `func (o *RoleListFilterDTO) GetAmmKeyValuesOk() (*[]RoleListFilterDTOAmmKeyValuesInner, bool)`
 
-GetAmmKeyValuesOk returns a tuple with the AmmKeyValues field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAmmKeyValuesOk returns a tuple with the AmmKeyValues field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAmmKeyValues
 
@@ -101,10 +102,10 @@ HasAmmKeyValues returns a boolean if a field has been set.
 
 `func (o *RoleListFilterDTO) SetAmmKeyValuesNil(b bool)`
 
- SetAmmKeyValuesNil sets the value for AmmKeyValues to be an explicit nil
+SetAmmKeyValuesNil sets the value for AmmKeyValues to be an explicit nil
 
 ### UnsetAmmKeyValues
+
 `func (o *RoleListFilterDTO) UnsetAmmKeyValues()`
 
 UnsetAmmKeyValues ensures that no value is present for AmmKeyValues, not even an explicit nil
-

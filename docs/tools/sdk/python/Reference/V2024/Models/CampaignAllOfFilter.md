@@ -4,9 +4,16 @@ title: CampaignAllOfFilter
 pagination_label: CampaignAllOfFilter
 sidebar_label: CampaignAllOfFilter
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'CampaignAllOfFilter', 'V2024CampaignAllOfFilter'] 
+keywords:
+  ['python', 'Python', 'sdk', 'CampaignAllOfFilter', 'V2024CampaignAllOfFilter']
 slug: /tools/sdk/python/v2024/models/campaign-all-of-filter
-tags: ['SDK', 'Software Development Kit', 'CampaignAllOfFilter', 'V2024CampaignAllOfFilter']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CampaignAllOfFilter',
+    'V2024CampaignAllOfFilter',
+  ]
 ---
 
 # CampaignAllOfFilter
@@ -15,11 +22,12 @@ Determines which items will be included in this campaign. The default campaign f
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The ID of whatever type of filter is being used. | [optional] 
-**type** |  **Enum** [  'CAMPAIGN_FILTER',    'RULE' ] | Type of the filter | [optional] 
-**name** | **str** | Name of the filter | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The ID of whatever type of filter is being used. | [optional] |
+| **type** | **Enum** [ 'CAMPAIGN_FILTER', 'RULE' ] | Type of the filter | [optional] |
+| **name** | **str** | Name of the filter | [optional] |
+
 }
 
 ## Example
@@ -34,5 +42,5 @@ name='Test Filter'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

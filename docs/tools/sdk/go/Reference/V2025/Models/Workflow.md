@@ -4,7 +4,7 @@ title: Workflow
 pagination_label: Workflow
 sidebar_label: Workflow
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Workflow', 'V2025Workflow'] 
+keywords: ['go', 'Golang', 'sdk', 'Workflow', 'V2025Workflow']
 slug: /tools/sdk/go/v2025/models/workflow
 tags: ['SDK', 'Software Development Kit', 'Workflow', 'V2025Workflow']
 ---
@@ -13,21 +13,21 @@ tags: ['SDK', 'Software Development Kit', 'Workflow', 'V2025Workflow']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | Pointer to **string** | The name of the workflow | [optional] 
-**Owner** | Pointer to [**WorkflowBodyOwner**](workflow-body-owner) |  | [optional] 
-**Description** | Pointer to **string** | Description of what the workflow accomplishes | [optional] 
-**Definition** | Pointer to [**WorkflowDefinition**](workflow-definition) |  | [optional] 
-**Enabled** | Pointer to **bool** | Enable or disable the workflow.  Workflows cannot be created in an enabled state. | [optional] [default to false]
-**Trigger** | Pointer to [**WorkflowTrigger**](workflow-trigger) |  | [optional] 
-**Id** | Pointer to **string** | Workflow ID. This is a UUID generated upon creation. | [optional] 
-**ExecutionCount** | Pointer to **int32** | The number of times this workflow has been executed. | [optional] 
-**FailureCount** | Pointer to **int32** | The number of times this workflow has failed during execution. | [optional] 
-**Created** | Pointer to **SailPointTime** | The date and time the workflow was created. | [optional] 
-**Modified** | Pointer to **SailPointTime** | The date and time the workflow was modified. | [optional] 
-**ModifiedBy** | Pointer to [**WorkflowModifiedBy**](workflow-modified-by) |  | [optional] 
-**Creator** | Pointer to [**WorkflowAllOfCreator**](workflow-all-of-creator) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | Pointer to **string** | The name of the workflow | [optional] |
+| **Owner** | Pointer to [**WorkflowBodyOwner**](workflow-body-owner) |  | [optional] |
+| **Description** | Pointer to **string** | Description of what the workflow accomplishes | [optional] |
+| **Definition** | Pointer to [**WorkflowDefinition**](workflow-definition) |  | [optional] |
+| **Enabled** | Pointer to **bool** | Enable or disable the workflow. Workflows cannot be created in an enabled state. | [optional] [default to false] |
+| **Trigger** | Pointer to [**WorkflowTrigger**](workflow-trigger) |  | [optional] |
+| **Id** | Pointer to **string** | Workflow ID. This is a UUID generated upon creation. | [optional] |
+| **ExecutionCount** | Pointer to **int32** | The number of times this workflow has been executed. | [optional] |
+| **FailureCount** | Pointer to **int32** | The number of times this workflow has failed during execution. | [optional] |
+| **Created** | Pointer to **SailPointTime** | The date and time the workflow was created. | [optional] |
+| **Modified** | Pointer to **SailPointTime** | The date and time the workflow was modified. | [optional] |
+| **ModifiedBy** | Pointer to [**WorkflowModifiedBy**](workflow-modified-by) |  | [optional] |
+| **Creator** | Pointer to [**WorkflowAllOfCreator**](workflow-all-of-creator) |  | [optional] |
 
 ## Methods
 
@@ -35,18 +35,13 @@ Name | Type | Description | Notes
 
 `func NewWorkflow() *Workflow`
 
-NewWorkflow instantiates a new Workflow object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewWorkflow instantiates a new Workflow object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewWorkflowWithDefaults
 
 `func NewWorkflowWithDefaults() *Workflow`
 
-NewWorkflowWithDefaults instantiates a new Workflow object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewWorkflowWithDefaults instantiates a new Workflow object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -58,8 +53,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *Workflow) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -83,8 +77,7 @@ GetOwner returns the Owner field if non-nil, zero value otherwise.
 
 `func (o *Workflow) GetOwnerOk() (*WorkflowBodyOwner, bool)`
 
-GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwner
 
@@ -108,8 +101,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *Workflow) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -133,8 +125,7 @@ GetDefinition returns the Definition field if non-nil, zero value otherwise.
 
 `func (o *Workflow) GetDefinitionOk() (*WorkflowDefinition, bool)`
 
-GetDefinitionOk returns a tuple with the Definition field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDefinitionOk returns a tuple with the Definition field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDefinition
 
@@ -158,8 +149,7 @@ GetEnabled returns the Enabled field if non-nil, zero value otherwise.
 
 `func (o *Workflow) GetEnabledOk() (*bool, bool)`
 
-GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEnabled
 
@@ -183,8 +173,7 @@ GetTrigger returns the Trigger field if non-nil, zero value otherwise.
 
 `func (o *Workflow) GetTriggerOk() (*WorkflowTrigger, bool)`
 
-GetTriggerOk returns a tuple with the Trigger field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTriggerOk returns a tuple with the Trigger field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTrigger
 
@@ -208,8 +197,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *Workflow) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -233,8 +221,7 @@ GetExecutionCount returns the ExecutionCount field if non-nil, zero value otherw
 
 `func (o *Workflow) GetExecutionCountOk() (*int32, bool)`
 
-GetExecutionCountOk returns a tuple with the ExecutionCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetExecutionCountOk returns a tuple with the ExecutionCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetExecutionCount
 
@@ -258,8 +245,7 @@ GetFailureCount returns the FailureCount field if non-nil, zero value otherwise.
 
 `func (o *Workflow) GetFailureCountOk() (*int32, bool)`
 
-GetFailureCountOk returns a tuple with the FailureCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFailureCountOk returns a tuple with the FailureCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFailureCount
 
@@ -283,8 +269,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *Workflow) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -308,8 +293,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *Workflow) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -333,8 +317,7 @@ GetModifiedBy returns the ModifiedBy field if non-nil, zero value otherwise.
 
 `func (o *Workflow) GetModifiedByOk() (*WorkflowModifiedBy, bool)`
 
-GetModifiedByOk returns a tuple with the ModifiedBy field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedByOk returns a tuple with the ModifiedBy field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModifiedBy
 
@@ -358,8 +341,7 @@ GetCreator returns the Creator field if non-nil, zero value otherwise.
 
 `func (o *Workflow) GetCreatorOk() (*WorkflowAllOfCreator, bool)`
 
-GetCreatorOk returns a tuple with the Creator field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatorOk returns a tuple with the Creator field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreator
 
@@ -372,5 +354,3 @@ SetCreator sets Creator field to given value.
 `func (o *Workflow) HasCreator() bool`
 
 HasCreator returns a boolean if a field has been set.
-
-

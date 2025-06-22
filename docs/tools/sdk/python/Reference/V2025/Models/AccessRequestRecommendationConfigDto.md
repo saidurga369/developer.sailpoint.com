@@ -4,24 +4,37 @@ title: AccessRequestRecommendationConfigDto
 pagination_label: AccessRequestRecommendationConfigDto
 sidebar_label: AccessRequestRecommendationConfigDto
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccessRequestRecommendationConfigDto', 'V2025AccessRequestRecommendationConfigDto'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccessRequestRecommendationConfigDto',
+    'V2025AccessRequestRecommendationConfigDto',
+  ]
 slug: /tools/sdk/python/v2025/models/access-request-recommendation-config-dto
-tags: ['SDK', 'Software Development Kit', 'AccessRequestRecommendationConfigDto', 'V2025AccessRequestRecommendationConfigDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessRequestRecommendationConfigDto',
+    'V2025AccessRequestRecommendationConfigDto',
+  ]
 ---
 
 # AccessRequestRecommendationConfigDto
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**score_threshold** | **float** | The value that internal calculations need to exceed for recommendations to be made. | [required]
-**start_date_attribute** | **str** | Use to map an attribute name for determining identities' start date. | [optional] 
-**restriction_attribute** | **str** | Use to only give recommendations based on this attribute. | [optional] 
-**mover_attribute** | **str** | Use to map an attribute name for determining whether identities are movers. | [optional] 
-**joiner_attribute** | **str** | Use to map an attribute name for determining whether identities are joiners. | [optional] 
-**use_restriction_attribute** | **bool** | Use only the attribute named in restrictionAttribute to make recommendations. | [optional] [default to False]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **score_threshold** | **float** | The value that internal calculations need to exceed for recommendations to be made. | [required] |
+| **start_date_attribute** | **str** | Use to map an attribute name for determining identities' start date. | [optional] |
+| **restriction_attribute** | **str** | Use to only give recommendations based on this attribute. | [optional] |
+| **mover_attribute** | **str** | Use to map an attribute name for determining whether identities are movers. | [optional] |
+| **joiner_attribute** | **str** | Use to map an attribute name for determining whether identities are joiners. | [optional] |
+| **use_restriction_attribute** | **bool** | Use only the attribute named in restrictionAttribute to make recommendations. | [optional] [default to False] |
+
 }
 
 ## Example
@@ -39,5 +52,5 @@ use_restriction_attribute=True
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

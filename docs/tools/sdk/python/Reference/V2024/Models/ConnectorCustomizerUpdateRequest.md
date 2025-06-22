@@ -4,9 +4,22 @@ title: ConnectorCustomizerUpdateRequest
 pagination_label: ConnectorCustomizerUpdateRequest
 sidebar_label: ConnectorCustomizerUpdateRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ConnectorCustomizerUpdateRequest', 'V2024ConnectorCustomizerUpdateRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ConnectorCustomizerUpdateRequest',
+    'V2024ConnectorCustomizerUpdateRequest',
+  ]
 slug: /tools/sdk/python/v2024/models/connector-customizer-update-request
-tags: ['SDK', 'Software Development Kit', 'ConnectorCustomizerUpdateRequest', 'V2024ConnectorCustomizerUpdateRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ConnectorCustomizerUpdateRequest',
+    'V2024ConnectorCustomizerUpdateRequest',
+  ]
 ---
 
 # ConnectorCustomizerUpdateRequest
@@ -15,9 +28,10 @@ ConnectorCustomizerUpdateRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | Connector customizer name. | [optional] 
+| Name     | Type    | Description                | Notes      |
+| -------- | ------- | -------------------------- | ---------- |
+| **name** | **str** | Connector customizer name. | [optional] |
+
 }
 
 ## Example
@@ -30,5 +44,5 @@ name='My Custom Connector'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

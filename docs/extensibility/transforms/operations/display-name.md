@@ -39,7 +39,7 @@ The displayName generator transform is intended for using Preferred Name over Gi
 
 This transform takes the user's Preferred Name or Given Name, and appends the user's Family Name. For example:
 
-If the user's Preferred Name is  `John`, Given Name is `Jonathan`, and Family Name is `Doe`, the Display Name would be `John Doe`.
+If the user's Preferred Name is `John`, Given Name is `Jonathan`, and Family Name is `Doe`, the Display Name would be `John Doe`.
 
 If the user's Preferred Name is not set, Given Name is `Jonathan`, and Family Name is `Doe`, the Display Name would be `Jonathan Doe`.
 

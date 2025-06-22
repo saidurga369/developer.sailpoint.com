@@ -4,20 +4,27 @@ title: RoleMiningIdentity
 pagination_label: RoleMiningIdentity
 sidebar_label: RoleMiningIdentity
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleMiningIdentity', 'V2024RoleMiningIdentity'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'RoleMiningIdentity', 'V2024RoleMiningIdentity']
 slug: /tools/sdk/go/v2024/models/role-mining-identity
-tags: ['SDK', 'Software Development Kit', 'RoleMiningIdentity', 'V2024RoleMiningIdentity']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningIdentity',
+    'V2024RoleMiningIdentity',
+  ]
 ---
 
 # RoleMiningIdentity
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Id of the identity | [optional] 
-**Name** | Pointer to **string** | Name of the identity | [optional] 
-**Attributes** | Pointer to **map[string]string** |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Id of the identity | [optional] |
+| **Name** | Pointer to **string** | Name of the identity | [optional] |
+| **Attributes** | Pointer to **map[string]string** |  | [optional] |
 
 ## Methods
 
@@ -25,18 +32,13 @@ Name | Type | Description | Notes
 
 `func NewRoleMiningIdentity() *RoleMiningIdentity`
 
-NewRoleMiningIdentity instantiates a new RoleMiningIdentity object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleMiningIdentity instantiates a new RoleMiningIdentity object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleMiningIdentityWithDefaults
 
 `func NewRoleMiningIdentityWithDefaults() *RoleMiningIdentity`
 
-NewRoleMiningIdentityWithDefaults instantiates a new RoleMiningIdentity object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleMiningIdentityWithDefaults instantiates a new RoleMiningIdentity object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -48,8 +50,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningIdentity) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -73,8 +74,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningIdentity) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -98,8 +98,7 @@ GetAttributes returns the Attributes field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningIdentity) GetAttributesOk() (*map[string]string, bool)`
 
-GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributes
 
@@ -112,5 +111,3 @@ SetAttributes sets Attributes field to given value.
 `func (o *RoleMiningIdentity) HasAttributes() bool`
 
 HasAttributes returns a boolean if a field has been set.
-
-

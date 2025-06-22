@@ -4,25 +4,26 @@ title: Schedule1Months
 pagination_label: Schedule1Months
 sidebar_label: Schedule1Months
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'Schedule1Months', 'Schedule1Months'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'Schedule1Months', 'Schedule1Months']
 slug: /tools/sdk/powershell/v3/models/schedule1-months
 tags: ['SDK', 'Software Development Kit', 'Schedule1Months', 'Schedule1Months']
 ---
-
 
 # Schedule1Months
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | [**SelectorType**](selector-type) |  | [required]
-**Values** | **[]String** | The selected values.  | [required]
-**Interval** | **Int32** | The selected interval for RANGE selectors.  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | [**SelectorType**](selector-type) |  | [required] |
+| **Values** | **[]String** | The selected values. | [required] |
+| **Interval** | **Int32** | The selected interval for RANGE selectors. | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $Schedule1Months = Initialize-Schedule1Months  -Type null `
  -Values [MON, WED] `
@@ -30,10 +31,9 @@ $Schedule1Months = Initialize-Schedule1Months  -Type null `
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $Schedule1Months | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

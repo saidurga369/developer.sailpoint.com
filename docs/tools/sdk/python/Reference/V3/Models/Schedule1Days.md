@@ -4,21 +4,21 @@ title: Schedule1Days
 pagination_label: Schedule1Days
 sidebar_label: Schedule1Days
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'Schedule1Days', 'Schedule1Days'] 
+keywords: ['python', 'Python', 'sdk', 'Schedule1Days', 'Schedule1Days']
 slug: /tools/sdk/python/v3/models/schedule1-days
 tags: ['SDK', 'Software Development Kit', 'Schedule1Days', 'Schedule1Days']
 ---
 
 # Schedule1Days
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** | [**SelectorType**](selector-type) |  | [required]
-**values** | **[]str** | The selected values.  | [required]
-**interval** | **int** | The selected interval for RANGE selectors.  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | [**SelectorType**](selector-type) |  | [required] |
+| **values** | **[]str** | The selected values. | [required] |
+| **interval** | **int** | The selected interval for RANGE selectors. | [optional] |
+
 }
 
 ## Example
@@ -33,5 +33,5 @@ interval=3
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

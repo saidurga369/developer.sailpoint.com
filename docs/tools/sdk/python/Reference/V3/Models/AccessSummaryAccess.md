@@ -4,21 +4,28 @@ title: AccessSummaryAccess
 pagination_label: AccessSummaryAccess
 sidebar_label: AccessSummaryAccess
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccessSummaryAccess', 'AccessSummaryAccess'] 
+keywords:
+  ['python', 'Python', 'sdk', 'AccessSummaryAccess', 'AccessSummaryAccess']
 slug: /tools/sdk/python/v3/models/access-summary-access
-tags: ['SDK', 'Software Development Kit', 'AccessSummaryAccess', 'AccessSummaryAccess']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessSummaryAccess',
+    'AccessSummaryAccess',
+  ]
 ---
 
 # AccessSummaryAccess
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** | [**DtoType**](dto-type) |  | [optional] 
-**id** | **str** | The ID of the item being certified | [optional] 
-**name** | **str** | The name of the item being certified | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | [**DtoType**](dto-type) |  | [optional] |
+| **id** | **str** | The ID of the item being certified | [optional] |
+| **name** | **str** | The name of the item being certified | [optional] |
+
 }
 
 ## Example
@@ -33,5 +40,5 @@ name='Entitlement for Company Database'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

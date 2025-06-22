@@ -4,55 +4,61 @@ title: IdentityDocument
 pagination_label: IdentityDocument
 sidebar_label: IdentityDocument
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IdentityDocument', 'V2025IdentityDocument'] 
+keywords: ['go', 'Golang', 'sdk', 'IdentityDocument', 'V2025IdentityDocument']
 slug: /tools/sdk/go/v2025/models/identity-document
-tags: ['SDK', 'Software Development Kit', 'IdentityDocument', 'V2025IdentityDocument']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityDocument',
+    'V2025IdentityDocument',
+  ]
 ---
 
 # IdentityDocument
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **string** | The unique ID of the referenced object. | 
-**Name** | **string** | The human readable name of the referenced object. | 
-**DisplayName** | Pointer to **string** | Identity's display name. | [optional] 
-**FirstName** | Pointer to **string** | Identity's first name. | [optional] 
-**LastName** | Pointer to **string** | Identity's last name. | [optional] 
-**Email** | Pointer to **string** | Identity's primary email address. | [optional] 
-**Created** | Pointer to **NullableTime** | ISO-8601 date-time referring to the time when the object was created. | [optional] 
-**Modified** | Pointer to **NullableTime** | ISO-8601 date-time referring to the time when the object was last modified. | [optional] 
-**Phone** | Pointer to **string** | Identity's phone number. | [optional] 
-**Synced** | Pointer to **string** | ISO-8601 date-time referring to the date-time when object was queued to be synced into search database for use in the search API.   This date-time changes anytime there is an update to the object, which triggers a synchronization event being sent to the search database.  There may be some delay between the `synced` time and the time when the updated data is actually available in the search API.  | [optional] 
-**Inactive** | Pointer to **bool** | Indicates whether the identity is inactive. | [optional] [default to false]
-**Protected** | Pointer to **bool** | Indicates whether the identity is protected. | [optional] [default to false]
-**Status** | Pointer to **string** | Identity's status in SailPoint. | [optional] 
-**EmployeeNumber** | Pointer to **string** | Identity's employee number. | [optional] 
-**Manager** | Pointer to [**NullableIdentityDocumentAllOfManager**](identity-document-all-of-manager) |  | [optional] 
-**IsManager** | Pointer to **bool** | Indicates whether the identity is a manager of other identities. | [optional] 
-**IdentityProfile** | Pointer to [**IdentityDocumentAllOfIdentityProfile**](identity-document-all-of-identity-profile) |  | [optional] 
-**Source** | Pointer to [**IdentityDocumentAllOfSource**](identity-document-all-of-source) |  | [optional] 
-**Attributes** | Pointer to **map[string]interface{}** | Map or dictionary of key/value pairs. | [optional] 
-**Disabled** | Pointer to **bool** | Indicates whether the identity is disabled. | [optional] [default to false]
-**Locked** | Pointer to **bool** | Indicates whether the identity is locked. | [optional] [default to false]
-**ProcessingState** | Pointer to **NullableString** | Identity's processing state. | [optional] 
-**ProcessingDetails** | Pointer to [**ProcessingDetails**](processing-details) |  | [optional] 
-**Accounts** | Pointer to [**[]BaseAccount**](base-account) | List of accounts associated with the identity. | [optional] 
-**AccountCount** | Pointer to **int32** | Number of accounts associated with the identity. | [optional] 
-**Apps** | Pointer to [**[]App**](app) | List of applications the identity has access to. | [optional] 
-**AppCount** | Pointer to **int32** | Number of applications the identity has access to. | [optional] 
-**Access** | Pointer to [**[]IdentityAccess**](identity-access) | List of access items assigned to the identity. | [optional] 
-**AccessCount** | Pointer to **int32** | Number of access items assigned to the identity. | [optional] 
-**EntitlementCount** | Pointer to **int32** | Number of entitlements assigned to the identity. | [optional] 
-**RoleCount** | Pointer to **int32** | Number of roles assigned to the identity. | [optional] 
-**AccessProfileCount** | Pointer to **int32** | Number of access profiles assigned to the identity. | [optional] 
-**Owns** | Pointer to [**[]Owns**](owns) | Access items the identity owns. | [optional] 
-**OwnsCount** | Pointer to **int32** | Number of access items the identity owns. | [optional] 
-**Tags** | Pointer to **[]string** | Tags that have been applied to the object. | [optional] 
-**TagsCount** | Pointer to **int32** | Number of tags on the identity. | [optional] 
-**VisibleSegments** | Pointer to **[]string** | List of segments that the identity is in. | [optional] 
-**VisibleSegmentCount** | Pointer to **int32** | Number of segments the identity is in. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **string** | The unique ID of the referenced object. |
+| **Name** | **string** | The human readable name of the referenced object. |
+| **DisplayName** | Pointer to **string** | Identity's display name. | [optional] |
+| **FirstName** | Pointer to **string** | Identity's first name. | [optional] |
+| **LastName** | Pointer to **string** | Identity's last name. | [optional] |
+| **Email** | Pointer to **string** | Identity's primary email address. | [optional] |
+| **Created** | Pointer to **NullableTime** | ISO-8601 date-time referring to the time when the object was created. | [optional] |
+| **Modified** | Pointer to **NullableTime** | ISO-8601 date-time referring to the time when the object was last modified. | [optional] |
+| **Phone** | Pointer to **string** | Identity's phone number. | [optional] |
+| **Synced** | Pointer to **string** | ISO-8601 date-time referring to the date-time when object was queued to be synced into search database for use in the search API. This date-time changes anytime there is an update to the object, which triggers a synchronization event being sent to the search database. There may be some delay between the `synced` time and the time when the updated data is actually available in the search API. | [optional] |
+| **Inactive** | Pointer to **bool** | Indicates whether the identity is inactive. | [optional] [default to false] |
+| **Protected** | Pointer to **bool** | Indicates whether the identity is protected. | [optional] [default to false] |
+| **Status** | Pointer to **string** | Identity's status in SailPoint. | [optional] |
+| **EmployeeNumber** | Pointer to **string** | Identity's employee number. | [optional] |
+| **Manager** | Pointer to [**NullableIdentityDocumentAllOfManager**](identity-document-all-of-manager) |  | [optional] |
+| **IsManager** | Pointer to **bool** | Indicates whether the identity is a manager of other identities. | [optional] |
+| **IdentityProfile** | Pointer to [**IdentityDocumentAllOfIdentityProfile**](identity-document-all-of-identity-profile) |  | [optional] |
+| **Source** | Pointer to [**IdentityDocumentAllOfSource**](identity-document-all-of-source) |  | [optional] |
+| **Attributes** | Pointer to **map[string]interface{}** | Map or dictionary of key/value pairs. | [optional] |
+| **Disabled** | Pointer to **bool** | Indicates whether the identity is disabled. | [optional] [default to false] |
+| **Locked** | Pointer to **bool** | Indicates whether the identity is locked. | [optional] [default to false] |
+| **ProcessingState** | Pointer to **NullableString** | Identity's processing state. | [optional] |
+| **ProcessingDetails** | Pointer to [**ProcessingDetails**](processing-details) |  | [optional] |
+| **Accounts** | Pointer to [**[]BaseAccount**](base-account) | List of accounts associated with the identity. | [optional] |
+| **AccountCount** | Pointer to **int32** | Number of accounts associated with the identity. | [optional] |
+| **Apps** | Pointer to [**[]App**](app) | List of applications the identity has access to. | [optional] |
+| **AppCount** | Pointer to **int32** | Number of applications the identity has access to. | [optional] |
+| **Access** | Pointer to [**[]IdentityAccess**](identity-access) | List of access items assigned to the identity. | [optional] |
+| **AccessCount** | Pointer to **int32** | Number of access items assigned to the identity. | [optional] |
+| **EntitlementCount** | Pointer to **int32** | Number of entitlements assigned to the identity. | [optional] |
+| **RoleCount** | Pointer to **int32** | Number of roles assigned to the identity. | [optional] |
+| **AccessProfileCount** | Pointer to **int32** | Number of access profiles assigned to the identity. | [optional] |
+| **Owns** | Pointer to [**[]Owns**](owns) | Access items the identity owns. | [optional] |
+| **OwnsCount** | Pointer to **int32** | Number of access items the identity owns. | [optional] |
+| **Tags** | Pointer to **[]string** | Tags that have been applied to the object. | [optional] |
+| **TagsCount** | Pointer to **int32** | Number of tags on the identity. | [optional] |
+| **VisibleSegments** | Pointer to **[]string** | List of segments that the identity is in. | [optional] |
+| **VisibleSegmentCount** | Pointer to **int32** | Number of segments the identity is in. | [optional] |
 
 ## Methods
 
@@ -60,18 +66,13 @@ Name | Type | Description | Notes
 
 `func NewIdentityDocument(id string, name string, ) *IdentityDocument`
 
-NewIdentityDocument instantiates a new IdentityDocument object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewIdentityDocument instantiates a new IdentityDocument object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewIdentityDocumentWithDefaults
 
 `func NewIdentityDocumentWithDefaults() *IdentityDocument`
 
-NewIdentityDocumentWithDefaults instantiates a new IdentityDocument object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewIdentityDocumentWithDefaults instantiates a new IdentityDocument object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -83,15 +84,13 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocument) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
 `func (o *IdentityDocument) SetId(v string)`
 
 SetId sets Id field to given value.
-
 
 ### GetName
 
@@ -103,15 +102,13 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocument) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
 `func (o *IdentityDocument) SetName(v string)`
 
 SetName sets Name field to given value.
-
 
 ### GetDisplayName
 
@@ -123,8 +120,7 @@ GetDisplayName returns the DisplayName field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocument) GetDisplayNameOk() (*string, bool)`
 
-GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayName
 
@@ -148,8 +144,7 @@ GetFirstName returns the FirstName field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocument) GetFirstNameOk() (*string, bool)`
 
-GetFirstNameOk returns a tuple with the FirstName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFirstNameOk returns a tuple with the FirstName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFirstName
 
@@ -173,8 +168,7 @@ GetLastName returns the LastName field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocument) GetLastNameOk() (*string, bool)`
 
-GetLastNameOk returns a tuple with the LastName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLastNameOk returns a tuple with the LastName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLastName
 
@@ -198,8 +192,7 @@ GetEmail returns the Email field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocument) GetEmailOk() (*string, bool)`
 
-GetEmailOk returns a tuple with the Email field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEmailOk returns a tuple with the Email field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEmail
 
@@ -223,8 +216,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocument) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -242,12 +234,14 @@ HasCreated returns a boolean if a field has been set.
 
 `func (o *IdentityDocument) SetCreatedNil(b bool)`
 
- SetCreatedNil sets the value for Created to be an explicit nil
+SetCreatedNil sets the value for Created to be an explicit nil
 
 ### UnsetCreated
+
 `func (o *IdentityDocument) UnsetCreated()`
 
 UnsetCreated ensures that no value is present for Created, not even an explicit nil
+
 ### GetModified
 
 `func (o *IdentityDocument) GetModified() SailPointTime`
@@ -258,8 +252,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocument) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -277,12 +270,14 @@ HasModified returns a boolean if a field has been set.
 
 `func (o *IdentityDocument) SetModifiedNil(b bool)`
 
- SetModifiedNil sets the value for Modified to be an explicit nil
+SetModifiedNil sets the value for Modified to be an explicit nil
 
 ### UnsetModified
+
 `func (o *IdentityDocument) UnsetModified()`
 
 UnsetModified ensures that no value is present for Modified, not even an explicit nil
+
 ### GetPhone
 
 `func (o *IdentityDocument) GetPhone() string`
@@ -293,8 +288,7 @@ GetPhone returns the Phone field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocument) GetPhoneOk() (*string, bool)`
 
-GetPhoneOk returns a tuple with the Phone field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPhoneOk returns a tuple with the Phone field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPhone
 
@@ -318,8 +312,7 @@ GetSynced returns the Synced field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocument) GetSyncedOk() (*string, bool)`
 
-GetSyncedOk returns a tuple with the Synced field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSyncedOk returns a tuple with the Synced field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSynced
 
@@ -343,8 +336,7 @@ GetInactive returns the Inactive field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocument) GetInactiveOk() (*bool, bool)`
 
-GetInactiveOk returns a tuple with the Inactive field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetInactiveOk returns a tuple with the Inactive field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetInactive
 
@@ -368,8 +360,7 @@ GetProtected returns the Protected field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocument) GetProtectedOk() (*bool, bool)`
 
-GetProtectedOk returns a tuple with the Protected field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProtectedOk returns a tuple with the Protected field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProtected
 
@@ -393,8 +384,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocument) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -418,8 +408,7 @@ GetEmployeeNumber returns the EmployeeNumber field if non-nil, zero value otherw
 
 `func (o *IdentityDocument) GetEmployeeNumberOk() (*string, bool)`
 
-GetEmployeeNumberOk returns a tuple with the EmployeeNumber field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEmployeeNumberOk returns a tuple with the EmployeeNumber field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEmployeeNumber
 
@@ -443,8 +432,7 @@ GetManager returns the Manager field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocument) GetManagerOk() (*IdentityDocumentAllOfManager, bool)`
 
-GetManagerOk returns a tuple with the Manager field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetManagerOk returns a tuple with the Manager field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetManager
 
@@ -462,12 +450,14 @@ HasManager returns a boolean if a field has been set.
 
 `func (o *IdentityDocument) SetManagerNil(b bool)`
 
- SetManagerNil sets the value for Manager to be an explicit nil
+SetManagerNil sets the value for Manager to be an explicit nil
 
 ### UnsetManager
+
 `func (o *IdentityDocument) UnsetManager()`
 
 UnsetManager ensures that no value is present for Manager, not even an explicit nil
+
 ### GetIsManager
 
 `func (o *IdentityDocument) GetIsManager() bool`
@@ -478,8 +468,7 @@ GetIsManager returns the IsManager field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocument) GetIsManagerOk() (*bool, bool)`
 
-GetIsManagerOk returns a tuple with the IsManager field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIsManagerOk returns a tuple with the IsManager field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIsManager
 
@@ -503,8 +492,7 @@ GetIdentityProfile returns the IdentityProfile field if non-nil, zero value othe
 
 `func (o *IdentityDocument) GetIdentityProfileOk() (*IdentityDocumentAllOfIdentityProfile, bool)`
 
-GetIdentityProfileOk returns a tuple with the IdentityProfile field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityProfileOk returns a tuple with the IdentityProfile field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityProfile
 
@@ -528,8 +516,7 @@ GetSource returns the Source field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocument) GetSourceOk() (*IdentityDocumentAllOfSource, bool)`
 
-GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSource
 
@@ -553,8 +540,7 @@ GetAttributes returns the Attributes field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocument) GetAttributesOk() (*map[string]interface{}, bool)`
 
-GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributes
 
@@ -578,8 +564,7 @@ GetDisabled returns the Disabled field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocument) GetDisabledOk() (*bool, bool)`
 
-GetDisabledOk returns a tuple with the Disabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisabledOk returns a tuple with the Disabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisabled
 
@@ -603,8 +588,7 @@ GetLocked returns the Locked field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocument) GetLockedOk() (*bool, bool)`
 
-GetLockedOk returns a tuple with the Locked field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLockedOk returns a tuple with the Locked field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLocked
 
@@ -628,8 +612,7 @@ GetProcessingState returns the ProcessingState field if non-nil, zero value othe
 
 `func (o *IdentityDocument) GetProcessingStateOk() (*string, bool)`
 
-GetProcessingStateOk returns a tuple with the ProcessingState field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProcessingStateOk returns a tuple with the ProcessingState field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProcessingState
 
@@ -647,12 +630,14 @@ HasProcessingState returns a boolean if a field has been set.
 
 `func (o *IdentityDocument) SetProcessingStateNil(b bool)`
 
- SetProcessingStateNil sets the value for ProcessingState to be an explicit nil
+SetProcessingStateNil sets the value for ProcessingState to be an explicit nil
 
 ### UnsetProcessingState
+
 `func (o *IdentityDocument) UnsetProcessingState()`
 
 UnsetProcessingState ensures that no value is present for ProcessingState, not even an explicit nil
+
 ### GetProcessingDetails
 
 `func (o *IdentityDocument) GetProcessingDetails() ProcessingDetails`
@@ -663,8 +648,7 @@ GetProcessingDetails returns the ProcessingDetails field if non-nil, zero value 
 
 `func (o *IdentityDocument) GetProcessingDetailsOk() (*ProcessingDetails, bool)`
 
-GetProcessingDetailsOk returns a tuple with the ProcessingDetails field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProcessingDetailsOk returns a tuple with the ProcessingDetails field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProcessingDetails
 
@@ -688,8 +672,7 @@ GetAccounts returns the Accounts field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocument) GetAccountsOk() (*[]BaseAccount, bool)`
 
-GetAccountsOk returns a tuple with the Accounts field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountsOk returns a tuple with the Accounts field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccounts
 
@@ -713,8 +696,7 @@ GetAccountCount returns the AccountCount field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocument) GetAccountCountOk() (*int32, bool)`
 
-GetAccountCountOk returns a tuple with the AccountCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountCountOk returns a tuple with the AccountCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountCount
 
@@ -738,8 +720,7 @@ GetApps returns the Apps field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocument) GetAppsOk() (*[]App, bool)`
 
-GetAppsOk returns a tuple with the Apps field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAppsOk returns a tuple with the Apps field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApps
 
@@ -763,8 +744,7 @@ GetAppCount returns the AppCount field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocument) GetAppCountOk() (*int32, bool)`
 
-GetAppCountOk returns a tuple with the AppCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAppCountOk returns a tuple with the AppCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAppCount
 
@@ -788,8 +768,7 @@ GetAccess returns the Access field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocument) GetAccessOk() (*[]IdentityAccess, bool)`
 
-GetAccessOk returns a tuple with the Access field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessOk returns a tuple with the Access field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccess
 
@@ -813,8 +792,7 @@ GetAccessCount returns the AccessCount field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocument) GetAccessCountOk() (*int32, bool)`
 
-GetAccessCountOk returns a tuple with the AccessCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessCountOk returns a tuple with the AccessCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessCount
 
@@ -838,8 +816,7 @@ GetEntitlementCount returns the EntitlementCount field if non-nil, zero value ot
 
 `func (o *IdentityDocument) GetEntitlementCountOk() (*int32, bool)`
 
-GetEntitlementCountOk returns a tuple with the EntitlementCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEntitlementCountOk returns a tuple with the EntitlementCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEntitlementCount
 
@@ -863,8 +840,7 @@ GetRoleCount returns the RoleCount field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocument) GetRoleCountOk() (*int32, bool)`
 
-GetRoleCountOk returns a tuple with the RoleCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRoleCountOk returns a tuple with the RoleCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRoleCount
 
@@ -888,8 +864,7 @@ GetAccessProfileCount returns the AccessProfileCount field if non-nil, zero valu
 
 `func (o *IdentityDocument) GetAccessProfileCountOk() (*int32, bool)`
 
-GetAccessProfileCountOk returns a tuple with the AccessProfileCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessProfileCountOk returns a tuple with the AccessProfileCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessProfileCount
 
@@ -913,8 +888,7 @@ GetOwns returns the Owns field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocument) GetOwnsOk() (*[]Owns, bool)`
 
-GetOwnsOk returns a tuple with the Owns field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnsOk returns a tuple with the Owns field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwns
 
@@ -938,8 +912,7 @@ GetOwnsCount returns the OwnsCount field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocument) GetOwnsCountOk() (*int32, bool)`
 
-GetOwnsCountOk returns a tuple with the OwnsCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnsCountOk returns a tuple with the OwnsCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwnsCount
 
@@ -963,8 +936,7 @@ GetTags returns the Tags field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocument) GetTagsOk() (*[]string, bool)`
 
-GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTags
 
@@ -988,8 +960,7 @@ GetTagsCount returns the TagsCount field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocument) GetTagsCountOk() (*int32, bool)`
 
-GetTagsCountOk returns a tuple with the TagsCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTagsCountOk returns a tuple with the TagsCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTagsCount
 
@@ -1013,8 +984,7 @@ GetVisibleSegments returns the VisibleSegments field if non-nil, zero value othe
 
 `func (o *IdentityDocument) GetVisibleSegmentsOk() (*[]string, bool)`
 
-GetVisibleSegmentsOk returns a tuple with the VisibleSegments field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetVisibleSegmentsOk returns a tuple with the VisibleSegments field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetVisibleSegments
 
@@ -1032,12 +1002,14 @@ HasVisibleSegments returns a boolean if a field has been set.
 
 `func (o *IdentityDocument) SetVisibleSegmentsNil(b bool)`
 
- SetVisibleSegmentsNil sets the value for VisibleSegments to be an explicit nil
+SetVisibleSegmentsNil sets the value for VisibleSegments to be an explicit nil
 
 ### UnsetVisibleSegments
+
 `func (o *IdentityDocument) UnsetVisibleSegments()`
 
 UnsetVisibleSegments ensures that no value is present for VisibleSegments, not even an explicit nil
+
 ### GetVisibleSegmentCount
 
 `func (o *IdentityDocument) GetVisibleSegmentCount() int32`
@@ -1048,8 +1020,7 @@ GetVisibleSegmentCount returns the VisibleSegmentCount field if non-nil, zero va
 
 `func (o *IdentityDocument) GetVisibleSegmentCountOk() (*int32, bool)`
 
-GetVisibleSegmentCountOk returns a tuple with the VisibleSegmentCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetVisibleSegmentCountOk returns a tuple with the VisibleSegmentCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetVisibleSegmentCount
 
@@ -1062,5 +1033,3 @@ SetVisibleSegmentCount sets VisibleSegmentCount field to given value.
 `func (o *IdentityDocument) HasVisibleSegmentCount() bool`
 
 HasVisibleSegmentCount returns a boolean if a field has been set.
-
-

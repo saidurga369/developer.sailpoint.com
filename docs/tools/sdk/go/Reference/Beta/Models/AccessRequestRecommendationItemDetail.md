@@ -4,24 +4,37 @@ title: AccessRequestRecommendationItemDetail
 pagination_label: AccessRequestRecommendationItemDetail
 sidebar_label: AccessRequestRecommendationItemDetail
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessRequestRecommendationItemDetail', 'BetaAccessRequestRecommendationItemDetail'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'AccessRequestRecommendationItemDetail',
+    'BetaAccessRequestRecommendationItemDetail',
+  ]
 slug: /tools/sdk/go/beta/models/access-request-recommendation-item-detail
-tags: ['SDK', 'Software Development Kit', 'AccessRequestRecommendationItemDetail', 'BetaAccessRequestRecommendationItemDetail']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessRequestRecommendationItemDetail',
+    'BetaAccessRequestRecommendationItemDetail',
+  ]
 ---
 
 # AccessRequestRecommendationItemDetail
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**IdentityId** | Pointer to **string** | Identity ID for the recommendation | [optional] 
-**Access** | Pointer to [**AccessRequestRecommendationItemDetailAccess**](access-request-recommendation-item-detail-access) |  | [optional] 
-**Ignored** | Pointer to **bool** | Whether or not the identity has already chosen to ignore this recommendation. | [optional] 
-**Requested** | Pointer to **bool** | Whether or not the identity has already chosen to request this recommendation. | [optional] 
-**Viewed** | Pointer to **bool** | Whether or not the identity reportedly viewed this recommendation. | [optional] 
-**Messages** | Pointer to [**[]AccessRecommendationMessage**](access-recommendation-message) |  | [optional] 
-**TranslationMessages** | Pointer to [**[]TranslationMessage**](translation-message) | The list of translation messages | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **IdentityId** | Pointer to **string** | Identity ID for the recommendation | [optional] |
+| **Access** | Pointer to [**AccessRequestRecommendationItemDetailAccess**](access-request-recommendation-item-detail-access) |  | [optional] |
+| **Ignored** | Pointer to **bool** | Whether or not the identity has already chosen to ignore this recommendation. | [optional] |
+| **Requested** | Pointer to **bool** | Whether or not the identity has already chosen to request this recommendation. | [optional] |
+| **Viewed** | Pointer to **bool** | Whether or not the identity reportedly viewed this recommendation. | [optional] |
+| **Messages** | Pointer to [**[]AccessRecommendationMessage**](access-recommendation-message) |  | [optional] |
+| **TranslationMessages** | Pointer to [**[]TranslationMessage**](translation-message) | The list of translation messages | [optional] |
 
 ## Methods
 
@@ -29,18 +42,13 @@ Name | Type | Description | Notes
 
 `func NewAccessRequestRecommendationItemDetail() *AccessRequestRecommendationItemDetail`
 
-NewAccessRequestRecommendationItemDetail instantiates a new AccessRequestRecommendationItemDetail object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessRequestRecommendationItemDetail instantiates a new AccessRequestRecommendationItemDetail object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessRequestRecommendationItemDetailWithDefaults
 
 `func NewAccessRequestRecommendationItemDetailWithDefaults() *AccessRequestRecommendationItemDetail`
 
-NewAccessRequestRecommendationItemDetailWithDefaults instantiates a new AccessRequestRecommendationItemDetail object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessRequestRecommendationItemDetailWithDefaults instantiates a new AccessRequestRecommendationItemDetail object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetIdentityId
 
@@ -52,8 +60,7 @@ GetIdentityId returns the IdentityId field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestRecommendationItemDetail) GetIdentityIdOk() (*string, bool)`
 
-GetIdentityIdOk returns a tuple with the IdentityId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityIdOk returns a tuple with the IdentityId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityId
 
@@ -77,8 +84,7 @@ GetAccess returns the Access field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestRecommendationItemDetail) GetAccessOk() (*AccessRequestRecommendationItemDetailAccess, bool)`
 
-GetAccessOk returns a tuple with the Access field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessOk returns a tuple with the Access field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccess
 
@@ -102,8 +108,7 @@ GetIgnored returns the Ignored field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestRecommendationItemDetail) GetIgnoredOk() (*bool, bool)`
 
-GetIgnoredOk returns a tuple with the Ignored field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIgnoredOk returns a tuple with the Ignored field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIgnored
 
@@ -127,8 +132,7 @@ GetRequested returns the Requested field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestRecommendationItemDetail) GetRequestedOk() (*bool, bool)`
 
-GetRequestedOk returns a tuple with the Requested field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestedOk returns a tuple with the Requested field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequested
 
@@ -152,8 +156,7 @@ GetViewed returns the Viewed field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestRecommendationItemDetail) GetViewedOk() (*bool, bool)`
 
-GetViewedOk returns a tuple with the Viewed field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetViewedOk returns a tuple with the Viewed field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetViewed
 
@@ -177,8 +180,7 @@ GetMessages returns the Messages field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestRecommendationItemDetail) GetMessagesOk() (*[]AccessRecommendationMessage, bool)`
 
-GetMessagesOk returns a tuple with the Messages field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMessagesOk returns a tuple with the Messages field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMessages
 
@@ -202,8 +204,7 @@ GetTranslationMessages returns the TranslationMessages field if non-nil, zero va
 
 `func (o *AccessRequestRecommendationItemDetail) GetTranslationMessagesOk() (*[]TranslationMessage, bool)`
 
-GetTranslationMessagesOk returns a tuple with the TranslationMessages field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTranslationMessagesOk returns a tuple with the TranslationMessages field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTranslationMessages
 
@@ -216,5 +217,3 @@ SetTranslationMessages sets TranslationMessages field to given value.
 `func (o *AccessRequestRecommendationItemDetail) HasTranslationMessages() bool`
 
 HasTranslationMessages returns a boolean if a field has been set.
-
-

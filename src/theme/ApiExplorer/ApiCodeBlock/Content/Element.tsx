@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import Container from "@theme/ApiExplorer/ApiCodeBlock/Container";
-import type { Props } from "@theme/CodeBlock/Content/Element";
-import clsx from "clsx";
+import Container from '@theme/ApiExplorer/ApiCodeBlock/Container';
+import type {Props} from '@theme/CodeBlock/Content/Element';
+import clsx from 'clsx';
 
 // <pre> tags in markdown map to CodeBlocks. They may contain JSX children. When
 // the children is not a simple string, we just return a styled block without
@@ -16,11 +16,10 @@ export default function CodeBlockJSX({
       as="pre"
       tabIndex={0}
       className={clsx(
-        "openapi-explorer__code-block-standalone",
-        "thin-scrollbar",
-        className
-      )}
-    >
+        'openapi-explorer__code-block-standalone',
+        'thin-scrollbar',
+        className,
+      )}>
       <code className="openapi-explorer__code-block-lines">{children}</code>
     </Container>
   );

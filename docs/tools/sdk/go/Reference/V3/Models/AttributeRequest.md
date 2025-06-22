@@ -4,20 +4,21 @@ title: AttributeRequest
 pagination_label: AttributeRequest
 sidebar_label: AttributeRequest
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AttributeRequest', 'AttributeRequest'] 
+keywords: ['go', 'Golang', 'sdk', 'AttributeRequest', 'AttributeRequest']
 slug: /tools/sdk/go/v3/models/attribute-request
-tags: ['SDK', 'Software Development Kit', 'AttributeRequest', 'AttributeRequest']
+tags:
+  ['SDK', 'Software Development Kit', 'AttributeRequest', 'AttributeRequest']
 ---
 
 # AttributeRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | Pointer to **string** | Attribute name. | [optional] 
-**Op** | Pointer to **string** | Operation to perform on attribute. | [optional] 
-**Value** | Pointer to [**AttributeRequestValue**](attribute-request-value) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | Pointer to **string** | Attribute name. | [optional] |
+| **Op** | Pointer to **string** | Operation to perform on attribute. | [optional] |
+| **Value** | Pointer to [**AttributeRequestValue**](attribute-request-value) |  | [optional] |
 
 ## Methods
 
@@ -25,18 +26,13 @@ Name | Type | Description | Notes
 
 `func NewAttributeRequest() *AttributeRequest`
 
-NewAttributeRequest instantiates a new AttributeRequest object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAttributeRequest instantiates a new AttributeRequest object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAttributeRequestWithDefaults
 
 `func NewAttributeRequestWithDefaults() *AttributeRequest`
 
-NewAttributeRequestWithDefaults instantiates a new AttributeRequest object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAttributeRequestWithDefaults instantiates a new AttributeRequest object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -48,8 +44,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *AttributeRequest) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -73,8 +68,7 @@ GetOp returns the Op field if non-nil, zero value otherwise.
 
 `func (o *AttributeRequest) GetOpOk() (*string, bool)`
 
-GetOpOk returns a tuple with the Op field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOpOk returns a tuple with the Op field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOp
 
@@ -98,8 +92,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *AttributeRequest) GetValueOk() (*AttributeRequestValue, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -112,5 +105,3 @@ SetValue sets Value field to given value.
 `func (o *AttributeRequest) HasValue() bool`
 
 HasValue returns a boolean if a field has been set.
-
-

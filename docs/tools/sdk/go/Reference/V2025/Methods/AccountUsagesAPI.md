@@ -4,49 +4,42 @@ title: AccountUsages
 pagination_label: AccountUsages
 sidebar_label: AccountUsages
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccountUsages', 'V2025AccountUsages'] 
+keywords: ['go', 'Golang', 'sdk', 'AccountUsages', 'V2025AccountUsages']
 slug: /tools/sdk/go/v2025/methods/account-usages
 tags: ['SDK', 'Software Development Kit', 'AccountUsages', 'V2025AccountUsages']
 ---
 
 # AccountUsagesAPI
-  Use this API to implement account usage insight functionality.
-With this functionality in place, administrators can gather information and insights about how their tenants&#39; source accounts are being used.
-This allows organizations to get the information they need to start optimizing and securing source account usage.
- 
+
+Use this API to implement account usage insight functionality. With this functionality in place, administrators can gather information and insights about how their tenants&#39; source accounts are being used. This allows organizations to get the information they need to start optimizing and securing source account usage.
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/v2025*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**get-usages-by-account-id**](#get-usages-by-account-id) | **Get** `/account-usages/{accountId}/summaries` | Returns account usage insights
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**get-usages-by-account-id**](#get-usages-by-account-id) | **Get** `/account-usages/{accountId}/summaries` | Returns account usage insights |
 
 ## get-usages-by-account-id
-Returns account usage insights
-This API returns a summary of account usage insights for past 12 months.
+
+Returns account usage insights This API returns a summary of account usage insights for past 12 months.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/get-usages-by-account-id)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**accountId** | **string** | ID of IDN account | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **accountId** | **string** | ID of IDN account |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetUsagesByAccountIdRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
- **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **date** | 
+**limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false] **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results) Sorting is supported for the following fields: **date** |
 
 ### Return type
 
@@ -66,8 +59,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -78,7 +71,7 @@ func main() {
     count := true // bool | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to false) # bool | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to false)
     sorters := `-date` // string | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **date** (optional) # string | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **date** (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -94,4 +87,3 @@ func main() {
 ```
 
 [[Back to top]](#)
-

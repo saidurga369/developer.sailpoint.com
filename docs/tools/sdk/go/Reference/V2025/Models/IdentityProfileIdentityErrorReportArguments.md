@@ -4,18 +4,31 @@ title: IdentityProfileIdentityErrorReportArguments
 pagination_label: IdentityProfileIdentityErrorReportArguments
 sidebar_label: IdentityProfileIdentityErrorReportArguments
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IdentityProfileIdentityErrorReportArguments', 'V2025IdentityProfileIdentityErrorReportArguments'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'IdentityProfileIdentityErrorReportArguments',
+    'V2025IdentityProfileIdentityErrorReportArguments',
+  ]
 slug: /tools/sdk/go/v2025/models/identity-profile-identity-error-report-arguments
-tags: ['SDK', 'Software Development Kit', 'IdentityProfileIdentityErrorReportArguments', 'V2025IdentityProfileIdentityErrorReportArguments']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityProfileIdentityErrorReportArguments',
+    'V2025IdentityProfileIdentityErrorReportArguments',
+  ]
 ---
 
 # IdentityProfileIdentityErrorReportArguments
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**AuthoritativeSource** | **string** | Source ID. | 
+| Name                    | Type       | Description | Notes |
+| ----------------------- | ---------- | ----------- | ----- |
+| **AuthoritativeSource** | **string** | Source ID.  |
 
 ## Methods
 
@@ -23,18 +36,13 @@ Name | Type | Description | Notes
 
 `func NewIdentityProfileIdentityErrorReportArguments(authoritativeSource string, ) *IdentityProfileIdentityErrorReportArguments`
 
-NewIdentityProfileIdentityErrorReportArguments instantiates a new IdentityProfileIdentityErrorReportArguments object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewIdentityProfileIdentityErrorReportArguments instantiates a new IdentityProfileIdentityErrorReportArguments object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewIdentityProfileIdentityErrorReportArgumentsWithDefaults
 
 `func NewIdentityProfileIdentityErrorReportArgumentsWithDefaults() *IdentityProfileIdentityErrorReportArguments`
 
-NewIdentityProfileIdentityErrorReportArgumentsWithDefaults instantiates a new IdentityProfileIdentityErrorReportArguments object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewIdentityProfileIdentityErrorReportArgumentsWithDefaults instantiates a new IdentityProfileIdentityErrorReportArguments object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetAuthoritativeSource
 
@@ -46,14 +54,10 @@ GetAuthoritativeSource returns the AuthoritativeSource field if non-nil, zero va
 
 `func (o *IdentityProfileIdentityErrorReportArguments) GetAuthoritativeSourceOk() (*string, bool)`
 
-GetAuthoritativeSourceOk returns a tuple with the AuthoritativeSource field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAuthoritativeSourceOk returns a tuple with the AuthoritativeSource field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAuthoritativeSource
 
 `func (o *IdentityProfileIdentityErrorReportArguments) SetAuthoritativeSource(v string)`
 
 SetAuthoritativeSource sets AuthoritativeSource field to given value.
-
-
-

@@ -4,28 +4,29 @@ title: PasswordInfo
 pagination_label: PasswordInfo
 sidebar_label: PasswordInfo
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'PasswordInfo', 'BetaPasswordInfo'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'PasswordInfo', 'BetaPasswordInfo']
 slug: /tools/sdk/powershell/beta/models/password-info
 tags: ['SDK', 'Software Development Kit', 'PasswordInfo', 'BetaPasswordInfo']
 ---
-
 
 # PasswordInfo
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**IdentityId** | **String** |  | [optional] 
-**SourceId** | **String** |  | [optional] 
-**PublicKeyId** | **String** |  | [optional] 
-**PublicKey** | **String** | User's public key with Base64 encoding | [optional] 
-**Accounts** | [**[]PasswordInfoAccount**](password-info-account) | Account info related to queried identity and source | [optional] 
-**Policies** | **[]String** | Password constraints | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **IdentityId** | **String** |  | [optional] |
+| **SourceId** | **String** |  | [optional] |
+| **PublicKeyId** | **String** |  | [optional] |
+| **PublicKey** | **String** | User's public key with Base64 encoding | [optional] |
+| **Accounts** | [**[]PasswordInfoAccount**](password-info-account) | Account info related to queried identity and source | [optional] |
+| **Policies** | **[]String** | Password constraints | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $PasswordInfo = Initialize-BetaPasswordInfo  -IdentityId 2c918085744fec4301746f9a5bce4605 `
  -SourceId 2c918083746f642c01746f990884012a `
@@ -36,10 +37,9 @@ $PasswordInfo = Initialize-BetaPasswordInfo  -IdentityId 2c918085744fec4301746f9
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $PasswordInfo | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

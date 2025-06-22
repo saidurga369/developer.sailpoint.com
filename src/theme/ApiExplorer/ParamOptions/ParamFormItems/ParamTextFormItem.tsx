@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 
-import FormTextInput from "@theme/ApiExplorer/FormTextInput";
-import { Param, setParam } from "@theme/ApiExplorer/ParamOptions/slice";
-import { useTypedDispatch } from "@theme/ApiItem/hooks";
+import FormTextInput from '@theme/ApiExplorer/FormTextInput';
+import {Param, setParam} from '@theme/ApiExplorer/ParamOptions/slice';
+import {useTypedDispatch} from '@theme/ApiItem/hooks';
 
 export interface ParamProps {
   param: Param;
 }
 
-export default function ParamTextFormItem({ param }: ParamProps) {
+export default function ParamTextFormItem({param}: ParamProps) {
   const dispatch = useTypedDispatch();
   return (
     <FormTextInput
@@ -20,10 +20,10 @@ export default function ParamTextFormItem({ param }: ParamProps) {
           setParam({
             ...param,
             value:
-              param.in === "path" || param.in === "query"
-                ? e.target.value.replace(/\s/g, "%20")
+              param.in === 'path' || param.in === 'query'
+                ? e.target.value.replace(/\s/g, '%20')
                 : e.target.value,
-          })
+          }),
         )
       }
     />

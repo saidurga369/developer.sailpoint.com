@@ -4,20 +4,26 @@ title: AttributeValueDTO
 pagination_label: AttributeValueDTO
 sidebar_label: AttributeValueDTO
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AttributeValueDTO', 'BetaAttributeValueDTO'] 
+keywords: ['go', 'Golang', 'sdk', 'AttributeValueDTO', 'BetaAttributeValueDTO']
 slug: /tools/sdk/go/beta/models/attribute-value-dto
-tags: ['SDK', 'Software Development Kit', 'AttributeValueDTO', 'BetaAttributeValueDTO']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AttributeValueDTO',
+    'BetaAttributeValueDTO',
+  ]
 ---
 
 # AttributeValueDTO
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Value** | Pointer to **string** | Technical name of the Attribute value. This is unique and cannot be changed after creation. | [optional] 
-**Name** | Pointer to **string** | The display name of the Attribute value. | [optional] 
-**Status** | Pointer to **string** | The status of the Attribute value. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Value** | Pointer to **string** | Technical name of the Attribute value. This is unique and cannot be changed after creation. | [optional] |
+| **Name** | Pointer to **string** | The display name of the Attribute value. | [optional] |
+| **Status** | Pointer to **string** | The status of the Attribute value. | [optional] |
 
 ## Methods
 
@@ -25,18 +31,13 @@ Name | Type | Description | Notes
 
 `func NewAttributeValueDTO() *AttributeValueDTO`
 
-NewAttributeValueDTO instantiates a new AttributeValueDTO object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAttributeValueDTO instantiates a new AttributeValueDTO object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAttributeValueDTOWithDefaults
 
 `func NewAttributeValueDTOWithDefaults() *AttributeValueDTO`
 
-NewAttributeValueDTOWithDefaults instantiates a new AttributeValueDTO object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAttributeValueDTOWithDefaults instantiates a new AttributeValueDTO object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetValue
 
@@ -48,8 +49,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *AttributeValueDTO) GetValueOk() (*string, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -73,8 +73,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *AttributeValueDTO) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -98,8 +97,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *AttributeValueDTO) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -112,5 +110,3 @@ SetStatus sets Status field to given value.
 `func (o *AttributeValueDTO) HasStatus() bool`
 
 HasStatus returns a boolean if a field has been set.
-
-

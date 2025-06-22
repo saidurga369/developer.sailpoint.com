@@ -4,22 +4,23 @@ title: PeerGroupMember
 pagination_label: PeerGroupMember
 sidebar_label: PeerGroupMember
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'PeerGroupMember', 'V2025PeerGroupMember'] 
+keywords: ['python', 'Python', 'sdk', 'PeerGroupMember', 'V2025PeerGroupMember']
 slug: /tools/sdk/python/v2025/models/peer-group-member
-tags: ['SDK', 'Software Development Kit', 'PeerGroupMember', 'V2025PeerGroupMember']
+tags:
+  ['SDK', 'Software Development Kit', 'PeerGroupMember', 'V2025PeerGroupMember']
 ---
 
 # PeerGroupMember
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | A unique identifier for the peer group member. | [optional] 
-**type** | **str** | The type of the peer group member. | [optional] 
-**peer_group_id** | **str** | The ID of the peer group. | [optional] 
-**attributes** | **map[string]object** | Arbitrary key-value pairs, belonging to the peer group member. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | A unique identifier for the peer group member. | [optional] |
+| **type** | **str** | The type of the peer group member. | [optional] |
+| **peer_group_id** | **str** | The ID of the peer group. | [optional] |
+| **attributes** | **map[string]object** | Arbitrary key-value pairs, belonging to the peer group member. | [optional] |
+
 }
 
 ## Example
@@ -37,5 +38,5 @@ attributes={
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

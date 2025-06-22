@@ -4,20 +4,27 @@ title: ManagedClusterKeyPair
 pagination_label: ManagedClusterKeyPair
 sidebar_label: ManagedClusterKeyPair
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ManagedClusterKeyPair', 'V2024ManagedClusterKeyPair'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'ManagedClusterKeyPair', 'V2024ManagedClusterKeyPair']
 slug: /tools/sdk/go/v2024/models/managed-cluster-key-pair
-tags: ['SDK', 'Software Development Kit', 'ManagedClusterKeyPair', 'V2024ManagedClusterKeyPair']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ManagedClusterKeyPair',
+    'V2024ManagedClusterKeyPair',
+  ]
 ---
 
 # ManagedClusterKeyPair
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**PublicKey** | Pointer to **NullableString** | ManagedCluster publicKey | [optional] 
-**PublicKeyThumbprint** | Pointer to **NullableString** | ManagedCluster publicKeyThumbprint | [optional] 
-**PublicKeyCertificate** | Pointer to **NullableString** | ManagedCluster publicKeyCertificate | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **PublicKey** | Pointer to **NullableString** | ManagedCluster publicKey | [optional] |
+| **PublicKeyThumbprint** | Pointer to **NullableString** | ManagedCluster publicKeyThumbprint | [optional] |
+| **PublicKeyCertificate** | Pointer to **NullableString** | ManagedCluster publicKeyCertificate | [optional] |
 
 ## Methods
 
@@ -25,18 +32,13 @@ Name | Type | Description | Notes
 
 `func NewManagedClusterKeyPair() *ManagedClusterKeyPair`
 
-NewManagedClusterKeyPair instantiates a new ManagedClusterKeyPair object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewManagedClusterKeyPair instantiates a new ManagedClusterKeyPair object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewManagedClusterKeyPairWithDefaults
 
 `func NewManagedClusterKeyPairWithDefaults() *ManagedClusterKeyPair`
 
-NewManagedClusterKeyPairWithDefaults instantiates a new ManagedClusterKeyPair object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewManagedClusterKeyPairWithDefaults instantiates a new ManagedClusterKeyPair object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetPublicKey
 
@@ -48,8 +50,7 @@ GetPublicKey returns the PublicKey field if non-nil, zero value otherwise.
 
 `func (o *ManagedClusterKeyPair) GetPublicKeyOk() (*string, bool)`
 
-GetPublicKeyOk returns a tuple with the PublicKey field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPublicKeyOk returns a tuple with the PublicKey field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPublicKey
 
@@ -67,12 +68,14 @@ HasPublicKey returns a boolean if a field has been set.
 
 `func (o *ManagedClusterKeyPair) SetPublicKeyNil(b bool)`
 
- SetPublicKeyNil sets the value for PublicKey to be an explicit nil
+SetPublicKeyNil sets the value for PublicKey to be an explicit nil
 
 ### UnsetPublicKey
+
 `func (o *ManagedClusterKeyPair) UnsetPublicKey()`
 
 UnsetPublicKey ensures that no value is present for PublicKey, not even an explicit nil
+
 ### GetPublicKeyThumbprint
 
 `func (o *ManagedClusterKeyPair) GetPublicKeyThumbprint() string`
@@ -83,8 +86,7 @@ GetPublicKeyThumbprint returns the PublicKeyThumbprint field if non-nil, zero va
 
 `func (o *ManagedClusterKeyPair) GetPublicKeyThumbprintOk() (*string, bool)`
 
-GetPublicKeyThumbprintOk returns a tuple with the PublicKeyThumbprint field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPublicKeyThumbprintOk returns a tuple with the PublicKeyThumbprint field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPublicKeyThumbprint
 
@@ -102,12 +104,14 @@ HasPublicKeyThumbprint returns a boolean if a field has been set.
 
 `func (o *ManagedClusterKeyPair) SetPublicKeyThumbprintNil(b bool)`
 
- SetPublicKeyThumbprintNil sets the value for PublicKeyThumbprint to be an explicit nil
+SetPublicKeyThumbprintNil sets the value for PublicKeyThumbprint to be an explicit nil
 
 ### UnsetPublicKeyThumbprint
+
 `func (o *ManagedClusterKeyPair) UnsetPublicKeyThumbprint()`
 
 UnsetPublicKeyThumbprint ensures that no value is present for PublicKeyThumbprint, not even an explicit nil
+
 ### GetPublicKeyCertificate
 
 `func (o *ManagedClusterKeyPair) GetPublicKeyCertificate() string`
@@ -118,8 +122,7 @@ GetPublicKeyCertificate returns the PublicKeyCertificate field if non-nil, zero 
 
 `func (o *ManagedClusterKeyPair) GetPublicKeyCertificateOk() (*string, bool)`
 
-GetPublicKeyCertificateOk returns a tuple with the PublicKeyCertificate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPublicKeyCertificateOk returns a tuple with the PublicKeyCertificate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPublicKeyCertificate
 
@@ -137,10 +140,10 @@ HasPublicKeyCertificate returns a boolean if a field has been set.
 
 `func (o *ManagedClusterKeyPair) SetPublicKeyCertificateNil(b bool)`
 
- SetPublicKeyCertificateNil sets the value for PublicKeyCertificate to be an explicit nil
+SetPublicKeyCertificateNil sets the value for PublicKeyCertificate to be an explicit nil
 
 ### UnsetPublicKeyCertificate
+
 `func (o *ManagedClusterKeyPair) UnsetPublicKeyCertificate()`
 
 UnsetPublicKeyCertificate ensures that no value is present for PublicKeyCertificate, not even an explicit nil
-

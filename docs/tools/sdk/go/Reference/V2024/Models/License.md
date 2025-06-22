@@ -4,7 +4,7 @@ title: License
 pagination_label: License
 sidebar_label: License
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'License', 'V2024License'] 
+keywords: ['go', 'Golang', 'sdk', 'License', 'V2024License']
 slug: /tools/sdk/go/v2024/models/license
 tags: ['SDK', 'Software Development Kit', 'License', 'V2024License']
 ---
@@ -13,10 +13,10 @@ tags: ['SDK', 'Software Development Kit', 'License', 'V2024License']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**LicenseId** | Pointer to **string** | Name of the license | [optional] 
-**LegacyFeatureName** | Pointer to **string** | Legacy name of the license | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **LicenseId** | Pointer to **string** | Name of the license | [optional] |
+| **LegacyFeatureName** | Pointer to **string** | Legacy name of the license | [optional] |
 
 ## Methods
 
@@ -24,18 +24,13 @@ Name | Type | Description | Notes
 
 `func NewLicense() *License`
 
-NewLicense instantiates a new License object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewLicense instantiates a new License object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewLicenseWithDefaults
 
 `func NewLicenseWithDefaults() *License`
 
-NewLicenseWithDefaults instantiates a new License object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewLicenseWithDefaults instantiates a new License object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetLicenseId
 
@@ -47,8 +42,7 @@ GetLicenseId returns the LicenseId field if non-nil, zero value otherwise.
 
 `func (o *License) GetLicenseIdOk() (*string, bool)`
 
-GetLicenseIdOk returns a tuple with the LicenseId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLicenseIdOk returns a tuple with the LicenseId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLicenseId
 
@@ -72,8 +66,7 @@ GetLegacyFeatureName returns the LegacyFeatureName field if non-nil, zero value 
 
 `func (o *License) GetLegacyFeatureNameOk() (*string, bool)`
 
-GetLegacyFeatureNameOk returns a tuple with the LegacyFeatureName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLegacyFeatureNameOk returns a tuple with the LegacyFeatureName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLegacyFeatureName
 
@@ -86,5 +79,3 @@ SetLegacyFeatureName sets LegacyFeatureName field to given value.
 `func (o *License) HasLegacyFeatureName() bool`
 
 HasLegacyFeatureName returns a boolean if a field has been set.
-
-

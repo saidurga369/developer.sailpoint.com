@@ -4,9 +4,22 @@ title: UpdateMultiHostSourcesRequestInner
 pagination_label: UpdateMultiHostSourcesRequestInner
 sidebar_label: UpdateMultiHostSourcesRequestInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'UpdateMultiHostSourcesRequestInner', 'V2025UpdateMultiHostSourcesRequestInner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'UpdateMultiHostSourcesRequestInner',
+    'V2025UpdateMultiHostSourcesRequestInner',
+  ]
 slug: /tools/sdk/python/v2025/models/update-multi-host-sources-request-inner
-tags: ['SDK', 'Software Development Kit', 'UpdateMultiHostSourcesRequestInner', 'V2025UpdateMultiHostSourcesRequestInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'UpdateMultiHostSourcesRequestInner',
+    'V2025UpdateMultiHostSourcesRequestInner',
+  ]
 ---
 
 # UpdateMultiHostSourcesRequestInner
@@ -15,11 +28,12 @@ A JSONPatch Operation as defined by [RFC 6902 - JSON Patch](https://tools.ietf.o
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**op** |  **Enum** [  'add',    'replace' ] | The operation to be performed | [required]
-**path** | **str** | A string JSON Pointer representing the target path to an element to be affected by the operation | [required]
-**value** | [**UpdateMultiHostSourcesRequestInnerValue**](update-multi-host-sources-request-inner-value) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **op** | **Enum** [ 'add', 'replace' ] | The operation to be performed | [required] |
+| **path** | **str** | A string JSON Pointer representing the target path to an element to be affected by the operation | [required] |
+| **value** | [**UpdateMultiHostSourcesRequestInnerValue**](update-multi-host-sources-request-inner-value) |  | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ value=New description
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

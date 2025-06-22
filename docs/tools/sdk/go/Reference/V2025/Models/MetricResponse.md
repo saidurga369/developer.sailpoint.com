@@ -4,19 +4,20 @@ title: MetricResponse
 pagination_label: MetricResponse
 sidebar_label: MetricResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'MetricResponse', 'V2025MetricResponse'] 
+keywords: ['go', 'Golang', 'sdk', 'MetricResponse', 'V2025MetricResponse']
 slug: /tools/sdk/go/v2025/models/metric-response
-tags: ['SDK', 'Software Development Kit', 'MetricResponse', 'V2025MetricResponse']
+tags:
+  ['SDK', 'Software Development Kit', 'MetricResponse', 'V2025MetricResponse']
 ---
 
 # MetricResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | Pointer to **string** | the name of metric | [optional] 
-**Value** | Pointer to **float32** | the value associated to the metric | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | Pointer to **string** | the name of metric | [optional] |
+| **Value** | Pointer to **float32** | the value associated to the metric | [optional] |
 
 ## Methods
 
@@ -24,18 +25,13 @@ Name | Type | Description | Notes
 
 `func NewMetricResponse() *MetricResponse`
 
-NewMetricResponse instantiates a new MetricResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewMetricResponse instantiates a new MetricResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewMetricResponseWithDefaults
 
 `func NewMetricResponseWithDefaults() *MetricResponse`
 
-NewMetricResponseWithDefaults instantiates a new MetricResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewMetricResponseWithDefaults instantiates a new MetricResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -47,8 +43,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *MetricResponse) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -72,8 +67,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *MetricResponse) GetValueOk() (*float32, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -86,5 +80,3 @@ SetValue sets Value field to given value.
 `func (o *MetricResponse) HasValue() bool`
 
 HasValue returns a boolean if a field has been set.
-
-

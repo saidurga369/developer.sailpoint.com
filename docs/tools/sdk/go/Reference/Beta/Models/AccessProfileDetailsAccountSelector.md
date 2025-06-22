@@ -4,18 +4,31 @@ title: AccessProfileDetailsAccountSelector
 pagination_label: AccessProfileDetailsAccountSelector
 sidebar_label: AccessProfileDetailsAccountSelector
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessProfileDetailsAccountSelector', 'BetaAccessProfileDetailsAccountSelector'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'AccessProfileDetailsAccountSelector',
+    'BetaAccessProfileDetailsAccountSelector',
+  ]
 slug: /tools/sdk/go/beta/models/access-profile-details-account-selector
-tags: ['SDK', 'Software Development Kit', 'AccessProfileDetailsAccountSelector', 'BetaAccessProfileDetailsAccountSelector']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessProfileDetailsAccountSelector',
+    'BetaAccessProfileDetailsAccountSelector',
+  ]
 ---
 
 # AccessProfileDetailsAccountSelector
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Selectors** | Pointer to [**[]Selector**](selector) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Selectors** | Pointer to [**[]Selector**](selector) |  | [optional] |
 
 ## Methods
 
@@ -23,18 +36,13 @@ Name | Type | Description | Notes
 
 `func NewAccessProfileDetailsAccountSelector() *AccessProfileDetailsAccountSelector`
 
-NewAccessProfileDetailsAccountSelector instantiates a new AccessProfileDetailsAccountSelector object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessProfileDetailsAccountSelector instantiates a new AccessProfileDetailsAccountSelector object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessProfileDetailsAccountSelectorWithDefaults
 
 `func NewAccessProfileDetailsAccountSelectorWithDefaults() *AccessProfileDetailsAccountSelector`
 
-NewAccessProfileDetailsAccountSelectorWithDefaults instantiates a new AccessProfileDetailsAccountSelector object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessProfileDetailsAccountSelectorWithDefaults instantiates a new AccessProfileDetailsAccountSelector object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetSelectors
 
@@ -46,8 +54,7 @@ GetSelectors returns the Selectors field if non-nil, zero value otherwise.
 
 `func (o *AccessProfileDetailsAccountSelector) GetSelectorsOk() (*[]Selector, bool)`
 
-GetSelectorsOk returns a tuple with the Selectors field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSelectorsOk returns a tuple with the Selectors field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSelectors
 
@@ -65,10 +72,10 @@ HasSelectors returns a boolean if a field has been set.
 
 `func (o *AccessProfileDetailsAccountSelector) SetSelectorsNil(b bool)`
 
- SetSelectorsNil sets the value for Selectors to be an explicit nil
+SetSelectorsNil sets the value for Selectors to be an explicit nil
 
 ### UnsetSelectors
+
 `func (o *AccessProfileDetailsAccountSelector) UnsetSelectors()`
 
 UnsetSelectors ensures that no value is present for Selectors, not even an explicit nil
-

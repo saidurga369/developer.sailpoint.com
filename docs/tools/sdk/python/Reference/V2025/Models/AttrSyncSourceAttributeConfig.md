@@ -4,9 +4,22 @@ title: AttrSyncSourceAttributeConfig
 pagination_label: AttrSyncSourceAttributeConfig
 sidebar_label: AttrSyncSourceAttributeConfig
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AttrSyncSourceAttributeConfig', 'V2025AttrSyncSourceAttributeConfig'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AttrSyncSourceAttributeConfig',
+    'V2025AttrSyncSourceAttributeConfig',
+  ]
 slug: /tools/sdk/python/v2025/models/attr-sync-source-attribute-config
-tags: ['SDK', 'Software Development Kit', 'AttrSyncSourceAttributeConfig', 'V2025AttrSyncSourceAttributeConfig']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AttrSyncSourceAttributeConfig',
+    'V2025AttrSyncSourceAttributeConfig',
+  ]
 ---
 
 # AttrSyncSourceAttributeConfig
@@ -15,12 +28,13 @@ Specification of source attribute sync mapping configuration for an identity att
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | Name of the identity attribute | [required]
-**display_name** | **str** | Display name of the identity attribute | [required]
-**enabled** | **bool** | Determines whether or not the attribute is enabled for synchronization | [required]
-**target** | **str** | Name of the source account attribute to which the identity attribute value will be synchronized if enabled | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **name** | **str** | Name of the identity attribute | [required] |
+| **display_name** | **str** | Display name of the identity attribute | [required] |
+| **enabled** | **bool** | Determines whether or not the attribute is enabled for synchronization | [required] |
+| **target** | **str** | Name of the source account attribute to which the identity attribute value will be synchronized if enabled | [required] |
+
 }
 
 ## Example
@@ -36,5 +50,5 @@ target='mail'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,25 +4,38 @@ title: AppAccountDetails
 pagination_label: AppAccountDetails
 sidebar_label: AppAccountDetails
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'AppAccountDetails', 'V2024AppAccountDetails'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'AppAccountDetails',
+    'V2024AppAccountDetails',
+  ]
 slug: /tools/sdk/powershell/v2024/models/app-account-details
-tags: ['SDK', 'Software Development Kit', 'AppAccountDetails', 'V2024AppAccountDetails']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AppAccountDetails',
+    'V2024AppAccountDetails',
+  ]
 ---
-
 
 # AppAccountDetails
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**AppId** | **String** | The source app ID | [optional] 
-**AppDisplayName** | **String** | The source app display name | [optional] 
-**SourceAccount** | [**AppAccountDetailsSourceAccount**](app-account-details-source-account) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **AppId** | **String** | The source app ID | [optional] |
+| **AppDisplayName** | **String** | The source app display name | [optional] |
+| **SourceAccount** | [**AppAccountDetailsSourceAccount**](app-account-details-source-account) |  | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $AppAccountDetails = Initialize-V2024AppAccountDetails  -AppId fbf4f72280304f1a8bc808fc2a3bcf7b `
  -AppDisplayName AD source app `
@@ -30,10 +43,9 @@ $AppAccountDetails = Initialize-V2024AppAccountDetails  -AppId fbf4f72280304f1a8
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $AppAccountDetails | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

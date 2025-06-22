@@ -4,20 +4,33 @@ title: AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes
 pagination_label: AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes
 sidebar_label: AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes', 'V2024AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes',
+    'V2024AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes',
+  ]
 slug: /tools/sdk/go/v2024/models/attribute-mappings-all-of-transform-definition-attributes-input-attributes
-tags: ['SDK', 'Software Development Kit', 'AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes', 'V2024AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes',
+    'V2024AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes',
+  ]
 ---
 
 # AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**AttributeName** | Pointer to **string** | The name of attribute | [optional] 
-**SourceName** | Pointer to **string** | Name of the Source | [optional] 
-**Name** | Pointer to **string** | ID of the Source | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **AttributeName** | Pointer to **string** | The name of attribute | [optional] |
+| **SourceName** | Pointer to **string** | Name of the Source | [optional] |
+| **Name** | Pointer to **string** | ID of the Source | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewAttributeMappingsAllOfTransformDefinitionAttributesInputAttributes() *AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes`
 
-NewAttributeMappingsAllOfTransformDefinitionAttributesInputAttributes instantiates a new AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAttributeMappingsAllOfTransformDefinitionAttributesInputAttributes instantiates a new AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAttributeMappingsAllOfTransformDefinitionAttributesInputAttributesWithDefaults
 
 `func NewAttributeMappingsAllOfTransformDefinitionAttributesInputAttributesWithDefaults() *AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes`
 
-NewAttributeMappingsAllOfTransformDefinitionAttributesInputAttributesWithDefaults instantiates a new AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAttributeMappingsAllOfTransformDefinitionAttributesInputAttributesWithDefaults instantiates a new AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetAttributeName
 
@@ -48,8 +56,7 @@ GetAttributeName returns the AttributeName field if non-nil, zero value otherwis
 
 `func (o *AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes) GetAttributeNameOk() (*string, bool)`
 
-GetAttributeNameOk returns a tuple with the AttributeName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributeNameOk returns a tuple with the AttributeName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributeName
 
@@ -73,8 +80,7 @@ GetSourceName returns the SourceName field if non-nil, zero value otherwise.
 
 `func (o *AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes) GetSourceNameOk() (*string, bool)`
 
-GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceName
 
@@ -98,8 +104,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -112,5 +117,3 @@ SetName sets Name field to given value.
 `func (o *AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

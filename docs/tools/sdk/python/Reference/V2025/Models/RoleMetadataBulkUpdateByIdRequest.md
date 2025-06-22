@@ -4,9 +4,22 @@ title: RoleMetadataBulkUpdateByIdRequest
 pagination_label: RoleMetadataBulkUpdateByIdRequest
 sidebar_label: RoleMetadataBulkUpdateByIdRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RoleMetadataBulkUpdateByIdRequest', 'V2025RoleMetadataBulkUpdateByIdRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'RoleMetadataBulkUpdateByIdRequest',
+    'V2025RoleMetadataBulkUpdateByIdRequest',
+  ]
 slug: /tools/sdk/python/v2025/models/role-metadata-bulk-update-by-id-request
-tags: ['SDK', 'Software Development Kit', 'RoleMetadataBulkUpdateByIdRequest', 'V2025RoleMetadataBulkUpdateByIdRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMetadataBulkUpdateByIdRequest',
+    'V2025RoleMetadataBulkUpdateByIdRequest',
+  ]
 ---
 
 # RoleMetadataBulkUpdateByIdRequest
@@ -15,12 +28,13 @@ This API initialize a Bulk update by Id request of Role metadata. The maximum ro
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**roles** | **[]str** | Roles' Id to be updated | [required]
-**operation** |  **Enum** [  'ADD',    'REMOVE',    'REPLACE' ] | The operation to be performed | [required]
-**replace_scope** |  **Enum** [  'ALL',    'ATTRIBUTE' ] | The choice of update scope. | [optional] 
-**values** | [**[]RoleMetadataBulkUpdateByIdRequestValuesInner**](role-metadata-bulk-update-by-id-request-values-inner) | The metadata to be updated, including attribute key and value. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **roles** | **[]str** | Roles' Id to be updated | [required] |
+| **operation** | **Enum** [ 'ADD', 'REMOVE', 'REPLACE' ] | The operation to be performed | [required] |
+| **replace_scope** | **Enum** [ 'ALL', 'ATTRIBUTE' ] | The choice of update scope. | [optional] |
+| **values** | [**[]RoleMetadataBulkUpdateByIdRequestValuesInner**](role-metadata-bulk-update-by-id-request-values-inner) | The metadata to be updated, including attribute key and value. | [required] |
+
 }
 
 ## Example
@@ -36,5 +50,5 @@ values=[{attribute=iscFederalClassifications, values=[topSecret]}]
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

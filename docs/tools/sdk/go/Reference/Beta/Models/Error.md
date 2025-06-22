@@ -4,7 +4,7 @@ title: Error
 pagination_label: Error
 sidebar_label: Error
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Error', 'BetaError'] 
+keywords: ['go', 'Golang', 'sdk', 'Error', 'BetaError']
 slug: /tools/sdk/go/beta/models/error
 tags: ['SDK', 'Software Development Kit', 'Error', 'BetaError']
 ---
@@ -13,11 +13,11 @@ tags: ['SDK', 'Software Development Kit', 'Error', 'BetaError']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**DetailCode** | Pointer to **string** | DetailCode is the text of the status code returned | [optional] 
-**Messages** | Pointer to [**[]ErrorMessage**](error-message) |  | [optional] 
-**TrackingId** | Pointer to **string** | TrackingID is the request tracking unique identifier | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **DetailCode** | Pointer to **string** | DetailCode is the text of the status code returned | [optional] |
+| **Messages** | Pointer to [**[]ErrorMessage**](error-message) |  | [optional] |
+| **TrackingId** | Pointer to **string** | TrackingID is the request tracking unique identifier | [optional] |
 
 ## Methods
 
@@ -25,18 +25,13 @@ Name | Type | Description | Notes
 
 `func NewError() *Error`
 
-NewError instantiates a new Error object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewError instantiates a new Error object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewErrorWithDefaults
 
 `func NewErrorWithDefaults() *Error`
 
-NewErrorWithDefaults instantiates a new Error object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewErrorWithDefaults instantiates a new Error object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetDetailCode
 
@@ -48,8 +43,7 @@ GetDetailCode returns the DetailCode field if non-nil, zero value otherwise.
 
 `func (o *Error) GetDetailCodeOk() (*string, bool)`
 
-GetDetailCodeOk returns a tuple with the DetailCode field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDetailCodeOk returns a tuple with the DetailCode field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDetailCode
 
@@ -73,8 +67,7 @@ GetMessages returns the Messages field if non-nil, zero value otherwise.
 
 `func (o *Error) GetMessagesOk() (*[]ErrorMessage, bool)`
 
-GetMessagesOk returns a tuple with the Messages field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMessagesOk returns a tuple with the Messages field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMessages
 
@@ -98,8 +91,7 @@ GetTrackingId returns the TrackingId field if non-nil, zero value otherwise.
 
 `func (o *Error) GetTrackingIdOk() (*string, bool)`
 
-GetTrackingIdOk returns a tuple with the TrackingId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTrackingIdOk returns a tuple with the TrackingId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTrackingId
 
@@ -112,5 +104,3 @@ SetTrackingId sets TrackingId field to given value.
 `func (o *Error) HasTrackingId() bool`
 
 HasTrackingId returns a boolean if a field has been set.
-
-

@@ -4,20 +4,33 @@ title: IdentityProfileExportedObject
 pagination_label: IdentityProfileExportedObject
 sidebar_label: IdentityProfileExportedObject
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IdentityProfileExportedObject', 'BetaIdentityProfileExportedObject'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'IdentityProfileExportedObject',
+    'BetaIdentityProfileExportedObject',
+  ]
 slug: /tools/sdk/go/beta/models/identity-profile-exported-object
-tags: ['SDK', 'Software Development Kit', 'IdentityProfileExportedObject', 'BetaIdentityProfileExportedObject']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityProfileExportedObject',
+    'BetaIdentityProfileExportedObject',
+  ]
 ---
 
 # IdentityProfileExportedObject
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Version** | Pointer to **int32** | Version or object from the target service. | [optional] 
-**Self** | Pointer to [**SelfImportExportDto**](self-import-export-dto) |  | [optional] 
-**Object** | Pointer to [**IdentityProfile1**](identity-profile1) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Version** | Pointer to **int32** | Version or object from the target service. | [optional] |
+| **Self** | Pointer to [**SelfImportExportDto**](self-import-export-dto) |  | [optional] |
+| **Object** | Pointer to [**IdentityProfile1**](identity-profile1) |  | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewIdentityProfileExportedObject() *IdentityProfileExportedObject`
 
-NewIdentityProfileExportedObject instantiates a new IdentityProfileExportedObject object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewIdentityProfileExportedObject instantiates a new IdentityProfileExportedObject object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewIdentityProfileExportedObjectWithDefaults
 
 `func NewIdentityProfileExportedObjectWithDefaults() *IdentityProfileExportedObject`
 
-NewIdentityProfileExportedObjectWithDefaults instantiates a new IdentityProfileExportedObject object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewIdentityProfileExportedObjectWithDefaults instantiates a new IdentityProfileExportedObject object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetVersion
 
@@ -48,8 +56,7 @@ GetVersion returns the Version field if non-nil, zero value otherwise.
 
 `func (o *IdentityProfileExportedObject) GetVersionOk() (*int32, bool)`
 
-GetVersionOk returns a tuple with the Version field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetVersionOk returns a tuple with the Version field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetVersion
 
@@ -73,8 +80,7 @@ GetSelf returns the Self field if non-nil, zero value otherwise.
 
 `func (o *IdentityProfileExportedObject) GetSelfOk() (*SelfImportExportDto, bool)`
 
-GetSelfOk returns a tuple with the Self field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSelfOk returns a tuple with the Self field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSelf
 
@@ -98,8 +104,7 @@ GetObject returns the Object field if non-nil, zero value otherwise.
 
 `func (o *IdentityProfileExportedObject) GetObjectOk() (*IdentityProfile1, bool)`
 
-GetObjectOk returns a tuple with the Object field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetObjectOk returns a tuple with the Object field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetObject
 
@@ -112,5 +117,3 @@ SetObject sets Object field to given value.
 `func (o *IdentityProfileExportedObject) HasObject() bool`
 
 HasObject returns a boolean if a field has been set.
-
-

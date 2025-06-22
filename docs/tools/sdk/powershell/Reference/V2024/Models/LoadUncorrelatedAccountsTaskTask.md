@@ -4,36 +4,49 @@ title: LoadUncorrelatedAccountsTaskTask
 pagination_label: LoadUncorrelatedAccountsTaskTask
 sidebar_label: LoadUncorrelatedAccountsTaskTask
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'LoadUncorrelatedAccountsTaskTask', 'V2024LoadUncorrelatedAccountsTaskTask'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'LoadUncorrelatedAccountsTaskTask',
+    'V2024LoadUncorrelatedAccountsTaskTask',
+  ]
 slug: /tools/sdk/powershell/v2024/models/load-uncorrelated-accounts-task-task
-tags: ['SDK', 'Software Development Kit', 'LoadUncorrelatedAccountsTaskTask', 'V2024LoadUncorrelatedAccountsTaskTask']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'LoadUncorrelatedAccountsTaskTask',
+    'V2024LoadUncorrelatedAccountsTaskTask',
+  ]
 ---
-
 
 # LoadUncorrelatedAccountsTaskTask
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | System-generated unique ID of the task this taskStatus represents | [optional] 
-**Type** | **String** | Type of task this task represents | [optional] 
-**Name** | **String** | The name of uncorrelated accounts process | [optional] 
-**Description** | **String** | The description of the task | [optional] 
-**Launcher** | **String** | The user who initiated the task | [optional] 
-**Created** | **System.DateTime** | The Task creation date | [optional] 
-**Launched** | **System.DateTime** | The task start date | [optional] 
-**Completed** | **System.DateTime** | The task completion date | [optional] 
-**CompletionStatus** |  **Enum** [  "SUCCESS",    "WARNING",    "ERROR",    "TERMINATED",    "TEMP_ERROR" ] | Task completion status. | [optional] 
-**ParentName** | **String** | Name of the parent task if exists. | [optional] 
-**Messages** | [**[]LoadUncorrelatedAccountsTaskTaskMessagesInner**](load-uncorrelated-accounts-task-task-messages-inner) | List of the messages dedicated to the report.  From task definition perspective here usually should be warnings or errors. | [optional] 
-**Progress** | **String** | Current task state. | [optional] 
-**Attributes** | [**LoadUncorrelatedAccountsTaskTaskAttributes**](load-uncorrelated-accounts-task-task-attributes) |  | [optional] 
-**Returns** | [**SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | Return values from the task | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | System-generated unique ID of the task this taskStatus represents | [optional] |
+| **Type** | **String** | Type of task this task represents | [optional] |
+| **Name** | **String** | The name of uncorrelated accounts process | [optional] |
+| **Description** | **String** | The description of the task | [optional] |
+| **Launcher** | **String** | The user who initiated the task | [optional] |
+| **Created** | **System.DateTime** | The Task creation date | [optional] |
+| **Launched** | **System.DateTime** | The task start date | [optional] |
+| **Completed** | **System.DateTime** | The task completion date | [optional] |
+| **CompletionStatus** | **Enum** [ "SUCCESS", "WARNING", "ERROR", "TERMINATED", "TEMP_ERROR" ] | Task completion status. | [optional] |
+| **ParentName** | **String** | Name of the parent task if exists. | [optional] |
+| **Messages** | [**[]LoadUncorrelatedAccountsTaskTaskMessagesInner**](load-uncorrelated-accounts-task-task-messages-inner) | List of the messages dedicated to the report. From task definition perspective here usually should be warnings or errors. | [optional] |
+| **Progress** | **String** | Current task state. | [optional] |
+| **Attributes** | [**LoadUncorrelatedAccountsTaskTaskAttributes**](load-uncorrelated-accounts-task-task-attributes) |  | [optional] |
+| **Returns** | [**SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | Return values from the task | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $LoadUncorrelatedAccountsTaskTask = Initialize-V2024LoadUncorrelatedAccountsTaskTask  -Id 90b83a6bb737489494794f84cd3a51e6 `
  -Type QUARTZ `
@@ -52,10 +65,9 @@ $LoadUncorrelatedAccountsTaskTask = Initialize-V2024LoadUncorrelatedAccountsTask
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $LoadUncorrelatedAccountsTaskTask | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

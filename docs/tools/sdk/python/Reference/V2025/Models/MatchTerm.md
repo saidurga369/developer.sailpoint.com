@@ -4,24 +4,24 @@ title: MatchTerm
 pagination_label: MatchTerm
 sidebar_label: MatchTerm
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'MatchTerm', 'V2025MatchTerm'] 
+keywords: ['python', 'Python', 'sdk', 'MatchTerm', 'V2025MatchTerm']
 slug: /tools/sdk/python/v2025/models/match-term
 tags: ['SDK', 'Software Development Kit', 'MatchTerm', 'V2025MatchTerm']
 ---
 
 # MatchTerm
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | The attribute name | [optional] 
-**value** | **str** | The attribute value | [optional] 
-**op** | **str** | The operator between name and value | [optional] 
-**container** | **bool** | If it is a container or a real match term | [optional] [default to False]
-**var_and** | **bool** | If it is AND logical operator for the children match terms | [optional] [default to False]
-**children** | **[]Dict[str, object]** | The children under this match term | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **name** | **str** | The attribute name | [optional] |
+| **value** | **str** | The attribute value | [optional] |
+| **op** | **str** | The operator between name and value | [optional] |
+| **container** | **bool** | If it is a container or a real match term | [optional] [default to False] |
+| **var_and** | **bool** | If it is AND logical operator for the children match terms | [optional] [default to False] |
+| **children** | **[]Dict[str, object]** | The children under this match term | [optional] |
+
 }
 
 ## Example
@@ -39,5 +39,5 @@ children=[{name=businessCategory, value=Service, op=eq, container=false, and=fal
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

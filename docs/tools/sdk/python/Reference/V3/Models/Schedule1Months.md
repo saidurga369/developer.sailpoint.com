@@ -4,21 +4,21 @@ title: Schedule1Months
 pagination_label: Schedule1Months
 sidebar_label: Schedule1Months
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'Schedule1Months', 'Schedule1Months'] 
+keywords: ['python', 'Python', 'sdk', 'Schedule1Months', 'Schedule1Months']
 slug: /tools/sdk/python/v3/models/schedule1-months
 tags: ['SDK', 'Software Development Kit', 'Schedule1Months', 'Schedule1Months']
 ---
 
 # Schedule1Months
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** | [**SelectorType**](selector-type) |  | [required]
-**values** | **[]str** | The selected values.  | [required]
-**interval** | **int** | The selected interval for RANGE selectors.  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | [**SelectorType**](selector-type) |  | [required] |
+| **values** | **[]str** | The selected values. | [required] |
+| **interval** | **int** | The selected interval for RANGE selectors. | [optional] |
+
 }
 
 ## Example
@@ -33,5 +33,5 @@ interval=3
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,29 +4,38 @@ title: WorkItemStateManualWorkItems
 pagination_label: WorkItemStateManualWorkItems
 sidebar_label: WorkItemStateManualWorkItems
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'WorkItemStateManualWorkItems', 'V2025WorkItemStateManualWorkItems'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'WorkItemStateManualWorkItems',
+    'V2025WorkItemStateManualWorkItems',
+  ]
 slug: /tools/sdk/powershell/v2025/models/work-item-state-manual-work-items
-tags: ['SDK', 'Software Development Kit', 'WorkItemStateManualWorkItems', 'V2025WorkItemStateManualWorkItems']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'WorkItemStateManualWorkItems',
+    'V2025WorkItemStateManualWorkItems',
+  ]
 ---
-
 
 # WorkItemStateManualWorkItems
 
 ## Enum
 
+- `Finished` (value: `"Finished"`)
 
-* `Finished` (value: `"Finished"`)
+- `Rejected` (value: `"Rejected"`)
 
-* `Rejected` (value: `"Rejected"`)
+- `Returned` (value: `"Returned"`)
 
-* `Returned` (value: `"Returned"`)
+- `Expired` (value: `"Expired"`)
 
-* `Expired` (value: `"Expired"`)
+- `Pending` (value: `"Pending"`)
 
-* `Pending` (value: `"Pending"`)
+- `Canceled` (value: `"Canceled"`)
 
-* `Canceled` (value: `"Canceled"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

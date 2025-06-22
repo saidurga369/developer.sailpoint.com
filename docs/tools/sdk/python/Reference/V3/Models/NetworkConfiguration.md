@@ -4,21 +4,28 @@ title: NetworkConfiguration
 pagination_label: NetworkConfiguration
 sidebar_label: NetworkConfiguration
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'NetworkConfiguration', 'NetworkConfiguration'] 
+keywords:
+  ['python', 'Python', 'sdk', 'NetworkConfiguration', 'NetworkConfiguration']
 slug: /tools/sdk/python/v3/models/network-configuration
-tags: ['SDK', 'Software Development Kit', 'NetworkConfiguration', 'NetworkConfiguration']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NetworkConfiguration',
+    'NetworkConfiguration',
+  ]
 ---
 
 # NetworkConfiguration
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**range** | **[]str** | The collection of ip ranges. | [optional] 
-**geolocation** | **[]str** | The collection of country codes. | [optional] 
-**whitelisted** | **bool** | Denotes whether the provided lists are whitelisted or blacklisted for geo location. | [optional] [default to False]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **range** | **[]str** | The collection of ip ranges. | [optional] |
+| **geolocation** | **[]str** | The collection of country codes. | [optional] |
+| **whitelisted** | **bool** | Denotes whether the provided lists are whitelisted or blacklisted for geo location. | [optional] [default to False] |
+
 }
 
 ## Example
@@ -33,5 +40,5 @@ whitelisted=True
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

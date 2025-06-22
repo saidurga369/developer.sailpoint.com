@@ -4,30 +4,43 @@ title: WorkflowLibraryAction
 pagination_label: WorkflowLibraryAction
 sidebar_label: WorkflowLibraryAction
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'WorkflowLibraryAction', 'V2024WorkflowLibraryAction'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'WorkflowLibraryAction',
+    'V2024WorkflowLibraryAction',
+  ]
 slug: /tools/sdk/python/v2024/models/workflow-library-action
-tags: ['SDK', 'Software Development Kit', 'WorkflowLibraryAction', 'V2024WorkflowLibraryAction']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'WorkflowLibraryAction',
+    'V2024WorkflowLibraryAction',
+  ]
 ---
 
 # WorkflowLibraryAction
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Action ID. This is a static namespaced ID for the action | [optional] 
-**name** | **str** | Action Name | [optional] 
-**type** | **str** | Action type | [optional] 
-**description** | **str** | Action Description | [optional] 
-**form_fields** | [**[]WorkflowLibraryFormFields**](workflow-library-form-fields) | One or more inputs that the action accepts | [optional] 
-**example_output** | [**WorkflowLibraryActionExampleOutput**](workflow-library-action-example-output) |  | [optional] 
-**deprecated** | **bool** |  | [optional] 
-**deprecated_by** | **datetime** |  | [optional] 
-**version_number** | **int** | Version number | [optional] 
-**is_simulation_enabled** | **bool** |  | [optional] 
-**is_dynamic_schema** | **bool** | Determines whether the dynamic output schema is returned in place of the action's output schema. The dynamic schema lists non-static properties, like properties of a workflow form where each form has different fields. These will be provided dynamically based on available form fields. | [optional] [default to False]
-**output_schema** | **object** | Defines the output schema, if any, that this action produces. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | Action ID. This is a static namespaced ID for the action | [optional] |
+| **name** | **str** | Action Name | [optional] |
+| **type** | **str** | Action type | [optional] |
+| **description** | **str** | Action Description | [optional] |
+| **form_fields** | [**[]WorkflowLibraryFormFields**](workflow-library-form-fields) | One or more inputs that the action accepts | [optional] |
+| **example_output** | [**WorkflowLibraryActionExampleOutput**](workflow-library-action-example-output) |  | [optional] |
+| **deprecated** | **bool** |  | [optional] |
+| **deprecated_by** | **datetime** |  | [optional] |
+| **version_number** | **int** | Version number | [optional] |
+| **is_simulation_enabled** | **bool** |  | [optional] |
+| **is_dynamic_schema** | **bool** | Determines whether the dynamic output schema is returned in place of the action's output schema. The dynamic schema lists non-static properties, like properties of a workflow form where each form has different fields. These will be provided dynamically based on available form fields. | [optional] [default to False] |
+| **output_schema** | **object** | Defines the output schema, if any, that this action produces. | [optional] |
+
 }
 
 ## Example
@@ -42,11 +55,11 @@ type='ACTION',
 description='Generates a certification campaign.',
 form_fields=[
                     sailpoint.v2024.models.workflow_library_form_fields.WorkflowLibraryFormFields(
-                        description = 'First value to compare', 
-                        help_text = 'The name to give to this certification campaign.', 
-                        label = 'Campaign Name', 
-                        name = 'name', 
-                        required = False, 
+                        description = 'First value to compare',
+                        help_text = 'The name to give to this certification campaign.',
+                        label = 'Campaign Name',
+                        name = 'name',
+                        required = False,
                         type = 'text', )
                     ],
 example_output=,
@@ -59,5 +72,5 @@ output_schema={definitions={}, properties={autoRevokeAllowed={$id=#sp:create-cam
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

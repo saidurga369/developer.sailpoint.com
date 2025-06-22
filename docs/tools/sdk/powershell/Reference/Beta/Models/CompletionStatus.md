@@ -4,25 +4,34 @@ title: CompletionStatus
 pagination_label: CompletionStatus
 sidebar_label: CompletionStatus
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'CompletionStatus', 'BetaCompletionStatus'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'CompletionStatus',
+    'BetaCompletionStatus',
+  ]
 slug: /tools/sdk/powershell/beta/models/completion-status
-tags: ['SDK', 'Software Development Kit', 'CompletionStatus', 'BetaCompletionStatus']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CompletionStatus',
+    'BetaCompletionStatus',
+  ]
 ---
-
 
 # CompletionStatus
 
 ## Enum
 
+- `SUCCESS` (value: `"SUCCESS"`)
 
-* `SUCCESS` (value: `"SUCCESS"`)
+- `FAILURE` (value: `"FAILURE"`)
 
-* `FAILURE` (value: `"FAILURE"`)
+- `INCOMPLETE` (value: `"INCOMPLETE"`)
 
-* `INCOMPLETE` (value: `"INCOMPLETE"`)
+- `PENDING` (value: `"PENDING"`)
 
-* `PENDING` (value: `"PENDING"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

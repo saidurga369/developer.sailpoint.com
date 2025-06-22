@@ -4,23 +4,36 @@ title: RoleInsightsEntitlement
 pagination_label: RoleInsightsEntitlement
 sidebar_label: RoleInsightsEntitlement
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleInsightsEntitlement', 'V2025RoleInsightsEntitlement'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'RoleInsightsEntitlement',
+    'V2025RoleInsightsEntitlement',
+  ]
 slug: /tools/sdk/go/v2025/models/role-insights-entitlement
-tags: ['SDK', 'Software Development Kit', 'RoleInsightsEntitlement', 'V2025RoleInsightsEntitlement']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleInsightsEntitlement',
+    'V2025RoleInsightsEntitlement',
+  ]
 ---
 
 # RoleInsightsEntitlement
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | Pointer to **string** | Name of the entitlement | [optional] 
-**Id** | Pointer to **string** | Id of the entitlement | [optional] 
-**Description** | Pointer to **NullableString** | Description for the entitlement | [optional] 
-**Source** | Pointer to **string** | Source or the application for the entitlement | [optional] 
-**Attribute** | Pointer to **string** | Attribute for the entitlement | [optional] 
-**Value** | Pointer to **string** | Attribute value for the entitlement | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | Pointer to **string** | Name of the entitlement | [optional] |
+| **Id** | Pointer to **string** | Id of the entitlement | [optional] |
+| **Description** | Pointer to **NullableString** | Description for the entitlement | [optional] |
+| **Source** | Pointer to **string** | Source or the application for the entitlement | [optional] |
+| **Attribute** | Pointer to **string** | Attribute for the entitlement | [optional] |
+| **Value** | Pointer to **string** | Attribute value for the entitlement | [optional] |
 
 ## Methods
 
@@ -28,18 +41,13 @@ Name | Type | Description | Notes
 
 `func NewRoleInsightsEntitlement() *RoleInsightsEntitlement`
 
-NewRoleInsightsEntitlement instantiates a new RoleInsightsEntitlement object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleInsightsEntitlement instantiates a new RoleInsightsEntitlement object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleInsightsEntitlementWithDefaults
 
 `func NewRoleInsightsEntitlementWithDefaults() *RoleInsightsEntitlement`
 
-NewRoleInsightsEntitlementWithDefaults instantiates a new RoleInsightsEntitlement object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleInsightsEntitlementWithDefaults instantiates a new RoleInsightsEntitlement object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -51,8 +59,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *RoleInsightsEntitlement) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -76,8 +83,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *RoleInsightsEntitlement) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -101,8 +107,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *RoleInsightsEntitlement) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -120,12 +125,14 @@ HasDescription returns a boolean if a field has been set.
 
 `func (o *RoleInsightsEntitlement) SetDescriptionNil(b bool)`
 
- SetDescriptionNil sets the value for Description to be an explicit nil
+SetDescriptionNil sets the value for Description to be an explicit nil
 
 ### UnsetDescription
+
 `func (o *RoleInsightsEntitlement) UnsetDescription()`
 
 UnsetDescription ensures that no value is present for Description, not even an explicit nil
+
 ### GetSource
 
 `func (o *RoleInsightsEntitlement) GetSource() string`
@@ -136,8 +143,7 @@ GetSource returns the Source field if non-nil, zero value otherwise.
 
 `func (o *RoleInsightsEntitlement) GetSourceOk() (*string, bool)`
 
-GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSource
 
@@ -161,8 +167,7 @@ GetAttribute returns the Attribute field if non-nil, zero value otherwise.
 
 `func (o *RoleInsightsEntitlement) GetAttributeOk() (*string, bool)`
 
-GetAttributeOk returns a tuple with the Attribute field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributeOk returns a tuple with the Attribute field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttribute
 
@@ -186,8 +191,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *RoleInsightsEntitlement) GetValueOk() (*string, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -200,5 +204,3 @@ SetValue sets Value field to given value.
 `func (o *RoleInsightsEntitlement) HasValue() bool`
 
 HasValue returns a boolean if a field has been set.
-
-

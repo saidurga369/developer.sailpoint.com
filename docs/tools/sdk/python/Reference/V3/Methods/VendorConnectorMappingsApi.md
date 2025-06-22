@@ -4,52 +4,66 @@ title: Vendor_Connector_Mappings
 pagination_label: Vendor_Connector_Mappings
 sidebar_label: Vendor_Connector_Mappings
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'Vendor_Connector_Mappings', 'Vendor_Connector_Mappings'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'Vendor_Connector_Mappings',
+    'Vendor_Connector_Mappings',
+  ]
 slug: /tools/sdk/python/v3/methods/vendor-connector-mappings
-tags: ['SDK', 'Software Development Kit', 'Vendor_Connector_Mappings', 'Vendor_Connector_Mappings']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'Vendor_Connector_Mappings',
+    'Vendor_Connector_Mappings',
+  ]
 ---
 
 # sailpoint.v3.VendorConnectorMappingsApi
-   
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/v3*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create-vendor-connector-mapping**](#create-vendor-connector-mapping) | **POST** `/vendor-connector-mappings` | Create vendor connector mapping
-[**delete-vendor-connector-mapping**](#delete-vendor-connector-mapping) | **DELETE** `/vendor-connector-mappings` | Delete vendor connector mapping
-[**get-vendor-connector-mappings**](#get-vendor-connector-mappings) | **GET** `/vendor-connector-mappings` | List vendor connector mappings
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**create-vendor-connector-mapping**](#create-vendor-connector-mapping) | **POST** `/vendor-connector-mappings` | Create vendor connector mapping |
+| [**delete-vendor-connector-mapping**](#delete-vendor-connector-mapping) | **DELETE** `/vendor-connector-mappings` | Delete vendor connector mapping |
+| [**get-vendor-connector-mappings**](#get-vendor-connector-mappings) | **GET** `/vendor-connector-mappings` | List vendor connector mappings |
 
 ## create-vendor-connector-mapping
-Create vendor connector mapping
-Create a new mapping between a SaaS vendor and an ISC connector to establish correlation paths.
 
+Create vendor connector mapping Create a new mapping between a SaaS vendor and an ISC connector to establish correlation paths.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/create-vendor-connector-mapping)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
- Body  | vendor_connector_mapping | [**VendorConnectorMapping**](../models/vendor-connector-mapping) | True  | 
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Body | vendor_connector_mapping | [**VendorConnectorMapping**](../models/vendor-connector-mapping) | True |
 
 ### Return type
+
 [**VendorConnectorMapping**](../models/vendor-connector-mapping)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Successfully created a new vendor connector mapping. | VendorConnectorMapping |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-405 | Method Not Allowed - indicates that the server knows the request method, but the target resource doesn&#39;t support this method. | GetVendorConnectorMappings405Response |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Successfully created a new vendor connector mapping. | VendorConnectorMapping | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 405 | Method Not Allowed - indicates that the server knows the request method, but the target resource doesn&#39;t support this method. | GetVendorConnectorMappings405Response | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json
- - **Accept**: application/json
+
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### Example
 
@@ -84,7 +98,7 @@ with ApiClient(configuration) as api_client:
             "Valid" : true,
             "Time" : "2024-03-14T12:56:19.391294Z"
           }
-        }''' # VendorConnectorMapping | 
+        }''' # VendorConnectorMapping |
 
     try:
         # Create vendor connector mapping
@@ -98,40 +112,40 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling VendorConnectorMappingsApi->create_vendor_connector_mapping: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## delete-vendor-connector-mapping
-Delete vendor connector mapping
-Soft delete a mapping between a SaaS vendor and an ISC connector, removing the established correlation.
 
+Delete vendor connector mapping Soft delete a mapping between a SaaS vendor and an ISC connector, removing the established correlation.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/delete-vendor-connector-mapping)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
- Body  | vendor_connector_mapping | [**VendorConnectorMapping**](../models/vendor-connector-mapping) | True  | 
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Body | vendor_connector_mapping | [**VendorConnectorMapping**](../models/vendor-connector-mapping) | True |
 
 ### Return type
+
 [**DeleteVendorConnectorMapping200Response**](../models/delete-vendor-connector-mapping200-response)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Successfully deleted the specified vendor connector mapping. | DeleteVendorConnectorMapping200Response |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Successfully deleted the specified vendor connector mapping. | DeleteVendorConnectorMapping200Response | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json
- - **Accept**: application/json
+
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### Example
 
@@ -167,7 +181,7 @@ with ApiClient(configuration) as api_client:
             "Valid" : true,
             "Time" : "2024-03-14T12:56:19.391294Z"
           }
-        }''' # VendorConnectorMapping | 
+        }''' # VendorConnectorMapping |
 
     try:
         # Delete vendor connector mapping
@@ -181,37 +195,38 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling VendorConnectorMappingsApi->delete_vendor_connector_mapping: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## get-vendor-connector-mappings
-List vendor connector mappings
-Get a list of mappings between SaaS vendors and ISC connectors, detailing the connections established for correlation.
 
+List vendor connector mappings Get a list of mappings between SaaS vendors and ISC connectors, detailing the connections established for correlation.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/get-vendor-connector-mappings)
 
-### Parameters 
-This endpoint does not need any parameter. 
+### Parameters
+
+This endpoint does not need any parameter.
 
 ### Return type
+
 [**List[VendorConnectorMapping]**](../models/vendor-connector-mapping)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Successfully retrieved list. | List[VendorConnectorMapping] |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-405 | Method Not Allowed - indicates that the server knows the request method, but the target resource doesn&#39;t support this method. | GetVendorConnectorMappings405Response |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Successfully retrieved list. | List[VendorConnectorMapping] | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 405 | Method Not Allowed - indicates that the server knows the request method, but the target resource doesn&#39;t support this method. | GetVendorConnectorMappings405Response | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -227,7 +242,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # List vendor connector mappings
-        
+
         results = VendorConnectorMappingsApi(api_client).get_vendor_connector_mappings()
         # Below is a request that includes all optional parameters
         # results = VendorConnectorMappingsApi(api_client).get_vendor_connector_mappings()
@@ -238,9 +253,4 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling VendorConnectorMappingsApi->get_vendor_connector_mappings: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
-
-
-
+[[Back to top]](#)

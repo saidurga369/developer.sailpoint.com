@@ -4,9 +4,22 @@ title: AttributeDefinitionSchema
 pagination_label: AttributeDefinitionSchema
 sidebar_label: AttributeDefinitionSchema
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AttributeDefinitionSchema', 'BetaAttributeDefinitionSchema'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AttributeDefinitionSchema',
+    'BetaAttributeDefinitionSchema',
+  ]
 slug: /tools/sdk/python/beta/models/attribute-definition-schema
-tags: ['SDK', 'Software Development Kit', 'AttributeDefinitionSchema', 'BetaAttributeDefinitionSchema']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AttributeDefinitionSchema',
+    'BetaAttributeDefinitionSchema',
+  ]
 ---
 
 # AttributeDefinitionSchema
@@ -15,11 +28,12 @@ A reference to the schema on the source to the attribute values map to.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'CONNECTOR_SCHEMA' ] | The type of object being referenced | [optional] 
-**id** | **str** | The object ID this reference applies to. | [optional] 
-**name** | **str** | The human-readable display name of the object. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'CONNECTOR_SCHEMA' ] | The type of object being referenced | [optional] |
+| **id** | **str** | The object ID this reference applies to. | [optional] |
+| **name** | **str** | The human-readable display name of the object. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='group'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

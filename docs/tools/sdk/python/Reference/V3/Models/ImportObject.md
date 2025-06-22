@@ -4,7 +4,7 @@ title: ImportObject
 pagination_label: ImportObject
 sidebar_label: ImportObject
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ImportObject', 'ImportObject'] 
+keywords: ['python', 'Python', 'sdk', 'ImportObject', 'ImportObject']
 slug: /tools/sdk/python/v3/models/import-object
 tags: ['SDK', 'Software Development Kit', 'ImportObject', 'ImportObject']
 ---
@@ -15,11 +15,12 @@ Object created or updated by import.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'CONNECTOR_RULE',    'IDENTITY_OBJECT_CONFIG',    'IDENTITY_PROFILE',    'RULE',    'SOURCE',    'TRANSFORM',    'TRIGGER_SUBSCRIPTION' ] | DTO type of object created or updated by import. | [optional] 
-**id** | **str** | ID of object created or updated by import. | [optional] 
-**name** | **str** | Display name of object created or updated by import. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'CONNECTOR_RULE', 'IDENTITY_OBJECT_CONFIG', 'IDENTITY_PROFILE', 'RULE', 'SOURCE', 'TRANSFORM', 'TRIGGER_SUBSCRIPTION' ] | DTO type of object created or updated by import. | [optional] |
+| **id** | **str** | ID of object created or updated by import. | [optional] |
+| **name** | **str** | Display name of object created or updated by import. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +35,5 @@ name='HR Active Directory'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

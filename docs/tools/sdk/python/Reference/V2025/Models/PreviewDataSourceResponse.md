@@ -4,9 +4,22 @@ title: PreviewDataSourceResponse
 pagination_label: PreviewDataSourceResponse
 sidebar_label: PreviewDataSourceResponse
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'PreviewDataSourceResponse', 'V2025PreviewDataSourceResponse'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'PreviewDataSourceResponse',
+    'V2025PreviewDataSourceResponse',
+  ]
 slug: /tools/sdk/python/v2025/models/preview-data-source-response
-tags: ['SDK', 'Software Development Kit', 'PreviewDataSourceResponse', 'V2025PreviewDataSourceResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PreviewDataSourceResponse',
+    'V2025PreviewDataSourceResponse',
+  ]
 ---
 
 # PreviewDataSourceResponse
@@ -15,9 +28,10 @@ PreviewDataSourceResponse is the response sent by `/form-definitions/{formDefini
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**results** | [**[]FormElementDataSourceConfigOptions**](form-element-data-source-config-options) | Results holds a list of FormElementDataSourceConfigOptions items | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **results** | [**[]FormElementDataSourceConfigOptions**](form-element-data-source-config-options) | Results holds a list of FormElementDataSourceConfigOptions items | [optional] |
+
 }
 
 ## Example
@@ -30,5 +44,5 @@ results={"results":[{"label":"Alfred 255e71dfc6e","subLabel":"Alfred.255e71dfc6e
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,7 +4,7 @@ title: Tenant
 pagination_label: Tenant
 sidebar_label: Tenant
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Tenant', 'V2025Tenant'] 
+keywords: ['go', 'Golang', 'sdk', 'Tenant', 'V2025Tenant']
 slug: /tools/sdk/go/v2025/models/tenant
 tags: ['SDK', 'Software Development Kit', 'Tenant', 'V2025Tenant']
 ---
@@ -13,15 +13,15 @@ tags: ['SDK', 'Software Development Kit', 'Tenant', 'V2025Tenant']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The unique identifier for the Tenant | [optional] [readonly] 
-**Name** | Pointer to **string** | Abbreviated name of the Tenant | [optional] 
-**FullName** | Pointer to **string** | Human-readable name of the Tenant | [optional] 
-**Pod** | Pointer to **string** | Deployment pod for the Tenant | [optional] 
-**Region** | Pointer to **string** | Deployment region for the Tenant | [optional] 
-**Description** | Pointer to **string** | Description of the Tenant | [optional] 
-**Products** | Pointer to [**[]Product**](product) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The unique identifier for the Tenant | [optional] [readonly] |
+| **Name** | Pointer to **string** | Abbreviated name of the Tenant | [optional] |
+| **FullName** | Pointer to **string** | Human-readable name of the Tenant | [optional] |
+| **Pod** | Pointer to **string** | Deployment pod for the Tenant | [optional] |
+| **Region** | Pointer to **string** | Deployment region for the Tenant | [optional] |
+| **Description** | Pointer to **string** | Description of the Tenant | [optional] |
+| **Products** | Pointer to [**[]Product**](product) |  | [optional] |
 
 ## Methods
 
@@ -29,18 +29,13 @@ Name | Type | Description | Notes
 
 `func NewTenant() *Tenant`
 
-NewTenant instantiates a new Tenant object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewTenant instantiates a new Tenant object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewTenantWithDefaults
 
 `func NewTenantWithDefaults() *Tenant`
 
-NewTenantWithDefaults instantiates a new Tenant object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewTenantWithDefaults instantiates a new Tenant object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -52,8 +47,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *Tenant) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -77,8 +71,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *Tenant) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -102,8 +95,7 @@ GetFullName returns the FullName field if non-nil, zero value otherwise.
 
 `func (o *Tenant) GetFullNameOk() (*string, bool)`
 
-GetFullNameOk returns a tuple with the FullName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFullNameOk returns a tuple with the FullName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFullName
 
@@ -127,8 +119,7 @@ GetPod returns the Pod field if non-nil, zero value otherwise.
 
 `func (o *Tenant) GetPodOk() (*string, bool)`
 
-GetPodOk returns a tuple with the Pod field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPodOk returns a tuple with the Pod field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPod
 
@@ -152,8 +143,7 @@ GetRegion returns the Region field if non-nil, zero value otherwise.
 
 `func (o *Tenant) GetRegionOk() (*string, bool)`
 
-GetRegionOk returns a tuple with the Region field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRegionOk returns a tuple with the Region field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRegion
 
@@ -177,8 +167,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *Tenant) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -202,8 +191,7 @@ GetProducts returns the Products field if non-nil, zero value otherwise.
 
 `func (o *Tenant) GetProductsOk() (*[]Product, bool)`
 
-GetProductsOk returns a tuple with the Products field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProductsOk returns a tuple with the Products field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProducts
 
@@ -216,5 +204,3 @@ SetProducts sets Products field to given value.
 `func (o *Tenant) HasProducts() bool`
 
 HasProducts returns a boolean if a field has been set.
-
-

@@ -4,24 +4,37 @@ title: SourceCreationErrors
 pagination_label: SourceCreationErrors
 sidebar_label: SourceCreationErrors
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SourceCreationErrors', 'BetaSourceCreationErrors'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'SourceCreationErrors',
+    'BetaSourceCreationErrors',
+  ]
 slug: /tools/sdk/python/beta/models/source-creation-errors
-tags: ['SDK', 'Software Development Kit', 'SourceCreationErrors', 'BetaSourceCreationErrors']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SourceCreationErrors',
+    'BetaSourceCreationErrors',
+  ]
 ---
 
 # SourceCreationErrors
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**multihost_id** | **str** | Multi-Host Integration ID. | [optional] [readonly] 
-**source_name** | **str** | Source's human-readable name. | [optional] 
-**source_error** | **str** | Source's human-readable description. | [optional] 
-**created** | **datetime** | Date-time when the source was created | [optional] 
-**modified** | **datetime** | Date-time when the source was last modified. | [optional] 
-**operation** | **str** | operation category (e.g. DELETE). | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **multihost_id** | **str** | Multi-Host Integration ID. | [optional] [readonly] |
+| **source_name** | **str** | Source's human-readable name. | [optional] |
+| **source_error** | **str** | Source's human-readable description. | [optional] |
+| **created** | **datetime** | Date-time when the source was created | [optional] |
+| **modified** | **datetime** | Date-time when the source was last modified. | [optional] |
+| **operation** | **str** | operation category (e.g. DELETE). | [optional] |
+
 }
 
 ## Example
@@ -39,5 +52,5 @@ operation='DELETE'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

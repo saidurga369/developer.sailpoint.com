@@ -4,7 +4,7 @@ title: FormElement
 pagination_label: FormElement
 sidebar_label: FormElement
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'FormElement', 'BetaFormElement'] 
+keywords: ['go', 'Golang', 'sdk', 'FormElement', 'BetaFormElement']
 slug: /tools/sdk/go/beta/models/form-element
 tags: ['SDK', 'Software Development Kit', 'FormElement', 'BetaFormElement']
 ---
@@ -13,13 +13,13 @@ tags: ['SDK', 'Software Development Kit', 'FormElement', 'BetaFormElement']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Form element identifier. | [optional] 
-**ElementType** | Pointer to **string** | FormElementType value.  TEXT FormElementTypeText TOGGLE FormElementTypeToggle TEXTAREA FormElementTypeTextArea HIDDEN FormElementTypeHidden PHONE FormElementTypePhone EMAIL FormElementTypeEmail SELECT FormElementTypeSelect DATE FormElementTypeDate SECTION FormElementTypeSection COLUMN_SET FormElementTypeColumns IMAGE FormElementTypeImage DESCRIPTION FormElementTypeDescription | [optional] 
-**Config** | Pointer to **map[string]interface{}** | Config object. | [optional] 
-**Key** | Pointer to **string** | Technical key. | [optional] 
-**Validations** | Pointer to [**[]FormElementValidationsSet**](form-element-validations-set) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Form element identifier. | [optional] |
+| **ElementType** | Pointer to **string** | FormElementType value. TEXT FormElementTypeText TOGGLE FormElementTypeToggle TEXTAREA FormElementTypeTextArea HIDDEN FormElementTypeHidden PHONE FormElementTypePhone EMAIL FormElementTypeEmail SELECT FormElementTypeSelect DATE FormElementTypeDate SECTION FormElementTypeSection COLUMN_SET FormElementTypeColumns IMAGE FormElementTypeImage DESCRIPTION FormElementTypeDescription | [optional] |
+| **Config** | Pointer to **map[string]interface{}** | Config object. | [optional] |
+| **Key** | Pointer to **string** | Technical key. | [optional] |
+| **Validations** | Pointer to [**[]FormElementValidationsSet**](form-element-validations-set) |  | [optional] |
 
 ## Methods
 
@@ -27,18 +27,13 @@ Name | Type | Description | Notes
 
 `func NewFormElement() *FormElement`
 
-NewFormElement instantiates a new FormElement object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewFormElement instantiates a new FormElement object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewFormElementWithDefaults
 
 `func NewFormElementWithDefaults() *FormElement`
 
-NewFormElementWithDefaults instantiates a new FormElement object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewFormElementWithDefaults instantiates a new FormElement object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -50,8 +45,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *FormElement) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -75,8 +69,7 @@ GetElementType returns the ElementType field if non-nil, zero value otherwise.
 
 `func (o *FormElement) GetElementTypeOk() (*string, bool)`
 
-GetElementTypeOk returns a tuple with the ElementType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetElementTypeOk returns a tuple with the ElementType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetElementType
 
@@ -100,8 +93,7 @@ GetConfig returns the Config field if non-nil, zero value otherwise.
 
 `func (o *FormElement) GetConfigOk() (*map[string]interface{}, bool)`
 
-GetConfigOk returns a tuple with the Config field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConfigOk returns a tuple with the Config field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConfig
 
@@ -125,8 +117,7 @@ GetKey returns the Key field if non-nil, zero value otherwise.
 
 `func (o *FormElement) GetKeyOk() (*string, bool)`
 
-GetKeyOk returns a tuple with the Key field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetKeyOk returns a tuple with the Key field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetKey
 
@@ -150,8 +141,7 @@ GetValidations returns the Validations field if non-nil, zero value otherwise.
 
 `func (o *FormElement) GetValidationsOk() (*[]FormElementValidationsSet, bool)`
 
-GetValidationsOk returns a tuple with the Validations field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValidationsOk returns a tuple with the Validations field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValidations
 
@@ -169,10 +159,10 @@ HasValidations returns a boolean if a field has been set.
 
 `func (o *FormElement) SetValidationsNil(b bool)`
 
- SetValidationsNil sets the value for Validations to be an explicit nil
+SetValidationsNil sets the value for Validations to be an explicit nil
 
 ### UnsetValidations
+
 `func (o *FormElement) UnsetValidations()`
 
 UnsetValidations ensures that no value is present for Validations, not even an explicit nil
-

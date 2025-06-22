@@ -4,9 +4,10 @@ title: ActivityInsights
 pagination_label: ActivityInsights
 sidebar_label: ActivityInsights
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ActivityInsights', 'ActivityInsights'] 
+keywords: ['python', 'Python', 'sdk', 'ActivityInsights', 'ActivityInsights']
 slug: /tools/sdk/python/v3/models/activity-insights
-tags: ['SDK', 'Software Development Kit', 'ActivityInsights', 'ActivityInsights']
+tags:
+  ['SDK', 'Software Development Kit', 'ActivityInsights', 'ActivityInsights']
 ---
 
 # ActivityInsights
@@ -15,11 +16,12 @@ Insights into account activity
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**account_id** | **str** | UUID of the account | [optional] 
-**usage_days** | **int** | The number of days of activity | [optional] 
-**usage_days_state** |  **Enum** [  'COMPLETE',    'UNKNOWN' ] | Status indicating if the activity is complete or unknown | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **account_id** | **str** | UUID of the account | [optional] |
+| **usage_days** | **int** | The number of days of activity | [optional] |
+| **usage_days_state** | **Enum** [ 'COMPLETE', 'UNKNOWN' ] | Status indicating if the activity is complete or unknown | [optional] |
+
 }
 
 ## Example
@@ -34,5 +36,5 @@ usage_days_state='COMPLETE'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

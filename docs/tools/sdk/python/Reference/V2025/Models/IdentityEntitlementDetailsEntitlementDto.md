@@ -4,29 +4,42 @@ title: IdentityEntitlementDetailsEntitlementDto
 pagination_label: IdentityEntitlementDetailsEntitlementDto
 sidebar_label: IdentityEntitlementDetailsEntitlementDto
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentityEntitlementDetailsEntitlementDto', 'V2025IdentityEntitlementDetailsEntitlementDto'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'IdentityEntitlementDetailsEntitlementDto',
+    'V2025IdentityEntitlementDetailsEntitlementDto',
+  ]
 slug: /tools/sdk/python/v2025/models/identity-entitlement-details-entitlement-dto
-tags: ['SDK', 'Software Development Kit', 'IdentityEntitlementDetailsEntitlementDto', 'V2025IdentityEntitlementDetailsEntitlementDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityEntitlementDetailsEntitlementDto',
+    'V2025IdentityEntitlementDetailsEntitlementDto',
+  ]
 ---
 
 # IdentityEntitlementDetailsEntitlementDto
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The entitlement id | [optional] 
-**name** | **str** | The entitlement name | [optional] 
-**created** | **datetime** | Time when the entitlement was last modified | [optional] 
-**modified** | **datetime** | Time when the entitlement was last modified | [optional] 
-**description** | **str** | The description of the entitlement | [optional] 
-**type** | **str** | The type of the object, will always be \"ENTITLEMENT\" | [optional] 
-**source_id** | **str** | The source ID | [optional] 
-**source_name** | **str** | The source name | [optional] 
-**owner** | [**OwnerDto**](owner-dto) |  | [optional] 
-**value** | **str** | The value of the entitlement | [optional] 
-**flags** | **[]str** | a list of properties informing the viewer about the entitlement | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The entitlement id | [optional] |
+| **name** | **str** | The entitlement name | [optional] |
+| **created** | **datetime** | Time when the entitlement was last modified | [optional] |
+| **modified** | **datetime** | Time when the entitlement was last modified | [optional] |
+| **description** | **str** | The description of the entitlement | [optional] |
+| **type** | **str** | The type of the object, will always be \"ENTITLEMENT\" | [optional] |
+| **source_id** | **str** | The source ID | [optional] |
+| **source_name** | **str** | The source name | [optional] |
+| **owner** | [**OwnerDto**](owner-dto) |  | [optional] |
+| **value** | **str** | The value of the entitlement | [optional] |
+| **flags** | **[]str** | a list of properties informing the viewer about the entitlement | [optional] |
+
 }
 
 ## Example
@@ -44,13 +57,13 @@ type='ENTITLEMENT',
 source_id='2c9180827ca885d7017ca8ce28a000eb',
 source_name='ODS-AD-Source',
 owner=sailpoint.v2025.models.owner_dto.OwnerDto(
-                    type = 'IDENTITY', 
-                    id = '2c9180a46faadee4016fb4e018c20639', 
+                    type = 'IDENTITY',
+                    id = '2c9180a46faadee4016fb4e018c20639',
                     name = 'Support', ),
 value='CN=LauncherTest2,OU=LauncherTestOrg,OU=slpt-automation,DC=TestAutomationAD,DC=local',
 flags=[privileged]
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,22 +4,23 @@ title: IdentitySummary
 pagination_label: IdentitySummary
 sidebar_label: IdentitySummary
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentitySummary', 'V2024IdentitySummary'] 
+keywords: ['python', 'Python', 'sdk', 'IdentitySummary', 'V2024IdentitySummary']
 slug: /tools/sdk/python/v2024/models/identity-summary
-tags: ['SDK', 'Software Development Kit', 'IdentitySummary', 'V2024IdentitySummary']
+tags:
+  ['SDK', 'Software Development Kit', 'IdentitySummary', 'V2024IdentitySummary']
 ---
 
 # IdentitySummary
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | ID of this identity summary | [optional] 
-**name** | **str** | Human-readable display name of identity | [optional] 
-**identity_id** | **str** | ID of the identity that this summary represents | [optional] 
-**completed** | **bool** | Indicates if all access items for this summary have been decided on | [optional] [default to False]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | ID of this identity summary | [optional] |
+| **name** | **str** | Human-readable display name of identity | [optional] |
+| **identity_id** | **str** | ID of the identity that this summary represents | [optional] |
+| **completed** | **bool** | Indicates if all access items for this summary have been decided on | [optional] [default to False] |
+
 }
 
 ## Example
@@ -35,5 +36,5 @@ completed=True
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

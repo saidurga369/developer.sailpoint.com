@@ -4,9 +4,16 @@ title: ExternalAttributes
 pagination_label: ExternalAttributes
 sidebar_label: ExternalAttributes
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ExternalAttributes', 'ExternalAttributes'] 
+keywords:
+  ['python', 'Python', 'sdk', 'ExternalAttributes', 'ExternalAttributes']
 slug: /tools/sdk/python/v3/models/external-attributes
-tags: ['SDK', 'Software Development Kit', 'ExternalAttributes', 'ExternalAttributes']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ExternalAttributes',
+    'ExternalAttributes',
+  ]
 ---
 
 # ExternalAttributes
@@ -15,12 +22,13 @@ Attributes related to an external trigger
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | A unique name for the external trigger | [optional] 
-**description** | **str** | Additional context about the external trigger | [optional] 
-**client_id** | **str** | OAuth Client ID to authenticate with this trigger | [optional] 
-**url** | **str** | URL to invoke this workflow | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **name** | **str** | A unique name for the external trigger | [optional] |
+| **description** | **str** | Additional context about the external trigger | [optional] |
+| **client_id** | **str** | OAuth Client ID to authenticate with this trigger | [optional] |
+| **url** | **str** | URL to invoke this workflow | [optional] |
+
 }
 
 ## Example
@@ -36,5 +44,5 @@ url='https://tenant.api.identitynow.com/beta/workflows/execute/external/c79e0079
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

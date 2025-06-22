@@ -4,50 +4,59 @@ title: IAI_Common_Access
 pagination_label: IAI_Common_Access
 sidebar_label: IAI_Common_Access
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IAI_Common_Access', 'BetaIAI_Common_Access'] 
+keywords:
+  ['python', 'Python', 'sdk', 'IAI_Common_Access', 'BetaIAI_Common_Access']
 slug: /tools/sdk/python/beta/methods/iai-common-access
-tags: ['SDK', 'Software Development Kit', 'IAI_Common_Access', 'BetaIAI_Common_Access']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IAI_Common_Access',
+    'BetaIAI_Common_Access',
+  ]
 ---
 
 # sailpoint.beta.IAICommonAccessApi
-   
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/beta*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create-common-access**](#create-common-access) | **POST** `/common-access` | Create common access items
-[**get-common-access**](#get-common-access) | **GET** `/common-access` | Get a paginated list of common access
-[**update-common-access-status-in-bulk**](#update-common-access-status-in-bulk) | **POST** `/common-access/update-status` | Bulk update common access status
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**create-common-access**](#create-common-access) | **POST** `/common-access` | Create common access items |
+| [**get-common-access**](#get-common-access) | **GET** `/common-access` | Get a paginated list of common access |
+| [**update-common-access-status-in-bulk**](#update-common-access-status-in-bulk) | **POST** `/common-access/update-status` | Bulk update common access status |
 
 ## create-common-access
-Create common access items
-This API is used to add roles/access profiles to the list of common access for a customer. Requires authorization scope of iai:access-modeling:create
+
+Create common access items This API is used to add roles/access profiles to the list of common access for a customer. Requires authorization scope of iai:access-modeling:create
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/create-common-access)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
- Body  | common_access_item_request | [**CommonAccessItemRequest**](../models/common-access-item-request) | True  | 
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Body | common_access_item_request | [**CommonAccessItemRequest**](../models/common-access-item-request) | True |
 
 ### Return type
+
 [**CommonAccessItemResponse**](../models/common-access-item-response)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-202 | Returns details of the common access classification request. | CommonAccessItemResponse |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 202 | Returns details of the common access classification request. | CommonAccessItemResponse | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json
- - **Accept**: application/json
+
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### Example
 
@@ -71,7 +80,7 @@ with ApiClient(configuration) as api_client:
             "ownerId" : "ownerId"
           },
           "status" : "CONFIRMED"
-        }''' # CommonAccessItemRequest | 
+        }''' # CommonAccessItemRequest |
 
     try:
         # Create common access items
@@ -85,41 +94,42 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling IAICommonAccessApi->create_common_access: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## get-common-access
-Get a paginated list of common access
-This endpoint returns the current common access for a customer. The returned items can be filtered and sorted. Requires authorization scope of iai:access-modeling:read
+
+Get a paginated list of common access This endpoint returns the current common access for a customer. The returned items can be filtered and sorted. Requires authorization scope of iai:access-modeling:read
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-common-access)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-  Query | offset | **int** |   (optional) (default to 0) | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | limit | **int** |   (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | count | **bool** |   (optional) (default to False) | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | filters | **str** |   (optional) | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **status**: *eq, sw*  **reviewedByUser** *eq*  **access.id**: *eq, sw*  **access.type**: *eq*  **access.name**: *sw, eq*  **access.description**: *sw, eq*
-  Query | sorters | **str** |   (optional) | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **access.name, status**  By default the common access items are sorted by name, ascending.
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Query | offset | **int** | (optional) (default to 0) | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | limit | **int** | (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | count | **bool** | (optional) (default to False) | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | filters | **str** | (optional) | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **status**: _eq, sw_ **reviewedByUser** _eq_ **access.id**: _eq, sw_ **access.type**: _eq_ **access.name**: _sw, eq_ **access.description**: _sw, eq_ |
+| Query | sorters | **str** | (optional) | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results) Sorting is supported for the following fields: **access.name, status** By default the common access items are sorted by name, ascending. |
 
 ### Return type
+
 [**List[CommonAccessResponse]**](../models/common-access-response)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Succeeded. Returns a list of common access for a customer. | List[CommonAccessResponse] |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Succeeded. Returns a list of common access for a customer. | List[CommonAccessResponse] | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -140,7 +150,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Get a paginated list of common access
-        
+
         results = IAICommonAccessApi(api_client).get_common_access()
         # Below is a request that includes all optional parameters
         # results = IAICommonAccessApi(api_client).get_common_access(offset, limit, count, filters, sorters)
@@ -151,38 +161,39 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling IAICommonAccessApi->get_common_access: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## update-common-access-status-in-bulk
-Bulk update common access status
-This submits an update request to the common access application. At this time there are no parameters. Requires authorization scope of iai:access-modeling:update
+
+Bulk update common access status This submits an update request to the common access application. At this time there are no parameters. Requires authorization scope of iai:access-modeling:update
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/update-common-access-status-in-bulk)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
- Body  | common_access_id_status | [**[]CommonAccessIDStatus**](../models/common-access-id-status) | True  | Confirm or deny in bulk the common access ids that are (or aren't) common access
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Body | common_access_id_status | [**[]CommonAccessIDStatus**](../models/common-access-id-status) | True | Confirm or deny in bulk the common access ids that are (or aren't) common access |
 
 ### Return type
+
 **object**
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-202 | Accepted - Returned if the request was successfully accepted into the system. | object |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 202 | Accepted - Returned if the request was successfully accepted into the system. | object | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json
- - **Accept**: application/json
+
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### Example
 
@@ -209,9 +220,4 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling IAICommonAccessApi->update_common_access_status_in_bulk: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
-
-
-
+[[Back to top]](#)

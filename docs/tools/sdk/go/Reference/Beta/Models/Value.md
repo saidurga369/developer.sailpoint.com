@@ -4,7 +4,7 @@ title: Value
 pagination_label: Value
 sidebar_label: Value
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Value', 'BetaValue'] 
+keywords: ['go', 'Golang', 'sdk', 'Value', 'BetaValue']
 slug: /tools/sdk/go/beta/models/value
 tags: ['SDK', 'Software Development Kit', 'Value', 'BetaValue']
 ---
@@ -13,10 +13,10 @@ tags: ['SDK', 'Software Development Kit', 'Value', 'BetaValue']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **NullableString** | The type of attribute value | [optional] 
-**Value** | Pointer to **string** | The attribute value | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to **NullableString** | The type of attribute value | [optional] |
+| **Value** | Pointer to **string** | The attribute value | [optional] |
 
 ## Methods
 
@@ -24,18 +24,13 @@ Name | Type | Description | Notes
 
 `func NewValue() *Value`
 
-NewValue instantiates a new Value object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewValue instantiates a new Value object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewValueWithDefaults
 
 `func NewValueWithDefaults() *Value`
 
-NewValueWithDefaults instantiates a new Value object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewValueWithDefaults instantiates a new Value object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -47,8 +42,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *Value) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -66,12 +60,14 @@ HasType returns a boolean if a field has been set.
 
 `func (o *Value) SetTypeNil(b bool)`
 
- SetTypeNil sets the value for Type to be an explicit nil
+SetTypeNil sets the value for Type to be an explicit nil
 
 ### UnsetType
+
 `func (o *Value) UnsetType()`
 
 UnsetType ensures that no value is present for Type, not even an explicit nil
+
 ### GetValue
 
 `func (o *Value) GetValue() string`
@@ -82,8 +78,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *Value) GetValueOk() (*string, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -96,5 +91,3 @@ SetValue sets Value field to given value.
 `func (o *Value) HasValue() bool`
 
 HasValue returns a boolean if a field has been set.
-
-

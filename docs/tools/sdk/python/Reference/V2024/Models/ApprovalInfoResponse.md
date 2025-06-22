@@ -4,21 +4,34 @@ title: ApprovalInfoResponse
 pagination_label: ApprovalInfoResponse
 sidebar_label: ApprovalInfoResponse
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ApprovalInfoResponse', 'V2024ApprovalInfoResponse'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ApprovalInfoResponse',
+    'V2024ApprovalInfoResponse',
+  ]
 slug: /tools/sdk/python/v2024/models/approval-info-response
-tags: ['SDK', 'Software Development Kit', 'ApprovalInfoResponse', 'V2024ApprovalInfoResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ApprovalInfoResponse',
+    'V2024ApprovalInfoResponse',
+  ]
 ---
 
 # ApprovalInfoResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | the id of approver | [optional] 
-**name** | **str** | the name of approver | [optional] 
-**status** | **str** | the status of the approval request | [optional] 
+| Name       | Type    | Description                        | Notes      |
+| ---------- | ------- | ---------------------------------- | ---------- |
+| **id**     | **str** | the id of approver                 | [optional] |
+| **name**   | **str** | the name of approver               | [optional] |
+| **status** | **str** | the status of the approval request | [optional] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ status='Approved'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

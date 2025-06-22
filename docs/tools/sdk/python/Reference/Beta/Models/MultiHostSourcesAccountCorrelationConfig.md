@@ -4,9 +4,22 @@ title: MultiHostSourcesAccountCorrelationConfig
 pagination_label: MultiHostSourcesAccountCorrelationConfig
 sidebar_label: MultiHostSourcesAccountCorrelationConfig
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'MultiHostSourcesAccountCorrelationConfig', 'BetaMultiHostSourcesAccountCorrelationConfig'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'MultiHostSourcesAccountCorrelationConfig',
+    'BetaMultiHostSourcesAccountCorrelationConfig',
+  ]
 slug: /tools/sdk/python/beta/models/multi-host-sources-account-correlation-config
-tags: ['SDK', 'Software Development Kit', 'MultiHostSourcesAccountCorrelationConfig', 'BetaMultiHostSourcesAccountCorrelationConfig']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'MultiHostSourcesAccountCorrelationConfig',
+    'BetaMultiHostSourcesAccountCorrelationConfig',
+  ]
 ---
 
 # MultiHostSourcesAccountCorrelationConfig
@@ -15,11 +28,12 @@ Reference to account correlation config object.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'ACCOUNT_CORRELATION_CONFIG' ] | Type of object being referenced. | [optional] 
-**id** | **str** | Account correlation config ID. | [optional] 
-**name** | **str** | Account correlation config's human-readable display name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'ACCOUNT_CORRELATION_CONFIG' ] | Type of object being referenced. | [optional] |
+| **id** | **str** | Account correlation config ID. | [optional] |
+| **name** | **str** | Account correlation config's human-readable display name. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Directory [source-62867] Account Correlation'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

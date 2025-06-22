@@ -4,7 +4,7 @@ title: KbaAuthResponse
 pagination_label: KbaAuthResponse
 sidebar_label: KbaAuthResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'KbaAuthResponse', 'KbaAuthResponse'] 
+keywords: ['go', 'Golang', 'sdk', 'KbaAuthResponse', 'KbaAuthResponse']
 slug: /tools/sdk/go/v3/models/kba-auth-response
 tags: ['SDK', 'Software Development Kit', 'KbaAuthResponse', 'KbaAuthResponse']
 ---
@@ -13,10 +13,10 @@ tags: ['SDK', 'Software Development Kit', 'KbaAuthResponse', 'KbaAuthResponse']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**KbaAuthResponseItems** | Pointer to [**[]KbaAuthResponseItem**](kba-auth-response-item) |  | [optional] 
-**Status** | Pointer to **string** | MFA Authentication status | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **KbaAuthResponseItems** | Pointer to [**[]KbaAuthResponseItem**](kba-auth-response-item) |  | [optional] |
+| **Status** | Pointer to **string** | MFA Authentication status | [optional] |
 
 ## Methods
 
@@ -24,18 +24,13 @@ Name | Type | Description | Notes
 
 `func NewKbaAuthResponse() *KbaAuthResponse`
 
-NewKbaAuthResponse instantiates a new KbaAuthResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewKbaAuthResponse instantiates a new KbaAuthResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewKbaAuthResponseWithDefaults
 
 `func NewKbaAuthResponseWithDefaults() *KbaAuthResponse`
 
-NewKbaAuthResponseWithDefaults instantiates a new KbaAuthResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewKbaAuthResponseWithDefaults instantiates a new KbaAuthResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetKbaAuthResponseItems
 
@@ -47,8 +42,7 @@ GetKbaAuthResponseItems returns the KbaAuthResponseItems field if non-nil, zero 
 
 `func (o *KbaAuthResponse) GetKbaAuthResponseItemsOk() (*[]KbaAuthResponseItem, bool)`
 
-GetKbaAuthResponseItemsOk returns a tuple with the KbaAuthResponseItems field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetKbaAuthResponseItemsOk returns a tuple with the KbaAuthResponseItems field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetKbaAuthResponseItems
 
@@ -72,8 +66,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *KbaAuthResponse) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -86,5 +79,3 @@ SetStatus sets Status field to given value.
 `func (o *KbaAuthResponse) HasStatus() bool`
 
 HasStatus returns a boolean if a field has been set.
-
-

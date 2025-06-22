@@ -4,9 +4,22 @@ title: IdentityDeletedIdentity
 pagination_label: IdentityDeletedIdentity
 sidebar_label: IdentityDeletedIdentity
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentityDeletedIdentity', 'BetaIdentityDeletedIdentity'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'IdentityDeletedIdentity',
+    'BetaIdentityDeletedIdentity',
+  ]
 slug: /tools/sdk/python/beta/models/identity-deleted-identity
-tags: ['SDK', 'Software Development Kit', 'IdentityDeletedIdentity', 'BetaIdentityDeletedIdentity']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityDeletedIdentity',
+    'BetaIdentityDeletedIdentity',
+  ]
 ---
 
 # IdentityDeletedIdentity
@@ -15,11 +28,12 @@ Deleted identity.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] | Deleted identity's DTO type. | [required]
-**id** | **str** | Deleted identity ID. | [required]
-**name** | **str** | Deleted identity's name. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'IDENTITY' ] | Deleted identity's DTO type. | [required] |
+| **id** | **str** | Deleted identity ID. | [required] |
+| **name** | **str** | Deleted identity's name. | [required] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Michael Michaels'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

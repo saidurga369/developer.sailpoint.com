@@ -4,20 +4,24 @@ title: CertificationPhase
 pagination_label: CertificationPhase
 sidebar_label: CertificationPhase
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'CertificationPhase', 'BetaCertificationPhase'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'CertificationPhase', 'BetaCertificationPhase']
 slug: /tools/sdk/go/beta/models/certification-phase
-tags: ['SDK', 'Software Development Kit', 'CertificationPhase', 'BetaCertificationPhase']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CertificationPhase',
+    'BetaCertificationPhase',
+  ]
 ---
 
 # CertificationPhase
 
 ## Enum
 
+- `STAGED` (value: `"STAGED"`)
 
-* `STAGED` (value: `"STAGED"`)
+- `ACTIVE` (value: `"ACTIVE"`)
 
-* `ACTIVE` (value: `"ACTIVE"`)
-
-* `SIGNED` (value: `"SIGNED"`)
-
-
+- `SIGNED` (value: `"SIGNED"`)

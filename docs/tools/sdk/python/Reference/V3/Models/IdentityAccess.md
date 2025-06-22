@@ -4,31 +4,31 @@ title: IdentityAccess
 pagination_label: IdentityAccess
 sidebar_label: IdentityAccess
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentityAccess', 'IdentityAccess'] 
+keywords: ['python', 'Python', 'sdk', 'IdentityAccess', 'IdentityAccess']
 slug: /tools/sdk/python/v3/models/identity-access
 tags: ['SDK', 'Software Development Kit', 'IdentityAccess', 'IdentityAccess']
 ---
 
 # IdentityAccess
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The unique ID of the referenced object. | [optional] 
-**name** | **str** | The human readable name of the referenced object. | [optional] 
-**display_name** | **str** |  | [optional] 
-**description** | **str** | Description of access item. | [optional] 
-**type** | **str** | Type of the access item. | [optional] 
-**source** | [**Reference**](reference) |  | [optional] 
-**owner** | [**DisplayReference**](display-reference) |  | [optional] 
-**revocable** | **bool** |  | [optional] 
-**privileged** | **bool** |  | [optional] 
-**attribute** | **str** |  | [optional] 
-**value** | **str** |  | [optional] 
-**standalone** | **bool** |  | [optional] 
-**disabled** | **bool** |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The unique ID of the referenced object. | [optional] |
+| **name** | **str** | The human readable name of the referenced object. | [optional] |
+| **display_name** | **str** |  | [optional] |
+| **description** | **str** | Description of access item. | [optional] |
+| **type** | **str** | Type of the access item. | [optional] |
+| **source** | [**Reference**](reference) |  | [optional] |
+| **owner** | [**DisplayReference**](display-reference) |  | [optional] |
+| **revocable** | **bool** |  | [optional] |
+| **privileged** | **bool** |  | [optional] |
+| **attribute** | **str** |  | [optional] |
+| **value** | **str** |  | [optional] |
+| **standalone** | **bool** |  | [optional] |
+| **disabled** | **bool** |  | [optional] |
+
 }
 
 ## Example
@@ -43,7 +43,7 @@ display_name='John Q. Doe',
 description='',
 type='ROLE',
 source=sailpoint.v3.models.reference.Reference(
-                    id = '2c91808568c529c60168cca6f90c1313', 
+                    id = '2c91808568c529c60168cca6f90c1313',
                     name = 'John Doe', ),
 owner=,
 revocable=True,
@@ -55,5 +55,5 @@ disabled=True
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

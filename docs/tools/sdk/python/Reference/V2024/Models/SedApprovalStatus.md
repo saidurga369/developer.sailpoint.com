@@ -4,9 +4,16 @@ title: SedApprovalStatus
 pagination_label: SedApprovalStatus
 sidebar_label: SedApprovalStatus
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SedApprovalStatus', 'V2024SedApprovalStatus'] 
+keywords:
+  ['python', 'Python', 'sdk', 'SedApprovalStatus', 'V2024SedApprovalStatus']
 slug: /tools/sdk/python/v2024/models/sed-approval-status
-tags: ['SDK', 'Software Development Kit', 'SedApprovalStatus', 'V2024SedApprovalStatus']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SedApprovalStatus',
+    'V2024SedApprovalStatus',
+  ]
 ---
 
 # SedApprovalStatus
@@ -15,11 +22,12 @@ SED Approval Status
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**failed_reason** | **str** | failed reason will be display if status is failed | [optional] 
-**id** | **str** | Sed id | [optional] 
-**status** | **str** | SUCCESS | FAILED | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- | --- |
+| **failed_reason** | **str** | failed reason will be display if status is failed | [optional] |
+| **id** | **str** | Sed id | [optional] |
+| **status** | **str** | SUCCESS | FAILED | [optional] |
+
 }
 
 ## Example
@@ -34,5 +42,5 @@ status='SUCCESS'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

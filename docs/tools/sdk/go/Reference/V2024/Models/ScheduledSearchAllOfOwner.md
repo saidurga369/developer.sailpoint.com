@@ -4,19 +4,32 @@ title: ScheduledSearchAllOfOwner
 pagination_label: ScheduledSearchAllOfOwner
 sidebar_label: ScheduledSearchAllOfOwner
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ScheduledSearchAllOfOwner', 'V2024ScheduledSearchAllOfOwner'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ScheduledSearchAllOfOwner',
+    'V2024ScheduledSearchAllOfOwner',
+  ]
 slug: /tools/sdk/go/v2024/models/scheduled-search-all-of-owner
-tags: ['SDK', 'Software Development Kit', 'ScheduledSearchAllOfOwner', 'V2024ScheduledSearchAllOfOwner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ScheduledSearchAllOfOwner',
+    'V2024ScheduledSearchAllOfOwner',
+  ]
 ---
 
 # ScheduledSearchAllOfOwner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | **string** | The type of object being referenced | 
-**Id** | **string** | The ID of the referenced object | 
+| Name     | Type       | Description                         | Notes |
+| -------- | ---------- | ----------------------------------- | ----- |
+| **Type** | **string** | The type of object being referenced |
+| **Id**   | **string** | The ID of the referenced object     |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewScheduledSearchAllOfOwner(type_ string, id string, ) *ScheduledSearchAllOfOwner`
 
-NewScheduledSearchAllOfOwner instantiates a new ScheduledSearchAllOfOwner object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewScheduledSearchAllOfOwner instantiates a new ScheduledSearchAllOfOwner object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewScheduledSearchAllOfOwnerWithDefaults
 
 `func NewScheduledSearchAllOfOwnerWithDefaults() *ScheduledSearchAllOfOwner`
 
-NewScheduledSearchAllOfOwnerWithDefaults instantiates a new ScheduledSearchAllOfOwner object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewScheduledSearchAllOfOwnerWithDefaults instantiates a new ScheduledSearchAllOfOwner object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -47,15 +55,13 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *ScheduledSearchAllOfOwner) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
 `func (o *ScheduledSearchAllOfOwner) SetType(v string)`
 
 SetType sets Type field to given value.
-
 
 ### GetId
 
@@ -67,14 +73,10 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *ScheduledSearchAllOfOwner) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
 `func (o *ScheduledSearchAllOfOwner) SetId(v string)`
 
 SetId sets Id field to given value.
-
-
-

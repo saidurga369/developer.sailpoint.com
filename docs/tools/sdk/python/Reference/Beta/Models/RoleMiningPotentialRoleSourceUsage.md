@@ -4,22 +4,35 @@ title: RoleMiningPotentialRoleSourceUsage
 pagination_label: RoleMiningPotentialRoleSourceUsage
 sidebar_label: RoleMiningPotentialRoleSourceUsage
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RoleMiningPotentialRoleSourceUsage', 'BetaRoleMiningPotentialRoleSourceUsage'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'RoleMiningPotentialRoleSourceUsage',
+    'BetaRoleMiningPotentialRoleSourceUsage',
+  ]
 slug: /tools/sdk/python/beta/models/role-mining-potential-role-source-usage
-tags: ['SDK', 'Software Development Kit', 'RoleMiningPotentialRoleSourceUsage', 'BetaRoleMiningPotentialRoleSourceUsage']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningPotentialRoleSourceUsage',
+    'BetaRoleMiningPotentialRoleSourceUsage',
+  ]
 ---
 
 # RoleMiningPotentialRoleSourceUsage
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The identity ID | [optional] 
-**display_name** | **str** | Display name for the identity | [optional] 
-**email** | **str** | Email address for the identity | [optional] 
-**usage_count** | **int** | The number of days there has been usage of the source by the identity. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The identity ID | [optional] |
+| **display_name** | **str** | Display name for the identity | [optional] |
+| **email** | **str** | Email address for the identity | [optional] |
+| **usage_count** | **int** | The number of days there has been usage of the source by the identity. | [optional] |
+
 }
 
 ## Example
@@ -35,5 +48,5 @@ usage_count=25
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

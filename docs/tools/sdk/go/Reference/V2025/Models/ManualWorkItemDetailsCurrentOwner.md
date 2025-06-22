@@ -4,20 +4,33 @@ title: ManualWorkItemDetailsCurrentOwner
 pagination_label: ManualWorkItemDetailsCurrentOwner
 sidebar_label: ManualWorkItemDetailsCurrentOwner
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ManualWorkItemDetailsCurrentOwner', 'V2025ManualWorkItemDetailsCurrentOwner'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ManualWorkItemDetailsCurrentOwner',
+    'V2025ManualWorkItemDetailsCurrentOwner',
+  ]
 slug: /tools/sdk/go/v2025/models/manual-work-item-details-current-owner
-tags: ['SDK', 'Software Development Kit', 'ManualWorkItemDetailsCurrentOwner', 'V2025ManualWorkItemDetailsCurrentOwner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ManualWorkItemDetailsCurrentOwner',
+    'V2025ManualWorkItemDetailsCurrentOwner',
+  ]
 ---
 
 # ManualWorkItemDetailsCurrentOwner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | DTO type of current work item owner's identity. | [optional] 
-**Id** | Pointer to **string** | ID of current work item owner's identity. | [optional] 
-**Name** | Pointer to **string** | Display name of current work item owner. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to **string** | DTO type of current work item owner's identity. | [optional] |
+| **Id** | Pointer to **string** | ID of current work item owner's identity. | [optional] |
+| **Name** | Pointer to **string** | Display name of current work item owner. | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewManualWorkItemDetailsCurrentOwner() *ManualWorkItemDetailsCurrentOwner`
 
-NewManualWorkItemDetailsCurrentOwner instantiates a new ManualWorkItemDetailsCurrentOwner object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewManualWorkItemDetailsCurrentOwner instantiates a new ManualWorkItemDetailsCurrentOwner object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewManualWorkItemDetailsCurrentOwnerWithDefaults
 
 `func NewManualWorkItemDetailsCurrentOwnerWithDefaults() *ManualWorkItemDetailsCurrentOwner`
 
-NewManualWorkItemDetailsCurrentOwnerWithDefaults instantiates a new ManualWorkItemDetailsCurrentOwner object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewManualWorkItemDetailsCurrentOwnerWithDefaults instantiates a new ManualWorkItemDetailsCurrentOwner object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -48,8 +56,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *ManualWorkItemDetailsCurrentOwner) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -73,8 +80,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *ManualWorkItemDetailsCurrentOwner) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -98,8 +104,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *ManualWorkItemDetailsCurrentOwner) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -112,5 +117,3 @@ SetName sets Name field to given value.
 `func (o *ManualWorkItemDetailsCurrentOwner) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

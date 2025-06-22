@@ -4,27 +4,23 @@ title: Medium
 pagination_label: Medium
 sidebar_label: Medium
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'Medium', 'V2025Medium'] 
+keywords: ['powershell', 'PowerShell', 'sdk', 'Medium', 'V2025Medium']
 slug: /tools/sdk/powershell/v2025/models/medium
 tags: ['SDK', 'Software Development Kit', 'Medium', 'V2025Medium']
 ---
-
 
 # Medium
 
 ## Enum
 
+- `EMAIL` (value: `"EMAIL"`)
 
-* `EMAIL` (value: `"EMAIL"`)
+- `SMS` (value: `"SMS"`)
 
-* `SMS` (value: `"SMS"`)
+- `PHONE` (value: `"PHONE"`)
 
-* `PHONE` (value: `"PHONE"`)
+- `SLACK` (value: `"SLACK"`)
 
-* `SLACK` (value: `"SLACK"`)
+- `TEAMS` (value: `"TEAMS"`)
 
-* `TEAMS` (value: `"TEAMS"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

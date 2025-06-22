@@ -4,40 +4,53 @@ title: GetActiveCampaigns200ResponseInner
 pagination_label: GetActiveCampaigns200ResponseInner
 sidebar_label: GetActiveCampaigns200ResponseInner
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'GetActiveCampaigns200ResponseInner', 'BetaGetActiveCampaigns200ResponseInner'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'GetActiveCampaigns200ResponseInner',
+    'BetaGetActiveCampaigns200ResponseInner',
+  ]
 slug: /tools/sdk/go/beta/models/get-active-campaigns200-response-inner
-tags: ['SDK', 'Software Development Kit', 'GetActiveCampaigns200ResponseInner', 'BetaGetActiveCampaigns200ResponseInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'GetActiveCampaigns200ResponseInner',
+    'BetaGetActiveCampaigns200ResponseInner',
+  ]
 ---
 
 # GetActiveCampaigns200ResponseInner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Id of the campaign | [optional] [readonly] 
-**Name** | **string** | The campaign name. If this object is part of a template, special formatting applies; see the `/campaign-templates/{id}/generate` endpoint documentation for details.  | 
-**Description** | **string** | The campaign description. If this object is part of a template, special formatting applies; see the `/campaign-templates/{id}/generate` endpoint documentation for details.  | 
-**Deadline** | Pointer to **SailPointTime** | The campaign's completion deadline.  This date must be in the future in order to activate the campaign.  If you try to activate a campaign with a deadline of today or in the past, you will receive a 400 error response. | [optional] 
-**Type** | **string** | The type of campaign. Could be extended in the future. | 
-**EmailNotificationEnabled** | Pointer to **bool** | Enables email notification for this campaign | [optional] [default to false]
-**AutoRevokeAllowed** | Pointer to **bool** | Allows auto revoke for this campaign | [optional] [default to false]
-**RecommendationsEnabled** | Pointer to **bool** | Enables IAI for this campaign. Accepts true even if the IAI product feature is off. If IAI is turned off then campaigns generated from this template will indicate false. The real value will then be returned if IAI is ever enabled for the org in the future.  | [optional] [default to false]
-**Status** | Pointer to **string** | The campaign's current status. | [optional] [readonly] 
-**CorrelatedStatus** | Pointer to **string** | The correlatedStatus of the campaign. Only SOURCE_OWNER campaigns can be Uncorrelated. An Uncorrelated certification campaign only includes Uncorrelated identities (An identity is uncorrelated if it has no accounts on an authoritative source).  | [optional] 
-**Created** | Pointer to **SailPointTime** | Created time of the campaign | [optional] [readonly] 
-**TotalCertifications** | Pointer to **int32** | The total number of certifications in this campaign. | [optional] [readonly] 
-**CompletedCertifications** | Pointer to **int32** | The number of completed certifications in this campaign. | [optional] [readonly] 
-**Alerts** | Pointer to [**[]CampaignAlert**](campaign-alert) | A list of errors and warnings that have accumulated. | [optional] [readonly] 
-**Modified** | Pointer to **SailPointTime** | Modified time of the campaign | [optional] [readonly] 
-**Filter** | Pointer to [**FullcampaignAllOfFilter**](fullcampaign-all-of-filter) |  | [optional] 
-**SunsetCommentsRequired** | Pointer to **bool** | Determines if comments on sunset date changes are required. | [optional] [default to true]
-**SourceOwnerCampaignInfo** | Pointer to [**FullcampaignAllOfSourceOwnerCampaignInfo**](fullcampaign-all-of-source-owner-campaign-info) |  | [optional] 
-**SearchCampaignInfo** | Pointer to [**FullcampaignAllOfSearchCampaignInfo**](fullcampaign-all-of-search-campaign-info) |  | [optional] 
-**RoleCompositionCampaignInfo** | Pointer to [**FullcampaignAllOfRoleCompositionCampaignInfo**](fullcampaign-all-of-role-composition-campaign-info) |  | [optional] 
-**MachineAccountCampaignInfo** | Pointer to [**FullcampaignAllOfMachineAccountCampaignInfo**](fullcampaign-all-of-machine-account-campaign-info) |  | [optional] 
-**SourcesWithOrphanEntitlements** | Pointer to [**[]FullcampaignAllOfSourcesWithOrphanEntitlements**](fullcampaign-all-of-sources-with-orphan-entitlements) | A list of sources in the campaign that contain \\\"orphan entitlements\\\" (entitlements without a corresponding Managed Attribute). An empty list indicates the campaign has no orphan entitlements. Null indicates there may be unknown orphan entitlements in the campaign (the campaign was created before this feature was implemented). | [optional] [readonly] 
-**MandatoryCommentRequirement** | Pointer to **string** | Determines whether comments are required for decisions during certification reviews. You can require comments for all decisions, revoke-only decisions, or no decisions. By default, comments are not required for decisions. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Id of the campaign | [optional] [readonly] |
+| **Name** | **string** | The campaign name. If this object is part of a template, special formatting applies; see the `/campaign-templates/{id}/generate` endpoint documentation for details. |
+| **Description** | **string** | The campaign description. If this object is part of a template, special formatting applies; see the `/campaign-templates/{id}/generate` endpoint documentation for details. |
+| **Deadline** | Pointer to **SailPointTime** | The campaign's completion deadline. This date must be in the future in order to activate the campaign. If you try to activate a campaign with a deadline of today or in the past, you will receive a 400 error response. | [optional] |
+| **Type** | **string** | The type of campaign. Could be extended in the future. |
+| **EmailNotificationEnabled** | Pointer to **bool** | Enables email notification for this campaign | [optional] [default to false] |
+| **AutoRevokeAllowed** | Pointer to **bool** | Allows auto revoke for this campaign | [optional] [default to false] |
+| **RecommendationsEnabled** | Pointer to **bool** | Enables IAI for this campaign. Accepts true even if the IAI product feature is off. If IAI is turned off then campaigns generated from this template will indicate false. The real value will then be returned if IAI is ever enabled for the org in the future. | [optional] [default to false] |
+| **Status** | Pointer to **string** | The campaign's current status. | [optional] [readonly] |
+| **CorrelatedStatus** | Pointer to **string** | The correlatedStatus of the campaign. Only SOURCE_OWNER campaigns can be Uncorrelated. An Uncorrelated certification campaign only includes Uncorrelated identities (An identity is uncorrelated if it has no accounts on an authoritative source). | [optional] |
+| **Created** | Pointer to **SailPointTime** | Created time of the campaign | [optional] [readonly] |
+| **TotalCertifications** | Pointer to **int32** | The total number of certifications in this campaign. | [optional] [readonly] |
+| **CompletedCertifications** | Pointer to **int32** | The number of completed certifications in this campaign. | [optional] [readonly] |
+| **Alerts** | Pointer to [**[]CampaignAlert**](campaign-alert) | A list of errors and warnings that have accumulated. | [optional] [readonly] |
+| **Modified** | Pointer to **SailPointTime** | Modified time of the campaign | [optional] [readonly] |
+| **Filter** | Pointer to [**FullcampaignAllOfFilter**](fullcampaign-all-of-filter) |  | [optional] |
+| **SunsetCommentsRequired** | Pointer to **bool** | Determines if comments on sunset date changes are required. | [optional] [default to true] |
+| **SourceOwnerCampaignInfo** | Pointer to [**FullcampaignAllOfSourceOwnerCampaignInfo**](fullcampaign-all-of-source-owner-campaign-info) |  | [optional] |
+| **SearchCampaignInfo** | Pointer to [**FullcampaignAllOfSearchCampaignInfo**](fullcampaign-all-of-search-campaign-info) |  | [optional] |
+| **RoleCompositionCampaignInfo** | Pointer to [**FullcampaignAllOfRoleCompositionCampaignInfo**](fullcampaign-all-of-role-composition-campaign-info) |  | [optional] |
+| **MachineAccountCampaignInfo** | Pointer to [**FullcampaignAllOfMachineAccountCampaignInfo**](fullcampaign-all-of-machine-account-campaign-info) |  | [optional] |
+| **SourcesWithOrphanEntitlements** | Pointer to [**[]FullcampaignAllOfSourcesWithOrphanEntitlements**](fullcampaign-all-of-sources-with-orphan-entitlements) | A list of sources in the campaign that contain \\\"orphan entitlements\\\" (entitlements without a corresponding Managed Attribute). An empty list indicates the campaign has no orphan entitlements. Null indicates there may be unknown orphan entitlements in the campaign (the campaign was created before this feature was implemented). | [optional] [readonly] |
+| **MandatoryCommentRequirement** | Pointer to **string** | Determines whether comments are required for decisions during certification reviews. You can require comments for all decisions, revoke-only decisions, or no decisions. By default, comments are not required for decisions. | [optional] |
 
 ## Methods
 
@@ -45,18 +58,13 @@ Name | Type | Description | Notes
 
 `func NewGetActiveCampaigns200ResponseInner(name string, description string, type_ string, ) *GetActiveCampaigns200ResponseInner`
 
-NewGetActiveCampaigns200ResponseInner instantiates a new GetActiveCampaigns200ResponseInner object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewGetActiveCampaigns200ResponseInner instantiates a new GetActiveCampaigns200ResponseInner object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewGetActiveCampaigns200ResponseInnerWithDefaults
 
 `func NewGetActiveCampaigns200ResponseInnerWithDefaults() *GetActiveCampaigns200ResponseInner`
 
-NewGetActiveCampaigns200ResponseInnerWithDefaults instantiates a new GetActiveCampaigns200ResponseInner object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewGetActiveCampaigns200ResponseInnerWithDefaults instantiates a new GetActiveCampaigns200ResponseInner object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -68,8 +76,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *GetActiveCampaigns200ResponseInner) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -93,15 +100,13 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *GetActiveCampaigns200ResponseInner) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
 `func (o *GetActiveCampaigns200ResponseInner) SetName(v string)`
 
 SetName sets Name field to given value.
-
 
 ### GetDescription
 
@@ -113,15 +118,13 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *GetActiveCampaigns200ResponseInner) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
 `func (o *GetActiveCampaigns200ResponseInner) SetDescription(v string)`
 
 SetDescription sets Description field to given value.
-
 
 ### GetDeadline
 
@@ -133,8 +136,7 @@ GetDeadline returns the Deadline field if non-nil, zero value otherwise.
 
 `func (o *GetActiveCampaigns200ResponseInner) GetDeadlineOk() (*SailPointTime, bool)`
 
-GetDeadlineOk returns a tuple with the Deadline field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDeadlineOk returns a tuple with the Deadline field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDeadline
 
@@ -158,15 +160,13 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *GetActiveCampaigns200ResponseInner) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
 `func (o *GetActiveCampaigns200ResponseInner) SetType(v string)`
 
 SetType sets Type field to given value.
-
 
 ### GetEmailNotificationEnabled
 
@@ -178,8 +178,7 @@ GetEmailNotificationEnabled returns the EmailNotificationEnabled field if non-ni
 
 `func (o *GetActiveCampaigns200ResponseInner) GetEmailNotificationEnabledOk() (*bool, bool)`
 
-GetEmailNotificationEnabledOk returns a tuple with the EmailNotificationEnabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEmailNotificationEnabledOk returns a tuple with the EmailNotificationEnabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEmailNotificationEnabled
 
@@ -203,8 +202,7 @@ GetAutoRevokeAllowed returns the AutoRevokeAllowed field if non-nil, zero value 
 
 `func (o *GetActiveCampaigns200ResponseInner) GetAutoRevokeAllowedOk() (*bool, bool)`
 
-GetAutoRevokeAllowedOk returns a tuple with the AutoRevokeAllowed field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAutoRevokeAllowedOk returns a tuple with the AutoRevokeAllowed field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAutoRevokeAllowed
 
@@ -228,8 +226,7 @@ GetRecommendationsEnabled returns the RecommendationsEnabled field if non-nil, z
 
 `func (o *GetActiveCampaigns200ResponseInner) GetRecommendationsEnabledOk() (*bool, bool)`
 
-GetRecommendationsEnabledOk returns a tuple with the RecommendationsEnabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRecommendationsEnabledOk returns a tuple with the RecommendationsEnabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRecommendationsEnabled
 
@@ -253,8 +250,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *GetActiveCampaigns200ResponseInner) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -278,8 +274,7 @@ GetCorrelatedStatus returns the CorrelatedStatus field if non-nil, zero value ot
 
 `func (o *GetActiveCampaigns200ResponseInner) GetCorrelatedStatusOk() (*string, bool)`
 
-GetCorrelatedStatusOk returns a tuple with the CorrelatedStatus field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCorrelatedStatusOk returns a tuple with the CorrelatedStatus field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCorrelatedStatus
 
@@ -303,8 +298,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *GetActiveCampaigns200ResponseInner) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -328,8 +322,7 @@ GetTotalCertifications returns the TotalCertifications field if non-nil, zero va
 
 `func (o *GetActiveCampaigns200ResponseInner) GetTotalCertificationsOk() (*int32, bool)`
 
-GetTotalCertificationsOk returns a tuple with the TotalCertifications field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTotalCertificationsOk returns a tuple with the TotalCertifications field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTotalCertifications
 
@@ -353,8 +346,7 @@ GetCompletedCertifications returns the CompletedCertifications field if non-nil,
 
 `func (o *GetActiveCampaigns200ResponseInner) GetCompletedCertificationsOk() (*int32, bool)`
 
-GetCompletedCertificationsOk returns a tuple with the CompletedCertifications field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCompletedCertificationsOk returns a tuple with the CompletedCertifications field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCompletedCertifications
 
@@ -378,8 +370,7 @@ GetAlerts returns the Alerts field if non-nil, zero value otherwise.
 
 `func (o *GetActiveCampaigns200ResponseInner) GetAlertsOk() (*[]CampaignAlert, bool)`
 
-GetAlertsOk returns a tuple with the Alerts field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAlertsOk returns a tuple with the Alerts field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAlerts
 
@@ -403,8 +394,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *GetActiveCampaigns200ResponseInner) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -428,8 +418,7 @@ GetFilter returns the Filter field if non-nil, zero value otherwise.
 
 `func (o *GetActiveCampaigns200ResponseInner) GetFilterOk() (*FullcampaignAllOfFilter, bool)`
 
-GetFilterOk returns a tuple with the Filter field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFilterOk returns a tuple with the Filter field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFilter
 
@@ -453,8 +442,7 @@ GetSunsetCommentsRequired returns the SunsetCommentsRequired field if non-nil, z
 
 `func (o *GetActiveCampaigns200ResponseInner) GetSunsetCommentsRequiredOk() (*bool, bool)`
 
-GetSunsetCommentsRequiredOk returns a tuple with the SunsetCommentsRequired field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSunsetCommentsRequiredOk returns a tuple with the SunsetCommentsRequired field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSunsetCommentsRequired
 
@@ -478,8 +466,7 @@ GetSourceOwnerCampaignInfo returns the SourceOwnerCampaignInfo field if non-nil,
 
 `func (o *GetActiveCampaigns200ResponseInner) GetSourceOwnerCampaignInfoOk() (*FullcampaignAllOfSourceOwnerCampaignInfo, bool)`
 
-GetSourceOwnerCampaignInfoOk returns a tuple with the SourceOwnerCampaignInfo field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceOwnerCampaignInfoOk returns a tuple with the SourceOwnerCampaignInfo field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceOwnerCampaignInfo
 
@@ -503,8 +490,7 @@ GetSearchCampaignInfo returns the SearchCampaignInfo field if non-nil, zero valu
 
 `func (o *GetActiveCampaigns200ResponseInner) GetSearchCampaignInfoOk() (*FullcampaignAllOfSearchCampaignInfo, bool)`
 
-GetSearchCampaignInfoOk returns a tuple with the SearchCampaignInfo field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSearchCampaignInfoOk returns a tuple with the SearchCampaignInfo field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSearchCampaignInfo
 
@@ -528,8 +514,7 @@ GetRoleCompositionCampaignInfo returns the RoleCompositionCampaignInfo field if 
 
 `func (o *GetActiveCampaigns200ResponseInner) GetRoleCompositionCampaignInfoOk() (*FullcampaignAllOfRoleCompositionCampaignInfo, bool)`
 
-GetRoleCompositionCampaignInfoOk returns a tuple with the RoleCompositionCampaignInfo field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRoleCompositionCampaignInfoOk returns a tuple with the RoleCompositionCampaignInfo field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRoleCompositionCampaignInfo
 
@@ -553,8 +538,7 @@ GetMachineAccountCampaignInfo returns the MachineAccountCampaignInfo field if no
 
 `func (o *GetActiveCampaigns200ResponseInner) GetMachineAccountCampaignInfoOk() (*FullcampaignAllOfMachineAccountCampaignInfo, bool)`
 
-GetMachineAccountCampaignInfoOk returns a tuple with the MachineAccountCampaignInfo field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMachineAccountCampaignInfoOk returns a tuple with the MachineAccountCampaignInfo field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMachineAccountCampaignInfo
 
@@ -578,8 +562,7 @@ GetSourcesWithOrphanEntitlements returns the SourcesWithOrphanEntitlements field
 
 `func (o *GetActiveCampaigns200ResponseInner) GetSourcesWithOrphanEntitlementsOk() (*[]FullcampaignAllOfSourcesWithOrphanEntitlements, bool)`
 
-GetSourcesWithOrphanEntitlementsOk returns a tuple with the SourcesWithOrphanEntitlements field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourcesWithOrphanEntitlementsOk returns a tuple with the SourcesWithOrphanEntitlements field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourcesWithOrphanEntitlements
 
@@ -603,8 +586,7 @@ GetMandatoryCommentRequirement returns the MandatoryCommentRequirement field if 
 
 `func (o *GetActiveCampaigns200ResponseInner) GetMandatoryCommentRequirementOk() (*string, bool)`
 
-GetMandatoryCommentRequirementOk returns a tuple with the MandatoryCommentRequirement field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMandatoryCommentRequirementOk returns a tuple with the MandatoryCommentRequirement field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMandatoryCommentRequirement
 
@@ -617,5 +599,3 @@ SetMandatoryCommentRequirement sets MandatoryCommentRequirement field to given v
 `func (o *GetActiveCampaigns200ResponseInner) HasMandatoryCommentRequirement() bool`
 
 HasMandatoryCommentRequirement returns a boolean if a field has been set.
-
-

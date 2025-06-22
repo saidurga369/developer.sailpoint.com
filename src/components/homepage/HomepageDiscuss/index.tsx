@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from './styles.module.css';
 import DiscussCard from '../DiscussCard';
-import { discourseBaseURL } from '../../../util/util';
-import { getTopPosts } from '../../../services/DiscourseService';
+import {discourseBaseURL} from '../../../util/util';
+import {getTopPosts} from '../../../services/DiscourseService';
 
 interface Post {
   tags: string[];

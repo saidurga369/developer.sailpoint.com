@@ -4,9 +4,22 @@ title: JsonPatchOperationValue
 pagination_label: JsonPatchOperationValue
 sidebar_label: JsonPatchOperationValue
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'JsonPatchOperationValue', 'JsonPatchOperationValue'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'JsonPatchOperationValue',
+    'JsonPatchOperationValue',
+  ]
 slug: /tools/sdk/python/v3/models/json-patch-operation-value
-tags: ['SDK', 'Software Development Kit', 'JsonPatchOperationValue', 'JsonPatchOperationValue']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'JsonPatchOperationValue',
+    'JsonPatchOperationValue',
+  ]
 ---
 
 # JsonPatchOperationValue
@@ -15,8 +28,9 @@ The value to be used for the operation, required for \"add\" and \"replace\" ope
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
+
 }
 
 ## Example
@@ -28,5 +42,5 @@ json_patch_operation_value = JsonPatchOperationValue(
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

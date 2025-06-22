@@ -4,9 +4,22 @@ title: ManagedClusterKeyPair
 pagination_label: ManagedClusterKeyPair
 sidebar_label: ManagedClusterKeyPair
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ManagedClusterKeyPair', 'V2024ManagedClusterKeyPair'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ManagedClusterKeyPair',
+    'V2024ManagedClusterKeyPair',
+  ]
 slug: /tools/sdk/python/v2024/models/managed-cluster-key-pair
-tags: ['SDK', 'Software Development Kit', 'ManagedClusterKeyPair', 'V2024ManagedClusterKeyPair']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ManagedClusterKeyPair',
+    'V2024ManagedClusterKeyPair',
+  ]
 ---
 
 # ManagedClusterKeyPair
@@ -15,11 +28,12 @@ Managed Cluster key pair for Cluster
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**public_key** | **str** | ManagedCluster publicKey | [optional] 
-**public_key_thumbprint** | **str** | ManagedCluster publicKeyThumbprint | [optional] 
-**public_key_certificate** | **str** | ManagedCluster publicKeyCertificate | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **public_key** | **str** | ManagedCluster publicKey | [optional] |
+| **public_key_thumbprint** | **str** | ManagedCluster publicKeyThumbprint | [optional] |
+| **public_key_certificate** | **str** | ManagedCluster publicKeyCertificate | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ public_key_certificate='-----BEGIN CERTIFICATE-----****-----END CERTIFICATE-----
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

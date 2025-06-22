@@ -4,18 +4,25 @@ title: ViolationPrediction
 pagination_label: ViolationPrediction
 sidebar_label: ViolationPrediction
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ViolationPrediction', 'V2025ViolationPrediction'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'ViolationPrediction', 'V2025ViolationPrediction']
 slug: /tools/sdk/go/v2025/models/violation-prediction
-tags: ['SDK', 'Software Development Kit', 'ViolationPrediction', 'V2025ViolationPrediction']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ViolationPrediction',
+    'V2025ViolationPrediction',
+  ]
 ---
 
 # ViolationPrediction
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ViolationContexts** | Pointer to [**[]ViolationContext**](violation-context) | List of Violation Contexts | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ViolationContexts** | Pointer to [**[]ViolationContext**](violation-context) | List of Violation Contexts | [optional] |
 
 ## Methods
 
@@ -23,18 +30,13 @@ Name | Type | Description | Notes
 
 `func NewViolationPrediction() *ViolationPrediction`
 
-NewViolationPrediction instantiates a new ViolationPrediction object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewViolationPrediction instantiates a new ViolationPrediction object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewViolationPredictionWithDefaults
 
 `func NewViolationPredictionWithDefaults() *ViolationPrediction`
 
-NewViolationPredictionWithDefaults instantiates a new ViolationPrediction object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewViolationPredictionWithDefaults instantiates a new ViolationPrediction object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetViolationContexts
 
@@ -46,8 +48,7 @@ GetViolationContexts returns the ViolationContexts field if non-nil, zero value 
 
 `func (o *ViolationPrediction) GetViolationContextsOk() (*[]ViolationContext, bool)`
 
-GetViolationContextsOk returns a tuple with the ViolationContexts field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetViolationContextsOk returns a tuple with the ViolationContexts field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetViolationContexts
 
@@ -60,5 +61,3 @@ SetViolationContexts sets ViolationContexts field to given value.
 `func (o *ViolationPrediction) HasViolationContexts() bool`
 
 HasViolationContexts returns a boolean if a field has been set.
-
-

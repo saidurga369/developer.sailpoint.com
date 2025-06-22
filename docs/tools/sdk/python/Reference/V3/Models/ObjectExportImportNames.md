@@ -4,19 +4,32 @@ title: ObjectExportImportNames
 pagination_label: ObjectExportImportNames
 sidebar_label: ObjectExportImportNames
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ObjectExportImportNames', 'ObjectExportImportNames'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ObjectExportImportNames',
+    'ObjectExportImportNames',
+  ]
 slug: /tools/sdk/python/v3/models/object-export-import-names
-tags: ['SDK', 'Software Development Kit', 'ObjectExportImportNames', 'ObjectExportImportNames']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ObjectExportImportNames',
+    'ObjectExportImportNames',
+  ]
 ---
 
 # ObjectExportImportNames
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**included_names** | **[]str** | Object names to be included in a backup. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **included_names** | **[]str** | Object names to be included in a backup. | [optional] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ included_names=[
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

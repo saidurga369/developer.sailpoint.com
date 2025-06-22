@@ -4,33 +4,46 @@ title: CancelableAccountActivity
 pagination_label: CancelableAccountActivity
 sidebar_label: CancelableAccountActivity
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'CancelableAccountActivity', 'BetaCancelableAccountActivity'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'CancelableAccountActivity',
+    'BetaCancelableAccountActivity',
+  ]
 slug: /tools/sdk/go/beta/models/cancelable-account-activity
-tags: ['SDK', 'Software Development Kit', 'CancelableAccountActivity', 'BetaCancelableAccountActivity']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CancelableAccountActivity',
+    'BetaCancelableAccountActivity',
+  ]
 ---
 
 # CancelableAccountActivity
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | ID of the account activity itself | [optional] 
-**Name** | Pointer to **string** |  | [optional] 
-**Created** | Pointer to **SailPointTime** |  | [optional] 
-**Modified** | Pointer to **NullableTime** |  | [optional] 
-**Completed** | Pointer to **NullableTime** |  | [optional] 
-**CompletionStatus** | Pointer to [**NullableCompletionStatus**](completion-status) |  | [optional] 
-**Type** | Pointer to **NullableString** |  | [optional] 
-**RequesterIdentitySummary** | Pointer to [**NullableIdentitySummary**](identity-summary) |  | [optional] 
-**TargetIdentitySummary** | Pointer to [**NullableIdentitySummary**](identity-summary) |  | [optional] 
-**Errors** | Pointer to **[]string** |  | [optional] 
-**Warnings** | Pointer to **[]string** |  | [optional] 
-**Items** | Pointer to [**[]AccountActivityItem**](account-activity-item) |  | [optional] 
-**ExecutionStatus** | Pointer to [**ExecutionStatus**](execution-status) |  | [optional] 
-**ClientMetadata** | Pointer to **map[string]string** | Arbitrary key-value pairs, if any were included in the corresponding access request | [optional] 
-**Cancelable** | Pointer to **bool** | Whether the account activity can be canceled before completion | [optional] 
-**CancelComment** | Pointer to [**NullableComment**](comment) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | ID of the account activity itself | [optional] |
+| **Name** | Pointer to **string** |  | [optional] |
+| **Created** | Pointer to **SailPointTime** |  | [optional] |
+| **Modified** | Pointer to **NullableTime** |  | [optional] |
+| **Completed** | Pointer to **NullableTime** |  | [optional] |
+| **CompletionStatus** | Pointer to [**NullableCompletionStatus**](completion-status) |  | [optional] |
+| **Type** | Pointer to **NullableString** |  | [optional] |
+| **RequesterIdentitySummary** | Pointer to [**NullableIdentitySummary**](identity-summary) |  | [optional] |
+| **TargetIdentitySummary** | Pointer to [**NullableIdentitySummary**](identity-summary) |  | [optional] |
+| **Errors** | Pointer to **[]string** |  | [optional] |
+| **Warnings** | Pointer to **[]string** |  | [optional] |
+| **Items** | Pointer to [**[]AccountActivityItem**](account-activity-item) |  | [optional] |
+| **ExecutionStatus** | Pointer to [**ExecutionStatus**](execution-status) |  | [optional] |
+| **ClientMetadata** | Pointer to **map[string]string** | Arbitrary key-value pairs, if any were included in the corresponding access request | [optional] |
+| **Cancelable** | Pointer to **bool** | Whether the account activity can be canceled before completion | [optional] |
+| **CancelComment** | Pointer to [**NullableComment**](comment) |  | [optional] |
 
 ## Methods
 
@@ -38,18 +51,13 @@ Name | Type | Description | Notes
 
 `func NewCancelableAccountActivity() *CancelableAccountActivity`
 
-NewCancelableAccountActivity instantiates a new CancelableAccountActivity object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewCancelableAccountActivity instantiates a new CancelableAccountActivity object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewCancelableAccountActivityWithDefaults
 
 `func NewCancelableAccountActivityWithDefaults() *CancelableAccountActivity`
 
-NewCancelableAccountActivityWithDefaults instantiates a new CancelableAccountActivity object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewCancelableAccountActivityWithDefaults instantiates a new CancelableAccountActivity object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -61,8 +69,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *CancelableAccountActivity) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -86,8 +93,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *CancelableAccountActivity) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -111,8 +117,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *CancelableAccountActivity) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -136,8 +141,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *CancelableAccountActivity) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -155,12 +159,14 @@ HasModified returns a boolean if a field has been set.
 
 `func (o *CancelableAccountActivity) SetModifiedNil(b bool)`
 
- SetModifiedNil sets the value for Modified to be an explicit nil
+SetModifiedNil sets the value for Modified to be an explicit nil
 
 ### UnsetModified
+
 `func (o *CancelableAccountActivity) UnsetModified()`
 
 UnsetModified ensures that no value is present for Modified, not even an explicit nil
+
 ### GetCompleted
 
 `func (o *CancelableAccountActivity) GetCompleted() SailPointTime`
@@ -171,8 +177,7 @@ GetCompleted returns the Completed field if non-nil, zero value otherwise.
 
 `func (o *CancelableAccountActivity) GetCompletedOk() (*SailPointTime, bool)`
 
-GetCompletedOk returns a tuple with the Completed field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCompletedOk returns a tuple with the Completed field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCompleted
 
@@ -190,12 +195,14 @@ HasCompleted returns a boolean if a field has been set.
 
 `func (o *CancelableAccountActivity) SetCompletedNil(b bool)`
 
- SetCompletedNil sets the value for Completed to be an explicit nil
+SetCompletedNil sets the value for Completed to be an explicit nil
 
 ### UnsetCompleted
+
 `func (o *CancelableAccountActivity) UnsetCompleted()`
 
 UnsetCompleted ensures that no value is present for Completed, not even an explicit nil
+
 ### GetCompletionStatus
 
 `func (o *CancelableAccountActivity) GetCompletionStatus() CompletionStatus`
@@ -206,8 +213,7 @@ GetCompletionStatus returns the CompletionStatus field if non-nil, zero value ot
 
 `func (o *CancelableAccountActivity) GetCompletionStatusOk() (*CompletionStatus, bool)`
 
-GetCompletionStatusOk returns a tuple with the CompletionStatus field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCompletionStatusOk returns a tuple with the CompletionStatus field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCompletionStatus
 
@@ -225,12 +231,14 @@ HasCompletionStatus returns a boolean if a field has been set.
 
 `func (o *CancelableAccountActivity) SetCompletionStatusNil(b bool)`
 
- SetCompletionStatusNil sets the value for CompletionStatus to be an explicit nil
+SetCompletionStatusNil sets the value for CompletionStatus to be an explicit nil
 
 ### UnsetCompletionStatus
+
 `func (o *CancelableAccountActivity) UnsetCompletionStatus()`
 
 UnsetCompletionStatus ensures that no value is present for CompletionStatus, not even an explicit nil
+
 ### GetType
 
 `func (o *CancelableAccountActivity) GetType() string`
@@ -241,8 +249,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *CancelableAccountActivity) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -260,12 +267,14 @@ HasType returns a boolean if a field has been set.
 
 `func (o *CancelableAccountActivity) SetTypeNil(b bool)`
 
- SetTypeNil sets the value for Type to be an explicit nil
+SetTypeNil sets the value for Type to be an explicit nil
 
 ### UnsetType
+
 `func (o *CancelableAccountActivity) UnsetType()`
 
 UnsetType ensures that no value is present for Type, not even an explicit nil
+
 ### GetRequesterIdentitySummary
 
 `func (o *CancelableAccountActivity) GetRequesterIdentitySummary() IdentitySummary`
@@ -276,8 +285,7 @@ GetRequesterIdentitySummary returns the RequesterIdentitySummary field if non-ni
 
 `func (o *CancelableAccountActivity) GetRequesterIdentitySummaryOk() (*IdentitySummary, bool)`
 
-GetRequesterIdentitySummaryOk returns a tuple with the RequesterIdentitySummary field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequesterIdentitySummaryOk returns a tuple with the RequesterIdentitySummary field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequesterIdentitySummary
 
@@ -295,12 +303,14 @@ HasRequesterIdentitySummary returns a boolean if a field has been set.
 
 `func (o *CancelableAccountActivity) SetRequesterIdentitySummaryNil(b bool)`
 
- SetRequesterIdentitySummaryNil sets the value for RequesterIdentitySummary to be an explicit nil
+SetRequesterIdentitySummaryNil sets the value for RequesterIdentitySummary to be an explicit nil
 
 ### UnsetRequesterIdentitySummary
+
 `func (o *CancelableAccountActivity) UnsetRequesterIdentitySummary()`
 
 UnsetRequesterIdentitySummary ensures that no value is present for RequesterIdentitySummary, not even an explicit nil
+
 ### GetTargetIdentitySummary
 
 `func (o *CancelableAccountActivity) GetTargetIdentitySummary() IdentitySummary`
@@ -311,8 +321,7 @@ GetTargetIdentitySummary returns the TargetIdentitySummary field if non-nil, zer
 
 `func (o *CancelableAccountActivity) GetTargetIdentitySummaryOk() (*IdentitySummary, bool)`
 
-GetTargetIdentitySummaryOk returns a tuple with the TargetIdentitySummary field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTargetIdentitySummaryOk returns a tuple with the TargetIdentitySummary field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTargetIdentitySummary
 
@@ -330,12 +339,14 @@ HasTargetIdentitySummary returns a boolean if a field has been set.
 
 `func (o *CancelableAccountActivity) SetTargetIdentitySummaryNil(b bool)`
 
- SetTargetIdentitySummaryNil sets the value for TargetIdentitySummary to be an explicit nil
+SetTargetIdentitySummaryNil sets the value for TargetIdentitySummary to be an explicit nil
 
 ### UnsetTargetIdentitySummary
+
 `func (o *CancelableAccountActivity) UnsetTargetIdentitySummary()`
 
 UnsetTargetIdentitySummary ensures that no value is present for TargetIdentitySummary, not even an explicit nil
+
 ### GetErrors
 
 `func (o *CancelableAccountActivity) GetErrors() []string`
@@ -346,8 +357,7 @@ GetErrors returns the Errors field if non-nil, zero value otherwise.
 
 `func (o *CancelableAccountActivity) GetErrorsOk() (*[]string, bool)`
 
-GetErrorsOk returns a tuple with the Errors field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetErrorsOk returns a tuple with the Errors field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetErrors
 
@@ -365,12 +375,14 @@ HasErrors returns a boolean if a field has been set.
 
 `func (o *CancelableAccountActivity) SetErrorsNil(b bool)`
 
- SetErrorsNil sets the value for Errors to be an explicit nil
+SetErrorsNil sets the value for Errors to be an explicit nil
 
 ### UnsetErrors
+
 `func (o *CancelableAccountActivity) UnsetErrors()`
 
 UnsetErrors ensures that no value is present for Errors, not even an explicit nil
+
 ### GetWarnings
 
 `func (o *CancelableAccountActivity) GetWarnings() []string`
@@ -381,8 +393,7 @@ GetWarnings returns the Warnings field if non-nil, zero value otherwise.
 
 `func (o *CancelableAccountActivity) GetWarningsOk() (*[]string, bool)`
 
-GetWarningsOk returns a tuple with the Warnings field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetWarningsOk returns a tuple with the Warnings field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetWarnings
 
@@ -400,12 +411,14 @@ HasWarnings returns a boolean if a field has been set.
 
 `func (o *CancelableAccountActivity) SetWarningsNil(b bool)`
 
- SetWarningsNil sets the value for Warnings to be an explicit nil
+SetWarningsNil sets the value for Warnings to be an explicit nil
 
 ### UnsetWarnings
+
 `func (o *CancelableAccountActivity) UnsetWarnings()`
 
 UnsetWarnings ensures that no value is present for Warnings, not even an explicit nil
+
 ### GetItems
 
 `func (o *CancelableAccountActivity) GetItems() []AccountActivityItem`
@@ -416,8 +429,7 @@ GetItems returns the Items field if non-nil, zero value otherwise.
 
 `func (o *CancelableAccountActivity) GetItemsOk() (*[]AccountActivityItem, bool)`
 
-GetItemsOk returns a tuple with the Items field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetItemsOk returns a tuple with the Items field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetItems
 
@@ -435,12 +447,14 @@ HasItems returns a boolean if a field has been set.
 
 `func (o *CancelableAccountActivity) SetItemsNil(b bool)`
 
- SetItemsNil sets the value for Items to be an explicit nil
+SetItemsNil sets the value for Items to be an explicit nil
 
 ### UnsetItems
+
 `func (o *CancelableAccountActivity) UnsetItems()`
 
 UnsetItems ensures that no value is present for Items, not even an explicit nil
+
 ### GetExecutionStatus
 
 `func (o *CancelableAccountActivity) GetExecutionStatus() ExecutionStatus`
@@ -451,8 +465,7 @@ GetExecutionStatus returns the ExecutionStatus field if non-nil, zero value othe
 
 `func (o *CancelableAccountActivity) GetExecutionStatusOk() (*ExecutionStatus, bool)`
 
-GetExecutionStatusOk returns a tuple with the ExecutionStatus field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetExecutionStatusOk returns a tuple with the ExecutionStatus field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetExecutionStatus
 
@@ -476,8 +489,7 @@ GetClientMetadata returns the ClientMetadata field if non-nil, zero value otherw
 
 `func (o *CancelableAccountActivity) GetClientMetadataOk() (*map[string]string, bool)`
 
-GetClientMetadataOk returns a tuple with the ClientMetadata field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetClientMetadataOk returns a tuple with the ClientMetadata field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetClientMetadata
 
@@ -495,12 +507,14 @@ HasClientMetadata returns a boolean if a field has been set.
 
 `func (o *CancelableAccountActivity) SetClientMetadataNil(b bool)`
 
- SetClientMetadataNil sets the value for ClientMetadata to be an explicit nil
+SetClientMetadataNil sets the value for ClientMetadata to be an explicit nil
 
 ### UnsetClientMetadata
+
 `func (o *CancelableAccountActivity) UnsetClientMetadata()`
 
 UnsetClientMetadata ensures that no value is present for ClientMetadata, not even an explicit nil
+
 ### GetCancelable
 
 `func (o *CancelableAccountActivity) GetCancelable() bool`
@@ -511,8 +525,7 @@ GetCancelable returns the Cancelable field if non-nil, zero value otherwise.
 
 `func (o *CancelableAccountActivity) GetCancelableOk() (*bool, bool)`
 
-GetCancelableOk returns a tuple with the Cancelable field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCancelableOk returns a tuple with the Cancelable field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCancelable
 
@@ -536,8 +549,7 @@ GetCancelComment returns the CancelComment field if non-nil, zero value otherwis
 
 `func (o *CancelableAccountActivity) GetCancelCommentOk() (*Comment, bool)`
 
-GetCancelCommentOk returns a tuple with the CancelComment field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCancelCommentOk returns a tuple with the CancelComment field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCancelComment
 
@@ -555,10 +567,10 @@ HasCancelComment returns a boolean if a field has been set.
 
 `func (o *CancelableAccountActivity) SetCancelCommentNil(b bool)`
 
- SetCancelCommentNil sets the value for CancelComment to be an explicit nil
+SetCancelCommentNil sets the value for CancelComment to be an explicit nil
 
 ### UnsetCancelComment
+
 `func (o *CancelableAccountActivity) UnsetCancelComment()`
 
 UnsetCancelComment ensures that no value is present for CancelComment, not even an explicit nil
-

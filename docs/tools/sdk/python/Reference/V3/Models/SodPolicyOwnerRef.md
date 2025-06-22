@@ -4,9 +4,10 @@ title: SodPolicyOwnerRef
 pagination_label: SodPolicyOwnerRef
 sidebar_label: SodPolicyOwnerRef
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SodPolicyOwnerRef', 'SodPolicyOwnerRef'] 
+keywords: ['python', 'Python', 'sdk', 'SodPolicyOwnerRef', 'SodPolicyOwnerRef']
 slug: /tools/sdk/python/v3/models/sod-policy-owner-ref
-tags: ['SDK', 'Software Development Kit', 'SodPolicyOwnerRef', 'SodPolicyOwnerRef']
+tags:
+  ['SDK', 'Software Development Kit', 'SodPolicyOwnerRef', 'SodPolicyOwnerRef']
 ---
 
 # SodPolicyOwnerRef
@@ -15,11 +16,12 @@ The owner of the SOD policy.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY',    'GOVERNANCE_GROUP' ] | Owner type. | [optional] 
-**id** | **str** | Owner's ID. | [optional] 
-**name** | **str** | Owner's name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'IDENTITY', 'GOVERNANCE_GROUP' ] | Owner type. | [optional] |
+| **id** | **str** | Owner's ID. | [optional] |
+| **name** | **str** | Owner's name. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +36,5 @@ name='Support'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

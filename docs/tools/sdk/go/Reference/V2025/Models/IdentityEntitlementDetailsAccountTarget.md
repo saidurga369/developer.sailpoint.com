@@ -4,25 +4,38 @@ title: IdentityEntitlementDetailsAccountTarget
 pagination_label: IdentityEntitlementDetailsAccountTarget
 sidebar_label: IdentityEntitlementDetailsAccountTarget
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IdentityEntitlementDetailsAccountTarget', 'V2025IdentityEntitlementDetailsAccountTarget'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'IdentityEntitlementDetailsAccountTarget',
+    'V2025IdentityEntitlementDetailsAccountTarget',
+  ]
 slug: /tools/sdk/go/v2025/models/identity-entitlement-details-account-target
-tags: ['SDK', 'Software Development Kit', 'IdentityEntitlementDetailsAccountTarget', 'V2025IdentityEntitlementDetailsAccountTarget']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityEntitlementDetailsAccountTarget',
+    'V2025IdentityEntitlementDetailsAccountTarget',
+  ]
 ---
 
 # IdentityEntitlementDetailsAccountTarget
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**AccountId** | Pointer to **string** | The id of account | [optional] 
-**AccountName** | Pointer to **string** | The name of account | [optional] 
-**AccountUUID** | Pointer to **NullableString** | The UUID representation of the account if available | [optional] 
-**SourceId** | Pointer to **string** | The id of Source | [optional] 
-**SourceName** | Pointer to **string** | The name of Source | [optional] 
-**RemoveDate** | Pointer to **NullableString** | The removal date scheduled for the entitlement on the Identity | [optional] 
-**AssignmentId** | Pointer to **NullableString** | The assignmentId of the entitlement on the Identity | [optional] 
-**Revocable** | Pointer to **bool** | If the entitlement can be revoked | [optional] [default to false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **AccountId** | Pointer to **string** | The id of account | [optional] |
+| **AccountName** | Pointer to **string** | The name of account | [optional] |
+| **AccountUUID** | Pointer to **NullableString** | The UUID representation of the account if available | [optional] |
+| **SourceId** | Pointer to **string** | The id of Source | [optional] |
+| **SourceName** | Pointer to **string** | The name of Source | [optional] |
+| **RemoveDate** | Pointer to **NullableString** | The removal date scheduled for the entitlement on the Identity | [optional] |
+| **AssignmentId** | Pointer to **NullableString** | The assignmentId of the entitlement on the Identity | [optional] |
+| **Revocable** | Pointer to **bool** | If the entitlement can be revoked | [optional] [default to false] |
 
 ## Methods
 
@@ -30,18 +43,13 @@ Name | Type | Description | Notes
 
 `func NewIdentityEntitlementDetailsAccountTarget() *IdentityEntitlementDetailsAccountTarget`
 
-NewIdentityEntitlementDetailsAccountTarget instantiates a new IdentityEntitlementDetailsAccountTarget object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewIdentityEntitlementDetailsAccountTarget instantiates a new IdentityEntitlementDetailsAccountTarget object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewIdentityEntitlementDetailsAccountTargetWithDefaults
 
 `func NewIdentityEntitlementDetailsAccountTargetWithDefaults() *IdentityEntitlementDetailsAccountTarget`
 
-NewIdentityEntitlementDetailsAccountTargetWithDefaults instantiates a new IdentityEntitlementDetailsAccountTarget object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewIdentityEntitlementDetailsAccountTargetWithDefaults instantiates a new IdentityEntitlementDetailsAccountTarget object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetAccountId
 
@@ -53,8 +61,7 @@ GetAccountId returns the AccountId field if non-nil, zero value otherwise.
 
 `func (o *IdentityEntitlementDetailsAccountTarget) GetAccountIdOk() (*string, bool)`
 
-GetAccountIdOk returns a tuple with the AccountId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountIdOk returns a tuple with the AccountId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountId
 
@@ -78,8 +85,7 @@ GetAccountName returns the AccountName field if non-nil, zero value otherwise.
 
 `func (o *IdentityEntitlementDetailsAccountTarget) GetAccountNameOk() (*string, bool)`
 
-GetAccountNameOk returns a tuple with the AccountName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountNameOk returns a tuple with the AccountName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountName
 
@@ -103,8 +109,7 @@ GetAccountUUID returns the AccountUUID field if non-nil, zero value otherwise.
 
 `func (o *IdentityEntitlementDetailsAccountTarget) GetAccountUUIDOk() (*string, bool)`
 
-GetAccountUUIDOk returns a tuple with the AccountUUID field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountUUIDOk returns a tuple with the AccountUUID field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountUUID
 
@@ -122,12 +127,14 @@ HasAccountUUID returns a boolean if a field has been set.
 
 `func (o *IdentityEntitlementDetailsAccountTarget) SetAccountUUIDNil(b bool)`
 
- SetAccountUUIDNil sets the value for AccountUUID to be an explicit nil
+SetAccountUUIDNil sets the value for AccountUUID to be an explicit nil
 
 ### UnsetAccountUUID
+
 `func (o *IdentityEntitlementDetailsAccountTarget) UnsetAccountUUID()`
 
 UnsetAccountUUID ensures that no value is present for AccountUUID, not even an explicit nil
+
 ### GetSourceId
 
 `func (o *IdentityEntitlementDetailsAccountTarget) GetSourceId() string`
@@ -138,8 +145,7 @@ GetSourceId returns the SourceId field if non-nil, zero value otherwise.
 
 `func (o *IdentityEntitlementDetailsAccountTarget) GetSourceIdOk() (*string, bool)`
 
-GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceId
 
@@ -163,8 +169,7 @@ GetSourceName returns the SourceName field if non-nil, zero value otherwise.
 
 `func (o *IdentityEntitlementDetailsAccountTarget) GetSourceNameOk() (*string, bool)`
 
-GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceName
 
@@ -188,8 +193,7 @@ GetRemoveDate returns the RemoveDate field if non-nil, zero value otherwise.
 
 `func (o *IdentityEntitlementDetailsAccountTarget) GetRemoveDateOk() (*string, bool)`
 
-GetRemoveDateOk returns a tuple with the RemoveDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRemoveDateOk returns a tuple with the RemoveDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRemoveDate
 
@@ -207,12 +211,14 @@ HasRemoveDate returns a boolean if a field has been set.
 
 `func (o *IdentityEntitlementDetailsAccountTarget) SetRemoveDateNil(b bool)`
 
- SetRemoveDateNil sets the value for RemoveDate to be an explicit nil
+SetRemoveDateNil sets the value for RemoveDate to be an explicit nil
 
 ### UnsetRemoveDate
+
 `func (o *IdentityEntitlementDetailsAccountTarget) UnsetRemoveDate()`
 
 UnsetRemoveDate ensures that no value is present for RemoveDate, not even an explicit nil
+
 ### GetAssignmentId
 
 `func (o *IdentityEntitlementDetailsAccountTarget) GetAssignmentId() string`
@@ -223,8 +229,7 @@ GetAssignmentId returns the AssignmentId field if non-nil, zero value otherwise.
 
 `func (o *IdentityEntitlementDetailsAccountTarget) GetAssignmentIdOk() (*string, bool)`
 
-GetAssignmentIdOk returns a tuple with the AssignmentId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAssignmentIdOk returns a tuple with the AssignmentId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAssignmentId
 
@@ -242,12 +247,14 @@ HasAssignmentId returns a boolean if a field has been set.
 
 `func (o *IdentityEntitlementDetailsAccountTarget) SetAssignmentIdNil(b bool)`
 
- SetAssignmentIdNil sets the value for AssignmentId to be an explicit nil
+SetAssignmentIdNil sets the value for AssignmentId to be an explicit nil
 
 ### UnsetAssignmentId
+
 `func (o *IdentityEntitlementDetailsAccountTarget) UnsetAssignmentId()`
 
 UnsetAssignmentId ensures that no value is present for AssignmentId, not even an explicit nil
+
 ### GetRevocable
 
 `func (o *IdentityEntitlementDetailsAccountTarget) GetRevocable() bool`
@@ -258,8 +265,7 @@ GetRevocable returns the Revocable field if non-nil, zero value otherwise.
 
 `func (o *IdentityEntitlementDetailsAccountTarget) GetRevocableOk() (*bool, bool)`
 
-GetRevocableOk returns a tuple with the Revocable field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRevocableOk returns a tuple with the Revocable field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRevocable
 
@@ -272,5 +278,3 @@ SetRevocable sets Revocable field to given value.
 `func (o *IdentityEntitlementDetailsAccountTarget) HasRevocable() bool`
 
 HasRevocable returns a boolean if a field has been set.
-
-

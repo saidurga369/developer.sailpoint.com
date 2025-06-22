@@ -4,9 +4,16 @@ title: AccessProfileRole
 pagination_label: AccessProfileRole
 sidebar_label: AccessProfileRole
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccessProfileRole', 'V2025AccessProfileRole'] 
+keywords:
+  ['python', 'Python', 'sdk', 'AccessProfileRole', 'V2025AccessProfileRole']
 slug: /tools/sdk/python/v2025/models/access-profile-role
-tags: ['SDK', 'Software Development Kit', 'AccessProfileRole', 'V2025AccessProfileRole']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessProfileRole',
+    'V2025AccessProfileRole',
+  ]
 ---
 
 # AccessProfileRole
@@ -15,16 +22,17 @@ Role
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The unique ID of the referenced object. | [optional] 
-**name** | **str** | The human readable name of the referenced object. | [optional] 
-**display_name** | **str** |  | [optional] 
-**description** | **str** | Description of access item. | [optional] 
-**type** | **str** | Type of the access item. | [optional] 
-**owner** | [**DisplayReference**](display-reference) |  | [optional] 
-**disabled** | **bool** |  | [optional] 
-**revocable** | **bool** |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The unique ID of the referenced object. | [optional] |
+| **name** | **str** | The human readable name of the referenced object. | [optional] |
+| **display_name** | **str** |  | [optional] |
+| **description** | **str** | Description of access item. | [optional] |
+| **type** | **str** | Type of the access item. | [optional] |
+| **owner** | [**DisplayReference**](display-reference) |  | [optional] |
+| **disabled** | **bool** |  | [optional] |
+| **revocable** | **bool** |  | [optional] |
+
 }
 
 ## Example
@@ -44,5 +52,5 @@ revocable=True
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

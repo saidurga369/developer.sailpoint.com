@@ -4,21 +4,17 @@ title: ClientType
 pagination_label: ClientType
 sidebar_label: ClientType
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'ClientType', 'V2024ClientType'] 
+keywords: ['powershell', 'PowerShell', 'sdk', 'ClientType', 'V2024ClientType']
 slug: /tools/sdk/powershell/v2024/models/client-type
 tags: ['SDK', 'Software Development Kit', 'ClientType', 'V2024ClientType']
 ---
-
 
 # ClientType
 
 ## Enum
 
+- `CONFIDENTIAL` (value: `"CONFIDENTIAL"`)
 
-* `CONFIDENTIAL` (value: `"CONFIDENTIAL"`)
+- `PUBLIC` (value: `"PUBLIC"`)
 
-* `PUBLIC` (value: `"PUBLIC"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

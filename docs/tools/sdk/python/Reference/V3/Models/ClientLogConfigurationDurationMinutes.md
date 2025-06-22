@@ -4,9 +4,22 @@ title: ClientLogConfigurationDurationMinutes
 pagination_label: ClientLogConfigurationDurationMinutes
 sidebar_label: ClientLogConfigurationDurationMinutes
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ClientLogConfigurationDurationMinutes', 'ClientLogConfigurationDurationMinutes'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ClientLogConfigurationDurationMinutes',
+    'ClientLogConfigurationDurationMinutes',
+  ]
 slug: /tools/sdk/python/v3/models/client-log-configuration-duration-minutes
-tags: ['SDK', 'Software Development Kit', 'ClientLogConfigurationDurationMinutes', 'ClientLogConfigurationDurationMinutes']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ClientLogConfigurationDurationMinutes',
+    'ClientLogConfigurationDurationMinutes',
+  ]
 ---
 
 # ClientLogConfigurationDurationMinutes
@@ -15,12 +28,13 @@ Client Runtime Logging Configuration
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**client_id** | **str** | Log configuration's client ID | [optional] 
-**duration_minutes** | **int** | Duration in minutes for log configuration to remain in effect before resetting to defaults. | [optional] [default to 240]
-**root_level** | [**StandardLevel**](standard-level) |  | [required]
-**log_levels** | [**map[string]StandardLevel**](standard-level) | Mapping of identifiers to Standard Log Level values | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **client_id** | **str** | Log configuration's client ID | [optional] |
+| **duration_minutes** | **int** | Duration in minutes for log configuration to remain in effect before resetting to defaults. | [optional] [default to 240] |
+| **root_level** | [**StandardLevel**](standard-level) |  | [required] |
+| **log_levels** | [**map[string]StandardLevel**](standard-level) | Mapping of identifiers to Standard Log Level values | [optional] |
+
 }
 
 ## Example
@@ -36,5 +50,5 @@ log_levels=INFO
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -1,32 +1,32 @@
-import React from "react";
+import React from 'react';
 
-import { useThemeConfig, usePrismTheme } from "@docusaurus/theme-common";
+import {useThemeConfig, usePrismTheme} from '@docusaurus/theme-common';
 import {
   parseCodeBlockTitle,
   parseLanguage,
   parseLines,
   containsLineNumbers,
   useCodeWordWrap,
-} from "@docusaurus/theme-common/internal";
-import Container from "@theme/ApiExplorer/ApiCodeBlock/Container";
-import CopyButton from "@theme/ApiExplorer/ApiCodeBlock/CopyButton";
-import ExpandButton from "@theme/ApiExplorer/ApiCodeBlock/ExpandButton";
-import Line from "@theme/ApiExplorer/ApiCodeBlock/Line";
-import WordWrapButton from "@theme/ApiExplorer/ApiCodeBlock/WordWrapButton";
-import type { Props } from "@theme/CodeBlock/Content/String";
-import clsx from "clsx";
-import { Highlight, Language } from "prism-react-renderer";
+} from '@docusaurus/theme-common/internal';
+import Container from '@theme/ApiExplorer/ApiCodeBlock/Container';
+import CopyButton from '@theme/ApiExplorer/ApiCodeBlock/CopyButton';
+import ExpandButton from '@theme/ApiExplorer/ApiCodeBlock/ExpandButton';
+import Line from '@theme/ApiExplorer/ApiCodeBlock/Line';
+import WordWrapButton from '@theme/ApiExplorer/ApiCodeBlock/WordWrapButton';
+import type {Props} from '@theme/CodeBlock/Content/String';
+import clsx from 'clsx';
+import {Highlight, Language} from 'prism-react-renderer';
 
 export default function CodeBlockString({
   children,
-  className: blockClassName = "",
+  className: blockClassName = '',
   metastring,
   title: titleProp,
   showLineNumbers: showLineNumbersProp,
   language: languageProp,
 }: Props): React.JSX.Element {
   const {
-    prism: { defaultLanguage, magicComments },
+    prism: {defaultLanguage, magicComments},
   } = useThemeConfig();
   const language =
     languageProp ?? parseLanguage(blockClassName) ?? defaultLanguage;
@@ -36,7 +36,7 @@ export default function CodeBlockString({
   // future. Note that MDX doesn't strip quotes when parsing metastring:
   // "title=\"xyz\"" => title: "\"xyz\""
   const title = parseCodeBlockTitle(metastring) || titleProp;
-  const { lineClassNames, code } = parseLines(children, {
+  const {lineClassNames, code} = parseLines(children, {
     metastring,
     language,
     magicComments,
@@ -51,9 +51,8 @@ export default function CodeBlockString({
         blockClassName,
         language &&
           !blockClassName.includes(`language-${language}`) &&
-          `language-${language}`
-      )}
-    >
+          `language-${language}`,
+      )}>
       {title && (
         <div className="openapi-explorer__code-block-title">{title}</div>
       )}
@@ -62,26 +61,23 @@ export default function CodeBlockString({
           // {...defaultProps}
           theme={prismTheme}
           code={code}
-          language={language ?? "text"}
-        >
-          {({ className, tokens, getLineProps, getTokenProps }) => (
+          language={language ?? 'text'}>
+          {({className, tokens, getLineProps, getTokenProps}) => (
             <pre
               /* eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex */
               tabIndex={0}
               ref={wordWrap.codeBlockRef}
               className={clsx(
                 className,
-                "openapi-explorer__code-block",
-                "thin-scrollbar"
-              )}
-            >
+                'openapi-explorer__code-block',
+                'thin-scrollbar',
+              )}>
               <code
                 className={clsx(
-                  "openapi-explorer__code-block-lines",
+                  'openapi-explorer__code-block-lines',
                   showLineNumbers &&
-                    "openapi-explorer__code-block-lines-numbering"
-                )}
-              >
+                    'openapi-explorer__code-block-lines-numbering',
+                )}>
                 {tokens.map((line, i) => (
                   <Line
                     key={i}
@@ -110,11 +106,11 @@ export default function CodeBlockString({
           />
           <ExpandButton
             className={clsx(
-              "openapi-explorer__code-block-code-btn",
-              "openapi-explorer__expand-btn"
+              'openapi-explorer__code-block-code-btn',
+              'openapi-explorer__expand-btn',
             )}
             code={code}
-            language={(language ?? "text") as Language}
+            language={(language ?? 'text') as Language}
             showLineNumbers={showLineNumbers}
             blockClassName={blockClassName}
             title={title}

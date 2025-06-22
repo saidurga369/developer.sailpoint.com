@@ -4,9 +4,16 @@ title: RoleCriteriaKeyType
 pagination_label: RoleCriteriaKeyType
 sidebar_label: RoleCriteriaKeyType
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RoleCriteriaKeyType', 'BetaRoleCriteriaKeyType'] 
+keywords:
+  ['python', 'Python', 'sdk', 'RoleCriteriaKeyType', 'BetaRoleCriteriaKeyType']
 slug: /tools/sdk/python/beta/models/role-criteria-key-type
-tags: ['SDK', 'Software Development Kit', 'RoleCriteriaKeyType', 'BetaRoleCriteriaKeyType']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleCriteriaKeyType',
+    'BetaRoleCriteriaKeyType',
+  ]
 ---
 
 # RoleCriteriaKeyType
@@ -15,11 +22,10 @@ Indicates whether the associated criteria represents an expression on identity a
 
 ## Enum
 
-* `IDENTITY` (value: `'IDENTITY'`)
+- `IDENTITY` (value: `'IDENTITY'`)
 
-* `ACCOUNT` (value: `'ACCOUNT'`)
+- `ACCOUNT` (value: `'ACCOUNT'`)
 
-* `ENTITLEMENT` (value: `'ENTITLEMENT'`)
+- `ENTITLEMENT` (value: `'ENTITLEMENT'`)
 
-[[Back to top]](#) 
-
+[[Back to top]](#)

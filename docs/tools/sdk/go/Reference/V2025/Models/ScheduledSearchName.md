@@ -4,19 +4,26 @@ title: ScheduledSearchName
 pagination_label: ScheduledSearchName
 sidebar_label: ScheduledSearchName
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ScheduledSearchName', 'V2025ScheduledSearchName'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'ScheduledSearchName', 'V2025ScheduledSearchName']
 slug: /tools/sdk/go/v2025/models/scheduled-search-name
-tags: ['SDK', 'Software Development Kit', 'ScheduledSearchName', 'V2025ScheduledSearchName']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ScheduledSearchName',
+    'V2025ScheduledSearchName',
+  ]
 ---
 
 # ScheduledSearchName
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | Pointer to **NullableString** | The name of the scheduled search.  | [optional] 
-**Description** | Pointer to **NullableString** | The description of the scheduled search.  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | Pointer to **NullableString** | The name of the scheduled search. | [optional] |
+| **Description** | Pointer to **NullableString** | The description of the scheduled search. | [optional] |
 
 ## Methods
 
@@ -24,18 +31,13 @@ Name | Type | Description | Notes
 
 `func NewScheduledSearchName() *ScheduledSearchName`
 
-NewScheduledSearchName instantiates a new ScheduledSearchName object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewScheduledSearchName instantiates a new ScheduledSearchName object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewScheduledSearchNameWithDefaults
 
 `func NewScheduledSearchNameWithDefaults() *ScheduledSearchName`
 
-NewScheduledSearchNameWithDefaults instantiates a new ScheduledSearchName object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewScheduledSearchNameWithDefaults instantiates a new ScheduledSearchName object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -47,8 +49,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *ScheduledSearchName) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -66,12 +67,14 @@ HasName returns a boolean if a field has been set.
 
 `func (o *ScheduledSearchName) SetNameNil(b bool)`
 
- SetNameNil sets the value for Name to be an explicit nil
+SetNameNil sets the value for Name to be an explicit nil
 
 ### UnsetName
+
 `func (o *ScheduledSearchName) UnsetName()`
 
 UnsetName ensures that no value is present for Name, not even an explicit nil
+
 ### GetDescription
 
 `func (o *ScheduledSearchName) GetDescription() string`
@@ -82,8 +85,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *ScheduledSearchName) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -101,10 +103,10 @@ HasDescription returns a boolean if a field has been set.
 
 `func (o *ScheduledSearchName) SetDescriptionNil(b bool)`
 
- SetDescriptionNil sets the value for Description to be an explicit nil
+SetDescriptionNil sets the value for Description to be an explicit nil
 
 ### UnsetDescription
+
 `func (o *ScheduledSearchName) UnsetDescription()`
 
 UnsetDescription ensures that no value is present for Description, not even an explicit nil
-

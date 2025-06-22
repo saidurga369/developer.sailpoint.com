@@ -4,25 +4,38 @@ title: RequestedItemStatusSodViolationContext
 pagination_label: RequestedItemStatusSodViolationContext
 sidebar_label: RequestedItemStatusSodViolationContext
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'RequestedItemStatusSodViolationContext', 'V2024RequestedItemStatusSodViolationContext'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'RequestedItemStatusSodViolationContext',
+    'V2024RequestedItemStatusSodViolationContext',
+  ]
 slug: /tools/sdk/powershell/v2024/models/requested-item-status-sod-violation-context
-tags: ['SDK', 'Software Development Kit', 'RequestedItemStatusSodViolationContext', 'V2024RequestedItemStatusSodViolationContext']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RequestedItemStatusSodViolationContext',
+    'V2024RequestedItemStatusSodViolationContext',
+  ]
 ---
-
 
 # RequestedItemStatusSodViolationContext
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**State** |  **Enum** [  "SUCCESS",    "ERROR" ] | The status of SOD violation check | [optional] 
-**Uuid** | **String** | The id of the Violation check event | [optional] 
-**ViolationCheckResult** | [**SodViolationCheckResult**](sod-violation-check-result) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **State** | **Enum** [ "SUCCESS", "ERROR" ] | The status of SOD violation check | [optional] |
+| **Uuid** | **String** | The id of the Violation check event | [optional] |
+| **ViolationCheckResult** | [**SodViolationCheckResult**](sod-violation-check-result) |  | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $RequestedItemStatusSodViolationContext = Initialize-V2024RequestedItemStatusSodViolationContext  -State SUCCESS `
  -Uuid f73d16e9-a038-46c5-b217-1246e15fdbdd `
@@ -30,10 +43,9 @@ $RequestedItemStatusSodViolationContext = Initialize-V2024RequestedItemStatusSod
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $RequestedItemStatusSodViolationContext | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

@@ -4,19 +4,32 @@ title: ImportEntitlementsRequest
 pagination_label: ImportEntitlementsRequest
 sidebar_label: ImportEntitlementsRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ImportEntitlementsRequest', 'V2025ImportEntitlementsRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ImportEntitlementsRequest',
+    'V2025ImportEntitlementsRequest',
+  ]
 slug: /tools/sdk/python/v2025/models/import-entitlements-request
-tags: ['SDK', 'Software Development Kit', 'ImportEntitlementsRequest', 'V2025ImportEntitlementsRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ImportEntitlementsRequest',
+    'V2025ImportEntitlementsRequest',
+  ]
 ---
 
 # ImportEntitlementsRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**file** | **bytearray** | The CSV file containing the source entitlements to aggregate. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **file** | **bytearray** | The CSV file containing the source entitlements to aggregate. | [optional] |
+
 }
 
 ## Example
@@ -29,5 +42,5 @@ file=bytes(b'blah')
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,23 +4,32 @@ title: ConfigTypeEnumCamel
 pagination_label: ConfigTypeEnumCamel
 sidebar_label: ConfigTypeEnumCamel
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'ConfigTypeEnumCamel', 'V2025ConfigTypeEnumCamel'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'ConfigTypeEnumCamel',
+    'V2025ConfigTypeEnumCamel',
+  ]
 slug: /tools/sdk/powershell/v2025/models/config-type-enum-camel
-tags: ['SDK', 'Software Development Kit', 'ConfigTypeEnumCamel', 'V2025ConfigTypeEnumCamel']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ConfigTypeEnumCamel',
+    'V2025ConfigTypeEnumCamel',
+  ]
 ---
-
 
 # ConfigTypeEnumCamel
 
 ## Enum
 
+- `accessRequests` (value: `"accessRequests"`)
 
-* `accessRequests` (value: `"accessRequests"`)
+- `certifications` (value: `"certifications"`)
 
-* `certifications` (value: `"certifications"`)
+- `manualTasks` (value: `"manualTasks"`)
 
-* `manualTasks` (value: `"manualTasks"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

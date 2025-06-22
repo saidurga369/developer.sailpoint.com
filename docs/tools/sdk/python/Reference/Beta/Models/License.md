@@ -4,20 +4,20 @@ title: License
 pagination_label: License
 sidebar_label: License
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'License', 'BetaLicense'] 
+keywords: ['python', 'Python', 'sdk', 'License', 'BetaLicense']
 slug: /tools/sdk/python/beta/models/license
 tags: ['SDK', 'Software Development Kit', 'License', 'BetaLicense']
 ---
 
 # License
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**license_id** | **str** | Name of the license | [optional] 
-**legacy_feature_name** | **str** | Legacy name of the license | [optional] 
+| Name                    | Type    | Description                | Notes      |
+| ----------------------- | ------- | -------------------------- | ---------- |
+| **license_id**          | **str** | Name of the license        | [optional] |
+| **legacy_feature_name** | **str** | Legacy name of the license | [optional] |
+
 }
 
 ## Example
@@ -31,5 +31,5 @@ legacy_feature_name='ACCESS_REQUEST'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

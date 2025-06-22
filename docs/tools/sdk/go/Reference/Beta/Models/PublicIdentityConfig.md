@@ -4,20 +4,27 @@ title: PublicIdentityConfig
 pagination_label: PublicIdentityConfig
 sidebar_label: PublicIdentityConfig
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'PublicIdentityConfig', 'BetaPublicIdentityConfig'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'PublicIdentityConfig', 'BetaPublicIdentityConfig']
 slug: /tools/sdk/go/beta/models/public-identity-config
-tags: ['SDK', 'Software Development Kit', 'PublicIdentityConfig', 'BetaPublicIdentityConfig']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PublicIdentityConfig',
+    'BetaPublicIdentityConfig',
+  ]
 ---
 
 # PublicIdentityConfig
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Attributes** | Pointer to [**[]PublicIdentityAttributeConfig**](public-identity-attribute-config) |  | [optional] 
-**ModifiedBy** | Pointer to [**NullableIdentityReference**](identity-reference) |  | [optional] 
-**Modified** | Pointer to **NullableTime** | the date/time of the modification | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Attributes** | Pointer to [**[]PublicIdentityAttributeConfig**](public-identity-attribute-config) |  | [optional] |
+| **ModifiedBy** | Pointer to [**NullableIdentityReference**](identity-reference) |  | [optional] |
+| **Modified** | Pointer to **NullableTime** | the date/time of the modification | [optional] |
 
 ## Methods
 
@@ -25,18 +32,13 @@ Name | Type | Description | Notes
 
 `func NewPublicIdentityConfig() *PublicIdentityConfig`
 
-NewPublicIdentityConfig instantiates a new PublicIdentityConfig object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewPublicIdentityConfig instantiates a new PublicIdentityConfig object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewPublicIdentityConfigWithDefaults
 
 `func NewPublicIdentityConfigWithDefaults() *PublicIdentityConfig`
 
-NewPublicIdentityConfigWithDefaults instantiates a new PublicIdentityConfig object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewPublicIdentityConfigWithDefaults instantiates a new PublicIdentityConfig object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetAttributes
 
@@ -48,8 +50,7 @@ GetAttributes returns the Attributes field if non-nil, zero value otherwise.
 
 `func (o *PublicIdentityConfig) GetAttributesOk() (*[]PublicIdentityAttributeConfig, bool)`
 
-GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributes
 
@@ -73,8 +74,7 @@ GetModifiedBy returns the ModifiedBy field if non-nil, zero value otherwise.
 
 `func (o *PublicIdentityConfig) GetModifiedByOk() (*IdentityReference, bool)`
 
-GetModifiedByOk returns a tuple with the ModifiedBy field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedByOk returns a tuple with the ModifiedBy field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModifiedBy
 
@@ -92,12 +92,14 @@ HasModifiedBy returns a boolean if a field has been set.
 
 `func (o *PublicIdentityConfig) SetModifiedByNil(b bool)`
 
- SetModifiedByNil sets the value for ModifiedBy to be an explicit nil
+SetModifiedByNil sets the value for ModifiedBy to be an explicit nil
 
 ### UnsetModifiedBy
+
 `func (o *PublicIdentityConfig) UnsetModifiedBy()`
 
 UnsetModifiedBy ensures that no value is present for ModifiedBy, not even an explicit nil
+
 ### GetModified
 
 `func (o *PublicIdentityConfig) GetModified() SailPointTime`
@@ -108,8 +110,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *PublicIdentityConfig) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -127,10 +128,10 @@ HasModified returns a boolean if a field has been set.
 
 `func (o *PublicIdentityConfig) SetModifiedNil(b bool)`
 
- SetModifiedNil sets the value for Modified to be an explicit nil
+SetModifiedNil sets the value for Modified to be an explicit nil
 
 ### UnsetModified
+
 `func (o *PublicIdentityConfig) UnsetModified()`
 
 UnsetModified ensures that no value is present for Modified, not even an explicit nil
-

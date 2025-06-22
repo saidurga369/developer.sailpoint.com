@@ -4,22 +4,36 @@ title: SourceBeforeProvisioningRule
 pagination_label: SourceBeforeProvisioningRule
 sidebar_label: SourceBeforeProvisioningRule
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SourceBeforeProvisioningRule', 'V2025SourceBeforeProvisioningRule'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'SourceBeforeProvisioningRule',
+    'V2025SourceBeforeProvisioningRule',
+  ]
 slug: /tools/sdk/python/v2025/models/source-before-provisioning-rule
-tags: ['SDK', 'Software Development Kit', 'SourceBeforeProvisioningRule', 'V2025SourceBeforeProvisioningRule']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SourceBeforeProvisioningRule',
+    'V2025SourceBeforeProvisioningRule',
+  ]
 ---
 
 # SourceBeforeProvisioningRule
 
-Rule that runs on the CCG and allows for customization of provisioning plans before the API calls the connector. 
+Rule that runs on the CCG and allows for customization of provisioning plans before the API calls the connector.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'RULE' ] | Type of object being referenced. | [optional] 
-**id** | **str** | Rule ID. | [optional] 
-**name** | **str** | Rule's human-readable display name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'RULE' ] | Type of object being referenced. | [optional] |
+| **id** | **str** | Rule ID. | [optional] |
+| **name** | **str** | Rule's human-readable display name. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Example Rule'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

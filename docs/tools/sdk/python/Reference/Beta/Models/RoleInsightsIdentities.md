@@ -4,21 +4,34 @@ title: RoleInsightsIdentities
 pagination_label: RoleInsightsIdentities
 sidebar_label: RoleInsightsIdentities
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RoleInsightsIdentities', 'BetaRoleInsightsIdentities'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'RoleInsightsIdentities',
+    'BetaRoleInsightsIdentities',
+  ]
 slug: /tools/sdk/python/beta/models/role-insights-identities
-tags: ['SDK', 'Software Development Kit', 'RoleInsightsIdentities', 'BetaRoleInsightsIdentities']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleInsightsIdentities',
+    'BetaRoleInsightsIdentities',
+  ]
 ---
 
 # RoleInsightsIdentities
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Id for identity | [optional] 
-**name** | **str** | Name for identity | [optional] 
-**attributes** | **map[string]str** |  | [optional] 
+| Name           | Type               | Description       | Notes      |
+| -------------- | ------------------ | ----------------- | ---------- |
+| **id**         | **str**            | Id for identity   | [optional] |
+| **name**       | **str**            | Name for identity | [optional] |
+| **attributes** | **map[string]str** |                   | [optional] |
+
 }
 
 ## Example
@@ -35,5 +48,5 @@ attributes={
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

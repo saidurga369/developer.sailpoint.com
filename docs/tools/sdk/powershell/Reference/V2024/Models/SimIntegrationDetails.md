@@ -4,34 +4,47 @@ title: SimIntegrationDetails
 pagination_label: SimIntegrationDetails
 sidebar_label: SimIntegrationDetails
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'SimIntegrationDetails', 'V2024SimIntegrationDetails'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'SimIntegrationDetails',
+    'V2024SimIntegrationDetails',
+  ]
 slug: /tools/sdk/powershell/v2024/models/sim-integration-details
-tags: ['SDK', 'Software Development Kit', 'SimIntegrationDetails', 'V2024SimIntegrationDetails']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SimIntegrationDetails',
+    'V2024SimIntegrationDetails',
+  ]
 ---
-
 
 # SimIntegrationDetails
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | System-generated unique ID of the Object | [optional] [readonly] 
-**Name** | **String** | Name of the Object | [required]
-**Created** | **System.DateTime** | Creation date of the Object | [optional] [readonly] 
-**Modified** | **System.DateTime** | Last modification date of the Object | [optional] [readonly] 
-**Description** | **String** | The description of the integration | [optional] 
-**Type** | **String** | The integration type | [optional] 
-**Attributes** | [**SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | The attributes map containing the credentials used to configure the integration. | [optional] 
-**Sources** | **[]String** | The list of sources (managed resources) | [optional] 
-**Cluster** | **String** | The cluster/proxy | [optional] 
-**StatusMap** | [**SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | Custom mapping between the integration result and the provisioning result | [optional] 
-**Request** | [**SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | Request data to customize desc and body of the created ticket | [optional] 
-**BeforeProvisioningRule** | [**SimIntegrationDetailsAllOfBeforeProvisioningRule**](sim-integration-details-all-of-before-provisioning-rule) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | System-generated unique ID of the Object | [optional] [readonly] |
+| **Name** | **String** | Name of the Object | [required] |
+| **Created** | **System.DateTime** | Creation date of the Object | [optional] [readonly] |
+| **Modified** | **System.DateTime** | Last modification date of the Object | [optional] [readonly] |
+| **Description** | **String** | The description of the integration | [optional] |
+| **Type** | **String** | The integration type | [optional] |
+| **Attributes** | [**SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | The attributes map containing the credentials used to configure the integration. | [optional] |
+| **Sources** | **[]String** | The list of sources (managed resources) | [optional] |
+| **Cluster** | **String** | The cluster/proxy | [optional] |
+| **StatusMap** | [**SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | Custom mapping between the integration result and the provisioning result | [optional] |
+| **Request** | [**SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | Request data to customize desc and body of the created ticket | [optional] |
+| **BeforeProvisioningRule** | [**SimIntegrationDetailsAllOfBeforeProvisioningRule**](sim-integration-details-all-of-before-provisioning-rule) |  | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $SimIntegrationDetails = Initialize-V2024SimIntegrationDetails  -Id id12345 `
  -Name aName `
@@ -48,10 +61,9 @@ $SimIntegrationDetails = Initialize-V2024SimIntegrationDetails  -Id id12345 `
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $SimIntegrationDetails | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

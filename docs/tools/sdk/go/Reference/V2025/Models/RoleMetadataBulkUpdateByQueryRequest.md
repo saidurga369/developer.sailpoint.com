@@ -4,21 +4,34 @@ title: RoleMetadataBulkUpdateByQueryRequest
 pagination_label: RoleMetadataBulkUpdateByQueryRequest
 sidebar_label: RoleMetadataBulkUpdateByQueryRequest
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleMetadataBulkUpdateByQueryRequest', 'V2025RoleMetadataBulkUpdateByQueryRequest'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'RoleMetadataBulkUpdateByQueryRequest',
+    'V2025RoleMetadataBulkUpdateByQueryRequest',
+  ]
 slug: /tools/sdk/go/v2025/models/role-metadata-bulk-update-by-query-request
-tags: ['SDK', 'Software Development Kit', 'RoleMetadataBulkUpdateByQueryRequest', 'V2025RoleMetadataBulkUpdateByQueryRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMetadataBulkUpdateByQueryRequest',
+    'V2025RoleMetadataBulkUpdateByQueryRequest',
+  ]
 ---
 
 # RoleMetadataBulkUpdateByQueryRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Query** | **map[string]interface{}** | query the identities to be updated | 
-**Operation** | **string** | The operation to be performed | 
-**ReplaceScope** | Pointer to **string** | The choice of update scope. | [optional] 
-**Values** | [**[]RoleMetadataBulkUpdateByQueryRequestValuesInner**](role-metadata-bulk-update-by-query-request-values-inner) | The metadata to be updated, including attribute key and value. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Query** | **map[string]interface{}** | query the identities to be updated |
+| **Operation** | **string** | The operation to be performed |
+| **ReplaceScope** | Pointer to **string** | The choice of update scope. | [optional] |
+| **Values** | [**[]RoleMetadataBulkUpdateByQueryRequestValuesInner**](role-metadata-bulk-update-by-query-request-values-inner) | The metadata to be updated, including attribute key and value. |
 
 ## Methods
 
@@ -26,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewRoleMetadataBulkUpdateByQueryRequest(query map[string]interface{}, operation string, values []RoleMetadataBulkUpdateByQueryRequestValuesInner, ) *RoleMetadataBulkUpdateByQueryRequest`
 
-NewRoleMetadataBulkUpdateByQueryRequest instantiates a new RoleMetadataBulkUpdateByQueryRequest object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleMetadataBulkUpdateByQueryRequest instantiates a new RoleMetadataBulkUpdateByQueryRequest object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleMetadataBulkUpdateByQueryRequestWithDefaults
 
 `func NewRoleMetadataBulkUpdateByQueryRequestWithDefaults() *RoleMetadataBulkUpdateByQueryRequest`
 
-NewRoleMetadataBulkUpdateByQueryRequestWithDefaults instantiates a new RoleMetadataBulkUpdateByQueryRequest object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleMetadataBulkUpdateByQueryRequestWithDefaults instantiates a new RoleMetadataBulkUpdateByQueryRequest object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetQuery
 
@@ -49,15 +57,13 @@ GetQuery returns the Query field if non-nil, zero value otherwise.
 
 `func (o *RoleMetadataBulkUpdateByQueryRequest) GetQueryOk() (*map[string]interface{}, bool)`
 
-GetQueryOk returns a tuple with the Query field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetQueryOk returns a tuple with the Query field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetQuery
 
 `func (o *RoleMetadataBulkUpdateByQueryRequest) SetQuery(v map[string]interface{})`
 
 SetQuery sets Query field to given value.
-
 
 ### GetOperation
 
@@ -69,15 +75,13 @@ GetOperation returns the Operation field if non-nil, zero value otherwise.
 
 `func (o *RoleMetadataBulkUpdateByQueryRequest) GetOperationOk() (*string, bool)`
 
-GetOperationOk returns a tuple with the Operation field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOperationOk returns a tuple with the Operation field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOperation
 
 `func (o *RoleMetadataBulkUpdateByQueryRequest) SetOperation(v string)`
 
 SetOperation sets Operation field to given value.
-
 
 ### GetReplaceScope
 
@@ -89,8 +93,7 @@ GetReplaceScope returns the ReplaceScope field if non-nil, zero value otherwise.
 
 `func (o *RoleMetadataBulkUpdateByQueryRequest) GetReplaceScopeOk() (*string, bool)`
 
-GetReplaceScopeOk returns a tuple with the ReplaceScope field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReplaceScopeOk returns a tuple with the ReplaceScope field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReplaceScope
 
@@ -114,14 +117,10 @@ GetValues returns the Values field if non-nil, zero value otherwise.
 
 `func (o *RoleMetadataBulkUpdateByQueryRequest) GetValuesOk() (*[]RoleMetadataBulkUpdateByQueryRequestValuesInner, bool)`
 
-GetValuesOk returns a tuple with the Values field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValuesOk returns a tuple with the Values field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValues
 
 `func (o *RoleMetadataBulkUpdateByQueryRequest) SetValues(v []RoleMetadataBulkUpdateByQueryRequestValuesInner)`
 
 SetValues sets Values field to given value.
-
-
-

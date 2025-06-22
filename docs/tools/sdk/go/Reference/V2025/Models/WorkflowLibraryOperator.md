@@ -4,26 +4,39 @@ title: WorkflowLibraryOperator
 pagination_label: WorkflowLibraryOperator
 sidebar_label: WorkflowLibraryOperator
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'WorkflowLibraryOperator', 'V2025WorkflowLibraryOperator'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'WorkflowLibraryOperator',
+    'V2025WorkflowLibraryOperator',
+  ]
 slug: /tools/sdk/go/v2025/models/workflow-library-operator
-tags: ['SDK', 'Software Development Kit', 'WorkflowLibraryOperator', 'V2025WorkflowLibraryOperator']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'WorkflowLibraryOperator',
+    'V2025WorkflowLibraryOperator',
+  ]
 ---
 
 # WorkflowLibraryOperator
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Operator ID. | [optional] 
-**Name** | Pointer to **string** | Operator friendly name | [optional] 
-**Type** | Pointer to **string** | Operator type | [optional] 
-**Description** | Pointer to **string** | Description of the operator | [optional] 
-**IsDynamicSchema** | Pointer to **bool** | Determines whether the dynamic output schema is returned in place of the action's output schema. The dynamic schema lists non-static properties, like properties of a workflow form where each form has different fields. These will be provided dynamically based on available form fields. | [optional] 
-**Deprecated** | Pointer to **bool** |  | [optional] 
-**DeprecatedBy** | Pointer to **SailPointTime** |  | [optional] 
-**IsSimulationEnabled** | Pointer to **bool** |  | [optional] 
-**FormFields** | Pointer to [**[]WorkflowLibraryFormFields**](workflow-library-form-fields) | One or more inputs that the operator accepts | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Operator ID. | [optional] |
+| **Name** | Pointer to **string** | Operator friendly name | [optional] |
+| **Type** | Pointer to **string** | Operator type | [optional] |
+| **Description** | Pointer to **string** | Description of the operator | [optional] |
+| **IsDynamicSchema** | Pointer to **bool** | Determines whether the dynamic output schema is returned in place of the action's output schema. The dynamic schema lists non-static properties, like properties of a workflow form where each form has different fields. These will be provided dynamically based on available form fields. | [optional] |
+| **Deprecated** | Pointer to **bool** |  | [optional] |
+| **DeprecatedBy** | Pointer to **SailPointTime** |  | [optional] |
+| **IsSimulationEnabled** | Pointer to **bool** |  | [optional] |
+| **FormFields** | Pointer to [**[]WorkflowLibraryFormFields**](workflow-library-form-fields) | One or more inputs that the operator accepts | [optional] |
 
 ## Methods
 
@@ -31,18 +44,13 @@ Name | Type | Description | Notes
 
 `func NewWorkflowLibraryOperator() *WorkflowLibraryOperator`
 
-NewWorkflowLibraryOperator instantiates a new WorkflowLibraryOperator object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewWorkflowLibraryOperator instantiates a new WorkflowLibraryOperator object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewWorkflowLibraryOperatorWithDefaults
 
 `func NewWorkflowLibraryOperatorWithDefaults() *WorkflowLibraryOperator`
 
-NewWorkflowLibraryOperatorWithDefaults instantiates a new WorkflowLibraryOperator object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewWorkflowLibraryOperatorWithDefaults instantiates a new WorkflowLibraryOperator object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -54,8 +62,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *WorkflowLibraryOperator) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -79,8 +86,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *WorkflowLibraryOperator) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -104,8 +110,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *WorkflowLibraryOperator) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -129,8 +134,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *WorkflowLibraryOperator) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -154,8 +158,7 @@ GetIsDynamicSchema returns the IsDynamicSchema field if non-nil, zero value othe
 
 `func (o *WorkflowLibraryOperator) GetIsDynamicSchemaOk() (*bool, bool)`
 
-GetIsDynamicSchemaOk returns a tuple with the IsDynamicSchema field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIsDynamicSchemaOk returns a tuple with the IsDynamicSchema field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIsDynamicSchema
 
@@ -179,8 +182,7 @@ GetDeprecated returns the Deprecated field if non-nil, zero value otherwise.
 
 `func (o *WorkflowLibraryOperator) GetDeprecatedOk() (*bool, bool)`
 
-GetDeprecatedOk returns a tuple with the Deprecated field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDeprecatedOk returns a tuple with the Deprecated field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDeprecated
 
@@ -204,8 +206,7 @@ GetDeprecatedBy returns the DeprecatedBy field if non-nil, zero value otherwise.
 
 `func (o *WorkflowLibraryOperator) GetDeprecatedByOk() (*SailPointTime, bool)`
 
-GetDeprecatedByOk returns a tuple with the DeprecatedBy field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDeprecatedByOk returns a tuple with the DeprecatedBy field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDeprecatedBy
 
@@ -229,8 +230,7 @@ GetIsSimulationEnabled returns the IsSimulationEnabled field if non-nil, zero va
 
 `func (o *WorkflowLibraryOperator) GetIsSimulationEnabledOk() (*bool, bool)`
 
-GetIsSimulationEnabledOk returns a tuple with the IsSimulationEnabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIsSimulationEnabledOk returns a tuple with the IsSimulationEnabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIsSimulationEnabled
 
@@ -254,8 +254,7 @@ GetFormFields returns the FormFields field if non-nil, zero value otherwise.
 
 `func (o *WorkflowLibraryOperator) GetFormFieldsOk() (*[]WorkflowLibraryFormFields, bool)`
 
-GetFormFieldsOk returns a tuple with the FormFields field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFormFieldsOk returns a tuple with the FormFields field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFormFields
 
@@ -273,10 +272,10 @@ HasFormFields returns a boolean if a field has been set.
 
 `func (o *WorkflowLibraryOperator) SetFormFieldsNil(b bool)`
 
- SetFormFieldsNil sets the value for FormFields to be an explicit nil
+SetFormFieldsNil sets the value for FormFields to be an explicit nil
 
 ### UnsetFormFields
+
 `func (o *WorkflowLibraryOperator) UnsetFormFields()`
 
 UnsetFormFields ensures that no value is present for FormFields, not even an explicit nil
-

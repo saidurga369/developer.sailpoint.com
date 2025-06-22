@@ -4,7 +4,7 @@ title: Event
 pagination_label: Event
 sidebar_label: Event
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'Event', 'Event'] 
+keywords: ['python', 'Python', 'sdk', 'Event', 'Event']
 slug: /tools/sdk/python/v3/models/event
 tags: ['SDK', 'Software Development Kit', 'Event', 'Event']
 ---
@@ -15,25 +15,26 @@ Event
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | ID of the entitlement. | [optional] 
-**name** | **str** | Name of the entitlement. | [optional] 
-**created** | **datetime** | ISO-8601 date-time referring to the time when the object was created. | [optional] 
-**synced** | **str** | ISO-8601 date-time referring to the date-time when object was queued to be synced into search database for use in the search API.   This date-time changes anytime there is an update to the object, which triggers a synchronization event being sent to the search database.  There may be some delay between the `synced` time and the time when the updated data is actually available in the search API.  | [optional] 
-**action** | **str** | Name of the event as it's displayed in audit reports. | [optional] 
-**type** | **str** | Event type. Refer to [Event Types](https://documentation.sailpoint.com/saas/help/search/index.html#event-types) for a list of event types and their meanings. | [optional] 
-**actor** | [**EventActor**](event-actor) |  | [optional] 
-**target** | [**EventTarget**](event-target) |  | [optional] 
-**stack** | **str** | The event's stack. | [optional] 
-**tracking_number** | **str** | ID of the group of events. | [optional] 
-**ip_address** | **str** | Target system's IP address. | [optional] 
-**details** | **str** | ID of event's details. | [optional] 
-**attributes** | **map[string]object** | Attributes involved in the event. | [optional] 
-**objects** | **[]str** | Objects the event is happening to. | [optional] 
-**operation** | **str** | Operation, or action, performed during the event. | [optional] 
-**status** | **str** | Event status. Refer to [Event Statuses](https://documentation.sailpoint.com/saas/help/search/index.html#event-statuses) for a list of event statuses and their meanings. | [optional] 
-**technical_name** | **str** | Event's normalized name. This normalized name always follows the pattern of 'objects_operation_status'. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | ID of the entitlement. | [optional] |
+| **name** | **str** | Name of the entitlement. | [optional] |
+| **created** | **datetime** | ISO-8601 date-time referring to the time when the object was created. | [optional] |
+| **synced** | **str** | ISO-8601 date-time referring to the date-time when object was queued to be synced into search database for use in the search API. This date-time changes anytime there is an update to the object, which triggers a synchronization event being sent to the search database. There may be some delay between the `synced` time and the time when the updated data is actually available in the search API. | [optional] |
+| **action** | **str** | Name of the event as it's displayed in audit reports. | [optional] |
+| **type** | **str** | Event type. Refer to [Event Types](https://documentation.sailpoint.com/saas/help/search/index.html#event-types) for a list of event types and their meanings. | [optional] |
+| **actor** | [**EventActor**](event-actor) |  | [optional] |
+| **target** | [**EventTarget**](event-target) |  | [optional] |
+| **stack** | **str** | The event's stack. | [optional] |
+| **tracking_number** | **str** | ID of the group of events. | [optional] |
+| **ip_address** | **str** | Target system's IP address. | [optional] |
+| **details** | **str** | ID of event's details. | [optional] |
+| **attributes** | **map[string]object** | Attributes involved in the event. | [optional] |
+| **objects** | **[]str** | Objects the event is happening to. | [optional] |
+| **operation** | **str** | Operation, or action, performed during the event. | [optional] |
+| **status** | **str** | Event status. Refer to [Event Statuses](https://documentation.sailpoint.com/saas/help/search/index.html#event-statuses) for a list of event statuses and their meanings. | [optional] |
+| **technical_name** | **str** | Event's normalized name. This normalized name always follows the pattern of 'objects_operation_status'. | [optional] |
+
 }
 
 ## Example
@@ -66,5 +67,5 @@ technical_name='ENTITLEMENT_ADD_PASSED'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

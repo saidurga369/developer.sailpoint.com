@@ -4,19 +4,32 @@ title: ManualDiscoverApplicationsTemplate
 pagination_label: ManualDiscoverApplicationsTemplate
 sidebar_label: ManualDiscoverApplicationsTemplate
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ManualDiscoverApplicationsTemplate', 'V2024ManualDiscoverApplicationsTemplate'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ManualDiscoverApplicationsTemplate',
+    'V2024ManualDiscoverApplicationsTemplate',
+  ]
 slug: /tools/sdk/go/v2024/models/manual-discover-applications-template
-tags: ['SDK', 'Software Development Kit', 'ManualDiscoverApplicationsTemplate', 'V2024ManualDiscoverApplicationsTemplate']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ManualDiscoverApplicationsTemplate',
+    'V2024ManualDiscoverApplicationsTemplate',
+  ]
 ---
 
 # ManualDiscoverApplicationsTemplate
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ApplicationName** | Pointer to **string** | Name of the application. | [optional] 
-**Description** | Pointer to **string** | Description of the application. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ApplicationName** | Pointer to **string** | Name of the application. | [optional] |
+| **Description** | Pointer to **string** | Description of the application. | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewManualDiscoverApplicationsTemplate() *ManualDiscoverApplicationsTemplate`
 
-NewManualDiscoverApplicationsTemplate instantiates a new ManualDiscoverApplicationsTemplate object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewManualDiscoverApplicationsTemplate instantiates a new ManualDiscoverApplicationsTemplate object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewManualDiscoverApplicationsTemplateWithDefaults
 
 `func NewManualDiscoverApplicationsTemplateWithDefaults() *ManualDiscoverApplicationsTemplate`
 
-NewManualDiscoverApplicationsTemplateWithDefaults instantiates a new ManualDiscoverApplicationsTemplate object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewManualDiscoverApplicationsTemplateWithDefaults instantiates a new ManualDiscoverApplicationsTemplate object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetApplicationName
 
@@ -47,8 +55,7 @@ GetApplicationName returns the ApplicationName field if non-nil, zero value othe
 
 `func (o *ManualDiscoverApplicationsTemplate) GetApplicationNameOk() (*string, bool)`
 
-GetApplicationNameOk returns a tuple with the ApplicationName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApplicationNameOk returns a tuple with the ApplicationName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApplicationName
 
@@ -72,8 +79,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *ManualDiscoverApplicationsTemplate) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -86,5 +92,3 @@ SetDescription sets Description field to given value.
 `func (o *ManualDiscoverApplicationsTemplate) HasDescription() bool`
 
 HasDescription returns a boolean if a field has been set.
-
-

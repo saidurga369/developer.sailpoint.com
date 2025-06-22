@@ -4,20 +4,33 @@ title: RoleAssignmentDtoAssignmentContext
 pagination_label: RoleAssignmentDtoAssignmentContext
 sidebar_label: RoleAssignmentDtoAssignmentContext
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleAssignmentDtoAssignmentContext', 'V2025RoleAssignmentDtoAssignmentContext'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'RoleAssignmentDtoAssignmentContext',
+    'V2025RoleAssignmentDtoAssignmentContext',
+  ]
 slug: /tools/sdk/go/v2025/models/role-assignment-dto-assignment-context
-tags: ['SDK', 'Software Development Kit', 'RoleAssignmentDtoAssignmentContext', 'V2025RoleAssignmentDtoAssignmentContext']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleAssignmentDtoAssignmentContext',
+    'V2025RoleAssignmentDtoAssignmentContext',
+  ]
 ---
 
 # RoleAssignmentDtoAssignmentContext
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Requested** | Pointer to [**AccessRequestContext**](access-request-context) |  | [optional] 
-**Matched** | Pointer to [**[]RoleMatchDto**](role-match-dto) |  | [optional] 
-**ComputedDate** | Pointer to **string** | Date that the assignment will was evaluated | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Requested** | Pointer to [**AccessRequestContext**](access-request-context) |  | [optional] |
+| **Matched** | Pointer to [**[]RoleMatchDto**](role-match-dto) |  | [optional] |
+| **ComputedDate** | Pointer to **string** | Date that the assignment will was evaluated | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewRoleAssignmentDtoAssignmentContext() *RoleAssignmentDtoAssignmentContext`
 
-NewRoleAssignmentDtoAssignmentContext instantiates a new RoleAssignmentDtoAssignmentContext object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleAssignmentDtoAssignmentContext instantiates a new RoleAssignmentDtoAssignmentContext object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleAssignmentDtoAssignmentContextWithDefaults
 
 `func NewRoleAssignmentDtoAssignmentContextWithDefaults() *RoleAssignmentDtoAssignmentContext`
 
-NewRoleAssignmentDtoAssignmentContextWithDefaults instantiates a new RoleAssignmentDtoAssignmentContext object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleAssignmentDtoAssignmentContextWithDefaults instantiates a new RoleAssignmentDtoAssignmentContext object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetRequested
 
@@ -48,8 +56,7 @@ GetRequested returns the Requested field if non-nil, zero value otherwise.
 
 `func (o *RoleAssignmentDtoAssignmentContext) GetRequestedOk() (*AccessRequestContext, bool)`
 
-GetRequestedOk returns a tuple with the Requested field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestedOk returns a tuple with the Requested field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequested
 
@@ -73,8 +80,7 @@ GetMatched returns the Matched field if non-nil, zero value otherwise.
 
 `func (o *RoleAssignmentDtoAssignmentContext) GetMatchedOk() (*[]RoleMatchDto, bool)`
 
-GetMatchedOk returns a tuple with the Matched field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMatchedOk returns a tuple with the Matched field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMatched
 
@@ -98,8 +104,7 @@ GetComputedDate returns the ComputedDate field if non-nil, zero value otherwise.
 
 `func (o *RoleAssignmentDtoAssignmentContext) GetComputedDateOk() (*string, bool)`
 
-GetComputedDateOk returns a tuple with the ComputedDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetComputedDateOk returns a tuple with the ComputedDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetComputedDate
 
@@ -112,5 +117,3 @@ SetComputedDate sets ComputedDate field to given value.
 `func (o *RoleAssignmentDtoAssignmentContext) HasComputedDate() bool`
 
 HasComputedDate returns a boolean if a field has been set.
-
-

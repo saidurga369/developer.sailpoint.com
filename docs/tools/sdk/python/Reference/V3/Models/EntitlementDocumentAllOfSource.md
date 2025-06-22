@@ -4,9 +4,22 @@ title: EntitlementDocumentAllOfSource
 pagination_label: EntitlementDocumentAllOfSource
 sidebar_label: EntitlementDocumentAllOfSource
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'EntitlementDocumentAllOfSource', 'EntitlementDocumentAllOfSource'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'EntitlementDocumentAllOfSource',
+    'EntitlementDocumentAllOfSource',
+  ]
 slug: /tools/sdk/python/v3/models/entitlement-document-all-of-source
-tags: ['SDK', 'Software Development Kit', 'EntitlementDocumentAllOfSource', 'EntitlementDocumentAllOfSource']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'EntitlementDocumentAllOfSource',
+    'EntitlementDocumentAllOfSource',
+  ]
 ---
 
 # EntitlementDocumentAllOfSource
@@ -15,11 +28,12 @@ Entitlement's source.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | ID of entitlement's source. | [optional] 
-**name** | **str** | Display name of entitlement's source. | [optional] 
-**type** | **str** | Type of object. | [optional] 
+| Name     | Type    | Description                           | Notes      |
+| -------- | ------- | ------------------------------------- | ---------- |
+| **id**   | **str** | ID of entitlement's source.           | [optional] |
+| **name** | **str** | Display name of entitlement's source. | [optional] |
+| **type** | **str** | Type of object.                       | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ type='SOURCE'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

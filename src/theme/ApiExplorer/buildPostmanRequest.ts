@@ -1,11 +1,11 @@
-import { AuthState, Scheme } from "@theme/ApiExplorer/Authorization/slice";
-import { Body, Content } from "@theme/ApiExplorer/Body/slice";
+import {AuthState, Scheme} from '@theme/ApiExplorer/Authorization/slice';
+import {Body, Content} from '@theme/ApiExplorer/Body/slice';
 import {
   ParameterObject,
   ServerObject,
-} from "docusaurus-plugin-openapi-docs/src/openapi/types";
-import cloneDeep from "lodash/cloneDeep";
-import sdk from "postman-collection";
+} from 'docusaurus-plugin-openapi-docs/src/openapi/types';
+import cloneDeep from 'lodash/cloneDeep';
+import sdk from 'postman-collection';
 
 type Param = {
   value?: string | string[];
@@ -23,13 +23,13 @@ function setQueryParams(postman: sdk.Request, queryParams: Param[]) {
       if (Array.isArray(param.value)) {
         return new sdk.QueryParam({
           key: param.name,
-          value: param.value.join(","),
+          value: param.value.join(','),
         });
       }
 
       // Parameter allows empty value: "/hello?extended"
       if (param.allowEmptyValue) {
-        if (param.value === "true") {
+        if (param.value === 'true') {
           return new sdk.QueryParam({
             key: param.name,
             value: null,
@@ -66,8 +66,8 @@ function buildCookie(cookieParams: Param[]) {
       if (param.value && !Array.isArray(param.value)) {
         return new sdk.Cookie({
           // TODO: Is this right?
-          path: "",
-          domain: "",
+          path: '',
+          domain: '',
           key: param.name,
           value: param.value,
         });
@@ -85,18 +85,18 @@ function setHeaders(
   accept: string,
   cookie: string,
   headerParams: Param[],
-  other: { key: string; value: string }[]
+  other: {key: string; value: string}[],
 ) {
   postman.headers.clear();
   if (contentType) {
-    postman.addHeader({ key: "Content-Type", value: contentType });
+    postman.addHeader({key: 'Content-Type', value: contentType});
   }
   if (accept) {
-    postman.addHeader({ key: "Accept", value: accept });
+    postman.addHeader({key: 'Accept', value: accept});
   }
   headerParams.forEach((param) => {
     if (param.value && !Array.isArray(param.value)) {
-      postman.addHeader({ key: param.name, value: param.value });
+      postman.addHeader({key: param.name, value: param.value});
     }
   });
 
@@ -105,7 +105,7 @@ function setHeaders(
   });
 
   if (cookie) {
-    postman.addHeader({ key: "Cookie", value: cookie });
+    postman.addHeader({key: 'Cookie', value: cookie});
   }
 }
 
@@ -115,60 +115,60 @@ function setBody(clonedPostman: sdk.Request, body: Body) {
     return;
   }
 
-  if (body.type === "empty") {
+  if (body.type === 'empty') {
     clonedPostman.body = undefined;
     return;
   }
 
-  if (body.type === "raw" && body.content?.type === "file") {
+  if (body.type === 'raw' && body.content?.type === 'file') {
     // treat it like file.
-    clonedPostman.body.mode = "file";
-    clonedPostman.body.file = { src: body.content.value.src };
+    clonedPostman.body.mode = 'file';
+    clonedPostman.body.file = {src: body.content.value.src};
     return;
   }
 
   switch (clonedPostman.body.mode) {
-    case "raw": {
+    case 'raw': {
       // check file even though it should already be set from above
-      if (body.type !== "raw" || body.content?.type === "file") {
+      if (body.type !== 'raw' || body.content?.type === 'file') {
         clonedPostman.body = undefined;
         return;
       }
-      clonedPostman.body.raw = body.content?.value ?? "";
+      clonedPostman.body.raw = body.content?.value ?? '';
       return;
     }
-    case "formdata": {
+    case 'formdata': {
       clonedPostman.body.formdata?.clear();
-      if (body.type !== "form") {
+      if (body.type !== 'form') {
         // treat it like raw.
-        clonedPostman.body.mode = "raw";
+        clonedPostman.body.mode = 'raw';
         clonedPostman.body.raw = `${body.content?.value}`;
         return;
       }
       const params = Object.entries(body.content)
         .filter((entry): entry is [string, NonNullable<Content>] => !!entry[1])
         .map(([key, content]) => {
-          if (content.type === "file") {
-            return new sdk.FormParam({ key: key, ...content });
+          if (content.type === 'file') {
+            return new sdk.FormParam({key: key, ...content});
           }
-          return new sdk.FormParam({ key: key, value: content.value });
+          return new sdk.FormParam({key: key, value: content.value});
         });
       clonedPostman.body.formdata?.assimilate(params, false);
       return;
     }
-    case "urlencoded": {
+    case 'urlencoded': {
       clonedPostman.body.urlencoded?.clear();
-      if (body.type !== "form") {
+      if (body.type !== 'form') {
         // treat it like raw.
-        clonedPostman.body.mode = "raw";
+        clonedPostman.body.mode = 'raw';
         clonedPostman.body.raw = `${body.content?.value}`;
         return;
       }
       const params = Object.entries(body.content)
         .filter((entry): entry is [string, NonNullable<Content>] => !!entry[1])
         .map(([key, content]) => {
-          if (content.type !== "file" && content.value) {
-            return new sdk.QueryParam({ key: key, value: content.value });
+          if (content.type !== 'file' && content.value) {
+            return new sdk.QueryParam({key: key, value: content.value});
           }
           return undefined;
         })
@@ -206,7 +206,7 @@ function buildPostmanRequest(
     body,
     server,
     auth,
-  }: Options
+  }: Options,
 ) {
   const clonedPostman = cloneDeep(postman);
 
@@ -214,7 +214,7 @@ function buildPostmanRequest(
   clonedPostman.url.host = [window.location.origin];
 
   if (server) {
-    let url = server.url.replace(/\/$/, "");
+    let url = server.url.replace(/\/$/, '');
     const variables = server.variables;
     if (variables) {
       Object.keys(variables).forEach((variable) => {
@@ -237,61 +237,61 @@ function buildPostmanRequest(
 
   for (const a of selectedAuth) {
     // Bearer Auth
-    if (a.type === "http" && a.scheme === "bearer") {
-      const { token } = auth.data[a.key];
+    if (a.type === 'http' && a.scheme === 'bearer') {
+      const {token} = auth.data[a.key];
       if (token === undefined) {
         otherHeaders.push({
-          key: "Authorization",
-          value: "Bearer <TOKEN>",
+          key: 'Authorization',
+          value: 'Bearer <TOKEN>',
         });
         continue;
       }
       otherHeaders.push({
-        key: "Authorization",
+        key: 'Authorization',
         value: `Bearer ${token}`,
       });
       continue;
     }
 
-    if (a.type === "oauth2") {
+    if (a.type === 'oauth2') {
       let token;
       if (auth.data[a.key]) {
         token = auth.data[a.key].token;
       }
       if (token === undefined) {
         otherHeaders.push({
-          key: "Authorization",
-          value: "Bearer <TOKEN>",
+          key: 'Authorization',
+          value: 'Bearer <TOKEN>',
         });
         continue;
       }
       otherHeaders.push({
-        key: "Authorization",
+        key: 'Authorization',
         value: `Bearer ${token}`,
       });
       continue;
     }
 
     // Basic Auth
-    if (a.type === "http" && a.scheme === "basic") {
-      const { username, password } = auth.data[a.key];
+    if (a.type === 'http' && a.scheme === 'basic') {
+      const {username, password} = auth.data[a.key];
       if (username === undefined || password === undefined) {
         continue;
       }
       otherHeaders.push({
-        key: "Authorization",
+        key: 'Authorization',
         value: `Basic ${window.btoa(`${username}:${password}`)}`,
       });
       continue;
     }
 
     // API Key
-    if (a.type === "apiKey" && a.in === "header") {
-      const { apiKey } = auth.data[a.key];
+    if (a.type === 'apiKey' && a.in === 'header') {
+      const {apiKey} = auth.data[a.key];
       if (apiKey === undefined) {
         otherHeaders.push({
           key: a.name,
-          value: "<API_KEY_VALUE>",
+          value: '<API_KEY_VALUE>',
         });
         continue;
       }
@@ -309,7 +309,7 @@ function buildPostmanRequest(
     accept,
     cookie,
     headerParams,
-    otherHeaders
+    otherHeaders,
   );
 
   setBody(clonedPostman, body);

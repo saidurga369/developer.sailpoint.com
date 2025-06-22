@@ -4,26 +4,32 @@ title: RoleAssignmentDto
 pagination_label: RoleAssignmentDto
 sidebar_label: RoleAssignmentDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleAssignmentDto', 'BetaRoleAssignmentDto'] 
+keywords: ['go', 'Golang', 'sdk', 'RoleAssignmentDto', 'BetaRoleAssignmentDto']
 slug: /tools/sdk/go/beta/models/role-assignment-dto
-tags: ['SDK', 'Software Development Kit', 'RoleAssignmentDto', 'BetaRoleAssignmentDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleAssignmentDto',
+    'BetaRoleAssignmentDto',
+  ]
 ---
 
 # RoleAssignmentDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Assignment Id | [optional] 
-**Role** | Pointer to [**BaseReferenceDto1**](base-reference-dto1) |  | [optional] 
-**Comments** | Pointer to **string** | Comments added by the user when the assignment was made | [optional] 
-**AssignmentSource** | Pointer to **string** | Source describing how this assignment was made | [optional] 
-**Assigner** | Pointer to [**BaseReferenceDto1**](base-reference-dto1) |  | [optional] 
-**AssignedDimensions** | Pointer to [**[]BaseReferenceDto1**](base-reference-dto1) | Dimensions assigned related to this role | [optional] 
-**AssignmentContext** | Pointer to [**AssignmentContextDto**](assignment-context-dto) |  | [optional] 
-**AccountTargets** | Pointer to [**[]RoleTargetDto**](role-target-dto) |  | [optional] 
-**RemoveDate** | Pointer to **string** | Date that the assignment will be removed | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Assignment Id | [optional] |
+| **Role** | Pointer to [**BaseReferenceDto1**](base-reference-dto1) |  | [optional] |
+| **Comments** | Pointer to **string** | Comments added by the user when the assignment was made | [optional] |
+| **AssignmentSource** | Pointer to **string** | Source describing how this assignment was made | [optional] |
+| **Assigner** | Pointer to [**BaseReferenceDto1**](base-reference-dto1) |  | [optional] |
+| **AssignedDimensions** | Pointer to [**[]BaseReferenceDto1**](base-reference-dto1) | Dimensions assigned related to this role | [optional] |
+| **AssignmentContext** | Pointer to [**AssignmentContextDto**](assignment-context-dto) |  | [optional] |
+| **AccountTargets** | Pointer to [**[]RoleTargetDto**](role-target-dto) |  | [optional] |
+| **RemoveDate** | Pointer to **string** | Date that the assignment will be removed | [optional] |
 
 ## Methods
 
@@ -31,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewRoleAssignmentDto() *RoleAssignmentDto`
 
-NewRoleAssignmentDto instantiates a new RoleAssignmentDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleAssignmentDto instantiates a new RoleAssignmentDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleAssignmentDtoWithDefaults
 
 `func NewRoleAssignmentDtoWithDefaults() *RoleAssignmentDto`
 
-NewRoleAssignmentDtoWithDefaults instantiates a new RoleAssignmentDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleAssignmentDtoWithDefaults instantiates a new RoleAssignmentDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -54,8 +55,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *RoleAssignmentDto) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -79,8 +79,7 @@ GetRole returns the Role field if non-nil, zero value otherwise.
 
 `func (o *RoleAssignmentDto) GetRoleOk() (*BaseReferenceDto1, bool)`
 
-GetRoleOk returns a tuple with the Role field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRoleOk returns a tuple with the Role field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRole
 
@@ -104,8 +103,7 @@ GetComments returns the Comments field if non-nil, zero value otherwise.
 
 `func (o *RoleAssignmentDto) GetCommentsOk() (*string, bool)`
 
-GetCommentsOk returns a tuple with the Comments field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCommentsOk returns a tuple with the Comments field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetComments
 
@@ -129,8 +127,7 @@ GetAssignmentSource returns the AssignmentSource field if non-nil, zero value ot
 
 `func (o *RoleAssignmentDto) GetAssignmentSourceOk() (*string, bool)`
 
-GetAssignmentSourceOk returns a tuple with the AssignmentSource field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAssignmentSourceOk returns a tuple with the AssignmentSource field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAssignmentSource
 
@@ -154,8 +151,7 @@ GetAssigner returns the Assigner field if non-nil, zero value otherwise.
 
 `func (o *RoleAssignmentDto) GetAssignerOk() (*BaseReferenceDto1, bool)`
 
-GetAssignerOk returns a tuple with the Assigner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAssignerOk returns a tuple with the Assigner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAssigner
 
@@ -179,8 +175,7 @@ GetAssignedDimensions returns the AssignedDimensions field if non-nil, zero valu
 
 `func (o *RoleAssignmentDto) GetAssignedDimensionsOk() (*[]BaseReferenceDto1, bool)`
 
-GetAssignedDimensionsOk returns a tuple with the AssignedDimensions field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAssignedDimensionsOk returns a tuple with the AssignedDimensions field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAssignedDimensions
 
@@ -204,8 +199,7 @@ GetAssignmentContext returns the AssignmentContext field if non-nil, zero value 
 
 `func (o *RoleAssignmentDto) GetAssignmentContextOk() (*AssignmentContextDto, bool)`
 
-GetAssignmentContextOk returns a tuple with the AssignmentContext field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAssignmentContextOk returns a tuple with the AssignmentContext field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAssignmentContext
 
@@ -229,8 +223,7 @@ GetAccountTargets returns the AccountTargets field if non-nil, zero value otherw
 
 `func (o *RoleAssignmentDto) GetAccountTargetsOk() (*[]RoleTargetDto, bool)`
 
-GetAccountTargetsOk returns a tuple with the AccountTargets field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountTargetsOk returns a tuple with the AccountTargets field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountTargets
 
@@ -254,8 +247,7 @@ GetRemoveDate returns the RemoveDate field if non-nil, zero value otherwise.
 
 `func (o *RoleAssignmentDto) GetRemoveDateOk() (*string, bool)`
 
-GetRemoveDateOk returns a tuple with the RemoveDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRemoveDateOk returns a tuple with the RemoveDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRemoveDate
 
@@ -268,5 +260,3 @@ SetRemoveDate sets RemoveDate field to given value.
 `func (o *RoleAssignmentDto) HasRemoveDate() bool`
 
 HasRemoveDate returns a boolean if a field has been set.
-
-

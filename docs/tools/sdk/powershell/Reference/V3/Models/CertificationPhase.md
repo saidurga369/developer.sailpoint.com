@@ -4,23 +4,32 @@ title: CertificationPhase
 pagination_label: CertificationPhase
 sidebar_label: CertificationPhase
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'CertificationPhase', 'CertificationPhase'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'CertificationPhase',
+    'CertificationPhase',
+  ]
 slug: /tools/sdk/powershell/v3/models/certification-phase
-tags: ['SDK', 'Software Development Kit', 'CertificationPhase', 'CertificationPhase']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CertificationPhase',
+    'CertificationPhase',
+  ]
 ---
-
 
 # CertificationPhase
 
 ## Enum
 
+- `STAGED` (value: `"STAGED"`)
 
-* `STAGED` (value: `"STAGED"`)
+- `ACTIVE` (value: `"ACTIVE"`)
 
-* `ACTIVE` (value: `"ACTIVE"`)
+- `SIGNED` (value: `"SIGNED"`)
 
-* `SIGNED` (value: `"SIGNED"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

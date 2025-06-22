@@ -4,26 +4,39 @@ title: OutlierContributingFeature
 pagination_label: OutlierContributingFeature
 sidebar_label: OutlierContributingFeature
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'OutlierContributingFeature', 'BetaOutlierContributingFeature'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'OutlierContributingFeature',
+    'BetaOutlierContributingFeature',
+  ]
 slug: /tools/sdk/python/beta/models/outlier-contributing-feature
-tags: ['SDK', 'Software Development Kit', 'OutlierContributingFeature', 'BetaOutlierContributingFeature']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'OutlierContributingFeature',
+    'BetaOutlierContributingFeature',
+  ]
 ---
 
 # OutlierContributingFeature
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Contributing feature id | [optional] 
-**name** | **str** | The name of the feature | [optional] 
-**value_type** |  **Enum** [  'INTEGER',    'FLOAT' ] | The data type of the value field | [optional] 
-**value** | [**OutlierContributingFeatureValue**](outlier-contributing-feature-value) |  | [optional] 
-**importance** | **float** | The importance of the feature. This can also be a negative value | [optional] 
-**display_name** | **str** | The (translated if header is passed) displayName for the feature | [optional] 
-**description** | **str** | The (translated if header is passed) description for the feature | [optional] 
-**translation_messages** | [**OutlierFeatureTranslation**](outlier-feature-translation) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | Contributing feature id | [optional] |
+| **name** | **str** | The name of the feature | [optional] |
+| **value_type** | **Enum** [ 'INTEGER', 'FLOAT' ] | The data type of the value field | [optional] |
+| **value** | [**OutlierContributingFeatureValue**](outlier-contributing-feature-value) |  | [optional] |
+| **importance** | **float** | The importance of the feature. This can also be a negative value | [optional] |
+| **display_name** | **str** | The (translated if header is passed) displayName for the feature | [optional] |
+| **description** | **str** | The (translated if header is passed) description for the feature | [optional] |
+| **translation_messages** | [**OutlierFeatureTranslation**](outlier-feature-translation) |  | [optional] |
+
 }
 
 ## Example
@@ -41,13 +54,13 @@ display_name='Number of entitlements',
 description='The total number of entitlements belonging to an identity',
 translation_messages=sailpoint.beta.models.outlier_feature_translation.OutlierFeatureTranslation(
                     display_name = sailpoint.beta.models.translation_message.TranslationMessage(
-                        key = 'recommender-api.V2_WEIGHT_FEATURE_PRODUCT_INTERPRETATION_HIGH', 
-                        values = [75, department], ), 
+                        key = 'recommender-api.V2_WEIGHT_FEATURE_PRODUCT_INTERPRETATION_HIGH',
+                        values = [75, department], ),
                     description = sailpoint.beta.models.translation_message.TranslationMessage(
-                        key = 'recommender-api.V2_WEIGHT_FEATURE_PRODUCT_INTERPRETATION_HIGH', 
+                        key = 'recommender-api.V2_WEIGHT_FEATURE_PRODUCT_INTERPRETATION_HIGH',
                         values = [75, department], ), )
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,26 +4,26 @@ title: Segment
 pagination_label: Segment
 sidebar_label: Segment
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'Segment', 'V2024Segment'] 
+keywords: ['python', 'Python', 'sdk', 'Segment', 'V2024Segment']
 slug: /tools/sdk/python/v2024/models/segment
 tags: ['SDK', 'Software Development Kit', 'Segment', 'V2024Segment']
 ---
 
 # Segment
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The segment's ID. | [optional] 
-**name** | **str** | The segment's business name. | [optional] 
-**created** | **datetime** | The time when the segment is created. | [optional] 
-**modified** | **datetime** | The time when the segment is modified. | [optional] 
-**description** | **str** | The segment's optional description. | [optional] 
-**owner** | [**OwnerReferenceSegments**](owner-reference-segments) |  | [optional] 
-**visibility_criteria** | [**SegmentVisibilityCriteria**](segment-visibility-criteria) |  | [optional] 
-**active** | **bool** | This boolean indicates whether the segment is currently active. Inactive segments have no effect. | [optional] [default to False]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The segment's ID. | [optional] |
+| **name** | **str** | The segment's business name. | [optional] |
+| **created** | **datetime** | The time when the segment is created. | [optional] |
+| **modified** | **datetime** | The time when the segment is modified. | [optional] |
+| **description** | **str** | The segment's optional description. | [optional] |
+| **owner** | [**OwnerReferenceSegments**](owner-reference-segments) |  | [optional] |
+| **visibility_criteria** | [**SegmentVisibilityCriteria**](segment-visibility-criteria) |  | [optional] |
+| **active** | **bool** | This boolean indicates whether the segment is currently active. Inactive segments have no effect. | [optional] [default to False] |
+
 }
 
 ## Example
@@ -38,13 +38,13 @@ created='2020-01-01T00:00Z',
 modified='2020-01-01T00:00Z',
 description='This segment represents xyz',
 owner=sailpoint.v2024.models.owner_reference_segments.OwnerReferenceSegments(
-                    type = 'IDENTITY', 
-                    id = '2c9180a46faadee4016fb4e018c20639', 
+                    type = 'IDENTITY',
+                    id = '2c9180a46faadee4016fb4e018c20639',
                     name = 'support', ),
 visibility_criteria=,
 active=True
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

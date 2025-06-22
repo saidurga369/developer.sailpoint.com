@@ -42,7 +42,7 @@ To run this project you must first have node.js and npm installed.
 
 ## 📌 Note
 
-> **Important**: Node.js version 23.6.0 does not work with this build currently. 
+> **Important**: Node.js version 23.6.0 does not work with this build currently.
 
 ```sh
 npm install npm@latest -g

@@ -4,9 +4,22 @@ title: SedAssignmentResponse
 pagination_label: SedAssignmentResponse
 sidebar_label: SedAssignmentResponse
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SedAssignmentResponse', 'BetaSedAssignmentResponse'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'SedAssignmentResponse',
+    'BetaSedAssignmentResponse',
+  ]
 slug: /tools/sdk/python/beta/models/sed-assignment-response
-tags: ['SDK', 'Software Development Kit', 'SedAssignmentResponse', 'BetaSedAssignmentResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SedAssignmentResponse',
+    'BetaSedAssignmentResponse',
+  ]
 ---
 
 # SedAssignmentResponse
@@ -15,9 +28,10 @@ Sed Assignment Response
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**batch_id** | **str** | BatchId that groups all the ids together | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **batch_id** | **str** | BatchId that groups all the ids together | [optional] |
+
 }
 
 ## Example
@@ -30,5 +44,5 @@ batch_id='016629d1-1d25-463f-97f3-0c6686846650'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

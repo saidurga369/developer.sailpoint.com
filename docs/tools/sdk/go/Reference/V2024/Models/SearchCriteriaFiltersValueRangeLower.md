@@ -4,19 +4,32 @@ title: SearchCriteriaFiltersValueRangeLower
 pagination_label: SearchCriteriaFiltersValueRangeLower
 sidebar_label: SearchCriteriaFiltersValueRangeLower
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SearchCriteriaFiltersValueRangeLower', 'V2024SearchCriteriaFiltersValueRangeLower'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'SearchCriteriaFiltersValueRangeLower',
+    'V2024SearchCriteriaFiltersValueRangeLower',
+  ]
 slug: /tools/sdk/go/v2024/models/search-criteria-filters-value-range-lower
-tags: ['SDK', 'Software Development Kit', 'SearchCriteriaFiltersValueRangeLower', 'V2024SearchCriteriaFiltersValueRangeLower']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SearchCriteriaFiltersValueRangeLower',
+    'V2024SearchCriteriaFiltersValueRangeLower',
+  ]
 ---
 
 # SearchCriteriaFiltersValueRangeLower
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Value** | Pointer to **string** | The lower bound value. | [optional] 
-**Inclusive** | Pointer to **bool** | Whether the lower bound is inclusive. | [optional] [default to false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Value** | Pointer to **string** | The lower bound value. | [optional] |
+| **Inclusive** | Pointer to **bool** | Whether the lower bound is inclusive. | [optional] [default to false] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewSearchCriteriaFiltersValueRangeLower() *SearchCriteriaFiltersValueRangeLower`
 
-NewSearchCriteriaFiltersValueRangeLower instantiates a new SearchCriteriaFiltersValueRangeLower object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSearchCriteriaFiltersValueRangeLower instantiates a new SearchCriteriaFiltersValueRangeLower object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSearchCriteriaFiltersValueRangeLowerWithDefaults
 
 `func NewSearchCriteriaFiltersValueRangeLowerWithDefaults() *SearchCriteriaFiltersValueRangeLower`
 
-NewSearchCriteriaFiltersValueRangeLowerWithDefaults instantiates a new SearchCriteriaFiltersValueRangeLower object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSearchCriteriaFiltersValueRangeLowerWithDefaults instantiates a new SearchCriteriaFiltersValueRangeLower object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetValue
 
@@ -47,8 +55,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *SearchCriteriaFiltersValueRangeLower) GetValueOk() (*string, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -72,8 +79,7 @@ GetInclusive returns the Inclusive field if non-nil, zero value otherwise.
 
 `func (o *SearchCriteriaFiltersValueRangeLower) GetInclusiveOk() (*bool, bool)`
 
-GetInclusiveOk returns a tuple with the Inclusive field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetInclusiveOk returns a tuple with the Inclusive field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetInclusive
 
@@ -86,5 +92,3 @@ SetInclusive sets Inclusive field to given value.
 `func (o *SearchCriteriaFiltersValueRangeLower) HasInclusive() bool`
 
 HasInclusive returns a boolean if a field has been set.
-
-

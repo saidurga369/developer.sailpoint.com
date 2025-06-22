@@ -4,13 +4,27 @@ title: Certification_Campaign_Filters
 pagination_label: Certification_Campaign_Filters
 sidebar_label: Certification_Campaign_Filters
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'Certification_Campaign_Filters', 'V2025Certification_Campaign_Filters'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'Certification_Campaign_Filters',
+    'V2025Certification_Campaign_Filters',
+  ]
 slug: /tools/sdk/python/v2025/methods/certification-campaign-filters
-tags: ['SDK', 'Software Development Kit', 'Certification_Campaign_Filters', 'V2025Certification_Campaign_Filters']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'Certification_Campaign_Filters',
+    'V2025Certification_Campaign_Filters',
+  ]
 ---
 
 # sailpoint.v2025.CertificationCampaignFiltersApi
-  Use this API to implement the certification campaign filter functionality. These filters can be used to create a certification campaign that includes a subset of your entitlements or users to certify.
+
+Use this API to implement the certification campaign filter functionality. These filters can be used to create a certification campaign that includes a subset of your entitlements or users to certify.
 
 For example, if for a certification campaign an organization wants to certify only specific users or entitlements, then those can be included/excluded on the basis of campaign filters.
 
@@ -37,46 +51,48 @@ For more information about these criteria types, refer to [Types of Campaign Fil
 Once the campaign filter is created, it can be linked while creating the campaign. The generated campaign will have the items to review as per the campaign filter.
 
 For example, An inclusion campaign filter is created with a source of Source 1, an operation of Equals, and an entitlement of Entitlement 1. When this filter is selected, only users who have Entitlement 1 are included in the campaign, and only Entitlement 1 is shown in the certification.
- 
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/v2025*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create-campaign-filter**](#create-campaign-filter) | **POST** `/campaign-filters` | Create campaign filter
-[**delete-campaign-filters**](#delete-campaign-filters) | **POST** `/campaign-filters/delete` | Deletes campaign filters
-[**get-campaign-filter-by-id**](#get-campaign-filter-by-id) | **GET** `/campaign-filters/{id}` | Get campaign filter by id
-[**list-campaign-filters**](#list-campaign-filters) | **GET** `/campaign-filters` | List campaign filters
-[**update-campaign-filter**](#update-campaign-filter) | **POST** `/campaign-filters/{id}` | Updates a campaign filter
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**create-campaign-filter**](#create-campaign-filter) | **POST** `/campaign-filters` | Create campaign filter |
+| [**delete-campaign-filters**](#delete-campaign-filters) | **POST** `/campaign-filters/delete` | Deletes campaign filters |
+| [**get-campaign-filter-by-id**](#get-campaign-filter-by-id) | **GET** `/campaign-filters/{id}` | Get campaign filter by id |
+| [**list-campaign-filters**](#list-campaign-filters) | **GET** `/campaign-filters` | List campaign filters |
+| [**update-campaign-filter**](#update-campaign-filter) | **POST** `/campaign-filters/{id}` | Updates a campaign filter |
 
 ## create-campaign-filter
-Create campaign filter
-Use this API to create a campaign filter based on filter details and criteria.
+
+Create campaign filter Use this API to create a campaign filter based on filter details and criteria.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/create-campaign-filter)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
- Body  | campaign_filter_details | [**CampaignFilterDetails**](../models/campaign-filter-details) | True  | 
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Body | campaign_filter_details | [**CampaignFilterDetails**](../models/campaign-filter-details) | True |
 
 ### Return type
+
 [**CampaignFilterDetails**](../models/campaign-filter-details)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Created successfully. | CampaignFilterDetails |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Created successfully. | CampaignFilterDetails | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json
- - **Accept**: application/json
+
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### Example
 
@@ -106,7 +122,7 @@ with ApiClient(configuration) as api_client:
             "recordChildMatches" : false,
             "suppressMatchedItems" : false
           } ]
-        }''' # CampaignFilterDetails | 
+        }''' # CampaignFilterDetails |
 
     try:
         # Create campaign filter
@@ -120,39 +136,40 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling CertificationCampaignFiltersApi->create_campaign_filter: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## delete-campaign-filters
-Deletes campaign filters
-Deletes campaign filters whose Ids are specified in the provided list of campaign filter Ids. Authorized callers must be an ORG_ADMIN or a CERT_ADMIN.
+
+Deletes campaign filters Deletes campaign filters whose Ids are specified in the provided list of campaign filter Ids. Authorized callers must be an ORG_ADMIN or a CERT_ADMIN.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/delete-campaign-filters)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
- Body  | request_body | **[]str** | True  | A json list of IDs of campaign filters to delete.
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Body | request_body | **[]str** | True | A json list of IDs of campaign filters to delete. |
 
 ### Return type
- (empty response body)
+
+(empty response body)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-204 | No content - indicates the request was successful but there is no content to be returned in the response. |  |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 204 | No content - indicates the request was successful but there is no content to be returned in the response. |  | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json
- - **Accept**: application/json
+
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### Example
 
@@ -176,39 +193,40 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling CertificationCampaignFiltersApi->delete_campaign_filters: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## get-campaign-filter-by-id
-Get campaign filter by id
-Retrieves information for an existing campaign filter using the filter's ID.
+
+Get campaign filter by id Retrieves information for an existing campaign filter using the filter's ID.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/get-campaign-filter-by-id)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | id | **str** | True  | The ID of the campaign filter to be retrieved.
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | id | **str** | True | The ID of the campaign filter to be retrieved. |
 
 ### Return type
+
 [**CampaignFilterDetails**](../models/campaign-filter-details)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | A campaign filter object. | CampaignFilterDetails |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | A campaign filter object. | CampaignFilterDetails | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -225,7 +243,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Get campaign filter by id
-        
+
         results = CertificationCampaignFiltersApi(api_client).get_campaign_filter_by_id(id=id)
         # Below is a request that includes all optional parameters
         # results = CertificationCampaignFiltersApi(api_client).get_campaign_filter_by_id(id)
@@ -235,40 +253,41 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling CertificationCampaignFiltersApi->get_campaign_filter_by_id: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## list-campaign-filters
-List campaign filters
-Use this API to list all campaign filters. You can reduce scope with standard V3 query parameters.
+
+List campaign filters Use this API to list all campaign filters. You can reduce scope with standard V3 query parameters.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/list-campaign-filters)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-  Query | limit | **int** |   (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | start | **int** |   (optional) (default to 0) | Start/Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | include_system_filters | **bool** |   (optional) (default to True) | If this is true, the API includes system filters in the count and results. Otherwise it excludes them. If no value is provided, the default is true. 
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Query | limit | **int** | (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | start | **int** | (optional) (default to 0) | Start/Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | include_system_filters | **bool** | (optional) (default to True) | If this is true, the API includes system filters in the count and results. Otherwise it excludes them. If no value is provided, the default is true. |
 
 ### Return type
+
 [**ListCampaignFilters200Response**](../models/list-campaign-filters200-response)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | List of campaign filter objects. | ListCampaignFilters200Response |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | List of campaign filter objects. | ListCampaignFilters200Response | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -287,7 +306,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # List campaign filters
-        
+
         results = CertificationCampaignFiltersApi(api_client).list_campaign_filters()
         # Below is a request that includes all optional parameters
         # results = CertificationCampaignFiltersApi(api_client).list_campaign_filters(limit, start, include_system_filters)
@@ -297,39 +316,40 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling CertificationCampaignFiltersApi->list_campaign_filters: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## update-campaign-filter
-Updates a campaign filter
-Updates an existing campaign filter using the filter's ID.
+
+Updates a campaign filter Updates an existing campaign filter using the filter's ID.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/update-campaign-filter)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | filter_id | **str** | True  | The ID of the campaign filter being modified.
- Body  | campaign_filter_details | [**CampaignFilterDetails**](../models/campaign-filter-details) | True  | A campaign filter details with updated field values.
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | filter_id | **str** | True | The ID of the campaign filter being modified. |
+| Body | campaign_filter_details | [**CampaignFilterDetails**](../models/campaign-filter-details) | True | A campaign filter details with updated field values. |
 
 ### Return type
+
 [**CampaignFilterDetails**](../models/campaign-filter-details)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Created successfully. | CampaignFilterDetails |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Created successfully. | CampaignFilterDetails | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json
- - **Accept**: application/json
+
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### Example
 
@@ -374,9 +394,4 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling CertificationCampaignFiltersApi->update_campaign_filter: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
-
-
-
+[[Back to top]](#)

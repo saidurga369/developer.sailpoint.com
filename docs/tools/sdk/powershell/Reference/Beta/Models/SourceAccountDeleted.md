@@ -4,30 +4,43 @@ title: SourceAccountDeleted
 pagination_label: SourceAccountDeleted
 sidebar_label: SourceAccountDeleted
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'SourceAccountDeleted', 'BetaSourceAccountDeleted'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'SourceAccountDeleted',
+    'BetaSourceAccountDeleted',
+  ]
 slug: /tools/sdk/powershell/beta/models/source-account-deleted
-tags: ['SDK', 'Software Development Kit', 'SourceAccountDeleted', 'BetaSourceAccountDeleted']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SourceAccountDeleted',
+    'BetaSourceAccountDeleted',
+  ]
 ---
-
 
 # SourceAccountDeleted
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Uuid** | **String** | Identity's universal unique identifier (UUID) on the source. The source system generates the UUID. | [required]
-**Id** | **String** | SailPoint generated unique identifier. | [required]
-**NativeIdentifier** | **String** | Account's unique ID on the source. | [required]
-**SourceId** | **String** | Source ID. | [required]
-**SourceName** | **String** | Source name. | [required]
-**IdentityId** | **String** | ID of the identity correlated with the account. | [required]
-**IdentityName** | **String** | Name of the identity correlated with the account. | [required]
-**Attributes** | [**map[string]AnyType**]https://learn.microsoft.com/en-us/powershell/scripting/lang-spec/chapter-04?view=powershell-7.4 | Account attributes. The attributes' contents depend on the source's account schema. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Uuid** | **String** | Identity's universal unique identifier (UUID) on the source. The source system generates the UUID. | [required] |
+| **Id** | **String** | SailPoint generated unique identifier. | [required] |
+| **NativeIdentifier** | **String** | Account's unique ID on the source. | [required] |
+| **SourceId** | **String** | Source ID. | [required] |
+| **SourceName** | **String** | Source name. | [required] |
+| **IdentityId** | **String** | ID of the identity correlated with the account. | [required] |
+| **IdentityName** | **String** | Name of the identity correlated with the account. | [required] |
+| **Attributes** | [**map[string]AnyType**]https://learn.microsoft.com/en-us/powershell/scripting/lang-spec/chapter-04?view=powershell-7.4 | Account attributes. The attributes' contents depend on the source's account schema. | [required] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $SourceAccountDeleted = Initialize-BetaSourceAccountDeleted  -Uuid b7264868-7201-415f-9118-b581d431c688 `
  -Id ee769173319b41d19ccec35ba52f237b `
@@ -40,10 +53,9 @@ $SourceAccountDeleted = Initialize-BetaSourceAccountDeleted  -Uuid b7264868-7201
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $SourceAccountDeleted | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

@@ -4,9 +4,22 @@ title: MultiHostSourcesManagerCorrelationRule
 pagination_label: MultiHostSourcesManagerCorrelationRule
 sidebar_label: MultiHostSourcesManagerCorrelationRule
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'MultiHostSourcesManagerCorrelationRule', 'BetaMultiHostSourcesManagerCorrelationRule'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'MultiHostSourcesManagerCorrelationRule',
+    'BetaMultiHostSourcesManagerCorrelationRule',
+  ]
 slug: /tools/sdk/python/beta/models/multi-host-sources-manager-correlation-rule
-tags: ['SDK', 'Software Development Kit', 'MultiHostSourcesManagerCorrelationRule', 'BetaMultiHostSourcesManagerCorrelationRule']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'MultiHostSourcesManagerCorrelationRule',
+    'BetaMultiHostSourcesManagerCorrelationRule',
+  ]
 ---
 
 # MultiHostSourcesManagerCorrelationRule
@@ -15,11 +28,12 @@ Reference to the ManagerCorrelationRule. Only use this rule when a simple filter
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'RULE' ] | Type of object being referenced. | [optional] 
-**id** | **str** | Rule ID. | [optional] 
-**name** | **str** | Rule's human-readable display name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'RULE' ] | Type of object being referenced. | [optional] |
+| **id** | **str** | Rule ID. | [optional] |
+| **name** | **str** | Rule's human-readable display name. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Example Rule'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

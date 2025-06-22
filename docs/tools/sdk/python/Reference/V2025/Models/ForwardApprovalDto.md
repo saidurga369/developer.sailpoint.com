@@ -4,20 +4,27 @@ title: ForwardApprovalDto
 pagination_label: ForwardApprovalDto
 sidebar_label: ForwardApprovalDto
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ForwardApprovalDto', 'V2025ForwardApprovalDto'] 
+keywords:
+  ['python', 'Python', 'sdk', 'ForwardApprovalDto', 'V2025ForwardApprovalDto']
 slug: /tools/sdk/python/v2025/models/forward-approval-dto
-tags: ['SDK', 'Software Development Kit', 'ForwardApprovalDto', 'V2025ForwardApprovalDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ForwardApprovalDto',
+    'V2025ForwardApprovalDto',
+  ]
 ---
 
 # ForwardApprovalDto
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**new_owner_id** | **str** | The Id of the new owner | [required]
-**comment** | **str** | The comment provided by the forwarder | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **new_owner_id** | **str** | The Id of the new owner | [required] |
+| **comment** | **str** | The comment provided by the forwarder | [required] |
+
 }
 
 ## Example
@@ -31,5 +38,5 @@ comment='2c91808568c529c60168cca6f90c1313'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

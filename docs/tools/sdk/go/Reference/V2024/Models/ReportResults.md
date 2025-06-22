@@ -4,7 +4,7 @@ title: ReportResults
 pagination_label: ReportResults
 sidebar_label: ReportResults
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ReportResults', 'V2024ReportResults'] 
+keywords: ['go', 'Golang', 'sdk', 'ReportResults', 'V2024ReportResults']
 slug: /tools/sdk/go/v2024/models/report-results
 tags: ['SDK', 'Software Development Kit', 'ReportResults', 'V2024ReportResults']
 ---
@@ -13,16 +13,16 @@ tags: ['SDK', 'Software Development Kit', 'ReportResults', 'V2024ReportResults']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ReportType** | Pointer to **string** | Use this property to define what report should be processed in the RDE service. | [optional] 
-**TaskDefName** | Pointer to **string** | Name of the task definition which is started to process requesting report. Usually the same as report name | [optional] 
-**Id** | Pointer to **string** | Unique task definition identifier. | [optional] 
-**Created** | Pointer to **SailPointTime** | Report processing start date | [optional] 
-**Status** | Pointer to **string** | Report current state or result status. | [optional] 
-**Duration** | Pointer to **int64** | Report processing time in ms. | [optional] 
-**Rows** | Pointer to **int64** | Report size in rows. | [optional] 
-**AvailableFormats** | Pointer to **[]string** | Output report file formats. This are formats for calling get endpoint as a query parameter 'fileFormat'.  In case report won't have this argument there will be ['CSV', 'PDF'] as default. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ReportType** | Pointer to **string** | Use this property to define what report should be processed in the RDE service. | [optional] |
+| **TaskDefName** | Pointer to **string** | Name of the task definition which is started to process requesting report. Usually the same as report name | [optional] |
+| **Id** | Pointer to **string** | Unique task definition identifier. | [optional] |
+| **Created** | Pointer to **SailPointTime** | Report processing start date | [optional] |
+| **Status** | Pointer to **string** | Report current state or result status. | [optional] |
+| **Duration** | Pointer to **int64** | Report processing time in ms. | [optional] |
+| **Rows** | Pointer to **int64** | Report size in rows. | [optional] |
+| **AvailableFormats** | Pointer to **[]string** | Output report file formats. This are formats for calling get endpoint as a query parameter 'fileFormat'. In case report won't have this argument there will be ['CSV', 'PDF'] as default. | [optional] |
 
 ## Methods
 
@@ -30,18 +30,13 @@ Name | Type | Description | Notes
 
 `func NewReportResults() *ReportResults`
 
-NewReportResults instantiates a new ReportResults object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewReportResults instantiates a new ReportResults object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewReportResultsWithDefaults
 
 `func NewReportResultsWithDefaults() *ReportResults`
 
-NewReportResultsWithDefaults instantiates a new ReportResults object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewReportResultsWithDefaults instantiates a new ReportResults object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetReportType
 
@@ -53,8 +48,7 @@ GetReportType returns the ReportType field if non-nil, zero value otherwise.
 
 `func (o *ReportResults) GetReportTypeOk() (*string, bool)`
 
-GetReportTypeOk returns a tuple with the ReportType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReportTypeOk returns a tuple with the ReportType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReportType
 
@@ -78,8 +72,7 @@ GetTaskDefName returns the TaskDefName field if non-nil, zero value otherwise.
 
 `func (o *ReportResults) GetTaskDefNameOk() (*string, bool)`
 
-GetTaskDefNameOk returns a tuple with the TaskDefName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTaskDefNameOk returns a tuple with the TaskDefName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTaskDefName
 
@@ -103,8 +96,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *ReportResults) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -128,8 +120,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *ReportResults) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -153,8 +144,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *ReportResults) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -178,8 +168,7 @@ GetDuration returns the Duration field if non-nil, zero value otherwise.
 
 `func (o *ReportResults) GetDurationOk() (*int64, bool)`
 
-GetDurationOk returns a tuple with the Duration field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDurationOk returns a tuple with the Duration field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDuration
 
@@ -203,8 +192,7 @@ GetRows returns the Rows field if non-nil, zero value otherwise.
 
 `func (o *ReportResults) GetRowsOk() (*int64, bool)`
 
-GetRowsOk returns a tuple with the Rows field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRowsOk returns a tuple with the Rows field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRows
 
@@ -228,8 +216,7 @@ GetAvailableFormats returns the AvailableFormats field if non-nil, zero value ot
 
 `func (o *ReportResults) GetAvailableFormatsOk() (*[]string, bool)`
 
-GetAvailableFormatsOk returns a tuple with the AvailableFormats field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAvailableFormatsOk returns a tuple with the AvailableFormats field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAvailableFormats
 
@@ -242,5 +229,3 @@ SetAvailableFormats sets AvailableFormats field to given value.
 `func (o *ReportResults) HasAvailableFormats() bool`
 
 HasAvailableFormats returns a boolean if a field has been set.
-
-

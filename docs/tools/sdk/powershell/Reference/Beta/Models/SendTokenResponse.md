@@ -4,25 +4,38 @@ title: SendTokenResponse
 pagination_label: SendTokenResponse
 sidebar_label: SendTokenResponse
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'SendTokenResponse', 'BetaSendTokenResponse'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'SendTokenResponse',
+    'BetaSendTokenResponse',
+  ]
 slug: /tools/sdk/powershell/beta/models/send-token-response
-tags: ['SDK', 'Software Development Kit', 'SendTokenResponse', 'BetaSendTokenResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SendTokenResponse',
+    'BetaSendTokenResponse',
+  ]
 ---
-
 
 # SendTokenResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**RequestId** | **String** | The token request ID | [optional] 
-**Status** |  **Enum** [  "SUCCESS",    "FAILED" ] | Status of sending token | [optional] 
-**ErrorMessage** | **String** | Error messages from token send request | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **RequestId** | **String** | The token request ID | [optional] |
+| **Status** | **Enum** [ "SUCCESS", "FAILED" ] | Status of sending token | [optional] |
+| **ErrorMessage** | **String** | Error messages from token send request | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $SendTokenResponse = Initialize-BetaSendTokenResponse  -RequestId 089899f13a8f4da7824996191587bab9 `
  -Status SUCCESS `
@@ -30,10 +43,9 @@ $SendTokenResponse = Initialize-BetaSendTokenResponse  -RequestId 089899f13a8f4d
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $SendTokenResponse | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

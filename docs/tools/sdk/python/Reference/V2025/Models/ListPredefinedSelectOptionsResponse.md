@@ -4,19 +4,32 @@ title: ListPredefinedSelectOptionsResponse
 pagination_label: ListPredefinedSelectOptionsResponse
 sidebar_label: ListPredefinedSelectOptionsResponse
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ListPredefinedSelectOptionsResponse', 'V2025ListPredefinedSelectOptionsResponse'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ListPredefinedSelectOptionsResponse',
+    'V2025ListPredefinedSelectOptionsResponse',
+  ]
 slug: /tools/sdk/python/v2025/models/list-predefined-select-options-response
-tags: ['SDK', 'Software Development Kit', 'ListPredefinedSelectOptionsResponse', 'V2025ListPredefinedSelectOptionsResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ListPredefinedSelectOptionsResponse',
+    'V2025ListPredefinedSelectOptionsResponse',
+  ]
 ---
 
 # ListPredefinedSelectOptionsResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**results** | **[]str** | Results holds a list of PreDefinedSelectOption items | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **results** | **[]str** | Results holds a list of PreDefinedSelectOption items | [optional] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ results=[
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,20 +4,33 @@ title: RoleMetadataBulkUpdateByQueryRequestValuesInner
 pagination_label: RoleMetadataBulkUpdateByQueryRequestValuesInner
 sidebar_label: RoleMetadataBulkUpdateByQueryRequestValuesInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RoleMetadataBulkUpdateByQueryRequestValuesInner', 'V2025RoleMetadataBulkUpdateByQueryRequestValuesInner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'RoleMetadataBulkUpdateByQueryRequestValuesInner',
+    'V2025RoleMetadataBulkUpdateByQueryRequestValuesInner',
+  ]
 slug: /tools/sdk/python/v2025/models/role-metadata-bulk-update-by-query-request-values-inner
-tags: ['SDK', 'Software Development Kit', 'RoleMetadataBulkUpdateByQueryRequestValuesInner', 'V2025RoleMetadataBulkUpdateByQueryRequestValuesInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMetadataBulkUpdateByQueryRequestValuesInner',
+    'V2025RoleMetadataBulkUpdateByQueryRequestValuesInner',
+  ]
 ---
 
 # RoleMetadataBulkUpdateByQueryRequestValuesInner
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**attribute_key** | **str** | the key of metadata attribute | [optional] 
-**attribute_value** | **[]str** | the values of attribute to be updated | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **attribute_key** | **str** | the key of metadata attribute | [optional] |
+| **attribute_value** | **[]str** | the values of attribute to be updated | [optional] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ attribute_value=[topSecret]
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

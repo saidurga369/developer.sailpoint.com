@@ -4,20 +4,33 @@ title: RoleMetadataBulkUpdateByFilterRequestValuesInner
 pagination_label: RoleMetadataBulkUpdateByFilterRequestValuesInner
 sidebar_label: RoleMetadataBulkUpdateByFilterRequestValuesInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RoleMetadataBulkUpdateByFilterRequestValuesInner', 'V2025RoleMetadataBulkUpdateByFilterRequestValuesInner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'RoleMetadataBulkUpdateByFilterRequestValuesInner',
+    'V2025RoleMetadataBulkUpdateByFilterRequestValuesInner',
+  ]
 slug: /tools/sdk/python/v2025/models/role-metadata-bulk-update-by-filter-request-values-inner
-tags: ['SDK', 'Software Development Kit', 'RoleMetadataBulkUpdateByFilterRequestValuesInner', 'V2025RoleMetadataBulkUpdateByFilterRequestValuesInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMetadataBulkUpdateByFilterRequestValuesInner',
+    'V2025RoleMetadataBulkUpdateByFilterRequestValuesInner',
+  ]
 ---
 
 # RoleMetadataBulkUpdateByFilterRequestValuesInner
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**attribute_key** | **str** | the key of metadata attribute | [optional] 
-**values** | **[]str** | the values of attribute to be updated | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **attribute_key** | **str** | the key of metadata attribute | [optional] |
+| **values** | **[]str** | the values of attribute to be updated | [required] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ values=[secret]
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

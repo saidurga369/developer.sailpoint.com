@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 import Link from '@docusaurus/Link';
 import HomepageCard from '../HomepageCard';
 
-export default function HomepageGettingStarted(): ReactNode {  
+export default function HomepageGettingStarted(): ReactNode {
   return (
     <div>
       <div className={styles.mainCard}>
@@ -46,10 +46,9 @@ export default function HomepageGettingStarted(): ReactNode {
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
+            allowFullScreen></iframe>
         </div>
       </div>
     </div>
   );
-};
+}

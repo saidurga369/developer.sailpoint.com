@@ -4,7 +4,7 @@ title: Identity1
 pagination_label: Identity1
 sidebar_label: Identity1
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'Identity1', 'BetaIdentity1'] 
+keywords: ['python', 'Python', 'sdk', 'Identity1', 'BetaIdentity1']
 slug: /tools/sdk/python/beta/models/identity1
 tags: ['SDK', 'Software Development Kit', 'Identity1', 'BetaIdentity1']
 ---
@@ -15,10 +15,11 @@ The definition of an Identity according to the Reassignment Configuration servic
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The ID of the object | [optional] 
-**name** | **str** | Human-readable display name of the object | [optional] 
+| Name     | Type    | Description                               | Notes      |
+| -------- | ------- | ----------------------------------------- | ---------- |
+| **id**   | **str** | The ID of the object                      | [optional] |
+| **name** | **str** | Human-readable display name of the object | [optional] |
+
 }
 
 ## Example
@@ -32,5 +33,5 @@ name='William Wilson'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,7 +4,7 @@ title: Section
 pagination_label: Section
 sidebar_label: Section
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Section', 'BetaSection'] 
+keywords: ['go', 'Golang', 'sdk', 'Section', 'BetaSection']
 slug: /tools/sdk/go/beta/models/section
 tags: ['SDK', 'Software Development Kit', 'Section', 'BetaSection']
 ---
@@ -13,11 +13,11 @@ tags: ['SDK', 'Software Development Kit', 'Section', 'BetaSection']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | Pointer to **string** | Name of the FormItem | [optional] 
-**Label** | Pointer to **string** | Label of the section | [optional] 
-**FormItems** | Pointer to **[]map[string]interface{}** | List of FormItems. FormItems can be SectionDetails and/or FieldDetails | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | Pointer to **string** | Name of the FormItem | [optional] |
+| **Label** | Pointer to **string** | Label of the section | [optional] |
+| **FormItems** | Pointer to **[]map[string]interface{}** | List of FormItems. FormItems can be SectionDetails and/or FieldDetails | [optional] |
 
 ## Methods
 
@@ -25,18 +25,13 @@ Name | Type | Description | Notes
 
 `func NewSection() *Section`
 
-NewSection instantiates a new Section object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSection instantiates a new Section object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSectionWithDefaults
 
 `func NewSectionWithDefaults() *Section`
 
-NewSectionWithDefaults instantiates a new Section object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSectionWithDefaults instantiates a new Section object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -48,8 +43,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *Section) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -73,8 +67,7 @@ GetLabel returns the Label field if non-nil, zero value otherwise.
 
 `func (o *Section) GetLabelOk() (*string, bool)`
 
-GetLabelOk returns a tuple with the Label field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLabelOk returns a tuple with the Label field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLabel
 
@@ -98,8 +91,7 @@ GetFormItems returns the FormItems field if non-nil, zero value otherwise.
 
 `func (o *Section) GetFormItemsOk() (*[]map[string]interface{}, bool)`
 
-GetFormItemsOk returns a tuple with the FormItems field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFormItemsOk returns a tuple with the FormItems field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFormItems
 
@@ -112,5 +104,3 @@ SetFormItems sets FormItems field to given value.
 `func (o *Section) HasFormItems() bool`
 
 HasFormItems returns a boolean if a field has been set.
-
-

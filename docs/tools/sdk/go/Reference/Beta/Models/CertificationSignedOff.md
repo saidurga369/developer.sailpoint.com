@@ -4,18 +4,31 @@ title: CertificationSignedOff
 pagination_label: CertificationSignedOff
 sidebar_label: CertificationSignedOff
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'CertificationSignedOff', 'BetaCertificationSignedOff'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'CertificationSignedOff',
+    'BetaCertificationSignedOff',
+  ]
 slug: /tools/sdk/go/beta/models/certification-signed-off
-tags: ['SDK', 'Software Development Kit', 'CertificationSignedOff', 'BetaCertificationSignedOff']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CertificationSignedOff',
+    'BetaCertificationSignedOff',
+  ]
 ---
 
 # CertificationSignedOff
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Certification** | [**CertificationSignedOffCertification**](certification-signed-off-certification) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Certification** | [**CertificationSignedOffCertification**](certification-signed-off-certification) |  |
 
 ## Methods
 
@@ -23,18 +36,13 @@ Name | Type | Description | Notes
 
 `func NewCertificationSignedOff(certification CertificationSignedOffCertification, ) *CertificationSignedOff`
 
-NewCertificationSignedOff instantiates a new CertificationSignedOff object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewCertificationSignedOff instantiates a new CertificationSignedOff object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewCertificationSignedOffWithDefaults
 
 `func NewCertificationSignedOffWithDefaults() *CertificationSignedOff`
 
-NewCertificationSignedOffWithDefaults instantiates a new CertificationSignedOff object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewCertificationSignedOffWithDefaults instantiates a new CertificationSignedOff object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetCertification
 
@@ -46,14 +54,10 @@ GetCertification returns the Certification field if non-nil, zero value otherwis
 
 `func (o *CertificationSignedOff) GetCertificationOk() (*CertificationSignedOffCertification, bool)`
 
-GetCertificationOk returns a tuple with the Certification field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCertificationOk returns a tuple with the Certification field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCertification
 
 `func (o *CertificationSignedOff) SetCertification(v CertificationSignedOffCertification)`
 
 SetCertification sets Certification field to given value.
-
-
-

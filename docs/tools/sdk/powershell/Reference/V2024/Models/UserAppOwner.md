@@ -4,26 +4,27 @@ title: UserAppOwner
 pagination_label: UserAppOwner
 sidebar_label: UserAppOwner
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'UserAppOwner', 'V2024UserAppOwner'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'UserAppOwner', 'V2024UserAppOwner']
 slug: /tools/sdk/powershell/v2024/models/user-app-owner
 tags: ['SDK', 'Software Development Kit', 'UserAppOwner', 'V2024UserAppOwner']
 ---
-
 
 # UserAppOwner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | The identity ID | [optional] 
-**Type** | **String** | It will always be ""IDENTITY"" | [optional] 
-**Name** | **String** | The identity name | [optional] 
-**Alias** | **String** | The identity alias | [optional] 
+| Name      | Type       | Description                    | Notes      |
+| --------- | ---------- | ------------------------------ | ---------- |
+| **Id**    | **String** | The identity ID                | [optional] |
+| **Type**  | **String** | It will always be ""IDENTITY"" | [optional] |
+| **Name**  | **String** | The identity name              | [optional] |
+| **Alias** | **String** | The identity alias             | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $UserAppOwner = Initialize-V2024UserAppOwner  -Id 2c9180827ca885d7017ca8ce28a000eb `
  -Type IDENTITY `
@@ -32,10 +33,9 @@ $UserAppOwner = Initialize-V2024UserAppOwner  -Id 2c9180827ca885d7017ca8ce28a000
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $UserAppOwner | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

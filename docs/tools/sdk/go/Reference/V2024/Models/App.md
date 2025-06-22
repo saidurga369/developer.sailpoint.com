@@ -4,7 +4,7 @@ title: App
 pagination_label: App
 sidebar_label: App
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'App', 'V2024App'] 
+keywords: ['go', 'Golang', 'sdk', 'App', 'V2024App']
 slug: /tools/sdk/go/v2024/models/app
 tags: ['SDK', 'Software Development Kit', 'App', 'V2024App']
 ---
@@ -13,12 +13,12 @@ tags: ['SDK', 'Software Development Kit', 'App', 'V2024App']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The unique ID of the referenced object. | [optional] 
-**Name** | Pointer to **string** | The human readable name of the referenced object. | [optional] 
-**Source** | Pointer to [**Reference**](reference) |  | [optional] 
-**Account** | Pointer to [**AppAllOfAccount**](app-all-of-account) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The unique ID of the referenced object. | [optional] |
+| **Name** | Pointer to **string** | The human readable name of the referenced object. | [optional] |
+| **Source** | Pointer to [**Reference**](reference) |  | [optional] |
+| **Account** | Pointer to [**AppAllOfAccount**](app-all-of-account) |  | [optional] |
 
 ## Methods
 
@@ -26,18 +26,13 @@ Name | Type | Description | Notes
 
 `func NewApp() *App`
 
-NewApp instantiates a new App object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewApp instantiates a new App object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAppWithDefaults
 
 `func NewAppWithDefaults() *App`
 
-NewAppWithDefaults instantiates a new App object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAppWithDefaults instantiates a new App object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -49,8 +44,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *App) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -74,8 +68,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *App) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -99,8 +92,7 @@ GetSource returns the Source field if non-nil, zero value otherwise.
 
 `func (o *App) GetSourceOk() (*Reference, bool)`
 
-GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSource
 
@@ -124,8 +116,7 @@ GetAccount returns the Account field if non-nil, zero value otherwise.
 
 `func (o *App) GetAccountOk() (*AppAllOfAccount, bool)`
 
-GetAccountOk returns a tuple with the Account field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountOk returns a tuple with the Account field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccount
 
@@ -138,5 +129,3 @@ SetAccount sets Account field to given value.
 `func (o *App) HasAccount() bool`
 
 HasAccount returns a boolean if a field has been set.
-
-

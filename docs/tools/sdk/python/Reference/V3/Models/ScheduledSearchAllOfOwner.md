@@ -4,9 +4,22 @@ title: ScheduledSearchAllOfOwner
 pagination_label: ScheduledSearchAllOfOwner
 sidebar_label: ScheduledSearchAllOfOwner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ScheduledSearchAllOfOwner', 'ScheduledSearchAllOfOwner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ScheduledSearchAllOfOwner',
+    'ScheduledSearchAllOfOwner',
+  ]
 slug: /tools/sdk/python/v3/models/scheduled-search-all-of-owner
-tags: ['SDK', 'Software Development Kit', 'ScheduledSearchAllOfOwner', 'ScheduledSearchAllOfOwner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ScheduledSearchAllOfOwner',
+    'ScheduledSearchAllOfOwner',
+  ]
 ---
 
 # ScheduledSearchAllOfOwner
@@ -15,10 +28,11 @@ The owner of the scheduled search
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] | The type of object being referenced | [required]
-**id** | **str** | The ID of the referenced object | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'IDENTITY' ] | The type of object being referenced | [required] |
+| **id** | **str** | The ID of the referenced object | [required] |
+
 }
 
 ## Example
@@ -32,5 +46,5 @@ id='2c9180867624cbd7017642d8c8c81f67'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

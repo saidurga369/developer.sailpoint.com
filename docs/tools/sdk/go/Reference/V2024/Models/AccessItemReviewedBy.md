@@ -4,20 +4,27 @@ title: AccessItemReviewedBy
 pagination_label: AccessItemReviewedBy
 sidebar_label: AccessItemReviewedBy
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessItemReviewedBy', 'V2024AccessItemReviewedBy'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'AccessItemReviewedBy', 'V2024AccessItemReviewedBy']
 slug: /tools/sdk/go/v2024/models/access-item-reviewed-by
-tags: ['SDK', 'Software Development Kit', 'AccessItemReviewedBy', 'V2024AccessItemReviewedBy']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessItemReviewedBy',
+    'V2024AccessItemReviewedBy',
+  ]
 ---
 
 # AccessItemReviewedBy
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | DTO type of identity who reviewed the access item request. | [optional] 
-**Id** | Pointer to **string** | ID of identity who reviewed the access item request. | [optional] 
-**Name** | Pointer to **string** | Human-readable display name of identity who reviewed the access item request. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to **string** | DTO type of identity who reviewed the access item request. | [optional] |
+| **Id** | Pointer to **string** | ID of identity who reviewed the access item request. | [optional] |
+| **Name** | Pointer to **string** | Human-readable display name of identity who reviewed the access item request. | [optional] |
 
 ## Methods
 
@@ -25,18 +32,13 @@ Name | Type | Description | Notes
 
 `func NewAccessItemReviewedBy() *AccessItemReviewedBy`
 
-NewAccessItemReviewedBy instantiates a new AccessItemReviewedBy object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessItemReviewedBy instantiates a new AccessItemReviewedBy object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessItemReviewedByWithDefaults
 
 `func NewAccessItemReviewedByWithDefaults() *AccessItemReviewedBy`
 
-NewAccessItemReviewedByWithDefaults instantiates a new AccessItemReviewedBy object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessItemReviewedByWithDefaults instantiates a new AccessItemReviewedBy object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -48,8 +50,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *AccessItemReviewedBy) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -73,8 +74,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *AccessItemReviewedBy) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -98,8 +98,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *AccessItemReviewedBy) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -112,5 +111,3 @@ SetName sets Name field to given value.
 `func (o *AccessItemReviewedBy) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

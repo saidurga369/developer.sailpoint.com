@@ -4,25 +4,38 @@ title: CreateFormInstanceRequest
 pagination_label: CreateFormInstanceRequest
 sidebar_label: CreateFormInstanceRequest
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'CreateFormInstanceRequest', 'V2024CreateFormInstanceRequest'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'CreateFormInstanceRequest',
+    'V2024CreateFormInstanceRequest',
+  ]
 slug: /tools/sdk/go/v2024/models/create-form-instance-request
-tags: ['SDK', 'Software Development Kit', 'CreateFormInstanceRequest', 'V2024CreateFormInstanceRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CreateFormInstanceRequest',
+    'V2024CreateFormInstanceRequest',
+  ]
 ---
 
 # CreateFormInstanceRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**CreatedBy** | [**FormInstanceCreatedBy**](form-instance-created-by) |  | 
-**Expire** | **string** | Expire is required | 
-**FormDefinitionId** | **string** | FormDefinitionID is the id of the form definition that created this form | 
-**FormInput** | Pointer to **map[string]interface{}** | FormInput is an object of form input labels to value | [optional] 
-**Recipients** | [**[]FormInstanceRecipient**](form-instance-recipient) | Recipients is required | 
-**StandAloneForm** | Pointer to **bool** | StandAloneForm is a boolean flag to indicate if this form should be available for users to complete via the standalone form UI or should this only be available to be completed by as an embedded form | [optional] [default to false]
-**State** | Pointer to **string** | State is required, if not present initial state is FormInstanceStateAssigned ASSIGNED FormInstanceStateAssigned IN_PROGRESS FormInstanceStateInProgress SUBMITTED FormInstanceStateSubmitted COMPLETED FormInstanceStateCompleted CANCELLED FormInstanceStateCancelled | [optional] 
-**Ttl** | Pointer to **int64** | TTL an epoch timestamp in seconds, it most be in seconds or dynamodb will ignore it SEE: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/time-to-live-ttl-before-you-start.html | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **CreatedBy** | [**FormInstanceCreatedBy**](form-instance-created-by) |  |
+| **Expire** | **string** | Expire is required |
+| **FormDefinitionId** | **string** | FormDefinitionID is the id of the form definition that created this form |
+| **FormInput** | Pointer to **map[string]interface{}** | FormInput is an object of form input labels to value | [optional] |
+| **Recipients** | [**[]FormInstanceRecipient**](form-instance-recipient) | Recipients is required |
+| **StandAloneForm** | Pointer to **bool** | StandAloneForm is a boolean flag to indicate if this form should be available for users to complete via the standalone form UI or should this only be available to be completed by as an embedded form | [optional] [default to false] |
+| **State** | Pointer to **string** | State is required, if not present initial state is FormInstanceStateAssigned ASSIGNED FormInstanceStateAssigned IN_PROGRESS FormInstanceStateInProgress SUBMITTED FormInstanceStateSubmitted COMPLETED FormInstanceStateCompleted CANCELLED FormInstanceStateCancelled | [optional] |
+| **Ttl** | Pointer to **int64** | TTL an epoch timestamp in seconds, it most be in seconds or dynamodb will ignore it SEE: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/time-to-live-ttl-before-you-start.html | [optional] |
 
 ## Methods
 
@@ -30,18 +43,13 @@ Name | Type | Description | Notes
 
 `func NewCreateFormInstanceRequest(createdBy FormInstanceCreatedBy, expire string, formDefinitionId string, recipients []FormInstanceRecipient, ) *CreateFormInstanceRequest`
 
-NewCreateFormInstanceRequest instantiates a new CreateFormInstanceRequest object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewCreateFormInstanceRequest instantiates a new CreateFormInstanceRequest object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewCreateFormInstanceRequestWithDefaults
 
 `func NewCreateFormInstanceRequestWithDefaults() *CreateFormInstanceRequest`
 
-NewCreateFormInstanceRequestWithDefaults instantiates a new CreateFormInstanceRequest object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewCreateFormInstanceRequestWithDefaults instantiates a new CreateFormInstanceRequest object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetCreatedBy
 
@@ -53,15 +61,13 @@ GetCreatedBy returns the CreatedBy field if non-nil, zero value otherwise.
 
 `func (o *CreateFormInstanceRequest) GetCreatedByOk() (*FormInstanceCreatedBy, bool)`
 
-GetCreatedByOk returns a tuple with the CreatedBy field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedByOk returns a tuple with the CreatedBy field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreatedBy
 
 `func (o *CreateFormInstanceRequest) SetCreatedBy(v FormInstanceCreatedBy)`
 
 SetCreatedBy sets CreatedBy field to given value.
-
 
 ### GetExpire
 
@@ -73,15 +79,13 @@ GetExpire returns the Expire field if non-nil, zero value otherwise.
 
 `func (o *CreateFormInstanceRequest) GetExpireOk() (*string, bool)`
 
-GetExpireOk returns a tuple with the Expire field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetExpireOk returns a tuple with the Expire field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetExpire
 
 `func (o *CreateFormInstanceRequest) SetExpire(v string)`
 
 SetExpire sets Expire field to given value.
-
 
 ### GetFormDefinitionId
 
@@ -93,15 +97,13 @@ GetFormDefinitionId returns the FormDefinitionId field if non-nil, zero value ot
 
 `func (o *CreateFormInstanceRequest) GetFormDefinitionIdOk() (*string, bool)`
 
-GetFormDefinitionIdOk returns a tuple with the FormDefinitionId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFormDefinitionIdOk returns a tuple with the FormDefinitionId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFormDefinitionId
 
 `func (o *CreateFormInstanceRequest) SetFormDefinitionId(v string)`
 
 SetFormDefinitionId sets FormDefinitionId field to given value.
-
 
 ### GetFormInput
 
@@ -113,8 +115,7 @@ GetFormInput returns the FormInput field if non-nil, zero value otherwise.
 
 `func (o *CreateFormInstanceRequest) GetFormInputOk() (*map[string]interface{}, bool)`
 
-GetFormInputOk returns a tuple with the FormInput field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFormInputOk returns a tuple with the FormInput field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFormInput
 
@@ -138,15 +139,13 @@ GetRecipients returns the Recipients field if non-nil, zero value otherwise.
 
 `func (o *CreateFormInstanceRequest) GetRecipientsOk() (*[]FormInstanceRecipient, bool)`
 
-GetRecipientsOk returns a tuple with the Recipients field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRecipientsOk returns a tuple with the Recipients field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRecipients
 
 `func (o *CreateFormInstanceRequest) SetRecipients(v []FormInstanceRecipient)`
 
 SetRecipients sets Recipients field to given value.
-
 
 ### GetStandAloneForm
 
@@ -158,8 +157,7 @@ GetStandAloneForm returns the StandAloneForm field if non-nil, zero value otherw
 
 `func (o *CreateFormInstanceRequest) GetStandAloneFormOk() (*bool, bool)`
 
-GetStandAloneFormOk returns a tuple with the StandAloneForm field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStandAloneFormOk returns a tuple with the StandAloneForm field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStandAloneForm
 
@@ -183,8 +181,7 @@ GetState returns the State field if non-nil, zero value otherwise.
 
 `func (o *CreateFormInstanceRequest) GetStateOk() (*string, bool)`
 
-GetStateOk returns a tuple with the State field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStateOk returns a tuple with the State field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetState
 
@@ -208,8 +205,7 @@ GetTtl returns the Ttl field if non-nil, zero value otherwise.
 
 `func (o *CreateFormInstanceRequest) GetTtlOk() (*int64, bool)`
 
-GetTtlOk returns a tuple with the Ttl field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTtlOk returns a tuple with the Ttl field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTtl
 
@@ -222,5 +218,3 @@ SetTtl sets Ttl field to given value.
 `func (o *CreateFormInstanceRequest) HasTtl() bool`
 
 HasTtl returns a boolean if a field has been set.
-
-

@@ -4,9 +4,22 @@ title: AccountActivityItemOperation
 pagination_label: AccountActivityItemOperation
 sidebar_label: AccountActivityItemOperation
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccountActivityItemOperation', 'BetaAccountActivityItemOperation'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccountActivityItemOperation',
+    'BetaAccountActivityItemOperation',
+  ]
 slug: /tools/sdk/python/beta/models/account-activity-item-operation
-tags: ['SDK', 'Software Development Kit', 'AccountActivityItemOperation', 'BetaAccountActivityItemOperation']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountActivityItemOperation',
+    'BetaAccountActivityItemOperation',
+  ]
 ---
 
 # AccountActivityItemOperation
@@ -15,25 +28,24 @@ Represents an operation in an account activity item
 
 ## Enum
 
-* `ADD` (value: `'ADD'`)
+- `ADD` (value: `'ADD'`)
 
-* `CREATE` (value: `'CREATE'`)
+- `CREATE` (value: `'CREATE'`)
 
-* `MODIFY` (value: `'MODIFY'`)
+- `MODIFY` (value: `'MODIFY'`)
 
-* `DELETE` (value: `'DELETE'`)
+- `DELETE` (value: `'DELETE'`)
 
-* `DISABLE` (value: `'DISABLE'`)
+- `DISABLE` (value: `'DISABLE'`)
 
-* `ENABLE` (value: `'ENABLE'`)
+- `ENABLE` (value: `'ENABLE'`)
 
-* `UNLOCK` (value: `'UNLOCK'`)
+- `UNLOCK` (value: `'UNLOCK'`)
 
-* `LOCK` (value: `'LOCK'`)
+- `LOCK` (value: `'LOCK'`)
 
-* `REMOVE` (value: `'REMOVE'`)
+- `REMOVE` (value: `'REMOVE'`)
 
-* `SET` (value: `'SET'`)
+- `SET` (value: `'SET'`)
 
-[[Back to top]](#) 
-
+[[Back to top]](#)

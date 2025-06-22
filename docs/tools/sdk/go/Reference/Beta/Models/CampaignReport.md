@@ -4,23 +4,24 @@ title: CampaignReport
 pagination_label: CampaignReport
 sidebar_label: CampaignReport
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'CampaignReport', 'BetaCampaignReport'] 
+keywords: ['go', 'Golang', 'sdk', 'CampaignReport', 'BetaCampaignReport']
 slug: /tools/sdk/go/beta/models/campaign-report
-tags: ['SDK', 'Software Development Kit', 'CampaignReport', 'BetaCampaignReport']
+tags:
+  ['SDK', 'Software Development Kit', 'CampaignReport', 'BetaCampaignReport']
 ---
 
 # CampaignReport
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | SOD policy violation report result DTO type. | [optional] 
-**Id** | Pointer to **string** | SOD policy violation report result ID. | [optional] 
-**Name** | Pointer to **string** | Human-readable name of the SOD policy violation report result. | [optional] 
-**Status** | Pointer to **string** | Status of a SOD policy violation report. | [optional] 
-**ReportType** | [**ReportType**](report-type) |  | 
-**LastRunAt** | Pointer to **SailPointTime** | The most recent date and time this report was run | [optional] [readonly] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to **string** | SOD policy violation report result DTO type. | [optional] |
+| **Id** | Pointer to **string** | SOD policy violation report result ID. | [optional] |
+| **Name** | Pointer to **string** | Human-readable name of the SOD policy violation report result. | [optional] |
+| **Status** | Pointer to **string** | Status of a SOD policy violation report. | [optional] |
+| **ReportType** | [**ReportType**](report-type) |  |
+| **LastRunAt** | Pointer to **SailPointTime** | The most recent date and time this report was run | [optional] [readonly] |
 
 ## Methods
 
@@ -28,18 +29,13 @@ Name | Type | Description | Notes
 
 `func NewCampaignReport(reportType ReportType, ) *CampaignReport`
 
-NewCampaignReport instantiates a new CampaignReport object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewCampaignReport instantiates a new CampaignReport object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewCampaignReportWithDefaults
 
 `func NewCampaignReportWithDefaults() *CampaignReport`
 
-NewCampaignReportWithDefaults instantiates a new CampaignReport object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewCampaignReportWithDefaults instantiates a new CampaignReport object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -51,8 +47,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *CampaignReport) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -76,8 +71,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *CampaignReport) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -101,8 +95,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *CampaignReport) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -126,8 +119,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *CampaignReport) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -151,15 +143,13 @@ GetReportType returns the ReportType field if non-nil, zero value otherwise.
 
 `func (o *CampaignReport) GetReportTypeOk() (*ReportType, bool)`
 
-GetReportTypeOk returns a tuple with the ReportType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReportTypeOk returns a tuple with the ReportType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReportType
 
 `func (o *CampaignReport) SetReportType(v ReportType)`
 
 SetReportType sets ReportType field to given value.
-
 
 ### GetLastRunAt
 
@@ -171,8 +161,7 @@ GetLastRunAt returns the LastRunAt field if non-nil, zero value otherwise.
 
 `func (o *CampaignReport) GetLastRunAtOk() (*SailPointTime, bool)`
 
-GetLastRunAtOk returns a tuple with the LastRunAt field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLastRunAtOk returns a tuple with the LastRunAt field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLastRunAt
 
@@ -185,5 +174,3 @@ SetLastRunAt sets LastRunAt field to given value.
 `func (o *CampaignReport) HasLastRunAt() bool`
 
 HasLastRunAt returns a boolean if a field has been set.
-
-

@@ -4,23 +4,36 @@ title: IdentityCertificationTask
 pagination_label: IdentityCertificationTask
 sidebar_label: IdentityCertificationTask
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentityCertificationTask', 'BetaIdentityCertificationTask'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'IdentityCertificationTask',
+    'BetaIdentityCertificationTask',
+  ]
 slug: /tools/sdk/python/beta/models/identity-certification-task
-tags: ['SDK', 'Software Development Kit', 'IdentityCertificationTask', 'BetaIdentityCertificationTask']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityCertificationTask',
+    'BetaIdentityCertificationTask',
+  ]
 ---
 
 # IdentityCertificationTask
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The task id | [optional] 
-**certification_id** | **str** | The certification id | [optional] 
-**type** |  **Enum** [  'REASSIGN' ] |  | [optional] 
-**status** |  **Enum** [  'QUEUED',    'IN_PROGRESS',    'SUCCESS',    'ERROR' ] |  | [optional] 
-**errors** | **[]str** | Any errors executing the task (Optional). | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The task id | [optional] |
+| **certification_id** | **str** | The certification id | [optional] |
+| **type** | **Enum** [ 'REASSIGN' ] |  | [optional] |
+| **status** | **Enum** [ 'QUEUED', 'IN_PROGRESS', 'SUCCESS', 'ERROR' ] |  | [optional] |
+| **errors** | **[]str** | Any errors executing the task (Optional). | [optional] |
+
 }
 
 ## Example
@@ -37,5 +50,5 @@ errors=[]
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

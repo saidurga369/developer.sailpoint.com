@@ -4,26 +4,39 @@ title: RoleMiningPotentialRoleExportResponse
 pagination_label: RoleMiningPotentialRoleExportResponse
 sidebar_label: RoleMiningPotentialRoleExportResponse
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'RoleMiningPotentialRoleExportResponse', 'V2024RoleMiningPotentialRoleExportResponse'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'RoleMiningPotentialRoleExportResponse',
+    'V2024RoleMiningPotentialRoleExportResponse',
+  ]
 slug: /tools/sdk/powershell/v2024/models/role-mining-potential-role-export-response
-tags: ['SDK', 'Software Development Kit', 'RoleMiningPotentialRoleExportResponse', 'V2024RoleMiningPotentialRoleExportResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningPotentialRoleExportResponse',
+    'V2024RoleMiningPotentialRoleExportResponse',
+  ]
 ---
-
 
 # RoleMiningPotentialRoleExportResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**MinEntitlementPopularity** | **Int32** | The minimum popularity among identities in the role which an entitlement must have to be included in the report | [optional] 
-**IncludeCommonAccess** | **Boolean** | If false, do not include entitlements that are highly popular among the entire orginization | [optional] 
-**ExportId** | **String** | ID used to reference this export | [optional] 
-**Status** | [**RoleMiningPotentialRoleExportState**](role-mining-potential-role-export-state) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **MinEntitlementPopularity** | **Int32** | The minimum popularity among identities in the role which an entitlement must have to be included in the report | [optional] |
+| **IncludeCommonAccess** | **Boolean** | If false, do not include entitlements that are highly popular among the entire orginization | [optional] |
+| **ExportId** | **String** | ID used to reference this export | [optional] |
+| **Status** | [**RoleMiningPotentialRoleExportState**](role-mining-potential-role-export-state) |  | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $RoleMiningPotentialRoleExportResponse = Initialize-V2024RoleMiningPotentialRoleExportResponse  -MinEntitlementPopularity 0 `
  -IncludeCommonAccess true `
@@ -32,10 +45,9 @@ $RoleMiningPotentialRoleExportResponse = Initialize-V2024RoleMiningPotentialRole
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $RoleMiningPotentialRoleExportResponse | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

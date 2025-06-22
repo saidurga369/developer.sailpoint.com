@@ -4,24 +4,24 @@ title: FieldDetailsDto
 pagination_label: FieldDetailsDto
 sidebar_label: FieldDetailsDto
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'FieldDetailsDto', 'FieldDetailsDto'] 
+keywords: ['python', 'Python', 'sdk', 'FieldDetailsDto', 'FieldDetailsDto']
 slug: /tools/sdk/python/v3/models/field-details-dto
 tags: ['SDK', 'Software Development Kit', 'FieldDetailsDto', 'FieldDetailsDto']
 ---
 
 # FieldDetailsDto
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | The name of the attribute. | [optional] 
-**transform** | **object** | The transform to apply to the field | [optional] 
-**attributes** | **object** | Attributes required for the transform | [optional] 
-**is_required** | **bool** | Flag indicating whether or not the attribute is required. | [optional] [readonly] [default to False]
-**type** | **str** | The type of the attribute. | [optional] 
-**is_multi_valued** | **bool** | Flag indicating whether or not the attribute is multi-valued. | [optional] [default to False]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **name** | **str** | The name of the attribute. | [optional] |
+| **transform** | **object** | The transform to apply to the field | [optional] |
+| **attributes** | **object** | Attributes required for the transform | [optional] |
+| **is_required** | **bool** | Flag indicating whether or not the attribute is required. | [optional] [readonly] [default to False] |
+| **type** | **str** | The type of the attribute. | [optional] |
+| **is_multi_valued** | **bool** | Flag indicating whether or not the attribute is multi-valued. | [optional] [default to False] |
+
 }
 
 ## Example
@@ -39,5 +39,5 @@ is_multi_valued=False
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

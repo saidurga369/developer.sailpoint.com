@@ -4,21 +4,34 @@ title: FullcampaignAllOfSourcesWithOrphanEntitlements
 pagination_label: FullcampaignAllOfSourcesWithOrphanEntitlements
 sidebar_label: FullcampaignAllOfSourcesWithOrphanEntitlements
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'FullcampaignAllOfSourcesWithOrphanEntitlements', 'BetaFullcampaignAllOfSourcesWithOrphanEntitlements'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'FullcampaignAllOfSourcesWithOrphanEntitlements',
+    'BetaFullcampaignAllOfSourcesWithOrphanEntitlements',
+  ]
 slug: /tools/sdk/python/beta/models/fullcampaign-all-of-sources-with-orphan-entitlements
-tags: ['SDK', 'Software Development Kit', 'FullcampaignAllOfSourcesWithOrphanEntitlements', 'BetaFullcampaignAllOfSourcesWithOrphanEntitlements']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'FullcampaignAllOfSourcesWithOrphanEntitlements',
+    'BetaFullcampaignAllOfSourcesWithOrphanEntitlements',
+  ]
 ---
 
 # FullcampaignAllOfSourcesWithOrphanEntitlements
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Id of the source | [optional] 
-**type** |  **Enum** [  'SOURCE' ] | Type | [optional] 
-**name** | **str** | Name of the source | [optional] 
+| Name     | Type                  | Description        | Notes      |
+| -------- | --------------------- | ------------------ | ---------- |
+| **id**   | **str**               | Id of the source   | [optional] |
+| **type** | **Enum** [ 'SOURCE' ] | Type               | [optional] |
+| **name** | **str**               | Name of the source | [optional] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ name='Source with orphan entitlements'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

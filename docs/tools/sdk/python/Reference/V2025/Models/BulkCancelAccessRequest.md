@@ -4,9 +4,22 @@ title: BulkCancelAccessRequest
 pagination_label: BulkCancelAccessRequest
 sidebar_label: BulkCancelAccessRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'BulkCancelAccessRequest', 'V2025BulkCancelAccessRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'BulkCancelAccessRequest',
+    'V2025BulkCancelAccessRequest',
+  ]
 slug: /tools/sdk/python/v2025/models/bulk-cancel-access-request
-tags: ['SDK', 'Software Development Kit', 'BulkCancelAccessRequest', 'V2025BulkCancelAccessRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'BulkCancelAccessRequest',
+    'V2025BulkCancelAccessRequest',
+  ]
 ---
 
 # BulkCancelAccessRequest
@@ -15,10 +28,11 @@ Request body payload for bulk cancel access request endpoint.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**access_request_ids** | **[]str** | List of access requests ids to cancel the pending requests | [required]
-**comment** | **str** | Reason for cancelling the pending access request. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **access_request_ids** | **[]str** | List of access requests ids to cancel the pending requests | [required] |
+| **comment** | **str** | Reason for cancelling the pending access request. | [required] |
+
 }
 
 ## Example
@@ -32,5 +46,5 @@ comment='I requested this role by mistake.'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

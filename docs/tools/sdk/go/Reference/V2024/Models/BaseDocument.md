@@ -4,7 +4,7 @@ title: BaseDocument
 pagination_label: BaseDocument
 sidebar_label: BaseDocument
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'BaseDocument', 'V2024BaseDocument'] 
+keywords: ['go', 'Golang', 'sdk', 'BaseDocument', 'V2024BaseDocument']
 slug: /tools/sdk/go/v2024/models/base-document
 tags: ['SDK', 'Software Development Kit', 'BaseDocument', 'V2024BaseDocument']
 ---
@@ -13,10 +13,10 @@ tags: ['SDK', 'Software Development Kit', 'BaseDocument', 'V2024BaseDocument']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **string** | ID of the referenced object. | 
-**Name** | **string** | The human readable name of the referenced object. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **string** | ID of the referenced object. |
+| **Name** | **string** | The human readable name of the referenced object. |
 
 ## Methods
 
@@ -24,18 +24,13 @@ Name | Type | Description | Notes
 
 `func NewBaseDocument(id string, name string, ) *BaseDocument`
 
-NewBaseDocument instantiates a new BaseDocument object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewBaseDocument instantiates a new BaseDocument object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewBaseDocumentWithDefaults
 
 `func NewBaseDocumentWithDefaults() *BaseDocument`
 
-NewBaseDocumentWithDefaults instantiates a new BaseDocument object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewBaseDocumentWithDefaults instantiates a new BaseDocument object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -47,15 +42,13 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *BaseDocument) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
 `func (o *BaseDocument) SetId(v string)`
 
 SetId sets Id field to given value.
-
 
 ### GetName
 
@@ -67,14 +60,10 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *BaseDocument) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
 `func (o *BaseDocument) SetName(v string)`
 
 SetName sets Name field to given value.
-
-
-

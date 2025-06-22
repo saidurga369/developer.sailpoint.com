@@ -4,20 +4,33 @@ title: IdentityExceptionReportReference
 pagination_label: IdentityExceptionReportReference
 sidebar_label: IdentityExceptionReportReference
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentityExceptionReportReference', 'IdentityExceptionReportReference'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'IdentityExceptionReportReference',
+    'IdentityExceptionReportReference',
+  ]
 slug: /tools/sdk/python/v3/models/identity-exception-report-reference
-tags: ['SDK', 'Software Development Kit', 'IdentityExceptionReportReference', 'IdentityExceptionReportReference']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityExceptionReportReference',
+    'IdentityExceptionReportReference',
+  ]
 ---
 
 # IdentityExceptionReportReference
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**task_result_id** | **str** | Task result ID. | [optional] 
-**report_name** | **str** | Report name. | [optional] 
+| Name               | Type    | Description     | Notes      |
+| ------------------ | ------- | --------------- | ---------- |
+| **task_result_id** | **str** | Task result ID. | [optional] |
+| **report_name**    | **str** | Report name.    | [optional] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ report_name='My annual report'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

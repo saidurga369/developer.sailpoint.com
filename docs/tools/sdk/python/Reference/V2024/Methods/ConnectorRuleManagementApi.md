@@ -4,60 +4,74 @@ title: Connector_Rule_Management
 pagination_label: Connector_Rule_Management
 sidebar_label: Connector_Rule_Management
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'Connector_Rule_Management', 'V2024Connector_Rule_Management'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'Connector_Rule_Management',
+    'V2024Connector_Rule_Management',
+  ]
 slug: /tools/sdk/python/v2024/methods/connector-rule-management
-tags: ['SDK', 'Software Development Kit', 'Connector_Rule_Management', 'V2024Connector_Rule_Management']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'Connector_Rule_Management',
+    'V2024Connector_Rule_Management',
+  ]
 ---
 
 # sailpoint.v2024.ConnectorRuleManagementApi
-  Use this API to implement connector rule management functionality. 
-With this functionality in place, administrators can implement connector-executed rules in a programmatic, scalable way. 
 
-In Identity Security Cloud (ISC), [rules](https://developer.sailpoint.com/docs/extensibility/rules) serve as a flexible configuration framework you can leverage to perform complex or advanced configurations. 
-[Connector-executed rules](https://developer.sailpoint.com/docs/extensibility/rules/connector-rules) are rules that are executed in the ISC virtual appliance (VA), usually extensions of the [connector](https://documentation.sailpoint.com/connectors/isc/landingpages/help/landingpages/isc_landing.html) itself, the bridge between the data source and ISC. 
+Use this API to implement connector rule management functionality. With this functionality in place, administrators can implement connector-executed rules in a programmatic, scalable way.
+
+In Identity Security Cloud (ISC), [rules](https://developer.sailpoint.com/docs/extensibility/rules) serve as a flexible configuration framework you can leverage to perform complex or advanced configurations. [Connector-executed rules](https://developer.sailpoint.com/docs/extensibility/rules/connector-rules) are rules that are executed in the ISC virtual appliance (VA), usually extensions of the [connector](https://documentation.sailpoint.com/connectors/isc/landingpages/help/landingpages/isc_landing.html) itself, the bridge between the data source and ISC.
 
 This API allows administrators to view existing connector-executed rules, make changes to them, delete them, and create new ones from the available types.
- 
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/v2024*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create-connector-rule**](#create-connector-rule) | **POST** `/connector-rules` | Create connector rule
-[**delete-connector-rule**](#delete-connector-rule) | **DELETE** `/connector-rules/{id}` | Delete connector rule
-[**get-connector-rule**](#get-connector-rule) | **GET** `/connector-rules/{id}` | Get connector rule
-[**get-connector-rule-list**](#get-connector-rule-list) | **GET** `/connector-rules` | List connector rules
-[**put-connector-rule**](#put-connector-rule) | **PUT** `/connector-rules/{id}` | Update connector rule
-[**test-connector-rule**](#test-connector-rule) | **POST** `/connector-rules/validate` | Validate connector rule
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**create-connector-rule**](#create-connector-rule) | **POST** `/connector-rules` | Create connector rule |
+| [**delete-connector-rule**](#delete-connector-rule) | **DELETE** `/connector-rules/{id}` | Delete connector rule |
+| [**get-connector-rule**](#get-connector-rule) | **GET** `/connector-rules/{id}` | Get connector rule |
+| [**get-connector-rule-list**](#get-connector-rule-list) | **GET** `/connector-rules` | List connector rules |
+| [**put-connector-rule**](#put-connector-rule) | **PUT** `/connector-rules/{id}` | Update connector rule |
+| [**test-connector-rule**](#test-connector-rule) | **POST** `/connector-rules/validate` | Validate connector rule |
 
 ## create-connector-rule
-Create connector rule
-Create a connector rule from the available types.
+
+Create connector rule Create a connector rule from the available types.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/create-connector-rule)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
- Body  | connector_rule_create_request | [**ConnectorRuleCreateRequest**](../models/connector-rule-create-request) | True  | Connector rule to create.
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Body | connector_rule_create_request | [**ConnectorRuleCreateRequest**](../models/connector-rule-create-request) | True | Connector rule to create. |
 
 ### Return type
+
 [**ConnectorRuleResponse**](../models/connector-rule-response)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-201 | Created connector rule. | ConnectorRuleResponse |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 201 | Created connector rule. | ConnectorRuleResponse | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json
- - **Accept**: application/json
+
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### Example
 
@@ -110,39 +124,40 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling ConnectorRuleManagementApi->create_connector_rule: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## delete-connector-rule
-Delete connector rule
-Delete the connector rule for the given ID.
+
+Delete connector rule Delete the connector rule for the given ID.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/delete-connector-rule)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | id | **str** | True  | ID of the connector rule to delete.
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | id | **str** | True | ID of the connector rule to delete. |
 
 ### Return type
- (empty response body)
+
+(empty response body)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-204 | No content - indicates the request was successful but there is no content to be returned in the response. |  |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 204 | No content - indicates the request was successful but there is no content to be returned in the response. |  | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -158,7 +173,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Delete connector rule
-        
+
         ConnectorRuleManagementApi(api_client).delete_connector_rule(id=id)
         # Below is a request that includes all optional parameters
         # ConnectorRuleManagementApi(api_client).delete_connector_rule(id)
@@ -166,39 +181,40 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling ConnectorRuleManagementApi->delete_connector_rule: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## get-connector-rule
-Get connector rule
-Get a connector rule by ID.
+
+Get connector rule Get a connector rule by ID.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/get-connector-rule)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | id | **str** | True  | ID of the connector rule to get.
+| Param Type | Name | Data Type | Required | Description                      |
+| ---------- | ---- | --------- | -------- | -------------------------------- |
+| Path       | id   | **str**   | True     | ID of the connector rule to get. |
 
 ### Return type
+
 [**ConnectorRuleResponse**](../models/connector-rule-response)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Connector rule with the given ID. | ConnectorRuleResponse |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Connector rule with the given ID. | ConnectorRuleResponse | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -215,7 +231,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Get connector rule
-        
+
         results = ConnectorRuleManagementApi(api_client).get_connector_rule(id=id)
         # Below is a request that includes all optional parameters
         # results = ConnectorRuleManagementApi(api_client).get_connector_rule(id)
@@ -225,40 +241,41 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling ConnectorRuleManagementApi->get_connector_rule: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## get-connector-rule-list
-List connector rules
-List existing connector rules.
+
+List connector rules List existing connector rules.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/get-connector-rule-list)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-  Query | limit | **int** |   (optional) (default to 50) | Note that for this API the maximum value for limit is 50. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | offset | **int** |   (optional) (default to 0) | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | count | **bool** |   (optional) (default to False) | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Query | limit | **int** | (optional) (default to 50) | Note that for this API the maximum value for limit is 50. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | offset | **int** | (optional) (default to 0) | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | count | **bool** | (optional) (default to False) | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
 
 ### Return type
+
 [**List[ConnectorRuleResponse]**](../models/connector-rule-response)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | List of connector rules. | List[ConnectorRuleResponse] |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | List of connector rules. | List[ConnectorRuleResponse] | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -277,7 +294,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # List connector rules
-        
+
         results = ConnectorRuleManagementApi(api_client).get_connector_rule_list()
         # Below is a request that includes all optional parameters
         # results = ConnectorRuleManagementApi(api_client).get_connector_rule_list(limit, offset, count)
@@ -288,40 +305,41 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling ConnectorRuleManagementApi->get_connector_rule_list: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## put-connector-rule
-Update connector rule
-Update an existing connector rule with the one provided in the request body. These fields are immutable: `id`, `name`, `type`
+
+Update connector rule Update an existing connector rule with the one provided in the request body. These fields are immutable: `id`, `name`, `type`
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/put-connector-rule)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | id | **str** | True  | ID of the connector rule to update.
- Body  | connector_rule_update_request | [**ConnectorRuleUpdateRequest**](../models/connector-rule-update-request) |   (optional) | Connector rule with updated data.
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | id | **str** | True | ID of the connector rule to update. |
+| Body | connector_rule_update_request | [**ConnectorRuleUpdateRequest**](../models/connector-rule-update-request) | (optional) | Connector rule with updated data. |
 
 ### Return type
+
 [**ConnectorRuleResponse**](../models/connector-rule-response)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Updated connector rule. | ConnectorRuleResponse |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Updated connector rule. | ConnectorRuleResponse | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json
- - **Accept**: application/json
+
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### Example
 
@@ -366,7 +384,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Update connector rule
-        
+
         results = ConnectorRuleManagementApi(api_client).put_connector_rule(id=id)
         # Below is a request that includes all optional parameters
         # results = ConnectorRuleManagementApi(api_client).put_connector_rule(id, new_connector_rule_update_request)
@@ -376,38 +394,39 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling ConnectorRuleManagementApi->put_connector_rule: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## test-connector-rule
-Validate connector rule
-Detect issues within the connector rule's code to fix and list them.
+
+Validate connector rule Detect issues within the connector rule's code to fix and list them.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/test-connector-rule)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
- Body  | source_code | [**SourceCode**](../models/source-code) | True  | Code to validate.
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Body | source_code | [**SourceCode**](../models/source-code) | True | Code to validate. |
 
 ### Return type
+
 [**ConnectorRuleValidationResponse**](../models/connector-rule-validation-response)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Status of the code&#39;s eligibility as a connector rule. | ConnectorRuleValidationResponse |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Status of the code&#39;s eligibility as a connector rule. | ConnectorRuleValidationResponse | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json
- - **Accept**: application/json
+
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### Example
 
@@ -438,9 +457,4 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling ConnectorRuleManagementApi->test_connector_rule: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
-
-
-
+[[Back to top]](#)

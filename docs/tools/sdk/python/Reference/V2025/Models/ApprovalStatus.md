@@ -4,9 +4,10 @@ title: ApprovalStatus
 pagination_label: ApprovalStatus
 sidebar_label: ApprovalStatus
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ApprovalStatus', 'V2025ApprovalStatus'] 
+keywords: ['python', 'Python', 'sdk', 'ApprovalStatus', 'V2025ApprovalStatus']
 slug: /tools/sdk/python/v2025/models/approval-status
-tags: ['SDK', 'Software Development Kit', 'ApprovalStatus', 'V2025ApprovalStatus']
+tags:
+  ['SDK', 'Software Development Kit', 'ApprovalStatus', 'V2025ApprovalStatus']
 ---
 
 # ApprovalStatus
@@ -15,15 +16,14 @@ Enum representing the non-employee request approval status
 
 ## Enum
 
-* `APPROVED` (value: `'APPROVED'`)
+- `APPROVED` (value: `'APPROVED'`)
 
-* `REJECTED` (value: `'REJECTED'`)
+- `REJECTED` (value: `'REJECTED'`)
 
-* `PENDING` (value: `'PENDING'`)
+- `PENDING` (value: `'PENDING'`)
 
-* `NOT_READY` (value: `'NOT_READY'`)
+- `NOT_READY` (value: `'NOT_READY'`)
 
-* `CANCELLED` (value: `'CANCELLED'`)
+- `CANCELLED` (value: `'CANCELLED'`)
 
-[[Back to top]](#) 
-
+[[Back to top]](#)

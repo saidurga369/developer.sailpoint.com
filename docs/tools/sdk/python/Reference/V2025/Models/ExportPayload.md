@@ -4,22 +4,22 @@ title: ExportPayload
 pagination_label: ExportPayload
 sidebar_label: ExportPayload
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ExportPayload', 'V2025ExportPayload'] 
+keywords: ['python', 'Python', 'sdk', 'ExportPayload', 'V2025ExportPayload']
 slug: /tools/sdk/python/v2025/models/export-payload
 tags: ['SDK', 'Software Development Kit', 'ExportPayload', 'V2025ExportPayload']
 ---
 
 # ExportPayload
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**description** | **str** | Optional user defined description/name for export job. | [optional] 
-**exclude_types** | **[]str** | Object type names to be excluded from an sp-config export command. | [optional] 
-**include_types** | **[]str** | Object type names to be included in an sp-config export command. IncludeTypes takes precedence over excludeTypes. | [optional] 
-**object_options** | [**map[string]ObjectExportImportOptions**](object-export-import-options) | Additional options targeting specific objects related to each item in the includeTypes field | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **description** | **str** | Optional user defined description/name for export job. | [optional] |
+| **exclude_types** | **[]str** | Object type names to be excluded from an sp-config export command. | [optional] |
+| **include_types** | **[]str** | Object type names to be included in an sp-config export command. IncludeTypes takes precedence over excludeTypes. | [optional] |
+| **object_options** | [**map[string]ObjectExportImportOptions**](object-export-import-options) | Additional options targeting specific objects related to each item in the includeTypes field | [optional] |
+
 }
 
 ## Example
@@ -39,5 +39,5 @@ object_options={TRIGGER_SUBSCRIPTION={includedIds=[be9e116d-08e1-49fc-ab7f-fa585
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

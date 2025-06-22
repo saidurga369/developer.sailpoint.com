@@ -4,21 +4,34 @@ title: IdentityProfile1AllOfAuthoritativeSource
 pagination_label: IdentityProfile1AllOfAuthoritativeSource
 sidebar_label: IdentityProfile1AllOfAuthoritativeSource
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentityProfile1AllOfAuthoritativeSource', 'BetaIdentityProfile1AllOfAuthoritativeSource'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'IdentityProfile1AllOfAuthoritativeSource',
+    'BetaIdentityProfile1AllOfAuthoritativeSource',
+  ]
 slug: /tools/sdk/python/beta/models/identity-profile1-all-of-authoritative-source
-tags: ['SDK', 'Software Development Kit', 'IdentityProfile1AllOfAuthoritativeSource', 'BetaIdentityProfile1AllOfAuthoritativeSource']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityProfile1AllOfAuthoritativeSource',
+    'BetaIdentityProfile1AllOfAuthoritativeSource',
+  ]
 ---
 
 # IdentityProfile1AllOfAuthoritativeSource
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'SOURCE' ] | Authoritative source's object type. | [optional] 
-**id** | **str** | Authoritative source's ID. | [optional] 
-**name** | **str** | Authoritative source's name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'SOURCE' ] | Authoritative source's object type. | [optional] |
+| **id** | **str** | Authoritative source's ID. | [optional] |
+| **name** | **str** | Authoritative source's name. | [optional] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ name='HR Active Directory'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,23 +4,24 @@ title: WorkflowExecution
 pagination_label: WorkflowExecution
 sidebar_label: WorkflowExecution
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'WorkflowExecution', 'WorkflowExecution'] 
+keywords: ['go', 'Golang', 'sdk', 'WorkflowExecution', 'WorkflowExecution']
 slug: /tools/sdk/go/v3/models/workflow-execution
-tags: ['SDK', 'Software Development Kit', 'WorkflowExecution', 'WorkflowExecution']
+tags:
+  ['SDK', 'Software Development Kit', 'WorkflowExecution', 'WorkflowExecution']
 ---
 
 # WorkflowExecution
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Workflow execution ID. | [optional] 
-**WorkflowId** | Pointer to **string** | Workflow ID. | [optional] 
-**RequestId** | Pointer to **string** | Backend ID that tracks a workflow request in the system. Provide this ID in a customer support ticket for debugging purposes. | [optional] 
-**StartTime** | Pointer to **SailPointTime** | Date/time when the workflow started. | [optional] 
-**CloseTime** | Pointer to **SailPointTime** | Date/time when the workflow ended. | [optional] 
-**Status** | Pointer to **string** | Workflow execution status. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Workflow execution ID. | [optional] |
+| **WorkflowId** | Pointer to **string** | Workflow ID. | [optional] |
+| **RequestId** | Pointer to **string** | Backend ID that tracks a workflow request in the system. Provide this ID in a customer support ticket for debugging purposes. | [optional] |
+| **StartTime** | Pointer to **SailPointTime** | Date/time when the workflow started. | [optional] |
+| **CloseTime** | Pointer to **SailPointTime** | Date/time when the workflow ended. | [optional] |
+| **Status** | Pointer to **string** | Workflow execution status. | [optional] |
 
 ## Methods
 
@@ -28,18 +29,13 @@ Name | Type | Description | Notes
 
 `func NewWorkflowExecution() *WorkflowExecution`
 
-NewWorkflowExecution instantiates a new WorkflowExecution object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewWorkflowExecution instantiates a new WorkflowExecution object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewWorkflowExecutionWithDefaults
 
 `func NewWorkflowExecutionWithDefaults() *WorkflowExecution`
 
-NewWorkflowExecutionWithDefaults instantiates a new WorkflowExecution object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewWorkflowExecutionWithDefaults instantiates a new WorkflowExecution object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -51,8 +47,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *WorkflowExecution) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -76,8 +71,7 @@ GetWorkflowId returns the WorkflowId field if non-nil, zero value otherwise.
 
 `func (o *WorkflowExecution) GetWorkflowIdOk() (*string, bool)`
 
-GetWorkflowIdOk returns a tuple with the WorkflowId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetWorkflowIdOk returns a tuple with the WorkflowId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetWorkflowId
 
@@ -101,8 +95,7 @@ GetRequestId returns the RequestId field if non-nil, zero value otherwise.
 
 `func (o *WorkflowExecution) GetRequestIdOk() (*string, bool)`
 
-GetRequestIdOk returns a tuple with the RequestId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestIdOk returns a tuple with the RequestId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequestId
 
@@ -126,8 +119,7 @@ GetStartTime returns the StartTime field if non-nil, zero value otherwise.
 
 `func (o *WorkflowExecution) GetStartTimeOk() (*SailPointTime, bool)`
 
-GetStartTimeOk returns a tuple with the StartTime field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStartTimeOk returns a tuple with the StartTime field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStartTime
 
@@ -151,8 +143,7 @@ GetCloseTime returns the CloseTime field if non-nil, zero value otherwise.
 
 `func (o *WorkflowExecution) GetCloseTimeOk() (*SailPointTime, bool)`
 
-GetCloseTimeOk returns a tuple with the CloseTime field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCloseTimeOk returns a tuple with the CloseTime field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCloseTime
 
@@ -176,8 +167,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *WorkflowExecution) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -190,5 +180,3 @@ SetStatus sets Status field to given value.
 `func (o *WorkflowExecution) HasStatus() bool`
 
 HasStatus returns a boolean if a field has been set.
-
-

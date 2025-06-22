@@ -4,19 +4,32 @@ title: SelectorAccountMatchConfigMatchExpression
 pagination_label: SelectorAccountMatchConfigMatchExpression
 sidebar_label: SelectorAccountMatchConfigMatchExpression
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SelectorAccountMatchConfigMatchExpression', 'V2025SelectorAccountMatchConfigMatchExpression'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'SelectorAccountMatchConfigMatchExpression',
+    'V2025SelectorAccountMatchConfigMatchExpression',
+  ]
 slug: /tools/sdk/go/v2025/models/selector-account-match-config-match-expression
-tags: ['SDK', 'Software Development Kit', 'SelectorAccountMatchConfigMatchExpression', 'V2025SelectorAccountMatchConfigMatchExpression']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SelectorAccountMatchConfigMatchExpression',
+    'V2025SelectorAccountMatchConfigMatchExpression',
+  ]
 ---
 
 # SelectorAccountMatchConfigMatchExpression
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**MatchTerms** | Pointer to [**[]MatchTerm**](match-term) |  | [optional] 
-**And** | Pointer to **bool** | If it is AND operators for match terms | [optional] [default to true]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **MatchTerms** | Pointer to [**[]MatchTerm**](match-term) |  | [optional] |
+| **And** | Pointer to **bool** | If it is AND operators for match terms | [optional] [default to true] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewSelectorAccountMatchConfigMatchExpression() *SelectorAccountMatchConfigMatchExpression`
 
-NewSelectorAccountMatchConfigMatchExpression instantiates a new SelectorAccountMatchConfigMatchExpression object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSelectorAccountMatchConfigMatchExpression instantiates a new SelectorAccountMatchConfigMatchExpression object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSelectorAccountMatchConfigMatchExpressionWithDefaults
 
 `func NewSelectorAccountMatchConfigMatchExpressionWithDefaults() *SelectorAccountMatchConfigMatchExpression`
 
-NewSelectorAccountMatchConfigMatchExpressionWithDefaults instantiates a new SelectorAccountMatchConfigMatchExpression object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSelectorAccountMatchConfigMatchExpressionWithDefaults instantiates a new SelectorAccountMatchConfigMatchExpression object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetMatchTerms
 
@@ -47,8 +55,7 @@ GetMatchTerms returns the MatchTerms field if non-nil, zero value otherwise.
 
 `func (o *SelectorAccountMatchConfigMatchExpression) GetMatchTermsOk() (*[]MatchTerm, bool)`
 
-GetMatchTermsOk returns a tuple with the MatchTerms field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMatchTermsOk returns a tuple with the MatchTerms field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMatchTerms
 
@@ -72,8 +79,7 @@ GetAnd returns the And field if non-nil, zero value otherwise.
 
 `func (o *SelectorAccountMatchConfigMatchExpression) GetAndOk() (*bool, bool)`
 
-GetAndOk returns a tuple with the And field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAndOk returns a tuple with the And field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAnd
 
@@ -86,5 +92,3 @@ SetAnd sets And field to given value.
 `func (o *SelectorAccountMatchConfigMatchExpression) HasAnd() bool`
 
 HasAnd returns a boolean if a field has been set.
-
-

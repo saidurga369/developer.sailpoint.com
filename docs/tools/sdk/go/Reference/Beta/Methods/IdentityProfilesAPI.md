@@ -4,60 +4,58 @@ title: IdentityProfiles
 pagination_label: IdentityProfiles
 sidebar_label: IdentityProfiles
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IdentityProfiles', 'BetaIdentityProfiles'] 
+keywords: ['go', 'Golang', 'sdk', 'IdentityProfiles', 'BetaIdentityProfiles']
 slug: /tools/sdk/go/beta/methods/identity-profiles
-tags: ['SDK', 'Software Development Kit', 'IdentityProfiles', 'BetaIdentityProfiles']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityProfiles',
+    'BetaIdentityProfiles',
+  ]
 ---
 
 # IdentityProfilesAPI
-  Use this API to implement and customize identity profile functionality.
-With this functionality in place, administrators can manage identity profiles and configure them for use by identities throughout Identity Security Cloud.
 
-Identity profiles represent the configurations that can be applied to identities as a way of granting them a set of security and access, as well as defining the mappings between their identity attributes and their source attributes.
-This allows administrators to save time by applying identity profiles to any number of similar identities rather than configuring each one individually.
+Use this API to implement and customize identity profile functionality. With this functionality in place, administrators can manage identity profiles and configure them for use by identities throughout Identity Security Cloud.
 
-In Identity Security Cloud, administrators can use the Identities drop-down menu and select Identity Profiles to view the list of identity profiles.
-This list shows some details about each identity profile, along with its status. They can select an identity profile to view and modify its settings, its mappings between identity attributes and correlating source account attributes, and its provisioning settings.
-Administrators can also use this page to create new identity profiles or delete existing ones.
+Identity profiles represent the configurations that can be applied to identities as a way of granting them a set of security and access, as well as defining the mappings between their identity attributes and their source attributes. This allows administrators to save time by applying identity profiles to any number of similar identities rather than configuring each one individually.
+
+In Identity Security Cloud, administrators can use the Identities drop-down menu and select Identity Profiles to view the list of identity profiles. This list shows some details about each identity profile, along with its status. They can select an identity profile to view and modify its settings, its mappings between identity attributes and correlating source account attributes, and its provisioning settings. Administrators can also use this page to create new identity profiles or delete existing ones.
 
 Refer to [Creating Identity Profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) for more information about identity profiles.
- 
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/beta*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create-identity-profile**](#create-identity-profile) | **Post** `/identity-profiles` | Create identity profile
-[**delete-identity-profile**](#delete-identity-profile) | **Delete** `/identity-profiles/{identity-profile-id}` | Delete identity profile
-[**delete-identity-profiles**](#delete-identity-profiles) | **Post** `/identity-profiles/bulk-delete` | Delete identity profiles
-[**export-identity-profiles**](#export-identity-profiles) | **Get** `/identity-profiles/export` | Export identity profiles
-[**get-default-identity-attribute-config**](#get-default-identity-attribute-config) | **Get** `/identity-profiles/{identity-profile-id}/default-identity-attribute-config` | Default identity attribute config
-[**get-identity-profile**](#get-identity-profile) | **Get** `/identity-profiles/{identity-profile-id}` | Get identity profile
-[**import-identity-profiles**](#import-identity-profiles) | **Post** `/identity-profiles/import` | Import identity profiles
-[**list-identity-profiles**](#list-identity-profiles) | **Get** `/identity-profiles` | List identity profiles
-[**show-generate-identity-preview**](#show-generate-identity-preview) | **Post** `/identity-profiles/identity-preview` | Generate identity profile preview
-[**sync-identity-profile**](#sync-identity-profile) | **Post** `/identity-profiles/{identity-profile-id}/process-identities` | Process identities under profile
-[**update-identity-profile**](#update-identity-profile) | **Patch** `/identity-profiles/{identity-profile-id}` | Update identity profile
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**create-identity-profile**](#create-identity-profile) | **Post** `/identity-profiles` | Create identity profile |
+| [**delete-identity-profile**](#delete-identity-profile) | **Delete** `/identity-profiles/{identity-profile-id}` | Delete identity profile |
+| [**delete-identity-profiles**](#delete-identity-profiles) | **Post** `/identity-profiles/bulk-delete` | Delete identity profiles |
+| [**export-identity-profiles**](#export-identity-profiles) | **Get** `/identity-profiles/export` | Export identity profiles |
+| [**get-default-identity-attribute-config**](#get-default-identity-attribute-config) | **Get** `/identity-profiles/{identity-profile-id}/default-identity-attribute-config` | Default identity attribute config |
+| [**get-identity-profile**](#get-identity-profile) | **Get** `/identity-profiles/{identity-profile-id}` | Get identity profile |
+| [**import-identity-profiles**](#import-identity-profiles) | **Post** `/identity-profiles/import` | Import identity profiles |
+| [**list-identity-profiles**](#list-identity-profiles) | **Get** `/identity-profiles` | List identity profiles |
+| [**show-generate-identity-preview**](#show-generate-identity-preview) | **Post** `/identity-profiles/identity-preview` | Generate identity profile preview |
+| [**sync-identity-profile**](#sync-identity-profile) | **Post** `/identity-profiles/{identity-profile-id}/process-identities` | Process identities under profile |
+| [**update-identity-profile**](#update-identity-profile) | **Patch** `/identity-profiles/{identity-profile-id}` | Update identity profile |
 
 ## create-identity-profile
-Create identity profile
-Create an identity profile.
-A token with ORG_ADMIN authority is required to call this API to create an Identity Profile.
+
+Create identity profile Create an identity profile. A token with ORG_ADMIN authority is required to call this API to create an Identity Profile.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/create-identity-profile)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCreateIdentityProfileRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **identityProfile** | [**IdentityProfile**](../models/identity-profile) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **identityProfile** | [**IdentityProfile**](../models/identity-profile) |  |
 
 ### Return type
 
@@ -131,14 +129,14 @@ func main() {
           "name" : "aName",
           "modified" : "2023-01-03T21:16:22.432Z",
           "id" : "id12345"
-        }`) // IdentityProfile | 
+        }`) // IdentityProfile |
 
     var identityProfile beta.IdentityProfile
     if err := json.Unmarshal(identityprofile, &identityProfile); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -156,29 +154,24 @@ func main() {
 [[Back to top]](#)
 
 ## delete-identity-profile
-Delete identity profile
-Delete an identity profile by ID.
-On success, this endpoint will return a reference to the bulk delete task result.
-A token with ORG_ADMIN authority is required to call this API.
+
+Delete identity profile Delete an identity profile by ID. On success, this endpoint will return a reference to the bulk delete task result. A token with ORG_ADMIN authority is required to call this API.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/delete-identity-profile)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**identityProfileId** | **string** | Identity profile ID. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **identityProfileId** | **string** | Identity profile ID. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteIdentityProfileRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -198,15 +191,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     identityProfileId := `ef38f94347e94562b5bb8424a56397d8` // string | Identity profile ID. # string | Identity profile ID.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -224,8 +217,8 @@ func main() {
 [[Back to top]](#)
 
 ## delete-identity-profiles
-Delete identity profiles
-This deletes multiple Identity Profiles via a list of supplied IDs.
+
+Delete identity profiles This deletes multiple Identity Profiles via a list of supplied IDs.
 
 On success, this endpoint will return a reference to the bulk delete task result.
 
@@ -237,16 +230,13 @@ The following rights are required to access this endpoint: idn:identity-profile:
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteIdentityProfilesRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **requestBody** | **[]string** | Identity Profile bulk delete request body. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **requestBody** | **[]string** | Identity Profile bulk delete request body. |
 
 ### Return type
 
@@ -279,7 +269,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -297,27 +287,24 @@ func main() {
 [[Back to top]](#)
 
 ## export-identity-profiles
-Export identity profiles
-This exports existing identity profiles in the format specified by the sp-config service.
+
+Export identity profiles This exports existing identity profiles in the format specified by the sp-config service.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/export-identity-profiles)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiExportIdentityProfilesRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, ne*  **name**: *eq, ne*  **priority**: *eq, ne* | 
- **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **id, name, priority** | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
+| **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false] |
+| **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **id**: _eq, ne_ **name**: _eq, ne_ **priority**: _eq, ne_ |
+| **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results) Sorting is supported for the following fields: **id, name, priority** |
 
 ### Return type
 
@@ -337,8 +324,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -349,7 +336,7 @@ func main() {
     filters := `id eq 8c190e6787aa4ed9a90bd9d5344523fb` // string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, ne*  **name**: *eq, ne*  **priority**: *eq, ne* (optional) # string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, ne*  **name**: *eq, ne*  **priority**: *eq, ne* (optional)
     sorters := `name,-priority` // string | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **id, name, priority** (optional) # string | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **id, name, priority** (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -367,28 +354,24 @@ func main() {
 [[Back to top]](#)
 
 ## get-default-identity-attribute-config
-Default identity attribute config
-This returns the default identity attribute config
-A token with ORG_ADMIN authority is required to call this API to get the default identity attribute config.
+
+Default identity attribute config This returns the default identity attribute config A token with ORG_ADMIN authority is required to call this API to get the default identity attribute config.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-default-identity-attribute-config)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**identityProfileId** | **string** | The Identity Profile ID | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **identityProfileId** | **string** | The Identity Profile ID |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetDefaultIdentityAttributeConfigRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -408,15 +391,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     identityProfileId := `ef38f94347e94562b5bb8424a56397d8` // string | The Identity Profile ID # string | The Identity Profile ID
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -434,28 +417,24 @@ func main() {
 [[Back to top]](#)
 
 ## get-identity-profile
-Get identity profile
-Get a single identity profile by ID.
-A token with ORG_ADMIN or API authority is required to call this API.
+
+Get identity profile Get a single identity profile by ID. A token with ORG_ADMIN or API authority is required to call this API.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-identity-profile)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**identityProfileId** | **string** | Identity profile ID. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **identityProfileId** | **string** | Identity profile ID. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetIdentityProfileRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -475,15 +454,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     identityProfileId := `ef38f94347e94562b5bb8424a56397d8` // string | Identity profile ID. # string | Identity profile ID.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -501,23 +480,20 @@ func main() {
 [[Back to top]](#)
 
 ## import-identity-profiles
-Import identity profiles
-This imports previously exported identity profiles.
+
+Import identity profiles This imports previously exported identity profiles.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/import-identity-profiles)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiImportIdentityProfilesRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **identityProfileExportedObject** | [**[]IdentityProfileExportedObject**](../models/identity-profile-exported-object) | Previously exported Identity Profiles. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **identityProfileExportedObject** | [**[]IdentityProfileExportedObject**](../models/identity-profile-exported-object) | Previously exported Identity Profiles. |
 
 ### Return type
 
@@ -550,7 +526,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -568,28 +544,24 @@ func main() {
 [[Back to top]](#)
 
 ## list-identity-profiles
-List identity profiles
-Get a list of identity profiles, based on the specified query parameters.
-A token with ORG_ADMIN or API authority is required to call this API to get a list of Identity Profiles.
+
+List identity profiles Get a list of identity profiles, based on the specified query parameters. A token with ORG_ADMIN or API authority is required to call this API to get a list of Identity Profiles.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/list-identity-profiles)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListIdentityProfilesRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, ne, ge, gt, in, le, sw*  **name**: *eq, ne, ge, gt, in, le, sw*  **priority**: *eq, ne* | 
- **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **id, name, priority, created, modified, owner.id, owner.name** | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
+| **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false] |
+| **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **id**: _eq, ne, ge, gt, in, le, sw_ **name**: _eq, ne, ge, gt, in, le, sw_ **priority**: _eq, ne_ |
+| **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results) Sorting is supported for the following fields: **id, name, priority, created, modified, owner.id, owner.name** |
 
 ### Return type
 
@@ -609,8 +581,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -621,7 +593,7 @@ func main() {
     filters := `id eq 8c190e6787aa4ed9a90bd9d5344523fb` // string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, ne, ge, gt, in, le, sw*  **name**: *eq, ne, ge, gt, in, le, sw*  **priority**: *eq, ne* (optional) # string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, ne, ge, gt, in, le, sw*  **name**: *eq, ne, ge, gt, in, le, sw*  **priority**: *eq, ne* (optional)
     sorters := `name,-priority` // string | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **id, name, priority, created, modified, owner.id, owner.name** (optional) # string | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **id, name, priority, created, modified, owner.id, owner.name** (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -639,25 +611,20 @@ func main() {
 [[Back to top]](#)
 
 ## show-generate-identity-preview
-Generate identity profile preview
-Use this API to generate a non-persisted preview of the identity object after applying `IdentityAttributeConfig` sent in request body.
-This API only allows `accountAttribute`, `reference` and `rule` transform types in the `IdentityAttributeConfig` sent in the request body.
-A token with ORG_ADMIN authority is required to call this API to generate an identity preview.
+
+Generate identity profile preview Use this API to generate a non-persisted preview of the identity object after applying `IdentityAttributeConfig` sent in request body. This API only allows `accountAttribute`, `reference` and `rule` transform types in the `IdentityAttributeConfig` sent in the request body. A token with ORG_ADMIN authority is required to call this API to generate an identity preview.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/show-generate-identity-preview)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiShowGenerateIdentityPreviewRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **identityPreviewRequest** | [**IdentityPreviewRequest**](../models/identity-preview-request) | Identity Preview request body. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **identityPreviewRequest** | [**IdentityPreviewRequest**](../models/identity-preview-request) | Identity Preview request body. |
 
 ### Return type
 
@@ -716,7 +683,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -734,32 +701,26 @@ func main() {
 [[Back to top]](#)
 
 ## sync-identity-profile
-Process identities under profile
-Process identities under the profile
-This operation should not be used to schedule your own identity processing or to perform system wide identity refreshes. The system will use a combination of [event-based processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html?h=process#event-based-processing) and [scheduled processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html?h=process#scheduled-processing) that runs every day at 8:00 AM and 8:00 PM in the tenant's timezone to keep your identities synchronized. 
-This should only be run on identity profiles that have the `identityRefreshRequired` attribute set to `true`. If `identityRefreshRequired` is false, then there is no benefit to running this operation. Typically, this operation is performed when a change is made to the identity profile or its related lifecycle states that requires a refresh.
-This operation will perform the following activities on all identities under the identity profile.
-1. Updates identity attribute according to the identity profile mappings. 2. Determines the identity's correct manager through manager correlation. 3. Updates the identity's access according to their assigned lifecycle state. 4. Updates the identity's access based on role assignment criteria.
-A token with ORG_ADMIN authority is required to call this API.
+
+Process identities under profile Process identities under the profile This operation should not be used to schedule your own identity processing or to perform system wide identity refreshes. The system will use a combination of [event-based processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html?h=process#event-based-processing) and [scheduled processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html?h=process#scheduled-processing) that runs every day at 8:00 AM and 8:00 PM in the tenant's timezone to keep your identities synchronized. This should only be run on identity profiles that have the `identityRefreshRequired` attribute set to `true`. If `identityRefreshRequired` is false, then there is no benefit to running this operation. Typically, this operation is performed when a change is made to the identity profile or its related lifecycle states that requires a refresh. This operation will perform the following activities on all identities under the identity profile.
+
+1. Updates identity attribute according to the identity profile mappings. 2. Determines the identity's correct manager through manager correlation. 3. Updates the identity's access according to their assigned lifecycle state. 4. Updates the identity's access based on role assignment criteria. A token with ORG_ADMIN authority is required to call this API.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/sync-identity-profile)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**identityProfileId** | **string** | The Identity Profile ID to be processed | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **identityProfileId** | **string** | The Identity Profile ID to be processed |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSyncIdentityProfileRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -779,15 +740,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     identityProfileId := `ef38f94347e94562b5bb8424a56397d8` // string | The Identity Profile ID to be processed # string | The Identity Profile ID to be processed
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -805,36 +766,33 @@ func main() {
 [[Back to top]](#)
 
 ## update-identity-profile
-Update identity profile
-Update the specified identity profile with this PATCH request. 
-A token with ORG_ADMIN authority is required to call this API to update the Identity Profile.
-These fields cannot be updated:
-* id
-* created
-* modified
-* identityCount
-* identityRefreshRequired
-* Authoritative Source and Identity Attribute Configuration cannot be modified at once.
+
+Update identity profile Update the specified identity profile with this PATCH request. A token with ORG_ADMIN authority is required to call this API to update the Identity Profile. These fields cannot be updated:
+
+- id
+- created
+- modified
+- identityCount
+- identityRefreshRequired
+- Authoritative Source and Identity Attribute Configuration cannot be modified at once.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/update-identity-profile)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**identityProfileId** | **string** | Identity profile ID. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **identityProfileId** | **string** | Identity profile ID. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiUpdateIdentityProfileRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **jsonPatchOperation** | [**[]JsonPatchOperation**](../models/json-patch-operation) | List of identity profile update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard. | 
+**jsonPatchOperation** | [**[]JsonPatchOperation**](../models/json-patch-operation) | List of identity profile update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard. |
 
 ### Return type
 
@@ -868,7 +826,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -884,4 +842,3 @@ func main() {
 ```
 
 [[Back to top]](#)
-

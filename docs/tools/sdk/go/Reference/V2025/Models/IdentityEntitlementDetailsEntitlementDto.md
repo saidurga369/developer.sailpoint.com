@@ -4,28 +4,41 @@ title: IdentityEntitlementDetailsEntitlementDto
 pagination_label: IdentityEntitlementDetailsEntitlementDto
 sidebar_label: IdentityEntitlementDetailsEntitlementDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IdentityEntitlementDetailsEntitlementDto', 'V2025IdentityEntitlementDetailsEntitlementDto'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'IdentityEntitlementDetailsEntitlementDto',
+    'V2025IdentityEntitlementDetailsEntitlementDto',
+  ]
 slug: /tools/sdk/go/v2025/models/identity-entitlement-details-entitlement-dto
-tags: ['SDK', 'Software Development Kit', 'IdentityEntitlementDetailsEntitlementDto', 'V2025IdentityEntitlementDetailsEntitlementDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityEntitlementDetailsEntitlementDto',
+    'V2025IdentityEntitlementDetailsEntitlementDto',
+  ]
 ---
 
 # IdentityEntitlementDetailsEntitlementDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The entitlement id | [optional] 
-**Name** | Pointer to **string** | The entitlement name | [optional] 
-**Created** | Pointer to **SailPointTime** | Time when the entitlement was last modified | [optional] 
-**Modified** | Pointer to **SailPointTime** | Time when the entitlement was last modified | [optional] 
-**Description** | Pointer to **NullableString** | The description of the entitlement | [optional] 
-**Type** | Pointer to **string** | The type of the object, will always be \"ENTITLEMENT\" | [optional] 
-**SourceId** | Pointer to **string** | The source ID | [optional] 
-**SourceName** | Pointer to **string** | The source name | [optional] 
-**Owner** | Pointer to [**OwnerDto**](owner-dto) |  | [optional] 
-**Value** | Pointer to **string** | The value of the entitlement | [optional] 
-**Flags** | Pointer to **[]string** | a list of properties informing the viewer about the entitlement | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The entitlement id | [optional] |
+| **Name** | Pointer to **string** | The entitlement name | [optional] |
+| **Created** | Pointer to **SailPointTime** | Time when the entitlement was last modified | [optional] |
+| **Modified** | Pointer to **SailPointTime** | Time when the entitlement was last modified | [optional] |
+| **Description** | Pointer to **NullableString** | The description of the entitlement | [optional] |
+| **Type** | Pointer to **string** | The type of the object, will always be \"ENTITLEMENT\" | [optional] |
+| **SourceId** | Pointer to **string** | The source ID | [optional] |
+| **SourceName** | Pointer to **string** | The source name | [optional] |
+| **Owner** | Pointer to [**OwnerDto**](owner-dto) |  | [optional] |
+| **Value** | Pointer to **string** | The value of the entitlement | [optional] |
+| **Flags** | Pointer to **[]string** | a list of properties informing the viewer about the entitlement | [optional] |
 
 ## Methods
 
@@ -33,18 +46,13 @@ Name | Type | Description | Notes
 
 `func NewIdentityEntitlementDetailsEntitlementDto() *IdentityEntitlementDetailsEntitlementDto`
 
-NewIdentityEntitlementDetailsEntitlementDto instantiates a new IdentityEntitlementDetailsEntitlementDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewIdentityEntitlementDetailsEntitlementDto instantiates a new IdentityEntitlementDetailsEntitlementDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewIdentityEntitlementDetailsEntitlementDtoWithDefaults
 
 `func NewIdentityEntitlementDetailsEntitlementDtoWithDefaults() *IdentityEntitlementDetailsEntitlementDto`
 
-NewIdentityEntitlementDetailsEntitlementDtoWithDefaults instantiates a new IdentityEntitlementDetailsEntitlementDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewIdentityEntitlementDetailsEntitlementDtoWithDefaults instantiates a new IdentityEntitlementDetailsEntitlementDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -56,8 +64,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *IdentityEntitlementDetailsEntitlementDto) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -81,8 +88,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *IdentityEntitlementDetailsEntitlementDto) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -106,8 +112,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *IdentityEntitlementDetailsEntitlementDto) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -131,8 +136,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *IdentityEntitlementDetailsEntitlementDto) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -156,8 +160,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *IdentityEntitlementDetailsEntitlementDto) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -175,12 +178,14 @@ HasDescription returns a boolean if a field has been set.
 
 `func (o *IdentityEntitlementDetailsEntitlementDto) SetDescriptionNil(b bool)`
 
- SetDescriptionNil sets the value for Description to be an explicit nil
+SetDescriptionNil sets the value for Description to be an explicit nil
 
 ### UnsetDescription
+
 `func (o *IdentityEntitlementDetailsEntitlementDto) UnsetDescription()`
 
 UnsetDescription ensures that no value is present for Description, not even an explicit nil
+
 ### GetType
 
 `func (o *IdentityEntitlementDetailsEntitlementDto) GetType() string`
@@ -191,8 +196,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *IdentityEntitlementDetailsEntitlementDto) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -216,8 +220,7 @@ GetSourceId returns the SourceId field if non-nil, zero value otherwise.
 
 `func (o *IdentityEntitlementDetailsEntitlementDto) GetSourceIdOk() (*string, bool)`
 
-GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceId
 
@@ -241,8 +244,7 @@ GetSourceName returns the SourceName field if non-nil, zero value otherwise.
 
 `func (o *IdentityEntitlementDetailsEntitlementDto) GetSourceNameOk() (*string, bool)`
 
-GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceName
 
@@ -266,8 +268,7 @@ GetOwner returns the Owner field if non-nil, zero value otherwise.
 
 `func (o *IdentityEntitlementDetailsEntitlementDto) GetOwnerOk() (*OwnerDto, bool)`
 
-GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwner
 
@@ -291,8 +292,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *IdentityEntitlementDetailsEntitlementDto) GetValueOk() (*string, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -316,8 +316,7 @@ GetFlags returns the Flags field if non-nil, zero value otherwise.
 
 `func (o *IdentityEntitlementDetailsEntitlementDto) GetFlagsOk() (*[]string, bool)`
 
-GetFlagsOk returns a tuple with the Flags field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFlagsOk returns a tuple with the Flags field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFlags
 
@@ -330,5 +329,3 @@ SetFlags sets Flags field to given value.
 `func (o *IdentityEntitlementDetailsEntitlementDto) HasFlags() bool`
 
 HasFlags returns a boolean if a field has been set.
-
-

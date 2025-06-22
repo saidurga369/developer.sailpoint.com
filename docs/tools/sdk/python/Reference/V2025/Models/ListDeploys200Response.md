@@ -4,19 +4,32 @@ title: ListDeploys200Response
 pagination_label: ListDeploys200Response
 sidebar_label: ListDeploys200Response
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ListDeploys200Response', 'V2025ListDeploys200Response'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ListDeploys200Response',
+    'V2025ListDeploys200Response',
+  ]
 slug: /tools/sdk/python/v2025/models/list-deploys200-response
-tags: ['SDK', 'Software Development Kit', 'ListDeploys200Response', 'V2025ListDeploys200Response']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ListDeploys200Response',
+    'V2025ListDeploys200Response',
+  ]
 ---
 
 # ListDeploys200Response
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**items** | [**[]DeployResponse**](deploy-response) | list of deployments | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **items** | [**[]DeployResponse**](deploy-response) | list of deployments | [optional] |
+
 }
 
 ## Example
@@ -27,21 +40,21 @@ from sailpoint.v2025.models.list_deploys200_response import ListDeploys200Respon
 list_deploys200_response = ListDeploys200Response(
 items=[
                     sailpoint.v2025.models.deploy_response.DeployResponse(
-                        job_id = '07659d7d-2cce-47c0-9e49-185787ee565a', 
-                        status = 'COMPLETE', 
-                        type = 'CONFIG_DEPLOY_DRAFT', 
-                        message = 'Deploy creation message', 
-                        requester_name = 'requester.name', 
-                        file_exists = True, 
-                        created = '2021-05-11T22:23:16Z', 
-                        modified = '2021-05-11T22:23:16Z', 
-                        completed = '2021-05-11T22:23:16Z', 
-                        draft_id = '07659d7d-2cce-47c0-9e49-185787ee565a', 
-                        draft_name = 'Draft Name', 
+                        job_id = '07659d7d-2cce-47c0-9e49-185787ee565a',
+                        status = 'COMPLETE',
+                        type = 'CONFIG_DEPLOY_DRAFT',
+                        message = 'Deploy creation message',
+                        requester_name = 'requester.name',
+                        file_exists = True,
+                        created = '2021-05-11T22:23:16Z',
+                        modified = '2021-05-11T22:23:16Z',
+                        completed = '2021-05-11T22:23:16Z',
+                        draft_id = '07659d7d-2cce-47c0-9e49-185787ee565a',
+                        draft_name = 'Draft Name',
                         cloud_storage_status = 'SYNCED', )
                     ]
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

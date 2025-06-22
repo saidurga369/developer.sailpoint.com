@@ -4,19 +4,32 @@ title: EntitlementDocumentAllOfManuallyUpdatedFields
 pagination_label: EntitlementDocumentAllOfManuallyUpdatedFields
 sidebar_label: EntitlementDocumentAllOfManuallyUpdatedFields
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'EntitlementDocumentAllOfManuallyUpdatedFields', 'V2025EntitlementDocumentAllOfManuallyUpdatedFields'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'EntitlementDocumentAllOfManuallyUpdatedFields',
+    'V2025EntitlementDocumentAllOfManuallyUpdatedFields',
+  ]
 slug: /tools/sdk/go/v2025/models/entitlement-document-all-of-manually-updated-fields
-tags: ['SDK', 'Software Development Kit', 'EntitlementDocumentAllOfManuallyUpdatedFields', 'V2025EntitlementDocumentAllOfManuallyUpdatedFields']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'EntitlementDocumentAllOfManuallyUpdatedFields',
+    'V2025EntitlementDocumentAllOfManuallyUpdatedFields',
+  ]
 ---
 
 # EntitlementDocumentAllOfManuallyUpdatedFields
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**DESCRIPTION** | Pointer to **bool** |  | [optional] [default to false]
-**DISPLAY_NAME** | Pointer to **bool** |  | [optional] [default to false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **DESCRIPTION** | Pointer to **bool** |  | [optional] [default to false] |
+| **DISPLAY_NAME** | Pointer to **bool** |  | [optional] [default to false] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewEntitlementDocumentAllOfManuallyUpdatedFields() *EntitlementDocumentAllOfManuallyUpdatedFields`
 
-NewEntitlementDocumentAllOfManuallyUpdatedFields instantiates a new EntitlementDocumentAllOfManuallyUpdatedFields object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewEntitlementDocumentAllOfManuallyUpdatedFields instantiates a new EntitlementDocumentAllOfManuallyUpdatedFields object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewEntitlementDocumentAllOfManuallyUpdatedFieldsWithDefaults
 
 `func NewEntitlementDocumentAllOfManuallyUpdatedFieldsWithDefaults() *EntitlementDocumentAllOfManuallyUpdatedFields`
 
-NewEntitlementDocumentAllOfManuallyUpdatedFieldsWithDefaults instantiates a new EntitlementDocumentAllOfManuallyUpdatedFields object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewEntitlementDocumentAllOfManuallyUpdatedFieldsWithDefaults instantiates a new EntitlementDocumentAllOfManuallyUpdatedFields object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetDESCRIPTION
 
@@ -47,8 +55,7 @@ GetDESCRIPTION returns the DESCRIPTION field if non-nil, zero value otherwise.
 
 `func (o *EntitlementDocumentAllOfManuallyUpdatedFields) GetDESCRIPTIONOk() (*bool, bool)`
 
-GetDESCRIPTIONOk returns a tuple with the DESCRIPTION field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDESCRIPTIONOk returns a tuple with the DESCRIPTION field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDESCRIPTION
 
@@ -72,8 +79,7 @@ GetDISPLAY_NAME returns the DISPLAY_NAME field if non-nil, zero value otherwise.
 
 `func (o *EntitlementDocumentAllOfManuallyUpdatedFields) GetDISPLAY_NAMEOk() (*bool, bool)`
 
-GetDISPLAY_NAMEOk returns a tuple with the DISPLAY_NAME field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDISPLAY_NAMEOk returns a tuple with the DISPLAY_NAME field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDISPLAY_NAME
 
@@ -86,5 +92,3 @@ SetDISPLAY_NAME sets DISPLAY_NAME field to given value.
 `func (o *EntitlementDocumentAllOfManuallyUpdatedFields) HasDISPLAY_NAME() bool`
 
 HasDISPLAY_NAME returns a boolean if a field has been set.
-
-

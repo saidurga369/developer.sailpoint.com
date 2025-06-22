@@ -4,19 +4,32 @@ title: ImportNonEmployeeRecordsInBulkRequest
 pagination_label: ImportNonEmployeeRecordsInBulkRequest
 sidebar_label: ImportNonEmployeeRecordsInBulkRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ImportNonEmployeeRecordsInBulkRequest', 'V2024ImportNonEmployeeRecordsInBulkRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ImportNonEmployeeRecordsInBulkRequest',
+    'V2024ImportNonEmployeeRecordsInBulkRequest',
+  ]
 slug: /tools/sdk/python/v2024/models/import-non-employee-records-in-bulk-request
-tags: ['SDK', 'Software Development Kit', 'ImportNonEmployeeRecordsInBulkRequest', 'V2024ImportNonEmployeeRecordsInBulkRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ImportNonEmployeeRecordsInBulkRequest',
+    'V2024ImportNonEmployeeRecordsInBulkRequest',
+  ]
 ---
 
 # ImportNonEmployeeRecordsInBulkRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**data** | **bytearray** |  | [required]
+| Name     | Type          | Description | Notes      |
+| -------- | ------------- | ----------- | ---------- |
+| **data** | **bytearray** |             | [required] |
+
 }
 
 ## Example
@@ -29,5 +42,5 @@ data=bytes(b'blah')
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

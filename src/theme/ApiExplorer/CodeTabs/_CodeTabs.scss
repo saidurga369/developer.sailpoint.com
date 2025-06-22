@@ -5,7 +5,7 @@
   --code-tab-logo-height: 24px;
 }
 
-[data-theme="dark"] {
+[data-theme='dark'] {
   --bash-background-color: lightgrey;
   --bash-border-radius: 20px;
 }
@@ -18,14 +18,12 @@
     background-color: var(--ifm-pre-background);
     border-radius: var(--ifm-global-radius);
     border: 1px solid var(--openapi-explorer-border-color);
-    box-shadow:
-      0 2px 3px hsla(222, 8%, 43%, 0.1),
+    box-shadow: 0 2px 3px hsla(222, 8%, 43%, 0.1),
       0 8px 16px -10px hsla(222, 8%, 43%, 0.2);
     transition: 300ms;
 
     &:hover {
-      box-shadow:
-        0 0 0 2px rgba(38, 53, 61, 0.15),
+      box-shadow: 0 0 0 2px rgba(38, 53, 61, 0.15),
         0 2px 3px hsla(222, 8%, 43%, 0.15),
         0 16px 16px -10px hsla(222, 8%, 43%, 0.2);
     }
@@ -76,7 +74,7 @@
   padding-top: var(--ifm-pre-padding);
 }
 
-body[class="ReactModal__Body--open"] {
+body[class='ReactModal__Body--open'] {
   .openapi-explorer__code-block code {
     max-height: 600px;
   }
@@ -114,10 +112,10 @@ body[class="ReactModal__Body--open"] {
   color: var(--ifm-color-success);
 
   &::after {
-    content: "";
+    content: '';
     width: var(--code-tab-logo-width);
     height: var(--code-tab-logo-height);
-    background: url("https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg")
+    background: url('https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg')
       no-repeat;
     margin-block: auto;
   }
@@ -132,10 +130,10 @@ body[class="ReactModal__Body--open"] {
   color: var(--ifm-color-info);
 
   &::after {
-    content: "";
+    content: '';
     width: var(--code-tab-logo-width);
     height: var(--code-tab-logo-height);
-    background: url("https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original-wordmark.svg")
+    background: url('https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original-wordmark.svg')
       no-repeat;
     margin-block: auto;
   }
@@ -150,10 +148,10 @@ body[class="ReactModal__Body--open"] {
   color: var(--ifm-color-info);
 
   &::after {
-    content: "";
+    content: '';
     width: var(--code-tab-logo-width);
     height: var(--code-tab-logo-height);
-    background: url("https://raw.githubusercontent.com/devicons/devicon/master/icons/dart/dart-original.svg")
+    background: url('https://raw.githubusercontent.com/devicons/devicon/master/icons/dart/dart-original.svg')
       no-repeat;
     margin-block: auto;
   }
@@ -168,10 +166,10 @@ body[class="ReactModal__Body--open"] {
   color: var(--ifm-color-warning);
 
   &::after {
-    content: "";
+    content: '';
     width: var(--code-tab-logo-width);
     height: var(--code-tab-logo-height);
-    background: url("https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg")
+    background: url('https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg')
       no-repeat;
     margin-block: auto;
   }
@@ -186,10 +184,10 @@ body[class="ReactModal__Body--open"] {
   color: var(--ifm-color-danger);
 
   &::after {
-    content: "";
+    content: '';
     width: var(--code-tab-logo-width);
     height: var(--code-tab-logo-height);
-    background: url("https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-plain.svg")
+    background: url('https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-plain.svg')
       no-repeat;
     margin-block: auto;
     background-color: var(--bash-background-color);
@@ -206,10 +204,10 @@ body[class="ReactModal__Body--open"] {
   color: var(--ifm-color-danger);
 
   &::after {
-    content: "";
+    content: '';
     width: var(--code-tab-logo-width);
     height: var(--code-tab-logo-height);
-    background: url("https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-plain.svg")
+    background: url('https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-plain.svg')
       no-repeat;
     margin-block: auto;
   }
@@ -224,10 +222,10 @@ body[class="ReactModal__Body--open"] {
   color: var(--ifm-color-gray-500);
 
   &::after {
-    content: "";
+    content: '';
     width: var(--code-tab-logo-width);
     height: var(--code-tab-logo-height);
-    background: url("https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg")
+    background: url('https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg')
       no-repeat;
     margin-block: auto;
   }
@@ -242,10 +240,10 @@ body[class="ReactModal__Body--open"] {
   color: var(--ifm-color-gray-500);
 
   &::after {
-    content: "";
+    content: '';
     width: var(--code-tab-logo-width);
     height: var(--code-tab-logo-height);
-    background: url("https://raw.githubusercontent.com/devicons/devicon/master/icons/r/r-original.svg")
+    background: url('https://raw.githubusercontent.com/devicons/devicon/master/icons/r/r-original.svg')
       no-repeat;
     margin-block: auto;
   }
@@ -260,10 +258,10 @@ body[class="ReactModal__Body--open"] {
   color: var(--ifm-color-danger);
 
   &::after {
-    content: "";
+    content: '';
     width: var(--code-tab-logo-width);
     height: var(--code-tab-logo-height);
-    background: url("https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg")
+    background: url('https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg')
       no-repeat;
     margin-block: auto;
   }
@@ -278,10 +276,10 @@ body[class="ReactModal__Body--open"] {
   color: var(--ifm-color-info);
 
   &::after {
-    content: "";
+    content: '';
     width: var(--code-tab-logo-width);
     height: var(--code-tab-logo-height);
-    background: url("https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg")
+    background: url('https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg')
       no-repeat;
     margin-block: auto;
   }
@@ -296,10 +294,10 @@ body[class="ReactModal__Body--open"] {
   color: var(--ifm-color-info);
 
   &::after {
-    content: "";
+    content: '';
     width: var(--code-tab-logo-width);
     height: var(--code-tab-logo-height);
-    background: url("https://raw.githubusercontent.com/devicons/devicon/master/icons/objectivec/objectivec-plain.svg")
+    background: url('https://raw.githubusercontent.com/devicons/devicon/master/icons/objectivec/objectivec-plain.svg')
       no-repeat;
     margin-block: auto;
   }
@@ -314,10 +312,10 @@ body[class="ReactModal__Body--open"] {
   color: var(--ifm-color-warning);
 
   &::after {
-    content: "";
+    content: '';
     width: var(--code-tab-logo-width);
     height: var(--code-tab-logo-height);
-    background: url("https://raw.githubusercontent.com/devicons/devicon/master/icons/ocaml/ocaml-original.svg")
+    background: url('https://raw.githubusercontent.com/devicons/devicon/master/icons/ocaml/ocaml-original.svg')
       no-repeat;
     margin-block: auto;
   }
@@ -332,10 +330,10 @@ body[class="ReactModal__Body--open"] {
   color: var(--ifm-color-success);
 
   &::after {
-    content: "";
+    content: '';
     width: var(--code-tab-logo-width);
     height: var(--code-tab-logo-height);
-    background: url("https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg")
+    background: url('https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg')
       no-repeat;
     margin-block: auto;
   }
@@ -350,10 +348,10 @@ body[class="ReactModal__Body--open"] {
   color: var(--ifm-color-gray-500);
 
   &::after {
-    content: "";
+    content: '';
     width: var(--code-tab-logo-width);
     height: var(--code-tab-logo-height);
-    background: url("https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg")
+    background: url('https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg')
       no-repeat;
     margin-block: auto;
   }
@@ -368,10 +366,10 @@ body[class="ReactModal__Body--open"] {
   color: var(--ifm-color-gray-500);
 
   &::after {
-    content: "";
+    content: '';
     width: var(--code-tab-logo-width);
     height: var(--code-tab-logo-height);
-    background: url("https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg")
+    background: url('https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg')
       no-repeat;
     margin-block: auto;
   }
@@ -386,10 +384,10 @@ body[class="ReactModal__Body--open"] {
   color: var(--ifm-color-gray-500);
 
   &::after {
-    content: "";
+    content: '';
     width: var(--code-tab-logo-width);
     height: var(--code-tab-logo-height);
-    background: url("https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-original.svg")
+    background: url('https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-original.svg')
       no-repeat;
     margin-block: auto;
   }
@@ -404,10 +402,10 @@ body[class="ReactModal__Body--open"] {
   color: var(--ifm-color-warning);
 
   &::after {
-    content: "";
+    content: '';
     width: var(--code-tab-logo-width);
     height: var(--code-tab-logo-height);
-    background: url("https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg")
+    background: url('https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg')
       no-repeat;
     margin-block: auto;
   }
@@ -422,10 +420,10 @@ body[class="ReactModal__Body--open"] {
   color: var(--ifm-color-info);
 
   &::after {
-    content: "";
+    content: '';
     width: var(--code-tab-logo-width);
     height: var(--code-tab-logo-height);
-    background: url("https://raw.githubusercontent.com/devicons/devicon/master/icons/windows8/windows8-original.svg")
+    background: url('https://raw.githubusercontent.com/devicons/devicon/master/icons/windows8/windows8-original.svg')
       no-repeat;
     margin-block: auto;
   }
@@ -444,11 +442,11 @@ body[class="ReactModal__Body--open"] {
   position: relative;
 
   &::after {
-    content: "";
+    content: '';
     display: inline-block;
     width: 32px; /* Explicitly setting width to 32 pixels */
     height: 32px; /* Explicitly setting height to 32 pixels */
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDIyTDggMTZMMTIgMTBNMjAgMjJMMjQgMTZMIDIwIDEwIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=");
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDIyTDggMTZMMTIgMTBNMjAgMjJMMjQgMTZMIDIwIDEwIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; /* Center the SVG */
@@ -469,11 +467,11 @@ body[class="ReactModal__Body--open"] {
   position: relative;
 
   &::after {
-    content: "";
+    content: '';
     display: inline-block;
     width: 32px; /* Explicitly setting width to 32 pixels */
     height: 32px; /* Explicitly setting height to 32 pixels */
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDIyTDggMTZMMTIgMTBNMjAgMjJMMjQgMTZMIDIwIDEwIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=");
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDIyTDggMTZMMTIgMTBNMjAgMjJMMjQgMTZMIDIwIDEwIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; /* Center the SVG */

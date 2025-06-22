@@ -32,7 +32,7 @@ export default function DocSidebarItemLink({
       {className?.includes('menu__list-item--experimental') ? (
         <span className="experimentalIcon" aria-hidden="true"></span>
       ) : null}
-       {className?.includes('menu__list-item--deprecated') ? (
+      {className?.includes('menu__list-item--deprecated') ? (
         <span className="deprecatedIcon" aria-hidden="true"></span>
       ) : null}
       <Link

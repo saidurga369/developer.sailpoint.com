@@ -4,21 +4,28 @@ title: ActivityIdentity
 pagination_label: ActivityIdentity
 sidebar_label: ActivityIdentity
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ActivityIdentity', 'V2024ActivityIdentity'] 
+keywords:
+  ['python', 'Python', 'sdk', 'ActivityIdentity', 'V2024ActivityIdentity']
 slug: /tools/sdk/python/v2024/models/activity-identity
-tags: ['SDK', 'Software Development Kit', 'ActivityIdentity', 'V2024ActivityIdentity']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ActivityIdentity',
+    'V2024ActivityIdentity',
+  ]
 ---
 
 # ActivityIdentity
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The unique ID of the referenced object. | [optional] 
-**name** | **str** | The human readable name of the referenced object. | [optional] 
-**type** | **str** | Type of object | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The unique ID of the referenced object. | [optional] |
+| **name** | **str** | The human readable name of the referenced object. | [optional] |
+| **type** | **str** | Type of object | [optional] |
+
 }
 
 ## Example
@@ -33,5 +40,5 @@ type='Identity'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

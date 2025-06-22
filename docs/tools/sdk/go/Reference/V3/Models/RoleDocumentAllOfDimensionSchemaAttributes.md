@@ -4,20 +4,33 @@ title: RoleDocumentAllOfDimensionSchemaAttributes
 pagination_label: RoleDocumentAllOfDimensionSchemaAttributes
 sidebar_label: RoleDocumentAllOfDimensionSchemaAttributes
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleDocumentAllOfDimensionSchemaAttributes', 'RoleDocumentAllOfDimensionSchemaAttributes'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'RoleDocumentAllOfDimensionSchemaAttributes',
+    'RoleDocumentAllOfDimensionSchemaAttributes',
+  ]
 slug: /tools/sdk/go/v3/models/role-document-all-of-dimension-schema-attributes
-tags: ['SDK', 'Software Development Kit', 'RoleDocumentAllOfDimensionSchemaAttributes', 'RoleDocumentAllOfDimensionSchemaAttributes']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleDocumentAllOfDimensionSchemaAttributes',
+    'RoleDocumentAllOfDimensionSchemaAttributes',
+  ]
 ---
 
 # RoleDocumentAllOfDimensionSchemaAttributes
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Derived** | Pointer to **bool** |  | [optional] [default to true]
-**DisplayName** | Pointer to **string** | Displayname of the dimension attribute. | [optional] 
-**Name** | Pointer to **string** | Name of the dimension attribute. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Derived** | Pointer to **bool** |  | [optional] [default to true] |
+| **DisplayName** | Pointer to **string** | Displayname of the dimension attribute. | [optional] |
+| **Name** | Pointer to **string** | Name of the dimension attribute. | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewRoleDocumentAllOfDimensionSchemaAttributes() *RoleDocumentAllOfDimensionSchemaAttributes`
 
-NewRoleDocumentAllOfDimensionSchemaAttributes instantiates a new RoleDocumentAllOfDimensionSchemaAttributes object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleDocumentAllOfDimensionSchemaAttributes instantiates a new RoleDocumentAllOfDimensionSchemaAttributes object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleDocumentAllOfDimensionSchemaAttributesWithDefaults
 
 `func NewRoleDocumentAllOfDimensionSchemaAttributesWithDefaults() *RoleDocumentAllOfDimensionSchemaAttributes`
 
-NewRoleDocumentAllOfDimensionSchemaAttributesWithDefaults instantiates a new RoleDocumentAllOfDimensionSchemaAttributes object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleDocumentAllOfDimensionSchemaAttributesWithDefaults instantiates a new RoleDocumentAllOfDimensionSchemaAttributes object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetDerived
 
@@ -48,8 +56,7 @@ GetDerived returns the Derived field if non-nil, zero value otherwise.
 
 `func (o *RoleDocumentAllOfDimensionSchemaAttributes) GetDerivedOk() (*bool, bool)`
 
-GetDerivedOk returns a tuple with the Derived field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDerivedOk returns a tuple with the Derived field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDerived
 
@@ -73,8 +80,7 @@ GetDisplayName returns the DisplayName field if non-nil, zero value otherwise.
 
 `func (o *RoleDocumentAllOfDimensionSchemaAttributes) GetDisplayNameOk() (*string, bool)`
 
-GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayName
 
@@ -98,8 +104,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *RoleDocumentAllOfDimensionSchemaAttributes) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -112,5 +117,3 @@ SetName sets Name field to given value.
 `func (o *RoleDocumentAllOfDimensionSchemaAttributes) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

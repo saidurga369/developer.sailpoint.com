@@ -4,19 +4,32 @@ title: VendorConnectorMappingUpdatedAt
 pagination_label: VendorConnectorMappingUpdatedAt
 sidebar_label: VendorConnectorMappingUpdatedAt
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'VendorConnectorMappingUpdatedAt', 'V2024VendorConnectorMappingUpdatedAt'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'VendorConnectorMappingUpdatedAt',
+    'V2024VendorConnectorMappingUpdatedAt',
+  ]
 slug: /tools/sdk/go/v2024/models/vendor-connector-mapping-updated-at
-tags: ['SDK', 'Software Development Kit', 'VendorConnectorMappingUpdatedAt', 'V2024VendorConnectorMappingUpdatedAt']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'VendorConnectorMappingUpdatedAt',
+    'V2024VendorConnectorMappingUpdatedAt',
+  ]
 ---
 
 # VendorConnectorMappingUpdatedAt
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Time** | Pointer to **SailPointTime** | The timestamp when the mapping was last updated, represented in ISO 8601 format. | [optional] 
-**Valid** | Pointer to **bool** | A flag indicating if the 'Time' field is set and valid. | [optional] [default to false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Time** | Pointer to **SailPointTime** | The timestamp when the mapping was last updated, represented in ISO 8601 format. | [optional] |
+| **Valid** | Pointer to **bool** | A flag indicating if the 'Time' field is set and valid. | [optional] [default to false] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewVendorConnectorMappingUpdatedAt() *VendorConnectorMappingUpdatedAt`
 
-NewVendorConnectorMappingUpdatedAt instantiates a new VendorConnectorMappingUpdatedAt object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewVendorConnectorMappingUpdatedAt instantiates a new VendorConnectorMappingUpdatedAt object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewVendorConnectorMappingUpdatedAtWithDefaults
 
 `func NewVendorConnectorMappingUpdatedAtWithDefaults() *VendorConnectorMappingUpdatedAt`
 
-NewVendorConnectorMappingUpdatedAtWithDefaults instantiates a new VendorConnectorMappingUpdatedAt object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewVendorConnectorMappingUpdatedAtWithDefaults instantiates a new VendorConnectorMappingUpdatedAt object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetTime
 
@@ -47,8 +55,7 @@ GetTime returns the Time field if non-nil, zero value otherwise.
 
 `func (o *VendorConnectorMappingUpdatedAt) GetTimeOk() (*SailPointTime, bool)`
 
-GetTimeOk returns a tuple with the Time field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTimeOk returns a tuple with the Time field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTime
 
@@ -72,8 +79,7 @@ GetValid returns the Valid field if non-nil, zero value otherwise.
 
 `func (o *VendorConnectorMappingUpdatedAt) GetValidOk() (*bool, bool)`
 
-GetValidOk returns a tuple with the Valid field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValidOk returns a tuple with the Valid field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValid
 
@@ -86,5 +92,3 @@ SetValid sets Valid field to given value.
 `func (o *VendorConnectorMappingUpdatedAt) HasValid() bool`
 
 HasValid returns a boolean if a field has been set.
-
-

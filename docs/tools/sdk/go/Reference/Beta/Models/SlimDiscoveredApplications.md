@@ -4,26 +4,39 @@ title: SlimDiscoveredApplications
 pagination_label: SlimDiscoveredApplications
 sidebar_label: SlimDiscoveredApplications
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SlimDiscoveredApplications', 'BetaSlimDiscoveredApplications'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'SlimDiscoveredApplications',
+    'BetaSlimDiscoveredApplications',
+  ]
 slug: /tools/sdk/go/beta/models/slim-discovered-applications
-tags: ['SDK', 'Software Development Kit', 'SlimDiscoveredApplications', 'BetaSlimDiscoveredApplications']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SlimDiscoveredApplications',
+    'BetaSlimDiscoveredApplications',
+  ]
 ---
 
 # SlimDiscoveredApplications
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Unique identifier for the discovered application. | [optional] 
-**Name** | Pointer to **string** | Name of the discovered application. | [optional] 
-**DiscoverySource** | Pointer to **string** | Source from which the application was discovered. | [optional] 
-**DiscoveredVendor** | Pointer to **string** | The vendor associated with the discovered application. | [optional] 
-**Description** | Pointer to **string** | A brief description of the discovered application. | [optional] 
-**RecommendedConnectors** | Pointer to **[]string** | List of recommended connectors for the application. | [optional] 
-**DiscoveredAt** | Pointer to **SailPointTime** | The timestamp when the application was last received via an entitlement aggregation invocation  or a manual csv upload, in ISO 8601 format. | [optional] 
-**CreatedAt** | Pointer to **SailPointTime** | The timestamp when the application was first discovered, in ISO 8601 format. | [optional] 
-**Status** | Pointer to **string** | The status of an application within the discovery source.  By default this field is set to \"ACTIVE\" when the application is discovered.  If an application has been deleted from within the discovery source, the status will be set to \"INACTIVE\". | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Unique identifier for the discovered application. | [optional] |
+| **Name** | Pointer to **string** | Name of the discovered application. | [optional] |
+| **DiscoverySource** | Pointer to **string** | Source from which the application was discovered. | [optional] |
+| **DiscoveredVendor** | Pointer to **string** | The vendor associated with the discovered application. | [optional] |
+| **Description** | Pointer to **string** | A brief description of the discovered application. | [optional] |
+| **RecommendedConnectors** | Pointer to **[]string** | List of recommended connectors for the application. | [optional] |
+| **DiscoveredAt** | Pointer to **SailPointTime** | The timestamp when the application was last received via an entitlement aggregation invocation or a manual csv upload, in ISO 8601 format. | [optional] |
+| **CreatedAt** | Pointer to **SailPointTime** | The timestamp when the application was first discovered, in ISO 8601 format. | [optional] |
+| **Status** | Pointer to **string** | The status of an application within the discovery source. By default this field is set to \"ACTIVE\" when the application is discovered. If an application has been deleted from within the discovery source, the status will be set to \"INACTIVE\". | [optional] |
 
 ## Methods
 
@@ -31,18 +44,13 @@ Name | Type | Description | Notes
 
 `func NewSlimDiscoveredApplications() *SlimDiscoveredApplications`
 
-NewSlimDiscoveredApplications instantiates a new SlimDiscoveredApplications object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSlimDiscoveredApplications instantiates a new SlimDiscoveredApplications object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSlimDiscoveredApplicationsWithDefaults
 
 `func NewSlimDiscoveredApplicationsWithDefaults() *SlimDiscoveredApplications`
 
-NewSlimDiscoveredApplicationsWithDefaults instantiates a new SlimDiscoveredApplications object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSlimDiscoveredApplicationsWithDefaults instantiates a new SlimDiscoveredApplications object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -54,8 +62,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *SlimDiscoveredApplications) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -79,8 +86,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *SlimDiscoveredApplications) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -104,8 +110,7 @@ GetDiscoverySource returns the DiscoverySource field if non-nil, zero value othe
 
 `func (o *SlimDiscoveredApplications) GetDiscoverySourceOk() (*string, bool)`
 
-GetDiscoverySourceOk returns a tuple with the DiscoverySource field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDiscoverySourceOk returns a tuple with the DiscoverySource field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDiscoverySource
 
@@ -129,8 +134,7 @@ GetDiscoveredVendor returns the DiscoveredVendor field if non-nil, zero value ot
 
 `func (o *SlimDiscoveredApplications) GetDiscoveredVendorOk() (*string, bool)`
 
-GetDiscoveredVendorOk returns a tuple with the DiscoveredVendor field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDiscoveredVendorOk returns a tuple with the DiscoveredVendor field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDiscoveredVendor
 
@@ -154,8 +158,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *SlimDiscoveredApplications) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -179,8 +182,7 @@ GetRecommendedConnectors returns the RecommendedConnectors field if non-nil, zer
 
 `func (o *SlimDiscoveredApplications) GetRecommendedConnectorsOk() (*[]string, bool)`
 
-GetRecommendedConnectorsOk returns a tuple with the RecommendedConnectors field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRecommendedConnectorsOk returns a tuple with the RecommendedConnectors field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRecommendedConnectors
 
@@ -204,8 +206,7 @@ GetDiscoveredAt returns the DiscoveredAt field if non-nil, zero value otherwise.
 
 `func (o *SlimDiscoveredApplications) GetDiscoveredAtOk() (*SailPointTime, bool)`
 
-GetDiscoveredAtOk returns a tuple with the DiscoveredAt field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDiscoveredAtOk returns a tuple with the DiscoveredAt field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDiscoveredAt
 
@@ -229,8 +230,7 @@ GetCreatedAt returns the CreatedAt field if non-nil, zero value otherwise.
 
 `func (o *SlimDiscoveredApplications) GetCreatedAtOk() (*SailPointTime, bool)`
 
-GetCreatedAtOk returns a tuple with the CreatedAt field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedAtOk returns a tuple with the CreatedAt field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreatedAt
 
@@ -254,8 +254,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *SlimDiscoveredApplications) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -268,5 +267,3 @@ SetStatus sets Status field to given value.
 `func (o *SlimDiscoveredApplications) HasStatus() bool`
 
 HasStatus returns a boolean if a field has been set.
-
-

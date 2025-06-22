@@ -4,24 +4,37 @@ title: ApprovalForwardHistory
 pagination_label: ApprovalForwardHistory
 sidebar_label: ApprovalForwardHistory
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ApprovalForwardHistory', 'V2024ApprovalForwardHistory'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ApprovalForwardHistory',
+    'V2024ApprovalForwardHistory',
+  ]
 slug: /tools/sdk/python/v2024/models/approval-forward-history
-tags: ['SDK', 'Software Development Kit', 'ApprovalForwardHistory', 'V2024ApprovalForwardHistory']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ApprovalForwardHistory',
+    'V2024ApprovalForwardHistory',
+  ]
 ---
 
 # ApprovalForwardHistory
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**old_approver_name** | **str** | Display name of approver from whom the approval was forwarded. | [optional] 
-**new_approver_name** | **str** | Display name of approver to whom the approval was forwarded. | [optional] 
-**comment** | **str** | Comment made while forwarding. | [optional] 
-**modified** | **datetime** | Time at which approval was forwarded. | [optional] 
-**forwarder_name** | **str** | Display name of forwarder who forwarded the approval. | [optional] 
-**reassignment_type** | [**ReassignmentType**](reassignment-type) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **old_approver_name** | **str** | Display name of approver from whom the approval was forwarded. | [optional] |
+| **new_approver_name** | **str** | Display name of approver to whom the approval was forwarded. | [optional] |
+| **comment** | **str** | Comment made while forwarding. | [optional] |
+| **modified** | **datetime** | Time at which approval was forwarded. | [optional] |
+| **forwarder_name** | **str** | Display name of forwarder who forwarded the approval. | [optional] |
+| **reassignment_type** | [**ReassignmentType**](reassignment-type) |  | [optional] |
+
 }
 
 ## Example
@@ -39,5 +52,5 @@ reassignment_type='AUTOMATIC_REASSIGNMENT'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

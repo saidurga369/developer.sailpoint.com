@@ -4,20 +4,33 @@ title: BulkIdentitiesAccountsResponse
 pagination_label: BulkIdentitiesAccountsResponse
 sidebar_label: BulkIdentitiesAccountsResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'BulkIdentitiesAccountsResponse', 'BetaBulkIdentitiesAccountsResponse'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'BulkIdentitiesAccountsResponse',
+    'BetaBulkIdentitiesAccountsResponse',
+  ]
 slug: /tools/sdk/go/beta/models/bulk-identities-accounts-response
-tags: ['SDK', 'Software Development Kit', 'BulkIdentitiesAccountsResponse', 'BetaBulkIdentitiesAccountsResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'BulkIdentitiesAccountsResponse',
+    'BetaBulkIdentitiesAccountsResponse',
+  ]
 ---
 
 # BulkIdentitiesAccountsResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Identifier of bulk request item. | [optional] 
-**StatusCode** | Pointer to **int32** | Response status value. | [optional] 
-**Message** | Pointer to **string** | Status containing additional context information about failures. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Identifier of bulk request item. | [optional] |
+| **StatusCode** | Pointer to **int32** | Response status value. | [optional] |
+| **Message** | Pointer to **string** | Status containing additional context information about failures. | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewBulkIdentitiesAccountsResponse() *BulkIdentitiesAccountsResponse`
 
-NewBulkIdentitiesAccountsResponse instantiates a new BulkIdentitiesAccountsResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewBulkIdentitiesAccountsResponse instantiates a new BulkIdentitiesAccountsResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewBulkIdentitiesAccountsResponseWithDefaults
 
 `func NewBulkIdentitiesAccountsResponseWithDefaults() *BulkIdentitiesAccountsResponse`
 
-NewBulkIdentitiesAccountsResponseWithDefaults instantiates a new BulkIdentitiesAccountsResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewBulkIdentitiesAccountsResponseWithDefaults instantiates a new BulkIdentitiesAccountsResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -48,8 +56,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *BulkIdentitiesAccountsResponse) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -73,8 +80,7 @@ GetStatusCode returns the StatusCode field if non-nil, zero value otherwise.
 
 `func (o *BulkIdentitiesAccountsResponse) GetStatusCodeOk() (*int32, bool)`
 
-GetStatusCodeOk returns a tuple with the StatusCode field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusCodeOk returns a tuple with the StatusCode field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatusCode
 
@@ -98,8 +104,7 @@ GetMessage returns the Message field if non-nil, zero value otherwise.
 
 `func (o *BulkIdentitiesAccountsResponse) GetMessageOk() (*string, bool)`
 
-GetMessageOk returns a tuple with the Message field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMessageOk returns a tuple with the Message field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMessage
 
@@ -112,5 +117,3 @@ SetMessage sets Message field to given value.
 `func (o *BulkIdentitiesAccountsResponse) HasMessage() bool`
 
 HasMessage returns a boolean if a field has been set.
-
-

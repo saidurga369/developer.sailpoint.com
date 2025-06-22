@@ -4,31 +4,44 @@ title: LoadUncorrelatedAccountsTaskTask
 pagination_label: LoadUncorrelatedAccountsTaskTask
 sidebar_label: LoadUncorrelatedAccountsTaskTask
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'LoadUncorrelatedAccountsTaskTask', 'V2025LoadUncorrelatedAccountsTaskTask'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'LoadUncorrelatedAccountsTaskTask',
+    'V2025LoadUncorrelatedAccountsTaskTask',
+  ]
 slug: /tools/sdk/go/v2025/models/load-uncorrelated-accounts-task-task
-tags: ['SDK', 'Software Development Kit', 'LoadUncorrelatedAccountsTaskTask', 'V2025LoadUncorrelatedAccountsTaskTask']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'LoadUncorrelatedAccountsTaskTask',
+    'V2025LoadUncorrelatedAccountsTaskTask',
+  ]
 ---
 
 # LoadUncorrelatedAccountsTaskTask
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | System-generated unique ID of the task this taskStatus represents | [optional] 
-**Type** | Pointer to **string** | Type of task this task represents | [optional] 
-**Name** | Pointer to **string** | The name of uncorrelated accounts process | [optional] 
-**Description** | Pointer to **string** | The description of the task | [optional] 
-**Launcher** | Pointer to **string** | The user who initiated the task | [optional] 
-**Created** | Pointer to **SailPointTime** | The Task creation date | [optional] 
-**Launched** | Pointer to **NullableTime** | The task start date | [optional] 
-**Completed** | Pointer to **NullableTime** | The task completion date | [optional] 
-**CompletionStatus** | Pointer to **NullableString** | Task completion status. | [optional] 
-**ParentName** | Pointer to **NullableString** | Name of the parent task if exists. | [optional] 
-**Messages** | Pointer to [**[]LoadUncorrelatedAccountsTaskTaskMessagesInner**](load-uncorrelated-accounts-task-task-messages-inner) | List of the messages dedicated to the report.  From task definition perspective here usually should be warnings or errors. | [optional] 
-**Progress** | Pointer to **NullableString** | Current task state. | [optional] 
-**Attributes** | Pointer to [**LoadUncorrelatedAccountsTaskTaskAttributes**](load-uncorrelated-accounts-task-task-attributes) |  | [optional] 
-**Returns** | Pointer to **map[string]interface{}** | Return values from the task | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | System-generated unique ID of the task this taskStatus represents | [optional] |
+| **Type** | Pointer to **string** | Type of task this task represents | [optional] |
+| **Name** | Pointer to **string** | The name of uncorrelated accounts process | [optional] |
+| **Description** | Pointer to **string** | The description of the task | [optional] |
+| **Launcher** | Pointer to **string** | The user who initiated the task | [optional] |
+| **Created** | Pointer to **SailPointTime** | The Task creation date | [optional] |
+| **Launched** | Pointer to **NullableTime** | The task start date | [optional] |
+| **Completed** | Pointer to **NullableTime** | The task completion date | [optional] |
+| **CompletionStatus** | Pointer to **NullableString** | Task completion status. | [optional] |
+| **ParentName** | Pointer to **NullableString** | Name of the parent task if exists. | [optional] |
+| **Messages** | Pointer to [**[]LoadUncorrelatedAccountsTaskTaskMessagesInner**](load-uncorrelated-accounts-task-task-messages-inner) | List of the messages dedicated to the report. From task definition perspective here usually should be warnings or errors. | [optional] |
+| **Progress** | Pointer to **NullableString** | Current task state. | [optional] |
+| **Attributes** | Pointer to [**LoadUncorrelatedAccountsTaskTaskAttributes**](load-uncorrelated-accounts-task-task-attributes) |  | [optional] |
+| **Returns** | Pointer to **map[string]interface{}** | Return values from the task | [optional] |
 
 ## Methods
 
@@ -36,18 +49,13 @@ Name | Type | Description | Notes
 
 `func NewLoadUncorrelatedAccountsTaskTask() *LoadUncorrelatedAccountsTaskTask`
 
-NewLoadUncorrelatedAccountsTaskTask instantiates a new LoadUncorrelatedAccountsTaskTask object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewLoadUncorrelatedAccountsTaskTask instantiates a new LoadUncorrelatedAccountsTaskTask object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewLoadUncorrelatedAccountsTaskTaskWithDefaults
 
 `func NewLoadUncorrelatedAccountsTaskTaskWithDefaults() *LoadUncorrelatedAccountsTaskTask`
 
-NewLoadUncorrelatedAccountsTaskTaskWithDefaults instantiates a new LoadUncorrelatedAccountsTaskTask object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewLoadUncorrelatedAccountsTaskTaskWithDefaults instantiates a new LoadUncorrelatedAccountsTaskTask object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -59,8 +67,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *LoadUncorrelatedAccountsTaskTask) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -84,8 +91,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *LoadUncorrelatedAccountsTaskTask) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -109,8 +115,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *LoadUncorrelatedAccountsTaskTask) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -134,8 +139,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *LoadUncorrelatedAccountsTaskTask) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -159,8 +163,7 @@ GetLauncher returns the Launcher field if non-nil, zero value otherwise.
 
 `func (o *LoadUncorrelatedAccountsTaskTask) GetLauncherOk() (*string, bool)`
 
-GetLauncherOk returns a tuple with the Launcher field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLauncherOk returns a tuple with the Launcher field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLauncher
 
@@ -184,8 +187,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *LoadUncorrelatedAccountsTaskTask) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -209,8 +211,7 @@ GetLaunched returns the Launched field if non-nil, zero value otherwise.
 
 `func (o *LoadUncorrelatedAccountsTaskTask) GetLaunchedOk() (*SailPointTime, bool)`
 
-GetLaunchedOk returns a tuple with the Launched field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLaunchedOk returns a tuple with the Launched field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLaunched
 
@@ -228,12 +229,14 @@ HasLaunched returns a boolean if a field has been set.
 
 `func (o *LoadUncorrelatedAccountsTaskTask) SetLaunchedNil(b bool)`
 
- SetLaunchedNil sets the value for Launched to be an explicit nil
+SetLaunchedNil sets the value for Launched to be an explicit nil
 
 ### UnsetLaunched
+
 `func (o *LoadUncorrelatedAccountsTaskTask) UnsetLaunched()`
 
 UnsetLaunched ensures that no value is present for Launched, not even an explicit nil
+
 ### GetCompleted
 
 `func (o *LoadUncorrelatedAccountsTaskTask) GetCompleted() SailPointTime`
@@ -244,8 +247,7 @@ GetCompleted returns the Completed field if non-nil, zero value otherwise.
 
 `func (o *LoadUncorrelatedAccountsTaskTask) GetCompletedOk() (*SailPointTime, bool)`
 
-GetCompletedOk returns a tuple with the Completed field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCompletedOk returns a tuple with the Completed field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCompleted
 
@@ -263,12 +265,14 @@ HasCompleted returns a boolean if a field has been set.
 
 `func (o *LoadUncorrelatedAccountsTaskTask) SetCompletedNil(b bool)`
 
- SetCompletedNil sets the value for Completed to be an explicit nil
+SetCompletedNil sets the value for Completed to be an explicit nil
 
 ### UnsetCompleted
+
 `func (o *LoadUncorrelatedAccountsTaskTask) UnsetCompleted()`
 
 UnsetCompleted ensures that no value is present for Completed, not even an explicit nil
+
 ### GetCompletionStatus
 
 `func (o *LoadUncorrelatedAccountsTaskTask) GetCompletionStatus() string`
@@ -279,8 +283,7 @@ GetCompletionStatus returns the CompletionStatus field if non-nil, zero value ot
 
 `func (o *LoadUncorrelatedAccountsTaskTask) GetCompletionStatusOk() (*string, bool)`
 
-GetCompletionStatusOk returns a tuple with the CompletionStatus field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCompletionStatusOk returns a tuple with the CompletionStatus field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCompletionStatus
 
@@ -298,12 +301,14 @@ HasCompletionStatus returns a boolean if a field has been set.
 
 `func (o *LoadUncorrelatedAccountsTaskTask) SetCompletionStatusNil(b bool)`
 
- SetCompletionStatusNil sets the value for CompletionStatus to be an explicit nil
+SetCompletionStatusNil sets the value for CompletionStatus to be an explicit nil
 
 ### UnsetCompletionStatus
+
 `func (o *LoadUncorrelatedAccountsTaskTask) UnsetCompletionStatus()`
 
 UnsetCompletionStatus ensures that no value is present for CompletionStatus, not even an explicit nil
+
 ### GetParentName
 
 `func (o *LoadUncorrelatedAccountsTaskTask) GetParentName() string`
@@ -314,8 +319,7 @@ GetParentName returns the ParentName field if non-nil, zero value otherwise.
 
 `func (o *LoadUncorrelatedAccountsTaskTask) GetParentNameOk() (*string, bool)`
 
-GetParentNameOk returns a tuple with the ParentName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetParentNameOk returns a tuple with the ParentName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetParentName
 
@@ -333,12 +337,14 @@ HasParentName returns a boolean if a field has been set.
 
 `func (o *LoadUncorrelatedAccountsTaskTask) SetParentNameNil(b bool)`
 
- SetParentNameNil sets the value for ParentName to be an explicit nil
+SetParentNameNil sets the value for ParentName to be an explicit nil
 
 ### UnsetParentName
+
 `func (o *LoadUncorrelatedAccountsTaskTask) UnsetParentName()`
 
 UnsetParentName ensures that no value is present for ParentName, not even an explicit nil
+
 ### GetMessages
 
 `func (o *LoadUncorrelatedAccountsTaskTask) GetMessages() []LoadUncorrelatedAccountsTaskTaskMessagesInner`
@@ -349,8 +355,7 @@ GetMessages returns the Messages field if non-nil, zero value otherwise.
 
 `func (o *LoadUncorrelatedAccountsTaskTask) GetMessagesOk() (*[]LoadUncorrelatedAccountsTaskTaskMessagesInner, bool)`
 
-GetMessagesOk returns a tuple with the Messages field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMessagesOk returns a tuple with the Messages field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMessages
 
@@ -374,8 +379,7 @@ GetProgress returns the Progress field if non-nil, zero value otherwise.
 
 `func (o *LoadUncorrelatedAccountsTaskTask) GetProgressOk() (*string, bool)`
 
-GetProgressOk returns a tuple with the Progress field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProgressOk returns a tuple with the Progress field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProgress
 
@@ -393,12 +397,14 @@ HasProgress returns a boolean if a field has been set.
 
 `func (o *LoadUncorrelatedAccountsTaskTask) SetProgressNil(b bool)`
 
- SetProgressNil sets the value for Progress to be an explicit nil
+SetProgressNil sets the value for Progress to be an explicit nil
 
 ### UnsetProgress
+
 `func (o *LoadUncorrelatedAccountsTaskTask) UnsetProgress()`
 
 UnsetProgress ensures that no value is present for Progress, not even an explicit nil
+
 ### GetAttributes
 
 `func (o *LoadUncorrelatedAccountsTaskTask) GetAttributes() LoadUncorrelatedAccountsTaskTaskAttributes`
@@ -409,8 +415,7 @@ GetAttributes returns the Attributes field if non-nil, zero value otherwise.
 
 `func (o *LoadUncorrelatedAccountsTaskTask) GetAttributesOk() (*LoadUncorrelatedAccountsTaskTaskAttributes, bool)`
 
-GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributes
 
@@ -434,8 +439,7 @@ GetReturns returns the Returns field if non-nil, zero value otherwise.
 
 `func (o *LoadUncorrelatedAccountsTaskTask) GetReturnsOk() (*map[string]interface{}, bool)`
 
-GetReturnsOk returns a tuple with the Returns field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReturnsOk returns a tuple with the Returns field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReturns
 
@@ -448,5 +452,3 @@ SetReturns sets Returns field to given value.
 `func (o *LoadUncorrelatedAccountsTaskTask) HasReturns() bool`
 
 HasReturns returns a boolean if a field has been set.
-
-

@@ -4,9 +4,22 @@ title: MultiHostIntegrationsCreateSources
 pagination_label: MultiHostIntegrationsCreateSources
 sidebar_label: MultiHostIntegrationsCreateSources
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'MultiHostIntegrationsCreateSources', 'V2024MultiHostIntegrationsCreateSources'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'MultiHostIntegrationsCreateSources',
+    'V2024MultiHostIntegrationsCreateSources',
+  ]
 slug: /tools/sdk/python/v2024/models/multi-host-integrations-create-sources
-tags: ['SDK', 'Software Development Kit', 'MultiHostIntegrationsCreateSources', 'V2024MultiHostIntegrationsCreateSources']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'MultiHostIntegrationsCreateSources',
+    'V2024MultiHostIntegrationsCreateSources',
+  ]
 ---
 
 # MultiHostIntegrationsCreateSources
@@ -15,11 +28,12 @@ This represents sources to be created of same type.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | Source's human-readable name. | [required]
-**description** | **str** | Source's human-readable description. | [optional] 
-**connector_attributes** | **map[string]object** | Connector specific configuration. This configuration will differ from type to type. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **name** | **str** | Source's human-readable name. | [required] |
+| **description** | **str** | Source's human-readable description. | [optional] |
+| **connector_attributes** | **map[string]object** | Connector specific configuration. This configuration will differ from type to type. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ connector_attributes={authType=SQLAuthentication, url=jdbc:sqlserver://178.18.41
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

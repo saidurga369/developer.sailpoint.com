@@ -4,26 +4,39 @@ title: SourceClassificationStatus
 pagination_label: SourceClassificationStatus
 sidebar_label: SourceClassificationStatus
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'SourceClassificationStatus', 'V2025SourceClassificationStatus'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'SourceClassificationStatus',
+    'V2025SourceClassificationStatus',
+  ]
 slug: /tools/sdk/powershell/v2025/models/source-classification-status
-tags: ['SDK', 'Software Development Kit', 'SourceClassificationStatus', 'V2025SourceClassificationStatus']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SourceClassificationStatus',
+    'V2025SourceClassificationStatus',
+  ]
 ---
-
 
 # SourceClassificationStatus
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Status** |  **Enum** [  "STARTED",    "COLLECTED",    "COMPLETED",    "CANCELLED",    "TERMINATED" ] | Status of Classification Process | [optional] 
-**Started** | **System.DateTime** | Time when the process was started | [optional] 
-**Updated** | **System.DateTime** | Time when the process status was last updated | [optional] 
-**Counts** | [**SourceClassificationStatusAllOfCounts**](source-classification-status-all-of-counts) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Status** | **Enum** [ "STARTED", "COLLECTED", "COMPLETED", "CANCELLED", "TERMINATED" ] | Status of Classification Process | [optional] |
+| **Started** | **System.DateTime** | Time when the process was started | [optional] |
+| **Updated** | **System.DateTime** | Time when the process status was last updated | [optional] |
+| **Counts** | [**SourceClassificationStatusAllOfCounts**](source-classification-status-all-of-counts) |  | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $SourceClassificationStatus = Initialize-V2025SourceClassificationStatus  -Status COMPLETED `
  -Started 2017-07-11T18:45:37.098Z `
@@ -32,10 +45,9 @@ $SourceClassificationStatus = Initialize-V2025SourceClassificationStatus  -Statu
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $SourceClassificationStatus | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

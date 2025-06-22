@@ -4,31 +4,44 @@ title: RoleAssignmentDto
 pagination_label: RoleAssignmentDto
 sidebar_label: RoleAssignmentDto
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'RoleAssignmentDto', 'BetaRoleAssignmentDto'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'RoleAssignmentDto',
+    'BetaRoleAssignmentDto',
+  ]
 slug: /tools/sdk/powershell/beta/models/role-assignment-dto
-tags: ['SDK', 'Software Development Kit', 'RoleAssignmentDto', 'BetaRoleAssignmentDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleAssignmentDto',
+    'BetaRoleAssignmentDto',
+  ]
 ---
-
 
 # RoleAssignmentDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | Assignment Id | [optional] 
-**Role** | [**BaseReferenceDto1**](base-reference-dto1) |  | [optional] 
-**Comments** | **String** | Comments added by the user when the assignment was made | [optional] 
-**AssignmentSource** | **String** | Source describing how this assignment was made | [optional] 
-**Assigner** | [**BaseReferenceDto1**](base-reference-dto1) |  | [optional] 
-**AssignedDimensions** | [**[]BaseReferenceDto1**](base-reference-dto1) | Dimensions assigned related to this role | [optional] 
-**AssignmentContext** | [**AssignmentContextDto**](assignment-context-dto) |  | [optional] 
-**AccountTargets** | [**[]RoleTargetDto**](role-target-dto) |  | [optional] 
-**RemoveDate** | **String** | Date that the assignment will be removed | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | Assignment Id | [optional] |
+| **Role** | [**BaseReferenceDto1**](base-reference-dto1) |  | [optional] |
+| **Comments** | **String** | Comments added by the user when the assignment was made | [optional] |
+| **AssignmentSource** | **String** | Source describing how this assignment was made | [optional] |
+| **Assigner** | [**BaseReferenceDto1**](base-reference-dto1) |  | [optional] |
+| **AssignedDimensions** | [**[]BaseReferenceDto1**](base-reference-dto1) | Dimensions assigned related to this role | [optional] |
+| **AssignmentContext** | [**AssignmentContextDto**](assignment-context-dto) |  | [optional] |
+| **AccountTargets** | [**[]RoleTargetDto**](role-target-dto) |  | [optional] |
+| **RemoveDate** | **String** | Date that the assignment will be removed | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $RoleAssignmentDto = Initialize-BetaRoleAssignmentDto  -Id 1cbb0705b38c4226b1334eadd8874086 `
  -Role null `
@@ -42,10 +55,9 @@ $RoleAssignmentDto = Initialize-BetaRoleAssignmentDto  -Id 1cbb0705b38c4226b1334
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $RoleAssignmentDto | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

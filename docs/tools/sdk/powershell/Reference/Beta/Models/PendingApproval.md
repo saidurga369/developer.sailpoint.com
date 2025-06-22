@@ -4,43 +4,45 @@ title: PendingApproval
 pagination_label: PendingApproval
 sidebar_label: PendingApproval
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'PendingApproval', 'BetaPendingApproval'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'PendingApproval', 'BetaPendingApproval']
 slug: /tools/sdk/powershell/beta/models/pending-approval
-tags: ['SDK', 'Software Development Kit', 'PendingApproval', 'BetaPendingApproval']
+tags:
+  ['SDK', 'Software Development Kit', 'PendingApproval', 'BetaPendingApproval']
 ---
-
 
 # PendingApproval
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | The approval id. | [optional] 
-**Name** | **String** | The name of the approval. | [optional] 
-**Created** | **System.DateTime** | When the approval was created. | [optional] 
-**Modified** | **System.DateTime** | When the approval was modified last time. | [optional] 
-**RequestCreated** | **System.DateTime** | When the access-request was created. | [optional] 
-**RequestType** | [**AccessRequestType**](access-request-type) |  | [optional] 
-**Requester** | [**AccessItemRequesterDto**](access-item-requester-dto) |  | [optional] 
-**RequestedFor** | [**AccessItemRequestedForDto**](access-item-requested-for-dto) |  | [optional] 
-**Owner** | [**AccessItemOwnerDto**](access-item-owner-dto) |  | [optional] 
-**RequestedObject** | [**RequestableObjectReference**](requestable-object-reference) |  | [optional] 
-**RequesterComment** | [**CommentDto1**](comment-dto1) |  | [optional] 
-**PreviousReviewersComments** | [**[]CommentDto1**](comment-dto1) | The history of the previous reviewers comments. | [optional] 
-**ForwardHistory** | [**[]ApprovalForwardHistory**](approval-forward-history) | The history of approval forward action. | [optional] 
-**CommentRequiredWhenRejected** | **Boolean** | When true the rejector has to provide comments when rejecting | [optional] [default to $false]
-**ActionInProcess** | [**PendingApprovalAction**](pending-approval-action) |  | [optional] 
-**RemoveDate** | **System.DateTime** | The date the role or access profile or entitlement is no longer assigned to the specified identity. | [optional] 
-**RemoveDateUpdateRequested** | **Boolean** | If true, then the request is to change the remove date or sunset date. | [optional] [default to $false]
-**CurrentRemoveDate** | **System.DateTime** | The remove date or sunset date that was assigned at the time of the request. | [optional] 
-**SodViolationContext** | [**SodViolationContextCheckCompleted1**](sod-violation-context-check-completed1) |  | [optional] 
-**ClientMetadata** | **map[string]String** | Arbitrary key-value pairs, if any were included in the corresponding access request item | [optional] 
-**RequestedAccounts** | [**[]RequestedAccountRef**](requested-account-ref) | The accounts selected by the user for the access to be provisioned on, in case they have multiple accounts on one or more sources. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | The approval id. | [optional] |
+| **Name** | **String** | The name of the approval. | [optional] |
+| **Created** | **System.DateTime** | When the approval was created. | [optional] |
+| **Modified** | **System.DateTime** | When the approval was modified last time. | [optional] |
+| **RequestCreated** | **System.DateTime** | When the access-request was created. | [optional] |
+| **RequestType** | [**AccessRequestType**](access-request-type) |  | [optional] |
+| **Requester** | [**AccessItemRequesterDto**](access-item-requester-dto) |  | [optional] |
+| **RequestedFor** | [**AccessItemRequestedForDto**](access-item-requested-for-dto) |  | [optional] |
+| **Owner** | [**AccessItemOwnerDto**](access-item-owner-dto) |  | [optional] |
+| **RequestedObject** | [**RequestableObjectReference**](requestable-object-reference) |  | [optional] |
+| **RequesterComment** | [**CommentDto1**](comment-dto1) |  | [optional] |
+| **PreviousReviewersComments** | [**[]CommentDto1**](comment-dto1) | The history of the previous reviewers comments. | [optional] |
+| **ForwardHistory** | [**[]ApprovalForwardHistory**](approval-forward-history) | The history of approval forward action. | [optional] |
+| **CommentRequiredWhenRejected** | **Boolean** | When true the rejector has to provide comments when rejecting | [optional] [default to $false] |
+| **ActionInProcess** | [**PendingApprovalAction**](pending-approval-action) |  | [optional] |
+| **RemoveDate** | **System.DateTime** | The date the role or access profile or entitlement is no longer assigned to the specified identity. | [optional] |
+| **RemoveDateUpdateRequested** | **Boolean** | If true, then the request is to change the remove date or sunset date. | [optional] [default to $false] |
+| **CurrentRemoveDate** | **System.DateTime** | The remove date or sunset date that was assigned at the time of the request. | [optional] |
+| **SodViolationContext** | [**SodViolationContextCheckCompleted1**](sod-violation-context-check-completed1) |  | [optional] |
+| **ClientMetadata** | **map[string]String** | Arbitrary key-value pairs, if any were included in the corresponding access request item | [optional] |
+| **RequestedAccounts** | [**[]RequestedAccountRef**](requested-account-ref) | The accounts selected by the user for the access to be provisioned on, in case they have multiple accounts on one or more sources. | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $PendingApproval = Initialize-BetaPendingApproval  -Id 2c9180835d2e5168015d32f890ca1581 `
  -Name Pending approval name `
@@ -66,10 +68,9 @@ $PendingApproval = Initialize-BetaPendingApproval  -Id 2c9180835d2e5168015d32f89
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $PendingApproval | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

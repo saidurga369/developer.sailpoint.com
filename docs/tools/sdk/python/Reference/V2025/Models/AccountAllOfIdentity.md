@@ -4,9 +4,22 @@ title: AccountAllOfIdentity
 pagination_label: AccountAllOfIdentity
 sidebar_label: AccountAllOfIdentity
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccountAllOfIdentity', 'V2025AccountAllOfIdentity'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccountAllOfIdentity',
+    'V2025AccountAllOfIdentity',
+  ]
 slug: /tools/sdk/python/v2025/models/account-all-of-identity
-tags: ['SDK', 'Software Development Kit', 'AccountAllOfIdentity', 'V2025AccountAllOfIdentity']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountAllOfIdentity',
+    'V2025AccountAllOfIdentity',
+  ]
 ---
 
 # AccountAllOfIdentity
@@ -15,11 +28,12 @@ The identity this account is correlated to
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The ID of the identity | [optional] 
-**type** |  **Enum** [  'IDENTITY' ] | The type of object being referenced | [optional] 
-**name** | **str** | display name of identity | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The ID of the identity | [optional] |
+| **type** | **Enum** [ 'IDENTITY' ] | The type of object being referenced | [optional] |
+| **name** | **str** | display name of identity | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='John Doe'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

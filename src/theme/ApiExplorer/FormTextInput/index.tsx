@@ -1,9 +1,9 @@
 // @ts-nocheck
-import React from "react";
+import React from 'react';
 
-import { ErrorMessage } from "@hookform/error-message";
-import clsx from "clsx";
-import { useFormContext } from "react-hook-form";
+import {ErrorMessage} from '@hookform/error-message';
+import clsx from 'clsx';
+import {useFormContext} from 'react-hook-form';
 
 export interface Props {
   value?: string;
@@ -20,11 +20,11 @@ function FormTextInput({
   onChange,
   paramName,
 }: Props) {
-  placeholder = placeholder?.split("\n")[0];
+  placeholder = placeholder?.split('\n')[0];
 
   const {
     register,
-    formState: { errors },
+    formState: {errors},
   } = useFormContext();
 
   const showErrorMessage = errors?.[paramName]?.message;
@@ -34,12 +34,12 @@ function FormTextInput({
       {paramName ? (
         <input
           {...register(paramName, {
-            required: isRequired ? "This field is required" : false,
+            required: isRequired ? 'This field is required' : false,
           })}
-          className={clsx("openapi-explorer__form-item-input", {
+          className={clsx('openapi-explorer__form-item-input', {
             error: showErrorMessage,
           })}
-          type={password ? "password" : "text"}
+          type={password ? 'password' : 'text'}
           placeholder={placeholder}
           title={placeholder}
           value={value}
@@ -49,7 +49,7 @@ function FormTextInput({
       ) : (
         <input
           className="openapi-explorer__form-item-input"
-          type={password ? "password" : "text"}
+          type={password ? 'password' : 'text'}
           placeholder={placeholder}
           title={placeholder}
           value={value}
@@ -61,7 +61,7 @@ function FormTextInput({
         <ErrorMessage
           errors={errors}
           name={paramName}
-          render={({ message }) => (
+          render={({message}) => (
             <div className="openapi-explorer__input-error">{message}</div>
           )}
         />

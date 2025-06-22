@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import VideoCards from '../components/video-library/VideoCards';
@@ -16,11 +16,13 @@ interface FilterData {
 }
 
 const VideoLibrary: React.FC = () => {
-  const [filteredProduct, setFilteredProduct] = useState<FilterState>({ tags: [] });
-  const { siteConfig } = useDocusaurusContext();
+  const [filteredProduct, setFilteredProduct] = useState<FilterState>({
+    tags: [],
+  });
+  const {siteConfig} = useDocusaurusContext();
 
   const handleClick = (data: FilterData) => {
-    setFilteredProduct({ tags: data.tag });
+    setFilteredProduct({tags: data.tag});
   };
 
   return (

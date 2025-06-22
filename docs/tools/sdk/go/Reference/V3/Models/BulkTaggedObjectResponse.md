@@ -4,19 +4,32 @@ title: BulkTaggedObjectResponse
 pagination_label: BulkTaggedObjectResponse
 sidebar_label: BulkTaggedObjectResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'BulkTaggedObjectResponse', 'BulkTaggedObjectResponse'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'BulkTaggedObjectResponse',
+    'BulkTaggedObjectResponse',
+  ]
 slug: /tools/sdk/go/v3/models/bulk-tagged-object-response
-tags: ['SDK', 'Software Development Kit', 'BulkTaggedObjectResponse', 'BulkTaggedObjectResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'BulkTaggedObjectResponse',
+    'BulkTaggedObjectResponse',
+  ]
 ---
 
 # BulkTaggedObjectResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ObjectRefs** | Pointer to [**[]TaggedObjectDto**](tagged-object-dto) |  | [optional] 
-**Tags** | Pointer to **[]string** | Label to be applied to an Object | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ObjectRefs** | Pointer to [**[]TaggedObjectDto**](tagged-object-dto) |  | [optional] |
+| **Tags** | Pointer to **[]string** | Label to be applied to an Object | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewBulkTaggedObjectResponse() *BulkTaggedObjectResponse`
 
-NewBulkTaggedObjectResponse instantiates a new BulkTaggedObjectResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewBulkTaggedObjectResponse instantiates a new BulkTaggedObjectResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewBulkTaggedObjectResponseWithDefaults
 
 `func NewBulkTaggedObjectResponseWithDefaults() *BulkTaggedObjectResponse`
 
-NewBulkTaggedObjectResponseWithDefaults instantiates a new BulkTaggedObjectResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewBulkTaggedObjectResponseWithDefaults instantiates a new BulkTaggedObjectResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetObjectRefs
 
@@ -47,8 +55,7 @@ GetObjectRefs returns the ObjectRefs field if non-nil, zero value otherwise.
 
 `func (o *BulkTaggedObjectResponse) GetObjectRefsOk() (*[]TaggedObjectDto, bool)`
 
-GetObjectRefsOk returns a tuple with the ObjectRefs field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetObjectRefsOk returns a tuple with the ObjectRefs field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetObjectRefs
 
@@ -72,8 +79,7 @@ GetTags returns the Tags field if non-nil, zero value otherwise.
 
 `func (o *BulkTaggedObjectResponse) GetTagsOk() (*[]string, bool)`
 
-GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTags
 
@@ -86,5 +92,3 @@ SetTags sets Tags field to given value.
 `func (o *BulkTaggedObjectResponse) HasTags() bool`
 
 HasTags returns a boolean if a field has been set.
-
-

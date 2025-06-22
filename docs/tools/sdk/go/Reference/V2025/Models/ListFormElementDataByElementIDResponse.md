@@ -4,18 +4,31 @@ title: ListFormElementDataByElementIDResponse
 pagination_label: ListFormElementDataByElementIDResponse
 sidebar_label: ListFormElementDataByElementIDResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ListFormElementDataByElementIDResponse', 'V2025ListFormElementDataByElementIDResponse'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ListFormElementDataByElementIDResponse',
+    'V2025ListFormElementDataByElementIDResponse',
+  ]
 slug: /tools/sdk/go/v2025/models/list-form-element-data-by-element-id-response
-tags: ['SDK', 'Software Development Kit', 'ListFormElementDataByElementIDResponse', 'V2025ListFormElementDataByElementIDResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ListFormElementDataByElementIDResponse',
+    'V2025ListFormElementDataByElementIDResponse',
+  ]
 ---
 
 # ListFormElementDataByElementIDResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Results** | Pointer to [**[]FormElementDataSourceConfigOptions**](form-element-data-source-config-options) | Results holds a list of FormElementDataSourceConfigOptions items | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Results** | Pointer to [**[]FormElementDataSourceConfigOptions**](form-element-data-source-config-options) | Results holds a list of FormElementDataSourceConfigOptions items | [optional] |
 
 ## Methods
 
@@ -23,18 +36,13 @@ Name | Type | Description | Notes
 
 `func NewListFormElementDataByElementIDResponse() *ListFormElementDataByElementIDResponse`
 
-NewListFormElementDataByElementIDResponse instantiates a new ListFormElementDataByElementIDResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewListFormElementDataByElementIDResponse instantiates a new ListFormElementDataByElementIDResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewListFormElementDataByElementIDResponseWithDefaults
 
 `func NewListFormElementDataByElementIDResponseWithDefaults() *ListFormElementDataByElementIDResponse`
 
-NewListFormElementDataByElementIDResponseWithDefaults instantiates a new ListFormElementDataByElementIDResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewListFormElementDataByElementIDResponseWithDefaults instantiates a new ListFormElementDataByElementIDResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetResults
 
@@ -46,8 +54,7 @@ GetResults returns the Results field if non-nil, zero value otherwise.
 
 `func (o *ListFormElementDataByElementIDResponse) GetResultsOk() (*[]FormElementDataSourceConfigOptions, bool)`
 
-GetResultsOk returns a tuple with the Results field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetResultsOk returns a tuple with the Results field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetResults
 
@@ -60,5 +67,3 @@ SetResults sets Results field to given value.
 `func (o *ListFormElementDataByElementIDResponse) HasResults() bool`
 
 HasResults returns a boolean if a field has been set.
-
-

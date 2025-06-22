@@ -4,40 +4,47 @@ title: AccessProfileDetails
 pagination_label: AccessProfileDetails
 sidebar_label: AccessProfileDetails
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessProfileDetails', 'V2024AccessProfileDetails'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'AccessProfileDetails', 'V2024AccessProfileDetails']
 slug: /tools/sdk/go/v2024/models/access-profile-details
-tags: ['SDK', 'Software Development Kit', 'AccessProfileDetails', 'V2024AccessProfileDetails']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessProfileDetails',
+    'V2024AccessProfileDetails',
+  ]
 ---
 
 # AccessProfileDetails
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The ID of the Access Profile | [optional] 
-**Name** | Pointer to **string** | Name of the Access Profile | [optional] 
-**Description** | Pointer to **NullableString** | Information about the Access Profile | [optional] 
-**Created** | Pointer to **SailPointTime** | Date the Access Profile was created | [optional] 
-**Modified** | Pointer to **SailPointTime** | Date the Access Profile was last modified. | [optional] 
-**Disabled** | Pointer to **bool** | Whether the Access Profile is enabled. | [optional] [default to true]
-**Requestable** | Pointer to **bool** | Whether the Access Profile is requestable via access request. | [optional] [default to false]
-**Protected** | Pointer to **bool** | Whether the Access Profile is protected. | [optional] [default to false]
-**OwnerId** | Pointer to **string** | The owner ID of the Access Profile | [optional] 
-**SourceId** | Pointer to **NullableInt64** | The source ID of the Access Profile | [optional] 
-**SourceName** | Pointer to **string** | The source name of the Access Profile | [optional] 
-**AppId** | Pointer to **NullableInt64** | The source app ID of the Access Profile | [optional] 
-**AppName** | Pointer to **NullableString** | The source app name of the Access Profile | [optional] 
-**ApplicationId** | Pointer to **string** | The id of the application | [optional] 
-**Type** | Pointer to **string** | The type of the access profile | [optional] 
-**Entitlements** | Pointer to **[]string** | List of IDs of entitlements | [optional] 
-**EntitlementCount** | Pointer to **int32** | The number of entitlements in the access profile | [optional] 
-**Segments** | Pointer to **[]string** | List of IDs of segments, if any, to which this Access Profile is assigned. | [optional] 
-**ApprovalSchemes** | Pointer to **string** | Comma-separated list of approval schemes. Each approval scheme is one of - manager - appOwner - sourceOwner - accessProfileOwner - workgroup:&lt;workgroupId&gt;  | [optional] 
-**RevokeRequestApprovalSchemes** | Pointer to **string** | Comma-separated list of revoke request approval schemes. Each approval scheme is one of - manager - sourceOwner - accessProfileOwner - workgroup:&lt;workgroupId&gt;  | [optional] 
-**RequestCommentsRequired** | Pointer to **bool** | Whether the access profile require request comment for access request. | [optional] [default to false]
-**DeniedCommentsRequired** | Pointer to **bool** | Whether denied comment is required when access request is denied. | [optional] [default to false]
-**AccountSelector** | Pointer to [**AccessProfileDetailsAccountSelector**](access-profile-details-account-selector) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The ID of the Access Profile | [optional] |
+| **Name** | Pointer to **string** | Name of the Access Profile | [optional] |
+| **Description** | Pointer to **NullableString** | Information about the Access Profile | [optional] |
+| **Created** | Pointer to **SailPointTime** | Date the Access Profile was created | [optional] |
+| **Modified** | Pointer to **SailPointTime** | Date the Access Profile was last modified. | [optional] |
+| **Disabled** | Pointer to **bool** | Whether the Access Profile is enabled. | [optional] [default to true] |
+| **Requestable** | Pointer to **bool** | Whether the Access Profile is requestable via access request. | [optional] [default to false] |
+| **Protected** | Pointer to **bool** | Whether the Access Profile is protected. | [optional] [default to false] |
+| **OwnerId** | Pointer to **string** | The owner ID of the Access Profile | [optional] |
+| **SourceId** | Pointer to **NullableInt64** | The source ID of the Access Profile | [optional] |
+| **SourceName** | Pointer to **string** | The source name of the Access Profile | [optional] |
+| **AppId** | Pointer to **NullableInt64** | The source app ID of the Access Profile | [optional] |
+| **AppName** | Pointer to **NullableString** | The source app name of the Access Profile | [optional] |
+| **ApplicationId** | Pointer to **string** | The id of the application | [optional] |
+| **Type** | Pointer to **string** | The type of the access profile | [optional] |
+| **Entitlements** | Pointer to **[]string** | List of IDs of entitlements | [optional] |
+| **EntitlementCount** | Pointer to **int32** | The number of entitlements in the access profile | [optional] |
+| **Segments** | Pointer to **[]string** | List of IDs of segments, if any, to which this Access Profile is assigned. | [optional] |
+| **ApprovalSchemes** | Pointer to **string** | Comma-separated list of approval schemes. Each approval scheme is one of - manager - appOwner - sourceOwner - accessProfileOwner - workgroup:&lt;workgroupId&gt; | [optional] |
+| **RevokeRequestApprovalSchemes** | Pointer to **string** | Comma-separated list of revoke request approval schemes. Each approval scheme is one of - manager - sourceOwner - accessProfileOwner - workgroup:&lt;workgroupId&gt; | [optional] |
+| **RequestCommentsRequired** | Pointer to **bool** | Whether the access profile require request comment for access request. | [optional] [default to false] |
+| **DeniedCommentsRequired** | Pointer to **bool** | Whether denied comment is required when access request is denied. | [optional] [default to false] |
+| **AccountSelector** | Pointer to [**AccessProfileDetailsAccountSelector**](access-profile-details-account-selector) |  | [optional] |
 
 ## Methods
 
@@ -45,18 +52,13 @@ Name | Type | Description | Notes
 
 `func NewAccessProfileDetails() *AccessProfileDetails`
 
-NewAccessProfileDetails instantiates a new AccessProfileDetails object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessProfileDetails instantiates a new AccessProfileDetails object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessProfileDetailsWithDefaults
 
 `func NewAccessProfileDetailsWithDefaults() *AccessProfileDetails`
 
-NewAccessProfileDetailsWithDefaults instantiates a new AccessProfileDetails object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessProfileDetailsWithDefaults instantiates a new AccessProfileDetails object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -68,8 +70,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *AccessProfileDetails) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -93,8 +94,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *AccessProfileDetails) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -118,8 +118,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *AccessProfileDetails) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -137,12 +136,14 @@ HasDescription returns a boolean if a field has been set.
 
 `func (o *AccessProfileDetails) SetDescriptionNil(b bool)`
 
- SetDescriptionNil sets the value for Description to be an explicit nil
+SetDescriptionNil sets the value for Description to be an explicit nil
 
 ### UnsetDescription
+
 `func (o *AccessProfileDetails) UnsetDescription()`
 
 UnsetDescription ensures that no value is present for Description, not even an explicit nil
+
 ### GetCreated
 
 `func (o *AccessProfileDetails) GetCreated() SailPointTime`
@@ -153,8 +154,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *AccessProfileDetails) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -178,8 +178,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *AccessProfileDetails) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -203,8 +202,7 @@ GetDisabled returns the Disabled field if non-nil, zero value otherwise.
 
 `func (o *AccessProfileDetails) GetDisabledOk() (*bool, bool)`
 
-GetDisabledOk returns a tuple with the Disabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisabledOk returns a tuple with the Disabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisabled
 
@@ -228,8 +226,7 @@ GetRequestable returns the Requestable field if non-nil, zero value otherwise.
 
 `func (o *AccessProfileDetails) GetRequestableOk() (*bool, bool)`
 
-GetRequestableOk returns a tuple with the Requestable field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestableOk returns a tuple with the Requestable field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequestable
 
@@ -253,8 +250,7 @@ GetProtected returns the Protected field if non-nil, zero value otherwise.
 
 `func (o *AccessProfileDetails) GetProtectedOk() (*bool, bool)`
 
-GetProtectedOk returns a tuple with the Protected field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProtectedOk returns a tuple with the Protected field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProtected
 
@@ -278,8 +274,7 @@ GetOwnerId returns the OwnerId field if non-nil, zero value otherwise.
 
 `func (o *AccessProfileDetails) GetOwnerIdOk() (*string, bool)`
 
-GetOwnerIdOk returns a tuple with the OwnerId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerIdOk returns a tuple with the OwnerId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwnerId
 
@@ -303,8 +298,7 @@ GetSourceId returns the SourceId field if non-nil, zero value otherwise.
 
 `func (o *AccessProfileDetails) GetSourceIdOk() (*int64, bool)`
 
-GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceId
 
@@ -322,12 +316,14 @@ HasSourceId returns a boolean if a field has been set.
 
 `func (o *AccessProfileDetails) SetSourceIdNil(b bool)`
 
- SetSourceIdNil sets the value for SourceId to be an explicit nil
+SetSourceIdNil sets the value for SourceId to be an explicit nil
 
 ### UnsetSourceId
+
 `func (o *AccessProfileDetails) UnsetSourceId()`
 
 UnsetSourceId ensures that no value is present for SourceId, not even an explicit nil
+
 ### GetSourceName
 
 `func (o *AccessProfileDetails) GetSourceName() string`
@@ -338,8 +334,7 @@ GetSourceName returns the SourceName field if non-nil, zero value otherwise.
 
 `func (o *AccessProfileDetails) GetSourceNameOk() (*string, bool)`
 
-GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceName
 
@@ -363,8 +358,7 @@ GetAppId returns the AppId field if non-nil, zero value otherwise.
 
 `func (o *AccessProfileDetails) GetAppIdOk() (*int64, bool)`
 
-GetAppIdOk returns a tuple with the AppId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAppIdOk returns a tuple with the AppId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAppId
 
@@ -382,12 +376,14 @@ HasAppId returns a boolean if a field has been set.
 
 `func (o *AccessProfileDetails) SetAppIdNil(b bool)`
 
- SetAppIdNil sets the value for AppId to be an explicit nil
+SetAppIdNil sets the value for AppId to be an explicit nil
 
 ### UnsetAppId
+
 `func (o *AccessProfileDetails) UnsetAppId()`
 
 UnsetAppId ensures that no value is present for AppId, not even an explicit nil
+
 ### GetAppName
 
 `func (o *AccessProfileDetails) GetAppName() string`
@@ -398,8 +394,7 @@ GetAppName returns the AppName field if non-nil, zero value otherwise.
 
 `func (o *AccessProfileDetails) GetAppNameOk() (*string, bool)`
 
-GetAppNameOk returns a tuple with the AppName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAppNameOk returns a tuple with the AppName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAppName
 
@@ -417,12 +412,14 @@ HasAppName returns a boolean if a field has been set.
 
 `func (o *AccessProfileDetails) SetAppNameNil(b bool)`
 
- SetAppNameNil sets the value for AppName to be an explicit nil
+SetAppNameNil sets the value for AppName to be an explicit nil
 
 ### UnsetAppName
+
 `func (o *AccessProfileDetails) UnsetAppName()`
 
 UnsetAppName ensures that no value is present for AppName, not even an explicit nil
+
 ### GetApplicationId
 
 `func (o *AccessProfileDetails) GetApplicationId() string`
@@ -433,8 +430,7 @@ GetApplicationId returns the ApplicationId field if non-nil, zero value otherwis
 
 `func (o *AccessProfileDetails) GetApplicationIdOk() (*string, bool)`
 
-GetApplicationIdOk returns a tuple with the ApplicationId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApplicationIdOk returns a tuple with the ApplicationId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApplicationId
 
@@ -458,8 +454,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *AccessProfileDetails) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -483,8 +478,7 @@ GetEntitlements returns the Entitlements field if non-nil, zero value otherwise.
 
 `func (o *AccessProfileDetails) GetEntitlementsOk() (*[]string, bool)`
 
-GetEntitlementsOk returns a tuple with the Entitlements field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEntitlementsOk returns a tuple with the Entitlements field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEntitlements
 
@@ -508,8 +502,7 @@ GetEntitlementCount returns the EntitlementCount field if non-nil, zero value ot
 
 `func (o *AccessProfileDetails) GetEntitlementCountOk() (*int32, bool)`
 
-GetEntitlementCountOk returns a tuple with the EntitlementCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEntitlementCountOk returns a tuple with the EntitlementCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEntitlementCount
 
@@ -533,8 +526,7 @@ GetSegments returns the Segments field if non-nil, zero value otherwise.
 
 `func (o *AccessProfileDetails) GetSegmentsOk() (*[]string, bool)`
 
-GetSegmentsOk returns a tuple with the Segments field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSegmentsOk returns a tuple with the Segments field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSegments
 
@@ -558,8 +550,7 @@ GetApprovalSchemes returns the ApprovalSchemes field if non-nil, zero value othe
 
 `func (o *AccessProfileDetails) GetApprovalSchemesOk() (*string, bool)`
 
-GetApprovalSchemesOk returns a tuple with the ApprovalSchemes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApprovalSchemesOk returns a tuple with the ApprovalSchemes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApprovalSchemes
 
@@ -583,8 +574,7 @@ GetRevokeRequestApprovalSchemes returns the RevokeRequestApprovalSchemes field i
 
 `func (o *AccessProfileDetails) GetRevokeRequestApprovalSchemesOk() (*string, bool)`
 
-GetRevokeRequestApprovalSchemesOk returns a tuple with the RevokeRequestApprovalSchemes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRevokeRequestApprovalSchemesOk returns a tuple with the RevokeRequestApprovalSchemes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRevokeRequestApprovalSchemes
 
@@ -608,8 +598,7 @@ GetRequestCommentsRequired returns the RequestCommentsRequired field if non-nil,
 
 `func (o *AccessProfileDetails) GetRequestCommentsRequiredOk() (*bool, bool)`
 
-GetRequestCommentsRequiredOk returns a tuple with the RequestCommentsRequired field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestCommentsRequiredOk returns a tuple with the RequestCommentsRequired field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequestCommentsRequired
 
@@ -633,8 +622,7 @@ GetDeniedCommentsRequired returns the DeniedCommentsRequired field if non-nil, z
 
 `func (o *AccessProfileDetails) GetDeniedCommentsRequiredOk() (*bool, bool)`
 
-GetDeniedCommentsRequiredOk returns a tuple with the DeniedCommentsRequired field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDeniedCommentsRequiredOk returns a tuple with the DeniedCommentsRequired field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDeniedCommentsRequired
 
@@ -658,8 +646,7 @@ GetAccountSelector returns the AccountSelector field if non-nil, zero value othe
 
 `func (o *AccessProfileDetails) GetAccountSelectorOk() (*AccessProfileDetailsAccountSelector, bool)`
 
-GetAccountSelectorOk returns a tuple with the AccountSelector field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountSelectorOk returns a tuple with the AccountSelector field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountSelector
 
@@ -672,5 +659,3 @@ SetAccountSelector sets AccountSelector field to given value.
 `func (o *AccessProfileDetails) HasAccountSelector() bool`
 
 HasAccountSelector returns a boolean if a field has been set.
-
-

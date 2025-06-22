@@ -4,25 +4,38 @@ title: PublicIdentityAttributesInner
 pagination_label: PublicIdentityAttributesInner
 sidebar_label: PublicIdentityAttributesInner
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'PublicIdentityAttributesInner', 'PublicIdentityAttributesInner'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'PublicIdentityAttributesInner',
+    'PublicIdentityAttributesInner',
+  ]
 slug: /tools/sdk/powershell/v3/models/public-identity-attributes-inner
-tags: ['SDK', 'Software Development Kit', 'PublicIdentityAttributesInner', 'PublicIdentityAttributesInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PublicIdentityAttributesInner',
+    'PublicIdentityAttributesInner',
+  ]
 ---
-
 
 # PublicIdentityAttributesInner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Key** | **String** | The attribute key | [optional] 
-**Name** | **String** | Human-readable display name of the attribute | [optional] 
-**Value** | **String** | The attribute value | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Key** | **String** | The attribute key | [optional] |
+| **Name** | **String** | Human-readable display name of the attribute | [optional] |
+| **Value** | **String** | The attribute value | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $PublicIdentityAttributesInner = Initialize-PublicIdentityAttributesInner  -Key country `
  -Name Country `
@@ -30,10 +43,9 @@ $PublicIdentityAttributesInner = Initialize-PublicIdentityAttributesInner  -Key 
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $PublicIdentityAttributesInner | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

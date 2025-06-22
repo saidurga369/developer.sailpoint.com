@@ -4,21 +4,34 @@ title: SourceAccountSelections
 pagination_label: SourceAccountSelections
 sidebar_label: SourceAccountSelections
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SourceAccountSelections', 'V2024SourceAccountSelections'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'SourceAccountSelections',
+    'V2024SourceAccountSelections',
+  ]
 slug: /tools/sdk/go/v2024/models/source-account-selections
-tags: ['SDK', 'Software Development Kit', 'SourceAccountSelections', 'V2024SourceAccountSelections']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SourceAccountSelections',
+    'V2024SourceAccountSelections',
+  ]
 ---
 
 # SourceAccountSelections
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to [**DtoType**](dto-type) |  | [optional] 
-**Id** | Pointer to **string** | The source id | [optional] 
-**Name** | Pointer to **string** | The source name | [optional] 
-**Accounts** | Pointer to [**[]AccountInfoRef**](account-info-ref) | The accounts information for a particular source in the requested item | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to [**DtoType**](dto-type) |  | [optional] |
+| **Id** | Pointer to **string** | The source id | [optional] |
+| **Name** | Pointer to **string** | The source name | [optional] |
+| **Accounts** | Pointer to [**[]AccountInfoRef**](account-info-ref) | The accounts information for a particular source in the requested item | [optional] |
 
 ## Methods
 
@@ -26,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewSourceAccountSelections() *SourceAccountSelections`
 
-NewSourceAccountSelections instantiates a new SourceAccountSelections object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSourceAccountSelections instantiates a new SourceAccountSelections object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSourceAccountSelectionsWithDefaults
 
 `func NewSourceAccountSelectionsWithDefaults() *SourceAccountSelections`
 
-NewSourceAccountSelectionsWithDefaults instantiates a new SourceAccountSelections object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSourceAccountSelectionsWithDefaults instantiates a new SourceAccountSelections object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -49,8 +57,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *SourceAccountSelections) GetTypeOk() (*DtoType, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -74,8 +81,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *SourceAccountSelections) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -99,8 +105,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *SourceAccountSelections) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -124,8 +129,7 @@ GetAccounts returns the Accounts field if non-nil, zero value otherwise.
 
 `func (o *SourceAccountSelections) GetAccountsOk() (*[]AccountInfoRef, bool)`
 
-GetAccountsOk returns a tuple with the Accounts field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountsOk returns a tuple with the Accounts field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccounts
 
@@ -138,5 +142,3 @@ SetAccounts sets Accounts field to given value.
 `func (o *SourceAccountSelections) HasAccounts() bool`
 
 HasAccounts returns a boolean if a field has been set.
-
-

@@ -4,19 +4,32 @@ title: PutConnectorSourceConfigRequest
 pagination_label: PutConnectorSourceConfigRequest
 sidebar_label: PutConnectorSourceConfigRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'PutConnectorSourceConfigRequest', 'V2025PutConnectorSourceConfigRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'PutConnectorSourceConfigRequest',
+    'V2025PutConnectorSourceConfigRequest',
+  ]
 slug: /tools/sdk/python/v2025/models/put-connector-source-config-request
-tags: ['SDK', 'Software Development Kit', 'PutConnectorSourceConfigRequest', 'V2025PutConnectorSourceConfigRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PutConnectorSourceConfigRequest',
+    'V2025PutConnectorSourceConfigRequest',
+  ]
 ---
 
 # PutConnectorSourceConfigRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**file** | **bytearray** | connector source config xml file | [required]
+| Name     | Type          | Description                      | Notes      |
+| -------- | ------------- | -------------------------------- | ---------- |
+| **file** | **bytearray** | connector source config xml file | [required] |
+
 }
 
 ## Example
@@ -29,5 +42,5 @@ file=bytes(b'blah')
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

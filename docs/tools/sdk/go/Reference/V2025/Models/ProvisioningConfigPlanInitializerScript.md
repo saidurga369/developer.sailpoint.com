@@ -4,18 +4,31 @@ title: ProvisioningConfigPlanInitializerScript
 pagination_label: ProvisioningConfigPlanInitializerScript
 sidebar_label: ProvisioningConfigPlanInitializerScript
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ProvisioningConfigPlanInitializerScript', 'V2025ProvisioningConfigPlanInitializerScript'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ProvisioningConfigPlanInitializerScript',
+    'V2025ProvisioningConfigPlanInitializerScript',
+  ]
 slug: /tools/sdk/go/v2025/models/provisioning-config-plan-initializer-script
-tags: ['SDK', 'Software Development Kit', 'ProvisioningConfigPlanInitializerScript', 'V2025ProvisioningConfigPlanInitializerScript']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ProvisioningConfigPlanInitializerScript',
+    'V2025ProvisioningConfigPlanInitializerScript',
+  ]
 ---
 
 # ProvisioningConfigPlanInitializerScript
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Source** | Pointer to **string** | This is a Rule that allows provisioning instruction changes. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Source** | Pointer to **string** | This is a Rule that allows provisioning instruction changes. | [optional] |
 
 ## Methods
 
@@ -23,18 +36,13 @@ Name | Type | Description | Notes
 
 `func NewProvisioningConfigPlanInitializerScript() *ProvisioningConfigPlanInitializerScript`
 
-NewProvisioningConfigPlanInitializerScript instantiates a new ProvisioningConfigPlanInitializerScript object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewProvisioningConfigPlanInitializerScript instantiates a new ProvisioningConfigPlanInitializerScript object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewProvisioningConfigPlanInitializerScriptWithDefaults
 
 `func NewProvisioningConfigPlanInitializerScriptWithDefaults() *ProvisioningConfigPlanInitializerScript`
 
-NewProvisioningConfigPlanInitializerScriptWithDefaults instantiates a new ProvisioningConfigPlanInitializerScript object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewProvisioningConfigPlanInitializerScriptWithDefaults instantiates a new ProvisioningConfigPlanInitializerScript object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetSource
 
@@ -46,8 +54,7 @@ GetSource returns the Source field if non-nil, zero value otherwise.
 
 `func (o *ProvisioningConfigPlanInitializerScript) GetSourceOk() (*string, bool)`
 
-GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSource
 
@@ -60,5 +67,3 @@ SetSource sets Source field to given value.
 `func (o *ProvisioningConfigPlanInitializerScript) HasSource() bool`
 
 HasSource returns a boolean if a field has been set.
-
-

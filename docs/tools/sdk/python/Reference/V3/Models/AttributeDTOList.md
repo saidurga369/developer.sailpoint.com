@@ -4,19 +4,20 @@ title: AttributeDTOList
 pagination_label: AttributeDTOList
 sidebar_label: AttributeDTOList
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AttributeDTOList', 'AttributeDTOList'] 
+keywords: ['python', 'Python', 'sdk', 'AttributeDTOList', 'AttributeDTOList']
 slug: /tools/sdk/python/v3/models/attribute-dto-list
-tags: ['SDK', 'Software Development Kit', 'AttributeDTOList', 'AttributeDTOList']
+tags:
+  ['SDK', 'Software Development Kit', 'AttributeDTOList', 'AttributeDTOList']
 ---
 
 # AttributeDTOList
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**attributes** | [**[]AttributeDTO**](attribute-dto) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **attributes** | [**[]AttributeDTO**](attribute-dto) |  | [optional] |
+
 }
 
 ## Example
@@ -29,5 +30,5 @@ attributes=[{key=iscPrivacy, name=Privacy, multiselect=false, status=active, typ
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

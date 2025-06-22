@@ -4,18 +4,25 @@ title: TestWorkflowRequest
 pagination_label: TestWorkflowRequest
 sidebar_label: TestWorkflowRequest
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'TestWorkflowRequest', 'BetaTestWorkflowRequest'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'TestWorkflowRequest', 'BetaTestWorkflowRequest']
 slug: /tools/sdk/go/beta/models/test-workflow-request
-tags: ['SDK', 'Software Development Kit', 'TestWorkflowRequest', 'BetaTestWorkflowRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'TestWorkflowRequest',
+    'BetaTestWorkflowRequest',
+  ]
 ---
 
 # TestWorkflowRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Input** | **map[string]interface{}** | The test input for the workflow. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Input** | **map[string]interface{}** | The test input for the workflow. |
 
 ## Methods
 
@@ -23,18 +30,13 @@ Name | Type | Description | Notes
 
 `func NewTestWorkflowRequest(input map[string]interface{}, ) *TestWorkflowRequest`
 
-NewTestWorkflowRequest instantiates a new TestWorkflowRequest object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewTestWorkflowRequest instantiates a new TestWorkflowRequest object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewTestWorkflowRequestWithDefaults
 
 `func NewTestWorkflowRequestWithDefaults() *TestWorkflowRequest`
 
-NewTestWorkflowRequestWithDefaults instantiates a new TestWorkflowRequest object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewTestWorkflowRequestWithDefaults instantiates a new TestWorkflowRequest object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetInput
 
@@ -46,14 +48,10 @@ GetInput returns the Input field if non-nil, zero value otherwise.
 
 `func (o *TestWorkflowRequest) GetInputOk() (*map[string]interface{}, bool)`
 
-GetInputOk returns a tuple with the Input field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetInputOk returns a tuple with the Input field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetInput
 
 `func (o *TestWorkflowRequest) SetInput(v map[string]interface{})`
 
 SetInput sets Input field to given value.
-
-
-

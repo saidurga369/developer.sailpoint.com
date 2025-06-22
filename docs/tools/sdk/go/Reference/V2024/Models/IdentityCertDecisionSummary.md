@@ -4,33 +4,46 @@ title: IdentityCertDecisionSummary
 pagination_label: IdentityCertDecisionSummary
 sidebar_label: IdentityCertDecisionSummary
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IdentityCertDecisionSummary', 'V2024IdentityCertDecisionSummary'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'IdentityCertDecisionSummary',
+    'V2024IdentityCertDecisionSummary',
+  ]
 slug: /tools/sdk/go/v2024/models/identity-cert-decision-summary
-tags: ['SDK', 'Software Development Kit', 'IdentityCertDecisionSummary', 'V2024IdentityCertDecisionSummary']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityCertDecisionSummary',
+    'V2024IdentityCertDecisionSummary',
+  ]
 ---
 
 # IdentityCertDecisionSummary
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**EntitlementDecisionsMade** | Pointer to **int32** | Number of entitlement decisions that have been made | [optional] 
-**AccessProfileDecisionsMade** | Pointer to **int32** | Number of access profile decisions that have been made | [optional] 
-**RoleDecisionsMade** | Pointer to **int32** | Number of role decisions that have been made | [optional] 
-**AccountDecisionsMade** | Pointer to **int32** | Number of account decisions that have been made | [optional] 
-**EntitlementDecisionsTotal** | Pointer to **int32** | The total number of entitlement decisions on the certification, both complete and incomplete | [optional] 
-**AccessProfileDecisionsTotal** | Pointer to **int32** | The total number of access profile decisions on the certification, both complete and incomplete | [optional] 
-**RoleDecisionsTotal** | Pointer to **int32** | The total number of role decisions on the certification, both complete and incomplete | [optional] 
-**AccountDecisionsTotal** | Pointer to **int32** | The total number of account decisions on the certification, both complete and incomplete | [optional] 
-**EntitlementsApproved** | Pointer to **int32** | The number of entitlement decisions that have been made which were approved | [optional] 
-**EntitlementsRevoked** | Pointer to **int32** | The number of entitlement decisions that have been made which were revoked | [optional] 
-**AccessProfilesApproved** | Pointer to **int32** | The number of access profile decisions that have been made which were approved | [optional] 
-**AccessProfilesRevoked** | Pointer to **int32** | The number of access profile decisions that have been made which were revoked | [optional] 
-**RolesApproved** | Pointer to **int32** | The number of role decisions that have been made which were approved | [optional] 
-**RolesRevoked** | Pointer to **int32** | The number of role decisions that have been made which were revoked | [optional] 
-**AccountsApproved** | Pointer to **int32** | The number of account decisions that have been made which were approved | [optional] 
-**AccountsRevoked** | Pointer to **int32** | The number of account decisions that have been made which were revoked | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **EntitlementDecisionsMade** | Pointer to **int32** | Number of entitlement decisions that have been made | [optional] |
+| **AccessProfileDecisionsMade** | Pointer to **int32** | Number of access profile decisions that have been made | [optional] |
+| **RoleDecisionsMade** | Pointer to **int32** | Number of role decisions that have been made | [optional] |
+| **AccountDecisionsMade** | Pointer to **int32** | Number of account decisions that have been made | [optional] |
+| **EntitlementDecisionsTotal** | Pointer to **int32** | The total number of entitlement decisions on the certification, both complete and incomplete | [optional] |
+| **AccessProfileDecisionsTotal** | Pointer to **int32** | The total number of access profile decisions on the certification, both complete and incomplete | [optional] |
+| **RoleDecisionsTotal** | Pointer to **int32** | The total number of role decisions on the certification, both complete and incomplete | [optional] |
+| **AccountDecisionsTotal** | Pointer to **int32** | The total number of account decisions on the certification, both complete and incomplete | [optional] |
+| **EntitlementsApproved** | Pointer to **int32** | The number of entitlement decisions that have been made which were approved | [optional] |
+| **EntitlementsRevoked** | Pointer to **int32** | The number of entitlement decisions that have been made which were revoked | [optional] |
+| **AccessProfilesApproved** | Pointer to **int32** | The number of access profile decisions that have been made which were approved | [optional] |
+| **AccessProfilesRevoked** | Pointer to **int32** | The number of access profile decisions that have been made which were revoked | [optional] |
+| **RolesApproved** | Pointer to **int32** | The number of role decisions that have been made which were approved | [optional] |
+| **RolesRevoked** | Pointer to **int32** | The number of role decisions that have been made which were revoked | [optional] |
+| **AccountsApproved** | Pointer to **int32** | The number of account decisions that have been made which were approved | [optional] |
+| **AccountsRevoked** | Pointer to **int32** | The number of account decisions that have been made which were revoked | [optional] |
 
 ## Methods
 
@@ -38,18 +51,13 @@ Name | Type | Description | Notes
 
 `func NewIdentityCertDecisionSummary() *IdentityCertDecisionSummary`
 
-NewIdentityCertDecisionSummary instantiates a new IdentityCertDecisionSummary object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewIdentityCertDecisionSummary instantiates a new IdentityCertDecisionSummary object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewIdentityCertDecisionSummaryWithDefaults
 
 `func NewIdentityCertDecisionSummaryWithDefaults() *IdentityCertDecisionSummary`
 
-NewIdentityCertDecisionSummaryWithDefaults instantiates a new IdentityCertDecisionSummary object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewIdentityCertDecisionSummaryWithDefaults instantiates a new IdentityCertDecisionSummary object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetEntitlementDecisionsMade
 
@@ -61,8 +69,7 @@ GetEntitlementDecisionsMade returns the EntitlementDecisionsMade field if non-ni
 
 `func (o *IdentityCertDecisionSummary) GetEntitlementDecisionsMadeOk() (*int32, bool)`
 
-GetEntitlementDecisionsMadeOk returns a tuple with the EntitlementDecisionsMade field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEntitlementDecisionsMadeOk returns a tuple with the EntitlementDecisionsMade field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEntitlementDecisionsMade
 
@@ -86,8 +93,7 @@ GetAccessProfileDecisionsMade returns the AccessProfileDecisionsMade field if no
 
 `func (o *IdentityCertDecisionSummary) GetAccessProfileDecisionsMadeOk() (*int32, bool)`
 
-GetAccessProfileDecisionsMadeOk returns a tuple with the AccessProfileDecisionsMade field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessProfileDecisionsMadeOk returns a tuple with the AccessProfileDecisionsMade field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessProfileDecisionsMade
 
@@ -111,8 +117,7 @@ GetRoleDecisionsMade returns the RoleDecisionsMade field if non-nil, zero value 
 
 `func (o *IdentityCertDecisionSummary) GetRoleDecisionsMadeOk() (*int32, bool)`
 
-GetRoleDecisionsMadeOk returns a tuple with the RoleDecisionsMade field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRoleDecisionsMadeOk returns a tuple with the RoleDecisionsMade field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRoleDecisionsMade
 
@@ -136,8 +141,7 @@ GetAccountDecisionsMade returns the AccountDecisionsMade field if non-nil, zero 
 
 `func (o *IdentityCertDecisionSummary) GetAccountDecisionsMadeOk() (*int32, bool)`
 
-GetAccountDecisionsMadeOk returns a tuple with the AccountDecisionsMade field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountDecisionsMadeOk returns a tuple with the AccountDecisionsMade field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountDecisionsMade
 
@@ -161,8 +165,7 @@ GetEntitlementDecisionsTotal returns the EntitlementDecisionsTotal field if non-
 
 `func (o *IdentityCertDecisionSummary) GetEntitlementDecisionsTotalOk() (*int32, bool)`
 
-GetEntitlementDecisionsTotalOk returns a tuple with the EntitlementDecisionsTotal field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEntitlementDecisionsTotalOk returns a tuple with the EntitlementDecisionsTotal field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEntitlementDecisionsTotal
 
@@ -186,8 +189,7 @@ GetAccessProfileDecisionsTotal returns the AccessProfileDecisionsTotal field if 
 
 `func (o *IdentityCertDecisionSummary) GetAccessProfileDecisionsTotalOk() (*int32, bool)`
 
-GetAccessProfileDecisionsTotalOk returns a tuple with the AccessProfileDecisionsTotal field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessProfileDecisionsTotalOk returns a tuple with the AccessProfileDecisionsTotal field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessProfileDecisionsTotal
 
@@ -211,8 +213,7 @@ GetRoleDecisionsTotal returns the RoleDecisionsTotal field if non-nil, zero valu
 
 `func (o *IdentityCertDecisionSummary) GetRoleDecisionsTotalOk() (*int32, bool)`
 
-GetRoleDecisionsTotalOk returns a tuple with the RoleDecisionsTotal field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRoleDecisionsTotalOk returns a tuple with the RoleDecisionsTotal field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRoleDecisionsTotal
 
@@ -236,8 +237,7 @@ GetAccountDecisionsTotal returns the AccountDecisionsTotal field if non-nil, zer
 
 `func (o *IdentityCertDecisionSummary) GetAccountDecisionsTotalOk() (*int32, bool)`
 
-GetAccountDecisionsTotalOk returns a tuple with the AccountDecisionsTotal field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountDecisionsTotalOk returns a tuple with the AccountDecisionsTotal field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountDecisionsTotal
 
@@ -261,8 +261,7 @@ GetEntitlementsApproved returns the EntitlementsApproved field if non-nil, zero 
 
 `func (o *IdentityCertDecisionSummary) GetEntitlementsApprovedOk() (*int32, bool)`
 
-GetEntitlementsApprovedOk returns a tuple with the EntitlementsApproved field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEntitlementsApprovedOk returns a tuple with the EntitlementsApproved field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEntitlementsApproved
 
@@ -286,8 +285,7 @@ GetEntitlementsRevoked returns the EntitlementsRevoked field if non-nil, zero va
 
 `func (o *IdentityCertDecisionSummary) GetEntitlementsRevokedOk() (*int32, bool)`
 
-GetEntitlementsRevokedOk returns a tuple with the EntitlementsRevoked field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEntitlementsRevokedOk returns a tuple with the EntitlementsRevoked field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEntitlementsRevoked
 
@@ -311,8 +309,7 @@ GetAccessProfilesApproved returns the AccessProfilesApproved field if non-nil, z
 
 `func (o *IdentityCertDecisionSummary) GetAccessProfilesApprovedOk() (*int32, bool)`
 
-GetAccessProfilesApprovedOk returns a tuple with the AccessProfilesApproved field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessProfilesApprovedOk returns a tuple with the AccessProfilesApproved field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessProfilesApproved
 
@@ -336,8 +333,7 @@ GetAccessProfilesRevoked returns the AccessProfilesRevoked field if non-nil, zer
 
 `func (o *IdentityCertDecisionSummary) GetAccessProfilesRevokedOk() (*int32, bool)`
 
-GetAccessProfilesRevokedOk returns a tuple with the AccessProfilesRevoked field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessProfilesRevokedOk returns a tuple with the AccessProfilesRevoked field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessProfilesRevoked
 
@@ -361,8 +357,7 @@ GetRolesApproved returns the RolesApproved field if non-nil, zero value otherwis
 
 `func (o *IdentityCertDecisionSummary) GetRolesApprovedOk() (*int32, bool)`
 
-GetRolesApprovedOk returns a tuple with the RolesApproved field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRolesApprovedOk returns a tuple with the RolesApproved field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRolesApproved
 
@@ -386,8 +381,7 @@ GetRolesRevoked returns the RolesRevoked field if non-nil, zero value otherwise.
 
 `func (o *IdentityCertDecisionSummary) GetRolesRevokedOk() (*int32, bool)`
 
-GetRolesRevokedOk returns a tuple with the RolesRevoked field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRolesRevokedOk returns a tuple with the RolesRevoked field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRolesRevoked
 
@@ -411,8 +405,7 @@ GetAccountsApproved returns the AccountsApproved field if non-nil, zero value ot
 
 `func (o *IdentityCertDecisionSummary) GetAccountsApprovedOk() (*int32, bool)`
 
-GetAccountsApprovedOk returns a tuple with the AccountsApproved field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountsApprovedOk returns a tuple with the AccountsApproved field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountsApproved
 
@@ -436,8 +429,7 @@ GetAccountsRevoked returns the AccountsRevoked field if non-nil, zero value othe
 
 `func (o *IdentityCertDecisionSummary) GetAccountsRevokedOk() (*int32, bool)`
 
-GetAccountsRevokedOk returns a tuple with the AccountsRevoked field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountsRevokedOk returns a tuple with the AccountsRevoked field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountsRevoked
 
@@ -450,5 +442,3 @@ SetAccountsRevoked sets AccountsRevoked field to given value.
 `func (o *IdentityCertDecisionSummary) HasAccountsRevoked() bool`
 
 HasAccountsRevoked returns a boolean if a field has been set.
-
-

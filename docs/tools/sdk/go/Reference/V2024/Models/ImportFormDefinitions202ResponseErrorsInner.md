@@ -4,20 +4,33 @@ title: ImportFormDefinitions202ResponseErrorsInner
 pagination_label: ImportFormDefinitions202ResponseErrorsInner
 sidebar_label: ImportFormDefinitions202ResponseErrorsInner
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ImportFormDefinitions202ResponseErrorsInner', 'V2024ImportFormDefinitions202ResponseErrorsInner'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ImportFormDefinitions202ResponseErrorsInner',
+    'V2024ImportFormDefinitions202ResponseErrorsInner',
+  ]
 slug: /tools/sdk/go/v2024/models/import-form-definitions202-response-errors-inner
-tags: ['SDK', 'Software Development Kit', 'ImportFormDefinitions202ResponseErrorsInner', 'V2024ImportFormDefinitions202ResponseErrorsInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ImportFormDefinitions202ResponseErrorsInner',
+    'V2024ImportFormDefinitions202ResponseErrorsInner',
+  ]
 ---
 
 # ImportFormDefinitions202ResponseErrorsInner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Detail** | Pointer to **map[string]map[string]interface{}** |  | [optional] 
-**Key** | Pointer to **string** |  | [optional] 
-**Text** | Pointer to **string** |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Detail** | Pointer to **map[string]map[string]interface{}** |  | [optional] |
+| **Key** | Pointer to **string** |  | [optional] |
+| **Text** | Pointer to **string** |  | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewImportFormDefinitions202ResponseErrorsInner() *ImportFormDefinitions202ResponseErrorsInner`
 
-NewImportFormDefinitions202ResponseErrorsInner instantiates a new ImportFormDefinitions202ResponseErrorsInner object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewImportFormDefinitions202ResponseErrorsInner instantiates a new ImportFormDefinitions202ResponseErrorsInner object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewImportFormDefinitions202ResponseErrorsInnerWithDefaults
 
 `func NewImportFormDefinitions202ResponseErrorsInnerWithDefaults() *ImportFormDefinitions202ResponseErrorsInner`
 
-NewImportFormDefinitions202ResponseErrorsInnerWithDefaults instantiates a new ImportFormDefinitions202ResponseErrorsInner object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewImportFormDefinitions202ResponseErrorsInnerWithDefaults instantiates a new ImportFormDefinitions202ResponseErrorsInner object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetDetail
 
@@ -48,8 +56,7 @@ GetDetail returns the Detail field if non-nil, zero value otherwise.
 
 `func (o *ImportFormDefinitions202ResponseErrorsInner) GetDetailOk() (*map[string]map[string]interface{}, bool)`
 
-GetDetailOk returns a tuple with the Detail field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDetailOk returns a tuple with the Detail field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDetail
 
@@ -73,8 +80,7 @@ GetKey returns the Key field if non-nil, zero value otherwise.
 
 `func (o *ImportFormDefinitions202ResponseErrorsInner) GetKeyOk() (*string, bool)`
 
-GetKeyOk returns a tuple with the Key field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetKeyOk returns a tuple with the Key field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetKey
 
@@ -98,8 +104,7 @@ GetText returns the Text field if non-nil, zero value otherwise.
 
 `func (o *ImportFormDefinitions202ResponseErrorsInner) GetTextOk() (*string, bool)`
 
-GetTextOk returns a tuple with the Text field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTextOk returns a tuple with the Text field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetText
 
@@ -112,5 +117,3 @@ SetText sets Text field to given value.
 `func (o *ImportFormDefinitions202ResponseErrorsInner) HasText() bool`
 
 HasText returns a boolean if a field has been set.
-
-

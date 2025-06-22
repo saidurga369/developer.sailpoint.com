@@ -4,71 +4,66 @@ title: Segments
 pagination_label: Segments
 sidebar_label: Segments
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'Segments', 'BetaSegments'] 
+keywords: ['python', 'Python', 'sdk', 'Segments', 'BetaSegments']
 slug: /tools/sdk/python/beta/methods/segments
 tags: ['SDK', 'Software Development Kit', 'Segments', 'BetaSegments']
 ---
 
 # sailpoint.beta.SegmentsApi
-  Use this API to implement and customize access request segment functionality. 
-With this functionality in place, administrators can create and manage access request segments. 
-Segments provide organizations with a way to make the access their users have even more granular - this can simply the access request process for the organization&#39;s users and improves security by reducing the risk of overprovisoning access. 
 
-Segments represent sets of identities, all grouped by specified identity attributes, who are only able to see and access the access items associated with their segments.
-For example, administrators could group all their organization&#39;s London office employees into one segment, &quot;London Office Employees,&quot; by their shared location. 
-The administrators could then define the access items the London employees would need, and the identities in the &quot;London Office Employees&quot; would then only be able to see and access those items.
+Use this API to implement and customize access request segment functionality. With this functionality in place, administrators can create and manage access request segments. Segments provide organizations with a way to make the access their users have even more granular - this can simply the access request process for the organization&#39;s users and improves security by reducing the risk of overprovisoning access.
 
-In Identity Security Cloud, administrators can use the &#39;Access&#39; drop-down menu and select &#39;Segments&#39; to reach the &#39;Access Requests Segments&#39; page. 
-This page lists all the existing access request segments, along with their statuses, enabled or disabled. 
-Administrators can use this page to create, edit, enable, disable, and delete segments. 
-To create a segment, an administrator must provide a name, define the identities grouped in the segment, and define the items the identities in the segment can access.
-These items can be access profiles, roles, or entitlements. 
+Segments represent sets of identities, all grouped by specified identity attributes, who are only able to see and access the access items associated with their segments. For example, administrators could group all their organization&#39;s London office employees into one segment, &quot;London Office Employees,&quot; by their shared location. The administrators could then define the access items the London employees would need, and the identities in the &quot;London Office Employees&quot; would then only be able to see and access those items.
 
-When administrators use the API to create and manage segments, they use a JSON expression in the &#x60;visibilityCriteria&#x60; object to define the segment&#39;s identities and access items. 
+In Identity Security Cloud, administrators can use the &#39;Access&#39; drop-down menu and select &#39;Segments&#39; to reach the &#39;Access Requests Segments&#39; page. This page lists all the existing access request segments, along with their statuses, enabled or disabled. Administrators can use this page to create, edit, enable, disable, and delete segments. To create a segment, an administrator must provide a name, define the identities grouped in the segment, and define the items the identities in the segment can access. These items can be access profiles, roles, or entitlements.
+
+When administrators use the API to create and manage segments, they use a JSON expression in the &#x60;visibilityCriteria&#x60; object to define the segment&#39;s identities and access items.
 
 Refer to [Managing Access Request Segments](https://documentation.sailpoint.com/saas/help/requests/segments.html) for more information about segments in Identity Security Cloud.
- 
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/beta*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create-segment**](#create-segment) | **POST** `/segments` | Create segment
-[**delete-segment**](#delete-segment) | **DELETE** `/segments/{id}` | Delete segment by id
-[**get-segment**](#get-segment) | **GET** `/segments/{id}` | Get segment by id
-[**list-segments**](#list-segments) | **GET** `/segments` | List segments
-[**patch-segment**](#patch-segment) | **PATCH** `/segments/{id}` | Update segment
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**create-segment**](#create-segment) | **POST** `/segments` | Create segment |
+| [**delete-segment**](#delete-segment) | **DELETE** `/segments/{id}` | Delete segment by id |
+| [**get-segment**](#get-segment) | **GET** `/segments/{id}` | Get segment by id |
+| [**list-segments**](#list-segments) | **GET** `/segments` | List segments |
+| [**patch-segment**](#patch-segment) | **PATCH** `/segments/{id}` | Update segment |
 
 ## create-segment
-Create segment
-This API creates a segment. 
->**Note:** Segment definitions may take time to propagate to all identities.
-A token with ORG_ADMIN or API authority is required to call this API.
+
+Create segment This API creates a segment.
+
+> **Note:** Segment definitions may take time to propagate to all identities. A token with ORG_ADMIN or API authority is required to call this API.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/create-segment)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
- Body  | segment | [**Segment**](../models/segment) | True  | 
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Body | segment | [**Segment**](../models/segment) | True |
 
 ### Return type
+
 [**Segment**](../models/segment)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-201 | Segment created | Segment |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 201 | Segment created | Segment | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json
- - **Accept**: application/json
+
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### Example
 
@@ -104,7 +99,7 @@ with ApiClient(configuration) as api_client:
           "description" : "This segment represents xyz",
           "active" : true,
           "id" : "0f11f2a4-7c94-4bf3-a2bd-742580fe3bde"
-        }''' # Segment | 
+        }''' # Segment |
 
     try:
         # Create segment
@@ -118,41 +113,42 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling SegmentsApi->create_segment: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## delete-segment
-Delete segment by id
-This API deletes the segment specified by the given ID.
->**Note:** Segment deletion may take some time to go into effect. 
-A token with ORG_ADMIN or API authority is required to call this API.
+
+Delete segment by id This API deletes the segment specified by the given ID.
+
+> **Note:** Segment deletion may take some time to go into effect. A token with ORG_ADMIN or API authority is required to call this API.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/delete-segment)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | id | **str** | True  | The segment ID to delete.
+| Param Type | Name | Data Type | Required | Description               |
+| ---------- | ---- | --------- | -------- | ------------------------- |
+| Path       | id   | **str**   | True     | The segment ID to delete. |
 
 ### Return type
- (empty response body)
+
+(empty response body)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-204 | No content. |  |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 204 | No content. |  | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -168,7 +164,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Delete segment by id
-        
+
         SegmentsApi(api_client).delete_segment(id=id)
         # Below is a request that includes all optional parameters
         # SegmentsApi(api_client).delete_segment(id)
@@ -176,40 +172,40 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling SegmentsApi->delete_segment: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## get-segment
-Get segment by id
-This API returns the segment specified by the given ID.
-A token with ORG_ADMIN or API authority is required to call this API.
+
+Get segment by id This API returns the segment specified by the given ID. A token with ORG_ADMIN or API authority is required to call this API.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-segment)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | id | **str** | True  | The segment ID to retrieve.
+| Param Type | Name | Data Type | Required | Description                 |
+| ---------- | ---- | --------- | -------- | --------------------------- |
+| Path       | id   | **str**   | True     | The segment ID to retrieve. |
 
 ### Return type
+
 [**Segment**](../models/segment)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Segment | Segment |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Segment | Segment | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -226,7 +222,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Get segment by id
-        
+
         results = SegmentsApi(api_client).get_segment(id=id)
         # Below is a request that includes all optional parameters
         # results = SegmentsApi(api_client).get_segment(id)
@@ -236,41 +232,41 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling SegmentsApi->get_segment: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## list-segments
-List segments
-This API returns a list of all segments.
-A token with ORG_ADMIN or API authority is required to call this API.
+
+List segments This API returns a list of all segments. A token with ORG_ADMIN or API authority is required to call this API.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/list-segments)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-  Query | limit | **int** |   (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | offset | **int** |   (optional) (default to 0) | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | count | **bool** |   (optional) (default to False) | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Query | limit | **int** | (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | offset | **int** | (optional) (default to 0) | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | count | **bool** | (optional) (default to False) | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
 
 ### Return type
+
 [**List[Segment]**](../models/segment)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | List of all segments | List[Segment] |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | List of all segments | List[Segment] | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -289,7 +285,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # List segments
-        
+
         results = SegmentsApi(api_client).list_segments()
         # Below is a request that includes all optional parameters
         # results = SegmentsApi(api_client).list_segments(limit, offset, count)
@@ -300,42 +296,43 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling SegmentsApi->list_segments: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## patch-segment
-Update segment
-Use this API to update segment fields by using the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard.
->**Note:** Changes to a segment may take some time to propagate to all identities.
-A token with ORG_ADMIN or API authority is required to call this API.
+
+Update segment Use this API to update segment fields by using the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard.
+
+> **Note:** Changes to a segment may take some time to propagate to all identities. A token with ORG_ADMIN or API authority is required to call this API.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/patch-segment)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | id | **str** | True  | The segment ID to modify.
- Body  | request_body | **[]object** | True  | A list of segment update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard.  The following fields are patchable: * name * description * owner * visibilityCriteria * active 
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | id | **str** | True | The segment ID to modify. |
+| Body | request_body | **[]object** | True | A list of segment update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard. The following fields are patchable: _ name _ description _ owner _ visibilityCriteria \* active |
 
 ### Return type
+
 [**Segment**](../models/segment)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Indicates the PATCH operation succeeded, and returns the segment&#39;s new representation. | Segment |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Indicates the PATCH operation succeeded, and returns the segment&#39;s new representation. | Segment | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json-patch+json
- - **Accept**: application/json
+
+- **Content-Type**: application/json-patch+json
+- **Accept**: application/json
 
 ### Example
 
@@ -349,7 +346,7 @@ configuration = Configuration()
 
 with ApiClient(configuration) as api_client:
     id = 'ef38f94347e94562b5bb8424a56397d8' # str | The segment ID to modify. # str | The segment ID to modify.
-    request_body = '''[{op=replace, path=/visibilityCriteria, value={expression={operator=AND, children=[{operator=EQUALS, attribute=location, value={type=STRING, value=Philadelphia}}, {operator=EQUALS, attribute=department, value={type=STRING, value=HR}}]}}}]''' # List[object] | A list of segment update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard.  The following fields are patchable: * name * description * owner * visibilityCriteria * active 
+    request_body = '''[{op=replace, path=/visibilityCriteria, value={expression={operator=AND, children=[{operator=EQUALS, attribute=location, value={type=STRING, value=Philadelphia}}, {operator=EQUALS, attribute=department, value={type=STRING, value=HR}}]}}}]''' # List[object] | A list of segment update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard.  The following fields are patchable: * name * description * owner * visibilityCriteria * active
 
     try:
         # Update segment
@@ -363,9 +360,4 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling SegmentsApi->patch_segment: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
-
-
-
+[[Back to top]](#)

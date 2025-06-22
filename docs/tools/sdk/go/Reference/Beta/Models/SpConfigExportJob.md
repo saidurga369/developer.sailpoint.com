@@ -4,24 +4,30 @@ title: SpConfigExportJob
 pagination_label: SpConfigExportJob
 sidebar_label: SpConfigExportJob
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SpConfigExportJob', 'BetaSpConfigExportJob'] 
+keywords: ['go', 'Golang', 'sdk', 'SpConfigExportJob', 'BetaSpConfigExportJob']
 slug: /tools/sdk/go/beta/models/sp-config-export-job
-tags: ['SDK', 'Software Development Kit', 'SpConfigExportJob', 'BetaSpConfigExportJob']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SpConfigExportJob',
+    'BetaSpConfigExportJob',
+  ]
 ---
 
 # SpConfigExportJob
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**JobId** | **string** | Unique id assigned to this job. | 
-**Status** | **string** | Status of the job. | 
-**Type** | **string** | Type of the job, either export or import. | 
-**Expiration** | **SailPointTime** | The time until which the artifacts will be available for download. | 
-**Created** | **SailPointTime** | The time the job was started. | 
-**Modified** | **SailPointTime** | The time of the last update to the job. | 
-**Description** | Pointer to **string** | Optional user defined description/name for export job. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **JobId** | **string** | Unique id assigned to this job. |
+| **Status** | **string** | Status of the job. |
+| **Type** | **string** | Type of the job, either export or import. |
+| **Expiration** | **SailPointTime** | The time until which the artifacts will be available for download. |
+| **Created** | **SailPointTime** | The time the job was started. |
+| **Modified** | **SailPointTime** | The time of the last update to the job. |
+| **Description** | Pointer to **string** | Optional user defined description/name for export job. | [optional] |
 
 ## Methods
 
@@ -29,18 +35,13 @@ Name | Type | Description | Notes
 
 `func NewSpConfigExportJob(jobId string, status string, type_ string, expiration SailPointTime, created SailPointTime, modified SailPointTime, ) *SpConfigExportJob`
 
-NewSpConfigExportJob instantiates a new SpConfigExportJob object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSpConfigExportJob instantiates a new SpConfigExportJob object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSpConfigExportJobWithDefaults
 
 `func NewSpConfigExportJobWithDefaults() *SpConfigExportJob`
 
-NewSpConfigExportJobWithDefaults instantiates a new SpConfigExportJob object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSpConfigExportJobWithDefaults instantiates a new SpConfigExportJob object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetJobId
 
@@ -52,15 +53,13 @@ GetJobId returns the JobId field if non-nil, zero value otherwise.
 
 `func (o *SpConfigExportJob) GetJobIdOk() (*string, bool)`
 
-GetJobIdOk returns a tuple with the JobId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetJobIdOk returns a tuple with the JobId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetJobId
 
 `func (o *SpConfigExportJob) SetJobId(v string)`
 
 SetJobId sets JobId field to given value.
-
 
 ### GetStatus
 
@@ -72,15 +71,13 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *SpConfigExportJob) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
 `func (o *SpConfigExportJob) SetStatus(v string)`
 
 SetStatus sets Status field to given value.
-
 
 ### GetType
 
@@ -92,15 +89,13 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *SpConfigExportJob) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
 `func (o *SpConfigExportJob) SetType(v string)`
 
 SetType sets Type field to given value.
-
 
 ### GetExpiration
 
@@ -112,15 +107,13 @@ GetExpiration returns the Expiration field if non-nil, zero value otherwise.
 
 `func (o *SpConfigExportJob) GetExpirationOk() (*SailPointTime, bool)`
 
-GetExpirationOk returns a tuple with the Expiration field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetExpirationOk returns a tuple with the Expiration field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetExpiration
 
 `func (o *SpConfigExportJob) SetExpiration(v SailPointTime)`
 
 SetExpiration sets Expiration field to given value.
-
 
 ### GetCreated
 
@@ -132,15 +125,13 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *SpConfigExportJob) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
 `func (o *SpConfigExportJob) SetCreated(v SailPointTime)`
 
 SetCreated sets Created field to given value.
-
 
 ### GetModified
 
@@ -152,15 +143,13 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *SpConfigExportJob) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
 `func (o *SpConfigExportJob) SetModified(v SailPointTime)`
 
 SetModified sets Modified field to given value.
-
 
 ### GetDescription
 
@@ -172,8 +161,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *SpConfigExportJob) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -186,5 +174,3 @@ SetDescription sets Description field to given value.
 `func (o *SpConfigExportJob) HasDescription() bool`
 
 HasDescription returns a boolean if a field has been set.
-
-

@@ -4,30 +4,36 @@ title: SourceAppPatchDto
 pagination_label: SourceAppPatchDto
 sidebar_label: SourceAppPatchDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SourceAppPatchDto', 'V2024SourceAppPatchDto'] 
+keywords: ['go', 'Golang', 'sdk', 'SourceAppPatchDto', 'V2024SourceAppPatchDto']
 slug: /tools/sdk/go/v2024/models/source-app-patch-dto
-tags: ['SDK', 'Software Development Kit', 'SourceAppPatchDto', 'V2024SourceAppPatchDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SourceAppPatchDto',
+    'V2024SourceAppPatchDto',
+  ]
 ---
 
 # SourceAppPatchDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The source app id | [optional] 
-**CloudAppId** | Pointer to **string** | The deprecated source app id | [optional] 
-**Name** | Pointer to **string** | The source app name | [optional] 
-**Created** | Pointer to **SailPointTime** | Time when the source app was created | [optional] 
-**Modified** | Pointer to **SailPointTime** | Time when the source app was last modified | [optional] 
-**Enabled** | Pointer to **bool** | True if the source app is enabled | [optional] [default to false]
-**ProvisionRequestEnabled** | Pointer to **bool** | True if the source app is provision request enabled | [optional] [default to false]
-**Description** | Pointer to **string** | The description of the source app | [optional] 
-**MatchAllAccounts** | Pointer to **bool** | True if the source app match all accounts | [optional] [default to false]
-**AppCenterEnabled** | Pointer to **bool** | True if the source app is shown in the app center | [optional] [default to true]
-**AccessProfiles** | Pointer to **[]string** | List of IDs of access profiles | [optional] 
-**AccountSource** | Pointer to [**NullableSourceAppAccountSource**](source-app-account-source) |  | [optional] 
-**Owner** | Pointer to [**NullableBaseReferenceDto**](base-reference-dto) | The owner of source app | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The source app id | [optional] |
+| **CloudAppId** | Pointer to **string** | The deprecated source app id | [optional] |
+| **Name** | Pointer to **string** | The source app name | [optional] |
+| **Created** | Pointer to **SailPointTime** | Time when the source app was created | [optional] |
+| **Modified** | Pointer to **SailPointTime** | Time when the source app was last modified | [optional] |
+| **Enabled** | Pointer to **bool** | True if the source app is enabled | [optional] [default to false] |
+| **ProvisionRequestEnabled** | Pointer to **bool** | True if the source app is provision request enabled | [optional] [default to false] |
+| **Description** | Pointer to **string** | The description of the source app | [optional] |
+| **MatchAllAccounts** | Pointer to **bool** | True if the source app match all accounts | [optional] [default to false] |
+| **AppCenterEnabled** | Pointer to **bool** | True if the source app is shown in the app center | [optional] [default to true] |
+| **AccessProfiles** | Pointer to **[]string** | List of IDs of access profiles | [optional] |
+| **AccountSource** | Pointer to [**NullableSourceAppAccountSource**](source-app-account-source) |  | [optional] |
+| **Owner** | Pointer to [**NullableBaseReferenceDto**](base-reference-dto) | The owner of source app | [optional] |
 
 ## Methods
 
@@ -35,18 +41,13 @@ Name | Type | Description | Notes
 
 `func NewSourceAppPatchDto() *SourceAppPatchDto`
 
-NewSourceAppPatchDto instantiates a new SourceAppPatchDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSourceAppPatchDto instantiates a new SourceAppPatchDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSourceAppPatchDtoWithDefaults
 
 `func NewSourceAppPatchDtoWithDefaults() *SourceAppPatchDto`
 
-NewSourceAppPatchDtoWithDefaults instantiates a new SourceAppPatchDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSourceAppPatchDtoWithDefaults instantiates a new SourceAppPatchDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -58,8 +59,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *SourceAppPatchDto) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -83,8 +83,7 @@ GetCloudAppId returns the CloudAppId field if non-nil, zero value otherwise.
 
 `func (o *SourceAppPatchDto) GetCloudAppIdOk() (*string, bool)`
 
-GetCloudAppIdOk returns a tuple with the CloudAppId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCloudAppIdOk returns a tuple with the CloudAppId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCloudAppId
 
@@ -108,8 +107,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *SourceAppPatchDto) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -133,8 +131,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *SourceAppPatchDto) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -158,8 +155,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *SourceAppPatchDto) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -183,8 +179,7 @@ GetEnabled returns the Enabled field if non-nil, zero value otherwise.
 
 `func (o *SourceAppPatchDto) GetEnabledOk() (*bool, bool)`
 
-GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEnabled
 
@@ -208,8 +203,7 @@ GetProvisionRequestEnabled returns the ProvisionRequestEnabled field if non-nil,
 
 `func (o *SourceAppPatchDto) GetProvisionRequestEnabledOk() (*bool, bool)`
 
-GetProvisionRequestEnabledOk returns a tuple with the ProvisionRequestEnabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProvisionRequestEnabledOk returns a tuple with the ProvisionRequestEnabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProvisionRequestEnabled
 
@@ -233,8 +227,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *SourceAppPatchDto) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -258,8 +251,7 @@ GetMatchAllAccounts returns the MatchAllAccounts field if non-nil, zero value ot
 
 `func (o *SourceAppPatchDto) GetMatchAllAccountsOk() (*bool, bool)`
 
-GetMatchAllAccountsOk returns a tuple with the MatchAllAccounts field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMatchAllAccountsOk returns a tuple with the MatchAllAccounts field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMatchAllAccounts
 
@@ -283,8 +275,7 @@ GetAppCenterEnabled returns the AppCenterEnabled field if non-nil, zero value ot
 
 `func (o *SourceAppPatchDto) GetAppCenterEnabledOk() (*bool, bool)`
 
-GetAppCenterEnabledOk returns a tuple with the AppCenterEnabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAppCenterEnabledOk returns a tuple with the AppCenterEnabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAppCenterEnabled
 
@@ -308,8 +299,7 @@ GetAccessProfiles returns the AccessProfiles field if non-nil, zero value otherw
 
 `func (o *SourceAppPatchDto) GetAccessProfilesOk() (*[]string, bool)`
 
-GetAccessProfilesOk returns a tuple with the AccessProfiles field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessProfilesOk returns a tuple with the AccessProfiles field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessProfiles
 
@@ -327,12 +317,14 @@ HasAccessProfiles returns a boolean if a field has been set.
 
 `func (o *SourceAppPatchDto) SetAccessProfilesNil(b bool)`
 
- SetAccessProfilesNil sets the value for AccessProfiles to be an explicit nil
+SetAccessProfilesNil sets the value for AccessProfiles to be an explicit nil
 
 ### UnsetAccessProfiles
+
 `func (o *SourceAppPatchDto) UnsetAccessProfiles()`
 
 UnsetAccessProfiles ensures that no value is present for AccessProfiles, not even an explicit nil
+
 ### GetAccountSource
 
 `func (o *SourceAppPatchDto) GetAccountSource() SourceAppAccountSource`
@@ -343,8 +335,7 @@ GetAccountSource returns the AccountSource field if non-nil, zero value otherwis
 
 `func (o *SourceAppPatchDto) GetAccountSourceOk() (*SourceAppAccountSource, bool)`
 
-GetAccountSourceOk returns a tuple with the AccountSource field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountSourceOk returns a tuple with the AccountSource field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountSource
 
@@ -362,12 +353,14 @@ HasAccountSource returns a boolean if a field has been set.
 
 `func (o *SourceAppPatchDto) SetAccountSourceNil(b bool)`
 
- SetAccountSourceNil sets the value for AccountSource to be an explicit nil
+SetAccountSourceNil sets the value for AccountSource to be an explicit nil
 
 ### UnsetAccountSource
+
 `func (o *SourceAppPatchDto) UnsetAccountSource()`
 
 UnsetAccountSource ensures that no value is present for AccountSource, not even an explicit nil
+
 ### GetOwner
 
 `func (o *SourceAppPatchDto) GetOwner() BaseReferenceDto`
@@ -378,8 +371,7 @@ GetOwner returns the Owner field if non-nil, zero value otherwise.
 
 `func (o *SourceAppPatchDto) GetOwnerOk() (*BaseReferenceDto, bool)`
 
-GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwner
 
@@ -397,10 +389,10 @@ HasOwner returns a boolean if a field has been set.
 
 `func (o *SourceAppPatchDto) SetOwnerNil(b bool)`
 
- SetOwnerNil sets the value for Owner to be an explicit nil
+SetOwnerNil sets the value for Owner to be an explicit nil
 
 ### UnsetOwner
+
 `func (o *SourceAppPatchDto) UnsetOwner()`
 
 UnsetOwner ensures that no value is present for Owner, not even an explicit nil
-

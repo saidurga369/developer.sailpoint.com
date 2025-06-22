@@ -4,25 +4,31 @@ title: IdentityCertified
 pagination_label: IdentityCertified
 sidebar_label: IdentityCertified
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IdentityCertified', 'V2024IdentityCertified'] 
+keywords: ['go', 'Golang', 'sdk', 'IdentityCertified', 'V2024IdentityCertified']
 slug: /tools/sdk/go/v2024/models/identity-certified
-tags: ['SDK', 'Software Development Kit', 'IdentityCertified', 'V2024IdentityCertified']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityCertified',
+    'V2024IdentityCertified',
+  ]
 ---
 
 # IdentityCertified
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**CertificationId** | Pointer to **string** | the id of the certification item | [optional] 
-**CertificationName** | Pointer to **string** | the certification item name | [optional] 
-**SignedDate** | Pointer to **string** | the date ceritification was signed | [optional] 
-**Certifiers** | Pointer to [**[]CertifierResponse**](certifier-response) | this field is deprecated and may go away | [optional] 
-**Reviewers** | Pointer to [**[]CertifierResponse**](certifier-response) | The list of identities who review this certification | [optional] 
-**Signer** | Pointer to [**CertifierResponse**](certifier-response) |  | [optional] 
-**EventType** | Pointer to **string** | the event type | [optional] 
-**Dt** | Pointer to **string** | the date of event | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **CertificationId** | Pointer to **string** | the id of the certification item | [optional] |
+| **CertificationName** | Pointer to **string** | the certification item name | [optional] |
+| **SignedDate** | Pointer to **string** | the date ceritification was signed | [optional] |
+| **Certifiers** | Pointer to [**[]CertifierResponse**](certifier-response) | this field is deprecated and may go away | [optional] |
+| **Reviewers** | Pointer to [**[]CertifierResponse**](certifier-response) | The list of identities who review this certification | [optional] |
+| **Signer** | Pointer to [**CertifierResponse**](certifier-response) |  | [optional] |
+| **EventType** | Pointer to **string** | the event type | [optional] |
+| **Dt** | Pointer to **string** | the date of event | [optional] |
 
 ## Methods
 
@@ -30,18 +36,13 @@ Name | Type | Description | Notes
 
 `func NewIdentityCertified() *IdentityCertified`
 
-NewIdentityCertified instantiates a new IdentityCertified object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewIdentityCertified instantiates a new IdentityCertified object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewIdentityCertifiedWithDefaults
 
 `func NewIdentityCertifiedWithDefaults() *IdentityCertified`
 
-NewIdentityCertifiedWithDefaults instantiates a new IdentityCertified object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewIdentityCertifiedWithDefaults instantiates a new IdentityCertified object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetCertificationId
 
@@ -53,8 +54,7 @@ GetCertificationId returns the CertificationId field if non-nil, zero value othe
 
 `func (o *IdentityCertified) GetCertificationIdOk() (*string, bool)`
 
-GetCertificationIdOk returns a tuple with the CertificationId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCertificationIdOk returns a tuple with the CertificationId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCertificationId
 
@@ -78,8 +78,7 @@ GetCertificationName returns the CertificationName field if non-nil, zero value 
 
 `func (o *IdentityCertified) GetCertificationNameOk() (*string, bool)`
 
-GetCertificationNameOk returns a tuple with the CertificationName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCertificationNameOk returns a tuple with the CertificationName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCertificationName
 
@@ -103,8 +102,7 @@ GetSignedDate returns the SignedDate field if non-nil, zero value otherwise.
 
 `func (o *IdentityCertified) GetSignedDateOk() (*string, bool)`
 
-GetSignedDateOk returns a tuple with the SignedDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSignedDateOk returns a tuple with the SignedDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSignedDate
 
@@ -128,8 +126,7 @@ GetCertifiers returns the Certifiers field if non-nil, zero value otherwise.
 
 `func (o *IdentityCertified) GetCertifiersOk() (*[]CertifierResponse, bool)`
 
-GetCertifiersOk returns a tuple with the Certifiers field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCertifiersOk returns a tuple with the Certifiers field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCertifiers
 
@@ -153,8 +150,7 @@ GetReviewers returns the Reviewers field if non-nil, zero value otherwise.
 
 `func (o *IdentityCertified) GetReviewersOk() (*[]CertifierResponse, bool)`
 
-GetReviewersOk returns a tuple with the Reviewers field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReviewersOk returns a tuple with the Reviewers field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReviewers
 
@@ -178,8 +174,7 @@ GetSigner returns the Signer field if non-nil, zero value otherwise.
 
 `func (o *IdentityCertified) GetSignerOk() (*CertifierResponse, bool)`
 
-GetSignerOk returns a tuple with the Signer field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSignerOk returns a tuple with the Signer field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSigner
 
@@ -203,8 +198,7 @@ GetEventType returns the EventType field if non-nil, zero value otherwise.
 
 `func (o *IdentityCertified) GetEventTypeOk() (*string, bool)`
 
-GetEventTypeOk returns a tuple with the EventType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEventTypeOk returns a tuple with the EventType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEventType
 
@@ -228,8 +222,7 @@ GetDt returns the Dt field if non-nil, zero value otherwise.
 
 `func (o *IdentityCertified) GetDtOk() (*string, bool)`
 
-GetDtOk returns a tuple with the Dt field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDtOk returns a tuple with the Dt field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDt
 
@@ -242,5 +235,3 @@ SetDt sets Dt field to given value.
 `func (o *IdentityCertified) HasDt() bool`
 
 HasDt returns a boolean if a field has been set.
-
-

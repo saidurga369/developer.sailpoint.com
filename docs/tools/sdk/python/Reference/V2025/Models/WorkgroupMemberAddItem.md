@@ -4,21 +4,34 @@ title: WorkgroupMemberAddItem
 pagination_label: WorkgroupMemberAddItem
 sidebar_label: WorkgroupMemberAddItem
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'WorkgroupMemberAddItem', 'V2025WorkgroupMemberAddItem'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'WorkgroupMemberAddItem',
+    'V2025WorkgroupMemberAddItem',
+  ]
 slug: /tools/sdk/python/v2025/models/workgroup-member-add-item
-tags: ['SDK', 'Software Development Kit', 'WorkgroupMemberAddItem', 'V2025WorkgroupMemberAddItem']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'WorkgroupMemberAddItem',
+    'V2025WorkgroupMemberAddItem',
+  ]
 ---
 
 # WorkgroupMemberAddItem
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Identifier of identity in bulk member add request. | [required]
-**status** | **int** |  The HTTP response status code returned for an individual member that is requested for addition during a bulk add operation. The HTTP response status code returned for an individual Governance Group is requested for deletion.  > 201   - Identity is added into Governance Group members list.  > 409   - Identity is already member of  Governance Group.  | [required]
-**description** | **str** | Human readable status description and containing additional context information about success or failures etc.  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | Identifier of identity in bulk member add request. | [required] |
+| **status** | **int** | The HTTP response status code returned for an individual member that is requested for addition during a bulk add operation. The HTTP response status code returned for an individual Governance Group is requested for deletion. > 201 - Identity is added into Governance Group members list. > 409 - Identity is already member of Governance Group. | [required] |
+| **description** | **str** | Human readable status description and containing additional context information about success or failures etc. | [optional] |
+
 }
 
 ## Example
@@ -37,5 +50,5 @@ description='
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

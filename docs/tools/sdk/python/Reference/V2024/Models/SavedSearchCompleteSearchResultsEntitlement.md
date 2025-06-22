@@ -4,9 +4,22 @@ title: SavedSearchCompleteSearchResultsEntitlement
 pagination_label: SavedSearchCompleteSearchResultsEntitlement
 sidebar_label: SavedSearchCompleteSearchResultsEntitlement
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SavedSearchCompleteSearchResultsEntitlement', 'V2024SavedSearchCompleteSearchResultsEntitlement'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'SavedSearchCompleteSearchResultsEntitlement',
+    'V2024SavedSearchCompleteSearchResultsEntitlement',
+  ]
 slug: /tools/sdk/python/v2024/models/saved-search-complete-search-results-entitlement
-tags: ['SDK', 'Software Development Kit', 'SavedSearchCompleteSearchResultsEntitlement', 'V2024SavedSearchCompleteSearchResultsEntitlement']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SavedSearchCompleteSearchResultsEntitlement',
+    'V2024SavedSearchCompleteSearchResultsEntitlement',
+  ]
 ---
 
 # SavedSearchCompleteSearchResultsEntitlement
@@ -15,11 +28,12 @@ A table of entitlements that match the search criteria.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**count** | **str** | The number of rows in the table. | [required]
-**noun** | **str** | The type of object represented in the table. | [required]
-**preview** | **[]List[str]** | A sample of the data in the table. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **count** | **str** | The number of rows in the table. | [required] |
+| **noun** | **str** | The type of object represented in the table. | [required] |
+| **preview** | **[]List[str]** | A sample of the data in the table. | [required] |
+
 }
 
 ## Example
@@ -36,5 +50,5 @@ preview=[
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

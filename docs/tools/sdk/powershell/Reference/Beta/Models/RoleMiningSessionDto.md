@@ -4,33 +4,46 @@ title: RoleMiningSessionDto
 pagination_label: RoleMiningSessionDto
 sidebar_label: RoleMiningSessionDto
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'RoleMiningSessionDto', 'BetaRoleMiningSessionDto'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'RoleMiningSessionDto',
+    'BetaRoleMiningSessionDto',
+  ]
 slug: /tools/sdk/powershell/beta/models/role-mining-session-dto
-tags: ['SDK', 'Software Development Kit', 'RoleMiningSessionDto', 'BetaRoleMiningSessionDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningSessionDto',
+    'BetaRoleMiningSessionDto',
+  ]
 ---
-
 
 # RoleMiningSessionDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Scope** | [**RoleMiningSessionScope**](role-mining-session-scope) |  | [optional] 
-**PruneThreshold** | **Int32** | The prune threshold to be used or null to calculate prescribedPruneThreshold | [optional] 
-**PrescribedPruneThreshold** | **Int32** | The calculated prescribedPruneThreshold | [optional] 
-**MinNumIdentitiesInPotentialRole** | **Int32** | Minimum number of identities in a potential role | [optional] 
-**PotentialRoleCount** | **Int32** | Number of potential roles | [optional] 
-**PotentialRolesReadyCount** | **Int32** | Number of potential roles ready | [optional] 
-**Type** | [**RoleMiningRoleType**](role-mining-role-type) |  | [optional] 
-**EmailRecipientId** | **String** | The id of the user who will receive an email about the role mining session | [optional] 
-**IdentityCount** | **Int32** | Number of identities in the population which meet the search criteria or identity list provided | [optional] 
-**Saved** | **Boolean** | The session's saved status | [optional] [default to $false]
-**Name** | **String** | The session's saved name | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Scope** | [**RoleMiningSessionScope**](role-mining-session-scope) |  | [optional] |
+| **PruneThreshold** | **Int32** | The prune threshold to be used or null to calculate prescribedPruneThreshold | [optional] |
+| **PrescribedPruneThreshold** | **Int32** | The calculated prescribedPruneThreshold | [optional] |
+| **MinNumIdentitiesInPotentialRole** | **Int32** | Minimum number of identities in a potential role | [optional] |
+| **PotentialRoleCount** | **Int32** | Number of potential roles | [optional] |
+| **PotentialRolesReadyCount** | **Int32** | Number of potential roles ready | [optional] |
+| **Type** | [**RoleMiningRoleType**](role-mining-role-type) |  | [optional] |
+| **EmailRecipientId** | **String** | The id of the user who will receive an email about the role mining session | [optional] |
+| **IdentityCount** | **Int32** | Number of identities in the population which meet the search criteria or identity list provided | [optional] |
+| **Saved** | **Boolean** | The session's saved status | [optional] [default to $false] |
+| **Name** | **String** | The session's saved name | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $RoleMiningSessionDto = Initialize-BetaRoleMiningSessionDto  -Scope null `
  -PruneThreshold 50 `
@@ -46,10 +59,9 @@ $RoleMiningSessionDto = Initialize-BetaRoleMiningSessionDto  -Scope null `
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $RoleMiningSessionDto | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

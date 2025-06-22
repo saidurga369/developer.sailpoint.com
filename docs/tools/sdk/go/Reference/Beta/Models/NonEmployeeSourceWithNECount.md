@@ -4,26 +4,39 @@ title: NonEmployeeSourceWithNECount
 pagination_label: NonEmployeeSourceWithNECount
 sidebar_label: NonEmployeeSourceWithNECount
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'NonEmployeeSourceWithNECount', 'BetaNonEmployeeSourceWithNECount'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'NonEmployeeSourceWithNECount',
+    'BetaNonEmployeeSourceWithNECount',
+  ]
 slug: /tools/sdk/go/beta/models/non-employee-source-with-ne-count
-tags: ['SDK', 'Software Development Kit', 'NonEmployeeSourceWithNECount', 'BetaNonEmployeeSourceWithNECount']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NonEmployeeSourceWithNECount',
+    'BetaNonEmployeeSourceWithNECount',
+  ]
 ---
 
 # NonEmployeeSourceWithNECount
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Non-Employee source id. | [optional] 
-**SourceId** | Pointer to **string** | Source Id associated with this non-employee source. | [optional] 
-**Name** | Pointer to **string** | Source name associated with this non-employee source. | [optional] 
-**Description** | Pointer to **string** | Source description associated with this non-employee source. | [optional] 
-**Approvers** | Pointer to [**[]IdentityReferenceWithId**](identity-reference-with-id) | List of approvers | [optional] 
-**AccountManagers** | Pointer to [**[]IdentityReferenceWithId**](identity-reference-with-id) | List of account managers | [optional] 
-**Modified** | Pointer to **SailPointTime** | When the request was last modified. | [optional] 
-**Created** | Pointer to **SailPointTime** | When the request was created. | [optional] 
-**NonEmployeeCount** | Pointer to **int32** | Number of non-employee records associated with this source. This value is 'null' by default. To get the non-employee count, you must set the `non-employee-count` flag in your request to 'true'. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Non-Employee source id. | [optional] |
+| **SourceId** | Pointer to **string** | Source Id associated with this non-employee source. | [optional] |
+| **Name** | Pointer to **string** | Source name associated with this non-employee source. | [optional] |
+| **Description** | Pointer to **string** | Source description associated with this non-employee source. | [optional] |
+| **Approvers** | Pointer to [**[]IdentityReferenceWithId**](identity-reference-with-id) | List of approvers | [optional] |
+| **AccountManagers** | Pointer to [**[]IdentityReferenceWithId**](identity-reference-with-id) | List of account managers | [optional] |
+| **Modified** | Pointer to **SailPointTime** | When the request was last modified. | [optional] |
+| **Created** | Pointer to **SailPointTime** | When the request was created. | [optional] |
+| **NonEmployeeCount** | Pointer to **int32** | Number of non-employee records associated with this source. This value is 'null' by default. To get the non-employee count, you must set the `non-employee-count` flag in your request to 'true'. | [optional] |
 
 ## Methods
 
@@ -31,18 +44,13 @@ Name | Type | Description | Notes
 
 `func NewNonEmployeeSourceWithNECount() *NonEmployeeSourceWithNECount`
 
-NewNonEmployeeSourceWithNECount instantiates a new NonEmployeeSourceWithNECount object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewNonEmployeeSourceWithNECount instantiates a new NonEmployeeSourceWithNECount object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewNonEmployeeSourceWithNECountWithDefaults
 
 `func NewNonEmployeeSourceWithNECountWithDefaults() *NonEmployeeSourceWithNECount`
 
-NewNonEmployeeSourceWithNECountWithDefaults instantiates a new NonEmployeeSourceWithNECount object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewNonEmployeeSourceWithNECountWithDefaults instantiates a new NonEmployeeSourceWithNECount object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -54,8 +62,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeSourceWithNECount) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -79,8 +86,7 @@ GetSourceId returns the SourceId field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeSourceWithNECount) GetSourceIdOk() (*string, bool)`
 
-GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceId
 
@@ -104,8 +110,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeSourceWithNECount) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -129,8 +134,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeSourceWithNECount) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -154,8 +158,7 @@ GetApprovers returns the Approvers field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeSourceWithNECount) GetApproversOk() (*[]IdentityReferenceWithId, bool)`
 
-GetApproversOk returns a tuple with the Approvers field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApproversOk returns a tuple with the Approvers field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApprovers
 
@@ -179,8 +182,7 @@ GetAccountManagers returns the AccountManagers field if non-nil, zero value othe
 
 `func (o *NonEmployeeSourceWithNECount) GetAccountManagersOk() (*[]IdentityReferenceWithId, bool)`
 
-GetAccountManagersOk returns a tuple with the AccountManagers field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountManagersOk returns a tuple with the AccountManagers field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountManagers
 
@@ -204,8 +206,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeSourceWithNECount) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -229,8 +230,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeSourceWithNECount) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -254,8 +254,7 @@ GetNonEmployeeCount returns the NonEmployeeCount field if non-nil, zero value ot
 
 `func (o *NonEmployeeSourceWithNECount) GetNonEmployeeCountOk() (*int32, bool)`
 
-GetNonEmployeeCountOk returns a tuple with the NonEmployeeCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNonEmployeeCountOk returns a tuple with the NonEmployeeCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNonEmployeeCount
 
@@ -268,5 +267,3 @@ SetNonEmployeeCount sets NonEmployeeCount field to given value.
 `func (o *NonEmployeeSourceWithNECount) HasNonEmployeeCount() bool`
 
 HasNonEmployeeCount returns a boolean if a field has been set.
-
-

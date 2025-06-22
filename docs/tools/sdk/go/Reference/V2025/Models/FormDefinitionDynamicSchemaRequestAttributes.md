@@ -4,18 +4,31 @@ title: FormDefinitionDynamicSchemaRequestAttributes
 pagination_label: FormDefinitionDynamicSchemaRequestAttributes
 sidebar_label: FormDefinitionDynamicSchemaRequestAttributes
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'FormDefinitionDynamicSchemaRequestAttributes', 'V2025FormDefinitionDynamicSchemaRequestAttributes'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'FormDefinitionDynamicSchemaRequestAttributes',
+    'V2025FormDefinitionDynamicSchemaRequestAttributes',
+  ]
 slug: /tools/sdk/go/v2025/models/form-definition-dynamic-schema-request-attributes
-tags: ['SDK', 'Software Development Kit', 'FormDefinitionDynamicSchemaRequestAttributes', 'V2025FormDefinitionDynamicSchemaRequestAttributes']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'FormDefinitionDynamicSchemaRequestAttributes',
+    'V2025FormDefinitionDynamicSchemaRequestAttributes',
+  ]
 ---
 
 # FormDefinitionDynamicSchemaRequestAttributes
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**FormDefinitionId** | Pointer to **string** | FormDefinitionID is a unique guid identifying this form definition | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **FormDefinitionId** | Pointer to **string** | FormDefinitionID is a unique guid identifying this form definition | [optional] |
 
 ## Methods
 
@@ -23,18 +36,13 @@ Name | Type | Description | Notes
 
 `func NewFormDefinitionDynamicSchemaRequestAttributes() *FormDefinitionDynamicSchemaRequestAttributes`
 
-NewFormDefinitionDynamicSchemaRequestAttributes instantiates a new FormDefinitionDynamicSchemaRequestAttributes object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewFormDefinitionDynamicSchemaRequestAttributes instantiates a new FormDefinitionDynamicSchemaRequestAttributes object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewFormDefinitionDynamicSchemaRequestAttributesWithDefaults
 
 `func NewFormDefinitionDynamicSchemaRequestAttributesWithDefaults() *FormDefinitionDynamicSchemaRequestAttributes`
 
-NewFormDefinitionDynamicSchemaRequestAttributesWithDefaults instantiates a new FormDefinitionDynamicSchemaRequestAttributes object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewFormDefinitionDynamicSchemaRequestAttributesWithDefaults instantiates a new FormDefinitionDynamicSchemaRequestAttributes object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetFormDefinitionId
 
@@ -46,8 +54,7 @@ GetFormDefinitionId returns the FormDefinitionId field if non-nil, zero value ot
 
 `func (o *FormDefinitionDynamicSchemaRequestAttributes) GetFormDefinitionIdOk() (*string, bool)`
 
-GetFormDefinitionIdOk returns a tuple with the FormDefinitionId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFormDefinitionIdOk returns a tuple with the FormDefinitionId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFormDefinitionId
 
@@ -60,5 +67,3 @@ SetFormDefinitionId sets FormDefinitionId field to given value.
 `func (o *FormDefinitionDynamicSchemaRequestAttributes) HasFormDefinitionId() bool`
 
 HasFormDefinitionId returns a boolean if a field has been set.
-
-

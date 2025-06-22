@@ -4,7 +4,7 @@ title: MfaDuoConfig
 pagination_label: MfaDuoConfig
 sidebar_label: MfaDuoConfig
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'MfaDuoConfig', 'MfaDuoConfig'] 
+keywords: ['go', 'Golang', 'sdk', 'MfaDuoConfig', 'MfaDuoConfig']
 slug: /tools/sdk/go/v3/models/mfa-duo-config
 tags: ['SDK', 'Software Development Kit', 'MfaDuoConfig', 'MfaDuoConfig']
 ---
@@ -13,14 +13,14 @@ tags: ['SDK', 'Software Development Kit', 'MfaDuoConfig', 'MfaDuoConfig']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**MfaMethod** | Pointer to **NullableString** | Mfa method name | [optional] 
-**Enabled** | Pointer to **bool** | If MFA method is enabled. | [optional] [default to false]
-**Host** | Pointer to **NullableString** | The server host name or IP address of the MFA provider. | [optional] 
-**AccessKey** | Pointer to **NullableString** | The secret key for authenticating requests to the MFA provider. | [optional] 
-**IdentityAttribute** | Pointer to **NullableString** | Optional. The name of the attribute for mapping IdentityNow identity to the MFA provider. | [optional] 
-**ConfigProperties** | Pointer to **map[string]interface{}** | A map with additional config properties for the given MFA method - duo-web. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **MfaMethod** | Pointer to **NullableString** | Mfa method name | [optional] |
+| **Enabled** | Pointer to **bool** | If MFA method is enabled. | [optional] [default to false] |
+| **Host** | Pointer to **NullableString** | The server host name or IP address of the MFA provider. | [optional] |
+| **AccessKey** | Pointer to **NullableString** | The secret key for authenticating requests to the MFA provider. | [optional] |
+| **IdentityAttribute** | Pointer to **NullableString** | Optional. The name of the attribute for mapping IdentityNow identity to the MFA provider. | [optional] |
+| **ConfigProperties** | Pointer to **map[string]interface{}** | A map with additional config properties for the given MFA method - duo-web. | [optional] |
 
 ## Methods
 
@@ -28,18 +28,13 @@ Name | Type | Description | Notes
 
 `func NewMfaDuoConfig() *MfaDuoConfig`
 
-NewMfaDuoConfig instantiates a new MfaDuoConfig object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewMfaDuoConfig instantiates a new MfaDuoConfig object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewMfaDuoConfigWithDefaults
 
 `func NewMfaDuoConfigWithDefaults() *MfaDuoConfig`
 
-NewMfaDuoConfigWithDefaults instantiates a new MfaDuoConfig object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewMfaDuoConfigWithDefaults instantiates a new MfaDuoConfig object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetMfaMethod
 
@@ -51,8 +46,7 @@ GetMfaMethod returns the MfaMethod field if non-nil, zero value otherwise.
 
 `func (o *MfaDuoConfig) GetMfaMethodOk() (*string, bool)`
 
-GetMfaMethodOk returns a tuple with the MfaMethod field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMfaMethodOk returns a tuple with the MfaMethod field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMfaMethod
 
@@ -70,12 +64,14 @@ HasMfaMethod returns a boolean if a field has been set.
 
 `func (o *MfaDuoConfig) SetMfaMethodNil(b bool)`
 
- SetMfaMethodNil sets the value for MfaMethod to be an explicit nil
+SetMfaMethodNil sets the value for MfaMethod to be an explicit nil
 
 ### UnsetMfaMethod
+
 `func (o *MfaDuoConfig) UnsetMfaMethod()`
 
 UnsetMfaMethod ensures that no value is present for MfaMethod, not even an explicit nil
+
 ### GetEnabled
 
 `func (o *MfaDuoConfig) GetEnabled() bool`
@@ -86,8 +82,7 @@ GetEnabled returns the Enabled field if non-nil, zero value otherwise.
 
 `func (o *MfaDuoConfig) GetEnabledOk() (*bool, bool)`
 
-GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEnabled
 
@@ -111,8 +106,7 @@ GetHost returns the Host field if non-nil, zero value otherwise.
 
 `func (o *MfaDuoConfig) GetHostOk() (*string, bool)`
 
-GetHostOk returns a tuple with the Host field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetHostOk returns a tuple with the Host field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetHost
 
@@ -130,12 +124,14 @@ HasHost returns a boolean if a field has been set.
 
 `func (o *MfaDuoConfig) SetHostNil(b bool)`
 
- SetHostNil sets the value for Host to be an explicit nil
+SetHostNil sets the value for Host to be an explicit nil
 
 ### UnsetHost
+
 `func (o *MfaDuoConfig) UnsetHost()`
 
 UnsetHost ensures that no value is present for Host, not even an explicit nil
+
 ### GetAccessKey
 
 `func (o *MfaDuoConfig) GetAccessKey() string`
@@ -146,8 +142,7 @@ GetAccessKey returns the AccessKey field if non-nil, zero value otherwise.
 
 `func (o *MfaDuoConfig) GetAccessKeyOk() (*string, bool)`
 
-GetAccessKeyOk returns a tuple with the AccessKey field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessKeyOk returns a tuple with the AccessKey field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessKey
 
@@ -165,12 +160,14 @@ HasAccessKey returns a boolean if a field has been set.
 
 `func (o *MfaDuoConfig) SetAccessKeyNil(b bool)`
 
- SetAccessKeyNil sets the value for AccessKey to be an explicit nil
+SetAccessKeyNil sets the value for AccessKey to be an explicit nil
 
 ### UnsetAccessKey
+
 `func (o *MfaDuoConfig) UnsetAccessKey()`
 
 UnsetAccessKey ensures that no value is present for AccessKey, not even an explicit nil
+
 ### GetIdentityAttribute
 
 `func (o *MfaDuoConfig) GetIdentityAttribute() string`
@@ -181,8 +178,7 @@ GetIdentityAttribute returns the IdentityAttribute field if non-nil, zero value 
 
 `func (o *MfaDuoConfig) GetIdentityAttributeOk() (*string, bool)`
 
-GetIdentityAttributeOk returns a tuple with the IdentityAttribute field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityAttributeOk returns a tuple with the IdentityAttribute field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityAttribute
 
@@ -200,12 +196,14 @@ HasIdentityAttribute returns a boolean if a field has been set.
 
 `func (o *MfaDuoConfig) SetIdentityAttributeNil(b bool)`
 
- SetIdentityAttributeNil sets the value for IdentityAttribute to be an explicit nil
+SetIdentityAttributeNil sets the value for IdentityAttribute to be an explicit nil
 
 ### UnsetIdentityAttribute
+
 `func (o *MfaDuoConfig) UnsetIdentityAttribute()`
 
 UnsetIdentityAttribute ensures that no value is present for IdentityAttribute, not even an explicit nil
+
 ### GetConfigProperties
 
 `func (o *MfaDuoConfig) GetConfigProperties() map[string]interface{}`
@@ -216,8 +214,7 @@ GetConfigProperties returns the ConfigProperties field if non-nil, zero value ot
 
 `func (o *MfaDuoConfig) GetConfigPropertiesOk() (*map[string]interface{}, bool)`
 
-GetConfigPropertiesOk returns a tuple with the ConfigProperties field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConfigPropertiesOk returns a tuple with the ConfigProperties field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConfigProperties
 
@@ -235,10 +232,10 @@ HasConfigProperties returns a boolean if a field has been set.
 
 `func (o *MfaDuoConfig) SetConfigPropertiesNil(b bool)`
 
- SetConfigPropertiesNil sets the value for ConfigProperties to be an explicit nil
+SetConfigPropertiesNil sets the value for ConfigProperties to be an explicit nil
 
 ### UnsetConfigProperties
+
 `func (o *MfaDuoConfig) UnsetConfigProperties()`
 
 UnsetConfigProperties ensures that no value is present for ConfigProperties, not even an explicit nil
-

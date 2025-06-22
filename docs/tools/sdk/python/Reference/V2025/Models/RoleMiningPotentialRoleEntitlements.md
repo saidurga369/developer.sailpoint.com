@@ -4,20 +4,33 @@ title: RoleMiningPotentialRoleEntitlements
 pagination_label: RoleMiningPotentialRoleEntitlements
 sidebar_label: RoleMiningPotentialRoleEntitlements
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RoleMiningPotentialRoleEntitlements', 'V2025RoleMiningPotentialRoleEntitlements'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'RoleMiningPotentialRoleEntitlements',
+    'V2025RoleMiningPotentialRoleEntitlements',
+  ]
 slug: /tools/sdk/python/v2025/models/role-mining-potential-role-entitlements
-tags: ['SDK', 'Software Development Kit', 'RoleMiningPotentialRoleEntitlements', 'V2025RoleMiningPotentialRoleEntitlements']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningPotentialRoleEntitlements',
+    'V2025RoleMiningPotentialRoleEntitlements',
+  ]
 ---
 
 # RoleMiningPotentialRoleEntitlements
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Id of the entitlement | [optional] 
-**name** | **str** | Name of the entitlement | [optional] 
+| Name     | Type    | Description             | Notes      |
+| -------- | ------- | ----------------------- | ---------- |
+| **id**   | **str** | Id of the entitlement   | [optional] |
+| **name** | **str** | Name of the entitlement | [optional] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ name='{name=LauncherTest2}'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,41 +4,47 @@ title: CompletedApproval
 pagination_label: CompletedApproval
 sidebar_label: CompletedApproval
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'CompletedApproval', 'V2024CompletedApproval'] 
+keywords: ['go', 'Golang', 'sdk', 'CompletedApproval', 'V2024CompletedApproval']
 slug: /tools/sdk/go/v2024/models/completed-approval
-tags: ['SDK', 'Software Development Kit', 'CompletedApproval', 'V2024CompletedApproval']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CompletedApproval',
+    'V2024CompletedApproval',
+  ]
 ---
 
 # CompletedApproval
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The approval id. | [optional] 
-**Name** | Pointer to **string** | The name of the approval. | [optional] 
-**Created** | Pointer to **SailPointTime** | When the approval was created. | [optional] 
-**Modified** | Pointer to **SailPointTime** | When the approval was modified last time. | [optional] 
-**RequestCreated** | Pointer to **SailPointTime** | When the access-request was created. | [optional] 
-**RequestType** | Pointer to [**NullableAccessRequestType**](access-request-type) |  | [optional] 
-**Requester** | Pointer to [**AccessItemRequester**](access-item-requester) |  | [optional] 
-**RequestedFor** | Pointer to [**RequestedItemStatusRequestedFor**](requested-item-status-requested-for) |  | [optional] 
-**ReviewedBy** | Pointer to [**AccessItemReviewedBy**](access-item-reviewed-by) |  | [optional] 
-**Owner** | Pointer to [**OwnerDto**](owner-dto) |  | [optional] 
-**RequestedObject** | Pointer to [**RequestableObjectReference**](requestable-object-reference) |  | [optional] 
-**RequesterComment** | Pointer to [**CompletedApprovalRequesterComment**](completed-approval-requester-comment) |  | [optional] 
-**ReviewerComment** | Pointer to [**CompletedApprovalReviewerComment**](completed-approval-reviewer-comment) |  | [optional] 
-**PreviousReviewersComments** | Pointer to [**[]CommentDto**](comment-dto) | The history of the previous reviewers comments. | [optional] 
-**ForwardHistory** | Pointer to [**[]ApprovalForwardHistory**](approval-forward-history) | The history of approval forward action. | [optional] 
-**CommentRequiredWhenRejected** | Pointer to **bool** | When true the rejector has to provide comments when rejecting | [optional] [default to false]
-**State** | Pointer to [**CompletedApprovalState**](completed-approval-state) |  | [optional] 
-**RemoveDate** | Pointer to **NullableTime** | The date the role or access profile or entitlement is no longer assigned to the specified identity. | [optional] 
-**RemoveDateUpdateRequested** | Pointer to **bool** | If true, then the request was to change the remove date or sunset date. | [optional] [default to false]
-**CurrentRemoveDate** | Pointer to **NullableTime** | The remove date or sunset date that was assigned at the time of the request. | [optional] 
-**SodViolationContext** | Pointer to [**NullableSodViolationContextCheckCompleted**](sod-violation-context-check-completed) |  | [optional] 
-**PreApprovalTriggerResult** | Pointer to [**NullableCompletedApprovalPreApprovalTriggerResult**](completed-approval-pre-approval-trigger-result) |  | [optional] 
-**ClientMetadata** | Pointer to **map[string]string** | Arbitrary key-value pairs provided during the request. | [optional] 
-**RequestedAccounts** | Pointer to [**[]RequestedAccountRef**](requested-account-ref) | The accounts selected by the user for the access to be provisioned on, in case they have multiple accounts on one or more sources. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The approval id. | [optional] |
+| **Name** | Pointer to **string** | The name of the approval. | [optional] |
+| **Created** | Pointer to **SailPointTime** | When the approval was created. | [optional] |
+| **Modified** | Pointer to **SailPointTime** | When the approval was modified last time. | [optional] |
+| **RequestCreated** | Pointer to **SailPointTime** | When the access-request was created. | [optional] |
+| **RequestType** | Pointer to [**NullableAccessRequestType**](access-request-type) |  | [optional] |
+| **Requester** | Pointer to [**AccessItemRequester**](access-item-requester) |  | [optional] |
+| **RequestedFor** | Pointer to [**RequestedItemStatusRequestedFor**](requested-item-status-requested-for) |  | [optional] |
+| **ReviewedBy** | Pointer to [**AccessItemReviewedBy**](access-item-reviewed-by) |  | [optional] |
+| **Owner** | Pointer to [**OwnerDto**](owner-dto) |  | [optional] |
+| **RequestedObject** | Pointer to [**RequestableObjectReference**](requestable-object-reference) |  | [optional] |
+| **RequesterComment** | Pointer to [**CompletedApprovalRequesterComment**](completed-approval-requester-comment) |  | [optional] |
+| **ReviewerComment** | Pointer to [**CompletedApprovalReviewerComment**](completed-approval-reviewer-comment) |  | [optional] |
+| **PreviousReviewersComments** | Pointer to [**[]CommentDto**](comment-dto) | The history of the previous reviewers comments. | [optional] |
+| **ForwardHistory** | Pointer to [**[]ApprovalForwardHistory**](approval-forward-history) | The history of approval forward action. | [optional] |
+| **CommentRequiredWhenRejected** | Pointer to **bool** | When true the rejector has to provide comments when rejecting | [optional] [default to false] |
+| **State** | Pointer to [**CompletedApprovalState**](completed-approval-state) |  | [optional] |
+| **RemoveDate** | Pointer to **NullableTime** | The date the role or access profile or entitlement is no longer assigned to the specified identity. | [optional] |
+| **RemoveDateUpdateRequested** | Pointer to **bool** | If true, then the request was to change the remove date or sunset date. | [optional] [default to false] |
+| **CurrentRemoveDate** | Pointer to **NullableTime** | The remove date or sunset date that was assigned at the time of the request. | [optional] |
+| **SodViolationContext** | Pointer to [**NullableSodViolationContextCheckCompleted**](sod-violation-context-check-completed) |  | [optional] |
+| **PreApprovalTriggerResult** | Pointer to [**NullableCompletedApprovalPreApprovalTriggerResult**](completed-approval-pre-approval-trigger-result) |  | [optional] |
+| **ClientMetadata** | Pointer to **map[string]string** | Arbitrary key-value pairs provided during the request. | [optional] |
+| **RequestedAccounts** | Pointer to [**[]RequestedAccountRef**](requested-account-ref) | The accounts selected by the user for the access to be provisioned on, in case they have multiple accounts on one or more sources. | [optional] |
 
 ## Methods
 
@@ -46,18 +52,13 @@ Name | Type | Description | Notes
 
 `func NewCompletedApproval() *CompletedApproval`
 
-NewCompletedApproval instantiates a new CompletedApproval object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewCompletedApproval instantiates a new CompletedApproval object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewCompletedApprovalWithDefaults
 
 `func NewCompletedApprovalWithDefaults() *CompletedApproval`
 
-NewCompletedApprovalWithDefaults instantiates a new CompletedApproval object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewCompletedApprovalWithDefaults instantiates a new CompletedApproval object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -69,8 +70,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *CompletedApproval) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -94,8 +94,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *CompletedApproval) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -119,8 +118,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *CompletedApproval) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -144,8 +142,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *CompletedApproval) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -169,8 +166,7 @@ GetRequestCreated returns the RequestCreated field if non-nil, zero value otherw
 
 `func (o *CompletedApproval) GetRequestCreatedOk() (*SailPointTime, bool)`
 
-GetRequestCreatedOk returns a tuple with the RequestCreated field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestCreatedOk returns a tuple with the RequestCreated field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequestCreated
 
@@ -194,8 +190,7 @@ GetRequestType returns the RequestType field if non-nil, zero value otherwise.
 
 `func (o *CompletedApproval) GetRequestTypeOk() (*AccessRequestType, bool)`
 
-GetRequestTypeOk returns a tuple with the RequestType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestTypeOk returns a tuple with the RequestType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequestType
 
@@ -213,12 +208,14 @@ HasRequestType returns a boolean if a field has been set.
 
 `func (o *CompletedApproval) SetRequestTypeNil(b bool)`
 
- SetRequestTypeNil sets the value for RequestType to be an explicit nil
+SetRequestTypeNil sets the value for RequestType to be an explicit nil
 
 ### UnsetRequestType
+
 `func (o *CompletedApproval) UnsetRequestType()`
 
 UnsetRequestType ensures that no value is present for RequestType, not even an explicit nil
+
 ### GetRequester
 
 `func (o *CompletedApproval) GetRequester() AccessItemRequester`
@@ -229,8 +226,7 @@ GetRequester returns the Requester field if non-nil, zero value otherwise.
 
 `func (o *CompletedApproval) GetRequesterOk() (*AccessItemRequester, bool)`
 
-GetRequesterOk returns a tuple with the Requester field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequesterOk returns a tuple with the Requester field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequester
 
@@ -254,8 +250,7 @@ GetRequestedFor returns the RequestedFor field if non-nil, zero value otherwise.
 
 `func (o *CompletedApproval) GetRequestedForOk() (*RequestedItemStatusRequestedFor, bool)`
 
-GetRequestedForOk returns a tuple with the RequestedFor field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestedForOk returns a tuple with the RequestedFor field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequestedFor
 
@@ -279,8 +274,7 @@ GetReviewedBy returns the ReviewedBy field if non-nil, zero value otherwise.
 
 `func (o *CompletedApproval) GetReviewedByOk() (*AccessItemReviewedBy, bool)`
 
-GetReviewedByOk returns a tuple with the ReviewedBy field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReviewedByOk returns a tuple with the ReviewedBy field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReviewedBy
 
@@ -304,8 +298,7 @@ GetOwner returns the Owner field if non-nil, zero value otherwise.
 
 `func (o *CompletedApproval) GetOwnerOk() (*OwnerDto, bool)`
 
-GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwner
 
@@ -329,8 +322,7 @@ GetRequestedObject returns the RequestedObject field if non-nil, zero value othe
 
 `func (o *CompletedApproval) GetRequestedObjectOk() (*RequestableObjectReference, bool)`
 
-GetRequestedObjectOk returns a tuple with the RequestedObject field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestedObjectOk returns a tuple with the RequestedObject field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequestedObject
 
@@ -354,8 +346,7 @@ GetRequesterComment returns the RequesterComment field if non-nil, zero value ot
 
 `func (o *CompletedApproval) GetRequesterCommentOk() (*CompletedApprovalRequesterComment, bool)`
 
-GetRequesterCommentOk returns a tuple with the RequesterComment field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequesterCommentOk returns a tuple with the RequesterComment field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequesterComment
 
@@ -379,8 +370,7 @@ GetReviewerComment returns the ReviewerComment field if non-nil, zero value othe
 
 `func (o *CompletedApproval) GetReviewerCommentOk() (*CompletedApprovalReviewerComment, bool)`
 
-GetReviewerCommentOk returns a tuple with the ReviewerComment field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReviewerCommentOk returns a tuple with the ReviewerComment field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReviewerComment
 
@@ -404,8 +394,7 @@ GetPreviousReviewersComments returns the PreviousReviewersComments field if non-
 
 `func (o *CompletedApproval) GetPreviousReviewersCommentsOk() (*[]CommentDto, bool)`
 
-GetPreviousReviewersCommentsOk returns a tuple with the PreviousReviewersComments field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPreviousReviewersCommentsOk returns a tuple with the PreviousReviewersComments field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPreviousReviewersComments
 
@@ -429,8 +418,7 @@ GetForwardHistory returns the ForwardHistory field if non-nil, zero value otherw
 
 `func (o *CompletedApproval) GetForwardHistoryOk() (*[]ApprovalForwardHistory, bool)`
 
-GetForwardHistoryOk returns a tuple with the ForwardHistory field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetForwardHistoryOk returns a tuple with the ForwardHistory field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetForwardHistory
 
@@ -454,8 +442,7 @@ GetCommentRequiredWhenRejected returns the CommentRequiredWhenRejected field if 
 
 `func (o *CompletedApproval) GetCommentRequiredWhenRejectedOk() (*bool, bool)`
 
-GetCommentRequiredWhenRejectedOk returns a tuple with the CommentRequiredWhenRejected field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCommentRequiredWhenRejectedOk returns a tuple with the CommentRequiredWhenRejected field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCommentRequiredWhenRejected
 
@@ -479,8 +466,7 @@ GetState returns the State field if non-nil, zero value otherwise.
 
 `func (o *CompletedApproval) GetStateOk() (*CompletedApprovalState, bool)`
 
-GetStateOk returns a tuple with the State field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStateOk returns a tuple with the State field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetState
 
@@ -504,8 +490,7 @@ GetRemoveDate returns the RemoveDate field if non-nil, zero value otherwise.
 
 `func (o *CompletedApproval) GetRemoveDateOk() (*SailPointTime, bool)`
 
-GetRemoveDateOk returns a tuple with the RemoveDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRemoveDateOk returns a tuple with the RemoveDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRemoveDate
 
@@ -523,12 +508,14 @@ HasRemoveDate returns a boolean if a field has been set.
 
 `func (o *CompletedApproval) SetRemoveDateNil(b bool)`
 
- SetRemoveDateNil sets the value for RemoveDate to be an explicit nil
+SetRemoveDateNil sets the value for RemoveDate to be an explicit nil
 
 ### UnsetRemoveDate
+
 `func (o *CompletedApproval) UnsetRemoveDate()`
 
 UnsetRemoveDate ensures that no value is present for RemoveDate, not even an explicit nil
+
 ### GetRemoveDateUpdateRequested
 
 `func (o *CompletedApproval) GetRemoveDateUpdateRequested() bool`
@@ -539,8 +526,7 @@ GetRemoveDateUpdateRequested returns the RemoveDateUpdateRequested field if non-
 
 `func (o *CompletedApproval) GetRemoveDateUpdateRequestedOk() (*bool, bool)`
 
-GetRemoveDateUpdateRequestedOk returns a tuple with the RemoveDateUpdateRequested field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRemoveDateUpdateRequestedOk returns a tuple with the RemoveDateUpdateRequested field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRemoveDateUpdateRequested
 
@@ -564,8 +550,7 @@ GetCurrentRemoveDate returns the CurrentRemoveDate field if non-nil, zero value 
 
 `func (o *CompletedApproval) GetCurrentRemoveDateOk() (*SailPointTime, bool)`
 
-GetCurrentRemoveDateOk returns a tuple with the CurrentRemoveDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCurrentRemoveDateOk returns a tuple with the CurrentRemoveDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCurrentRemoveDate
 
@@ -583,12 +568,14 @@ HasCurrentRemoveDate returns a boolean if a field has been set.
 
 `func (o *CompletedApproval) SetCurrentRemoveDateNil(b bool)`
 
- SetCurrentRemoveDateNil sets the value for CurrentRemoveDate to be an explicit nil
+SetCurrentRemoveDateNil sets the value for CurrentRemoveDate to be an explicit nil
 
 ### UnsetCurrentRemoveDate
+
 `func (o *CompletedApproval) UnsetCurrentRemoveDate()`
 
 UnsetCurrentRemoveDate ensures that no value is present for CurrentRemoveDate, not even an explicit nil
+
 ### GetSodViolationContext
 
 `func (o *CompletedApproval) GetSodViolationContext() SodViolationContextCheckCompleted`
@@ -599,8 +586,7 @@ GetSodViolationContext returns the SodViolationContext field if non-nil, zero va
 
 `func (o *CompletedApproval) GetSodViolationContextOk() (*SodViolationContextCheckCompleted, bool)`
 
-GetSodViolationContextOk returns a tuple with the SodViolationContext field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSodViolationContextOk returns a tuple with the SodViolationContext field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSodViolationContext
 
@@ -618,12 +604,14 @@ HasSodViolationContext returns a boolean if a field has been set.
 
 `func (o *CompletedApproval) SetSodViolationContextNil(b bool)`
 
- SetSodViolationContextNil sets the value for SodViolationContext to be an explicit nil
+SetSodViolationContextNil sets the value for SodViolationContext to be an explicit nil
 
 ### UnsetSodViolationContext
+
 `func (o *CompletedApproval) UnsetSodViolationContext()`
 
 UnsetSodViolationContext ensures that no value is present for SodViolationContext, not even an explicit nil
+
 ### GetPreApprovalTriggerResult
 
 `func (o *CompletedApproval) GetPreApprovalTriggerResult() CompletedApprovalPreApprovalTriggerResult`
@@ -634,8 +622,7 @@ GetPreApprovalTriggerResult returns the PreApprovalTriggerResult field if non-ni
 
 `func (o *CompletedApproval) GetPreApprovalTriggerResultOk() (*CompletedApprovalPreApprovalTriggerResult, bool)`
 
-GetPreApprovalTriggerResultOk returns a tuple with the PreApprovalTriggerResult field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPreApprovalTriggerResultOk returns a tuple with the PreApprovalTriggerResult field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPreApprovalTriggerResult
 
@@ -653,12 +640,14 @@ HasPreApprovalTriggerResult returns a boolean if a field has been set.
 
 `func (o *CompletedApproval) SetPreApprovalTriggerResultNil(b bool)`
 
- SetPreApprovalTriggerResultNil sets the value for PreApprovalTriggerResult to be an explicit nil
+SetPreApprovalTriggerResultNil sets the value for PreApprovalTriggerResult to be an explicit nil
 
 ### UnsetPreApprovalTriggerResult
+
 `func (o *CompletedApproval) UnsetPreApprovalTriggerResult()`
 
 UnsetPreApprovalTriggerResult ensures that no value is present for PreApprovalTriggerResult, not even an explicit nil
+
 ### GetClientMetadata
 
 `func (o *CompletedApproval) GetClientMetadata() map[string]string`
@@ -669,8 +658,7 @@ GetClientMetadata returns the ClientMetadata field if non-nil, zero value otherw
 
 `func (o *CompletedApproval) GetClientMetadataOk() (*map[string]string, bool)`
 
-GetClientMetadataOk returns a tuple with the ClientMetadata field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetClientMetadataOk returns a tuple with the ClientMetadata field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetClientMetadata
 
@@ -694,8 +682,7 @@ GetRequestedAccounts returns the RequestedAccounts field if non-nil, zero value 
 
 `func (o *CompletedApproval) GetRequestedAccountsOk() (*[]RequestedAccountRef, bool)`
 
-GetRequestedAccountsOk returns a tuple with the RequestedAccounts field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestedAccountsOk returns a tuple with the RequestedAccounts field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequestedAccounts
 
@@ -713,10 +700,10 @@ HasRequestedAccounts returns a boolean if a field has been set.
 
 `func (o *CompletedApproval) SetRequestedAccountsNil(b bool)`
 
- SetRequestedAccountsNil sets the value for RequestedAccounts to be an explicit nil
+SetRequestedAccountsNil sets the value for RequestedAccounts to be an explicit nil
 
 ### UnsetRequestedAccounts
+
 `func (o *CompletedApproval) UnsetRequestedAccounts()`
 
 UnsetRequestedAccounts ensures that no value is present for RequestedAccounts, not even an explicit nil
-

@@ -4,32 +4,45 @@ title: FullDiscoveredApplications
 pagination_label: FullDiscoveredApplications
 sidebar_label: FullDiscoveredApplications
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'FullDiscoveredApplications', 'BetaFullDiscoveredApplications'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'FullDiscoveredApplications',
+    'BetaFullDiscoveredApplications',
+  ]
 slug: /tools/sdk/powershell/beta/models/full-discovered-applications
-tags: ['SDK', 'Software Development Kit', 'FullDiscoveredApplications', 'BetaFullDiscoveredApplications']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'FullDiscoveredApplications',
+    'BetaFullDiscoveredApplications',
+  ]
 ---
-
 
 # FullDiscoveredApplications
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | Unique identifier for the discovered application. | [optional] 
-**Name** | **String** | Name of the discovered application. | [optional] 
-**DiscoverySource** | **String** | Source from which the application was discovered. | [optional] 
-**DiscoveredVendor** | **String** | The vendor associated with the discovered application. | [optional] 
-**Description** | **String** | A brief description of the discovered application. | [optional] 
-**RecommendedConnectors** | **[]String** | List of recommended connectors for the application. | [optional] 
-**DiscoveredAt** | **System.DateTime** | The timestamp when the application was last received via an entitlement aggregation invocation  or a manual csv upload, in ISO 8601 format. | [optional] 
-**CreatedAt** | **System.DateTime** | The timestamp when the application was first discovered, in ISO 8601 format. | [optional] 
-**Status** | **String** | The status of an application within the discovery source.  By default this field is set to ""ACTIVE"" when the application is discovered.  If an application has been deleted from within the discovery source, the status will be set to ""INACTIVE"". | [optional] 
-**AssociatedSources** | **[]String** | List of associated sources related to this discovered application. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | Unique identifier for the discovered application. | [optional] |
+| **Name** | **String** | Name of the discovered application. | [optional] |
+| **DiscoverySource** | **String** | Source from which the application was discovered. | [optional] |
+| **DiscoveredVendor** | **String** | The vendor associated with the discovered application. | [optional] |
+| **Description** | **String** | A brief description of the discovered application. | [optional] |
+| **RecommendedConnectors** | **[]String** | List of recommended connectors for the application. | [optional] |
+| **DiscoveredAt** | **System.DateTime** | The timestamp when the application was last received via an entitlement aggregation invocation or a manual csv upload, in ISO 8601 format. | [optional] |
+| **CreatedAt** | **System.DateTime** | The timestamp when the application was first discovered, in ISO 8601 format. | [optional] |
+| **Status** | **String** | The status of an application within the discovery source. By default this field is set to ""ACTIVE"" when the application is discovered. If an application has been deleted from within the discovery source, the status will be set to ""INACTIVE"". | [optional] |
+| **AssociatedSources** | **[]String** | List of associated sources related to this discovered application. | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $FullDiscoveredApplications = Initialize-BetaFullDiscoveredApplications  -Id null `
  -Name ExampleApp `
@@ -44,10 +57,9 @@ $FullDiscoveredApplications = Initialize-BetaFullDiscoveredApplications  -Id nul
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $FullDiscoveredApplications | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

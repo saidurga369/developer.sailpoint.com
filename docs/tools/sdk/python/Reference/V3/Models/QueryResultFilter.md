@@ -4,9 +4,10 @@ title: QueryResultFilter
 pagination_label: QueryResultFilter
 sidebar_label: QueryResultFilter
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'QueryResultFilter', 'QueryResultFilter'] 
+keywords: ['python', 'Python', 'sdk', 'QueryResultFilter', 'QueryResultFilter']
 slug: /tools/sdk/python/v3/models/query-result-filter
-tags: ['SDK', 'Software Development Kit', 'QueryResultFilter', 'QueryResultFilter']
+tags:
+  ['SDK', 'Software Development Kit', 'QueryResultFilter', 'QueryResultFilter']
 ---
 
 # QueryResultFilter
@@ -15,10 +16,11 @@ Allows the query results to be filtered by specifying a list of fields to includ
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**includes** | **[]str** | The list of field names to include in the result documents. | [optional] 
-**excludes** | **[]str** | The list of field names to exclude from the result documents. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **includes** | **[]str** | The list of field names to include in the result documents. | [optional] |
+| **excludes** | **[]str** | The list of field names to exclude from the result documents. | [optional] |
+
 }
 
 ## Example
@@ -32,5 +34,5 @@ excludes=[stacktrace]
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

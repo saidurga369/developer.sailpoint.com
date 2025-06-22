@@ -4,19 +4,32 @@ title: OutlierFeatureTranslation
 pagination_label: OutlierFeatureTranslation
 sidebar_label: OutlierFeatureTranslation
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'OutlierFeatureTranslation', 'V2025OutlierFeatureTranslation'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'OutlierFeatureTranslation',
+    'V2025OutlierFeatureTranslation',
+  ]
 slug: /tools/sdk/go/v2025/models/outlier-feature-translation
-tags: ['SDK', 'Software Development Kit', 'OutlierFeatureTranslation', 'V2025OutlierFeatureTranslation']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'OutlierFeatureTranslation',
+    'V2025OutlierFeatureTranslation',
+  ]
 ---
 
 # OutlierFeatureTranslation
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**DisplayName** | Pointer to [**TranslationMessage**](translation-message) |  | [optional] 
-**Description** | Pointer to [**TranslationMessage**](translation-message) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **DisplayName** | Pointer to [**TranslationMessage**](translation-message) |  | [optional] |
+| **Description** | Pointer to [**TranslationMessage**](translation-message) |  | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewOutlierFeatureTranslation() *OutlierFeatureTranslation`
 
-NewOutlierFeatureTranslation instantiates a new OutlierFeatureTranslation object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewOutlierFeatureTranslation instantiates a new OutlierFeatureTranslation object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewOutlierFeatureTranslationWithDefaults
 
 `func NewOutlierFeatureTranslationWithDefaults() *OutlierFeatureTranslation`
 
-NewOutlierFeatureTranslationWithDefaults instantiates a new OutlierFeatureTranslation object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewOutlierFeatureTranslationWithDefaults instantiates a new OutlierFeatureTranslation object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetDisplayName
 
@@ -47,8 +55,7 @@ GetDisplayName returns the DisplayName field if non-nil, zero value otherwise.
 
 `func (o *OutlierFeatureTranslation) GetDisplayNameOk() (*TranslationMessage, bool)`
 
-GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayName
 
@@ -72,8 +79,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *OutlierFeatureTranslation) GetDescriptionOk() (*TranslationMessage, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -86,5 +92,3 @@ SetDescription sets Description field to given value.
 `func (o *OutlierFeatureTranslation) HasDescription() bool`
 
 HasDescription returns a boolean if a field has been set.
-
-

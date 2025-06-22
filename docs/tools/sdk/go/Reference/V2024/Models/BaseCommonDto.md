@@ -4,7 +4,7 @@ title: BaseCommonDto
 pagination_label: BaseCommonDto
 sidebar_label: BaseCommonDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'BaseCommonDto', 'V2024BaseCommonDto'] 
+keywords: ['go', 'Golang', 'sdk', 'BaseCommonDto', 'V2024BaseCommonDto']
 slug: /tools/sdk/go/v2024/models/base-common-dto
 tags: ['SDK', 'Software Development Kit', 'BaseCommonDto', 'V2024BaseCommonDto']
 ---
@@ -13,12 +13,12 @@ tags: ['SDK', 'Software Development Kit', 'BaseCommonDto', 'V2024BaseCommonDto']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | System-generated unique ID of the Object | [optional] [readonly] 
-**Name** | **NullableString** | Name of the Object | 
-**Created** | Pointer to **SailPointTime** | Creation date of the Object | [optional] [readonly] 
-**Modified** | Pointer to **SailPointTime** | Last modification date of the Object | [optional] [readonly] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | System-generated unique ID of the Object | [optional] [readonly] |
+| **Name** | **NullableString** | Name of the Object |
+| **Created** | Pointer to **SailPointTime** | Creation date of the Object | [optional] [readonly] |
+| **Modified** | Pointer to **SailPointTime** | Last modification date of the Object | [optional] [readonly] |
 
 ## Methods
 
@@ -26,18 +26,13 @@ Name | Type | Description | Notes
 
 `func NewBaseCommonDto(name NullableString, ) *BaseCommonDto`
 
-NewBaseCommonDto instantiates a new BaseCommonDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewBaseCommonDto instantiates a new BaseCommonDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewBaseCommonDtoWithDefaults
 
 `func NewBaseCommonDtoWithDefaults() *BaseCommonDto`
 
-NewBaseCommonDtoWithDefaults instantiates a new BaseCommonDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewBaseCommonDtoWithDefaults instantiates a new BaseCommonDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -49,8 +44,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *BaseCommonDto) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -74,8 +68,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *BaseCommonDto) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -83,17 +76,18 @@ and a boolean to check if the value has been set.
 
 SetName sets Name field to given value.
 
-
 ### SetNameNil
 
 `func (o *BaseCommonDto) SetNameNil(b bool)`
 
- SetNameNil sets the value for Name to be an explicit nil
+SetNameNil sets the value for Name to be an explicit nil
 
 ### UnsetName
+
 `func (o *BaseCommonDto) UnsetName()`
 
 UnsetName ensures that no value is present for Name, not even an explicit nil
+
 ### GetCreated
 
 `func (o *BaseCommonDto) GetCreated() SailPointTime`
@@ -104,8 +98,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *BaseCommonDto) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -129,8 +122,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *BaseCommonDto) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -143,5 +135,3 @@ SetModified sets Modified field to given value.
 `func (o *BaseCommonDto) HasModified() bool`
 
 HasModified returns a boolean if a field has been set.
-
-

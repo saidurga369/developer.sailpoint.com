@@ -4,9 +4,10 @@ title: BaseAccessOwner
 pagination_label: BaseAccessOwner
 sidebar_label: BaseAccessOwner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'BaseAccessOwner', 'V2025BaseAccessOwner'] 
+keywords: ['python', 'Python', 'sdk', 'BaseAccessOwner', 'V2025BaseAccessOwner']
 slug: /tools/sdk/python/v2025/models/base-access-owner
-tags: ['SDK', 'Software Development Kit', 'BaseAccessOwner', 'V2025BaseAccessOwner']
+tags:
+  ['SDK', 'Software Development Kit', 'BaseAccessOwner', 'V2025BaseAccessOwner']
 ---
 
 # BaseAccessOwner
@@ -15,12 +16,13 @@ Owner's identity.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] | Owner's DTO type. | [optional] 
-**id** | **str** | Owner's identity ID. | [optional] 
-**name** | **str** | Owner's display name. | [optional] 
-**email** | **str** | Owner's email. | [optional] 
+| Name      | Type                    | Description           | Notes      |
+| --------- | ----------------------- | --------------------- | ---------- |
+| **type**  | **Enum** [ 'IDENTITY' ] | Owner's DTO type.     | [optional] |
+| **id**    | **str**                 | Owner's identity ID.  | [optional] |
+| **name**  | **str**                 | Owner's display name. | [optional] |
+| **email** | **str**                 | Owner's email.        | [optional] |
+
 }
 
 ## Example
@@ -36,5 +38,5 @@ email='cloud-support@sailpoint.com'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,30 +4,43 @@ title: IdentityEntitlementDetailsAccountTarget
 pagination_label: IdentityEntitlementDetailsAccountTarget
 sidebar_label: IdentityEntitlementDetailsAccountTarget
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'IdentityEntitlementDetailsAccountTarget', 'V2025IdentityEntitlementDetailsAccountTarget'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'IdentityEntitlementDetailsAccountTarget',
+    'V2025IdentityEntitlementDetailsAccountTarget',
+  ]
 slug: /tools/sdk/powershell/v2025/models/identity-entitlement-details-account-target
-tags: ['SDK', 'Software Development Kit', 'IdentityEntitlementDetailsAccountTarget', 'V2025IdentityEntitlementDetailsAccountTarget']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityEntitlementDetailsAccountTarget',
+    'V2025IdentityEntitlementDetailsAccountTarget',
+  ]
 ---
-
 
 # IdentityEntitlementDetailsAccountTarget
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**AccountId** | **String** | The id of account | [optional] 
-**AccountName** | **String** | The name of account | [optional] 
-**AccountUUID** | **String** | The UUID representation of the account if available | [optional] 
-**SourceId** | **String** | The id of Source | [optional] 
-**SourceName** | **String** | The name of Source | [optional] 
-**RemoveDate** | **String** | The removal date scheduled for the entitlement on the Identity | [optional] 
-**AssignmentId** | **String** | The assignmentId of the entitlement on the Identity | [optional] 
-**Revocable** | **Boolean** | If the entitlement can be revoked | [optional] [default to $false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **AccountId** | **String** | The id of account | [optional] |
+| **AccountName** | **String** | The name of account | [optional] |
+| **AccountUUID** | **String** | The UUID representation of the account if available | [optional] |
+| **SourceId** | **String** | The id of Source | [optional] |
+| **SourceName** | **String** | The name of Source | [optional] |
+| **RemoveDate** | **String** | The removal date scheduled for the entitlement on the Identity | [optional] |
+| **AssignmentId** | **String** | The assignmentId of the entitlement on the Identity | [optional] |
+| **Revocable** | **Boolean** | If the entitlement can be revoked | [optional] [default to $false] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $IdentityEntitlementDetailsAccountTarget = Initialize-V2025IdentityEntitlementDetailsAccountTarget  -AccountId c5ef070e-92c6-4276-a006-98490f132dec `
  -AccountName Adalberto.XYZ `
@@ -40,10 +53,9 @@ $IdentityEntitlementDetailsAccountTarget = Initialize-V2025IdentityEntitlementDe
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $IdentityEntitlementDetailsAccountTarget | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

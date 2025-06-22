@@ -4,9 +4,16 @@ title: ManagedClientRequest
 pagination_label: ManagedClientRequest
 sidebar_label: ManagedClientRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ManagedClientRequest', 'ManagedClientRequest'] 
+keywords:
+  ['python', 'Python', 'sdk', 'ManagedClientRequest', 'ManagedClientRequest']
 slug: /tools/sdk/python/v3/models/managed-client-request
-tags: ['SDK', 'Software Development Kit', 'ManagedClientRequest', 'ManagedClientRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ManagedClientRequest',
+    'ManagedClientRequest',
+  ]
 ---
 
 # ManagedClientRequest
@@ -15,12 +22,13 @@ Managed Client Request
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**cluster_id** | **str** | Cluster ID that the ManagedClient is linked to | [required]
-**description** | **str** | description for the ManagedClient to create | [optional] 
-**name** | **str** | name for the ManagedClient to create | [optional] 
-**type** | **str** | Type of the ManagedClient (VA, CCG) to create | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **cluster_id** | **str** | Cluster ID that the ManagedClient is linked to | [required] |
+| **description** | **str** | description for the ManagedClient to create | [optional] |
+| **name** | **str** | name for the ManagedClient to create | [optional] |
+| **type** | **str** | Type of the ManagedClient (VA, CCG) to create | [optional] |
+
 }
 
 ## Example
@@ -36,5 +44,5 @@ type='VA'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,32 +4,42 @@ title: RequestedItemStatusRequestState
 pagination_label: RequestedItemStatusRequestState
 sidebar_label: RequestedItemStatusRequestState
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RequestedItemStatusRequestState', 'BetaRequestedItemStatusRequestState'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'RequestedItemStatusRequestState',
+    'BetaRequestedItemStatusRequestState',
+  ]
 slug: /tools/sdk/go/beta/models/requested-item-status-request-state
-tags: ['SDK', 'Software Development Kit', 'RequestedItemStatusRequestState', 'BetaRequestedItemStatusRequestState']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RequestedItemStatusRequestState',
+    'BetaRequestedItemStatusRequestState',
+  ]
 ---
 
 # RequestedItemStatusRequestState
 
 ## Enum
 
+- `EXECUTING` (value: `"EXECUTING"`)
 
-* `EXECUTING` (value: `"EXECUTING"`)
+- `REQUEST_COMPLETED` (value: `"REQUEST_COMPLETED"`)
 
-* `REQUEST_COMPLETED` (value: `"REQUEST_COMPLETED"`)
+- `CANCELLED` (value: `"CANCELLED"`)
 
-* `CANCELLED` (value: `"CANCELLED"`)
+- `TERMINATED` (value: `"TERMINATED"`)
 
-* `TERMINATED` (value: `"TERMINATED"`)
+- `PROVISIONING_VERIFICATION_PENDING` (value: `"PROVISIONING_VERIFICATION_PENDING"`)
 
-* `PROVISIONING_VERIFICATION_PENDING` (value: `"PROVISIONING_VERIFICATION_PENDING"`)
+- `REJECTED` (value: `"REJECTED"`)
 
-* `REJECTED` (value: `"REJECTED"`)
+- `PROVISIONING_FAILED` (value: `"PROVISIONING_FAILED"`)
 
-* `PROVISIONING_FAILED` (value: `"PROVISIONING_FAILED"`)
+- `NOT_ALL_ITEMS_PROVISIONED` (value: `"NOT_ALL_ITEMS_PROVISIONED"`)
 
-* `NOT_ALL_ITEMS_PROVISIONED` (value: `"NOT_ALL_ITEMS_PROVISIONED"`)
-
-* `ERROR` (value: `"ERROR"`)
-
-
+- `ERROR` (value: `"ERROR"`)

@@ -4,7 +4,7 @@ title: SedAssignment
 pagination_label: SedAssignment
 sidebar_label: SedAssignment
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SedAssignment', 'BetaSedAssignment'] 
+keywords: ['go', 'Golang', 'sdk', 'SedAssignment', 'BetaSedAssignment']
 slug: /tools/sdk/go/beta/models/sed-assignment
 tags: ['SDK', 'Software Development Kit', 'SedAssignment', 'BetaSedAssignment']
 ---
@@ -13,10 +13,10 @@ tags: ['SDK', 'Software Development Kit', 'SedAssignment', 'BetaSedAssignment']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Assignee** | Pointer to [**SedAssignee**](sed-assignee) |  | [optional] 
-**Items** | Pointer to **[]string** | List of SED id's | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Assignee** | Pointer to [**SedAssignee**](sed-assignee) |  | [optional] |
+| **Items** | Pointer to **[]string** | List of SED id's | [optional] |
 
 ## Methods
 
@@ -24,18 +24,13 @@ Name | Type | Description | Notes
 
 `func NewSedAssignment() *SedAssignment`
 
-NewSedAssignment instantiates a new SedAssignment object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSedAssignment instantiates a new SedAssignment object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSedAssignmentWithDefaults
 
 `func NewSedAssignmentWithDefaults() *SedAssignment`
 
-NewSedAssignmentWithDefaults instantiates a new SedAssignment object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSedAssignmentWithDefaults instantiates a new SedAssignment object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetAssignee
 
@@ -47,8 +42,7 @@ GetAssignee returns the Assignee field if non-nil, zero value otherwise.
 
 `func (o *SedAssignment) GetAssigneeOk() (*SedAssignee, bool)`
 
-GetAssigneeOk returns a tuple with the Assignee field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAssigneeOk returns a tuple with the Assignee field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAssignee
 
@@ -72,8 +66,7 @@ GetItems returns the Items field if non-nil, zero value otherwise.
 
 `func (o *SedAssignment) GetItemsOk() (*[]string, bool)`
 
-GetItemsOk returns a tuple with the Items field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetItemsOk returns a tuple with the Items field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetItems
 
@@ -86,5 +79,3 @@ SetItems sets Items field to given value.
 `func (o *SedAssignment) HasItems() bool`
 
 HasItems returns a boolean if a field has been set.
-
-

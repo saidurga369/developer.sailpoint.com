@@ -4,23 +4,36 @@ title: NonEmployeeSchemaAttributeBody
 pagination_label: NonEmployeeSchemaAttributeBody
 sidebar_label: NonEmployeeSchemaAttributeBody
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'NonEmployeeSchemaAttributeBody', 'BetaNonEmployeeSchemaAttributeBody'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'NonEmployeeSchemaAttributeBody',
+    'BetaNonEmployeeSchemaAttributeBody',
+  ]
 slug: /tools/sdk/go/beta/models/non-employee-schema-attribute-body
-tags: ['SDK', 'Software Development Kit', 'NonEmployeeSchemaAttributeBody', 'BetaNonEmployeeSchemaAttributeBody']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NonEmployeeSchemaAttributeBody',
+    'BetaNonEmployeeSchemaAttributeBody',
+  ]
 ---
 
 # NonEmployeeSchemaAttributeBody
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | **string** | Type of the attribute. Only type 'TEXT' is supported for custom attributes. | 
-**Label** | **string** | Label displayed on the UI for this schema attribute. | 
-**TechnicalName** | **string** | The technical name of the attribute. Must be unique per source. | 
-**HelpText** | Pointer to **string** | help text displayed by UI. | [optional] 
-**Placeholder** | Pointer to **string** | Hint text that fills UI box. | [optional] 
-**Required** | Pointer to **bool** | If true, the schema attribute is required for all non-employees in the source | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | **string** | Type of the attribute. Only type 'TEXT' is supported for custom attributes. |
+| **Label** | **string** | Label displayed on the UI for this schema attribute. |
+| **TechnicalName** | **string** | The technical name of the attribute. Must be unique per source. |
+| **HelpText** | Pointer to **string** | help text displayed by UI. | [optional] |
+| **Placeholder** | Pointer to **string** | Hint text that fills UI box. | [optional] |
+| **Required** | Pointer to **bool** | If true, the schema attribute is required for all non-employees in the source | [optional] |
 
 ## Methods
 
@@ -28,18 +41,13 @@ Name | Type | Description | Notes
 
 `func NewNonEmployeeSchemaAttributeBody(type_ string, label string, technicalName string, ) *NonEmployeeSchemaAttributeBody`
 
-NewNonEmployeeSchemaAttributeBody instantiates a new NonEmployeeSchemaAttributeBody object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewNonEmployeeSchemaAttributeBody instantiates a new NonEmployeeSchemaAttributeBody object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewNonEmployeeSchemaAttributeBodyWithDefaults
 
 `func NewNonEmployeeSchemaAttributeBodyWithDefaults() *NonEmployeeSchemaAttributeBody`
 
-NewNonEmployeeSchemaAttributeBodyWithDefaults instantiates a new NonEmployeeSchemaAttributeBody object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewNonEmployeeSchemaAttributeBodyWithDefaults instantiates a new NonEmployeeSchemaAttributeBody object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -51,15 +59,13 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeSchemaAttributeBody) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
 `func (o *NonEmployeeSchemaAttributeBody) SetType(v string)`
 
 SetType sets Type field to given value.
-
 
 ### GetLabel
 
@@ -71,15 +77,13 @@ GetLabel returns the Label field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeSchemaAttributeBody) GetLabelOk() (*string, bool)`
 
-GetLabelOk returns a tuple with the Label field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLabelOk returns a tuple with the Label field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLabel
 
 `func (o *NonEmployeeSchemaAttributeBody) SetLabel(v string)`
 
 SetLabel sets Label field to given value.
-
 
 ### GetTechnicalName
 
@@ -91,15 +95,13 @@ GetTechnicalName returns the TechnicalName field if non-nil, zero value otherwis
 
 `func (o *NonEmployeeSchemaAttributeBody) GetTechnicalNameOk() (*string, bool)`
 
-GetTechnicalNameOk returns a tuple with the TechnicalName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTechnicalNameOk returns a tuple with the TechnicalName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTechnicalName
 
 `func (o *NonEmployeeSchemaAttributeBody) SetTechnicalName(v string)`
 
 SetTechnicalName sets TechnicalName field to given value.
-
 
 ### GetHelpText
 
@@ -111,8 +113,7 @@ GetHelpText returns the HelpText field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeSchemaAttributeBody) GetHelpTextOk() (*string, bool)`
 
-GetHelpTextOk returns a tuple with the HelpText field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetHelpTextOk returns a tuple with the HelpText field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetHelpText
 
@@ -136,8 +137,7 @@ GetPlaceholder returns the Placeholder field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeSchemaAttributeBody) GetPlaceholderOk() (*string, bool)`
 
-GetPlaceholderOk returns a tuple with the Placeholder field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPlaceholderOk returns a tuple with the Placeholder field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPlaceholder
 
@@ -161,8 +161,7 @@ GetRequired returns the Required field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeSchemaAttributeBody) GetRequiredOk() (*bool, bool)`
 
-GetRequiredOk returns a tuple with the Required field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequiredOk returns a tuple with the Required field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequired
 
@@ -175,5 +174,3 @@ SetRequired sets Required field to given value.
 `func (o *NonEmployeeSchemaAttributeBody) HasRequired() bool`
 
 HasRequired returns a boolean if a field has been set.
-
-

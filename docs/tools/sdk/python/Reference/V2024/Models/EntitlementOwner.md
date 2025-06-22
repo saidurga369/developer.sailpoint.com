@@ -4,9 +4,16 @@ title: EntitlementOwner
 pagination_label: EntitlementOwner
 sidebar_label: EntitlementOwner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'EntitlementOwner', 'V2024EntitlementOwner'] 
+keywords:
+  ['python', 'Python', 'sdk', 'EntitlementOwner', 'V2024EntitlementOwner']
 slug: /tools/sdk/python/v2024/models/entitlement-owner
-tags: ['SDK', 'Software Development Kit', 'EntitlementOwner', 'V2024EntitlementOwner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'EntitlementOwner',
+    'V2024EntitlementOwner',
+  ]
 ---
 
 # EntitlementOwner
@@ -15,11 +22,12 @@ The identity that owns the entitlement
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The identity ID | [optional] 
-**type** |  **Enum** [  'IDENTITY' ] | The type of object | [optional] 
-**name** | **str** | The display name of the identity | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The identity ID | [optional] |
+| **type** | **Enum** [ 'IDENTITY' ] | The type of object | [optional] |
+| **name** | **str** | The display name of the identity | [optional] |
+
 }
 
 ## Example
@@ -34,5 +42,5 @@ name='john.doe'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

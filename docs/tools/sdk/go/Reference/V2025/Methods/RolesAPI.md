@@ -4,19 +4,16 @@ title: Roles
 pagination_label: Roles
 sidebar_label: Roles
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Roles', 'V2025Roles'] 
+keywords: ['go', 'Golang', 'sdk', 'Roles', 'V2025Roles']
 slug: /tools/sdk/go/v2025/methods/roles
 tags: ['SDK', 'Software Development Kit', 'Roles', 'V2025Roles']
 ---
 
 # RolesAPI
-  Use this API to implement and customize role functionality.
-With this functionality in place, administrators can create roles and configure them for use throughout Identity Security Cloud. 
-Identity Security Cloud can use established criteria to automatically assign the roles to qualified users. This enables users to get all the access they need quickly and securely and administrators to spend their time on other tasks.
 
-Entitlements represent the most granular level of access in Identity Security Cloud. 
-Access profiles represent the next level and often group entitlements. 
-Roles represent the broadest level of access and often group access profiles. 
+Use this API to implement and customize role functionality. With this functionality in place, administrators can create roles and configure them for use throughout Identity Security Cloud. Identity Security Cloud can use established criteria to automatically assign the roles to qualified users. This enables users to get all the access they need quickly and securely and administrators to spend their time on other tasks.
+
+Entitlements represent the most granular level of access in Identity Security Cloud. Access profiles represent the next level and often group entitlements. Roles represent the broadest level of access and often group access profiles.
 
 For example, an Active Directory source in Identity Security Cloud can have multiple entitlements: the first, &#39;Employees,&#39; may represent the access all employees have at the organization, and a second, &#39;Developers,&#39; may represent the access all developers have at the organization.
 
@@ -28,55 +25,48 @@ When users only need Active Directory employee access, they can request access t
 
 When users need both Active Directory employee and developer access, they can request access to the &#39;AD Developers&#39; access profile.
 
-When users need both the &#39;AD Developers&#39; access profile and the &#39;GitHub Developers&#39; access profile, they can request access to the role grouping both. 
+When users need both the &#39;AD Developers&#39; access profile and the &#39;GitHub Developers&#39; access profile, they can request access to the role grouping both.
 
-Roles often represent positions within organizations. 
-For example, an organization&#39;s accountant can access all the tools the organization&#39;s accountants need with the &#39;Accountant&#39; role. 
-If the accountant switches to engineering, a qualified member of the organization can quickly revoke the accountant&#39;s &#39;Accountant&#39; access and grant access to the &#39;Engineer&#39; role instead, granting access to all the tools the organization&#39;s engineers need.
+Roles often represent positions within organizations. For example, an organization&#39;s accountant can access all the tools the organization&#39;s accountants need with the &#39;Accountant&#39; role. If the accountant switches to engineering, a qualified member of the organization can quickly revoke the accountant&#39;s &#39;Accountant&#39; access and grant access to the &#39;Engineer&#39; role instead, granting access to all the tools the organization&#39;s engineers need.
 
-In Identity Security Cloud, adminstrators can use the Access drop-down menu and select Roles to view, configure, and delete existing roles, as well as create new ones. 
-Administrators can enable and disable the role, and they can also make the following configurations: 
+In Identity Security Cloud, adminstrators can use the Access drop-down menu and select Roles to view, configure, and delete existing roles, as well as create new ones. Administrators can enable and disable the role, and they can also make the following configurations:
 
 - Manage Access: Manage the role&#39;s access by adding or removing access profiles.
 
-- Define Assignment: Define the criteria Identity Security Cloud uses to assign the role to identities. 
-Use the first option, &#39;Standard Criteria,&#39; to provide specific criteria for assignment like specific account attributes, entitlements, or identity attributes. 
-Use the second, &#39;Identity List,&#39; to specify the identities for assignment.
+- Define Assignment: Define the criteria Identity Security Cloud uses to assign the role to identities. Use the first option, &#39;Standard Criteria,&#39; to provide specific criteria for assignment like specific account attributes, entitlements, or identity attributes. Use the second, &#39;Identity List,&#39; to specify the identities for assignment.
 
-- Access Requests: Configure roles to be requestable and establish an approval process for any requests that the role be granted or revoked. 
-Do not configure a role to be requestable without establishing a secure access request approval process for that role first. 
+- Access Requests: Configure roles to be requestable and establish an approval process for any requests that the role be granted or revoked. Do not configure a role to be requestable without establishing a secure access request approval process for that role first.
 
 Refer to [Working with Roles](https://documentation.sailpoint.com/saas/help/access/roles.html) for more information about roles.
- 
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/v2025*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create-role**](#create-role) | **Post** `/roles` | Create a role
-[**delete-bulk-roles**](#delete-bulk-roles) | **Post** `/roles/bulk-delete` | Delete role(s)
-[**delete-metadata-from-role-by-key-and-value**](#delete-metadata-from-role-by-key-and-value) | **Delete** `/roles/{id}/access-model-metadata/{attributeKey}/values/{attributeValue}` | Remove a metadata from role.
-[**delete-role**](#delete-role) | **Delete** `/roles/{id}` | Delete a role
-[**get-bulk-update-status**](#get-bulk-update-status) | **Get** `/roles/access-model-metadata/bulk-update` | Get bulk-update statuses
-[**get-bulk-update-status-by-id**](#get-bulk-update-status-by-id) | **Get** `/roles/access-model-metadata/bulk-update/id` | Get bulk-update status by id
-[**get-role**](#get-role) | **Get** `/roles/{id}` | Get a role
-[**get-role-assigned-identities**](#get-role-assigned-identities) | **Get** `/roles/{id}/assigned-identities` | List identities assigned a role
-[**get-role-entitlements**](#get-role-entitlements) | **Get** `/roles/{id}/entitlements` | List role&#39;s entitlements
-[**list-roles**](#list-roles) | **Get** `/roles` | List roles
-[**patch-role**](#patch-role) | **Patch** `/roles/{id}` | Patch a specified role
-[**search-roles-by-filter**](#search-roles-by-filter) | **Post** `/roles/filter` | Filter roles by metadata
-[**update-attribute-key-and-value-to-role**](#update-attribute-key-and-value-to-role) | **Post** `/roles/{id}/access-model-metadata/{attributeKey}/values/{attributeValue}` | Add a metadata to role.
-[**update-roles-metadata-by-filter**](#update-roles-metadata-by-filter) | **Post** `/roles/access-model-metadata/bulk-update/filter` | Bulk-update roles&#39; metadata by filters
-[**update-roles-metadata-by-ids**](#update-roles-metadata-by-ids) | **Post** `/roles/access-model-metadata/bulk-update/ids` | Bulk-update roles&#39; metadata by id
-[**update-roles-metadata-by-query**](#update-roles-metadata-by-query) | **Post** `/roles/access-model-metadata/bulk-update/query` | Bulk-update roles&#39; metadata by query
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**create-role**](#create-role) | **Post** `/roles` | Create a role |
+| [**delete-bulk-roles**](#delete-bulk-roles) | **Post** `/roles/bulk-delete` | Delete role(s) |
+| [**delete-metadata-from-role-by-key-and-value**](#delete-metadata-from-role-by-key-and-value) | **Delete** `/roles/{id}/access-model-metadata/{attributeKey}/values/{attributeValue}` | Remove a metadata from role. |
+| [**delete-role**](#delete-role) | **Delete** `/roles/{id}` | Delete a role |
+| [**get-bulk-update-status**](#get-bulk-update-status) | **Get** `/roles/access-model-metadata/bulk-update` | Get bulk-update statuses |
+| [**get-bulk-update-status-by-id**](#get-bulk-update-status-by-id) | **Get** `/roles/access-model-metadata/bulk-update/id` | Get bulk-update status by id |
+| [**get-role**](#get-role) | **Get** `/roles/{id}` | Get a role |
+| [**get-role-assigned-identities**](#get-role-assigned-identities) | **Get** `/roles/{id}/assigned-identities` | List identities assigned a role |
+| [**get-role-entitlements**](#get-role-entitlements) | **Get** `/roles/{id}/entitlements` | List role&#39;s entitlements |
+| [**list-roles**](#list-roles) | **Get** `/roles` | List roles |
+| [**patch-role**](#patch-role) | **Patch** `/roles/{id}` | Patch a specified role |
+| [**search-roles-by-filter**](#search-roles-by-filter) | **Post** `/roles/filter` | Filter roles by metadata |
+| [**update-attribute-key-and-value-to-role**](#update-attribute-key-and-value-to-role) | **Post** `/roles/{id}/access-model-metadata/{attributeKey}/values/{attributeValue}` | Add a metadata to role. |
+| [**update-roles-metadata-by-filter**](#update-roles-metadata-by-filter) | **Post** `/roles/access-model-metadata/bulk-update/filter` | Bulk-update roles&#39; metadata by filters |
+| [**update-roles-metadata-by-ids**](#update-roles-metadata-by-ids) | **Post** `/roles/access-model-metadata/bulk-update/ids` | Bulk-update roles&#39; metadata by id |
+| [**update-roles-metadata-by-query**](#update-roles-metadata-by-query) | **Post** `/roles/access-model-metadata/bulk-update/query` | Bulk-update roles&#39; metadata by query |
 
 ## create-role
-Create a role
-This API creates a role.
 
-You must have a token with API, ORG_ADMIN, ROLE_ADMIN, or ROLE_SUBADMIN authority to call this API. 
+Create a role This API creates a role.
 
-In addition, a ROLE_SUBADMIN may not create a role including an access profile if that access profile is associated with a source the ROLE_SUBADMIN is not associated with themselves. 
+You must have a token with API, ORG_ADMIN, ROLE_ADMIN, or ROLE_SUBADMIN authority to call this API.
+
+In addition, a ROLE_SUBADMIN may not create a role including an access profile if that access profile is associated with a source the ROLE_SUBADMIN is not associated with themselves.
 
 The maximum supported length for the description field is 2000 characters. Longer descriptions will be preserved for existing roles. However, any new roles as well as any updates to existing descriptions will be limited to 2000 characters.
 
@@ -84,16 +74,13 @@ The maximum supported length for the description field is 2000 characters. Longe
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCreateRoleRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **role** | [**Role**](../models/role) |  | 
+| Name     | Type                       | Description | Notes |
+| -------- | -------------------------- | ----------- | ----- |
+| **role** | [**Role**](../models/role) |             |
 
 ### Return type
 
@@ -277,14 +264,14 @@ func main() {
           },
           "id" : "2c918086749d78830174a1a40e121518",
           "requestable" : true
-        }`) // Role | 
+        }`) // Role |
 
     var role v2025.Role
     if err := json.Unmarshal(role, &role); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -302,26 +289,20 @@ func main() {
 [[Back to top]](#)
 
 ## delete-bulk-roles
-Delete role(s)
-This endpoint initiates a bulk deletion of one or more roles.
-When the request is successful, the endpoint returns the bulk delete's task result ID.  To follow the task, you can use [Get Task Status by ID](https://developer.sailpoint.com/docs/api/beta/get-task-status), which will return the task result's status and information. 
-This endpoint can only bulk delete up to a limit of 50 roles per request. 
-A user with ROLE_SUBADMIN authority can only call this endpoint if all roles included in the request are associated with sources with management workgroups the ROLE_SUBADMIN is a member of.
+
+Delete role(s) This endpoint initiates a bulk deletion of one or more roles. When the request is successful, the endpoint returns the bulk delete's task result ID. To follow the task, you can use [Get Task Status by ID](https://developer.sailpoint.com/docs/api/beta/get-task-status), which will return the task result's status and information. This endpoint can only bulk delete up to a limit of 50 roles per request. A user with ROLE_SUBADMIN authority can only call this endpoint if all roles included in the request are associated with sources with management workgroups the ROLE_SUBADMIN is a member of.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/delete-bulk-roles)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteBulkRolesRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **roleBulkDeleteRequest** | [**RoleBulkDeleteRequest**](../models/role-bulk-delete-request) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **roleBulkDeleteRequest** | [**RoleBulkDeleteRequest**](../models/role-bulk-delete-request) |  |
 
 ### Return type
 
@@ -349,14 +330,14 @@ import (
 func main() {
     rolebulkdeleterequest := []byte(`{
           "roleIds" : [ "2c9180847812e0b1017817051919ecca", "2c9180887812e0b201781e129f151816" ]
-        }`) // RoleBulkDeleteRequest | 
+        }`) // RoleBulkDeleteRequest |
 
     var roleBulkDeleteRequest v2025.RoleBulkDeleteRequest
     if err := json.Unmarshal(rolebulkdeleterequest, &roleBulkDeleteRequest); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -374,35 +355,30 @@ func main() {
 [[Back to top]](#)
 
 ## delete-metadata-from-role-by-key-and-value
-Remove a metadata from role.
-This API initialize a request to remove a single Access Model Metadata from a role by attribute key and value. A token with ORG_ADMIN, ROLE_ADMIN ROLE_SUBADMIN authority is required to call this API.
+
+Remove a metadata from role. This API initialize a request to remove a single Access Model Metadata from a role by attribute key and value. A token with ORG_ADMIN, ROLE_ADMIN ROLE_SUBADMIN authority is required to call this API.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/delete-metadata-from-role-by-key-and-value)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The role&#39;s id. | 
-**attributeKey** | **string** | Technical name of the Attribute. | 
-**attributeValue** | **string** | Technical name of the Attribute Value. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The role&#39;s id. |
+| **attributeKey** | **string** | Technical name of the Attribute. |
+| **attributeValue** | **string** | Technical name of the Attribute Value. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteMetadataFromRoleByKeyAndValueRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
-
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -418,8 +394,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -428,7 +404,7 @@ func main() {
     attributeKey := `iscPrivacy` // string | Technical name of the Attribute. # string | Technical name of the Attribute.
     attributeValue := `public` // string | Technical name of the Attribute Value. # string | Technical name of the Attribute Value.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -438,15 +414,15 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `RolesAPI.DeleteMetadataFromRoleByKeyAndValue``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## delete-role
-Delete a role
-This API deletes a Role by its ID.
+
+Delete a role This API deletes a Role by its ID.
 
 A token with API, ORG_ADMIN, ROLE_ADMIN, or ROLE_SUBADMIN authority is required to call this API. In addition, a token with ROLE_SUBADMIN authority may only call this API if all Access Profiles included in the Role are associated to Sources with management workgroups of which the ROLE_SUBADMIN is a member.
 
@@ -454,24 +430,21 @@ A token with API, ORG_ADMIN, ROLE_ADMIN, or ROLE_SUBADMIN authority is required 
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | ID of the Role | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | ID of the Role |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteRoleRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -487,15 +460,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `2c91808a7813090a017814121e121518` // string | ID of the Role # string | ID of the Role
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -505,15 +478,15 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `RolesAPI.DeleteRole``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## get-bulk-update-status
-Get bulk-update statuses
-This API returns a list of all unfinished bulk update process status of the tenant.
+
+Get bulk-update statuses This API returns a list of all unfinished bulk update process status of the tenant.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/get-bulk-update-status)
 
@@ -524,7 +497,6 @@ This endpoint does not need any parameter.
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetBulkUpdateStatusRequest struct via the builder pattern
-
 
 ### Return type
 
@@ -544,14 +516,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -569,29 +541,26 @@ func main() {
 [[Back to top]](#)
 
 ## get-bulk-update-status-by-id
+
 Get bulk-update status by id
 
-This API initial a request for one bulk update's status by bulk update Id returns the status of the bulk update process.
-A token with ORG_ADMIN, ROLE_ADMIN ROLE_SUBADMIN authority is required to call this API. 
+This API initial a request for one bulk update's status by bulk update Id returns the status of the bulk update process. A token with ORG_ADMIN, ROLE_ADMIN ROLE_SUBADMIN authority is required to call this API.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/get-bulk-update-status-by-id)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The Id of the bulk update task. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The Id of the bulk update task. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetBulkUpdateStatusByIdRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -611,15 +580,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `c24359c389374d0fb8585698a2189e3d` // string | The Id of the bulk update task. # string | The Id of the bulk update task.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -637,28 +606,24 @@ func main() {
 [[Back to top]](#)
 
 ## get-role
-Get a role
-This API returns a Role by its ID.
-A token with API, ORG_ADMIN, ROLE_ADMIN, or ROLE_SUBADMIN authority is required to call this API. In addition, a token with ROLE_SUBADMIN authority may only call this API if all Access Profiles included in the Role are associated to Sources with management workgroups of which the ROLE_SUBADMIN is a member.
+
+Get a role This API returns a Role by its ID. A token with API, ORG_ADMIN, ROLE_ADMIN, or ROLE_SUBADMIN authority is required to call this API. In addition, a token with ROLE_SUBADMIN authority may only call this API if all Access Profiles included in the Role are associated to Sources with management workgroups of which the ROLE_SUBADMIN is a member.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/get-role)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | ID of the Role | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | ID of the Role |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetRoleRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -678,15 +643,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `2c91808a7813090a017814121e121518` // string | ID of the Role # string | ID of the Role
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -704,32 +669,26 @@ func main() {
 [[Back to top]](#)
 
 ## get-role-assigned-identities
-List identities assigned a role
 
+List identities assigned a role
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/get-role-assigned-identities)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | ID of the Role for which the assigned Identities are to be listed | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | ID of the Role for which the assigned Identities are to be listed |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetRoleAssignedIdentitiesRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, in*  **aliasName**: *eq, sw*  **email**: *eq, sw*  **name**: *eq, sw, co* | 
- **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **id, name, aliasName, email** | 
+**limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false] **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **id**: _eq, in_ **aliasName**: _eq, sw_ **email**: _eq, sw_ **name**: _eq, sw, co_ | **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results) Sorting is supported for the following fields: **id, name, aliasName, email** |
 
 ### Return type
 
@@ -749,8 +708,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -762,7 +721,7 @@ func main() {
     filters := `name sw Joe` // string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, in*  **aliasName**: *eq, sw*  **email**: *eq, sw*  **name**: *eq, sw, co* (optional) # string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, in*  **aliasName**: *eq, sw*  **email**: *eq, sw*  **name**: *eq, sw, co* (optional)
     sorters := `aliasName,name` // string | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **id, name, aliasName, email** (optional) # string | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **id, name, aliasName, email** (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -780,44 +739,33 @@ func main() {
 [[Back to top]](#)
 
 ## get-role-entitlements
-:::warning experimental 
-This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint.
-:::
-:::tip setting x-sailpoint-experimental header
- on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK.
- Example:
- ```go
-   configuration = Configuration()
-   configuration.experimental = True
- ```
-:::
-List role's entitlements
-Get a list of entitlements associated with a specified role.
+
+:::warning experimental This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint. ::: :::tip setting x-sailpoint-experimental header on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK. Example:
+
+```go
+  configuration = Configuration()
+  configuration.experimental = True
+```
+
+::: List role's entitlements Get a list of entitlements associated with a specified role.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/get-role-entitlements)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Containing role&#39;s ID. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Containing role&#39;s ID. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetRoleEntitlementsRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;]
- **limit** | **int32** | Note that for this API the maximum value for limit is 50. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 50]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, in*  **name**: *eq, sw*  **attribute**: *eq, sw*  **value**: *eq, sw*  **created**: *gt, lt, ge, le*  **modified**: *gt, lt, ge, le*  **owner.id**: *eq, in*  **source.id**: *eq, in* | 
- **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **name, attribute, value, created, modified** | 
+**xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;] **limit** | **int32** | Note that for this API the maximum value for limit is 50. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 50] **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false] **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **id**: _eq, in_ **name**: _eq, sw_ **attribute**: _eq, sw_ **value**: _eq, sw_ **created**: _gt, lt, ge, le_ **modified**: _gt, lt, ge, le_ **owner.id**: _eq, in_ **source.id**: _eq, in_ | **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results) Sorting is supported for the following fields: **name, attribute, value, created, modified** |
 
 ### Return type
 
@@ -837,8 +785,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -851,7 +799,7 @@ func main() {
     filters := `attribute eq "memberOf"` // string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, in*  **name**: *eq, sw*  **attribute**: *eq, sw*  **value**: *eq, sw*  **created**: *gt, lt, ge, le*  **modified**: *gt, lt, ge, le*  **owner.id**: *eq, in*  **source.id**: *eq, in* (optional) # string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, in*  **name**: *eq, sw*  **attribute**: *eq, sw*  **value**: *eq, sw*  **created**: *gt, lt, ge, le*  **modified**: *gt, lt, ge, le*  **owner.id**: *eq, in*  **source.id**: *eq, in* (optional)
     sorters := `name,-modified` // string | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **name, attribute, value, created, modified** (optional) # string | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **name, attribute, value, created, modified** (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -869,8 +817,8 @@ func main() {
 [[Back to top]](#)
 
 ## list-roles
-List roles
-This API returns a list of Roles.
+
+List roles This API returns a list of Roles.
 
 A token with API, ORG_ADMIN, ROLE_ADMIN, or ROLE_SUBADMIN authority is required to call this API.
 
@@ -878,23 +826,20 @@ A token with API, ORG_ADMIN, ROLE_ADMIN, or ROLE_SUBADMIN authority is required 
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListRolesRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **forSubadmin** | **string** | If provided, filters the returned list according to what is visible to the indicated ROLE_SUBADMIN Identity. The value of the parameter is either an Identity ID, or the special value **me**, which is shorthand for the calling Identity&#39;s ID. A 400 Bad Request error is returned if the **for-subadmin** parameter is specified for an Identity that is not a subadmin. | 
- **limit** | **int32** | Note that for this API the maximum value for limit is 50. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 50]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, in*  **name**: *eq, sw*  **created**: *gt, ge, le*  **modified**: *lt, ge, le*  **owner.id**: *eq, in*  **requestable**: *eq*  **dimensional**: *eq* | 
- **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **name, created, modified** | 
- **forSegmentIds** | **string** | If present and not empty, additionally filters Roles to those which are assigned to the Segment(s) with the specified IDs.  If segmentation is currently unavailable, specifying this parameter results in an error. | 
- **includeUnsegmented** | **bool** | Whether or not the response list should contain unsegmented Roles. If *for-segment-ids* is absent or empty, specifying *include-unsegmented* as false results in an error. | [default to true]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **forSubadmin** | **string** | If provided, filters the returned list according to what is visible to the indicated ROLE_SUBADMIN Identity. The value of the parameter is either an Identity ID, or the special value **me**, which is shorthand for the calling Identity&#39;s ID. A 400 Bad Request error is returned if the **for-subadmin** parameter is specified for an Identity that is not a subadmin. |
+| **limit** | **int32** | Note that for this API the maximum value for limit is 50. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 50] |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
+| **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false] |
+| **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **id**: _eq, in_ **name**: _eq, sw_ **created**: _gt, ge, le_ **modified**: _lt, ge, le_ **owner.id**: _eq, in_ **requestable**: _eq_ **dimensional**: _eq_ |
+| **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results) Sorting is supported for the following fields: **name, created, modified** |
+| **forSegmentIds** | **string** | If present and not empty, additionally filters Roles to those which are assigned to the Segment(s) with the specified IDs. If segmentation is currently unavailable, specifying this parameter results in an error. |
+| **includeUnsegmented** | **bool** | Whether or not the response list should contain unsegmented Roles. If _for-segment-ids_ is absent or empty, specifying _include-unsegmented_ as false results in an error. | [default to true] |
 
 ### Return type
 
@@ -914,8 +859,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -929,7 +874,7 @@ func main() {
     forSegmentIds := `0b5c9f25-83c6-4762-9073-e38f7bb2ae26,2e8d8180-24bc-4d21-91c6-7affdb473b0d` // string | If present and not empty, additionally filters Roles to those which are assigned to the Segment(s) with the specified IDs.  If segmentation is currently unavailable, specifying this parameter results in an error. (optional) # string | If present and not empty, additionally filters Roles to those which are assigned to the Segment(s) with the specified IDs.  If segmentation is currently unavailable, specifying this parameter results in an error. (optional)
     includeUnsegmented := false // bool | Whether or not the response list should contain unsegmented Roles. If *for-segment-ids* is absent or empty, specifying *include-unsegmented* as false results in an error. (optional) (default to true) # bool | Whether or not the response list should contain unsegmented Roles. If *for-segment-ids* is absent or empty, specifying *include-unsegmented* as false results in an error. (optional) (default to true)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -947,24 +892,24 @@ func main() {
 [[Back to top]](#)
 
 ## patch-role
-Patch a specified role
-This API updates an existing role using [JSON Patch](https://tools.ietf.org/html/rfc6902) syntax.
+
+Patch a specified role This API updates an existing role using [JSON Patch](https://tools.ietf.org/html/rfc6902) syntax.
 
 The following fields are patchable:
 
-* name
-* description
-* enabled
-* owner
-* accessProfiles
-* entitlements
-* membership
-* requestable
-* accessRequestConfig
-* revokeRequestConfig
-* segments
-* accessModelMetadata   
-A token with API, ORG_ADMIN, ROLE_ADMIN, or ROLE_SUBADMIN authority is required to call this API. In addition, a token with ROLE_SUBADMIN authority may only call this API if all access profiles included in the role are associated to Sources with management workgroups of which the ROLE_SUBADMIN is a member.
+- name
+- description
+- enabled
+- owner
+- accessProfiles
+- entitlements
+- membership
+- requestable
+- accessRequestConfig
+- revokeRequestConfig
+- segments
+- accessModelMetadata  
+  A token with API, ORG_ADMIN, ROLE_ADMIN, or ROLE_SUBADMIN authority is required to call this API. In addition, a token with ROLE_SUBADMIN authority may only call this API if all access profiles included in the role are associated to Sources with management workgroups of which the ROLE_SUBADMIN is a member.
 
 The maximum supported length for the description field is 2000 characters. Longer descriptions will be preserved for existing roles, however, any new roles as well as any updates to existing descriptions will be limited to 2000 characters.
 
@@ -974,21 +919,19 @@ When you use this API to modify a role's membership identities, you can only mod
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | ID of the Role to patch | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | ID of the Role to patch |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiPatchRoleRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **jsonPatchOperation** | [**[]JsonPatchOperation**](../models/json-patch-operation) |  | 
+**jsonPatchOperation** | [**[]JsonPatchOperation**](../models/json-patch-operation) | |
 
 ### Return type
 
@@ -1015,14 +958,14 @@ import (
 
 func main() {
     id := `2c91808a7813090a017814121e121518` // string | ID of the Role to patch # string | ID of the Role to patch
-    jsonpatchoperation := []byte(`[{op=replace, path=/requestable, value=true}, {op=replace, path=/enabled, value=true}]`) // []JsonPatchOperation | 
+    jsonpatchoperation := []byte(`[{op=replace, path=/requestable, value=true}, {op=replace, path=/enabled, value=true}]`) // []JsonPatchOperation |
 
     var jsonPatchOperation []v2025.JsonPatchOperation
     if err := json.Unmarshal(jsonpatchoperation, &jsonPatchOperation); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1040,31 +983,27 @@ func main() {
 [[Back to top]](#)
 
 ## search-roles-by-filter
-Filter roles by metadata
-This API returns a list of Role that filter by metadata and filter, it support filter by  both path parameter and attribute key and values.
-A token with API, ORG_ADMIN, ROLE_ADMIN, ROLE_SUBADMIN, HELPDESK, CERT_ADMIN, REPORT_ADMIN or SOURCE_ADMIN  authority is required to call this API. 
+
+Filter roles by metadata This API returns a list of Role that filter by metadata and filter, it support filter by both path parameter and attribute key and values. A token with API, ORG_ADMIN, ROLE_ADMIN, ROLE_SUBADMIN, HELPDESK, CERT_ADMIN, REPORT_ADMIN or SOURCE_ADMIN authority is required to call this API.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/search-roles-by-filter)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSearchRolesByFilterRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **forSubadmin** | **string** | If provided, filters the returned list according to what is visible to the indicated ROLE_SUBADMIN Identity. The value of the parameter is either an Identity ID, or the special value **me**, which is shorthand for the calling Identity&#39;s ID. A 400 Bad Request error is returned if the **for-subadmin** parameter is specified for an Identity that is not a subadmin. | 
- **limit** | **int32** | Max number of results to return See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 50]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
- **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **name, created, modified** | 
- **forSegmentIds** | **string** | If present and not empty, additionally filters Roles to those which are assigned to the Segment(s) with the specified IDs. If segmentation is currently unavailable, specifying this parameter results in an error. | 
- **includeUnsegmented** | **bool** | Whether or not the response list should contain unsegmented Roles. If *for-segment-ids* is absent or empty, specifying *include-unsegmented* as false results in an error. | [default to true]
- **roleListFilterDTO** | [**RoleListFilterDTO**](../models/role-list-filter-dto) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **forSubadmin** | **string** | If provided, filters the returned list according to what is visible to the indicated ROLE_SUBADMIN Identity. The value of the parameter is either an Identity ID, or the special value **me**, which is shorthand for the calling Identity&#39;s ID. A 400 Bad Request error is returned if the **for-subadmin** parameter is specified for an Identity that is not a subadmin. |
+| **limit** | **int32** | Max number of results to return See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 50] |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
+| **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false] |
+| **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results) Sorting is supported for the following fields: **name, created, modified** |
+| **forSegmentIds** | **string** | If present and not empty, additionally filters Roles to those which are assigned to the Segment(s) with the specified IDs. If segmentation is currently unavailable, specifying this parameter results in an error. |
+| **includeUnsegmented** | **bool** | Whether or not the response list should contain unsegmented Roles. If _for-segment-ids_ is absent or empty, specifying _include-unsegmented_ as false results in an error. | [default to true] |
+| **roleListFilterDTO** | [**RoleListFilterDTO**](../models/role-list-filter-dto) |  |
 
 ### Return type
 
@@ -1084,8 +1023,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -1105,7 +1044,7 @@ func main() {
           "filters" : "dimensional eq false"
         }`) // RoleListFilterDTO |  (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1123,31 +1062,26 @@ func main() {
 [[Back to top]](#)
 
 ## update-attribute-key-and-value-to-role
-Add a metadata to role.
-This API initialize a request to add a single Access Model Metadata to a role by attribute key and attribute value. A token with ORG_ADMIN, ROLE_ADMIN ROLE_SUBADMIN authority is required to call this API. The maximum number of attributes in one role is 25. Custom metadata update, including ADD and REPLACE need suit licensed.
+
+Add a metadata to role. This API initialize a request to add a single Access Model Metadata to a role by attribute key and attribute value. A token with ORG_ADMIN, ROLE_ADMIN ROLE_SUBADMIN authority is required to call this API. The maximum number of attributes in one role is 25. Custom metadata update, including ADD and REPLACE need suit licensed.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/update-attribute-key-and-value-to-role)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The Id of a role | 
-**attributeKey** | **string** | Technical name of the Attribute. | 
-**attributeValue** | **string** | Technical name of the Attribute Value. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The Id of a role |
+| **attributeKey** | **string** | Technical name of the Attribute. |
+| **attributeValue** | **string** | Technical name of the Attribute Value. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiUpdateAttributeKeyAndValueToRoleRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
-
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -1167,8 +1101,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -1177,7 +1111,7 @@ func main() {
     attributeKey := `iscPrivacy` // string | Technical name of the Attribute. # string | Technical name of the Attribute.
     attributeValue := `public` // string | Technical name of the Attribute Value. # string | Technical name of the Attribute Value.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1195,26 +1129,20 @@ func main() {
 [[Back to top]](#)
 
 ## update-roles-metadata-by-filter
-Bulk-update roles' metadata by filters
-This API initiates a bulk update of metadata for one or more Roles by filter.
-A token with ORG_ADMIN, ROLE_ADMIN ROLE_SUBADMIN authority is required to call this API.
-The maximum metadata value count for a single role is 25.
-Custom metadata update, including add, replace need suit licensed.
+
+Bulk-update roles' metadata by filters This API initiates a bulk update of metadata for one or more Roles by filter. A token with ORG_ADMIN, ROLE_ADMIN ROLE_SUBADMIN authority is required to call this API. The maximum metadata value count for a single role is 25. Custom metadata update, including add, replace need suit licensed.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/update-roles-metadata-by-filter)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiUpdateRolesMetadataByFilterRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **roleMetadataBulkUpdateByFilterRequest** | [**RoleMetadataBulkUpdateByFilterRequest**](../models/role-metadata-bulk-update-by-filter-request) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **roleMetadataBulkUpdateByFilterRequest** | [**RoleMetadataBulkUpdateByFilterRequest**](../models/role-metadata-bulk-update-by-filter-request) |  |
 
 ### Return type
 
@@ -1248,14 +1176,14 @@ func main() {
           "filters" : " requestable eq false",
           "replaceScope" : "ALL",
           "operation" : "REPLACE"
-        }`) // RoleMetadataBulkUpdateByFilterRequest | 
+        }`) // RoleMetadataBulkUpdateByFilterRequest |
 
     var roleMetadataBulkUpdateByFilterRequest v2025.RoleMetadataBulkUpdateByFilterRequest
     if err := json.Unmarshal(rolemetadatabulkupdatebyfilterrequest, &roleMetadataBulkUpdateByFilterRequest); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1273,26 +1201,20 @@ func main() {
 [[Back to top]](#)
 
 ## update-roles-metadata-by-ids
-Bulk-update roles' metadata by id
-This API initiates a bulk update of metadata for one or more Roles by a list of Role Ids.
-A token with ORG_ADMIN, ROLE_ADMIN ROLE_SUBADMIN authority is required to call this API.
-The maximum role count in a single update request is 3000. The maximum metadata value count for a single role is 25.
-Custom metadata update, including add, replace need suit licensed.
+
+Bulk-update roles' metadata by id This API initiates a bulk update of metadata for one or more Roles by a list of Role Ids. A token with ORG_ADMIN, ROLE_ADMIN ROLE_SUBADMIN authority is required to call this API. The maximum role count in a single update request is 3000. The maximum metadata value count for a single role is 25. Custom metadata update, including add, replace need suit licensed.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/update-roles-metadata-by-ids)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiUpdateRolesMetadataByIdsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **roleMetadataBulkUpdateByIdRequest** | [**RoleMetadataBulkUpdateByIdRequest**](../models/role-metadata-bulk-update-by-id-request) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **roleMetadataBulkUpdateByIdRequest** | [**RoleMetadataBulkUpdateByIdRequest**](../models/role-metadata-bulk-update-by-id-request) |  |
 
 ### Return type
 
@@ -1326,14 +1248,14 @@ func main() {
           } ],
           "replaceScope" : "ALL",
           "operation" : "REPLACE"
-        }`) // RoleMetadataBulkUpdateByIdRequest | 
+        }`) // RoleMetadataBulkUpdateByIdRequest |
 
     var roleMetadataBulkUpdateByIdRequest v2025.RoleMetadataBulkUpdateByIdRequest
     if err := json.Unmarshal(rolemetadatabulkupdatebyidrequest, &roleMetadataBulkUpdateByIdRequest); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1351,26 +1273,20 @@ func main() {
 [[Back to top]](#)
 
 ## update-roles-metadata-by-query
-Bulk-update roles' metadata by query
-This API initiates a bulk update of metadata for one or more Roles by query.
-A token with ORG_ADMIN, ROLE_ADMIN ROLE_SUBADMIN authority is required to call this API.
-The maximum metadata value count for a single role is 25.
-Custom metadata update, including add, replace need suit licensed.
+
+Bulk-update roles' metadata by query This API initiates a bulk update of metadata for one or more Roles by query. A token with ORG_ADMIN, ROLE_ADMIN ROLE_SUBADMIN authority is required to call this API. The maximum metadata value count for a single role is 25. Custom metadata update, including add, replace need suit licensed.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/update-roles-metadata-by-query)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiUpdateRolesMetadataByQueryRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **roleMetadataBulkUpdateByQueryRequest** | [**RoleMetadataBulkUpdateByQueryRequest**](../models/role-metadata-bulk-update-by-query-request) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **roleMetadataBulkUpdateByQueryRequest** | [**RoleMetadataBulkUpdateByQueryRequest**](../models/role-metadata-bulk-update-by-query-request) |  |
 
 ### Return type
 
@@ -1419,14 +1335,14 @@ func main() {
           } ],
           "replaceScope" : "ALL",
           "operation" : "REPLACE"
-        }`) // RoleMetadataBulkUpdateByQueryRequest | 
+        }`) // RoleMetadataBulkUpdateByQueryRequest |
 
     var roleMetadataBulkUpdateByQueryRequest v2025.RoleMetadataBulkUpdateByQueryRequest
     if err := json.Unmarshal(rolemetadatabulkupdatebyqueryrequest, &roleMetadataBulkUpdateByQueryRequest); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1442,4 +1358,3 @@ func main() {
 ```
 
 [[Back to top]](#)
-

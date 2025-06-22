@@ -4,29 +4,30 @@ title: ExpansionItem
 pagination_label: ExpansionItem
 sidebar_label: ExpansionItem
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'ExpansionItem', 'V2025ExpansionItem'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'ExpansionItem', 'V2025ExpansionItem']
 slug: /tools/sdk/powershell/v2025/models/expansion-item
 tags: ['SDK', 'Software Development Kit', 'ExpansionItem', 'V2025ExpansionItem']
 ---
-
 
 # ExpansionItem
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**AccountId** | **String** | The ID of the account | [optional] 
-**Cause** | **String** | Cause of the expansion item. | [optional] 
-**Name** | **String** | The name of the item | [optional] 
-**AttributeRequest** | [**AttributeRequest**](attribute-request) |  | [optional] 
-**Source** | [**AccountSource**](account-source) |  | [optional] 
-**Id** | **String** | ID of the expansion item | [optional] 
-**State** | **String** | State of the expansion item | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **AccountId** | **String** | The ID of the account | [optional] |
+| **Cause** | **String** | Cause of the expansion item. | [optional] |
+| **Name** | **String** | The name of the item | [optional] |
+| **AttributeRequest** | [**AttributeRequest**](attribute-request) |  | [optional] |
+| **Source** | [**AccountSource**](account-source) |  | [optional] |
+| **Id** | **String** | ID of the expansion item | [optional] |
+| **State** | **String** | State of the expansion item | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $ExpansionItem = Initialize-V2025ExpansionItem  -AccountId 2c91808981f58ea601821c3e93482e6f `
  -Cause Role `
@@ -38,10 +39,9 @@ $ExpansionItem = Initialize-V2025ExpansionItem  -AccountId 2c91808981f58ea601821
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $ExpansionItem | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

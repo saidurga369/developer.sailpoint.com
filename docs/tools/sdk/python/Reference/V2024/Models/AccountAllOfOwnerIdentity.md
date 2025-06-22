@@ -4,21 +4,34 @@ title: AccountAllOfOwnerIdentity
 pagination_label: AccountAllOfOwnerIdentity
 sidebar_label: AccountAllOfOwnerIdentity
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccountAllOfOwnerIdentity', 'V2024AccountAllOfOwnerIdentity'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccountAllOfOwnerIdentity',
+    'V2024AccountAllOfOwnerIdentity',
+  ]
 slug: /tools/sdk/python/v2024/models/account-all-of-owner-identity
-tags: ['SDK', 'Software Development Kit', 'AccountAllOfOwnerIdentity', 'V2024AccountAllOfOwnerIdentity']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountAllOfOwnerIdentity',
+    'V2024AccountAllOfOwnerIdentity',
+  ]
 ---
 
 # AccountAllOfOwnerIdentity
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** | [**DtoType**](dto-type) |  | [optional] 
-**id** | **str** | ID of the object to which this reference applies | [optional] 
-**name** | **str** | Human-readable display name of the object to which this reference applies | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | [**DtoType**](dto-type) |  | [optional] |
+| **id** | **str** | ID of the object to which this reference applies | [optional] |
+| **name** | **str** | Human-readable display name of the object to which this reference applies | [optional] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ name='William Wilson'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,30 +4,36 @@ title: NonEmployeeRecord
 pagination_label: NonEmployeeRecord
 sidebar_label: NonEmployeeRecord
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'NonEmployeeRecord', 'V2024NonEmployeeRecord'] 
+keywords: ['go', 'Golang', 'sdk', 'NonEmployeeRecord', 'V2024NonEmployeeRecord']
 slug: /tools/sdk/go/v2024/models/non-employee-record
-tags: ['SDK', 'Software Development Kit', 'NonEmployeeRecord', 'V2024NonEmployeeRecord']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NonEmployeeRecord',
+    'V2024NonEmployeeRecord',
+  ]
 ---
 
 # NonEmployeeRecord
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Non-Employee record id. | [optional] 
-**AccountName** | Pointer to **string** | Requested identity account name. | [optional] 
-**FirstName** | Pointer to **string** | Non-Employee's first name. | [optional] 
-**LastName** | Pointer to **string** | Non-Employee's last name. | [optional] 
-**Email** | Pointer to **string** | Non-Employee's email. | [optional] 
-**Phone** | Pointer to **string** | Non-Employee's phone. | [optional] 
-**Manager** | Pointer to **string** | The account ID of a valid identity to serve as this non-employee's manager. | [optional] 
-**SourceId** | Pointer to **string** | Non-Employee's source id. | [optional] 
-**Data** | Pointer to **map[string]string** | Additional attributes for a non-employee. Up to 10 custom attributes can be added. | [optional] 
-**StartDate** | Pointer to **SailPointTime** | Non-Employee employment start date. | [optional] 
-**EndDate** | Pointer to **SailPointTime** | Non-Employee employment end date. | [optional] 
-**Modified** | Pointer to **SailPointTime** | When the request was last modified. | [optional] 
-**Created** | Pointer to **SailPointTime** | When the request was created. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Non-Employee record id. | [optional] |
+| **AccountName** | Pointer to **string** | Requested identity account name. | [optional] |
+| **FirstName** | Pointer to **string** | Non-Employee's first name. | [optional] |
+| **LastName** | Pointer to **string** | Non-Employee's last name. | [optional] |
+| **Email** | Pointer to **string** | Non-Employee's email. | [optional] |
+| **Phone** | Pointer to **string** | Non-Employee's phone. | [optional] |
+| **Manager** | Pointer to **string** | The account ID of a valid identity to serve as this non-employee's manager. | [optional] |
+| **SourceId** | Pointer to **string** | Non-Employee's source id. | [optional] |
+| **Data** | Pointer to **map[string]string** | Additional attributes for a non-employee. Up to 10 custom attributes can be added. | [optional] |
+| **StartDate** | Pointer to **SailPointTime** | Non-Employee employment start date. | [optional] |
+| **EndDate** | Pointer to **SailPointTime** | Non-Employee employment end date. | [optional] |
+| **Modified** | Pointer to **SailPointTime** | When the request was last modified. | [optional] |
+| **Created** | Pointer to **SailPointTime** | When the request was created. | [optional] |
 
 ## Methods
 
@@ -35,18 +41,13 @@ Name | Type | Description | Notes
 
 `func NewNonEmployeeRecord() *NonEmployeeRecord`
 
-NewNonEmployeeRecord instantiates a new NonEmployeeRecord object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewNonEmployeeRecord instantiates a new NonEmployeeRecord object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewNonEmployeeRecordWithDefaults
 
 `func NewNonEmployeeRecordWithDefaults() *NonEmployeeRecord`
 
-NewNonEmployeeRecordWithDefaults instantiates a new NonEmployeeRecord object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewNonEmployeeRecordWithDefaults instantiates a new NonEmployeeRecord object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -58,8 +59,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRecord) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -83,8 +83,7 @@ GetAccountName returns the AccountName field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRecord) GetAccountNameOk() (*string, bool)`
 
-GetAccountNameOk returns a tuple with the AccountName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountNameOk returns a tuple with the AccountName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountName
 
@@ -108,8 +107,7 @@ GetFirstName returns the FirstName field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRecord) GetFirstNameOk() (*string, bool)`
 
-GetFirstNameOk returns a tuple with the FirstName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFirstNameOk returns a tuple with the FirstName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFirstName
 
@@ -133,8 +131,7 @@ GetLastName returns the LastName field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRecord) GetLastNameOk() (*string, bool)`
 
-GetLastNameOk returns a tuple with the LastName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLastNameOk returns a tuple with the LastName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLastName
 
@@ -158,8 +155,7 @@ GetEmail returns the Email field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRecord) GetEmailOk() (*string, bool)`
 
-GetEmailOk returns a tuple with the Email field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEmailOk returns a tuple with the Email field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEmail
 
@@ -183,8 +179,7 @@ GetPhone returns the Phone field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRecord) GetPhoneOk() (*string, bool)`
 
-GetPhoneOk returns a tuple with the Phone field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPhoneOk returns a tuple with the Phone field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPhone
 
@@ -208,8 +203,7 @@ GetManager returns the Manager field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRecord) GetManagerOk() (*string, bool)`
 
-GetManagerOk returns a tuple with the Manager field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetManagerOk returns a tuple with the Manager field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetManager
 
@@ -233,8 +227,7 @@ GetSourceId returns the SourceId field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRecord) GetSourceIdOk() (*string, bool)`
 
-GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceId
 
@@ -258,8 +251,7 @@ GetData returns the Data field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRecord) GetDataOk() (*map[string]string, bool)`
 
-GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetData
 
@@ -283,8 +275,7 @@ GetStartDate returns the StartDate field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRecord) GetStartDateOk() (*SailPointTime, bool)`
 
-GetStartDateOk returns a tuple with the StartDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStartDateOk returns a tuple with the StartDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStartDate
 
@@ -308,8 +299,7 @@ GetEndDate returns the EndDate field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRecord) GetEndDateOk() (*SailPointTime, bool)`
 
-GetEndDateOk returns a tuple with the EndDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEndDateOk returns a tuple with the EndDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEndDate
 
@@ -333,8 +323,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRecord) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -358,8 +347,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRecord) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -372,5 +360,3 @@ SetCreated sets Created field to given value.
 `func (o *NonEmployeeRecord) HasCreated() bool`
 
 HasCreated returns a boolean if a field has been set.
-
-

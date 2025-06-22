@@ -4,19 +4,32 @@ title: RoleMetadataBulkUpdateByFilterRequestValuesInner
 pagination_label: RoleMetadataBulkUpdateByFilterRequestValuesInner
 sidebar_label: RoleMetadataBulkUpdateByFilterRequestValuesInner
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleMetadataBulkUpdateByFilterRequestValuesInner', 'V2025RoleMetadataBulkUpdateByFilterRequestValuesInner'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'RoleMetadataBulkUpdateByFilterRequestValuesInner',
+    'V2025RoleMetadataBulkUpdateByFilterRequestValuesInner',
+  ]
 slug: /tools/sdk/go/v2025/models/role-metadata-bulk-update-by-filter-request-values-inner
-tags: ['SDK', 'Software Development Kit', 'RoleMetadataBulkUpdateByFilterRequestValuesInner', 'V2025RoleMetadataBulkUpdateByFilterRequestValuesInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMetadataBulkUpdateByFilterRequestValuesInner',
+    'V2025RoleMetadataBulkUpdateByFilterRequestValuesInner',
+  ]
 ---
 
 # RoleMetadataBulkUpdateByFilterRequestValuesInner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**AttributeKey** | Pointer to **string** | the key of metadata attribute | [optional] 
-**Values** | **[]string** | the values of attribute to be updated | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **AttributeKey** | Pointer to **string** | the key of metadata attribute | [optional] |
+| **Values** | **[]string** | the values of attribute to be updated |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewRoleMetadataBulkUpdateByFilterRequestValuesInner(values []string, ) *RoleMetadataBulkUpdateByFilterRequestValuesInner`
 
-NewRoleMetadataBulkUpdateByFilterRequestValuesInner instantiates a new RoleMetadataBulkUpdateByFilterRequestValuesInner object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleMetadataBulkUpdateByFilterRequestValuesInner instantiates a new RoleMetadataBulkUpdateByFilterRequestValuesInner object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleMetadataBulkUpdateByFilterRequestValuesInnerWithDefaults
 
 `func NewRoleMetadataBulkUpdateByFilterRequestValuesInnerWithDefaults() *RoleMetadataBulkUpdateByFilterRequestValuesInner`
 
-NewRoleMetadataBulkUpdateByFilterRequestValuesInnerWithDefaults instantiates a new RoleMetadataBulkUpdateByFilterRequestValuesInner object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleMetadataBulkUpdateByFilterRequestValuesInnerWithDefaults instantiates a new RoleMetadataBulkUpdateByFilterRequestValuesInner object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetAttributeKey
 
@@ -47,8 +55,7 @@ GetAttributeKey returns the AttributeKey field if non-nil, zero value otherwise.
 
 `func (o *RoleMetadataBulkUpdateByFilterRequestValuesInner) GetAttributeKeyOk() (*string, bool)`
 
-GetAttributeKeyOk returns a tuple with the AttributeKey field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributeKeyOk returns a tuple with the AttributeKey field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributeKey
 
@@ -72,8 +79,7 @@ GetValues returns the Values field if non-nil, zero value otherwise.
 
 `func (o *RoleMetadataBulkUpdateByFilterRequestValuesInner) GetValuesOk() (*[]string, bool)`
 
-GetValuesOk returns a tuple with the Values field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValuesOk returns a tuple with the Values field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValues
 
@@ -81,15 +87,14 @@ and a boolean to check if the value has been set.
 
 SetValues sets Values field to given value.
 
-
 ### SetValuesNil
 
 `func (o *RoleMetadataBulkUpdateByFilterRequestValuesInner) SetValuesNil(b bool)`
 
- SetValuesNil sets the value for Values to be an explicit nil
+SetValuesNil sets the value for Values to be an explicit nil
 
 ### UnsetValues
+
 `func (o *RoleMetadataBulkUpdateByFilterRequestValuesInner) UnsetValues()`
 
 UnsetValues ensures that no value is present for Values, not even an explicit nil
-

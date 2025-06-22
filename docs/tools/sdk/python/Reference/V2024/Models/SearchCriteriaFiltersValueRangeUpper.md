@@ -4,20 +4,33 @@ title: SearchCriteriaFiltersValueRangeUpper
 pagination_label: SearchCriteriaFiltersValueRangeUpper
 sidebar_label: SearchCriteriaFiltersValueRangeUpper
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SearchCriteriaFiltersValueRangeUpper', 'V2024SearchCriteriaFiltersValueRangeUpper'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'SearchCriteriaFiltersValueRangeUpper',
+    'V2024SearchCriteriaFiltersValueRangeUpper',
+  ]
 slug: /tools/sdk/python/v2024/models/search-criteria-filters-value-range-upper
-tags: ['SDK', 'Software Development Kit', 'SearchCriteriaFiltersValueRangeUpper', 'V2024SearchCriteriaFiltersValueRangeUpper']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SearchCriteriaFiltersValueRangeUpper',
+    'V2024SearchCriteriaFiltersValueRangeUpper',
+  ]
 ---
 
 # SearchCriteriaFiltersValueRangeUpper
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**value** | **str** | The upper bound value. | [optional] 
-**inclusive** | **bool** | Whether the upper bound is inclusive. | [optional] [default to False]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **value** | **str** | The upper bound value. | [optional] |
+| **inclusive** | **bool** | Whether the upper bound is inclusive. | [optional] [default to False] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ inclusive=False
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

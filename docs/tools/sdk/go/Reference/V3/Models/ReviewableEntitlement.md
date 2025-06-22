@@ -4,35 +4,42 @@ title: ReviewableEntitlement
 pagination_label: ReviewableEntitlement
 sidebar_label: ReviewableEntitlement
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ReviewableEntitlement', 'ReviewableEntitlement'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'ReviewableEntitlement', 'ReviewableEntitlement']
 slug: /tools/sdk/go/v3/models/reviewable-entitlement
-tags: ['SDK', 'Software Development Kit', 'ReviewableEntitlement', 'ReviewableEntitlement']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ReviewableEntitlement',
+    'ReviewableEntitlement',
+  ]
 ---
 
 # ReviewableEntitlement
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The id for the entitlement | [optional] 
-**Name** | Pointer to **string** | The name of the entitlement | [optional] 
-**Description** | Pointer to **NullableString** | Information about the entitlement | [optional] 
-**Privileged** | Pointer to **bool** | Indicates if the entitlement is a privileged entitlement | [optional] [default to false]
-**Owner** | Pointer to [**NullableIdentityReferenceWithNameAndEmail**](identity-reference-with-name-and-email) |  | [optional] 
-**AttributeName** | Pointer to **string** | The name of the attribute on the source | [optional] 
-**AttributeValue** | Pointer to **string** | The value of the attribute on the source | [optional] 
-**SourceSchemaObjectType** | Pointer to **string** | The schema object type on the source used to represent the entitlement and its attributes | [optional] 
-**SourceName** | Pointer to **string** | The name of the source for which this entitlement belongs | [optional] 
-**SourceType** | Pointer to **string** | The type of the source for which the entitlement belongs | [optional] 
-**SourceId** | Pointer to **string** | The ID of the source for which the entitlement belongs | [optional] 
-**HasPermissions** | Pointer to **bool** | Indicates if the entitlement has permissions | [optional] [default to false]
-**IsPermission** | Pointer to **bool** | Indicates if the entitlement is a representation of an account permission | [optional] [default to false]
-**Revocable** | Pointer to **bool** | Indicates whether the entitlement can be revoked | [optional] [default to false]
-**CloudGoverned** | Pointer to **bool** | True if the entitlement is cloud governed | [optional] [default to false]
-**ContainsDataAccess** | Pointer to **bool** | True if the entitlement has DAS data | [optional] [default to false]
-**DataAccess** | Pointer to [**NullableDataAccess**](data-access) |  | [optional] 
-**Account** | Pointer to [**NullableReviewableEntitlementAccount**](reviewable-entitlement-account) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The id for the entitlement | [optional] |
+| **Name** | Pointer to **string** | The name of the entitlement | [optional] |
+| **Description** | Pointer to **NullableString** | Information about the entitlement | [optional] |
+| **Privileged** | Pointer to **bool** | Indicates if the entitlement is a privileged entitlement | [optional] [default to false] |
+| **Owner** | Pointer to [**NullableIdentityReferenceWithNameAndEmail**](identity-reference-with-name-and-email) |  | [optional] |
+| **AttributeName** | Pointer to **string** | The name of the attribute on the source | [optional] |
+| **AttributeValue** | Pointer to **string** | The value of the attribute on the source | [optional] |
+| **SourceSchemaObjectType** | Pointer to **string** | The schema object type on the source used to represent the entitlement and its attributes | [optional] |
+| **SourceName** | Pointer to **string** | The name of the source for which this entitlement belongs | [optional] |
+| **SourceType** | Pointer to **string** | The type of the source for which the entitlement belongs | [optional] |
+| **SourceId** | Pointer to **string** | The ID of the source for which the entitlement belongs | [optional] |
+| **HasPermissions** | Pointer to **bool** | Indicates if the entitlement has permissions | [optional] [default to false] |
+| **IsPermission** | Pointer to **bool** | Indicates if the entitlement is a representation of an account permission | [optional] [default to false] |
+| **Revocable** | Pointer to **bool** | Indicates whether the entitlement can be revoked | [optional] [default to false] |
+| **CloudGoverned** | Pointer to **bool** | True if the entitlement is cloud governed | [optional] [default to false] |
+| **ContainsDataAccess** | Pointer to **bool** | True if the entitlement has DAS data | [optional] [default to false] |
+| **DataAccess** | Pointer to [**NullableDataAccess**](data-access) |  | [optional] |
+| **Account** | Pointer to [**NullableReviewableEntitlementAccount**](reviewable-entitlement-account) |  | [optional] |
 
 ## Methods
 
@@ -40,18 +47,13 @@ Name | Type | Description | Notes
 
 `func NewReviewableEntitlement() *ReviewableEntitlement`
 
-NewReviewableEntitlement instantiates a new ReviewableEntitlement object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewReviewableEntitlement instantiates a new ReviewableEntitlement object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewReviewableEntitlementWithDefaults
 
 `func NewReviewableEntitlementWithDefaults() *ReviewableEntitlement`
 
-NewReviewableEntitlementWithDefaults instantiates a new ReviewableEntitlement object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewReviewableEntitlementWithDefaults instantiates a new ReviewableEntitlement object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -63,8 +65,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *ReviewableEntitlement) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -88,8 +89,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *ReviewableEntitlement) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -113,8 +113,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *ReviewableEntitlement) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -132,12 +131,14 @@ HasDescription returns a boolean if a field has been set.
 
 `func (o *ReviewableEntitlement) SetDescriptionNil(b bool)`
 
- SetDescriptionNil sets the value for Description to be an explicit nil
+SetDescriptionNil sets the value for Description to be an explicit nil
 
 ### UnsetDescription
+
 `func (o *ReviewableEntitlement) UnsetDescription()`
 
 UnsetDescription ensures that no value is present for Description, not even an explicit nil
+
 ### GetPrivileged
 
 `func (o *ReviewableEntitlement) GetPrivileged() bool`
@@ -148,8 +149,7 @@ GetPrivileged returns the Privileged field if non-nil, zero value otherwise.
 
 `func (o *ReviewableEntitlement) GetPrivilegedOk() (*bool, bool)`
 
-GetPrivilegedOk returns a tuple with the Privileged field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPrivilegedOk returns a tuple with the Privileged field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPrivileged
 
@@ -173,8 +173,7 @@ GetOwner returns the Owner field if non-nil, zero value otherwise.
 
 `func (o *ReviewableEntitlement) GetOwnerOk() (*IdentityReferenceWithNameAndEmail, bool)`
 
-GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwner
 
@@ -192,12 +191,14 @@ HasOwner returns a boolean if a field has been set.
 
 `func (o *ReviewableEntitlement) SetOwnerNil(b bool)`
 
- SetOwnerNil sets the value for Owner to be an explicit nil
+SetOwnerNil sets the value for Owner to be an explicit nil
 
 ### UnsetOwner
+
 `func (o *ReviewableEntitlement) UnsetOwner()`
 
 UnsetOwner ensures that no value is present for Owner, not even an explicit nil
+
 ### GetAttributeName
 
 `func (o *ReviewableEntitlement) GetAttributeName() string`
@@ -208,8 +209,7 @@ GetAttributeName returns the AttributeName field if non-nil, zero value otherwis
 
 `func (o *ReviewableEntitlement) GetAttributeNameOk() (*string, bool)`
 
-GetAttributeNameOk returns a tuple with the AttributeName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributeNameOk returns a tuple with the AttributeName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributeName
 
@@ -233,8 +233,7 @@ GetAttributeValue returns the AttributeValue field if non-nil, zero value otherw
 
 `func (o *ReviewableEntitlement) GetAttributeValueOk() (*string, bool)`
 
-GetAttributeValueOk returns a tuple with the AttributeValue field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributeValueOk returns a tuple with the AttributeValue field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributeValue
 
@@ -258,8 +257,7 @@ GetSourceSchemaObjectType returns the SourceSchemaObjectType field if non-nil, z
 
 `func (o *ReviewableEntitlement) GetSourceSchemaObjectTypeOk() (*string, bool)`
 
-GetSourceSchemaObjectTypeOk returns a tuple with the SourceSchemaObjectType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceSchemaObjectTypeOk returns a tuple with the SourceSchemaObjectType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceSchemaObjectType
 
@@ -283,8 +281,7 @@ GetSourceName returns the SourceName field if non-nil, zero value otherwise.
 
 `func (o *ReviewableEntitlement) GetSourceNameOk() (*string, bool)`
 
-GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceName
 
@@ -308,8 +305,7 @@ GetSourceType returns the SourceType field if non-nil, zero value otherwise.
 
 `func (o *ReviewableEntitlement) GetSourceTypeOk() (*string, bool)`
 
-GetSourceTypeOk returns a tuple with the SourceType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceTypeOk returns a tuple with the SourceType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceType
 
@@ -333,8 +329,7 @@ GetSourceId returns the SourceId field if non-nil, zero value otherwise.
 
 `func (o *ReviewableEntitlement) GetSourceIdOk() (*string, bool)`
 
-GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceId
 
@@ -358,8 +353,7 @@ GetHasPermissions returns the HasPermissions field if non-nil, zero value otherw
 
 `func (o *ReviewableEntitlement) GetHasPermissionsOk() (*bool, bool)`
 
-GetHasPermissionsOk returns a tuple with the HasPermissions field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetHasPermissionsOk returns a tuple with the HasPermissions field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetHasPermissions
 
@@ -383,8 +377,7 @@ GetIsPermission returns the IsPermission field if non-nil, zero value otherwise.
 
 `func (o *ReviewableEntitlement) GetIsPermissionOk() (*bool, bool)`
 
-GetIsPermissionOk returns a tuple with the IsPermission field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIsPermissionOk returns a tuple with the IsPermission field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIsPermission
 
@@ -408,8 +401,7 @@ GetRevocable returns the Revocable field if non-nil, zero value otherwise.
 
 `func (o *ReviewableEntitlement) GetRevocableOk() (*bool, bool)`
 
-GetRevocableOk returns a tuple with the Revocable field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRevocableOk returns a tuple with the Revocable field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRevocable
 
@@ -433,8 +425,7 @@ GetCloudGoverned returns the CloudGoverned field if non-nil, zero value otherwis
 
 `func (o *ReviewableEntitlement) GetCloudGovernedOk() (*bool, bool)`
 
-GetCloudGovernedOk returns a tuple with the CloudGoverned field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCloudGovernedOk returns a tuple with the CloudGoverned field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCloudGoverned
 
@@ -458,8 +449,7 @@ GetContainsDataAccess returns the ContainsDataAccess field if non-nil, zero valu
 
 `func (o *ReviewableEntitlement) GetContainsDataAccessOk() (*bool, bool)`
 
-GetContainsDataAccessOk returns a tuple with the ContainsDataAccess field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetContainsDataAccessOk returns a tuple with the ContainsDataAccess field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetContainsDataAccess
 
@@ -483,8 +473,7 @@ GetDataAccess returns the DataAccess field if non-nil, zero value otherwise.
 
 `func (o *ReviewableEntitlement) GetDataAccessOk() (*DataAccess, bool)`
 
-GetDataAccessOk returns a tuple with the DataAccess field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDataAccessOk returns a tuple with the DataAccess field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDataAccess
 
@@ -502,12 +491,14 @@ HasDataAccess returns a boolean if a field has been set.
 
 `func (o *ReviewableEntitlement) SetDataAccessNil(b bool)`
 
- SetDataAccessNil sets the value for DataAccess to be an explicit nil
+SetDataAccessNil sets the value for DataAccess to be an explicit nil
 
 ### UnsetDataAccess
+
 `func (o *ReviewableEntitlement) UnsetDataAccess()`
 
 UnsetDataAccess ensures that no value is present for DataAccess, not even an explicit nil
+
 ### GetAccount
 
 `func (o *ReviewableEntitlement) GetAccount() ReviewableEntitlementAccount`
@@ -518,8 +509,7 @@ GetAccount returns the Account field if non-nil, zero value otherwise.
 
 `func (o *ReviewableEntitlement) GetAccountOk() (*ReviewableEntitlementAccount, bool)`
 
-GetAccountOk returns a tuple with the Account field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountOk returns a tuple with the Account field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccount
 
@@ -537,10 +527,10 @@ HasAccount returns a boolean if a field has been set.
 
 `func (o *ReviewableEntitlement) SetAccountNil(b bool)`
 
- SetAccountNil sets the value for Account to be an explicit nil
+SetAccountNil sets the value for Account to be an explicit nil
 
 ### UnsetAccount
+
 `func (o *ReviewableEntitlement) UnsetAccount()`
 
 UnsetAccount ensures that no value is present for Account, not even an explicit nil
-

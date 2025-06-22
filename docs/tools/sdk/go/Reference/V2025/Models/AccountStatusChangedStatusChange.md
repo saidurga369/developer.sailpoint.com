@@ -4,19 +4,32 @@ title: AccountStatusChangedStatusChange
 pagination_label: AccountStatusChangedStatusChange
 sidebar_label: AccountStatusChangedStatusChange
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccountStatusChangedStatusChange', 'V2025AccountStatusChangedStatusChange'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'AccountStatusChangedStatusChange',
+    'V2025AccountStatusChangedStatusChange',
+  ]
 slug: /tools/sdk/go/v2025/models/account-status-changed-status-change
-tags: ['SDK', 'Software Development Kit', 'AccountStatusChangedStatusChange', 'V2025AccountStatusChangedStatusChange']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountStatusChangedStatusChange',
+    'V2025AccountStatusChangedStatusChange',
+  ]
 ---
 
 # AccountStatusChangedStatusChange
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**PreviousStatus** | Pointer to **string** | the previous status of the account | [optional] 
-**NewStatus** | Pointer to **string** | the new status of the account | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **PreviousStatus** | Pointer to **string** | the previous status of the account | [optional] |
+| **NewStatus** | Pointer to **string** | the new status of the account | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewAccountStatusChangedStatusChange() *AccountStatusChangedStatusChange`
 
-NewAccountStatusChangedStatusChange instantiates a new AccountStatusChangedStatusChange object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccountStatusChangedStatusChange instantiates a new AccountStatusChangedStatusChange object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccountStatusChangedStatusChangeWithDefaults
 
 `func NewAccountStatusChangedStatusChangeWithDefaults() *AccountStatusChangedStatusChange`
 
-NewAccountStatusChangedStatusChangeWithDefaults instantiates a new AccountStatusChangedStatusChange object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccountStatusChangedStatusChangeWithDefaults instantiates a new AccountStatusChangedStatusChange object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetPreviousStatus
 
@@ -47,8 +55,7 @@ GetPreviousStatus returns the PreviousStatus field if non-nil, zero value otherw
 
 `func (o *AccountStatusChangedStatusChange) GetPreviousStatusOk() (*string, bool)`
 
-GetPreviousStatusOk returns a tuple with the PreviousStatus field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPreviousStatusOk returns a tuple with the PreviousStatus field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPreviousStatus
 
@@ -72,8 +79,7 @@ GetNewStatus returns the NewStatus field if non-nil, zero value otherwise.
 
 `func (o *AccountStatusChangedStatusChange) GetNewStatusOk() (*string, bool)`
 
-GetNewStatusOk returns a tuple with the NewStatus field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNewStatusOk returns a tuple with the NewStatus field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNewStatus
 
@@ -86,5 +92,3 @@ SetNewStatus sets NewStatus field to given value.
 `func (o *AccountStatusChangedStatusChange) HasNewStatus() bool`
 
 HasNewStatus returns a boolean if a field has been set.
-
-

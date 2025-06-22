@@ -4,9 +4,22 @@ title: ClientLogConfigurationExpiration
 pagination_label: ClientLogConfigurationExpiration
 sidebar_label: ClientLogConfigurationExpiration
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ClientLogConfigurationExpiration', 'V2024ClientLogConfigurationExpiration'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ClientLogConfigurationExpiration',
+    'V2024ClientLogConfigurationExpiration',
+  ]
 slug: /tools/sdk/python/v2024/models/client-log-configuration-expiration
-tags: ['SDK', 'Software Development Kit', 'ClientLogConfigurationExpiration', 'V2024ClientLogConfigurationExpiration']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ClientLogConfigurationExpiration',
+    'V2024ClientLogConfigurationExpiration',
+  ]
 ---
 
 # ClientLogConfigurationExpiration
@@ -15,12 +28,13 @@ Client Runtime Logging Configuration
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**client_id** | **str** | Log configuration's client ID | [optional] 
-**expiration** | **datetime** | Expiration date-time of the log configuration request.  Can be no greater than 24 hours from current date-time. | [optional] 
-**root_level** | [**StandardLevel**](standard-level) |  | [required]
-**log_levels** | [**map[string]StandardLevel**](standard-level) | Mapping of identifiers to Standard Log Level values | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **client_id** | **str** | Log configuration's client ID | [optional] |
+| **expiration** | **datetime** | Expiration date-time of the log configuration request. Can be no greater than 24 hours from current date-time. | [optional] |
+| **root_level** | [**StandardLevel**](standard-level) |  | [required] |
+| **log_levels** | [**map[string]StandardLevel**](standard-level) | Mapping of identifiers to Standard Log Level values | [optional] |
+
 }
 
 ## Example
@@ -36,5 +50,5 @@ log_levels=INFO
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

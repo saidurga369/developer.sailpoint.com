@@ -4,7 +4,7 @@ title: AuthProfile
 pagination_label: AuthProfile
 sidebar_label: AuthProfile
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AuthProfile', 'BetaAuthProfile'] 
+keywords: ['go', 'Golang', 'sdk', 'AuthProfile', 'BetaAuthProfile']
 slug: /tools/sdk/go/beta/models/auth-profile
 tags: ['SDK', 'Software Development Kit', 'AuthProfile', 'BetaAuthProfile']
 ---
@@ -13,15 +13,15 @@ tags: ['SDK', 'Software Development Kit', 'AuthProfile', 'BetaAuthProfile']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | Pointer to **string** | Authentication Profile name. | [optional] 
-**OffNetwork** | Pointer to **bool** | Use it to block access from off network. | [optional] [default to false]
-**UntrustedGeography** | Pointer to **bool** | Use it to block access from untrusted geoographies. | [optional] [default to false]
-**ApplicationId** | Pointer to **string** | Application ID. | [optional] 
-**ApplicationName** | Pointer to **string** | Application name. | [optional] 
-**Type** | Pointer to **string** | Type of the Authentication Profile. | [optional] 
-**StrongAuthLogin** | Pointer to **bool** | Use it to enable strong authentication. | [optional] [default to false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | Pointer to **string** | Authentication Profile name. | [optional] |
+| **OffNetwork** | Pointer to **bool** | Use it to block access from off network. | [optional] [default to false] |
+| **UntrustedGeography** | Pointer to **bool** | Use it to block access from untrusted geoographies. | [optional] [default to false] |
+| **ApplicationId** | Pointer to **string** | Application ID. | [optional] |
+| **ApplicationName** | Pointer to **string** | Application name. | [optional] |
+| **Type** | Pointer to **string** | Type of the Authentication Profile. | [optional] |
+| **StrongAuthLogin** | Pointer to **bool** | Use it to enable strong authentication. | [optional] [default to false] |
 
 ## Methods
 
@@ -29,18 +29,13 @@ Name | Type | Description | Notes
 
 `func NewAuthProfile() *AuthProfile`
 
-NewAuthProfile instantiates a new AuthProfile object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAuthProfile instantiates a new AuthProfile object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAuthProfileWithDefaults
 
 `func NewAuthProfileWithDefaults() *AuthProfile`
 
-NewAuthProfileWithDefaults instantiates a new AuthProfile object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAuthProfileWithDefaults instantiates a new AuthProfile object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -52,8 +47,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *AuthProfile) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -77,8 +71,7 @@ GetOffNetwork returns the OffNetwork field if non-nil, zero value otherwise.
 
 `func (o *AuthProfile) GetOffNetworkOk() (*bool, bool)`
 
-GetOffNetworkOk returns a tuple with the OffNetwork field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOffNetworkOk returns a tuple with the OffNetwork field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOffNetwork
 
@@ -102,8 +95,7 @@ GetUntrustedGeography returns the UntrustedGeography field if non-nil, zero valu
 
 `func (o *AuthProfile) GetUntrustedGeographyOk() (*bool, bool)`
 
-GetUntrustedGeographyOk returns a tuple with the UntrustedGeography field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUntrustedGeographyOk returns a tuple with the UntrustedGeography field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUntrustedGeography
 
@@ -127,8 +119,7 @@ GetApplicationId returns the ApplicationId field if non-nil, zero value otherwis
 
 `func (o *AuthProfile) GetApplicationIdOk() (*string, bool)`
 
-GetApplicationIdOk returns a tuple with the ApplicationId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApplicationIdOk returns a tuple with the ApplicationId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApplicationId
 
@@ -152,8 +143,7 @@ GetApplicationName returns the ApplicationName field if non-nil, zero value othe
 
 `func (o *AuthProfile) GetApplicationNameOk() (*string, bool)`
 
-GetApplicationNameOk returns a tuple with the ApplicationName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApplicationNameOk returns a tuple with the ApplicationName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApplicationName
 
@@ -177,8 +167,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *AuthProfile) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -202,8 +191,7 @@ GetStrongAuthLogin returns the StrongAuthLogin field if non-nil, zero value othe
 
 `func (o *AuthProfile) GetStrongAuthLoginOk() (*bool, bool)`
 
-GetStrongAuthLoginOk returns a tuple with the StrongAuthLogin field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStrongAuthLoginOk returns a tuple with the StrongAuthLogin field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStrongAuthLogin
 
@@ -216,5 +204,3 @@ SetStrongAuthLogin sets StrongAuthLogin field to given value.
 `func (o *AuthProfile) HasStrongAuthLogin() bool`
 
 HasStrongAuthLogin returns a boolean if a field has been set.
-
-

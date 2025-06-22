@@ -4,27 +4,36 @@ title: SubscriptionType
 pagination_label: SubscriptionType
 sidebar_label: SubscriptionType
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'SubscriptionType', 'V2024SubscriptionType'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'SubscriptionType',
+    'V2024SubscriptionType',
+  ]
 slug: /tools/sdk/powershell/v2024/models/subscription-type
-tags: ['SDK', 'Software Development Kit', 'SubscriptionType', 'V2024SubscriptionType']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SubscriptionType',
+    'V2024SubscriptionType',
+  ]
 ---
-
 
 # SubscriptionType
 
 ## Enum
 
+- `HTTP` (value: `"HTTP"`)
 
-* `HTTP` (value: `"HTTP"`)
+- `EVENTBRIDGE` (value: `"EVENTBRIDGE"`)
 
-* `EVENTBRIDGE` (value: `"EVENTBRIDGE"`)
+- `INLINE` (value: `"INLINE"`)
 
-* `INLINE` (value: `"INLINE"`)
+- `SCRIPT` (value: `"SCRIPT"`)
 
-* `SCRIPT` (value: `"SCRIPT"`)
+- `WORKFLOW` (value: `"WORKFLOW"`)
 
-* `WORKFLOW` (value: `"WORKFLOW"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

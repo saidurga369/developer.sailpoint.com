@@ -4,23 +4,36 @@ title: AccessRequestRecommendationConfigDto
 pagination_label: AccessRequestRecommendationConfigDto
 sidebar_label: AccessRequestRecommendationConfigDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessRequestRecommendationConfigDto', 'V2024AccessRequestRecommendationConfigDto'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'AccessRequestRecommendationConfigDto',
+    'V2024AccessRequestRecommendationConfigDto',
+  ]
 slug: /tools/sdk/go/v2024/models/access-request-recommendation-config-dto
-tags: ['SDK', 'Software Development Kit', 'AccessRequestRecommendationConfigDto', 'V2024AccessRequestRecommendationConfigDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessRequestRecommendationConfigDto',
+    'V2024AccessRequestRecommendationConfigDto',
+  ]
 ---
 
 # AccessRequestRecommendationConfigDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ScoreThreshold** | **float32** | The value that internal calculations need to exceed for recommendations to be made. | 
-**StartDateAttribute** | Pointer to **string** | Use to map an attribute name for determining identities' start date. | [optional] 
-**RestrictionAttribute** | Pointer to **string** | Use to only give recommendations based on this attribute. | [optional] 
-**MoverAttribute** | Pointer to **string** | Use to map an attribute name for determining whether identities are movers. | [optional] 
-**JoinerAttribute** | Pointer to **string** | Use to map an attribute name for determining whether identities are joiners. | [optional] 
-**UseRestrictionAttribute** | Pointer to **bool** | Use only the attribute named in restrictionAttribute to make recommendations. | [optional] [default to false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ScoreThreshold** | **float32** | The value that internal calculations need to exceed for recommendations to be made. |
+| **StartDateAttribute** | Pointer to **string** | Use to map an attribute name for determining identities' start date. | [optional] |
+| **RestrictionAttribute** | Pointer to **string** | Use to only give recommendations based on this attribute. | [optional] |
+| **MoverAttribute** | Pointer to **string** | Use to map an attribute name for determining whether identities are movers. | [optional] |
+| **JoinerAttribute** | Pointer to **string** | Use to map an attribute name for determining whether identities are joiners. | [optional] |
+| **UseRestrictionAttribute** | Pointer to **bool** | Use only the attribute named in restrictionAttribute to make recommendations. | [optional] [default to false] |
 
 ## Methods
 
@@ -28,18 +41,13 @@ Name | Type | Description | Notes
 
 `func NewAccessRequestRecommendationConfigDto(scoreThreshold float32, ) *AccessRequestRecommendationConfigDto`
 
-NewAccessRequestRecommendationConfigDto instantiates a new AccessRequestRecommendationConfigDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessRequestRecommendationConfigDto instantiates a new AccessRequestRecommendationConfigDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessRequestRecommendationConfigDtoWithDefaults
 
 `func NewAccessRequestRecommendationConfigDtoWithDefaults() *AccessRequestRecommendationConfigDto`
 
-NewAccessRequestRecommendationConfigDtoWithDefaults instantiates a new AccessRequestRecommendationConfigDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessRequestRecommendationConfigDtoWithDefaults instantiates a new AccessRequestRecommendationConfigDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetScoreThreshold
 
@@ -51,15 +59,13 @@ GetScoreThreshold returns the ScoreThreshold field if non-nil, zero value otherw
 
 `func (o *AccessRequestRecommendationConfigDto) GetScoreThresholdOk() (*float32, bool)`
 
-GetScoreThresholdOk returns a tuple with the ScoreThreshold field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetScoreThresholdOk returns a tuple with the ScoreThreshold field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetScoreThreshold
 
 `func (o *AccessRequestRecommendationConfigDto) SetScoreThreshold(v float32)`
 
 SetScoreThreshold sets ScoreThreshold field to given value.
-
 
 ### GetStartDateAttribute
 
@@ -71,8 +77,7 @@ GetStartDateAttribute returns the StartDateAttribute field if non-nil, zero valu
 
 `func (o *AccessRequestRecommendationConfigDto) GetStartDateAttributeOk() (*string, bool)`
 
-GetStartDateAttributeOk returns a tuple with the StartDateAttribute field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStartDateAttributeOk returns a tuple with the StartDateAttribute field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStartDateAttribute
 
@@ -96,8 +101,7 @@ GetRestrictionAttribute returns the RestrictionAttribute field if non-nil, zero 
 
 `func (o *AccessRequestRecommendationConfigDto) GetRestrictionAttributeOk() (*string, bool)`
 
-GetRestrictionAttributeOk returns a tuple with the RestrictionAttribute field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRestrictionAttributeOk returns a tuple with the RestrictionAttribute field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRestrictionAttribute
 
@@ -121,8 +125,7 @@ GetMoverAttribute returns the MoverAttribute field if non-nil, zero value otherw
 
 `func (o *AccessRequestRecommendationConfigDto) GetMoverAttributeOk() (*string, bool)`
 
-GetMoverAttributeOk returns a tuple with the MoverAttribute field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMoverAttributeOk returns a tuple with the MoverAttribute field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMoverAttribute
 
@@ -146,8 +149,7 @@ GetJoinerAttribute returns the JoinerAttribute field if non-nil, zero value othe
 
 `func (o *AccessRequestRecommendationConfigDto) GetJoinerAttributeOk() (*string, bool)`
 
-GetJoinerAttributeOk returns a tuple with the JoinerAttribute field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetJoinerAttributeOk returns a tuple with the JoinerAttribute field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetJoinerAttribute
 
@@ -171,8 +173,7 @@ GetUseRestrictionAttribute returns the UseRestrictionAttribute field if non-nil,
 
 `func (o *AccessRequestRecommendationConfigDto) GetUseRestrictionAttributeOk() (*bool, bool)`
 
-GetUseRestrictionAttributeOk returns a tuple with the UseRestrictionAttribute field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUseRestrictionAttributeOk returns a tuple with the UseRestrictionAttribute field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUseRestrictionAttribute
 
@@ -185,5 +186,3 @@ SetUseRestrictionAttribute sets UseRestrictionAttribute field to given value.
 `func (o *AccessRequestRecommendationConfigDto) HasUseRestrictionAttribute() bool`
 
 HasUseRestrictionAttribute returns a boolean if a field has been set.
-
-

@@ -4,7 +4,7 @@ title: TemplateSlack
 pagination_label: TemplateSlack
 sidebar_label: TemplateSlack
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'TemplateSlack', 'BetaTemplateSlack'] 
+keywords: ['go', 'Golang', 'sdk', 'TemplateSlack', 'BetaTemplateSlack']
 slug: /tools/sdk/go/beta/models/template-slack
 tags: ['SDK', 'Software Development Kit', 'TemplateSlack', 'BetaTemplateSlack']
 ---
@@ -13,19 +13,19 @@ tags: ['SDK', 'Software Development Kit', 'TemplateSlack', 'BetaTemplateSlack']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Key** | Pointer to **NullableString** |  | [optional] 
-**Text** | Pointer to **string** |  | [optional] 
-**Blocks** | Pointer to **NullableString** |  | [optional] 
-**Attachments** | Pointer to **string** |  | [optional] 
-**NotificationType** | Pointer to **NullableString** |  | [optional] 
-**ApprovalId** | Pointer to **NullableString** |  | [optional] 
-**RequestId** | Pointer to **NullableString** |  | [optional] 
-**RequestedById** | Pointer to **NullableString** |  | [optional] 
-**IsSubscription** | Pointer to **NullableBool** |  | [optional] 
-**AutoApprovalData** | Pointer to [**NullableTemplateSlackAutoApprovalData**](template-slack-auto-approval-data) |  | [optional] 
-**CustomFields** | Pointer to [**NullableTemplateSlackCustomFields**](template-slack-custom-fields) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Key** | Pointer to **NullableString** |  | [optional] |
+| **Text** | Pointer to **string** |  | [optional] |
+| **Blocks** | Pointer to **NullableString** |  | [optional] |
+| **Attachments** | Pointer to **string** |  | [optional] |
+| **NotificationType** | Pointer to **NullableString** |  | [optional] |
+| **ApprovalId** | Pointer to **NullableString** |  | [optional] |
+| **RequestId** | Pointer to **NullableString** |  | [optional] |
+| **RequestedById** | Pointer to **NullableString** |  | [optional] |
+| **IsSubscription** | Pointer to **NullableBool** |  | [optional] |
+| **AutoApprovalData** | Pointer to [**NullableTemplateSlackAutoApprovalData**](template-slack-auto-approval-data) |  | [optional] |
+| **CustomFields** | Pointer to [**NullableTemplateSlackCustomFields**](template-slack-custom-fields) |  | [optional] |
 
 ## Methods
 
@@ -33,18 +33,13 @@ Name | Type | Description | Notes
 
 `func NewTemplateSlack() *TemplateSlack`
 
-NewTemplateSlack instantiates a new TemplateSlack object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewTemplateSlack instantiates a new TemplateSlack object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewTemplateSlackWithDefaults
 
 `func NewTemplateSlackWithDefaults() *TemplateSlack`
 
-NewTemplateSlackWithDefaults instantiates a new TemplateSlack object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewTemplateSlackWithDefaults instantiates a new TemplateSlack object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetKey
 
@@ -56,8 +51,7 @@ GetKey returns the Key field if non-nil, zero value otherwise.
 
 `func (o *TemplateSlack) GetKeyOk() (*string, bool)`
 
-GetKeyOk returns a tuple with the Key field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetKeyOk returns a tuple with the Key field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetKey
 
@@ -75,12 +69,14 @@ HasKey returns a boolean if a field has been set.
 
 `func (o *TemplateSlack) SetKeyNil(b bool)`
 
- SetKeyNil sets the value for Key to be an explicit nil
+SetKeyNil sets the value for Key to be an explicit nil
 
 ### UnsetKey
+
 `func (o *TemplateSlack) UnsetKey()`
 
 UnsetKey ensures that no value is present for Key, not even an explicit nil
+
 ### GetText
 
 `func (o *TemplateSlack) GetText() string`
@@ -91,8 +87,7 @@ GetText returns the Text field if non-nil, zero value otherwise.
 
 `func (o *TemplateSlack) GetTextOk() (*string, bool)`
 
-GetTextOk returns a tuple with the Text field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTextOk returns a tuple with the Text field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetText
 
@@ -116,8 +111,7 @@ GetBlocks returns the Blocks field if non-nil, zero value otherwise.
 
 `func (o *TemplateSlack) GetBlocksOk() (*string, bool)`
 
-GetBlocksOk returns a tuple with the Blocks field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetBlocksOk returns a tuple with the Blocks field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetBlocks
 
@@ -135,12 +129,14 @@ HasBlocks returns a boolean if a field has been set.
 
 `func (o *TemplateSlack) SetBlocksNil(b bool)`
 
- SetBlocksNil sets the value for Blocks to be an explicit nil
+SetBlocksNil sets the value for Blocks to be an explicit nil
 
 ### UnsetBlocks
+
 `func (o *TemplateSlack) UnsetBlocks()`
 
 UnsetBlocks ensures that no value is present for Blocks, not even an explicit nil
+
 ### GetAttachments
 
 `func (o *TemplateSlack) GetAttachments() string`
@@ -151,8 +147,7 @@ GetAttachments returns the Attachments field if non-nil, zero value otherwise.
 
 `func (o *TemplateSlack) GetAttachmentsOk() (*string, bool)`
 
-GetAttachmentsOk returns a tuple with the Attachments field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttachmentsOk returns a tuple with the Attachments field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttachments
 
@@ -176,8 +171,7 @@ GetNotificationType returns the NotificationType field if non-nil, zero value ot
 
 `func (o *TemplateSlack) GetNotificationTypeOk() (*string, bool)`
 
-GetNotificationTypeOk returns a tuple with the NotificationType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNotificationTypeOk returns a tuple with the NotificationType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNotificationType
 
@@ -195,12 +189,14 @@ HasNotificationType returns a boolean if a field has been set.
 
 `func (o *TemplateSlack) SetNotificationTypeNil(b bool)`
 
- SetNotificationTypeNil sets the value for NotificationType to be an explicit nil
+SetNotificationTypeNil sets the value for NotificationType to be an explicit nil
 
 ### UnsetNotificationType
+
 `func (o *TemplateSlack) UnsetNotificationType()`
 
 UnsetNotificationType ensures that no value is present for NotificationType, not even an explicit nil
+
 ### GetApprovalId
 
 `func (o *TemplateSlack) GetApprovalId() string`
@@ -211,8 +207,7 @@ GetApprovalId returns the ApprovalId field if non-nil, zero value otherwise.
 
 `func (o *TemplateSlack) GetApprovalIdOk() (*string, bool)`
 
-GetApprovalIdOk returns a tuple with the ApprovalId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApprovalIdOk returns a tuple with the ApprovalId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApprovalId
 
@@ -230,12 +225,14 @@ HasApprovalId returns a boolean if a field has been set.
 
 `func (o *TemplateSlack) SetApprovalIdNil(b bool)`
 
- SetApprovalIdNil sets the value for ApprovalId to be an explicit nil
+SetApprovalIdNil sets the value for ApprovalId to be an explicit nil
 
 ### UnsetApprovalId
+
 `func (o *TemplateSlack) UnsetApprovalId()`
 
 UnsetApprovalId ensures that no value is present for ApprovalId, not even an explicit nil
+
 ### GetRequestId
 
 `func (o *TemplateSlack) GetRequestId() string`
@@ -246,8 +243,7 @@ GetRequestId returns the RequestId field if non-nil, zero value otherwise.
 
 `func (o *TemplateSlack) GetRequestIdOk() (*string, bool)`
 
-GetRequestIdOk returns a tuple with the RequestId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestIdOk returns a tuple with the RequestId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequestId
 
@@ -265,12 +261,14 @@ HasRequestId returns a boolean if a field has been set.
 
 `func (o *TemplateSlack) SetRequestIdNil(b bool)`
 
- SetRequestIdNil sets the value for RequestId to be an explicit nil
+SetRequestIdNil sets the value for RequestId to be an explicit nil
 
 ### UnsetRequestId
+
 `func (o *TemplateSlack) UnsetRequestId()`
 
 UnsetRequestId ensures that no value is present for RequestId, not even an explicit nil
+
 ### GetRequestedById
 
 `func (o *TemplateSlack) GetRequestedById() string`
@@ -281,8 +279,7 @@ GetRequestedById returns the RequestedById field if non-nil, zero value otherwis
 
 `func (o *TemplateSlack) GetRequestedByIdOk() (*string, bool)`
 
-GetRequestedByIdOk returns a tuple with the RequestedById field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestedByIdOk returns a tuple with the RequestedById field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequestedById
 
@@ -300,12 +297,14 @@ HasRequestedById returns a boolean if a field has been set.
 
 `func (o *TemplateSlack) SetRequestedByIdNil(b bool)`
 
- SetRequestedByIdNil sets the value for RequestedById to be an explicit nil
+SetRequestedByIdNil sets the value for RequestedById to be an explicit nil
 
 ### UnsetRequestedById
+
 `func (o *TemplateSlack) UnsetRequestedById()`
 
 UnsetRequestedById ensures that no value is present for RequestedById, not even an explicit nil
+
 ### GetIsSubscription
 
 `func (o *TemplateSlack) GetIsSubscription() bool`
@@ -316,8 +315,7 @@ GetIsSubscription returns the IsSubscription field if non-nil, zero value otherw
 
 `func (o *TemplateSlack) GetIsSubscriptionOk() (*bool, bool)`
 
-GetIsSubscriptionOk returns a tuple with the IsSubscription field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIsSubscriptionOk returns a tuple with the IsSubscription field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIsSubscription
 
@@ -335,12 +333,14 @@ HasIsSubscription returns a boolean if a field has been set.
 
 `func (o *TemplateSlack) SetIsSubscriptionNil(b bool)`
 
- SetIsSubscriptionNil sets the value for IsSubscription to be an explicit nil
+SetIsSubscriptionNil sets the value for IsSubscription to be an explicit nil
 
 ### UnsetIsSubscription
+
 `func (o *TemplateSlack) UnsetIsSubscription()`
 
 UnsetIsSubscription ensures that no value is present for IsSubscription, not even an explicit nil
+
 ### GetAutoApprovalData
 
 `func (o *TemplateSlack) GetAutoApprovalData() TemplateSlackAutoApprovalData`
@@ -351,8 +351,7 @@ GetAutoApprovalData returns the AutoApprovalData field if non-nil, zero value ot
 
 `func (o *TemplateSlack) GetAutoApprovalDataOk() (*TemplateSlackAutoApprovalData, bool)`
 
-GetAutoApprovalDataOk returns a tuple with the AutoApprovalData field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAutoApprovalDataOk returns a tuple with the AutoApprovalData field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAutoApprovalData
 
@@ -370,12 +369,14 @@ HasAutoApprovalData returns a boolean if a field has been set.
 
 `func (o *TemplateSlack) SetAutoApprovalDataNil(b bool)`
 
- SetAutoApprovalDataNil sets the value for AutoApprovalData to be an explicit nil
+SetAutoApprovalDataNil sets the value for AutoApprovalData to be an explicit nil
 
 ### UnsetAutoApprovalData
+
 `func (o *TemplateSlack) UnsetAutoApprovalData()`
 
 UnsetAutoApprovalData ensures that no value is present for AutoApprovalData, not even an explicit nil
+
 ### GetCustomFields
 
 `func (o *TemplateSlack) GetCustomFields() TemplateSlackCustomFields`
@@ -386,8 +387,7 @@ GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 `func (o *TemplateSlack) GetCustomFieldsOk() (*TemplateSlackCustomFields, bool)`
 
-GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
@@ -405,10 +405,10 @@ HasCustomFields returns a boolean if a field has been set.
 
 `func (o *TemplateSlack) SetCustomFieldsNil(b bool)`
 
- SetCustomFieldsNil sets the value for CustomFields to be an explicit nil
+SetCustomFieldsNil sets the value for CustomFields to be an explicit nil
 
 ### UnsetCustomFields
+
 `func (o *TemplateSlack) UnsetCustomFields()`
 
 UnsetCustomFields ensures that no value is present for CustomFields, not even an explicit nil
-

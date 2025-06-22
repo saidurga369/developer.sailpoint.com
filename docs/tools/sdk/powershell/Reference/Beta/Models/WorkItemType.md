@@ -4,47 +4,44 @@ title: WorkItemType
 pagination_label: WorkItemType
 sidebar_label: WorkItemType
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'WorkItemType', 'BetaWorkItemType'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'WorkItemType', 'BetaWorkItemType']
 slug: /tools/sdk/powershell/beta/models/work-item-type
 tags: ['SDK', 'Software Development Kit', 'WorkItemType', 'BetaWorkItemType']
 ---
-
 
 # WorkItemType
 
 ## Enum
 
+- `Unknown` (value: `"Unknown"`)
 
-* `Unknown` (value: `"Unknown"`)
+- `Generic` (value: `"Generic"`)
 
-* `Generic` (value: `"Generic"`)
+- `Certification` (value: `"Certification"`)
 
-* `Certification` (value: `"Certification"`)
+- `Remediation` (value: `"Remediation"`)
 
-* `Remediation` (value: `"Remediation"`)
+- `Delegation` (value: `"Delegation"`)
 
-* `Delegation` (value: `"Delegation"`)
+- `Approval` (value: `"Approval"`)
 
-* `Approval` (value: `"Approval"`)
+- `ViolationReview` (value: `"ViolationReview"`)
 
-* `ViolationReview` (value: `"ViolationReview"`)
+- `Form` (value: `"Form"`)
 
-* `Form` (value: `"Form"`)
+- `PolicyViolation` (value: `"PolicyViolation"`)
 
-* `PolicyViolation` (value: `"PolicyViolation"`)
+- `Challenge` (value: `"Challenge"`)
 
-* `Challenge` (value: `"Challenge"`)
+- `ImpactAnalysis` (value: `"ImpactAnalysis"`)
 
-* `ImpactAnalysis` (value: `"ImpactAnalysis"`)
+- `Signoff` (value: `"Signoff"`)
 
-* `Signoff` (value: `"Signoff"`)
+- `Event` (value: `"Event"`)
 
-* `Event` (value: `"Event"`)
+- `ManualAction` (value: `"ManualAction"`)
 
-* `ManualAction` (value: `"ManualAction"`)
+- `Test` (value: `"Test"`)
 
-* `Test` (value: `"Test"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

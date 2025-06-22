@@ -4,22 +4,35 @@ title: IdentityReferenceWithNameAndEmail
 pagination_label: IdentityReferenceWithNameAndEmail
 sidebar_label: IdentityReferenceWithNameAndEmail
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentityReferenceWithNameAndEmail', 'IdentityReferenceWithNameAndEmail'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'IdentityReferenceWithNameAndEmail',
+    'IdentityReferenceWithNameAndEmail',
+  ]
 slug: /tools/sdk/python/v3/models/identity-reference-with-name-and-email
-tags: ['SDK', 'Software Development Kit', 'IdentityReferenceWithNameAndEmail', 'IdentityReferenceWithNameAndEmail']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityReferenceWithNameAndEmail',
+    'IdentityReferenceWithNameAndEmail',
+  ]
 ---
 
 # IdentityReferenceWithNameAndEmail
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** | **str** | The type can only be IDENTITY. This is read-only. | [optional] 
-**id** | **str** | Identity ID. | [optional] 
-**name** | **str** | Identity's human-readable display name. This is read-only. | [optional] 
-**email** | **str** | Identity's email address. This is read-only. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **str** | The type can only be IDENTITY. This is read-only. | [optional] |
+| **id** | **str** | Identity ID. | [optional] |
+| **name** | **str** | Identity's human-readable display name. This is read-only. | [optional] |
+| **email** | **str** | Identity's email address. This is read-only. | [optional] |
+
 }
 
 ## Example
@@ -35,5 +48,5 @@ email='alison.ferguso@identitysoon.com'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

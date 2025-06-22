@@ -4,23 +4,32 @@ title: DimensionCriteriaOperation
 pagination_label: DimensionCriteriaOperation
 sidebar_label: DimensionCriteriaOperation
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'DimensionCriteriaOperation', 'V2024DimensionCriteriaOperation'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'DimensionCriteriaOperation',
+    'V2024DimensionCriteriaOperation',
+  ]
 slug: /tools/sdk/powershell/v2024/models/dimension-criteria-operation
-tags: ['SDK', 'Software Development Kit', 'DimensionCriteriaOperation', 'V2024DimensionCriteriaOperation']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'DimensionCriteriaOperation',
+    'V2024DimensionCriteriaOperation',
+  ]
 ---
-
 
 # DimensionCriteriaOperation
 
 ## Enum
 
+- `EQUALS` (value: `"EQUALS"`)
 
-* `EQUALS` (value: `"EQUALS"`)
+- `AND` (value: `"AND"`)
 
-* `AND` (value: `"AND"`)
+- `OR` (value: `"OR"`)
 
-* `OR` (value: `"OR"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

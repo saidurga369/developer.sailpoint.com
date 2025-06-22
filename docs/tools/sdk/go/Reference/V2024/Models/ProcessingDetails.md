@@ -4,22 +4,28 @@ title: ProcessingDetails
 pagination_label: ProcessingDetails
 sidebar_label: ProcessingDetails
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ProcessingDetails', 'V2024ProcessingDetails'] 
+keywords: ['go', 'Golang', 'sdk', 'ProcessingDetails', 'V2024ProcessingDetails']
 slug: /tools/sdk/go/v2024/models/processing-details
-tags: ['SDK', 'Software Development Kit', 'ProcessingDetails', 'V2024ProcessingDetails']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ProcessingDetails',
+    'V2024ProcessingDetails',
+  ]
 ---
 
 # ProcessingDetails
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Date** | Pointer to **NullableTime** | A date-time in ISO-8601 format | [optional] 
-**Stage** | Pointer to **string** |  | [optional] 
-**RetryCount** | Pointer to **int32** |  | [optional] 
-**StackTrace** | Pointer to **string** |  | [optional] 
-**Message** | Pointer to **string** |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Date** | Pointer to **NullableTime** | A date-time in ISO-8601 format | [optional] |
+| **Stage** | Pointer to **string** |  | [optional] |
+| **RetryCount** | Pointer to **int32** |  | [optional] |
+| **StackTrace** | Pointer to **string** |  | [optional] |
+| **Message** | Pointer to **string** |  | [optional] |
 
 ## Methods
 
@@ -27,18 +33,13 @@ Name | Type | Description | Notes
 
 `func NewProcessingDetails() *ProcessingDetails`
 
-NewProcessingDetails instantiates a new ProcessingDetails object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewProcessingDetails instantiates a new ProcessingDetails object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewProcessingDetailsWithDefaults
 
 `func NewProcessingDetailsWithDefaults() *ProcessingDetails`
 
-NewProcessingDetailsWithDefaults instantiates a new ProcessingDetails object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewProcessingDetailsWithDefaults instantiates a new ProcessingDetails object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetDate
 
@@ -50,8 +51,7 @@ GetDate returns the Date field if non-nil, zero value otherwise.
 
 `func (o *ProcessingDetails) GetDateOk() (*SailPointTime, bool)`
 
-GetDateOk returns a tuple with the Date field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDateOk returns a tuple with the Date field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDate
 
@@ -69,12 +69,14 @@ HasDate returns a boolean if a field has been set.
 
 `func (o *ProcessingDetails) SetDateNil(b bool)`
 
- SetDateNil sets the value for Date to be an explicit nil
+SetDateNil sets the value for Date to be an explicit nil
 
 ### UnsetDate
+
 `func (o *ProcessingDetails) UnsetDate()`
 
 UnsetDate ensures that no value is present for Date, not even an explicit nil
+
 ### GetStage
 
 `func (o *ProcessingDetails) GetStage() string`
@@ -85,8 +87,7 @@ GetStage returns the Stage field if non-nil, zero value otherwise.
 
 `func (o *ProcessingDetails) GetStageOk() (*string, bool)`
 
-GetStageOk returns a tuple with the Stage field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStageOk returns a tuple with the Stage field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStage
 
@@ -110,8 +111,7 @@ GetRetryCount returns the RetryCount field if non-nil, zero value otherwise.
 
 `func (o *ProcessingDetails) GetRetryCountOk() (*int32, bool)`
 
-GetRetryCountOk returns a tuple with the RetryCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRetryCountOk returns a tuple with the RetryCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRetryCount
 
@@ -135,8 +135,7 @@ GetStackTrace returns the StackTrace field if non-nil, zero value otherwise.
 
 `func (o *ProcessingDetails) GetStackTraceOk() (*string, bool)`
 
-GetStackTraceOk returns a tuple with the StackTrace field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStackTraceOk returns a tuple with the StackTrace field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStackTrace
 
@@ -160,8 +159,7 @@ GetMessage returns the Message field if non-nil, zero value otherwise.
 
 `func (o *ProcessingDetails) GetMessageOk() (*string, bool)`
 
-GetMessageOk returns a tuple with the Message field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMessageOk returns a tuple with the Message field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMessage
 
@@ -174,5 +172,3 @@ SetMessage sets Message field to given value.
 `func (o *ProcessingDetails) HasMessage() bool`
 
 HasMessage returns a boolean if a field has been set.
-
-

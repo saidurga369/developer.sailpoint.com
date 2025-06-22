@@ -4,21 +4,21 @@ title: WorkItemForward
 pagination_label: WorkItemForward
 sidebar_label: WorkItemForward
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'WorkItemForward', 'WorkItemForward'] 
+keywords: ['python', 'Python', 'sdk', 'WorkItemForward', 'WorkItemForward']
 slug: /tools/sdk/python/v3/models/work-item-forward
 tags: ['SDK', 'Software Development Kit', 'WorkItemForward', 'WorkItemForward']
 ---
 
 # WorkItemForward
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**target_owner_id** | **str** | The ID of the identity to forward this work item to. | [required]
-**comment** | **str** | Comments to send to the target owner | [required]
-**send_notifications** | **bool** | If true, send a notification to the target owner. | [optional] [default to True]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **target_owner_id** | **str** | The ID of the identity to forward this work item to. | [required] |
+| **comment** | **str** | Comments to send to the target owner | [required] |
+| **send_notifications** | **bool** | If true, send a notification to the target owner. | [optional] [default to True] |
+
 }
 
 ## Example
@@ -33,5 +33,5 @@ send_notifications=True
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

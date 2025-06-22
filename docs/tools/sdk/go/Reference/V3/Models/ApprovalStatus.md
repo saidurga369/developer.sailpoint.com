@@ -4,7 +4,7 @@ title: ApprovalStatus
 pagination_label: ApprovalStatus
 sidebar_label: ApprovalStatus
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ApprovalStatus', 'ApprovalStatus'] 
+keywords: ['go', 'Golang', 'sdk', 'ApprovalStatus', 'ApprovalStatus']
 slug: /tools/sdk/go/v3/models/approval-status
 tags: ['SDK', 'Software Development Kit', 'ApprovalStatus', 'ApprovalStatus']
 ---
@@ -13,15 +13,12 @@ tags: ['SDK', 'Software Development Kit', 'ApprovalStatus', 'ApprovalStatus']
 
 ## Enum
 
+- `APPROVED` (value: `"APPROVED"`)
 
-* `APPROVED` (value: `"APPROVED"`)
+- `REJECTED` (value: `"REJECTED"`)
 
-* `REJECTED` (value: `"REJECTED"`)
+- `PENDING` (value: `"PENDING"`)
 
-* `PENDING` (value: `"PENDING"`)
+- `NOT_READY` (value: `"NOT_READY"`)
 
-* `NOT_READY` (value: `"NOT_READY"`)
-
-* `CANCELLED` (value: `"CANCELLED"`)
-
-
+- `CANCELLED` (value: `"CANCELLED"`)

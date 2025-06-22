@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import { getItem } from '../services/CMSService';
+import {getItem} from '../services/CMSService';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 interface CMSLinkComponentProps {
@@ -8,14 +8,20 @@ interface CMSLinkComponentProps {
   source: string;
 }
 
-const CMSLinkComponent: React.FC<CMSLinkComponentProps> = ({ children, source }) => {
+const CMSLinkComponent: React.FC<CMSLinkComponentProps> = ({
+  children,
+  source,
+}) => {
   const [fileContent, setFileContent] = useState<string>('');
-  const { siteConfig } = useDocusaurusContext();
+  const {siteConfig} = useDocusaurusContext();
 
   useEffect(() => {
     const fetchFileContent = async () => {
       try {
-        const response = await getItem(siteConfig.customFields.CMS_APP_API_ENDPOINT, source);
+        const response = await getItem(
+          siteConfig.customFields.CMS_APP_API_ENDPOINT,
+          source,
+        );
         if (response.id) {
           const content = response.Item;
           setFileContent(content);

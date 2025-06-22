@@ -4,21 +4,34 @@ title: RoleMiningPotentialRoleExportResponse
 pagination_label: RoleMiningPotentialRoleExportResponse
 sidebar_label: RoleMiningPotentialRoleExportResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleMiningPotentialRoleExportResponse', 'V2025RoleMiningPotentialRoleExportResponse'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'RoleMiningPotentialRoleExportResponse',
+    'V2025RoleMiningPotentialRoleExportResponse',
+  ]
 slug: /tools/sdk/go/v2025/models/role-mining-potential-role-export-response
-tags: ['SDK', 'Software Development Kit', 'RoleMiningPotentialRoleExportResponse', 'V2025RoleMiningPotentialRoleExportResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningPotentialRoleExportResponse',
+    'V2025RoleMiningPotentialRoleExportResponse',
+  ]
 ---
 
 # RoleMiningPotentialRoleExportResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**MinEntitlementPopularity** | Pointer to **int32** | The minimum popularity among identities in the role which an entitlement must have to be included in the report | [optional] 
-**IncludeCommonAccess** | Pointer to **bool** | If false, do not include entitlements that are highly popular among the entire orginization | [optional] 
-**ExportId** | Pointer to **string** | ID used to reference this export | [optional] 
-**Status** | Pointer to [**RoleMiningPotentialRoleExportState**](role-mining-potential-role-export-state) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **MinEntitlementPopularity** | Pointer to **int32** | The minimum popularity among identities in the role which an entitlement must have to be included in the report | [optional] |
+| **IncludeCommonAccess** | Pointer to **bool** | If false, do not include entitlements that are highly popular among the entire orginization | [optional] |
+| **ExportId** | Pointer to **string** | ID used to reference this export | [optional] |
+| **Status** | Pointer to [**RoleMiningPotentialRoleExportState**](role-mining-potential-role-export-state) |  | [optional] |
 
 ## Methods
 
@@ -26,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewRoleMiningPotentialRoleExportResponse() *RoleMiningPotentialRoleExportResponse`
 
-NewRoleMiningPotentialRoleExportResponse instantiates a new RoleMiningPotentialRoleExportResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleMiningPotentialRoleExportResponse instantiates a new RoleMiningPotentialRoleExportResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleMiningPotentialRoleExportResponseWithDefaults
 
 `func NewRoleMiningPotentialRoleExportResponseWithDefaults() *RoleMiningPotentialRoleExportResponse`
 
-NewRoleMiningPotentialRoleExportResponseWithDefaults instantiates a new RoleMiningPotentialRoleExportResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleMiningPotentialRoleExportResponseWithDefaults instantiates a new RoleMiningPotentialRoleExportResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetMinEntitlementPopularity
 
@@ -49,8 +57,7 @@ GetMinEntitlementPopularity returns the MinEntitlementPopularity field if non-ni
 
 `func (o *RoleMiningPotentialRoleExportResponse) GetMinEntitlementPopularityOk() (*int32, bool)`
 
-GetMinEntitlementPopularityOk returns a tuple with the MinEntitlementPopularity field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMinEntitlementPopularityOk returns a tuple with the MinEntitlementPopularity field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMinEntitlementPopularity
 
@@ -74,8 +81,7 @@ GetIncludeCommonAccess returns the IncludeCommonAccess field if non-nil, zero va
 
 `func (o *RoleMiningPotentialRoleExportResponse) GetIncludeCommonAccessOk() (*bool, bool)`
 
-GetIncludeCommonAccessOk returns a tuple with the IncludeCommonAccess field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIncludeCommonAccessOk returns a tuple with the IncludeCommonAccess field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIncludeCommonAccess
 
@@ -99,8 +105,7 @@ GetExportId returns the ExportId field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningPotentialRoleExportResponse) GetExportIdOk() (*string, bool)`
 
-GetExportIdOk returns a tuple with the ExportId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetExportIdOk returns a tuple with the ExportId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetExportId
 
@@ -124,8 +129,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningPotentialRoleExportResponse) GetStatusOk() (*RoleMiningPotentialRoleExportState, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -138,5 +142,3 @@ SetStatus sets Status field to given value.
 `func (o *RoleMiningPotentialRoleExportResponse) HasStatus() bool`
 
 HasStatus returns a boolean if a field has been set.
-
-

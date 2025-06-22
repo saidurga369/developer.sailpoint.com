@@ -4,21 +4,21 @@ title: DimensionRef
 pagination_label: DimensionRef
 sidebar_label: DimensionRef
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'DimensionRef', 'V2024DimensionRef'] 
+keywords: ['python', 'Python', 'sdk', 'DimensionRef', 'V2024DimensionRef']
 slug: /tools/sdk/python/v2024/models/dimension-ref
 tags: ['SDK', 'Software Development Kit', 'DimensionRef', 'V2024DimensionRef']
 ---
 
 # DimensionRef
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'DIMENSION' ] | The type of the object to which this reference applies | [optional] 
-**id** | **str** | ID of the object to which this reference applies | [optional] 
-**name** | **str** | Human-readable display name of the object to which this reference applies | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'DIMENSION' ] | The type of the object to which this reference applies | [optional] |
+| **id** | **str** | ID of the object to which this reference applies | [optional] |
+| **name** | **str** | Human-readable display name of the object to which this reference applies | [optional] |
+
 }
 
 ## Example
@@ -33,5 +33,5 @@ name='Role 2'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

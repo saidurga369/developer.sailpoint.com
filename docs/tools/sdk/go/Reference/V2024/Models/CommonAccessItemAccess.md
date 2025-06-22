@@ -4,23 +4,36 @@ title: CommonAccessItemAccess
 pagination_label: CommonAccessItemAccess
 sidebar_label: CommonAccessItemAccess
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'CommonAccessItemAccess', 'V2024CommonAccessItemAccess'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'CommonAccessItemAccess',
+    'V2024CommonAccessItemAccess',
+  ]
 slug: /tools/sdk/go/v2024/models/common-access-item-access
-tags: ['SDK', 'Software Development Kit', 'CommonAccessItemAccess', 'V2024CommonAccessItemAccess']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CommonAccessItemAccess',
+    'V2024CommonAccessItemAccess',
+  ]
 ---
 
 # CommonAccessItemAccess
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Common access ID | [optional] 
-**Type** | Pointer to [**CommonAccessType**](common-access-type) |  | [optional] 
-**Name** | Pointer to **string** | Common access name | [optional] 
-**Description** | Pointer to **NullableString** | Common access description | [optional] 
-**OwnerName** | Pointer to **string** | Common access owner name | [optional] 
-**OwnerId** | Pointer to **string** | Common access owner ID | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Common access ID | [optional] |
+| **Type** | Pointer to [**CommonAccessType**](common-access-type) |  | [optional] |
+| **Name** | Pointer to **string** | Common access name | [optional] |
+| **Description** | Pointer to **NullableString** | Common access description | [optional] |
+| **OwnerName** | Pointer to **string** | Common access owner name | [optional] |
+| **OwnerId** | Pointer to **string** | Common access owner ID | [optional] |
 
 ## Methods
 
@@ -28,18 +41,13 @@ Name | Type | Description | Notes
 
 `func NewCommonAccessItemAccess() *CommonAccessItemAccess`
 
-NewCommonAccessItemAccess instantiates a new CommonAccessItemAccess object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewCommonAccessItemAccess instantiates a new CommonAccessItemAccess object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewCommonAccessItemAccessWithDefaults
 
 `func NewCommonAccessItemAccessWithDefaults() *CommonAccessItemAccess`
 
-NewCommonAccessItemAccessWithDefaults instantiates a new CommonAccessItemAccess object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewCommonAccessItemAccessWithDefaults instantiates a new CommonAccessItemAccess object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -51,8 +59,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *CommonAccessItemAccess) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -76,8 +83,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *CommonAccessItemAccess) GetTypeOk() (*CommonAccessType, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -101,8 +107,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *CommonAccessItemAccess) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -126,8 +131,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *CommonAccessItemAccess) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -145,12 +149,14 @@ HasDescription returns a boolean if a field has been set.
 
 `func (o *CommonAccessItemAccess) SetDescriptionNil(b bool)`
 
- SetDescriptionNil sets the value for Description to be an explicit nil
+SetDescriptionNil sets the value for Description to be an explicit nil
 
 ### UnsetDescription
+
 `func (o *CommonAccessItemAccess) UnsetDescription()`
 
 UnsetDescription ensures that no value is present for Description, not even an explicit nil
+
 ### GetOwnerName
 
 `func (o *CommonAccessItemAccess) GetOwnerName() string`
@@ -161,8 +167,7 @@ GetOwnerName returns the OwnerName field if non-nil, zero value otherwise.
 
 `func (o *CommonAccessItemAccess) GetOwnerNameOk() (*string, bool)`
 
-GetOwnerNameOk returns a tuple with the OwnerName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerNameOk returns a tuple with the OwnerName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwnerName
 
@@ -186,8 +191,7 @@ GetOwnerId returns the OwnerId field if non-nil, zero value otherwise.
 
 `func (o *CommonAccessItemAccess) GetOwnerIdOk() (*string, bool)`
 
-GetOwnerIdOk returns a tuple with the OwnerId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerIdOk returns a tuple with the OwnerId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwnerId
 
@@ -200,5 +204,3 @@ SetOwnerId sets OwnerId field to given value.
 `func (o *CommonAccessItemAccess) HasOwnerId() bool`
 
 HasOwnerId returns a boolean if a field has been set.
-
-

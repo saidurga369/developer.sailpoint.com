@@ -4,19 +4,32 @@ title: VendorConnectorMappingUpdatedBy
 pagination_label: VendorConnectorMappingUpdatedBy
 sidebar_label: VendorConnectorMappingUpdatedBy
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'VendorConnectorMappingUpdatedBy', 'VendorConnectorMappingUpdatedBy'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'VendorConnectorMappingUpdatedBy',
+    'VendorConnectorMappingUpdatedBy',
+  ]
 slug: /tools/sdk/go/v3/models/vendor-connector-mapping-updated-by
-tags: ['SDK', 'Software Development Kit', 'VendorConnectorMappingUpdatedBy', 'VendorConnectorMappingUpdatedBy']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'VendorConnectorMappingUpdatedBy',
+    'VendorConnectorMappingUpdatedBy',
+  ]
 ---
 
 # VendorConnectorMappingUpdatedBy
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**String** | Pointer to **string** | The identifier of the user who last updated the mapping, if available. | [optional] 
-**Valid** | Pointer to **bool** | A flag indicating if the 'String' field is set and valid. | [optional] [default to false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **String** | Pointer to **string** | The identifier of the user who last updated the mapping, if available. | [optional] |
+| **Valid** | Pointer to **bool** | A flag indicating if the 'String' field is set and valid. | [optional] [default to false] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewVendorConnectorMappingUpdatedBy() *VendorConnectorMappingUpdatedBy`
 
-NewVendorConnectorMappingUpdatedBy instantiates a new VendorConnectorMappingUpdatedBy object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewVendorConnectorMappingUpdatedBy instantiates a new VendorConnectorMappingUpdatedBy object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewVendorConnectorMappingUpdatedByWithDefaults
 
 `func NewVendorConnectorMappingUpdatedByWithDefaults() *VendorConnectorMappingUpdatedBy`
 
-NewVendorConnectorMappingUpdatedByWithDefaults instantiates a new VendorConnectorMappingUpdatedBy object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewVendorConnectorMappingUpdatedByWithDefaults instantiates a new VendorConnectorMappingUpdatedBy object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetString
 
@@ -47,8 +55,7 @@ GetString returns the String field if non-nil, zero value otherwise.
 
 `func (o *VendorConnectorMappingUpdatedBy) GetStringOk() (*string, bool)`
 
-GetStringOk returns a tuple with the String field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStringOk returns a tuple with the String field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetString
 
@@ -72,8 +79,7 @@ GetValid returns the Valid field if non-nil, zero value otherwise.
 
 `func (o *VendorConnectorMappingUpdatedBy) GetValidOk() (*bool, bool)`
 
-GetValidOk returns a tuple with the Valid field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValidOk returns a tuple with the Valid field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValid
 
@@ -86,5 +92,3 @@ SetValid sets Valid field to given value.
 `func (o *VendorConnectorMappingUpdatedBy) HasValid() bool`
 
 HasValid returns a boolean if a field has been set.
-
-

@@ -4,73 +4,59 @@ title: WorkItems
 pagination_label: WorkItems
 sidebar_label: WorkItems
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'WorkItems', 'BetaWorkItems'] 
+keywords: ['go', 'Golang', 'sdk', 'WorkItems', 'BetaWorkItems']
 slug: /tools/sdk/go/beta/methods/work-items
 tags: ['SDK', 'Software Development Kit', 'WorkItems', 'BetaWorkItems']
 ---
 
 # WorkItemsAPI
-  Use this API to implement work item functionality.
-With this functionality in place, users can manage their work items (tasks).
 
-Work items refer to the tasks users see in Identity Security Cloud&#39;s Task Manager.
-They can see the pending work items they need to complete, as well as the work items they have already completed.
-Task Manager lists the work items along with the involved sources, identities, accounts, and the timestamp when the work item was created.
-For example, a user may see a pending &#39;Create an Account&#39; work item for the identity Fred.Astaire in GitHub for Fred&#39;s GitHub account, fred-astaire-sp.
-Once the user completes the work item, the work item will be listed with his or her other completed work items.
+Use this API to implement work item functionality. With this functionality in place, users can manage their work items (tasks).
 
-To complete work items, users can use their dashboards and select the &#39;My Tasks&#39; widget.
-The widget will list any work items they need to complete, and they can select the work item from the list to review its details.
-When they complete the work item, they can select &#39;Mark Complete&#39; to add it to their list of completed work items.
+Work items refer to the tasks users see in Identity Security Cloud&#39;s Task Manager. They can see the pending work items they need to complete, as well as the work items they have already completed. Task Manager lists the work items along with the involved sources, identities, accounts, and the timestamp when the work item was created. For example, a user may see a pending &#39;Create an Account&#39; work item for the identity Fred.Astaire in GitHub for Fred&#39;s GitHub account, fred-astaire-sp. Once the user completes the work item, the work item will be listed with his or her other completed work items.
+
+To complete work items, users can use their dashboards and select the &#39;My Tasks&#39; widget. The widget will list any work items they need to complete, and they can select the work item from the list to review its details. When they complete the work item, they can select &#39;Mark Complete&#39; to add it to their list of completed work items.
 
 Refer to [Task Manager](https://documentation.sailpoint.com/saas/user-help/task_manager.html) for more information about work items, including the different types of work items users may need to complete.
- 
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/beta*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**approve-approval-item**](#approve-approval-item) | **Post** `/work-items/{id}/approve/{approvalItemId}` | Approve an approval item
-[**approve-approval-items-in-bulk**](#approve-approval-items-in-bulk) | **Post** `/work-items/bulk-approve/{id}` | Bulk approve approval items
-[**complete-work-item**](#complete-work-item) | **Post** `/work-items/{id}` | Complete a work item
-[**get-completed-work-items**](#get-completed-work-items) | **Get** `/work-items/completed` | Completed work items
-[**get-count-completed-work-items**](#get-count-completed-work-items) | **Get** `/work-items/completed/count` | Count completed work items
-[**get-count-work-items**](#get-count-work-items) | **Get** `/work-items/count` | Count work items
-[**get-work-item**](#get-work-item) | **Get** `/work-items/{id}` | Get a work item
-[**get-work-items-summary**](#get-work-items-summary) | **Get** `/work-items/summary` | Work items summary
-[**list-work-items**](#list-work-items) | **Get** `/work-items` | List work items
-[**reject-approval-item**](#reject-approval-item) | **Post** `/work-items/{id}/reject/{approvalItemId}` | Reject an approval item
-[**reject-approval-items-in-bulk**](#reject-approval-items-in-bulk) | **Post** `/work-items/bulk-reject/{id}` | Bulk reject approval items
-[**submit-account-selection**](#submit-account-selection) | **Post** `/work-items/{id}/submit-account-selection` | Submit account selections
-[**submit-forward-work-item**](#submit-forward-work-item) | **Post** `/work-items/{id}/forward` | Forward a work item
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**approve-approval-item**](#approve-approval-item) | **Post** `/work-items/{id}/approve/{approvalItemId}` | Approve an approval item |
+| [**approve-approval-items-in-bulk**](#approve-approval-items-in-bulk) | **Post** `/work-items/bulk-approve/{id}` | Bulk approve approval items |
+| [**complete-work-item**](#complete-work-item) | **Post** `/work-items/{id}` | Complete a work item |
+| [**get-completed-work-items**](#get-completed-work-items) | **Get** `/work-items/completed` | Completed work items |
+| [**get-count-completed-work-items**](#get-count-completed-work-items) | **Get** `/work-items/completed/count` | Count completed work items |
+| [**get-count-work-items**](#get-count-work-items) | **Get** `/work-items/count` | Count work items |
+| [**get-work-item**](#get-work-item) | **Get** `/work-items/{id}` | Get a work item |
+| [**get-work-items-summary**](#get-work-items-summary) | **Get** `/work-items/summary` | Work items summary |
+| [**list-work-items**](#list-work-items) | **Get** `/work-items` | List work items |
+| [**reject-approval-item**](#reject-approval-item) | **Post** `/work-items/{id}/reject/{approvalItemId}` | Reject an approval item |
+| [**reject-approval-items-in-bulk**](#reject-approval-items-in-bulk) | **Post** `/work-items/bulk-reject/{id}` | Bulk reject approval items |
+| [**submit-account-selection**](#submit-account-selection) | **Post** `/work-items/{id}/submit-account-selection` | Submit account selections |
+| [**submit-forward-work-item**](#submit-forward-work-item) | **Post** `/work-items/{id}/forward` | Forward a work item |
 
 ## approve-approval-item
-:::caution deprecated 
-This endpoint has been deprecated and may be replaced or removed in future versions of the API.
-:::
-Approve an approval item
-This API approves an Approval Item. Either an admin, or the owning/current user must make this request.
+
+:::caution deprecated This endpoint has been deprecated and may be replaced or removed in future versions of the API. ::: Approve an approval item This API approves an Approval Item. Either an admin, or the owning/current user must make this request.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/approve-approval-item)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The ID of the work item | 
-**approvalItemId** | **string** | The ID of the approval item. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The ID of the work item |
+| **approvalItemId** | **string** | The ID of the approval item. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiApproveApprovalItemRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -90,8 +76,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -99,7 +85,7 @@ func main() {
     id := `ef38f94347e94562b5bb8424a56397d8` // string | The ID of the work item # string | The ID of the work item
     approvalItemId := `1211bcaa32112bcef6122adb21cef1ac` // string | The ID of the approval item. # string | The ID of the approval item.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -117,30 +103,24 @@ func main() {
 [[Back to top]](#)
 
 ## approve-approval-items-in-bulk
-:::caution deprecated 
-This endpoint has been deprecated and may be replaced or removed in future versions of the API.
-:::
-Bulk approve approval items
-This API bulk approves Approval Items. Either an admin, or the owning/current user must make this request.
+
+:::caution deprecated This endpoint has been deprecated and may be replaced or removed in future versions of the API. ::: Bulk approve approval items This API bulk approves Approval Items. Either an admin, or the owning/current user must make this request.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/approve-approval-items-in-bulk)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The ID of the work item | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The ID of the work item |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiApproveApprovalItemsInBulkRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -160,15 +140,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `ef38f94347e94562b5bb8424a56397d8` // string | The ID of the work item # string | The ID of the work item
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -186,31 +166,26 @@ func main() {
 [[Back to top]](#)
 
 ## complete-work-item
-:::caution deprecated 
-This endpoint has been deprecated and may be replaced or removed in future versions of the API.
-:::
-Complete a work item
-This API completes a work item. Either an admin, or the owning/current user must make this request.
+
+:::caution deprecated This endpoint has been deprecated and may be replaced or removed in future versions of the API. ::: Complete a work item This API completes a work item. Either an admin, or the owning/current user must make this request.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/complete-work-item)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The ID of the work item | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The ID of the work item |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCompleteWorkItemRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **body** | **string** | Body is the request payload to create form definition request | 
+**body** | **string** | Body is the request payload to create form definition request |
 
 ### Return type
 
@@ -230,8 +205,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -239,7 +214,7 @@ func main() {
     id := `ef38f94347e94562b5bb8424a56397d8` // string | The ID of the work item # string | The ID of the work item
     body := `body_example` // string | Body is the request payload to create form definition request (optional) # string | Body is the request payload to create form definition request (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -257,29 +232,23 @@ func main() {
 [[Back to top]](#)
 
 ## get-completed-work-items
-:::caution deprecated 
-This endpoint has been deprecated and may be replaced or removed in future versions of the API.
-:::
-Completed work items
-This gets a collection of completed work items belonging to either the specified user(admin required), or the current user.
+
+:::caution deprecated This endpoint has been deprecated and may be replaced or removed in future versions of the API. ::: Completed work items This gets a collection of completed work items belonging to either the specified user(admin required), or the current user.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-completed-work-items)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetCompletedWorkItemsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **ownerId** | **string** | The id of the owner of the work item list being requested.  Either an admin, or the owning/current user must make this request. | 
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ownerId** | **string** | The id of the owner of the work item list being requested. Either an admin, or the owning/current user must make this request. |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
+| **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false] |
 
 ### Return type
 
@@ -299,8 +268,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -310,7 +279,7 @@ func main() {
     offset := 0 // int32 | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 0) # int32 | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 0)
     count := true // bool | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to false) # bool | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to false)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -328,28 +297,22 @@ func main() {
 [[Back to top]](#)
 
 ## get-count-completed-work-items
-:::caution deprecated 
-This endpoint has been deprecated and may be replaced or removed in future versions of the API.
-:::
-Count completed work items
-This gets a count of completed work items belonging to either the specified user(admin required), or the current user.
+
+:::caution deprecated This endpoint has been deprecated and may be replaced or removed in future versions of the API. ::: Count completed work items This gets a count of completed work items belonging to either the specified user(admin required), or the current user.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-count-completed-work-items)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetCountCompletedWorkItemsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **ownerId** | **string** | ID of the work item owner. | 
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ownerId** | **string** | ID of the work item owner. |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
 
 ### Return type
 
@@ -369,8 +332,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -379,7 +342,7 @@ func main() {
     limit := 250 // int32 | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 250) # int32 | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 250)
     offset := 0 // int32 | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 0) # int32 | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 0)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -397,26 +360,20 @@ func main() {
 [[Back to top]](#)
 
 ## get-count-work-items
-:::caution deprecated 
-This endpoint has been deprecated and may be replaced or removed in future versions of the API.
-:::
-Count work items
-This gets a count of work items belonging to either the specified user(admin required), or the current user.
+
+:::caution deprecated This endpoint has been deprecated and may be replaced or removed in future versions of the API. ::: Count work items This gets a count of work items belonging to either the specified user(admin required), or the current user.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-count-work-items)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetCountWorkItemsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **ownerId** | **string** | ID of the work item owner. | 
+| Name        | Type       | Description                | Notes |
+| ----------- | ---------- | -------------------------- | ----- |
+| **ownerId** | **string** | ID of the work item owner. |
 
 ### Return type
 
@@ -436,15 +393,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     ownerId := `2c91808571bcfcf80171c23e4b4221fc` // string | ID of the work item owner. (optional) # string | ID of the work item owner. (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -462,31 +419,26 @@ func main() {
 [[Back to top]](#)
 
 ## get-work-item
-:::caution deprecated 
-This endpoint has been deprecated and may be replaced or removed in future versions of the API.
-:::
-Get a work item
-This gets the details of a Work Item belonging to either the specified user(admin required), or the current user.
+
+:::caution deprecated This endpoint has been deprecated and may be replaced or removed in future versions of the API. ::: Get a work item This gets the details of a Work Item belonging to either the specified user(admin required), or the current user.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-work-item)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | ID of the work item. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | ID of the work item. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetWorkItemRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **ownerId** | **string** | ID of the work item owner. | 
+**ownerId** | **string** | ID of the work item owner. |
 
 ### Return type
 
@@ -506,8 +458,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -515,7 +467,7 @@ func main() {
     id := `2c9180835d191a86015d28455b4a2329` // string | ID of the work item. # string | ID of the work item.
     ownerId := `2c9180835d191a86015d28455b4a2329` // string | ID of the work item owner. (optional) # string | ID of the work item owner. (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -533,26 +485,20 @@ func main() {
 [[Back to top]](#)
 
 ## get-work-items-summary
-:::caution deprecated 
-This endpoint has been deprecated and may be replaced or removed in future versions of the API.
-:::
-Work items summary
-This gets a summary of work items belonging to either the specified user(admin required), or the current user.
+
+:::caution deprecated This endpoint has been deprecated and may be replaced or removed in future versions of the API. ::: Work items summary This gets a summary of work items belonging to either the specified user(admin required), or the current user.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-work-items-summary)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetWorkItemsSummaryRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **ownerId** | **string** | ID of the work item owner. | 
+| Name        | Type       | Description                | Notes |
+| ----------- | ---------- | -------------------------- | ----- |
+| **ownerId** | **string** | ID of the work item owner. |
 
 ### Return type
 
@@ -572,15 +518,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     ownerId := `ef38f94347e94562b5bb8424a56397d8` // string | ID of the work item owner. (optional) # string | ID of the work item owner. (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -598,29 +544,23 @@ func main() {
 [[Back to top]](#)
 
 ## list-work-items
-:::caution deprecated 
-This endpoint has been deprecated and may be replaced or removed in future versions of the API.
-:::
-List work items
-This gets a collection of work items belonging to either the specified user(admin required), or the current user.
+
+:::caution deprecated This endpoint has been deprecated and may be replaced or removed in future versions of the API. ::: List work items This gets a collection of work items belonging to either the specified user(admin required), or the current user.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/list-work-items)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListWorkItemsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
- **ownerId** | **string** | ID of the work item owner. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
+| **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false] |
+| **ownerId** | **string** | ID of the work item owner. |
 
 ### Return type
 
@@ -640,8 +580,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -651,7 +591,7 @@ func main() {
     count := true // bool | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to false) # bool | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to false)
     ownerId := `ef38f94347e94562b5bb8424a56397d8` // string | ID of the work item owner. (optional) # string | ID of the work item owner. (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -669,32 +609,25 @@ func main() {
 [[Back to top]](#)
 
 ## reject-approval-item
-:::caution deprecated 
-This endpoint has been deprecated and may be replaced or removed in future versions of the API.
-:::
-Reject an approval item
-This API rejects an Approval Item. Either an admin, or the owning/current user must make this request.
+
+:::caution deprecated This endpoint has been deprecated and may be replaced or removed in future versions of the API. ::: Reject an approval item This API rejects an Approval Item. Either an admin, or the owning/current user must make this request.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/reject-approval-item)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The ID of the work item | 
-**approvalItemId** | **string** | The ID of the approval item. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The ID of the work item |
+| **approvalItemId** | **string** | The ID of the approval item. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiRejectApprovalItemRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -714,8 +647,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -723,7 +656,7 @@ func main() {
     id := `ef38f94347e94562b5bb8424a56397d8` // string | The ID of the work item # string | The ID of the work item
     approvalItemId := `1211bcaa32112bcef6122adb21cef1ac` // string | The ID of the approval item. # string | The ID of the approval item.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -741,30 +674,24 @@ func main() {
 [[Back to top]](#)
 
 ## reject-approval-items-in-bulk
-:::caution deprecated 
-This endpoint has been deprecated and may be replaced or removed in future versions of the API.
-:::
-Bulk reject approval items
-This API bulk rejects Approval Items. Either an admin, or the owning/current user must make this request.
+
+:::caution deprecated This endpoint has been deprecated and may be replaced or removed in future versions of the API. ::: Bulk reject approval items This API bulk rejects Approval Items. Either an admin, or the owning/current user must make this request.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/reject-approval-items-in-bulk)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The ID of the work item | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The ID of the work item |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiRejectApprovalItemsInBulkRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -784,15 +711,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `ef38f94347e94562b5bb8424a56397d8` // string | The ID of the work item # string | The ID of the work item
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -810,31 +737,26 @@ func main() {
 [[Back to top]](#)
 
 ## submit-account-selection
-:::caution deprecated 
-This endpoint has been deprecated and may be replaced or removed in future versions of the API.
-:::
-Submit account selections
-This API submits account selections. Either an admin, or the owning/current user must make this request.
+
+:::caution deprecated This endpoint has been deprecated and may be replaced or removed in future versions of the API. ::: Submit account selections This API submits account selections. Either an admin, or the owning/current user must make this request.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/submit-account-selection)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The ID of the work item | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The ID of the work item |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSubmitAccountSelectionRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **requestBody** | **map[string]interface{}** | Account Selection Data map, keyed on fieldName | 
+**requestBody** | **map[string]interface{}** | Account Selection Data map, keyed on fieldName |
 
 ### Return type
 
@@ -868,7 +790,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -886,35 +808,30 @@ func main() {
 [[Back to top]](#)
 
 ## submit-forward-work-item
-:::caution deprecated 
-This endpoint has been deprecated and may be replaced or removed in future versions of the API.
-:::
-Forward a work item
-This API forwards a work item to a new owner. Either an admin, or the owning/current user must make this request.
+
+:::caution deprecated This endpoint has been deprecated and may be replaced or removed in future versions of the API. ::: Forward a work item This API forwards a work item to a new owner. Either an admin, or the owning/current user must make this request.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/submit-forward-work-item)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The ID of the work item | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The ID of the work item |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSubmitForwardWorkItemRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **workItemForward** | [**WorkItemForward**](../models/work-item-forward) |  | 
+**workItemForward** | [**WorkItemForward**](../models/work-item-forward) | |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -941,14 +858,14 @@ func main() {
           "targetOwnerId" : "2c9180835d2e5168015d32f890ca1581",
           "comment" : "I'm going on vacation.",
           "sendNotifications" : true
-        }`) // WorkItemForward | 
+        }`) // WorkItemForward |
 
     var workItemForward beta.WorkItemForward
     if err := json.Unmarshal(workitemforward, &workItemForward); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -958,9 +875,8 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `WorkItemsAPI.SubmitForwardWorkItem``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
-

@@ -4,7 +4,7 @@ title: Children
 pagination_label: Children
 sidebar_label: Children
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Children', 'BetaChildren'] 
+keywords: ['go', 'Golang', 'sdk', 'Children', 'BetaChildren']
 slug: /tools/sdk/go/beta/models/children
 tags: ['SDK', 'Software Development Kit', 'Children', 'BetaChildren']
 ---
@@ -13,12 +13,12 @@ tags: ['SDK', 'Software Development Kit', 'Children', 'BetaChildren']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Operator** | Pointer to **string** |  | [optional] 
-**Attribute** | Pointer to **string** |  | [optional] 
-**Value** | Pointer to [**NullableValue**](value) |  | [optional] 
-**Children** | Pointer to **NullableString** |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Operator** | Pointer to **string** |  | [optional] |
+| **Attribute** | Pointer to **string** |  | [optional] |
+| **Value** | Pointer to [**NullableValue**](value) |  | [optional] |
+| **Children** | Pointer to **NullableString** |  | [optional] |
 
 ## Methods
 
@@ -26,18 +26,13 @@ Name | Type | Description | Notes
 
 `func NewChildren() *Children`
 
-NewChildren instantiates a new Children object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewChildren instantiates a new Children object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewChildrenWithDefaults
 
 `func NewChildrenWithDefaults() *Children`
 
-NewChildrenWithDefaults instantiates a new Children object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewChildrenWithDefaults instantiates a new Children object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetOperator
 
@@ -49,8 +44,7 @@ GetOperator returns the Operator field if non-nil, zero value otherwise.
 
 `func (o *Children) GetOperatorOk() (*string, bool)`
 
-GetOperatorOk returns a tuple with the Operator field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOperatorOk returns a tuple with the Operator field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOperator
 
@@ -74,8 +68,7 @@ GetAttribute returns the Attribute field if non-nil, zero value otherwise.
 
 `func (o *Children) GetAttributeOk() (*string, bool)`
 
-GetAttributeOk returns a tuple with the Attribute field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributeOk returns a tuple with the Attribute field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttribute
 
@@ -99,8 +92,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *Children) GetValueOk() (*Value, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -118,12 +110,14 @@ HasValue returns a boolean if a field has been set.
 
 `func (o *Children) SetValueNil(b bool)`
 
- SetValueNil sets the value for Value to be an explicit nil
+SetValueNil sets the value for Value to be an explicit nil
 
 ### UnsetValue
+
 `func (o *Children) UnsetValue()`
 
 UnsetValue ensures that no value is present for Value, not even an explicit nil
+
 ### GetChildren
 
 `func (o *Children) GetChildren() string`
@@ -134,8 +128,7 @@ GetChildren returns the Children field if non-nil, zero value otherwise.
 
 `func (o *Children) GetChildrenOk() (*string, bool)`
 
-GetChildrenOk returns a tuple with the Children field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetChildrenOk returns a tuple with the Children field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetChildren
 
@@ -153,10 +146,10 @@ HasChildren returns a boolean if a field has been set.
 
 `func (o *Children) SetChildrenNil(b bool)`
 
- SetChildrenNil sets the value for Children to be an explicit nil
+SetChildrenNil sets the value for Children to be an explicit nil
 
 ### UnsetChildren
+
 `func (o *Children) UnsetChildren()`
 
 UnsetChildren ensures that no value is present for Children, not even an explicit nil
-

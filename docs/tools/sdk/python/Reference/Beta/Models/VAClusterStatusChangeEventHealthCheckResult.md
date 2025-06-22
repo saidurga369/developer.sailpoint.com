@@ -4,9 +4,22 @@ title: VAClusterStatusChangeEventHealthCheckResult
 pagination_label: VAClusterStatusChangeEventHealthCheckResult
 sidebar_label: VAClusterStatusChangeEventHealthCheckResult
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'VAClusterStatusChangeEventHealthCheckResult', 'BetaVAClusterStatusChangeEventHealthCheckResult'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'VAClusterStatusChangeEventHealthCheckResult',
+    'BetaVAClusterStatusChangeEventHealthCheckResult',
+  ]
 slug: /tools/sdk/python/beta/models/va-cluster-status-change-event-health-check-result
-tags: ['SDK', 'Software Development Kit', 'VAClusterStatusChangeEventHealthCheckResult', 'BetaVAClusterStatusChangeEventHealthCheckResult']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'VAClusterStatusChangeEventHealthCheckResult',
+    'BetaVAClusterStatusChangeEventHealthCheckResult',
+  ]
 ---
 
 # VAClusterStatusChangeEventHealthCheckResult
@@ -15,11 +28,12 @@ Results of the most recent health check.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**message** | **str** | Detailed message of the health check result.. | [required]
-**result_type** | **str** | Health check result type. | [required]
-**status** |  **Enum** [  'Succeeded',    'Failed' ] | Health check status. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **message** | **str** | Detailed message of the health check result.. | [required] |
+| **result_type** | **str** | Health check result type. | [required] |
+| **status** | **Enum** [ 'Succeeded', 'Failed' ] | Health check status. | [required] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ status='Succeeded'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

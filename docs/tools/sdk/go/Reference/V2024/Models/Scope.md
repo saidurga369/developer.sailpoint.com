@@ -4,7 +4,7 @@ title: Scope
 pagination_label: Scope
 sidebar_label: Scope
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Scope', 'V2024Scope'] 
+keywords: ['go', 'Golang', 'sdk', 'Scope', 'V2024Scope']
 slug: /tools/sdk/go/v2024/models/scope
 tags: ['SDK', 'Software Development Kit', 'Scope', 'V2024Scope']
 ---
@@ -13,12 +13,12 @@ tags: ['SDK', 'Software Development Kit', 'Scope', 'V2024Scope']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Scope** | Pointer to [**ScopeType**](scope-type) |  | [optional] 
-**Visibility** | Pointer to [**ScopeVisibilityType**](scope-visibility-type) |  | [optional] 
-**ScopeFilter** | Pointer to [**VisibilityCriteria**](visibility-criteria) |  | [optional] 
-**ScopeSelection** | Pointer to [**[]Ref**](ref) | List of Identities that are assigned to the segment | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Scope** | Pointer to [**ScopeType**](scope-type) |  | [optional] |
+| **Visibility** | Pointer to [**ScopeVisibilityType**](scope-visibility-type) |  | [optional] |
+| **ScopeFilter** | Pointer to [**VisibilityCriteria**](visibility-criteria) |  | [optional] |
+| **ScopeSelection** | Pointer to [**[]Ref**](ref) | List of Identities that are assigned to the segment | [optional] |
 
 ## Methods
 
@@ -26,18 +26,13 @@ Name | Type | Description | Notes
 
 `func NewScope() *Scope`
 
-NewScope instantiates a new Scope object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewScope instantiates a new Scope object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewScopeWithDefaults
 
 `func NewScopeWithDefaults() *Scope`
 
-NewScopeWithDefaults instantiates a new Scope object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewScopeWithDefaults instantiates a new Scope object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetScope
 
@@ -49,8 +44,7 @@ GetScope returns the Scope field if non-nil, zero value otherwise.
 
 `func (o *Scope) GetScopeOk() (*ScopeType, bool)`
 
-GetScopeOk returns a tuple with the Scope field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetScopeOk returns a tuple with the Scope field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetScope
 
@@ -74,8 +68,7 @@ GetVisibility returns the Visibility field if non-nil, zero value otherwise.
 
 `func (o *Scope) GetVisibilityOk() (*ScopeVisibilityType, bool)`
 
-GetVisibilityOk returns a tuple with the Visibility field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetVisibilityOk returns a tuple with the Visibility field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetVisibility
 
@@ -99,8 +92,7 @@ GetScopeFilter returns the ScopeFilter field if non-nil, zero value otherwise.
 
 `func (o *Scope) GetScopeFilterOk() (*VisibilityCriteria, bool)`
 
-GetScopeFilterOk returns a tuple with the ScopeFilter field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetScopeFilterOk returns a tuple with the ScopeFilter field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetScopeFilter
 
@@ -124,8 +116,7 @@ GetScopeSelection returns the ScopeSelection field if non-nil, zero value otherw
 
 `func (o *Scope) GetScopeSelectionOk() (*[]Ref, bool)`
 
-GetScopeSelectionOk returns a tuple with the ScopeSelection field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetScopeSelectionOk returns a tuple with the ScopeSelection field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetScopeSelection
 
@@ -138,5 +129,3 @@ SetScopeSelection sets ScopeSelection field to given value.
 `func (o *Scope) HasScopeSelection() bool`
 
 HasScopeSelection returns a boolean if a field has been set.
-
-

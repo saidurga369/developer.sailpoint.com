@@ -4,22 +4,22 @@ title: Comment
 pagination_label: Comment
 sidebar_label: Comment
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'Comment', 'BetaComment'] 
+keywords: ['python', 'Python', 'sdk', 'Comment', 'BetaComment']
 slug: /tools/sdk/python/beta/models/comment
 tags: ['SDK', 'Software Development Kit', 'Comment', 'BetaComment']
 ---
 
 # Comment
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**commenter_id** | **str** | Id of the identity making the comment | [optional] 
-**commenter_name** | **str** | Human-readable display name of the identity making the comment | [optional] 
-**body** | **str** | Content of the comment | [optional] 
-**var_date** | **datetime** | Date and time comment was made | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **commenter_id** | **str** | Id of the identity making the comment | [optional] |
+| **commenter_name** | **str** | Human-readable display name of the identity making the comment | [optional] |
+| **body** | **str** | Content of the comment | [optional] |
+| **var_date** | **datetime** | Date and time comment was made | [optional] |
+
 }
 
 ## Example
@@ -35,5 +35,5 @@ var_date='2017-07-11T18:45:37.098Z'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

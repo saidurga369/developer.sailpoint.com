@@ -4,20 +4,21 @@ title: IdentitySyncJob
 pagination_label: IdentitySyncJob
 sidebar_label: IdentitySyncJob
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IdentitySyncJob', 'BetaIdentitySyncJob'] 
+keywords: ['go', 'Golang', 'sdk', 'IdentitySyncJob', 'BetaIdentitySyncJob']
 slug: /tools/sdk/go/beta/models/identity-sync-job
-tags: ['SDK', 'Software Development Kit', 'IdentitySyncJob', 'BetaIdentitySyncJob']
+tags:
+  ['SDK', 'Software Development Kit', 'IdentitySyncJob', 'BetaIdentitySyncJob']
 ---
 
 # IdentitySyncJob
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **string** | Job ID. | 
-**Status** | **string** | The job status. | 
-**Payload** | [**IdentitySyncPayload**](identity-sync-payload) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **string** | Job ID. |
+| **Status** | **string** | The job status. |
+| **Payload** | [**IdentitySyncPayload**](identity-sync-payload) |  |
 
 ## Methods
 
@@ -25,18 +26,13 @@ Name | Type | Description | Notes
 
 `func NewIdentitySyncJob(id string, status string, payload IdentitySyncPayload, ) *IdentitySyncJob`
 
-NewIdentitySyncJob instantiates a new IdentitySyncJob object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewIdentitySyncJob instantiates a new IdentitySyncJob object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewIdentitySyncJobWithDefaults
 
 `func NewIdentitySyncJobWithDefaults() *IdentitySyncJob`
 
-NewIdentitySyncJobWithDefaults instantiates a new IdentitySyncJob object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewIdentitySyncJobWithDefaults instantiates a new IdentitySyncJob object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -48,15 +44,13 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *IdentitySyncJob) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
 `func (o *IdentitySyncJob) SetId(v string)`
 
 SetId sets Id field to given value.
-
 
 ### GetStatus
 
@@ -68,15 +62,13 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *IdentitySyncJob) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
 `func (o *IdentitySyncJob) SetStatus(v string)`
 
 SetStatus sets Status field to given value.
-
 
 ### GetPayload
 
@@ -88,14 +80,10 @@ GetPayload returns the Payload field if non-nil, zero value otherwise.
 
 `func (o *IdentitySyncJob) GetPayloadOk() (*IdentitySyncPayload, bool)`
 
-GetPayloadOk returns a tuple with the Payload field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPayloadOk returns a tuple with the Payload field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPayload
 
 `func (o *IdentitySyncJob) SetPayload(v IdentitySyncPayload)`
 
 SetPayload sets Payload field to given value.
-
-
-

@@ -4,32 +4,32 @@ title: Dimension
 pagination_label: Dimension
 sidebar_label: Dimension
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'Dimension', 'V2025Dimension'] 
+keywords: ['powershell', 'PowerShell', 'sdk', 'Dimension', 'V2025Dimension']
 slug: /tools/sdk/powershell/v2025/models/dimension
 tags: ['SDK', 'Software Development Kit', 'Dimension', 'V2025Dimension']
 ---
-
 
 # Dimension
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | The id of the Dimension. This field must be left null when creating a dimension, otherwise a 400 Bad Request error will result. | [optional] 
-**Name** | **String** | The human-readable display name of the Dimension | [required]
-**Created** | **System.DateTime** | Date the Dimension was created | [optional] [readonly] 
-**Modified** | **System.DateTime** | Date the Dimension was last modified. | [optional] [readonly] 
-**Description** | **String** | A human-readable description of the Dimension | [optional] 
-**Owner** | [**OwnerReference**](owner-reference) |  | [required]
-**AccessProfiles** | [**[]AccessProfileRef**](access-profile-ref) |  | [optional] 
-**Entitlements** | [**[]EntitlementRef**](entitlement-ref) |  | [optional] 
-**Membership** | [**DimensionMembershipSelector**](dimension-membership-selector) |  | [optional] 
-**ParentId** | **String** | The ID of the parent role. This field can be left null when creating a dimension, but if provided, it must match the role ID specified in the path variable of the API call. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | The id of the Dimension. This field must be left null when creating a dimension, otherwise a 400 Bad Request error will result. | [optional] |
+| **Name** | **String** | The human-readable display name of the Dimension | [required] |
+| **Created** | **System.DateTime** | Date the Dimension was created | [optional] [readonly] |
+| **Modified** | **System.DateTime** | Date the Dimension was last modified. | [optional] [readonly] |
+| **Description** | **String** | A human-readable description of the Dimension | [optional] |
+| **Owner** | [**OwnerReference**](owner-reference) |  | [required] |
+| **AccessProfiles** | [**[]AccessProfileRef**](access-profile-ref) |  | [optional] |
+| **Entitlements** | [**[]EntitlementRef**](entitlement-ref) |  | [optional] |
+| **Membership** | [**DimensionMembershipSelector**](dimension-membership-selector) |  | [optional] |
+| **ParentId** | **String** | The ID of the parent role. This field can be left null when creating a dimension, but if provided, it must match the role ID specified in the path variable of the API call. | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $Dimension = Initialize-V2025Dimension  -Id 2c918086749d78830174a1a40e121518 `
  -Name Dimension 2567 `
@@ -44,10 +44,9 @@ $Dimension = Initialize-V2025Dimension  -Id 2c918086749d78830174a1a40e121518 `
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $Dimension | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

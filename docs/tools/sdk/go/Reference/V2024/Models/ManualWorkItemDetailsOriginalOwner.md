@@ -4,20 +4,33 @@ title: ManualWorkItemDetailsOriginalOwner
 pagination_label: ManualWorkItemDetailsOriginalOwner
 sidebar_label: ManualWorkItemDetailsOriginalOwner
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ManualWorkItemDetailsOriginalOwner', 'V2024ManualWorkItemDetailsOriginalOwner'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ManualWorkItemDetailsOriginalOwner',
+    'V2024ManualWorkItemDetailsOriginalOwner',
+  ]
 slug: /tools/sdk/go/v2024/models/manual-work-item-details-original-owner
-tags: ['SDK', 'Software Development Kit', 'ManualWorkItemDetailsOriginalOwner', 'V2024ManualWorkItemDetailsOriginalOwner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ManualWorkItemDetailsOriginalOwner',
+    'V2024ManualWorkItemDetailsOriginalOwner',
+  ]
 ---
 
 # ManualWorkItemDetailsOriginalOwner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | DTO type of original work item owner's identity. | [optional] 
-**Id** | Pointer to **string** | ID of original work item owner's identity. | [optional] 
-**Name** | Pointer to **string** | Display name of original work item owner. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to **string** | DTO type of original work item owner's identity. | [optional] |
+| **Id** | Pointer to **string** | ID of original work item owner's identity. | [optional] |
+| **Name** | Pointer to **string** | Display name of original work item owner. | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewManualWorkItemDetailsOriginalOwner() *ManualWorkItemDetailsOriginalOwner`
 
-NewManualWorkItemDetailsOriginalOwner instantiates a new ManualWorkItemDetailsOriginalOwner object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewManualWorkItemDetailsOriginalOwner instantiates a new ManualWorkItemDetailsOriginalOwner object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewManualWorkItemDetailsOriginalOwnerWithDefaults
 
 `func NewManualWorkItemDetailsOriginalOwnerWithDefaults() *ManualWorkItemDetailsOriginalOwner`
 
-NewManualWorkItemDetailsOriginalOwnerWithDefaults instantiates a new ManualWorkItemDetailsOriginalOwner object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewManualWorkItemDetailsOriginalOwnerWithDefaults instantiates a new ManualWorkItemDetailsOriginalOwner object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -48,8 +56,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *ManualWorkItemDetailsOriginalOwner) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -73,8 +80,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *ManualWorkItemDetailsOriginalOwner) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -98,8 +104,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *ManualWorkItemDetailsOriginalOwner) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -112,5 +117,3 @@ SetName sets Name field to given value.
 `func (o *ManualWorkItemDetailsOriginalOwner) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

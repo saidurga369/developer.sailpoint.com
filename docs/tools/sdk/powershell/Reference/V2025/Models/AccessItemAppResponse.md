@@ -4,27 +4,40 @@ title: AccessItemAppResponse
 pagination_label: AccessItemAppResponse
 sidebar_label: AccessItemAppResponse
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'AccessItemAppResponse', 'V2025AccessItemAppResponse'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'AccessItemAppResponse',
+    'V2025AccessItemAppResponse',
+  ]
 slug: /tools/sdk/powershell/v2025/models/access-item-app-response
-tags: ['SDK', 'Software Development Kit', 'AccessItemAppResponse', 'V2025AccessItemAppResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessItemAppResponse',
+    'V2025AccessItemAppResponse',
+  ]
 ---
-
 
 # AccessItemAppResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**AccessType** | **String** | the access item type. entitlement in this case | [optional] 
-**Id** | **String** | the access item id | [optional] 
-**DisplayName** | **String** | the access item display name | [optional] 
-**SourceName** | **String** | the associated source name if it exists | [optional] 
-**AppRoleId** | **String** | the app role id | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **AccessType** | **String** | the access item type. entitlement in this case | [optional] |
+| **Id** | **String** | the access item id | [optional] |
+| **DisplayName** | **String** | the access item display name | [optional] |
+| **SourceName** | **String** | the associated source name if it exists | [optional] |
+| **AppRoleId** | **String** | the app role id | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $AccessItemAppResponse = Initialize-V2025AccessItemAppResponse  -AccessType app `
  -Id 2c918087763e69d901763e72e97f006f `
@@ -34,10 +47,9 @@ $AccessItemAppResponse = Initialize-V2025AccessItemAppResponse  -AccessType app 
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $AccessItemAppResponse | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

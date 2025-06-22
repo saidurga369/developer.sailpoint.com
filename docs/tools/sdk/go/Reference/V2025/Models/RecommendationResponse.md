@@ -4,22 +4,35 @@ title: RecommendationResponse
 pagination_label: RecommendationResponse
 sidebar_label: RecommendationResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RecommendationResponse', 'V2025RecommendationResponse'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'RecommendationResponse',
+    'V2025RecommendationResponse',
+  ]
 slug: /tools/sdk/go/v2025/models/recommendation-response
-tags: ['SDK', 'Software Development Kit', 'RecommendationResponse', 'V2025RecommendationResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RecommendationResponse',
+    'V2025RecommendationResponse',
+  ]
 ---
 
 # RecommendationResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Request** | Pointer to [**RecommendationRequest**](recommendation-request) |  | [optional] 
-**Recommendation** | Pointer to **string** | The recommendation - YES if the access is recommended, NO if not recommended, MAYBE if there is not enough information to make a recommendation, NOT_FOUND if the identity is not found in the system | [optional] 
-**Interpretations** | Pointer to **[]string** | The list of interpretations explaining the recommendation. The array is empty if includeInterpretations is false or not present in the request. e.g. - [ \"Not approved in the last 6 months.\" ]. Interpretations will be translated using the client's locale as found in the Accept-Language header. If a translation for the client's locale cannot be found, the US English translation will be returned. | [optional] 
-**TranslationMessages** | Pointer to [**[]TranslationMessage**](translation-message) | The list of translation messages, if they have been requested. | [optional] 
-**RecommenderCalculations** | Pointer to [**RecommenderCalculations**](recommender-calculations) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Request** | Pointer to [**RecommendationRequest**](recommendation-request) |  | [optional] |
+| **Recommendation** | Pointer to **string** | The recommendation - YES if the access is recommended, NO if not recommended, MAYBE if there is not enough information to make a recommendation, NOT_FOUND if the identity is not found in the system | [optional] |
+| **Interpretations** | Pointer to **[]string** | The list of interpretations explaining the recommendation. The array is empty if includeInterpretations is false or not present in the request. e.g. - [ \"Not approved in the last 6 months.\" ]. Interpretations will be translated using the client's locale as found in the Accept-Language header. If a translation for the client's locale cannot be found, the US English translation will be returned. | [optional] |
+| **TranslationMessages** | Pointer to [**[]TranslationMessage**](translation-message) | The list of translation messages, if they have been requested. | [optional] |
+| **RecommenderCalculations** | Pointer to [**RecommenderCalculations**](recommender-calculations) |  | [optional] |
 
 ## Methods
 
@@ -27,18 +40,13 @@ Name | Type | Description | Notes
 
 `func NewRecommendationResponse() *RecommendationResponse`
 
-NewRecommendationResponse instantiates a new RecommendationResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRecommendationResponse instantiates a new RecommendationResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRecommendationResponseWithDefaults
 
 `func NewRecommendationResponseWithDefaults() *RecommendationResponse`
 
-NewRecommendationResponseWithDefaults instantiates a new RecommendationResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRecommendationResponseWithDefaults instantiates a new RecommendationResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetRequest
 
@@ -50,8 +58,7 @@ GetRequest returns the Request field if non-nil, zero value otherwise.
 
 `func (o *RecommendationResponse) GetRequestOk() (*RecommendationRequest, bool)`
 
-GetRequestOk returns a tuple with the Request field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestOk returns a tuple with the Request field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequest
 
@@ -75,8 +82,7 @@ GetRecommendation returns the Recommendation field if non-nil, zero value otherw
 
 `func (o *RecommendationResponse) GetRecommendationOk() (*string, bool)`
 
-GetRecommendationOk returns a tuple with the Recommendation field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRecommendationOk returns a tuple with the Recommendation field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRecommendation
 
@@ -100,8 +106,7 @@ GetInterpretations returns the Interpretations field if non-nil, zero value othe
 
 `func (o *RecommendationResponse) GetInterpretationsOk() (*[]string, bool)`
 
-GetInterpretationsOk returns a tuple with the Interpretations field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetInterpretationsOk returns a tuple with the Interpretations field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetInterpretations
 
@@ -125,8 +130,7 @@ GetTranslationMessages returns the TranslationMessages field if non-nil, zero va
 
 `func (o *RecommendationResponse) GetTranslationMessagesOk() (*[]TranslationMessage, bool)`
 
-GetTranslationMessagesOk returns a tuple with the TranslationMessages field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTranslationMessagesOk returns a tuple with the TranslationMessages field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTranslationMessages
 
@@ -150,8 +154,7 @@ GetRecommenderCalculations returns the RecommenderCalculations field if non-nil,
 
 `func (o *RecommendationResponse) GetRecommenderCalculationsOk() (*RecommenderCalculations, bool)`
 
-GetRecommenderCalculationsOk returns a tuple with the RecommenderCalculations field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRecommenderCalculationsOk returns a tuple with the RecommenderCalculations field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRecommenderCalculations
 
@@ -164,5 +167,3 @@ SetRecommenderCalculations sets RecommenderCalculations field to given value.
 `func (o *RecommendationResponse) HasRecommenderCalculations() bool`
 
 HasRecommenderCalculations returns a boolean if a field has been set.
-
-

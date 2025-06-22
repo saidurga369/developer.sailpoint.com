@@ -4,20 +4,33 @@ title: InviteIdentitiesRequest
 pagination_label: InviteIdentitiesRequest
 sidebar_label: InviteIdentitiesRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'InviteIdentitiesRequest', 'V2025InviteIdentitiesRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'InviteIdentitiesRequest',
+    'V2025InviteIdentitiesRequest',
+  ]
 slug: /tools/sdk/python/v2025/models/invite-identities-request
-tags: ['SDK', 'Software Development Kit', 'InviteIdentitiesRequest', 'V2025InviteIdentitiesRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'InviteIdentitiesRequest',
+    'V2025InviteIdentitiesRequest',
+  ]
 ---
 
 # InviteIdentitiesRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ids** | **[]str** | The list of Identities IDs to invite - required when 'uninvited' is false | [optional] 
-**uninvited** | **bool** | indicator (optional) to invite all unregistered identities in the system within a limit 1000. This parameter makes sense only when 'ids' is empty. | [optional] [default to False]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ids** | **[]str** | The list of Identities IDs to invite - required when 'uninvited' is false | [optional] |
+| **uninvited** | **bool** | indicator (optional) to invite all unregistered identities in the system within a limit 1000. This parameter makes sense only when 'ids' is empty. | [optional] [default to False] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ uninvited=False
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

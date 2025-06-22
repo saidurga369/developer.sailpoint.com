@@ -4,9 +4,22 @@ title: SourceManagementWorkgroup
 pagination_label: SourceManagementWorkgroup
 sidebar_label: SourceManagementWorkgroup
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SourceManagementWorkgroup', 'V2025SourceManagementWorkgroup'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'SourceManagementWorkgroup',
+    'V2025SourceManagementWorkgroup',
+  ]
 slug: /tools/sdk/python/v2025/models/source-management-workgroup
-tags: ['SDK', 'Software Development Kit', 'SourceManagementWorkgroup', 'V2025SourceManagementWorkgroup']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SourceManagementWorkgroup',
+    'V2025SourceManagementWorkgroup',
+  ]
 ---
 
 # SourceManagementWorkgroup
@@ -15,11 +28,12 @@ Reference to management workgroup for the source.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'GOVERNANCE_GROUP' ] | Type of object being referenced. | [optional] 
-**id** | **str** | Management workgroup ID. | [optional] 
-**name** | **str** | Management workgroup's human-readable display name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'GOVERNANCE_GROUP' ] | Type of object being referenced. | [optional] |
+| **id** | **str** | Management workgroup ID. | [optional] |
+| **name** | **str** | Management workgroup's human-readable display name. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='My Management Workgroup'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

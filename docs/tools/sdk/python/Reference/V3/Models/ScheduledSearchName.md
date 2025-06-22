@@ -4,20 +4,27 @@ title: ScheduledSearchName
 pagination_label: ScheduledSearchName
 sidebar_label: ScheduledSearchName
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ScheduledSearchName', 'ScheduledSearchName'] 
+keywords:
+  ['python', 'Python', 'sdk', 'ScheduledSearchName', 'ScheduledSearchName']
 slug: /tools/sdk/python/v3/models/scheduled-search-name
-tags: ['SDK', 'Software Development Kit', 'ScheduledSearchName', 'ScheduledSearchName']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ScheduledSearchName',
+    'ScheduledSearchName',
+  ]
 ---
 
 # ScheduledSearchName
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | The name of the scheduled search.  | [optional] 
-**description** | **str** | The description of the scheduled search.  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **name** | **str** | The name of the scheduled search. | [optional] |
+| **description** | **str** | The description of the scheduled search. | [optional] |
+
 }
 
 ## Example
@@ -31,5 +38,5 @@ description='Daily disabled accounts'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

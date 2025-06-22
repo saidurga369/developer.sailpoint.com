@@ -4,9 +4,22 @@ title: WorkflowTriggerAttributes
 pagination_label: WorkflowTriggerAttributes
 sidebar_label: WorkflowTriggerAttributes
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'WorkflowTriggerAttributes', 'WorkflowTriggerAttributes'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'WorkflowTriggerAttributes',
+    'WorkflowTriggerAttributes',
+  ]
 slug: /tools/sdk/python/v3/models/workflow-trigger-attributes
-tags: ['SDK', 'Software Development Kit', 'WorkflowTriggerAttributes', 'WorkflowTriggerAttributes']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'WorkflowTriggerAttributes',
+    'WorkflowTriggerAttributes',
+  ]
 ---
 
 # WorkflowTriggerAttributes
@@ -15,22 +28,23 @@ Workflow Trigger Attributes.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The unique ID of the trigger | [required]
-**filter_** | **str** | JSON path expression that will limit which events the trigger will fire on | [optional] 
-**description** | **str** | Additional context about the external trigger | [optional] 
-**attribute_to_filter** | **str** | The attribute to filter on | [optional] 
-**form_definition_id** | **str** | Form definition's unique identifier. | [optional] 
-**name** | **str** | A unique name for the external trigger | [optional] 
-**client_id** | **str** | OAuth Client ID to authenticate with this trigger | [optional] 
-**url** | **str** | URL to invoke this workflow | [optional] 
-**frequency** |  **Enum** [  'daily',    'weekly',    'monthly',    'yearly',    'cronSchedule' ] | Frequency of execution | [required]
-**time_zone** | **str** | Time zone identifier | [optional] 
-**cron_string** | **str** | A valid CRON expression | [optional] 
-**weekly_days** | **[]str** | Scheduled days of the week for execution | [optional] 
-**weekly_times** | **[]str** | Scheduled execution times | [optional] 
-**yearly_times** | **[]str** | Scheduled execution times | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The unique ID of the trigger | [required] |
+| **filter\_** | **str** | JSON path expression that will limit which events the trigger will fire on | [optional] |
+| **description** | **str** | Additional context about the external trigger | [optional] |
+| **attribute_to_filter** | **str** | The attribute to filter on | [optional] |
+| **form_definition_id** | **str** | Form definition's unique identifier. | [optional] |
+| **name** | **str** | A unique name for the external trigger | [optional] |
+| **client_id** | **str** | OAuth Client ID to authenticate with this trigger | [optional] |
+| **url** | **str** | URL to invoke this workflow | [optional] |
+| **frequency** | **Enum** [ 'daily', 'weekly', 'monthly', 'yearly', 'cronSchedule' ] | Frequency of execution | [required] |
+| **time_zone** | **str** | Time zone identifier | [optional] |
+| **cron_string** | **str** | A valid CRON expression | [optional] |
+| **weekly_days** | **[]str** | Scheduled days of the week for execution | [optional] |
+| **weekly_times** | **[]str** | Scheduled execution times | [optional] |
+| **yearly_times** | **[]str** | Scheduled execution times | [optional] |
+
 }
 
 ## Example
@@ -56,5 +70,5 @@ yearly_times=1969-12-31T09:00:00.000Z
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

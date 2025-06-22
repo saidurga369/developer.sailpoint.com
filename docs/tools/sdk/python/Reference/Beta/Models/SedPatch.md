@@ -4,7 +4,7 @@ title: SedPatch
 pagination_label: SedPatch
 sidebar_label: SedPatch
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SedPatch', 'BetaSedPatch'] 
+keywords: ['python', 'Python', 'sdk', 'SedPatch', 'BetaSedPatch']
 slug: /tools/sdk/python/beta/models/sed-patch
 tags: ['SDK', 'Software Development Kit', 'SedPatch', 'BetaSedPatch']
 ---
@@ -15,11 +15,12 @@ Patch for Suggested Entitlement Description
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**op** | **str** | desired operation | [optional] 
-**path** | **str** | field to be patched | [optional] 
-**value** | **object** | value to replace with | [optional] 
+| Name      | Type       | Description           | Notes      |
+| --------- | ---------- | --------------------- | ---------- |
+| **op**    | **str**    | desired operation     | [optional] |
+| **path**  | **str**    | field to be patched   | [optional] |
+| **value** | **object** | value to replace with | [optional] |
+
 }
 
 ## Example
@@ -34,5 +35,5 @@ value=approved
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

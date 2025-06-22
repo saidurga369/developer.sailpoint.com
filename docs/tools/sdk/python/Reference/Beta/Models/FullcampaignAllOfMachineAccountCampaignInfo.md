@@ -4,9 +4,22 @@ title: FullcampaignAllOfMachineAccountCampaignInfo
 pagination_label: FullcampaignAllOfMachineAccountCampaignInfo
 sidebar_label: FullcampaignAllOfMachineAccountCampaignInfo
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'FullcampaignAllOfMachineAccountCampaignInfo', 'BetaFullcampaignAllOfMachineAccountCampaignInfo'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'FullcampaignAllOfMachineAccountCampaignInfo',
+    'BetaFullcampaignAllOfMachineAccountCampaignInfo',
+  ]
 slug: /tools/sdk/python/beta/models/fullcampaign-all-of-machine-account-campaign-info
-tags: ['SDK', 'Software Development Kit', 'FullcampaignAllOfMachineAccountCampaignInfo', 'BetaFullcampaignAllOfMachineAccountCampaignInfo']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'FullcampaignAllOfMachineAccountCampaignInfo',
+    'BetaFullcampaignAllOfMachineAccountCampaignInfo',
+  ]
 ---
 
 # FullcampaignAllOfMachineAccountCampaignInfo
@@ -15,10 +28,11 @@ Must be set only if the campaign type is MACHINE_ACCOUNT.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**source_ids** | **[]str** | The list of sources to be included in the campaign. | [optional] 
-**reviewer_type** |  **Enum** [  'ACCOUNT_OWNER' ] | The reviewer's type. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **source_ids** | **[]str** | The list of sources to be included in the campaign. | [optional] |
+| **reviewer_type** | **Enum** [ 'ACCOUNT_OWNER' ] | The reviewer's type. | [optional] |
+
 }
 
 ## Example
@@ -32,5 +46,5 @@ reviewer_type='ACCOUNT_OWNER'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

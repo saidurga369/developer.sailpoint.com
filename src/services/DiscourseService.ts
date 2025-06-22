@@ -1,4 +1,4 @@
-import { discourseBaseURL, removeRecordsWithCategoryId } from '../util/util';
+import {discourseBaseURL, removeRecordsWithCategoryId} from '../util/util';
 
 export async function getTopPosts(): Promise<any[]> {
   try {
@@ -9,13 +9,18 @@ export async function getTopPosts(): Promise<any[]> {
   }
 }
 
-export async function getAmbassadors(expert: boolean, limit: number, offset: number): Promise<any[]> {
+export async function getAmbassadors(
+  expert: boolean,
+  limit: number,
+  offset: number,
+): Promise<any[]> {
   try {
-    const url = discourseBaseURL() +
+    const url =
+      discourseBaseURL() +
       (expert
         ? `groups/expert_ambassadors/members.json?limit=${limit}&offset=${offset}`
         : `groups/ambassadors/members.json?limit=${limit}&offset=${offset}`);
-    
+
     const response = await fetch(url);
     return await response.json();
   } catch (error) {
@@ -25,7 +30,9 @@ export async function getAmbassadors(expert: boolean, limit: number, offset: num
 
 export async function getAmbassadorDetails(id: number[]): Promise<any[]> {
   try {
-    const response = await fetch(discourseBaseURL() + 'user-cards.json?user_ids=' + id.join(','));
+    const response = await fetch(
+      discourseBaseURL() + 'user-cards.json?user_ids=' + id.join(','),
+    );
     return await response.json();
   } catch (error) {
     return [];
@@ -74,7 +81,9 @@ type DiscourseResponse = {
   };
 };
 
-export async function getBlogPosts(tags: string | string[]): Promise<DiscourseResponse | []> {
+export async function getBlogPosts(
+  tags: string | string[],
+): Promise<DiscourseResponse | []> {
   let url: string;
   let allData: DiscourseResponse = {
     users: [],
@@ -99,10 +108,15 @@ export async function getBlogPosts(tags: string | string[]): Promise<DiscourseRe
       const response = await fetch(pageUrl);
       const data: DiscourseResponse = await response.json();
 
-      allData.topic_list.topics = allData.topic_list.topics.concat(data.topic_list.topics);
+      allData.topic_list.topics = allData.topic_list.topics.concat(
+        data.topic_list.topics,
+      );
       allData.users = allData.users.concat(data.users);
 
-      if (data.topic_list.topics.length < 30 || formattedTags === 'identity-security-cloud') {
+      if (
+        data.topic_list.topics.length < 30 ||
+        formattedTags === 'identity-security-cloud'
+      ) {
         break;
       }
 
@@ -118,7 +132,9 @@ export async function getBlogPosts(tags: string | string[]): Promise<DiscourseRe
 
 export async function getUserTitle(primary_group_name: string): Promise<any> {
   try {
-    const response = await fetch(discourseBaseURL() + 'g/' + primary_group_name + '.json');
+    const response = await fetch(
+      discourseBaseURL() + 'g/' + primary_group_name + '.json',
+    );
     return await response.json();
   } catch (error) {
     console.error(error);
@@ -133,7 +149,9 @@ interface VideoPostResponse {
   };
 }
 
-export async function getVideoPosts(tags?: string[]): Promise<VideoPostResponse | []> {
+export async function getVideoPosts(
+  tags?: string[],
+): Promise<VideoPostResponse | []> {
   let url: string = '';
   let allData: VideoPostResponse = {
     users: [],
@@ -145,13 +163,19 @@ export async function getVideoPosts(tags?: string[]): Promise<VideoPostResponse 
   if (tags && tags.length > 0) {
     switch (tags.length) {
       case 1:
-        url = `${discourseBaseURL()}/tags/c/content/video-library/127/${tags[0]}.json`;
+        url = `${discourseBaseURL()}/tags/c/content/video-library/127/${
+          tags[0]
+        }.json`;
         break;
       case 2:
-        url = `${discourseBaseURL()}/filter.json?q=category%3Avideo-library%20tag%3A${tags[0]}%2B${tags[1]}`;
+        url = `${discourseBaseURL()}/filter.json?q=category%3Avideo-library%20tag%3A${
+          tags[0]
+        }%2B${tags[1]}`;
         break;
       case 3:
-        url = `${discourseBaseURL()}/filter.json?q=category%3Avideo-library%20tag%3A${tags[0]}%2B${tags[1]}%2B${tags[2]}`;
+        url = `${discourseBaseURL()}/filter.json?q=category%3Avideo-library%20tag%3A${
+          tags[0]
+        }%2B${tags[1]}%2B${tags[2]}`;
         break;
       default:
         url = `${discourseBaseURL()}c/content/video-library/127.json`;
@@ -163,11 +187,17 @@ export async function getVideoPosts(tags?: string[]): Promise<VideoPostResponse 
   try {
     let page = 0;
     while (true) {
-      const pageUrl = page === 0 ? url : `${url}${tags && tags.length > 1 ? '&' : '?'}page=${page}`;
+      const pageUrl =
+        page === 0
+          ? url
+          : `${url}${tags && tags.length > 1 ? '&' : '?'}page=${page}`;
       const response = await fetch(pageUrl);
       const data: VideoPostResponse = await response.json();
 
-      allData.topic_list.topics = [...allData.topic_list.topics, ...data.topic_list.topics];
+      allData.topic_list.topics = [
+        ...allData.topic_list.topics,
+        ...data.topic_list.topics,
+      ];
       if (Array.isArray(data.users)) {
         allData.users = [...allData.users, ...data.users];
       }
@@ -180,18 +210,24 @@ export async function getVideoPosts(tags?: string[]): Promise<VideoPostResponse 
     }
     return allData;
   } catch (error) {
-    console.error("Error fetching video posts:", error);
+    console.error('Error fetching video posts:', error);
     return [];
   }
 }
 
-export async function getMarketplacePosts(tags?: string, category?: string): Promise<any> {
+export async function getMarketplacePosts(
+  tags?: string,
+  category?: string,
+): Promise<any> {
   let filterCategory = 'colab';
   if (category && category !== 'colab') {
     filterCategory += `/${category}`;
   }
 
-  const url = discourseBaseURL() + `c/${filterCategory}/l/latest.json` + (tags ? `?tags=${tags}` : '');
+  const url =
+    discourseBaseURL() +
+    `c/${filterCategory}/l/latest.json` +
+    (tags ? `?tags=${tags}` : '');
 
   try {
     const response = await fetch(url);

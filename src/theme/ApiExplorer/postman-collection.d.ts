@@ -1,3 +1,3 @@
-declare module "postman-collection" {
+declare module 'postman-collection' {
   export = Request.sdk;
 }

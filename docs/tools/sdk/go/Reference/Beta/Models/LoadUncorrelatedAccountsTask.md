@@ -4,19 +4,32 @@ title: LoadUncorrelatedAccountsTask
 pagination_label: LoadUncorrelatedAccountsTask
 sidebar_label: LoadUncorrelatedAccountsTask
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'LoadUncorrelatedAccountsTask', 'BetaLoadUncorrelatedAccountsTask'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'LoadUncorrelatedAccountsTask',
+    'BetaLoadUncorrelatedAccountsTask',
+  ]
 slug: /tools/sdk/go/beta/models/load-uncorrelated-accounts-task
-tags: ['SDK', 'Software Development Kit', 'LoadUncorrelatedAccountsTask', 'BetaLoadUncorrelatedAccountsTask']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'LoadUncorrelatedAccountsTask',
+    'BetaLoadUncorrelatedAccountsTask',
+  ]
 ---
 
 # LoadUncorrelatedAccountsTask
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Success** | Pointer to **bool** | The status of the result | [optional] [default to true]
-**Task** | Pointer to [**LoadUncorrelatedAccountsTaskTask**](load-uncorrelated-accounts-task-task) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Success** | Pointer to **bool** | The status of the result | [optional] [default to true] |
+| **Task** | Pointer to [**LoadUncorrelatedAccountsTaskTask**](load-uncorrelated-accounts-task-task) |  | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewLoadUncorrelatedAccountsTask() *LoadUncorrelatedAccountsTask`
 
-NewLoadUncorrelatedAccountsTask instantiates a new LoadUncorrelatedAccountsTask object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewLoadUncorrelatedAccountsTask instantiates a new LoadUncorrelatedAccountsTask object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewLoadUncorrelatedAccountsTaskWithDefaults
 
 `func NewLoadUncorrelatedAccountsTaskWithDefaults() *LoadUncorrelatedAccountsTask`
 
-NewLoadUncorrelatedAccountsTaskWithDefaults instantiates a new LoadUncorrelatedAccountsTask object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewLoadUncorrelatedAccountsTaskWithDefaults instantiates a new LoadUncorrelatedAccountsTask object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetSuccess
 
@@ -47,8 +55,7 @@ GetSuccess returns the Success field if non-nil, zero value otherwise.
 
 `func (o *LoadUncorrelatedAccountsTask) GetSuccessOk() (*bool, bool)`
 
-GetSuccessOk returns a tuple with the Success field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSuccessOk returns a tuple with the Success field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSuccess
 
@@ -72,8 +79,7 @@ GetTask returns the Task field if non-nil, zero value otherwise.
 
 `func (o *LoadUncorrelatedAccountsTask) GetTaskOk() (*LoadUncorrelatedAccountsTaskTask, bool)`
 
-GetTaskOk returns a tuple with the Task field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTaskOk returns a tuple with the Task field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTask
 
@@ -86,5 +92,3 @@ SetTask sets Task field to given value.
 `func (o *LoadUncorrelatedAccountsTask) HasTask() bool`
 
 HasTask returns a boolean if a field has been set.
-
-

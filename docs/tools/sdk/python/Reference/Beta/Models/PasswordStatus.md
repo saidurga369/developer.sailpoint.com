@@ -4,22 +4,23 @@ title: PasswordStatus
 pagination_label: PasswordStatus
 sidebar_label: PasswordStatus
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'PasswordStatus', 'BetaPasswordStatus'] 
+keywords: ['python', 'Python', 'sdk', 'PasswordStatus', 'BetaPasswordStatus']
 slug: /tools/sdk/python/beta/models/password-status
-tags: ['SDK', 'Software Development Kit', 'PasswordStatus', 'BetaPasswordStatus']
+tags:
+  ['SDK', 'Software Development Kit', 'PasswordStatus', 'BetaPasswordStatus']
 ---
 
 # PasswordStatus
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**request_id** | **str** | The password change request ID | [optional] 
-**state** |  **Enum** [  'IN_PROGRESS',    'FINISHED',    'FAILED' ] | Password change state | [optional] 
-**errors** | **[]str** | The errors during the password change request | [optional] 
-**source_ids** | **[]str** | List of source IDs in the password change request | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **request_id** | **str** | The password change request ID | [optional] |
+| **state** | **Enum** [ 'IN_PROGRESS', 'FINISHED', 'FAILED' ] | Password change state | [optional] |
+| **errors** | **[]str** | The errors during the password change request | [optional] |
+| **source_ids** | **[]str** | List of source IDs in the password change request | [optional] |
+
 }
 
 ## Example
@@ -39,5 +40,5 @@ source_ids=[
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

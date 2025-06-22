@@ -4,21 +4,34 @@ title: SourceClassificationStatus
 pagination_label: SourceClassificationStatus
 sidebar_label: SourceClassificationStatus
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SourceClassificationStatus', 'V2025SourceClassificationStatus'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'SourceClassificationStatus',
+    'V2025SourceClassificationStatus',
+  ]
 slug: /tools/sdk/go/v2025/models/source-classification-status
-tags: ['SDK', 'Software Development Kit', 'SourceClassificationStatus', 'V2025SourceClassificationStatus']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SourceClassificationStatus',
+    'V2025SourceClassificationStatus',
+  ]
 ---
 
 # SourceClassificationStatus
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Status** | Pointer to **string** | Status of Classification Process | [optional] 
-**Started** | Pointer to **SailPointTime** | Time when the process was started | [optional] 
-**Updated** | Pointer to **NullableTime** | Time when the process status was last updated | [optional] 
-**Counts** | Pointer to [**SourceClassificationStatusAllOfCounts**](source-classification-status-all-of-counts) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Status** | Pointer to **string** | Status of Classification Process | [optional] |
+| **Started** | Pointer to **SailPointTime** | Time when the process was started | [optional] |
+| **Updated** | Pointer to **NullableTime** | Time when the process status was last updated | [optional] |
+| **Counts** | Pointer to [**SourceClassificationStatusAllOfCounts**](source-classification-status-all-of-counts) |  | [optional] |
 
 ## Methods
 
@@ -26,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewSourceClassificationStatus() *SourceClassificationStatus`
 
-NewSourceClassificationStatus instantiates a new SourceClassificationStatus object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSourceClassificationStatus instantiates a new SourceClassificationStatus object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSourceClassificationStatusWithDefaults
 
 `func NewSourceClassificationStatusWithDefaults() *SourceClassificationStatus`
 
-NewSourceClassificationStatusWithDefaults instantiates a new SourceClassificationStatus object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSourceClassificationStatusWithDefaults instantiates a new SourceClassificationStatus object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetStatus
 
@@ -49,8 +57,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *SourceClassificationStatus) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -74,8 +81,7 @@ GetStarted returns the Started field if non-nil, zero value otherwise.
 
 `func (o *SourceClassificationStatus) GetStartedOk() (*SailPointTime, bool)`
 
-GetStartedOk returns a tuple with the Started field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStartedOk returns a tuple with the Started field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStarted
 
@@ -99,8 +105,7 @@ GetUpdated returns the Updated field if non-nil, zero value otherwise.
 
 `func (o *SourceClassificationStatus) GetUpdatedOk() (*SailPointTime, bool)`
 
-GetUpdatedOk returns a tuple with the Updated field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUpdatedOk returns a tuple with the Updated field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUpdated
 
@@ -118,12 +123,14 @@ HasUpdated returns a boolean if a field has been set.
 
 `func (o *SourceClassificationStatus) SetUpdatedNil(b bool)`
 
- SetUpdatedNil sets the value for Updated to be an explicit nil
+SetUpdatedNil sets the value for Updated to be an explicit nil
 
 ### UnsetUpdated
+
 `func (o *SourceClassificationStatus) UnsetUpdated()`
 
 UnsetUpdated ensures that no value is present for Updated, not even an explicit nil
+
 ### GetCounts
 
 `func (o *SourceClassificationStatus) GetCounts() SourceClassificationStatusAllOfCounts`
@@ -134,8 +141,7 @@ GetCounts returns the Counts field if non-nil, zero value otherwise.
 
 `func (o *SourceClassificationStatus) GetCountsOk() (*SourceClassificationStatusAllOfCounts, bool)`
 
-GetCountsOk returns a tuple with the Counts field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCountsOk returns a tuple with the Counts field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCounts
 
@@ -148,5 +154,3 @@ SetCounts sets Counts field to given value.
 `func (o *SourceClassificationStatus) HasCounts() bool`
 
 HasCounts returns a boolean if a field has been set.
-
-

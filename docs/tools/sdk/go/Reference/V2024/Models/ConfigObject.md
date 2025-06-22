@@ -4,7 +4,7 @@ title: ConfigObject
 pagination_label: ConfigObject
 sidebar_label: ConfigObject
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ConfigObject', 'V2024ConfigObject'] 
+keywords: ['go', 'Golang', 'sdk', 'ConfigObject', 'V2024ConfigObject']
 slug: /tools/sdk/go/v2024/models/config-object
 tags: ['SDK', 'Software Development Kit', 'ConfigObject', 'V2024ConfigObject']
 ---
@@ -13,11 +13,11 @@ tags: ['SDK', 'Software Development Kit', 'ConfigObject', 'V2024ConfigObject']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Version** | Pointer to **int32** | Current version of configuration object. | [optional] 
-**Self** | Pointer to [**SelfImportExportDto**](self-import-export-dto) |  | [optional] 
-**Object** | Pointer to **map[string]interface{}** | Object details. Format dependant on the object type. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Version** | Pointer to **int32** | Current version of configuration object. | [optional] |
+| **Self** | Pointer to [**SelfImportExportDto**](self-import-export-dto) |  | [optional] |
+| **Object** | Pointer to **map[string]interface{}** | Object details. Format dependant on the object type. | [optional] |
 
 ## Methods
 
@@ -25,18 +25,13 @@ Name | Type | Description | Notes
 
 `func NewConfigObject() *ConfigObject`
 
-NewConfigObject instantiates a new ConfigObject object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewConfigObject instantiates a new ConfigObject object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewConfigObjectWithDefaults
 
 `func NewConfigObjectWithDefaults() *ConfigObject`
 
-NewConfigObjectWithDefaults instantiates a new ConfigObject object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewConfigObjectWithDefaults instantiates a new ConfigObject object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetVersion
 
@@ -48,8 +43,7 @@ GetVersion returns the Version field if non-nil, zero value otherwise.
 
 `func (o *ConfigObject) GetVersionOk() (*int32, bool)`
 
-GetVersionOk returns a tuple with the Version field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetVersionOk returns a tuple with the Version field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetVersion
 
@@ -73,8 +67,7 @@ GetSelf returns the Self field if non-nil, zero value otherwise.
 
 `func (o *ConfigObject) GetSelfOk() (*SelfImportExportDto, bool)`
 
-GetSelfOk returns a tuple with the Self field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSelfOk returns a tuple with the Self field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSelf
 
@@ -98,8 +91,7 @@ GetObject returns the Object field if non-nil, zero value otherwise.
 
 `func (o *ConfigObject) GetObjectOk() (*map[string]interface{}, bool)`
 
-GetObjectOk returns a tuple with the Object field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetObjectOk returns a tuple with the Object field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetObject
 
@@ -112,5 +104,3 @@ SetObject sets Object field to given value.
 `func (o *ConfigObject) HasObject() bool`
 
 HasObject returns a boolean if a field has been set.
-
-

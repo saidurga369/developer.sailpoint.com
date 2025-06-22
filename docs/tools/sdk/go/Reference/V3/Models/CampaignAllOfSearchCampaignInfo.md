@@ -4,23 +4,36 @@ title: CampaignAllOfSearchCampaignInfo
 pagination_label: CampaignAllOfSearchCampaignInfo
 sidebar_label: CampaignAllOfSearchCampaignInfo
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'CampaignAllOfSearchCampaignInfo', 'CampaignAllOfSearchCampaignInfo'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'CampaignAllOfSearchCampaignInfo',
+    'CampaignAllOfSearchCampaignInfo',
+  ]
 slug: /tools/sdk/go/v3/models/campaign-all-of-search-campaign-info
-tags: ['SDK', 'Software Development Kit', 'CampaignAllOfSearchCampaignInfo', 'CampaignAllOfSearchCampaignInfo']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CampaignAllOfSearchCampaignInfo',
+    'CampaignAllOfSearchCampaignInfo',
+  ]
 ---
 
 # CampaignAllOfSearchCampaignInfo
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | **string** | The type of search campaign represented. | 
-**Description** | Pointer to **string** | Describes this search campaign. Intended for storing the query used, and possibly the number of identities selected/available. | [optional] 
-**Reviewer** | Pointer to [**CampaignAllOfSearchCampaignInfoReviewer**](campaign-all-of-search-campaign-info-reviewer) |  | [optional] 
-**Query** | Pointer to **string** | The scope for the campaign. The campaign will cover identities returned by the query and identities that have access items returned by the query. One of `query` or `identityIds` must be set. | [optional] 
-**IdentityIds** | Pointer to **[]string** | A direct list of identities to include in this campaign. One of `identityIds` or `query` must be set. | [optional] 
-**AccessConstraints** | Pointer to [**[]AccessConstraint**](access-constraint) | Further reduces the scope of the campaign by excluding identities (from `query` or `identityIds`) that do not have this access. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | **string** | The type of search campaign represented. |
+| **Description** | Pointer to **string** | Describes this search campaign. Intended for storing the query used, and possibly the number of identities selected/available. | [optional] |
+| **Reviewer** | Pointer to [**CampaignAllOfSearchCampaignInfoReviewer**](campaign-all-of-search-campaign-info-reviewer) |  | [optional] |
+| **Query** | Pointer to **string** | The scope for the campaign. The campaign will cover identities returned by the query and identities that have access items returned by the query. One of `query` or `identityIds` must be set. | [optional] |
+| **IdentityIds** | Pointer to **[]string** | A direct list of identities to include in this campaign. One of `identityIds` or `query` must be set. | [optional] |
+| **AccessConstraints** | Pointer to [**[]AccessConstraint**](access-constraint) | Further reduces the scope of the campaign by excluding identities (from `query` or `identityIds`) that do not have this access. | [optional] |
 
 ## Methods
 
@@ -28,18 +41,13 @@ Name | Type | Description | Notes
 
 `func NewCampaignAllOfSearchCampaignInfo(type_ string, ) *CampaignAllOfSearchCampaignInfo`
 
-NewCampaignAllOfSearchCampaignInfo instantiates a new CampaignAllOfSearchCampaignInfo object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewCampaignAllOfSearchCampaignInfo instantiates a new CampaignAllOfSearchCampaignInfo object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewCampaignAllOfSearchCampaignInfoWithDefaults
 
 `func NewCampaignAllOfSearchCampaignInfoWithDefaults() *CampaignAllOfSearchCampaignInfo`
 
-NewCampaignAllOfSearchCampaignInfoWithDefaults instantiates a new CampaignAllOfSearchCampaignInfo object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewCampaignAllOfSearchCampaignInfoWithDefaults instantiates a new CampaignAllOfSearchCampaignInfo object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -51,15 +59,13 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *CampaignAllOfSearchCampaignInfo) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
 `func (o *CampaignAllOfSearchCampaignInfo) SetType(v string)`
 
 SetType sets Type field to given value.
-
 
 ### GetDescription
 
@@ -71,8 +77,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *CampaignAllOfSearchCampaignInfo) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -96,8 +101,7 @@ GetReviewer returns the Reviewer field if non-nil, zero value otherwise.
 
 `func (o *CampaignAllOfSearchCampaignInfo) GetReviewerOk() (*CampaignAllOfSearchCampaignInfoReviewer, bool)`
 
-GetReviewerOk returns a tuple with the Reviewer field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReviewerOk returns a tuple with the Reviewer field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReviewer
 
@@ -121,8 +125,7 @@ GetQuery returns the Query field if non-nil, zero value otherwise.
 
 `func (o *CampaignAllOfSearchCampaignInfo) GetQueryOk() (*string, bool)`
 
-GetQueryOk returns a tuple with the Query field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetQueryOk returns a tuple with the Query field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetQuery
 
@@ -146,8 +149,7 @@ GetIdentityIds returns the IdentityIds field if non-nil, zero value otherwise.
 
 `func (o *CampaignAllOfSearchCampaignInfo) GetIdentityIdsOk() (*[]string, bool)`
 
-GetIdentityIdsOk returns a tuple with the IdentityIds field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityIdsOk returns a tuple with the IdentityIds field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityIds
 
@@ -171,8 +173,7 @@ GetAccessConstraints returns the AccessConstraints field if non-nil, zero value 
 
 `func (o *CampaignAllOfSearchCampaignInfo) GetAccessConstraintsOk() (*[]AccessConstraint, bool)`
 
-GetAccessConstraintsOk returns a tuple with the AccessConstraints field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessConstraintsOk returns a tuple with the AccessConstraints field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessConstraints
 
@@ -185,5 +186,3 @@ SetAccessConstraints sets AccessConstraints field to given value.
 `func (o *CampaignAllOfSearchCampaignInfo) HasAccessConstraints() bool`
 
 HasAccessConstraints returns a boolean if a field has been set.
-
-

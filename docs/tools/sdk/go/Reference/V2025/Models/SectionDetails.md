@@ -4,20 +4,21 @@ title: SectionDetails
 pagination_label: SectionDetails
 sidebar_label: SectionDetails
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SectionDetails', 'V2025SectionDetails'] 
+keywords: ['go', 'Golang', 'sdk', 'SectionDetails', 'V2025SectionDetails']
 slug: /tools/sdk/go/v2025/models/section-details
-tags: ['SDK', 'Software Development Kit', 'SectionDetails', 'V2025SectionDetails']
+tags:
+  ['SDK', 'Software Development Kit', 'SectionDetails', 'V2025SectionDetails']
 ---
 
 # SectionDetails
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | Pointer to **NullableString** | Name of the FormItem | [optional] 
-**Label** | Pointer to **NullableString** | Label of the section | [optional] 
-**FormItems** | Pointer to **[]map[string]interface{}** | List of FormItems. FormItems can be SectionDetails and/or FieldDetails | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | Pointer to **NullableString** | Name of the FormItem | [optional] |
+| **Label** | Pointer to **NullableString** | Label of the section | [optional] |
+| **FormItems** | Pointer to **[]map[string]interface{}** | List of FormItems. FormItems can be SectionDetails and/or FieldDetails | [optional] |
 
 ## Methods
 
@@ -25,18 +26,13 @@ Name | Type | Description | Notes
 
 `func NewSectionDetails() *SectionDetails`
 
-NewSectionDetails instantiates a new SectionDetails object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSectionDetails instantiates a new SectionDetails object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSectionDetailsWithDefaults
 
 `func NewSectionDetailsWithDefaults() *SectionDetails`
 
-NewSectionDetailsWithDefaults instantiates a new SectionDetails object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSectionDetailsWithDefaults instantiates a new SectionDetails object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -48,8 +44,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *SectionDetails) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -67,12 +62,14 @@ HasName returns a boolean if a field has been set.
 
 `func (o *SectionDetails) SetNameNil(b bool)`
 
- SetNameNil sets the value for Name to be an explicit nil
+SetNameNil sets the value for Name to be an explicit nil
 
 ### UnsetName
+
 `func (o *SectionDetails) UnsetName()`
 
 UnsetName ensures that no value is present for Name, not even an explicit nil
+
 ### GetLabel
 
 `func (o *SectionDetails) GetLabel() string`
@@ -83,8 +80,7 @@ GetLabel returns the Label field if non-nil, zero value otherwise.
 
 `func (o *SectionDetails) GetLabelOk() (*string, bool)`
 
-GetLabelOk returns a tuple with the Label field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLabelOk returns a tuple with the Label field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLabel
 
@@ -102,12 +98,14 @@ HasLabel returns a boolean if a field has been set.
 
 `func (o *SectionDetails) SetLabelNil(b bool)`
 
- SetLabelNil sets the value for Label to be an explicit nil
+SetLabelNil sets the value for Label to be an explicit nil
 
 ### UnsetLabel
+
 `func (o *SectionDetails) UnsetLabel()`
 
 UnsetLabel ensures that no value is present for Label, not even an explicit nil
+
 ### GetFormItems
 
 `func (o *SectionDetails) GetFormItems() []map[string]interface{}`
@@ -118,8 +116,7 @@ GetFormItems returns the FormItems field if non-nil, zero value otherwise.
 
 `func (o *SectionDetails) GetFormItemsOk() (*[]map[string]interface{}, bool)`
 
-GetFormItemsOk returns a tuple with the FormItems field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFormItemsOk returns a tuple with the FormItems field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFormItems
 
@@ -132,5 +129,3 @@ SetFormItems sets FormItems field to given value.
 `func (o *SectionDetails) HasFormItems() bool`
 
 HasFormItems returns a boolean if a field has been set.
-
-

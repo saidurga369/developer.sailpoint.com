@@ -4,31 +4,43 @@ title: AccountAttributesChangedChangesInnerOldValue
 pagination_label: AccountAttributesChangedChangesInnerOldValue
 sidebar_label: AccountAttributesChangedChangesInnerOldValue
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'AccountAttributesChangedChangesInnerOldValue', 'V2025AccountAttributesChangedChangesInnerOldValue'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'AccountAttributesChangedChangesInnerOldValue',
+    'V2025AccountAttributesChangedChangesInnerOldValue',
+  ]
 slug: /tools/sdk/powershell/v2025/models/account-attributes-changed-changes-inner-old-value
-tags: ['SDK', 'Software Development Kit', 'AccountAttributesChangedChangesInnerOldValue', 'V2025AccountAttributesChangedChangesInnerOldValue']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountAttributesChangedChangesInnerOldValue',
+    'V2025AccountAttributesChangedChangesInnerOldValue',
+  ]
 ---
-
 
 # AccountAttributesChangedChangesInnerOldValue
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
-$AccountAttributesChangedChangesInnerOldValue = Initialize-V2025AccountAttributesChangedChangesInnerOldValue 
+$AccountAttributesChangedChangesInnerOldValue = Initialize-V2025AccountAttributesChangedChangesInnerOldValue
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $AccountAttributesChangedChangesInnerOldValue | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

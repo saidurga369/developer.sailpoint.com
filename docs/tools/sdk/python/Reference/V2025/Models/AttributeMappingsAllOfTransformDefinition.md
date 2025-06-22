@@ -4,21 +4,34 @@ title: AttributeMappingsAllOfTransformDefinition
 pagination_label: AttributeMappingsAllOfTransformDefinition
 sidebar_label: AttributeMappingsAllOfTransformDefinition
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AttributeMappingsAllOfTransformDefinition', 'V2025AttributeMappingsAllOfTransformDefinition'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AttributeMappingsAllOfTransformDefinition',
+    'V2025AttributeMappingsAllOfTransformDefinition',
+  ]
 slug: /tools/sdk/python/v2025/models/attribute-mappings-all-of-transform-definition
-tags: ['SDK', 'Software Development Kit', 'AttributeMappingsAllOfTransformDefinition', 'V2025AttributeMappingsAllOfTransformDefinition']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AttributeMappingsAllOfTransformDefinition',
+    'V2025AttributeMappingsAllOfTransformDefinition',
+  ]
 ---
 
 # AttributeMappingsAllOfTransformDefinition
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** | **str** | The type of transform | [optional] 
-**attributes** | [**AttributeMappingsAllOfTransformDefinitionAttributes**](attribute-mappings-all-of-transform-definition-attributes) |  | [optional] 
-**id** | **str** | Transform Operation | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **str** | The type of transform | [optional] |
+| **attributes** | [**AttributeMappingsAllOfTransformDefinitionAttributes**](attribute-mappings-all-of-transform-definition-attributes) |  | [optional] |
+| **id** | **str** | Transform Operation | [optional] |
+
 }
 
 ## Example
@@ -35,5 +48,5 @@ id='ToUpper'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

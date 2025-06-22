@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import FormItem from "@theme/ApiExplorer/FormItem";
-import FormSelect from "@theme/ApiExplorer/FormSelect";
-import { useTypedDispatch, useTypedSelector } from "@theme/ApiItem/hooks";
+import FormItem from '@theme/ApiExplorer/FormItem';
+import FormSelect from '@theme/ApiExplorer/FormSelect';
+import {useTypedDispatch, useTypedSelector} from '@theme/ApiItem/hooks';
 
-import { setAccept } from "./slice";
+import {setAccept} from './slice';
 
 function Accept() {
   const value = useTypedSelector((state: any) => state.accept.value);

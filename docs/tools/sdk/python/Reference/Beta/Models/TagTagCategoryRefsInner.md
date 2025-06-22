@@ -4,9 +4,22 @@ title: TagTagCategoryRefsInner
 pagination_label: TagTagCategoryRefsInner
 sidebar_label: TagTagCategoryRefsInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'TagTagCategoryRefsInner', 'BetaTagTagCategoryRefsInner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'TagTagCategoryRefsInner',
+    'BetaTagTagCategoryRefsInner',
+  ]
 slug: /tools/sdk/python/beta/models/tag-tag-category-refs-inner
-tags: ['SDK', 'Software Development Kit', 'TagTagCategoryRefsInner', 'BetaTagTagCategoryRefsInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'TagTagCategoryRefsInner',
+    'BetaTagTagCategoryRefsInner',
+  ]
 ---
 
 # TagTagCategoryRefsInner
@@ -15,11 +28,12 @@ Tagged object's category.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'ACCESS_PROFILE',    'APPLICATION',    'CAMPAIGN',    'ENTITLEMENT',    'IDENTITY',    'ROLE',    'SOD_POLICY',    'SOURCE' ] | DTO type of the tagged object's category. | [optional] 
-**id** | **str** | Tagged object's ID. | [optional] 
-**name** | **str** | Tagged object's display name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'ACCESS_PROFILE', 'APPLICATION', 'CAMPAIGN', 'ENTITLEMENT', 'IDENTITY', 'ROLE', 'SOD_POLICY', 'SOURCE' ] | DTO type of the tagged object's category. | [optional] |
+| **id** | **str** | Tagged object's ID. | [optional] |
+| **name** | **str** | Tagged object's display name. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='CN=entitlement.490efde5,OU=OrgCo,OU=ServiceDept,DC=HQAD,DC=local'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,20 +4,24 @@ title: RoleCriteriaKeyType
 pagination_label: RoleCriteriaKeyType
 sidebar_label: RoleCriteriaKeyType
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleCriteriaKeyType', 'V2025RoleCriteriaKeyType'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'RoleCriteriaKeyType', 'V2025RoleCriteriaKeyType']
 slug: /tools/sdk/go/v2025/models/role-criteria-key-type
-tags: ['SDK', 'Software Development Kit', 'RoleCriteriaKeyType', 'V2025RoleCriteriaKeyType']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleCriteriaKeyType',
+    'V2025RoleCriteriaKeyType',
+  ]
 ---
 
 # RoleCriteriaKeyType
 
 ## Enum
 
+- `IDENTITY` (value: `"IDENTITY"`)
 
-* `IDENTITY` (value: `"IDENTITY"`)
+- `ACCOUNT` (value: `"ACCOUNT"`)
 
-* `ACCOUNT` (value: `"ACCOUNT"`)
-
-* `ENTITLEMENT` (value: `"ENTITLEMENT"`)
-
-
+- `ENTITLEMENT` (value: `"ENTITLEMENT"`)

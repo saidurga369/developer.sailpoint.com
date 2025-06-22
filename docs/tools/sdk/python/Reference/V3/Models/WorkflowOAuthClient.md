@@ -4,21 +4,28 @@ title: WorkflowOAuthClient
 pagination_label: WorkflowOAuthClient
 sidebar_label: WorkflowOAuthClient
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'WorkflowOAuthClient', 'WorkflowOAuthClient'] 
+keywords:
+  ['python', 'Python', 'sdk', 'WorkflowOAuthClient', 'WorkflowOAuthClient']
 slug: /tools/sdk/python/v3/models/workflow-o-auth-client
-tags: ['SDK', 'Software Development Kit', 'WorkflowOAuthClient', 'WorkflowOAuthClient']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'WorkflowOAuthClient',
+    'WorkflowOAuthClient',
+  ]
 ---
 
 # WorkflowOAuthClient
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | OAuth client ID for the trigger. This is a UUID generated upon creation. | [optional] 
-**secret** | **str** | OAuthClient secret. | [optional] 
-**url** | **str** | URL for the external trigger to invoke | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | OAuth client ID for the trigger. This is a UUID generated upon creation. | [optional] |
+| **secret** | **str** | OAuthClient secret. | [optional] |
+| **url** | **str** | URL for the external trigger to invoke | [optional] |
+
 }
 
 ## Example
@@ -33,5 +40,5 @@ url='https://tenant.api.identitynow.com/beta/workflows/execute/external/c17bea3a
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

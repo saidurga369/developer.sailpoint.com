@@ -4,28 +4,41 @@ title: TaskDefinitionSummary
 pagination_label: TaskDefinitionSummary
 sidebar_label: TaskDefinitionSummary
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'TaskDefinitionSummary', 'V2025TaskDefinitionSummary'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'TaskDefinitionSummary',
+    'V2025TaskDefinitionSummary',
+  ]
 slug: /tools/sdk/powershell/v2025/models/task-definition-summary
-tags: ['SDK', 'Software Development Kit', 'TaskDefinitionSummary', 'V2025TaskDefinitionSummary']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'TaskDefinitionSummary',
+    'V2025TaskDefinitionSummary',
+  ]
 ---
-
 
 # TaskDefinitionSummary
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | System-generated unique ID of the TaskDefinition | [required]
-**UniqueName** | **String** | Name of the TaskDefinition | [required]
-**Description** | **String** | Description of the TaskDefinition | [required]
-**ParentName** | **String** | Name of the parent of the TaskDefinition | [required]
-**Executor** | **String** | Executor of the TaskDefinition | [required]
-**Arguments** | [**map[string]AnyType**]https://learn.microsoft.com/en-us/powershell/scripting/lang-spec/chapter-04?view=powershell-7.4 | Formal parameters of the TaskDefinition, without values | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | System-generated unique ID of the TaskDefinition | [required] |
+| **UniqueName** | **String** | Name of the TaskDefinition | [required] |
+| **Description** | **String** | Description of the TaskDefinition | [required] |
+| **ParentName** | **String** | Name of the parent of the TaskDefinition | [required] |
+| **Executor** | **String** | Executor of the TaskDefinition | [required] |
+| **Arguments** | [**map[string]AnyType**]https://learn.microsoft.com/en-us/powershell/scripting/lang-spec/chapter-04?view=powershell-7.4 | Formal parameters of the TaskDefinition, without values | [required] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $TaskDefinitionSummary = Initialize-V2025TaskDefinitionSummary  -Id 2c91808475b4334b0175e1dff64b63c5 `
  -UniqueName Cloud Account Aggregation `
@@ -36,10 +49,9 @@ $TaskDefinitionSummary = Initialize-V2025TaskDefinitionSummary  -Id 2c91808475b4
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $TaskDefinitionSummary | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

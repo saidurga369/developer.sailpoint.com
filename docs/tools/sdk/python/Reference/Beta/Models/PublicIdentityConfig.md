@@ -4,9 +4,22 @@ title: PublicIdentityConfig
 pagination_label: PublicIdentityConfig
 sidebar_label: PublicIdentityConfig
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'PublicIdentityConfig', 'BetaPublicIdentityConfig'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'PublicIdentityConfig',
+    'BetaPublicIdentityConfig',
+  ]
 slug: /tools/sdk/python/beta/models/public-identity-config
-tags: ['SDK', 'Software Development Kit', 'PublicIdentityConfig', 'BetaPublicIdentityConfig']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PublicIdentityConfig',
+    'BetaPublicIdentityConfig',
+  ]
 ---
 
 # PublicIdentityConfig
@@ -15,11 +28,12 @@ Details of up to 5 Identity attributes that will be publicly accessible for all 
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**attributes** | [**[]PublicIdentityAttributeConfig**](public-identity-attribute-config) |  | [optional] 
-**modified_by** | [**IdentityReference**](identity-reference) |  | [optional] 
-**modified** | **datetime** | the date/time of the modification | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **attributes** | [**[]PublicIdentityAttributeConfig**](public-identity-attribute-config) |  | [optional] |
+| **modified_by** | [**IdentityReference**](identity-reference) |  | [optional] |
+| **modified** | **datetime** | the date/time of the modification | [optional] |
+
 }
 
 ## Example
@@ -30,16 +44,16 @@ from sailpoint.beta.models.public_identity_config import PublicIdentityConfig
 public_identity_config = PublicIdentityConfig(
 attributes=[
                     sailpoint.beta.models.public_identity_attribute_config.PublicIdentityAttributeConfig(
-                        key = 'country', 
+                        key = 'country',
                         name = 'Country', )
                     ],
 modified_by=sailpoint.beta.models.identity_reference.IdentityReference(
-                    type = 'IDENTITY', 
-                    id = '2c9180a46faadee4016fb4e018c20639', 
+                    type = 'IDENTITY',
+                    id = '2c9180a46faadee4016fb4e018c20639',
                     name = 'Thomas Edison', ),
 modified='2018-06-25T20:22:28.104Z'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

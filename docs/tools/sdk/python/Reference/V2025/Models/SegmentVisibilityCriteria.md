@@ -4,19 +4,32 @@ title: SegmentVisibilityCriteria
 pagination_label: SegmentVisibilityCriteria
 sidebar_label: SegmentVisibilityCriteria
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SegmentVisibilityCriteria', 'V2025SegmentVisibilityCriteria'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'SegmentVisibilityCriteria',
+    'V2025SegmentVisibilityCriteria',
+  ]
 slug: /tools/sdk/python/v2025/models/segment-visibility-criteria
-tags: ['SDK', 'Software Development Kit', 'SegmentVisibilityCriteria', 'V2025SegmentVisibilityCriteria']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SegmentVisibilityCriteria',
+    'V2025SegmentVisibilityCriteria',
+  ]
 ---
 
 # SegmentVisibilityCriteria
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**expression** | [**Expression**](expression) |  | [optional] 
+| Name           | Type                         | Description | Notes      |
+| -------------- | ---------------------------- | ----------- | ---------- |
+| **expression** | [**Expression**](expression) |             | [optional] |
+
 }
 
 ## Example
@@ -26,13 +39,13 @@ from sailpoint.v2025.models.segment_visibility_criteria import SegmentVisibility
 
 segment_visibility_criteria = SegmentVisibilityCriteria(
 expression=sailpoint.v2025.models.expression.Expression(
-                    operator = 'EQUALS', 
-                    attribute = 'location', 
+                    operator = 'EQUALS',
+                    attribute = 'location',
                     value = sailpoint.v2025.models.value.Value(
-                        type = 'STRING', ), 
+                        type = 'STRING', ),
                     children = [], )
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

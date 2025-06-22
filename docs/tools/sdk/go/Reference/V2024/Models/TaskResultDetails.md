@@ -4,31 +4,37 @@ title: TaskResultDetails
 pagination_label: TaskResultDetails
 sidebar_label: TaskResultDetails
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'TaskResultDetails', 'V2024TaskResultDetails'] 
+keywords: ['go', 'Golang', 'sdk', 'TaskResultDetails', 'V2024TaskResultDetails']
 slug: /tools/sdk/go/v2024/models/task-result-details
-tags: ['SDK', 'Software Development Kit', 'TaskResultDetails', 'V2024TaskResultDetails']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'TaskResultDetails',
+    'V2024TaskResultDetails',
+  ]
 ---
 
 # TaskResultDetails
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | Type of the job or task underlying in the report processing. It could be a quartz task, QPOC or MENTOS jobs or a refresh/sync task. | [optional] 
-**Id** | Pointer to **string** | Unique task definition identifier. | [optional] 
-**ReportType** | Pointer to **string** | Use this property to define what report should be processed in the RDE service. | [optional] 
-**Description** | Pointer to **string** | Description of the report purpose and/or contents. | [optional] 
-**ParentName** | Pointer to **NullableString** | Name of the parent task/report if exists. | [optional] 
-**Launcher** | Pointer to **string** | Name of the report processing initiator. | [optional] 
-**Created** | Pointer to **SailPointTime** | Report creation date | [optional] 
-**Launched** | Pointer to **NullableTime** | Report start date | [optional] 
-**Completed** | Pointer to **NullableTime** | Report completion date | [optional] 
-**CompletionStatus** | Pointer to **NullableString** | Report completion status. | [optional] 
-**Messages** | Pointer to [**[]TaskResultDetailsMessagesInner**](task-result-details-messages-inner) | List of the messages dedicated to the report.  From task definition perspective here usually should be warnings or errors. | [optional] 
-**Returns** | Pointer to [**[]TaskResultDetailsReturnsInner**](task-result-details-returns-inner) | Task definition results, if necessary. | [optional] 
-**Attributes** | Pointer to **map[string]interface{}** | Extra attributes map(dictionary) needed for the report. | [optional] 
-**Progress** | Pointer to **NullableString** | Current report state. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to **string** | Type of the job or task underlying in the report processing. It could be a quartz task, QPOC or MENTOS jobs or a refresh/sync task. | [optional] |
+| **Id** | Pointer to **string** | Unique task definition identifier. | [optional] |
+| **ReportType** | Pointer to **string** | Use this property to define what report should be processed in the RDE service. | [optional] |
+| **Description** | Pointer to **string** | Description of the report purpose and/or contents. | [optional] |
+| **ParentName** | Pointer to **NullableString** | Name of the parent task/report if exists. | [optional] |
+| **Launcher** | Pointer to **string** | Name of the report processing initiator. | [optional] |
+| **Created** | Pointer to **SailPointTime** | Report creation date | [optional] |
+| **Launched** | Pointer to **NullableTime** | Report start date | [optional] |
+| **Completed** | Pointer to **NullableTime** | Report completion date | [optional] |
+| **CompletionStatus** | Pointer to **NullableString** | Report completion status. | [optional] |
+| **Messages** | Pointer to [**[]TaskResultDetailsMessagesInner**](task-result-details-messages-inner) | List of the messages dedicated to the report. From task definition perspective here usually should be warnings or errors. | [optional] |
+| **Returns** | Pointer to [**[]TaskResultDetailsReturnsInner**](task-result-details-returns-inner) | Task definition results, if necessary. | [optional] |
+| **Attributes** | Pointer to **map[string]interface{}** | Extra attributes map(dictionary) needed for the report. | [optional] |
+| **Progress** | Pointer to **NullableString** | Current report state. | [optional] |
 
 ## Methods
 
@@ -36,18 +42,13 @@ Name | Type | Description | Notes
 
 `func NewTaskResultDetails() *TaskResultDetails`
 
-NewTaskResultDetails instantiates a new TaskResultDetails object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewTaskResultDetails instantiates a new TaskResultDetails object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewTaskResultDetailsWithDefaults
 
 `func NewTaskResultDetailsWithDefaults() *TaskResultDetails`
 
-NewTaskResultDetailsWithDefaults instantiates a new TaskResultDetails object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewTaskResultDetailsWithDefaults instantiates a new TaskResultDetails object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -59,8 +60,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *TaskResultDetails) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -84,8 +84,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *TaskResultDetails) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -109,8 +108,7 @@ GetReportType returns the ReportType field if non-nil, zero value otherwise.
 
 `func (o *TaskResultDetails) GetReportTypeOk() (*string, bool)`
 
-GetReportTypeOk returns a tuple with the ReportType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReportTypeOk returns a tuple with the ReportType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReportType
 
@@ -134,8 +132,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *TaskResultDetails) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -159,8 +156,7 @@ GetParentName returns the ParentName field if non-nil, zero value otherwise.
 
 `func (o *TaskResultDetails) GetParentNameOk() (*string, bool)`
 
-GetParentNameOk returns a tuple with the ParentName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetParentNameOk returns a tuple with the ParentName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetParentName
 
@@ -178,12 +174,14 @@ HasParentName returns a boolean if a field has been set.
 
 `func (o *TaskResultDetails) SetParentNameNil(b bool)`
 
- SetParentNameNil sets the value for ParentName to be an explicit nil
+SetParentNameNil sets the value for ParentName to be an explicit nil
 
 ### UnsetParentName
+
 `func (o *TaskResultDetails) UnsetParentName()`
 
 UnsetParentName ensures that no value is present for ParentName, not even an explicit nil
+
 ### GetLauncher
 
 `func (o *TaskResultDetails) GetLauncher() string`
@@ -194,8 +192,7 @@ GetLauncher returns the Launcher field if non-nil, zero value otherwise.
 
 `func (o *TaskResultDetails) GetLauncherOk() (*string, bool)`
 
-GetLauncherOk returns a tuple with the Launcher field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLauncherOk returns a tuple with the Launcher field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLauncher
 
@@ -219,8 +216,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *TaskResultDetails) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -244,8 +240,7 @@ GetLaunched returns the Launched field if non-nil, zero value otherwise.
 
 `func (o *TaskResultDetails) GetLaunchedOk() (*SailPointTime, bool)`
 
-GetLaunchedOk returns a tuple with the Launched field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLaunchedOk returns a tuple with the Launched field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLaunched
 
@@ -263,12 +258,14 @@ HasLaunched returns a boolean if a field has been set.
 
 `func (o *TaskResultDetails) SetLaunchedNil(b bool)`
 
- SetLaunchedNil sets the value for Launched to be an explicit nil
+SetLaunchedNil sets the value for Launched to be an explicit nil
 
 ### UnsetLaunched
+
 `func (o *TaskResultDetails) UnsetLaunched()`
 
 UnsetLaunched ensures that no value is present for Launched, not even an explicit nil
+
 ### GetCompleted
 
 `func (o *TaskResultDetails) GetCompleted() SailPointTime`
@@ -279,8 +276,7 @@ GetCompleted returns the Completed field if non-nil, zero value otherwise.
 
 `func (o *TaskResultDetails) GetCompletedOk() (*SailPointTime, bool)`
 
-GetCompletedOk returns a tuple with the Completed field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCompletedOk returns a tuple with the Completed field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCompleted
 
@@ -298,12 +294,14 @@ HasCompleted returns a boolean if a field has been set.
 
 `func (o *TaskResultDetails) SetCompletedNil(b bool)`
 
- SetCompletedNil sets the value for Completed to be an explicit nil
+SetCompletedNil sets the value for Completed to be an explicit nil
 
 ### UnsetCompleted
+
 `func (o *TaskResultDetails) UnsetCompleted()`
 
 UnsetCompleted ensures that no value is present for Completed, not even an explicit nil
+
 ### GetCompletionStatus
 
 `func (o *TaskResultDetails) GetCompletionStatus() string`
@@ -314,8 +312,7 @@ GetCompletionStatus returns the CompletionStatus field if non-nil, zero value ot
 
 `func (o *TaskResultDetails) GetCompletionStatusOk() (*string, bool)`
 
-GetCompletionStatusOk returns a tuple with the CompletionStatus field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCompletionStatusOk returns a tuple with the CompletionStatus field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCompletionStatus
 
@@ -333,12 +330,14 @@ HasCompletionStatus returns a boolean if a field has been set.
 
 `func (o *TaskResultDetails) SetCompletionStatusNil(b bool)`
 
- SetCompletionStatusNil sets the value for CompletionStatus to be an explicit nil
+SetCompletionStatusNil sets the value for CompletionStatus to be an explicit nil
 
 ### UnsetCompletionStatus
+
 `func (o *TaskResultDetails) UnsetCompletionStatus()`
 
 UnsetCompletionStatus ensures that no value is present for CompletionStatus, not even an explicit nil
+
 ### GetMessages
 
 `func (o *TaskResultDetails) GetMessages() []TaskResultDetailsMessagesInner`
@@ -349,8 +348,7 @@ GetMessages returns the Messages field if non-nil, zero value otherwise.
 
 `func (o *TaskResultDetails) GetMessagesOk() (*[]TaskResultDetailsMessagesInner, bool)`
 
-GetMessagesOk returns a tuple with the Messages field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMessagesOk returns a tuple with the Messages field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMessages
 
@@ -374,8 +372,7 @@ GetReturns returns the Returns field if non-nil, zero value otherwise.
 
 `func (o *TaskResultDetails) GetReturnsOk() (*[]TaskResultDetailsReturnsInner, bool)`
 
-GetReturnsOk returns a tuple with the Returns field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReturnsOk returns a tuple with the Returns field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReturns
 
@@ -399,8 +396,7 @@ GetAttributes returns the Attributes field if non-nil, zero value otherwise.
 
 `func (o *TaskResultDetails) GetAttributesOk() (*map[string]interface{}, bool)`
 
-GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributes
 
@@ -424,8 +420,7 @@ GetProgress returns the Progress field if non-nil, zero value otherwise.
 
 `func (o *TaskResultDetails) GetProgressOk() (*string, bool)`
 
-GetProgressOk returns a tuple with the Progress field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProgressOk returns a tuple with the Progress field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProgress
 
@@ -443,10 +438,10 @@ HasProgress returns a boolean if a field has been set.
 
 `func (o *TaskResultDetails) SetProgressNil(b bool)`
 
- SetProgressNil sets the value for Progress to be an explicit nil
+SetProgressNil sets the value for Progress to be an explicit nil
 
 ### UnsetProgress
+
 `func (o *TaskResultDetails) UnsetProgress()`
 
 UnsetProgress ensures that no value is present for Progress, not even an explicit nil
-

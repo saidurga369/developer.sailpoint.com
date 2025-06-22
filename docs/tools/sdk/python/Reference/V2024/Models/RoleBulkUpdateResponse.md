@@ -4,22 +4,35 @@ title: RoleBulkUpdateResponse
 pagination_label: RoleBulkUpdateResponse
 sidebar_label: RoleBulkUpdateResponse
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RoleBulkUpdateResponse', 'V2024RoleBulkUpdateResponse'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'RoleBulkUpdateResponse',
+    'V2024RoleBulkUpdateResponse',
+  ]
 slug: /tools/sdk/python/v2024/models/role-bulk-update-response
-tags: ['SDK', 'Software Development Kit', 'RoleBulkUpdateResponse', 'V2024RoleBulkUpdateResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleBulkUpdateResponse',
+    'V2024RoleBulkUpdateResponse',
+  ]
 ---
 
 # RoleBulkUpdateResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | ID of the task which is executing the bulk update. This also used in to the bulk-update/** API to track status. | [optional] 
-**type** | **str** | Type of the bulk update object. | [optional] 
-**status** |  **Enum** [  'CREATED',    'PRE_PROCESS',    'PRE_PROCESS_COMPLETED',    'POST_PROCESS',    'COMPLETED',    'CHUNK_PENDING',    'CHUNK_PROCESSING' ] | The status of the bulk update request, could also checked by getBulkUpdateStatus API | [optional] 
-**created** | **datetime** | Time when the bulk update request was created | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | ID of the task which is executing the bulk update. This also used in to the bulk-update/\*\* API to track status. | [optional] |
+| **type** | **str** | Type of the bulk update object. | [optional] |
+| **status** | **Enum** [ 'CREATED', 'PRE_PROCESS', 'PRE_PROCESS_COMPLETED', 'POST_PROCESS', 'COMPLETED', 'CHUNK_PENDING', 'CHUNK_PROCESSING' ] | The status of the bulk update request, could also checked by getBulkUpdateStatus API | [optional] |
+| **created** | **datetime** | Time when the bulk update request was created | [optional] |
+
 }
 
 ## Example
@@ -35,5 +48,5 @@ created='2020-10-08T18:33:52.029Z'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

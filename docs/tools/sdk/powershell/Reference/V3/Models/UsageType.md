@@ -4,49 +4,45 @@ title: UsageType
 pagination_label: UsageType
 sidebar_label: UsageType
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'UsageType', 'UsageType'] 
+keywords: ['powershell', 'PowerShell', 'sdk', 'UsageType', 'UsageType']
 slug: /tools/sdk/powershell/v3/models/usage-type
 tags: ['SDK', 'Software Development Kit', 'UsageType', 'UsageType']
 ---
-
 
 # UsageType
 
 ## Enum
 
+- `CREATE` (value: `"CREATE"`)
 
-* `CREATE` (value: `"CREATE"`)
+- `UPDATE` (value: `"UPDATE"`)
 
-* `UPDATE` (value: `"UPDATE"`)
+- `ENABLE` (value: `"ENABLE"`)
 
-* `ENABLE` (value: `"ENABLE"`)
+- `DISABLE` (value: `"DISABLE"`)
 
-* `DISABLE` (value: `"DISABLE"`)
+- `DELETE` (value: `"DELETE"`)
 
-* `DELETE` (value: `"DELETE"`)
+- `ASSIGN` (value: `"ASSIGN"`)
 
-* `ASSIGN` (value: `"ASSIGN"`)
+- `UNASSIGN` (value: `"UNASSIGN"`)
 
-* `UNASSIGN` (value: `"UNASSIGN"`)
+- `CREATE_GROUP` (value: `"CREATE_GROUP"`)
 
-* `CREATE_GROUP` (value: `"CREATE_GROUP"`)
+- `UPDATE_GROUP` (value: `"UPDATE_GROUP"`)
 
-* `UPDATE_GROUP` (value: `"UPDATE_GROUP"`)
+- `DELETE_GROUP` (value: `"DELETE_GROUP"`)
 
-* `DELETE_GROUP` (value: `"DELETE_GROUP"`)
+- `REGISTER` (value: `"REGISTER"`)
 
-* `REGISTER` (value: `"REGISTER"`)
+- `CREATE_IDENTITY` (value: `"CREATE_IDENTITY"`)
 
-* `CREATE_IDENTITY` (value: `"CREATE_IDENTITY"`)
+- `UPDATE_IDENTITY` (value: `"UPDATE_IDENTITY"`)
 
-* `UPDATE_IDENTITY` (value: `"UPDATE_IDENTITY"`)
+- `EDIT_GROUP` (value: `"EDIT_GROUP"`)
 
-* `EDIT_GROUP` (value: `"EDIT_GROUP"`)
+- `UNLOCK` (value: `"UNLOCK"`)
 
-* `UNLOCK` (value: `"UNLOCK"`)
+- `CHANGE_PASSWORD` (value: `"CHANGE_PASSWORD"`)
 
-* `CHANGE_PASSWORD` (value: `"CHANGE_PASSWORD"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

@@ -4,7 +4,7 @@ title: WorkItems
 pagination_label: WorkItems
 sidebar_label: WorkItems
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'WorkItems', 'WorkItems'] 
+keywords: ['go', 'Golang', 'sdk', 'WorkItems', 'WorkItems']
 slug: /tools/sdk/go/v3/models/work-items
 tags: ['SDK', 'Software Development Kit', 'WorkItems', 'WorkItems']
 ---
@@ -13,25 +13,25 @@ tags: ['SDK', 'Software Development Kit', 'WorkItems', 'WorkItems']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | ID of the work item | [optional] 
-**RequesterId** | Pointer to **NullableString** | ID of the requester | [optional] 
-**RequesterDisplayName** | Pointer to **NullableString** | The displayname of the requester | [optional] 
-**OwnerId** | Pointer to **NullableString** | The ID of the owner | [optional] 
-**OwnerName** | Pointer to **string** | The name of the owner | [optional] 
-**Created** | Pointer to **SailPointTime** | Time when the work item was created | [optional] 
-**Modified** | Pointer to **NullableTime** | Time when the work item was last updated | [optional] 
-**Description** | Pointer to **string** | The description of the work item | [optional] 
-**State** | Pointer to [**WorkItemStateManualWorkItems**](work-item-state-manual-work-items) |  | [optional] 
-**Type** | Pointer to [**WorkItemTypeManualWorkItems**](work-item-type-manual-work-items) |  | [optional] 
-**RemediationItems** | Pointer to [**[]RemediationItemDetails**](remediation-item-details) | A list of remediation items | [optional] 
-**ApprovalItems** | Pointer to [**[]ApprovalItemDetails**](approval-item-details) | A list of items that need to be approved | [optional] 
-**Name** | Pointer to **NullableString** | The work item name | [optional] 
-**Completed** | Pointer to **NullableTime** | The time at which the work item completed | [optional] 
-**NumItems** | Pointer to **NullableInt32** | The number of items in the work item | [optional] 
-**Form** | Pointer to [**WorkItemsForm**](work-items-form) |  | [optional] 
-**Errors** | Pointer to **[]string** | An array of errors that ocurred during the work item | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | ID of the work item | [optional] |
+| **RequesterId** | Pointer to **NullableString** | ID of the requester | [optional] |
+| **RequesterDisplayName** | Pointer to **NullableString** | The displayname of the requester | [optional] |
+| **OwnerId** | Pointer to **NullableString** | The ID of the owner | [optional] |
+| **OwnerName** | Pointer to **string** | The name of the owner | [optional] |
+| **Created** | Pointer to **SailPointTime** | Time when the work item was created | [optional] |
+| **Modified** | Pointer to **NullableTime** | Time when the work item was last updated | [optional] |
+| **Description** | Pointer to **string** | The description of the work item | [optional] |
+| **State** | Pointer to [**WorkItemStateManualWorkItems**](work-item-state-manual-work-items) |  | [optional] |
+| **Type** | Pointer to [**WorkItemTypeManualWorkItems**](work-item-type-manual-work-items) |  | [optional] |
+| **RemediationItems** | Pointer to [**[]RemediationItemDetails**](remediation-item-details) | A list of remediation items | [optional] |
+| **ApprovalItems** | Pointer to [**[]ApprovalItemDetails**](approval-item-details) | A list of items that need to be approved | [optional] |
+| **Name** | Pointer to **NullableString** | The work item name | [optional] |
+| **Completed** | Pointer to **NullableTime** | The time at which the work item completed | [optional] |
+| **NumItems** | Pointer to **NullableInt32** | The number of items in the work item | [optional] |
+| **Form** | Pointer to [**WorkItemsForm**](work-items-form) |  | [optional] |
+| **Errors** | Pointer to **[]string** | An array of errors that ocurred during the work item | [optional] |
 
 ## Methods
 
@@ -39,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewWorkItems() *WorkItems`
 
-NewWorkItems instantiates a new WorkItems object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewWorkItems instantiates a new WorkItems object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewWorkItemsWithDefaults
 
 `func NewWorkItemsWithDefaults() *WorkItems`
 
-NewWorkItemsWithDefaults instantiates a new WorkItems object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewWorkItemsWithDefaults instantiates a new WorkItems object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -62,8 +57,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *WorkItems) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -87,8 +81,7 @@ GetRequesterId returns the RequesterId field if non-nil, zero value otherwise.
 
 `func (o *WorkItems) GetRequesterIdOk() (*string, bool)`
 
-GetRequesterIdOk returns a tuple with the RequesterId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequesterIdOk returns a tuple with the RequesterId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequesterId
 
@@ -106,12 +99,14 @@ HasRequesterId returns a boolean if a field has been set.
 
 `func (o *WorkItems) SetRequesterIdNil(b bool)`
 
- SetRequesterIdNil sets the value for RequesterId to be an explicit nil
+SetRequesterIdNil sets the value for RequesterId to be an explicit nil
 
 ### UnsetRequesterId
+
 `func (o *WorkItems) UnsetRequesterId()`
 
 UnsetRequesterId ensures that no value is present for RequesterId, not even an explicit nil
+
 ### GetRequesterDisplayName
 
 `func (o *WorkItems) GetRequesterDisplayName() string`
@@ -122,8 +117,7 @@ GetRequesterDisplayName returns the RequesterDisplayName field if non-nil, zero 
 
 `func (o *WorkItems) GetRequesterDisplayNameOk() (*string, bool)`
 
-GetRequesterDisplayNameOk returns a tuple with the RequesterDisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequesterDisplayNameOk returns a tuple with the RequesterDisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequesterDisplayName
 
@@ -141,12 +135,14 @@ HasRequesterDisplayName returns a boolean if a field has been set.
 
 `func (o *WorkItems) SetRequesterDisplayNameNil(b bool)`
 
- SetRequesterDisplayNameNil sets the value for RequesterDisplayName to be an explicit nil
+SetRequesterDisplayNameNil sets the value for RequesterDisplayName to be an explicit nil
 
 ### UnsetRequesterDisplayName
+
 `func (o *WorkItems) UnsetRequesterDisplayName()`
 
 UnsetRequesterDisplayName ensures that no value is present for RequesterDisplayName, not even an explicit nil
+
 ### GetOwnerId
 
 `func (o *WorkItems) GetOwnerId() string`
@@ -157,8 +153,7 @@ GetOwnerId returns the OwnerId field if non-nil, zero value otherwise.
 
 `func (o *WorkItems) GetOwnerIdOk() (*string, bool)`
 
-GetOwnerIdOk returns a tuple with the OwnerId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerIdOk returns a tuple with the OwnerId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwnerId
 
@@ -176,12 +171,14 @@ HasOwnerId returns a boolean if a field has been set.
 
 `func (o *WorkItems) SetOwnerIdNil(b bool)`
 
- SetOwnerIdNil sets the value for OwnerId to be an explicit nil
+SetOwnerIdNil sets the value for OwnerId to be an explicit nil
 
 ### UnsetOwnerId
+
 `func (o *WorkItems) UnsetOwnerId()`
 
 UnsetOwnerId ensures that no value is present for OwnerId, not even an explicit nil
+
 ### GetOwnerName
 
 `func (o *WorkItems) GetOwnerName() string`
@@ -192,8 +189,7 @@ GetOwnerName returns the OwnerName field if non-nil, zero value otherwise.
 
 `func (o *WorkItems) GetOwnerNameOk() (*string, bool)`
 
-GetOwnerNameOk returns a tuple with the OwnerName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerNameOk returns a tuple with the OwnerName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwnerName
 
@@ -217,8 +213,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *WorkItems) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -242,8 +237,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *WorkItems) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -261,12 +255,14 @@ HasModified returns a boolean if a field has been set.
 
 `func (o *WorkItems) SetModifiedNil(b bool)`
 
- SetModifiedNil sets the value for Modified to be an explicit nil
+SetModifiedNil sets the value for Modified to be an explicit nil
 
 ### UnsetModified
+
 `func (o *WorkItems) UnsetModified()`
 
 UnsetModified ensures that no value is present for Modified, not even an explicit nil
+
 ### GetDescription
 
 `func (o *WorkItems) GetDescription() string`
@@ -277,8 +273,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *WorkItems) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -302,8 +297,7 @@ GetState returns the State field if non-nil, zero value otherwise.
 
 `func (o *WorkItems) GetStateOk() (*WorkItemStateManualWorkItems, bool)`
 
-GetStateOk returns a tuple with the State field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStateOk returns a tuple with the State field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetState
 
@@ -327,8 +321,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *WorkItems) GetTypeOk() (*WorkItemTypeManualWorkItems, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -352,8 +345,7 @@ GetRemediationItems returns the RemediationItems field if non-nil, zero value ot
 
 `func (o *WorkItems) GetRemediationItemsOk() (*[]RemediationItemDetails, bool)`
 
-GetRemediationItemsOk returns a tuple with the RemediationItems field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRemediationItemsOk returns a tuple with the RemediationItems field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRemediationItems
 
@@ -371,12 +363,14 @@ HasRemediationItems returns a boolean if a field has been set.
 
 `func (o *WorkItems) SetRemediationItemsNil(b bool)`
 
- SetRemediationItemsNil sets the value for RemediationItems to be an explicit nil
+SetRemediationItemsNil sets the value for RemediationItems to be an explicit nil
 
 ### UnsetRemediationItems
+
 `func (o *WorkItems) UnsetRemediationItems()`
 
 UnsetRemediationItems ensures that no value is present for RemediationItems, not even an explicit nil
+
 ### GetApprovalItems
 
 `func (o *WorkItems) GetApprovalItems() []ApprovalItemDetails`
@@ -387,8 +381,7 @@ GetApprovalItems returns the ApprovalItems field if non-nil, zero value otherwis
 
 `func (o *WorkItems) GetApprovalItemsOk() (*[]ApprovalItemDetails, bool)`
 
-GetApprovalItemsOk returns a tuple with the ApprovalItems field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApprovalItemsOk returns a tuple with the ApprovalItems field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApprovalItems
 
@@ -406,12 +399,14 @@ HasApprovalItems returns a boolean if a field has been set.
 
 `func (o *WorkItems) SetApprovalItemsNil(b bool)`
 
- SetApprovalItemsNil sets the value for ApprovalItems to be an explicit nil
+SetApprovalItemsNil sets the value for ApprovalItems to be an explicit nil
 
 ### UnsetApprovalItems
+
 `func (o *WorkItems) UnsetApprovalItems()`
 
 UnsetApprovalItems ensures that no value is present for ApprovalItems, not even an explicit nil
+
 ### GetName
 
 `func (o *WorkItems) GetName() string`
@@ -422,8 +417,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *WorkItems) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -441,12 +435,14 @@ HasName returns a boolean if a field has been set.
 
 `func (o *WorkItems) SetNameNil(b bool)`
 
- SetNameNil sets the value for Name to be an explicit nil
+SetNameNil sets the value for Name to be an explicit nil
 
 ### UnsetName
+
 `func (o *WorkItems) UnsetName()`
 
 UnsetName ensures that no value is present for Name, not even an explicit nil
+
 ### GetCompleted
 
 `func (o *WorkItems) GetCompleted() SailPointTime`
@@ -457,8 +453,7 @@ GetCompleted returns the Completed field if non-nil, zero value otherwise.
 
 `func (o *WorkItems) GetCompletedOk() (*SailPointTime, bool)`
 
-GetCompletedOk returns a tuple with the Completed field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCompletedOk returns a tuple with the Completed field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCompleted
 
@@ -476,12 +471,14 @@ HasCompleted returns a boolean if a field has been set.
 
 `func (o *WorkItems) SetCompletedNil(b bool)`
 
- SetCompletedNil sets the value for Completed to be an explicit nil
+SetCompletedNil sets the value for Completed to be an explicit nil
 
 ### UnsetCompleted
+
 `func (o *WorkItems) UnsetCompleted()`
 
 UnsetCompleted ensures that no value is present for Completed, not even an explicit nil
+
 ### GetNumItems
 
 `func (o *WorkItems) GetNumItems() int32`
@@ -492,8 +489,7 @@ GetNumItems returns the NumItems field if non-nil, zero value otherwise.
 
 `func (o *WorkItems) GetNumItemsOk() (*int32, bool)`
 
-GetNumItemsOk returns a tuple with the NumItems field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNumItemsOk returns a tuple with the NumItems field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNumItems
 
@@ -511,12 +507,14 @@ HasNumItems returns a boolean if a field has been set.
 
 `func (o *WorkItems) SetNumItemsNil(b bool)`
 
- SetNumItemsNil sets the value for NumItems to be an explicit nil
+SetNumItemsNil sets the value for NumItems to be an explicit nil
 
 ### UnsetNumItems
+
 `func (o *WorkItems) UnsetNumItems()`
 
 UnsetNumItems ensures that no value is present for NumItems, not even an explicit nil
+
 ### GetForm
 
 `func (o *WorkItems) GetForm() WorkItemsForm`
@@ -527,8 +525,7 @@ GetForm returns the Form field if non-nil, zero value otherwise.
 
 `func (o *WorkItems) GetFormOk() (*WorkItemsForm, bool)`
 
-GetFormOk returns a tuple with the Form field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFormOk returns a tuple with the Form field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetForm
 
@@ -552,8 +549,7 @@ GetErrors returns the Errors field if non-nil, zero value otherwise.
 
 `func (o *WorkItems) GetErrorsOk() (*[]string, bool)`
 
-GetErrorsOk returns a tuple with the Errors field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetErrorsOk returns a tuple with the Errors field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetErrors
 
@@ -566,5 +562,3 @@ SetErrors sets Errors field to given value.
 `func (o *WorkItems) HasErrors() bool`
 
 HasErrors returns a boolean if a field has been set.
-
-

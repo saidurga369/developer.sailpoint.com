@@ -4,29 +4,25 @@ title: WorkItemState
 pagination_label: WorkItemState
 sidebar_label: WorkItemState
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'WorkItemState', 'WorkItemState'] 
+keywords: ['powershell', 'PowerShell', 'sdk', 'WorkItemState', 'WorkItemState']
 slug: /tools/sdk/powershell/v3/models/work-item-state
 tags: ['SDK', 'Software Development Kit', 'WorkItemState', 'WorkItemState']
 ---
-
 
 # WorkItemState
 
 ## Enum
 
+- `Finished` (value: `"Finished"`)
 
-* `Finished` (value: `"Finished"`)
+- `Rejected` (value: `"Rejected"`)
 
-* `Rejected` (value: `"Rejected"`)
+- `Returned` (value: `"Returned"`)
 
-* `Returned` (value: `"Returned"`)
+- `Expired` (value: `"Expired"`)
 
-* `Expired` (value: `"Expired"`)
+- `Pending` (value: `"Pending"`)
 
-* `Pending` (value: `"Pending"`)
+- `Canceled` (value: `"Canceled"`)
 
-* `Canceled` (value: `"Canceled"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

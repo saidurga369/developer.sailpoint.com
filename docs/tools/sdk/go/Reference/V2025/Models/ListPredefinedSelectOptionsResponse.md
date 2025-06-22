@@ -4,18 +4,31 @@ title: ListPredefinedSelectOptionsResponse
 pagination_label: ListPredefinedSelectOptionsResponse
 sidebar_label: ListPredefinedSelectOptionsResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ListPredefinedSelectOptionsResponse', 'V2025ListPredefinedSelectOptionsResponse'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ListPredefinedSelectOptionsResponse',
+    'V2025ListPredefinedSelectOptionsResponse',
+  ]
 slug: /tools/sdk/go/v2025/models/list-predefined-select-options-response
-tags: ['SDK', 'Software Development Kit', 'ListPredefinedSelectOptionsResponse', 'V2025ListPredefinedSelectOptionsResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ListPredefinedSelectOptionsResponse',
+    'V2025ListPredefinedSelectOptionsResponse',
+  ]
 ---
 
 # ListPredefinedSelectOptionsResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Results** | Pointer to **[]string** | Results holds a list of PreDefinedSelectOption items | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Results** | Pointer to **[]string** | Results holds a list of PreDefinedSelectOption items | [optional] |
 
 ## Methods
 
@@ -23,18 +36,13 @@ Name | Type | Description | Notes
 
 `func NewListPredefinedSelectOptionsResponse() *ListPredefinedSelectOptionsResponse`
 
-NewListPredefinedSelectOptionsResponse instantiates a new ListPredefinedSelectOptionsResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewListPredefinedSelectOptionsResponse instantiates a new ListPredefinedSelectOptionsResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewListPredefinedSelectOptionsResponseWithDefaults
 
 `func NewListPredefinedSelectOptionsResponseWithDefaults() *ListPredefinedSelectOptionsResponse`
 
-NewListPredefinedSelectOptionsResponseWithDefaults instantiates a new ListPredefinedSelectOptionsResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewListPredefinedSelectOptionsResponseWithDefaults instantiates a new ListPredefinedSelectOptionsResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetResults
 
@@ -46,8 +54,7 @@ GetResults returns the Results field if non-nil, zero value otherwise.
 
 `func (o *ListPredefinedSelectOptionsResponse) GetResultsOk() (*[]string, bool)`
 
-GetResultsOk returns a tuple with the Results field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetResultsOk returns a tuple with the Results field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetResults
 
@@ -60,5 +67,3 @@ SetResults sets Results field to given value.
 `func (o *ListPredefinedSelectOptionsResponse) HasResults() bool`
 
 HasResults returns a boolean if a field has been set.
-
-

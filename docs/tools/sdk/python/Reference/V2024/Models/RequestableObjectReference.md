@@ -4,22 +4,35 @@ title: RequestableObjectReference
 pagination_label: RequestableObjectReference
 sidebar_label: RequestableObjectReference
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RequestableObjectReference', 'V2024RequestableObjectReference'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'RequestableObjectReference',
+    'V2024RequestableObjectReference',
+  ]
 slug: /tools/sdk/python/v2024/models/requestable-object-reference
-tags: ['SDK', 'Software Development Kit', 'RequestableObjectReference', 'V2024RequestableObjectReference']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RequestableObjectReference',
+    'V2024RequestableObjectReference',
+  ]
 ---
 
 # RequestableObjectReference
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Id of the object. | [optional] 
-**name** | **str** | Name of the object. | [optional] 
-**description** | **str** | Description of the object. | [optional] 
-**type** |  **Enum** [  'ACCESS_PROFILE',    'ROLE',    'ENTITLEMENT' ] | Type of the object. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | Id of the object. | [optional] |
+| **name** | **str** | Name of the object. | [optional] |
+| **description** | **str** | Description of the object. | [optional] |
+| **type** | **Enum** [ 'ACCESS_PROFILE', 'ROLE', 'ENTITLEMENT' ] | Type of the object. | [optional] |
+
 }
 
 ## Example
@@ -35,5 +48,5 @@ type='ROLE'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

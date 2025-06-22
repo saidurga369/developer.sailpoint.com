@@ -4,21 +4,34 @@ title: SodViolationCheckResult1
 pagination_label: SodViolationCheckResult1
 sidebar_label: SodViolationCheckResult1
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SodViolationCheckResult1', 'BetaSodViolationCheckResult1'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'SodViolationCheckResult1',
+    'BetaSodViolationCheckResult1',
+  ]
 slug: /tools/sdk/go/beta/models/sod-violation-check-result1
-tags: ['SDK', 'Software Development Kit', 'SodViolationCheckResult1', 'BetaSodViolationCheckResult1']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SodViolationCheckResult1',
+    'BetaSodViolationCheckResult1',
+  ]
 ---
 
 # SodViolationCheckResult1
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Message** | Pointer to [**ErrorMessageDto**](error-message-dto) |  | [optional] 
-**ClientMetadata** | Pointer to **map[string]string** | Arbitrary key-value pairs. They will never be processed by the IdentityNow system but will be returned on completion of the violation check. | [optional] 
-**ViolationContexts** | Pointer to [**[]SodViolationContext1**](sod-violation-context1) |  | [optional] 
-**ViolatedPolicies** | Pointer to [**[]SodPolicyDto**](sod-policy-dto) | A list of the Policies that were violated. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Message** | Pointer to [**ErrorMessageDto**](error-message-dto) |  | [optional] |
+| **ClientMetadata** | Pointer to **map[string]string** | Arbitrary key-value pairs. They will never be processed by the IdentityNow system but will be returned on completion of the violation check. | [optional] |
+| **ViolationContexts** | Pointer to [**[]SodViolationContext1**](sod-violation-context1) |  | [optional] |
+| **ViolatedPolicies** | Pointer to [**[]SodPolicyDto**](sod-policy-dto) | A list of the Policies that were violated. | [optional] |
 
 ## Methods
 
@@ -26,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewSodViolationCheckResult1() *SodViolationCheckResult1`
 
-NewSodViolationCheckResult1 instantiates a new SodViolationCheckResult1 object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSodViolationCheckResult1 instantiates a new SodViolationCheckResult1 object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSodViolationCheckResult1WithDefaults
 
 `func NewSodViolationCheckResult1WithDefaults() *SodViolationCheckResult1`
 
-NewSodViolationCheckResult1WithDefaults instantiates a new SodViolationCheckResult1 object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSodViolationCheckResult1WithDefaults instantiates a new SodViolationCheckResult1 object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetMessage
 
@@ -49,8 +57,7 @@ GetMessage returns the Message field if non-nil, zero value otherwise.
 
 `func (o *SodViolationCheckResult1) GetMessageOk() (*ErrorMessageDto, bool)`
 
-GetMessageOk returns a tuple with the Message field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMessageOk returns a tuple with the Message field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMessage
 
@@ -74,8 +81,7 @@ GetClientMetadata returns the ClientMetadata field if non-nil, zero value otherw
 
 `func (o *SodViolationCheckResult1) GetClientMetadataOk() (*map[string]string, bool)`
 
-GetClientMetadataOk returns a tuple with the ClientMetadata field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetClientMetadataOk returns a tuple with the ClientMetadata field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetClientMetadata
 
@@ -99,8 +105,7 @@ GetViolationContexts returns the ViolationContexts field if non-nil, zero value 
 
 `func (o *SodViolationCheckResult1) GetViolationContextsOk() (*[]SodViolationContext1, bool)`
 
-GetViolationContextsOk returns a tuple with the ViolationContexts field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetViolationContextsOk returns a tuple with the ViolationContexts field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetViolationContexts
 
@@ -124,8 +129,7 @@ GetViolatedPolicies returns the ViolatedPolicies field if non-nil, zero value ot
 
 `func (o *SodViolationCheckResult1) GetViolatedPoliciesOk() (*[]SodPolicyDto, bool)`
 
-GetViolatedPoliciesOk returns a tuple with the ViolatedPolicies field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetViolatedPoliciesOk returns a tuple with the ViolatedPolicies field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetViolatedPolicies
 
@@ -138,5 +142,3 @@ SetViolatedPolicies sets ViolatedPolicies field to given value.
 `func (o *SodViolationCheckResult1) HasViolatedPolicies() bool`
 
 HasViolatedPolicies returns a boolean if a field has been set.
-
-

@@ -4,7 +4,7 @@ title: ImportObject
 pagination_label: ImportObject
 sidebar_label: ImportObject
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ImportObject', 'V2025ImportObject'] 
+keywords: ['go', 'Golang', 'sdk', 'ImportObject', 'V2025ImportObject']
 slug: /tools/sdk/go/v2025/models/import-object
 tags: ['SDK', 'Software Development Kit', 'ImportObject', 'V2025ImportObject']
 ---
@@ -13,11 +13,11 @@ tags: ['SDK', 'Software Development Kit', 'ImportObject', 'V2025ImportObject']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | DTO type of object created or updated by import. | [optional] 
-**Id** | Pointer to **string** | ID of object created or updated by import. | [optional] 
-**Name** | Pointer to **string** | Display name of object created or updated by import. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to **string** | DTO type of object created or updated by import. | [optional] |
+| **Id** | Pointer to **string** | ID of object created or updated by import. | [optional] |
+| **Name** | Pointer to **string** | Display name of object created or updated by import. | [optional] |
 
 ## Methods
 
@@ -25,18 +25,13 @@ Name | Type | Description | Notes
 
 `func NewImportObject() *ImportObject`
 
-NewImportObject instantiates a new ImportObject object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewImportObject instantiates a new ImportObject object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewImportObjectWithDefaults
 
 `func NewImportObjectWithDefaults() *ImportObject`
 
-NewImportObjectWithDefaults instantiates a new ImportObject object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewImportObjectWithDefaults instantiates a new ImportObject object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -48,8 +43,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *ImportObject) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -73,8 +67,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *ImportObject) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -98,8 +91,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *ImportObject) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -112,5 +104,3 @@ SetName sets Name field to given value.
 `func (o *ImportObject) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

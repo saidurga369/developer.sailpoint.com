@@ -4,27 +4,40 @@ title: ConfigurationDetailsResponse
 pagination_label: ConfigurationDetailsResponse
 sidebar_label: ConfigurationDetailsResponse
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'ConfigurationDetailsResponse', 'BetaConfigurationDetailsResponse'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'ConfigurationDetailsResponse',
+    'BetaConfigurationDetailsResponse',
+  ]
 slug: /tools/sdk/powershell/beta/models/configuration-details-response
-tags: ['SDK', 'Software Development Kit', 'ConfigurationDetailsResponse', 'BetaConfigurationDetailsResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ConfigurationDetailsResponse',
+    'BetaConfigurationDetailsResponse',
+  ]
 ---
-
 
 # ConfigurationDetailsResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ConfigType** | [**ConfigTypeEnum**](config-type-enum) |  | [optional] 
-**TargetIdentity** | [**Identity1**](identity1) |  | [optional] 
-**StartDate** | **System.DateTime** | The date from which to start reassigning work items | [optional] 
-**EndDate** | **System.DateTime** | The date from which to stop reassigning work items.  If this is an empty string it indicates a permanent reassignment. | [optional] 
-**AuditDetails** | [**AuditDetails**](audit-details) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ConfigType** | [**ConfigTypeEnum**](config-type-enum) |  | [optional] |
+| **TargetIdentity** | [**Identity1**](identity1) |  | [optional] |
+| **StartDate** | **System.DateTime** | The date from which to start reassigning work items | [optional] |
+| **EndDate** | **System.DateTime** | The date from which to stop reassigning work items. If this is an empty string it indicates a permanent reassignment. | [optional] |
+| **AuditDetails** | [**AuditDetails**](audit-details) |  | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $ConfigurationDetailsResponse = Initialize-BetaConfigurationDetailsResponse  -ConfigType null `
  -TargetIdentity null `
@@ -34,10 +47,9 @@ $ConfigurationDetailsResponse = Initialize-BetaConfigurationDetailsResponse  -Co
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $ConfigurationDetailsResponse | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

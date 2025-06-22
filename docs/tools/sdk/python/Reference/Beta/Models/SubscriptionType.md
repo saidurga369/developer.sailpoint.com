@@ -4,9 +4,16 @@ title: SubscriptionType
 pagination_label: SubscriptionType
 sidebar_label: SubscriptionType
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SubscriptionType', 'BetaSubscriptionType'] 
+keywords:
+  ['python', 'Python', 'sdk', 'SubscriptionType', 'BetaSubscriptionType']
 slug: /tools/sdk/python/beta/models/subscription-type
-tags: ['SDK', 'Software Development Kit', 'SubscriptionType', 'BetaSubscriptionType']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SubscriptionType',
+    'BetaSubscriptionType',
+  ]
 ---
 
 # SubscriptionType
@@ -15,15 +22,14 @@ Subscription type. **NOTE** If type is EVENTBRIDGE, then eventBridgeConfig is re
 
 ## Enum
 
-* `HTTP` (value: `'HTTP'`)
+- `HTTP` (value: `'HTTP'`)
 
-* `EVENTBRIDGE` (value: `'EVENTBRIDGE'`)
+- `EVENTBRIDGE` (value: `'EVENTBRIDGE'`)
 
-* `INLINE` (value: `'INLINE'`)
+- `INLINE` (value: `'INLINE'`)
 
-* `SCRIPT` (value: `'SCRIPT'`)
+- `SCRIPT` (value: `'SCRIPT'`)
 
-* `WORKFLOW` (value: `'WORKFLOW'`)
+- `WORKFLOW` (value: `'WORKFLOW'`)
 
-[[Back to top]](#) 
-
+[[Back to top]](#)

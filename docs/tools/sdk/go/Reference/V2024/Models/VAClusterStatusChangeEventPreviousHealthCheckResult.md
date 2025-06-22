@@ -4,20 +4,33 @@ title: VAClusterStatusChangeEventPreviousHealthCheckResult
 pagination_label: VAClusterStatusChangeEventPreviousHealthCheckResult
 sidebar_label: VAClusterStatusChangeEventPreviousHealthCheckResult
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'VAClusterStatusChangeEventPreviousHealthCheckResult', 'V2024VAClusterStatusChangeEventPreviousHealthCheckResult'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'VAClusterStatusChangeEventPreviousHealthCheckResult',
+    'V2024VAClusterStatusChangeEventPreviousHealthCheckResult',
+  ]
 slug: /tools/sdk/go/v2024/models/va-cluster-status-change-event-previous-health-check-result
-tags: ['SDK', 'Software Development Kit', 'VAClusterStatusChangeEventPreviousHealthCheckResult', 'V2024VAClusterStatusChangeEventPreviousHealthCheckResult']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'VAClusterStatusChangeEventPreviousHealthCheckResult',
+    'V2024VAClusterStatusChangeEventPreviousHealthCheckResult',
+  ]
 ---
 
 # VAClusterStatusChangeEventPreviousHealthCheckResult
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Message** | **string** | Detailed message of the result of the health check. | 
-**ResultType** | **string** | The type of the health check result. | 
-**Status** | **map[string]interface{}** | The status of the health check. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Message** | **string** | Detailed message of the result of the health check. |
+| **ResultType** | **string** | The type of the health check result. |
+| **Status** | **map[string]interface{}** | The status of the health check. |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewVAClusterStatusChangeEventPreviousHealthCheckResult(message string, resultType string, status map[string]interface{}, ) *VAClusterStatusChangeEventPreviousHealthCheckResult`
 
-NewVAClusterStatusChangeEventPreviousHealthCheckResult instantiates a new VAClusterStatusChangeEventPreviousHealthCheckResult object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewVAClusterStatusChangeEventPreviousHealthCheckResult instantiates a new VAClusterStatusChangeEventPreviousHealthCheckResult object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewVAClusterStatusChangeEventPreviousHealthCheckResultWithDefaults
 
 `func NewVAClusterStatusChangeEventPreviousHealthCheckResultWithDefaults() *VAClusterStatusChangeEventPreviousHealthCheckResult`
 
-NewVAClusterStatusChangeEventPreviousHealthCheckResultWithDefaults instantiates a new VAClusterStatusChangeEventPreviousHealthCheckResult object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewVAClusterStatusChangeEventPreviousHealthCheckResultWithDefaults instantiates a new VAClusterStatusChangeEventPreviousHealthCheckResult object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetMessage
 
@@ -48,15 +56,13 @@ GetMessage returns the Message field if non-nil, zero value otherwise.
 
 `func (o *VAClusterStatusChangeEventPreviousHealthCheckResult) GetMessageOk() (*string, bool)`
 
-GetMessageOk returns a tuple with the Message field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMessageOk returns a tuple with the Message field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMessage
 
 `func (o *VAClusterStatusChangeEventPreviousHealthCheckResult) SetMessage(v string)`
 
 SetMessage sets Message field to given value.
-
 
 ### GetResultType
 
@@ -68,15 +74,13 @@ GetResultType returns the ResultType field if non-nil, zero value otherwise.
 
 `func (o *VAClusterStatusChangeEventPreviousHealthCheckResult) GetResultTypeOk() (*string, bool)`
 
-GetResultTypeOk returns a tuple with the ResultType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetResultTypeOk returns a tuple with the ResultType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetResultType
 
 `func (o *VAClusterStatusChangeEventPreviousHealthCheckResult) SetResultType(v string)`
 
 SetResultType sets ResultType field to given value.
-
 
 ### GetStatus
 
@@ -88,14 +92,10 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *VAClusterStatusChangeEventPreviousHealthCheckResult) GetStatusOk() (*map[string]interface{}, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
 `func (o *VAClusterStatusChangeEventPreviousHealthCheckResult) SetStatus(v map[string]interface{})`
 
 SetStatus sets Status field to given value.
-
-
-

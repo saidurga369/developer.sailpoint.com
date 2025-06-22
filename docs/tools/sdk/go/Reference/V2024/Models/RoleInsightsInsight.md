@@ -4,22 +4,29 @@ title: RoleInsightsInsight
 pagination_label: RoleInsightsInsight
 sidebar_label: RoleInsightsInsight
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleInsightsInsight', 'V2024RoleInsightsInsight'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'RoleInsightsInsight', 'V2024RoleInsightsInsight']
 slug: /tools/sdk/go/v2024/models/role-insights-insight
-tags: ['SDK', 'Software Development Kit', 'RoleInsightsInsight', 'V2024RoleInsightsInsight']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleInsightsInsight',
+    'V2024RoleInsightsInsight',
+  ]
 ---
 
 # RoleInsightsInsight
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | The number of identities in this role with the entitlement. | [optional] 
-**IdentitiesWithAccess** | Pointer to **int32** | The number of identities in this role with the entitlement. | [optional] 
-**IdentitiesImpacted** | Pointer to **int32** | The number of identities in this role that do not have the specified entitlement. | [optional] 
-**TotalNumberOfIdentities** | Pointer to **int32** | The total number of identities. | [optional] 
-**ImpactedIdentityNames** | Pointer to **NullableString** |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to **string** | The number of identities in this role with the entitlement. | [optional] |
+| **IdentitiesWithAccess** | Pointer to **int32** | The number of identities in this role with the entitlement. | [optional] |
+| **IdentitiesImpacted** | Pointer to **int32** | The number of identities in this role that do not have the specified entitlement. | [optional] |
+| **TotalNumberOfIdentities** | Pointer to **int32** | The total number of identities. | [optional] |
+| **ImpactedIdentityNames** | Pointer to **NullableString** |  | [optional] |
 
 ## Methods
 
@@ -27,18 +34,13 @@ Name | Type | Description | Notes
 
 `func NewRoleInsightsInsight() *RoleInsightsInsight`
 
-NewRoleInsightsInsight instantiates a new RoleInsightsInsight object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleInsightsInsight instantiates a new RoleInsightsInsight object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleInsightsInsightWithDefaults
 
 `func NewRoleInsightsInsightWithDefaults() *RoleInsightsInsight`
 
-NewRoleInsightsInsightWithDefaults instantiates a new RoleInsightsInsight object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleInsightsInsightWithDefaults instantiates a new RoleInsightsInsight object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -50,8 +52,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *RoleInsightsInsight) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -75,8 +76,7 @@ GetIdentitiesWithAccess returns the IdentitiesWithAccess field if non-nil, zero 
 
 `func (o *RoleInsightsInsight) GetIdentitiesWithAccessOk() (*int32, bool)`
 
-GetIdentitiesWithAccessOk returns a tuple with the IdentitiesWithAccess field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentitiesWithAccessOk returns a tuple with the IdentitiesWithAccess field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentitiesWithAccess
 
@@ -100,8 +100,7 @@ GetIdentitiesImpacted returns the IdentitiesImpacted field if non-nil, zero valu
 
 `func (o *RoleInsightsInsight) GetIdentitiesImpactedOk() (*int32, bool)`
 
-GetIdentitiesImpactedOk returns a tuple with the IdentitiesImpacted field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentitiesImpactedOk returns a tuple with the IdentitiesImpacted field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentitiesImpacted
 
@@ -125,8 +124,7 @@ GetTotalNumberOfIdentities returns the TotalNumberOfIdentities field if non-nil,
 
 `func (o *RoleInsightsInsight) GetTotalNumberOfIdentitiesOk() (*int32, bool)`
 
-GetTotalNumberOfIdentitiesOk returns a tuple with the TotalNumberOfIdentities field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTotalNumberOfIdentitiesOk returns a tuple with the TotalNumberOfIdentities field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTotalNumberOfIdentities
 
@@ -150,8 +148,7 @@ GetImpactedIdentityNames returns the ImpactedIdentityNames field if non-nil, zer
 
 `func (o *RoleInsightsInsight) GetImpactedIdentityNamesOk() (*string, bool)`
 
-GetImpactedIdentityNamesOk returns a tuple with the ImpactedIdentityNames field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetImpactedIdentityNamesOk returns a tuple with the ImpactedIdentityNames field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetImpactedIdentityNames
 
@@ -169,10 +166,10 @@ HasImpactedIdentityNames returns a boolean if a field has been set.
 
 `func (o *RoleInsightsInsight) SetImpactedIdentityNamesNil(b bool)`
 
- SetImpactedIdentityNamesNil sets the value for ImpactedIdentityNames to be an explicit nil
+SetImpactedIdentityNamesNil sets the value for ImpactedIdentityNames to be an explicit nil
 
 ### UnsetImpactedIdentityNames
+
 `func (o *RoleInsightsInsight) UnsetImpactedIdentityNames()`
 
 UnsetImpactedIdentityNames ensures that no value is present for ImpactedIdentityNames, not even an explicit nil
-

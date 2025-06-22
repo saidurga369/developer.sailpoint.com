@@ -4,7 +4,7 @@ title: SourceCode
 pagination_label: SourceCode
 sidebar_label: SourceCode
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SourceCode', 'V2025SourceCode'] 
+keywords: ['python', 'Python', 'sdk', 'SourceCode', 'V2025SourceCode']
 slug: /tools/sdk/python/v2025/models/source-code
 tags: ['SDK', 'Software Development Kit', 'SourceCode', 'V2025SourceCode']
 ---
@@ -15,10 +15,11 @@ SourceCode
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**version** | **str** | the version of the code | [required]
-**script** | **str** | The code | [required]
+| Name        | Type    | Description             | Notes      |
+| ----------- | ------- | ----------------------- | ---------- |
+| **version** | **str** | the version of the code | [required] |
+| **script**  | **str** | The code                | [required] |
+
 }
 
 ## Example
@@ -32,5 +33,5 @@ script='return "Mr. " + firstName;'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

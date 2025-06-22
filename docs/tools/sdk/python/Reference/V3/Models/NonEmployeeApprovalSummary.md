@@ -4,21 +4,34 @@ title: NonEmployeeApprovalSummary
 pagination_label: NonEmployeeApprovalSummary
 sidebar_label: NonEmployeeApprovalSummary
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'NonEmployeeApprovalSummary', 'NonEmployeeApprovalSummary'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'NonEmployeeApprovalSummary',
+    'NonEmployeeApprovalSummary',
+  ]
 slug: /tools/sdk/python/v3/models/non-employee-approval-summary
-tags: ['SDK', 'Software Development Kit', 'NonEmployeeApprovalSummary', 'NonEmployeeApprovalSummary']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NonEmployeeApprovalSummary',
+    'NonEmployeeApprovalSummary',
+  ]
 ---
 
 # NonEmployeeApprovalSummary
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**approved** | **int** | The number of approved non-employee approval requests. | [optional] 
-**pending** | **int** | The number of pending non-employee approval requests. | [optional] 
-**rejected** | **int** | The number of rejected non-employee approval requests. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **approved** | **int** | The number of approved non-employee approval requests. | [optional] |
+| **pending** | **int** | The number of pending non-employee approval requests. | [optional] |
+| **rejected** | **int** | The number of rejected non-employee approval requests. | [optional] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ rejected=2
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

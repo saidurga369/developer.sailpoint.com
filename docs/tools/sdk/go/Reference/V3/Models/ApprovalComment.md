@@ -4,7 +4,7 @@ title: ApprovalComment
 pagination_label: ApprovalComment
 sidebar_label: ApprovalComment
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ApprovalComment', 'ApprovalComment'] 
+keywords: ['go', 'Golang', 'sdk', 'ApprovalComment', 'ApprovalComment']
 slug: /tools/sdk/go/v3/models/approval-comment
 tags: ['SDK', 'Software Development Kit', 'ApprovalComment', 'ApprovalComment']
 ---
@@ -13,11 +13,11 @@ tags: ['SDK', 'Software Development Kit', 'ApprovalComment', 'ApprovalComment']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Comment** | Pointer to **string** | The comment text | [optional] 
-**Commenter** | Pointer to **string** | The name of the commenter | [optional] 
-**Date** | Pointer to **NullableTime** | A date-time in ISO-8601 format | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Comment** | Pointer to **string** | The comment text | [optional] |
+| **Commenter** | Pointer to **string** | The name of the commenter | [optional] |
+| **Date** | Pointer to **NullableTime** | A date-time in ISO-8601 format | [optional] |
 
 ## Methods
 
@@ -25,18 +25,13 @@ Name | Type | Description | Notes
 
 `func NewApprovalComment() *ApprovalComment`
 
-NewApprovalComment instantiates a new ApprovalComment object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewApprovalComment instantiates a new ApprovalComment object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewApprovalCommentWithDefaults
 
 `func NewApprovalCommentWithDefaults() *ApprovalComment`
 
-NewApprovalCommentWithDefaults instantiates a new ApprovalComment object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewApprovalCommentWithDefaults instantiates a new ApprovalComment object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetComment
 
@@ -48,8 +43,7 @@ GetComment returns the Comment field if non-nil, zero value otherwise.
 
 `func (o *ApprovalComment) GetCommentOk() (*string, bool)`
 
-GetCommentOk returns a tuple with the Comment field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCommentOk returns a tuple with the Comment field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetComment
 
@@ -73,8 +67,7 @@ GetCommenter returns the Commenter field if non-nil, zero value otherwise.
 
 `func (o *ApprovalComment) GetCommenterOk() (*string, bool)`
 
-GetCommenterOk returns a tuple with the Commenter field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCommenterOk returns a tuple with the Commenter field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCommenter
 
@@ -98,8 +91,7 @@ GetDate returns the Date field if non-nil, zero value otherwise.
 
 `func (o *ApprovalComment) GetDateOk() (*SailPointTime, bool)`
 
-GetDateOk returns a tuple with the Date field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDateOk returns a tuple with the Date field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDate
 
@@ -117,10 +109,10 @@ HasDate returns a boolean if a field has been set.
 
 `func (o *ApprovalComment) SetDateNil(b bool)`
 
- SetDateNil sets the value for Date to be an explicit nil
+SetDateNil sets the value for Date to be an explicit nil
 
 ### UnsetDate
+
 `func (o *ApprovalComment) UnsetDate()`
 
 UnsetDate ensures that no value is present for Date, not even an explicit nil
-

@@ -4,18 +4,31 @@ title: ImportAccountsRequest1
 pagination_label: ImportAccountsRequest1
 sidebar_label: ImportAccountsRequest1
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ImportAccountsRequest1', 'BetaImportAccountsRequest1'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ImportAccountsRequest1',
+    'BetaImportAccountsRequest1',
+  ]
 slug: /tools/sdk/go/beta/models/import-accounts-request1
-tags: ['SDK', 'Software Development Kit', 'ImportAccountsRequest1', 'BetaImportAccountsRequest1']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ImportAccountsRequest1',
+    'BetaImportAccountsRequest1',
+  ]
 ---
 
 # ImportAccountsRequest1
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**DisableOptimization** | Pointer to **string** | Use this flag to reprocess every account whether or not the data has changed. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **DisableOptimization** | Pointer to **string** | Use this flag to reprocess every account whether or not the data has changed. | [optional] |
 
 ## Methods
 
@@ -23,18 +36,13 @@ Name | Type | Description | Notes
 
 `func NewImportAccountsRequest1() *ImportAccountsRequest1`
 
-NewImportAccountsRequest1 instantiates a new ImportAccountsRequest1 object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewImportAccountsRequest1 instantiates a new ImportAccountsRequest1 object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewImportAccountsRequest1WithDefaults
 
 `func NewImportAccountsRequest1WithDefaults() *ImportAccountsRequest1`
 
-NewImportAccountsRequest1WithDefaults instantiates a new ImportAccountsRequest1 object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewImportAccountsRequest1WithDefaults instantiates a new ImportAccountsRequest1 object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetDisableOptimization
 
@@ -46,8 +54,7 @@ GetDisableOptimization returns the DisableOptimization field if non-nil, zero va
 
 `func (o *ImportAccountsRequest1) GetDisableOptimizationOk() (*string, bool)`
 
-GetDisableOptimizationOk returns a tuple with the DisableOptimization field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisableOptimizationOk returns a tuple with the DisableOptimization field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisableOptimization
 
@@ -60,5 +67,3 @@ SetDisableOptimization sets DisableOptimization field to given value.
 `func (o *ImportAccountsRequest1) HasDisableOptimization() bool`
 
 HasDisableOptimization returns a boolean if a field has been set.
-
-

@@ -4,20 +4,33 @@ title: AccountStatusChangedStatusChange
 pagination_label: AccountStatusChangedStatusChange
 sidebar_label: AccountStatusChangedStatusChange
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccountStatusChangedStatusChange', 'BetaAccountStatusChangedStatusChange'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccountStatusChangedStatusChange',
+    'BetaAccountStatusChangedStatusChange',
+  ]
 slug: /tools/sdk/python/beta/models/account-status-changed-status-change
-tags: ['SDK', 'Software Development Kit', 'AccountStatusChangedStatusChange', 'BetaAccountStatusChangedStatusChange']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountStatusChangedStatusChange',
+    'BetaAccountStatusChangedStatusChange',
+  ]
 ---
 
 # AccountStatusChangedStatusChange
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**previous_status** |  **Enum** [  'enabled',    'disabled',    'locked' ] | the previous status of the account | [optional] 
-**new_status** |  **Enum** [  'enabled',    'disabled',    'locked' ] | the new status of the account | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **previous_status** | **Enum** [ 'enabled', 'disabled', 'locked' ] | the previous status of the account | [optional] |
+| **new_status** | **Enum** [ 'enabled', 'disabled', 'locked' ] | the new status of the account | [optional] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ new_status='enabled'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

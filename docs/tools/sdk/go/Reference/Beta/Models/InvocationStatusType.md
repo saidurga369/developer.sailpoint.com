@@ -4,18 +4,22 @@ title: InvocationStatusType
 pagination_label: InvocationStatusType
 sidebar_label: InvocationStatusType
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'InvocationStatusType', 'BetaInvocationStatusType'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'InvocationStatusType', 'BetaInvocationStatusType']
 slug: /tools/sdk/go/beta/models/invocation-status-type
-tags: ['SDK', 'Software Development Kit', 'InvocationStatusType', 'BetaInvocationStatusType']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'InvocationStatusType',
+    'BetaInvocationStatusType',
+  ]
 ---
 
 # InvocationStatusType
 
 ## Enum
 
+- `TEST` (value: `"TEST"`)
 
-* `TEST` (value: `"TEST"`)
-
-* `REAL_TIME` (value: `"REAL_TIME"`)
-
-
+- `REAL_TIME` (value: `"REAL_TIME"`)

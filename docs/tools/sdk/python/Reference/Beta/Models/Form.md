@@ -4,24 +4,24 @@ title: Form
 pagination_label: Form
 sidebar_label: Form
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'Form', 'BetaForm'] 
+keywords: ['python', 'Python', 'sdk', 'Form', 'BetaForm']
 slug: /tools/sdk/python/beta/models/form
 tags: ['SDK', 'Software Development Kit', 'Form', 'BetaForm']
 ---
 
 # Form
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | ID of the form | [optional] 
-**name** | **str** | Name of the form | [optional] 
-**title** | **str** | The form title | [optional] 
-**subtitle** | **str** | The form subtitle. | [optional] 
-**target_user** | **str** | The name of the user that should be shown this form | [optional] 
-**sections** | [**[]SectionDetails**](section-details) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | ID of the form | [optional] |
+| **name** | **str** | Name of the form | [optional] |
+| **title** | **str** | The form title | [optional] |
+| **subtitle** | **str** | The form subtitle. | [optional] |
+| **target_user** | **str** | The name of the user that should be shown this form | [optional] |
+| **sections** | [**[]SectionDetails**](section-details) |  | [optional] |
+
 }
 
 ## Example
@@ -41,5 +41,5 @@ sections=[
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,72 +4,69 @@ title: Segments
 pagination_label: Segments
 sidebar_label: Segments
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'Segments', 'V2025Segments'] 
+keywords: ['powershell', 'PowerShell', 'sdk', 'Segments', 'V2025Segments']
 slug: /tools/sdk/powershell/v2025/methods/segments
 tags: ['SDK', 'Software Development Kit', 'Segments', 'V2025Segments']
 ---
 
 # Segments
-  Use this API to implement and customize access request segment functionality. 
-With this functionality in place, administrators can create and manage access request segments. 
-Segments provide organizations with a way to make the access their users have even more granular - this can simply the access request process for the organization&#39;s users and improves security by reducing the risk of overprovisoning access. 
 
-Segments represent sets of identities, all grouped by specified identity attributes, who are only able to see and access the access items associated with their segments.
-For example, administrators could group all their organization&#39;s London office employees into one segment, &quot;London Office Employees,&quot; by their shared location. 
-The administrators could then define the access items the London employees would need, and the identities in the &quot;London Office Employees&quot; would then only be able to see and access those items.
+Use this API to implement and customize access request segment functionality. With this functionality in place, administrators can create and manage access request segments. Segments provide organizations with a way to make the access their users have even more granular - this can simply the access request process for the organization&#39;s users and improves security by reducing the risk of overprovisoning access.
 
-In Identity Security Cloud, administrators can use the &#39;Access&#39; drop-down menu and select &#39;Segments&#39; to reach the &#39;Access Requests Segments&#39; page. 
-This page lists all the existing access request segments, along with their statuses, enabled or disabled. 
-Administrators can use this page to create, edit, enable, disable, and delete segments. 
-To create a segment, an administrator must provide a name, define the identities grouped in the segment, and define the items the identities in the segment can access.
-These items can be access profiles, roles, or entitlements. 
+Segments represent sets of identities, all grouped by specified identity attributes, who are only able to see and access the access items associated with their segments. For example, administrators could group all their organization&#39;s London office employees into one segment, &quot;London Office Employees,&quot; by their shared location. The administrators could then define the access items the London employees would need, and the identities in the &quot;London Office Employees&quot; would then only be able to see and access those items.
 
-When administrators use the API to create and manage segments, they use a JSON expression in the &#x60;visibilityCriteria&#x60; object to define the segment&#39;s identities and access items. 
+In Identity Security Cloud, administrators can use the &#39;Access&#39; drop-down menu and select &#39;Segments&#39; to reach the &#39;Access Requests Segments&#39; page. This page lists all the existing access request segments, along with their statuses, enabled or disabled. Administrators can use this page to create, edit, enable, disable, and delete segments. To create a segment, an administrator must provide a name, define the identities grouped in the segment, and define the items the identities in the segment can access. These items can be access profiles, roles, or entitlements.
+
+When administrators use the API to create and manage segments, they use a JSON expression in the &#x60;visibilityCriteria&#x60; object to define the segment&#39;s identities and access items.
 
 Refer to [Managing Access Request Segments](https://documentation.sailpoint.com/saas/help/requests/segments.html) for more information about segments in Identity Security Cloud.
- 
-  
 
 All URIs are relative to *https://sailpoint.api.identitynow.com/v2025*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**New-V2025Segment**](#create-segment) | **POST** `/segments` | Create segment
-[**Remove-V2025Segment**](#delete-segment) | **DELETE** `/segments/{id}` | Delete segment by id
-[**Get-V2025Segment**](#get-segment) | **GET** `/segments/{id}` | Get segment by id
-[**Get-V2025Segments**](#list-segments) | **GET** `/segments` | List segments
-[**Update-V2025Segment**](#patch-segment) | **PATCH** `/segments/{id}` | Update segment
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**New-V2025Segment**](#create-segment) | **POST** `/segments` | Create segment |
+| [**Remove-V2025Segment**](#delete-segment) | **DELETE** `/segments/{id}` | Delete segment by id |
+| [**Get-V2025Segment**](#get-segment) | **GET** `/segments/{id}` | Get segment by id |
+| [**Get-V2025Segments**](#list-segments) | **GET** `/segments` | List segments |
+| [**Update-V2025Segment**](#patch-segment) | **PATCH** `/segments/{id}` | Update segment |
 
 ## create-segment
-This API creates a segment. 
->**Note:** Segment definitions may take time to propagate to all identities.
+
+This API creates a segment.
+
+> **Note:** Segment definitions may take time to propagate to all identities.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/create-segment)
 
-### Parameters 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
- Body  | Segment | [**Segment**](../models/segment) | True  | 
+### Parameters
+
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Body | Segment | [**Segment**](../models/segment) | True |
 
 ### Return type
+
 [**Segment**](../models/segment)
 
 ### Responses
-Code | Description  | Data Type
-------------- | ------------- | -------------
-201 | Segment created | Segment
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto
+
+| Code | Description | Data Type |
+| --- | --- | --- |
+| 201 | Segment created | Segment |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |
 
 ### HTTP request headers
+
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 ### Example
+
 ```powershell
 $Segment = @"{
   "owner" : {
@@ -100,140 +97,162 @@ $Segment = @"{
 
 try {
     $Result = ConvertFrom-JsonToSegment -Json $Segment
-    New-V2025Segment -Segment $Result 
-    
+    New-V2025Segment -Segment $Result
+
     # Below is a request that includes all optional parameters
-    # New-V2025Segment -Segment $Result  
+    # New-V2025Segment -Segment $Result
 } catch {
     Write-Host $_.Exception.Response.StatusCode.value__ "Exception occurred when calling New-V2025Segment"
     Write-Host $_.ErrorDetails
 }
 ```
-[[Back to top]](#) 
+
+[[Back to top]](#)
 
 ## delete-segment
+
 This API deletes the segment specified by the given ID.
->**Note:** that segment deletion may take some time to become effective.    
+
+> **Note:** that segment deletion may take some time to become effective.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/delete-segment)
 
-### Parameters 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | Id | **String** | True  | The segment ID to delete.
+### Parameters
+
+| Param Type | Name | Data Type  | Required | Description               |
+| ---------- | ---- | ---------- | -------- | ------------------------- |
+| Path       | Id   | **String** | True     | The segment ID to delete. |
 
 ### Return type
- (empty response body)
+
+(empty response body)
 
 ### Responses
-Code | Description  | Data Type
-------------- | ------------- | -------------
-204 | No content. | 
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto
+
+| Code | Description | Data Type |
+| --- | --- | --- |
+| 204 | No content. |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |
 
 ### HTTP request headers
+
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 ### Example
+
 ```powershell
 $Id = "ef38f94347e94562b5bb8424a56397d8" # String | The segment ID to delete.
 
 # Delete segment by id
 
 try {
-    Remove-V2025Segment -Id $Id 
-    
+    Remove-V2025Segment -Id $Id
+
     # Below is a request that includes all optional parameters
-    # Remove-V2025Segment -Id $Id  
+    # Remove-V2025Segment -Id $Id
 } catch {
     Write-Host $_.Exception.Response.StatusCode.value__ "Exception occurred when calling Remove-V2025Segment"
     Write-Host $_.ErrorDetails
 }
 ```
-[[Back to top]](#) 
+
+[[Back to top]](#)
 
 ## get-segment
+
 This API returns the segment specified by the given ID.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/get-segment)
 
-### Parameters 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | Id | **String** | True  | The segment ID to retrieve.
+### Parameters
+
+| Param Type | Name | Data Type  | Required | Description                 |
+| ---------- | ---- | ---------- | -------- | --------------------------- |
+| Path       | Id   | **String** | True     | The segment ID to retrieve. |
 
 ### Return type
+
 [**Segment**](../models/segment)
 
 ### Responses
-Code | Description  | Data Type
-------------- | ------------- | -------------
-200 | Segment | Segment
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto
+
+| Code | Description | Data Type |
+| --- | --- | --- |
+| 200 | Segment | Segment |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |
 
 ### HTTP request headers
+
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 ### Example
+
 ```powershell
 $Id = "ef38f94347e94562b5bb8424a56397d8" # String | The segment ID to retrieve.
 
 # Get segment by id
 
 try {
-    Get-V2025Segment -Id $Id 
-    
+    Get-V2025Segment -Id $Id
+
     # Below is a request that includes all optional parameters
-    # Get-V2025Segment -Id $Id  
+    # Get-V2025Segment -Id $Id
 } catch {
     Write-Host $_.Exception.Response.StatusCode.value__ "Exception occurred when calling Get-V2025Segment"
     Write-Host $_.ErrorDetails
 }
 ```
-[[Back to top]](#) 
+
+[[Back to top]](#)
 
 ## list-segments
-This API returns a list of all segments. 
+
+This API returns a list of all segments.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/list-segments)
 
-### Parameters 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-  Query | Limit | **Int32** |   (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | Offset | **Int32** |   (optional) (default to 0) | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | Count | **Boolean** |   (optional) (default to $false) | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
+### Parameters
+
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Query | Limit | **Int32** | (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | Offset | **Int32** | (optional) (default to 0) | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | Count | **Boolean** | (optional) (default to $false) | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
 
 ### Return type
+
 [**Segment[]**](../models/segment)
 
 ### Responses
-Code | Description  | Data Type
-------------- | ------------- | -------------
-200 | List of all segments | Segment[]
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto
+
+| Code | Description | Data Type |
+| --- | --- | --- |
+| 200 | List of all segments | Segment[] |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |
 
 ### HTTP request headers
+
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 ### Example
+
 ```powershell
 $Limit = 250 # Int32 | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 250)
 $Offset = 0 # Int32 | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 0)
@@ -242,65 +261,74 @@ $Count = $true # Boolean | If *true* it will populate the *X-Total-Count* respon
 # List segments
 
 try {
-    Get-V2025Segments 
-    
+    Get-V2025Segments
+
     # Below is a request that includes all optional parameters
-    # Get-V2025Segments -Limit $Limit -Offset $Offset -Count $Count  
+    # Get-V2025Segments -Limit $Limit -Offset $Offset -Count $Count
 } catch {
     Write-Host $_.Exception.Response.StatusCode.value__ "Exception occurred when calling Get-V2025Segments"
     Write-Host $_.ErrorDetails
 }
 ```
-[[Back to top]](#) 
+
+[[Back to top]](#)
 
 ## patch-segment
+
 Use this API to update segment fields by using the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard.
->**Note:** Changes to a segment may take some time to propagate to all identities.
+
+> **Note:** Changes to a segment may take some time to propagate to all identities.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/patch-segment)
 
-### Parameters 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | Id | **String** | True  | The segment ID to modify.
- Body  | RequestBody | [**[]SystemCollectionsHashtable**](https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0) | True  | A list of segment update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard.  The following fields are patchable: * name * description * owner * visibilityCriteria * active 
+### Parameters
+
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | Id | **String** | True | The segment ID to modify. |
+| Body | RequestBody | [**[]SystemCollectionsHashtable**](https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0) | True | A list of segment update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard. The following fields are patchable: _ name _ description _ owner _ visibilityCriteria \* active |
 
 ### Return type
+
 [**Segment**](../models/segment)
 
 ### Responses
-Code | Description  | Data Type
-------------- | ------------- | -------------
-200 | Indicates the PATCH operation succeeded, and returns the segment&#39;s new representation. | Segment
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto
+
+| Code | Description | Data Type |
+| --- | --- | --- |
+| 200 | Indicates the PATCH operation succeeded, and returns the segment&#39;s new representation. | Segment |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |
 
 ### HTTP request headers
+
 - **Content-Type**: application/json-patch+json
 - **Accept**: application/json
 
 ### Example
+
 ```powershell
 $Id = "ef38f94347e94562b5bb8424a56397d8" # String | The segment ID to modify.
-$RequestBody =  # SystemCollectionsHashtable[] | A list of segment update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard.  The following fields are patchable: * name * description * owner * visibilityCriteria * active 
- $RequestBody = @"[{op=replace, path=/visibilityCriteria, value={expression={operator=AND, children=[{operator=EQUALS, attribute=location, value={type=STRING, value=Philadelphia}}, {operator=EQUALS, attribute=department, value={type=STRING, value=HR}}]}}}]"@ # SystemCollectionsHashtable[] | A list of segment update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard.  The following fields are patchable: * name * description * owner * visibilityCriteria * active 
- 
+$RequestBody =  # SystemCollectionsHashtable[] | A list of segment update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard.  The following fields are patchable: * name * description * owner * visibilityCriteria * active
+ $RequestBody = @"[{op=replace, path=/visibilityCriteria, value={expression={operator=AND, children=[{operator=EQUALS, attribute=location, value={type=STRING, value=Philadelphia}}, {operator=EQUALS, attribute=department, value={type=STRING, value=HR}}]}}}]"@ # SystemCollectionsHashtable[] | A list of segment update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard.  The following fields are patchable: * name * description * owner * visibilityCriteria * active
+
 
 # Update segment
 
 try {
     $Result = ConvertFrom-JsonToRequestBody -Json $RequestBody
-    Update-V2025Segment -Id $Id -RequestBody $Result 
-    
+    Update-V2025Segment -Id $Id -RequestBody $Result
+
     # Below is a request that includes all optional parameters
-    # Update-V2025Segment -Id $Id -RequestBody $Result  
+    # Update-V2025Segment -Id $Id -RequestBody $Result
 } catch {
     Write-Host $_.Exception.Response.StatusCode.value__ "Exception occurred when calling Update-V2025Segment"
     Write-Host $_.ErrorDetails
 }
 ```
-[[Back to top]](#) 
+
+[[Back to top]](#)

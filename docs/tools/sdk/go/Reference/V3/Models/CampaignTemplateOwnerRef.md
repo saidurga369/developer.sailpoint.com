@@ -4,21 +4,34 @@ title: CampaignTemplateOwnerRef
 pagination_label: CampaignTemplateOwnerRef
 sidebar_label: CampaignTemplateOwnerRef
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'CampaignTemplateOwnerRef', 'CampaignTemplateOwnerRef'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'CampaignTemplateOwnerRef',
+    'CampaignTemplateOwnerRef',
+  ]
 slug: /tools/sdk/go/v3/models/campaign-template-owner-ref
-tags: ['SDK', 'Software Development Kit', 'CampaignTemplateOwnerRef', 'CampaignTemplateOwnerRef']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CampaignTemplateOwnerRef',
+    'CampaignTemplateOwnerRef',
+  ]
 ---
 
 # CampaignTemplateOwnerRef
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Id of the owner | [optional] 
-**Type** | Pointer to **string** | Type of the owner | [optional] 
-**Name** | Pointer to **string** | Name of the owner | [optional] 
-**Email** | Pointer to **string** | Email of the owner | [optional] 
+| Name      | Type                  | Description        | Notes      |
+| --------- | --------------------- | ------------------ | ---------- |
+| **Id**    | Pointer to **string** | Id of the owner    | [optional] |
+| **Type**  | Pointer to **string** | Type of the owner  | [optional] |
+| **Name**  | Pointer to **string** | Name of the owner  | [optional] |
+| **Email** | Pointer to **string** | Email of the owner | [optional] |
 
 ## Methods
 
@@ -26,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewCampaignTemplateOwnerRef() *CampaignTemplateOwnerRef`
 
-NewCampaignTemplateOwnerRef instantiates a new CampaignTemplateOwnerRef object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewCampaignTemplateOwnerRef instantiates a new CampaignTemplateOwnerRef object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewCampaignTemplateOwnerRefWithDefaults
 
 `func NewCampaignTemplateOwnerRefWithDefaults() *CampaignTemplateOwnerRef`
 
-NewCampaignTemplateOwnerRefWithDefaults instantiates a new CampaignTemplateOwnerRef object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewCampaignTemplateOwnerRefWithDefaults instantiates a new CampaignTemplateOwnerRef object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -49,8 +57,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *CampaignTemplateOwnerRef) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -74,8 +81,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *CampaignTemplateOwnerRef) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -99,8 +105,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *CampaignTemplateOwnerRef) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -124,8 +129,7 @@ GetEmail returns the Email field if non-nil, zero value otherwise.
 
 `func (o *CampaignTemplateOwnerRef) GetEmailOk() (*string, bool)`
 
-GetEmailOk returns a tuple with the Email field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEmailOk returns a tuple with the Email field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEmail
 
@@ -138,5 +142,3 @@ SetEmail sets Email field to given value.
 `func (o *CampaignTemplateOwnerRef) HasEmail() bool`
 
 HasEmail returns a boolean if a field has been set.
-
-

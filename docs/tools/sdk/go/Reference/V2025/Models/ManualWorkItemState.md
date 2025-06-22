@@ -4,26 +4,30 @@ title: ManualWorkItemState
 pagination_label: ManualWorkItemState
 sidebar_label: ManualWorkItemState
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ManualWorkItemState', 'V2025ManualWorkItemState'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'ManualWorkItemState', 'V2025ManualWorkItemState']
 slug: /tools/sdk/go/v2025/models/manual-work-item-state
-tags: ['SDK', 'Software Development Kit', 'ManualWorkItemState', 'V2025ManualWorkItemState']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ManualWorkItemState',
+    'V2025ManualWorkItemState',
+  ]
 ---
 
 # ManualWorkItemState
 
 ## Enum
 
+- `PENDING` (value: `"PENDING"`)
 
-* `PENDING` (value: `"PENDING"`)
+- `APPROVED` (value: `"APPROVED"`)
 
-* `APPROVED` (value: `"APPROVED"`)
+- `REJECTED` (value: `"REJECTED"`)
 
-* `REJECTED` (value: `"REJECTED"`)
+- `EXPIRED` (value: `"EXPIRED"`)
 
-* `EXPIRED` (value: `"EXPIRED"`)
+- `CANCELLED` (value: `"CANCELLED"`)
 
-* `CANCELLED` (value: `"CANCELLED"`)
-
-* `ARCHIVED` (value: `"ARCHIVED"`)
-
-
+- `ARCHIVED` (value: `"ARCHIVED"`)

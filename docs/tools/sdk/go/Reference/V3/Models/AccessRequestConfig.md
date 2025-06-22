@@ -4,23 +4,29 @@ title: AccessRequestConfig
 pagination_label: AccessRequestConfig
 sidebar_label: AccessRequestConfig
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessRequestConfig', 'AccessRequestConfig'] 
+keywords: ['go', 'Golang', 'sdk', 'AccessRequestConfig', 'AccessRequestConfig']
 slug: /tools/sdk/go/v3/models/access-request-config
-tags: ['SDK', 'Software Development Kit', 'AccessRequestConfig', 'AccessRequestConfig']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessRequestConfig',
+    'AccessRequestConfig',
+  ]
 ---
 
 # AccessRequestConfig
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ApprovalsMustBeExternal** | Pointer to **bool** | If this is true, approvals must be processed by an external system. Also, if this is true, it blocks Request Center access requests and returns an error for any user who isn't an org admin. | [optional] [default to false]
-**AutoApprovalEnabled** | Pointer to **bool** | If this is true and the requester and reviewer are the same, the request is automatically approved. | [optional] [default to false]
-**ReauthorizationEnabled** | Pointer to **bool** | If this is true, reauthorization will be enforced for appropriately configured access items. Enablement of this feature is currently in a limited state. | [optional] [default to false]
-**RequestOnBehalfOfConfig** | Pointer to [**RequestOnBehalfOfConfig**](request-on-behalf-of-config) |  | [optional] 
-**ApprovalReminderAndEscalationConfig** | Pointer to [**ApprovalReminderAndEscalationConfig**](approval-reminder-and-escalation-config) |  | [optional] 
-**EntitlementRequestConfig** | Pointer to [**EntitlementRequestConfig**](entitlement-request-config) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ApprovalsMustBeExternal** | Pointer to **bool** | If this is true, approvals must be processed by an external system. Also, if this is true, it blocks Request Center access requests and returns an error for any user who isn't an org admin. | [optional] [default to false] |
+| **AutoApprovalEnabled** | Pointer to **bool** | If this is true and the requester and reviewer are the same, the request is automatically approved. | [optional] [default to false] |
+| **ReauthorizationEnabled** | Pointer to **bool** | If this is true, reauthorization will be enforced for appropriately configured access items. Enablement of this feature is currently in a limited state. | [optional] [default to false] |
+| **RequestOnBehalfOfConfig** | Pointer to [**RequestOnBehalfOfConfig**](request-on-behalf-of-config) |  | [optional] |
+| **ApprovalReminderAndEscalationConfig** | Pointer to [**ApprovalReminderAndEscalationConfig**](approval-reminder-and-escalation-config) |  | [optional] |
+| **EntitlementRequestConfig** | Pointer to [**EntitlementRequestConfig**](entitlement-request-config) |  | [optional] |
 
 ## Methods
 
@@ -28,18 +34,13 @@ Name | Type | Description | Notes
 
 `func NewAccessRequestConfig() *AccessRequestConfig`
 
-NewAccessRequestConfig instantiates a new AccessRequestConfig object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessRequestConfig instantiates a new AccessRequestConfig object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessRequestConfigWithDefaults
 
 `func NewAccessRequestConfigWithDefaults() *AccessRequestConfig`
 
-NewAccessRequestConfigWithDefaults instantiates a new AccessRequestConfig object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessRequestConfigWithDefaults instantiates a new AccessRequestConfig object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetApprovalsMustBeExternal
 
@@ -51,8 +52,7 @@ GetApprovalsMustBeExternal returns the ApprovalsMustBeExternal field if non-nil,
 
 `func (o *AccessRequestConfig) GetApprovalsMustBeExternalOk() (*bool, bool)`
 
-GetApprovalsMustBeExternalOk returns a tuple with the ApprovalsMustBeExternal field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApprovalsMustBeExternalOk returns a tuple with the ApprovalsMustBeExternal field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApprovalsMustBeExternal
 
@@ -76,8 +76,7 @@ GetAutoApprovalEnabled returns the AutoApprovalEnabled field if non-nil, zero va
 
 `func (o *AccessRequestConfig) GetAutoApprovalEnabledOk() (*bool, bool)`
 
-GetAutoApprovalEnabledOk returns a tuple with the AutoApprovalEnabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAutoApprovalEnabledOk returns a tuple with the AutoApprovalEnabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAutoApprovalEnabled
 
@@ -101,8 +100,7 @@ GetReauthorizationEnabled returns the ReauthorizationEnabled field if non-nil, z
 
 `func (o *AccessRequestConfig) GetReauthorizationEnabledOk() (*bool, bool)`
 
-GetReauthorizationEnabledOk returns a tuple with the ReauthorizationEnabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReauthorizationEnabledOk returns a tuple with the ReauthorizationEnabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReauthorizationEnabled
 
@@ -126,8 +124,7 @@ GetRequestOnBehalfOfConfig returns the RequestOnBehalfOfConfig field if non-nil,
 
 `func (o *AccessRequestConfig) GetRequestOnBehalfOfConfigOk() (*RequestOnBehalfOfConfig, bool)`
 
-GetRequestOnBehalfOfConfigOk returns a tuple with the RequestOnBehalfOfConfig field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestOnBehalfOfConfigOk returns a tuple with the RequestOnBehalfOfConfig field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequestOnBehalfOfConfig
 
@@ -151,8 +148,7 @@ GetApprovalReminderAndEscalationConfig returns the ApprovalReminderAndEscalation
 
 `func (o *AccessRequestConfig) GetApprovalReminderAndEscalationConfigOk() (*ApprovalReminderAndEscalationConfig, bool)`
 
-GetApprovalReminderAndEscalationConfigOk returns a tuple with the ApprovalReminderAndEscalationConfig field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApprovalReminderAndEscalationConfigOk returns a tuple with the ApprovalReminderAndEscalationConfig field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApprovalReminderAndEscalationConfig
 
@@ -176,8 +172,7 @@ GetEntitlementRequestConfig returns the EntitlementRequestConfig field if non-ni
 
 `func (o *AccessRequestConfig) GetEntitlementRequestConfigOk() (*EntitlementRequestConfig, bool)`
 
-GetEntitlementRequestConfigOk returns a tuple with the EntitlementRequestConfig field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEntitlementRequestConfigOk returns a tuple with the EntitlementRequestConfig field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEntitlementRequestConfig
 
@@ -190,5 +185,3 @@ SetEntitlementRequestConfig sets EntitlementRequestConfig field to given value.
 `func (o *AccessRequestConfig) HasEntitlementRequestConfig() bool`
 
 HasEntitlementRequestConfig returns a boolean if a field has been set.
-
-

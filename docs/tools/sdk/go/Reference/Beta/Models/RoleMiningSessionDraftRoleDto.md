@@ -4,27 +4,40 @@ title: RoleMiningSessionDraftRoleDto
 pagination_label: RoleMiningSessionDraftRoleDto
 sidebar_label: RoleMiningSessionDraftRoleDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleMiningSessionDraftRoleDto', 'BetaRoleMiningSessionDraftRoleDto'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'RoleMiningSessionDraftRoleDto',
+    'BetaRoleMiningSessionDraftRoleDto',
+  ]
 slug: /tools/sdk/go/beta/models/role-mining-session-draft-role-dto
-tags: ['SDK', 'Software Development Kit', 'RoleMiningSessionDraftRoleDto', 'BetaRoleMiningSessionDraftRoleDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningSessionDraftRoleDto',
+    'BetaRoleMiningSessionDraftRoleDto',
+  ]
 ---
 
 # RoleMiningSessionDraftRoleDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | Pointer to **string** | Name of the draft role | [optional] 
-**Description** | Pointer to **string** | Draft role description | [optional] 
-**IdentityIds** | Pointer to **[]string** | The list of identities for this role mining session. | [optional] 
-**EntitlementIds** | Pointer to **[]string** | The list of entitlement ids for this role mining session. | [optional] 
-**ExcludedEntitlements** | Pointer to **[]string** | The list of excluded entitlement ids. | [optional] 
-**Modified** | Pointer to **SailPointTime** | Last modified date | [optional] 
-**Type** | Pointer to [**RoleMiningRoleType**](role-mining-role-type) |  | [optional] 
-**Id** | Pointer to **string** | Id of the potential draft role | [optional] 
-**CreatedDate** | Pointer to **SailPointTime** | The date-time when this potential draft role was created. | [optional] 
-**ModifiedDate** | Pointer to **SailPointTime** | The date-time when this potential draft role was modified. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | Pointer to **string** | Name of the draft role | [optional] |
+| **Description** | Pointer to **string** | Draft role description | [optional] |
+| **IdentityIds** | Pointer to **[]string** | The list of identities for this role mining session. | [optional] |
+| **EntitlementIds** | Pointer to **[]string** | The list of entitlement ids for this role mining session. | [optional] |
+| **ExcludedEntitlements** | Pointer to **[]string** | The list of excluded entitlement ids. | [optional] |
+| **Modified** | Pointer to **SailPointTime** | Last modified date | [optional] |
+| **Type** | Pointer to [**RoleMiningRoleType**](role-mining-role-type) |  | [optional] |
+| **Id** | Pointer to **string** | Id of the potential draft role | [optional] |
+| **CreatedDate** | Pointer to **SailPointTime** | The date-time when this potential draft role was created. | [optional] |
+| **ModifiedDate** | Pointer to **SailPointTime** | The date-time when this potential draft role was modified. | [optional] |
 
 ## Methods
 
@@ -32,18 +45,13 @@ Name | Type | Description | Notes
 
 `func NewRoleMiningSessionDraftRoleDto() *RoleMiningSessionDraftRoleDto`
 
-NewRoleMiningSessionDraftRoleDto instantiates a new RoleMiningSessionDraftRoleDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleMiningSessionDraftRoleDto instantiates a new RoleMiningSessionDraftRoleDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleMiningSessionDraftRoleDtoWithDefaults
 
 `func NewRoleMiningSessionDraftRoleDtoWithDefaults() *RoleMiningSessionDraftRoleDto`
 
-NewRoleMiningSessionDraftRoleDtoWithDefaults instantiates a new RoleMiningSessionDraftRoleDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleMiningSessionDraftRoleDtoWithDefaults instantiates a new RoleMiningSessionDraftRoleDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -55,8 +63,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningSessionDraftRoleDto) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -80,8 +87,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningSessionDraftRoleDto) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -105,8 +111,7 @@ GetIdentityIds returns the IdentityIds field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningSessionDraftRoleDto) GetIdentityIdsOk() (*[]string, bool)`
 
-GetIdentityIdsOk returns a tuple with the IdentityIds field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityIdsOk returns a tuple with the IdentityIds field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityIds
 
@@ -130,8 +135,7 @@ GetEntitlementIds returns the EntitlementIds field if non-nil, zero value otherw
 
 `func (o *RoleMiningSessionDraftRoleDto) GetEntitlementIdsOk() (*[]string, bool)`
 
-GetEntitlementIdsOk returns a tuple with the EntitlementIds field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEntitlementIdsOk returns a tuple with the EntitlementIds field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEntitlementIds
 
@@ -155,8 +159,7 @@ GetExcludedEntitlements returns the ExcludedEntitlements field if non-nil, zero 
 
 `func (o *RoleMiningSessionDraftRoleDto) GetExcludedEntitlementsOk() (*[]string, bool)`
 
-GetExcludedEntitlementsOk returns a tuple with the ExcludedEntitlements field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetExcludedEntitlementsOk returns a tuple with the ExcludedEntitlements field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetExcludedEntitlements
 
@@ -180,8 +183,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningSessionDraftRoleDto) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -205,8 +207,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningSessionDraftRoleDto) GetTypeOk() (*RoleMiningRoleType, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -230,8 +231,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningSessionDraftRoleDto) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -255,8 +255,7 @@ GetCreatedDate returns the CreatedDate field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningSessionDraftRoleDto) GetCreatedDateOk() (*SailPointTime, bool)`
 
-GetCreatedDateOk returns a tuple with the CreatedDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedDateOk returns a tuple with the CreatedDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreatedDate
 
@@ -280,8 +279,7 @@ GetModifiedDate returns the ModifiedDate field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningSessionDraftRoleDto) GetModifiedDateOk() (*SailPointTime, bool)`
 
-GetModifiedDateOk returns a tuple with the ModifiedDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedDateOk returns a tuple with the ModifiedDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModifiedDate
 
@@ -294,5 +292,3 @@ SetModifiedDate sets ModifiedDate field to given value.
 `func (o *RoleMiningSessionDraftRoleDto) HasModifiedDate() bool`
 
 HasModifiedDate returns a boolean if a field has been set.
-
-

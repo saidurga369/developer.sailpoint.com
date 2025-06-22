@@ -4,22 +4,35 @@ title: MultiHostIntegrationsAccountsFile
 pagination_label: MultiHostIntegrationsAccountsFile
 sidebar_label: MultiHostIntegrationsAccountsFile
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'MultiHostIntegrationsAccountsFile', 'V2025MultiHostIntegrationsAccountsFile'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'MultiHostIntegrationsAccountsFile',
+    'V2025MultiHostIntegrationsAccountsFile',
+  ]
 slug: /tools/sdk/go/v2025/models/multi-host-integrations-accounts-file
-tags: ['SDK', 'Software Development Kit', 'MultiHostIntegrationsAccountsFile', 'V2025MultiHostIntegrationsAccountsFile']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'MultiHostIntegrationsAccountsFile',
+    'V2025MultiHostIntegrationsAccountsFile',
+  ]
 ---
 
 # MultiHostIntegrationsAccountsFile
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | Pointer to **string** | Name of the accounts file. | [optional] 
-**Key** | Pointer to **string** | The accounts file key. | [optional] 
-**UploadTime** | Pointer to **SailPointTime** | Date-time when the file was uploaded | [optional] 
-**Expiry** | Pointer to **SailPointTime** | Date-time when the accounts file expired. | [optional] 
-**Expired** | Pointer to **bool** | If this is true, it indicates that the accounts file has expired. | [optional] [default to false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | Pointer to **string** | Name of the accounts file. | [optional] |
+| **Key** | Pointer to **string** | The accounts file key. | [optional] |
+| **UploadTime** | Pointer to **SailPointTime** | Date-time when the file was uploaded | [optional] |
+| **Expiry** | Pointer to **SailPointTime** | Date-time when the accounts file expired. | [optional] |
+| **Expired** | Pointer to **bool** | If this is true, it indicates that the accounts file has expired. | [optional] [default to false] |
 
 ## Methods
 
@@ -27,18 +40,13 @@ Name | Type | Description | Notes
 
 `func NewMultiHostIntegrationsAccountsFile() *MultiHostIntegrationsAccountsFile`
 
-NewMultiHostIntegrationsAccountsFile instantiates a new MultiHostIntegrationsAccountsFile object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewMultiHostIntegrationsAccountsFile instantiates a new MultiHostIntegrationsAccountsFile object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewMultiHostIntegrationsAccountsFileWithDefaults
 
 `func NewMultiHostIntegrationsAccountsFileWithDefaults() *MultiHostIntegrationsAccountsFile`
 
-NewMultiHostIntegrationsAccountsFileWithDefaults instantiates a new MultiHostIntegrationsAccountsFile object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewMultiHostIntegrationsAccountsFileWithDefaults instantiates a new MultiHostIntegrationsAccountsFile object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -50,8 +58,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *MultiHostIntegrationsAccountsFile) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -75,8 +82,7 @@ GetKey returns the Key field if non-nil, zero value otherwise.
 
 `func (o *MultiHostIntegrationsAccountsFile) GetKeyOk() (*string, bool)`
 
-GetKeyOk returns a tuple with the Key field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetKeyOk returns a tuple with the Key field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetKey
 
@@ -100,8 +106,7 @@ GetUploadTime returns the UploadTime field if non-nil, zero value otherwise.
 
 `func (o *MultiHostIntegrationsAccountsFile) GetUploadTimeOk() (*SailPointTime, bool)`
 
-GetUploadTimeOk returns a tuple with the UploadTime field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUploadTimeOk returns a tuple with the UploadTime field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUploadTime
 
@@ -125,8 +130,7 @@ GetExpiry returns the Expiry field if non-nil, zero value otherwise.
 
 `func (o *MultiHostIntegrationsAccountsFile) GetExpiryOk() (*SailPointTime, bool)`
 
-GetExpiryOk returns a tuple with the Expiry field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetExpiryOk returns a tuple with the Expiry field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetExpiry
 
@@ -150,8 +154,7 @@ GetExpired returns the Expired field if non-nil, zero value otherwise.
 
 `func (o *MultiHostIntegrationsAccountsFile) GetExpiredOk() (*bool, bool)`
 
-GetExpiredOk returns a tuple with the Expired field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetExpiredOk returns a tuple with the Expired field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetExpired
 
@@ -164,5 +167,3 @@ SetExpired sets Expired field to given value.
 `func (o *MultiHostIntegrationsAccountsFile) HasExpired() bool`
 
 HasExpired returns a boolean if a field has been set.
-
-

@@ -4,27 +4,40 @@ title: MachineClassificationConfig
 pagination_label: MachineClassificationConfig
 sidebar_label: MachineClassificationConfig
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'MachineClassificationConfig', 'V2025MachineClassificationConfig'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'MachineClassificationConfig',
+    'V2025MachineClassificationConfig',
+  ]
 slug: /tools/sdk/powershell/v2025/models/machine-classification-config
-tags: ['SDK', 'Software Development Kit', 'MachineClassificationConfig', 'V2025MachineClassificationConfig']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'MachineClassificationConfig',
+    'V2025MachineClassificationConfig',
+  ]
 ---
-
 
 # MachineClassificationConfig
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Enabled** | **Boolean** | Indicates if the Classification is enabled for a Source | [optional] [default to $false]
-**ClassificationMethod** |  **Enum** [  "SOURCE" ] | Classification Method | [optional] 
-**Criteria** | **String** | A classification criteria object | [optional] 
-**Created** | **System.DateTime** | Time when the config was created | [optional] 
-**Modified** | **System.DateTime** | Time when the config was last updated | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Enabled** | **Boolean** | Indicates if the Classification is enabled for a Source | [optional] [default to $false] |
+| **ClassificationMethod** | **Enum** [ "SOURCE" ] | Classification Method | [optional] |
+| **Criteria** | **String** | A classification criteria object | [optional] |
+| **Created** | **System.DateTime** | Time when the config was created | [optional] |
+| **Modified** | **System.DateTime** | Time when the config was last updated | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $MachineClassificationConfig = Initialize-V2025MachineClassificationConfig  -Enabled true `
  -ClassificationMethod SOURCE `
@@ -34,10 +47,9 @@ $MachineClassificationConfig = Initialize-V2025MachineClassificationConfig  -Ena
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $MachineClassificationConfig | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

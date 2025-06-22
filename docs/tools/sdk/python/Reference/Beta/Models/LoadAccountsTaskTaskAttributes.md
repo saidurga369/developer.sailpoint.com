@@ -4,9 +4,22 @@ title: LoadAccountsTaskTaskAttributes
 pagination_label: LoadAccountsTaskTaskAttributes
 sidebar_label: LoadAccountsTaskTaskAttributes
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'LoadAccountsTaskTaskAttributes', 'BetaLoadAccountsTaskTaskAttributes'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'LoadAccountsTaskTaskAttributes',
+    'BetaLoadAccountsTaskTaskAttributes',
+  ]
 slug: /tools/sdk/python/beta/models/load-accounts-task-task-attributes
-tags: ['SDK', 'Software Development Kit', 'LoadAccountsTaskTaskAttributes', 'BetaLoadAccountsTaskTaskAttributes']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'LoadAccountsTaskTaskAttributes',
+    'BetaLoadAccountsTaskTaskAttributes',
+  ]
 ---
 
 # LoadAccountsTaskTaskAttributes
@@ -15,10 +28,11 @@ Extra attributes map(dictionary) for the task.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**app_id** | **str** | The id of the source | [optional] 
-**optimized_aggregation** | **str** | The indicator if the aggregation process was enabled/disabled for the aggregation job | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **app_id** | **str** | The id of the source | [optional] |
+| **optimized_aggregation** | **str** | The indicator if the aggregation process was enabled/disabled for the aggregation job | [optional] |
+
 }
 
 ## Example
@@ -32,5 +46,5 @@ optimized_aggregation='enabled'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

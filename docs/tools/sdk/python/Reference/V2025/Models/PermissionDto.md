@@ -4,7 +4,7 @@ title: PermissionDto
 pagination_label: PermissionDto
 sidebar_label: PermissionDto
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'PermissionDto', 'V2025PermissionDto'] 
+keywords: ['python', 'Python', 'sdk', 'PermissionDto', 'V2025PermissionDto']
 slug: /tools/sdk/python/v2025/models/permission-dto
 tags: ['SDK', 'Software Development Kit', 'PermissionDto', 'V2025PermissionDto']
 ---
@@ -15,10 +15,11 @@ Simplified DTO for the Permission objects stored in SailPoint's database. The da
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**rights** | **[]str** | All the rights (e.g. actions) that this permission allows on the target | [optional] [readonly] 
-**target** | **str** | The target the permission would grants rights on. | [optional] [readonly] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **rights** | **[]str** | All the rights (e.g. actions) that this permission allows on the target | [optional] [readonly] |
+| **target** | **str** | The target the permission would grants rights on. | [optional] [readonly] |
+
 }
 
 ## Example
@@ -32,5 +33,5 @@ target='SYS.GV_$TRANSACTION'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,19 +4,32 @@ title: ListFormInstancesByTenantResponse
 pagination_label: ListFormInstancesByTenantResponse
 sidebar_label: ListFormInstancesByTenantResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ListFormInstancesByTenantResponse', 'V2025ListFormInstancesByTenantResponse'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ListFormInstancesByTenantResponse',
+    'V2025ListFormInstancesByTenantResponse',
+  ]
 slug: /tools/sdk/go/v2025/models/list-form-instances-by-tenant-response
-tags: ['SDK', 'Software Development Kit', 'ListFormInstancesByTenantResponse', 'V2025ListFormInstancesByTenantResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ListFormInstancesByTenantResponse',
+    'V2025ListFormInstancesByTenantResponse',
+  ]
 ---
 
 # ListFormInstancesByTenantResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Count** | Pointer to **int64** | Count number of Results | [optional] 
-**Results** | Pointer to [**[]FormInstanceResponse**](form-instance-response) | Results holds a list of FormInstanceResponse items | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Count** | Pointer to **int64** | Count number of Results | [optional] |
+| **Results** | Pointer to [**[]FormInstanceResponse**](form-instance-response) | Results holds a list of FormInstanceResponse items | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewListFormInstancesByTenantResponse() *ListFormInstancesByTenantResponse`
 
-NewListFormInstancesByTenantResponse instantiates a new ListFormInstancesByTenantResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewListFormInstancesByTenantResponse instantiates a new ListFormInstancesByTenantResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewListFormInstancesByTenantResponseWithDefaults
 
 `func NewListFormInstancesByTenantResponseWithDefaults() *ListFormInstancesByTenantResponse`
 
-NewListFormInstancesByTenantResponseWithDefaults instantiates a new ListFormInstancesByTenantResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewListFormInstancesByTenantResponseWithDefaults instantiates a new ListFormInstancesByTenantResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetCount
 
@@ -47,8 +55,7 @@ GetCount returns the Count field if non-nil, zero value otherwise.
 
 `func (o *ListFormInstancesByTenantResponse) GetCountOk() (*int64, bool)`
 
-GetCountOk returns a tuple with the Count field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCountOk returns a tuple with the Count field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCount
 
@@ -72,8 +79,7 @@ GetResults returns the Results field if non-nil, zero value otherwise.
 
 `func (o *ListFormInstancesByTenantResponse) GetResultsOk() (*[]FormInstanceResponse, bool)`
 
-GetResultsOk returns a tuple with the Results field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetResultsOk returns a tuple with the Results field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetResults
 
@@ -86,5 +92,3 @@ SetResults sets Results field to given value.
 `func (o *ListFormInstancesByTenantResponse) HasResults() bool`
 
 HasResults returns a boolean if a field has been set.
-
-

@@ -4,20 +4,33 @@ title: AccessItemRequestedForDto1
 pagination_label: AccessItemRequestedForDto1
 sidebar_label: AccessItemRequestedForDto1
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessItemRequestedForDto1', 'BetaAccessItemRequestedForDto1'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'AccessItemRequestedForDto1',
+    'BetaAccessItemRequestedForDto1',
+  ]
 slug: /tools/sdk/go/beta/models/access-item-requested-for-dto1
-tags: ['SDK', 'Software Development Kit', 'AccessItemRequestedForDto1', 'BetaAccessItemRequestedForDto1']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessItemRequestedForDto1',
+    'BetaAccessItemRequestedForDto1',
+  ]
 ---
 
 # AccessItemRequestedForDto1
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | DTO type of the identity whom the access item is requested for. | [optional] 
-**Id** | Pointer to **string** | ID of the identity whom the access item is requested for. | [optional] 
-**Name** | Pointer to **string** | Name of the identity whom the access item is requested for. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to **string** | DTO type of the identity whom the access item is requested for. | [optional] |
+| **Id** | Pointer to **string** | ID of the identity whom the access item is requested for. | [optional] |
+| **Name** | Pointer to **string** | Name of the identity whom the access item is requested for. | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewAccessItemRequestedForDto1() *AccessItemRequestedForDto1`
 
-NewAccessItemRequestedForDto1 instantiates a new AccessItemRequestedForDto1 object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessItemRequestedForDto1 instantiates a new AccessItemRequestedForDto1 object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessItemRequestedForDto1WithDefaults
 
 `func NewAccessItemRequestedForDto1WithDefaults() *AccessItemRequestedForDto1`
 
-NewAccessItemRequestedForDto1WithDefaults instantiates a new AccessItemRequestedForDto1 object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessItemRequestedForDto1WithDefaults instantiates a new AccessItemRequestedForDto1 object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -48,8 +56,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *AccessItemRequestedForDto1) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -73,8 +80,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *AccessItemRequestedForDto1) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -98,8 +104,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *AccessItemRequestedForDto1) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -112,5 +117,3 @@ SetName sets Name field to given value.
 `func (o *AccessItemRequestedForDto1) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

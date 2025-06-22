@@ -4,7 +4,7 @@ title: FormCondition
 pagination_label: FormCondition
 sidebar_label: FormCondition
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'FormCondition', 'V2025FormCondition'] 
+keywords: ['go', 'Golang', 'sdk', 'FormCondition', 'V2025FormCondition']
 slug: /tools/sdk/go/v2025/models/form-condition
 tags: ['SDK', 'Software Development Kit', 'FormCondition', 'V2025FormCondition']
 ---
@@ -13,11 +13,11 @@ tags: ['SDK', 'Software Development Kit', 'FormCondition', 'V2025FormCondition']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**RuleOperator** | Pointer to **string** | ConditionRuleLogicalOperatorType value. AND ConditionRuleLogicalOperatorTypeAnd OR ConditionRuleLogicalOperatorTypeOr | [optional] 
-**Rules** | Pointer to [**[]ConditionRule**](condition-rule) | List of rules. | [optional] 
-**Effects** | Pointer to [**[]ConditionEffect**](condition-effect) | List of effects. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **RuleOperator** | Pointer to **string** | ConditionRuleLogicalOperatorType value. AND ConditionRuleLogicalOperatorTypeAnd OR ConditionRuleLogicalOperatorTypeOr | [optional] |
+| **Rules** | Pointer to [**[]ConditionRule**](condition-rule) | List of rules. | [optional] |
+| **Effects** | Pointer to [**[]ConditionEffect**](condition-effect) | List of effects. | [optional] |
 
 ## Methods
 
@@ -25,18 +25,13 @@ Name | Type | Description | Notes
 
 `func NewFormCondition() *FormCondition`
 
-NewFormCondition instantiates a new FormCondition object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewFormCondition instantiates a new FormCondition object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewFormConditionWithDefaults
 
 `func NewFormConditionWithDefaults() *FormCondition`
 
-NewFormConditionWithDefaults instantiates a new FormCondition object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewFormConditionWithDefaults instantiates a new FormCondition object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetRuleOperator
 
@@ -48,8 +43,7 @@ GetRuleOperator returns the RuleOperator field if non-nil, zero value otherwise.
 
 `func (o *FormCondition) GetRuleOperatorOk() (*string, bool)`
 
-GetRuleOperatorOk returns a tuple with the RuleOperator field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRuleOperatorOk returns a tuple with the RuleOperator field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRuleOperator
 
@@ -73,8 +67,7 @@ GetRules returns the Rules field if non-nil, zero value otherwise.
 
 `func (o *FormCondition) GetRulesOk() (*[]ConditionRule, bool)`
 
-GetRulesOk returns a tuple with the Rules field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRulesOk returns a tuple with the Rules field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRules
 
@@ -98,8 +91,7 @@ GetEffects returns the Effects field if non-nil, zero value otherwise.
 
 `func (o *FormCondition) GetEffectsOk() (*[]ConditionEffect, bool)`
 
-GetEffectsOk returns a tuple with the Effects field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEffectsOk returns a tuple with the Effects field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEffects
 
@@ -112,5 +104,3 @@ SetEffects sets Effects field to given value.
 `func (o *FormCondition) HasEffects() bool`
 
 HasEffects returns a boolean if a field has been set.
-
-

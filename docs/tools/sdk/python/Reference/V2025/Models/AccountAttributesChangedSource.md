@@ -4,9 +4,22 @@ title: AccountAttributesChangedSource
 pagination_label: AccountAttributesChangedSource
 sidebar_label: AccountAttributesChangedSource
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccountAttributesChangedSource', 'V2025AccountAttributesChangedSource'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccountAttributesChangedSource',
+    'V2025AccountAttributesChangedSource',
+  ]
 slug: /tools/sdk/python/v2025/models/account-attributes-changed-source
-tags: ['SDK', 'Software Development Kit', 'AccountAttributesChangedSource', 'V2025AccountAttributesChangedSource']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountAttributesChangedSource',
+    'V2025AccountAttributesChangedSource',
+  ]
 ---
 
 # AccountAttributesChangedSource
@@ -15,11 +28,12 @@ The source that contains the account.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | ID of the object to which this reference applies | [required]
-**type** |  **Enum** [  'SOURCE' ] | The type of object that is referenced | [required]
-**name** | **str** | Human-readable display name of the object to which this reference applies | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | ID of the object to which this reference applies | [required] |
+| **type** | **Enum** [ 'SOURCE' ] | The type of object that is referenced | [required] |
+| **name** | **str** | Human-readable display name of the object to which this reference applies | [required] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Corporate Active Directory'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

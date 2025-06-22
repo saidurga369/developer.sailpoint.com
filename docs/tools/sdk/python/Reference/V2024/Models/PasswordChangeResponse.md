@@ -4,20 +4,33 @@ title: PasswordChangeResponse
 pagination_label: PasswordChangeResponse
 sidebar_label: PasswordChangeResponse
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'PasswordChangeResponse', 'V2024PasswordChangeResponse'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'PasswordChangeResponse',
+    'V2024PasswordChangeResponse',
+  ]
 slug: /tools/sdk/python/v2024/models/password-change-response
-tags: ['SDK', 'Software Development Kit', 'PasswordChangeResponse', 'V2024PasswordChangeResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PasswordChangeResponse',
+    'V2024PasswordChangeResponse',
+  ]
 ---
 
 # PasswordChangeResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**request_id** | **str** | The password change request ID | [optional] 
-**state** |  **Enum** [  'IN_PROGRESS',    'FINISHED',    'FAILED' ] | Password change state | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **request_id** | **str** | The password change request ID | [optional] |
+| **state** | **Enum** [ 'IN_PROGRESS', 'FINISHED', 'FAILED' ] | Password change state | [optional] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ state='IN_PROGRESS'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

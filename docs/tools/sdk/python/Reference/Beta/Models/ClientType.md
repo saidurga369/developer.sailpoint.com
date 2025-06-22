@@ -4,7 +4,7 @@ title: ClientType
 pagination_label: ClientType
 sidebar_label: ClientType
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ClientType', 'BetaClientType'] 
+keywords: ['python', 'Python', 'sdk', 'ClientType', 'BetaClientType']
 slug: /tools/sdk/python/beta/models/client-type
 tags: ['SDK', 'Software Development Kit', 'ClientType', 'BetaClientType']
 ---
@@ -15,9 +15,8 @@ Type of an API Client indicating public or confidentials use
 
 ## Enum
 
-* `CONFIDENTIAL` (value: `'CONFIDENTIAL'`)
+- `CONFIDENTIAL` (value: `'CONFIDENTIAL'`)
 
-* `PUBLIC` (value: `'PUBLIC'`)
+- `PUBLIC` (value: `'PUBLIC'`)
 
-[[Back to top]](#) 
-
+[[Back to top]](#)

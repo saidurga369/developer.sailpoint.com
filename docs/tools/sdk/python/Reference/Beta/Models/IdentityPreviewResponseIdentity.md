@@ -4,9 +4,22 @@ title: IdentityPreviewResponseIdentity
 pagination_label: IdentityPreviewResponseIdentity
 sidebar_label: IdentityPreviewResponseIdentity
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentityPreviewResponseIdentity', 'BetaIdentityPreviewResponseIdentity'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'IdentityPreviewResponseIdentity',
+    'BetaIdentityPreviewResponseIdentity',
+  ]
 slug: /tools/sdk/python/beta/models/identity-preview-response-identity
-tags: ['SDK', 'Software Development Kit', 'IdentityPreviewResponseIdentity', 'BetaIdentityPreviewResponseIdentity']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityPreviewResponseIdentity',
+    'BetaIdentityPreviewResponseIdentity',
+  ]
 ---
 
 # IdentityPreviewResponseIdentity
@@ -15,11 +28,12 @@ Identity's manager.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] | DTO type of identity's manager. | [optional] 
-**id** | **str** | ID of identity's manager. | [optional] 
-**name** | **str** | Human-readable display name of identity's manager. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'IDENTITY' ] | DTO type of identity's manager. | [optional] |
+| **id** | **str** | ID of identity's manager. | [optional] |
+| **name** | **str** | Human-readable display name of identity's manager. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Robert Robinson'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,42 +4,49 @@ title: MultiHostIntegrations
 pagination_label: MultiHostIntegrations
 sidebar_label: MultiHostIntegrations
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'MultiHostIntegrations', 'BetaMultiHostIntegrations'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'MultiHostIntegrations', 'BetaMultiHostIntegrations']
 slug: /tools/sdk/go/beta/models/multi-host-integrations
-tags: ['SDK', 'Software Development Kit', 'MultiHostIntegrations', 'BetaMultiHostIntegrations']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'MultiHostIntegrations',
+    'BetaMultiHostIntegrations',
+  ]
 ---
 
 # MultiHostIntegrations
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **string** | Multi-Host Integration ID. | [readonly] 
-**Name** | **string** | Multi-Host Integration's human-readable name. | 
-**Description** | **string** | Multi-Host Integration's human-readable description. | 
-**Owner** | [**MultiHostIntegrationsOwner**](multi-host-integrations-owner) |  | 
-**Cluster** | Pointer to [**NullableMultiHostIntegrationsCluster**](multi-host-integrations-cluster) |  | [optional] 
-**Type** | Pointer to **string** | Specifies the type of system being managed e.g. Workday, Multi-Host - Microsoft SQL Server, etc.. If you are creating a delimited file source, you must set the `provisionasCsv` query parameter to `true`.  | [optional] 
-**Connector** | **string** | Connector script name. | 
-**LastSourceUploadSuccessCount** | Pointer to **int32** | Last successfully uploaded source count of given Multi-Host Integration. | [optional] 
-**MaxSourcesPerAggGroup** | Pointer to **int32** | Maximum sources that can contain in a aggregation group of Multi-Host Integration. | [optional] 
-**ConnectorClass** | Pointer to **string** | Fully qualified name of the Java class that implements the connector interface. | [optional] 
-**ConnectorAttributes** | Pointer to [**MultiHostIntegrationsConnectorAttributes**](multi-host-integrations-connector-attributes) |  | [optional] 
-**DeleteThreshold** | Pointer to **int32** | Number from 0 to 100 that specifies when to skip the delete phase. | [optional] 
-**Authoritative** | Pointer to **bool** | When this is true, it indicates that the source is referenced by an identity profile. | [optional] [default to false]
-**ManagementWorkgroup** | Pointer to [**NullableMultiHostIntegrationsManagementWorkgroup**](multi-host-integrations-management-workgroup) |  | [optional] 
-**Healthy** | Pointer to **bool** | When this is true, it indicates that the source is healthy. | [optional] [default to false]
-**Status** | Pointer to **string** | Status identifier that gives specific information about why a source is or isn't healthy.  | [optional] 
-**Since** | Pointer to **SailPointTime** | Timestamp that shows when a source health check was last performed. | [optional] 
-**ConnectorId** | Pointer to **string** | Connector ID | [optional] 
-**ConnectorName** | Pointer to **string** | Name of the connector that was chosen during source creation. | [optional] 
-**ConnectionType** | Pointer to **string** | Type of connection (direct or file). | [optional] 
-**ConnectorImplementationId** | Pointer to **string** | Connector implementation ID. | [optional] 
-**Created** | Pointer to **SailPointTime** | Date-time when the source was created | [optional] 
-**Modified** | Pointer to **SailPointTime** | Date-time when the source was last modified. | [optional] 
-**CredentialProviderEnabled** | Pointer to **bool** | If this is true, it enables a credential provider for the source. If credentialProvider is turned on,  then the source can use credential provider(s) to fetch credentials. | [optional] [default to false]
-**Category** | Pointer to **NullableString** | Source category (e.g. null, CredentialProvider). | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **string** | Multi-Host Integration ID. | [readonly] |
+| **Name** | **string** | Multi-Host Integration's human-readable name. |
+| **Description** | **string** | Multi-Host Integration's human-readable description. |
+| **Owner** | [**MultiHostIntegrationsOwner**](multi-host-integrations-owner) |  |
+| **Cluster** | Pointer to [**NullableMultiHostIntegrationsCluster**](multi-host-integrations-cluster) |  | [optional] |
+| **Type** | Pointer to **string** | Specifies the type of system being managed e.g. Workday, Multi-Host - Microsoft SQL Server, etc.. If you are creating a delimited file source, you must set the `provisionasCsv` query parameter to `true`. | [optional] |
+| **Connector** | **string** | Connector script name. |
+| **LastSourceUploadSuccessCount** | Pointer to **int32** | Last successfully uploaded source count of given Multi-Host Integration. | [optional] |
+| **MaxSourcesPerAggGroup** | Pointer to **int32** | Maximum sources that can contain in a aggregation group of Multi-Host Integration. | [optional] |
+| **ConnectorClass** | Pointer to **string** | Fully qualified name of the Java class that implements the connector interface. | [optional] |
+| **ConnectorAttributes** | Pointer to [**MultiHostIntegrationsConnectorAttributes**](multi-host-integrations-connector-attributes) |  | [optional] |
+| **DeleteThreshold** | Pointer to **int32** | Number from 0 to 100 that specifies when to skip the delete phase. | [optional] |
+| **Authoritative** | Pointer to **bool** | When this is true, it indicates that the source is referenced by an identity profile. | [optional] [default to false] |
+| **ManagementWorkgroup** | Pointer to [**NullableMultiHostIntegrationsManagementWorkgroup**](multi-host-integrations-management-workgroup) |  | [optional] |
+| **Healthy** | Pointer to **bool** | When this is true, it indicates that the source is healthy. | [optional] [default to false] |
+| **Status** | Pointer to **string** | Status identifier that gives specific information about why a source is or isn't healthy. | [optional] |
+| **Since** | Pointer to **SailPointTime** | Timestamp that shows when a source health check was last performed. | [optional] |
+| **ConnectorId** | Pointer to **string** | Connector ID | [optional] |
+| **ConnectorName** | Pointer to **string** | Name of the connector that was chosen during source creation. | [optional] |
+| **ConnectionType** | Pointer to **string** | Type of connection (direct or file). | [optional] |
+| **ConnectorImplementationId** | Pointer to **string** | Connector implementation ID. | [optional] |
+| **Created** | Pointer to **SailPointTime** | Date-time when the source was created | [optional] |
+| **Modified** | Pointer to **SailPointTime** | Date-time when the source was last modified. | [optional] |
+| **CredentialProviderEnabled** | Pointer to **bool** | If this is true, it enables a credential provider for the source. If credentialProvider is turned on, then the source can use credential provider(s) to fetch credentials. | [optional] [default to false] |
+| **Category** | Pointer to **NullableString** | Source category (e.g. null, CredentialProvider). | [optional] |
 
 ## Methods
 
@@ -47,18 +54,13 @@ Name | Type | Description | Notes
 
 `func NewMultiHostIntegrations(id string, name string, description string, owner MultiHostIntegrationsOwner, connector string, ) *MultiHostIntegrations`
 
-NewMultiHostIntegrations instantiates a new MultiHostIntegrations object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewMultiHostIntegrations instantiates a new MultiHostIntegrations object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewMultiHostIntegrationsWithDefaults
 
 `func NewMultiHostIntegrationsWithDefaults() *MultiHostIntegrations`
 
-NewMultiHostIntegrationsWithDefaults instantiates a new MultiHostIntegrations object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewMultiHostIntegrationsWithDefaults instantiates a new MultiHostIntegrations object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -70,15 +72,13 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *MultiHostIntegrations) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
 `func (o *MultiHostIntegrations) SetId(v string)`
 
 SetId sets Id field to given value.
-
 
 ### GetName
 
@@ -90,15 +90,13 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *MultiHostIntegrations) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
 `func (o *MultiHostIntegrations) SetName(v string)`
 
 SetName sets Name field to given value.
-
 
 ### GetDescription
 
@@ -110,15 +108,13 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *MultiHostIntegrations) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
 `func (o *MultiHostIntegrations) SetDescription(v string)`
 
 SetDescription sets Description field to given value.
-
 
 ### GetOwner
 
@@ -130,15 +126,13 @@ GetOwner returns the Owner field if non-nil, zero value otherwise.
 
 `func (o *MultiHostIntegrations) GetOwnerOk() (*MultiHostIntegrationsOwner, bool)`
 
-GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwner
 
 `func (o *MultiHostIntegrations) SetOwner(v MultiHostIntegrationsOwner)`
 
 SetOwner sets Owner field to given value.
-
 
 ### GetCluster
 
@@ -150,8 +144,7 @@ GetCluster returns the Cluster field if non-nil, zero value otherwise.
 
 `func (o *MultiHostIntegrations) GetClusterOk() (*MultiHostIntegrationsCluster, bool)`
 
-GetClusterOk returns a tuple with the Cluster field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetClusterOk returns a tuple with the Cluster field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCluster
 
@@ -169,12 +162,14 @@ HasCluster returns a boolean if a field has been set.
 
 `func (o *MultiHostIntegrations) SetClusterNil(b bool)`
 
- SetClusterNil sets the value for Cluster to be an explicit nil
+SetClusterNil sets the value for Cluster to be an explicit nil
 
 ### UnsetCluster
+
 `func (o *MultiHostIntegrations) UnsetCluster()`
 
 UnsetCluster ensures that no value is present for Cluster, not even an explicit nil
+
 ### GetType
 
 `func (o *MultiHostIntegrations) GetType() string`
@@ -185,8 +180,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *MultiHostIntegrations) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -210,15 +204,13 @@ GetConnector returns the Connector field if non-nil, zero value otherwise.
 
 `func (o *MultiHostIntegrations) GetConnectorOk() (*string, bool)`
 
-GetConnectorOk returns a tuple with the Connector field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConnectorOk returns a tuple with the Connector field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConnector
 
 `func (o *MultiHostIntegrations) SetConnector(v string)`
 
 SetConnector sets Connector field to given value.
-
 
 ### GetLastSourceUploadSuccessCount
 
@@ -230,8 +222,7 @@ GetLastSourceUploadSuccessCount returns the LastSourceUploadSuccessCount field i
 
 `func (o *MultiHostIntegrations) GetLastSourceUploadSuccessCountOk() (*int32, bool)`
 
-GetLastSourceUploadSuccessCountOk returns a tuple with the LastSourceUploadSuccessCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLastSourceUploadSuccessCountOk returns a tuple with the LastSourceUploadSuccessCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLastSourceUploadSuccessCount
 
@@ -255,8 +246,7 @@ GetMaxSourcesPerAggGroup returns the MaxSourcesPerAggGroup field if non-nil, zer
 
 `func (o *MultiHostIntegrations) GetMaxSourcesPerAggGroupOk() (*int32, bool)`
 
-GetMaxSourcesPerAggGroupOk returns a tuple with the MaxSourcesPerAggGroup field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMaxSourcesPerAggGroupOk returns a tuple with the MaxSourcesPerAggGroup field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMaxSourcesPerAggGroup
 
@@ -280,8 +270,7 @@ GetConnectorClass returns the ConnectorClass field if non-nil, zero value otherw
 
 `func (o *MultiHostIntegrations) GetConnectorClassOk() (*string, bool)`
 
-GetConnectorClassOk returns a tuple with the ConnectorClass field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConnectorClassOk returns a tuple with the ConnectorClass field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConnectorClass
 
@@ -305,8 +294,7 @@ GetConnectorAttributes returns the ConnectorAttributes field if non-nil, zero va
 
 `func (o *MultiHostIntegrations) GetConnectorAttributesOk() (*MultiHostIntegrationsConnectorAttributes, bool)`
 
-GetConnectorAttributesOk returns a tuple with the ConnectorAttributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConnectorAttributesOk returns a tuple with the ConnectorAttributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConnectorAttributes
 
@@ -330,8 +318,7 @@ GetDeleteThreshold returns the DeleteThreshold field if non-nil, zero value othe
 
 `func (o *MultiHostIntegrations) GetDeleteThresholdOk() (*int32, bool)`
 
-GetDeleteThresholdOk returns a tuple with the DeleteThreshold field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDeleteThresholdOk returns a tuple with the DeleteThreshold field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDeleteThreshold
 
@@ -355,8 +342,7 @@ GetAuthoritative returns the Authoritative field if non-nil, zero value otherwis
 
 `func (o *MultiHostIntegrations) GetAuthoritativeOk() (*bool, bool)`
 
-GetAuthoritativeOk returns a tuple with the Authoritative field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAuthoritativeOk returns a tuple with the Authoritative field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAuthoritative
 
@@ -380,8 +366,7 @@ GetManagementWorkgroup returns the ManagementWorkgroup field if non-nil, zero va
 
 `func (o *MultiHostIntegrations) GetManagementWorkgroupOk() (*MultiHostIntegrationsManagementWorkgroup, bool)`
 
-GetManagementWorkgroupOk returns a tuple with the ManagementWorkgroup field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetManagementWorkgroupOk returns a tuple with the ManagementWorkgroup field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetManagementWorkgroup
 
@@ -399,12 +384,14 @@ HasManagementWorkgroup returns a boolean if a field has been set.
 
 `func (o *MultiHostIntegrations) SetManagementWorkgroupNil(b bool)`
 
- SetManagementWorkgroupNil sets the value for ManagementWorkgroup to be an explicit nil
+SetManagementWorkgroupNil sets the value for ManagementWorkgroup to be an explicit nil
 
 ### UnsetManagementWorkgroup
+
 `func (o *MultiHostIntegrations) UnsetManagementWorkgroup()`
 
 UnsetManagementWorkgroup ensures that no value is present for ManagementWorkgroup, not even an explicit nil
+
 ### GetHealthy
 
 `func (o *MultiHostIntegrations) GetHealthy() bool`
@@ -415,8 +402,7 @@ GetHealthy returns the Healthy field if non-nil, zero value otherwise.
 
 `func (o *MultiHostIntegrations) GetHealthyOk() (*bool, bool)`
 
-GetHealthyOk returns a tuple with the Healthy field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetHealthyOk returns a tuple with the Healthy field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetHealthy
 
@@ -440,8 +426,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *MultiHostIntegrations) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -465,8 +450,7 @@ GetSince returns the Since field if non-nil, zero value otherwise.
 
 `func (o *MultiHostIntegrations) GetSinceOk() (*SailPointTime, bool)`
 
-GetSinceOk returns a tuple with the Since field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSinceOk returns a tuple with the Since field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSince
 
@@ -490,8 +474,7 @@ GetConnectorId returns the ConnectorId field if non-nil, zero value otherwise.
 
 `func (o *MultiHostIntegrations) GetConnectorIdOk() (*string, bool)`
 
-GetConnectorIdOk returns a tuple with the ConnectorId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConnectorIdOk returns a tuple with the ConnectorId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConnectorId
 
@@ -515,8 +498,7 @@ GetConnectorName returns the ConnectorName field if non-nil, zero value otherwis
 
 `func (o *MultiHostIntegrations) GetConnectorNameOk() (*string, bool)`
 
-GetConnectorNameOk returns a tuple with the ConnectorName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConnectorNameOk returns a tuple with the ConnectorName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConnectorName
 
@@ -540,8 +522,7 @@ GetConnectionType returns the ConnectionType field if non-nil, zero value otherw
 
 `func (o *MultiHostIntegrations) GetConnectionTypeOk() (*string, bool)`
 
-GetConnectionTypeOk returns a tuple with the ConnectionType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConnectionTypeOk returns a tuple with the ConnectionType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConnectionType
 
@@ -565,8 +546,7 @@ GetConnectorImplementationId returns the ConnectorImplementationId field if non-
 
 `func (o *MultiHostIntegrations) GetConnectorImplementationIdOk() (*string, bool)`
 
-GetConnectorImplementationIdOk returns a tuple with the ConnectorImplementationId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConnectorImplementationIdOk returns a tuple with the ConnectorImplementationId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConnectorImplementationId
 
@@ -590,8 +570,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *MultiHostIntegrations) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -615,8 +594,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *MultiHostIntegrations) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -640,8 +618,7 @@ GetCredentialProviderEnabled returns the CredentialProviderEnabled field if non-
 
 `func (o *MultiHostIntegrations) GetCredentialProviderEnabledOk() (*bool, bool)`
 
-GetCredentialProviderEnabledOk returns a tuple with the CredentialProviderEnabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCredentialProviderEnabledOk returns a tuple with the CredentialProviderEnabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCredentialProviderEnabled
 
@@ -665,8 +642,7 @@ GetCategory returns the Category field if non-nil, zero value otherwise.
 
 `func (o *MultiHostIntegrations) GetCategoryOk() (*string, bool)`
 
-GetCategoryOk returns a tuple with the Category field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCategoryOk returns a tuple with the Category field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCategory
 
@@ -684,10 +660,10 @@ HasCategory returns a boolean if a field has been set.
 
 `func (o *MultiHostIntegrations) SetCategoryNil(b bool)`
 
- SetCategoryNil sets the value for Category to be an explicit nil
+SetCategoryNil sets the value for Category to be an explicit nil
 
 ### UnsetCategory
+
 `func (o *MultiHostIntegrations) UnsetCategory()`
 
 UnsetCategory ensures that no value is present for Category, not even an explicit nil
-

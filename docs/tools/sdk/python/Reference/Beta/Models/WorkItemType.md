@@ -4,7 +4,7 @@ title: WorkItemType
 pagination_label: WorkItemType
 sidebar_label: WorkItemType
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'WorkItemType', 'BetaWorkItemType'] 
+keywords: ['python', 'Python', 'sdk', 'WorkItemType', 'BetaWorkItemType']
 slug: /tools/sdk/python/beta/models/work-item-type
 tags: ['SDK', 'Software Development Kit', 'WorkItemType', 'BetaWorkItemType']
 ---
@@ -15,35 +15,34 @@ The type of the work item
 
 ## Enum
 
-* `UNKNOWN` (value: `'Unknown'`)
+- `UNKNOWN` (value: `'Unknown'`)
 
-* `GENERIC` (value: `'Generic'`)
+- `GENERIC` (value: `'Generic'`)
 
-* `CERTIFICATION` (value: `'Certification'`)
+- `CERTIFICATION` (value: `'Certification'`)
 
-* `REMEDIATION` (value: `'Remediation'`)
+- `REMEDIATION` (value: `'Remediation'`)
 
-* `DELEGATION` (value: `'Delegation'`)
+- `DELEGATION` (value: `'Delegation'`)
 
-* `APPROVAL` (value: `'Approval'`)
+- `APPROVAL` (value: `'Approval'`)
 
-* `VIOLATIONREVIEW` (value: `'ViolationReview'`)
+- `VIOLATIONREVIEW` (value: `'ViolationReview'`)
 
-* `FORM` (value: `'Form'`)
+- `FORM` (value: `'Form'`)
 
-* `POLICYVIOLATION` (value: `'PolicyViolation'`)
+- `POLICYVIOLATION` (value: `'PolicyViolation'`)
 
-* `CHALLENGE` (value: `'Challenge'`)
+- `CHALLENGE` (value: `'Challenge'`)
 
-* `IMPACTANALYSIS` (value: `'ImpactAnalysis'`)
+- `IMPACTANALYSIS` (value: `'ImpactAnalysis'`)
 
-* `SIGNOFF` (value: `'Signoff'`)
+- `SIGNOFF` (value: `'Signoff'`)
 
-* `EVENT` (value: `'Event'`)
+- `EVENT` (value: `'Event'`)
 
-* `MANUALACTION` (value: `'ManualAction'`)
+- `MANUALACTION` (value: `'ManualAction'`)
 
-* `TEST` (value: `'Test'`)
+- `TEST` (value: `'Test'`)
 
-[[Back to top]](#) 
-
+[[Back to top]](#)

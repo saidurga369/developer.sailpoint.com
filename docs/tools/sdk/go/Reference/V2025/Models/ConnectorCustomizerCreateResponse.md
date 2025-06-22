@@ -4,21 +4,34 @@ title: ConnectorCustomizerCreateResponse
 pagination_label: ConnectorCustomizerCreateResponse
 sidebar_label: ConnectorCustomizerCreateResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ConnectorCustomizerCreateResponse', 'V2025ConnectorCustomizerCreateResponse'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ConnectorCustomizerCreateResponse',
+    'V2025ConnectorCustomizerCreateResponse',
+  ]
 slug: /tools/sdk/go/v2025/models/connector-customizer-create-response
-tags: ['SDK', 'Software Development Kit', 'ConnectorCustomizerCreateResponse', 'V2025ConnectorCustomizerCreateResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ConnectorCustomizerCreateResponse',
+    'V2025ConnectorCustomizerCreateResponse',
+  ]
 ---
 
 # ConnectorCustomizerCreateResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | the ID of connector customizer. | [optional] 
-**Name** | Pointer to **string** | name of the connector customizer. | [optional] 
-**TenantID** | Pointer to **string** | Connector customizer tenant id. | [optional] 
-**Created** | Pointer to **SailPointTime** | Date-time when the connector customizer was created. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | the ID of connector customizer. | [optional] |
+| **Name** | Pointer to **string** | name of the connector customizer. | [optional] |
+| **TenantID** | Pointer to **string** | Connector customizer tenant id. | [optional] |
+| **Created** | Pointer to **SailPointTime** | Date-time when the connector customizer was created. | [optional] |
 
 ## Methods
 
@@ -26,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewConnectorCustomizerCreateResponse() *ConnectorCustomizerCreateResponse`
 
-NewConnectorCustomizerCreateResponse instantiates a new ConnectorCustomizerCreateResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewConnectorCustomizerCreateResponse instantiates a new ConnectorCustomizerCreateResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewConnectorCustomizerCreateResponseWithDefaults
 
 `func NewConnectorCustomizerCreateResponseWithDefaults() *ConnectorCustomizerCreateResponse`
 
-NewConnectorCustomizerCreateResponseWithDefaults instantiates a new ConnectorCustomizerCreateResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewConnectorCustomizerCreateResponseWithDefaults instantiates a new ConnectorCustomizerCreateResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -49,8 +57,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *ConnectorCustomizerCreateResponse) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -74,8 +81,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *ConnectorCustomizerCreateResponse) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -99,8 +105,7 @@ GetTenantID returns the TenantID field if non-nil, zero value otherwise.
 
 `func (o *ConnectorCustomizerCreateResponse) GetTenantIDOk() (*string, bool)`
 
-GetTenantIDOk returns a tuple with the TenantID field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTenantIDOk returns a tuple with the TenantID field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTenantID
 
@@ -124,8 +129,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *ConnectorCustomizerCreateResponse) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -138,5 +142,3 @@ SetCreated sets Created field to given value.
 `func (o *ConnectorCustomizerCreateResponse) HasCreated() bool`
 
 HasCreated returns a boolean if a field has been set.
-
-

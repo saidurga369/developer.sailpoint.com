@@ -4,52 +4,51 @@ title: IAIRecommendations
 pagination_label: IAIRecommendations
 sidebar_label: IAIRecommendations
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IAIRecommendations', 'V2025IAIRecommendations'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'IAIRecommendations', 'V2025IAIRecommendations']
 slug: /tools/sdk/go/v2025/methods/iai-recommendations
-tags: ['SDK', 'Software Development Kit', 'IAIRecommendations', 'V2025IAIRecommendations']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IAIRecommendations',
+    'V2025IAIRecommendations',
+  ]
 ---
 
 # IAIRecommendationsAPI
-   
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/v2025*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**get-recommendations**](#get-recommendations) | **Post** `/recommendations/request` | Returns recommendation based on object
-[**get-recommendations-config**](#get-recommendations-config) | **Get** `/recommendations/config` | Get certification recommendation config values
-[**update-recommendations-config**](#update-recommendations-config) | **Put** `/recommendations/config` | Update certification recommendation config values
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**get-recommendations**](#get-recommendations) | **Post** `/recommendations/request` | Returns recommendation based on object |
+| [**get-recommendations-config**](#get-recommendations-config) | **Get** `/recommendations/config` | Get certification recommendation config values |
+| [**update-recommendations-config**](#update-recommendations-config) | **Put** `/recommendations/config` | Update certification recommendation config values |
 
 ## get-recommendations
-:::warning experimental 
-This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint.
-:::
-:::tip setting x-sailpoint-experimental header
- on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK.
- Example:
- ```go
-   configuration = Configuration()
-   configuration.experimental = True
- ```
-:::
-Returns recommendation based on object
-The getRecommendations API returns recommendations based on the requested object. The recommendations are invoked by IdentityIQ and IdentityNow plug-ins that retrieve recommendations based on the performed calculations.
+
+:::warning experimental This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint. ::: :::tip setting x-sailpoint-experimental header on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK. Example:
+
+```go
+  configuration = Configuration()
+  configuration.experimental = True
+```
+
+::: Returns recommendation based on object The getRecommendations API returns recommendations based on the requested object. The recommendations are invoked by IdentityIQ and IdentityNow plug-ins that retrieve recommendations based on the performed calculations.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/get-recommendations)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetRecommendationsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;]
- **recommendationRequestDto** | [**RecommendationRequestDto**](../models/recommendation-request-dto) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;] |
+| **recommendationRequestDto** | [**RecommendationRequestDto**](../models/recommendation-request-dto) |  |
 
 ### Return type
 
@@ -94,14 +93,14 @@ func main() {
           } ],
           "includeTranslationMessages" : false,
           "includeDebugInformation" : true
-        }`) // RecommendationRequestDto | 
+        }`) // RecommendationRequestDto |
 
     var recommendationRequestDto v2025.RecommendationRequestDto
     if err := json.Unmarshal(recommendationrequestdto, &recommendationRequestDto); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -119,34 +118,27 @@ func main() {
 [[Back to top]](#)
 
 ## get-recommendations-config
-:::warning experimental 
-This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint.
-:::
-:::tip setting x-sailpoint-experimental header
- on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK.
- Example:
- ```go
-   configuration = Configuration()
-   configuration.experimental = True
- ```
-:::
-Get certification recommendation config values
-Retrieves configuration attributes used by certification recommendations.
+
+:::warning experimental This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint. ::: :::tip setting x-sailpoint-experimental header on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK. Example:
+
+```go
+  configuration = Configuration()
+  configuration.experimental = True
+```
+
+::: Get certification recommendation config values Retrieves configuration attributes used by certification recommendations.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/get-recommendations-config)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetRecommendationsConfigRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;] |
 
 ### Return type
 
@@ -166,15 +158,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     xSailPointExperimental := `true` // string | Use this header to enable this experimental API. (default to "true") # string | Use this header to enable this experimental API. (default to "true")
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -192,35 +184,28 @@ func main() {
 [[Back to top]](#)
 
 ## update-recommendations-config
-:::warning experimental 
-This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint.
-:::
-:::tip setting x-sailpoint-experimental header
- on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK.
- Example:
- ```go
-   configuration = Configuration()
-   configuration.experimental = True
- ```
-:::
-Update certification recommendation config values
-Updates configuration attributes used by certification recommendations.
+
+:::warning experimental This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint. ::: :::tip setting x-sailpoint-experimental header on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK. Example:
+
+```go
+  configuration = Configuration()
+  configuration.experimental = True
+```
+
+::: Update certification recommendation config values Updates configuration attributes used by certification recommendations.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/update-recommendations-config)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiUpdateRecommendationsConfigRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;]
- **recommendationConfigDto** | [**RecommendationConfigDto**](../models/recommendation-config-dto) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;] |
+| **recommendationConfigDto** | [**RecommendationConfigDto**](../models/recommendation-config-dto) |  |
 
 ### Return type
 
@@ -252,14 +237,14 @@ func main() {
           "peerGroupPercentageThreshold" : 0.5,
           "runAutoSelectOnce" : false,
           "onlyTuneThreshold" : false
-        }`) // RecommendationConfigDto | 
+        }`) // RecommendationConfigDto |
 
     var recommendationConfigDto v2025.RecommendationConfigDto
     if err := json.Unmarshal(recommendationconfigdto, &recommendationConfigDto); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -275,4 +260,3 @@ func main() {
 ```
 
 [[Back to top]](#)
-

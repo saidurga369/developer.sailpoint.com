@@ -4,22 +4,29 @@ title: ManagedClusterType
 pagination_label: ManagedClusterType
 sidebar_label: ManagedClusterType
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ManagedClusterType', 'V2024ManagedClusterType'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'ManagedClusterType', 'V2024ManagedClusterType']
 slug: /tools/sdk/go/v2024/models/managed-cluster-type
-tags: ['SDK', 'Software Development Kit', 'ManagedClusterType', 'V2024ManagedClusterType']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ManagedClusterType',
+    'V2024ManagedClusterType',
+  ]
 ---
 
 # ManagedClusterType
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | ManagedClusterType ID | [optional] [readonly] 
-**Type** | **string** | ManagedClusterType type name | 
-**Pod** | **string** | ManagedClusterType pod | 
-**Org** | **string** | ManagedClusterType org | 
-**ManagedProcessIds** | Pointer to **[]string** | List of processes for the cluster type | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | ManagedClusterType ID | [optional] [readonly] |
+| **Type** | **string** | ManagedClusterType type name |
+| **Pod** | **string** | ManagedClusterType pod |
+| **Org** | **string** | ManagedClusterType org |
+| **ManagedProcessIds** | Pointer to **[]string** | List of processes for the cluster type | [optional] |
 
 ## Methods
 
@@ -27,18 +34,13 @@ Name | Type | Description | Notes
 
 `func NewManagedClusterType(type_ string, pod string, org string, ) *ManagedClusterType`
 
-NewManagedClusterType instantiates a new ManagedClusterType object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewManagedClusterType instantiates a new ManagedClusterType object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewManagedClusterTypeWithDefaults
 
 `func NewManagedClusterTypeWithDefaults() *ManagedClusterType`
 
-NewManagedClusterTypeWithDefaults instantiates a new ManagedClusterType object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewManagedClusterTypeWithDefaults instantiates a new ManagedClusterType object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -50,8 +52,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *ManagedClusterType) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -75,15 +76,13 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *ManagedClusterType) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
 `func (o *ManagedClusterType) SetType(v string)`
 
 SetType sets Type field to given value.
-
 
 ### GetPod
 
@@ -95,15 +94,13 @@ GetPod returns the Pod field if non-nil, zero value otherwise.
 
 `func (o *ManagedClusterType) GetPodOk() (*string, bool)`
 
-GetPodOk returns a tuple with the Pod field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPodOk returns a tuple with the Pod field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPod
 
 `func (o *ManagedClusterType) SetPod(v string)`
 
 SetPod sets Pod field to given value.
-
 
 ### GetOrg
 
@@ -115,15 +112,13 @@ GetOrg returns the Org field if non-nil, zero value otherwise.
 
 `func (o *ManagedClusterType) GetOrgOk() (*string, bool)`
 
-GetOrgOk returns a tuple with the Org field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOrgOk returns a tuple with the Org field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOrg
 
 `func (o *ManagedClusterType) SetOrg(v string)`
 
 SetOrg sets Org field to given value.
-
 
 ### GetManagedProcessIds
 
@@ -135,8 +130,7 @@ GetManagedProcessIds returns the ManagedProcessIds field if non-nil, zero value 
 
 `func (o *ManagedClusterType) GetManagedProcessIdsOk() (*[]string, bool)`
 
-GetManagedProcessIdsOk returns a tuple with the ManagedProcessIds field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetManagedProcessIdsOk returns a tuple with the ManagedProcessIds field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetManagedProcessIds
 
@@ -149,5 +143,3 @@ SetManagedProcessIds sets ManagedProcessIds field to given value.
 `func (o *ManagedClusterType) HasManagedProcessIds() bool`
 
 HasManagedProcessIds returns a boolean if a field has been set.
-
-

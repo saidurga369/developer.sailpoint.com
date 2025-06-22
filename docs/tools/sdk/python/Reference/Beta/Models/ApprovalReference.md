@@ -4,9 +4,16 @@ title: ApprovalReference
 pagination_label: ApprovalReference
 sidebar_label: ApprovalReference
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ApprovalReference', 'BetaApprovalReference'] 
+keywords:
+  ['python', 'Python', 'sdk', 'ApprovalReference', 'BetaApprovalReference']
 slug: /tools/sdk/python/beta/models/approval-reference
-tags: ['SDK', 'Software Development Kit', 'ApprovalReference', 'BetaApprovalReference']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ApprovalReference',
+    'BetaApprovalReference',
+  ]
 ---
 
 # ApprovalReference
@@ -15,10 +22,11 @@ Reference objects related to the approval
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Id of the reference object | [optional] 
-**type** | **str** | What reference object does this ID correspond to | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | Id of the reference object | [optional] |
+| **type** | **str** | What reference object does this ID correspond to | [optional] |
+
 }
 
 ## Example
@@ -32,5 +40,5 @@ type='AccessRequestId'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

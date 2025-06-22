@@ -4,7 +4,7 @@ title: Source
 pagination_label: Source
 sidebar_label: Source
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Source', 'V2025Source'] 
+keywords: ['go', 'Golang', 'sdk', 'Source', 'V2025Source']
 slug: /tools/sdk/go/v2025/models/source
 tags: ['SDK', 'Software Development Kit', 'Source', 'V2025Source']
 ---
@@ -13,39 +13,39 @@ tags: ['SDK', 'Software Development Kit', 'Source', 'V2025Source']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Source ID. | [optional] [readonly] 
-**Name** | **string** | Source's human-readable name. | 
-**Description** | Pointer to **string** | Source's human-readable description. | [optional] 
-**Owner** | [**SourceOwner**](source-owner) |  | 
-**Cluster** | Pointer to [**NullableSourceCluster**](source-cluster) |  | [optional] 
-**AccountCorrelationConfig** | Pointer to [**NullableSourceAccountCorrelationConfig**](source-account-correlation-config) |  | [optional] 
-**AccountCorrelationRule** | Pointer to [**NullableSourceAccountCorrelationRule**](source-account-correlation-rule) |  | [optional] 
-**ManagerCorrelationMapping** | Pointer to [**SourceManagerCorrelationMapping**](source-manager-correlation-mapping) |  | [optional] 
-**ManagerCorrelationRule** | Pointer to [**NullableSourceManagerCorrelationRule**](source-manager-correlation-rule) |  | [optional] 
-**BeforeProvisioningRule** | Pointer to [**NullableSourceBeforeProvisioningRule**](source-before-provisioning-rule) |  | [optional] 
-**Schemas** | Pointer to [**[]SourceSchemasInner**](source-schemas-inner) | List of references to schema objects. | [optional] 
-**PasswordPolicies** | Pointer to [**[]SourcePasswordPoliciesInner**](source-password-policies-inner) | List of references to the associated PasswordPolicy objects. | [optional] 
-**Features** | Pointer to **[]string** | Optional features that can be supported by a source. Modifying the features array may cause source configuration errors that are unsupportable. It is recommended to not modify this array for SailPoint supported connectors. * AUTHENTICATE: The source supports pass-through authentication. * COMPOSITE: The source supports composite source creation. * DIRECT_PERMISSIONS: The source supports returning DirectPermissions. * DISCOVER_SCHEMA: The source supports discovering schemas for users and groups. * ENABLE The source supports reading if an account is enabled or disabled. * MANAGER_LOOKUP: The source supports looking up managers as they are encountered in a feed. This is the opposite of NO_RANDOM_ACCESS. * NO_RANDOM_ACCESS: The source does not support random access and the getObject() methods should not be called and expected to perform. * PROXY: The source can serve as a proxy for another source. When an source has a proxy, all connector calls made with that source are redirected through the connector for the proxy source. * SEARCH * TEMPLATE * UNLOCK: The source supports reading if an account is locked or unlocked. * UNSTRUCTURED_TARGETS: The source supports returning unstructured Targets. * SHAREPOINT_TARGET: The source supports returning unstructured Target data for SharePoint. It will be typically used by AD, LDAP sources. * PROVISIONING: The source can both read and write accounts. Having this feature implies that the provision() method is implemented. It also means that direct and target permissions can also be provisioned if they can be returned by aggregation. * GROUP_PROVISIONING: The source can both read and write groups. Having this feature implies that the provision() method is implemented. * SYNC_PROVISIONING: The source can provision accounts synchronously. * PASSWORD: The source can provision password changes. Since sources can never read passwords, this is should only be used in conjunction with the PROVISIONING feature. * CURRENT_PASSWORD: Some source types support verification of the current password * ACCOUNT_ONLY_REQUEST: The source supports requesting accounts without entitlements. * ADDITIONAL_ACCOUNT_REQUEST: The source supports requesting additional accounts. * NO_AGGREGATION: A source that does not support aggregation. * GROUPS_HAVE_MEMBERS: The source models group memberships with a member attribute on the group object rather than a groups attribute on the account object. This effects the implementation of delta account aggregation. * NO_PERMISSIONS_PROVISIONING: Indicates that the connector cannot provision direct or target permissions for accounts. When DIRECT_PERMISSIONS and PROVISIONING features are present, it is assumed that the connector can also provision direct permissions. This feature disables that assumption and causes permission request to be converted to work items for accounts. * NO_GROUP_PERMISSIONS_PROVISIONING: Indicates that the connector cannot provision direct or target permissions for groups. When DIRECT_PERMISSIONS and PROVISIONING features are present, it is assumed that the connector can also provision direct permissions. This feature disables that assumption and causes permission request to be converted to work items for groups. * NO_UNSTRUCTURED_TARGETS_PROVISIONING: This string will be replaced by NO_GROUP_PERMISSIONS_PROVISIONING and NO_PERMISSIONS_PROVISIONING. * NO_DIRECT_PERMISSIONS_PROVISIONING: This string will be replaced by NO_GROUP_PERMISSIONS_PROVISIONING and NO_PERMISSIONS_PROVISIONING. * USES_UUID: Connectivity 2.0 flag used to indicate that the connector supports a compound naming structure. * PREFER_UUID: Used in ISC Provisioning AND Aggregation to decide if it should prefer account.uuid to account.nativeIdentity when data is read in through aggregation OR pushed out through provisioning. * ARM_SECURITY_EXTRACT: Indicates the application supports Security extracts for ARM * ARM_UTILIZATION_EXTRACT: Indicates the application supports Utilization extracts for ARM * ARM_CHANGELOG_EXTRACT: Indicates the application supports Change-log extracts for ARM | [optional] 
-**Type** | Pointer to **string** | Specifies the type of system being managed e.g. Active Directory, Workday, etc.. If you are creating a delimited file source, you must set the `provisionasCsv` query parameter to `true`.  | [optional] 
-**Connector** | **string** | Connector script name. | 
-**ConnectorClass** | Pointer to **string** | Fully qualified name of the Java class that implements the connector interface. | [optional] 
-**ConnectorAttributes** | Pointer to **map[string]interface{}** | Connector specific configuration. This configuration will differ from type to type. | [optional] 
-**DeleteThreshold** | Pointer to **int32** | Number from 0 to 100 that specifies when to skip the delete phase. | [optional] 
-**Authoritative** | Pointer to **bool** | When this is true, it indicates that the source is referenced by an identity profile. | [optional] [default to false]
-**ManagementWorkgroup** | Pointer to [**NullableSourceManagementWorkgroup**](source-management-workgroup) |  | [optional] 
-**Healthy** | Pointer to **bool** | When this is true, it indicates that the source is healthy. | [optional] [default to false]
-**Status** | Pointer to **string** | Status identifier that gives specific information about why a source is or isn't healthy.  | [optional] 
-**Since** | Pointer to **string** | Timestamp that shows when a source health check was last performed. | [optional] 
-**ConnectorId** | Pointer to **string** | Connector ID | [optional] 
-**ConnectorName** | Pointer to **string** | Name of the connector that was chosen during source creation. | [optional] 
-**ConnectionType** | Pointer to **string** | Type of connection (direct or file). | [optional] 
-**ConnectorImplementationId** | Pointer to **string** | Connector implementation ID. | [optional] 
-**Created** | Pointer to **SailPointTime** | Date-time when the source was created | [optional] 
-**Modified** | Pointer to **SailPointTime** | Date-time when the source was last modified. | [optional] 
-**CredentialProviderEnabled** | Pointer to **bool** | If this is true, it enables a credential provider for the source. If credentialProvider is turned on,  then the source can use credential provider(s) to fetch credentials. | [optional] [default to false]
-**Category** | Pointer to **NullableString** | Source category (e.g. null, CredentialProvider). | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Source ID. | [optional] [readonly] |
+| **Name** | **string** | Source's human-readable name. |
+| **Description** | Pointer to **string** | Source's human-readable description. | [optional] |
+| **Owner** | [**SourceOwner**](source-owner) |  |
+| **Cluster** | Pointer to [**NullableSourceCluster**](source-cluster) |  | [optional] |
+| **AccountCorrelationConfig** | Pointer to [**NullableSourceAccountCorrelationConfig**](source-account-correlation-config) |  | [optional] |
+| **AccountCorrelationRule** | Pointer to [**NullableSourceAccountCorrelationRule**](source-account-correlation-rule) |  | [optional] |
+| **ManagerCorrelationMapping** | Pointer to [**SourceManagerCorrelationMapping**](source-manager-correlation-mapping) |  | [optional] |
+| **ManagerCorrelationRule** | Pointer to [**NullableSourceManagerCorrelationRule**](source-manager-correlation-rule) |  | [optional] |
+| **BeforeProvisioningRule** | Pointer to [**NullableSourceBeforeProvisioningRule**](source-before-provisioning-rule) |  | [optional] |
+| **Schemas** | Pointer to [**[]SourceSchemasInner**](source-schemas-inner) | List of references to schema objects. | [optional] |
+| **PasswordPolicies** | Pointer to [**[]SourcePasswordPoliciesInner**](source-password-policies-inner) | List of references to the associated PasswordPolicy objects. | [optional] |
+| **Features** | Pointer to **[]string** | Optional features that can be supported by a source. Modifying the features array may cause source configuration errors that are unsupportable. It is recommended to not modify this array for SailPoint supported connectors. _ AUTHENTICATE: The source supports pass-through authentication. _ COMPOSITE: The source supports composite source creation. _ DIRECT_PERMISSIONS: The source supports returning DirectPermissions. _ DISCOVER_SCHEMA: The source supports discovering schemas for users and groups. _ ENABLE The source supports reading if an account is enabled or disabled. _ MANAGER_LOOKUP: The source supports looking up managers as they are encountered in a feed. This is the opposite of NO_RANDOM_ACCESS. _ NO_RANDOM_ACCESS: The source does not support random access and the getObject() methods should not be called and expected to perform. _ PROXY: The source can serve as a proxy for another source. When an source has a proxy, all connector calls made with that source are redirected through the connector for the proxy source. _ SEARCH _ TEMPLATE _ UNLOCK: The source supports reading if an account is locked or unlocked. _ UNSTRUCTURED_TARGETS: The source supports returning unstructured Targets. _ SHAREPOINT_TARGET: The source supports returning unstructured Target data for SharePoint. It will be typically used by AD, LDAP sources. _ PROVISIONING: The source can both read and write accounts. Having this feature implies that the provision() method is implemented. It also means that direct and target permissions can also be provisioned if they can be returned by aggregation. _ GROUP_PROVISIONING: The source can both read and write groups. Having this feature implies that the provision() method is implemented. _ SYNC_PROVISIONING: The source can provision accounts synchronously. _ PASSWORD: The source can provision password changes. Since sources can never read passwords, this is should only be used in conjunction with the PROVISIONING feature. _ CURRENT_PASSWORD: Some source types support verification of the current password _ ACCOUNT_ONLY_REQUEST: The source supports requesting accounts without entitlements. _ ADDITIONAL_ACCOUNT_REQUEST: The source supports requesting additional accounts. _ NO_AGGREGATION: A source that does not support aggregation. _ GROUPS_HAVE_MEMBERS: The source models group memberships with a member attribute on the group object rather than a groups attribute on the account object. This effects the implementation of delta account aggregation. _ NO_PERMISSIONS_PROVISIONING: Indicates that the connector cannot provision direct or target permissions for accounts. When DIRECT_PERMISSIONS and PROVISIONING features are present, it is assumed that the connector can also provision direct permissions. This feature disables that assumption and causes permission request to be converted to work items for accounts. _ NO_GROUP_PERMISSIONS_PROVISIONING: Indicates that the connector cannot provision direct or target permissions for groups. When DIRECT_PERMISSIONS and PROVISIONING features are present, it is assumed that the connector can also provision direct permissions. This feature disables that assumption and causes permission request to be converted to work items for groups. _ NO_UNSTRUCTURED_TARGETS_PROVISIONING: This string will be replaced by NO_GROUP_PERMISSIONS_PROVISIONING and NO_PERMISSIONS_PROVISIONING. _ NO_DIRECT_PERMISSIONS_PROVISIONING: This string will be replaced by NO_GROUP_PERMISSIONS_PROVISIONING and NO_PERMISSIONS_PROVISIONING. _ USES_UUID: Connectivity 2.0 flag used to indicate that the connector supports a compound naming structure. _ PREFER_UUID: Used in ISC Provisioning AND Aggregation to decide if it should prefer account.uuid to account.nativeIdentity when data is read in through aggregation OR pushed out through provisioning. _ ARM_SECURITY_EXTRACT: Indicates the application supports Security extracts for ARM _ ARM_UTILIZATION_EXTRACT: Indicates the application supports Utilization extracts for ARM \* ARM_CHANGELOG_EXTRACT: Indicates the application supports Change-log extracts for ARM | [optional] |
+| **Type** | Pointer to **string** | Specifies the type of system being managed e.g. Active Directory, Workday, etc.. If you are creating a delimited file source, you must set the `provisionasCsv` query parameter to `true`. | [optional] |
+| **Connector** | **string** | Connector script name. |
+| **ConnectorClass** | Pointer to **string** | Fully qualified name of the Java class that implements the connector interface. | [optional] |
+| **ConnectorAttributes** | Pointer to **map[string]interface{}** | Connector specific configuration. This configuration will differ from type to type. | [optional] |
+| **DeleteThreshold** | Pointer to **int32** | Number from 0 to 100 that specifies when to skip the delete phase. | [optional] |
+| **Authoritative** | Pointer to **bool** | When this is true, it indicates that the source is referenced by an identity profile. | [optional] [default to false] |
+| **ManagementWorkgroup** | Pointer to [**NullableSourceManagementWorkgroup**](source-management-workgroup) |  | [optional] |
+| **Healthy** | Pointer to **bool** | When this is true, it indicates that the source is healthy. | [optional] [default to false] |
+| **Status** | Pointer to **string** | Status identifier that gives specific information about why a source is or isn't healthy. | [optional] |
+| **Since** | Pointer to **string** | Timestamp that shows when a source health check was last performed. | [optional] |
+| **ConnectorId** | Pointer to **string** | Connector ID | [optional] |
+| **ConnectorName** | Pointer to **string** | Name of the connector that was chosen during source creation. | [optional] |
+| **ConnectionType** | Pointer to **string** | Type of connection (direct or file). | [optional] |
+| **ConnectorImplementationId** | Pointer to **string** | Connector implementation ID. | [optional] |
+| **Created** | Pointer to **SailPointTime** | Date-time when the source was created | [optional] |
+| **Modified** | Pointer to **SailPointTime** | Date-time when the source was last modified. | [optional] |
+| **CredentialProviderEnabled** | Pointer to **bool** | If this is true, it enables a credential provider for the source. If credentialProvider is turned on, then the source can use credential provider(s) to fetch credentials. | [optional] [default to false] |
+| **Category** | Pointer to **NullableString** | Source category (e.g. null, CredentialProvider). | [optional] |
 
 ## Methods
 
@@ -53,18 +53,13 @@ Name | Type | Description | Notes
 
 `func NewSource(name string, owner SourceOwner, connector string, ) *Source`
 
-NewSource instantiates a new Source object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSource instantiates a new Source object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSourceWithDefaults
 
 `func NewSourceWithDefaults() *Source`
 
-NewSourceWithDefaults instantiates a new Source object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSourceWithDefaults instantiates a new Source object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -76,8 +71,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *Source) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -101,15 +95,13 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *Source) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
 `func (o *Source) SetName(v string)`
 
 SetName sets Name field to given value.
-
 
 ### GetDescription
 
@@ -121,8 +113,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *Source) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -146,15 +137,13 @@ GetOwner returns the Owner field if non-nil, zero value otherwise.
 
 `func (o *Source) GetOwnerOk() (*SourceOwner, bool)`
 
-GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwner
 
 `func (o *Source) SetOwner(v SourceOwner)`
 
 SetOwner sets Owner field to given value.
-
 
 ### GetCluster
 
@@ -166,8 +155,7 @@ GetCluster returns the Cluster field if non-nil, zero value otherwise.
 
 `func (o *Source) GetClusterOk() (*SourceCluster, bool)`
 
-GetClusterOk returns a tuple with the Cluster field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetClusterOk returns a tuple with the Cluster field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCluster
 
@@ -185,12 +173,14 @@ HasCluster returns a boolean if a field has been set.
 
 `func (o *Source) SetClusterNil(b bool)`
 
- SetClusterNil sets the value for Cluster to be an explicit nil
+SetClusterNil sets the value for Cluster to be an explicit nil
 
 ### UnsetCluster
+
 `func (o *Source) UnsetCluster()`
 
 UnsetCluster ensures that no value is present for Cluster, not even an explicit nil
+
 ### GetAccountCorrelationConfig
 
 `func (o *Source) GetAccountCorrelationConfig() SourceAccountCorrelationConfig`
@@ -201,8 +191,7 @@ GetAccountCorrelationConfig returns the AccountCorrelationConfig field if non-ni
 
 `func (o *Source) GetAccountCorrelationConfigOk() (*SourceAccountCorrelationConfig, bool)`
 
-GetAccountCorrelationConfigOk returns a tuple with the AccountCorrelationConfig field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountCorrelationConfigOk returns a tuple with the AccountCorrelationConfig field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountCorrelationConfig
 
@@ -220,12 +209,14 @@ HasAccountCorrelationConfig returns a boolean if a field has been set.
 
 `func (o *Source) SetAccountCorrelationConfigNil(b bool)`
 
- SetAccountCorrelationConfigNil sets the value for AccountCorrelationConfig to be an explicit nil
+SetAccountCorrelationConfigNil sets the value for AccountCorrelationConfig to be an explicit nil
 
 ### UnsetAccountCorrelationConfig
+
 `func (o *Source) UnsetAccountCorrelationConfig()`
 
 UnsetAccountCorrelationConfig ensures that no value is present for AccountCorrelationConfig, not even an explicit nil
+
 ### GetAccountCorrelationRule
 
 `func (o *Source) GetAccountCorrelationRule() SourceAccountCorrelationRule`
@@ -236,8 +227,7 @@ GetAccountCorrelationRule returns the AccountCorrelationRule field if non-nil, z
 
 `func (o *Source) GetAccountCorrelationRuleOk() (*SourceAccountCorrelationRule, bool)`
 
-GetAccountCorrelationRuleOk returns a tuple with the AccountCorrelationRule field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountCorrelationRuleOk returns a tuple with the AccountCorrelationRule field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountCorrelationRule
 
@@ -255,12 +245,14 @@ HasAccountCorrelationRule returns a boolean if a field has been set.
 
 `func (o *Source) SetAccountCorrelationRuleNil(b bool)`
 
- SetAccountCorrelationRuleNil sets the value for AccountCorrelationRule to be an explicit nil
+SetAccountCorrelationRuleNil sets the value for AccountCorrelationRule to be an explicit nil
 
 ### UnsetAccountCorrelationRule
+
 `func (o *Source) UnsetAccountCorrelationRule()`
 
 UnsetAccountCorrelationRule ensures that no value is present for AccountCorrelationRule, not even an explicit nil
+
 ### GetManagerCorrelationMapping
 
 `func (o *Source) GetManagerCorrelationMapping() SourceManagerCorrelationMapping`
@@ -271,8 +263,7 @@ GetManagerCorrelationMapping returns the ManagerCorrelationMapping field if non-
 
 `func (o *Source) GetManagerCorrelationMappingOk() (*SourceManagerCorrelationMapping, bool)`
 
-GetManagerCorrelationMappingOk returns a tuple with the ManagerCorrelationMapping field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetManagerCorrelationMappingOk returns a tuple with the ManagerCorrelationMapping field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetManagerCorrelationMapping
 
@@ -296,8 +287,7 @@ GetManagerCorrelationRule returns the ManagerCorrelationRule field if non-nil, z
 
 `func (o *Source) GetManagerCorrelationRuleOk() (*SourceManagerCorrelationRule, bool)`
 
-GetManagerCorrelationRuleOk returns a tuple with the ManagerCorrelationRule field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetManagerCorrelationRuleOk returns a tuple with the ManagerCorrelationRule field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetManagerCorrelationRule
 
@@ -315,12 +305,14 @@ HasManagerCorrelationRule returns a boolean if a field has been set.
 
 `func (o *Source) SetManagerCorrelationRuleNil(b bool)`
 
- SetManagerCorrelationRuleNil sets the value for ManagerCorrelationRule to be an explicit nil
+SetManagerCorrelationRuleNil sets the value for ManagerCorrelationRule to be an explicit nil
 
 ### UnsetManagerCorrelationRule
+
 `func (o *Source) UnsetManagerCorrelationRule()`
 
 UnsetManagerCorrelationRule ensures that no value is present for ManagerCorrelationRule, not even an explicit nil
+
 ### GetBeforeProvisioningRule
 
 `func (o *Source) GetBeforeProvisioningRule() SourceBeforeProvisioningRule`
@@ -331,8 +323,7 @@ GetBeforeProvisioningRule returns the BeforeProvisioningRule field if non-nil, z
 
 `func (o *Source) GetBeforeProvisioningRuleOk() (*SourceBeforeProvisioningRule, bool)`
 
-GetBeforeProvisioningRuleOk returns a tuple with the BeforeProvisioningRule field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetBeforeProvisioningRuleOk returns a tuple with the BeforeProvisioningRule field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetBeforeProvisioningRule
 
@@ -350,12 +341,14 @@ HasBeforeProvisioningRule returns a boolean if a field has been set.
 
 `func (o *Source) SetBeforeProvisioningRuleNil(b bool)`
 
- SetBeforeProvisioningRuleNil sets the value for BeforeProvisioningRule to be an explicit nil
+SetBeforeProvisioningRuleNil sets the value for BeforeProvisioningRule to be an explicit nil
 
 ### UnsetBeforeProvisioningRule
+
 `func (o *Source) UnsetBeforeProvisioningRule()`
 
 UnsetBeforeProvisioningRule ensures that no value is present for BeforeProvisioningRule, not even an explicit nil
+
 ### GetSchemas
 
 `func (o *Source) GetSchemas() []SourceSchemasInner`
@@ -366,8 +359,7 @@ GetSchemas returns the Schemas field if non-nil, zero value otherwise.
 
 `func (o *Source) GetSchemasOk() (*[]SourceSchemasInner, bool)`
 
-GetSchemasOk returns a tuple with the Schemas field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSchemasOk returns a tuple with the Schemas field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSchemas
 
@@ -391,8 +383,7 @@ GetPasswordPolicies returns the PasswordPolicies field if non-nil, zero value ot
 
 `func (o *Source) GetPasswordPoliciesOk() (*[]SourcePasswordPoliciesInner, bool)`
 
-GetPasswordPoliciesOk returns a tuple with the PasswordPolicies field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPasswordPoliciesOk returns a tuple with the PasswordPolicies field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPasswordPolicies
 
@@ -410,12 +401,14 @@ HasPasswordPolicies returns a boolean if a field has been set.
 
 `func (o *Source) SetPasswordPoliciesNil(b bool)`
 
- SetPasswordPoliciesNil sets the value for PasswordPolicies to be an explicit nil
+SetPasswordPoliciesNil sets the value for PasswordPolicies to be an explicit nil
 
 ### UnsetPasswordPolicies
+
 `func (o *Source) UnsetPasswordPolicies()`
 
 UnsetPasswordPolicies ensures that no value is present for PasswordPolicies, not even an explicit nil
+
 ### GetFeatures
 
 `func (o *Source) GetFeatures() []string`
@@ -426,8 +419,7 @@ GetFeatures returns the Features field if non-nil, zero value otherwise.
 
 `func (o *Source) GetFeaturesOk() (*[]string, bool)`
 
-GetFeaturesOk returns a tuple with the Features field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFeaturesOk returns a tuple with the Features field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFeatures
 
@@ -451,8 +443,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *Source) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -476,15 +467,13 @@ GetConnector returns the Connector field if non-nil, zero value otherwise.
 
 `func (o *Source) GetConnectorOk() (*string, bool)`
 
-GetConnectorOk returns a tuple with the Connector field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConnectorOk returns a tuple with the Connector field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConnector
 
 `func (o *Source) SetConnector(v string)`
 
 SetConnector sets Connector field to given value.
-
 
 ### GetConnectorClass
 
@@ -496,8 +485,7 @@ GetConnectorClass returns the ConnectorClass field if non-nil, zero value otherw
 
 `func (o *Source) GetConnectorClassOk() (*string, bool)`
 
-GetConnectorClassOk returns a tuple with the ConnectorClass field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConnectorClassOk returns a tuple with the ConnectorClass field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConnectorClass
 
@@ -521,8 +509,7 @@ GetConnectorAttributes returns the ConnectorAttributes field if non-nil, zero va
 
 `func (o *Source) GetConnectorAttributesOk() (*map[string]interface{}, bool)`
 
-GetConnectorAttributesOk returns a tuple with the ConnectorAttributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConnectorAttributesOk returns a tuple with the ConnectorAttributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConnectorAttributes
 
@@ -546,8 +533,7 @@ GetDeleteThreshold returns the DeleteThreshold field if non-nil, zero value othe
 
 `func (o *Source) GetDeleteThresholdOk() (*int32, bool)`
 
-GetDeleteThresholdOk returns a tuple with the DeleteThreshold field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDeleteThresholdOk returns a tuple with the DeleteThreshold field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDeleteThreshold
 
@@ -571,8 +557,7 @@ GetAuthoritative returns the Authoritative field if non-nil, zero value otherwis
 
 `func (o *Source) GetAuthoritativeOk() (*bool, bool)`
 
-GetAuthoritativeOk returns a tuple with the Authoritative field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAuthoritativeOk returns a tuple with the Authoritative field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAuthoritative
 
@@ -596,8 +581,7 @@ GetManagementWorkgroup returns the ManagementWorkgroup field if non-nil, zero va
 
 `func (o *Source) GetManagementWorkgroupOk() (*SourceManagementWorkgroup, bool)`
 
-GetManagementWorkgroupOk returns a tuple with the ManagementWorkgroup field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetManagementWorkgroupOk returns a tuple with the ManagementWorkgroup field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetManagementWorkgroup
 
@@ -615,12 +599,14 @@ HasManagementWorkgroup returns a boolean if a field has been set.
 
 `func (o *Source) SetManagementWorkgroupNil(b bool)`
 
- SetManagementWorkgroupNil sets the value for ManagementWorkgroup to be an explicit nil
+SetManagementWorkgroupNil sets the value for ManagementWorkgroup to be an explicit nil
 
 ### UnsetManagementWorkgroup
+
 `func (o *Source) UnsetManagementWorkgroup()`
 
 UnsetManagementWorkgroup ensures that no value is present for ManagementWorkgroup, not even an explicit nil
+
 ### GetHealthy
 
 `func (o *Source) GetHealthy() bool`
@@ -631,8 +617,7 @@ GetHealthy returns the Healthy field if non-nil, zero value otherwise.
 
 `func (o *Source) GetHealthyOk() (*bool, bool)`
 
-GetHealthyOk returns a tuple with the Healthy field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetHealthyOk returns a tuple with the Healthy field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetHealthy
 
@@ -656,8 +641,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *Source) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -681,8 +665,7 @@ GetSince returns the Since field if non-nil, zero value otherwise.
 
 `func (o *Source) GetSinceOk() (*string, bool)`
 
-GetSinceOk returns a tuple with the Since field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSinceOk returns a tuple with the Since field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSince
 
@@ -706,8 +689,7 @@ GetConnectorId returns the ConnectorId field if non-nil, zero value otherwise.
 
 `func (o *Source) GetConnectorIdOk() (*string, bool)`
 
-GetConnectorIdOk returns a tuple with the ConnectorId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConnectorIdOk returns a tuple with the ConnectorId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConnectorId
 
@@ -731,8 +713,7 @@ GetConnectorName returns the ConnectorName field if non-nil, zero value otherwis
 
 `func (o *Source) GetConnectorNameOk() (*string, bool)`
 
-GetConnectorNameOk returns a tuple with the ConnectorName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConnectorNameOk returns a tuple with the ConnectorName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConnectorName
 
@@ -756,8 +737,7 @@ GetConnectionType returns the ConnectionType field if non-nil, zero value otherw
 
 `func (o *Source) GetConnectionTypeOk() (*string, bool)`
 
-GetConnectionTypeOk returns a tuple with the ConnectionType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConnectionTypeOk returns a tuple with the ConnectionType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConnectionType
 
@@ -781,8 +761,7 @@ GetConnectorImplementationId returns the ConnectorImplementationId field if non-
 
 `func (o *Source) GetConnectorImplementationIdOk() (*string, bool)`
 
-GetConnectorImplementationIdOk returns a tuple with the ConnectorImplementationId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConnectorImplementationIdOk returns a tuple with the ConnectorImplementationId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConnectorImplementationId
 
@@ -806,8 +785,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *Source) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -831,8 +809,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *Source) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -856,8 +833,7 @@ GetCredentialProviderEnabled returns the CredentialProviderEnabled field if non-
 
 `func (o *Source) GetCredentialProviderEnabledOk() (*bool, bool)`
 
-GetCredentialProviderEnabledOk returns a tuple with the CredentialProviderEnabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCredentialProviderEnabledOk returns a tuple with the CredentialProviderEnabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCredentialProviderEnabled
 
@@ -881,8 +857,7 @@ GetCategory returns the Category field if non-nil, zero value otherwise.
 
 `func (o *Source) GetCategoryOk() (*string, bool)`
 
-GetCategoryOk returns a tuple with the Category field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCategoryOk returns a tuple with the Category field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCategory
 
@@ -900,10 +875,10 @@ HasCategory returns a boolean if a field has been set.
 
 `func (o *Source) SetCategoryNil(b bool)`
 
- SetCategoryNil sets the value for Category to be an explicit nil
+SetCategoryNil sets the value for Category to be an explicit nil
 
 ### UnsetCategory
+
 `func (o *Source) UnsetCategory()`
 
 UnsetCategory ensures that no value is present for Category, not even an explicit nil
-

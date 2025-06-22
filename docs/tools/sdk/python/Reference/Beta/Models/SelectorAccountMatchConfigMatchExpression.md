@@ -4,20 +4,33 @@ title: SelectorAccountMatchConfigMatchExpression
 pagination_label: SelectorAccountMatchConfigMatchExpression
 sidebar_label: SelectorAccountMatchConfigMatchExpression
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SelectorAccountMatchConfigMatchExpression', 'BetaSelectorAccountMatchConfigMatchExpression'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'SelectorAccountMatchConfigMatchExpression',
+    'BetaSelectorAccountMatchConfigMatchExpression',
+  ]
 slug: /tools/sdk/python/beta/models/selector-account-match-config-match-expression
-tags: ['SDK', 'Software Development Kit', 'SelectorAccountMatchConfigMatchExpression', 'BetaSelectorAccountMatchConfigMatchExpression']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SelectorAccountMatchConfigMatchExpression',
+    'BetaSelectorAccountMatchConfigMatchExpression',
+  ]
 ---
 
 # SelectorAccountMatchConfigMatchExpression
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**match_terms** | [**[]MatchTerm**](match-term) |  | [optional] 
-**var_and** | **bool** | If it is AND operators for match terms | [optional] [default to True]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **match_terms** | [**[]MatchTerm**](match-term) |  | [optional] |
+| **var_and** | **bool** | If it is AND operators for match terms | [optional] [default to True] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ var_and=True
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

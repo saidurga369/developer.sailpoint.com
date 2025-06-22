@@ -4,9 +4,16 @@ title: SodReportResultDto
 pagination_label: SodReportResultDto
 sidebar_label: SodReportResultDto
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SodReportResultDto', 'SodReportResultDto'] 
+keywords:
+  ['python', 'Python', 'sdk', 'SodReportResultDto', 'SodReportResultDto']
 slug: /tools/sdk/python/v3/models/sod-report-result-dto
-tags: ['SDK', 'Software Development Kit', 'SodReportResultDto', 'SodReportResultDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SodReportResultDto',
+    'SodReportResultDto',
+  ]
 ---
 
 # SodReportResultDto
@@ -15,11 +22,12 @@ SOD policy violation report result.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'REPORT_RESULT' ] | SOD policy violation report result DTO type. | [optional] 
-**id** | **str** | SOD policy violation report result ID. | [optional] 
-**name** | **str** | Human-readable name of the SOD policy violation report result. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'REPORT_RESULT' ] | SOD policy violation report result DTO type. | [optional] |
+| **id** | **str** | SOD policy violation report result ID. | [optional] |
+| **name** | **str** | Human-readable name of the SOD policy violation report result. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +42,5 @@ name='SOD Policy 1 Violation'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

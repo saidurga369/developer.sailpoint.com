@@ -1,27 +1,26 @@
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState} from 'react';
 
-import { usePrismTheme } from "@docusaurus/theme-common";
-import useIsBrowser from "@docusaurus/useIsBrowser";
-import { ErrorMessage } from "@hookform/error-message";
-import { setStringRawBody } from "@theme/ApiExplorer/Body/slice";
-import clsx from "clsx";
-import { Controller, useFormContext } from "react-hook-form";
-import { LiveProvider, LiveEditor, withLive } from "react-live";
+import {usePrismTheme} from '@docusaurus/theme-common';
+import useIsBrowser from '@docusaurus/useIsBrowser';
+import {ErrorMessage} from '@hookform/error-message';
+import {setStringRawBody} from '@theme/ApiExplorer/Body/slice';
+import clsx from 'clsx';
+import {Controller, useFormContext} from 'react-hook-form';
+import {LiveProvider, LiveEditor, withLive} from 'react-live';
 
-function Live({ onEdit, showErrors }: any) {
+function Live({onEdit, showErrors}: any) {
   const isBrowser = useIsBrowser();
   const [editorDisabled, setEditorDisabled] = useState(false);
 
   return (
     <div
       onClick={() => setEditorDisabled(false)}
-      onBlur={() => setEditorDisabled(true)}
-    >
+      onBlur={() => setEditorDisabled(true)}>
       <LiveEditor
         key={String(isBrowser)}
         className={clsx({
-          "openapi-explorer__playground-editor": true,
-          "openapi-explorer__form-item-input": showErrors,
+          'openapi-explorer__playground-editor': true,
+          'openapi-explorer__form-item-input': showErrors,
           error: showErrors,
         })}
         onChange={onEdit}
@@ -52,7 +51,7 @@ function App({
 
   const {
     control,
-    formState: { errors },
+    formState: {errors},
   } = useFormContext();
 
   const showErrorMessage = errors?.requestBody;
@@ -65,21 +64,19 @@ function App({
   return (
     <div
       className={clsx({
-        "openapi-explorer__playground-container": true,
-      })}
-    >
+        'openapi-explorer__playground-container': true,
+      })}>
       <LiveProvider
-        code={children.replace(/\n$/, "")}
+        code={children.replace(/\n$/, '')}
         transformCode={transformCode ?? ((code) => `${code};`)}
         theme={prismTheme}
         language={language}
-        {...props}
-      >
+        {...props}>
         <Controller
           control={control}
-          rules={{ required: isRequired ? "This field is required" : false }}
+          rules={{required: isRequired ? 'This field is required' : false}}
           name="requestBody"
-          render={({ field: { onChange, name } }) => (
+          render={({field: {onChange, name}}) => (
             <LiveComponent
               onEdit={(e: any) => handleChange(e, onChange)}
               name={name}
@@ -91,7 +88,7 @@ function App({
           <ErrorMessage
             errors={errors}
             name="requestBody"
-            render={({ message }) => (
+            render={({message}) => (
               <div className="openapi-explorer__input-error">{message}</div>
             )}
           />

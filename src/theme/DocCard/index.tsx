@@ -4,7 +4,7 @@ import Link from '@docusaurus/Link';
 import {
   findFirstSidebarItemLink,
   useDocById,
-} from "@docusaurus/plugin-content-docs/client";
+} from '@docusaurus/plugin-content-docs/client';
 import {usePluralForm} from '@docusaurus/theme-common';
 import isInternalUrl from '@docusaurus/isInternalUrl';
 import {translate} from '@docusaurus/Translate';
@@ -20,7 +20,11 @@ import styles from './styles.module.css';
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 // Icons - conditionally load based on the token availability
-import { faFolderOpen, faBook, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'; // Fallback classic icons
+import {
+  faFolderOpen,
+  faBook,
+  faArrowUpRightFromSquare,
+} from '@fortawesome/free-solid-svg-icons'; // Fallback classic icons
 
 function useCategoryItemsPlural() {
   const {selectMessage} = usePluralForm();
@@ -125,7 +129,12 @@ function CardLink({item}: {item: PropSidebarItemLink}): JSX.Element {
       href={item.href}
       icon={icon}
       title={item.label}
-      description={item.description ?? (doc?.description != "<Heading" && doc?.description != "<span") ? doc?.description : item.label}
+      description={
+        item.description ??
+        (doc?.description != '<Heading' && doc?.description != '<span')
+          ? doc?.description
+          : item.label
+      }
     />
   );
 }

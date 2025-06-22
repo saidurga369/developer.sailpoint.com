@@ -4,25 +4,26 @@ title: SearchCriteria
 pagination_label: SearchCriteria
 sidebar_label: SearchCriteria
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SearchCriteria', 'V2025SearchCriteria'] 
+keywords: ['go', 'Golang', 'sdk', 'SearchCriteria', 'V2025SearchCriteria']
 slug: /tools/sdk/go/v2025/models/search-criteria
-tags: ['SDK', 'Software Development Kit', 'SearchCriteria', 'V2025SearchCriteria']
+tags:
+  ['SDK', 'Software Development Kit', 'SearchCriteria', 'V2025SearchCriteria']
 ---
 
 # SearchCriteria
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Indices** | **[]string** | A list of indices to search within. Must contain exactly one item, typically \"entitlements\". | 
-**Filters** | Pointer to [**map[string]SearchCriteriaFiltersValue**](search-criteria-filters-value) | A map of filters applied to the search. Keys are filter names, and values are filter definitions. | [optional] 
-**Query** | Pointer to [**SearchCriteriaQuery**](search-criteria-query) |  | [optional] 
-**QueryType** | Pointer to **string** | Specifies the type of query. Must be \"TEXT\" if `textQuery` is used. | [optional] 
-**TextQuery** | Pointer to [**SearchCriteriaTextQuery**](search-criteria-text-query) |  | [optional] 
-**IncludeNested** | Pointer to **bool** | Whether to include nested objects in the search results. | [optional] [default to false]
-**Sort** | Pointer to **[]string** | Specifies the sorting order for the results. | [optional] 
-**SearchAfter** | Pointer to **[]string** | Used for pagination to fetch results after a specific point. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Indices** | **[]string** | A list of indices to search within. Must contain exactly one item, typically \"entitlements\". |
+| **Filters** | Pointer to [**map[string]SearchCriteriaFiltersValue**](search-criteria-filters-value) | A map of filters applied to the search. Keys are filter names, and values are filter definitions. | [optional] |
+| **Query** | Pointer to [**SearchCriteriaQuery**](search-criteria-query) |  | [optional] |
+| **QueryType** | Pointer to **string** | Specifies the type of query. Must be \"TEXT\" if `textQuery` is used. | [optional] |
+| **TextQuery** | Pointer to [**SearchCriteriaTextQuery**](search-criteria-text-query) |  | [optional] |
+| **IncludeNested** | Pointer to **bool** | Whether to include nested objects in the search results. | [optional] [default to false] |
+| **Sort** | Pointer to **[]string** | Specifies the sorting order for the results. | [optional] |
+| **SearchAfter** | Pointer to **[]string** | Used for pagination to fetch results after a specific point. | [optional] |
 
 ## Methods
 
@@ -30,18 +31,13 @@ Name | Type | Description | Notes
 
 `func NewSearchCriteria(indices []string, ) *SearchCriteria`
 
-NewSearchCriteria instantiates a new SearchCriteria object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSearchCriteria instantiates a new SearchCriteria object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSearchCriteriaWithDefaults
 
 `func NewSearchCriteriaWithDefaults() *SearchCriteria`
 
-NewSearchCriteriaWithDefaults instantiates a new SearchCriteria object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSearchCriteriaWithDefaults instantiates a new SearchCriteria object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetIndices
 
@@ -53,15 +49,13 @@ GetIndices returns the Indices field if non-nil, zero value otherwise.
 
 `func (o *SearchCriteria) GetIndicesOk() (*[]string, bool)`
 
-GetIndicesOk returns a tuple with the Indices field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIndicesOk returns a tuple with the Indices field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIndices
 
 `func (o *SearchCriteria) SetIndices(v []string)`
 
 SetIndices sets Indices field to given value.
-
 
 ### GetFilters
 
@@ -73,8 +67,7 @@ GetFilters returns the Filters field if non-nil, zero value otherwise.
 
 `func (o *SearchCriteria) GetFiltersOk() (*map[string]SearchCriteriaFiltersValue, bool)`
 
-GetFiltersOk returns a tuple with the Filters field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFiltersOk returns a tuple with the Filters field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFilters
 
@@ -98,8 +91,7 @@ GetQuery returns the Query field if non-nil, zero value otherwise.
 
 `func (o *SearchCriteria) GetQueryOk() (*SearchCriteriaQuery, bool)`
 
-GetQueryOk returns a tuple with the Query field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetQueryOk returns a tuple with the Query field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetQuery
 
@@ -123,8 +115,7 @@ GetQueryType returns the QueryType field if non-nil, zero value otherwise.
 
 `func (o *SearchCriteria) GetQueryTypeOk() (*string, bool)`
 
-GetQueryTypeOk returns a tuple with the QueryType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetQueryTypeOk returns a tuple with the QueryType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetQueryType
 
@@ -148,8 +139,7 @@ GetTextQuery returns the TextQuery field if non-nil, zero value otherwise.
 
 `func (o *SearchCriteria) GetTextQueryOk() (*SearchCriteriaTextQuery, bool)`
 
-GetTextQueryOk returns a tuple with the TextQuery field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTextQueryOk returns a tuple with the TextQuery field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTextQuery
 
@@ -173,8 +163,7 @@ GetIncludeNested returns the IncludeNested field if non-nil, zero value otherwis
 
 `func (o *SearchCriteria) GetIncludeNestedOk() (*bool, bool)`
 
-GetIncludeNestedOk returns a tuple with the IncludeNested field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIncludeNestedOk returns a tuple with the IncludeNested field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIncludeNested
 
@@ -198,8 +187,7 @@ GetSort returns the Sort field if non-nil, zero value otherwise.
 
 `func (o *SearchCriteria) GetSortOk() (*[]string, bool)`
 
-GetSortOk returns a tuple with the Sort field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSortOk returns a tuple with the Sort field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSort
 
@@ -223,8 +211,7 @@ GetSearchAfter returns the SearchAfter field if non-nil, zero value otherwise.
 
 `func (o *SearchCriteria) GetSearchAfterOk() (*[]string, bool)`
 
-GetSearchAfterOk returns a tuple with the SearchAfter field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSearchAfterOk returns a tuple with the SearchAfter field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSearchAfter
 
@@ -237,5 +224,3 @@ SetSearchAfter sets SearchAfter field to given value.
 `func (o *SearchCriteria) HasSearchAfter() bool`
 
 HasSearchAfter returns a boolean if a field has been set.
-
-

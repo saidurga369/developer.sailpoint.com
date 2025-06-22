@@ -4,21 +4,34 @@ title: AccountAggregationStatus
 pagination_label: AccountAggregationStatus
 sidebar_label: AccountAggregationStatus
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccountAggregationStatus', 'BetaAccountAggregationStatus'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'AccountAggregationStatus',
+    'BetaAccountAggregationStatus',
+  ]
 slug: /tools/sdk/go/beta/models/account-aggregation-status
-tags: ['SDK', 'Software Development Kit', 'AccountAggregationStatus', 'BetaAccountAggregationStatus']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountAggregationStatus',
+    'BetaAccountAggregationStatus',
+  ]
 ---
 
 # AccountAggregationStatus
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Start** | Pointer to **SailPointTime** | When the aggregation started. | [optional] 
-**Status** | Pointer to **string** | STARTED - Aggregation started, but source account iteration has not completed.  ACCOUNTS_COLLECTED - Source account iteration completed, but all accounts have not yet been processed.  COMPLETED - Aggregation completed (*possibly with errors*).  CANCELLED - Aggregation cancelled by user.  RETRIED - Aggregation retried because of connectivity issues with the Virtual Appliance.  TERMINATED - Aggregation marked as failed after 3 tries after connectivity issues with the Virtual Appliance.  | [optional] 
-**TotalAccounts** | Pointer to **int32** | The total number of *NEW, CHANGED and DELETED* accounts that need to be processed for this aggregation. This does not include accounts that were unchanged since the previous aggregation. This can be zero if there were no new, changed or deleted accounts since the previous aggregation. *Only available when status is ACCOUNTS_COLLECTED or COMPLETED.* | [optional] 
-**ProcessedAccounts** | Pointer to **int32** | The number of *NEW, CHANGED and DELETED* accounts that have been processed so far. This reflects the number of accounts that have been processed at the time of the API call, and may increase on subsequent API calls while the status is ACCOUNTS_COLLECTED. *Only available when status is ACCOUNTS_COLLECTED or COMPLETED.* | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Start** | Pointer to **SailPointTime** | When the aggregation started. | [optional] |
+| **Status** | Pointer to **string** | STARTED - Aggregation started, but source account iteration has not completed. ACCOUNTS_COLLECTED - Source account iteration completed, but all accounts have not yet been processed. COMPLETED - Aggregation completed (_possibly with errors_). CANCELLED - Aggregation cancelled by user. RETRIED - Aggregation retried because of connectivity issues with the Virtual Appliance. TERMINATED - Aggregation marked as failed after 3 tries after connectivity issues with the Virtual Appliance. | [optional] |
+| **TotalAccounts** | Pointer to **int32** | The total number of _NEW, CHANGED and DELETED_ accounts that need to be processed for this aggregation. This does not include accounts that were unchanged since the previous aggregation. This can be zero if there were no new, changed or deleted accounts since the previous aggregation. _Only available when status is ACCOUNTS_COLLECTED or COMPLETED._ | [optional] |
+| **ProcessedAccounts** | Pointer to **int32** | The number of _NEW, CHANGED and DELETED_ accounts that have been processed so far. This reflects the number of accounts that have been processed at the time of the API call, and may increase on subsequent API calls while the status is ACCOUNTS_COLLECTED. _Only available when status is ACCOUNTS_COLLECTED or COMPLETED._ | [optional] |
 
 ## Methods
 
@@ -26,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewAccountAggregationStatus() *AccountAggregationStatus`
 
-NewAccountAggregationStatus instantiates a new AccountAggregationStatus object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccountAggregationStatus instantiates a new AccountAggregationStatus object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccountAggregationStatusWithDefaults
 
 `func NewAccountAggregationStatusWithDefaults() *AccountAggregationStatus`
 
-NewAccountAggregationStatusWithDefaults instantiates a new AccountAggregationStatus object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccountAggregationStatusWithDefaults instantiates a new AccountAggregationStatus object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetStart
 
@@ -49,8 +57,7 @@ GetStart returns the Start field if non-nil, zero value otherwise.
 
 `func (o *AccountAggregationStatus) GetStartOk() (*SailPointTime, bool)`
 
-GetStartOk returns a tuple with the Start field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStartOk returns a tuple with the Start field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStart
 
@@ -74,8 +81,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *AccountAggregationStatus) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -99,8 +105,7 @@ GetTotalAccounts returns the TotalAccounts field if non-nil, zero value otherwis
 
 `func (o *AccountAggregationStatus) GetTotalAccountsOk() (*int32, bool)`
 
-GetTotalAccountsOk returns a tuple with the TotalAccounts field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTotalAccountsOk returns a tuple with the TotalAccounts field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTotalAccounts
 
@@ -124,8 +129,7 @@ GetProcessedAccounts returns the ProcessedAccounts field if non-nil, zero value 
 
 `func (o *AccountAggregationStatus) GetProcessedAccountsOk() (*int32, bool)`
 
-GetProcessedAccountsOk returns a tuple with the ProcessedAccounts field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProcessedAccountsOk returns a tuple with the ProcessedAccounts field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProcessedAccounts
 
@@ -138,5 +142,3 @@ SetProcessedAccounts sets ProcessedAccounts field to given value.
 `func (o *AccountAggregationStatus) HasProcessedAccounts() bool`
 
 HasProcessedAccounts returns a boolean if a field has been set.
-
-

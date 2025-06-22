@@ -4,7 +4,7 @@ title: PasswordInfo
 pagination_label: PasswordInfo
 sidebar_label: PasswordInfo
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'PasswordInfo', 'V2025PasswordInfo'] 
+keywords: ['go', 'Golang', 'sdk', 'PasswordInfo', 'V2025PasswordInfo']
 slug: /tools/sdk/go/v2025/models/password-info
 tags: ['SDK', 'Software Development Kit', 'PasswordInfo', 'V2025PasswordInfo']
 ---
@@ -13,14 +13,14 @@ tags: ['SDK', 'Software Development Kit', 'PasswordInfo', 'V2025PasswordInfo']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**IdentityId** | Pointer to **string** | Identity ID | [optional] 
-**SourceId** | Pointer to **string** | source ID | [optional] 
-**PublicKeyId** | Pointer to **string** | public key ID | [optional] 
-**PublicKey** | Pointer to **string** | User's public key with Base64 encoding | [optional] 
-**Accounts** | Pointer to [**[]PasswordInfoAccount**](password-info-account) | Account info related to queried identity and source | [optional] 
-**Policies** | Pointer to **[]string** | Password constraints | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **IdentityId** | Pointer to **string** | Identity ID | [optional] |
+| **SourceId** | Pointer to **string** | source ID | [optional] |
+| **PublicKeyId** | Pointer to **string** | public key ID | [optional] |
+| **PublicKey** | Pointer to **string** | User's public key with Base64 encoding | [optional] |
+| **Accounts** | Pointer to [**[]PasswordInfoAccount**](password-info-account) | Account info related to queried identity and source | [optional] |
+| **Policies** | Pointer to **[]string** | Password constraints | [optional] |
 
 ## Methods
 
@@ -28,18 +28,13 @@ Name | Type | Description | Notes
 
 `func NewPasswordInfo() *PasswordInfo`
 
-NewPasswordInfo instantiates a new PasswordInfo object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewPasswordInfo instantiates a new PasswordInfo object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewPasswordInfoWithDefaults
 
 `func NewPasswordInfoWithDefaults() *PasswordInfo`
 
-NewPasswordInfoWithDefaults instantiates a new PasswordInfo object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewPasswordInfoWithDefaults instantiates a new PasswordInfo object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetIdentityId
 
@@ -51,8 +46,7 @@ GetIdentityId returns the IdentityId field if non-nil, zero value otherwise.
 
 `func (o *PasswordInfo) GetIdentityIdOk() (*string, bool)`
 
-GetIdentityIdOk returns a tuple with the IdentityId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityIdOk returns a tuple with the IdentityId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityId
 
@@ -76,8 +70,7 @@ GetSourceId returns the SourceId field if non-nil, zero value otherwise.
 
 `func (o *PasswordInfo) GetSourceIdOk() (*string, bool)`
 
-GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceId
 
@@ -101,8 +94,7 @@ GetPublicKeyId returns the PublicKeyId field if non-nil, zero value otherwise.
 
 `func (o *PasswordInfo) GetPublicKeyIdOk() (*string, bool)`
 
-GetPublicKeyIdOk returns a tuple with the PublicKeyId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPublicKeyIdOk returns a tuple with the PublicKeyId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPublicKeyId
 
@@ -126,8 +118,7 @@ GetPublicKey returns the PublicKey field if non-nil, zero value otherwise.
 
 `func (o *PasswordInfo) GetPublicKeyOk() (*string, bool)`
 
-GetPublicKeyOk returns a tuple with the PublicKey field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPublicKeyOk returns a tuple with the PublicKey field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPublicKey
 
@@ -151,8 +142,7 @@ GetAccounts returns the Accounts field if non-nil, zero value otherwise.
 
 `func (o *PasswordInfo) GetAccountsOk() (*[]PasswordInfoAccount, bool)`
 
-GetAccountsOk returns a tuple with the Accounts field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountsOk returns a tuple with the Accounts field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccounts
 
@@ -176,8 +166,7 @@ GetPolicies returns the Policies field if non-nil, zero value otherwise.
 
 `func (o *PasswordInfo) GetPoliciesOk() (*[]string, bool)`
 
-GetPoliciesOk returns a tuple with the Policies field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPoliciesOk returns a tuple with the Policies field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPolicies
 
@@ -190,5 +179,3 @@ SetPolicies sets Policies field to given value.
 `func (o *PasswordInfo) HasPolicies() bool`
 
 HasPolicies returns a boolean if a field has been set.
-
-

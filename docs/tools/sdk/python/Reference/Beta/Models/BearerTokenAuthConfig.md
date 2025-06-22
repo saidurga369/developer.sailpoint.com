@@ -4,9 +4,22 @@ title: BearerTokenAuthConfig
 pagination_label: BearerTokenAuthConfig
 sidebar_label: BearerTokenAuthConfig
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'BearerTokenAuthConfig', 'BetaBearerTokenAuthConfig'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'BearerTokenAuthConfig',
+    'BetaBearerTokenAuthConfig',
+  ]
 slug: /tools/sdk/python/beta/models/bearer-token-auth-config
-tags: ['SDK', 'Software Development Kit', 'BearerTokenAuthConfig', 'BetaBearerTokenAuthConfig']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'BearerTokenAuthConfig',
+    'BetaBearerTokenAuthConfig',
+  ]
 ---
 
 # BearerTokenAuthConfig
@@ -15,9 +28,10 @@ Config required if BEARER_TOKEN authentication is used. On response, this field 
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**bearer_token** | **str** | Bearer token | [optional] 
+| Name             | Type    | Description  | Notes      |
+| ---------------- | ------- | ------------ | ---------- |
+| **bearer_token** | **str** | Bearer token | [optional] |
+
 }
 
 ## Example
@@ -30,5 +44,5 @@ bearer_token=''
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

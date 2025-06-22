@@ -4,9 +4,22 @@ title: IdentityDocumentAllOfIdentityProfile
 pagination_label: IdentityDocumentAllOfIdentityProfile
 sidebar_label: IdentityDocumentAllOfIdentityProfile
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentityDocumentAllOfIdentityProfile', 'IdentityDocumentAllOfIdentityProfile'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'IdentityDocumentAllOfIdentityProfile',
+    'IdentityDocumentAllOfIdentityProfile',
+  ]
 slug: /tools/sdk/python/v3/models/identity-document-all-of-identity-profile
-tags: ['SDK', 'Software Development Kit', 'IdentityDocumentAllOfIdentityProfile', 'IdentityDocumentAllOfIdentityProfile']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityDocumentAllOfIdentityProfile',
+    'IdentityDocumentAllOfIdentityProfile',
+  ]
 ---
 
 # IdentityDocumentAllOfIdentityProfile
@@ -15,10 +28,11 @@ Identity's identity profile.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Identity profile's ID. | [optional] 
-**name** | **str** | Identity profile's name. | [optional] 
+| Name     | Type    | Description              | Notes      |
+| -------- | ------- | ------------------------ | ---------- |
+| **id**   | **str** | Identity profile's ID.   | [optional] |
+| **name** | **str** | Identity profile's name. | [optional] |
+
 }
 
 ## Example
@@ -32,5 +46,5 @@ name='HR Employees'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,9 +4,22 @@ title: ViolationOwnerAssignmentConfigOwnerRef
 pagination_label: ViolationOwnerAssignmentConfigOwnerRef
 sidebar_label: ViolationOwnerAssignmentConfigOwnerRef
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ViolationOwnerAssignmentConfigOwnerRef', 'BetaViolationOwnerAssignmentConfigOwnerRef'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ViolationOwnerAssignmentConfigOwnerRef',
+    'BetaViolationOwnerAssignmentConfigOwnerRef',
+  ]
 slug: /tools/sdk/python/beta/models/violation-owner-assignment-config-owner-ref
-tags: ['SDK', 'Software Development Kit', 'ViolationOwnerAssignmentConfigOwnerRef', 'BetaViolationOwnerAssignmentConfigOwnerRef']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ViolationOwnerAssignmentConfigOwnerRef',
+    'BetaViolationOwnerAssignmentConfigOwnerRef',
+  ]
 ---
 
 # ViolationOwnerAssignmentConfigOwnerRef
@@ -15,11 +28,12 @@ The owner of the violation assignment config.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY',    'GOVERNANCE_GROUP',    'MANAGER' ] | Owner type. | [optional] 
-**id** | **str** | Owner's ID. | [optional] 
-**name** | **str** | Owner's name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'IDENTITY', 'GOVERNANCE_GROUP', 'MANAGER' ] | Owner type. | [optional] |
+| **id** | **str** | Owner's ID. | [optional] |
+| **name** | **str** | Owner's name. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Support'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

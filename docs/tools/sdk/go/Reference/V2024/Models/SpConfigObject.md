@@ -4,25 +4,26 @@ title: SpConfigObject
 pagination_label: SpConfigObject
 sidebar_label: SpConfigObject
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SpConfigObject', 'V2024SpConfigObject'] 
+keywords: ['go', 'Golang', 'sdk', 'SpConfigObject', 'V2024SpConfigObject']
 slug: /tools/sdk/go/v2024/models/sp-config-object
-tags: ['SDK', 'Software Development Kit', 'SpConfigObject', 'V2024SpConfigObject']
+tags:
+  ['SDK', 'Software Development Kit', 'SpConfigObject', 'V2024SpConfigObject']
 ---
 
 # SpConfigObject
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ObjectType** | Pointer to **string** | Object type the configuration is for. | [optional] 
-**ReferenceExtractors** | Pointer to **[]string** | List of JSON paths within an exported object of this type, representing references that must be resolved. | [optional] 
-**SignatureRequired** | Pointer to **bool** | Indicates whether this type of object will be JWS signed and cannot be modified before import. | [optional] [default to false]
-**AlwaysResolveById** | Pointer to **bool** | Indicates whether this object type must be always be resolved by ID. | [optional] [default to false]
-**LegacyObject** | Pointer to **bool** | Indicates whether this is a legacy object. | [optional] [default to false]
-**OnePerTenant** | Pointer to **bool** | Indicates whether there is only one object of this type. | [optional] [default to false]
-**Exportable** | Pointer to **bool** | Indicates whether the object can be exported or is just a reference object. | [optional] [default to false]
-**Rules** | Pointer to [**SpConfigRules**](sp-config-rules) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ObjectType** | Pointer to **string** | Object type the configuration is for. | [optional] |
+| **ReferenceExtractors** | Pointer to **[]string** | List of JSON paths within an exported object of this type, representing references that must be resolved. | [optional] |
+| **SignatureRequired** | Pointer to **bool** | Indicates whether this type of object will be JWS signed and cannot be modified before import. | [optional] [default to false] |
+| **AlwaysResolveById** | Pointer to **bool** | Indicates whether this object type must be always be resolved by ID. | [optional] [default to false] |
+| **LegacyObject** | Pointer to **bool** | Indicates whether this is a legacy object. | [optional] [default to false] |
+| **OnePerTenant** | Pointer to **bool** | Indicates whether there is only one object of this type. | [optional] [default to false] |
+| **Exportable** | Pointer to **bool** | Indicates whether the object can be exported or is just a reference object. | [optional] [default to false] |
+| **Rules** | Pointer to [**SpConfigRules**](sp-config-rules) |  | [optional] |
 
 ## Methods
 
@@ -30,18 +31,13 @@ Name | Type | Description | Notes
 
 `func NewSpConfigObject() *SpConfigObject`
 
-NewSpConfigObject instantiates a new SpConfigObject object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSpConfigObject instantiates a new SpConfigObject object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSpConfigObjectWithDefaults
 
 `func NewSpConfigObjectWithDefaults() *SpConfigObject`
 
-NewSpConfigObjectWithDefaults instantiates a new SpConfigObject object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSpConfigObjectWithDefaults instantiates a new SpConfigObject object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetObjectType
 
@@ -53,8 +49,7 @@ GetObjectType returns the ObjectType field if non-nil, zero value otherwise.
 
 `func (o *SpConfigObject) GetObjectTypeOk() (*string, bool)`
 
-GetObjectTypeOk returns a tuple with the ObjectType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetObjectTypeOk returns a tuple with the ObjectType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetObjectType
 
@@ -78,8 +73,7 @@ GetReferenceExtractors returns the ReferenceExtractors field if non-nil, zero va
 
 `func (o *SpConfigObject) GetReferenceExtractorsOk() (*[]string, bool)`
 
-GetReferenceExtractorsOk returns a tuple with the ReferenceExtractors field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReferenceExtractorsOk returns a tuple with the ReferenceExtractors field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReferenceExtractors
 
@@ -97,12 +91,14 @@ HasReferenceExtractors returns a boolean if a field has been set.
 
 `func (o *SpConfigObject) SetReferenceExtractorsNil(b bool)`
 
- SetReferenceExtractorsNil sets the value for ReferenceExtractors to be an explicit nil
+SetReferenceExtractorsNil sets the value for ReferenceExtractors to be an explicit nil
 
 ### UnsetReferenceExtractors
+
 `func (o *SpConfigObject) UnsetReferenceExtractors()`
 
 UnsetReferenceExtractors ensures that no value is present for ReferenceExtractors, not even an explicit nil
+
 ### GetSignatureRequired
 
 `func (o *SpConfigObject) GetSignatureRequired() bool`
@@ -113,8 +109,7 @@ GetSignatureRequired returns the SignatureRequired field if non-nil, zero value 
 
 `func (o *SpConfigObject) GetSignatureRequiredOk() (*bool, bool)`
 
-GetSignatureRequiredOk returns a tuple with the SignatureRequired field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSignatureRequiredOk returns a tuple with the SignatureRequired field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSignatureRequired
 
@@ -138,8 +133,7 @@ GetAlwaysResolveById returns the AlwaysResolveById field if non-nil, zero value 
 
 `func (o *SpConfigObject) GetAlwaysResolveByIdOk() (*bool, bool)`
 
-GetAlwaysResolveByIdOk returns a tuple with the AlwaysResolveById field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAlwaysResolveByIdOk returns a tuple with the AlwaysResolveById field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAlwaysResolveById
 
@@ -163,8 +157,7 @@ GetLegacyObject returns the LegacyObject field if non-nil, zero value otherwise.
 
 `func (o *SpConfigObject) GetLegacyObjectOk() (*bool, bool)`
 
-GetLegacyObjectOk returns a tuple with the LegacyObject field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLegacyObjectOk returns a tuple with the LegacyObject field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLegacyObject
 
@@ -188,8 +181,7 @@ GetOnePerTenant returns the OnePerTenant field if non-nil, zero value otherwise.
 
 `func (o *SpConfigObject) GetOnePerTenantOk() (*bool, bool)`
 
-GetOnePerTenantOk returns a tuple with the OnePerTenant field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOnePerTenantOk returns a tuple with the OnePerTenant field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOnePerTenant
 
@@ -213,8 +205,7 @@ GetExportable returns the Exportable field if non-nil, zero value otherwise.
 
 `func (o *SpConfigObject) GetExportableOk() (*bool, bool)`
 
-GetExportableOk returns a tuple with the Exportable field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetExportableOk returns a tuple with the Exportable field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetExportable
 
@@ -238,8 +229,7 @@ GetRules returns the Rules field if non-nil, zero value otherwise.
 
 `func (o *SpConfigObject) GetRulesOk() (*SpConfigRules, bool)`
 
-GetRulesOk returns a tuple with the Rules field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRulesOk returns a tuple with the Rules field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRules
 
@@ -252,5 +242,3 @@ SetRules sets Rules field to given value.
 `func (o *SpConfigObject) HasRules() bool`
 
 HasRules returns a boolean if a field has been set.
-
-

@@ -4,20 +4,20 @@ title: KbaAuthResponse
 pagination_label: KbaAuthResponse
 sidebar_label: KbaAuthResponse
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'KbaAuthResponse', 'KbaAuthResponse'] 
+keywords: ['python', 'Python', 'sdk', 'KbaAuthResponse', 'KbaAuthResponse']
 slug: /tools/sdk/python/v3/models/kba-auth-response
 tags: ['SDK', 'Software Development Kit', 'KbaAuthResponse', 'KbaAuthResponse']
 ---
 
 # KbaAuthResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**kba_auth_response_items** | [**[]KbaAuthResponseItem**](kba-auth-response-item) |  | [optional] 
-**status** |  **Enum** [  'PENDING',    'SUCCESS',    'FAILED',    'LOCKOUT',    'NOT_ENOUGH_DATA' ] | MFA Authentication status | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **kba_auth_response_items** | [**[]KbaAuthResponseItem**](kba-auth-response-item) |  | [optional] |
+| **status** | **Enum** [ 'PENDING', 'SUCCESS', 'FAILED', 'LOCKOUT', 'NOT_ENOUGH_DATA' ] | MFA Authentication status | [optional] |
+
 }
 
 ## Example
@@ -31,5 +31,5 @@ status='PENDING'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

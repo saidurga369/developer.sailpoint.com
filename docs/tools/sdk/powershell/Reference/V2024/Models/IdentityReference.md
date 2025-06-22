@@ -4,25 +4,38 @@ title: IdentityReference
 pagination_label: IdentityReference
 sidebar_label: IdentityReference
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'IdentityReference', 'V2024IdentityReference'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'IdentityReference',
+    'V2024IdentityReference',
+  ]
 slug: /tools/sdk/powershell/v2024/models/identity-reference
-tags: ['SDK', 'Software Development Kit', 'IdentityReference', 'V2024IdentityReference']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityReference',
+    'V2024IdentityReference',
+  ]
 ---
-
 
 # IdentityReference
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | [**DtoType**](dto-type) |  | [optional] 
-**Id** | **String** | Identity id | [optional] 
-**Name** | **String** | Human-readable display name of identity. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | [**DtoType**](dto-type) |  | [optional] |
+| **Id** | **String** | Identity id | [optional] |
+| **Name** | **String** | Human-readable display name of identity. | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $IdentityReference = Initialize-V2024IdentityReference  -Type null `
  -Id 2c9180a46faadee4016fb4e018c20639 `
@@ -30,10 +43,9 @@ $IdentityReference = Initialize-V2024IdentityReference  -Type null `
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $IdentityReference | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

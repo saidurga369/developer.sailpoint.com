@@ -4,61 +4,68 @@ title: Password_Policies
 pagination_label: Password_Policies
 sidebar_label: Password_Policies
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'Password_Policies', 'V2025Password_Policies'] 
+keywords:
+  ['python', 'Python', 'sdk', 'Password_Policies', 'V2025Password_Policies']
 slug: /tools/sdk/python/v2025/methods/password-policies
-tags: ['SDK', 'Software Development Kit', 'Password_Policies', 'V2025Password_Policies']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'Password_Policies',
+    'V2025Password_Policies',
+  ]
 ---
 
 # sailpoint.v2025.PasswordPoliciesApi
-  Use these APIs to implement password policies functionality.
-These APIs allow you to define the policy parameters for choosing passwords.
 
-IdentityNow comes with a default policy that you can modify to define the password requirements your users must meet to log in to IdentityNow, such as requiring a minimum password length, including special characters, and disallowing certain patterns.
-If you have licensed Password Management, you can create additional password policies beyond the default one to manage passwords for supported sources in your org.
+Use these APIs to implement password policies functionality. These APIs allow you to define the policy parameters for choosing passwords.
 
-In the Identity Security Cloud Admin panel, administrators can use the Password Mgmt dropdown menu to select Sync Groups.
-Refer to [Managing Password Policies](https://documentation.sailpoint.com/saas/help/pwd/pwd_policies/pwd_policies.html) for more information about password policies.
- 
+IdentityNow comes with a default policy that you can modify to define the password requirements your users must meet to log in to IdentityNow, such as requiring a minimum password length, including special characters, and disallowing certain patterns. If you have licensed Password Management, you can create additional password policies beyond the default one to manage passwords for supported sources in your org.
+
+In the Identity Security Cloud Admin panel, administrators can use the Password Mgmt dropdown menu to select Sync Groups. Refer to [Managing Password Policies](https://documentation.sailpoint.com/saas/help/pwd/pwd_policies/pwd_policies.html) for more information about password policies.
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/v2025*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create-password-policy**](#create-password-policy) | **POST** `/password-policies` | Create password policy
-[**delete-password-policy**](#delete-password-policy) | **DELETE** `/password-policies/{id}` | Delete password policy by id
-[**get-password-policy-by-id**](#get-password-policy-by-id) | **GET** `/password-policies/{id}` | Get password policy by id
-[**list-password-policies**](#list-password-policies) | **GET** `/password-policies` | List password policies
-[**set-password-policy**](#set-password-policy) | **PUT** `/password-policies/{id}` | Update password policy by id
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**create-password-policy**](#create-password-policy) | **POST** `/password-policies` | Create password policy |
+| [**delete-password-policy**](#delete-password-policy) | **DELETE** `/password-policies/{id}` | Delete password policy by id |
+| [**get-password-policy-by-id**](#get-password-policy-by-id) | **GET** `/password-policies/{id}` | Get password policy by id |
+| [**list-password-policies**](#list-password-policies) | **GET** `/password-policies` | List password policies |
+| [**set-password-policy**](#set-password-policy) | **PUT** `/password-policies/{id}` | Update password policy by id |
 
 ## create-password-policy
-Create password policy
-This API creates the specified password policy.
+
+Create password policy This API creates the specified password policy.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/create-password-policy)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
- Body  | password_policy_v3_dto | [**PasswordPolicyV3Dto**](../models/password-policy-v3-dto) | True  | 
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Body | password_policy_v3_dto | [**PasswordPolicyV3Dto**](../models/password-policy-v3-dto) | True |
 
 ### Return type
+
 [**PasswordPolicyV3Dto**](../models/password-policy-v3-dto)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Reference to the password policy. | PasswordPolicyV3Dto |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Reference to the password policy. | PasswordPolicyV3Dto | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json
- - **Accept**: application/json
+
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### Example
 
@@ -103,7 +110,7 @@ with ApiClient(configuration) as api_client:
           "requireStrongAuthOffNetwork" : true,
           "name" : "PasswordPolicy Example",
           "maxLength" : 25
-        }''' # PasswordPolicyV3Dto | 
+        }''' # PasswordPolicyV3Dto |
 
     try:
         # Create password policy
@@ -117,39 +124,40 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling PasswordPoliciesApi->create_password_policy: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## delete-password-policy
-Delete password policy by id
-This API deletes the specified password policy.
+
+Delete password policy by id This API deletes the specified password policy.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/delete-password-policy)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | id | **str** | True  | The ID of password policy to delete.
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | id | **str** | True | The ID of password policy to delete. |
 
 ### Return type
- (empty response body)
+
+(empty response body)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-204 | No content - indicates the request was successful but there is no content to be returned in the response. |  |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 204 | No content - indicates the request was successful but there is no content to be returned in the response. |  | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -165,7 +173,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Delete password policy by id
-        
+
         PasswordPoliciesApi(api_client).delete_password_policy(id=id)
         # Below is a request that includes all optional parameters
         # PasswordPoliciesApi(api_client).delete_password_policy(id)
@@ -173,39 +181,40 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling PasswordPoliciesApi->delete_password_policy: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## get-password-policy-by-id
-Get password policy by id
-This API returns the password policy for the specified ID.
+
+Get password policy by id This API returns the password policy for the specified ID.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/get-password-policy-by-id)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | id | **str** | True  | The ID of password policy to retrieve.
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | id | **str** | True | The ID of password policy to retrieve. |
 
 ### Return type
+
 [**PasswordPolicyV3Dto**](../models/password-policy-v3-dto)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Reference to the password policy. | PasswordPolicyV3Dto |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Reference to the password policy. | PasswordPolicyV3Dto | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -222,7 +231,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Get password policy by id
-        
+
         results = PasswordPoliciesApi(api_client).get_password_policy_by_id(id=id)
         # Below is a request that includes all optional parameters
         # results = PasswordPoliciesApi(api_client).get_password_policy_by_id(id)
@@ -232,41 +241,41 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling PasswordPoliciesApi->get_password_policy_by_id: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## list-password-policies
-List password policies
-This gets list of all Password Policies.
-Requires role of ORG_ADMIN
+
+List password policies This gets list of all Password Policies. Requires role of ORG_ADMIN
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/list-password-policies)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-  Query | limit | **int** |   (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | offset | **int** |   (optional) (default to 0) | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | count | **bool** |   (optional) (default to False) | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Query | limit | **int** | (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | offset | **int** | (optional) (default to 0) | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | count | **bool** | (optional) (default to False) | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
 
 ### Return type
+
 [**List[PasswordPolicyV3Dto]**](../models/password-policy-v3-dto)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | List of all Password Policies. | List[PasswordPolicyV3Dto] |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | List of all Password Policies. | List[PasswordPolicyV3Dto] | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -285,7 +294,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # List password policies
-        
+
         results = PasswordPoliciesApi(api_client).list_password_policies()
         # Below is a request that includes all optional parameters
         # results = PasswordPoliciesApi(api_client).list_password_policies(limit, offset, count)
@@ -296,40 +305,41 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling PasswordPoliciesApi->list_password_policies: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## set-password-policy
-Update password policy by id
-This API updates the specified password policy.
+
+Update password policy by id This API updates the specified password policy.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/set-password-policy)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | id | **str** | True  | The ID of password policy to update.
- Body  | password_policy_v3_dto | [**PasswordPolicyV3Dto**](../models/password-policy-v3-dto) | True  | 
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | id | **str** | True | The ID of password policy to update. |
+| Body | password_policy_v3_dto | [**PasswordPolicyV3Dto**](../models/password-policy-v3-dto) | True |
 
 ### Return type
+
 [**PasswordPolicyV3Dto**](../models/password-policy-v3-dto)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Reference to the password policy. | PasswordPolicyV3Dto |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Reference to the password policy. | PasswordPolicyV3Dto | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json
- - **Accept**: application/json
+
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### Example
 
@@ -375,7 +385,7 @@ with ApiClient(configuration) as api_client:
           "requireStrongAuthOffNetwork" : true,
           "name" : "PasswordPolicy Example",
           "maxLength" : 25
-        }''' # PasswordPolicyV3Dto | 
+        }''' # PasswordPolicyV3Dto |
 
     try:
         # Update password policy by id
@@ -389,9 +399,4 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling PasswordPoliciesApi->set_password_policy: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
-
-
-
+[[Back to top]](#)

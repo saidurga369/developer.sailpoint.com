@@ -4,19 +4,32 @@ title: WorkgroupConnectionDto
 pagination_label: WorkgroupConnectionDto
 sidebar_label: WorkgroupConnectionDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'WorkgroupConnectionDto', 'BetaWorkgroupConnectionDto'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'WorkgroupConnectionDto',
+    'BetaWorkgroupConnectionDto',
+  ]
 slug: /tools/sdk/go/beta/models/workgroup-connection-dto
-tags: ['SDK', 'Software Development Kit', 'WorkgroupConnectionDto', 'BetaWorkgroupConnectionDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'WorkgroupConnectionDto',
+    'BetaWorkgroupConnectionDto',
+  ]
 ---
 
 # WorkgroupConnectionDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Object** | Pointer to [**ConnectedObject**](connected-object) |  | [optional] 
-**ConnectionType** | Pointer to **string** | Connection Type. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Object** | Pointer to [**ConnectedObject**](connected-object) |  | [optional] |
+| **ConnectionType** | Pointer to **string** | Connection Type. | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewWorkgroupConnectionDto() *WorkgroupConnectionDto`
 
-NewWorkgroupConnectionDto instantiates a new WorkgroupConnectionDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewWorkgroupConnectionDto instantiates a new WorkgroupConnectionDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewWorkgroupConnectionDtoWithDefaults
 
 `func NewWorkgroupConnectionDtoWithDefaults() *WorkgroupConnectionDto`
 
-NewWorkgroupConnectionDtoWithDefaults instantiates a new WorkgroupConnectionDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewWorkgroupConnectionDtoWithDefaults instantiates a new WorkgroupConnectionDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetObject
 
@@ -47,8 +55,7 @@ GetObject returns the Object field if non-nil, zero value otherwise.
 
 `func (o *WorkgroupConnectionDto) GetObjectOk() (*ConnectedObject, bool)`
 
-GetObjectOk returns a tuple with the Object field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetObjectOk returns a tuple with the Object field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetObject
 
@@ -72,8 +79,7 @@ GetConnectionType returns the ConnectionType field if non-nil, zero value otherw
 
 `func (o *WorkgroupConnectionDto) GetConnectionTypeOk() (*string, bool)`
 
-GetConnectionTypeOk returns a tuple with the ConnectionType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConnectionTypeOk returns a tuple with the ConnectionType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConnectionType
 
@@ -86,5 +92,3 @@ SetConnectionType sets ConnectionType field to given value.
 `func (o *WorkgroupConnectionDto) HasConnectionType() bool`
 
 HasConnectionType returns a boolean if a field has been set.
-
-

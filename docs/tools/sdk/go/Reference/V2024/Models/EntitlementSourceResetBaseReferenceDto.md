@@ -4,20 +4,33 @@ title: EntitlementSourceResetBaseReferenceDto
 pagination_label: EntitlementSourceResetBaseReferenceDto
 sidebar_label: EntitlementSourceResetBaseReferenceDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'EntitlementSourceResetBaseReferenceDto', 'V2024EntitlementSourceResetBaseReferenceDto'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'EntitlementSourceResetBaseReferenceDto',
+    'V2024EntitlementSourceResetBaseReferenceDto',
+  ]
 slug: /tools/sdk/go/v2024/models/entitlement-source-reset-base-reference-dto
-tags: ['SDK', 'Software Development Kit', 'EntitlementSourceResetBaseReferenceDto', 'V2024EntitlementSourceResetBaseReferenceDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'EntitlementSourceResetBaseReferenceDto',
+    'V2024EntitlementSourceResetBaseReferenceDto',
+  ]
 ---
 
 # EntitlementSourceResetBaseReferenceDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | The DTO type | [optional] 
-**Id** | Pointer to **string** | The task ID of the object to which this reference applies | [optional] 
-**Name** | Pointer to **string** | Human-readable display name of the object to which this reference applies | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to **string** | The DTO type | [optional] |
+| **Id** | Pointer to **string** | The task ID of the object to which this reference applies | [optional] |
+| **Name** | Pointer to **string** | Human-readable display name of the object to which this reference applies | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewEntitlementSourceResetBaseReferenceDto() *EntitlementSourceResetBaseReferenceDto`
 
-NewEntitlementSourceResetBaseReferenceDto instantiates a new EntitlementSourceResetBaseReferenceDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewEntitlementSourceResetBaseReferenceDto instantiates a new EntitlementSourceResetBaseReferenceDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewEntitlementSourceResetBaseReferenceDtoWithDefaults
 
 `func NewEntitlementSourceResetBaseReferenceDtoWithDefaults() *EntitlementSourceResetBaseReferenceDto`
 
-NewEntitlementSourceResetBaseReferenceDtoWithDefaults instantiates a new EntitlementSourceResetBaseReferenceDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewEntitlementSourceResetBaseReferenceDtoWithDefaults instantiates a new EntitlementSourceResetBaseReferenceDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -48,8 +56,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *EntitlementSourceResetBaseReferenceDto) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -73,8 +80,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *EntitlementSourceResetBaseReferenceDto) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -98,8 +104,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *EntitlementSourceResetBaseReferenceDto) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -112,5 +117,3 @@ SetName sets Name field to given value.
 `func (o *EntitlementSourceResetBaseReferenceDto) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

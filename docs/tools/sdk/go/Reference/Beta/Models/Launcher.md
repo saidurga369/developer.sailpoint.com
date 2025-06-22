@@ -4,7 +4,7 @@ title: Launcher
 pagination_label: Launcher
 sidebar_label: Launcher
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Launcher', 'BetaLauncher'] 
+keywords: ['go', 'Golang', 'sdk', 'Launcher', 'BetaLauncher']
 slug: /tools/sdk/go/beta/models/launcher
 tags: ['SDK', 'Software Development Kit', 'Launcher', 'BetaLauncher']
 ---
@@ -13,18 +13,18 @@ tags: ['SDK', 'Software Development Kit', 'Launcher', 'BetaLauncher']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **string** | ID of the Launcher | 
-**Created** | **SailPointTime** | Date the Launcher was created | 
-**Modified** | **SailPointTime** | Date the Launcher was last modified | 
-**Owner** | [**LauncherOwner**](launcher-owner) |  | 
-**Name** | **string** | Name of the Launcher, limited to 255 characters | 
-**Description** | **string** | Description of the Launcher, limited to 2000 characters | 
-**Type** | **string** | Launcher type | 
-**Disabled** | **bool** | State of the Launcher | 
-**Reference** | Pointer to [**LauncherReference**](launcher-reference) |  | [optional] 
-**Config** | **string** | JSON configuration associated with this Launcher, restricted to a max size of 4KB  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **string** | ID of the Launcher |
+| **Created** | **SailPointTime** | Date the Launcher was created |
+| **Modified** | **SailPointTime** | Date the Launcher was last modified |
+| **Owner** | [**LauncherOwner**](launcher-owner) |  |
+| **Name** | **string** | Name of the Launcher, limited to 255 characters |
+| **Description** | **string** | Description of the Launcher, limited to 2000 characters |
+| **Type** | **string** | Launcher type |
+| **Disabled** | **bool** | State of the Launcher |
+| **Reference** | Pointer to [**LauncherReference**](launcher-reference) |  | [optional] |
+| **Config** | **string** | JSON configuration associated with this Launcher, restricted to a max size of 4KB |
 
 ## Methods
 
@@ -32,18 +32,13 @@ Name | Type | Description | Notes
 
 `func NewLauncher(id string, created SailPointTime, modified SailPointTime, owner LauncherOwner, name string, description string, type_ string, disabled bool, config string, ) *Launcher`
 
-NewLauncher instantiates a new Launcher object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewLauncher instantiates a new Launcher object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewLauncherWithDefaults
 
 `func NewLauncherWithDefaults() *Launcher`
 
-NewLauncherWithDefaults instantiates a new Launcher object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewLauncherWithDefaults instantiates a new Launcher object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -55,15 +50,13 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *Launcher) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
 `func (o *Launcher) SetId(v string)`
 
 SetId sets Id field to given value.
-
 
 ### GetCreated
 
@@ -75,15 +68,13 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *Launcher) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
 `func (o *Launcher) SetCreated(v SailPointTime)`
 
 SetCreated sets Created field to given value.
-
 
 ### GetModified
 
@@ -95,15 +86,13 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *Launcher) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
 `func (o *Launcher) SetModified(v SailPointTime)`
 
 SetModified sets Modified field to given value.
-
 
 ### GetOwner
 
@@ -115,15 +104,13 @@ GetOwner returns the Owner field if non-nil, zero value otherwise.
 
 `func (o *Launcher) GetOwnerOk() (*LauncherOwner, bool)`
 
-GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwner
 
 `func (o *Launcher) SetOwner(v LauncherOwner)`
 
 SetOwner sets Owner field to given value.
-
 
 ### GetName
 
@@ -135,15 +122,13 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *Launcher) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
 `func (o *Launcher) SetName(v string)`
 
 SetName sets Name field to given value.
-
 
 ### GetDescription
 
@@ -155,15 +140,13 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *Launcher) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
 `func (o *Launcher) SetDescription(v string)`
 
 SetDescription sets Description field to given value.
-
 
 ### GetType
 
@@ -175,15 +158,13 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *Launcher) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
 `func (o *Launcher) SetType(v string)`
 
 SetType sets Type field to given value.
-
 
 ### GetDisabled
 
@@ -195,15 +176,13 @@ GetDisabled returns the Disabled field if non-nil, zero value otherwise.
 
 `func (o *Launcher) GetDisabledOk() (*bool, bool)`
 
-GetDisabledOk returns a tuple with the Disabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisabledOk returns a tuple with the Disabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisabled
 
 `func (o *Launcher) SetDisabled(v bool)`
 
 SetDisabled sets Disabled field to given value.
-
 
 ### GetReference
 
@@ -215,8 +194,7 @@ GetReference returns the Reference field if non-nil, zero value otherwise.
 
 `func (o *Launcher) GetReferenceOk() (*LauncherReference, bool)`
 
-GetReferenceOk returns a tuple with the Reference field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReferenceOk returns a tuple with the Reference field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReference
 
@@ -240,14 +218,10 @@ GetConfig returns the Config field if non-nil, zero value otherwise.
 
 `func (o *Launcher) GetConfigOk() (*string, bool)`
 
-GetConfigOk returns a tuple with the Config field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConfigOk returns a tuple with the Config field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConfig
 
 `func (o *Launcher) SetConfig(v string)`
 
 SetConfig sets Config field to given value.
-
-
-

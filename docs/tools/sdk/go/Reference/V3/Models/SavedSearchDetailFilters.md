@@ -4,21 +4,34 @@ title: SavedSearchDetailFilters
 pagination_label: SavedSearchDetailFilters
 sidebar_label: SavedSearchDetailFilters
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SavedSearchDetailFilters', 'SavedSearchDetailFilters'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'SavedSearchDetailFilters',
+    'SavedSearchDetailFilters',
+  ]
 slug: /tools/sdk/go/v3/models/saved-search-detail-filters
-tags: ['SDK', 'Software Development Kit', 'SavedSearchDetailFilters', 'SavedSearchDetailFilters']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SavedSearchDetailFilters',
+    'SavedSearchDetailFilters',
+  ]
 ---
 
 # SavedSearchDetailFilters
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to [**FilterType**](filter-type) |  | [optional] 
-**Range** | Pointer to [**Range**](range) |  | [optional] 
-**Terms** | Pointer to **[]string** | The terms to be filtered. | [optional] 
-**Exclude** | Pointer to **bool** | Indicates if the filter excludes results. | [optional] [default to false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to [**FilterType**](filter-type) |  | [optional] |
+| **Range** | Pointer to [**Range**](range) |  | [optional] |
+| **Terms** | Pointer to **[]string** | The terms to be filtered. | [optional] |
+| **Exclude** | Pointer to **bool** | Indicates if the filter excludes results. | [optional] [default to false] |
 
 ## Methods
 
@@ -26,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewSavedSearchDetailFilters() *SavedSearchDetailFilters`
 
-NewSavedSearchDetailFilters instantiates a new SavedSearchDetailFilters object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSavedSearchDetailFilters instantiates a new SavedSearchDetailFilters object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSavedSearchDetailFiltersWithDefaults
 
 `func NewSavedSearchDetailFiltersWithDefaults() *SavedSearchDetailFilters`
 
-NewSavedSearchDetailFiltersWithDefaults instantiates a new SavedSearchDetailFilters object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSavedSearchDetailFiltersWithDefaults instantiates a new SavedSearchDetailFilters object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -49,8 +57,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *SavedSearchDetailFilters) GetTypeOk() (*FilterType, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -74,8 +81,7 @@ GetRange returns the Range field if non-nil, zero value otherwise.
 
 `func (o *SavedSearchDetailFilters) GetRangeOk() (*Range, bool)`
 
-GetRangeOk returns a tuple with the Range field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRangeOk returns a tuple with the Range field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRange
 
@@ -99,8 +105,7 @@ GetTerms returns the Terms field if non-nil, zero value otherwise.
 
 `func (o *SavedSearchDetailFilters) GetTermsOk() (*[]string, bool)`
 
-GetTermsOk returns a tuple with the Terms field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTermsOk returns a tuple with the Terms field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTerms
 
@@ -124,8 +129,7 @@ GetExclude returns the Exclude field if non-nil, zero value otherwise.
 
 `func (o *SavedSearchDetailFilters) GetExcludeOk() (*bool, bool)`
 
-GetExcludeOk returns a tuple with the Exclude field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetExcludeOk returns a tuple with the Exclude field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetExclude
 
@@ -138,5 +142,3 @@ SetExclude sets Exclude field to given value.
 `func (o *SavedSearchDetailFilters) HasExclude() bool`
 
 HasExclude returns a boolean if a field has been set.
-
-

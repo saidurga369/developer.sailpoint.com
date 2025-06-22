@@ -4,7 +4,7 @@ title: PatOwner
 pagination_label: PatOwner
 sidebar_label: PatOwner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'PatOwner', 'PatOwner'] 
+keywords: ['python', 'Python', 'sdk', 'PatOwner', 'PatOwner']
 slug: /tools/sdk/python/v3/models/pat-owner
 tags: ['SDK', 'Software Development Kit', 'PatOwner', 'PatOwner']
 ---
@@ -15,11 +15,12 @@ Personal access token owner's identity.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] | Personal access token owner's DTO type. | [optional] 
-**id** | **str** | Personal access token owner's identity ID. | [optional] 
-**name** | **str** | Personal access token owner's human-readable display name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'IDENTITY' ] | Personal access token owner's DTO type. | [optional] |
+| **id** | **str** | Personal access token owner's identity ID. | [optional] |
+| **name** | **str** | Personal access token owner's human-readable display name. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +35,5 @@ name='Support'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

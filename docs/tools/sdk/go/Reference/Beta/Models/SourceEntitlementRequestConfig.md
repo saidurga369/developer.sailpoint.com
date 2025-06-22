@@ -4,19 +4,32 @@ title: SourceEntitlementRequestConfig
 pagination_label: SourceEntitlementRequestConfig
 sidebar_label: SourceEntitlementRequestConfig
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SourceEntitlementRequestConfig', 'BetaSourceEntitlementRequestConfig'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'SourceEntitlementRequestConfig',
+    'BetaSourceEntitlementRequestConfig',
+  ]
 slug: /tools/sdk/go/beta/models/source-entitlement-request-config
-tags: ['SDK', 'Software Development Kit', 'SourceEntitlementRequestConfig', 'BetaSourceEntitlementRequestConfig']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SourceEntitlementRequestConfig',
+    'BetaSourceEntitlementRequestConfig',
+  ]
 ---
 
 # SourceEntitlementRequestConfig
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**AccessRequestConfig** | Pointer to [**EntitlementAccessRequestConfig**](entitlement-access-request-config) |  | [optional] 
-**RevocationRequestConfig** | Pointer to [**EntitlementRevocationRequestConfig**](entitlement-revocation-request-config) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **AccessRequestConfig** | Pointer to [**EntitlementAccessRequestConfig**](entitlement-access-request-config) |  | [optional] |
+| **RevocationRequestConfig** | Pointer to [**EntitlementRevocationRequestConfig**](entitlement-revocation-request-config) |  | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewSourceEntitlementRequestConfig() *SourceEntitlementRequestConfig`
 
-NewSourceEntitlementRequestConfig instantiates a new SourceEntitlementRequestConfig object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSourceEntitlementRequestConfig instantiates a new SourceEntitlementRequestConfig object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSourceEntitlementRequestConfigWithDefaults
 
 `func NewSourceEntitlementRequestConfigWithDefaults() *SourceEntitlementRequestConfig`
 
-NewSourceEntitlementRequestConfigWithDefaults instantiates a new SourceEntitlementRequestConfig object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSourceEntitlementRequestConfigWithDefaults instantiates a new SourceEntitlementRequestConfig object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetAccessRequestConfig
 
@@ -47,8 +55,7 @@ GetAccessRequestConfig returns the AccessRequestConfig field if non-nil, zero va
 
 `func (o *SourceEntitlementRequestConfig) GetAccessRequestConfigOk() (*EntitlementAccessRequestConfig, bool)`
 
-GetAccessRequestConfigOk returns a tuple with the AccessRequestConfig field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessRequestConfigOk returns a tuple with the AccessRequestConfig field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessRequestConfig
 
@@ -72,8 +79,7 @@ GetRevocationRequestConfig returns the RevocationRequestConfig field if non-nil,
 
 `func (o *SourceEntitlementRequestConfig) GetRevocationRequestConfigOk() (*EntitlementRevocationRequestConfig, bool)`
 
-GetRevocationRequestConfigOk returns a tuple with the RevocationRequestConfig field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRevocationRequestConfigOk returns a tuple with the RevocationRequestConfig field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRevocationRequestConfig
 
@@ -86,5 +92,3 @@ SetRevocationRequestConfig sets RevocationRequestConfig field to given value.
 `func (o *SourceEntitlementRequestConfig) HasRevocationRequestConfig() bool`
 
 HasRevocationRequestConfig returns a boolean if a field has been set.
-
-

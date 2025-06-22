@@ -4,26 +4,39 @@ title: CertificationIdentitySummary
 pagination_label: CertificationIdentitySummary
 sidebar_label: CertificationIdentitySummary
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'CertificationIdentitySummary', 'V2024CertificationIdentitySummary'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'CertificationIdentitySummary',
+    'V2024CertificationIdentitySummary',
+  ]
 slug: /tools/sdk/powershell/v2024/models/certification-identity-summary
-tags: ['SDK', 'Software Development Kit', 'CertificationIdentitySummary', 'V2024CertificationIdentitySummary']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CertificationIdentitySummary',
+    'V2024CertificationIdentitySummary',
+  ]
 ---
-
 
 # CertificationIdentitySummary
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | The ID of the identity summary | [optional] 
-**Name** | **String** | Name of the linked identity | [optional] 
-**IdentityId** | **String** | The ID of the identity being certified | [optional] 
-**Completed** | **Boolean** | Indicates whether the review items for the linked identity's certification have been completed | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | The ID of the identity summary | [optional] |
+| **Name** | **String** | Name of the linked identity | [optional] |
+| **IdentityId** | **String** | The ID of the identity being certified | [optional] |
+| **Completed** | **Boolean** | Indicates whether the review items for the linked identity's certification have been completed | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $CertificationIdentitySummary = Initialize-V2024CertificationIdentitySummary  -Id 2c91808772a504f50172a9540e501ba7 `
  -Name Alison Ferguso `
@@ -32,10 +45,9 @@ $CertificationIdentitySummary = Initialize-V2024CertificationIdentitySummary  -I
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $CertificationIdentitySummary | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

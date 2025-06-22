@@ -27,7 +27,7 @@ a[id^='jsonpathDocumentationLink'] {
 }
 
 a[id^='jsonpathDocumentationLink']:hover {
-  text-decoration: none!important;
+  text-decoration: none !important;
 }
 
 li[class^='MuiButtonBase-root'] {

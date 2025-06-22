@@ -4,22 +4,35 @@ title: RoleDocumentAllOfDimensions
 pagination_label: RoleDocumentAllOfDimensions
 sidebar_label: RoleDocumentAllOfDimensions
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleDocumentAllOfDimensions', 'RoleDocumentAllOfDimensions'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'RoleDocumentAllOfDimensions',
+    'RoleDocumentAllOfDimensions',
+  ]
 slug: /tools/sdk/go/v3/models/role-document-all-of-dimensions
-tags: ['SDK', 'Software Development Kit', 'RoleDocumentAllOfDimensions', 'RoleDocumentAllOfDimensions']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleDocumentAllOfDimensions',
+    'RoleDocumentAllOfDimensions',
+  ]
 ---
 
 # RoleDocumentAllOfDimensions
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Unique ID of the dimension. | [optional] 
-**Name** | Pointer to **string** | Name of the dimension. | [optional] 
-**Description** | Pointer to **NullableString** | Description of the dimension. | [optional] 
-**Entitlements** | Pointer to [**[]RoleDocumentAllOfEntitlements1**](role-document-all-of-entitlements1) | Entitlements included with the role. | [optional] 
-**AccessProfiles** | Pointer to [**[]BaseAccessProfile**](base-access-profile) | Access profiles included in the dimension. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Unique ID of the dimension. | [optional] |
+| **Name** | Pointer to **string** | Name of the dimension. | [optional] |
+| **Description** | Pointer to **NullableString** | Description of the dimension. | [optional] |
+| **Entitlements** | Pointer to [**[]RoleDocumentAllOfEntitlements1**](role-document-all-of-entitlements1) | Entitlements included with the role. | [optional] |
+| **AccessProfiles** | Pointer to [**[]BaseAccessProfile**](base-access-profile) | Access profiles included in the dimension. | [optional] |
 
 ## Methods
 
@@ -27,18 +40,13 @@ Name | Type | Description | Notes
 
 `func NewRoleDocumentAllOfDimensions() *RoleDocumentAllOfDimensions`
 
-NewRoleDocumentAllOfDimensions instantiates a new RoleDocumentAllOfDimensions object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleDocumentAllOfDimensions instantiates a new RoleDocumentAllOfDimensions object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleDocumentAllOfDimensionsWithDefaults
 
 `func NewRoleDocumentAllOfDimensionsWithDefaults() *RoleDocumentAllOfDimensions`
 
-NewRoleDocumentAllOfDimensionsWithDefaults instantiates a new RoleDocumentAllOfDimensions object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleDocumentAllOfDimensionsWithDefaults instantiates a new RoleDocumentAllOfDimensions object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -50,8 +58,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *RoleDocumentAllOfDimensions) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -75,8 +82,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *RoleDocumentAllOfDimensions) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -100,8 +106,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *RoleDocumentAllOfDimensions) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -119,12 +124,14 @@ HasDescription returns a boolean if a field has been set.
 
 `func (o *RoleDocumentAllOfDimensions) SetDescriptionNil(b bool)`
 
- SetDescriptionNil sets the value for Description to be an explicit nil
+SetDescriptionNil sets the value for Description to be an explicit nil
 
 ### UnsetDescription
+
 `func (o *RoleDocumentAllOfDimensions) UnsetDescription()`
 
 UnsetDescription ensures that no value is present for Description, not even an explicit nil
+
 ### GetEntitlements
 
 `func (o *RoleDocumentAllOfDimensions) GetEntitlements() []RoleDocumentAllOfEntitlements1`
@@ -135,8 +142,7 @@ GetEntitlements returns the Entitlements field if non-nil, zero value otherwise.
 
 `func (o *RoleDocumentAllOfDimensions) GetEntitlementsOk() (*[]RoleDocumentAllOfEntitlements1, bool)`
 
-GetEntitlementsOk returns a tuple with the Entitlements field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEntitlementsOk returns a tuple with the Entitlements field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEntitlements
 
@@ -154,12 +160,14 @@ HasEntitlements returns a boolean if a field has been set.
 
 `func (o *RoleDocumentAllOfDimensions) SetEntitlementsNil(b bool)`
 
- SetEntitlementsNil sets the value for Entitlements to be an explicit nil
+SetEntitlementsNil sets the value for Entitlements to be an explicit nil
 
 ### UnsetEntitlements
+
 `func (o *RoleDocumentAllOfDimensions) UnsetEntitlements()`
 
 UnsetEntitlements ensures that no value is present for Entitlements, not even an explicit nil
+
 ### GetAccessProfiles
 
 `func (o *RoleDocumentAllOfDimensions) GetAccessProfiles() []BaseAccessProfile`
@@ -170,8 +178,7 @@ GetAccessProfiles returns the AccessProfiles field if non-nil, zero value otherw
 
 `func (o *RoleDocumentAllOfDimensions) GetAccessProfilesOk() (*[]BaseAccessProfile, bool)`
 
-GetAccessProfilesOk returns a tuple with the AccessProfiles field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessProfilesOk returns a tuple with the AccessProfiles field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessProfiles
 
@@ -189,10 +196,10 @@ HasAccessProfiles returns a boolean if a field has been set.
 
 `func (o *RoleDocumentAllOfDimensions) SetAccessProfilesNil(b bool)`
 
- SetAccessProfilesNil sets the value for AccessProfiles to be an explicit nil
+SetAccessProfilesNil sets the value for AccessProfiles to be an explicit nil
 
 ### UnsetAccessProfiles
+
 `func (o *RoleDocumentAllOfDimensions) UnsetAccessProfiles()`
 
 UnsetAccessProfiles ensures that no value is present for AccessProfiles, not even an explicit nil
-

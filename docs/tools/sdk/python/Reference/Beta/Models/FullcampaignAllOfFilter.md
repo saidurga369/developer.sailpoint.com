@@ -4,9 +4,22 @@ title: FullcampaignAllOfFilter
 pagination_label: FullcampaignAllOfFilter
 sidebar_label: FullcampaignAllOfFilter
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'FullcampaignAllOfFilter', 'BetaFullcampaignAllOfFilter'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'FullcampaignAllOfFilter',
+    'BetaFullcampaignAllOfFilter',
+  ]
 slug: /tools/sdk/python/beta/models/fullcampaign-all-of-filter
-tags: ['SDK', 'Software Development Kit', 'FullcampaignAllOfFilter', 'BetaFullcampaignAllOfFilter']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'FullcampaignAllOfFilter',
+    'BetaFullcampaignAllOfFilter',
+  ]
 ---
 
 # FullcampaignAllOfFilter
@@ -15,11 +28,12 @@ Determines which items will be included in this campaign. The default campaign f
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The ID of whatever type of filter is being used. | [optional] 
-**type** |  **Enum** [  'CAMPAIGN_FILTER',    'RULE' ] | Type of the filter | [optional] 
-**name** | **str** | Name of the filter | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The ID of whatever type of filter is being used. | [optional] |
+| **type** | **Enum** [ 'CAMPAIGN_FILTER', 'RULE' ] | Type of the filter | [optional] |
+| **name** | **str** | Name of the filter | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Test Filter'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

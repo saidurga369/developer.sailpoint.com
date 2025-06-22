@@ -4,32 +4,45 @@ title: RoleDocumentAllOfEntitlements
 pagination_label: RoleDocumentAllOfEntitlements
 sidebar_label: RoleDocumentAllOfEntitlements
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'RoleDocumentAllOfEntitlements', 'RoleDocumentAllOfEntitlements'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'RoleDocumentAllOfEntitlements',
+    'RoleDocumentAllOfEntitlements',
+  ]
 slug: /tools/sdk/powershell/v3/models/role-document-all-of-entitlements
-tags: ['SDK', 'Software Development Kit', 'RoleDocumentAllOfEntitlements', 'RoleDocumentAllOfEntitlements']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleDocumentAllOfEntitlements',
+    'RoleDocumentAllOfEntitlements',
+  ]
 ---
-
 
 # RoleDocumentAllOfEntitlements
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**HasPermissions** | **Boolean** | Indicates whether the entitlement has permissions. | [optional] [default to $false]
-**Description** | **String** | Entitlement's description. | [optional] 
-**Attribute** | **String** | Entitlement attribute's name. | [optional] 
-**Value** | **String** | Entitlement's value. | [optional] 
-**Schema** | **String** | Entitlement's schema. | [optional] 
-**Privileged** | **Boolean** | Indicates whether the entitlement is privileged. | [optional] [default to $false]
-**Id** | **String** | Entitlement's ID. | [optional] 
-**Name** | **String** | Entitlement's name. | [optional] 
-**SourceSchemaObjectType** | **String** | Schema objectType. | [optional] 
-**Hash** | **String** | Read-only calculated hash value of an entitlement. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **HasPermissions** | **Boolean** | Indicates whether the entitlement has permissions. | [optional] [default to $false] |
+| **Description** | **String** | Entitlement's description. | [optional] |
+| **Attribute** | **String** | Entitlement attribute's name. | [optional] |
+| **Value** | **String** | Entitlement's value. | [optional] |
+| **Schema** | **String** | Entitlement's schema. | [optional] |
+| **Privileged** | **Boolean** | Indicates whether the entitlement is privileged. | [optional] [default to $false] |
+| **Id** | **String** | Entitlement's ID. | [optional] |
+| **Name** | **String** | Entitlement's name. | [optional] |
+| **SourceSchemaObjectType** | **String** | Schema objectType. | [optional] |
+| **Hash** | **String** | Read-only calculated hash value of an entitlement. | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $RoleDocumentAllOfEntitlements = Initialize-RoleDocumentAllOfEntitlements  -HasPermissions false `
  -Description Cloud engineering `
@@ -44,10 +57,9 @@ $RoleDocumentAllOfEntitlements = Initialize-RoleDocumentAllOfEntitlements  -HasP
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $RoleDocumentAllOfEntitlements | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

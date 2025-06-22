@@ -4,21 +4,21 @@ title: TaggedObjectDto
 pagination_label: TaggedObjectDto
 sidebar_label: TaggedObjectDto
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'TaggedObjectDto', 'TaggedObjectDto'] 
+keywords: ['python', 'Python', 'sdk', 'TaggedObjectDto', 'TaggedObjectDto']
 slug: /tools/sdk/python/v3/models/tagged-object-dto
 tags: ['SDK', 'Software Development Kit', 'TaggedObjectDto', 'TaggedObjectDto']
 ---
 
 # TaggedObjectDto
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'ACCESS_PROFILE',    'APPLICATION',    'CAMPAIGN',    'ENTITLEMENT',    'IDENTITY',    'ROLE',    'SOD_POLICY',    'SOURCE' ] | DTO type | [optional] 
-**id** | **str** | ID of the object this reference applies to | [optional] 
-**name** | **str** | Human-readable display name of the object this reference applies to | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'ACCESS_PROFILE', 'APPLICATION', 'CAMPAIGN', 'ENTITLEMENT', 'IDENTITY', 'ROLE', 'SOD_POLICY', 'SOURCE' ] | DTO type | [optional] |
+| **id** | **str** | ID of the object this reference applies to | [optional] |
+| **name** | **str** | Human-readable display name of the object this reference applies to | [optional] |
+
 }
 
 ## Example
@@ -33,5 +33,5 @@ name='William Wilson'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

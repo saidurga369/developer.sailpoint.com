@@ -4,9 +4,22 @@ title: ClientLogConfiguration
 pagination_label: ClientLogConfiguration
 sidebar_label: ClientLogConfiguration
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ClientLogConfiguration', 'BetaClientLogConfiguration'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ClientLogConfiguration',
+    'BetaClientLogConfiguration',
+  ]
 slug: /tools/sdk/python/beta/models/client-log-configuration
-tags: ['SDK', 'Software Development Kit', 'ClientLogConfiguration', 'BetaClientLogConfiguration']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ClientLogConfiguration',
+    'BetaClientLogConfiguration',
+  ]
 ---
 
 # ClientLogConfiguration
@@ -15,13 +28,14 @@ Client Runtime Logging Configuration
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**client_id** | **str** | Log configuration's client ID | [optional] 
-**duration_minutes** | **int** | Duration in minutes for log configuration to remain in effect before resetting to defaults | [required]
-**expiration** | **datetime** | Expiration date-time of the log configuration request | [optional] 
-**root_level** | [**StandardLevel**](standard-level) |  | [required]
-**log_levels** | [**map[string]StandardLevel**](standard-level) | Mapping of identifiers to Standard Log Level values | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **client_id** | **str** | Log configuration's client ID | [optional] |
+| **duration_minutes** | **int** | Duration in minutes for log configuration to remain in effect before resetting to defaults | [required] |
+| **expiration** | **datetime** | Expiration date-time of the log configuration request | [optional] |
+| **root_level** | [**StandardLevel**](standard-level) |  | [required] |
+| **log_levels** | [**map[string]StandardLevel**](standard-level) | Mapping of identifiers to Standard Log Level values | [optional] |
+
 }
 
 ## Example
@@ -38,5 +52,5 @@ log_levels=INFO
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

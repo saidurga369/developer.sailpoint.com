@@ -4,26 +4,32 @@ title: InvocationStatus
 pagination_label: InvocationStatus
 sidebar_label: InvocationStatus
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'InvocationStatus', 'BetaInvocationStatus'] 
+keywords: ['go', 'Golang', 'sdk', 'InvocationStatus', 'BetaInvocationStatus']
 slug: /tools/sdk/go/beta/models/invocation-status
-tags: ['SDK', 'Software Development Kit', 'InvocationStatus', 'BetaInvocationStatus']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'InvocationStatus',
+    'BetaInvocationStatus',
+  ]
 ---
 
 # InvocationStatus
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **string** | Invocation ID | 
-**TriggerId** | **string** | Trigger ID | 
-**SubscriptionName** | **string** | Subscription name | 
-**SubscriptionId** | **string** | Subscription ID | 
-**Type** | [**InvocationStatusType**](invocation-status-type) |  | 
-**Created** | **SailPointTime** | Invocation created timestamp. ISO-8601 in UTC. | 
-**Completed** | Pointer to **SailPointTime** | Invocation completed timestamp; empty fields imply invocation is in-flight or not completed. ISO-8601 in UTC. | [optional] 
-**StartInvocationInput** | [**StartInvocationInput**](start-invocation-input) |  | 
-**CompleteInvocationInput** | Pointer to [**CompleteInvocationInput**](complete-invocation-input) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **string** | Invocation ID |
+| **TriggerId** | **string** | Trigger ID |
+| **SubscriptionName** | **string** | Subscription name |
+| **SubscriptionId** | **string** | Subscription ID |
+| **Type** | [**InvocationStatusType**](invocation-status-type) |  |
+| **Created** | **SailPointTime** | Invocation created timestamp. ISO-8601 in UTC. |
+| **Completed** | Pointer to **SailPointTime** | Invocation completed timestamp; empty fields imply invocation is in-flight or not completed. ISO-8601 in UTC. | [optional] |
+| **StartInvocationInput** | [**StartInvocationInput**](start-invocation-input) |  |
+| **CompleteInvocationInput** | Pointer to [**CompleteInvocationInput**](complete-invocation-input) |  | [optional] |
 
 ## Methods
 
@@ -31,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewInvocationStatus(id string, triggerId string, subscriptionName string, subscriptionId string, type_ InvocationStatusType, created SailPointTime, startInvocationInput StartInvocationInput, ) *InvocationStatus`
 
-NewInvocationStatus instantiates a new InvocationStatus object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewInvocationStatus instantiates a new InvocationStatus object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewInvocationStatusWithDefaults
 
 `func NewInvocationStatusWithDefaults() *InvocationStatus`
 
-NewInvocationStatusWithDefaults instantiates a new InvocationStatus object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewInvocationStatusWithDefaults instantiates a new InvocationStatus object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -54,15 +55,13 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *InvocationStatus) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
 `func (o *InvocationStatus) SetId(v string)`
 
 SetId sets Id field to given value.
-
 
 ### GetTriggerId
 
@@ -74,15 +73,13 @@ GetTriggerId returns the TriggerId field if non-nil, zero value otherwise.
 
 `func (o *InvocationStatus) GetTriggerIdOk() (*string, bool)`
 
-GetTriggerIdOk returns a tuple with the TriggerId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTriggerIdOk returns a tuple with the TriggerId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTriggerId
 
 `func (o *InvocationStatus) SetTriggerId(v string)`
 
 SetTriggerId sets TriggerId field to given value.
-
 
 ### GetSubscriptionName
 
@@ -94,15 +91,13 @@ GetSubscriptionName returns the SubscriptionName field if non-nil, zero value ot
 
 `func (o *InvocationStatus) GetSubscriptionNameOk() (*string, bool)`
 
-GetSubscriptionNameOk returns a tuple with the SubscriptionName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSubscriptionNameOk returns a tuple with the SubscriptionName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSubscriptionName
 
 `func (o *InvocationStatus) SetSubscriptionName(v string)`
 
 SetSubscriptionName sets SubscriptionName field to given value.
-
 
 ### GetSubscriptionId
 
@@ -114,15 +109,13 @@ GetSubscriptionId returns the SubscriptionId field if non-nil, zero value otherw
 
 `func (o *InvocationStatus) GetSubscriptionIdOk() (*string, bool)`
 
-GetSubscriptionIdOk returns a tuple with the SubscriptionId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSubscriptionIdOk returns a tuple with the SubscriptionId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSubscriptionId
 
 `func (o *InvocationStatus) SetSubscriptionId(v string)`
 
 SetSubscriptionId sets SubscriptionId field to given value.
-
 
 ### GetType
 
@@ -134,15 +127,13 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *InvocationStatus) GetTypeOk() (*InvocationStatusType, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
 `func (o *InvocationStatus) SetType(v InvocationStatusType)`
 
 SetType sets Type field to given value.
-
 
 ### GetCreated
 
@@ -154,15 +145,13 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *InvocationStatus) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
 `func (o *InvocationStatus) SetCreated(v SailPointTime)`
 
 SetCreated sets Created field to given value.
-
 
 ### GetCompleted
 
@@ -174,8 +163,7 @@ GetCompleted returns the Completed field if non-nil, zero value otherwise.
 
 `func (o *InvocationStatus) GetCompletedOk() (*SailPointTime, bool)`
 
-GetCompletedOk returns a tuple with the Completed field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCompletedOk returns a tuple with the Completed field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCompleted
 
@@ -199,15 +187,13 @@ GetStartInvocationInput returns the StartInvocationInput field if non-nil, zero 
 
 `func (o *InvocationStatus) GetStartInvocationInputOk() (*StartInvocationInput, bool)`
 
-GetStartInvocationInputOk returns a tuple with the StartInvocationInput field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStartInvocationInputOk returns a tuple with the StartInvocationInput field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStartInvocationInput
 
 `func (o *InvocationStatus) SetStartInvocationInput(v StartInvocationInput)`
 
 SetStartInvocationInput sets StartInvocationInput field to given value.
-
 
 ### GetCompleteInvocationInput
 
@@ -219,8 +205,7 @@ GetCompleteInvocationInput returns the CompleteInvocationInput field if non-nil,
 
 `func (o *InvocationStatus) GetCompleteInvocationInputOk() (*CompleteInvocationInput, bool)`
 
-GetCompleteInvocationInputOk returns a tuple with the CompleteInvocationInput field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCompleteInvocationInputOk returns a tuple with the CompleteInvocationInput field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCompleteInvocationInput
 
@@ -233,5 +218,3 @@ SetCompleteInvocationInput sets CompleteInvocationInput field to given value.
 `func (o *InvocationStatus) HasCompleteInvocationInput() bool`
 
 HasCompleteInvocationInput returns a boolean if a field has been set.
-
-

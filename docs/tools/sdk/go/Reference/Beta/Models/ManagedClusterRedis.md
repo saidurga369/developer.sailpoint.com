@@ -4,19 +4,26 @@ title: ManagedClusterRedis
 pagination_label: ManagedClusterRedis
 sidebar_label: ManagedClusterRedis
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ManagedClusterRedis', 'BetaManagedClusterRedis'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'ManagedClusterRedis', 'BetaManagedClusterRedis']
 slug: /tools/sdk/go/beta/models/managed-cluster-redis
-tags: ['SDK', 'Software Development Kit', 'ManagedClusterRedis', 'BetaManagedClusterRedis']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ManagedClusterRedis',
+    'BetaManagedClusterRedis',
+  ]
 ---
 
 # ManagedClusterRedis
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**RedisHost** | Pointer to **string** | ManagedCluster redisHost | [optional] 
-**RedisPort** | Pointer to **int32** | ManagedCluster redisPort | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **RedisHost** | Pointer to **string** | ManagedCluster redisHost | [optional] |
+| **RedisPort** | Pointer to **int32** | ManagedCluster redisPort | [optional] |
 
 ## Methods
 
@@ -24,18 +31,13 @@ Name | Type | Description | Notes
 
 `func NewManagedClusterRedis() *ManagedClusterRedis`
 
-NewManagedClusterRedis instantiates a new ManagedClusterRedis object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewManagedClusterRedis instantiates a new ManagedClusterRedis object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewManagedClusterRedisWithDefaults
 
 `func NewManagedClusterRedisWithDefaults() *ManagedClusterRedis`
 
-NewManagedClusterRedisWithDefaults instantiates a new ManagedClusterRedis object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewManagedClusterRedisWithDefaults instantiates a new ManagedClusterRedis object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetRedisHost
 
@@ -47,8 +49,7 @@ GetRedisHost returns the RedisHost field if non-nil, zero value otherwise.
 
 `func (o *ManagedClusterRedis) GetRedisHostOk() (*string, bool)`
 
-GetRedisHostOk returns a tuple with the RedisHost field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRedisHostOk returns a tuple with the RedisHost field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRedisHost
 
@@ -72,8 +73,7 @@ GetRedisPort returns the RedisPort field if non-nil, zero value otherwise.
 
 `func (o *ManagedClusterRedis) GetRedisPortOk() (*int32, bool)`
 
-GetRedisPortOk returns a tuple with the RedisPort field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRedisPortOk returns a tuple with the RedisPort field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRedisPort
 
@@ -86,5 +86,3 @@ SetRedisPort sets RedisPort field to given value.
 `func (o *ManagedClusterRedis) HasRedisPort() bool`
 
 HasRedisPort returns a boolean if a field has been set.
-
-

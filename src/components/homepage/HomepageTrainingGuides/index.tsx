@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import styles from './styles.module.css';
 import Link from '@docusaurus/Link';
 import HomepageCard from '../HomepageCard';
-import { HomepageCardProps } from '../HomepageCard';
+import {HomepageCardProps} from '../HomepageCard';
 
 interface TrainingGuide {
   product: HomepageCardProps['product'];

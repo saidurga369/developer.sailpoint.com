@@ -1,24 +1,24 @@
-import React, { useState } from "react";
+import React, {useState} from 'react';
 
-import FloatingButton from "@theme/ApiExplorer/FloatingButton";
-import MagicDropzone from "react-magic-dropzone";
+import FloatingButton from '@theme/ApiExplorer/FloatingButton';
+import MagicDropzone from 'react-magic-dropzone';
 
-type PreviewFile = { preview: string } & File;
+type PreviewFile = {preview: string} & File;
 
 interface RenderPreviewProps {
   file: PreviewFile;
 }
 
-function RenderPreview({ file }: RenderPreviewProps) {
+function RenderPreview({file}: RenderPreviewProps) {
   switch (file.type) {
-    case "image/png":
-    case "image/jpeg":
-    case "image/jpg":
-    case "image/svg+xml":
+    case 'image/png':
+    case 'image/jpeg':
+    case 'image/jpg':
+    case 'image/svg+xml':
       return (
         <img
           style={{
-            borderRadius: "4px",
+            borderRadius: '4px',
           }}
           src={file.preview}
           alt=""
@@ -28,12 +28,11 @@ function RenderPreview({ file }: RenderPreviewProps) {
       return (
         <div
           style={{
-            display: "flex",
-            alignItems: "center",
+            display: 'flex',
+            alignItems: 'center',
             minWidth: 0,
-          }}
-        >
-          <svg viewBox="0 0 100 120" style={{ width: "50px", height: "60px" }}>
+          }}>
+          <svg viewBox="0 0 100 120" style={{width: '50px', height: '60px'}}>
             <path
               fillRule="evenodd"
               fill="#b3beca"
@@ -57,7 +56,7 @@ export interface Props {
   onChange?(file?: File): any;
 }
 
-function FormFileUpload({ placeholder, onChange }: Props) {
+function FormFileUpload({placeholder, onChange}: Props) {
   const [hover, setHover] = useState(false);
   const [file, setFile] = useState<PreviewFile>();
 
@@ -77,24 +76,22 @@ function FormFileUpload({ placeholder, onChange }: Props) {
       <MagicDropzone
         className={
           hover
-            ? "openapi-explorer__dropzone-hover"
-            : "openapi-explorer__dropzone"
+            ? 'openapi-explorer__dropzone-hover'
+            : 'openapi-explorer__dropzone'
         }
         onDrop={handleDrop}
         onDragEnter={() => setHover(true)}
         onDragLeave={() => setHover(false)}
         multiple={false}
-        style={{ marginTop: "calc(var(--ifm-pre-padding) / 2)" }}
-      >
+        style={{marginTop: 'calc(var(--ifm-pre-padding) / 2)'}}>
         {file ? (
           <>
             <button
-              style={{ marginTop: "calc(var(--ifm-pre-padding) / 2)" }}
+              style={{marginTop: 'calc(var(--ifm-pre-padding) / 2)'}}
               onClick={(e) => {
                 e.stopPropagation();
                 setAndNotifyFile(undefined);
-              }}
-            >
+              }}>
               Clear
             </button>
             <RenderPreview file={file} />

@@ -4,7 +4,7 @@ title: Medium
 pagination_label: Medium
 sidebar_label: Medium
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Medium', 'V2024Medium'] 
+keywords: ['go', 'Golang', 'sdk', 'Medium', 'V2024Medium']
 slug: /tools/sdk/go/v2024/models/medium
 tags: ['SDK', 'Software Development Kit', 'Medium', 'V2024Medium']
 ---
@@ -13,15 +13,12 @@ tags: ['SDK', 'Software Development Kit', 'Medium', 'V2024Medium']
 
 ## Enum
 
+- `EMAIL` (value: `"EMAIL"`)
 
-* `EMAIL` (value: `"EMAIL"`)
+- `SMS` (value: `"SMS"`)
 
-* `SMS` (value: `"SMS"`)
+- `PHONE` (value: `"PHONE"`)
 
-* `PHONE` (value: `"PHONE"`)
+- `SLACK` (value: `"SLACK"`)
 
-* `SLACK` (value: `"SLACK"`)
-
-* `TEAMS` (value: `"TEAMS"`)
-
-
+- `TEAMS` (value: `"TEAMS"`)

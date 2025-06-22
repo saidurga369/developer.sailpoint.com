@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export interface Props {
   label?: string;
@@ -6,7 +6,7 @@ export interface Props {
   children?: React.ReactNode;
 }
 
-function FloatingButton({ label, onClick, children }: Props) {
+function FloatingButton({label, onClick, children}: Props) {
   return (
     <div tabIndex={0} className="openapi-explorer__floating-btn">
       {label && (

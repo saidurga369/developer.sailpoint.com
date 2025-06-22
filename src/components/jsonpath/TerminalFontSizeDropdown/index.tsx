@@ -1,10 +1,10 @@
-import React, { useState, ChangeEvent, FocusEvent } from 'react';
+import React, {useState, ChangeEvent, FocusEvent} from 'react';
 import FormControl from '@mui/material/FormControl';
 import InputLabel from '@mui/material/InputLabel';
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { useColorMode } from '@docusaurus/theme-common';
+import {createTheme, ThemeProvider} from '@mui/material/styles';
+import {useColorMode} from '@docusaurus/theme-common';
 
 // Define props interface
 interface TerminalFontSizeDropdownProps {
@@ -20,7 +20,7 @@ const TerminalFontSizeDropdown: React.FC<TerminalFontSizeDropdownProps> = ({
   onFocus,
   onBlur,
 }) => {
-  const { colorMode } = useColorMode();
+  const {colorMode} = useColorMode();
   const [isFocused, setIsFocused] = useState<boolean>(false);
   const [expanded, setExpanded] = useState<boolean>(false);
 
@@ -34,10 +34,12 @@ const TerminalFontSizeDropdown: React.FC<TerminalFontSizeDropdownProps> = ({
               borderWidth: 1,
             },
             '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-              borderColor: colorMode === 'dark' ? 'rgb(115,200,235)' : 'rgb(4,125,246)',
+              borderColor:
+                colorMode === 'dark' ? 'rgb(115,200,235)' : 'rgb(4,125,246)',
             },
             '&:hover .MuiOutlinedInput-notchedOutline': {
-              borderColor: colorMode === 'dark' ? 'rgb(115,200,235)' : 'rgb(4,125,246)',
+              borderColor:
+                colorMode === 'dark' ? 'rgb(115,200,235)' : 'rgb(4,125,246)',
             },
           },
         },
@@ -52,7 +54,7 @@ const TerminalFontSizeDropdown: React.FC<TerminalFontSizeDropdownProps> = ({
     },
   });
 
-  const handleChange = (event: ChangeEvent<{ value: unknown }>) => {
+  const handleChange = (event: ChangeEvent<{value: unknown}>) => {
     onFontSizeChange(event.target.value as string);
   };
 
@@ -73,15 +75,18 @@ const TerminalFontSizeDropdown: React.FC<TerminalFontSizeDropdownProps> = ({
 
   return (
     <ThemeProvider theme={theme}>
-      <FormControl sx={{ m: 1, minWidth: 220, maxWidth: 220 }}>
+      <FormControl sx={{m: 1, minWidth: 220, maxWidth: 220}}>
         <InputLabel
           id="terminal-font-size-label"
           sx={{
             '&.Mui-focused': {
-              color: isFocused ? (colorMode === 'dark' ? 'rgb(115,200,235)' : 'rgb(4,125,246)') : 'initial',
+              color: isFocused
+                ? colorMode === 'dark'
+                  ? 'rgb(115,200,235)'
+                  : 'rgb(4,125,246)'
+                : 'initial',
             },
-          }}
-        >
+          }}>
           Terminal Font Size
         </InputLabel>
         <Select
@@ -97,10 +102,14 @@ const TerminalFontSizeDropdown: React.FC<TerminalFontSizeDropdownProps> = ({
           aria-expanded={expanded}
           sx={{
             '& .MuiSelect-select': {
-              color: isFocused || expanded ? (colorMode === 'dark' ? 'rgb(115,200,235)' : 'rgb(4,125,246)') : 'initial',
+              color:
+                isFocused || expanded
+                  ? colorMode === 'dark'
+                    ? 'rgb(115,200,235)'
+                    : 'rgb(4,125,246)'
+                  : 'initial',
             },
-          }}
-        >
+          }}>
           <MenuItem value="12">Small</MenuItem>
           <MenuItem value="16">Medium</MenuItem>
           <MenuItem value="18">Large</MenuItem>

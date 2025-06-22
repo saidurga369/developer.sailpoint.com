@@ -4,7 +4,7 @@ title: SpConfigRules
 pagination_label: SpConfigRules
 sidebar_label: SpConfigRules
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SpConfigRules', 'V2024SpConfigRules'] 
+keywords: ['go', 'Golang', 'sdk', 'SpConfigRules', 'V2024SpConfigRules']
 slug: /tools/sdk/go/v2024/models/sp-config-rules
 tags: ['SDK', 'Software Development Kit', 'SpConfigRules', 'V2024SpConfigRules']
 ---
@@ -13,11 +13,11 @@ tags: ['SDK', 'Software Development Kit', 'SpConfigRules', 'V2024SpConfigRules']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**TakeFromTargetRules** | Pointer to [**[]SpConfigRule**](sp-config-rule) |  | [optional] 
-**DefaultRules** | Pointer to [**[]SpConfigRule**](sp-config-rule) |  | [optional] 
-**Editable** | Pointer to **bool** | Indicates whether the object can be edited. | [optional] [default to false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **TakeFromTargetRules** | Pointer to [**[]SpConfigRule**](sp-config-rule) |  | [optional] |
+| **DefaultRules** | Pointer to [**[]SpConfigRule**](sp-config-rule) |  | [optional] |
+| **Editable** | Pointer to **bool** | Indicates whether the object can be edited. | [optional] [default to false] |
 
 ## Methods
 
@@ -25,18 +25,13 @@ Name | Type | Description | Notes
 
 `func NewSpConfigRules() *SpConfigRules`
 
-NewSpConfigRules instantiates a new SpConfigRules object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSpConfigRules instantiates a new SpConfigRules object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSpConfigRulesWithDefaults
 
 `func NewSpConfigRulesWithDefaults() *SpConfigRules`
 
-NewSpConfigRulesWithDefaults instantiates a new SpConfigRules object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSpConfigRulesWithDefaults instantiates a new SpConfigRules object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetTakeFromTargetRules
 
@@ -48,8 +43,7 @@ GetTakeFromTargetRules returns the TakeFromTargetRules field if non-nil, zero va
 
 `func (o *SpConfigRules) GetTakeFromTargetRulesOk() (*[]SpConfigRule, bool)`
 
-GetTakeFromTargetRulesOk returns a tuple with the TakeFromTargetRules field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTakeFromTargetRulesOk returns a tuple with the TakeFromTargetRules field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTakeFromTargetRules
 
@@ -73,8 +67,7 @@ GetDefaultRules returns the DefaultRules field if non-nil, zero value otherwise.
 
 `func (o *SpConfigRules) GetDefaultRulesOk() (*[]SpConfigRule, bool)`
 
-GetDefaultRulesOk returns a tuple with the DefaultRules field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDefaultRulesOk returns a tuple with the DefaultRules field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDefaultRules
 
@@ -98,8 +91,7 @@ GetEditable returns the Editable field if non-nil, zero value otherwise.
 
 `func (o *SpConfigRules) GetEditableOk() (*bool, bool)`
 
-GetEditableOk returns a tuple with the Editable field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEditableOk returns a tuple with the Editable field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEditable
 
@@ -112,5 +104,3 @@ SetEditable sets Editable field to given value.
 `func (o *SpConfigRules) HasEditable() bool`
 
 HasEditable returns a boolean if a field has been set.
-
-

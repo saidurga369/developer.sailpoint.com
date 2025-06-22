@@ -4,21 +4,23 @@ title: TypedReference
 pagination_label: TypedReference
 sidebar_label: TypedReference
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'TypedReference', 'V2024TypedReference'] 
+keywords: ['python', 'Python', 'sdk', 'TypedReference', 'V2024TypedReference']
 slug: /tools/sdk/python/v2024/models/typed-reference
-tags: ['SDK', 'Software Development Kit', 'TypedReference', 'V2024TypedReference']
+tags:
+  ['SDK', 'Software Development Kit', 'TypedReference', 'V2024TypedReference']
 ---
 
 # TypedReference
 
-A typed reference to the object. 
+A typed reference to the object.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** | [**DtoType**](dto-type) |  | [required]
-**id** | **str** | The id of the object.  | [required]
+| Name     | Type                    | Description           | Notes      |
+| -------- | ----------------------- | --------------------- | ---------- |
+| **type** | [**DtoType**](dto-type) |                       | [required] |
+| **id**   | **str**                 | The id of the object. | [required] |
+
 }
 
 ## Example
@@ -32,5 +34,5 @@ id='2c91808568c529c60168cca6f90c1313'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,20 +4,33 @@ title: LoadAccountsTaskTaskReturnsInner
 pagination_label: LoadAccountsTaskTaskReturnsInner
 sidebar_label: LoadAccountsTaskTaskReturnsInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'LoadAccountsTaskTaskReturnsInner', 'V2024LoadAccountsTaskTaskReturnsInner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'LoadAccountsTaskTaskReturnsInner',
+    'V2024LoadAccountsTaskTaskReturnsInner',
+  ]
 slug: /tools/sdk/python/v2024/models/load-accounts-task-task-returns-inner
-tags: ['SDK', 'Software Development Kit', 'LoadAccountsTaskTaskReturnsInner', 'V2024LoadAccountsTaskTaskReturnsInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'LoadAccountsTaskTaskReturnsInner',
+    'V2024LoadAccountsTaskTaskReturnsInner',
+  ]
 ---
 
 # LoadAccountsTaskTaskReturnsInner
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**display_label** | **str** | The display label of the return value | [optional] 
-**attribute_name** | **str** | The attribute name of the return value | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **display_label** | **str** | The display label of the return value | [optional] |
+| **attribute_name** | **str** | The attribute name of the return value | [optional] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ attribute_name='applications'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

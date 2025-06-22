@@ -4,26 +4,39 @@ title: RemediationItemDetails
 pagination_label: RemediationItemDetails
 sidebar_label: RemediationItemDetails
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RemediationItemDetails', 'BetaRemediationItemDetails'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'RemediationItemDetails',
+    'BetaRemediationItemDetails',
+  ]
 slug: /tools/sdk/go/beta/models/remediation-item-details
-tags: ['SDK', 'Software Development Kit', 'RemediationItemDetails', 'BetaRemediationItemDetails']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RemediationItemDetails',
+    'BetaRemediationItemDetails',
+  ]
 ---
 
 # RemediationItemDetails
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The ID of the certification | [optional] 
-**TargetId** | Pointer to **string** | The ID of the certification target | [optional] 
-**TargetName** | Pointer to **string** | The name of the certification target | [optional] 
-**TargetDisplayName** | Pointer to **string** | The display name of the certification target | [optional] 
-**ApplicationName** | Pointer to **string** | The name of the application/source | [optional] 
-**AttributeName** | Pointer to **string** | The name of the attribute being certified | [optional] 
-**AttributeOperation** | Pointer to **string** | The operation of the certification on the attribute | [optional] 
-**AttributeValue** | Pointer to **string** | The value of the attribute being certified | [optional] 
-**NativeIdentity** | Pointer to **string** | The native identity of the target | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The ID of the certification | [optional] |
+| **TargetId** | Pointer to **string** | The ID of the certification target | [optional] |
+| **TargetName** | Pointer to **string** | The name of the certification target | [optional] |
+| **TargetDisplayName** | Pointer to **string** | The display name of the certification target | [optional] |
+| **ApplicationName** | Pointer to **string** | The name of the application/source | [optional] |
+| **AttributeName** | Pointer to **string** | The name of the attribute being certified | [optional] |
+| **AttributeOperation** | Pointer to **string** | The operation of the certification on the attribute | [optional] |
+| **AttributeValue** | Pointer to **string** | The value of the attribute being certified | [optional] |
+| **NativeIdentity** | Pointer to **string** | The native identity of the target | [optional] |
 
 ## Methods
 
@@ -31,18 +44,13 @@ Name | Type | Description | Notes
 
 `func NewRemediationItemDetails() *RemediationItemDetails`
 
-NewRemediationItemDetails instantiates a new RemediationItemDetails object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRemediationItemDetails instantiates a new RemediationItemDetails object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRemediationItemDetailsWithDefaults
 
 `func NewRemediationItemDetailsWithDefaults() *RemediationItemDetails`
 
-NewRemediationItemDetailsWithDefaults instantiates a new RemediationItemDetails object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRemediationItemDetailsWithDefaults instantiates a new RemediationItemDetails object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -54,8 +62,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *RemediationItemDetails) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -79,8 +86,7 @@ GetTargetId returns the TargetId field if non-nil, zero value otherwise.
 
 `func (o *RemediationItemDetails) GetTargetIdOk() (*string, bool)`
 
-GetTargetIdOk returns a tuple with the TargetId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTargetIdOk returns a tuple with the TargetId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTargetId
 
@@ -104,8 +110,7 @@ GetTargetName returns the TargetName field if non-nil, zero value otherwise.
 
 `func (o *RemediationItemDetails) GetTargetNameOk() (*string, bool)`
 
-GetTargetNameOk returns a tuple with the TargetName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTargetNameOk returns a tuple with the TargetName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTargetName
 
@@ -129,8 +134,7 @@ GetTargetDisplayName returns the TargetDisplayName field if non-nil, zero value 
 
 `func (o *RemediationItemDetails) GetTargetDisplayNameOk() (*string, bool)`
 
-GetTargetDisplayNameOk returns a tuple with the TargetDisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTargetDisplayNameOk returns a tuple with the TargetDisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTargetDisplayName
 
@@ -154,8 +158,7 @@ GetApplicationName returns the ApplicationName field if non-nil, zero value othe
 
 `func (o *RemediationItemDetails) GetApplicationNameOk() (*string, bool)`
 
-GetApplicationNameOk returns a tuple with the ApplicationName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApplicationNameOk returns a tuple with the ApplicationName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApplicationName
 
@@ -179,8 +182,7 @@ GetAttributeName returns the AttributeName field if non-nil, zero value otherwis
 
 `func (o *RemediationItemDetails) GetAttributeNameOk() (*string, bool)`
 
-GetAttributeNameOk returns a tuple with the AttributeName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributeNameOk returns a tuple with the AttributeName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributeName
 
@@ -204,8 +206,7 @@ GetAttributeOperation returns the AttributeOperation field if non-nil, zero valu
 
 `func (o *RemediationItemDetails) GetAttributeOperationOk() (*string, bool)`
 
-GetAttributeOperationOk returns a tuple with the AttributeOperation field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributeOperationOk returns a tuple with the AttributeOperation field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributeOperation
 
@@ -229,8 +230,7 @@ GetAttributeValue returns the AttributeValue field if non-nil, zero value otherw
 
 `func (o *RemediationItemDetails) GetAttributeValueOk() (*string, bool)`
 
-GetAttributeValueOk returns a tuple with the AttributeValue field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributeValueOk returns a tuple with the AttributeValue field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributeValue
 
@@ -254,8 +254,7 @@ GetNativeIdentity returns the NativeIdentity field if non-nil, zero value otherw
 
 `func (o *RemediationItemDetails) GetNativeIdentityOk() (*string, bool)`
 
-GetNativeIdentityOk returns a tuple with the NativeIdentity field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNativeIdentityOk returns a tuple with the NativeIdentity field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNativeIdentity
 
@@ -268,5 +267,3 @@ SetNativeIdentity sets NativeIdentity field to given value.
 `func (o *RemediationItemDetails) HasNativeIdentity() bool`
 
 HasNativeIdentity returns a boolean if a field has been set.
-
-

@@ -4,25 +4,32 @@ title: LoadEntitlementTask
 pagination_label: LoadEntitlementTask
 sidebar_label: LoadEntitlementTask
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'LoadEntitlementTask', 'BetaLoadEntitlementTask'] 
+keywords:
+  ['python', 'Python', 'sdk', 'LoadEntitlementTask', 'BetaLoadEntitlementTask']
 slug: /tools/sdk/python/beta/models/load-entitlement-task
-tags: ['SDK', 'Software Development Kit', 'LoadEntitlementTask', 'BetaLoadEntitlementTask']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'LoadEntitlementTask',
+    'BetaLoadEntitlementTask',
+  ]
 ---
 
 # LoadEntitlementTask
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | System-generated unique ID of the task this taskStatus represents | [optional] 
-**type** | **str** | Type of task this task represents | [optional] 
-**unique_name** | **str** | The name of the task | [optional] 
-**description** | **str** | The description of the task | [optional] 
-**launcher** | **str** | The user who initiated the task | [optional] 
-**created** | **datetime** | The creation date of the task | [optional] 
-**returns** | [**[]LoadEntitlementTaskReturnsInner**](load-entitlement-task-returns-inner) | Return values from the task | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | System-generated unique ID of the task this taskStatus represents | [optional] |
+| **type** | **str** | Type of task this task represents | [optional] |
+| **unique_name** | **str** | The name of the task | [optional] |
+| **description** | **str** | The description of the task | [optional] |
+| **launcher** | **str** | The user who initiated the task | [optional] |
+| **created** | **datetime** | The creation date of the task | [optional] |
+| **returns** | [**[]LoadEntitlementTaskReturnsInner**](load-entitlement-task-returns-inner) | Return values from the task | [optional] |
+
 }
 
 ## Example
@@ -41,5 +48,5 @@ returns=[{displayLabel=TASK_OUT_ACCOUNT_GROUP_AGGREGATION_APPLICATIONS, attribut
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

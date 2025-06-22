@@ -4,28 +4,41 @@ title: NonEmployeeSchemaAttribute
 pagination_label: NonEmployeeSchemaAttribute
 sidebar_label: NonEmployeeSchemaAttribute
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'NonEmployeeSchemaAttribute', 'BetaNonEmployeeSchemaAttribute'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'NonEmployeeSchemaAttribute',
+    'BetaNonEmployeeSchemaAttribute',
+  ]
 slug: /tools/sdk/python/beta/models/non-employee-schema-attribute
-tags: ['SDK', 'Software Development Kit', 'NonEmployeeSchemaAttribute', 'BetaNonEmployeeSchemaAttribute']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NonEmployeeSchemaAttribute',
+    'BetaNonEmployeeSchemaAttribute',
+  ]
 ---
 
 # NonEmployeeSchemaAttribute
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Schema Attribute Id | [optional] 
-**system** | **bool** | True if this schema attribute is mandatory on all non-employees sources. | [optional] [default to False]
-**modified** | **datetime** | When the schema attribute was last modified. | [optional] 
-**created** | **datetime** | When the schema attribute was created. | [optional] 
-**type** | [**NonEmployeeSchemaAttributeType**](non-employee-schema-attribute-type) |  | [required]
-**label** | **str** | Label displayed on the UI for this schema attribute. | [required]
-**technical_name** | **str** | The technical name of the attribute. Must be unique per source. | [required]
-**help_text** | **str** | help text displayed by UI. | [optional] 
-**placeholder** | **str** | Hint text that fills UI box. | [optional] 
-**required** | **bool** | If true, the schema attribute is required for all non-employees in the source | [optional] [default to False]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | Schema Attribute Id | [optional] |
+| **system** | **bool** | True if this schema attribute is mandatory on all non-employees sources. | [optional] [default to False] |
+| **modified** | **datetime** | When the schema attribute was last modified. | [optional] |
+| **created** | **datetime** | When the schema attribute was created. | [optional] |
+| **type** | [**NonEmployeeSchemaAttributeType**](non-employee-schema-attribute-type) |  | [required] |
+| **label** | **str** | Label displayed on the UI for this schema attribute. | [required] |
+| **technical_name** | **str** | The technical name of the attribute. Must be unique per source. | [required] |
+| **help_text** | **str** | help text displayed by UI. | [optional] |
+| **placeholder** | **str** | Hint text that fills UI box. | [optional] |
+| **required** | **bool** | If true, the schema attribute is required for all non-employees in the source | [optional] [default to False] |
+
 }
 
 ## Example
@@ -47,5 +60,5 @@ required=True
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

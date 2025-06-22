@@ -4,9 +4,10 @@ title: ConfigTypeEnum
 pagination_label: ConfigTypeEnum
 sidebar_label: ConfigTypeEnum
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ConfigTypeEnum', 'V2025ConfigTypeEnum'] 
+keywords: ['python', 'Python', 'sdk', 'ConfigTypeEnum', 'V2025ConfigTypeEnum']
 slug: /tools/sdk/python/v2025/models/config-type-enum
-tags: ['SDK', 'Software Development Kit', 'ConfigTypeEnum', 'V2025ConfigTypeEnum']
+tags:
+  ['SDK', 'Software Development Kit', 'ConfigTypeEnum', 'V2025ConfigTypeEnum']
 ---
 
 # ConfigTypeEnum
@@ -15,11 +16,10 @@ Enum list of valid work types that can be selected for a Reassignment Configurat
 
 ## Enum
 
-* `ACCESS_REQUESTS` (value: `'ACCESS_REQUESTS'`)
+- `ACCESS_REQUESTS` (value: `'ACCESS_REQUESTS'`)
 
-* `CERTIFICATIONS` (value: `'CERTIFICATIONS'`)
+- `CERTIFICATIONS` (value: `'CERTIFICATIONS'`)
 
-* `MANUAL_TASKS` (value: `'MANUAL_TASKS'`)
+- `MANUAL_TASKS` (value: `'MANUAL_TASKS'`)
 
-[[Back to top]](#) 
-
+[[Back to top]](#)

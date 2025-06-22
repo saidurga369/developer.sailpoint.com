@@ -4,26 +4,39 @@ title: SpConfigExportJobStatus
 pagination_label: SpConfigExportJobStatus
 sidebar_label: SpConfigExportJobStatus
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SpConfigExportJobStatus', 'BetaSpConfigExportJobStatus'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'SpConfigExportJobStatus',
+    'BetaSpConfigExportJobStatus',
+  ]
 slug: /tools/sdk/python/beta/models/sp-config-export-job-status
-tags: ['SDK', 'Software Development Kit', 'SpConfigExportJobStatus', 'BetaSpConfigExportJobStatus']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SpConfigExportJobStatus',
+    'BetaSpConfigExportJobStatus',
+  ]
 ---
 
 # SpConfigExportJobStatus
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**job_id** | **str** | Unique id assigned to this job. | [required]
-**status** |  **Enum** [  'NOT_STARTED',    'IN_PROGRESS',    'COMPLETE',    'CANCELLED',    'FAILED' ] | Status of the job. | [required]
-**type** |  **Enum** [  'EXPORT',    'IMPORT' ] | Type of the job, either export or import. | [required]
-**expiration** | **datetime** | The time until which the artifacts will be available for download. | [required]
-**created** | **datetime** | The time the job was started. | [required]
-**modified** | **datetime** | The time of the last update to the job. | [required]
-**description** | **str** | Optional user defined description/name for export job. | [optional] 
-**completed** | **datetime** | The time the job was completed. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **job_id** | **str** | Unique id assigned to this job. | [required] |
+| **status** | **Enum** [ 'NOT_STARTED', 'IN_PROGRESS', 'COMPLETE', 'CANCELLED', 'FAILED' ] | Status of the job. | [required] |
+| **type** | **Enum** [ 'EXPORT', 'IMPORT' ] | Type of the job, either export or import. | [required] |
+| **expiration** | **datetime** | The time until which the artifacts will be available for download. | [required] |
+| **created** | **datetime** | The time the job was started. | [required] |
+| **modified** | **datetime** | The time of the last update to the job. | [required] |
+| **description** | **str** | Optional user defined description/name for export job. | [optional] |
+| **completed** | **datetime** | The time the job was completed. | [optional] |
+
 }
 
 ## Example
@@ -43,5 +56,5 @@ completed='2021-05-11T22:23:16Z'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

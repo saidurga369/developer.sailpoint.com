@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import FormItem from "@theme/ApiExplorer/FormItem";
-import FormSelect from "@theme/ApiExplorer/FormSelect";
-import { useTypedDispatch, useTypedSelector } from "@theme/ApiItem/hooks";
+import FormItem from '@theme/ApiExplorer/FormItem';
+import FormSelect from '@theme/ApiExplorer/FormSelect';
+import {useTypedDispatch, useTypedSelector} from '@theme/ApiItem/hooks';
 
-import { setContentType } from "./slice";
+import {setContentType} from './slice';
 
 function ContentType() {
   const value = useTypedSelector((state: any) => state.contentType.value);

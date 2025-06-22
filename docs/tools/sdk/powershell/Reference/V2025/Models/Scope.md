@@ -4,26 +4,26 @@ title: Scope
 pagination_label: Scope
 sidebar_label: Scope
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'Scope', 'V2025Scope'] 
+keywords: ['powershell', 'PowerShell', 'sdk', 'Scope', 'V2025Scope']
 slug: /tools/sdk/powershell/v2025/models/scope
 tags: ['SDK', 'Software Development Kit', 'Scope', 'V2025Scope']
 ---
-
 
 # Scope
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Scope** | [**ScopeType**](scope-type) |  | [optional] 
-**Visibility** | [**ScopeVisibilityType**](scope-visibility-type) |  | [optional] 
-**ScopeFilter** | [**VisibilityCriteria**](visibility-criteria) |  | [optional] 
-**ScopeSelection** | [**[]Ref**](ref) | List of Identities that are assigned to the segment | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Scope** | [**ScopeType**](scope-type) |  | [optional] |
+| **Visibility** | [**ScopeVisibilityType**](scope-visibility-type) |  | [optional] |
+| **ScopeFilter** | [**VisibilityCriteria**](visibility-criteria) |  | [optional] |
+| **ScopeSelection** | [**[]Ref**](ref) | List of Identities that are assigned to the segment | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $Scope = Initialize-V2025Scope  -Scope null `
  -Visibility null `
@@ -32,10 +32,9 @@ $Scope = Initialize-V2025Scope  -Scope null `
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $Scope | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

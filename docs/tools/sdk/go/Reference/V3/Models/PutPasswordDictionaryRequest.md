@@ -4,18 +4,31 @@ title: PutPasswordDictionaryRequest
 pagination_label: PutPasswordDictionaryRequest
 sidebar_label: PutPasswordDictionaryRequest
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'PutPasswordDictionaryRequest', 'PutPasswordDictionaryRequest'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'PutPasswordDictionaryRequest',
+    'PutPasswordDictionaryRequest',
+  ]
 slug: /tools/sdk/go/v3/models/put-password-dictionary-request
-tags: ['SDK', 'Software Development Kit', 'PutPasswordDictionaryRequest', 'PutPasswordDictionaryRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PutPasswordDictionaryRequest',
+    'PutPasswordDictionaryRequest',
+  ]
 ---
 
 # PutPasswordDictionaryRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**File** | Pointer to ***os.File** |  | [optional] 
+| Name     | Type                     | Description | Notes      |
+| -------- | ------------------------ | ----------- | ---------- |
+| **File** | Pointer to **\*os.File** |             | [optional] |
 
 ## Methods
 
@@ -23,18 +36,13 @@ Name | Type | Description | Notes
 
 `func NewPutPasswordDictionaryRequest() *PutPasswordDictionaryRequest`
 
-NewPutPasswordDictionaryRequest instantiates a new PutPasswordDictionaryRequest object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewPutPasswordDictionaryRequest instantiates a new PutPasswordDictionaryRequest object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewPutPasswordDictionaryRequestWithDefaults
 
 `func NewPutPasswordDictionaryRequestWithDefaults() *PutPasswordDictionaryRequest`
 
-NewPutPasswordDictionaryRequestWithDefaults instantiates a new PutPasswordDictionaryRequest object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewPutPasswordDictionaryRequestWithDefaults instantiates a new PutPasswordDictionaryRequest object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetFile
 
@@ -46,8 +54,7 @@ GetFile returns the File field if non-nil, zero value otherwise.
 
 `func (o *PutPasswordDictionaryRequest) GetFileOk() (**os.File, bool)`
 
-GetFileOk returns a tuple with the File field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFileOk returns a tuple with the File field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFile
 
@@ -60,5 +67,3 @@ SetFile sets File field to given value.
 `func (o *PutPasswordDictionaryRequest) HasFile() bool`
 
 HasFile returns a boolean if a field has been set.
-
-

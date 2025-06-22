@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './styles.module.css';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import ReactMarkdown from 'react-markdown';
 import BounceLoader from 'react-spinners/BounceLoader';
-import { discourseBaseURL } from '../../../util/util';
+import {discourseBaseURL} from '../../../util/util';
 
 // Define the props interface
 interface MarketplaceCardDetailProps {
@@ -17,17 +17,25 @@ interface MarketplaceCardDetailProps {
   rawPost: string;
 }
 
-const MarketplaceCardDetail: React.FC<MarketplaceCardDetailProps> = ({ details, rawPost }) => {
-  
+const MarketplaceCardDetail: React.FC<MarketplaceCardDetailProps> = ({
+  details,
+  rawPost,
+}) => {
   const getCommentText = (data: string, id: string): string => {
     const startTag = `[//]: <> (${id} Start)`;
     const endTag = `[//]: <> (${id} End)`;
     const startPosition = data.indexOf(startTag);
     const endPosition = data.indexOf(endTag);
-    
+
     if (startPosition > 0 && endPosition > 0) {
-      const validContent = data.substring(startPosition + startTag.length, endPosition);
-      return validContent.replace(/upload:\/\/([^"]+)/g, discourseBaseURL() + 'uploads/short-url/$1');
+      const validContent = data.substring(
+        startPosition + startTag.length,
+        endPosition,
+      );
+      return validContent.replace(
+        /upload:\/\/([^"]+)/g,
+        discourseBaseURL() + 'uploads/short-url/$1',
+      );
     }
     return 'No requirements found for this marketplace item';
   };
@@ -41,16 +49,23 @@ const MarketplaceCardDetail: React.FC<MarketplaceCardDetailProps> = ({ details, 
       <div className={styles.detailContainer}>
         <div className={styles.detailHeader}>
           <div className={styles.detailTitle}>{details.title}</div>
-          <img className={styles.detailImage} src={useBaseUrl(details.image)} alt={details.title} />
+          <img
+            className={styles.detailImage}
+            src={useBaseUrl(details.image)}
+            alt={details.title}
+          />
         </div>
 
         <Tabs className={styles.detailTabs}>
           <button
             className={styles.modalButton}
-            onClick={() => goToLink(details.link)}
-          >
+            onClick={() => goToLink(details.link)}>
             <div className={styles.modalButtonText}>
-              <img className={styles.buttonImage} src={useBaseUrl('/icons/discourse.svg')} alt="Go to Download" />
+              <img
+                className={styles.buttonImage}
+                src={useBaseUrl('/icons/discourse.svg')}
+                alt="Go to Download"
+              />
               Go to Download
             </div>
           </button>

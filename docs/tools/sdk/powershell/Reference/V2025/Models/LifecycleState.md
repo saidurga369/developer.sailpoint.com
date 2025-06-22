@@ -4,34 +4,36 @@ title: LifecycleState
 pagination_label: LifecycleState
 sidebar_label: LifecycleState
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'LifecycleState', 'V2025LifecycleState'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'LifecycleState', 'V2025LifecycleState']
 slug: /tools/sdk/powershell/v2025/models/lifecycle-state
-tags: ['SDK', 'Software Development Kit', 'LifecycleState', 'V2025LifecycleState']
+tags:
+  ['SDK', 'Software Development Kit', 'LifecycleState', 'V2025LifecycleState']
 ---
-
 
 # LifecycleState
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | System-generated unique ID of the Object | [optional] [readonly] 
-**Name** | **String** | Name of the Object | [required]
-**Created** | **System.DateTime** | Creation date of the Object | [optional] [readonly] 
-**Modified** | **System.DateTime** | Last modification date of the Object | [optional] [readonly] 
-**Enabled** | **Boolean** | Indicates whether the lifecycle state is enabled or disabled. | [optional] [default to $false]
-**TechnicalName** | **String** | The lifecycle state's technical name. This is for internal use. | [required]
-**Description** | **String** | Lifecycle state's description. | [optional] 
-**IdentityCount** | **Int32** | Number of identities that have the lifecycle state. | [optional] [readonly] 
-**EmailNotificationOption** | [**EmailNotificationOption**](email-notification-option) |  | [optional] 
-**AccountActions** | [**[]AccountAction**](account-action) |  | [optional] 
-**AccessProfileIds** | **[]String** | List of unique access-profile IDs that are associated with the lifecycle state. | [optional] 
-**IdentityState** | **String** | The lifecycle state's associated identity state. This field is generally 'null'. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | System-generated unique ID of the Object | [optional] [readonly] |
+| **Name** | **String** | Name of the Object | [required] |
+| **Created** | **System.DateTime** | Creation date of the Object | [optional] [readonly] |
+| **Modified** | **System.DateTime** | Last modification date of the Object | [optional] [readonly] |
+| **Enabled** | **Boolean** | Indicates whether the lifecycle state is enabled or disabled. | [optional] [default to $false] |
+| **TechnicalName** | **String** | The lifecycle state's technical name. This is for internal use. | [required] |
+| **Description** | **String** | Lifecycle state's description. | [optional] |
+| **IdentityCount** | **Int32** | Number of identities that have the lifecycle state. | [optional] [readonly] |
+| **EmailNotificationOption** | [**EmailNotificationOption**](email-notification-option) |  | [optional] |
+| **AccountActions** | [**[]AccountAction**](account-action) |  | [optional] |
+| **AccessProfileIds** | **[]String** | List of unique access-profile IDs that are associated with the lifecycle state. | [optional] |
+| **IdentityState** | **String** | The lifecycle state's associated identity state. This field is generally 'null'. | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $LifecycleState = Initialize-V2025LifecycleState  -Id id12345 `
  -Name aName `
@@ -48,10 +50,9 @@ $LifecycleState = Initialize-V2025LifecycleState  -Id id12345 `
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $LifecycleState | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

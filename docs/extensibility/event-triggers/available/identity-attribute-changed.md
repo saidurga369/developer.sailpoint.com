@@ -20,10 +20,9 @@ This event trigger provides a flexible way to extend Joiner-Mover-Leaver process
 
 :::info
 
-This event trigger doesn't detect an identity's change in lifecycle state from 'null' to 'active', so it's recommended that you set an identity's lifecycle state when it's created. You can then use the [Identity Created](./identity-created.md) trigger to detect that change to 'active' for Joiners. 
+This event trigger doesn't detect an identity's change in lifecycle state from 'null' to 'active', so it's recommended that you set an identity's lifecycle state when it's created. You can then use the [Identity Created](./identity-created.md) trigger to detect that change to 'active' for Joiners.
 
 :::
-
 
 Some uses cases for this trigger include the following:
 

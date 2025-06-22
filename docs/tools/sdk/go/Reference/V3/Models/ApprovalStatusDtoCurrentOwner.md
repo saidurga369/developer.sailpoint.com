@@ -4,20 +4,33 @@ title: ApprovalStatusDtoCurrentOwner
 pagination_label: ApprovalStatusDtoCurrentOwner
 sidebar_label: ApprovalStatusDtoCurrentOwner
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ApprovalStatusDtoCurrentOwner', 'ApprovalStatusDtoCurrentOwner'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ApprovalStatusDtoCurrentOwner',
+    'ApprovalStatusDtoCurrentOwner',
+  ]
 slug: /tools/sdk/go/v3/models/approval-status-dto-current-owner
-tags: ['SDK', 'Software Development Kit', 'ApprovalStatusDtoCurrentOwner', 'ApprovalStatusDtoCurrentOwner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ApprovalStatusDtoCurrentOwner',
+    'ApprovalStatusDtoCurrentOwner',
+  ]
 ---
 
 # ApprovalStatusDtoCurrentOwner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | DTO type of identity who reviewed the access item request. | [optional] 
-**Id** | Pointer to **string** | ID of identity who reviewed the access item request. | [optional] 
-**Name** | Pointer to **string** | Human-readable display name of identity who reviewed the access item request. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to **string** | DTO type of identity who reviewed the access item request. | [optional] |
+| **Id** | Pointer to **string** | ID of identity who reviewed the access item request. | [optional] |
+| **Name** | Pointer to **string** | Human-readable display name of identity who reviewed the access item request. | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewApprovalStatusDtoCurrentOwner() *ApprovalStatusDtoCurrentOwner`
 
-NewApprovalStatusDtoCurrentOwner instantiates a new ApprovalStatusDtoCurrentOwner object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewApprovalStatusDtoCurrentOwner instantiates a new ApprovalStatusDtoCurrentOwner object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewApprovalStatusDtoCurrentOwnerWithDefaults
 
 `func NewApprovalStatusDtoCurrentOwnerWithDefaults() *ApprovalStatusDtoCurrentOwner`
 
-NewApprovalStatusDtoCurrentOwnerWithDefaults instantiates a new ApprovalStatusDtoCurrentOwner object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewApprovalStatusDtoCurrentOwnerWithDefaults instantiates a new ApprovalStatusDtoCurrentOwner object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -48,8 +56,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *ApprovalStatusDtoCurrentOwner) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -73,8 +80,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *ApprovalStatusDtoCurrentOwner) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -98,8 +104,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *ApprovalStatusDtoCurrentOwner) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -112,5 +117,3 @@ SetName sets Name field to given value.
 `func (o *ApprovalStatusDtoCurrentOwner) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

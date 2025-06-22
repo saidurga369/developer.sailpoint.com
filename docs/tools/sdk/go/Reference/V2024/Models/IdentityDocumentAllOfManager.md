@@ -4,20 +4,33 @@ title: IdentityDocumentAllOfManager
 pagination_label: IdentityDocumentAllOfManager
 sidebar_label: IdentityDocumentAllOfManager
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IdentityDocumentAllOfManager', 'V2024IdentityDocumentAllOfManager'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'IdentityDocumentAllOfManager',
+    'V2024IdentityDocumentAllOfManager',
+  ]
 slug: /tools/sdk/go/v2024/models/identity-document-all-of-manager
-tags: ['SDK', 'Software Development Kit', 'IdentityDocumentAllOfManager', 'V2024IdentityDocumentAllOfManager']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityDocumentAllOfManager',
+    'V2024IdentityDocumentAllOfManager',
+  ]
 ---
 
 # IdentityDocumentAllOfManager
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | ID of identity's manager. | [optional] 
-**Name** | Pointer to **string** | Name of identity's manager. | [optional] 
-**DisplayName** | Pointer to **string** | Display name of identity's manager. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | ID of identity's manager. | [optional] |
+| **Name** | Pointer to **string** | Name of identity's manager. | [optional] |
+| **DisplayName** | Pointer to **string** | Display name of identity's manager. | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewIdentityDocumentAllOfManager() *IdentityDocumentAllOfManager`
 
-NewIdentityDocumentAllOfManager instantiates a new IdentityDocumentAllOfManager object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewIdentityDocumentAllOfManager instantiates a new IdentityDocumentAllOfManager object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewIdentityDocumentAllOfManagerWithDefaults
 
 `func NewIdentityDocumentAllOfManagerWithDefaults() *IdentityDocumentAllOfManager`
 
-NewIdentityDocumentAllOfManagerWithDefaults instantiates a new IdentityDocumentAllOfManager object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewIdentityDocumentAllOfManagerWithDefaults instantiates a new IdentityDocumentAllOfManager object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -48,8 +56,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocumentAllOfManager) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -73,8 +80,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocumentAllOfManager) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -98,8 +104,7 @@ GetDisplayName returns the DisplayName field if non-nil, zero value otherwise.
 
 `func (o *IdentityDocumentAllOfManager) GetDisplayNameOk() (*string, bool)`
 
-GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayName
 
@@ -112,5 +117,3 @@ SetDisplayName sets DisplayName field to given value.
 `func (o *IdentityDocumentAllOfManager) HasDisplayName() bool`
 
 HasDisplayName returns a boolean if a field has been set.
-
-

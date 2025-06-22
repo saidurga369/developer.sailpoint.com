@@ -4,22 +4,35 @@ title: ScheduledActionPayloadContent
 pagination_label: ScheduledActionPayloadContent
 sidebar_label: ScheduledActionPayloadContent
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ScheduledActionPayloadContent', 'V2024ScheduledActionPayloadContent'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ScheduledActionPayloadContent',
+    'V2024ScheduledActionPayloadContent',
+  ]
 slug: /tools/sdk/go/v2024/models/scheduled-action-payload-content
-tags: ['SDK', 'Software Development Kit', 'ScheduledActionPayloadContent', 'V2024ScheduledActionPayloadContent']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ScheduledActionPayloadContent',
+    'V2024ScheduledActionPayloadContent',
+  ]
 ---
 
 # ScheduledActionPayloadContent
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | **string** | Name of the scheduled action (maximum 50 characters). | 
-**BackupOptions** | Pointer to [**ScheduledActionPayloadContentBackupOptions**](scheduled-action-payload-content-backup-options) |  | [optional] 
-**SourceBackupId** | Pointer to **string** | ID of the source backup. Required for CREATE_DRAFT jobs. | [optional] 
-**SourceTenant** | Pointer to **string** | Source tenant identifier. Required for CREATE_DRAFT jobs. | [optional] 
-**DraftId** | Pointer to **string** | ID of the draft to be deployed. Required for CONFIG_DEPLOY_DRAFT jobs. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | **string** | Name of the scheduled action (maximum 50 characters). |
+| **BackupOptions** | Pointer to [**ScheduledActionPayloadContentBackupOptions**](scheduled-action-payload-content-backup-options) |  | [optional] |
+| **SourceBackupId** | Pointer to **string** | ID of the source backup. Required for CREATE_DRAFT jobs. | [optional] |
+| **SourceTenant** | Pointer to **string** | Source tenant identifier. Required for CREATE_DRAFT jobs. | [optional] |
+| **DraftId** | Pointer to **string** | ID of the draft to be deployed. Required for CONFIG_DEPLOY_DRAFT jobs. | [optional] |
 
 ## Methods
 
@@ -27,18 +40,13 @@ Name | Type | Description | Notes
 
 `func NewScheduledActionPayloadContent(name string, ) *ScheduledActionPayloadContent`
 
-NewScheduledActionPayloadContent instantiates a new ScheduledActionPayloadContent object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewScheduledActionPayloadContent instantiates a new ScheduledActionPayloadContent object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewScheduledActionPayloadContentWithDefaults
 
 `func NewScheduledActionPayloadContentWithDefaults() *ScheduledActionPayloadContent`
 
-NewScheduledActionPayloadContentWithDefaults instantiates a new ScheduledActionPayloadContent object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewScheduledActionPayloadContentWithDefaults instantiates a new ScheduledActionPayloadContent object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -50,15 +58,13 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *ScheduledActionPayloadContent) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
 `func (o *ScheduledActionPayloadContent) SetName(v string)`
 
 SetName sets Name field to given value.
-
 
 ### GetBackupOptions
 
@@ -70,8 +76,7 @@ GetBackupOptions returns the BackupOptions field if non-nil, zero value otherwis
 
 `func (o *ScheduledActionPayloadContent) GetBackupOptionsOk() (*ScheduledActionPayloadContentBackupOptions, bool)`
 
-GetBackupOptionsOk returns a tuple with the BackupOptions field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetBackupOptionsOk returns a tuple with the BackupOptions field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetBackupOptions
 
@@ -95,8 +100,7 @@ GetSourceBackupId returns the SourceBackupId field if non-nil, zero value otherw
 
 `func (o *ScheduledActionPayloadContent) GetSourceBackupIdOk() (*string, bool)`
 
-GetSourceBackupIdOk returns a tuple with the SourceBackupId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceBackupIdOk returns a tuple with the SourceBackupId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceBackupId
 
@@ -120,8 +124,7 @@ GetSourceTenant returns the SourceTenant field if non-nil, zero value otherwise.
 
 `func (o *ScheduledActionPayloadContent) GetSourceTenantOk() (*string, bool)`
 
-GetSourceTenantOk returns a tuple with the SourceTenant field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceTenantOk returns a tuple with the SourceTenant field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceTenant
 
@@ -145,8 +148,7 @@ GetDraftId returns the DraftId field if non-nil, zero value otherwise.
 
 `func (o *ScheduledActionPayloadContent) GetDraftIdOk() (*string, bool)`
 
-GetDraftIdOk returns a tuple with the DraftId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDraftIdOk returns a tuple with the DraftId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDraftId
 
@@ -159,5 +161,3 @@ SetDraftId sets DraftId field to given value.
 `func (o *ScheduledActionPayloadContent) HasDraftId() bool`
 
 HasDraftId returns a boolean if a field has been set.
-
-

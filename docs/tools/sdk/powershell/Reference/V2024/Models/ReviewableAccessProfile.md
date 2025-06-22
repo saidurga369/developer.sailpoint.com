@@ -4,32 +4,45 @@ title: ReviewableAccessProfile
 pagination_label: ReviewableAccessProfile
 sidebar_label: ReviewableAccessProfile
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'ReviewableAccessProfile', 'V2024ReviewableAccessProfile'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'ReviewableAccessProfile',
+    'V2024ReviewableAccessProfile',
+  ]
 slug: /tools/sdk/powershell/v2024/models/reviewable-access-profile
-tags: ['SDK', 'Software Development Kit', 'ReviewableAccessProfile', 'V2024ReviewableAccessProfile']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ReviewableAccessProfile',
+    'V2024ReviewableAccessProfile',
+  ]
 ---
-
 
 # ReviewableAccessProfile
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | The id of the Access Profile | [optional] 
-**Name** | **String** | Name of the Access Profile | [optional] 
-**Description** | **String** | Information about the Access Profile | [optional] 
-**Privileged** | **Boolean** | Indicates if the entitlement is a privileged entitlement | [optional] 
-**CloudGoverned** | **Boolean** | True if the entitlement is cloud governed | [optional] 
-**EndDate** | **System.DateTime** | The date at which a user's access expires | [optional] 
-**Owner** | [**IdentityReferenceWithNameAndEmail**](identity-reference-with-name-and-email) |  | [optional] 
-**Entitlements** | [**[]ReviewableEntitlement**](reviewable-entitlement) | A list of entitlements associated with this Access Profile | [optional] 
-**Created** | **System.DateTime** | Date the Access Profile was created. | [optional] 
-**Modified** | **System.DateTime** | Date the Access Profile was last modified. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | The id of the Access Profile | [optional] |
+| **Name** | **String** | Name of the Access Profile | [optional] |
+| **Description** | **String** | Information about the Access Profile | [optional] |
+| **Privileged** | **Boolean** | Indicates if the entitlement is a privileged entitlement | [optional] |
+| **CloudGoverned** | **Boolean** | True if the entitlement is cloud governed | [optional] |
+| **EndDate** | **System.DateTime** | The date at which a user's access expires | [optional] |
+| **Owner** | [**IdentityReferenceWithNameAndEmail**](identity-reference-with-name-and-email) |  | [optional] |
+| **Entitlements** | [**[]ReviewableEntitlement**](reviewable-entitlement) | A list of entitlements associated with this Access Profile | [optional] |
+| **Created** | **System.DateTime** | Date the Access Profile was created. | [optional] |
+| **Modified** | **System.DateTime** | Date the Access Profile was last modified. | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $ReviewableAccessProfile = Initialize-V2024ReviewableAccessProfile  -Id 2c91808a7190d06e01719938fcd20792 `
  -Name Employee-database-read-write `
@@ -44,10 +57,9 @@ $ReviewableAccessProfile = Initialize-V2024ReviewableAccessProfile  -Id 2c91808a
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $ReviewableAccessProfile | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

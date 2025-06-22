@@ -4,7 +4,7 @@ title: Campaign
 pagination_label: Campaign
 sidebar_label: Campaign
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Campaign', 'V2025Campaign'] 
+keywords: ['go', 'Golang', 'sdk', 'Campaign', 'V2025Campaign']
 slug: /tools/sdk/go/v2025/models/campaign
 tags: ['SDK', 'Software Development Kit', 'Campaign', 'V2025Campaign']
 ---
@@ -13,31 +13,31 @@ tags: ['SDK', 'Software Development Kit', 'Campaign', 'V2025Campaign']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **NullableString** | Id of the campaign | [optional] [readonly] 
-**Name** | **string** | The campaign name. If this object is part of a template, special formatting applies; see the `/campaign-templates/{id}/generate` endpoint documentation for details.  | 
-**Description** | **NullableString** | The campaign description. If this object is part of a template, special formatting applies; see the `/campaign-templates/{id}/generate` endpoint documentation for details.  | 
-**Deadline** | Pointer to **NullableTime** | The campaign's completion deadline.  This date must be in the future in order to activate the campaign.  If you try to activate a campaign with a deadline of today or in the past, you will receive a 400 error response. | [optional] 
-**Type** | **string** | The type of campaign. Could be extended in the future. | 
-**EmailNotificationEnabled** | Pointer to **bool** | Enables email notification for this campaign | [optional] [default to false]
-**AutoRevokeAllowed** | Pointer to **bool** | Allows auto revoke for this campaign | [optional] [default to false]
-**RecommendationsEnabled** | Pointer to **bool** | Enables IAI for this campaign. Accepts true even if the IAI product feature is off. If IAI is turned off then campaigns generated from this template will indicate false. The real value will then be returned if IAI is ever enabled for the org in the future. | [optional] [default to false]
-**Status** | Pointer to **NullableString** | The campaign's current status. | [optional] [readonly] 
-**CorrelatedStatus** | Pointer to **string** | The correlatedStatus of the campaign. Only SOURCE_OWNER campaigns can be Uncorrelated. An Uncorrelated certification campaign only includes Uncorrelated identities (An identity is uncorrelated if it has no accounts on an authoritative source). | [optional] 
-**Created** | Pointer to **NullableTime** | Created time of the campaign | [optional] [readonly] 
-**TotalCertifications** | Pointer to **NullableInt32** | The total number of certifications in this campaign. | [optional] [readonly] 
-**CompletedCertifications** | Pointer to **NullableInt32** | The number of completed certifications in this campaign. | [optional] [readonly] 
-**Alerts** | Pointer to [**[]CampaignAlert**](campaign-alert) | A list of errors and warnings that have accumulated. | [optional] [readonly] 
-**Modified** | Pointer to **NullableTime** | Modified time of the campaign | [optional] [readonly] 
-**Filter** | Pointer to [**NullableCampaignAllOfFilter**](campaign-all-of-filter) |  | [optional] 
-**SunsetCommentsRequired** | Pointer to **bool** | Determines if comments on sunset date changes are required. | [optional] [default to true]
-**SourceOwnerCampaignInfo** | Pointer to [**NullableCampaignAllOfSourceOwnerCampaignInfo**](campaign-all-of-source-owner-campaign-info) |  | [optional] 
-**SearchCampaignInfo** | Pointer to [**NullableCampaignAllOfSearchCampaignInfo**](campaign-all-of-search-campaign-info) |  | [optional] 
-**RoleCompositionCampaignInfo** | Pointer to [**NullableCampaignAllOfRoleCompositionCampaignInfo**](campaign-all-of-role-composition-campaign-info) |  | [optional] 
-**MachineAccountCampaignInfo** | Pointer to [**NullableCampaignAllOfMachineAccountCampaignInfo**](campaign-all-of-machine-account-campaign-info) |  | [optional] 
-**SourcesWithOrphanEntitlements** | Pointer to [**[]CampaignAllOfSourcesWithOrphanEntitlements**](campaign-all-of-sources-with-orphan-entitlements) | A list of sources in the campaign that contain \\\"orphan entitlements\\\" (entitlements without a corresponding Managed Attribute). An empty list indicates the campaign has no orphan entitlements. Null indicates there may be unknown orphan entitlements in the campaign (the campaign was created before this feature was implemented). | [optional] [readonly] 
-**MandatoryCommentRequirement** | Pointer to **string** | Determines whether comments are required for decisions during certification reviews. You can require comments for all decisions, revoke-only decisions, or no decisions. By default, comments are not required for decisions. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **NullableString** | Id of the campaign | [optional] [readonly] |
+| **Name** | **string** | The campaign name. If this object is part of a template, special formatting applies; see the `/campaign-templates/{id}/generate` endpoint documentation for details. |
+| **Description** | **NullableString** | The campaign description. If this object is part of a template, special formatting applies; see the `/campaign-templates/{id}/generate` endpoint documentation for details. |
+| **Deadline** | Pointer to **NullableTime** | The campaign's completion deadline. This date must be in the future in order to activate the campaign. If you try to activate a campaign with a deadline of today or in the past, you will receive a 400 error response. | [optional] |
+| **Type** | **string** | The type of campaign. Could be extended in the future. |
+| **EmailNotificationEnabled** | Pointer to **bool** | Enables email notification for this campaign | [optional] [default to false] |
+| **AutoRevokeAllowed** | Pointer to **bool** | Allows auto revoke for this campaign | [optional] [default to false] |
+| **RecommendationsEnabled** | Pointer to **bool** | Enables IAI for this campaign. Accepts true even if the IAI product feature is off. If IAI is turned off then campaigns generated from this template will indicate false. The real value will then be returned if IAI is ever enabled for the org in the future. | [optional] [default to false] |
+| **Status** | Pointer to **NullableString** | The campaign's current status. | [optional] [readonly] |
+| **CorrelatedStatus** | Pointer to **string** | The correlatedStatus of the campaign. Only SOURCE_OWNER campaigns can be Uncorrelated. An Uncorrelated certification campaign only includes Uncorrelated identities (An identity is uncorrelated if it has no accounts on an authoritative source). | [optional] |
+| **Created** | Pointer to **NullableTime** | Created time of the campaign | [optional] [readonly] |
+| **TotalCertifications** | Pointer to **NullableInt32** | The total number of certifications in this campaign. | [optional] [readonly] |
+| **CompletedCertifications** | Pointer to **NullableInt32** | The number of completed certifications in this campaign. | [optional] [readonly] |
+| **Alerts** | Pointer to [**[]CampaignAlert**](campaign-alert) | A list of errors and warnings that have accumulated. | [optional] [readonly] |
+| **Modified** | Pointer to **NullableTime** | Modified time of the campaign | [optional] [readonly] |
+| **Filter** | Pointer to [**NullableCampaignAllOfFilter**](campaign-all-of-filter) |  | [optional] |
+| **SunsetCommentsRequired** | Pointer to **bool** | Determines if comments on sunset date changes are required. | [optional] [default to true] |
+| **SourceOwnerCampaignInfo** | Pointer to [**NullableCampaignAllOfSourceOwnerCampaignInfo**](campaign-all-of-source-owner-campaign-info) |  | [optional] |
+| **SearchCampaignInfo** | Pointer to [**NullableCampaignAllOfSearchCampaignInfo**](campaign-all-of-search-campaign-info) |  | [optional] |
+| **RoleCompositionCampaignInfo** | Pointer to [**NullableCampaignAllOfRoleCompositionCampaignInfo**](campaign-all-of-role-composition-campaign-info) |  | [optional] |
+| **MachineAccountCampaignInfo** | Pointer to [**NullableCampaignAllOfMachineAccountCampaignInfo**](campaign-all-of-machine-account-campaign-info) |  | [optional] |
+| **SourcesWithOrphanEntitlements** | Pointer to [**[]CampaignAllOfSourcesWithOrphanEntitlements**](campaign-all-of-sources-with-orphan-entitlements) | A list of sources in the campaign that contain \\\"orphan entitlements\\\" (entitlements without a corresponding Managed Attribute). An empty list indicates the campaign has no orphan entitlements. Null indicates there may be unknown orphan entitlements in the campaign (the campaign was created before this feature was implemented). | [optional] [readonly] |
+| **MandatoryCommentRequirement** | Pointer to **string** | Determines whether comments are required for decisions during certification reviews. You can require comments for all decisions, revoke-only decisions, or no decisions. By default, comments are not required for decisions. | [optional] |
 
 ## Methods
 
@@ -45,18 +45,13 @@ Name | Type | Description | Notes
 
 `func NewCampaign(name string, description NullableString, type_ string, ) *Campaign`
 
-NewCampaign instantiates a new Campaign object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewCampaign instantiates a new Campaign object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewCampaignWithDefaults
 
 `func NewCampaignWithDefaults() *Campaign`
 
-NewCampaignWithDefaults instantiates a new Campaign object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewCampaignWithDefaults instantiates a new Campaign object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -68,8 +63,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *Campaign) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -87,12 +81,14 @@ HasId returns a boolean if a field has been set.
 
 `func (o *Campaign) SetIdNil(b bool)`
 
- SetIdNil sets the value for Id to be an explicit nil
+SetIdNil sets the value for Id to be an explicit nil
 
 ### UnsetId
+
 `func (o *Campaign) UnsetId()`
 
 UnsetId ensures that no value is present for Id, not even an explicit nil
+
 ### GetName
 
 `func (o *Campaign) GetName() string`
@@ -103,15 +99,13 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *Campaign) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
 `func (o *Campaign) SetName(v string)`
 
 SetName sets Name field to given value.
-
 
 ### GetDescription
 
@@ -123,8 +117,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *Campaign) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -132,17 +125,18 @@ and a boolean to check if the value has been set.
 
 SetDescription sets Description field to given value.
 
-
 ### SetDescriptionNil
 
 `func (o *Campaign) SetDescriptionNil(b bool)`
 
- SetDescriptionNil sets the value for Description to be an explicit nil
+SetDescriptionNil sets the value for Description to be an explicit nil
 
 ### UnsetDescription
+
 `func (o *Campaign) UnsetDescription()`
 
 UnsetDescription ensures that no value is present for Description, not even an explicit nil
+
 ### GetDeadline
 
 `func (o *Campaign) GetDeadline() SailPointTime`
@@ -153,8 +147,7 @@ GetDeadline returns the Deadline field if non-nil, zero value otherwise.
 
 `func (o *Campaign) GetDeadlineOk() (*SailPointTime, bool)`
 
-GetDeadlineOk returns a tuple with the Deadline field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDeadlineOk returns a tuple with the Deadline field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDeadline
 
@@ -172,12 +165,14 @@ HasDeadline returns a boolean if a field has been set.
 
 `func (o *Campaign) SetDeadlineNil(b bool)`
 
- SetDeadlineNil sets the value for Deadline to be an explicit nil
+SetDeadlineNil sets the value for Deadline to be an explicit nil
 
 ### UnsetDeadline
+
 `func (o *Campaign) UnsetDeadline()`
 
 UnsetDeadline ensures that no value is present for Deadline, not even an explicit nil
+
 ### GetType
 
 `func (o *Campaign) GetType() string`
@@ -188,15 +183,13 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *Campaign) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
 `func (o *Campaign) SetType(v string)`
 
 SetType sets Type field to given value.
-
 
 ### GetEmailNotificationEnabled
 
@@ -208,8 +201,7 @@ GetEmailNotificationEnabled returns the EmailNotificationEnabled field if non-ni
 
 `func (o *Campaign) GetEmailNotificationEnabledOk() (*bool, bool)`
 
-GetEmailNotificationEnabledOk returns a tuple with the EmailNotificationEnabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEmailNotificationEnabledOk returns a tuple with the EmailNotificationEnabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEmailNotificationEnabled
 
@@ -233,8 +225,7 @@ GetAutoRevokeAllowed returns the AutoRevokeAllowed field if non-nil, zero value 
 
 `func (o *Campaign) GetAutoRevokeAllowedOk() (*bool, bool)`
 
-GetAutoRevokeAllowedOk returns a tuple with the AutoRevokeAllowed field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAutoRevokeAllowedOk returns a tuple with the AutoRevokeAllowed field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAutoRevokeAllowed
 
@@ -258,8 +249,7 @@ GetRecommendationsEnabled returns the RecommendationsEnabled field if non-nil, z
 
 `func (o *Campaign) GetRecommendationsEnabledOk() (*bool, bool)`
 
-GetRecommendationsEnabledOk returns a tuple with the RecommendationsEnabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRecommendationsEnabledOk returns a tuple with the RecommendationsEnabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRecommendationsEnabled
 
@@ -283,8 +273,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *Campaign) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -302,12 +291,14 @@ HasStatus returns a boolean if a field has been set.
 
 `func (o *Campaign) SetStatusNil(b bool)`
 
- SetStatusNil sets the value for Status to be an explicit nil
+SetStatusNil sets the value for Status to be an explicit nil
 
 ### UnsetStatus
+
 `func (o *Campaign) UnsetStatus()`
 
 UnsetStatus ensures that no value is present for Status, not even an explicit nil
+
 ### GetCorrelatedStatus
 
 `func (o *Campaign) GetCorrelatedStatus() string`
@@ -318,8 +309,7 @@ GetCorrelatedStatus returns the CorrelatedStatus field if non-nil, zero value ot
 
 `func (o *Campaign) GetCorrelatedStatusOk() (*string, bool)`
 
-GetCorrelatedStatusOk returns a tuple with the CorrelatedStatus field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCorrelatedStatusOk returns a tuple with the CorrelatedStatus field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCorrelatedStatus
 
@@ -343,8 +333,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *Campaign) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -362,12 +351,14 @@ HasCreated returns a boolean if a field has been set.
 
 `func (o *Campaign) SetCreatedNil(b bool)`
 
- SetCreatedNil sets the value for Created to be an explicit nil
+SetCreatedNil sets the value for Created to be an explicit nil
 
 ### UnsetCreated
+
 `func (o *Campaign) UnsetCreated()`
 
 UnsetCreated ensures that no value is present for Created, not even an explicit nil
+
 ### GetTotalCertifications
 
 `func (o *Campaign) GetTotalCertifications() int32`
@@ -378,8 +369,7 @@ GetTotalCertifications returns the TotalCertifications field if non-nil, zero va
 
 `func (o *Campaign) GetTotalCertificationsOk() (*int32, bool)`
 
-GetTotalCertificationsOk returns a tuple with the TotalCertifications field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTotalCertificationsOk returns a tuple with the TotalCertifications field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTotalCertifications
 
@@ -397,12 +387,14 @@ HasTotalCertifications returns a boolean if a field has been set.
 
 `func (o *Campaign) SetTotalCertificationsNil(b bool)`
 
- SetTotalCertificationsNil sets the value for TotalCertifications to be an explicit nil
+SetTotalCertificationsNil sets the value for TotalCertifications to be an explicit nil
 
 ### UnsetTotalCertifications
+
 `func (o *Campaign) UnsetTotalCertifications()`
 
 UnsetTotalCertifications ensures that no value is present for TotalCertifications, not even an explicit nil
+
 ### GetCompletedCertifications
 
 `func (o *Campaign) GetCompletedCertifications() int32`
@@ -413,8 +405,7 @@ GetCompletedCertifications returns the CompletedCertifications field if non-nil,
 
 `func (o *Campaign) GetCompletedCertificationsOk() (*int32, bool)`
 
-GetCompletedCertificationsOk returns a tuple with the CompletedCertifications field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCompletedCertificationsOk returns a tuple with the CompletedCertifications field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCompletedCertifications
 
@@ -432,12 +423,14 @@ HasCompletedCertifications returns a boolean if a field has been set.
 
 `func (o *Campaign) SetCompletedCertificationsNil(b bool)`
 
- SetCompletedCertificationsNil sets the value for CompletedCertifications to be an explicit nil
+SetCompletedCertificationsNil sets the value for CompletedCertifications to be an explicit nil
 
 ### UnsetCompletedCertifications
+
 `func (o *Campaign) UnsetCompletedCertifications()`
 
 UnsetCompletedCertifications ensures that no value is present for CompletedCertifications, not even an explicit nil
+
 ### GetAlerts
 
 `func (o *Campaign) GetAlerts() []CampaignAlert`
@@ -448,8 +441,7 @@ GetAlerts returns the Alerts field if non-nil, zero value otherwise.
 
 `func (o *Campaign) GetAlertsOk() (*[]CampaignAlert, bool)`
 
-GetAlertsOk returns a tuple with the Alerts field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAlertsOk returns a tuple with the Alerts field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAlerts
 
@@ -467,12 +459,14 @@ HasAlerts returns a boolean if a field has been set.
 
 `func (o *Campaign) SetAlertsNil(b bool)`
 
- SetAlertsNil sets the value for Alerts to be an explicit nil
+SetAlertsNil sets the value for Alerts to be an explicit nil
 
 ### UnsetAlerts
+
 `func (o *Campaign) UnsetAlerts()`
 
 UnsetAlerts ensures that no value is present for Alerts, not even an explicit nil
+
 ### GetModified
 
 `func (o *Campaign) GetModified() SailPointTime`
@@ -483,8 +477,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *Campaign) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -502,12 +495,14 @@ HasModified returns a boolean if a field has been set.
 
 `func (o *Campaign) SetModifiedNil(b bool)`
 
- SetModifiedNil sets the value for Modified to be an explicit nil
+SetModifiedNil sets the value for Modified to be an explicit nil
 
 ### UnsetModified
+
 `func (o *Campaign) UnsetModified()`
 
 UnsetModified ensures that no value is present for Modified, not even an explicit nil
+
 ### GetFilter
 
 `func (o *Campaign) GetFilter() CampaignAllOfFilter`
@@ -518,8 +513,7 @@ GetFilter returns the Filter field if non-nil, zero value otherwise.
 
 `func (o *Campaign) GetFilterOk() (*CampaignAllOfFilter, bool)`
 
-GetFilterOk returns a tuple with the Filter field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFilterOk returns a tuple with the Filter field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFilter
 
@@ -537,12 +531,14 @@ HasFilter returns a boolean if a field has been set.
 
 `func (o *Campaign) SetFilterNil(b bool)`
 
- SetFilterNil sets the value for Filter to be an explicit nil
+SetFilterNil sets the value for Filter to be an explicit nil
 
 ### UnsetFilter
+
 `func (o *Campaign) UnsetFilter()`
 
 UnsetFilter ensures that no value is present for Filter, not even an explicit nil
+
 ### GetSunsetCommentsRequired
 
 `func (o *Campaign) GetSunsetCommentsRequired() bool`
@@ -553,8 +549,7 @@ GetSunsetCommentsRequired returns the SunsetCommentsRequired field if non-nil, z
 
 `func (o *Campaign) GetSunsetCommentsRequiredOk() (*bool, bool)`
 
-GetSunsetCommentsRequiredOk returns a tuple with the SunsetCommentsRequired field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSunsetCommentsRequiredOk returns a tuple with the SunsetCommentsRequired field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSunsetCommentsRequired
 
@@ -578,8 +573,7 @@ GetSourceOwnerCampaignInfo returns the SourceOwnerCampaignInfo field if non-nil,
 
 `func (o *Campaign) GetSourceOwnerCampaignInfoOk() (*CampaignAllOfSourceOwnerCampaignInfo, bool)`
 
-GetSourceOwnerCampaignInfoOk returns a tuple with the SourceOwnerCampaignInfo field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceOwnerCampaignInfoOk returns a tuple with the SourceOwnerCampaignInfo field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceOwnerCampaignInfo
 
@@ -597,12 +591,14 @@ HasSourceOwnerCampaignInfo returns a boolean if a field has been set.
 
 `func (o *Campaign) SetSourceOwnerCampaignInfoNil(b bool)`
 
- SetSourceOwnerCampaignInfoNil sets the value for SourceOwnerCampaignInfo to be an explicit nil
+SetSourceOwnerCampaignInfoNil sets the value for SourceOwnerCampaignInfo to be an explicit nil
 
 ### UnsetSourceOwnerCampaignInfo
+
 `func (o *Campaign) UnsetSourceOwnerCampaignInfo()`
 
 UnsetSourceOwnerCampaignInfo ensures that no value is present for SourceOwnerCampaignInfo, not even an explicit nil
+
 ### GetSearchCampaignInfo
 
 `func (o *Campaign) GetSearchCampaignInfo() CampaignAllOfSearchCampaignInfo`
@@ -613,8 +609,7 @@ GetSearchCampaignInfo returns the SearchCampaignInfo field if non-nil, zero valu
 
 `func (o *Campaign) GetSearchCampaignInfoOk() (*CampaignAllOfSearchCampaignInfo, bool)`
 
-GetSearchCampaignInfoOk returns a tuple with the SearchCampaignInfo field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSearchCampaignInfoOk returns a tuple with the SearchCampaignInfo field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSearchCampaignInfo
 
@@ -632,12 +627,14 @@ HasSearchCampaignInfo returns a boolean if a field has been set.
 
 `func (o *Campaign) SetSearchCampaignInfoNil(b bool)`
 
- SetSearchCampaignInfoNil sets the value for SearchCampaignInfo to be an explicit nil
+SetSearchCampaignInfoNil sets the value for SearchCampaignInfo to be an explicit nil
 
 ### UnsetSearchCampaignInfo
+
 `func (o *Campaign) UnsetSearchCampaignInfo()`
 
 UnsetSearchCampaignInfo ensures that no value is present for SearchCampaignInfo, not even an explicit nil
+
 ### GetRoleCompositionCampaignInfo
 
 `func (o *Campaign) GetRoleCompositionCampaignInfo() CampaignAllOfRoleCompositionCampaignInfo`
@@ -648,8 +645,7 @@ GetRoleCompositionCampaignInfo returns the RoleCompositionCampaignInfo field if 
 
 `func (o *Campaign) GetRoleCompositionCampaignInfoOk() (*CampaignAllOfRoleCompositionCampaignInfo, bool)`
 
-GetRoleCompositionCampaignInfoOk returns a tuple with the RoleCompositionCampaignInfo field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRoleCompositionCampaignInfoOk returns a tuple with the RoleCompositionCampaignInfo field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRoleCompositionCampaignInfo
 
@@ -667,12 +663,14 @@ HasRoleCompositionCampaignInfo returns a boolean if a field has been set.
 
 `func (o *Campaign) SetRoleCompositionCampaignInfoNil(b bool)`
 
- SetRoleCompositionCampaignInfoNil sets the value for RoleCompositionCampaignInfo to be an explicit nil
+SetRoleCompositionCampaignInfoNil sets the value for RoleCompositionCampaignInfo to be an explicit nil
 
 ### UnsetRoleCompositionCampaignInfo
+
 `func (o *Campaign) UnsetRoleCompositionCampaignInfo()`
 
 UnsetRoleCompositionCampaignInfo ensures that no value is present for RoleCompositionCampaignInfo, not even an explicit nil
+
 ### GetMachineAccountCampaignInfo
 
 `func (o *Campaign) GetMachineAccountCampaignInfo() CampaignAllOfMachineAccountCampaignInfo`
@@ -683,8 +681,7 @@ GetMachineAccountCampaignInfo returns the MachineAccountCampaignInfo field if no
 
 `func (o *Campaign) GetMachineAccountCampaignInfoOk() (*CampaignAllOfMachineAccountCampaignInfo, bool)`
 
-GetMachineAccountCampaignInfoOk returns a tuple with the MachineAccountCampaignInfo field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMachineAccountCampaignInfoOk returns a tuple with the MachineAccountCampaignInfo field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMachineAccountCampaignInfo
 
@@ -702,12 +699,14 @@ HasMachineAccountCampaignInfo returns a boolean if a field has been set.
 
 `func (o *Campaign) SetMachineAccountCampaignInfoNil(b bool)`
 
- SetMachineAccountCampaignInfoNil sets the value for MachineAccountCampaignInfo to be an explicit nil
+SetMachineAccountCampaignInfoNil sets the value for MachineAccountCampaignInfo to be an explicit nil
 
 ### UnsetMachineAccountCampaignInfo
+
 `func (o *Campaign) UnsetMachineAccountCampaignInfo()`
 
 UnsetMachineAccountCampaignInfo ensures that no value is present for MachineAccountCampaignInfo, not even an explicit nil
+
 ### GetSourcesWithOrphanEntitlements
 
 `func (o *Campaign) GetSourcesWithOrphanEntitlements() []CampaignAllOfSourcesWithOrphanEntitlements`
@@ -718,8 +717,7 @@ GetSourcesWithOrphanEntitlements returns the SourcesWithOrphanEntitlements field
 
 `func (o *Campaign) GetSourcesWithOrphanEntitlementsOk() (*[]CampaignAllOfSourcesWithOrphanEntitlements, bool)`
 
-GetSourcesWithOrphanEntitlementsOk returns a tuple with the SourcesWithOrphanEntitlements field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourcesWithOrphanEntitlementsOk returns a tuple with the SourcesWithOrphanEntitlements field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourcesWithOrphanEntitlements
 
@@ -737,12 +735,14 @@ HasSourcesWithOrphanEntitlements returns a boolean if a field has been set.
 
 `func (o *Campaign) SetSourcesWithOrphanEntitlementsNil(b bool)`
 
- SetSourcesWithOrphanEntitlementsNil sets the value for SourcesWithOrphanEntitlements to be an explicit nil
+SetSourcesWithOrphanEntitlementsNil sets the value for SourcesWithOrphanEntitlements to be an explicit nil
 
 ### UnsetSourcesWithOrphanEntitlements
+
 `func (o *Campaign) UnsetSourcesWithOrphanEntitlements()`
 
 UnsetSourcesWithOrphanEntitlements ensures that no value is present for SourcesWithOrphanEntitlements, not even an explicit nil
+
 ### GetMandatoryCommentRequirement
 
 `func (o *Campaign) GetMandatoryCommentRequirement() string`
@@ -753,8 +753,7 @@ GetMandatoryCommentRequirement returns the MandatoryCommentRequirement field if 
 
 `func (o *Campaign) GetMandatoryCommentRequirementOk() (*string, bool)`
 
-GetMandatoryCommentRequirementOk returns a tuple with the MandatoryCommentRequirement field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMandatoryCommentRequirementOk returns a tuple with the MandatoryCommentRequirement field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMandatoryCommentRequirement
 
@@ -767,5 +766,3 @@ SetMandatoryCommentRequirement sets MandatoryCommentRequirement field to given v
 `func (o *Campaign) HasMandatoryCommentRequirement() bool`
 
 HasMandatoryCommentRequirement returns a boolean if a field has been set.
-
-

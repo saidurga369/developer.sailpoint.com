@@ -4,30 +4,32 @@ title: MachineIdentity
 pagination_label: MachineIdentity
 sidebar_label: MachineIdentity
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'MachineIdentity', 'V2024MachineIdentity'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'MachineIdentity', 'V2024MachineIdentity']
 slug: /tools/sdk/powershell/v2024/models/machine-identity
-tags: ['SDK', 'Software Development Kit', 'MachineIdentity', 'V2024MachineIdentity']
+tags:
+  ['SDK', 'Software Development Kit', 'MachineIdentity', 'V2024MachineIdentity']
 ---
-
 
 # MachineIdentity
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | System-generated unique ID of the Object | [optional] [readonly] 
-**Name** | **String** | Name of the Object | [required]
-**Created** | **System.DateTime** | Creation date of the Object | [optional] [readonly] 
-**Modified** | **System.DateTime** | Last modification date of the Object | [optional] [readonly] 
-**BusinessApplication** | **String** | The business application that the identity represents | [required]
-**Description** | **String** | Description of machine identity | [optional] 
-**ManuallyEdited** | **Boolean** | Indicates if the machine identity has been manually edited | [optional] [default to $false]
-**Attributes** | [**SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | A map of custom machine identity attributes | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | System-generated unique ID of the Object | [optional] [readonly] |
+| **Name** | **String** | Name of the Object | [required] |
+| **Created** | **System.DateTime** | Creation date of the Object | [optional] [readonly] |
+| **Modified** | **System.DateTime** | Last modification date of the Object | [optional] [readonly] |
+| **BusinessApplication** | **String** | The business application that the identity represents | [required] |
+| **Description** | **String** | Description of machine identity | [optional] |
+| **ManuallyEdited** | **Boolean** | Indicates if the machine identity has been manually edited | [optional] [default to $false] |
+| **Attributes** | [**SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | A map of custom machine identity attributes | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $MachineIdentity = Initialize-V2024MachineIdentity  -Id id12345 `
  -Name aName `
@@ -40,10 +42,9 @@ $MachineIdentity = Initialize-V2024MachineIdentity  -Id id12345 `
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $MachineIdentity | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

@@ -4,20 +4,33 @@ title: CreateUploadedConfigurationRequest
 pagination_label: CreateUploadedConfigurationRequest
 sidebar_label: CreateUploadedConfigurationRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'CreateUploadedConfigurationRequest', 'V2025CreateUploadedConfigurationRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'CreateUploadedConfigurationRequest',
+    'V2025CreateUploadedConfigurationRequest',
+  ]
 slug: /tools/sdk/python/v2025/models/create-uploaded-configuration-request
-tags: ['SDK', 'Software Development Kit', 'CreateUploadedConfigurationRequest', 'V2025CreateUploadedConfigurationRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CreateUploadedConfigurationRequest',
+    'V2025CreateUploadedConfigurationRequest',
+  ]
 ---
 
 # CreateUploadedConfigurationRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**data** | **bytearray** | JSON file containing the objects to be imported. | [required]
-**name** | **str** | Name that will be assigned to the uploaded configuration file. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **data** | **bytearray** | JSON file containing the objects to be imported. | [required] |
+| **name** | **str** | Name that will be assigned to the uploaded configuration file. | [required] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ name=''
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

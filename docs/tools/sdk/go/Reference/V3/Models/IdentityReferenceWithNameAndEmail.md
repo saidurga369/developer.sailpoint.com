@@ -4,21 +4,34 @@ title: IdentityReferenceWithNameAndEmail
 pagination_label: IdentityReferenceWithNameAndEmail
 sidebar_label: IdentityReferenceWithNameAndEmail
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IdentityReferenceWithNameAndEmail', 'IdentityReferenceWithNameAndEmail'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'IdentityReferenceWithNameAndEmail',
+    'IdentityReferenceWithNameAndEmail',
+  ]
 slug: /tools/sdk/go/v3/models/identity-reference-with-name-and-email
-tags: ['SDK', 'Software Development Kit', 'IdentityReferenceWithNameAndEmail', 'IdentityReferenceWithNameAndEmail']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityReferenceWithNameAndEmail',
+    'IdentityReferenceWithNameAndEmail',
+  ]
 ---
 
 # IdentityReferenceWithNameAndEmail
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | The type can only be IDENTITY. This is read-only. | [optional] 
-**Id** | Pointer to **string** | Identity ID. | [optional] 
-**Name** | Pointer to **string** | Identity's human-readable display name. This is read-only. | [optional] 
-**Email** | Pointer to **string** | Identity's email address. This is read-only. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to **string** | The type can only be IDENTITY. This is read-only. | [optional] |
+| **Id** | Pointer to **string** | Identity ID. | [optional] |
+| **Name** | Pointer to **string** | Identity's human-readable display name. This is read-only. | [optional] |
+| **Email** | Pointer to **string** | Identity's email address. This is read-only. | [optional] |
 
 ## Methods
 
@@ -26,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewIdentityReferenceWithNameAndEmail() *IdentityReferenceWithNameAndEmail`
 
-NewIdentityReferenceWithNameAndEmail instantiates a new IdentityReferenceWithNameAndEmail object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewIdentityReferenceWithNameAndEmail instantiates a new IdentityReferenceWithNameAndEmail object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewIdentityReferenceWithNameAndEmailWithDefaults
 
 `func NewIdentityReferenceWithNameAndEmailWithDefaults() *IdentityReferenceWithNameAndEmail`
 
-NewIdentityReferenceWithNameAndEmailWithDefaults instantiates a new IdentityReferenceWithNameAndEmail object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewIdentityReferenceWithNameAndEmailWithDefaults instantiates a new IdentityReferenceWithNameAndEmail object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -49,8 +57,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *IdentityReferenceWithNameAndEmail) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -74,8 +81,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *IdentityReferenceWithNameAndEmail) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -99,8 +105,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *IdentityReferenceWithNameAndEmail) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -124,8 +129,7 @@ GetEmail returns the Email field if non-nil, zero value otherwise.
 
 `func (o *IdentityReferenceWithNameAndEmail) GetEmailOk() (*string, bool)`
 
-GetEmailOk returns a tuple with the Email field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEmailOk returns a tuple with the Email field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEmail
 
@@ -138,5 +142,3 @@ SetEmail sets Email field to given value.
 `func (o *IdentityReferenceWithNameAndEmail) HasEmail() bool`
 
 HasEmail returns a boolean if a field has been set.
-
-

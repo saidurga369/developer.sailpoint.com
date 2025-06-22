@@ -16,9 +16,9 @@ tags: ['Rules']
 
 This rule manipulates raw input data provided by the rows and columns in a file and builds a map from the incoming data. Use this rule to create a new value by combining two columns together. For example, if one column was `access` and another `permissions` you could combine these together to create an entitlement `admin-read`.
 
-:::info 
+:::info
 
-This rule runs in the cloud, but it's really a connector rule because it executes against the DelimitedFileConnector. 
+This rule runs in the cloud, but it's really a connector rule because it executes against the DelimitedFileConnector.
 
 :::
 
@@ -39,6 +39,7 @@ This rule runs in the cloud, but it's really a connector rule because it execute
 | schema | sailpoint.object.Schema | Reference to the schema object for the delimited file source being read. |
 
 ## Connector Rule JSON Template
+
 This template is used for the connector rule development process which is supported for the delimited file connector. Note the BeanShell code is escaped in the $.sourceCode.script attribute. The example, unescaped and formatted for readability, follows.
 
 ```JSON
@@ -80,8 +81,11 @@ This template is used for the connector rule development process which is suppor
     "description": "This basic rule performs the combines 2 values into a single attribute."
 }
 ```
+
 ## Connector Rule Example
+
 This is the unescaped BeanShell code from the $.sourceCode.script attribute above.
+
 ```java
  import sailpoint.connector.DelimitedFileConnector;
 
@@ -96,8 +100,10 @@ This is the unescaped BeanShell code from the $.sourceCode.script attribute abov
  }
  return map;
 ```
+
 ## Cloud Rule XML Template
-This template is used for the cloud rule deployement process which is NOT requried for buildmap rules but is still supported. 
+
+This template is used for the cloud rule deployement process which is NOT requried for buildmap rules but is still supported.
 
 ```xml
 <?xml version='1.0' encoding='UTF-8'?>

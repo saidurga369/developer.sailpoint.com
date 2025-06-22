@@ -4,42 +4,45 @@ title: IAIMessageCatalogs
 pagination_label: IAIMessageCatalogs
 sidebar_label: IAIMessageCatalogs
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IAIMessageCatalogs', 'BetaIAIMessageCatalogs'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'IAIMessageCatalogs', 'BetaIAIMessageCatalogs']
 slug: /tools/sdk/go/beta/methods/iai-message-catalogs
-tags: ['SDK', 'Software Development Kit', 'IAIMessageCatalogs', 'BetaIAIMessageCatalogs']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IAIMessageCatalogs',
+    'BetaIAIMessageCatalogs',
+  ]
 ---
 
 # IAIMessageCatalogsAPI
-   
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/beta*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**get-message-catalogs**](#get-message-catalogs) | **Get** `/translation-catalogs/{catalog-id}` | Get message catalogs
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**get-message-catalogs**](#get-message-catalogs) | **Get** `/translation-catalogs/{catalog-id}` | Get message catalogs |
 
 ## get-message-catalogs
-Get message catalogs
-The getMessageCatalogs API returns message catalog based on the language headers in the requested object.
+
+Get message catalogs The getMessageCatalogs API returns message catalog based on the language headers in the requested object.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-message-catalogs)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**catalogId** | **string** | The ID of the message catalog. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **catalogId** | **string** | The ID of the message catalog. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetMessageCatalogsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -59,15 +62,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     catalogId := `recommender` // string | The ID of the message catalog. # string | The ID of the message catalog.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -83,4 +86,3 @@ func main() {
 ```
 
 [[Back to top]](#)
-

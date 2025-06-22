@@ -4,24 +4,37 @@ title: AccessRequestPreApprovalRequestedItemsInner
 pagination_label: AccessRequestPreApprovalRequestedItemsInner
 sidebar_label: AccessRequestPreApprovalRequestedItemsInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccessRequestPreApprovalRequestedItemsInner', 'V2025AccessRequestPreApprovalRequestedItemsInner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccessRequestPreApprovalRequestedItemsInner',
+    'V2025AccessRequestPreApprovalRequestedItemsInner',
+  ]
 slug: /tools/sdk/python/v2025/models/access-request-pre-approval-requested-items-inner
-tags: ['SDK', 'Software Development Kit', 'AccessRequestPreApprovalRequestedItemsInner', 'V2025AccessRequestPreApprovalRequestedItemsInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessRequestPreApprovalRequestedItemsInner',
+    'V2025AccessRequestPreApprovalRequestedItemsInner',
+  ]
 ---
 
 # AccessRequestPreApprovalRequestedItemsInner
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The unique ID of the access item being requested. | [required]
-**name** | **str** | The human friendly name of the access item. | [required]
-**description** | **str** | Detailed description of the access item. | [optional] 
-**type** |  **Enum** [  'ACCESS_PROFILE',    'ROLE',    'ENTITLEMENT' ] | The type of access item. | [required]
-**operation** |  **Enum** [  'Add',    'Remove' ] | The action to perform on the access item. | [required]
-**comment** | **str** | A comment from the identity requesting the access. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The unique ID of the access item being requested. | [required] |
+| **name** | **str** | The human friendly name of the access item. | [required] |
+| **description** | **str** | Detailed description of the access item. | [optional] |
+| **type** | **Enum** [ 'ACCESS_PROFILE', 'ROLE', 'ENTITLEMENT' ] | The type of access item. | [required] |
+| **operation** | **Enum** [ 'Add', 'Remove' ] | The action to perform on the access item. | [required] |
+| **comment** | **str** | A comment from the identity requesting the access. | [optional] |
+
 }
 
 ## Example
@@ -39,5 +52,5 @@ comment='William needs this access to do his job.'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

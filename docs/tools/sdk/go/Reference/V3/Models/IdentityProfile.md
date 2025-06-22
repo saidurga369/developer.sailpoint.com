@@ -4,7 +4,7 @@ title: IdentityProfile
 pagination_label: IdentityProfile
 sidebar_label: IdentityProfile
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IdentityProfile', 'IdentityProfile'] 
+keywords: ['go', 'Golang', 'sdk', 'IdentityProfile', 'IdentityProfile']
 slug: /tools/sdk/go/v3/models/identity-profile
 tags: ['SDK', 'Software Development Kit', 'IdentityProfile', 'IdentityProfile']
 ---
@@ -13,21 +13,21 @@ tags: ['SDK', 'Software Development Kit', 'IdentityProfile', 'IdentityProfile']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | System-generated unique ID of the Object | [optional] [readonly] 
-**Name** | **NullableString** | Name of the Object | 
-**Created** | Pointer to **SailPointTime** | Creation date of the Object | [optional] [readonly] 
-**Modified** | Pointer to **SailPointTime** | Last modification date of the Object | [optional] [readonly] 
-**Description** | Pointer to **NullableString** | Identity profile's description. | [optional] 
-**Owner** | Pointer to [**NullableIdentityProfileAllOfOwner**](identity-profile-all-of-owner) |  | [optional] 
-**Priority** | Pointer to **int64** | Identity profile's priority. | [optional] 
-**AuthoritativeSource** | [**IdentityProfileAllOfAuthoritativeSource**](identity-profile-all-of-authoritative-source) |  | 
-**IdentityRefreshRequired** | Pointer to **bool** | Set this value to 'True' if an identity refresh is necessary. You would typically want to trigger an identity refresh when a change has been made on the source. | [optional] [default to false]
-**IdentityCount** | Pointer to **int32** | Number of identities belonging to the identity profile. | [optional] 
-**IdentityAttributeConfig** | Pointer to [**IdentityAttributeConfig**](identity-attribute-config) |  | [optional] 
-**IdentityExceptionReportReference** | Pointer to [**NullableIdentityExceptionReportReference**](identity-exception-report-reference) |  | [optional] 
-**HasTimeBasedAttr** | Pointer to **bool** | Indicates the value of `requiresPeriodicRefresh` attribute for the identity profile. | [optional] [default to false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | System-generated unique ID of the Object | [optional] [readonly] |
+| **Name** | **NullableString** | Name of the Object |
+| **Created** | Pointer to **SailPointTime** | Creation date of the Object | [optional] [readonly] |
+| **Modified** | Pointer to **SailPointTime** | Last modification date of the Object | [optional] [readonly] |
+| **Description** | Pointer to **NullableString** | Identity profile's description. | [optional] |
+| **Owner** | Pointer to [**NullableIdentityProfileAllOfOwner**](identity-profile-all-of-owner) |  | [optional] |
+| **Priority** | Pointer to **int64** | Identity profile's priority. | [optional] |
+| **AuthoritativeSource** | [**IdentityProfileAllOfAuthoritativeSource**](identity-profile-all-of-authoritative-source) |  |
+| **IdentityRefreshRequired** | Pointer to **bool** | Set this value to 'True' if an identity refresh is necessary. You would typically want to trigger an identity refresh when a change has been made on the source. | [optional] [default to false] |
+| **IdentityCount** | Pointer to **int32** | Number of identities belonging to the identity profile. | [optional] |
+| **IdentityAttributeConfig** | Pointer to [**IdentityAttributeConfig**](identity-attribute-config) |  | [optional] |
+| **IdentityExceptionReportReference** | Pointer to [**NullableIdentityExceptionReportReference**](identity-exception-report-reference) |  | [optional] |
+| **HasTimeBasedAttr** | Pointer to **bool** | Indicates the value of `requiresPeriodicRefresh` attribute for the identity profile. | [optional] [default to false] |
 
 ## Methods
 
@@ -35,18 +35,13 @@ Name | Type | Description | Notes
 
 `func NewIdentityProfile(name NullableString, authoritativeSource IdentityProfileAllOfAuthoritativeSource, ) *IdentityProfile`
 
-NewIdentityProfile instantiates a new IdentityProfile object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewIdentityProfile instantiates a new IdentityProfile object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewIdentityProfileWithDefaults
 
 `func NewIdentityProfileWithDefaults() *IdentityProfile`
 
-NewIdentityProfileWithDefaults instantiates a new IdentityProfile object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewIdentityProfileWithDefaults instantiates a new IdentityProfile object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -58,8 +53,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *IdentityProfile) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -83,8 +77,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *IdentityProfile) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -92,17 +85,18 @@ and a boolean to check if the value has been set.
 
 SetName sets Name field to given value.
 
-
 ### SetNameNil
 
 `func (o *IdentityProfile) SetNameNil(b bool)`
 
- SetNameNil sets the value for Name to be an explicit nil
+SetNameNil sets the value for Name to be an explicit nil
 
 ### UnsetName
+
 `func (o *IdentityProfile) UnsetName()`
 
 UnsetName ensures that no value is present for Name, not even an explicit nil
+
 ### GetCreated
 
 `func (o *IdentityProfile) GetCreated() SailPointTime`
@@ -113,8 +107,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *IdentityProfile) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -138,8 +131,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *IdentityProfile) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -163,8 +155,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *IdentityProfile) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -182,12 +173,14 @@ HasDescription returns a boolean if a field has been set.
 
 `func (o *IdentityProfile) SetDescriptionNil(b bool)`
 
- SetDescriptionNil sets the value for Description to be an explicit nil
+SetDescriptionNil sets the value for Description to be an explicit nil
 
 ### UnsetDescription
+
 `func (o *IdentityProfile) UnsetDescription()`
 
 UnsetDescription ensures that no value is present for Description, not even an explicit nil
+
 ### GetOwner
 
 `func (o *IdentityProfile) GetOwner() IdentityProfileAllOfOwner`
@@ -198,8 +191,7 @@ GetOwner returns the Owner field if non-nil, zero value otherwise.
 
 `func (o *IdentityProfile) GetOwnerOk() (*IdentityProfileAllOfOwner, bool)`
 
-GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwner
 
@@ -217,12 +209,14 @@ HasOwner returns a boolean if a field has been set.
 
 `func (o *IdentityProfile) SetOwnerNil(b bool)`
 
- SetOwnerNil sets the value for Owner to be an explicit nil
+SetOwnerNil sets the value for Owner to be an explicit nil
 
 ### UnsetOwner
+
 `func (o *IdentityProfile) UnsetOwner()`
 
 UnsetOwner ensures that no value is present for Owner, not even an explicit nil
+
 ### GetPriority
 
 `func (o *IdentityProfile) GetPriority() int64`
@@ -233,8 +227,7 @@ GetPriority returns the Priority field if non-nil, zero value otherwise.
 
 `func (o *IdentityProfile) GetPriorityOk() (*int64, bool)`
 
-GetPriorityOk returns a tuple with the Priority field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPriorityOk returns a tuple with the Priority field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPriority
 
@@ -258,15 +251,13 @@ GetAuthoritativeSource returns the AuthoritativeSource field if non-nil, zero va
 
 `func (o *IdentityProfile) GetAuthoritativeSourceOk() (*IdentityProfileAllOfAuthoritativeSource, bool)`
 
-GetAuthoritativeSourceOk returns a tuple with the AuthoritativeSource field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAuthoritativeSourceOk returns a tuple with the AuthoritativeSource field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAuthoritativeSource
 
 `func (o *IdentityProfile) SetAuthoritativeSource(v IdentityProfileAllOfAuthoritativeSource)`
 
 SetAuthoritativeSource sets AuthoritativeSource field to given value.
-
 
 ### GetIdentityRefreshRequired
 
@@ -278,8 +269,7 @@ GetIdentityRefreshRequired returns the IdentityRefreshRequired field if non-nil,
 
 `func (o *IdentityProfile) GetIdentityRefreshRequiredOk() (*bool, bool)`
 
-GetIdentityRefreshRequiredOk returns a tuple with the IdentityRefreshRequired field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityRefreshRequiredOk returns a tuple with the IdentityRefreshRequired field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityRefreshRequired
 
@@ -303,8 +293,7 @@ GetIdentityCount returns the IdentityCount field if non-nil, zero value otherwis
 
 `func (o *IdentityProfile) GetIdentityCountOk() (*int32, bool)`
 
-GetIdentityCountOk returns a tuple with the IdentityCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityCountOk returns a tuple with the IdentityCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityCount
 
@@ -328,8 +317,7 @@ GetIdentityAttributeConfig returns the IdentityAttributeConfig field if non-nil,
 
 `func (o *IdentityProfile) GetIdentityAttributeConfigOk() (*IdentityAttributeConfig, bool)`
 
-GetIdentityAttributeConfigOk returns a tuple with the IdentityAttributeConfig field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityAttributeConfigOk returns a tuple with the IdentityAttributeConfig field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityAttributeConfig
 
@@ -353,8 +341,7 @@ GetIdentityExceptionReportReference returns the IdentityExceptionReportReference
 
 `func (o *IdentityProfile) GetIdentityExceptionReportReferenceOk() (*IdentityExceptionReportReference, bool)`
 
-GetIdentityExceptionReportReferenceOk returns a tuple with the IdentityExceptionReportReference field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityExceptionReportReferenceOk returns a tuple with the IdentityExceptionReportReference field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityExceptionReportReference
 
@@ -372,12 +359,14 @@ HasIdentityExceptionReportReference returns a boolean if a field has been set.
 
 `func (o *IdentityProfile) SetIdentityExceptionReportReferenceNil(b bool)`
 
- SetIdentityExceptionReportReferenceNil sets the value for IdentityExceptionReportReference to be an explicit nil
+SetIdentityExceptionReportReferenceNil sets the value for IdentityExceptionReportReference to be an explicit nil
 
 ### UnsetIdentityExceptionReportReference
+
 `func (o *IdentityProfile) UnsetIdentityExceptionReportReference()`
 
 UnsetIdentityExceptionReportReference ensures that no value is present for IdentityExceptionReportReference, not even an explicit nil
+
 ### GetHasTimeBasedAttr
 
 `func (o *IdentityProfile) GetHasTimeBasedAttr() bool`
@@ -388,8 +377,7 @@ GetHasTimeBasedAttr returns the HasTimeBasedAttr field if non-nil, zero value ot
 
 `func (o *IdentityProfile) GetHasTimeBasedAttrOk() (*bool, bool)`
 
-GetHasTimeBasedAttrOk returns a tuple with the HasTimeBasedAttr field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetHasTimeBasedAttrOk returns a tuple with the HasTimeBasedAttr field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetHasTimeBasedAttr
 
@@ -402,5 +390,3 @@ SetHasTimeBasedAttr sets HasTimeBasedAttr field to given value.
 `func (o *IdentityProfile) HasHasTimeBasedAttr() bool`
 
 HasHasTimeBasedAttr returns a boolean if a field has been set.
-
-

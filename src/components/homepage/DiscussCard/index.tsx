@@ -3,9 +3,9 @@ import styles from './styles.module.css';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import ThemedImage from '@theme/ThemedImage';
-import { addDarkToFileName } from '../../../util/util';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSquareCheck, faEye } from '@fortawesome/free-solid-svg-icons';
+import {addDarkToFileName} from '../../../util/util';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faSquareCheck, faEye} from '@fortawesome/free-solid-svg-icons';
 
 interface DiscussCardProps {
   link: string;
@@ -16,14 +16,31 @@ interface DiscussCardProps {
   solution?: boolean;
 }
 
-const DiscussCard: React.FC<DiscussCardProps> = ({ link, title, tags, views, liked, solution }) => {
+const DiscussCard: React.FC<DiscussCardProps> = ({
+  link,
+  title,
+  tags,
+  views,
+  liked,
+  solution,
+}) => {
   let solved = (
-    <img className={styles.cardDiscuss} src={useBaseUrl('/homepage/edit.png')} alt="Discussion" />
+    <img
+      className={styles.cardDiscuss}
+      src={useBaseUrl('/homepage/edit.png')}
+      alt="Discussion"
+    />
   );
   let linkText = <div className={styles.linkText}>Join the Discussion</div>;
 
   if (solution) {
-    solved = <FontAwesomeIcon icon={faSquareCheck} className={styles.cardSolved} size="lg" />;
+    solved = (
+      <FontAwesomeIcon
+        icon={faSquareCheck}
+        className={styles.cardSolved}
+        size="lg"
+      />
+    );
     linkText = <div className={styles.linkSolvedText}>View the Solution</div>;
   }
 
@@ -45,7 +62,11 @@ const DiscussCard: React.FC<DiscussCardProps> = ({ link, title, tags, views, lik
           }}
         />
         <FontAwesomeIcon icon={faEye} className={styles.cardEye} size="lg" />
-        <img className={styles.cardLiked} src={useBaseUrl('/homepage/liked.png')} alt="Liked" />
+        <img
+          className={styles.cardLiked}
+          src={useBaseUrl('/homepage/liked.png')}
+          alt="Liked"
+        />
         {solved}
         <div className={styles.cardText}>{title}</div>
         <div className={styles.cardViews}>{views}</div>

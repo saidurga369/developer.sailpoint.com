@@ -4,22 +4,35 @@ title: NonEmployeeBulkUploadJob
 pagination_label: NonEmployeeBulkUploadJob
 sidebar_label: NonEmployeeBulkUploadJob
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'NonEmployeeBulkUploadJob', 'V2025NonEmployeeBulkUploadJob'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'NonEmployeeBulkUploadJob',
+    'V2025NonEmployeeBulkUploadJob',
+  ]
 slug: /tools/sdk/go/v2025/models/non-employee-bulk-upload-job
-tags: ['SDK', 'Software Development Kit', 'NonEmployeeBulkUploadJob', 'V2025NonEmployeeBulkUploadJob']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NonEmployeeBulkUploadJob',
+    'V2025NonEmployeeBulkUploadJob',
+  ]
 ---
 
 # NonEmployeeBulkUploadJob
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The bulk upload job's ID. (UUID) | [optional] 
-**SourceId** | Pointer to **string** | The ID of the source to bulk-upload non-employees to. (UUID) | [optional] 
-**Created** | Pointer to **SailPointTime** | The date-time the job was submitted. | [optional] 
-**Modified** | Pointer to **SailPointTime** | The date-time that the job was last updated. | [optional] 
-**Status** | Pointer to **string** | Returns the following values indicating the progress or result of the bulk upload job. \"PENDING\" means the job is queued and waiting to be processed. \"IN_PROGRESS\" means the job is currently being processed. \"COMPLETED\" means the job has been completed without any errors. \"ERROR\" means the job failed to process with errors.  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The bulk upload job's ID. (UUID) | [optional] |
+| **SourceId** | Pointer to **string** | The ID of the source to bulk-upload non-employees to. (UUID) | [optional] |
+| **Created** | Pointer to **SailPointTime** | The date-time the job was submitted. | [optional] |
+| **Modified** | Pointer to **SailPointTime** | The date-time that the job was last updated. | [optional] |
+| **Status** | Pointer to **string** | Returns the following values indicating the progress or result of the bulk upload job. \"PENDING\" means the job is queued and waiting to be processed. \"IN_PROGRESS\" means the job is currently being processed. \"COMPLETED\" means the job has been completed without any errors. \"ERROR\" means the job failed to process with errors. | [optional] |
 
 ## Methods
 
@@ -27,18 +40,13 @@ Name | Type | Description | Notes
 
 `func NewNonEmployeeBulkUploadJob() *NonEmployeeBulkUploadJob`
 
-NewNonEmployeeBulkUploadJob instantiates a new NonEmployeeBulkUploadJob object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewNonEmployeeBulkUploadJob instantiates a new NonEmployeeBulkUploadJob object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewNonEmployeeBulkUploadJobWithDefaults
 
 `func NewNonEmployeeBulkUploadJobWithDefaults() *NonEmployeeBulkUploadJob`
 
-NewNonEmployeeBulkUploadJobWithDefaults instantiates a new NonEmployeeBulkUploadJob object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewNonEmployeeBulkUploadJobWithDefaults instantiates a new NonEmployeeBulkUploadJob object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -50,8 +58,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeBulkUploadJob) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -75,8 +82,7 @@ GetSourceId returns the SourceId field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeBulkUploadJob) GetSourceIdOk() (*string, bool)`
 
-GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceId
 
@@ -100,8 +106,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeBulkUploadJob) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -125,8 +130,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeBulkUploadJob) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -150,8 +154,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeBulkUploadJob) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -164,5 +167,3 @@ SetStatus sets Status field to given value.
 `func (o *NonEmployeeBulkUploadJob) HasStatus() bool`
 
 HasStatus returns a boolean if a field has been set.
-
-

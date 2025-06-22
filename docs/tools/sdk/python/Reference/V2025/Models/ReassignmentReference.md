@@ -4,20 +4,33 @@ title: ReassignmentReference
 pagination_label: ReassignmentReference
 sidebar_label: ReassignmentReference
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ReassignmentReference', 'V2025ReassignmentReference'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ReassignmentReference',
+    'V2025ReassignmentReference',
+  ]
 slug: /tools/sdk/python/v2025/models/reassignment-reference
-tags: ['SDK', 'Software Development Kit', 'ReassignmentReference', 'V2025ReassignmentReference']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ReassignmentReference',
+    'V2025ReassignmentReference',
+  ]
 ---
 
 # ReassignmentReference
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The ID of item or identity being reassigned. | [required]
-**type** |  **Enum** [  'TARGET_SUMMARY',    'ITEM',    'IDENTITY_SUMMARY' ] | The type of item or identity being reassigned. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The ID of item or identity being reassigned. | [required] |
+| **type** | **Enum** [ 'TARGET_SUMMARY', 'ITEM', 'IDENTITY_SUMMARY' ] | The type of item or identity being reassigned. | [required] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ type='ITEM'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

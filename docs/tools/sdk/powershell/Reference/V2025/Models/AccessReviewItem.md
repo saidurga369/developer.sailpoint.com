@@ -4,29 +4,42 @@ title: AccessReviewItem
 pagination_label: AccessReviewItem
 sidebar_label: AccessReviewItem
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'AccessReviewItem', 'V2025AccessReviewItem'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'AccessReviewItem',
+    'V2025AccessReviewItem',
+  ]
 slug: /tools/sdk/powershell/v2025/models/access-review-item
-tags: ['SDK', 'Software Development Kit', 'AccessReviewItem', 'V2025AccessReviewItem']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessReviewItem',
+    'V2025AccessReviewItem',
+  ]
 ---
-
 
 # AccessReviewItem
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**AccessSummary** | [**AccessSummary**](access-summary) |  | [optional] 
-**IdentitySummary** | [**CertificationIdentitySummary**](certification-identity-summary) |  | [optional] 
-**Id** | **String** | The review item's id | [optional] 
-**Completed** | **Boolean** | Whether the review item is complete | [optional] 
-**NewAccess** | **Boolean** | Indicates whether the review item is for new access to a source | [optional] 
-**Decision** | [**CertificationDecision**](certification-decision) |  | [optional] 
-**Comments** | **String** | Comments for this review item | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **AccessSummary** | [**AccessSummary**](access-summary) |  | [optional] |
+| **IdentitySummary** | [**CertificationIdentitySummary**](certification-identity-summary) |  | [optional] |
+| **Id** | **String** | The review item's id | [optional] |
+| **Completed** | **Boolean** | Whether the review item is complete | [optional] |
+| **NewAccess** | **Boolean** | Indicates whether the review item is for new access to a source | [optional] |
+| **Decision** | [**CertificationDecision**](certification-decision) |  | [optional] |
+| **Comments** | **String** | Comments for this review item | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $AccessReviewItem = Initialize-V2025AccessReviewItem  -AccessSummary null `
  -IdentitySummary null `
@@ -38,10 +51,9 @@ $AccessReviewItem = Initialize-V2025AccessReviewItem  -AccessSummary null `
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $AccessReviewItem | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

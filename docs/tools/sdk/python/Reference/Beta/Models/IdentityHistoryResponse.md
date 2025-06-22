@@ -4,24 +4,37 @@ title: IdentityHistoryResponse
 pagination_label: IdentityHistoryResponse
 sidebar_label: IdentityHistoryResponse
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentityHistoryResponse', 'BetaIdentityHistoryResponse'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'IdentityHistoryResponse',
+    'BetaIdentityHistoryResponse',
+  ]
 slug: /tools/sdk/python/beta/models/identity-history-response
-tags: ['SDK', 'Software Development Kit', 'IdentityHistoryResponse', 'BetaIdentityHistoryResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityHistoryResponse',
+    'BetaIdentityHistoryResponse',
+  ]
 ---
 
 # IdentityHistoryResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | the identity ID | [optional] 
-**display_name** | **str** | the display name of the identity | [optional] 
-**snapshot** | **str** | the date when the identity record was created | [optional] 
-**deleted_date** | **str** | the date when the identity was deleted | [optional] 
-**access_item_count** | **map[string]int** | A map containing the count of each access item | [optional] 
-**attributes** | **map[string]object** | A map containing the identity attributes | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | the identity ID | [optional] |
+| **display_name** | **str** | the display name of the identity | [optional] |
+| **snapshot** | **str** | the date when the identity record was created | [optional] |
+| **deleted_date** | **str** | the date when the identity was deleted | [optional] |
+| **access_item_count** | **map[string]int** | A map containing the count of each access item | [optional] |
+| **attributes** | **map[string]object** | A map containing the identity attributes | [optional] |
+
 }
 
 ## Example
@@ -39,5 +52,5 @@ attributes={jobTitle=HR Manager, location=NYC, firstname=Adam, lastname=Zampa, d
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

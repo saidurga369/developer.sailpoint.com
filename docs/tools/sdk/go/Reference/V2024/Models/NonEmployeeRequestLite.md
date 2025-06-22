@@ -4,19 +4,32 @@ title: NonEmployeeRequestLite
 pagination_label: NonEmployeeRequestLite
 sidebar_label: NonEmployeeRequestLite
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'NonEmployeeRequestLite', 'V2024NonEmployeeRequestLite'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'NonEmployeeRequestLite',
+    'V2024NonEmployeeRequestLite',
+  ]
 slug: /tools/sdk/go/v2024/models/non-employee-request-lite
-tags: ['SDK', 'Software Development Kit', 'NonEmployeeRequestLite', 'V2024NonEmployeeRequestLite']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NonEmployeeRequestLite',
+    'V2024NonEmployeeRequestLite',
+  ]
 ---
 
 # NonEmployeeRequestLite
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Non-Employee request id. | [optional] 
-**Requester** | Pointer to [**NonEmployeeIdentityReferenceWithId**](non-employee-identity-reference-with-id) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Non-Employee request id. | [optional] |
+| **Requester** | Pointer to [**NonEmployeeIdentityReferenceWithId**](non-employee-identity-reference-with-id) |  | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewNonEmployeeRequestLite() *NonEmployeeRequestLite`
 
-NewNonEmployeeRequestLite instantiates a new NonEmployeeRequestLite object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewNonEmployeeRequestLite instantiates a new NonEmployeeRequestLite object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewNonEmployeeRequestLiteWithDefaults
 
 `func NewNonEmployeeRequestLiteWithDefaults() *NonEmployeeRequestLite`
 
-NewNonEmployeeRequestLiteWithDefaults instantiates a new NonEmployeeRequestLite object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewNonEmployeeRequestLiteWithDefaults instantiates a new NonEmployeeRequestLite object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -47,8 +55,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRequestLite) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -72,8 +79,7 @@ GetRequester returns the Requester field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRequestLite) GetRequesterOk() (*NonEmployeeIdentityReferenceWithId, bool)`
 
-GetRequesterOk returns a tuple with the Requester field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequesterOk returns a tuple with the Requester field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequester
 
@@ -86,5 +92,3 @@ SetRequester sets Requester field to given value.
 `func (o *NonEmployeeRequestLite) HasRequester() bool`
 
 HasRequester returns a boolean if a field has been set.
-
-

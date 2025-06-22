@@ -4,7 +4,7 @@ title: RoleIdentity
 pagination_label: RoleIdentity
 sidebar_label: RoleIdentity
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleIdentity', 'V2025RoleIdentity'] 
+keywords: ['go', 'Golang', 'sdk', 'RoleIdentity', 'V2025RoleIdentity']
 slug: /tools/sdk/go/v2025/models/role-identity
 tags: ['SDK', 'Software Development Kit', 'RoleIdentity', 'V2025RoleIdentity']
 ---
@@ -13,13 +13,13 @@ tags: ['SDK', 'Software Development Kit', 'RoleIdentity', 'V2025RoleIdentity']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The ID of the Identity | [optional] 
-**AliasName** | Pointer to **string** | The alias / username of the Identity | [optional] 
-**Name** | Pointer to **string** | The human-readable display name of the Identity | [optional] 
-**Email** | Pointer to **string** | Email address of the Identity | [optional] 
-**RoleAssignmentSource** | Pointer to [**RoleAssignmentSourceType**](role-assignment-source-type) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The ID of the Identity | [optional] |
+| **AliasName** | Pointer to **string** | The alias / username of the Identity | [optional] |
+| **Name** | Pointer to **string** | The human-readable display name of the Identity | [optional] |
+| **Email** | Pointer to **string** | Email address of the Identity | [optional] |
+| **RoleAssignmentSource** | Pointer to [**RoleAssignmentSourceType**](role-assignment-source-type) |  | [optional] |
 
 ## Methods
 
@@ -27,18 +27,13 @@ Name | Type | Description | Notes
 
 `func NewRoleIdentity() *RoleIdentity`
 
-NewRoleIdentity instantiates a new RoleIdentity object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleIdentity instantiates a new RoleIdentity object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleIdentityWithDefaults
 
 `func NewRoleIdentityWithDefaults() *RoleIdentity`
 
-NewRoleIdentityWithDefaults instantiates a new RoleIdentity object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleIdentityWithDefaults instantiates a new RoleIdentity object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -50,8 +45,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *RoleIdentity) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -75,8 +69,7 @@ GetAliasName returns the AliasName field if non-nil, zero value otherwise.
 
 `func (o *RoleIdentity) GetAliasNameOk() (*string, bool)`
 
-GetAliasNameOk returns a tuple with the AliasName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAliasNameOk returns a tuple with the AliasName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAliasName
 
@@ -100,8 +93,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *RoleIdentity) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -125,8 +117,7 @@ GetEmail returns the Email field if non-nil, zero value otherwise.
 
 `func (o *RoleIdentity) GetEmailOk() (*string, bool)`
 
-GetEmailOk returns a tuple with the Email field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEmailOk returns a tuple with the Email field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEmail
 
@@ -150,8 +141,7 @@ GetRoleAssignmentSource returns the RoleAssignmentSource field if non-nil, zero 
 
 `func (o *RoleIdentity) GetRoleAssignmentSourceOk() (*RoleAssignmentSourceType, bool)`
 
-GetRoleAssignmentSourceOk returns a tuple with the RoleAssignmentSource field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRoleAssignmentSourceOk returns a tuple with the RoleAssignmentSource field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRoleAssignmentSource
 
@@ -164,5 +154,3 @@ SetRoleAssignmentSource sets RoleAssignmentSource field to given value.
 `func (o *RoleIdentity) HasRoleAssignmentSource() bool`
 
 HasRoleAssignmentSource returns a boolean if a field has been set.
-
-

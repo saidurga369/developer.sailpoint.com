@@ -4,45 +4,54 @@ title: WorkItemTypeManualWorkItems
 pagination_label: WorkItemTypeManualWorkItems
 sidebar_label: WorkItemTypeManualWorkItems
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'WorkItemTypeManualWorkItems', 'V2025WorkItemTypeManualWorkItems'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'WorkItemTypeManualWorkItems',
+    'V2025WorkItemTypeManualWorkItems',
+  ]
 slug: /tools/sdk/powershell/v2025/models/work-item-type-manual-work-items
-tags: ['SDK', 'Software Development Kit', 'WorkItemTypeManualWorkItems', 'V2025WorkItemTypeManualWorkItems']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'WorkItemTypeManualWorkItems',
+    'V2025WorkItemTypeManualWorkItems',
+  ]
 ---
-
 
 # WorkItemTypeManualWorkItems
 
 ## Enum
 
+- `Generic` (value: `"Generic"`)
 
-* `Generic` (value: `"Generic"`)
+- `Certification` (value: `"Certification"`)
 
-* `Certification` (value: `"Certification"`)
+- `Remediation` (value: `"Remediation"`)
 
-* `Remediation` (value: `"Remediation"`)
+- `Delegation` (value: `"Delegation"`)
 
-* `Delegation` (value: `"Delegation"`)
+- `Approval` (value: `"Approval"`)
 
-* `Approval` (value: `"Approval"`)
+- `ViolationReview` (value: `"ViolationReview"`)
 
-* `ViolationReview` (value: `"ViolationReview"`)
+- `Form` (value: `"Form"`)
 
-* `Form` (value: `"Form"`)
+- `PolicyVioloation` (value: `"PolicyVioloation"`)
 
-* `PolicyVioloation` (value: `"PolicyVioloation"`)
+- `Challenge` (value: `"Challenge"`)
 
-* `Challenge` (value: `"Challenge"`)
+- `ImpactAnalysis` (value: `"ImpactAnalysis"`)
 
-* `ImpactAnalysis` (value: `"ImpactAnalysis"`)
+- `Signoff` (value: `"Signoff"`)
 
-* `Signoff` (value: `"Signoff"`)
+- `Event` (value: `"Event"`)
 
-* `Event` (value: `"Event"`)
+- `ManualAction` (value: `"ManualAction"`)
 
-* `ManualAction` (value: `"ManualAction"`)
+- `Test` (value: `"Test"`)
 
-* `Test` (value: `"Test"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

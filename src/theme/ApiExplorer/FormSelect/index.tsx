@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export interface Props {
   value?: string;
@@ -6,7 +6,7 @@ export interface Props {
   onChange?: React.ChangeEventHandler<HTMLSelectElement>;
 }
 
-function FormSelect({ value, options, onChange }: Props) {
+function FormSelect({value, options, onChange}: Props) {
   if (!Array.isArray(options) || options.length === 0) {
     return null;
   }
@@ -15,8 +15,7 @@ function FormSelect({ value, options, onChange }: Props) {
     <select
       className="openapi-explorer__select-input"
       value={value}
-      onChange={onChange}
-    >
+      onChange={onChange}>
       {options.map((option) => {
         return (
           <option key={option} value={option}>

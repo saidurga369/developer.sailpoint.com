@@ -4,26 +4,39 @@ title: AccessRequestRecommendationItemDetailAccess
 pagination_label: AccessRequestRecommendationItemDetailAccess
 sidebar_label: AccessRequestRecommendationItemDetailAccess
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'AccessRequestRecommendationItemDetailAccess', 'V2024AccessRequestRecommendationItemDetailAccess'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'AccessRequestRecommendationItemDetailAccess',
+    'V2024AccessRequestRecommendationItemDetailAccess',
+  ]
 slug: /tools/sdk/powershell/v2024/models/access-request-recommendation-item-detail-access
-tags: ['SDK', 'Software Development Kit', 'AccessRequestRecommendationItemDetailAccess', 'V2024AccessRequestRecommendationItemDetailAccess']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessRequestRecommendationItemDetailAccess',
+    'V2024AccessRequestRecommendationItemDetailAccess',
+  ]
 ---
-
 
 # AccessRequestRecommendationItemDetailAccess
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | ID of access item being recommended. | [optional] 
-**Type** | [**AccessRequestRecommendationItemType**](access-request-recommendation-item-type) |  | [optional] 
-**Name** | **String** | Name of the access item | [optional] 
-**Description** | **String** | Description of the access item | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | ID of access item being recommended. | [optional] |
+| **Type** | [**AccessRequestRecommendationItemType**](access-request-recommendation-item-type) |  | [optional] |
+| **Name** | **String** | Name of the access item | [optional] |
+| **Description** | **String** | Description of the access item | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $AccessRequestRecommendationItemDetailAccess = Initialize-V2024AccessRequestRecommendationItemDetailAccess  -Id 2c9180835d2e5168015d32f890ca1581 `
  -Type null `
@@ -32,10 +45,9 @@ $AccessRequestRecommendationItemDetailAccess = Initialize-V2024AccessRequestReco
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $AccessRequestRecommendationItemDetailAccess | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

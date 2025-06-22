@@ -4,21 +4,34 @@ title: ImportFormDefinitions202Response
 pagination_label: ImportFormDefinitions202Response
 sidebar_label: ImportFormDefinitions202Response
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ImportFormDefinitions202Response', 'V2025ImportFormDefinitions202Response'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ImportFormDefinitions202Response',
+    'V2025ImportFormDefinitions202Response',
+  ]
 slug: /tools/sdk/go/v2025/models/import-form-definitions202-response
-tags: ['SDK', 'Software Development Kit', 'ImportFormDefinitions202Response', 'V2025ImportFormDefinitions202Response']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ImportFormDefinitions202Response',
+    'V2025ImportFormDefinitions202Response',
+  ]
 ---
 
 # ImportFormDefinitions202Response
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Errors** | Pointer to [**[]ImportFormDefinitions202ResponseErrorsInner**](import-form-definitions202-response-errors-inner) |  | [optional] 
-**ImportedObjects** | Pointer to [**[]ImportFormDefinitionsRequestInner**](import-form-definitions-request-inner) |  | [optional] 
-**Infos** | Pointer to [**[]ImportFormDefinitions202ResponseErrorsInner**](import-form-definitions202-response-errors-inner) |  | [optional] 
-**Warnings** | Pointer to [**[]ImportFormDefinitions202ResponseErrorsInner**](import-form-definitions202-response-errors-inner) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Errors** | Pointer to [**[]ImportFormDefinitions202ResponseErrorsInner**](import-form-definitions202-response-errors-inner) |  | [optional] |
+| **ImportedObjects** | Pointer to [**[]ImportFormDefinitionsRequestInner**](import-form-definitions-request-inner) |  | [optional] |
+| **Infos** | Pointer to [**[]ImportFormDefinitions202ResponseErrorsInner**](import-form-definitions202-response-errors-inner) |  | [optional] |
+| **Warnings** | Pointer to [**[]ImportFormDefinitions202ResponseErrorsInner**](import-form-definitions202-response-errors-inner) |  | [optional] |
 
 ## Methods
 
@@ -26,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewImportFormDefinitions202Response() *ImportFormDefinitions202Response`
 
-NewImportFormDefinitions202Response instantiates a new ImportFormDefinitions202Response object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewImportFormDefinitions202Response instantiates a new ImportFormDefinitions202Response object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewImportFormDefinitions202ResponseWithDefaults
 
 `func NewImportFormDefinitions202ResponseWithDefaults() *ImportFormDefinitions202Response`
 
-NewImportFormDefinitions202ResponseWithDefaults instantiates a new ImportFormDefinitions202Response object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewImportFormDefinitions202ResponseWithDefaults instantiates a new ImportFormDefinitions202Response object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetErrors
 
@@ -49,8 +57,7 @@ GetErrors returns the Errors field if non-nil, zero value otherwise.
 
 `func (o *ImportFormDefinitions202Response) GetErrorsOk() (*[]ImportFormDefinitions202ResponseErrorsInner, bool)`
 
-GetErrorsOk returns a tuple with the Errors field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetErrorsOk returns a tuple with the Errors field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetErrors
 
@@ -74,8 +81,7 @@ GetImportedObjects returns the ImportedObjects field if non-nil, zero value othe
 
 `func (o *ImportFormDefinitions202Response) GetImportedObjectsOk() (*[]ImportFormDefinitionsRequestInner, bool)`
 
-GetImportedObjectsOk returns a tuple with the ImportedObjects field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetImportedObjectsOk returns a tuple with the ImportedObjects field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetImportedObjects
 
@@ -99,8 +105,7 @@ GetInfos returns the Infos field if non-nil, zero value otherwise.
 
 `func (o *ImportFormDefinitions202Response) GetInfosOk() (*[]ImportFormDefinitions202ResponseErrorsInner, bool)`
 
-GetInfosOk returns a tuple with the Infos field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetInfosOk returns a tuple with the Infos field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetInfos
 
@@ -124,8 +129,7 @@ GetWarnings returns the Warnings field if non-nil, zero value otherwise.
 
 `func (o *ImportFormDefinitions202Response) GetWarningsOk() (*[]ImportFormDefinitions202ResponseErrorsInner, bool)`
 
-GetWarningsOk returns a tuple with the Warnings field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetWarningsOk returns a tuple with the Warnings field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetWarnings
 
@@ -138,5 +142,3 @@ SetWarnings sets Warnings field to given value.
 `func (o *ImportFormDefinitions202Response) HasWarnings() bool`
 
 HasWarnings returns a boolean if a field has been set.
-
-

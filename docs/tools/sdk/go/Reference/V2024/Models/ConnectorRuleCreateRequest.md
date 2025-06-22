@@ -4,23 +4,36 @@ title: ConnectorRuleCreateRequest
 pagination_label: ConnectorRuleCreateRequest
 sidebar_label: ConnectorRuleCreateRequest
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ConnectorRuleCreateRequest', 'V2024ConnectorRuleCreateRequest'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ConnectorRuleCreateRequest',
+    'V2024ConnectorRuleCreateRequest',
+  ]
 slug: /tools/sdk/go/v2024/models/connector-rule-create-request
-tags: ['SDK', 'Software Development Kit', 'ConnectorRuleCreateRequest', 'V2024ConnectorRuleCreateRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ConnectorRuleCreateRequest',
+    'V2024ConnectorRuleCreateRequest',
+  ]
 ---
 
 # ConnectorRuleCreateRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | **string** | the name of the rule | 
-**Description** | Pointer to **NullableString** | a description of the rule's purpose | [optional] 
-**Type** | **string** | the type of rule | 
-**Signature** | Pointer to [**ConnectorRuleCreateRequestSignature**](connector-rule-create-request-signature) |  | [optional] 
-**SourceCode** | [**SourceCode**](source-code) |  | 
-**Attributes** | Pointer to **map[string]interface{}** | a map of string to objects | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | **string** | the name of the rule |
+| **Description** | Pointer to **NullableString** | a description of the rule's purpose | [optional] |
+| **Type** | **string** | the type of rule |
+| **Signature** | Pointer to [**ConnectorRuleCreateRequestSignature**](connector-rule-create-request-signature) |  | [optional] |
+| **SourceCode** | [**SourceCode**](source-code) |  |
+| **Attributes** | Pointer to **map[string]interface{}** | a map of string to objects | [optional] |
 
 ## Methods
 
@@ -28,18 +41,13 @@ Name | Type | Description | Notes
 
 `func NewConnectorRuleCreateRequest(name string, type_ string, sourceCode SourceCode, ) *ConnectorRuleCreateRequest`
 
-NewConnectorRuleCreateRequest instantiates a new ConnectorRuleCreateRequest object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewConnectorRuleCreateRequest instantiates a new ConnectorRuleCreateRequest object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewConnectorRuleCreateRequestWithDefaults
 
 `func NewConnectorRuleCreateRequestWithDefaults() *ConnectorRuleCreateRequest`
 
-NewConnectorRuleCreateRequestWithDefaults instantiates a new ConnectorRuleCreateRequest object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewConnectorRuleCreateRequestWithDefaults instantiates a new ConnectorRuleCreateRequest object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -51,15 +59,13 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *ConnectorRuleCreateRequest) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
 `func (o *ConnectorRuleCreateRequest) SetName(v string)`
 
 SetName sets Name field to given value.
-
 
 ### GetDescription
 
@@ -71,8 +77,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *ConnectorRuleCreateRequest) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -90,12 +95,14 @@ HasDescription returns a boolean if a field has been set.
 
 `func (o *ConnectorRuleCreateRequest) SetDescriptionNil(b bool)`
 
- SetDescriptionNil sets the value for Description to be an explicit nil
+SetDescriptionNil sets the value for Description to be an explicit nil
 
 ### UnsetDescription
+
 `func (o *ConnectorRuleCreateRequest) UnsetDescription()`
 
 UnsetDescription ensures that no value is present for Description, not even an explicit nil
+
 ### GetType
 
 `func (o *ConnectorRuleCreateRequest) GetType() string`
@@ -106,15 +113,13 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *ConnectorRuleCreateRequest) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
 `func (o *ConnectorRuleCreateRequest) SetType(v string)`
 
 SetType sets Type field to given value.
-
 
 ### GetSignature
 
@@ -126,8 +131,7 @@ GetSignature returns the Signature field if non-nil, zero value otherwise.
 
 `func (o *ConnectorRuleCreateRequest) GetSignatureOk() (*ConnectorRuleCreateRequestSignature, bool)`
 
-GetSignatureOk returns a tuple with the Signature field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSignatureOk returns a tuple with the Signature field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSignature
 
@@ -151,15 +155,13 @@ GetSourceCode returns the SourceCode field if non-nil, zero value otherwise.
 
 `func (o *ConnectorRuleCreateRequest) GetSourceCodeOk() (*SourceCode, bool)`
 
-GetSourceCodeOk returns a tuple with the SourceCode field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceCodeOk returns a tuple with the SourceCode field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceCode
 
 `func (o *ConnectorRuleCreateRequest) SetSourceCode(v SourceCode)`
 
 SetSourceCode sets SourceCode field to given value.
-
 
 ### GetAttributes
 
@@ -171,8 +173,7 @@ GetAttributes returns the Attributes field if non-nil, zero value otherwise.
 
 `func (o *ConnectorRuleCreateRequest) GetAttributesOk() (*map[string]interface{}, bool)`
 
-GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributes
 
@@ -190,10 +191,10 @@ HasAttributes returns a boolean if a field has been set.
 
 `func (o *ConnectorRuleCreateRequest) SetAttributesNil(b bool)`
 
- SetAttributesNil sets the value for Attributes to be an explicit nil
+SetAttributesNil sets the value for Attributes to be an explicit nil
 
 ### UnsetAttributes
+
 `func (o *ConnectorRuleCreateRequest) UnsetAttributes()`
 
 UnsetAttributes ensures that no value is present for Attributes, not even an explicit nil
-

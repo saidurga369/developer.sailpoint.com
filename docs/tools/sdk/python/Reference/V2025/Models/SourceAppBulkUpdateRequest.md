@@ -4,20 +4,33 @@ title: SourceAppBulkUpdateRequest
 pagination_label: SourceAppBulkUpdateRequest
 sidebar_label: SourceAppBulkUpdateRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SourceAppBulkUpdateRequest', 'V2025SourceAppBulkUpdateRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'SourceAppBulkUpdateRequest',
+    'V2025SourceAppBulkUpdateRequest',
+  ]
 slug: /tools/sdk/python/v2025/models/source-app-bulk-update-request
-tags: ['SDK', 'Software Development Kit', 'SourceAppBulkUpdateRequest', 'V2025SourceAppBulkUpdateRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SourceAppBulkUpdateRequest',
+    'V2025SourceAppBulkUpdateRequest',
+  ]
 ---
 
 # SourceAppBulkUpdateRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**app_ids** | **[]str** | List of source app ids to update | [required]
-**json_patch** | [**[]JsonPatchOperation**](json-patch-operation) | The JSONPatch payload used to update the source app. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **app_ids** | **[]str** | List of source app ids to update | [required] |
+| **json_patch** | [**[]JsonPatchOperation**](json-patch-operation) | The JSONPatch payload used to update the source app. | [required] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ json_patch=[{op=replace, path=/enabled, value=false}, {op=replace, path=/matchAl
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

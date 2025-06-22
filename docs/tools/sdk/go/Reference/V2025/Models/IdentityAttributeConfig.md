@@ -4,19 +4,32 @@ title: IdentityAttributeConfig
 pagination_label: IdentityAttributeConfig
 sidebar_label: IdentityAttributeConfig
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IdentityAttributeConfig', 'V2025IdentityAttributeConfig'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'IdentityAttributeConfig',
+    'V2025IdentityAttributeConfig',
+  ]
 slug: /tools/sdk/go/v2025/models/identity-attribute-config
-tags: ['SDK', 'Software Development Kit', 'IdentityAttributeConfig', 'V2025IdentityAttributeConfig']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityAttributeConfig',
+    'V2025IdentityAttributeConfig',
+  ]
 ---
 
 # IdentityAttributeConfig
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Enabled** | Pointer to **bool** | Backend will only promote values if the profile/mapping is enabled. | [optional] [default to false]
-**AttributeTransforms** | Pointer to [**[]IdentityAttributeTransform**](identity-attribute-transform) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Enabled** | Pointer to **bool** | Backend will only promote values if the profile/mapping is enabled. | [optional] [default to false] |
+| **AttributeTransforms** | Pointer to [**[]IdentityAttributeTransform**](identity-attribute-transform) |  | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewIdentityAttributeConfig() *IdentityAttributeConfig`
 
-NewIdentityAttributeConfig instantiates a new IdentityAttributeConfig object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewIdentityAttributeConfig instantiates a new IdentityAttributeConfig object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewIdentityAttributeConfigWithDefaults
 
 `func NewIdentityAttributeConfigWithDefaults() *IdentityAttributeConfig`
 
-NewIdentityAttributeConfigWithDefaults instantiates a new IdentityAttributeConfig object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewIdentityAttributeConfigWithDefaults instantiates a new IdentityAttributeConfig object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetEnabled
 
@@ -47,8 +55,7 @@ GetEnabled returns the Enabled field if non-nil, zero value otherwise.
 
 `func (o *IdentityAttributeConfig) GetEnabledOk() (*bool, bool)`
 
-GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEnabled
 
@@ -72,8 +79,7 @@ GetAttributeTransforms returns the AttributeTransforms field if non-nil, zero va
 
 `func (o *IdentityAttributeConfig) GetAttributeTransformsOk() (*[]IdentityAttributeTransform, bool)`
 
-GetAttributeTransformsOk returns a tuple with the AttributeTransforms field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributeTransformsOk returns a tuple with the AttributeTransforms field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributeTransforms
 
@@ -86,5 +92,3 @@ SetAttributeTransforms sets AttributeTransforms field to given value.
 `func (o *IdentityAttributeConfig) HasAttributeTransforms() bool`
 
 HasAttributeTransforms returns a boolean if a field has been set.
-
-

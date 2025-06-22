@@ -4,20 +4,27 @@ title: JsonPatchOperation
 pagination_label: JsonPatchOperation
 sidebar_label: JsonPatchOperation
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'JsonPatchOperation', 'BetaJsonPatchOperation'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'JsonPatchOperation', 'BetaJsonPatchOperation']
 slug: /tools/sdk/go/beta/models/json-patch-operation
-tags: ['SDK', 'Software Development Kit', 'JsonPatchOperation', 'BetaJsonPatchOperation']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'JsonPatchOperation',
+    'BetaJsonPatchOperation',
+  ]
 ---
 
 # JsonPatchOperation
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Op** | **string** | The operation to be performed | 
-**Path** | **string** | A string JSON Pointer representing the target path to an element to be affected by the operation | 
-**Value** | Pointer to [**UpdateMultiHostSourcesRequestInnerValue**](update-multi-host-sources-request-inner-value) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Op** | **string** | The operation to be performed |
+| **Path** | **string** | A string JSON Pointer representing the target path to an element to be affected by the operation |
+| **Value** | Pointer to [**UpdateMultiHostSourcesRequestInnerValue**](update-multi-host-sources-request-inner-value) |  | [optional] |
 
 ## Methods
 
@@ -25,18 +32,13 @@ Name | Type | Description | Notes
 
 `func NewJsonPatchOperation(op string, path string, ) *JsonPatchOperation`
 
-NewJsonPatchOperation instantiates a new JsonPatchOperation object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewJsonPatchOperation instantiates a new JsonPatchOperation object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewJsonPatchOperationWithDefaults
 
 `func NewJsonPatchOperationWithDefaults() *JsonPatchOperation`
 
-NewJsonPatchOperationWithDefaults instantiates a new JsonPatchOperation object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewJsonPatchOperationWithDefaults instantiates a new JsonPatchOperation object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetOp
 
@@ -48,15 +50,13 @@ GetOp returns the Op field if non-nil, zero value otherwise.
 
 `func (o *JsonPatchOperation) GetOpOk() (*string, bool)`
 
-GetOpOk returns a tuple with the Op field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOpOk returns a tuple with the Op field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOp
 
 `func (o *JsonPatchOperation) SetOp(v string)`
 
 SetOp sets Op field to given value.
-
 
 ### GetPath
 
@@ -68,15 +68,13 @@ GetPath returns the Path field if non-nil, zero value otherwise.
 
 `func (o *JsonPatchOperation) GetPathOk() (*string, bool)`
 
-GetPathOk returns a tuple with the Path field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPathOk returns a tuple with the Path field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPath
 
 `func (o *JsonPatchOperation) SetPath(v string)`
 
 SetPath sets Path field to given value.
-
 
 ### GetValue
 
@@ -88,8 +86,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *JsonPatchOperation) GetValueOk() (*UpdateMultiHostSourcesRequestInnerValue, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -102,5 +99,3 @@ SetValue sets Value field to given value.
 `func (o *JsonPatchOperation) HasValue() bool`
 
 HasValue returns a boolean if a field has been set.
-
-

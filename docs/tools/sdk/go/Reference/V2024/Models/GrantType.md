@@ -4,7 +4,7 @@ title: GrantType
 pagination_label: GrantType
 sidebar_label: GrantType
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'GrantType', 'V2024GrantType'] 
+keywords: ['go', 'Golang', 'sdk', 'GrantType', 'V2024GrantType']
 slug: /tools/sdk/go/v2024/models/grant-type
 tags: ['SDK', 'Software Development Kit', 'GrantType', 'V2024GrantType']
 ---
@@ -13,11 +13,8 @@ tags: ['SDK', 'Software Development Kit', 'GrantType', 'V2024GrantType']
 
 ## Enum
 
+- `CLIENT_CREDENTIALS` (value: `"CLIENT_CREDENTIALS"`)
 
-* `CLIENT_CREDENTIALS` (value: `"CLIENT_CREDENTIALS"`)
+- `AUTHORIZATION_CODE` (value: `"AUTHORIZATION_CODE"`)
 
-* `AUTHORIZATION_CODE` (value: `"AUTHORIZATION_CODE"`)
-
-* `REFRESH_TOKEN` (value: `"REFRESH_TOKEN"`)
-
-
+- `REFRESH_TOKEN` (value: `"REFRESH_TOKEN"`)

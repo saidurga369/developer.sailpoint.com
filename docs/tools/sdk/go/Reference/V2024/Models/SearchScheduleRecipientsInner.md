@@ -4,19 +4,32 @@ title: SearchScheduleRecipientsInner
 pagination_label: SearchScheduleRecipientsInner
 sidebar_label: SearchScheduleRecipientsInner
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SearchScheduleRecipientsInner', 'V2024SearchScheduleRecipientsInner'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'SearchScheduleRecipientsInner',
+    'V2024SearchScheduleRecipientsInner',
+  ]
 slug: /tools/sdk/go/v2024/models/search-schedule-recipients-inner
-tags: ['SDK', 'Software Development Kit', 'SearchScheduleRecipientsInner', 'V2024SearchScheduleRecipientsInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SearchScheduleRecipientsInner',
+    'V2024SearchScheduleRecipientsInner',
+  ]
 ---
 
 # SearchScheduleRecipientsInner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | **string** | The type of object being referenced | 
-**Id** | **string** | The ID of the referenced object | 
+| Name     | Type       | Description                         | Notes |
+| -------- | ---------- | ----------------------------------- | ----- |
+| **Type** | **string** | The type of object being referenced |
+| **Id**   | **string** | The ID of the referenced object     |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewSearchScheduleRecipientsInner(type_ string, id string, ) *SearchScheduleRecipientsInner`
 
-NewSearchScheduleRecipientsInner instantiates a new SearchScheduleRecipientsInner object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSearchScheduleRecipientsInner instantiates a new SearchScheduleRecipientsInner object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSearchScheduleRecipientsInnerWithDefaults
 
 `func NewSearchScheduleRecipientsInnerWithDefaults() *SearchScheduleRecipientsInner`
 
-NewSearchScheduleRecipientsInnerWithDefaults instantiates a new SearchScheduleRecipientsInner object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSearchScheduleRecipientsInnerWithDefaults instantiates a new SearchScheduleRecipientsInner object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -47,15 +55,13 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *SearchScheduleRecipientsInner) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
 `func (o *SearchScheduleRecipientsInner) SetType(v string)`
 
 SetType sets Type field to given value.
-
 
 ### GetId
 
@@ -67,14 +73,10 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *SearchScheduleRecipientsInner) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
 `func (o *SearchScheduleRecipientsInner) SetId(v string)`
 
 SetId sets Id field to given value.
-
-
-

@@ -4,20 +4,33 @@ title: RoleInsightsIdentities
 pagination_label: RoleInsightsIdentities
 sidebar_label: RoleInsightsIdentities
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleInsightsIdentities', 'V2025RoleInsightsIdentities'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'RoleInsightsIdentities',
+    'V2025RoleInsightsIdentities',
+  ]
 slug: /tools/sdk/go/v2025/models/role-insights-identities
-tags: ['SDK', 'Software Development Kit', 'RoleInsightsIdentities', 'V2025RoleInsightsIdentities']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleInsightsIdentities',
+    'V2025RoleInsightsIdentities',
+  ]
 ---
 
 # RoleInsightsIdentities
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Id for identity | [optional] 
-**Name** | Pointer to **string** | Name for identity | [optional] 
-**Attributes** | Pointer to **map[string]string** |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Id for identity | [optional] |
+| **Name** | Pointer to **string** | Name for identity | [optional] |
+| **Attributes** | Pointer to **map[string]string** |  | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewRoleInsightsIdentities() *RoleInsightsIdentities`
 
-NewRoleInsightsIdentities instantiates a new RoleInsightsIdentities object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleInsightsIdentities instantiates a new RoleInsightsIdentities object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleInsightsIdentitiesWithDefaults
 
 `func NewRoleInsightsIdentitiesWithDefaults() *RoleInsightsIdentities`
 
-NewRoleInsightsIdentitiesWithDefaults instantiates a new RoleInsightsIdentities object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleInsightsIdentitiesWithDefaults instantiates a new RoleInsightsIdentities object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -48,8 +56,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *RoleInsightsIdentities) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -73,8 +80,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *RoleInsightsIdentities) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -98,8 +104,7 @@ GetAttributes returns the Attributes field if non-nil, zero value otherwise.
 
 `func (o *RoleInsightsIdentities) GetAttributesOk() (*map[string]string, bool)`
 
-GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributes
 
@@ -112,5 +117,3 @@ SetAttributes sets Attributes field to given value.
 `func (o *RoleInsightsIdentities) HasAttributes() bool`
 
 HasAttributes returns a boolean if a field has been set.
-
-

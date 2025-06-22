@@ -4,20 +4,26 @@ title: BulkTaggedObject
 pagination_label: BulkTaggedObject
 sidebar_label: BulkTaggedObject
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'BulkTaggedObject', 'BetaBulkTaggedObject'] 
+keywords: ['go', 'Golang', 'sdk', 'BulkTaggedObject', 'BetaBulkTaggedObject']
 slug: /tools/sdk/go/beta/models/bulk-tagged-object
-tags: ['SDK', 'Software Development Kit', 'BulkTaggedObject', 'BetaBulkTaggedObject']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'BulkTaggedObject',
+    'BetaBulkTaggedObject',
+  ]
 ---
 
 # BulkTaggedObject
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ObjectRefs** | Pointer to [**[]TaggedObjectDto**](tagged-object-dto) |  | [optional] 
-**Tags** | Pointer to **[]string** | Label to be applied to object. | [optional] 
-**Operation** | Pointer to **string** | If APPEND, tags are appended to the list of tags for the object. A 400 error is returned if this would add duplicate tags to the object.  If MERGE, tags are merged with the existing tags. Duplicate tags are silently ignored. | [optional] [default to "APPEND"]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ObjectRefs** | Pointer to [**[]TaggedObjectDto**](tagged-object-dto) |  | [optional] |
+| **Tags** | Pointer to **[]string** | Label to be applied to object. | [optional] |
+| **Operation** | Pointer to **string** | If APPEND, tags are appended to the list of tags for the object. A 400 error is returned if this would add duplicate tags to the object. If MERGE, tags are merged with the existing tags. Duplicate tags are silently ignored. | [optional] [default to "APPEND"] |
 
 ## Methods
 
@@ -25,18 +31,13 @@ Name | Type | Description | Notes
 
 `func NewBulkTaggedObject() *BulkTaggedObject`
 
-NewBulkTaggedObject instantiates a new BulkTaggedObject object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewBulkTaggedObject instantiates a new BulkTaggedObject object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewBulkTaggedObjectWithDefaults
 
 `func NewBulkTaggedObjectWithDefaults() *BulkTaggedObject`
 
-NewBulkTaggedObjectWithDefaults instantiates a new BulkTaggedObject object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewBulkTaggedObjectWithDefaults instantiates a new BulkTaggedObject object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetObjectRefs
 
@@ -48,8 +49,7 @@ GetObjectRefs returns the ObjectRefs field if non-nil, zero value otherwise.
 
 `func (o *BulkTaggedObject) GetObjectRefsOk() (*[]TaggedObjectDto, bool)`
 
-GetObjectRefsOk returns a tuple with the ObjectRefs field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetObjectRefsOk returns a tuple with the ObjectRefs field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetObjectRefs
 
@@ -73,8 +73,7 @@ GetTags returns the Tags field if non-nil, zero value otherwise.
 
 `func (o *BulkTaggedObject) GetTagsOk() (*[]string, bool)`
 
-GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTags
 
@@ -98,8 +97,7 @@ GetOperation returns the Operation field if non-nil, zero value otherwise.
 
 `func (o *BulkTaggedObject) GetOperationOk() (*string, bool)`
 
-GetOperationOk returns a tuple with the Operation field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOperationOk returns a tuple with the Operation field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOperation
 
@@ -112,5 +110,3 @@ SetOperation sets Operation field to given value.
 `func (o *BulkTaggedObject) HasOperation() bool`
 
 HasOperation returns a boolean if a field has been set.
-
-

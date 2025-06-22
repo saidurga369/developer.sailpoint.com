@@ -4,21 +4,22 @@ title: DisplayReference
 pagination_label: DisplayReference
 sidebar_label: DisplayReference
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'DisplayReference', 'DisplayReference'] 
+keywords: ['python', 'Python', 'sdk', 'DisplayReference', 'DisplayReference']
 slug: /tools/sdk/python/v3/models/display-reference
-tags: ['SDK', 'Software Development Kit', 'DisplayReference', 'DisplayReference']
+tags:
+  ['SDK', 'Software Development Kit', 'DisplayReference', 'DisplayReference']
 ---
 
 # DisplayReference
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The unique ID of the referenced object. | [optional] 
-**name** | **str** | The human readable name of the referenced object. | [optional] 
-**display_name** | **str** |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The unique ID of the referenced object. | [optional] |
+| **name** | **str** | The human readable name of the referenced object. | [optional] |
+| **display_name** | **str** |  | [optional] |
+
 }
 
 ## Example
@@ -33,5 +34,5 @@ display_name='John Q. Doe'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

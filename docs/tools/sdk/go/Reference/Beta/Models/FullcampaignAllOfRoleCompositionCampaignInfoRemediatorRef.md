@@ -4,20 +4,33 @@ title: FullcampaignAllOfRoleCompositionCampaignInfoRemediatorRef
 pagination_label: FullcampaignAllOfRoleCompositionCampaignInfoRemediatorRef
 sidebar_label: FullcampaignAllOfRoleCompositionCampaignInfoRemediatorRef
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'FullcampaignAllOfRoleCompositionCampaignInfoRemediatorRef', 'BetaFullcampaignAllOfRoleCompositionCampaignInfoRemediatorRef'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'FullcampaignAllOfRoleCompositionCampaignInfoRemediatorRef',
+    'BetaFullcampaignAllOfRoleCompositionCampaignInfoRemediatorRef',
+  ]
 slug: /tools/sdk/go/beta/models/fullcampaign-all-of-role-composition-campaign-info-remediator-ref
-tags: ['SDK', 'Software Development Kit', 'FullcampaignAllOfRoleCompositionCampaignInfoRemediatorRef', 'BetaFullcampaignAllOfRoleCompositionCampaignInfoRemediatorRef']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'FullcampaignAllOfRoleCompositionCampaignInfoRemediatorRef',
+    'BetaFullcampaignAllOfRoleCompositionCampaignInfoRemediatorRef',
+  ]
 ---
 
 # FullcampaignAllOfRoleCompositionCampaignInfoRemediatorRef
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | **string** | Legal Remediator Type | 
-**Id** | **string** | The ID of the remediator. | 
-**Name** | Pointer to **string** | The name of the remediator. | [optional] [readonly] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | **string** | Legal Remediator Type |
+| **Id** | **string** | The ID of the remediator. |
+| **Name** | Pointer to **string** | The name of the remediator. | [optional] [readonly] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewFullcampaignAllOfRoleCompositionCampaignInfoRemediatorRef(type_ string, id string, ) *FullcampaignAllOfRoleCompositionCampaignInfoRemediatorRef`
 
-NewFullcampaignAllOfRoleCompositionCampaignInfoRemediatorRef instantiates a new FullcampaignAllOfRoleCompositionCampaignInfoRemediatorRef object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewFullcampaignAllOfRoleCompositionCampaignInfoRemediatorRef instantiates a new FullcampaignAllOfRoleCompositionCampaignInfoRemediatorRef object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewFullcampaignAllOfRoleCompositionCampaignInfoRemediatorRefWithDefaults
 
 `func NewFullcampaignAllOfRoleCompositionCampaignInfoRemediatorRefWithDefaults() *FullcampaignAllOfRoleCompositionCampaignInfoRemediatorRef`
 
-NewFullcampaignAllOfRoleCompositionCampaignInfoRemediatorRefWithDefaults instantiates a new FullcampaignAllOfRoleCompositionCampaignInfoRemediatorRef object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewFullcampaignAllOfRoleCompositionCampaignInfoRemediatorRefWithDefaults instantiates a new FullcampaignAllOfRoleCompositionCampaignInfoRemediatorRef object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -48,15 +56,13 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *FullcampaignAllOfRoleCompositionCampaignInfoRemediatorRef) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
 `func (o *FullcampaignAllOfRoleCompositionCampaignInfoRemediatorRef) SetType(v string)`
 
 SetType sets Type field to given value.
-
 
 ### GetId
 
@@ -68,15 +74,13 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *FullcampaignAllOfRoleCompositionCampaignInfoRemediatorRef) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
 `func (o *FullcampaignAllOfRoleCompositionCampaignInfoRemediatorRef) SetId(v string)`
 
 SetId sets Id field to given value.
-
 
 ### GetName
 
@@ -88,8 +92,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *FullcampaignAllOfRoleCompositionCampaignInfoRemediatorRef) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -102,5 +105,3 @@ SetName sets Name field to given value.
 `func (o *FullcampaignAllOfRoleCompositionCampaignInfoRemediatorRef) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

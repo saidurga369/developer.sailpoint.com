@@ -4,25 +4,38 @@ title: ActivityInsights
 pagination_label: ActivityInsights
 sidebar_label: ActivityInsights
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'ActivityInsights', 'V2025ActivityInsights'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'ActivityInsights',
+    'V2025ActivityInsights',
+  ]
 slug: /tools/sdk/powershell/v2025/models/activity-insights
-tags: ['SDK', 'Software Development Kit', 'ActivityInsights', 'V2025ActivityInsights']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ActivityInsights',
+    'V2025ActivityInsights',
+  ]
 ---
-
 
 # ActivityInsights
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**AccountID** | **String** | UUID of the account | [optional] 
-**UsageDays** | **Int32** | The number of days of activity | [optional] 
-**UsageDaysState** |  **Enum** [  "COMPLETE",    "UNKNOWN" ] | Status indicating if the activity is complete or unknown | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **AccountID** | **String** | UUID of the account | [optional] |
+| **UsageDays** | **Int32** | The number of days of activity | [optional] |
+| **UsageDaysState** | **Enum** [ "COMPLETE", "UNKNOWN" ] | Status indicating if the activity is complete or unknown | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $ActivityInsights = Initialize-V2025ActivityInsights  -AccountID c4ddd5421d8549f0abd309162cafd3b1 `
  -UsageDays 45 `
@@ -30,10 +43,9 @@ $ActivityInsights = Initialize-V2025ActivityInsights  -AccountID c4ddd5421d8549f
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $ActivityInsights | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

@@ -4,21 +4,34 @@ title: NonEmployeeRequestSummary
 pagination_label: NonEmployeeRequestSummary
 sidebar_label: NonEmployeeRequestSummary
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'NonEmployeeRequestSummary', 'V2025NonEmployeeRequestSummary'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'NonEmployeeRequestSummary',
+    'V2025NonEmployeeRequestSummary',
+  ]
 slug: /tools/sdk/go/v2025/models/non-employee-request-summary
-tags: ['SDK', 'Software Development Kit', 'NonEmployeeRequestSummary', 'V2025NonEmployeeRequestSummary']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NonEmployeeRequestSummary',
+    'V2025NonEmployeeRequestSummary',
+  ]
 ---
 
 # NonEmployeeRequestSummary
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Approved** | Pointer to **int32** | The number of approved non-employee requests on all sources that *requested-for* user manages. | [optional] 
-**Rejected** | Pointer to **int32** | The number of rejected non-employee requests on all sources that *requested-for* user manages. | [optional] 
-**Pending** | Pointer to **int32** | The number of pending non-employee requests on all sources that *requested-for* user manages. | [optional] 
-**NonEmployeeCount** | Pointer to **int32** | The number of non-employee records on all sources that *requested-for* user manages. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Approved** | Pointer to **int32** | The number of approved non-employee requests on all sources that _requested-for_ user manages. | [optional] |
+| **Rejected** | Pointer to **int32** | The number of rejected non-employee requests on all sources that _requested-for_ user manages. | [optional] |
+| **Pending** | Pointer to **int32** | The number of pending non-employee requests on all sources that _requested-for_ user manages. | [optional] |
+| **NonEmployeeCount** | Pointer to **int32** | The number of non-employee records on all sources that _requested-for_ user manages. | [optional] |
 
 ## Methods
 
@@ -26,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewNonEmployeeRequestSummary() *NonEmployeeRequestSummary`
 
-NewNonEmployeeRequestSummary instantiates a new NonEmployeeRequestSummary object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewNonEmployeeRequestSummary instantiates a new NonEmployeeRequestSummary object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewNonEmployeeRequestSummaryWithDefaults
 
 `func NewNonEmployeeRequestSummaryWithDefaults() *NonEmployeeRequestSummary`
 
-NewNonEmployeeRequestSummaryWithDefaults instantiates a new NonEmployeeRequestSummary object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewNonEmployeeRequestSummaryWithDefaults instantiates a new NonEmployeeRequestSummary object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetApproved
 
@@ -49,8 +57,7 @@ GetApproved returns the Approved field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRequestSummary) GetApprovedOk() (*int32, bool)`
 
-GetApprovedOk returns a tuple with the Approved field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApprovedOk returns a tuple with the Approved field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApproved
 
@@ -74,8 +81,7 @@ GetRejected returns the Rejected field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRequestSummary) GetRejectedOk() (*int32, bool)`
 
-GetRejectedOk returns a tuple with the Rejected field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRejectedOk returns a tuple with the Rejected field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRejected
 
@@ -99,8 +105,7 @@ GetPending returns the Pending field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRequestSummary) GetPendingOk() (*int32, bool)`
 
-GetPendingOk returns a tuple with the Pending field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPendingOk returns a tuple with the Pending field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPending
 
@@ -124,8 +129,7 @@ GetNonEmployeeCount returns the NonEmployeeCount field if non-nil, zero value ot
 
 `func (o *NonEmployeeRequestSummary) GetNonEmployeeCountOk() (*int32, bool)`
 
-GetNonEmployeeCountOk returns a tuple with the NonEmployeeCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNonEmployeeCountOk returns a tuple with the NonEmployeeCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNonEmployeeCount
 
@@ -138,5 +142,3 @@ SetNonEmployeeCount sets NonEmployeeCount field to given value.
 `func (o *NonEmployeeRequestSummary) HasNonEmployeeCount() bool`
 
 HasNonEmployeeCount returns a boolean if a field has been set.
-
-

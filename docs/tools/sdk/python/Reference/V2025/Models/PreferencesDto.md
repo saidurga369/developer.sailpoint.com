@@ -4,9 +4,10 @@ title: PreferencesDto
 pagination_label: PreferencesDto
 sidebar_label: PreferencesDto
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'PreferencesDto', 'V2025PreferencesDto'] 
+keywords: ['python', 'Python', 'sdk', 'PreferencesDto', 'V2025PreferencesDto']
 slug: /tools/sdk/python/v2025/models/preferences-dto
-tags: ['SDK', 'Software Development Kit', 'PreferencesDto', 'V2025PreferencesDto']
+tags:
+  ['SDK', 'Software Development Kit', 'PreferencesDto', 'V2025PreferencesDto']
 ---
 
 # PreferencesDto
@@ -15,11 +16,12 @@ Maps an Identity's attribute key to a list of preferred notification mediums.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**key** | **str** | The template notification key. | [optional] 
-**mediums** | [**[]Medium**](medium) | List of preferred notification mediums, i.e., the mediums (or method) for which notifications are enabled. More mediums may be added in the future. | [optional] 
-**modified** | **datetime** | Modified date of preference | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **key** | **str** | The template notification key. | [optional] |
+| **mediums** | [**[]Medium**](medium) | List of preferred notification mediums, i.e., the mediums (or method) for which notifications are enabled. More mediums may be added in the future. | [optional] |
+| **modified** | **datetime** | Modified date of preference | [optional] |
+
 }
 
 ## Example
@@ -34,5 +36,5 @@ modified='2020-05-15T14:37:06.909Z'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

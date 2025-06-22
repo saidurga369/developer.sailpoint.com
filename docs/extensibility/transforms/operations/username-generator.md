@@ -142,7 +142,7 @@ If the generator does not find a unique value within the first 25 tries, it retu
       }
     }
   },
-   "attributes": {
+  "attributes": {
     "cloudMaxSize": "100",
     "cloudMaxUniqueChecks": "25",
     "cloudRequired": "true"
@@ -185,7 +185,7 @@ If the generator does not find a unique value within the first 10 tries, it retu
       }
     }
   },
-   "attributes": {
+  "attributes": {
     "cloudMaxSize": "100",
     "cloudMaxUniqueChecks": "10",
     "cloudRequired": "true"

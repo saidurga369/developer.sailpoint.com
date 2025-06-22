@@ -4,49 +4,44 @@ title: ManagedClients
 pagination_label: ManagedClients
 sidebar_label: ManagedClients
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ManagedClients', 'BetaManagedClients'] 
+keywords: ['go', 'Golang', 'sdk', 'ManagedClients', 'BetaManagedClients']
 slug: /tools/sdk/go/beta/methods/managed-clients
-tags: ['SDK', 'Software Development Kit', 'ManagedClients', 'BetaManagedClients']
+tags:
+  ['SDK', 'Software Development Kit', 'ManagedClients', 'BetaManagedClients']
 ---
 
 # ManagedClientsAPI
-  Use this API to implement managed client functionality. 
-With this functionality in place, administrators can modify and delete existing managed clients, create new ones, and view and make changes to their log configurations.
- 
+
+Use this API to implement managed client functionality. With this functionality in place, administrators can modify and delete existing managed clients, create new ones, and view and make changes to their log configurations.
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/beta*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**get-managed-client-status**](#get-managed-client-status) | **Get** `/managed-clients/{id}/status` | Specified managed client status.
-[**update-managed-client-status**](#update-managed-client-status) | **Post** `/managed-clients/{id}/status` | Handle status request from client
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**get-managed-client-status**](#get-managed-client-status) | **Get** `/managed-clients/{id}/status` | Specified managed client status. |
+| [**update-managed-client-status**](#update-managed-client-status) | **Post** `/managed-clients/{id}/status` | Handle status request from client |
 
 ## get-managed-client-status
-:::caution deprecated 
-This endpoint has been deprecated and may be replaced or removed in future versions of the API.
-:::
-Specified managed client status.
-Retrieve Managed Client Status by ID.
+
+:::caution deprecated This endpoint has been deprecated and may be replaced or removed in future versions of the API. ::: Specified managed client status. Retrieve Managed Client Status by ID.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-managed-client-status)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | ID of the Managed Client Status to get | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | ID of the Managed Client Status to get |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetManagedClientStatusRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **type_** | [**ManagedClientType**](../models/managed-client-type) | Type of the Managed Client Status to get | 
+**type\_** | [**ManagedClientType**](../models/managed-client-type) | Type of the Managed Client Status to get |
 
 ### Return type
 
@@ -66,8 +61,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -75,7 +70,7 @@ func main() {
     id := `aClientId` // string | ID of the Managed Client Status to get # string | ID of the Managed Client Status to get
     type_ :=  // ManagedClientType | Type of the Managed Client Status to get # ManagedClientType | Type of the Managed Client Status to get
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -93,31 +88,26 @@ func main() {
 [[Back to top]](#)
 
 ## update-managed-client-status
-:::caution deprecated 
-This endpoint has been deprecated and may be replaced or removed in future versions of the API.
-:::
-Handle status request from client
-Update a status detail passed in from the client
+
+:::caution deprecated This endpoint has been deprecated and may be replaced or removed in future versions of the API. ::: Handle status request from client Update a status detail passed in from the client
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/update-managed-client-status)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | ID of the Managed Client Status to update | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | ID of the Managed Client Status to update |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiUpdateManagedClientStatusRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **managedClientStatus** | [**ManagedClientStatus**](../models/managed-client-status) |  | 
+**managedClientStatus** | [**ManagedClientStatus**](../models/managed-client-status) | |
 
 ### Return type
 
@@ -138,7 +128,7 @@ import (
 	"fmt"
 	"os"
   "encoding/json"
-    
+
     beta "github.com/sailpoint-oss/golang-sdk/v2/api_beta"
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
@@ -170,14 +160,14 @@ func main() {
           "type" : "CCG",
           "status" : "NORMAL",
           "timestamp" : "2020-01-01T00:00:00Z"
-        }`) // ManagedClientStatus | 
+        }`) // ManagedClientStatus |
 
     var managedClientStatus beta.ManagedClientStatus
     if err := json.Unmarshal(managedclientstatus, &managedClientStatus); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -193,4 +183,3 @@ func main() {
 ```
 
 [[Back to top]](#)
-

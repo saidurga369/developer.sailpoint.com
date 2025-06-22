@@ -4,26 +4,36 @@ title: RoleMiningSessionState
 pagination_label: RoleMiningSessionState
 sidebar_label: RoleMiningSessionState
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleMiningSessionState', 'BetaRoleMiningSessionState'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'RoleMiningSessionState',
+    'BetaRoleMiningSessionState',
+  ]
 slug: /tools/sdk/go/beta/models/role-mining-session-state
-tags: ['SDK', 'Software Development Kit', 'RoleMiningSessionState', 'BetaRoleMiningSessionState']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningSessionState',
+    'BetaRoleMiningSessionState',
+  ]
 ---
 
 # RoleMiningSessionState
 
 ## Enum
 
+- `CREATED` (value: `"CREATED"`)
 
-* `CREATED` (value: `"CREATED"`)
+- `UPDATED` (value: `"UPDATED"`)
 
-* `UPDATED` (value: `"UPDATED"`)
+- `IDENTITIES_OBTAINED` (value: `"IDENTITIES_OBTAINED"`)
 
-* `IDENTITIES_OBTAINED` (value: `"IDENTITIES_OBTAINED"`)
+- `PRUNE_THRESHOLD_OBTAINED` (value: `"PRUNE_THRESHOLD_OBTAINED"`)
 
-* `PRUNE_THRESHOLD_OBTAINED` (value: `"PRUNE_THRESHOLD_OBTAINED"`)
+- `POTENTIAL_ROLES_PROCESSING` (value: `"POTENTIAL_ROLES_PROCESSING"`)
 
-* `POTENTIAL_ROLES_PROCESSING` (value: `"POTENTIAL_ROLES_PROCESSING"`)
-
-* `POTENTIAL_ROLES_CREATED` (value: `"POTENTIAL_ROLES_CREATED"`)
-
-
+- `POTENTIAL_ROLES_CREATED` (value: `"POTENTIAL_ROLES_CREATED"`)

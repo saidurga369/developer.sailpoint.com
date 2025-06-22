@@ -4,48 +4,54 @@ title: PasswordPolicyV3Dto
 pagination_label: PasswordPolicyV3Dto
 sidebar_label: PasswordPolicyV3Dto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'PasswordPolicyV3Dto', 'PasswordPolicyV3Dto'] 
+keywords: ['go', 'Golang', 'sdk', 'PasswordPolicyV3Dto', 'PasswordPolicyV3Dto']
 slug: /tools/sdk/go/v3/models/password-policy-v3-dto
-tags: ['SDK', 'Software Development Kit', 'PasswordPolicyV3Dto', 'PasswordPolicyV3Dto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PasswordPolicyV3Dto',
+    'PasswordPolicyV3Dto',
+  ]
 ---
 
 # PasswordPolicyV3Dto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The password policy Id. | [optional] 
-**Description** | Pointer to **NullableString** | Description for current password policy. | [optional] 
-**Name** | Pointer to **string** | The name of the password policy. | [optional] 
-**DateCreated** | Pointer to **SailPointTime** | Date the Password Policy was created. | [optional] 
-**LastUpdated** | Pointer to **NullableTime** | Date the Password Policy was updated. | [optional] 
-**FirstExpirationReminder** | Pointer to **int64** | The number of days before expiration remaninder. | [optional] 
-**AccountIdMinWordLength** | Pointer to **int64** | The minimun length of account Id. By default is equals to -1. | [optional] 
-**AccountNameMinWordLength** | Pointer to **int64** | The minimun length of account name. By default is equals to -1. | [optional] 
-**MinAlpha** | Pointer to **int64** | Maximum alpha. By default is equals to 0. | [optional] 
-**MinCharacterTypes** | Pointer to **int64** | MinCharacterTypes. By default is equals to -1. | [optional] 
-**MaxLength** | Pointer to **int64** | Maximum length of the password. | [optional] 
-**MinLength** | Pointer to **int64** | Minimum length of the password. By default is equals to 0. | [optional] 
-**MaxRepeatedChars** | Pointer to **int64** | Maximum repetition of the same character in the password. By default is equals to -1. | [optional] 
-**MinLower** | Pointer to **int64** | Minimum amount of lower case character in the password. By default is equals to 0. | [optional] 
-**MinNumeric** | Pointer to **int64** | Minimum amount of numeric characters in the password. By default is equals to 0. | [optional] 
-**MinSpecial** | Pointer to **int64** | Minimum amount of special symbols in the password. By default is equals to 0. | [optional] 
-**MinUpper** | Pointer to **int64** | Minimum amount of upper case symbols in the password. By default is equals to 0. | [optional] 
-**PasswordExpiration** | Pointer to **int64** | Number of days before current password expires. By default is equals to 90. | [optional] 
-**DefaultPolicy** | Pointer to **bool** | Defines whether this policy is default or not. Default policy is created automatically when an org is setup. This field is false by default. | [optional] [default to false]
-**EnablePasswdExpiration** | Pointer to **bool** | Defines whether this policy is enabled to expire or not. This field is false by default. | [optional] [default to false]
-**RequireStrongAuthn** | Pointer to **bool** | Defines whether this policy require strong Auth or not. This field is false by default. | [optional] [default to false]
-**RequireStrongAuthOffNetwork** | Pointer to **bool** | Defines whether this policy require strong Auth of network or not. This field is false by default. | [optional] [default to false]
-**RequireStrongAuthUntrustedGeographies** | Pointer to **bool** | Defines whether this policy require strong Auth for untrusted geographies. This field is false by default. | [optional] [default to false]
-**UseAccountAttributes** | Pointer to **bool** | Defines whether this policy uses account attributes or not. This field is false by default. | [optional] [default to false]
-**UseDictionary** | Pointer to **bool** | Defines whether this policy uses dictionary or not. This field is false by default. | [optional] [default to false]
-**UseIdentityAttributes** | Pointer to **bool** | Defines whether this policy uses identity attributes or not. This field is false by default. | [optional] [default to false]
-**ValidateAgainstAccountId** | Pointer to **bool** | Defines whether this policy validate against account id or not. This field is false by default. | [optional] [default to false]
-**ValidateAgainstAccountName** | Pointer to **bool** | Defines whether this policy validate against account name or not. This field is false by default. | [optional] [default to false]
-**Created** | Pointer to **NullableString** |  | [optional] 
-**Modified** | Pointer to **NullableString** |  | [optional] 
-**SourceIds** | Pointer to **[]string** | List of sources IDs managed by this password policy. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The password policy Id. | [optional] |
+| **Description** | Pointer to **NullableString** | Description for current password policy. | [optional] |
+| **Name** | Pointer to **string** | The name of the password policy. | [optional] |
+| **DateCreated** | Pointer to **SailPointTime** | Date the Password Policy was created. | [optional] |
+| **LastUpdated** | Pointer to **NullableTime** | Date the Password Policy was updated. | [optional] |
+| **FirstExpirationReminder** | Pointer to **int64** | The number of days before expiration remaninder. | [optional] |
+| **AccountIdMinWordLength** | Pointer to **int64** | The minimun length of account Id. By default is equals to -1. | [optional] |
+| **AccountNameMinWordLength** | Pointer to **int64** | The minimun length of account name. By default is equals to -1. | [optional] |
+| **MinAlpha** | Pointer to **int64** | Maximum alpha. By default is equals to 0. | [optional] |
+| **MinCharacterTypes** | Pointer to **int64** | MinCharacterTypes. By default is equals to -1. | [optional] |
+| **MaxLength** | Pointer to **int64** | Maximum length of the password. | [optional] |
+| **MinLength** | Pointer to **int64** | Minimum length of the password. By default is equals to 0. | [optional] |
+| **MaxRepeatedChars** | Pointer to **int64** | Maximum repetition of the same character in the password. By default is equals to -1. | [optional] |
+| **MinLower** | Pointer to **int64** | Minimum amount of lower case character in the password. By default is equals to 0. | [optional] |
+| **MinNumeric** | Pointer to **int64** | Minimum amount of numeric characters in the password. By default is equals to 0. | [optional] |
+| **MinSpecial** | Pointer to **int64** | Minimum amount of special symbols in the password. By default is equals to 0. | [optional] |
+| **MinUpper** | Pointer to **int64** | Minimum amount of upper case symbols in the password. By default is equals to 0. | [optional] |
+| **PasswordExpiration** | Pointer to **int64** | Number of days before current password expires. By default is equals to 90. | [optional] |
+| **DefaultPolicy** | Pointer to **bool** | Defines whether this policy is default or not. Default policy is created automatically when an org is setup. This field is false by default. | [optional] [default to false] |
+| **EnablePasswdExpiration** | Pointer to **bool** | Defines whether this policy is enabled to expire or not. This field is false by default. | [optional] [default to false] |
+| **RequireStrongAuthn** | Pointer to **bool** | Defines whether this policy require strong Auth or not. This field is false by default. | [optional] [default to false] |
+| **RequireStrongAuthOffNetwork** | Pointer to **bool** | Defines whether this policy require strong Auth of network or not. This field is false by default. | [optional] [default to false] |
+| **RequireStrongAuthUntrustedGeographies** | Pointer to **bool** | Defines whether this policy require strong Auth for untrusted geographies. This field is false by default. | [optional] [default to false] |
+| **UseAccountAttributes** | Pointer to **bool** | Defines whether this policy uses account attributes or not. This field is false by default. | [optional] [default to false] |
+| **UseDictionary** | Pointer to **bool** | Defines whether this policy uses dictionary or not. This field is false by default. | [optional] [default to false] |
+| **UseIdentityAttributes** | Pointer to **bool** | Defines whether this policy uses identity attributes or not. This field is false by default. | [optional] [default to false] |
+| **ValidateAgainstAccountId** | Pointer to **bool** | Defines whether this policy validate against account id or not. This field is false by default. | [optional] [default to false] |
+| **ValidateAgainstAccountName** | Pointer to **bool** | Defines whether this policy validate against account name or not. This field is false by default. | [optional] [default to false] |
+| **Created** | Pointer to **NullableString** |  | [optional] |
+| **Modified** | Pointer to **NullableString** |  | [optional] |
+| **SourceIds** | Pointer to **[]string** | List of sources IDs managed by this password policy. | [optional] |
 
 ## Methods
 
@@ -53,18 +59,13 @@ Name | Type | Description | Notes
 
 `func NewPasswordPolicyV3Dto() *PasswordPolicyV3Dto`
 
-NewPasswordPolicyV3Dto instantiates a new PasswordPolicyV3Dto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewPasswordPolicyV3Dto instantiates a new PasswordPolicyV3Dto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewPasswordPolicyV3DtoWithDefaults
 
 `func NewPasswordPolicyV3DtoWithDefaults() *PasswordPolicyV3Dto`
 
-NewPasswordPolicyV3DtoWithDefaults instantiates a new PasswordPolicyV3Dto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewPasswordPolicyV3DtoWithDefaults instantiates a new PasswordPolicyV3Dto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -76,8 +77,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *PasswordPolicyV3Dto) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -101,8 +101,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *PasswordPolicyV3Dto) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -120,12 +119,14 @@ HasDescription returns a boolean if a field has been set.
 
 `func (o *PasswordPolicyV3Dto) SetDescriptionNil(b bool)`
 
- SetDescriptionNil sets the value for Description to be an explicit nil
+SetDescriptionNil sets the value for Description to be an explicit nil
 
 ### UnsetDescription
+
 `func (o *PasswordPolicyV3Dto) UnsetDescription()`
 
 UnsetDescription ensures that no value is present for Description, not even an explicit nil
+
 ### GetName
 
 `func (o *PasswordPolicyV3Dto) GetName() string`
@@ -136,8 +137,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *PasswordPolicyV3Dto) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -161,8 +161,7 @@ GetDateCreated returns the DateCreated field if non-nil, zero value otherwise.
 
 `func (o *PasswordPolicyV3Dto) GetDateCreatedOk() (*SailPointTime, bool)`
 
-GetDateCreatedOk returns a tuple with the DateCreated field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDateCreatedOk returns a tuple with the DateCreated field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDateCreated
 
@@ -186,8 +185,7 @@ GetLastUpdated returns the LastUpdated field if non-nil, zero value otherwise.
 
 `func (o *PasswordPolicyV3Dto) GetLastUpdatedOk() (*SailPointTime, bool)`
 
-GetLastUpdatedOk returns a tuple with the LastUpdated field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLastUpdatedOk returns a tuple with the LastUpdated field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLastUpdated
 
@@ -205,12 +203,14 @@ HasLastUpdated returns a boolean if a field has been set.
 
 `func (o *PasswordPolicyV3Dto) SetLastUpdatedNil(b bool)`
 
- SetLastUpdatedNil sets the value for LastUpdated to be an explicit nil
+SetLastUpdatedNil sets the value for LastUpdated to be an explicit nil
 
 ### UnsetLastUpdated
+
 `func (o *PasswordPolicyV3Dto) UnsetLastUpdated()`
 
 UnsetLastUpdated ensures that no value is present for LastUpdated, not even an explicit nil
+
 ### GetFirstExpirationReminder
 
 `func (o *PasswordPolicyV3Dto) GetFirstExpirationReminder() int64`
@@ -221,8 +221,7 @@ GetFirstExpirationReminder returns the FirstExpirationReminder field if non-nil,
 
 `func (o *PasswordPolicyV3Dto) GetFirstExpirationReminderOk() (*int64, bool)`
 
-GetFirstExpirationReminderOk returns a tuple with the FirstExpirationReminder field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFirstExpirationReminderOk returns a tuple with the FirstExpirationReminder field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFirstExpirationReminder
 
@@ -246,8 +245,7 @@ GetAccountIdMinWordLength returns the AccountIdMinWordLength field if non-nil, z
 
 `func (o *PasswordPolicyV3Dto) GetAccountIdMinWordLengthOk() (*int64, bool)`
 
-GetAccountIdMinWordLengthOk returns a tuple with the AccountIdMinWordLength field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountIdMinWordLengthOk returns a tuple with the AccountIdMinWordLength field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountIdMinWordLength
 
@@ -271,8 +269,7 @@ GetAccountNameMinWordLength returns the AccountNameMinWordLength field if non-ni
 
 `func (o *PasswordPolicyV3Dto) GetAccountNameMinWordLengthOk() (*int64, bool)`
 
-GetAccountNameMinWordLengthOk returns a tuple with the AccountNameMinWordLength field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountNameMinWordLengthOk returns a tuple with the AccountNameMinWordLength field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountNameMinWordLength
 
@@ -296,8 +293,7 @@ GetMinAlpha returns the MinAlpha field if non-nil, zero value otherwise.
 
 `func (o *PasswordPolicyV3Dto) GetMinAlphaOk() (*int64, bool)`
 
-GetMinAlphaOk returns a tuple with the MinAlpha field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMinAlphaOk returns a tuple with the MinAlpha field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMinAlpha
 
@@ -321,8 +317,7 @@ GetMinCharacterTypes returns the MinCharacterTypes field if non-nil, zero value 
 
 `func (o *PasswordPolicyV3Dto) GetMinCharacterTypesOk() (*int64, bool)`
 
-GetMinCharacterTypesOk returns a tuple with the MinCharacterTypes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMinCharacterTypesOk returns a tuple with the MinCharacterTypes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMinCharacterTypes
 
@@ -346,8 +341,7 @@ GetMaxLength returns the MaxLength field if non-nil, zero value otherwise.
 
 `func (o *PasswordPolicyV3Dto) GetMaxLengthOk() (*int64, bool)`
 
-GetMaxLengthOk returns a tuple with the MaxLength field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMaxLengthOk returns a tuple with the MaxLength field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMaxLength
 
@@ -371,8 +365,7 @@ GetMinLength returns the MinLength field if non-nil, zero value otherwise.
 
 `func (o *PasswordPolicyV3Dto) GetMinLengthOk() (*int64, bool)`
 
-GetMinLengthOk returns a tuple with the MinLength field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMinLengthOk returns a tuple with the MinLength field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMinLength
 
@@ -396,8 +389,7 @@ GetMaxRepeatedChars returns the MaxRepeatedChars field if non-nil, zero value ot
 
 `func (o *PasswordPolicyV3Dto) GetMaxRepeatedCharsOk() (*int64, bool)`
 
-GetMaxRepeatedCharsOk returns a tuple with the MaxRepeatedChars field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMaxRepeatedCharsOk returns a tuple with the MaxRepeatedChars field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMaxRepeatedChars
 
@@ -421,8 +413,7 @@ GetMinLower returns the MinLower field if non-nil, zero value otherwise.
 
 `func (o *PasswordPolicyV3Dto) GetMinLowerOk() (*int64, bool)`
 
-GetMinLowerOk returns a tuple with the MinLower field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMinLowerOk returns a tuple with the MinLower field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMinLower
 
@@ -446,8 +437,7 @@ GetMinNumeric returns the MinNumeric field if non-nil, zero value otherwise.
 
 `func (o *PasswordPolicyV3Dto) GetMinNumericOk() (*int64, bool)`
 
-GetMinNumericOk returns a tuple with the MinNumeric field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMinNumericOk returns a tuple with the MinNumeric field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMinNumeric
 
@@ -471,8 +461,7 @@ GetMinSpecial returns the MinSpecial field if non-nil, zero value otherwise.
 
 `func (o *PasswordPolicyV3Dto) GetMinSpecialOk() (*int64, bool)`
 
-GetMinSpecialOk returns a tuple with the MinSpecial field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMinSpecialOk returns a tuple with the MinSpecial field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMinSpecial
 
@@ -496,8 +485,7 @@ GetMinUpper returns the MinUpper field if non-nil, zero value otherwise.
 
 `func (o *PasswordPolicyV3Dto) GetMinUpperOk() (*int64, bool)`
 
-GetMinUpperOk returns a tuple with the MinUpper field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMinUpperOk returns a tuple with the MinUpper field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMinUpper
 
@@ -521,8 +509,7 @@ GetPasswordExpiration returns the PasswordExpiration field if non-nil, zero valu
 
 `func (o *PasswordPolicyV3Dto) GetPasswordExpirationOk() (*int64, bool)`
 
-GetPasswordExpirationOk returns a tuple with the PasswordExpiration field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPasswordExpirationOk returns a tuple with the PasswordExpiration field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPasswordExpiration
 
@@ -546,8 +533,7 @@ GetDefaultPolicy returns the DefaultPolicy field if non-nil, zero value otherwis
 
 `func (o *PasswordPolicyV3Dto) GetDefaultPolicyOk() (*bool, bool)`
 
-GetDefaultPolicyOk returns a tuple with the DefaultPolicy field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDefaultPolicyOk returns a tuple with the DefaultPolicy field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDefaultPolicy
 
@@ -571,8 +557,7 @@ GetEnablePasswdExpiration returns the EnablePasswdExpiration field if non-nil, z
 
 `func (o *PasswordPolicyV3Dto) GetEnablePasswdExpirationOk() (*bool, bool)`
 
-GetEnablePasswdExpirationOk returns a tuple with the EnablePasswdExpiration field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEnablePasswdExpirationOk returns a tuple with the EnablePasswdExpiration field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEnablePasswdExpiration
 
@@ -596,8 +581,7 @@ GetRequireStrongAuthn returns the RequireStrongAuthn field if non-nil, zero valu
 
 `func (o *PasswordPolicyV3Dto) GetRequireStrongAuthnOk() (*bool, bool)`
 
-GetRequireStrongAuthnOk returns a tuple with the RequireStrongAuthn field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequireStrongAuthnOk returns a tuple with the RequireStrongAuthn field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequireStrongAuthn
 
@@ -621,8 +605,7 @@ GetRequireStrongAuthOffNetwork returns the RequireStrongAuthOffNetwork field if 
 
 `func (o *PasswordPolicyV3Dto) GetRequireStrongAuthOffNetworkOk() (*bool, bool)`
 
-GetRequireStrongAuthOffNetworkOk returns a tuple with the RequireStrongAuthOffNetwork field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequireStrongAuthOffNetworkOk returns a tuple with the RequireStrongAuthOffNetwork field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequireStrongAuthOffNetwork
 
@@ -646,8 +629,7 @@ GetRequireStrongAuthUntrustedGeographies returns the RequireStrongAuthUntrustedG
 
 `func (o *PasswordPolicyV3Dto) GetRequireStrongAuthUntrustedGeographiesOk() (*bool, bool)`
 
-GetRequireStrongAuthUntrustedGeographiesOk returns a tuple with the RequireStrongAuthUntrustedGeographies field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequireStrongAuthUntrustedGeographiesOk returns a tuple with the RequireStrongAuthUntrustedGeographies field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequireStrongAuthUntrustedGeographies
 
@@ -671,8 +653,7 @@ GetUseAccountAttributes returns the UseAccountAttributes field if non-nil, zero 
 
 `func (o *PasswordPolicyV3Dto) GetUseAccountAttributesOk() (*bool, bool)`
 
-GetUseAccountAttributesOk returns a tuple with the UseAccountAttributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUseAccountAttributesOk returns a tuple with the UseAccountAttributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUseAccountAttributes
 
@@ -696,8 +677,7 @@ GetUseDictionary returns the UseDictionary field if non-nil, zero value otherwis
 
 `func (o *PasswordPolicyV3Dto) GetUseDictionaryOk() (*bool, bool)`
 
-GetUseDictionaryOk returns a tuple with the UseDictionary field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUseDictionaryOk returns a tuple with the UseDictionary field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUseDictionary
 
@@ -721,8 +701,7 @@ GetUseIdentityAttributes returns the UseIdentityAttributes field if non-nil, zer
 
 `func (o *PasswordPolicyV3Dto) GetUseIdentityAttributesOk() (*bool, bool)`
 
-GetUseIdentityAttributesOk returns a tuple with the UseIdentityAttributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUseIdentityAttributesOk returns a tuple with the UseIdentityAttributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUseIdentityAttributes
 
@@ -746,8 +725,7 @@ GetValidateAgainstAccountId returns the ValidateAgainstAccountId field if non-ni
 
 `func (o *PasswordPolicyV3Dto) GetValidateAgainstAccountIdOk() (*bool, bool)`
 
-GetValidateAgainstAccountIdOk returns a tuple with the ValidateAgainstAccountId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValidateAgainstAccountIdOk returns a tuple with the ValidateAgainstAccountId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValidateAgainstAccountId
 
@@ -771,8 +749,7 @@ GetValidateAgainstAccountName returns the ValidateAgainstAccountName field if no
 
 `func (o *PasswordPolicyV3Dto) GetValidateAgainstAccountNameOk() (*bool, bool)`
 
-GetValidateAgainstAccountNameOk returns a tuple with the ValidateAgainstAccountName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValidateAgainstAccountNameOk returns a tuple with the ValidateAgainstAccountName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValidateAgainstAccountName
 
@@ -796,8 +773,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *PasswordPolicyV3Dto) GetCreatedOk() (*string, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -815,12 +791,14 @@ HasCreated returns a boolean if a field has been set.
 
 `func (o *PasswordPolicyV3Dto) SetCreatedNil(b bool)`
 
- SetCreatedNil sets the value for Created to be an explicit nil
+SetCreatedNil sets the value for Created to be an explicit nil
 
 ### UnsetCreated
+
 `func (o *PasswordPolicyV3Dto) UnsetCreated()`
 
 UnsetCreated ensures that no value is present for Created, not even an explicit nil
+
 ### GetModified
 
 `func (o *PasswordPolicyV3Dto) GetModified() string`
@@ -831,8 +809,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *PasswordPolicyV3Dto) GetModifiedOk() (*string, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -850,12 +827,14 @@ HasModified returns a boolean if a field has been set.
 
 `func (o *PasswordPolicyV3Dto) SetModifiedNil(b bool)`
 
- SetModifiedNil sets the value for Modified to be an explicit nil
+SetModifiedNil sets the value for Modified to be an explicit nil
 
 ### UnsetModified
+
 `func (o *PasswordPolicyV3Dto) UnsetModified()`
 
 UnsetModified ensures that no value is present for Modified, not even an explicit nil
+
 ### GetSourceIds
 
 `func (o *PasswordPolicyV3Dto) GetSourceIds() []string`
@@ -866,8 +845,7 @@ GetSourceIds returns the SourceIds field if non-nil, zero value otherwise.
 
 `func (o *PasswordPolicyV3Dto) GetSourceIdsOk() (*[]string, bool)`
 
-GetSourceIdsOk returns a tuple with the SourceIds field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceIdsOk returns a tuple with the SourceIds field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceIds
 
@@ -880,5 +858,3 @@ SetSourceIds sets SourceIds field to given value.
 `func (o *PasswordPolicyV3Dto) HasSourceIds() bool`
 
 HasSourceIds returns a boolean if a field has been set.
-
-

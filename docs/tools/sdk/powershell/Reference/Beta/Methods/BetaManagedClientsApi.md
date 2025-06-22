@@ -4,58 +4,60 @@ title: ManagedClients
 pagination_label: ManagedClients
 sidebar_label: ManagedClients
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'ManagedClients', 'BetaManagedClients'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'ManagedClients', 'BetaManagedClients']
 slug: /tools/sdk/powershell/beta/methods/managed-clients
-tags: ['SDK', 'Software Development Kit', 'ManagedClients', 'BetaManagedClients']
+tags:
+  ['SDK', 'Software Development Kit', 'ManagedClients', 'BetaManagedClients']
 ---
 
 # ManagedClients
-  Use this API to implement managed client functionality. 
-With this functionality in place, administrators can modify and delete existing managed clients, create new ones, and view and make changes to their log configurations.
- 
-  
+
+Use this API to implement managed client functionality. With this functionality in place, administrators can modify and delete existing managed clients, create new ones, and view and make changes to their log configurations.
 
 All URIs are relative to *https://sailpoint.api.identitynow.com/beta*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**Get-BetaManagedClientStatus**](#get-managed-client-status) | **GET** `/managed-clients/{id}/status` | Specified managed client status.
-[**Update-BetaManagedClientStatus**](#update-managed-client-status) | **POST** `/managed-clients/{id}/status` | Handle status request from client
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**Get-BetaManagedClientStatus**](#get-managed-client-status) | **GET** `/managed-clients/{id}/status` | Specified managed client status. |
+| [**Update-BetaManagedClientStatus**](#update-managed-client-status) | **POST** `/managed-clients/{id}/status` | Handle status request from client |
 
 ## get-managed-client-status
-:::caution deprecated 
-This endpoint has been deprecated and may be replaced or removed in future versions of the API.
-:::
-Retrieve Managed Client Status by ID.
+
+:::caution deprecated This endpoint has been deprecated and may be replaced or removed in future versions of the API. ::: Retrieve Managed Client Status by ID.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-managed-client-status)
 
-### Parameters 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | Id | **String** | True  | ID of the Managed Client Status to get
-  Query | Type | [**ManagedClientType**](../models/managed-client-type) | True  | Type of the Managed Client Status to get
+### Parameters
+
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | Id | **String** | True | ID of the Managed Client Status to get |
+| Query | Type | [**ManagedClientType**](../models/managed-client-type) | True | Type of the Managed Client Status to get |
 
 ### Return type
+
 [**ManagedClientStatus**](../models/managed-client-status)
 
 ### Responses
-Code | Description  | Data Type
-------------- | ------------- | -------------
-200 | Responds with Managed Client Status having the given ID and Type. | ManagedClientStatus
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto
+
+| Code | Description | Data Type |
+| --- | --- | --- |
+| 200 | Responds with Managed Client Status having the given ID and Type. | ManagedClientStatus |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |
 
 ### HTTP request headers
+
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 ### Example
+
 ```powershell
 $Id = "aClientId" # String | ID of the Managed Client Status to get
 $Type = "CCG" # ManagedClientType | Type of the Managed Client Status to get
@@ -63,50 +65,54 @@ $Type = "CCG" # ManagedClientType | Type of the Managed Client Status to get
 # Specified managed client status.
 
 try {
-    Get-BetaManagedClientStatus -Id $Id -Type $Type 
-    
+    Get-BetaManagedClientStatus -Id $Id -Type $Type
+
     # Below is a request that includes all optional parameters
-    # Get-BetaManagedClientStatus -Id $Id -Type $Type  
+    # Get-BetaManagedClientStatus -Id $Id -Type $Type
 } catch {
     Write-Host $_.Exception.Response.StatusCode.value__ "Exception occurred when calling Get-BetaManagedClientStatus"
     Write-Host $_.ErrorDetails
 }
 ```
-[[Back to top]](#) 
+
+[[Back to top]](#)
 
 ## update-managed-client-status
-:::caution deprecated 
-This endpoint has been deprecated and may be replaced or removed in future versions of the API.
-:::
-Update a status detail passed in from the client
+
+:::caution deprecated This endpoint has been deprecated and may be replaced or removed in future versions of the API. ::: Update a status detail passed in from the client
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/update-managed-client-status)
 
-### Parameters 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | Id | **String** | True  | ID of the Managed Client Status to update
- Body  | ManagedClientStatus | [**ManagedClientStatus**](../models/managed-client-status) | True  | 
+### Parameters
+
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | Id | **String** | True | ID of the Managed Client Status to update |
+| Body | ManagedClientStatus | [**ManagedClientStatus**](../models/managed-client-status) | True |
 
 ### Return type
+
 [**ManagedClientStatusAggResponse**](../models/managed-client-status-agg-response)
 
 ### Responses
-Code | Description  | Data Type
-------------- | ------------- | -------------
-200 | Responds with the updated Managed Client Status. | ManagedClientStatusAggResponse
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto
+
+| Code | Description | Data Type |
+| --- | --- | --- |
+| 200 | Responds with the updated Managed Client Status. | ManagedClientStatusAggResponse |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |
 
 ### HTTP request headers
+
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 ### Example
+
 ```powershell
 $Id = "aClientId" # String | ID of the Managed Client Status to update
 $ManagedClientStatus = @"{
@@ -140,13 +146,14 @@ $ManagedClientStatus = @"{
 
 try {
     $Result = ConvertFrom-JsonToManagedClientStatus -Json $ManagedClientStatus
-    Update-BetaManagedClientStatus -Id $Id -ManagedClientStatus $Result 
-    
+    Update-BetaManagedClientStatus -Id $Id -ManagedClientStatus $Result
+
     # Below is a request that includes all optional parameters
-    # Update-BetaManagedClientStatus -Id $Id -ManagedClientStatus $Result  
+    # Update-BetaManagedClientStatus -Id $Id -ManagedClientStatus $Result
 } catch {
     Write-Host $_.Exception.Response.StatusCode.value__ "Exception occurred when calling Update-BetaManagedClientStatus"
     Write-Host $_.ErrorDetails
 }
 ```
-[[Back to top]](#) 
+
+[[Back to top]](#)

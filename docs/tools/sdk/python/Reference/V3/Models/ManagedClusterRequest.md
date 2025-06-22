@@ -4,9 +4,16 @@ title: ManagedClusterRequest
 pagination_label: ManagedClusterRequest
 sidebar_label: ManagedClusterRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ManagedClusterRequest', 'ManagedClusterRequest'] 
+keywords:
+  ['python', 'Python', 'sdk', 'ManagedClusterRequest', 'ManagedClusterRequest']
 slug: /tools/sdk/python/v3/models/managed-cluster-request
-tags: ['SDK', 'Software Development Kit', 'ManagedClusterRequest', 'ManagedClusterRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ManagedClusterRequest',
+    'ManagedClusterRequest',
+  ]
 ---
 
 # ManagedClusterRequest
@@ -15,12 +22,13 @@ Request to create Managed Cluster
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | ManagedCluster name | [required]
-**type** | [**ManagedClusterTypes**](managed-cluster-types) |  | [optional] 
-**configuration** | **map[string]str** | ManagedProcess configuration map | [optional] 
-**description** | **str** | ManagedCluster description | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **name** | **str** | ManagedCluster name | [required] |
+| **type** | [**ManagedClusterTypes**](managed-cluster-types) |  | [optional] |
+| **configuration** | **map[string]str** | ManagedProcess configuration map | [optional] |
+| **description** | **str** | ManagedCluster description | [optional] |
+
 }
 
 ## Example
@@ -36,5 +44,5 @@ description='A short description of the managed cluster.'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

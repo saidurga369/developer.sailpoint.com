@@ -4,20 +4,33 @@ title: AccessRequestRecommendationItem
 pagination_label: AccessRequestRecommendationItem
 sidebar_label: AccessRequestRecommendationItem
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccessRequestRecommendationItem', 'V2025AccessRequestRecommendationItem'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccessRequestRecommendationItem',
+    'V2025AccessRequestRecommendationItem',
+  ]
 slug: /tools/sdk/python/v2025/models/access-request-recommendation-item
-tags: ['SDK', 'Software Development Kit', 'AccessRequestRecommendationItem', 'V2025AccessRequestRecommendationItem']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessRequestRecommendationItem',
+    'V2025AccessRequestRecommendationItem',
+  ]
 ---
 
 # AccessRequestRecommendationItem
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | ID of access item being recommended. | [optional] 
-**type** | [**AccessRequestRecommendationItemType**](access-request-recommendation-item-type) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | ID of access item being recommended. | [optional] |
+| **type** | [**AccessRequestRecommendationItemType**](access-request-recommendation-item-type) |  | [optional] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ type='ACCESS_PROFILE'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

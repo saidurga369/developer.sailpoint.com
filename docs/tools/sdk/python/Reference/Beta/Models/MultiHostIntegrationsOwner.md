@@ -4,9 +4,22 @@ title: MultiHostIntegrationsOwner
 pagination_label: MultiHostIntegrationsOwner
 sidebar_label: MultiHostIntegrationsOwner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'MultiHostIntegrationsOwner', 'BetaMultiHostIntegrationsOwner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'MultiHostIntegrationsOwner',
+    'BetaMultiHostIntegrationsOwner',
+  ]
 slug: /tools/sdk/python/beta/models/multi-host-integrations-owner
-tags: ['SDK', 'Software Development Kit', 'MultiHostIntegrationsOwner', 'BetaMultiHostIntegrationsOwner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'MultiHostIntegrationsOwner',
+    'BetaMultiHostIntegrationsOwner',
+  ]
 ---
 
 # MultiHostIntegrationsOwner
@@ -15,11 +28,12 @@ Reference to identity object who owns the source.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] | Type of object being referenced. | [optional] 
-**id** | **str** | Owner identity's ID. | [optional] 
-**name** | **str** | Owner identity's human-readable display name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'IDENTITY' ] | Type of object being referenced. | [optional] |
+| **id** | **str** | Owner identity's ID. | [optional] |
+| **name** | **str** | Owner identity's human-readable display name. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='MyName'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

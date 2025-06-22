@@ -4,31 +4,44 @@ title: CampaignEndedCampaign
 pagination_label: CampaignEndedCampaign
 sidebar_label: CampaignEndedCampaign
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'CampaignEndedCampaign', 'BetaCampaignEndedCampaign'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'CampaignEndedCampaign',
+    'BetaCampaignEndedCampaign',
+  ]
 slug: /tools/sdk/powershell/beta/models/campaign-ended-campaign
-tags: ['SDK', 'Software Development Kit', 'CampaignEndedCampaign', 'BetaCampaignEndedCampaign']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CampaignEndedCampaign',
+    'BetaCampaignEndedCampaign',
+  ]
 ---
-
 
 # CampaignEndedCampaign
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | Campaign's unique ID for the campaign. | [required]
-**Name** | **String** | Campaign's unique ID. | [required]
-**Description** | **String** | Campaign's extended description. | [required]
-**Created** | **System.DateTime** | Date and time when the campaign was created. | [required]
-**Modified** | **System.DateTime** | Date and time when the campaign was last modified. | [optional] 
-**Deadline** | **System.DateTime** | Date and time when the campaign is due. | [required]
-**Type** |  **Enum** [  "MANAGER",    "SOURCE_OWNER",    "SEARCH",    "ROLE_COMPOSITION" ] | Campaign's type. | [required]
-**CampaignOwner** | [**CampaignActivatedCampaignCampaignOwner**](campaign-activated-campaign-campaign-owner) |  | [required]
-**Status** |  **Enum** [  "COMPLETED" ] | Campaign's current status. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | Campaign's unique ID for the campaign. | [required] |
+| **Name** | **String** | Campaign's unique ID. | [required] |
+| **Description** | **String** | Campaign's extended description. | [required] |
+| **Created** | **System.DateTime** | Date and time when the campaign was created. | [required] |
+| **Modified** | **System.DateTime** | Date and time when the campaign was last modified. | [optional] |
+| **Deadline** | **System.DateTime** | Date and time when the campaign is due. | [required] |
+| **Type** | **Enum** [ "MANAGER", "SOURCE_OWNER", "SEARCH", "ROLE_COMPOSITION" ] | Campaign's type. | [required] |
+| **CampaignOwner** | [**CampaignActivatedCampaignCampaignOwner**](campaign-activated-campaign-campaign-owner) |  | [required] |
+| **Status** | **Enum** [ "COMPLETED" ] | Campaign's current status. | [required] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $CampaignEndedCampaign = Initialize-BetaCampaignEndedCampaign  -Id 2c91808576f886190176f88cac5a0010 `
  -Name Manager Access Campaign `
@@ -42,10 +55,9 @@ $CampaignEndedCampaign = Initialize-BetaCampaignEndedCampaign  -Id 2c91808576f88
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $CampaignEndedCampaign | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

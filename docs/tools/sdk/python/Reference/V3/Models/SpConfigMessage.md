@@ -4,7 +4,7 @@ title: SpConfigMessage
 pagination_label: SpConfigMessage
 sidebar_label: SpConfigMessage
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SpConfigMessage', 'SpConfigMessage'] 
+keywords: ['python', 'Python', 'sdk', 'SpConfigMessage', 'SpConfigMessage']
 slug: /tools/sdk/python/v3/models/sp-config-message
 tags: ['SDK', 'Software Development Kit', 'SpConfigMessage', 'SpConfigMessage']
 ---
@@ -15,11 +15,12 @@ Message model for Config Import/Export.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**key** | **str** | Message key. | [required]
-**text** | **str** | Message text. | [required]
-**details** | **map[string]object** | Message details if any, in key:value pairs. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **key** | **str** | Message key. | [required] |
+| **text** | **str** | Message text. | [required] |
+| **details** | **map[string]object** | Message details if any, in key:value pairs. | [required] |
+
 }
 
 ## Example
@@ -34,5 +35,5 @@ details={details=message details}
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

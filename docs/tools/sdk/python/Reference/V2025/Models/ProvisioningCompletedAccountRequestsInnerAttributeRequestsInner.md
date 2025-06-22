@@ -4,21 +4,34 @@ title: ProvisioningCompletedAccountRequestsInnerAttributeRequestsInner
 pagination_label: ProvisioningCompletedAccountRequestsInnerAttributeRequestsInner
 sidebar_label: ProvisioningCompletedAccountRequestsInnerAttributeRequestsInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ProvisioningCompletedAccountRequestsInnerAttributeRequestsInner', 'V2025ProvisioningCompletedAccountRequestsInnerAttributeRequestsInner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ProvisioningCompletedAccountRequestsInnerAttributeRequestsInner',
+    'V2025ProvisioningCompletedAccountRequestsInnerAttributeRequestsInner',
+  ]
 slug: /tools/sdk/python/v2025/models/provisioning-completed-account-requests-inner-attribute-requests-inner
-tags: ['SDK', 'Software Development Kit', 'ProvisioningCompletedAccountRequestsInnerAttributeRequestsInner', 'V2025ProvisioningCompletedAccountRequestsInnerAttributeRequestsInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ProvisioningCompletedAccountRequestsInnerAttributeRequestsInner',
+    'V2025ProvisioningCompletedAccountRequestsInnerAttributeRequestsInner',
+  ]
 ---
 
 # ProvisioningCompletedAccountRequestsInnerAttributeRequestsInner
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**attribute_name** | **str** | The name of the attribute being provisioned. | [required]
-**attribute_value** | **str** | The value of the attribute being provisioned. | [optional] 
-**operation** |  **Enum** [  'Add',    'Set',    'Remove' ] | The operation to handle the attribute. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **attribute_name** | **str** | The name of the attribute being provisioned. | [required] |
+| **attribute_value** | **str** | The value of the attribute being provisioned. | [optional] |
+| **operation** | **Enum** [ 'Add', 'Set', 'Remove' ] | The operation to handle the attribute. | [required] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ operation=Add
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

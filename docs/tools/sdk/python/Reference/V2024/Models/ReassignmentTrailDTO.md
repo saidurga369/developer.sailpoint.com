@@ -4,21 +4,34 @@ title: ReassignmentTrailDTO
 pagination_label: ReassignmentTrailDTO
 sidebar_label: ReassignmentTrailDTO
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ReassignmentTrailDTO', 'V2024ReassignmentTrailDTO'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ReassignmentTrailDTO',
+    'V2024ReassignmentTrailDTO',
+  ]
 slug: /tools/sdk/python/v2024/models/reassignment-trail-dto
-tags: ['SDK', 'Software Development Kit', 'ReassignmentTrailDTO', 'V2024ReassignmentTrailDTO']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ReassignmentTrailDTO',
+    'V2024ReassignmentTrailDTO',
+  ]
 ---
 
 # ReassignmentTrailDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**previous_owner** | **str** | The ID of previous owner identity. | [optional] 
-**new_owner** | **str** | The ID of new owner identity. | [optional] 
-**reassignment_type** | **str** | The type of reassignment. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **previous_owner** | **str** | The ID of previous owner identity. | [optional] |
+| **new_owner** | **str** | The ID of new owner identity. | [optional] |
+| **reassignment_type** | **str** | The type of reassignment. | [optional] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ reassignment_type='AUTOMATIC_REASSIGNMENT'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

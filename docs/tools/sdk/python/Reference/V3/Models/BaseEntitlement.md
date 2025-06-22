@@ -4,26 +4,26 @@ title: BaseEntitlement
 pagination_label: BaseEntitlement
 sidebar_label: BaseEntitlement
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'BaseEntitlement', 'BaseEntitlement'] 
+keywords: ['python', 'Python', 'sdk', 'BaseEntitlement', 'BaseEntitlement']
 slug: /tools/sdk/python/v3/models/base-entitlement
 tags: ['SDK', 'Software Development Kit', 'BaseEntitlement', 'BaseEntitlement']
 ---
 
 # BaseEntitlement
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**has_permissions** | **bool** | Indicates whether the entitlement has permissions. | [optional] [default to False]
-**description** | **str** | Entitlement's description. | [optional] 
-**attribute** | **str** | Entitlement attribute's name. | [optional] 
-**value** | **str** | Entitlement's value. | [optional] 
-**var_schema** | **str** | Entitlement's schema. | [optional] 
-**privileged** | **bool** | Indicates whether the entitlement is privileged. | [optional] [default to False]
-**id** | **str** | Entitlement's ID. | [optional] 
-**name** | **str** | Entitlement's name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **has_permissions** | **bool** | Indicates whether the entitlement has permissions. | [optional] [default to False] |
+| **description** | **str** | Entitlement's description. | [optional] |
+| **attribute** | **str** | Entitlement attribute's name. | [optional] |
+| **value** | **str** | Entitlement's value. | [optional] |
+| **var_schema** | **str** | Entitlement's schema. | [optional] |
+| **privileged** | **bool** | Indicates whether the entitlement is privileged. | [optional] [default to False] |
+| **id** | **str** | Entitlement's ID. | [optional] |
+| **name** | **str** | Entitlement's name. | [optional] |
+
 }
 
 ## Example
@@ -43,5 +43,5 @@ name='CN=Cloud Engineering,DC=sailpoint,DC=COM'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,19 +4,32 @@ title: IdentityAttributeTransform
 pagination_label: IdentityAttributeTransform
 sidebar_label: IdentityAttributeTransform
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IdentityAttributeTransform', 'V2025IdentityAttributeTransform'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'IdentityAttributeTransform',
+    'V2025IdentityAttributeTransform',
+  ]
 slug: /tools/sdk/go/v2025/models/identity-attribute-transform
-tags: ['SDK', 'Software Development Kit', 'IdentityAttributeTransform', 'V2025IdentityAttributeTransform']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityAttributeTransform',
+    'V2025IdentityAttributeTransform',
+  ]
 ---
 
 # IdentityAttributeTransform
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**IdentityAttributeName** | Pointer to **string** | Identity attribute's name. | [optional] 
-**TransformDefinition** | Pointer to [**TransformDefinition**](transform-definition) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **IdentityAttributeName** | Pointer to **string** | Identity attribute's name. | [optional] |
+| **TransformDefinition** | Pointer to [**TransformDefinition**](transform-definition) |  | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewIdentityAttributeTransform() *IdentityAttributeTransform`
 
-NewIdentityAttributeTransform instantiates a new IdentityAttributeTransform object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewIdentityAttributeTransform instantiates a new IdentityAttributeTransform object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewIdentityAttributeTransformWithDefaults
 
 `func NewIdentityAttributeTransformWithDefaults() *IdentityAttributeTransform`
 
-NewIdentityAttributeTransformWithDefaults instantiates a new IdentityAttributeTransform object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewIdentityAttributeTransformWithDefaults instantiates a new IdentityAttributeTransform object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetIdentityAttributeName
 
@@ -47,8 +55,7 @@ GetIdentityAttributeName returns the IdentityAttributeName field if non-nil, zer
 
 `func (o *IdentityAttributeTransform) GetIdentityAttributeNameOk() (*string, bool)`
 
-GetIdentityAttributeNameOk returns a tuple with the IdentityAttributeName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityAttributeNameOk returns a tuple with the IdentityAttributeName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityAttributeName
 
@@ -72,8 +79,7 @@ GetTransformDefinition returns the TransformDefinition field if non-nil, zero va
 
 `func (o *IdentityAttributeTransform) GetTransformDefinitionOk() (*TransformDefinition, bool)`
 
-GetTransformDefinitionOk returns a tuple with the TransformDefinition field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTransformDefinitionOk returns a tuple with the TransformDefinition field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTransformDefinition
 
@@ -86,5 +92,3 @@ SetTransformDefinition sets TransformDefinition field to given value.
 `func (o *IdentityAttributeTransform) HasTransformDefinition() bool`
 
 HasTransformDefinition returns a boolean if a field has been set.
-
-

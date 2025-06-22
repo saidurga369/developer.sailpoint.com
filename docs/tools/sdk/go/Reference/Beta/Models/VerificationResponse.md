@@ -4,20 +4,27 @@ title: VerificationResponse
 pagination_label: VerificationResponse
 sidebar_label: VerificationResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'VerificationResponse', 'BetaVerificationResponse'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'VerificationResponse', 'BetaVerificationResponse']
 slug: /tools/sdk/go/beta/models/verification-response
-tags: ['SDK', 'Software Development Kit', 'VerificationResponse', 'BetaVerificationResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'VerificationResponse',
+    'BetaVerificationResponse',
+  ]
 ---
 
 # VerificationResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**RequestId** | Pointer to **NullableString** | The verificationPollRequest request ID | [optional] 
-**Status** | Pointer to **string** | MFA Authentication status | [optional] 
-**Error** | Pointer to **NullableString** | Error messages from MFA verification request | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **RequestId** | Pointer to **NullableString** | The verificationPollRequest request ID | [optional] |
+| **Status** | Pointer to **string** | MFA Authentication status | [optional] |
+| **Error** | Pointer to **NullableString** | Error messages from MFA verification request | [optional] |
 
 ## Methods
 
@@ -25,18 +32,13 @@ Name | Type | Description | Notes
 
 `func NewVerificationResponse() *VerificationResponse`
 
-NewVerificationResponse instantiates a new VerificationResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewVerificationResponse instantiates a new VerificationResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewVerificationResponseWithDefaults
 
 `func NewVerificationResponseWithDefaults() *VerificationResponse`
 
-NewVerificationResponseWithDefaults instantiates a new VerificationResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewVerificationResponseWithDefaults instantiates a new VerificationResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetRequestId
 
@@ -48,8 +50,7 @@ GetRequestId returns the RequestId field if non-nil, zero value otherwise.
 
 `func (o *VerificationResponse) GetRequestIdOk() (*string, bool)`
 
-GetRequestIdOk returns a tuple with the RequestId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestIdOk returns a tuple with the RequestId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequestId
 
@@ -67,12 +68,14 @@ HasRequestId returns a boolean if a field has been set.
 
 `func (o *VerificationResponse) SetRequestIdNil(b bool)`
 
- SetRequestIdNil sets the value for RequestId to be an explicit nil
+SetRequestIdNil sets the value for RequestId to be an explicit nil
 
 ### UnsetRequestId
+
 `func (o *VerificationResponse) UnsetRequestId()`
 
 UnsetRequestId ensures that no value is present for RequestId, not even an explicit nil
+
 ### GetStatus
 
 `func (o *VerificationResponse) GetStatus() string`
@@ -83,8 +86,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *VerificationResponse) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -108,8 +110,7 @@ GetError returns the Error field if non-nil, zero value otherwise.
 
 `func (o *VerificationResponse) GetErrorOk() (*string, bool)`
 
-GetErrorOk returns a tuple with the Error field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetErrorOk returns a tuple with the Error field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetError
 
@@ -127,10 +128,10 @@ HasError returns a boolean if a field has been set.
 
 `func (o *VerificationResponse) SetErrorNil(b bool)`
 
- SetErrorNil sets the value for Error to be an explicit nil
+SetErrorNil sets the value for Error to be an explicit nil
 
 ### UnsetError
+
 `func (o *VerificationResponse) UnsetError()`
 
 UnsetError ensures that no value is present for Error, not even an explicit nil
-

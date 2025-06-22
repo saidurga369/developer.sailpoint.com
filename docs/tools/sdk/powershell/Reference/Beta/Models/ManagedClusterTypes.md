@@ -4,21 +4,30 @@ title: ManagedClusterTypes
 pagination_label: ManagedClusterTypes
 sidebar_label: ManagedClusterTypes
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'ManagedClusterTypes', 'BetaManagedClusterTypes'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'ManagedClusterTypes',
+    'BetaManagedClusterTypes',
+  ]
 slug: /tools/sdk/powershell/beta/models/managed-cluster-types
-tags: ['SDK', 'Software Development Kit', 'ManagedClusterTypes', 'BetaManagedClusterTypes']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ManagedClusterTypes',
+    'BetaManagedClusterTypes',
+  ]
 ---
-
 
 # ManagedClusterTypes
 
 ## Enum
 
+- `idn` (value: `"idn"`)
 
-* `idn` (value: `"idn"`)
+- `iai` (value: `"iai"`)
 
-* `iai` (value: `"iai"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

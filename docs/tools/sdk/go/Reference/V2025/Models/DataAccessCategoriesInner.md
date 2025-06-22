@@ -4,19 +4,32 @@ title: DataAccessCategoriesInner
 pagination_label: DataAccessCategoriesInner
 sidebar_label: DataAccessCategoriesInner
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'DataAccessCategoriesInner', 'V2025DataAccessCategoriesInner'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'DataAccessCategoriesInner',
+    'V2025DataAccessCategoriesInner',
+  ]
 slug: /tools/sdk/go/v2025/models/data-access-categories-inner
-tags: ['SDK', 'Software Development Kit', 'DataAccessCategoriesInner', 'V2025DataAccessCategoriesInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'DataAccessCategoriesInner',
+    'V2025DataAccessCategoriesInner',
+  ]
 ---
 
 # DataAccessCategoriesInner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Value** | Pointer to **string** | Value of the category | [optional] 
-**MatchCount** | Pointer to **int32** | Number of matched for each category | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Value** | Pointer to **string** | Value of the category | [optional] |
+| **MatchCount** | Pointer to **int32** | Number of matched for each category | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewDataAccessCategoriesInner() *DataAccessCategoriesInner`
 
-NewDataAccessCategoriesInner instantiates a new DataAccessCategoriesInner object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewDataAccessCategoriesInner instantiates a new DataAccessCategoriesInner object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewDataAccessCategoriesInnerWithDefaults
 
 `func NewDataAccessCategoriesInnerWithDefaults() *DataAccessCategoriesInner`
 
-NewDataAccessCategoriesInnerWithDefaults instantiates a new DataAccessCategoriesInner object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewDataAccessCategoriesInnerWithDefaults instantiates a new DataAccessCategoriesInner object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetValue
 
@@ -47,8 +55,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *DataAccessCategoriesInner) GetValueOk() (*string, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -72,8 +79,7 @@ GetMatchCount returns the MatchCount field if non-nil, zero value otherwise.
 
 `func (o *DataAccessCategoriesInner) GetMatchCountOk() (*int32, bool)`
 
-GetMatchCountOk returns a tuple with the MatchCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMatchCountOk returns a tuple with the MatchCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMatchCount
 
@@ -86,5 +92,3 @@ SetMatchCount sets MatchCount field to given value.
 `func (o *DataAccessCategoriesInner) HasMatchCount() bool`
 
 HasMatchCount returns a boolean if a field has been set.
-
-

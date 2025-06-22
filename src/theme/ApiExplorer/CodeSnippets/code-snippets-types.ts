@@ -1,32 +1,32 @@
 // https://github.com/github-linguist/linguist/blob/master/lib/linguist/popular.yml
 export type CodeSampleLanguage =
-  | "C"
-  | "C#"
-  | "C++"
-  | "CoffeeScript"
-  | "CSS"
-  | "Dart"
-  | "DM"
-  | "Elixir"
-  | "Go"
-  | "Groovy"
-  | "HTML"
-  | "Java"
-  | "JavaScript"
-  | "Kotlin"
-  | "Objective-C"
-  | "OCaml"
-  | "Perl"
-  | "PHP"
-  | "PowerShell"
-  | "Python"
-  | "R"
-  | "Ruby"
-  | "Rust"
-  | "Scala"
-  | "Shell"
-  | "Swift"
-  | "TypeScript";
+  | 'C'
+  | 'C#'
+  | 'C++'
+  | 'CoffeeScript'
+  | 'CSS'
+  | 'Dart'
+  | 'DM'
+  | 'Elixir'
+  | 'Go'
+  | 'Groovy'
+  | 'HTML'
+  | 'Java'
+  | 'JavaScript'
+  | 'Kotlin'
+  | 'Objective-C'
+  | 'OCaml'
+  | 'Perl'
+  | 'PHP'
+  | 'PowerShell'
+  | 'Python'
+  | 'R'
+  | 'Ruby'
+  | 'Rust'
+  | 'Scala'
+  | 'Shell'
+  | 'Swift'
+  | 'TypeScript';
 
 export interface Language {
   highlight: string;
@@ -35,7 +35,7 @@ export interface Language {
   logoClass: string;
   variant: string | null;
   variants: string[] | null;
-  options?: { [key: string]: boolean };
+  options?: {[key: string]: boolean};
   sample?: string;
   samples?: string[];
   samplesSources?: string[];

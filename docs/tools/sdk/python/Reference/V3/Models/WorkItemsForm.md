@@ -4,24 +4,24 @@ title: WorkItemsForm
 pagination_label: WorkItemsForm
 sidebar_label: WorkItemsForm
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'WorkItemsForm', 'WorkItemsForm'] 
+keywords: ['python', 'Python', 'sdk', 'WorkItemsForm', 'WorkItemsForm']
 slug: /tools/sdk/python/v3/models/work-items-form
 tags: ['SDK', 'Software Development Kit', 'WorkItemsForm', 'WorkItemsForm']
 ---
 
 # WorkItemsForm
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | ID of the form | [optional] 
-**name** | **str** | Name of the form | [optional] 
-**title** | **str** | The form title | [optional] 
-**subtitle** | **str** | The form subtitle. | [optional] 
-**target_user** | **str** | The name of the user that should be shown this form | [optional] 
-**sections** | [**[]SectionDetails**](section-details) | Sections of the form | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | ID of the form | [optional] |
+| **name** | **str** | Name of the form | [optional] |
+| **title** | **str** | The form title | [optional] |
+| **subtitle** | **str** | The form subtitle. | [optional] |
+| **target_user** | **str** | The name of the user that should be shown this form | [optional] |
+| **sections** | [**[]SectionDetails**](section-details) | Sections of the form | [optional] |
+
 }
 
 ## Example
@@ -41,5 +41,5 @@ sections=[
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

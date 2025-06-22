@@ -1,4 +1,4 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 
 export interface State {
   value: string;
@@ -8,7 +8,7 @@ export interface State {
 const initialState: State = {} as any;
 
 export const slice = createSlice({
-  name: "accept",
+  name: 'accept',
   initialState,
   reducers: {
     setAccept: (state, action: PayloadAction<string>) => {
@@ -17,6 +17,6 @@ export const slice = createSlice({
   },
 });
 
-export const { setAccept } = slice.actions;
+export const {setAccept} = slice.actions;
 
 export default slice.reducer;

@@ -4,36 +4,36 @@ title: AuthUser
 pagination_label: AuthUser
 sidebar_label: AuthUser
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AuthUser', 'V2025AuthUser'] 
+keywords: ['python', 'Python', 'sdk', 'AuthUser', 'V2025AuthUser']
 slug: /tools/sdk/python/v2025/models/auth-user
 tags: ['SDK', 'Software Development Kit', 'AuthUser', 'V2025AuthUser']
 ---
 
 # AuthUser
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**tenant** | **str** | Tenant name. | [optional] 
-**id** | **str** | Identity ID. | [optional] 
-**uid** | **str** | Identity's unique identitifier. | [optional] 
-**profile** | **str** | ID of the auth profile associated with the auth user. | [optional] 
-**identification_number** | **str** | Auth user's employee number. | [optional] 
-**email** | **str** | Auth user's email. | [optional] 
-**phone** | **str** | Auth user's phone number. | [optional] 
-**work_phone** | **str** | Auth user's work phone number. | [optional] 
-**personal_email** | **str** | Auth user's personal email. | [optional] 
-**firstname** | **str** | Auth user's first name. | [optional] 
-**lastname** | **str** | Auth user's last name. | [optional] 
-**display_name** | **str** | Auth user's name in displayed format. | [optional] 
-**alias** | **str** | Auth user's alias. | [optional] 
-**last_password_change_date** | **datetime** | Date of last password change. | [optional] 
-**last_login_timestamp** | **int** | Timestamp of the last login (long type value). | [optional] 
-**current_login_timestamp** | **int** | Timestamp of the current login (long type value). | [optional] 
-**last_unlock_timestamp** | **datetime** | The date and time when the user was last unlocked. | [optional] 
-**capabilities** | **[]str** | Array of the auth user's capabilities. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **tenant** | **str** | Tenant name. | [optional] |
+| **id** | **str** | Identity ID. | [optional] |
+| **uid** | **str** | Identity's unique identitifier. | [optional] |
+| **profile** | **str** | ID of the auth profile associated with the auth user. | [optional] |
+| **identification_number** | **str** | Auth user's employee number. | [optional] |
+| **email** | **str** | Auth user's email. | [optional] |
+| **phone** | **str** | Auth user's phone number. | [optional] |
+| **work_phone** | **str** | Auth user's work phone number. | [optional] |
+| **personal_email** | **str** | Auth user's personal email. | [optional] |
+| **firstname** | **str** | Auth user's first name. | [optional] |
+| **lastname** | **str** | Auth user's last name. | [optional] |
+| **display_name** | **str** | Auth user's name in displayed format. | [optional] |
+| **alias** | **str** | Auth user's alias. | [optional] |
+| **last_password_change_date** | **datetime** | Date of last password change. | [optional] |
+| **last_login_timestamp** | **int** | Timestamp of the last login (long type value). | [optional] |
+| **current_login_timestamp** | **int** | Timestamp of the current login (long type value). | [optional] |
+| **last_unlock_timestamp** | **datetime** | The date and time when the user was last unlocked. | [optional] |
+| **capabilities** | **[]str** | Array of the auth user's capabilities. | [optional] |
+
 }
 
 ## Example
@@ -65,5 +65,5 @@ capabilities=[
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

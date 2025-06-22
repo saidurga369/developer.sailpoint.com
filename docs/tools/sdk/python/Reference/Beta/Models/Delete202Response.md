@@ -4,21 +4,28 @@ title: Delete202Response
 pagination_label: Delete202Response
 sidebar_label: Delete202Response
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'Delete202Response', 'BetaDelete202Response'] 
+keywords:
+  ['python', 'Python', 'sdk', 'Delete202Response', 'BetaDelete202Response']
 slug: /tools/sdk/python/beta/models/delete202-response
-tags: ['SDK', 'Software Development Kit', 'Delete202Response', 'BetaDelete202Response']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'Delete202Response',
+    'BetaDelete202Response',
+  ]
 ---
 
 # Delete202Response
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'TASK_RESULT' ] | Type of object being referenced. | [optional] 
-**id** | **str** | Task result ID. | [optional] 
-**name** | **str** | Task result's human-readable display name (this should be null/empty). | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'TASK_RESULT' ] | Type of object being referenced. | [optional] |
+| **id** | **str** | Task result ID. | [optional] |
+| **name** | **str** | Task result's human-readable display name (this should be null/empty). | [optional] |
+
 }
 
 ## Example
@@ -33,5 +40,5 @@ name=''
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

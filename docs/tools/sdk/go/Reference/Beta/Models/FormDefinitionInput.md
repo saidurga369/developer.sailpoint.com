@@ -4,21 +4,28 @@ title: FormDefinitionInput
 pagination_label: FormDefinitionInput
 sidebar_label: FormDefinitionInput
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'FormDefinitionInput', 'BetaFormDefinitionInput'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'FormDefinitionInput', 'BetaFormDefinitionInput']
 slug: /tools/sdk/go/beta/models/form-definition-input
-tags: ['SDK', 'Software Development Kit', 'FormDefinitionInput', 'BetaFormDefinitionInput']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'FormDefinitionInput',
+    'BetaFormDefinitionInput',
+  ]
 ---
 
 # FormDefinitionInput
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Unique identifier for the form input. | [optional] 
-**Type** | Pointer to **string** | FormDefinitionInputType value. STRING FormDefinitionInputTypeString | [optional] 
-**Label** | Pointer to **string** | Name for the form input. | [optional] 
-**Description** | Pointer to **string** | Form input's description. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Unique identifier for the form input. | [optional] |
+| **Type** | Pointer to **string** | FormDefinitionInputType value. STRING FormDefinitionInputTypeString | [optional] |
+| **Label** | Pointer to **string** | Name for the form input. | [optional] |
+| **Description** | Pointer to **string** | Form input's description. | [optional] |
 
 ## Methods
 
@@ -26,18 +33,13 @@ Name | Type | Description | Notes
 
 `func NewFormDefinitionInput() *FormDefinitionInput`
 
-NewFormDefinitionInput instantiates a new FormDefinitionInput object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewFormDefinitionInput instantiates a new FormDefinitionInput object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewFormDefinitionInputWithDefaults
 
 `func NewFormDefinitionInputWithDefaults() *FormDefinitionInput`
 
-NewFormDefinitionInputWithDefaults instantiates a new FormDefinitionInput object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewFormDefinitionInputWithDefaults instantiates a new FormDefinitionInput object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -49,8 +51,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *FormDefinitionInput) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -74,8 +75,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *FormDefinitionInput) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -99,8 +99,7 @@ GetLabel returns the Label field if non-nil, zero value otherwise.
 
 `func (o *FormDefinitionInput) GetLabelOk() (*string, bool)`
 
-GetLabelOk returns a tuple with the Label field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLabelOk returns a tuple with the Label field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLabel
 
@@ -124,8 +123,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *FormDefinitionInput) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -138,5 +136,3 @@ SetDescription sets Description field to given value.
 `func (o *FormDefinitionInput) HasDescription() bool`
 
 HasDescription returns a boolean if a field has been set.
-
-

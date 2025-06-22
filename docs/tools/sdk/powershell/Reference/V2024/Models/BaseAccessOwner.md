@@ -4,26 +4,28 @@ title: BaseAccessOwner
 pagination_label: BaseAccessOwner
 sidebar_label: BaseAccessOwner
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'BaseAccessOwner', 'V2024BaseAccessOwner'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'BaseAccessOwner', 'V2024BaseAccessOwner']
 slug: /tools/sdk/powershell/v2024/models/base-access-owner
-tags: ['SDK', 'Software Development Kit', 'BaseAccessOwner', 'V2024BaseAccessOwner']
+tags:
+  ['SDK', 'Software Development Kit', 'BaseAccessOwner', 'V2024BaseAccessOwner']
 ---
-
 
 # BaseAccessOwner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** |  **Enum** [  "IDENTITY" ] | Owner's DTO type. | [optional] 
-**Id** | **String** | Owner's identity ID. | [optional] 
-**Name** | **String** | Owner's display name. | [optional] 
-**Email** | **String** | Owner's email. | [optional] 
+| Name      | Type                    | Description           | Notes      |
+| --------- | ----------------------- | --------------------- | ---------- |
+| **Type**  | **Enum** [ "IDENTITY" ] | Owner's DTO type.     | [optional] |
+| **Id**    | **String**              | Owner's identity ID.  | [optional] |
+| **Name**  | **String**              | Owner's display name. | [optional] |
+| **Email** | **String**              | Owner's email.        | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $BaseAccessOwner = Initialize-V2024BaseAccessOwner  -Type IDENTITY `
  -Id 2c9180a46faadee4016fb4e018c20639 `
@@ -32,10 +34,9 @@ $BaseAccessOwner = Initialize-V2024BaseAccessOwner  -Type IDENTITY `
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $BaseAccessOwner | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

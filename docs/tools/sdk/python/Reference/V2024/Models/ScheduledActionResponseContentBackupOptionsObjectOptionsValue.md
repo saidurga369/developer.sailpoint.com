@@ -4,19 +4,32 @@ title: ScheduledActionResponseContentBackupOptionsObjectOptionsValue
 pagination_label: ScheduledActionResponseContentBackupOptionsObjectOptionsValue
 sidebar_label: ScheduledActionResponseContentBackupOptionsObjectOptionsValue
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ScheduledActionResponseContentBackupOptionsObjectOptionsValue', 'V2024ScheduledActionResponseContentBackupOptionsObjectOptionsValue'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ScheduledActionResponseContentBackupOptionsObjectOptionsValue',
+    'V2024ScheduledActionResponseContentBackupOptionsObjectOptionsValue',
+  ]
 slug: /tools/sdk/python/v2024/models/scheduled-action-response-content-backup-options-object-options-value
-tags: ['SDK', 'Software Development Kit', 'ScheduledActionResponseContentBackupOptionsObjectOptionsValue', 'V2024ScheduledActionResponseContentBackupOptionsObjectOptionsValue']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ScheduledActionResponseContentBackupOptionsObjectOptionsValue',
+    'V2024ScheduledActionResponseContentBackupOptionsObjectOptionsValue',
+  ]
 ---
 
 # ScheduledActionResponseContentBackupOptionsObjectOptionsValue
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**included_names** | **[]str** | Set of names to be included. | [optional] 
+| Name               | Type      | Description                  | Notes      |
+| ------------------ | --------- | ---------------------------- | ---------- |
+| **included_names** | **[]str** | Set of names to be included. | [optional] |
+
 }
 
 ## Example
@@ -29,5 +42,5 @@ included_names=[Admin Role, User Role]
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

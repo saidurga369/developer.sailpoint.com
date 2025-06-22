@@ -4,25 +4,38 @@ title: CampaignActivatedCampaignCampaignOwner
 pagination_label: CampaignActivatedCampaignCampaignOwner
 sidebar_label: CampaignActivatedCampaignCampaignOwner
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'CampaignActivatedCampaignCampaignOwner', 'V2024CampaignActivatedCampaignCampaignOwner'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'CampaignActivatedCampaignCampaignOwner',
+    'V2024CampaignActivatedCampaignCampaignOwner',
+  ]
 slug: /tools/sdk/powershell/v2024/models/campaign-activated-campaign-campaign-owner
-tags: ['SDK', 'Software Development Kit', 'CampaignActivatedCampaignCampaignOwner', 'V2024CampaignActivatedCampaignCampaignOwner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CampaignActivatedCampaignCampaignOwner',
+    'V2024CampaignActivatedCampaignCampaignOwner',
+  ]
 ---
-
 
 # CampaignActivatedCampaignCampaignOwner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | The unique ID of the identity. | [required]
-**DisplayName** | **String** | The human friendly name of the identity. | [required]
-**Email** | **String** | The primary email address of the identity. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | The unique ID of the identity. | [required] |
+| **DisplayName** | **String** | The human friendly name of the identity. | [required] |
+| **Email** | **String** | The primary email address of the identity. | [required] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $CampaignActivatedCampaignCampaignOwner = Initialize-V2024CampaignActivatedCampaignCampaignOwner  -Id 37f080867702c1910177031320c40n27 `
  -DisplayName John Snow `
@@ -30,10 +43,9 @@ $CampaignActivatedCampaignCampaignOwner = Initialize-V2024CampaignActivatedCampa
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $CampaignActivatedCampaignCampaignOwner | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

@@ -4,25 +4,38 @@ title: IdentityCreatedIdentity
 pagination_label: IdentityCreatedIdentity
 sidebar_label: IdentityCreatedIdentity
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'IdentityCreatedIdentity', 'V2024IdentityCreatedIdentity'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'IdentityCreatedIdentity',
+    'V2024IdentityCreatedIdentity',
+  ]
 slug: /tools/sdk/powershell/v2024/models/identity-created-identity
-tags: ['SDK', 'Software Development Kit', 'IdentityCreatedIdentity', 'V2024IdentityCreatedIdentity']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityCreatedIdentity',
+    'V2024IdentityCreatedIdentity',
+  ]
 ---
-
 
 # IdentityCreatedIdentity
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** |  **Enum** [  "IDENTITY" ] | Created identity's DTO type. | [required]
-**Id** | **String** | Created identity ID. | [required]
-**Name** | **String** | Created identity's display name. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | **Enum** [ "IDENTITY" ] | Created identity's DTO type. | [required] |
+| **Id** | **String** | Created identity ID. | [required] |
+| **Name** | **String** | Created identity's display name. | [required] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $IdentityCreatedIdentity = Initialize-V2024IdentityCreatedIdentity  -Type IDENTITY `
  -Id 2c7180a46faadee4016fb4e018c20642 `
@@ -30,10 +43,9 @@ $IdentityCreatedIdentity = Initialize-V2024IdentityCreatedIdentity  -Type IDENTI
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $IdentityCreatedIdentity | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

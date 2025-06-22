@@ -4,29 +4,36 @@ title: SimIntegrationDetails
 pagination_label: SimIntegrationDetails
 sidebar_label: SimIntegrationDetails
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SimIntegrationDetails', 'V2025SimIntegrationDetails'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'SimIntegrationDetails', 'V2025SimIntegrationDetails']
 slug: /tools/sdk/go/v2025/models/sim-integration-details
-tags: ['SDK', 'Software Development Kit', 'SimIntegrationDetails', 'V2025SimIntegrationDetails']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SimIntegrationDetails',
+    'V2025SimIntegrationDetails',
+  ]
 ---
 
 # SimIntegrationDetails
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | System-generated unique ID of the Object | [optional] [readonly] 
-**Name** | **NullableString** | Name of the Object | 
-**Created** | Pointer to **SailPointTime** | Creation date of the Object | [optional] [readonly] 
-**Modified** | Pointer to **SailPointTime** | Last modification date of the Object | [optional] [readonly] 
-**Description** | Pointer to **string** | The description of the integration | [optional] 
-**Type** | Pointer to **string** | The integration type | [optional] 
-**Attributes** | Pointer to **map[string]interface{}** | The attributes map containing the credentials used to configure the integration. | [optional] 
-**Sources** | Pointer to **[]string** | The list of sources (managed resources) | [optional] 
-**Cluster** | Pointer to **string** | The cluster/proxy | [optional] 
-**StatusMap** | Pointer to **map[string]interface{}** | Custom mapping between the integration result and the provisioning result | [optional] 
-**Request** | Pointer to **map[string]interface{}** | Request data to customize desc and body of the created ticket | [optional] 
-**BeforeProvisioningRule** | Pointer to [**SimIntegrationDetailsAllOfBeforeProvisioningRule**](sim-integration-details-all-of-before-provisioning-rule) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | System-generated unique ID of the Object | [optional] [readonly] |
+| **Name** | **NullableString** | Name of the Object |
+| **Created** | Pointer to **SailPointTime** | Creation date of the Object | [optional] [readonly] |
+| **Modified** | Pointer to **SailPointTime** | Last modification date of the Object | [optional] [readonly] |
+| **Description** | Pointer to **string** | The description of the integration | [optional] |
+| **Type** | Pointer to **string** | The integration type | [optional] |
+| **Attributes** | Pointer to **map[string]interface{}** | The attributes map containing the credentials used to configure the integration. | [optional] |
+| **Sources** | Pointer to **[]string** | The list of sources (managed resources) | [optional] |
+| **Cluster** | Pointer to **string** | The cluster/proxy | [optional] |
+| **StatusMap** | Pointer to **map[string]interface{}** | Custom mapping between the integration result and the provisioning result | [optional] |
+| **Request** | Pointer to **map[string]interface{}** | Request data to customize desc and body of the created ticket | [optional] |
+| **BeforeProvisioningRule** | Pointer to [**SimIntegrationDetailsAllOfBeforeProvisioningRule**](sim-integration-details-all-of-before-provisioning-rule) |  | [optional] |
 
 ## Methods
 
@@ -34,18 +41,13 @@ Name | Type | Description | Notes
 
 `func NewSimIntegrationDetails(name NullableString, ) *SimIntegrationDetails`
 
-NewSimIntegrationDetails instantiates a new SimIntegrationDetails object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSimIntegrationDetails instantiates a new SimIntegrationDetails object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSimIntegrationDetailsWithDefaults
 
 `func NewSimIntegrationDetailsWithDefaults() *SimIntegrationDetails`
 
-NewSimIntegrationDetailsWithDefaults instantiates a new SimIntegrationDetails object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSimIntegrationDetailsWithDefaults instantiates a new SimIntegrationDetails object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -57,8 +59,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *SimIntegrationDetails) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -82,8 +83,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *SimIntegrationDetails) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -91,17 +91,18 @@ and a boolean to check if the value has been set.
 
 SetName sets Name field to given value.
 
-
 ### SetNameNil
 
 `func (o *SimIntegrationDetails) SetNameNil(b bool)`
 
- SetNameNil sets the value for Name to be an explicit nil
+SetNameNil sets the value for Name to be an explicit nil
 
 ### UnsetName
+
 `func (o *SimIntegrationDetails) UnsetName()`
 
 UnsetName ensures that no value is present for Name, not even an explicit nil
+
 ### GetCreated
 
 `func (o *SimIntegrationDetails) GetCreated() SailPointTime`
@@ -112,8 +113,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *SimIntegrationDetails) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -137,8 +137,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *SimIntegrationDetails) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -162,8 +161,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *SimIntegrationDetails) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -187,8 +185,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *SimIntegrationDetails) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -212,8 +209,7 @@ GetAttributes returns the Attributes field if non-nil, zero value otherwise.
 
 `func (o *SimIntegrationDetails) GetAttributesOk() (*map[string]interface{}, bool)`
 
-GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributes
 
@@ -231,12 +227,14 @@ HasAttributes returns a boolean if a field has been set.
 
 `func (o *SimIntegrationDetails) SetAttributesNil(b bool)`
 
- SetAttributesNil sets the value for Attributes to be an explicit nil
+SetAttributesNil sets the value for Attributes to be an explicit nil
 
 ### UnsetAttributes
+
 `func (o *SimIntegrationDetails) UnsetAttributes()`
 
 UnsetAttributes ensures that no value is present for Attributes, not even an explicit nil
+
 ### GetSources
 
 `func (o *SimIntegrationDetails) GetSources() []string`
@@ -247,8 +245,7 @@ GetSources returns the Sources field if non-nil, zero value otherwise.
 
 `func (o *SimIntegrationDetails) GetSourcesOk() (*[]string, bool)`
 
-GetSourcesOk returns a tuple with the Sources field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourcesOk returns a tuple with the Sources field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSources
 
@@ -272,8 +269,7 @@ GetCluster returns the Cluster field if non-nil, zero value otherwise.
 
 `func (o *SimIntegrationDetails) GetClusterOk() (*string, bool)`
 
-GetClusterOk returns a tuple with the Cluster field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetClusterOk returns a tuple with the Cluster field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCluster
 
@@ -297,8 +293,7 @@ GetStatusMap returns the StatusMap field if non-nil, zero value otherwise.
 
 `func (o *SimIntegrationDetails) GetStatusMapOk() (*map[string]interface{}, bool)`
 
-GetStatusMapOk returns a tuple with the StatusMap field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusMapOk returns a tuple with the StatusMap field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatusMap
 
@@ -322,8 +317,7 @@ GetRequest returns the Request field if non-nil, zero value otherwise.
 
 `func (o *SimIntegrationDetails) GetRequestOk() (*map[string]interface{}, bool)`
 
-GetRequestOk returns a tuple with the Request field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestOk returns a tuple with the Request field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequest
 
@@ -347,8 +341,7 @@ GetBeforeProvisioningRule returns the BeforeProvisioningRule field if non-nil, z
 
 `func (o *SimIntegrationDetails) GetBeforeProvisioningRuleOk() (*SimIntegrationDetailsAllOfBeforeProvisioningRule, bool)`
 
-GetBeforeProvisioningRuleOk returns a tuple with the BeforeProvisioningRule field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetBeforeProvisioningRuleOk returns a tuple with the BeforeProvisioningRule field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetBeforeProvisioningRule
 
@@ -361,5 +354,3 @@ SetBeforeProvisioningRule sets BeforeProvisioningRule field to given value.
 `func (o *SimIntegrationDetails) HasBeforeProvisioningRule() bool`
 
 HasBeforeProvisioningRule returns a boolean if a field has been set.
-
-

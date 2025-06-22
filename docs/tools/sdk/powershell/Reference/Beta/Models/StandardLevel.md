@@ -4,31 +4,28 @@ title: StandardLevel
 pagination_label: StandardLevel
 sidebar_label: StandardLevel
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'StandardLevel', 'BetaStandardLevel'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'StandardLevel', 'BetaStandardLevel']
 slug: /tools/sdk/powershell/beta/models/standard-level
 tags: ['SDK', 'Software Development Kit', 'StandardLevel', 'BetaStandardLevel']
 ---
-
 
 # StandardLevel
 
 ## Enum
 
+- `false` (value: `"false"`)
 
-* `false` (value: `"false"`)
+- `FATAL` (value: `"FATAL"`)
 
-* `FATAL` (value: `"FATAL"`)
+- `ERROR` (value: `"ERROR"`)
 
-* `ERROR` (value: `"ERROR"`)
+- `WARN` (value: `"WARN"`)
 
-* `WARN` (value: `"WARN"`)
+- `INFO` (value: `"INFO"`)
 
-* `INFO` (value: `"INFO"`)
+- `DEBUG` (value: `"DEBUG"`)
 
-* `DEBUG` (value: `"DEBUG"`)
+- `TRACE` (value: `"TRACE"`)
 
-* `TRACE` (value: `"TRACE"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

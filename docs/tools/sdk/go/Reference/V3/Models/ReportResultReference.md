@@ -4,21 +4,28 @@ title: ReportResultReference
 pagination_label: ReportResultReference
 sidebar_label: ReportResultReference
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ReportResultReference', 'ReportResultReference'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'ReportResultReference', 'ReportResultReference']
 slug: /tools/sdk/go/v3/models/report-result-reference
-tags: ['SDK', 'Software Development Kit', 'ReportResultReference', 'ReportResultReference']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ReportResultReference',
+    'ReportResultReference',
+  ]
 ---
 
 # ReportResultReference
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | SOD policy violation report result DTO type. | [optional] 
-**Id** | Pointer to **string** | SOD policy violation report result ID. | [optional] 
-**Name** | Pointer to **string** | Human-readable name of the SOD policy violation report result. | [optional] 
-**Status** | Pointer to **string** | Status of a SOD policy violation report. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to **string** | SOD policy violation report result DTO type. | [optional] |
+| **Id** | Pointer to **string** | SOD policy violation report result ID. | [optional] |
+| **Name** | Pointer to **string** | Human-readable name of the SOD policy violation report result. | [optional] |
+| **Status** | Pointer to **string** | Status of a SOD policy violation report. | [optional] |
 
 ## Methods
 
@@ -26,18 +33,13 @@ Name | Type | Description | Notes
 
 `func NewReportResultReference() *ReportResultReference`
 
-NewReportResultReference instantiates a new ReportResultReference object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewReportResultReference instantiates a new ReportResultReference object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewReportResultReferenceWithDefaults
 
 `func NewReportResultReferenceWithDefaults() *ReportResultReference`
 
-NewReportResultReferenceWithDefaults instantiates a new ReportResultReference object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewReportResultReferenceWithDefaults instantiates a new ReportResultReference object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -49,8 +51,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *ReportResultReference) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -74,8 +75,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *ReportResultReference) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -99,8 +99,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *ReportResultReference) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -124,8 +123,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *ReportResultReference) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -138,5 +136,3 @@ SetStatus sets Status field to given value.
 `func (o *ReportResultReference) HasStatus() bool`
 
 HasStatus returns a boolean if a field has been set.
-
-

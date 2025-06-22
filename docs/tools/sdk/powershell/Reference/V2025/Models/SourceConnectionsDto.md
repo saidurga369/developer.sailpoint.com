@@ -4,29 +4,42 @@ title: SourceConnectionsDto
 pagination_label: SourceConnectionsDto
 sidebar_label: SourceConnectionsDto
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'SourceConnectionsDto', 'V2025SourceConnectionsDto'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'SourceConnectionsDto',
+    'V2025SourceConnectionsDto',
+  ]
 slug: /tools/sdk/powershell/v2025/models/source-connections-dto
-tags: ['SDK', 'Software Development Kit', 'SourceConnectionsDto', 'V2025SourceConnectionsDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SourceConnectionsDto',
+    'V2025SourceConnectionsDto',
+  ]
 ---
-
 
 # SourceConnectionsDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**IdentityProfiles** | [**[]IdentityProfilesConnections**](identity-profiles-connections) | The IdentityProfile attached to this source | [optional] 
-**CredentialProfiles** | **[]String** | Name of the CredentialProfile attached to this source | [optional] 
-**SourceAttributes** | **[]String** | The attributes attached to this source | [optional] 
-**MappingProfiles** | **[]String** | The profiles attached to this source | [optional] 
-**DependentCustomTransforms** | [**[]TransformRead**](transform-read) | A list of custom transforms associated with this source. A transform will be considered associated with a source if any attributes of the transform specify the source as the sourceName. | [optional] 
-**DependentApps** | [**[]DependantAppConnections**](dependant-app-connections) |  | [optional] 
-**MissingDependents** | [**[]DependantConnectionsMissingDto**](dependant-connections-missing-dto) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **IdentityProfiles** | [**[]IdentityProfilesConnections**](identity-profiles-connections) | The IdentityProfile attached to this source | [optional] |
+| **CredentialProfiles** | **[]String** | Name of the CredentialProfile attached to this source | [optional] |
+| **SourceAttributes** | **[]String** | The attributes attached to this source | [optional] |
+| **MappingProfiles** | **[]String** | The profiles attached to this source | [optional] |
+| **DependentCustomTransforms** | [**[]TransformRead**](transform-read) | A list of custom transforms associated with this source. A transform will be considered associated with a source if any attributes of the transform specify the source as the sourceName. | [optional] |
+| **DependentApps** | [**[]DependantAppConnections**](dependant-app-connections) |  | [optional] |
+| **MissingDependents** | [**[]DependantConnectionsMissingDto**](dependant-connections-missing-dto) |  | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $SourceConnectionsDto = Initialize-V2025SourceConnectionsDto  -IdentityProfiles null `
  -CredentialProfiles null `
@@ -38,10 +51,9 @@ $SourceConnectionsDto = Initialize-V2025SourceConnectionsDto  -IdentityProfiles 
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $SourceConnectionsDto | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

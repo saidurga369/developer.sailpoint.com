@@ -4,22 +4,29 @@ title: FormDefinitionInput
 pagination_label: FormDefinitionInput
 sidebar_label: FormDefinitionInput
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'FormDefinitionInput', 'V2024FormDefinitionInput'] 
+keywords:
+  ['python', 'Python', 'sdk', 'FormDefinitionInput', 'V2024FormDefinitionInput']
 slug: /tools/sdk/python/v2024/models/form-definition-input
-tags: ['SDK', 'Software Development Kit', 'FormDefinitionInput', 'V2024FormDefinitionInput']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'FormDefinitionInput',
+    'V2024FormDefinitionInput',
+  ]
 ---
 
 # FormDefinitionInput
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Unique identifier for the form input. | [optional] 
-**type** |  **Enum** [  'STRING',    'ARRAY' ] | FormDefinitionInputType value. STRING FormDefinitionInputTypeString | [optional] 
-**label** | **str** | Name for the form input. | [optional] 
-**description** | **str** | Form input's description. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | Unique identifier for the form input. | [optional] |
+| **type** | **Enum** [ 'STRING', 'ARRAY' ] | FormDefinitionInputType value. STRING FormDefinitionInputTypeString | [optional] |
+| **label** | **str** | Name for the form input. | [optional] |
+| **description** | **str** | Form input's description. | [optional] |
+
 }
 
 ## Example
@@ -35,5 +42,5 @@ description='A single dynamic scalar value (i.e. number, string, date, etc.) tha
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

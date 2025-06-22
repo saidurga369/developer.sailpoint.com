@@ -4,7 +4,7 @@ title: RoleMatchDto
 pagination_label: RoleMatchDto
 sidebar_label: RoleMatchDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleMatchDto', 'V2024RoleMatchDto'] 
+keywords: ['go', 'Golang', 'sdk', 'RoleMatchDto', 'V2024RoleMatchDto']
 slug: /tools/sdk/go/v2024/models/role-match-dto
 tags: ['SDK', 'Software Development Kit', 'RoleMatchDto', 'V2024RoleMatchDto']
 ---
@@ -13,10 +13,10 @@ tags: ['SDK', 'Software Development Kit', 'RoleMatchDto', 'V2024RoleMatchDto']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**RoleRef** | Pointer to [**BaseReferenceDto**](base-reference-dto) |  | [optional] 
-**MatchedAttributes** | Pointer to [**[]ContextAttributeDto**](context-attribute-dto) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **RoleRef** | Pointer to [**BaseReferenceDto**](base-reference-dto) |  | [optional] |
+| **MatchedAttributes** | Pointer to [**[]ContextAttributeDto**](context-attribute-dto) |  | [optional] |
 
 ## Methods
 
@@ -24,18 +24,13 @@ Name | Type | Description | Notes
 
 `func NewRoleMatchDto() *RoleMatchDto`
 
-NewRoleMatchDto instantiates a new RoleMatchDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleMatchDto instantiates a new RoleMatchDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleMatchDtoWithDefaults
 
 `func NewRoleMatchDtoWithDefaults() *RoleMatchDto`
 
-NewRoleMatchDtoWithDefaults instantiates a new RoleMatchDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleMatchDtoWithDefaults instantiates a new RoleMatchDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetRoleRef
 
@@ -47,8 +42,7 @@ GetRoleRef returns the RoleRef field if non-nil, zero value otherwise.
 
 `func (o *RoleMatchDto) GetRoleRefOk() (*BaseReferenceDto, bool)`
 
-GetRoleRefOk returns a tuple with the RoleRef field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRoleRefOk returns a tuple with the RoleRef field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRoleRef
 
@@ -72,8 +66,7 @@ GetMatchedAttributes returns the MatchedAttributes field if non-nil, zero value 
 
 `func (o *RoleMatchDto) GetMatchedAttributesOk() (*[]ContextAttributeDto, bool)`
 
-GetMatchedAttributesOk returns a tuple with the MatchedAttributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMatchedAttributesOk returns a tuple with the MatchedAttributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMatchedAttributes
 
@@ -86,5 +79,3 @@ SetMatchedAttributes sets MatchedAttributes field to given value.
 `func (o *RoleMatchDto) HasMatchedAttributes() bool`
 
 HasMatchedAttributes returns a boolean if a field has been set.
-
-

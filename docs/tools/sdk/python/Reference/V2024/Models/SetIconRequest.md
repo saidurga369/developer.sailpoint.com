@@ -4,19 +4,20 @@ title: SetIconRequest
 pagination_label: SetIconRequest
 sidebar_label: SetIconRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SetIconRequest', 'V2024SetIconRequest'] 
+keywords: ['python', 'Python', 'sdk', 'SetIconRequest', 'V2024SetIconRequest']
 slug: /tools/sdk/python/v2024/models/set-icon-request
-tags: ['SDK', 'Software Development Kit', 'SetIconRequest', 'V2024SetIconRequest']
+tags:
+  ['SDK', 'Software Development Kit', 'SetIconRequest', 'V2024SetIconRequest']
 ---
 
 # SetIconRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**image** | **bytearray** | file with icon. Allowed mime-types ['image/png', 'image/jpeg'] | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **image** | **bytearray** | file with icon. Allowed mime-types ['image/png', 'image/jpeg'] | [required] |
+
 }
 
 ## Example
@@ -29,5 +30,5 @@ image='\x00\x00\x00\x02'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,23 +4,36 @@ title: WorkflowLibraryFormFields
 pagination_label: WorkflowLibraryFormFields
 sidebar_label: WorkflowLibraryFormFields
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'WorkflowLibraryFormFields', 'V2024WorkflowLibraryFormFields'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'WorkflowLibraryFormFields',
+    'V2024WorkflowLibraryFormFields',
+  ]
 slug: /tools/sdk/go/v2024/models/workflow-library-form-fields
-tags: ['SDK', 'Software Development Kit', 'WorkflowLibraryFormFields', 'V2024WorkflowLibraryFormFields']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'WorkflowLibraryFormFields',
+    'V2024WorkflowLibraryFormFields',
+  ]
 ---
 
 # WorkflowLibraryFormFields
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Description** | Pointer to **string** | Description of the form field | [optional] 
-**HelpText** | Pointer to **string** | Describes the form field in the UI | [optional] 
-**Label** | Pointer to **string** | A human readable name for this form field in the UI | [optional] 
-**Name** | Pointer to **string** | The name of the input attribute | [optional] 
-**Required** | Pointer to **bool** | Denotes if this field is a required attribute | [optional] [default to false]
-**Type** | Pointer to **NullableString** | The type of the form field | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Description** | Pointer to **string** | Description of the form field | [optional] |
+| **HelpText** | Pointer to **string** | Describes the form field in the UI | [optional] |
+| **Label** | Pointer to **string** | A human readable name for this form field in the UI | [optional] |
+| **Name** | Pointer to **string** | The name of the input attribute | [optional] |
+| **Required** | Pointer to **bool** | Denotes if this field is a required attribute | [optional] [default to false] |
+| **Type** | Pointer to **NullableString** | The type of the form field | [optional] |
 
 ## Methods
 
@@ -28,18 +41,13 @@ Name | Type | Description | Notes
 
 `func NewWorkflowLibraryFormFields() *WorkflowLibraryFormFields`
 
-NewWorkflowLibraryFormFields instantiates a new WorkflowLibraryFormFields object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewWorkflowLibraryFormFields instantiates a new WorkflowLibraryFormFields object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewWorkflowLibraryFormFieldsWithDefaults
 
 `func NewWorkflowLibraryFormFieldsWithDefaults() *WorkflowLibraryFormFields`
 
-NewWorkflowLibraryFormFieldsWithDefaults instantiates a new WorkflowLibraryFormFields object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewWorkflowLibraryFormFieldsWithDefaults instantiates a new WorkflowLibraryFormFields object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetDescription
 
@@ -51,8 +59,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *WorkflowLibraryFormFields) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -76,8 +83,7 @@ GetHelpText returns the HelpText field if non-nil, zero value otherwise.
 
 `func (o *WorkflowLibraryFormFields) GetHelpTextOk() (*string, bool)`
 
-GetHelpTextOk returns a tuple with the HelpText field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetHelpTextOk returns a tuple with the HelpText field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetHelpText
 
@@ -101,8 +107,7 @@ GetLabel returns the Label field if non-nil, zero value otherwise.
 
 `func (o *WorkflowLibraryFormFields) GetLabelOk() (*string, bool)`
 
-GetLabelOk returns a tuple with the Label field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLabelOk returns a tuple with the Label field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLabel
 
@@ -126,8 +131,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *WorkflowLibraryFormFields) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -151,8 +155,7 @@ GetRequired returns the Required field if non-nil, zero value otherwise.
 
 `func (o *WorkflowLibraryFormFields) GetRequiredOk() (*bool, bool)`
 
-GetRequiredOk returns a tuple with the Required field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequiredOk returns a tuple with the Required field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequired
 
@@ -176,8 +179,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *WorkflowLibraryFormFields) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -195,10 +197,10 @@ HasType returns a boolean if a field has been set.
 
 `func (o *WorkflowLibraryFormFields) SetTypeNil(b bool)`
 
- SetTypeNil sets the value for Type to be an explicit nil
+SetTypeNil sets the value for Type to be an explicit nil
 
 ### UnsetType
+
 `func (o *WorkflowLibraryFormFields) UnsetType()`
 
 UnsetType ensures that no value is present for Type, not even an explicit nil
-

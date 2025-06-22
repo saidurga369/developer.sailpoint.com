@@ -4,83 +4,71 @@ title: Identities
 pagination_label: Identities
 sidebar_label: Identities
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Identities', 'V2025Identities'] 
+keywords: ['go', 'Golang', 'sdk', 'Identities', 'V2025Identities']
 slug: /tools/sdk/go/v2025/methods/identities
 tags: ['SDK', 'Software Development Kit', 'Identities', 'V2025Identities']
 ---
 
 # IdentitiesAPI
-  Use this API to implement identity functionality.
-With this functionality in place, administrators can synchronize an identity&#39;s attributes with its various source attributes.
+
+Use this API to implement identity functionality. With this functionality in place, administrators can synchronize an identity&#39;s attributes with its various source attributes.
 
 Identity Security Cloud uses identities as users&#39; authoritative accounts. Identities can own other accounts, entitlements, and attributes.
 
-An identity has a variety of attributes, such as an account name, an email address, a job title, and more.
-These identity attributes can be correlated with different attributes on different sources.
-For example, the identity John.Smith can own an account in the GitHub source with the account name John-Smith-Org, and Identity Security Cloud knows they are the same person with the same access and attributes.
+An identity has a variety of attributes, such as an account name, an email address, a job title, and more. These identity attributes can be correlated with different attributes on different sources. For example, the identity John.Smith can own an account in the GitHub source with the account name John-Smith-Org, and Identity Security Cloud knows they are the same person with the same access and attributes.
 
-In Identity Security Cloud, administrators often set up these synchronizations to get triggered automatically with a change or to run on a schedule.
-To manually synchronize attributes for an identity, administrators can use the Identities drop-down menu and select Identity List to view the list of identities.
-They can then select the identity they want to manually synchronize and use the hamburger menu to select &#39;Synchronize Attributes.&#39;
-Doing so immediately begins the attribute synchronization and analyzes all accounts for the selected identity.
+In Identity Security Cloud, administrators often set up these synchronizations to get triggered automatically with a change or to run on a schedule. To manually synchronize attributes for an identity, administrators can use the Identities drop-down menu and select Identity List to view the list of identities. They can then select the identity they want to manually synchronize and use the hamburger menu to select &#39;Synchronize Attributes.&#39; Doing so immediately begins the attribute synchronization and analyzes all accounts for the selected identity.
 
 Refer to [Synchronizing Attributes](https://documentation.sailpoint.com/saas/help/provisioning/attr_sync.html) for more information about synchronizing attributes.
- 
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/v2025*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**delete-identity**](#delete-identity) | **Delete** `/identities/{id}` | Delete identity
-[**get-identity**](#get-identity) | **Get** `/identities/{id}` | Identity details
-[**get-identity-ownership-details**](#get-identity-ownership-details) | **Get** `/identities/{identityId}/ownership` | Get ownership details
-[**get-role-assignment**](#get-role-assignment) | **Get** `/identities/{identityId}/role-assignments/{assignmentId}` | Role assignment details
-[**get-role-assignments**](#get-role-assignments) | **Get** `/identities/{identityId}/role-assignments` | List role assignments
-[**list-identities**](#list-identities) | **Get** `/identities` | List identities
-[**reset-identity**](#reset-identity) | **Post** `/identities/{id}/reset` | Reset an identity
-[**send-identity-verification-account-token**](#send-identity-verification-account-token) | **Post** `/identities/{id}/verification/account/send` | Send password reset email
-[**start-identities-invite**](#start-identities-invite) | **Post** `/identities/invite` | Invite identities to register
-[**start-identity-processing**](#start-identity-processing) | **Post** `/identities/process` | Process a list of identityids
-[**synchronize-attributes-for-identity**](#synchronize-attributes-for-identity) | **Post** `/identities/{identityId}/synchronize-attributes` | Attribute synchronization for single identity.
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**delete-identity**](#delete-identity) | **Delete** `/identities/{id}` | Delete identity |
+| [**get-identity**](#get-identity) | **Get** `/identities/{id}` | Identity details |
+| [**get-identity-ownership-details**](#get-identity-ownership-details) | **Get** `/identities/{identityId}/ownership` | Get ownership details |
+| [**get-role-assignment**](#get-role-assignment) | **Get** `/identities/{identityId}/role-assignments/{assignmentId}` | Role assignment details |
+| [**get-role-assignments**](#get-role-assignments) | **Get** `/identities/{identityId}/role-assignments` | List role assignments |
+| [**list-identities**](#list-identities) | **Get** `/identities` | List identities |
+| [**reset-identity**](#reset-identity) | **Post** `/identities/{id}/reset` | Reset an identity |
+| [**send-identity-verification-account-token**](#send-identity-verification-account-token) | **Post** `/identities/{id}/verification/account/send` | Send password reset email |
+| [**start-identities-invite**](#start-identities-invite) | **Post** `/identities/invite` | Invite identities to register |
+| [**start-identity-processing**](#start-identity-processing) | **Post** `/identities/process` | Process a list of identityids |
+| [**synchronize-attributes-for-identity**](#synchronize-attributes-for-identity) | **Post** `/identities/{identityId}/synchronize-attributes` | Attribute synchronization for single identity. |
 
 ## delete-identity
-:::warning experimental 
-This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint.
-:::
-:::tip setting x-sailpoint-experimental header
- on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK.
- Example:
- ```go
-   configuration = Configuration()
-   configuration.experimental = True
- ```
-:::
-Delete identity
-The API returns successful response if the requested identity was deleted.
+
+:::warning experimental This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint. ::: :::tip setting x-sailpoint-experimental header on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK. Example:
+
+```go
+  configuration = Configuration()
+  configuration.experimental = True
+```
+
+::: Delete identity The API returns successful response if the requested identity was deleted.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/delete-identity)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Identity Id | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Identity Id |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteIdentityRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;]
+**xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;]
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -96,8 +84,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -105,7 +93,7 @@ func main() {
     id := `ef38f94347e94562b5bb8424a56397d8` // string | Identity Id # string | Identity Id
     xSailPointExperimental := `true` // string | Use this header to enable this experimental API. (default to "true") # string | Use this header to enable this experimental API. (default to "true")
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -115,34 +103,31 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `IdentitiesAPI.DeleteIdentity``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## get-identity
-Identity details
-This API returns a single identity using the Identity ID.
+
+Identity details This API returns a single identity using the Identity ID.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/get-identity)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Identity Id | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Identity Id |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetIdentityRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -162,15 +147,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `ef38f94347e94562b5bb8424a56397d8` // string | Identity Id # string | Identity Id
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -188,29 +173,24 @@ func main() {
 [[Back to top]](#)
 
 ## get-identity-ownership-details
-Get ownership details
-Use this API to return an identity's owned objects that will cause problems for deleting the identity. 
-Use this API as a checklist of objects that you need to reassign to a different identity before you can delete the identity. 
-For a full list of objects owned by an identity, use the [Search API](https://developer.sailpoint.com/docs/api/v3/search-post/).  When you search for identities, the returned identities have a property, `owns`, that contains a more comprehensive list of identity's owned objects.
+
+Get ownership details Use this API to return an identity's owned objects that will cause problems for deleting the identity. Use this API as a checklist of objects that you need to reassign to a different identity before you can delete the identity. For a full list of objects owned by an identity, use the [Search API](https://developer.sailpoint.com/docs/api/v3/search-post/). When you search for identities, the returned identities have a property, `owns`, that contains a more comprehensive list of identity's owned objects.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/get-identity-ownership-details)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**identityId** | **string** | Identity ID. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **identityId** | **string** | Identity ID. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetIdentityOwnershipDetailsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -230,15 +210,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     identityId := `ff8081814d2a8036014d701f3fbf53fa` // string | Identity ID. # string | Identity ID.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -256,29 +236,25 @@ func main() {
 [[Back to top]](#)
 
 ## get-role-assignment
-Role assignment details
 
+Role assignment details
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/get-role-assignment)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**identityId** | **string** | Identity Id | 
-**assignmentId** | **string** | Assignment Id | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **identityId** | **string** | Identity Id |
+| **assignmentId** | **string** | Assignment Id |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetRoleAssignmentRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -298,8 +274,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -307,7 +283,7 @@ func main() {
     identityId := `ef38f94347e94562b5bb8424a56397d8` // string | Identity Id # string | Identity Id
     assignmentId := `1cbb0705b38c4226b1334eadd8874086` // string | Assignment Id # string | Assignment Id
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -325,29 +301,26 @@ func main() {
 [[Back to top]](#)
 
 ## get-role-assignments
-List role assignments
-This returns either a list of Role Assignments when querying with either a Role Id or Role Name, or a list of Role Assignment References if querying with only identity Id.
+
+List role assignments This returns either a list of Role Assignments when querying with either a Role Id or Role Name, or a list of Role Assignment References if querying with only identity Id.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/get-role-assignments)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**identityId** | **string** | Identity Id to get the role assignments for | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **identityId** | **string** | Identity Id to get the role assignments for |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetRoleAssignmentsRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **roleId** | **string** | Role Id to filter the role assignments with | 
- **roleName** | **string** | Role name to filter the role assignments with | 
+**roleId** | **string** | Role Id to filter the role assignments with | **roleName** | **string** | Role name to filter the role assignments with |
 
 ### Return type
 
@@ -367,8 +340,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -377,7 +350,7 @@ func main() {
     roleId := `e7697a1e96d04db1ac7b0f4544915d2c` // string | Role Id to filter the role assignments with (optional) # string | Role Id to filter the role assignments with (optional)
     roleName := `Engineer` // string | Role name to filter the role assignments with (optional) # string | Role name to filter the role assignments with (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -395,28 +368,25 @@ func main() {
 [[Back to top]](#)
 
 ## list-identities
-List identities
-This API returns a list of identities.
+
+List identities This API returns a list of identities.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/list-identities)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListIdentitiesRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, in*  **name**: *eq, sw*  **alias**: *eq, sw*  **firstname**: *eq, sw*  **lastname**: *eq, sw*  **email**: *eq, sw*  **cloudStatus**: *eq*  **processingState**: *eq*  **correlated**: *eq*  **protected**: *eq* | 
- **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **name, alias, cloudStatus** | 
- **defaultFilter** | **string** | Adds additional filter to filters query parameter.  CORRELATED_ONLY adds correlated&#x3D;true and returns only identities that are correlated.  NONE does not add any and returns all identities that satisfy filters query parameter. | [default to &quot;CORRELATED_ONLY&quot;]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **id**: _eq, in_ **name**: _eq, sw_ **alias**: _eq, sw_ **firstname**: _eq, sw_ **lastname**: _eq, sw_ **email**: _eq, sw_ **cloudStatus**: _eq_ **processingState**: _eq_ **correlated**: _eq_ **protected**: _eq_ |
+| **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results) Sorting is supported for the following fields: **name, alias, cloudStatus** |
+| **defaultFilter** | **string** | Adds additional filter to filters query parameter. CORRELATED_ONLY adds correlated&#x3D;true and returns only identities that are correlated. NONE does not add any and returns all identities that satisfy filters query parameter. | [default to &quot;CORRELATED_ONLY&quot;] |
+| **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false] |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
 
 ### Return type
 
@@ -436,8 +406,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -449,7 +419,7 @@ func main() {
     limit := 250 // int32 | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 250) # int32 | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 250)
     offset := 0 // int32 | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 0) # int32 | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 0)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -467,31 +437,28 @@ func main() {
 [[Back to top]](#)
 
 ## reset-identity
-Reset an identity
-Use this endpoint to reset a user's identity if they have forgotten their authentication information like their answers to knowledge-based questions. Resetting an identity de-registers the user and removes any elevated user levels they have.
+
+Reset an identity Use this endpoint to reset a user's identity if they have forgotten their authentication information like their answers to knowledge-based questions. Resetting an identity de-registers the user and removes any elevated user levels they have.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/reset-identity)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**identityId** | **string** | Identity Id | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **identityId** | **string** | Identity Id |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiResetIdentityRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -507,15 +474,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     identityId := `ef38f94347e94562b5bb8424a56397d8` // string | Identity Id # string | Identity Id
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -525,52 +492,45 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `IdentitiesAPI.ResetIdentity``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## send-identity-verification-account-token
-:::warning experimental 
-This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint.
-:::
-:::tip setting x-sailpoint-experimental header
- on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK.
- Example:
- ```go
-   configuration = Configuration()
-   configuration.experimental = True
- ```
-:::
-Send password reset email
-This API sends an email with the link to start Password Reset. After selecting the link an identity will be able to set up a new password. Emails expire after 2 hours.
 
+:::warning experimental This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint. ::: :::tip setting x-sailpoint-experimental header on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK. Example:
+
+```go
+  configuration = Configuration()
+  configuration.experimental = True
+```
+
+::: Send password reset email This API sends an email with the link to start Password Reset. After selecting the link an identity will be able to set up a new password. Emails expire after 2 hours.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/send-identity-verification-account-token)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Identity ID | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Identity ID |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSendIdentityVerificationAccountTokenRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;] |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;]
-
- **sendAccountVerificationRequest** | [**SendAccountVerificationRequest**](../models/send-account-verification-request) |  | 
+**sendAccountVerificationRequest** | [**SendAccountVerificationRequest**](../models/send-account-verification-request) | |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -597,14 +557,14 @@ func main() {
     sendaccountverificationrequest := []byte(`{
           "sourceName" : "Active Directory Source",
           "via" : "EMAIL_WORK"
-        }`) // SendAccountVerificationRequest | 
+        }`) // SendAccountVerificationRequest |
 
     var sendAccountVerificationRequest v2025.SendAccountVerificationRequest
     if err := json.Unmarshal(sendaccountverificationrequest, &sendAccountVerificationRequest); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -614,35 +574,31 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `IdentitiesAPI.SendIdentityVerificationAccountToken``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## start-identities-invite
-Invite identities to register
-This API submits a task for inviting given identities via email to complete registration. The invitation email will include the link. After selecting the link an identity will be able to set up password and log in into the system. Invitations expire after 7 days. By default invitations send to the work identity email. It can be changed in Admin > Identities > Identity Profiles by selecting corresponding profile and editing Invitation Options.
+
+Invite identities to register This API submits a task for inviting given identities via email to complete registration. The invitation email will include the link. After selecting the link an identity will be able to set up password and log in into the system. Invitations expire after 7 days. By default invitations send to the work identity email. It can be changed in Admin > Identities > Identity Profiles by selecting corresponding profile and editing Invitation Options.
 
 This task will send an invitation email only for unregistered identities.
 
 The executed task status can be checked by Task Management > [Get task status by ID](https://developer.sailpoint.com/docs/api/beta/get-task-status).
 
-
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/start-identities-invite)
 
 ### Path Parameters
-
-
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiStartIdentitiesInviteRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **inviteIdentitiesRequest** | [**InviteIdentitiesRequest**](../models/invite-identities-request) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **inviteIdentitiesRequest** | [**InviteIdentitiesRequest**](../models/invite-identities-request) |  |
 
 ### Return type
 
@@ -671,14 +627,14 @@ func main() {
     inviteidentitiesrequest := []byte(`{
           "ids" : [ "2b568c65bc3c4c57a43bd97e3a8e55", "2c9180867769897d01776ed5f125512f" ],
           "uninvited" : false
-        }`) // InviteIdentitiesRequest | 
+        }`) // InviteIdentitiesRequest |
 
     var inviteIdentitiesRequest v2025.InviteIdentitiesRequest
     if err := json.Unmarshal(inviteidentitiesrequest, &inviteIdentitiesRequest); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -696,21 +652,18 @@ func main() {
 [[Back to top]](#)
 
 ## start-identity-processing
-:::warning experimental 
-This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint.
-:::
-:::tip setting x-sailpoint-experimental header
- on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK.
- Example:
- ```go
-   configuration = Configuration()
-   configuration.experimental = True
- ```
-:::
-Process a list of identityids
-This operation should not be used to schedule your own identity processing or to perform system wide identity refreshes. The system will use a combination of [event-based processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html?h=process#event-based-processing) and [scheduled processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html?h=process#scheduled-processing) that runs every day at 8:00 AM and 8:00 PM in the tenant's timezone to keep your identities synchronized. 
+
+:::warning experimental This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint. ::: :::tip setting x-sailpoint-experimental header on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK. Example:
+
+```go
+  configuration = Configuration()
+  configuration.experimental = True
+```
+
+::: Process a list of identityids This operation should not be used to schedule your own identity processing or to perform system wide identity refreshes. The system will use a combination of [event-based processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html?h=process#event-based-processing) and [scheduled processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html?h=process#scheduled-processing) that runs every day at 8:00 AM and 8:00 PM in the tenant's timezone to keep your identities synchronized.
 
 This endpoint will perform the following tasks:
+
 1. Calculate identity attributes, including applying or running any rules or transforms (e.g. calculate Lifecycle State at a point-in-time it's expected to change).
 2. Evaluate role assignments, leading to assignment of new roles and removal of existing roles.
 3. Enforce provisioning for any assigned accesses that haven't been fulfilled (e.g. failure due to source health).
@@ -721,17 +674,14 @@ This endpoint will perform the following tasks:
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiStartIdentityProcessingRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;]
- **processIdentitiesRequest** | [**ProcessIdentitiesRequest**](../models/process-identities-request) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;] |
+| **processIdentitiesRequest** | [**ProcessIdentitiesRequest**](../models/process-identities-request) |  |
 
 ### Return type
 
@@ -760,14 +710,14 @@ func main() {
     xSailPointExperimental := `true` // string | Use this header to enable this experimental API. (default to "true") # string | Use this header to enable this experimental API. (default to "true")
     processidentitiesrequest := []byte(`{
           "identityIds" : [ "ef38f94347e94562b5bb8424a56397d8", "ef38f94347e94562b5bb8424a56397d8", "ef38f94347e94562b5bb8424a56397d8", "ef38f94347e94562b5bb8424a56397d8", "ef38f94347e94562b5bb8424a56397d8" ]
-        }`) // ProcessIdentitiesRequest | 
+        }`) // ProcessIdentitiesRequest |
 
     var processIdentitiesRequest v2025.ProcessIdentitiesRequest
     if err := json.Unmarshal(processidentitiesrequest, &processIdentitiesRequest); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -785,39 +735,33 @@ func main() {
 [[Back to top]](#)
 
 ## synchronize-attributes-for-identity
-:::warning experimental 
-This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint.
-:::
-:::tip setting x-sailpoint-experimental header
- on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK.
- Example:
- ```go
-   configuration = Configuration()
-   configuration.experimental = True
- ```
-:::
-Attribute synchronization for single identity.
-This end-point performs attribute synchronization for a selected identity. The endpoint can be called once in 10 seconds per identity.
+
+:::warning experimental This API is currently in an experimental state. The API is subject to change based on feedback and further testing. You must include the X-SailPoint-Experimental header and set it to `true` to use this endpoint. ::: :::tip setting x-sailpoint-experimental header on the configuration object you can set the `x-sailpoint-experimental` header to `true' to enable all experimantl endpoints within the SDK. Example:
+
+```go
+  configuration = Configuration()
+  configuration.experimental = True
+```
+
+::: Attribute synchronization for single identity. This end-point performs attribute synchronization for a selected identity. The endpoint can be called once in 10 seconds per identity.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/synchronize-attributes-for-identity)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**identityId** | **string** | The Identity id | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **identityId** | **string** | The Identity id |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSynchronizeAttributesForIdentityRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;]
+**xSailPointExperimental** | **string** | Use this header to enable this experimental API. | [default to &quot;true&quot;]
 
 ### Return type
 
@@ -837,8 +781,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -846,7 +790,7 @@ func main() {
     identityId := `identityId_example` // string | The Identity id # string | The Identity id
     xSailPointExperimental := `true` // string | Use this header to enable this experimental API. (default to "true") # string | Use this header to enable this experimental API. (default to "true")
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -862,4 +806,3 @@ func main() {
 ```
 
 [[Back to top]](#)
-

@@ -4,23 +4,36 @@ title: OutliersContributingFeatureAccessItems
 pagination_label: OutliersContributingFeatureAccessItems
 sidebar_label: OutliersContributingFeatureAccessItems
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'OutliersContributingFeatureAccessItems', 'V2024OutliersContributingFeatureAccessItems'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'OutliersContributingFeatureAccessItems',
+    'V2024OutliersContributingFeatureAccessItems',
+  ]
 slug: /tools/sdk/go/v2024/models/outliers-contributing-feature-access-items
-tags: ['SDK', 'Software Development Kit', 'OutliersContributingFeatureAccessItems', 'V2024OutliersContributingFeatureAccessItems']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'OutliersContributingFeatureAccessItems',
+    'V2024OutliersContributingFeatureAccessItems',
+  ]
 ---
 
 # OutliersContributingFeatureAccessItems
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The ID of the access item | [optional] 
-**DisplayName** | Pointer to **string** | the display name of the access item | [optional] 
-**Description** | Pointer to **NullableString** | Description of the access item. | [optional] 
-**AccessType** | Pointer to **string** | The type of the access item. | [optional] 
-**SourceName** | Pointer to **string** | the associated source name if it exists | [optional] 
-**ExtremelyRare** | Pointer to **bool** | rarest access | [optional] [default to false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The ID of the access item | [optional] |
+| **DisplayName** | Pointer to **string** | the display name of the access item | [optional] |
+| **Description** | Pointer to **NullableString** | Description of the access item. | [optional] |
+| **AccessType** | Pointer to **string** | The type of the access item. | [optional] |
+| **SourceName** | Pointer to **string** | the associated source name if it exists | [optional] |
+| **ExtremelyRare** | Pointer to **bool** | rarest access | [optional] [default to false] |
 
 ## Methods
 
@@ -28,18 +41,13 @@ Name | Type | Description | Notes
 
 `func NewOutliersContributingFeatureAccessItems() *OutliersContributingFeatureAccessItems`
 
-NewOutliersContributingFeatureAccessItems instantiates a new OutliersContributingFeatureAccessItems object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewOutliersContributingFeatureAccessItems instantiates a new OutliersContributingFeatureAccessItems object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewOutliersContributingFeatureAccessItemsWithDefaults
 
 `func NewOutliersContributingFeatureAccessItemsWithDefaults() *OutliersContributingFeatureAccessItems`
 
-NewOutliersContributingFeatureAccessItemsWithDefaults instantiates a new OutliersContributingFeatureAccessItems object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewOutliersContributingFeatureAccessItemsWithDefaults instantiates a new OutliersContributingFeatureAccessItems object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -51,8 +59,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *OutliersContributingFeatureAccessItems) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -76,8 +83,7 @@ GetDisplayName returns the DisplayName field if non-nil, zero value otherwise.
 
 `func (o *OutliersContributingFeatureAccessItems) GetDisplayNameOk() (*string, bool)`
 
-GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayName
 
@@ -101,8 +107,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *OutliersContributingFeatureAccessItems) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -120,12 +125,14 @@ HasDescription returns a boolean if a field has been set.
 
 `func (o *OutliersContributingFeatureAccessItems) SetDescriptionNil(b bool)`
 
- SetDescriptionNil sets the value for Description to be an explicit nil
+SetDescriptionNil sets the value for Description to be an explicit nil
 
 ### UnsetDescription
+
 `func (o *OutliersContributingFeatureAccessItems) UnsetDescription()`
 
 UnsetDescription ensures that no value is present for Description, not even an explicit nil
+
 ### GetAccessType
 
 `func (o *OutliersContributingFeatureAccessItems) GetAccessType() string`
@@ -136,8 +143,7 @@ GetAccessType returns the AccessType field if non-nil, zero value otherwise.
 
 `func (o *OutliersContributingFeatureAccessItems) GetAccessTypeOk() (*string, bool)`
 
-GetAccessTypeOk returns a tuple with the AccessType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessTypeOk returns a tuple with the AccessType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessType
 
@@ -161,8 +167,7 @@ GetSourceName returns the SourceName field if non-nil, zero value otherwise.
 
 `func (o *OutliersContributingFeatureAccessItems) GetSourceNameOk() (*string, bool)`
 
-GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceName
 
@@ -186,8 +191,7 @@ GetExtremelyRare returns the ExtremelyRare field if non-nil, zero value otherwis
 
 `func (o *OutliersContributingFeatureAccessItems) GetExtremelyRareOk() (*bool, bool)`
 
-GetExtremelyRareOk returns a tuple with the ExtremelyRare field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetExtremelyRareOk returns a tuple with the ExtremelyRare field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetExtremelyRare
 
@@ -200,5 +204,3 @@ SetExtremelyRare sets ExtremelyRare field to given value.
 `func (o *OutliersContributingFeatureAccessItems) HasExtremelyRare() bool`
 
 HasExtremelyRare returns a boolean if a field has been set.
-
-

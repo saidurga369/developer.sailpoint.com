@@ -4,7 +4,7 @@ title: ConfigType
 pagination_label: ConfigType
 sidebar_label: ConfigType
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ConfigType', 'BetaConfigType'] 
+keywords: ['go', 'Golang', 'sdk', 'ConfigType', 'BetaConfigType']
 slug: /tools/sdk/go/beta/models/config-type
 tags: ['SDK', 'Software Development Kit', 'ConfigType', 'BetaConfigType']
 ---
@@ -13,13 +13,13 @@ tags: ['SDK', 'Software Development Kit', 'ConfigType', 'BetaConfigType']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Priority** | Pointer to **int32** |  | [optional] 
-**InternalName** | Pointer to [**ConfigTypeEnumCamel**](config-type-enum-camel) |  | [optional] 
-**InternalNameCamel** | Pointer to [**ConfigTypeEnum**](config-type-enum) |  | [optional] 
-**DisplayName** | Pointer to **string** | Human readable display name of the type to be shown on UI | [optional] 
-**Description** | Pointer to **string** | Description of the type of work to be reassigned, displayed by the UI. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Priority** | Pointer to **int32** |  | [optional] |
+| **InternalName** | Pointer to [**ConfigTypeEnumCamel**](config-type-enum-camel) |  | [optional] |
+| **InternalNameCamel** | Pointer to [**ConfigTypeEnum**](config-type-enum) |  | [optional] |
+| **DisplayName** | Pointer to **string** | Human readable display name of the type to be shown on UI | [optional] |
+| **Description** | Pointer to **string** | Description of the type of work to be reassigned, displayed by the UI. | [optional] |
 
 ## Methods
 
@@ -27,18 +27,13 @@ Name | Type | Description | Notes
 
 `func NewConfigType() *ConfigType`
 
-NewConfigType instantiates a new ConfigType object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewConfigType instantiates a new ConfigType object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewConfigTypeWithDefaults
 
 `func NewConfigTypeWithDefaults() *ConfigType`
 
-NewConfigTypeWithDefaults instantiates a new ConfigType object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewConfigTypeWithDefaults instantiates a new ConfigType object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetPriority
 
@@ -50,8 +45,7 @@ GetPriority returns the Priority field if non-nil, zero value otherwise.
 
 `func (o *ConfigType) GetPriorityOk() (*int32, bool)`
 
-GetPriorityOk returns a tuple with the Priority field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPriorityOk returns a tuple with the Priority field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPriority
 
@@ -75,8 +69,7 @@ GetInternalName returns the InternalName field if non-nil, zero value otherwise.
 
 `func (o *ConfigType) GetInternalNameOk() (*ConfigTypeEnumCamel, bool)`
 
-GetInternalNameOk returns a tuple with the InternalName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetInternalNameOk returns a tuple with the InternalName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetInternalName
 
@@ -100,8 +93,7 @@ GetInternalNameCamel returns the InternalNameCamel field if non-nil, zero value 
 
 `func (o *ConfigType) GetInternalNameCamelOk() (*ConfigTypeEnum, bool)`
 
-GetInternalNameCamelOk returns a tuple with the InternalNameCamel field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetInternalNameCamelOk returns a tuple with the InternalNameCamel field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetInternalNameCamel
 
@@ -125,8 +117,7 @@ GetDisplayName returns the DisplayName field if non-nil, zero value otherwise.
 
 `func (o *ConfigType) GetDisplayNameOk() (*string, bool)`
 
-GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayName
 
@@ -150,8 +141,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *ConfigType) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -164,5 +154,3 @@ SetDescription sets Description field to given value.
 `func (o *ConfigType) HasDescription() bool`
 
 HasDescription returns a boolean if a field has been set.
-
-

@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import styles from './styles.module.css';
 
 // Define the props interface
 interface MarketplaceSidebarButtonProps {
-  filterCallback: (filter: { tag: string }) => void;
+  filterCallback: (filter: {tag: string}) => void;
   text: string;
   id: string;
   isCategory?: boolean;
@@ -20,7 +20,7 @@ const MarketplaceSidebarButton: React.FC<MarketplaceSidebarButtonProps> = ({
 
   const setFilters = (e: React.MouseEvent<HTMLDivElement>, id: string) => {
     e.preventDefault();
-    filterCallback({ tag: id });
+    filterCallback({tag: id});
     setIsActive((current) => !current);
   };
 
@@ -28,8 +28,7 @@ const MarketplaceSidebarButton: React.FC<MarketplaceSidebarButtonProps> = ({
     <div
       key={id}
       onClick={(e) => setFilters(e, id)}
-      className={`${activeClass} ${styles.tag}`}
-    >
+      className={`${activeClass} ${styles.tag}`}>
       {text}
     </div>
   );

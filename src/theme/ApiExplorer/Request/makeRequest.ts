@@ -1,15 +1,15 @@
-import { Body } from "@theme/ApiExplorer/Body/slice";
-import sdk from "postman-collection";
+import {Body} from '@theme/ApiExplorer/Body/slice';
+import sdk from 'postman-collection';
 
 function fetchWithtimeout(
   url: string,
   options: RequestInit,
-  timeout = 5000
+  timeout = 5000,
 ): any {
   return Promise.race([
     fetch(url, options),
     new Promise((_, reject) =>
-      setTimeout(() => reject(new Error("Request timed out")), timeout)
+      setTimeout(() => reject(new Error('Request timed out')), timeout),
     ),
   ]);
 }
@@ -19,12 +19,12 @@ async function loadImage(content: Blob): Promise<string | ArrayBuffer | null> {
     const reader = new FileReader();
 
     reader.onabort = () => {
-      console.log("file reading was aborted");
+      console.log('file reading was aborted');
       reject();
     };
 
     reader.onerror = () => {
-      console.log("file reading has failed");
+      console.log('file reading has failed');
       reject();
     };
 
@@ -40,7 +40,7 @@ async function loadImage(content: Blob): Promise<string | ArrayBuffer | null> {
 async function makeRequest(
   request: sdk.Request,
   proxy: string | undefined,
-  _body: Body
+  _body: Body,
 ) {
   const headers = request.toJSON().header;
 
@@ -126,10 +126,10 @@ async function makeRequest(
 
   const body = request.body?.toJSON();
 
-  let myBody: RequestInit["body"] = undefined;
+  let myBody: RequestInit['body'] = undefined;
   if (body !== undefined && Object.keys(body).length > 0) {
     switch (body.mode) {
-      case "urlencoded": {
+      case 'urlencoded': {
         myBody = new URLSearchParams();
         if (Array.isArray(body.urlencoded)) {
           for (const data of body.urlencoded) {
@@ -140,13 +140,13 @@ async function makeRequest(
         }
         break;
       }
-      case "raw": {
-        myBody = (body.raw ?? "").toString();
+      case 'raw': {
+        myBody = (body.raw ?? '').toString();
         break;
       }
-      case "formdata": {
+      case 'formdata': {
         // The Content-Type header will be set automatically based on the type of body.
-        myHeaders.delete("Content-Type");
+        myHeaders.delete('Content-Type');
 
         myBody = new FormData();
         if (Array.isArray(request.body.formdata.members)) {
@@ -155,15 +155,15 @@ async function makeRequest(
               myBody.append(data.key, data.value.content);
             }
             // handle generic key-value payload
-            if (data.key && typeof data.value === "string") {
+            if (data.key && typeof data.value === 'string') {
               myBody.append(data.key, data.value);
             }
           }
         }
         break;
       }
-      case "file": {
-        if (_body.type === "raw" && _body.content?.type === "file") {
+      case 'file': {
+        if (_body.type === 'raw' && _body.content?.type === 'file') {
           myBody = await loadImage(_body.content.value.content);
         }
         break;
@@ -182,50 +182,50 @@ async function makeRequest(
   let finalUrl = request.url.toString();
   if (proxy) {
     // Ensure the proxy ends with a slash.
-    let normalizedProxy = proxy.replace(/\/$/, "") + "/";
+    let normalizedProxy = proxy.replace(/\/$/, '') + '/';
     finalUrl = normalizedProxy + request.url.toString();
   }
 
   return fetchWithtimeout(finalUrl, requestOptions).then((response: any) => {
-    const contentType = response.headers.get("content-type");
-    let fileExtension = "";
+    const contentType = response.headers.get('content-type');
+    let fileExtension = '';
 
     if (contentType) {
-      if (contentType.includes("application/pdf")) {
-        fileExtension = ".pdf";
-      } else if (contentType.includes("image/jpeg")) {
-        fileExtension = ".jpg";
-      } else if (contentType.includes("image/png")) {
-        fileExtension = ".png";
-      } else if (contentType.includes("image/gif")) {
-        fileExtension = ".gif";
-      } else if (contentType.includes("image/webp")) {
-        fileExtension = ".webp";
-      } else if (contentType.includes("video/mpeg")) {
-        fileExtension = ".mpeg";
-      } else if (contentType.includes("video/mp4")) {
-        fileExtension = ".mp4";
-      } else if (contentType.includes("audio/mpeg")) {
-        fileExtension = ".mp3";
-      } else if (contentType.includes("audio/ogg")) {
-        fileExtension = ".ogg";
-      } else if (contentType.includes("application/octet-stream")) {
-        fileExtension = ".bin";
-      } else if (contentType.includes("application/zip")) {
-        fileExtension = ".zip";
+      if (contentType.includes('application/pdf')) {
+        fileExtension = '.pdf';
+      } else if (contentType.includes('image/jpeg')) {
+        fileExtension = '.jpg';
+      } else if (contentType.includes('image/png')) {
+        fileExtension = '.png';
+      } else if (contentType.includes('image/gif')) {
+        fileExtension = '.gif';
+      } else if (contentType.includes('image/webp')) {
+        fileExtension = '.webp';
+      } else if (contentType.includes('video/mpeg')) {
+        fileExtension = '.mpeg';
+      } else if (contentType.includes('video/mp4')) {
+        fileExtension = '.mp4';
+      } else if (contentType.includes('audio/mpeg')) {
+        fileExtension = '.mp3';
+      } else if (contentType.includes('audio/ogg')) {
+        fileExtension = '.ogg';
+      } else if (contentType.includes('application/octet-stream')) {
+        fileExtension = '.bin';
+      } else if (contentType.includes('application/zip')) {
+        fileExtension = '.zip';
       }
 
       if (fileExtension) {
         return response.blob().then((blob: any) => {
           const url = window.URL.createObjectURL(blob);
 
-          const link = document.createElement("a");
+          const link = document.createElement('a');
           link.href = url;
           // Now the file name includes the extension
-          link.setAttribute("download", `file${fileExtension}`);
+          link.setAttribute('download', `file${fileExtension}`);
 
           // These two lines are necessary to make the link click in Firefox
-          link.style.display = "none";
+          link.style.display = 'none';
           document.body.appendChild(link);
 
           link.click();

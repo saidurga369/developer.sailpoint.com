@@ -4,25 +4,38 @@ title: AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes
 pagination_label: AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes
 sidebar_label: AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes', 'V2024AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes',
+    'V2024AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes',
+  ]
 slug: /tools/sdk/powershell/v2024/models/attribute-mappings-all-of-transform-definition-attributes-input-attributes
-tags: ['SDK', 'Software Development Kit', 'AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes', 'V2024AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes',
+    'V2024AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes',
+  ]
 ---
-
 
 # AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**AttributeName** | **String** | The name of attribute | [optional] 
-**SourceName** | **String** | Name of the Source | [optional] 
-**Name** | **String** | ID of the Source | [optional] 
+| Name              | Type       | Description           | Notes      |
+| ----------------- | ---------- | --------------------- | ---------- |
+| **AttributeName** | **String** | The name of attribute | [optional] |
+| **SourceName**    | **String** | Name of the Source    | [optional] |
+| **Name**          | **String** | ID of the Source      | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes = Initialize-V2024AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes  -AttributeName givenName `
  -SourceName delimited-src `
@@ -30,10 +43,9 @@ $AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes = Initialize
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $AttributeMappingsAllOfTransformDefinitionAttributesInputAttributes | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

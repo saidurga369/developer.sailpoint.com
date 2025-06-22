@@ -4,20 +4,20 @@ title: AccessItemRef
 pagination_label: AccessItemRef
 sidebar_label: AccessItemRef
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccessItemRef', 'V2025AccessItemRef'] 
+keywords: ['python', 'Python', 'sdk', 'AccessItemRef', 'V2025AccessItemRef']
 slug: /tools/sdk/python/v2025/models/access-item-ref
 tags: ['SDK', 'Software Development Kit', 'AccessItemRef', 'V2025AccessItemRef']
 ---
 
 # AccessItemRef
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | ID of the access item to retrieve the recommendation for. | [optional] 
-**type** |  **Enum** [  'ENTITLEMENT',    'ACCESS_PROFILE',    'ROLE' ] | Access item's type. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | ID of the access item to retrieve the recommendation for. | [optional] |
+| **type** | **Enum** [ 'ENTITLEMENT', 'ACCESS_PROFILE', 'ROLE' ] | Access item's type. | [optional] |
+
 }
 
 ## Example
@@ -31,5 +31,5 @@ type='ENTITLEMENT'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

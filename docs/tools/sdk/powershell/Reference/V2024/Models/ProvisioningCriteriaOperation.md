@@ -4,29 +4,38 @@ title: ProvisioningCriteriaOperation
 pagination_label: ProvisioningCriteriaOperation
 sidebar_label: ProvisioningCriteriaOperation
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'ProvisioningCriteriaOperation', 'V2024ProvisioningCriteriaOperation'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'ProvisioningCriteriaOperation',
+    'V2024ProvisioningCriteriaOperation',
+  ]
 slug: /tools/sdk/powershell/v2024/models/provisioning-criteria-operation
-tags: ['SDK', 'Software Development Kit', 'ProvisioningCriteriaOperation', 'V2024ProvisioningCriteriaOperation']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ProvisioningCriteriaOperation',
+    'V2024ProvisioningCriteriaOperation',
+  ]
 ---
-
 
 # ProvisioningCriteriaOperation
 
 ## Enum
 
+- `EQUALS` (value: `"EQUALS"`)
 
-* `EQUALS` (value: `"EQUALS"`)
+- `NOT_EQUALS` (value: `"NOT_EQUALS"`)
 
-* `NOT_EQUALS` (value: `"NOT_EQUALS"`)
+- `CONTAINS` (value: `"CONTAINS"`)
 
-* `CONTAINS` (value: `"CONTAINS"`)
+- `HAS` (value: `"HAS"`)
 
-* `HAS` (value: `"HAS"`)
+- `AND` (value: `"AND"`)
 
-* `AND` (value: `"AND"`)
+- `OR` (value: `"OR"`)
 
-* `OR` (value: `"OR"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

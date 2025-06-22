@@ -4,20 +4,27 @@ title: SourceUpdatedActor
 pagination_label: SourceUpdatedActor
 sidebar_label: SourceUpdatedActor
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SourceUpdatedActor', 'V2024SourceUpdatedActor'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'SourceUpdatedActor', 'V2024SourceUpdatedActor']
 slug: /tools/sdk/go/v2024/models/source-updated-actor
-tags: ['SDK', 'Software Development Kit', 'SourceUpdatedActor', 'V2024SourceUpdatedActor']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SourceUpdatedActor',
+    'V2024SourceUpdatedActor',
+  ]
 ---
 
 # SourceUpdatedActor
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | **string** | DTO type of identity who updated the source. | 
-**Id** | Pointer to **string** | ID of identity who updated the source. | [optional] 
-**Name** | **string** | Display name of identity who updated the source. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | **string** | DTO type of identity who updated the source. |
+| **Id** | Pointer to **string** | ID of identity who updated the source. | [optional] |
+| **Name** | **string** | Display name of identity who updated the source. |
 
 ## Methods
 
@@ -25,18 +32,13 @@ Name | Type | Description | Notes
 
 `func NewSourceUpdatedActor(type_ string, name string, ) *SourceUpdatedActor`
 
-NewSourceUpdatedActor instantiates a new SourceUpdatedActor object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSourceUpdatedActor instantiates a new SourceUpdatedActor object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSourceUpdatedActorWithDefaults
 
 `func NewSourceUpdatedActorWithDefaults() *SourceUpdatedActor`
 
-NewSourceUpdatedActorWithDefaults instantiates a new SourceUpdatedActor object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSourceUpdatedActorWithDefaults instantiates a new SourceUpdatedActor object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -48,15 +50,13 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *SourceUpdatedActor) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
 `func (o *SourceUpdatedActor) SetType(v string)`
 
 SetType sets Type field to given value.
-
 
 ### GetId
 
@@ -68,8 +68,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *SourceUpdatedActor) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -93,14 +92,10 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *SourceUpdatedActor) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
 `func (o *SourceUpdatedActor) SetName(v string)`
 
 SetName sets Name field to given value.
-
-
-

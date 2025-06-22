@@ -4,27 +4,40 @@ title: SourceAppAccountSource
 pagination_label: SourceAppAccountSource
 sidebar_label: SourceAppAccountSource
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'SourceAppAccountSource', 'BetaSourceAppAccountSource'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'SourceAppAccountSource',
+    'BetaSourceAppAccountSource',
+  ]
 slug: /tools/sdk/powershell/beta/models/source-app-account-source
-tags: ['SDK', 'Software Development Kit', 'SourceAppAccountSource', 'BetaSourceAppAccountSource']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SourceAppAccountSource',
+    'BetaSourceAppAccountSource',
+  ]
 ---
-
 
 # SourceAppAccountSource
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | The source ID | [optional] 
-**Type** | **String** | The source type, will always be ""SOURCE"" | [optional] 
-**Name** | **String** | The source name | [optional] 
-**UseForPasswordManagement** | **Boolean** | If the source is used for password management | [optional] [default to $false]
-**PasswordPolicies** | [**[]BaseReferenceDto**](base-reference-dto) | The password policies for the source | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | The source ID | [optional] |
+| **Type** | **String** | The source type, will always be ""SOURCE"" | [optional] |
+| **Name** | **String** | The source name | [optional] |
+| **UseForPasswordManagement** | **Boolean** | If the source is used for password management | [optional] [default to $false] |
+| **PasswordPolicies** | [**[]BaseReferenceDto**](base-reference-dto) | The password policies for the source | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $SourceAppAccountSource = Initialize-BetaSourceAppAccountSource  -Id 2c9180827ca885d7017ca8ce28a000eb `
  -Type SOURCE `
@@ -34,10 +47,9 @@ $SourceAppAccountSource = Initialize-BetaSourceAppAccountSource  -Id 2c9180827ca
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $SourceAppAccountSource | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

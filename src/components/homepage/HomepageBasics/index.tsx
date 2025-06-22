@@ -1,8 +1,12 @@
-import React, { JSX } from 'react';
+import React, {JSX} from 'react';
 import styles from './styles.module.css';
 import Link from '@docusaurus/Link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faComments, faPeopleGroup, faUser } from '@fortawesome/free-solid-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {
+  faComments,
+  faPeopleGroup,
+  faUser,
+} from '@fortawesome/free-solid-svg-icons';
 
 interface HomepageBasicsProps {
   link: string;
@@ -12,7 +16,13 @@ interface HomepageBasicsProps {
   buttonText?: string;
 }
 
-const HomepageBasics: React.FC<HomepageBasicsProps> = ({ link, title, image, description, buttonText }) => {
+const HomepageBasics: React.FC<HomepageBasicsProps> = ({
+  link,
+  title,
+  image,
+  description,
+  buttonText,
+}) => {
   const linkHtml = buttonText ? (
     <div className={styles.button}>
       <Link className={styles.link} to={link}>
@@ -22,9 +32,23 @@ const HomepageBasics: React.FC<HomepageBasicsProps> = ({ link, title, image, des
   ) : null;
 
   const iconMap: Record<string, JSX.Element> = {
-    discuss: <FontAwesomeIcon icon={faComments} className={styles.docCardIcon} size="3x" />,
-    team: <FontAwesomeIcon icon={faPeopleGroup} className={styles.docCardIcon} size="3x" />,
-    user: <FontAwesomeIcon icon={faUser} className={styles.docCardIcon} size="3x" />,
+    discuss: (
+      <FontAwesomeIcon
+        icon={faComments}
+        className={styles.docCardIcon}
+        size="3x"
+      />
+    ),
+    team: (
+      <FontAwesomeIcon
+        icon={faPeopleGroup}
+        className={styles.docCardIcon}
+        size="3x"
+      />
+    ),
+    user: (
+      <FontAwesomeIcon icon={faUser} className={styles.docCardIcon} size="3x" />
+    ),
   };
 
   const icon = image ? iconMap[image] || null : null;
@@ -33,7 +57,9 @@ const HomepageBasics: React.FC<HomepageBasicsProps> = ({ link, title, image, des
     <div className={styles.gettingStartedText}>
       {icon}
       <div className={styles.gettingStartedOne}>{title}</div>
-      <div className={styles.gettingStartedThree} dangerouslySetInnerHTML={{ __html: description }}></div>
+      <div
+        className={styles.gettingStartedThree}
+        dangerouslySetInnerHTML={{__html: description}}></div>
       {linkHtml}
     </div>
   );

@@ -4,23 +4,23 @@ title: MfaOktaConfig
 pagination_label: MfaOktaConfig
 sidebar_label: MfaOktaConfig
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'MfaOktaConfig', 'V2025MfaOktaConfig'] 
+keywords: ['python', 'Python', 'sdk', 'MfaOktaConfig', 'V2025MfaOktaConfig']
 slug: /tools/sdk/python/v2025/models/mfa-okta-config
 tags: ['SDK', 'Software Development Kit', 'MfaOktaConfig', 'V2025MfaOktaConfig']
 ---
 
 # MfaOktaConfig
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**mfa_method** | **str** | Mfa method name | [optional] 
-**enabled** | **bool** | If MFA method is enabled. | [optional] [default to False]
-**host** | **str** | The server host name or IP address of the MFA provider. | [optional] 
-**access_key** | **str** | The secret key for authenticating requests to the MFA provider. | [optional] 
-**identity_attribute** | **str** | Optional. The name of the attribute for mapping IdentityNow identity to the MFA provider. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **mfa_method** | **str** | Mfa method name | [optional] |
+| **enabled** | **bool** | If MFA method is enabled. | [optional] [default to False] |
+| **host** | **str** | The server host name or IP address of the MFA provider. | [optional] |
+| **access_key** | **str** | The secret key for authenticating requests to the MFA provider. | [optional] |
+| **identity_attribute** | **str** | Optional. The name of the attribute for mapping IdentityNow identity to the MFA provider. | [optional] |
+
 }
 
 ## Example
@@ -37,5 +37,5 @@ identity_attribute='email'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

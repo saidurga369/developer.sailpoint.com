@@ -4,21 +4,34 @@ title: SourcePasswordPoliciesInner
 pagination_label: SourcePasswordPoliciesInner
 sidebar_label: SourcePasswordPoliciesInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SourcePasswordPoliciesInner', 'SourcePasswordPoliciesInner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'SourcePasswordPoliciesInner',
+    'SourcePasswordPoliciesInner',
+  ]
 slug: /tools/sdk/python/v3/models/source-password-policies-inner
-tags: ['SDK', 'Software Development Kit', 'SourcePasswordPoliciesInner', 'SourcePasswordPoliciesInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SourcePasswordPoliciesInner',
+    'SourcePasswordPoliciesInner',
+  ]
 ---
 
 # SourcePasswordPoliciesInner
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'PASSWORD_POLICY' ] | Type of object being referenced. | [optional] 
-**id** | **str** | Policy ID. | [optional] 
-**name** | **str** | Policy's human-readable display name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'PASSWORD_POLICY' ] | Type of object being referenced. | [optional] |
+| **id** | **str** | Policy ID. | [optional] |
+| **name** | **str** | Policy's human-readable display name. | [optional] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ name='My Password Policy'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

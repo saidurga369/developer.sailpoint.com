@@ -4,21 +4,34 @@ title: RecommendationConfigDto
 pagination_label: RecommendationConfigDto
 sidebar_label: RecommendationConfigDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RecommendationConfigDto', 'BetaRecommendationConfigDto'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'RecommendationConfigDto',
+    'BetaRecommendationConfigDto',
+  ]
 slug: /tools/sdk/go/beta/models/recommendation-config-dto
-tags: ['SDK', 'Software Development Kit', 'RecommendationConfigDto', 'BetaRecommendationConfigDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RecommendationConfigDto',
+    'BetaRecommendationConfigDto',
+  ]
 ---
 
 # RecommendationConfigDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**RecommenderFeatures** | Pointer to **[]string** | List of identity attributes to use for calculating certification recommendations | [optional] 
-**PeerGroupPercentageThreshold** | Pointer to **float32** | The percent value that the recommendation calculation must surpass to produce a YES recommendation | [optional] 
-**RunAutoSelectOnce** | Pointer to **bool** | If true, rulesRecommenderConfig will be refreshed with new programatically selected attribute and threshold values on the next pipeline run | [optional] [default to false]
-**OnlyTuneThreshold** | Pointer to **bool** | If true, rulesRecommenderConfig will be refreshed with new programatically selected threshold values on the next pipeline run | [optional] [default to false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **RecommenderFeatures** | Pointer to **[]string** | List of identity attributes to use for calculating certification recommendations | [optional] |
+| **PeerGroupPercentageThreshold** | Pointer to **float32** | The percent value that the recommendation calculation must surpass to produce a YES recommendation | [optional] |
+| **RunAutoSelectOnce** | Pointer to **bool** | If true, rulesRecommenderConfig will be refreshed with new programatically selected attribute and threshold values on the next pipeline run | [optional] [default to false] |
+| **OnlyTuneThreshold** | Pointer to **bool** | If true, rulesRecommenderConfig will be refreshed with new programatically selected threshold values on the next pipeline run | [optional] [default to false] |
 
 ## Methods
 
@@ -26,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewRecommendationConfigDto() *RecommendationConfigDto`
 
-NewRecommendationConfigDto instantiates a new RecommendationConfigDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRecommendationConfigDto instantiates a new RecommendationConfigDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRecommendationConfigDtoWithDefaults
 
 `func NewRecommendationConfigDtoWithDefaults() *RecommendationConfigDto`
 
-NewRecommendationConfigDtoWithDefaults instantiates a new RecommendationConfigDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRecommendationConfigDtoWithDefaults instantiates a new RecommendationConfigDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetRecommenderFeatures
 
@@ -49,8 +57,7 @@ GetRecommenderFeatures returns the RecommenderFeatures field if non-nil, zero va
 
 `func (o *RecommendationConfigDto) GetRecommenderFeaturesOk() (*[]string, bool)`
 
-GetRecommenderFeaturesOk returns a tuple with the RecommenderFeatures field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRecommenderFeaturesOk returns a tuple with the RecommenderFeatures field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRecommenderFeatures
 
@@ -74,8 +81,7 @@ GetPeerGroupPercentageThreshold returns the PeerGroupPercentageThreshold field i
 
 `func (o *RecommendationConfigDto) GetPeerGroupPercentageThresholdOk() (*float32, bool)`
 
-GetPeerGroupPercentageThresholdOk returns a tuple with the PeerGroupPercentageThreshold field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPeerGroupPercentageThresholdOk returns a tuple with the PeerGroupPercentageThreshold field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPeerGroupPercentageThreshold
 
@@ -99,8 +105,7 @@ GetRunAutoSelectOnce returns the RunAutoSelectOnce field if non-nil, zero value 
 
 `func (o *RecommendationConfigDto) GetRunAutoSelectOnceOk() (*bool, bool)`
 
-GetRunAutoSelectOnceOk returns a tuple with the RunAutoSelectOnce field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRunAutoSelectOnceOk returns a tuple with the RunAutoSelectOnce field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRunAutoSelectOnce
 
@@ -124,8 +129,7 @@ GetOnlyTuneThreshold returns the OnlyTuneThreshold field if non-nil, zero value 
 
 `func (o *RecommendationConfigDto) GetOnlyTuneThresholdOk() (*bool, bool)`
 
-GetOnlyTuneThresholdOk returns a tuple with the OnlyTuneThreshold field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOnlyTuneThresholdOk returns a tuple with the OnlyTuneThreshold field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOnlyTuneThreshold
 
@@ -138,5 +142,3 @@ SetOnlyTuneThreshold sets OnlyTuneThreshold field to given value.
 `func (o *RecommendationConfigDto) HasOnlyTuneThreshold() bool`
 
 HasOnlyTuneThreshold returns a boolean if a field has been set.
-
-

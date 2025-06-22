@@ -4,18 +4,19 @@ title: WorkItemsCount
 pagination_label: WorkItemsCount
 sidebar_label: WorkItemsCount
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'WorkItemsCount', 'BetaWorkItemsCount'] 
+keywords: ['go', 'Golang', 'sdk', 'WorkItemsCount', 'BetaWorkItemsCount']
 slug: /tools/sdk/go/beta/models/work-items-count
-tags: ['SDK', 'Software Development Kit', 'WorkItemsCount', 'BetaWorkItemsCount']
+tags:
+  ['SDK', 'Software Development Kit', 'WorkItemsCount', 'BetaWorkItemsCount']
 ---
 
 # WorkItemsCount
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Count** | Pointer to **int32** | The count of work items | [optional] 
+| Name      | Type                 | Description             | Notes      |
+| --------- | -------------------- | ----------------------- | ---------- |
+| **Count** | Pointer to **int32** | The count of work items | [optional] |
 
 ## Methods
 
@@ -23,18 +24,13 @@ Name | Type | Description | Notes
 
 `func NewWorkItemsCount() *WorkItemsCount`
 
-NewWorkItemsCount instantiates a new WorkItemsCount object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewWorkItemsCount instantiates a new WorkItemsCount object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewWorkItemsCountWithDefaults
 
 `func NewWorkItemsCountWithDefaults() *WorkItemsCount`
 
-NewWorkItemsCountWithDefaults instantiates a new WorkItemsCount object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewWorkItemsCountWithDefaults instantiates a new WorkItemsCount object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetCount
 
@@ -46,8 +42,7 @@ GetCount returns the Count field if non-nil, zero value otherwise.
 
 `func (o *WorkItemsCount) GetCountOk() (*int32, bool)`
 
-GetCountOk returns a tuple with the Count field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCountOk returns a tuple with the Count field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCount
 
@@ -60,5 +55,3 @@ SetCount sets Count field to given value.
 `func (o *WorkItemsCount) HasCount() bool`
 
 HasCount returns a boolean if a field has been set.
-
-

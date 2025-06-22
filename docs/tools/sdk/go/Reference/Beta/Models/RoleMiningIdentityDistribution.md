@@ -4,19 +4,32 @@ title: RoleMiningIdentityDistribution
 pagination_label: RoleMiningIdentityDistribution
 sidebar_label: RoleMiningIdentityDistribution
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleMiningIdentityDistribution', 'BetaRoleMiningIdentityDistribution'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'RoleMiningIdentityDistribution',
+    'BetaRoleMiningIdentityDistribution',
+  ]
 slug: /tools/sdk/go/beta/models/role-mining-identity-distribution
-tags: ['SDK', 'Software Development Kit', 'RoleMiningIdentityDistribution', 'BetaRoleMiningIdentityDistribution']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningIdentityDistribution',
+    'BetaRoleMiningIdentityDistribution',
+  ]
 ---
 
 # RoleMiningIdentityDistribution
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**AttributeName** | Pointer to **string** | Id of the potential role | [optional] 
-**Distribution** | Pointer to **[]map[string]string** |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **AttributeName** | Pointer to **string** | Id of the potential role | [optional] |
+| **Distribution** | Pointer to **[]map[string]string** |  | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewRoleMiningIdentityDistribution() *RoleMiningIdentityDistribution`
 
-NewRoleMiningIdentityDistribution instantiates a new RoleMiningIdentityDistribution object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleMiningIdentityDistribution instantiates a new RoleMiningIdentityDistribution object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleMiningIdentityDistributionWithDefaults
 
 `func NewRoleMiningIdentityDistributionWithDefaults() *RoleMiningIdentityDistribution`
 
-NewRoleMiningIdentityDistributionWithDefaults instantiates a new RoleMiningIdentityDistribution object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleMiningIdentityDistributionWithDefaults instantiates a new RoleMiningIdentityDistribution object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetAttributeName
 
@@ -47,8 +55,7 @@ GetAttributeName returns the AttributeName field if non-nil, zero value otherwis
 
 `func (o *RoleMiningIdentityDistribution) GetAttributeNameOk() (*string, bool)`
 
-GetAttributeNameOk returns a tuple with the AttributeName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributeNameOk returns a tuple with the AttributeName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributeName
 
@@ -72,8 +79,7 @@ GetDistribution returns the Distribution field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningIdentityDistribution) GetDistributionOk() (*[]map[string]string, bool)`
 
-GetDistributionOk returns a tuple with the Distribution field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDistributionOk returns a tuple with the Distribution field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDistribution
 
@@ -86,5 +92,3 @@ SetDistribution sets Distribution field to given value.
 `func (o *RoleMiningIdentityDistribution) HasDistribution() bool`
 
 HasDistribution returns a boolean if a field has been set.
-
-

@@ -4,34 +4,41 @@ title: AccountActivityDocument
 pagination_label: AccountActivityDocument
 sidebar_label: AccountActivityDocument
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccountActivityDocument', 'AccountActivityDocument'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'AccountActivityDocument', 'AccountActivityDocument']
 slug: /tools/sdk/go/v3/models/account-activity-document
-tags: ['SDK', 'Software Development Kit', 'AccountActivityDocument', 'AccountActivityDocument']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountActivityDocument',
+    'AccountActivityDocument',
+  ]
 ---
 
 # AccountActivityDocument
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | ID of account activity. | [optional] 
-**Action** | Pointer to **string** | Type of action performed in the activity. | [optional] 
-**Created** | Pointer to **NullableTime** | ISO-8601 date-time referring to the time when the object was created. | [optional] 
-**Modified** | Pointer to **NullableTime** | ISO-8601 date-time referring to the time when the object was last modified. | [optional] 
-**Synced** | Pointer to **string** | ISO-8601 date-time referring to the date-time when object was queued to be synced into search database for use in the search API.   This date-time changes anytime there is an update to the object, which triggers a synchronization event being sent to the search database.  There may be some delay between the `synced` time and the time when the updated data is actually available in the search API.  | [optional] 
-**Stage** | Pointer to **string** | Activity's current stage. | [optional] 
-**Status** | Pointer to **string** | Activity's current status. | [optional] 
-**Requester** | Pointer to [**ActivityIdentity**](activity-identity) |  | [optional] 
-**Recipient** | Pointer to [**ActivityIdentity**](activity-identity) |  | [optional] 
-**TrackingNumber** | Pointer to **string** | Account activity's tracking number. | [optional] 
-**Errors** | Pointer to **[]string** | Errors provided by the source while completing account actions. | [optional] 
-**Warnings** | Pointer to **[]string** | Warnings provided by the source while completing account actions. | [optional] 
-**Approvals** | Pointer to [**[]Approval**](approval) | Approvals performed on an item during activity. | [optional] 
-**OriginalRequests** | Pointer to [**[]OriginalRequest**](original-request) | Original actions that triggered all individual source actions related to the account action. | [optional] 
-**ExpansionItems** | Pointer to [**[]ExpansionItem**](expansion-item) | Controls that translated the attribute requests into actual provisioning actions on the source. | [optional] 
-**AccountRequests** | Pointer to [**[]AccountRequest**](account-request) | Account data for each individual source action triggered by the original requests. | [optional] 
-**Sources** | Pointer to **string** | Sources involved in the account activity. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | ID of account activity. | [optional] |
+| **Action** | Pointer to **string** | Type of action performed in the activity. | [optional] |
+| **Created** | Pointer to **NullableTime** | ISO-8601 date-time referring to the time when the object was created. | [optional] |
+| **Modified** | Pointer to **NullableTime** | ISO-8601 date-time referring to the time when the object was last modified. | [optional] |
+| **Synced** | Pointer to **string** | ISO-8601 date-time referring to the date-time when object was queued to be synced into search database for use in the search API. This date-time changes anytime there is an update to the object, which triggers a synchronization event being sent to the search database. There may be some delay between the `synced` time and the time when the updated data is actually available in the search API. | [optional] |
+| **Stage** | Pointer to **string** | Activity's current stage. | [optional] |
+| **Status** | Pointer to **string** | Activity's current status. | [optional] |
+| **Requester** | Pointer to [**ActivityIdentity**](activity-identity) |  | [optional] |
+| **Recipient** | Pointer to [**ActivityIdentity**](activity-identity) |  | [optional] |
+| **TrackingNumber** | Pointer to **string** | Account activity's tracking number. | [optional] |
+| **Errors** | Pointer to **[]string** | Errors provided by the source while completing account actions. | [optional] |
+| **Warnings** | Pointer to **[]string** | Warnings provided by the source while completing account actions. | [optional] |
+| **Approvals** | Pointer to [**[]Approval**](approval) | Approvals performed on an item during activity. | [optional] |
+| **OriginalRequests** | Pointer to [**[]OriginalRequest**](original-request) | Original actions that triggered all individual source actions related to the account action. | [optional] |
+| **ExpansionItems** | Pointer to [**[]ExpansionItem**](expansion-item) | Controls that translated the attribute requests into actual provisioning actions on the source. | [optional] |
+| **AccountRequests** | Pointer to [**[]AccountRequest**](account-request) | Account data for each individual source action triggered by the original requests. | [optional] |
+| **Sources** | Pointer to **string** | Sources involved in the account activity. | [optional] |
 
 ## Methods
 
@@ -39,18 +46,13 @@ Name | Type | Description | Notes
 
 `func NewAccountActivityDocument() *AccountActivityDocument`
 
-NewAccountActivityDocument instantiates a new AccountActivityDocument object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccountActivityDocument instantiates a new AccountActivityDocument object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccountActivityDocumentWithDefaults
 
 `func NewAccountActivityDocumentWithDefaults() *AccountActivityDocument`
 
-NewAccountActivityDocumentWithDefaults instantiates a new AccountActivityDocument object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccountActivityDocumentWithDefaults instantiates a new AccountActivityDocument object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -62,8 +64,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *AccountActivityDocument) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -87,8 +88,7 @@ GetAction returns the Action field if non-nil, zero value otherwise.
 
 `func (o *AccountActivityDocument) GetActionOk() (*string, bool)`
 
-GetActionOk returns a tuple with the Action field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetActionOk returns a tuple with the Action field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAction
 
@@ -112,8 +112,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *AccountActivityDocument) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -131,12 +130,14 @@ HasCreated returns a boolean if a field has been set.
 
 `func (o *AccountActivityDocument) SetCreatedNil(b bool)`
 
- SetCreatedNil sets the value for Created to be an explicit nil
+SetCreatedNil sets the value for Created to be an explicit nil
 
 ### UnsetCreated
+
 `func (o *AccountActivityDocument) UnsetCreated()`
 
 UnsetCreated ensures that no value is present for Created, not even an explicit nil
+
 ### GetModified
 
 `func (o *AccountActivityDocument) GetModified() SailPointTime`
@@ -147,8 +148,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *AccountActivityDocument) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -166,12 +166,14 @@ HasModified returns a boolean if a field has been set.
 
 `func (o *AccountActivityDocument) SetModifiedNil(b bool)`
 
- SetModifiedNil sets the value for Modified to be an explicit nil
+SetModifiedNil sets the value for Modified to be an explicit nil
 
 ### UnsetModified
+
 `func (o *AccountActivityDocument) UnsetModified()`
 
 UnsetModified ensures that no value is present for Modified, not even an explicit nil
+
 ### GetSynced
 
 `func (o *AccountActivityDocument) GetSynced() string`
@@ -182,8 +184,7 @@ GetSynced returns the Synced field if non-nil, zero value otherwise.
 
 `func (o *AccountActivityDocument) GetSyncedOk() (*string, bool)`
 
-GetSyncedOk returns a tuple with the Synced field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSyncedOk returns a tuple with the Synced field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSynced
 
@@ -207,8 +208,7 @@ GetStage returns the Stage field if non-nil, zero value otherwise.
 
 `func (o *AccountActivityDocument) GetStageOk() (*string, bool)`
 
-GetStageOk returns a tuple with the Stage field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStageOk returns a tuple with the Stage field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStage
 
@@ -232,8 +232,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *AccountActivityDocument) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -257,8 +256,7 @@ GetRequester returns the Requester field if non-nil, zero value otherwise.
 
 `func (o *AccountActivityDocument) GetRequesterOk() (*ActivityIdentity, bool)`
 
-GetRequesterOk returns a tuple with the Requester field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequesterOk returns a tuple with the Requester field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequester
 
@@ -282,8 +280,7 @@ GetRecipient returns the Recipient field if non-nil, zero value otherwise.
 
 `func (o *AccountActivityDocument) GetRecipientOk() (*ActivityIdentity, bool)`
 
-GetRecipientOk returns a tuple with the Recipient field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRecipientOk returns a tuple with the Recipient field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRecipient
 
@@ -307,8 +304,7 @@ GetTrackingNumber returns the TrackingNumber field if non-nil, zero value otherw
 
 `func (o *AccountActivityDocument) GetTrackingNumberOk() (*string, bool)`
 
-GetTrackingNumberOk returns a tuple with the TrackingNumber field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTrackingNumberOk returns a tuple with the TrackingNumber field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTrackingNumber
 
@@ -332,8 +328,7 @@ GetErrors returns the Errors field if non-nil, zero value otherwise.
 
 `func (o *AccountActivityDocument) GetErrorsOk() (*[]string, bool)`
 
-GetErrorsOk returns a tuple with the Errors field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetErrorsOk returns a tuple with the Errors field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetErrors
 
@@ -351,12 +346,14 @@ HasErrors returns a boolean if a field has been set.
 
 `func (o *AccountActivityDocument) SetErrorsNil(b bool)`
 
- SetErrorsNil sets the value for Errors to be an explicit nil
+SetErrorsNil sets the value for Errors to be an explicit nil
 
 ### UnsetErrors
+
 `func (o *AccountActivityDocument) UnsetErrors()`
 
 UnsetErrors ensures that no value is present for Errors, not even an explicit nil
+
 ### GetWarnings
 
 `func (o *AccountActivityDocument) GetWarnings() []string`
@@ -367,8 +364,7 @@ GetWarnings returns the Warnings field if non-nil, zero value otherwise.
 
 `func (o *AccountActivityDocument) GetWarningsOk() (*[]string, bool)`
 
-GetWarningsOk returns a tuple with the Warnings field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetWarningsOk returns a tuple with the Warnings field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetWarnings
 
@@ -386,12 +382,14 @@ HasWarnings returns a boolean if a field has been set.
 
 `func (o *AccountActivityDocument) SetWarningsNil(b bool)`
 
- SetWarningsNil sets the value for Warnings to be an explicit nil
+SetWarningsNil sets the value for Warnings to be an explicit nil
 
 ### UnsetWarnings
+
 `func (o *AccountActivityDocument) UnsetWarnings()`
 
 UnsetWarnings ensures that no value is present for Warnings, not even an explicit nil
+
 ### GetApprovals
 
 `func (o *AccountActivityDocument) GetApprovals() []Approval`
@@ -402,8 +400,7 @@ GetApprovals returns the Approvals field if non-nil, zero value otherwise.
 
 `func (o *AccountActivityDocument) GetApprovalsOk() (*[]Approval, bool)`
 
-GetApprovalsOk returns a tuple with the Approvals field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApprovalsOk returns a tuple with the Approvals field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApprovals
 
@@ -427,8 +424,7 @@ GetOriginalRequests returns the OriginalRequests field if non-nil, zero value ot
 
 `func (o *AccountActivityDocument) GetOriginalRequestsOk() (*[]OriginalRequest, bool)`
 
-GetOriginalRequestsOk returns a tuple with the OriginalRequests field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOriginalRequestsOk returns a tuple with the OriginalRequests field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOriginalRequests
 
@@ -452,8 +448,7 @@ GetExpansionItems returns the ExpansionItems field if non-nil, zero value otherw
 
 `func (o *AccountActivityDocument) GetExpansionItemsOk() (*[]ExpansionItem, bool)`
 
-GetExpansionItemsOk returns a tuple with the ExpansionItems field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetExpansionItemsOk returns a tuple with the ExpansionItems field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetExpansionItems
 
@@ -477,8 +472,7 @@ GetAccountRequests returns the AccountRequests field if non-nil, zero value othe
 
 `func (o *AccountActivityDocument) GetAccountRequestsOk() (*[]AccountRequest, bool)`
 
-GetAccountRequestsOk returns a tuple with the AccountRequests field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountRequestsOk returns a tuple with the AccountRequests field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountRequests
 
@@ -502,8 +496,7 @@ GetSources returns the Sources field if non-nil, zero value otherwise.
 
 `func (o *AccountActivityDocument) GetSourcesOk() (*string, bool)`
 
-GetSourcesOk returns a tuple with the Sources field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourcesOk returns a tuple with the Sources field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSources
 
@@ -516,5 +509,3 @@ SetSources sets Sources field to given value.
 `func (o *AccountActivityDocument) HasSources() bool`
 
 HasSources returns a boolean if a field has been set.
-
-

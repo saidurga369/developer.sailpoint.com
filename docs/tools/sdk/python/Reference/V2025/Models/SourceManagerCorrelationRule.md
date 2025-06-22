@@ -4,9 +4,22 @@ title: SourceManagerCorrelationRule
 pagination_label: SourceManagerCorrelationRule
 sidebar_label: SourceManagerCorrelationRule
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SourceManagerCorrelationRule', 'V2025SourceManagerCorrelationRule'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'SourceManagerCorrelationRule',
+    'V2025SourceManagerCorrelationRule',
+  ]
 slug: /tools/sdk/python/v2025/models/source-manager-correlation-rule
-tags: ['SDK', 'Software Development Kit', 'SourceManagerCorrelationRule', 'V2025SourceManagerCorrelationRule']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SourceManagerCorrelationRule',
+    'V2025SourceManagerCorrelationRule',
+  ]
 ---
 
 # SourceManagerCorrelationRule
@@ -15,11 +28,12 @@ Reference to the ManagerCorrelationRule. Only use this rule when a simple filter
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'RULE' ] | Type of object being referenced. | [optional] 
-**id** | **str** | Rule ID. | [optional] 
-**name** | **str** | Rule's human-readable display name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'RULE' ] | Type of object being referenced. | [optional] |
+| **id** | **str** | Rule ID. | [optional] |
+| **name** | **str** | Rule's human-readable display name. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Example Rule'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

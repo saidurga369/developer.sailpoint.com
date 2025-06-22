@@ -4,7 +4,7 @@ title: ManagedClient
 pagination_label: ManagedClient
 sidebar_label: ManagedClient
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ManagedClient', 'V2024ManagedClient'] 
+keywords: ['go', 'Golang', 'sdk', 'ManagedClient', 'V2024ManagedClient']
 slug: /tools/sdk/go/v2024/models/managed-client
 tags: ['SDK', 'Software Development Kit', 'ManagedClient', 'V2024ManagedClient']
 ---
@@ -13,30 +13,30 @@ tags: ['SDK', 'Software Development Kit', 'ManagedClient', 'V2024ManagedClient']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **NullableString** | ManagedClient ID | [optional] [readonly] 
-**AlertKey** | Pointer to **NullableString** | ManagedClient alert key | [optional] [readonly] 
-**ApiGatewayBaseUrl** | Pointer to **NullableString** | apiGatewayBaseUrl for the Managed client | [optional] 
-**Cookbook** | Pointer to **NullableString** | cookbook id for the Managed client | [optional] 
-**CcId** | Pointer to **NullableInt64** | Previous CC ID to be used in data migration. (This field will be deleted after CC migration!) | [optional] 
-**ClientId** | **string** | The client ID used in API management | 
-**ClusterId** | **string** | Cluster ID that the ManagedClient is linked to | 
-**Description** | **string** | ManagedClient description | [default to ""]
-**IpAddress** | Pointer to **NullableString** | The public IP address of the ManagedClient | [optional] [readonly] 
-**LastSeen** | Pointer to **NullableTime** | When the ManagedClient was last seen by the server | [optional] [readonly] 
-**Name** | Pointer to **NullableString** | ManagedClient name | [optional] [default to "VA-$clientId"]
-**SinceLastSeen** | Pointer to **NullableString** | Milliseconds since the ManagedClient has polled the server | [optional] [readonly] 
-**Status** | Pointer to **NullableString** | Status of the ManagedClient | [optional] [readonly] 
-**Type** | **string** | Type of the ManagedClient (VA, CCG) | 
-**ClusterType** | Pointer to **NullableString** | Cluster Type of the ManagedClient | [optional] [readonly] 
-**VaDownloadUrl** | Pointer to **NullableString** | ManagedClient VA download URL | [optional] [readonly] 
-**VaVersion** | Pointer to **NullableString** | Version that the ManagedClient's VA is running | [optional] [readonly] 
-**Secret** | Pointer to **NullableString** | Client's apiKey | [optional] 
-**CreatedAt** | Pointer to **NullableTime** | The date/time this ManagedClient was created | [optional] 
-**UpdatedAt** | Pointer to **NullableTime** | The date/time this ManagedClient was last updated | [optional] 
-**ProvisionStatus** | Pointer to **NullableString** | The provisioning status of the ManagedClient | [optional] [readonly] 
-**HealthIndicators** | Pointer to **map[string]interface{}** | The health indicators of the ManagedClient | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **NullableString** | ManagedClient ID | [optional] [readonly] |
+| **AlertKey** | Pointer to **NullableString** | ManagedClient alert key | [optional] [readonly] |
+| **ApiGatewayBaseUrl** | Pointer to **NullableString** | apiGatewayBaseUrl for the Managed client | [optional] |
+| **Cookbook** | Pointer to **NullableString** | cookbook id for the Managed client | [optional] |
+| **CcId** | Pointer to **NullableInt64** | Previous CC ID to be used in data migration. (This field will be deleted after CC migration!) | [optional] |
+| **ClientId** | **string** | The client ID used in API management |
+| **ClusterId** | **string** | Cluster ID that the ManagedClient is linked to |
+| **Description** | **string** | ManagedClient description | [default to ""] |
+| **IpAddress** | Pointer to **NullableString** | The public IP address of the ManagedClient | [optional] [readonly] |
+| **LastSeen** | Pointer to **NullableTime** | When the ManagedClient was last seen by the server | [optional] [readonly] |
+| **Name** | Pointer to **NullableString** | ManagedClient name | [optional] [default to "VA-$clientId"] |
+| **SinceLastSeen** | Pointer to **NullableString** | Milliseconds since the ManagedClient has polled the server | [optional] [readonly] |
+| **Status** | Pointer to **NullableString** | Status of the ManagedClient | [optional] [readonly] |
+| **Type** | **string** | Type of the ManagedClient (VA, CCG) |
+| **ClusterType** | Pointer to **NullableString** | Cluster Type of the ManagedClient | [optional] [readonly] |
+| **VaDownloadUrl** | Pointer to **NullableString** | ManagedClient VA download URL | [optional] [readonly] |
+| **VaVersion** | Pointer to **NullableString** | Version that the ManagedClient's VA is running | [optional] [readonly] |
+| **Secret** | Pointer to **NullableString** | Client's apiKey | [optional] |
+| **CreatedAt** | Pointer to **NullableTime** | The date/time this ManagedClient was created | [optional] |
+| **UpdatedAt** | Pointer to **NullableTime** | The date/time this ManagedClient was last updated | [optional] |
+| **ProvisionStatus** | Pointer to **NullableString** | The provisioning status of the ManagedClient | [optional] [readonly] |
+| **HealthIndicators** | Pointer to **map[string]interface{}** | The health indicators of the ManagedClient | [optional] |
 
 ## Methods
 
@@ -44,18 +44,13 @@ Name | Type | Description | Notes
 
 `func NewManagedClient(clientId string, clusterId string, description string, type_ string, ) *ManagedClient`
 
-NewManagedClient instantiates a new ManagedClient object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewManagedClient instantiates a new ManagedClient object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewManagedClientWithDefaults
 
 `func NewManagedClientWithDefaults() *ManagedClient`
 
-NewManagedClientWithDefaults instantiates a new ManagedClient object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewManagedClientWithDefaults instantiates a new ManagedClient object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -67,8 +62,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *ManagedClient) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -86,12 +80,14 @@ HasId returns a boolean if a field has been set.
 
 `func (o *ManagedClient) SetIdNil(b bool)`
 
- SetIdNil sets the value for Id to be an explicit nil
+SetIdNil sets the value for Id to be an explicit nil
 
 ### UnsetId
+
 `func (o *ManagedClient) UnsetId()`
 
 UnsetId ensures that no value is present for Id, not even an explicit nil
+
 ### GetAlertKey
 
 `func (o *ManagedClient) GetAlertKey() string`
@@ -102,8 +98,7 @@ GetAlertKey returns the AlertKey field if non-nil, zero value otherwise.
 
 `func (o *ManagedClient) GetAlertKeyOk() (*string, bool)`
 
-GetAlertKeyOk returns a tuple with the AlertKey field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAlertKeyOk returns a tuple with the AlertKey field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAlertKey
 
@@ -121,12 +116,14 @@ HasAlertKey returns a boolean if a field has been set.
 
 `func (o *ManagedClient) SetAlertKeyNil(b bool)`
 
- SetAlertKeyNil sets the value for AlertKey to be an explicit nil
+SetAlertKeyNil sets the value for AlertKey to be an explicit nil
 
 ### UnsetAlertKey
+
 `func (o *ManagedClient) UnsetAlertKey()`
 
 UnsetAlertKey ensures that no value is present for AlertKey, not even an explicit nil
+
 ### GetApiGatewayBaseUrl
 
 `func (o *ManagedClient) GetApiGatewayBaseUrl() string`
@@ -137,8 +134,7 @@ GetApiGatewayBaseUrl returns the ApiGatewayBaseUrl field if non-nil, zero value 
 
 `func (o *ManagedClient) GetApiGatewayBaseUrlOk() (*string, bool)`
 
-GetApiGatewayBaseUrlOk returns a tuple with the ApiGatewayBaseUrl field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApiGatewayBaseUrlOk returns a tuple with the ApiGatewayBaseUrl field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApiGatewayBaseUrl
 
@@ -156,12 +152,14 @@ HasApiGatewayBaseUrl returns a boolean if a field has been set.
 
 `func (o *ManagedClient) SetApiGatewayBaseUrlNil(b bool)`
 
- SetApiGatewayBaseUrlNil sets the value for ApiGatewayBaseUrl to be an explicit nil
+SetApiGatewayBaseUrlNil sets the value for ApiGatewayBaseUrl to be an explicit nil
 
 ### UnsetApiGatewayBaseUrl
+
 `func (o *ManagedClient) UnsetApiGatewayBaseUrl()`
 
 UnsetApiGatewayBaseUrl ensures that no value is present for ApiGatewayBaseUrl, not even an explicit nil
+
 ### GetCookbook
 
 `func (o *ManagedClient) GetCookbook() string`
@@ -172,8 +170,7 @@ GetCookbook returns the Cookbook field if non-nil, zero value otherwise.
 
 `func (o *ManagedClient) GetCookbookOk() (*string, bool)`
 
-GetCookbookOk returns a tuple with the Cookbook field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCookbookOk returns a tuple with the Cookbook field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCookbook
 
@@ -191,12 +188,14 @@ HasCookbook returns a boolean if a field has been set.
 
 `func (o *ManagedClient) SetCookbookNil(b bool)`
 
- SetCookbookNil sets the value for Cookbook to be an explicit nil
+SetCookbookNil sets the value for Cookbook to be an explicit nil
 
 ### UnsetCookbook
+
 `func (o *ManagedClient) UnsetCookbook()`
 
 UnsetCookbook ensures that no value is present for Cookbook, not even an explicit nil
+
 ### GetCcId
 
 `func (o *ManagedClient) GetCcId() int64`
@@ -207,8 +206,7 @@ GetCcId returns the CcId field if non-nil, zero value otherwise.
 
 `func (o *ManagedClient) GetCcIdOk() (*int64, bool)`
 
-GetCcIdOk returns a tuple with the CcId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCcIdOk returns a tuple with the CcId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCcId
 
@@ -226,12 +224,14 @@ HasCcId returns a boolean if a field has been set.
 
 `func (o *ManagedClient) SetCcIdNil(b bool)`
 
- SetCcIdNil sets the value for CcId to be an explicit nil
+SetCcIdNil sets the value for CcId to be an explicit nil
 
 ### UnsetCcId
+
 `func (o *ManagedClient) UnsetCcId()`
 
 UnsetCcId ensures that no value is present for CcId, not even an explicit nil
+
 ### GetClientId
 
 `func (o *ManagedClient) GetClientId() string`
@@ -242,15 +242,13 @@ GetClientId returns the ClientId field if non-nil, zero value otherwise.
 
 `func (o *ManagedClient) GetClientIdOk() (*string, bool)`
 
-GetClientIdOk returns a tuple with the ClientId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetClientIdOk returns a tuple with the ClientId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetClientId
 
 `func (o *ManagedClient) SetClientId(v string)`
 
 SetClientId sets ClientId field to given value.
-
 
 ### GetClusterId
 
@@ -262,15 +260,13 @@ GetClusterId returns the ClusterId field if non-nil, zero value otherwise.
 
 `func (o *ManagedClient) GetClusterIdOk() (*string, bool)`
 
-GetClusterIdOk returns a tuple with the ClusterId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetClusterIdOk returns a tuple with the ClusterId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetClusterId
 
 `func (o *ManagedClient) SetClusterId(v string)`
 
 SetClusterId sets ClusterId field to given value.
-
 
 ### GetDescription
 
@@ -282,15 +278,13 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *ManagedClient) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
 `func (o *ManagedClient) SetDescription(v string)`
 
 SetDescription sets Description field to given value.
-
 
 ### GetIpAddress
 
@@ -302,8 +296,7 @@ GetIpAddress returns the IpAddress field if non-nil, zero value otherwise.
 
 `func (o *ManagedClient) GetIpAddressOk() (*string, bool)`
 
-GetIpAddressOk returns a tuple with the IpAddress field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIpAddressOk returns a tuple with the IpAddress field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIpAddress
 
@@ -321,12 +314,14 @@ HasIpAddress returns a boolean if a field has been set.
 
 `func (o *ManagedClient) SetIpAddressNil(b bool)`
 
- SetIpAddressNil sets the value for IpAddress to be an explicit nil
+SetIpAddressNil sets the value for IpAddress to be an explicit nil
 
 ### UnsetIpAddress
+
 `func (o *ManagedClient) UnsetIpAddress()`
 
 UnsetIpAddress ensures that no value is present for IpAddress, not even an explicit nil
+
 ### GetLastSeen
 
 `func (o *ManagedClient) GetLastSeen() SailPointTime`
@@ -337,8 +332,7 @@ GetLastSeen returns the LastSeen field if non-nil, zero value otherwise.
 
 `func (o *ManagedClient) GetLastSeenOk() (*SailPointTime, bool)`
 
-GetLastSeenOk returns a tuple with the LastSeen field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLastSeenOk returns a tuple with the LastSeen field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLastSeen
 
@@ -356,12 +350,14 @@ HasLastSeen returns a boolean if a field has been set.
 
 `func (o *ManagedClient) SetLastSeenNil(b bool)`
 
- SetLastSeenNil sets the value for LastSeen to be an explicit nil
+SetLastSeenNil sets the value for LastSeen to be an explicit nil
 
 ### UnsetLastSeen
+
 `func (o *ManagedClient) UnsetLastSeen()`
 
 UnsetLastSeen ensures that no value is present for LastSeen, not even an explicit nil
+
 ### GetName
 
 `func (o *ManagedClient) GetName() string`
@@ -372,8 +368,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *ManagedClient) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -391,12 +386,14 @@ HasName returns a boolean if a field has been set.
 
 `func (o *ManagedClient) SetNameNil(b bool)`
 
- SetNameNil sets the value for Name to be an explicit nil
+SetNameNil sets the value for Name to be an explicit nil
 
 ### UnsetName
+
 `func (o *ManagedClient) UnsetName()`
 
 UnsetName ensures that no value is present for Name, not even an explicit nil
+
 ### GetSinceLastSeen
 
 `func (o *ManagedClient) GetSinceLastSeen() string`
@@ -407,8 +404,7 @@ GetSinceLastSeen returns the SinceLastSeen field if non-nil, zero value otherwis
 
 `func (o *ManagedClient) GetSinceLastSeenOk() (*string, bool)`
 
-GetSinceLastSeenOk returns a tuple with the SinceLastSeen field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSinceLastSeenOk returns a tuple with the SinceLastSeen field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSinceLastSeen
 
@@ -426,12 +422,14 @@ HasSinceLastSeen returns a boolean if a field has been set.
 
 `func (o *ManagedClient) SetSinceLastSeenNil(b bool)`
 
- SetSinceLastSeenNil sets the value for SinceLastSeen to be an explicit nil
+SetSinceLastSeenNil sets the value for SinceLastSeen to be an explicit nil
 
 ### UnsetSinceLastSeen
+
 `func (o *ManagedClient) UnsetSinceLastSeen()`
 
 UnsetSinceLastSeen ensures that no value is present for SinceLastSeen, not even an explicit nil
+
 ### GetStatus
 
 `func (o *ManagedClient) GetStatus() string`
@@ -442,8 +440,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *ManagedClient) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -461,12 +458,14 @@ HasStatus returns a boolean if a field has been set.
 
 `func (o *ManagedClient) SetStatusNil(b bool)`
 
- SetStatusNil sets the value for Status to be an explicit nil
+SetStatusNil sets the value for Status to be an explicit nil
 
 ### UnsetStatus
+
 `func (o *ManagedClient) UnsetStatus()`
 
 UnsetStatus ensures that no value is present for Status, not even an explicit nil
+
 ### GetType
 
 `func (o *ManagedClient) GetType() string`
@@ -477,15 +476,13 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *ManagedClient) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
 `func (o *ManagedClient) SetType(v string)`
 
 SetType sets Type field to given value.
-
 
 ### GetClusterType
 
@@ -497,8 +494,7 @@ GetClusterType returns the ClusterType field if non-nil, zero value otherwise.
 
 `func (o *ManagedClient) GetClusterTypeOk() (*string, bool)`
 
-GetClusterTypeOk returns a tuple with the ClusterType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetClusterTypeOk returns a tuple with the ClusterType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetClusterType
 
@@ -516,12 +512,14 @@ HasClusterType returns a boolean if a field has been set.
 
 `func (o *ManagedClient) SetClusterTypeNil(b bool)`
 
- SetClusterTypeNil sets the value for ClusterType to be an explicit nil
+SetClusterTypeNil sets the value for ClusterType to be an explicit nil
 
 ### UnsetClusterType
+
 `func (o *ManagedClient) UnsetClusterType()`
 
 UnsetClusterType ensures that no value is present for ClusterType, not even an explicit nil
+
 ### GetVaDownloadUrl
 
 `func (o *ManagedClient) GetVaDownloadUrl() string`
@@ -532,8 +530,7 @@ GetVaDownloadUrl returns the VaDownloadUrl field if non-nil, zero value otherwis
 
 `func (o *ManagedClient) GetVaDownloadUrlOk() (*string, bool)`
 
-GetVaDownloadUrlOk returns a tuple with the VaDownloadUrl field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetVaDownloadUrlOk returns a tuple with the VaDownloadUrl field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetVaDownloadUrl
 
@@ -551,12 +548,14 @@ HasVaDownloadUrl returns a boolean if a field has been set.
 
 `func (o *ManagedClient) SetVaDownloadUrlNil(b bool)`
 
- SetVaDownloadUrlNil sets the value for VaDownloadUrl to be an explicit nil
+SetVaDownloadUrlNil sets the value for VaDownloadUrl to be an explicit nil
 
 ### UnsetVaDownloadUrl
+
 `func (o *ManagedClient) UnsetVaDownloadUrl()`
 
 UnsetVaDownloadUrl ensures that no value is present for VaDownloadUrl, not even an explicit nil
+
 ### GetVaVersion
 
 `func (o *ManagedClient) GetVaVersion() string`
@@ -567,8 +566,7 @@ GetVaVersion returns the VaVersion field if non-nil, zero value otherwise.
 
 `func (o *ManagedClient) GetVaVersionOk() (*string, bool)`
 
-GetVaVersionOk returns a tuple with the VaVersion field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetVaVersionOk returns a tuple with the VaVersion field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetVaVersion
 
@@ -586,12 +584,14 @@ HasVaVersion returns a boolean if a field has been set.
 
 `func (o *ManagedClient) SetVaVersionNil(b bool)`
 
- SetVaVersionNil sets the value for VaVersion to be an explicit nil
+SetVaVersionNil sets the value for VaVersion to be an explicit nil
 
 ### UnsetVaVersion
+
 `func (o *ManagedClient) UnsetVaVersion()`
 
 UnsetVaVersion ensures that no value is present for VaVersion, not even an explicit nil
+
 ### GetSecret
 
 `func (o *ManagedClient) GetSecret() string`
@@ -602,8 +602,7 @@ GetSecret returns the Secret field if non-nil, zero value otherwise.
 
 `func (o *ManagedClient) GetSecretOk() (*string, bool)`
 
-GetSecretOk returns a tuple with the Secret field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSecretOk returns a tuple with the Secret field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSecret
 
@@ -621,12 +620,14 @@ HasSecret returns a boolean if a field has been set.
 
 `func (o *ManagedClient) SetSecretNil(b bool)`
 
- SetSecretNil sets the value for Secret to be an explicit nil
+SetSecretNil sets the value for Secret to be an explicit nil
 
 ### UnsetSecret
+
 `func (o *ManagedClient) UnsetSecret()`
 
 UnsetSecret ensures that no value is present for Secret, not even an explicit nil
+
 ### GetCreatedAt
 
 `func (o *ManagedClient) GetCreatedAt() SailPointTime`
@@ -637,8 +638,7 @@ GetCreatedAt returns the CreatedAt field if non-nil, zero value otherwise.
 
 `func (o *ManagedClient) GetCreatedAtOk() (*SailPointTime, bool)`
 
-GetCreatedAtOk returns a tuple with the CreatedAt field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedAtOk returns a tuple with the CreatedAt field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreatedAt
 
@@ -656,12 +656,14 @@ HasCreatedAt returns a boolean if a field has been set.
 
 `func (o *ManagedClient) SetCreatedAtNil(b bool)`
 
- SetCreatedAtNil sets the value for CreatedAt to be an explicit nil
+SetCreatedAtNil sets the value for CreatedAt to be an explicit nil
 
 ### UnsetCreatedAt
+
 `func (o *ManagedClient) UnsetCreatedAt()`
 
 UnsetCreatedAt ensures that no value is present for CreatedAt, not even an explicit nil
+
 ### GetUpdatedAt
 
 `func (o *ManagedClient) GetUpdatedAt() SailPointTime`
@@ -672,8 +674,7 @@ GetUpdatedAt returns the UpdatedAt field if non-nil, zero value otherwise.
 
 `func (o *ManagedClient) GetUpdatedAtOk() (*SailPointTime, bool)`
 
-GetUpdatedAtOk returns a tuple with the UpdatedAt field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUpdatedAtOk returns a tuple with the UpdatedAt field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUpdatedAt
 
@@ -691,12 +692,14 @@ HasUpdatedAt returns a boolean if a field has been set.
 
 `func (o *ManagedClient) SetUpdatedAtNil(b bool)`
 
- SetUpdatedAtNil sets the value for UpdatedAt to be an explicit nil
+SetUpdatedAtNil sets the value for UpdatedAt to be an explicit nil
 
 ### UnsetUpdatedAt
+
 `func (o *ManagedClient) UnsetUpdatedAt()`
 
 UnsetUpdatedAt ensures that no value is present for UpdatedAt, not even an explicit nil
+
 ### GetProvisionStatus
 
 `func (o *ManagedClient) GetProvisionStatus() string`
@@ -707,8 +710,7 @@ GetProvisionStatus returns the ProvisionStatus field if non-nil, zero value othe
 
 `func (o *ManagedClient) GetProvisionStatusOk() (*string, bool)`
 
-GetProvisionStatusOk returns a tuple with the ProvisionStatus field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProvisionStatusOk returns a tuple with the ProvisionStatus field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProvisionStatus
 
@@ -726,12 +728,14 @@ HasProvisionStatus returns a boolean if a field has been set.
 
 `func (o *ManagedClient) SetProvisionStatusNil(b bool)`
 
- SetProvisionStatusNil sets the value for ProvisionStatus to be an explicit nil
+SetProvisionStatusNil sets the value for ProvisionStatus to be an explicit nil
 
 ### UnsetProvisionStatus
+
 `func (o *ManagedClient) UnsetProvisionStatus()`
 
 UnsetProvisionStatus ensures that no value is present for ProvisionStatus, not even an explicit nil
+
 ### GetHealthIndicators
 
 `func (o *ManagedClient) GetHealthIndicators() map[string]interface{}`
@@ -742,8 +746,7 @@ GetHealthIndicators returns the HealthIndicators field if non-nil, zero value ot
 
 `func (o *ManagedClient) GetHealthIndicatorsOk() (*map[string]interface{}, bool)`
 
-GetHealthIndicatorsOk returns a tuple with the HealthIndicators field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetHealthIndicatorsOk returns a tuple with the HealthIndicators field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetHealthIndicators
 
@@ -761,10 +764,10 @@ HasHealthIndicators returns a boolean if a field has been set.
 
 `func (o *ManagedClient) SetHealthIndicatorsNil(b bool)`
 
- SetHealthIndicatorsNil sets the value for HealthIndicators to be an explicit nil
+SetHealthIndicatorsNil sets the value for HealthIndicators to be an explicit nil
 
 ### UnsetHealthIndicators
+
 `func (o *ManagedClient) UnsetHealthIndicators()`
 
 UnsetHealthIndicators ensures that no value is present for HealthIndicators, not even an explicit nil
-

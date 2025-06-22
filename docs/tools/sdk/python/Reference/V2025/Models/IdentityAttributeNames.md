@@ -4,9 +4,22 @@ title: IdentityAttributeNames
 pagination_label: IdentityAttributeNames
 sidebar_label: IdentityAttributeNames
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentityAttributeNames', 'V2025IdentityAttributeNames'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'IdentityAttributeNames',
+    'V2025IdentityAttributeNames',
+  ]
 slug: /tools/sdk/python/v2025/models/identity-attribute-names
-tags: ['SDK', 'Software Development Kit', 'IdentityAttributeNames', 'V2025IdentityAttributeNames']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityAttributeNames',
+    'V2025IdentityAttributeNames',
+  ]
 ---
 
 # IdentityAttributeNames
@@ -15,9 +28,10 @@ Identity attribute IDs.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ids** | **[]str** | List of identity attributes' technical names. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ids** | **[]str** | List of identity attributes' technical names. | [optional] |
+
 }
 
 ## Example
@@ -30,5 +44,5 @@ ids=[name, displayName]
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

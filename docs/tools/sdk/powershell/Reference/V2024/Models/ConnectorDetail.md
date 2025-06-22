@@ -4,38 +4,40 @@ title: ConnectorDetail
 pagination_label: ConnectorDetail
 sidebar_label: ConnectorDetail
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'ConnectorDetail', 'V2024ConnectorDetail'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'ConnectorDetail', 'V2024ConnectorDetail']
 slug: /tools/sdk/powershell/v2024/models/connector-detail
-tags: ['SDK', 'Software Development Kit', 'ConnectorDetail', 'V2024ConnectorDetail']
+tags:
+  ['SDK', 'Software Development Kit', 'ConnectorDetail', 'V2024ConnectorDetail']
 ---
-
 
 # ConnectorDetail
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | **String** | The connector name | [optional] 
-**Type** | **String** | The connector type | [optional] 
-**ClassName** | **String** | The connector class name | [optional] 
-**ScriptName** | **String** | The connector script name | [optional] 
-**ApplicationXml** | **String** | The connector application xml | [optional] 
-**CorrelationConfigXml** | **String** | The connector correlation config xml | [optional] 
-**SourceConfigXml** | **String** | The connector source config xml | [optional] 
-**SourceConfig** | **String** | The connector source config | [optional] 
-**SourceConfigFrom** | **String** | The connector source config origin | [optional] 
-**S3Location** | **String** | storage path key for this connector | [optional] 
-**UploadedFiles** | **[]String** | The list of uploaded files supported by the connector. If there was any executable files uploaded to thee connector. Typically this be empty as the executable be uploaded at source creation. | [optional] 
-**FileUpload** | **Boolean** | true if the source is file upload | [optional] [default to $false]
-**DirectConnect** | **Boolean** | true if the source is a direct connect source | [optional] [default to $false]
-**TranslationProperties** | [**map[string]AnyType**]https://learn.microsoft.com/en-us/powershell/scripting/lang-spec/chapter-04?view=powershell-7.4 | A map containing translation attributes by loacale key | [optional] 
-**ConnectorMetadata** | [**map[string]AnyType**]https://learn.microsoft.com/en-us/powershell/scripting/lang-spec/chapter-04?view=powershell-7.4 | A map containing metadata pertinent to the UI to be used | [optional] 
-**Status** |  **Enum** [  "DEPRECATED",    "DEVELOPMENT",    "DEMO",    "RELEASED" ] | The connector status | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | **String** | The connector name | [optional] |
+| **Type** | **String** | The connector type | [optional] |
+| **ClassName** | **String** | The connector class name | [optional] |
+| **ScriptName** | **String** | The connector script name | [optional] |
+| **ApplicationXml** | **String** | The connector application xml | [optional] |
+| **CorrelationConfigXml** | **String** | The connector correlation config xml | [optional] |
+| **SourceConfigXml** | **String** | The connector source config xml | [optional] |
+| **SourceConfig** | **String** | The connector source config | [optional] |
+| **SourceConfigFrom** | **String** | The connector source config origin | [optional] |
+| **S3Location** | **String** | storage path key for this connector | [optional] |
+| **UploadedFiles** | **[]String** | The list of uploaded files supported by the connector. If there was any executable files uploaded to thee connector. Typically this be empty as the executable be uploaded at source creation. | [optional] |
+| **FileUpload** | **Boolean** | true if the source is file upload | [optional] [default to $false] |
+| **DirectConnect** | **Boolean** | true if the source is a direct connect source | [optional] [default to $false] |
+| **TranslationProperties** | [**map[string]AnyType**]https://learn.microsoft.com/en-us/powershell/scripting/lang-spec/chapter-04?view=powershell-7.4 | A map containing translation attributes by loacale key | [optional] |
+| **ConnectorMetadata** | [**map[string]AnyType**]https://learn.microsoft.com/en-us/powershell/scripting/lang-spec/chapter-04?view=powershell-7.4 | A map containing metadata pertinent to the UI to be used | [optional] |
+| **Status** | **Enum** [ "DEPRECATED", "DEVELOPMENT", "DEMO", "RELEASED" ] | The connector status | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $ConnectorDetail = Initialize-V2024ConnectorDetail  -Name name `
  -Type ServiceNow `
@@ -62,17 +64,17 @@ $ConnectorDetail = Initialize-V2024ConnectorDetail  -Name name `
     <BaseConfig>
         <Field maxFiles="10" maxSize="300" name="fileUpload" supportedExtensions="jar" type="fileupload" validateJSON="false"/>
     </BaseConfig>
-  
 
- 
+
+
 </Form> `
  -SourceConfig <?xml version="1.0" encoding="UTF-8" standalone="no"?><!-- Copyright (C) 2023 SailPoint Technologies, Inc.  All rights reserved. --><Form xmlns="http://www.sailpoint.com/xsd/sailpoint_form_2_0.xsd" connectorName="custom Atlassian Suite - Cloud" directConnect="true" fileUpload="true" name="Custom Atlassian Suite - Cloud" status="released" type="SourceConfig">
     <BaseConfig>
         <Field maxFiles="10" maxSize="300" name="fileUpload" supportedExtensions="jar" type="fileupload" validateJSON="false"/>
     </BaseConfig>
-  
 
- 
+
+
 </Form> `
  -SourceConfigFrom sp-connect `
  -S3Location custom-connector/scriptname `
@@ -107,10 +109,9 @@ ShortDesc=Das Integrationsmodul IdentityNow f\u00fcr Delinea Secret Server On-Pr
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $ConnectorDetail | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

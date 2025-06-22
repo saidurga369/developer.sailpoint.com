@@ -4,19 +4,32 @@ title: EntitlementAccessModelMetadata
 pagination_label: EntitlementAccessModelMetadata
 sidebar_label: EntitlementAccessModelMetadata
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'EntitlementAccessModelMetadata', 'BetaEntitlementAccessModelMetadata'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'EntitlementAccessModelMetadata',
+    'BetaEntitlementAccessModelMetadata',
+  ]
 slug: /tools/sdk/python/beta/models/entitlement-access-model-metadata
-tags: ['SDK', 'Software Development Kit', 'EntitlementAccessModelMetadata', 'BetaEntitlementAccessModelMetadata']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'EntitlementAccessModelMetadata',
+    'BetaEntitlementAccessModelMetadata',
+  ]
 ---
 
 # EntitlementAccessModelMetadata
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**attributes** | [**[]AttributeDTO**](attribute-dto) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **attributes** | [**[]AttributeDTO**](attribute-dto) |  | [optional] |
+
 }
 
 ## Example
@@ -29,5 +42,5 @@ attributes=[{key=iscPrivacy, name=Privacy, multiselect=false, status=active, typ
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,31 +4,43 @@ title: WorkflowLibraryActionExampleOutput
 pagination_label: WorkflowLibraryActionExampleOutput
 sidebar_label: WorkflowLibraryActionExampleOutput
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'WorkflowLibraryActionExampleOutput', 'WorkflowLibraryActionExampleOutput'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'WorkflowLibraryActionExampleOutput',
+    'WorkflowLibraryActionExampleOutput',
+  ]
 slug: /tools/sdk/powershell/v3/models/workflow-library-action-example-output
-tags: ['SDK', 'Software Development Kit', 'WorkflowLibraryActionExampleOutput', 'WorkflowLibraryActionExampleOutput']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'WorkflowLibraryActionExampleOutput',
+    'WorkflowLibraryActionExampleOutput',
+  ]
 ---
-
 
 # WorkflowLibraryActionExampleOutput
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
-$WorkflowLibraryActionExampleOutput = Initialize-WorkflowLibraryActionExampleOutput 
+$WorkflowLibraryActionExampleOutput = Initialize-WorkflowLibraryActionExampleOutput
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $WorkflowLibraryActionExampleOutput | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

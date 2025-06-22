@@ -4,23 +4,30 @@ title: ManualWorkItemDetails
 pagination_label: ManualWorkItemDetails
 sidebar_label: ManualWorkItemDetails
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ManualWorkItemDetails', 'ManualWorkItemDetails'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'ManualWorkItemDetails', 'ManualWorkItemDetails']
 slug: /tools/sdk/go/v3/models/manual-work-item-details
-tags: ['SDK', 'Software Development Kit', 'ManualWorkItemDetails', 'ManualWorkItemDetails']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ManualWorkItemDetails',
+    'ManualWorkItemDetails',
+  ]
 ---
 
 # ManualWorkItemDetails
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Forwarded** | Pointer to **bool** | True if the request for this item was forwarded from one owner to another. | [optional] [default to false]
-**OriginalOwner** | Pointer to [**NullableManualWorkItemDetailsOriginalOwner**](manual-work-item-details-original-owner) |  | [optional] 
-**CurrentOwner** | Pointer to [**NullableManualWorkItemDetailsCurrentOwner**](manual-work-item-details-current-owner) |  | [optional] 
-**Modified** | Pointer to **SailPointTime** | Time at which item was modified. | [optional] 
-**Status** | Pointer to [**ManualWorkItemState**](manual-work-item-state) |  | [optional] 
-**ForwardHistory** | Pointer to [**[]ApprovalForwardHistory**](approval-forward-history) | The history of approval forward action. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Forwarded** | Pointer to **bool** | True if the request for this item was forwarded from one owner to another. | [optional] [default to false] |
+| **OriginalOwner** | Pointer to [**NullableManualWorkItemDetailsOriginalOwner**](manual-work-item-details-original-owner) |  | [optional] |
+| **CurrentOwner** | Pointer to [**NullableManualWorkItemDetailsCurrentOwner**](manual-work-item-details-current-owner) |  | [optional] |
+| **Modified** | Pointer to **SailPointTime** | Time at which item was modified. | [optional] |
+| **Status** | Pointer to [**ManualWorkItemState**](manual-work-item-state) |  | [optional] |
+| **ForwardHistory** | Pointer to [**[]ApprovalForwardHistory**](approval-forward-history) | The history of approval forward action. | [optional] |
 
 ## Methods
 
@@ -28,18 +35,13 @@ Name | Type | Description | Notes
 
 `func NewManualWorkItemDetails() *ManualWorkItemDetails`
 
-NewManualWorkItemDetails instantiates a new ManualWorkItemDetails object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewManualWorkItemDetails instantiates a new ManualWorkItemDetails object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewManualWorkItemDetailsWithDefaults
 
 `func NewManualWorkItemDetailsWithDefaults() *ManualWorkItemDetails`
 
-NewManualWorkItemDetailsWithDefaults instantiates a new ManualWorkItemDetails object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewManualWorkItemDetailsWithDefaults instantiates a new ManualWorkItemDetails object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetForwarded
 
@@ -51,8 +53,7 @@ GetForwarded returns the Forwarded field if non-nil, zero value otherwise.
 
 `func (o *ManualWorkItemDetails) GetForwardedOk() (*bool, bool)`
 
-GetForwardedOk returns a tuple with the Forwarded field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetForwardedOk returns a tuple with the Forwarded field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetForwarded
 
@@ -76,8 +77,7 @@ GetOriginalOwner returns the OriginalOwner field if non-nil, zero value otherwis
 
 `func (o *ManualWorkItemDetails) GetOriginalOwnerOk() (*ManualWorkItemDetailsOriginalOwner, bool)`
 
-GetOriginalOwnerOk returns a tuple with the OriginalOwner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOriginalOwnerOk returns a tuple with the OriginalOwner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOriginalOwner
 
@@ -95,12 +95,14 @@ HasOriginalOwner returns a boolean if a field has been set.
 
 `func (o *ManualWorkItemDetails) SetOriginalOwnerNil(b bool)`
 
- SetOriginalOwnerNil sets the value for OriginalOwner to be an explicit nil
+SetOriginalOwnerNil sets the value for OriginalOwner to be an explicit nil
 
 ### UnsetOriginalOwner
+
 `func (o *ManualWorkItemDetails) UnsetOriginalOwner()`
 
 UnsetOriginalOwner ensures that no value is present for OriginalOwner, not even an explicit nil
+
 ### GetCurrentOwner
 
 `func (o *ManualWorkItemDetails) GetCurrentOwner() ManualWorkItemDetailsCurrentOwner`
@@ -111,8 +113,7 @@ GetCurrentOwner returns the CurrentOwner field if non-nil, zero value otherwise.
 
 `func (o *ManualWorkItemDetails) GetCurrentOwnerOk() (*ManualWorkItemDetailsCurrentOwner, bool)`
 
-GetCurrentOwnerOk returns a tuple with the CurrentOwner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCurrentOwnerOk returns a tuple with the CurrentOwner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCurrentOwner
 
@@ -130,12 +131,14 @@ HasCurrentOwner returns a boolean if a field has been set.
 
 `func (o *ManualWorkItemDetails) SetCurrentOwnerNil(b bool)`
 
- SetCurrentOwnerNil sets the value for CurrentOwner to be an explicit nil
+SetCurrentOwnerNil sets the value for CurrentOwner to be an explicit nil
 
 ### UnsetCurrentOwner
+
 `func (o *ManualWorkItemDetails) UnsetCurrentOwner()`
 
 UnsetCurrentOwner ensures that no value is present for CurrentOwner, not even an explicit nil
+
 ### GetModified
 
 `func (o *ManualWorkItemDetails) GetModified() SailPointTime`
@@ -146,8 +149,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *ManualWorkItemDetails) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -171,8 +173,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *ManualWorkItemDetails) GetStatusOk() (*ManualWorkItemState, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -196,8 +197,7 @@ GetForwardHistory returns the ForwardHistory field if non-nil, zero value otherw
 
 `func (o *ManualWorkItemDetails) GetForwardHistoryOk() (*[]ApprovalForwardHistory, bool)`
 
-GetForwardHistoryOk returns a tuple with the ForwardHistory field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetForwardHistoryOk returns a tuple with the ForwardHistory field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetForwardHistory
 
@@ -215,10 +215,10 @@ HasForwardHistory returns a boolean if a field has been set.
 
 `func (o *ManualWorkItemDetails) SetForwardHistoryNil(b bool)`
 
- SetForwardHistoryNil sets the value for ForwardHistory to be an explicit nil
+SetForwardHistoryNil sets the value for ForwardHistory to be an explicit nil
 
 ### UnsetForwardHistory
+
 `func (o *ManualWorkItemDetails) UnsetForwardHistory()`
 
 UnsetForwardHistory ensures that no value is present for ForwardHistory, not even an explicit nil
-

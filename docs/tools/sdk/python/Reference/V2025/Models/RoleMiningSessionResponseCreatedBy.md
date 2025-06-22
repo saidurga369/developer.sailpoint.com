@@ -4,9 +4,22 @@ title: RoleMiningSessionResponseCreatedBy
 pagination_label: RoleMiningSessionResponseCreatedBy
 sidebar_label: RoleMiningSessionResponseCreatedBy
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RoleMiningSessionResponseCreatedBy', 'V2025RoleMiningSessionResponseCreatedBy'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'RoleMiningSessionResponseCreatedBy',
+    'V2025RoleMiningSessionResponseCreatedBy',
+  ]
 slug: /tools/sdk/python/v2025/models/role-mining-session-response-created-by
-tags: ['SDK', 'Software Development Kit', 'RoleMiningSessionResponseCreatedBy', 'V2025RoleMiningSessionResponseCreatedBy']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningSessionResponseCreatedBy',
+    'V2025RoleMiningSessionResponseCreatedBy',
+  ]
 ---
 
 # RoleMiningSessionResponseCreatedBy
@@ -15,10 +28,11 @@ The session created by details
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | ID of the creator | [optional] 
-**display_name** | **str** | The display name of the creator | [optional] 
+| Name             | Type    | Description                     | Notes      |
+| ---------------- | ------- | ------------------------------- | ---------- |
+| **id**           | **str** | ID of the creator               | [optional] |
+| **display_name** | **str** | The display name of the creator | [optional] |
+
 }
 
 ## Example
@@ -32,5 +46,5 @@ display_name='Ashley.Pierce'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

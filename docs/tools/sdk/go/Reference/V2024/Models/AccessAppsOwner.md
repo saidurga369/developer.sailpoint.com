@@ -4,21 +4,22 @@ title: AccessAppsOwner
 pagination_label: AccessAppsOwner
 sidebar_label: AccessAppsOwner
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessAppsOwner', 'V2024AccessAppsOwner'] 
+keywords: ['go', 'Golang', 'sdk', 'AccessAppsOwner', 'V2024AccessAppsOwner']
 slug: /tools/sdk/go/v2024/models/access-apps-owner
-tags: ['SDK', 'Software Development Kit', 'AccessAppsOwner', 'V2024AccessAppsOwner']
+tags:
+  ['SDK', 'Software Development Kit', 'AccessAppsOwner', 'V2024AccessAppsOwner']
 ---
 
 # AccessAppsOwner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | Owner's DTO type. | [optional] 
-**Id** | Pointer to **string** | Owner's identity ID. | [optional] 
-**Name** | Pointer to **string** | Owner's display name. | [optional] 
-**Email** | Pointer to **string** | Owner's email. | [optional] 
+| Name      | Type                  | Description           | Notes      |
+| --------- | --------------------- | --------------------- | ---------- |
+| **Type**  | Pointer to **string** | Owner's DTO type.     | [optional] |
+| **Id**    | Pointer to **string** | Owner's identity ID.  | [optional] |
+| **Name**  | Pointer to **string** | Owner's display name. | [optional] |
+| **Email** | Pointer to **string** | Owner's email.        | [optional] |
 
 ## Methods
 
@@ -26,18 +27,13 @@ Name | Type | Description | Notes
 
 `func NewAccessAppsOwner() *AccessAppsOwner`
 
-NewAccessAppsOwner instantiates a new AccessAppsOwner object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessAppsOwner instantiates a new AccessAppsOwner object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessAppsOwnerWithDefaults
 
 `func NewAccessAppsOwnerWithDefaults() *AccessAppsOwner`
 
-NewAccessAppsOwnerWithDefaults instantiates a new AccessAppsOwner object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessAppsOwnerWithDefaults instantiates a new AccessAppsOwner object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -49,8 +45,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *AccessAppsOwner) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -74,8 +69,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *AccessAppsOwner) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -99,8 +93,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *AccessAppsOwner) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -124,8 +117,7 @@ GetEmail returns the Email field if non-nil, zero value otherwise.
 
 `func (o *AccessAppsOwner) GetEmailOk() (*string, bool)`
 
-GetEmailOk returns a tuple with the Email field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEmailOk returns a tuple with the Email field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEmail
 
@@ -138,5 +130,3 @@ SetEmail sets Email field to given value.
 `func (o *AccessAppsOwner) HasEmail() bool`
 
 HasEmail returns a boolean if a field has been set.
-
-

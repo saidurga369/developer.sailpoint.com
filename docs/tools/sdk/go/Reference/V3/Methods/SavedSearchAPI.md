@@ -4,54 +4,47 @@ title: SavedSearch
 pagination_label: SavedSearch
 sidebar_label: SavedSearch
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SavedSearch', 'SavedSearch'] 
+keywords: ['go', 'Golang', 'sdk', 'SavedSearch', 'SavedSearch']
 slug: /tools/sdk/go/v3/methods/saved-search
 tags: ['SDK', 'Software Development Kit', 'SavedSearch', 'SavedSearch']
 ---
 
 # SavedSearchAPI
-  Use this API to implement saved search functionality. 
-With saved search functionality in place, users can save search queries and then view those saved searches, as well as rerun them. 
 
-Search queries in Identity Security Cloud can grow very long and specific, which can make reconstructing them difficult or tedious, so it can be especially helpful to save search queries. 
-It also opens the possibility to configure Identity Security Cloud to run the saved queries on a schedule, which is essential to detecting user information and access changes throughout an organization&#39;s tenant and across all its sources. 
-Refer to [Scheduled Search](https://developer.sailpoint.com/docs/api/v3/scheduled-search/) for more information about running saved searches on a schedule. 
+Use this API to implement saved search functionality. With saved search functionality in place, users can save search queries and then view those saved searches, as well as rerun them.
 
-In Identity Security Cloud, users can save searches under a name, and then they can access that saved search and run it again when they want. 
+Search queries in Identity Security Cloud can grow very long and specific, which can make reconstructing them difficult or tedious, so it can be especially helpful to save search queries. It also opens the possibility to configure Identity Security Cloud to run the saved queries on a schedule, which is essential to detecting user information and access changes throughout an organization&#39;s tenant and across all its sources. Refer to [Scheduled Search](https://developer.sailpoint.com/docs/api/v3/scheduled-search/) for more information about running saved searches on a schedule.
+
+In Identity Security Cloud, users can save searches under a name, and then they can access that saved search and run it again when they want.
 
 Refer to [Managing Saved Searches](https://documentation.sailpoint.com/saas/help/search/saved-searches.html) for more information about saving searches and using them.
- 
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/v3*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create-saved-search**](#create-saved-search) | **Post** `/saved-searches` | Create a saved search
-[**delete-saved-search**](#delete-saved-search) | **Delete** `/saved-searches/{id}` | Delete document by id
-[**execute-saved-search**](#execute-saved-search) | **Post** `/saved-searches/{id}/execute` | Execute a saved search by id
-[**get-saved-search**](#get-saved-search) | **Get** `/saved-searches/{id}` | Return saved search by id
-[**list-saved-searches**](#list-saved-searches) | **Get** `/saved-searches` | A list of saved searches
-[**put-saved-search**](#put-saved-search) | **Put** `/saved-searches/{id}` | Updates an existing saved search 
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**create-saved-search**](#create-saved-search) | **Post** `/saved-searches` | Create a saved search |
+| [**delete-saved-search**](#delete-saved-search) | **Delete** `/saved-searches/{id}` | Delete document by id |
+| [**execute-saved-search**](#execute-saved-search) | **Post** `/saved-searches/{id}/execute` | Execute a saved search by id |
+| [**get-saved-search**](#get-saved-search) | **Get** `/saved-searches/{id}` | Return saved search by id |
+| [**list-saved-searches**](#list-saved-searches) | **Get** `/saved-searches` | A list of saved searches |
+| [**put-saved-search**](#put-saved-search) | **Put** `/saved-searches/{id}` | Updates an existing saved search |
 
 ## create-saved-search
-Create a saved search
-Creates a new saved search.
 
+Create a saved search Creates a new saved search.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/create-saved-search)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCreateSavedSearchRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **createSavedSearchRequest** | [**CreateSavedSearchRequest**](../models/create-saved-search-request) | The saved search to persist. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **createSavedSearchRequest** | [**CreateSavedSearchRequest**](../models/create-saved-search-request) | The saved search to persist. |
 
 ### Return type
 
@@ -84,7 +77,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -102,32 +95,28 @@ func main() {
 [[Back to top]](#)
 
 ## delete-saved-search
-Delete document by id
-Deletes the specified saved search.
 
+Delete document by id Deletes the specified saved search.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/delete-saved-search)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | ID of the requested document. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | ID of the requested document. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteSavedSearchRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -143,15 +132,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `2c91808568c529c60168cca6f90c1313` // string | ID of the requested document. # string | ID of the requested document.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -161,40 +150,37 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `SavedSearchAPI.DeleteSavedSearch``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## execute-saved-search
-Execute a saved search by id
-Executes the specified saved search.
 
+Execute a saved search by id Executes the specified saved search.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/execute-saved-search)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | ID of the requested document. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | ID of the requested document. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiExecuteSavedSearchRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **searchArguments** | [**SearchArguments**](../models/search-arguments) | When saved search execution is triggered by a scheduled search, *scheduleId* will specify the ID of the triggering scheduled search.  If *scheduleId* is not specified (when execution is triggered by a UI test), the *owner* and *recipients* arguments must be provided.  | 
+**searchArguments** | [**SearchArguments**](../models/search-arguments) | When saved search execution is triggered by a scheduled search, _scheduleId_ will specify the ID of the triggering scheduled search. If _scheduleId_ is not specified (when execution is triggered by a UI test), the _owner_ and _recipients_ arguments must be provided. |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -227,14 +213,14 @@ func main() {
             "type" : "IDENTITY"
           } ],
           "scheduleId" : "7a724640-0c17-4ce9-a8c3-4a89738459c8"
-        }`) // SearchArguments | When saved search execution is triggered by a scheduled search, *scheduleId* will specify the ID of the triggering scheduled search.  If *scheduleId* is not specified (when execution is triggered by a UI test), the *owner* and *recipients* arguments must be provided. 
+        }`) // SearchArguments | When saved search execution is triggered by a scheduled search, *scheduleId* will specify the ID of the triggering scheduled search.  If *scheduleId* is not specified (when execution is triggered by a UI test), the *owner* and *recipients* arguments must be provided.
 
     var searchArguments v3.SearchArguments
     if err := json.Unmarshal(searcharguments, &searchArguments); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -244,35 +230,31 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `SavedSearchAPI.ExecuteSavedSearch``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## get-saved-search
-Return saved search by id
-Returns the specified saved search.
 
+Return saved search by id Returns the specified saved search.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/get-saved-search)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | ID of the requested document. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | ID of the requested document. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetSavedSearchRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -292,15 +274,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `2c91808568c529c60168cca6f90c1313` // string | ID of the requested document. # string | ID of the requested document.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -318,27 +300,23 @@ func main() {
 [[Back to top]](#)
 
 ## list-saved-searches
-A list of saved searches
-Returns a list of saved searches.
 
+A list of saved searches Returns a list of saved searches.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/list-saved-searches)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListSavedSearchesRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **owner.id**: *eq* | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
+| **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false] |
+| **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **owner.id**: _eq_ |
 
 ### Return type
 
@@ -358,8 +336,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -369,7 +347,7 @@ func main() {
     count := true // bool | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to false) # bool | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to false)
     filters := `owner.id eq "7a724640-0c17-4ce9-a8c3-4a89738459c8"` // string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **owner.id**: *eq* (optional) # string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **owner.id**: *eq* (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -387,31 +365,28 @@ func main() {
 [[Back to top]](#)
 
 ## put-saved-search
-Updates an existing saved search 
-Updates an existing saved search. 
 
->**NOTE: You cannot update the `owner` of the saved search.**
+Updates an existing saved search Updates an existing saved search.
 
+> **NOTE: You cannot update the `owner` of the saved search.**
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/put-saved-search)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | ID of the requested document. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | ID of the requested document. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiPutSavedSearchRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **savedSearch** | [**SavedSearch**](../models/saved-search) | The saved search to persist. | 
+**savedSearch** | [**SavedSearch**](../models/saved-search) | The saved search to persist. |
 
 ### Return type
 
@@ -489,7 +464,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -505,4 +480,3 @@ func main() {
 ```
 
 [[Back to top]](#)
-

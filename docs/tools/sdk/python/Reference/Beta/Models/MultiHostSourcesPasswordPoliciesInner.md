@@ -4,21 +4,34 @@ title: MultiHostSourcesPasswordPoliciesInner
 pagination_label: MultiHostSourcesPasswordPoliciesInner
 sidebar_label: MultiHostSourcesPasswordPoliciesInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'MultiHostSourcesPasswordPoliciesInner', 'BetaMultiHostSourcesPasswordPoliciesInner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'MultiHostSourcesPasswordPoliciesInner',
+    'BetaMultiHostSourcesPasswordPoliciesInner',
+  ]
 slug: /tools/sdk/python/beta/models/multi-host-sources-password-policies-inner
-tags: ['SDK', 'Software Development Kit', 'MultiHostSourcesPasswordPoliciesInner', 'BetaMultiHostSourcesPasswordPoliciesInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'MultiHostSourcesPasswordPoliciesInner',
+    'BetaMultiHostSourcesPasswordPoliciesInner',
+  ]
 ---
 
 # MultiHostSourcesPasswordPoliciesInner
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'PASSWORD_POLICY' ] | Type of object being referenced. | [optional] 
-**id** | **str** | Policy ID. | [optional] 
-**name** | **str** | Policy's human-readable display name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'PASSWORD_POLICY' ] | Type of object being referenced. | [optional] |
+| **id** | **str** | Policy ID. | [optional] |
+| **name** | **str** | Policy's human-readable display name. | [optional] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ name='My Password Policy'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

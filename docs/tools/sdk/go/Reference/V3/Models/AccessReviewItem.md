@@ -4,24 +4,25 @@ title: AccessReviewItem
 pagination_label: AccessReviewItem
 sidebar_label: AccessReviewItem
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessReviewItem', 'AccessReviewItem'] 
+keywords: ['go', 'Golang', 'sdk', 'AccessReviewItem', 'AccessReviewItem']
 slug: /tools/sdk/go/v3/models/access-review-item
-tags: ['SDK', 'Software Development Kit', 'AccessReviewItem', 'AccessReviewItem']
+tags:
+  ['SDK', 'Software Development Kit', 'AccessReviewItem', 'AccessReviewItem']
 ---
 
 # AccessReviewItem
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**AccessSummary** | Pointer to [**AccessSummary**](access-summary) |  | [optional] 
-**IdentitySummary** | Pointer to [**CertificationIdentitySummary**](certification-identity-summary) |  | [optional] 
-**Id** | Pointer to **string** | The review item's id | [optional] 
-**Completed** | Pointer to **bool** | Whether the review item is complete | [optional] 
-**NewAccess** | Pointer to **bool** | Indicates whether the review item is for new access to a source | [optional] 
-**Decision** | Pointer to [**CertificationDecision**](certification-decision) |  | [optional] 
-**Comments** | Pointer to **NullableString** | Comments for this review item | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **AccessSummary** | Pointer to [**AccessSummary**](access-summary) |  | [optional] |
+| **IdentitySummary** | Pointer to [**CertificationIdentitySummary**](certification-identity-summary) |  | [optional] |
+| **Id** | Pointer to **string** | The review item's id | [optional] |
+| **Completed** | Pointer to **bool** | Whether the review item is complete | [optional] |
+| **NewAccess** | Pointer to **bool** | Indicates whether the review item is for new access to a source | [optional] |
+| **Decision** | Pointer to [**CertificationDecision**](certification-decision) |  | [optional] |
+| **Comments** | Pointer to **NullableString** | Comments for this review item | [optional] |
 
 ## Methods
 
@@ -29,18 +30,13 @@ Name | Type | Description | Notes
 
 `func NewAccessReviewItem() *AccessReviewItem`
 
-NewAccessReviewItem instantiates a new AccessReviewItem object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessReviewItem instantiates a new AccessReviewItem object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessReviewItemWithDefaults
 
 `func NewAccessReviewItemWithDefaults() *AccessReviewItem`
 
-NewAccessReviewItemWithDefaults instantiates a new AccessReviewItem object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessReviewItemWithDefaults instantiates a new AccessReviewItem object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetAccessSummary
 
@@ -52,8 +48,7 @@ GetAccessSummary returns the AccessSummary field if non-nil, zero value otherwis
 
 `func (o *AccessReviewItem) GetAccessSummaryOk() (*AccessSummary, bool)`
 
-GetAccessSummaryOk returns a tuple with the AccessSummary field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessSummaryOk returns a tuple with the AccessSummary field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessSummary
 
@@ -77,8 +72,7 @@ GetIdentitySummary returns the IdentitySummary field if non-nil, zero value othe
 
 `func (o *AccessReviewItem) GetIdentitySummaryOk() (*CertificationIdentitySummary, bool)`
 
-GetIdentitySummaryOk returns a tuple with the IdentitySummary field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentitySummaryOk returns a tuple with the IdentitySummary field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentitySummary
 
@@ -102,8 +96,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *AccessReviewItem) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -127,8 +120,7 @@ GetCompleted returns the Completed field if non-nil, zero value otherwise.
 
 `func (o *AccessReviewItem) GetCompletedOk() (*bool, bool)`
 
-GetCompletedOk returns a tuple with the Completed field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCompletedOk returns a tuple with the Completed field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCompleted
 
@@ -152,8 +144,7 @@ GetNewAccess returns the NewAccess field if non-nil, zero value otherwise.
 
 `func (o *AccessReviewItem) GetNewAccessOk() (*bool, bool)`
 
-GetNewAccessOk returns a tuple with the NewAccess field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNewAccessOk returns a tuple with the NewAccess field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNewAccess
 
@@ -177,8 +168,7 @@ GetDecision returns the Decision field if non-nil, zero value otherwise.
 
 `func (o *AccessReviewItem) GetDecisionOk() (*CertificationDecision, bool)`
 
-GetDecisionOk returns a tuple with the Decision field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDecisionOk returns a tuple with the Decision field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDecision
 
@@ -202,8 +192,7 @@ GetComments returns the Comments field if non-nil, zero value otherwise.
 
 `func (o *AccessReviewItem) GetCommentsOk() (*string, bool)`
 
-GetCommentsOk returns a tuple with the Comments field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCommentsOk returns a tuple with the Comments field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetComments
 
@@ -221,10 +210,10 @@ HasComments returns a boolean if a field has been set.
 
 `func (o *AccessReviewItem) SetCommentsNil(b bool)`
 
- SetCommentsNil sets the value for Comments to be an explicit nil
+SetCommentsNil sets the value for Comments to be an explicit nil
 
 ### UnsetComments
+
 `func (o *AccessReviewItem) UnsetComments()`
 
 UnsetComments ensures that no value is present for Comments, not even an explicit nil
-

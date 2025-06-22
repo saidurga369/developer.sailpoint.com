@@ -4,21 +4,34 @@ title: ExceptionCriteriaCriteriaListInner
 pagination_label: ExceptionCriteriaCriteriaListInner
 sidebar_label: ExceptionCriteriaCriteriaListInner
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ExceptionCriteriaCriteriaListInner', 'ExceptionCriteriaCriteriaListInner'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ExceptionCriteriaCriteriaListInner',
+    'ExceptionCriteriaCriteriaListInner',
+  ]
 slug: /tools/sdk/go/v3/models/exception-criteria-criteria-list-inner
-tags: ['SDK', 'Software Development Kit', 'ExceptionCriteriaCriteriaListInner', 'ExceptionCriteriaCriteriaListInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ExceptionCriteriaCriteriaListInner',
+    'ExceptionCriteriaCriteriaListInner',
+  ]
 ---
 
 # ExceptionCriteriaCriteriaListInner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **map[string]interface{}** | The type of object that is referenced | [optional] 
-**Id** | Pointer to **string** | ID of the object to which this reference applies | [optional] 
-**Name** | Pointer to **string** | Human-readable display name of the object to which this reference applies | [optional] 
-**Existing** | Pointer to **bool** | Whether the subject identity already had that access or not | [optional] [default to false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to **map[string]interface{}** | The type of object that is referenced | [optional] |
+| **Id** | Pointer to **string** | ID of the object to which this reference applies | [optional] |
+| **Name** | Pointer to **string** | Human-readable display name of the object to which this reference applies | [optional] |
+| **Existing** | Pointer to **bool** | Whether the subject identity already had that access or not | [optional] [default to false] |
 
 ## Methods
 
@@ -26,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewExceptionCriteriaCriteriaListInner() *ExceptionCriteriaCriteriaListInner`
 
-NewExceptionCriteriaCriteriaListInner instantiates a new ExceptionCriteriaCriteriaListInner object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewExceptionCriteriaCriteriaListInner instantiates a new ExceptionCriteriaCriteriaListInner object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewExceptionCriteriaCriteriaListInnerWithDefaults
 
 `func NewExceptionCriteriaCriteriaListInnerWithDefaults() *ExceptionCriteriaCriteriaListInner`
 
-NewExceptionCriteriaCriteriaListInnerWithDefaults instantiates a new ExceptionCriteriaCriteriaListInner object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewExceptionCriteriaCriteriaListInnerWithDefaults instantiates a new ExceptionCriteriaCriteriaListInner object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -49,8 +57,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *ExceptionCriteriaCriteriaListInner) GetTypeOk() (*map[string]interface{}, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -74,8 +81,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *ExceptionCriteriaCriteriaListInner) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -99,8 +105,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *ExceptionCriteriaCriteriaListInner) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -124,8 +129,7 @@ GetExisting returns the Existing field if non-nil, zero value otherwise.
 
 `func (o *ExceptionCriteriaCriteriaListInner) GetExistingOk() (*bool, bool)`
 
-GetExistingOk returns a tuple with the Existing field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetExistingOk returns a tuple with the Existing field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetExisting
 
@@ -138,5 +142,3 @@ SetExisting sets Existing field to given value.
 `func (o *ExceptionCriteriaCriteriaListInner) HasExisting() bool`
 
 HasExisting returns a boolean if a field has been set.
-
-

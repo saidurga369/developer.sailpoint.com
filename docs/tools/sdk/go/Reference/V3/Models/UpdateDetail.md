@@ -4,7 +4,7 @@ title: UpdateDetail
 pagination_label: UpdateDetail
 sidebar_label: UpdateDetail
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'UpdateDetail', 'UpdateDetail'] 
+keywords: ['go', 'Golang', 'sdk', 'UpdateDetail', 'UpdateDetail']
 slug: /tools/sdk/go/v3/models/update-detail
 tags: ['SDK', 'Software Development Kit', 'UpdateDetail', 'UpdateDetail']
 ---
@@ -13,12 +13,12 @@ tags: ['SDK', 'Software Development Kit', 'UpdateDetail', 'UpdateDetail']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Message** | Pointer to **string** | The detailed message for an update. Typically the relevent error message when status is error. | [optional] 
-**ScriptName** | Pointer to **string** | The connector script name | [optional] 
-**UpdatedFiles** | Pointer to **[]string** | The list of updated files supported by the connector | [optional] 
-**Status** | Pointer to **string** | The connector update status | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Message** | Pointer to **string** | The detailed message for an update. Typically the relevent error message when status is error. | [optional] |
+| **ScriptName** | Pointer to **string** | The connector script name | [optional] |
+| **UpdatedFiles** | Pointer to **[]string** | The list of updated files supported by the connector | [optional] |
+| **Status** | Pointer to **string** | The connector update status | [optional] |
 
 ## Methods
 
@@ -26,18 +26,13 @@ Name | Type | Description | Notes
 
 `func NewUpdateDetail() *UpdateDetail`
 
-NewUpdateDetail instantiates a new UpdateDetail object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewUpdateDetail instantiates a new UpdateDetail object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewUpdateDetailWithDefaults
 
 `func NewUpdateDetailWithDefaults() *UpdateDetail`
 
-NewUpdateDetailWithDefaults instantiates a new UpdateDetail object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewUpdateDetailWithDefaults instantiates a new UpdateDetail object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetMessage
 
@@ -49,8 +44,7 @@ GetMessage returns the Message field if non-nil, zero value otherwise.
 
 `func (o *UpdateDetail) GetMessageOk() (*string, bool)`
 
-GetMessageOk returns a tuple with the Message field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMessageOk returns a tuple with the Message field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMessage
 
@@ -74,8 +68,7 @@ GetScriptName returns the ScriptName field if non-nil, zero value otherwise.
 
 `func (o *UpdateDetail) GetScriptNameOk() (*string, bool)`
 
-GetScriptNameOk returns a tuple with the ScriptName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetScriptNameOk returns a tuple with the ScriptName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetScriptName
 
@@ -99,8 +92,7 @@ GetUpdatedFiles returns the UpdatedFiles field if non-nil, zero value otherwise.
 
 `func (o *UpdateDetail) GetUpdatedFilesOk() (*[]string, bool)`
 
-GetUpdatedFilesOk returns a tuple with the UpdatedFiles field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUpdatedFilesOk returns a tuple with the UpdatedFiles field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUpdatedFiles
 
@@ -118,12 +110,14 @@ HasUpdatedFiles returns a boolean if a field has been set.
 
 `func (o *UpdateDetail) SetUpdatedFilesNil(b bool)`
 
- SetUpdatedFilesNil sets the value for UpdatedFiles to be an explicit nil
+SetUpdatedFilesNil sets the value for UpdatedFiles to be an explicit nil
 
 ### UnsetUpdatedFiles
+
 `func (o *UpdateDetail) UnsetUpdatedFiles()`
 
 UnsetUpdatedFiles ensures that no value is present for UpdatedFiles, not even an explicit nil
+
 ### GetStatus
 
 `func (o *UpdateDetail) GetStatus() string`
@@ -134,8 +128,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *UpdateDetail) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -148,5 +141,3 @@ SetStatus sets Status field to given value.
 `func (o *UpdateDetail) HasStatus() bool`
 
 HasStatus returns a boolean if a field has been set.
-
-

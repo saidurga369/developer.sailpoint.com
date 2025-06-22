@@ -4,20 +4,21 @@ title: ReassignReference
 pagination_label: ReassignReference
 sidebar_label: ReassignReference
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ReassignReference', 'ReassignReference'] 
+keywords: ['python', 'Python', 'sdk', 'ReassignReference', 'ReassignReference']
 slug: /tools/sdk/python/v3/models/reassign-reference
-tags: ['SDK', 'Software Development Kit', 'ReassignReference', 'ReassignReference']
+tags:
+  ['SDK', 'Software Development Kit', 'ReassignReference', 'ReassignReference']
 ---
 
 # ReassignReference
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The ID of item or identity being reassigned. | [required]
-**type** |  **Enum** [  'TARGET_SUMMARY',    'ITEM',    'IDENTITY_SUMMARY' ] | The type of item or identity being reassigned. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The ID of item or identity being reassigned. | [required] |
+| **type** | **Enum** [ 'TARGET_SUMMARY', 'ITEM', 'IDENTITY_SUMMARY' ] | The type of item or identity being reassigned. | [required] |
+
 }
 
 ## Example
@@ -31,5 +32,5 @@ type='ITEM'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

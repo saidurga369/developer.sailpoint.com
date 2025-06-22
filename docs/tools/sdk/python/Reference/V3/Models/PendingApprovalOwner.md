@@ -4,9 +4,16 @@ title: PendingApprovalOwner
 pagination_label: PendingApprovalOwner
 sidebar_label: PendingApprovalOwner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'PendingApprovalOwner', 'PendingApprovalOwner'] 
+keywords:
+  ['python', 'Python', 'sdk', 'PendingApprovalOwner', 'PendingApprovalOwner']
 slug: /tools/sdk/python/v3/models/pending-approval-owner
-tags: ['SDK', 'Software Development Kit', 'PendingApprovalOwner', 'PendingApprovalOwner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PendingApprovalOwner',
+    'PendingApprovalOwner',
+  ]
 ---
 
 # PendingApprovalOwner
@@ -15,11 +22,12 @@ Access item owner's identity.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] | Access item owner's DTO type. | [optional] 
-**id** | **str** | Access item owner's identity ID. | [optional] 
-**name** | **str** | Access item owner's human-readable display name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'IDENTITY' ] | Access item owner's DTO type. | [optional] |
+| **id** | **str** | Access item owner's identity ID. | [optional] |
+| **name** | **str** | Access item owner's human-readable display name. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +42,5 @@ name='Support'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

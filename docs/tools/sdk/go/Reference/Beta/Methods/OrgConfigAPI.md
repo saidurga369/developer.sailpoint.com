@@ -4,27 +4,26 @@ title: OrgConfig
 pagination_label: OrgConfig
 sidebar_label: OrgConfig
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'OrgConfig', 'BetaOrgConfig'] 
+keywords: ['go', 'Golang', 'sdk', 'OrgConfig', 'BetaOrgConfig']
 slug: /tools/sdk/go/beta/methods/org-config
 tags: ['SDK', 'Software Development Kit', 'OrgConfig', 'BetaOrgConfig']
 ---
 
 # OrgConfigAPI
-  Use this API to implement organization configuration functionality. 
-Administrators can use this functionality to manage organization settings, such as time zones.
- 
+
+Use this API to implement organization configuration functionality. Administrators can use this functionality to manage organization settings, such as time zones.
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/beta*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**get-org-config**](#get-org-config) | **Get** `/org-config` | Get org configuration settings
-[**get-valid-time-zones**](#get-valid-time-zones) | **Get** `/org-config/valid-time-zones` | Get list of time zones
-[**patch-org-config**](#patch-org-config) | **Patch** `/org-config` | Patch an org configuration property
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**get-org-config**](#get-org-config) | **Get** `/org-config` | Get org configuration settings |
+| [**get-valid-time-zones**](#get-valid-time-zones) | **Get** `/org-config/valid-time-zones` | Get list of time zones |
+| [**patch-org-config**](#patch-org-config) | **Patch** `/org-config` | Patch an org configuration property |
 
 ## get-org-config
-Get org configuration settings
-Get org configuration with only external (org admin) accessible properties for the current org.
+
+Get org configuration settings Get org configuration with only external (org admin) accessible properties for the current org.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-org-config)
 
@@ -35,7 +34,6 @@ This endpoint does not need any parameter.
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetOrgConfigRequest struct via the builder pattern
-
 
 ### Return type
 
@@ -55,14 +53,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -80,8 +78,8 @@ func main() {
 [[Back to top]](#)
 
 ## get-valid-time-zones
-Get list of time zones
-Get a list of valid time zones that can be set in org configurations.
+
+Get list of time zones Get a list of valid time zones that can be set in org configurations.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-valid-time-zones)
 
@@ -92,7 +90,6 @@ This endpoint does not need any parameter.
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetValidTimeZonesRequest struct via the builder pattern
-
 
 ### Return type
 
@@ -112,14 +109,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -137,23 +134,20 @@ func main() {
 [[Back to top]](#)
 
 ## patch-org-config
-Patch an org configuration property
-Patch configuration of the current org using http://jsonpatch.com/ syntax.  Commonly used for changing the time zone of an org.
+
+Patch an org configuration property Patch configuration of the current org using http://jsonpatch.com/ syntax. Commonly used for changing the time zone of an org.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/patch-org-config)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiPatchOrgConfigRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **jsonPatchOperation** | [**[]JsonPatchOperation**](../models/json-patch-operation) | A list of schema attribute update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **jsonPatchOperation** | [**[]JsonPatchOperation**](../models/json-patch-operation) | A list of schema attribute update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard. |
 
 ### Return type
 
@@ -186,7 +180,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -202,4 +196,3 @@ func main() {
 ```
 
 [[Back to top]](#)
-

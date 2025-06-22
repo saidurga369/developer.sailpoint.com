@@ -4,7 +4,7 @@ title: SedApproval
 pagination_label: SedApproval
 sidebar_label: SedApproval
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SedApproval', 'BetaSedApproval'] 
+keywords: ['go', 'Golang', 'sdk', 'SedApproval', 'BetaSedApproval']
 slug: /tools/sdk/go/beta/models/sed-approval
 tags: ['SDK', 'Software Development Kit', 'SedApproval', 'BetaSedApproval']
 ---
@@ -13,9 +13,9 @@ tags: ['SDK', 'Software Development Kit', 'SedApproval', 'BetaSedApproval']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Items** | Pointer to **[]string** | List of SED id's | [optional] 
+| Name      | Type                    | Description      | Notes      |
+| --------- | ----------------------- | ---------------- | ---------- |
+| **Items** | Pointer to **[]string** | List of SED id's | [optional] |
 
 ## Methods
 
@@ -23,18 +23,13 @@ Name | Type | Description | Notes
 
 `func NewSedApproval() *SedApproval`
 
-NewSedApproval instantiates a new SedApproval object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSedApproval instantiates a new SedApproval object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSedApprovalWithDefaults
 
 `func NewSedApprovalWithDefaults() *SedApproval`
 
-NewSedApprovalWithDefaults instantiates a new SedApproval object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSedApprovalWithDefaults instantiates a new SedApproval object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetItems
 
@@ -46,8 +41,7 @@ GetItems returns the Items field if non-nil, zero value otherwise.
 
 `func (o *SedApproval) GetItemsOk() (*[]string, bool)`
 
-GetItemsOk returns a tuple with the Items field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetItemsOk returns a tuple with the Items field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetItems
 
@@ -60,5 +54,3 @@ SetItems sets Items field to given value.
 `func (o *SedApproval) HasItems() bool`
 
 HasItems returns a boolean if a field has been set.
-
-

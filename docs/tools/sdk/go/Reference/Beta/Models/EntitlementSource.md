@@ -4,20 +4,26 @@ title: EntitlementSource
 pagination_label: EntitlementSource
 sidebar_label: EntitlementSource
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'EntitlementSource', 'BetaEntitlementSource'] 
+keywords: ['go', 'Golang', 'sdk', 'EntitlementSource', 'BetaEntitlementSource']
 slug: /tools/sdk/go/beta/models/entitlement-source
-tags: ['SDK', 'Software Development Kit', 'EntitlementSource', 'BetaEntitlementSource']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'EntitlementSource',
+    'BetaEntitlementSource',
+  ]
 ---
 
 # EntitlementSource
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The source ID | [optional] 
-**Type** | Pointer to **string** | The source type, will always be \"SOURCE\" | [optional] 
-**Name** | Pointer to **NullableString** | The source name | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The source ID | [optional] |
+| **Type** | Pointer to **string** | The source type, will always be \"SOURCE\" | [optional] |
+| **Name** | Pointer to **NullableString** | The source name | [optional] |
 
 ## Methods
 
@@ -25,18 +31,13 @@ Name | Type | Description | Notes
 
 `func NewEntitlementSource() *EntitlementSource`
 
-NewEntitlementSource instantiates a new EntitlementSource object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewEntitlementSource instantiates a new EntitlementSource object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewEntitlementSourceWithDefaults
 
 `func NewEntitlementSourceWithDefaults() *EntitlementSource`
 
-NewEntitlementSourceWithDefaults instantiates a new EntitlementSource object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewEntitlementSourceWithDefaults instantiates a new EntitlementSource object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -48,8 +49,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *EntitlementSource) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -73,8 +73,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *EntitlementSource) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -98,8 +97,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *EntitlementSource) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -117,10 +115,10 @@ HasName returns a boolean if a field has been set.
 
 `func (o *EntitlementSource) SetNameNil(b bool)`
 
- SetNameNil sets the value for Name to be an explicit nil
+SetNameNil sets the value for Name to be an explicit nil
 
 ### UnsetName
+
 `func (o *EntitlementSource) UnsetName()`
 
 UnsetName ensures that no value is present for Name, not even an explicit nil
-

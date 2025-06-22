@@ -4,18 +4,31 @@ title: EntitlementRevocationRequestConfig
 pagination_label: EntitlementRevocationRequestConfig
 sidebar_label: EntitlementRevocationRequestConfig
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'EntitlementRevocationRequestConfig', 'BetaEntitlementRevocationRequestConfig'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'EntitlementRevocationRequestConfig',
+    'BetaEntitlementRevocationRequestConfig',
+  ]
 slug: /tools/sdk/go/beta/models/entitlement-revocation-request-config
-tags: ['SDK', 'Software Development Kit', 'EntitlementRevocationRequestConfig', 'BetaEntitlementRevocationRequestConfig']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'EntitlementRevocationRequestConfig',
+    'BetaEntitlementRevocationRequestConfig',
+  ]
 ---
 
 # EntitlementRevocationRequestConfig
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ApprovalSchemes** | Pointer to [**[]EntitlementApprovalScheme**](entitlement-approval-scheme) | Ordered list of approval steps for the access request. Empty when no approval is required. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ApprovalSchemes** | Pointer to [**[]EntitlementApprovalScheme**](entitlement-approval-scheme) | Ordered list of approval steps for the access request. Empty when no approval is required. | [optional] |
 
 ## Methods
 
@@ -23,18 +36,13 @@ Name | Type | Description | Notes
 
 `func NewEntitlementRevocationRequestConfig() *EntitlementRevocationRequestConfig`
 
-NewEntitlementRevocationRequestConfig instantiates a new EntitlementRevocationRequestConfig object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewEntitlementRevocationRequestConfig instantiates a new EntitlementRevocationRequestConfig object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewEntitlementRevocationRequestConfigWithDefaults
 
 `func NewEntitlementRevocationRequestConfigWithDefaults() *EntitlementRevocationRequestConfig`
 
-NewEntitlementRevocationRequestConfigWithDefaults instantiates a new EntitlementRevocationRequestConfig object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewEntitlementRevocationRequestConfigWithDefaults instantiates a new EntitlementRevocationRequestConfig object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetApprovalSchemes
 
@@ -46,8 +54,7 @@ GetApprovalSchemes returns the ApprovalSchemes field if non-nil, zero value othe
 
 `func (o *EntitlementRevocationRequestConfig) GetApprovalSchemesOk() (*[]EntitlementApprovalScheme, bool)`
 
-GetApprovalSchemesOk returns a tuple with the ApprovalSchemes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApprovalSchemesOk returns a tuple with the ApprovalSchemes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApprovalSchemes
 
@@ -60,5 +67,3 @@ SetApprovalSchemes sets ApprovalSchemes field to given value.
 `func (o *EntitlementRevocationRequestConfig) HasApprovalSchemes() bool`
 
 HasApprovalSchemes returns a boolean if a field has been set.
-
-

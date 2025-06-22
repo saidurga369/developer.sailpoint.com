@@ -4,21 +4,28 @@ title: JITConfiguration
 pagination_label: JITConfiguration
 sidebar_label: JITConfiguration
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'JITConfiguration', 'V2024JITConfiguration'] 
+keywords:
+  ['python', 'Python', 'sdk', 'JITConfiguration', 'V2024JITConfiguration']
 slug: /tools/sdk/python/v2024/models/jit-configuration
-tags: ['SDK', 'Software Development Kit', 'JITConfiguration', 'V2024JITConfiguration']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'JITConfiguration',
+    'V2024JITConfiguration',
+  ]
 ---
 
 # JITConfiguration
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**enabled** | **bool** | The indicator for just-in-time provisioning enabled | [optional] [default to False]
-**source_id** | **str** | the sourceId that mapped to just-in-time provisioning configuration | [optional] 
-**source_attribute_mappings** | **map[string]str** | A mapping of identity profile attribute names to SAML assertion attribute names | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **enabled** | **bool** | The indicator for just-in-time provisioning enabled | [optional] [default to False] |
+| **source_id** | **str** | the sourceId that mapped to just-in-time provisioning configuration | [optional] |
+| **source_attribute_mappings** | **map[string]str** | A mapping of identity profile attribute names to SAML assertion attribute names | [optional] |
+
 }
 
 ## Example
@@ -33,5 +40,5 @@ source_attribute_mappings={firstName=okta.firstName, lastName=okta.lastName, ema
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

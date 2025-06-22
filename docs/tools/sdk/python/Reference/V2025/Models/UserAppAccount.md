@@ -4,21 +4,22 @@ title: UserAppAccount
 pagination_label: UserAppAccount
 sidebar_label: UserAppAccount
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'UserAppAccount', 'V2025UserAppAccount'] 
+keywords: ['python', 'Python', 'sdk', 'UserAppAccount', 'V2025UserAppAccount']
 slug: /tools/sdk/python/v2025/models/user-app-account
-tags: ['SDK', 'Software Development Kit', 'UserAppAccount', 'V2025UserAppAccount']
+tags:
+  ['SDK', 'Software Development Kit', 'UserAppAccount', 'V2025UserAppAccount']
 ---
 
 # UserAppAccount
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | the account ID | [optional] 
-**type** | **str** | It will always be \"ACCOUNT\" | [optional] 
-**name** | **str** | the account name | [optional] 
+| Name     | Type    | Description                   | Notes      |
+| -------- | ------- | ----------------------------- | ---------- |
+| **id**   | **str** | the account ID                | [optional] |
+| **type** | **str** | It will always be \"ACCOUNT\" | [optional] |
+| **name** | **str** | the account name              | [optional] |
+
 }
 
 ## Example
@@ -33,5 +34,5 @@ name='test account'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

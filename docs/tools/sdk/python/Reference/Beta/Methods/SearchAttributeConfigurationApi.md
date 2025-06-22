@@ -4,72 +4,83 @@ title: Search_Attribute_Configuration
 pagination_label: Search_Attribute_Configuration
 sidebar_label: Search_Attribute_Configuration
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'Search_Attribute_Configuration', 'BetaSearch_Attribute_Configuration'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'Search_Attribute_Configuration',
+    'BetaSearch_Attribute_Configuration',
+  ]
 slug: /tools/sdk/python/beta/methods/search-attribute-configuration
-tags: ['SDK', 'Software Development Kit', 'Search_Attribute_Configuration', 'BetaSearch_Attribute_Configuration']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'Search_Attribute_Configuration',
+    'BetaSearch_Attribute_Configuration',
+  ]
 ---
 
 # sailpoint.beta.SearchAttributeConfigurationApi
-  Use this API to implement search attribute configuration functionality, along with [Search](https://developer.sailpoint.com/docs/api/v3/search).
-With this functionality in place, administrators can create custom search attributes that and run extended searches based on those attributes to further narrow down their searches and get the information and insights they want. 
+
+Use this API to implement search attribute configuration functionality, along with [Search](https://developer.sailpoint.com/docs/api/v3/search). With this functionality in place, administrators can create custom search attributes that and run extended searches based on those attributes to further narrow down their searches and get the information and insights they want.
 
 Identity Security Cloud (ISC) enables organizations to store user data from across all their connected sources and manage the users&#39; access, so the ability to query and filter that data is essential.  
-Its search goes through all those sources and finds the results quickly and specifically. 
+Its search goes through all those sources and finds the results quickly and specifically.
 
-The search query is flexible - it can be very broad or very narrow. 
-The search only returns results for searchable objects it is filtering for. 
-The following objects are searchable: identities, roles, access profiles, entitlements, events, and account activities. 
-By default, no filter is applied, so a search for &quot;Ad&quot; returns both the identity &quot;Adam.Archer&quot; as well as the role &quot;Administrator.&quot;
+The search query is flexible - it can be very broad or very narrow. The search only returns results for searchable objects it is filtering for. The following objects are searchable: identities, roles, access profiles, entitlements, events, and account activities. By default, no filter is applied, so a search for &quot;Ad&quot; returns both the identity &quot;Adam.Archer&quot; as well as the role &quot;Administrator.&quot;
 
-Users can further narrow their results by using ISC&#39;s specific syntax and punctuation to structure their queries. 
-For example, the query &quot;attributes.location:austin AND NOT manager.name:amanda.ross&quot; returns all results associated with the Austin location, but it excludes those associated with the manager Amanda Ross.
-Refer to [Building a Search Query](https://documentation.sailpoint.com/saas/help/search/building-query.html) for more information about how to construct specific search queries. 
+Users can further narrow their results by using ISC&#39;s specific syntax and punctuation to structure their queries. For example, the query &quot;attributes.location:austin AND NOT manager.name:amanda.ross&quot; returns all results associated with the Austin location, but it excludes those associated with the manager Amanda Ross. Refer to [Building a Search Query](https://documentation.sailpoint.com/saas/help/search/building-query.html) for more information about how to construct specific search queries.
 
-Refer to [Using Search](https://documentation.sailpoint.com/saas/help/search/index.html) for more information about ISC&#39;s search and its different possibilities. 
+Refer to [Using Search](https://documentation.sailpoint.com/saas/help/search/index.html) for more information about ISC&#39;s search and its different possibilities.
 
 With Search Attribute Configuration, administrators can create, manage, and run searches based on the attributes they want to search.
- 
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/beta*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create-search-attribute-config**](#create-search-attribute-config) | **POST** `/accounts/search-attribute-config` | Create extended search attributes
-[**delete-search-attribute-config**](#delete-search-attribute-config) | **DELETE** `/accounts/search-attribute-config/{name}` | Delete extended search attribute
-[**get-search-attribute-config**](#get-search-attribute-config) | **GET** `/accounts/search-attribute-config` | List extended search attributes
-[**get-single-search-attribute-config**](#get-single-search-attribute-config) | **GET** `/accounts/search-attribute-config/{name}` | Get extended search attribute
-[**patch-search-attribute-config**](#patch-search-attribute-config) | **PATCH** `/accounts/search-attribute-config/{name}` | Update extended search attribute
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**create-search-attribute-config**](#create-search-attribute-config) | **POST** `/accounts/search-attribute-config` | Create extended search attributes |
+| [**delete-search-attribute-config**](#delete-search-attribute-config) | **DELETE** `/accounts/search-attribute-config/{name}` | Delete extended search attribute |
+| [**get-search-attribute-config**](#get-search-attribute-config) | **GET** `/accounts/search-attribute-config` | List extended search attributes |
+| [**get-single-search-attribute-config**](#get-single-search-attribute-config) | **GET** `/accounts/search-attribute-config/{name}` | Get extended search attribute |
+| [**patch-search-attribute-config**](#patch-search-attribute-config) | **PATCH** `/accounts/search-attribute-config/{name}` | Update extended search attribute |
 
 ## create-search-attribute-config
-Create extended search attributes
-Create and configure extended search attributes.  This API accepts an attribute name, an attribute display name and a list of name/value pair associates of application IDs to attribute names.  It will then validate the inputs and configure/create the attribute promotion configuration in the Link ObjectConfig.
->**Note: Give searchable attributes unique names.  Do not give them the same names used for account attributes or source attributes.  Also, do not give them the same names present in account schema for a current or future source, regardless of whether that source is included in the searchable attributes' `applicationAttributes`.**
+
+Create extended search attributes Create and configure extended search attributes. This API accepts an attribute name, an attribute display name and a list of name/value pair associates of application IDs to attribute names. It will then validate the inputs and configure/create the attribute promotion configuration in the Link ObjectConfig.
+
+> **Note: Give searchable attributes unique names. Do not give them the same names used for account attributes or source attributes. Also, do not give them the same names present in account schema for a current or future source, regardless of whether that source is included in the searchable attributes' `applicationAttributes`.**
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/create-search-attribute-config)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
- Body  | search_attribute_config | [**SearchAttributeConfig**](../models/search-attribute-config) | True  | 
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Body | search_attribute_config | [**SearchAttributeConfig**](../models/search-attribute-config) | True |
 
 ### Return type
+
 **object**
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-202 | Accepted - Returned if the request was successfully accepted into the system. | object |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 202 | Accepted - Returned if the request was successfully accepted into the system. | object | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json
- - **Accept**: application/json
+
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### Example
 
@@ -89,7 +100,7 @@ with ApiClient(configuration) as api_client:
             "2c91808b79fd2422017a0b35d30f3968" : "employeeNumber",
             "2c91808b79fd2422017a0b36008f396b" : "employeeNumber"
           }
-        }''' # SearchAttributeConfig | 
+        }''' # SearchAttributeConfig |
 
     try:
         # Create extended search attributes
@@ -103,38 +114,39 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling SearchAttributeConfigurationApi->create_search_attribute_config: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## delete-search-attribute-config
-Delete extended search attribute
-Delete an extended attribute configuration by name.
+
+Delete extended search attribute Delete an extended attribute configuration by name.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/delete-search-attribute-config)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | name | **str** | True  | Name of the extended search attribute configuration to delete.
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | name | **str** | True | Name of the extended search attribute configuration to delete. |
 
 ### Return type
- (empty response body)
+
+(empty response body)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-204 | No content - indicates the request was successful but there is no content to be returned in the response. |  |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 204 | No content - indicates the request was successful but there is no content to be returned in the response. |  | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -150,7 +162,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Delete extended search attribute
-        
+
         SearchAttributeConfigurationApi(api_client).delete_search_attribute_config(name=name)
         # Below is a request that includes all optional parameters
         # SearchAttributeConfigurationApi(api_client).delete_search_attribute_config(name)
@@ -158,40 +170,40 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling SearchAttributeConfigurationApi->delete_search_attribute_config: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## get-search-attribute-config
-List extended search attributes
-Get a list of attribute/application attributes currently configured in Identity Security Cloud (ISC).
-A token with ORG_ADMIN authority is required to call this API.
+
+List extended search attributes Get a list of attribute/application attributes currently configured in Identity Security Cloud (ISC). A token with ORG_ADMIN authority is required to call this API.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-search-attribute-config)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-  Query | limit | **int** |   (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | offset | **int** |   (optional) (default to 0) | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Query | limit | **int** | (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | offset | **int** | (optional) (default to 0) | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
 
 ### Return type
+
 [**List[SearchAttributeConfig]**](../models/search-attribute-config)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | List of attribute configurations in ISC. | List[SearchAttributeConfig] |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | List of attribute configurations in ISC. | List[SearchAttributeConfig] | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -209,7 +221,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # List extended search attributes
-        
+
         results = SearchAttributeConfigurationApi(api_client).get_search_attribute_config()
         # Below is a request that includes all optional parameters
         # results = SearchAttributeConfigurationApi(api_client).get_search_attribute_config(limit, offset)
@@ -220,39 +232,40 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling SearchAttributeConfigurationApi->get_search_attribute_config: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## get-single-search-attribute-config
-Get extended search attribute
-Get an extended attribute configuration by name.
+
+Get extended search attribute Get an extended attribute configuration by name.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-single-search-attribute-config)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | name | **str** | True  | Name of the extended search attribute configuration to get.
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | name | **str** | True | Name of the extended search attribute configuration to get. |
 
 ### Return type
+
 [**List[SearchAttributeConfig]**](../models/search-attribute-config)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Specific attribute configuration in IdentityNow. | List[SearchAttributeConfig] |  -  |
-204 | No content - indicates the request was successful but there is no content to be returned in the response. |  |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Specific attribute configuration in IdentityNow. | List[SearchAttributeConfig] | - |
+| 204 | No content - indicates the request was successful but there is no content to be returned in the response. |  | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -269,7 +282,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Get extended search attribute
-        
+
         results = SearchAttributeConfigurationApi(api_client).get_single_search_attribute_config(name=name)
         # Below is a request that includes all optional parameters
         # results = SearchAttributeConfigurationApi(api_client).get_single_search_attribute_config(name)
@@ -280,42 +293,43 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling SearchAttributeConfigurationApi->get_single_search_attribute_config: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## patch-search-attribute-config
-Update extended search attribute
-Update an existing search attribute configuration. 
-You can patch these fields:
-* name  * displayName * applicationAttributes
+
+Update extended search attribute Update an existing search attribute configuration. You can patch these fields:
+
+- name _ displayName _ applicationAttributes
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/patch-search-attribute-config)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | name | **str** | True  | Name of the extended search attribute configuration to patch.
- Body  | json_patch_operation | [**[]JsonPatchOperation**](../models/json-patch-operation) | True  | 
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | name | **str** | True | Name of the extended search attribute configuration to patch. |
+| Body | json_patch_operation | [**[]JsonPatchOperation**](../models/json-patch-operation) | True |
 
 ### Return type
+
 [**SearchAttributeConfig**](../models/search-attribute-config)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Responds with the search attribute configuration as updated. | SearchAttributeConfig |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Responds with the search attribute configuration as updated. | SearchAttributeConfig | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json-patch+json
- - **Accept**: application/json
+
+- **Content-Type**: application/json-patch+json
+- **Accept**: application/json
 
 ### Example
 
@@ -330,7 +344,7 @@ configuration = Configuration()
 
 with ApiClient(configuration) as api_client:
     name = 'promotedMailAttribute' # str | Name of the extended search attribute configuration to patch. # str | Name of the extended search attribute configuration to patch.
-    json_patch_operation = '''[{op=replace, path=/name, value=newAttributeName}, {op=replace, path=/displayName, value=new attribute display name}, {op=add, path=/applicationAttributes, value={2c91808b79fd2422017a0b35d30f3968=employeeNumber}}]''' # List[JsonPatchOperation] | 
+    json_patch_operation = '''[{op=replace, path=/name, value=newAttributeName}, {op=replace, path=/displayName, value=new attribute display name}, {op=add, path=/applicationAttributes, value={2c91808b79fd2422017a0b35d30f3968=employeeNumber}}]''' # List[JsonPatchOperation] |
 
     try:
         # Update extended search attribute
@@ -344,9 +358,4 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling SearchAttributeConfigurationApi->patch_search_attribute_config: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
-
-
-
+[[Back to top]](#)

@@ -4,27 +4,25 @@ title: ApprovalStatus
 pagination_label: ApprovalStatus
 sidebar_label: ApprovalStatus
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'ApprovalStatus', 'V2024ApprovalStatus'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'ApprovalStatus', 'V2024ApprovalStatus']
 slug: /tools/sdk/powershell/v2024/models/approval-status
-tags: ['SDK', 'Software Development Kit', 'ApprovalStatus', 'V2024ApprovalStatus']
+tags:
+  ['SDK', 'Software Development Kit', 'ApprovalStatus', 'V2024ApprovalStatus']
 ---
-
 
 # ApprovalStatus
 
 ## Enum
 
+- `APPROVED` (value: `"APPROVED"`)
 
-* `APPROVED` (value: `"APPROVED"`)
+- `REJECTED` (value: `"REJECTED"`)
 
-* `REJECTED` (value: `"REJECTED"`)
+- `PENDING` (value: `"PENDING"`)
 
-* `PENDING` (value: `"PENDING"`)
+- `NOT_READY` (value: `"NOT_READY"`)
 
-* `NOT_READY` (value: `"NOT_READY"`)
+- `CANCELLED` (value: `"CANCELLED"`)
 
-* `CANCELLED` (value: `"CANCELLED"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

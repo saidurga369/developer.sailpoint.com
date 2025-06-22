@@ -4,20 +4,33 @@ title: LoadEntitlementTaskReturnsInner
 pagination_label: LoadEntitlementTaskReturnsInner
 sidebar_label: LoadEntitlementTaskReturnsInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'LoadEntitlementTaskReturnsInner', 'BetaLoadEntitlementTaskReturnsInner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'LoadEntitlementTaskReturnsInner',
+    'BetaLoadEntitlementTaskReturnsInner',
+  ]
 slug: /tools/sdk/python/beta/models/load-entitlement-task-returns-inner
-tags: ['SDK', 'Software Development Kit', 'LoadEntitlementTaskReturnsInner', 'BetaLoadEntitlementTaskReturnsInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'LoadEntitlementTaskReturnsInner',
+    'BetaLoadEntitlementTaskReturnsInner',
+  ]
 ---
 
 # LoadEntitlementTaskReturnsInner
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**display_label** | **str** | The display label for the return value | [optional] 
-**attribute_name** | **str** | The attribute name for the return value | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **display_label** | **str** | The display label for the return value | [optional] |
+| **attribute_name** | **str** | The attribute name for the return value | [optional] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ attribute_name='applications'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

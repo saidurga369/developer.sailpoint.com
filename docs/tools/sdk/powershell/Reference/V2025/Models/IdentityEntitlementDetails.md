@@ -4,26 +4,39 @@ title: IdentityEntitlementDetails
 pagination_label: IdentityEntitlementDetails
 sidebar_label: IdentityEntitlementDetails
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'IdentityEntitlementDetails', 'V2025IdentityEntitlementDetails'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'IdentityEntitlementDetails',
+    'V2025IdentityEntitlementDetails',
+  ]
 slug: /tools/sdk/powershell/v2025/models/identity-entitlement-details
-tags: ['SDK', 'Software Development Kit', 'IdentityEntitlementDetails', 'V2025IdentityEntitlementDetails']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityEntitlementDetails',
+    'V2025IdentityEntitlementDetails',
+  ]
 ---
-
 
 # IdentityEntitlementDetails
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**IdentityId** | **String** | Id of Identity | [optional] 
-**Entitlement** | [**IdentityEntitlementDetailsEntitlementDto**](identity-entitlement-details-entitlement-dto) |  | [optional] 
-**SourceId** | **String** | Id of Source | [optional] 
-**AccountTargets** | [**[]IdentityEntitlementDetailsAccountTarget**](identity-entitlement-details-account-target) | A list of account targets on the identity provisioned with the requested entitlement. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **IdentityId** | **String** | Id of Identity | [optional] |
+| **Entitlement** | [**IdentityEntitlementDetailsEntitlementDto**](identity-entitlement-details-entitlement-dto) |  | [optional] |
+| **SourceId** | **String** | Id of Source | [optional] |
+| **AccountTargets** | [**[]IdentityEntitlementDetailsAccountTarget**](identity-entitlement-details-account-target) | A list of account targets on the identity provisioned with the requested entitlement. | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $IdentityEntitlementDetails = Initialize-V2025IdentityEntitlementDetails  -IdentityId 5928c61f-3f2e-417a-8d65-f76451e2050a `
  -Entitlement null `
@@ -32,10 +45,9 @@ $IdentityEntitlementDetails = Initialize-V2025IdentityEntitlementDetails  -Ident
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $IdentityEntitlementDetails | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

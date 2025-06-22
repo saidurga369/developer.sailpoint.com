@@ -4,19 +4,26 @@ title: ManagedClusterQueue
 pagination_label: ManagedClusterQueue
 sidebar_label: ManagedClusterQueue
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ManagedClusterQueue', 'V2025ManagedClusterQueue'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'ManagedClusterQueue', 'V2025ManagedClusterQueue']
 slug: /tools/sdk/go/v2025/models/managed-cluster-queue
-tags: ['SDK', 'Software Development Kit', 'ManagedClusterQueue', 'V2025ManagedClusterQueue']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ManagedClusterQueue',
+    'V2025ManagedClusterQueue',
+  ]
 ---
 
 # ManagedClusterQueue
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | Pointer to **string** | ManagedCluster queue name | [optional] 
-**Region** | Pointer to **string** | ManagedCluster queue aws region | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | Pointer to **string** | ManagedCluster queue name | [optional] |
+| **Region** | Pointer to **string** | ManagedCluster queue aws region | [optional] |
 
 ## Methods
 
@@ -24,18 +31,13 @@ Name | Type | Description | Notes
 
 `func NewManagedClusterQueue() *ManagedClusterQueue`
 
-NewManagedClusterQueue instantiates a new ManagedClusterQueue object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewManagedClusterQueue instantiates a new ManagedClusterQueue object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewManagedClusterQueueWithDefaults
 
 `func NewManagedClusterQueueWithDefaults() *ManagedClusterQueue`
 
-NewManagedClusterQueueWithDefaults instantiates a new ManagedClusterQueue object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewManagedClusterQueueWithDefaults instantiates a new ManagedClusterQueue object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -47,8 +49,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *ManagedClusterQueue) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -72,8 +73,7 @@ GetRegion returns the Region field if non-nil, zero value otherwise.
 
 `func (o *ManagedClusterQueue) GetRegionOk() (*string, bool)`
 
-GetRegionOk returns a tuple with the Region field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRegionOk returns a tuple with the Region field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRegion
 
@@ -86,5 +86,3 @@ SetRegion sets Region field to given value.
 `func (o *ManagedClusterQueue) HasRegion() bool`
 
 HasRegion returns a boolean if a field has been set.
-
-

@@ -4,19 +4,25 @@ title: CertifierResponse
 pagination_label: CertifierResponse
 sidebar_label: CertifierResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'CertifierResponse', 'BetaCertifierResponse'] 
+keywords: ['go', 'Golang', 'sdk', 'CertifierResponse', 'BetaCertifierResponse']
 slug: /tools/sdk/go/beta/models/certifier-response
-tags: ['SDK', 'Software Development Kit', 'CertifierResponse', 'BetaCertifierResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CertifierResponse',
+    'BetaCertifierResponse',
+  ]
 ---
 
 # CertifierResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | the id of the certifier | [optional] 
-**DisplayName** | Pointer to **string** | the name of the certifier | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | the id of the certifier | [optional] |
+| **DisplayName** | Pointer to **string** | the name of the certifier | [optional] |
 
 ## Methods
 
@@ -24,18 +30,13 @@ Name | Type | Description | Notes
 
 `func NewCertifierResponse() *CertifierResponse`
 
-NewCertifierResponse instantiates a new CertifierResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewCertifierResponse instantiates a new CertifierResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewCertifierResponseWithDefaults
 
 `func NewCertifierResponseWithDefaults() *CertifierResponse`
 
-NewCertifierResponseWithDefaults instantiates a new CertifierResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewCertifierResponseWithDefaults instantiates a new CertifierResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -47,8 +48,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *CertifierResponse) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -72,8 +72,7 @@ GetDisplayName returns the DisplayName field if non-nil, zero value otherwise.
 
 `func (o *CertifierResponse) GetDisplayNameOk() (*string, bool)`
 
-GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayName
 
@@ -86,5 +85,3 @@ SetDisplayName sets DisplayName field to given value.
 `func (o *CertifierResponse) HasDisplayName() bool`
 
 HasDisplayName returns a boolean if a field has been set.
-
-

@@ -12,7 +12,13 @@ interface TeamCardProps {
   image: string;
 }
 
-const TeamCard: React.FC<TeamCardProps> = ({ link, title, name, expertise, image }) => {
+const TeamCard: React.FC<TeamCardProps> = ({
+  link,
+  title,
+  name,
+  expertise,
+  image,
+}) => {
   return (
     <Link to={link}>
       <div className={styles.card}>

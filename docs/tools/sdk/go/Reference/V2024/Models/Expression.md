@@ -4,7 +4,7 @@ title: Expression
 pagination_label: Expression
 sidebar_label: Expression
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Expression', 'V2024Expression'] 
+keywords: ['go', 'Golang', 'sdk', 'Expression', 'V2024Expression']
 slug: /tools/sdk/go/v2024/models/expression
 tags: ['SDK', 'Software Development Kit', 'Expression', 'V2024Expression']
 ---
@@ -13,12 +13,12 @@ tags: ['SDK', 'Software Development Kit', 'Expression', 'V2024Expression']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Operator** | Pointer to **string** | Operator for the expression | [optional] 
-**Attribute** | Pointer to **NullableString** | Name for the attribute | [optional] 
-**Value** | Pointer to [**NullableValue**](value) |  | [optional] 
-**Children** | Pointer to [**[]ExpressionChildrenInner**](expression-children-inner) | List of expressions | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Operator** | Pointer to **string** | Operator for the expression | [optional] |
+| **Attribute** | Pointer to **NullableString** | Name for the attribute | [optional] |
+| **Value** | Pointer to [**NullableValue**](value) |  | [optional] |
+| **Children** | Pointer to [**[]ExpressionChildrenInner**](expression-children-inner) | List of expressions | [optional] |
 
 ## Methods
 
@@ -26,18 +26,13 @@ Name | Type | Description | Notes
 
 `func NewExpression() *Expression`
 
-NewExpression instantiates a new Expression object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewExpression instantiates a new Expression object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewExpressionWithDefaults
 
 `func NewExpressionWithDefaults() *Expression`
 
-NewExpressionWithDefaults instantiates a new Expression object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewExpressionWithDefaults instantiates a new Expression object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetOperator
 
@@ -49,8 +44,7 @@ GetOperator returns the Operator field if non-nil, zero value otherwise.
 
 `func (o *Expression) GetOperatorOk() (*string, bool)`
 
-GetOperatorOk returns a tuple with the Operator field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOperatorOk returns a tuple with the Operator field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOperator
 
@@ -74,8 +68,7 @@ GetAttribute returns the Attribute field if non-nil, zero value otherwise.
 
 `func (o *Expression) GetAttributeOk() (*string, bool)`
 
-GetAttributeOk returns a tuple with the Attribute field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributeOk returns a tuple with the Attribute field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttribute
 
@@ -93,12 +86,14 @@ HasAttribute returns a boolean if a field has been set.
 
 `func (o *Expression) SetAttributeNil(b bool)`
 
- SetAttributeNil sets the value for Attribute to be an explicit nil
+SetAttributeNil sets the value for Attribute to be an explicit nil
 
 ### UnsetAttribute
+
 `func (o *Expression) UnsetAttribute()`
 
 UnsetAttribute ensures that no value is present for Attribute, not even an explicit nil
+
 ### GetValue
 
 `func (o *Expression) GetValue() Value`
@@ -109,8 +104,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *Expression) GetValueOk() (*Value, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -128,12 +122,14 @@ HasValue returns a boolean if a field has been set.
 
 `func (o *Expression) SetValueNil(b bool)`
 
- SetValueNil sets the value for Value to be an explicit nil
+SetValueNil sets the value for Value to be an explicit nil
 
 ### UnsetValue
+
 `func (o *Expression) UnsetValue()`
 
 UnsetValue ensures that no value is present for Value, not even an explicit nil
+
 ### GetChildren
 
 `func (o *Expression) GetChildren() []ExpressionChildrenInner`
@@ -144,8 +140,7 @@ GetChildren returns the Children field if non-nil, zero value otherwise.
 
 `func (o *Expression) GetChildrenOk() (*[]ExpressionChildrenInner, bool)`
 
-GetChildrenOk returns a tuple with the Children field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetChildrenOk returns a tuple with the Children field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetChildren
 
@@ -163,10 +158,10 @@ HasChildren returns a boolean if a field has been set.
 
 `func (o *Expression) SetChildrenNil(b bool)`
 
- SetChildrenNil sets the value for Children to be an explicit nil
+SetChildrenNil sets the value for Children to be an explicit nil
 
 ### UnsetChildren
+
 `func (o *Expression) UnsetChildren()`
 
 UnsetChildren ensures that no value is present for Children, not even an explicit nil
-

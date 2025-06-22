@@ -4,19 +4,32 @@ title: TestExternalExecuteWorkflowRequest
 pagination_label: TestExternalExecuteWorkflowRequest
 sidebar_label: TestExternalExecuteWorkflowRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'TestExternalExecuteWorkflowRequest', 'TestExternalExecuteWorkflowRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'TestExternalExecuteWorkflowRequest',
+    'TestExternalExecuteWorkflowRequest',
+  ]
 slug: /tools/sdk/python/v3/models/test-external-execute-workflow-request
-tags: ['SDK', 'Software Development Kit', 'TestExternalExecuteWorkflowRequest', 'TestExternalExecuteWorkflowRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'TestExternalExecuteWorkflowRequest',
+    'TestExternalExecuteWorkflowRequest',
+  ]
 ---
 
 # TestExternalExecuteWorkflowRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**input** | **object** | The test input for the workflow | [optional] 
+| Name      | Type       | Description                     | Notes      |
+| --------- | ---------- | ------------------------------- | ---------- |
+| **input** | **object** | The test input for the workflow | [optional] |
+
 }
 
 ## Example
@@ -29,5 +42,5 @@ input={test=hello world}
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

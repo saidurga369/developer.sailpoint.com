@@ -4,21 +4,28 @@ title: BaseReferenceDto
 pagination_label: BaseReferenceDto
 sidebar_label: BaseReferenceDto
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'BaseReferenceDto', 'V2025BaseReferenceDto'] 
+keywords:
+  ['python', 'Python', 'sdk', 'BaseReferenceDto', 'V2025BaseReferenceDto']
 slug: /tools/sdk/python/v2025/models/base-reference-dto
-tags: ['SDK', 'Software Development Kit', 'BaseReferenceDto', 'V2025BaseReferenceDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'BaseReferenceDto',
+    'V2025BaseReferenceDto',
+  ]
 ---
 
 # BaseReferenceDto
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** | [**DtoType**](dto-type) |  | [optional] 
-**id** | **str** | ID of the object to which this reference applies | [optional] 
-**name** | **str** | Human-readable display name of the object to which this reference applies | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | [**DtoType**](dto-type) |  | [optional] |
+| **id** | **str** | ID of the object to which this reference applies | [optional] |
+| **name** | **str** | Human-readable display name of the object to which this reference applies | [optional] |
+
 }
 
 ## Example
@@ -33,5 +40,5 @@ name='William Wilson'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

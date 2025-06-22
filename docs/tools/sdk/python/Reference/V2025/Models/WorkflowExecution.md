@@ -4,24 +4,31 @@ title: WorkflowExecution
 pagination_label: WorkflowExecution
 sidebar_label: WorkflowExecution
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'WorkflowExecution', 'V2025WorkflowExecution'] 
+keywords:
+  ['python', 'Python', 'sdk', 'WorkflowExecution', 'V2025WorkflowExecution']
 slug: /tools/sdk/python/v2025/models/workflow-execution
-tags: ['SDK', 'Software Development Kit', 'WorkflowExecution', 'V2025WorkflowExecution']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'WorkflowExecution',
+    'V2025WorkflowExecution',
+  ]
 ---
 
 # WorkflowExecution
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Workflow execution ID. | [optional] 
-**workflow_id** | **str** | Workflow ID. | [optional] 
-**request_id** | **str** | Backend ID that tracks a workflow request in the system. Provide this ID in a customer support ticket for debugging purposes. | [optional] 
-**start_time** | **datetime** | Date/time when the workflow started. | [optional] 
-**close_time** | **datetime** | Date/time when the workflow ended. | [optional] 
-**status** |  **Enum** [  'Completed',    'Failed',    'Canceled',    'Running',    'Queued' ] | Workflow execution status. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | Workflow execution ID. | [optional] |
+| **workflow_id** | **str** | Workflow ID. | [optional] |
+| **request_id** | **str** | Backend ID that tracks a workflow request in the system. Provide this ID in a customer support ticket for debugging purposes. | [optional] |
+| **start_time** | **datetime** | Date/time when the workflow started. | [optional] |
+| **close_time** | **datetime** | Date/time when the workflow ended. | [optional] |
+| **status** | **Enum** [ 'Completed', 'Failed', 'Canceled', 'Running', 'Queued' ] | Workflow execution status. | [optional] |
+
 }
 
 ## Example
@@ -39,5 +46,5 @@ status='Completed'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,7 +4,7 @@ title: AccessProfile
 pagination_label: AccessProfile
 sidebar_label: AccessProfile
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessProfile', 'V2024AccessProfile'] 
+keywords: ['go', 'Golang', 'sdk', 'AccessProfile', 'V2024AccessProfile']
 slug: /tools/sdk/go/v2024/models/access-profile
 tags: ['SDK', 'Software Development Kit', 'AccessProfile', 'V2024AccessProfile']
 ---
@@ -13,22 +13,22 @@ tags: ['SDK', 'Software Development Kit', 'AccessProfile', 'V2024AccessProfile']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Access profile ID. | [optional] [readonly] 
-**Name** | **string** | Access profile name. | 
-**Description** | Pointer to **NullableString** | Access profile description. | [optional] 
-**Created** | Pointer to **SailPointTime** | Date and time when the access profile was created. | [optional] [readonly] 
-**Modified** | Pointer to **SailPointTime** | Date and time when the access profile was last modified. | [optional] [readonly] 
-**Enabled** | Pointer to **bool** | Indicates whether the access profile is enabled. If it's enabled, you must include at least one entitlement. | [optional] [default to false]
-**Owner** | [**NullableOwnerReference**](owner-reference) |  | 
-**Source** | [**AccessProfileSourceRef**](access-profile-source-ref) |  | 
-**Entitlements** | Pointer to [**[]EntitlementRef**](entitlement-ref) | List of entitlements associated with the access profile. If `enabled` is false, this can be empty. Otherwise, it must contain at least one entitlement. | [optional] 
-**Requestable** | Pointer to **bool** | Indicates whether the access profile is requestable by access request. Currently, making an access profile non-requestable is only supported  for customers enabled with the new Request Center. Otherwise, attempting to create an access profile with a value  **false** in this field results in a 400 error. | [optional] [default to true]
-**AccessRequestConfig** | Pointer to [**NullableRequestability**](requestability) |  | [optional] 
-**RevocationRequestConfig** | Pointer to [**NullableRevocability**](revocability) |  | [optional] 
-**Segments** | Pointer to **[]string** | List of segment IDs, if any, that the access profile is assigned to. | [optional] 
-**ProvisioningCriteria** | Pointer to [**NullableProvisioningCriteriaLevel1**](provisioning-criteria-level1) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Access profile ID. | [optional] [readonly] |
+| **Name** | **string** | Access profile name. |
+| **Description** | Pointer to **NullableString** | Access profile description. | [optional] |
+| **Created** | Pointer to **SailPointTime** | Date and time when the access profile was created. | [optional] [readonly] |
+| **Modified** | Pointer to **SailPointTime** | Date and time when the access profile was last modified. | [optional] [readonly] |
+| **Enabled** | Pointer to **bool** | Indicates whether the access profile is enabled. If it's enabled, you must include at least one entitlement. | [optional] [default to false] |
+| **Owner** | [**NullableOwnerReference**](owner-reference) |  |
+| **Source** | [**AccessProfileSourceRef**](access-profile-source-ref) |  |
+| **Entitlements** | Pointer to [**[]EntitlementRef**](entitlement-ref) | List of entitlements associated with the access profile. If `enabled` is false, this can be empty. Otherwise, it must contain at least one entitlement. | [optional] |
+| **Requestable** | Pointer to **bool** | Indicates whether the access profile is requestable by access request. Currently, making an access profile non-requestable is only supported for customers enabled with the new Request Center. Otherwise, attempting to create an access profile with a value **false** in this field results in a 400 error. | [optional] [default to true] |
+| **AccessRequestConfig** | Pointer to [**NullableRequestability**](requestability) |  | [optional] |
+| **RevocationRequestConfig** | Pointer to [**NullableRevocability**](revocability) |  | [optional] |
+| **Segments** | Pointer to **[]string** | List of segment IDs, if any, that the access profile is assigned to. | [optional] |
+| **ProvisioningCriteria** | Pointer to [**NullableProvisioningCriteriaLevel1**](provisioning-criteria-level1) |  | [optional] |
 
 ## Methods
 
@@ -36,18 +36,13 @@ Name | Type | Description | Notes
 
 `func NewAccessProfile(name string, owner NullableOwnerReference, source AccessProfileSourceRef, ) *AccessProfile`
 
-NewAccessProfile instantiates a new AccessProfile object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessProfile instantiates a new AccessProfile object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessProfileWithDefaults
 
 `func NewAccessProfileWithDefaults() *AccessProfile`
 
-NewAccessProfileWithDefaults instantiates a new AccessProfile object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessProfileWithDefaults instantiates a new AccessProfile object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -59,8 +54,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *AccessProfile) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -84,15 +78,13 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *AccessProfile) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
 `func (o *AccessProfile) SetName(v string)`
 
 SetName sets Name field to given value.
-
 
 ### GetDescription
 
@@ -104,8 +96,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *AccessProfile) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -123,12 +114,14 @@ HasDescription returns a boolean if a field has been set.
 
 `func (o *AccessProfile) SetDescriptionNil(b bool)`
 
- SetDescriptionNil sets the value for Description to be an explicit nil
+SetDescriptionNil sets the value for Description to be an explicit nil
 
 ### UnsetDescription
+
 `func (o *AccessProfile) UnsetDescription()`
 
 UnsetDescription ensures that no value is present for Description, not even an explicit nil
+
 ### GetCreated
 
 `func (o *AccessProfile) GetCreated() SailPointTime`
@@ -139,8 +132,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *AccessProfile) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -164,8 +156,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *AccessProfile) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -189,8 +180,7 @@ GetEnabled returns the Enabled field if non-nil, zero value otherwise.
 
 `func (o *AccessProfile) GetEnabledOk() (*bool, bool)`
 
-GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEnabled
 
@@ -214,8 +204,7 @@ GetOwner returns the Owner field if non-nil, zero value otherwise.
 
 `func (o *AccessProfile) GetOwnerOk() (*OwnerReference, bool)`
 
-GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwner
 
@@ -223,17 +212,18 @@ and a boolean to check if the value has been set.
 
 SetOwner sets Owner field to given value.
 
-
 ### SetOwnerNil
 
 `func (o *AccessProfile) SetOwnerNil(b bool)`
 
- SetOwnerNil sets the value for Owner to be an explicit nil
+SetOwnerNil sets the value for Owner to be an explicit nil
 
 ### UnsetOwner
+
 `func (o *AccessProfile) UnsetOwner()`
 
 UnsetOwner ensures that no value is present for Owner, not even an explicit nil
+
 ### GetSource
 
 `func (o *AccessProfile) GetSource() AccessProfileSourceRef`
@@ -244,15 +234,13 @@ GetSource returns the Source field if non-nil, zero value otherwise.
 
 `func (o *AccessProfile) GetSourceOk() (*AccessProfileSourceRef, bool)`
 
-GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSource
 
 `func (o *AccessProfile) SetSource(v AccessProfileSourceRef)`
 
 SetSource sets Source field to given value.
-
 
 ### GetEntitlements
 
@@ -264,8 +252,7 @@ GetEntitlements returns the Entitlements field if non-nil, zero value otherwise.
 
 `func (o *AccessProfile) GetEntitlementsOk() (*[]EntitlementRef, bool)`
 
-GetEntitlementsOk returns a tuple with the Entitlements field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEntitlementsOk returns a tuple with the Entitlements field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEntitlements
 
@@ -283,12 +270,14 @@ HasEntitlements returns a boolean if a field has been set.
 
 `func (o *AccessProfile) SetEntitlementsNil(b bool)`
 
- SetEntitlementsNil sets the value for Entitlements to be an explicit nil
+SetEntitlementsNil sets the value for Entitlements to be an explicit nil
 
 ### UnsetEntitlements
+
 `func (o *AccessProfile) UnsetEntitlements()`
 
 UnsetEntitlements ensures that no value is present for Entitlements, not even an explicit nil
+
 ### GetRequestable
 
 `func (o *AccessProfile) GetRequestable() bool`
@@ -299,8 +288,7 @@ GetRequestable returns the Requestable field if non-nil, zero value otherwise.
 
 `func (o *AccessProfile) GetRequestableOk() (*bool, bool)`
 
-GetRequestableOk returns a tuple with the Requestable field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestableOk returns a tuple with the Requestable field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequestable
 
@@ -324,8 +312,7 @@ GetAccessRequestConfig returns the AccessRequestConfig field if non-nil, zero va
 
 `func (o *AccessProfile) GetAccessRequestConfigOk() (*Requestability, bool)`
 
-GetAccessRequestConfigOk returns a tuple with the AccessRequestConfig field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessRequestConfigOk returns a tuple with the AccessRequestConfig field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessRequestConfig
 
@@ -343,12 +330,14 @@ HasAccessRequestConfig returns a boolean if a field has been set.
 
 `func (o *AccessProfile) SetAccessRequestConfigNil(b bool)`
 
- SetAccessRequestConfigNil sets the value for AccessRequestConfig to be an explicit nil
+SetAccessRequestConfigNil sets the value for AccessRequestConfig to be an explicit nil
 
 ### UnsetAccessRequestConfig
+
 `func (o *AccessProfile) UnsetAccessRequestConfig()`
 
 UnsetAccessRequestConfig ensures that no value is present for AccessRequestConfig, not even an explicit nil
+
 ### GetRevocationRequestConfig
 
 `func (o *AccessProfile) GetRevocationRequestConfig() Revocability`
@@ -359,8 +348,7 @@ GetRevocationRequestConfig returns the RevocationRequestConfig field if non-nil,
 
 `func (o *AccessProfile) GetRevocationRequestConfigOk() (*Revocability, bool)`
 
-GetRevocationRequestConfigOk returns a tuple with the RevocationRequestConfig field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRevocationRequestConfigOk returns a tuple with the RevocationRequestConfig field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRevocationRequestConfig
 
@@ -378,12 +366,14 @@ HasRevocationRequestConfig returns a boolean if a field has been set.
 
 `func (o *AccessProfile) SetRevocationRequestConfigNil(b bool)`
 
- SetRevocationRequestConfigNil sets the value for RevocationRequestConfig to be an explicit nil
+SetRevocationRequestConfigNil sets the value for RevocationRequestConfig to be an explicit nil
 
 ### UnsetRevocationRequestConfig
+
 `func (o *AccessProfile) UnsetRevocationRequestConfig()`
 
 UnsetRevocationRequestConfig ensures that no value is present for RevocationRequestConfig, not even an explicit nil
+
 ### GetSegments
 
 `func (o *AccessProfile) GetSegments() []string`
@@ -394,8 +384,7 @@ GetSegments returns the Segments field if non-nil, zero value otherwise.
 
 `func (o *AccessProfile) GetSegmentsOk() (*[]string, bool)`
 
-GetSegmentsOk returns a tuple with the Segments field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSegmentsOk returns a tuple with the Segments field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSegments
 
@@ -413,12 +402,14 @@ HasSegments returns a boolean if a field has been set.
 
 `func (o *AccessProfile) SetSegmentsNil(b bool)`
 
- SetSegmentsNil sets the value for Segments to be an explicit nil
+SetSegmentsNil sets the value for Segments to be an explicit nil
 
 ### UnsetSegments
+
 `func (o *AccessProfile) UnsetSegments()`
 
 UnsetSegments ensures that no value is present for Segments, not even an explicit nil
+
 ### GetProvisioningCriteria
 
 `func (o *AccessProfile) GetProvisioningCriteria() ProvisioningCriteriaLevel1`
@@ -429,8 +420,7 @@ GetProvisioningCriteria returns the ProvisioningCriteria field if non-nil, zero 
 
 `func (o *AccessProfile) GetProvisioningCriteriaOk() (*ProvisioningCriteriaLevel1, bool)`
 
-GetProvisioningCriteriaOk returns a tuple with the ProvisioningCriteria field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProvisioningCriteriaOk returns a tuple with the ProvisioningCriteria field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProvisioningCriteria
 
@@ -448,10 +438,10 @@ HasProvisioningCriteria returns a boolean if a field has been set.
 
 `func (o *AccessProfile) SetProvisioningCriteriaNil(b bool)`
 
- SetProvisioningCriteriaNil sets the value for ProvisioningCriteria to be an explicit nil
+SetProvisioningCriteriaNil sets the value for ProvisioningCriteria to be an explicit nil
 
 ### UnsetProvisioningCriteria
+
 `func (o *AccessProfile) UnsetProvisioningCriteria()`
 
 UnsetProvisioningCriteria ensures that no value is present for ProvisioningCriteria, not even an explicit nil
-

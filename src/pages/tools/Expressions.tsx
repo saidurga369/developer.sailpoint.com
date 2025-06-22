@@ -1,8 +1,8 @@
 import React from 'react';
-import { styled } from '@mui/material/styles';
+import {styled} from '@mui/material/styles';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
-import TableCell, { tableCellClasses } from '@mui/material/TableCell';
+import TableCell, {tableCellClasses} from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
@@ -15,7 +15,7 @@ interface JsonPathRow {
   description: string;
 }
 
-const StyledTableCell = styled(TableCell)(({ theme }) => ({
+const StyledTableCell = styled(TableCell)(({theme}) => ({
   [`&.${tableCellClasses.head}`]: {
     backgroundColor: theme.palette.common.black,
     color: theme.palette.common.white,
@@ -25,7 +25,7 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
   },
 }));
 
-const StyledTableRow = styled(TableRow)(({ theme }) => ({
+const StyledTableRow = styled(TableRow)(({theme}) => ({
   '&:nth-of-type(odd)': {
     backgroundColor: theme.palette.action.hover,
   },
@@ -37,7 +37,7 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 // Function to create data for the table
 const createData = (jsonpath: string, description: string): JsonPathRow => {
-  return { jsonpath, description };
+  return {jsonpath, description};
 };
 
 // Table data
@@ -49,11 +49,11 @@ const rows: JsonPathRow[] = [
   createData('*', 'wildcard. All objects/elements regardless their names.'),
   createData(
     '[]',
-    'subscript operator. XPath uses it to iterate over element collections and for predicates. In Javascript and JSON it is the native array operator.'
+    'subscript operator. XPath uses it to iterate over element collections and for predicates. In Javascript and JSON it is the native array operator.',
   ),
   createData(
     '[,]',
-    'Union operator in XPath results in a combination of node sets. JSONPath allows alternate names or array indices as a set.'
+    'Union operator in XPath results in a combination of node sets. JSONPath allows alternate names or array indices as a set.',
   ),
   createData('[start:end:step]', 'array slice operator borrowed from ES4.'),
   createData('?()', 'applies a filter (script) expression.'),
@@ -63,7 +63,7 @@ const rows: JsonPathRow[] = [
 const JsonExpressions: React.FC = () => {
   return (
     <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 700 }} aria-label="customized table">
+      <Table sx={{minWidth: 700}} aria-label="customized table">
         <TableHead>
           <TableRow>
             <StyledTableCell>JSONPath</StyledTableCell>

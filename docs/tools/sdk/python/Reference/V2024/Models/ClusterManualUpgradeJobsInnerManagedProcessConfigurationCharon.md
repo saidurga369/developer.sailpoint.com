@@ -4,9 +4,22 @@ title: ClusterManualUpgradeJobsInnerManagedProcessConfigurationCharon
 pagination_label: ClusterManualUpgradeJobsInnerManagedProcessConfigurationCharon
 sidebar_label: ClusterManualUpgradeJobsInnerManagedProcessConfigurationCharon
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ClusterManualUpgradeJobsInnerManagedProcessConfigurationCharon', 'V2024ClusterManualUpgradeJobsInnerManagedProcessConfigurationCharon'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ClusterManualUpgradeJobsInnerManagedProcessConfigurationCharon',
+    'V2024ClusterManualUpgradeJobsInnerManagedProcessConfigurationCharon',
+  ]
 slug: /tools/sdk/python/v2024/models/cluster-manual-upgrade-jobs-inner-managed-process-configuration-charon
-tags: ['SDK', 'Software Development Kit', 'ClusterManualUpgradeJobsInnerManagedProcessConfigurationCharon', 'V2024ClusterManualUpgradeJobsInnerManagedProcessConfigurationCharon']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ClusterManualUpgradeJobsInnerManagedProcessConfigurationCharon',
+    'V2024ClusterManualUpgradeJobsInnerManagedProcessConfigurationCharon',
+  ]
 ---
 
 # ClusterManualUpgradeJobsInnerManagedProcessConfigurationCharon
@@ -15,12 +28,13 @@ Configuration details for the 'charon' process.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**version** | **str** | Version of the 'charon' process. | [required]
-**path** | **str** | Path to the 'charon' process. | [required]
-**description** | **str** | A brief description of the 'charon' process. | [required]
-**restart_needed** | **bool** | Indicates whether the process needs to be restarted. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **version** | **str** | Version of the 'charon' process. | [required] |
+| **path** | **str** | Path to the 'charon' process. | [required] |
+| **description** | **str** | A brief description of the 'charon' process. | [required] |
+| **restart_needed** | **bool** | Indicates whether the process needs to be restarted. | [required] |
+
 }
 
 ## Example
@@ -36,5 +50,5 @@ restart_needed=True
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

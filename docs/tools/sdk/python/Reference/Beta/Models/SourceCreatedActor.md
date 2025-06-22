@@ -4,9 +4,16 @@ title: SourceCreatedActor
 pagination_label: SourceCreatedActor
 sidebar_label: SourceCreatedActor
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SourceCreatedActor', 'BetaSourceCreatedActor'] 
+keywords:
+  ['python', 'Python', 'sdk', 'SourceCreatedActor', 'BetaSourceCreatedActor']
 slug: /tools/sdk/python/beta/models/source-created-actor
-tags: ['SDK', 'Software Development Kit', 'SourceCreatedActor', 'BetaSourceCreatedActor']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SourceCreatedActor',
+    'BetaSourceCreatedActor',
+  ]
 ---
 
 # SourceCreatedActor
@@ -15,11 +22,12 @@ Identity who created the source.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] | DTO type of the identity who created the source. | [required]
-**id** | **str** | ID of the identity who created the source. | [required]
-**name** | **str** | Name of the identity who created the source. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'IDENTITY' ] | DTO type of the identity who created the source. | [required] |
+| **id** | **str** | ID of the identity who created the source. | [required] |
+| **name** | **str** | Name of the identity who created the source. | [required] |
+
 }
 
 ## Example
@@ -34,5 +42,5 @@ name='William Wilson'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

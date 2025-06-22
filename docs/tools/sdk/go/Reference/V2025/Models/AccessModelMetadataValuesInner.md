@@ -4,20 +4,33 @@ title: AccessModelMetadataValuesInner
 pagination_label: AccessModelMetadataValuesInner
 sidebar_label: AccessModelMetadataValuesInner
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessModelMetadataValuesInner', 'V2025AccessModelMetadataValuesInner'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'AccessModelMetadataValuesInner',
+    'V2025AccessModelMetadataValuesInner',
+  ]
 slug: /tools/sdk/go/v2025/models/access-model-metadata-values-inner
-tags: ['SDK', 'Software Development Kit', 'AccessModelMetadataValuesInner', 'V2025AccessModelMetadataValuesInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessModelMetadataValuesInner',
+    'V2025AccessModelMetadataValuesInner',
+  ]
 ---
 
 # AccessModelMetadataValuesInner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Value** | Pointer to **string** | The value to assign to the metdata item | [optional] 
-**Name** | Pointer to **string** | Display name of the value | [optional] 
-**Status** | Pointer to **string** | The status of the individual value | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Value** | Pointer to **string** | The value to assign to the metdata item | [optional] |
+| **Name** | Pointer to **string** | Display name of the value | [optional] |
+| **Status** | Pointer to **string** | The status of the individual value | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewAccessModelMetadataValuesInner() *AccessModelMetadataValuesInner`
 
-NewAccessModelMetadataValuesInner instantiates a new AccessModelMetadataValuesInner object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessModelMetadataValuesInner instantiates a new AccessModelMetadataValuesInner object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessModelMetadataValuesInnerWithDefaults
 
 `func NewAccessModelMetadataValuesInnerWithDefaults() *AccessModelMetadataValuesInner`
 
-NewAccessModelMetadataValuesInnerWithDefaults instantiates a new AccessModelMetadataValuesInner object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessModelMetadataValuesInnerWithDefaults instantiates a new AccessModelMetadataValuesInner object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetValue
 
@@ -48,8 +56,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *AccessModelMetadataValuesInner) GetValueOk() (*string, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -73,8 +80,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *AccessModelMetadataValuesInner) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -98,8 +104,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *AccessModelMetadataValuesInner) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -112,5 +117,3 @@ SetStatus sets Status field to given value.
 `func (o *AccessModelMetadataValuesInner) HasStatus() bool`
 
 HasStatus returns a boolean if a field has been set.
-
-

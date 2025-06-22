@@ -4,25 +4,38 @@ title: GetVendorConnectorMappings405Response
 pagination_label: GetVendorConnectorMappings405Response
 sidebar_label: GetVendorConnectorMappings405Response
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'GetVendorConnectorMappings405Response', 'GetVendorConnectorMappings405Response'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'GetVendorConnectorMappings405Response',
+    'GetVendorConnectorMappings405Response',
+  ]
 slug: /tools/sdk/powershell/v3/models/get-vendor-connector-mappings405-response
-tags: ['SDK', 'Software Development Kit', 'GetVendorConnectorMappings405Response', 'GetVendorConnectorMappings405Response']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'GetVendorConnectorMappings405Response',
+    'GetVendorConnectorMappings405Response',
+  ]
 ---
-
 
 # GetVendorConnectorMappings405Response
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ErrorName** | [**SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | A message describing the error | [optional] 
-**ErrorMessage** | [**SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | Description of the error | [optional] 
-**TrackingId** | **String** | Unique tracking id for the error. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ErrorName** | [**SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | A message describing the error | [optional] |
+| **ErrorMessage** | [**SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | Description of the error | [optional] |
+| **TrackingId** | **String** | Unique tracking id for the error. | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $GetVendorConnectorMappings405Response = Initialize-GetVendorConnectorMappings405Response  -ErrorName NotSupportedException `
  -ErrorMessage Cannot consume content type `
@@ -30,10 +43,9 @@ $GetVendorConnectorMappings405Response = Initialize-GetVendorConnectorMappings40
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $GetVendorConnectorMappings405Response | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

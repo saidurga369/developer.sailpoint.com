@@ -4,22 +4,29 @@ title: MailFromAttributes
 pagination_label: MailFromAttributes
 sidebar_label: MailFromAttributes
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'MailFromAttributes', 'BetaMailFromAttributes'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'MailFromAttributes', 'BetaMailFromAttributes']
 slug: /tools/sdk/go/beta/models/mail-from-attributes
-tags: ['SDK', 'Software Development Kit', 'MailFromAttributes', 'BetaMailFromAttributes']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'MailFromAttributes',
+    'BetaMailFromAttributes',
+  ]
 ---
 
 # MailFromAttributes
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Identity** | Pointer to **string** | The email identity | [optional] 
-**MailFromDomain** | Pointer to **string** | The name of a domain that an email identity uses as a custom MAIL FROM domain | [optional] 
-**MxRecord** | Pointer to **string** | MX record that is required in customer's DNS to allow the domain to receive bounce and complaint notifications that email providers send you | [optional] 
-**TxtRecord** | Pointer to **string** | TXT record that is required in customer's DNS in order to prove that Amazon SES is authorized to send email from your domain | [optional] 
-**MailFromDomainStatus** | Pointer to **string** | The current status of the MAIL FROM verification | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Identity** | Pointer to **string** | The email identity | [optional] |
+| **MailFromDomain** | Pointer to **string** | The name of a domain that an email identity uses as a custom MAIL FROM domain | [optional] |
+| **MxRecord** | Pointer to **string** | MX record that is required in customer's DNS to allow the domain to receive bounce and complaint notifications that email providers send you | [optional] |
+| **TxtRecord** | Pointer to **string** | TXT record that is required in customer's DNS in order to prove that Amazon SES is authorized to send email from your domain | [optional] |
+| **MailFromDomainStatus** | Pointer to **string** | The current status of the MAIL FROM verification | [optional] |
 
 ## Methods
 
@@ -27,18 +34,13 @@ Name | Type | Description | Notes
 
 `func NewMailFromAttributes() *MailFromAttributes`
 
-NewMailFromAttributes instantiates a new MailFromAttributes object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewMailFromAttributes instantiates a new MailFromAttributes object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewMailFromAttributesWithDefaults
 
 `func NewMailFromAttributesWithDefaults() *MailFromAttributes`
 
-NewMailFromAttributesWithDefaults instantiates a new MailFromAttributes object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewMailFromAttributesWithDefaults instantiates a new MailFromAttributes object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetIdentity
 
@@ -50,8 +52,7 @@ GetIdentity returns the Identity field if non-nil, zero value otherwise.
 
 `func (o *MailFromAttributes) GetIdentityOk() (*string, bool)`
 
-GetIdentityOk returns a tuple with the Identity field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityOk returns a tuple with the Identity field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentity
 
@@ -75,8 +76,7 @@ GetMailFromDomain returns the MailFromDomain field if non-nil, zero value otherw
 
 `func (o *MailFromAttributes) GetMailFromDomainOk() (*string, bool)`
 
-GetMailFromDomainOk returns a tuple with the MailFromDomain field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMailFromDomainOk returns a tuple with the MailFromDomain field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMailFromDomain
 
@@ -100,8 +100,7 @@ GetMxRecord returns the MxRecord field if non-nil, zero value otherwise.
 
 `func (o *MailFromAttributes) GetMxRecordOk() (*string, bool)`
 
-GetMxRecordOk returns a tuple with the MxRecord field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMxRecordOk returns a tuple with the MxRecord field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMxRecord
 
@@ -125,8 +124,7 @@ GetTxtRecord returns the TxtRecord field if non-nil, zero value otherwise.
 
 `func (o *MailFromAttributes) GetTxtRecordOk() (*string, bool)`
 
-GetTxtRecordOk returns a tuple with the TxtRecord field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTxtRecordOk returns a tuple with the TxtRecord field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTxtRecord
 
@@ -150,8 +148,7 @@ GetMailFromDomainStatus returns the MailFromDomainStatus field if non-nil, zero 
 
 `func (o *MailFromAttributes) GetMailFromDomainStatusOk() (*string, bool)`
 
-GetMailFromDomainStatusOk returns a tuple with the MailFromDomainStatus field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMailFromDomainStatusOk returns a tuple with the MailFromDomainStatus field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMailFromDomainStatus
 
@@ -164,5 +161,3 @@ SetMailFromDomainStatus sets MailFromDomainStatus field to given value.
 `func (o *MailFromAttributes) HasMailFromDomainStatus() bool`
 
 HasMailFromDomainStatus returns a boolean if a field has been set.
-
-

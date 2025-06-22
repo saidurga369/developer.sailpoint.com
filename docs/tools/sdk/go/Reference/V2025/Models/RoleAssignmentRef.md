@@ -4,19 +4,25 @@ title: RoleAssignmentRef
 pagination_label: RoleAssignmentRef
 sidebar_label: RoleAssignmentRef
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleAssignmentRef', 'V2025RoleAssignmentRef'] 
+keywords: ['go', 'Golang', 'sdk', 'RoleAssignmentRef', 'V2025RoleAssignmentRef']
 slug: /tools/sdk/go/v2025/models/role-assignment-ref
-tags: ['SDK', 'Software Development Kit', 'RoleAssignmentRef', 'V2025RoleAssignmentRef']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleAssignmentRef',
+    'V2025RoleAssignmentRef',
+  ]
 ---
 
 # RoleAssignmentRef
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Assignment Id | [optional] 
-**Role** | Pointer to [**BaseReferenceDto**](base-reference-dto) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Assignment Id | [optional] |
+| **Role** | Pointer to [**BaseReferenceDto**](base-reference-dto) |  | [optional] |
 
 ## Methods
 
@@ -24,18 +30,13 @@ Name | Type | Description | Notes
 
 `func NewRoleAssignmentRef() *RoleAssignmentRef`
 
-NewRoleAssignmentRef instantiates a new RoleAssignmentRef object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleAssignmentRef instantiates a new RoleAssignmentRef object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleAssignmentRefWithDefaults
 
 `func NewRoleAssignmentRefWithDefaults() *RoleAssignmentRef`
 
-NewRoleAssignmentRefWithDefaults instantiates a new RoleAssignmentRef object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleAssignmentRefWithDefaults instantiates a new RoleAssignmentRef object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -47,8 +48,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *RoleAssignmentRef) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -72,8 +72,7 @@ GetRole returns the Role field if non-nil, zero value otherwise.
 
 `func (o *RoleAssignmentRef) GetRoleOk() (*BaseReferenceDto, bool)`
 
-GetRoleOk returns a tuple with the Role field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRoleOk returns a tuple with the Role field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRole
 
@@ -86,5 +85,3 @@ SetRole sets Role field to given value.
 `func (o *RoleAssignmentRef) HasRole() bool`
 
 HasRole returns a boolean if a field has been set.
-
-

@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React, {useState} from 'react';
 
-import FloatingButton from "@theme/ApiExplorer/FloatingButton";
-import FormItem from "@theme/ApiExplorer/FormItem";
-import FormSelect from "@theme/ApiExplorer/FormSelect";
-import FormTextInput from "@theme/ApiExplorer/FormTextInput";
-import { useTypedDispatch, useTypedSelector } from "@theme/ApiItem/hooks";
+import FloatingButton from '@theme/ApiExplorer/FloatingButton';
+import FormItem from '@theme/ApiExplorer/FormItem';
+import FormSelect from '@theme/ApiExplorer/FormSelect';
+import FormTextInput from '@theme/ApiExplorer/FormTextInput';
+import {useTypedDispatch, useTypedSelector} from '@theme/ApiItem/hooks';
 
-import { setServer, setServerVariable } from "./slice";
+import {setServer, setServerVariable} from './slice';
 
 function Server() {
   const [isEditing, setIsEditing] = useState(false);
@@ -37,14 +37,14 @@ function Server() {
   }
 
   if (!isEditing) {
-    let url = "";
+    let url = '';
     if (value) {
-      url = value.url.replace(/\/$/, "");
+      url = value.url.replace(/\/$/, '');
       if (value.variables) {
         Object.keys(value.variables).forEach((variable) => {
           url = url.replace(
             `{${variable}}`,
-            value.variables?.[variable].default ?? ""
+            value.variables?.[variable].default ?? '',
           );
         });
       }
@@ -69,9 +69,9 @@ function Server() {
               dispatch(
                 setServer(
                   JSON.stringify(
-                    options.filter((s: any) => s.url === e.target.value)[0]
-                  )
-                )
+                    options.filter((s: any) => s.url === e.target.value)[0],
+                  ),
+                ),
               );
             }}
             value={value?.url}
@@ -90,8 +90,8 @@ function Server() {
                     onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                       dispatch(
                         setServerVariable(
-                          JSON.stringify({ key, value: e.target.value })
-                        )
+                          JSON.stringify({key, value: e.target.value}),
+                        ),
                       );
                     }}
                     value={value?.variables[key].default}
@@ -106,8 +106,8 @@ function Server() {
                   onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                     dispatch(
                       setServerVariable(
-                        JSON.stringify({ key, value: e.target.value })
-                      )
+                        JSON.stringify({key, value: e.target.value}),
+                      ),
                     );
                   }}
                   value={value?.variables?.[key].default}

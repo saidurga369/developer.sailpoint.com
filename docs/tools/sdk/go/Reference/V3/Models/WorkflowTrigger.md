@@ -4,7 +4,7 @@ title: WorkflowTrigger
 pagination_label: WorkflowTrigger
 sidebar_label: WorkflowTrigger
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'WorkflowTrigger', 'WorkflowTrigger'] 
+keywords: ['go', 'Golang', 'sdk', 'WorkflowTrigger', 'WorkflowTrigger']
 slug: /tools/sdk/go/v3/models/workflow-trigger
 tags: ['SDK', 'Software Development Kit', 'WorkflowTrigger', 'WorkflowTrigger']
 ---
@@ -13,11 +13,11 @@ tags: ['SDK', 'Software Development Kit', 'WorkflowTrigger', 'WorkflowTrigger']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | **string** | The trigger type | 
-**DisplayName** | Pointer to **NullableString** |  | [optional] 
-**Attributes** | **map[string]interface{}** | Workflow Trigger Attributes. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | **string** | The trigger type |
+| **DisplayName** | Pointer to **NullableString** |  | [optional] |
+| **Attributes** | **map[string]interface{}** | Workflow Trigger Attributes. |
 
 ## Methods
 
@@ -25,18 +25,13 @@ Name | Type | Description | Notes
 
 `func NewWorkflowTrigger(type_ string, attributes map[string]interface{}, ) *WorkflowTrigger`
 
-NewWorkflowTrigger instantiates a new WorkflowTrigger object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewWorkflowTrigger instantiates a new WorkflowTrigger object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewWorkflowTriggerWithDefaults
 
 `func NewWorkflowTriggerWithDefaults() *WorkflowTrigger`
 
-NewWorkflowTriggerWithDefaults instantiates a new WorkflowTrigger object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewWorkflowTriggerWithDefaults instantiates a new WorkflowTrigger object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -48,15 +43,13 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *WorkflowTrigger) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
 `func (o *WorkflowTrigger) SetType(v string)`
 
 SetType sets Type field to given value.
-
 
 ### GetDisplayName
 
@@ -68,8 +61,7 @@ GetDisplayName returns the DisplayName field if non-nil, zero value otherwise.
 
 `func (o *WorkflowTrigger) GetDisplayNameOk() (*string, bool)`
 
-GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayName
 
@@ -87,12 +79,14 @@ HasDisplayName returns a boolean if a field has been set.
 
 `func (o *WorkflowTrigger) SetDisplayNameNil(b bool)`
 
- SetDisplayNameNil sets the value for DisplayName to be an explicit nil
+SetDisplayNameNil sets the value for DisplayName to be an explicit nil
 
 ### UnsetDisplayName
+
 `func (o *WorkflowTrigger) UnsetDisplayName()`
 
 UnsetDisplayName ensures that no value is present for DisplayName, not even an explicit nil
+
 ### GetAttributes
 
 `func (o *WorkflowTrigger) GetAttributes() map[string]interface{}`
@@ -103,8 +97,7 @@ GetAttributes returns the Attributes field if non-nil, zero value otherwise.
 
 `func (o *WorkflowTrigger) GetAttributesOk() (*map[string]interface{}, bool)`
 
-GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributes
 
@@ -112,15 +105,14 @@ and a boolean to check if the value has been set.
 
 SetAttributes sets Attributes field to given value.
 
-
 ### SetAttributesNil
 
 `func (o *WorkflowTrigger) SetAttributesNil(b bool)`
 
- SetAttributesNil sets the value for Attributes to be an explicit nil
+SetAttributesNil sets the value for Attributes to be an explicit nil
 
 ### UnsetAttributes
+
 `func (o *WorkflowTrigger) UnsetAttributes()`
 
 UnsetAttributes ensures that no value is present for Attributes, not even an explicit nil
-

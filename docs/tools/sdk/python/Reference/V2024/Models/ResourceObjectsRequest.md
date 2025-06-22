@@ -4,9 +4,22 @@ title: ResourceObjectsRequest
 pagination_label: ResourceObjectsRequest
 sidebar_label: ResourceObjectsRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ResourceObjectsRequest', 'V2024ResourceObjectsRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ResourceObjectsRequest',
+    'V2024ResourceObjectsRequest',
+  ]
 slug: /tools/sdk/python/v2024/models/resource-objects-request
-tags: ['SDK', 'Software Development Kit', 'ResourceObjectsRequest', 'V2024ResourceObjectsRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ResourceObjectsRequest',
+    'V2024ResourceObjectsRequest',
+  ]
 ---
 
 # ResourceObjectsRequest
@@ -15,10 +28,11 @@ Request model for peek resource objects from source connectors.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**object_type** | **str** | The type of resource objects to iterate over. | [optional] [default to 'account']
-**max_count** | **int** | The maximum number of resource objects to iterate over and return. | [optional] [default to 25]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **object_type** | **str** | The type of resource objects to iterate over. | [optional] [default to 'account'] |
+| **max_count** | **int** | The maximum number of resource objects to iterate over and return. | [optional] [default to 25] |
+
 }
 
 ## Example
@@ -32,5 +46,5 @@ max_count=100
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

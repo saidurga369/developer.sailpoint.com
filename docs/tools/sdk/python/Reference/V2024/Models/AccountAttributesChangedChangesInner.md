@@ -4,21 +4,34 @@ title: AccountAttributesChangedChangesInner
 pagination_label: AccountAttributesChangedChangesInner
 sidebar_label: AccountAttributesChangedChangesInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccountAttributesChangedChangesInner', 'V2024AccountAttributesChangedChangesInner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccountAttributesChangedChangesInner',
+    'V2024AccountAttributesChangedChangesInner',
+  ]
 slug: /tools/sdk/python/v2024/models/account-attributes-changed-changes-inner
-tags: ['SDK', 'Software Development Kit', 'AccountAttributesChangedChangesInner', 'V2024AccountAttributesChangedChangesInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountAttributesChangedChangesInner',
+    'V2024AccountAttributesChangedChangesInner',
+  ]
 ---
 
 # AccountAttributesChangedChangesInner
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**attribute** | **str** | The name of the attribute. | [required]
-**old_value** | [**AccountAttributesChangedChangesInnerOldValue**](account-attributes-changed-changes-inner-old-value) |  | [required]
-**new_value** | [**AccountAttributesChangedChangesInnerNewValue**](account-attributes-changed-changes-inner-new-value) |  | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **attribute** | **str** | The name of the attribute. | [required] |
+| **old_value** | [**AccountAttributesChangedChangesInnerOldValue**](account-attributes-changed-changes-inner-old-value) |  | [required] |
+| **new_value** | [**AccountAttributesChangedChangesInnerNewValue**](account-attributes-changed-changes-inner-new-value) |  | [required] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ new_value=ryans
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

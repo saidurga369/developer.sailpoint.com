@@ -4,9 +4,22 @@ title: IdentityProfileIdentityErrorReportArguments
 pagination_label: IdentityProfileIdentityErrorReportArguments
 sidebar_label: IdentityProfileIdentityErrorReportArguments
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentityProfileIdentityErrorReportArguments', 'IdentityProfileIdentityErrorReportArguments'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'IdentityProfileIdentityErrorReportArguments',
+    'IdentityProfileIdentityErrorReportArguments',
+  ]
 slug: /tools/sdk/python/v3/models/identity-profile-identity-error-report-arguments
-tags: ['SDK', 'Software Development Kit', 'IdentityProfileIdentityErrorReportArguments', 'IdentityProfileIdentityErrorReportArguments']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityProfileIdentityErrorReportArguments',
+    'IdentityProfileIdentityErrorReportArguments',
+  ]
 ---
 
 # IdentityProfileIdentityErrorReportArguments
@@ -15,9 +28,10 @@ Arguments for Identity Profile Identity Error report (IDENTITY_PROFILE_IDENTITY_
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**authoritative_source** | **str** | Source ID. | [required]
+| Name                     | Type    | Description | Notes      |
+| ------------------------ | ------- | ----------- | ---------- |
+| **authoritative_source** | **str** | Source ID.  | [required] |
+
 }
 
 ## Example
@@ -30,5 +44,5 @@ authoritative_source='1234sourceId5678902'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

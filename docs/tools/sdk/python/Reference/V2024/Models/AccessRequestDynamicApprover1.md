@@ -4,21 +4,34 @@ title: AccessRequestDynamicApprover1
 pagination_label: AccessRequestDynamicApprover1
 sidebar_label: AccessRequestDynamicApprover1
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccessRequestDynamicApprover1', 'V2024AccessRequestDynamicApprover1'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccessRequestDynamicApprover1',
+    'V2024AccessRequestDynamicApprover1',
+  ]
 slug: /tools/sdk/python/v2024/models/access-request-dynamic-approver1
-tags: ['SDK', 'Software Development Kit', 'AccessRequestDynamicApprover1', 'V2024AccessRequestDynamicApprover1']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessRequestDynamicApprover1',
+    'V2024AccessRequestDynamicApprover1',
+  ]
 ---
 
 # AccessRequestDynamicApprover1
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The unique ID of the identity to add to the approver list for the access request. | [required]
-**name** | **str** | The name of the identity to add to the approver list for the access request. | [required]
-**type** |  **Enum** [  'IDENTITY',    'GOVERNANCE_GROUP' ] | The type of object being referenced. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The unique ID of the identity to add to the approver list for the access request. | [required] |
+| **name** | **str** | The name of the identity to add to the approver list for the access request. | [required] |
+| **type** | **Enum** [ 'IDENTITY', 'GOVERNANCE_GROUP' ] | The type of object being referenced. | [required] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ type=IDENTITY
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

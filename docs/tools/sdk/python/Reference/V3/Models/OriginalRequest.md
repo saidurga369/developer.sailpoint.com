@@ -4,23 +4,23 @@ title: OriginalRequest
 pagination_label: OriginalRequest
 sidebar_label: OriginalRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'OriginalRequest', 'OriginalRequest'] 
+keywords: ['python', 'Python', 'sdk', 'OriginalRequest', 'OriginalRequest']
 slug: /tools/sdk/python/v3/models/original-request
 tags: ['SDK', 'Software Development Kit', 'OriginalRequest', 'OriginalRequest']
 ---
 
 # OriginalRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**account_id** | **str** | Account ID. | [optional] 
-**result** | [**Result**](result) |  | [optional] 
-**attribute_requests** | [**[]AttributeRequest**](attribute-request) | Attribute changes requested for account. | [optional] 
-**op** | **str** | Operation used. | [optional] 
-**source** | [**AccountSource**](account-source) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **account_id** | **str** | Account ID. | [optional] |
+| **result** | [**Result**](result) |  | [optional] |
+| **attribute_requests** | [**[]AttributeRequest**](attribute-request) | Attribute changes requested for account. | [optional] |
+| **op** | **str** | Operation used. | [optional] |
+| **source** | [**AccountSource**](account-source) |  | [optional] |
+
 }
 
 ## Example
@@ -34,8 +34,8 @@ result=sailpoint.v3.models.result.Result(
                     status = 'Manual Task Created', ),
 attribute_requests=[
                     sailpoint.v3.models.attribute_request.AttributeRequest(
-                        name = 'groups', 
-                        op = 'Add', 
+                        name = 'groups',
+                        op = 'Add',
                         value = null, )
                     ],
 op='add',
@@ -43,5 +43,5 @@ source=
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

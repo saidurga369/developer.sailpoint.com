@@ -4,25 +4,32 @@ title: OutlierFeatureSummary
 pagination_label: OutlierFeatureSummary
 sidebar_label: OutlierFeatureSummary
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'OutlierFeatureSummary', 'V2024OutlierFeatureSummary'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'OutlierFeatureSummary', 'V2024OutlierFeatureSummary']
 slug: /tools/sdk/go/v2024/models/outlier-feature-summary
-tags: ['SDK', 'Software Development Kit', 'OutlierFeatureSummary', 'V2024OutlierFeatureSummary']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'OutlierFeatureSummary',
+    'V2024OutlierFeatureSummary',
+  ]
 ---
 
 # OutlierFeatureSummary
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ContributingFeatureName** | Pointer to **string** | Contributing feature name | [optional] 
-**IdentityOutlierDisplayName** | Pointer to **string** | Identity display name | [optional] 
-**OutlierFeatureDisplayValues** | Pointer to [**[]OutlierFeatureSummaryOutlierFeatureDisplayValuesInner**](outlier-feature-summary-outlier-feature-display-values-inner) |  | [optional] 
-**FeatureDefinition** | Pointer to **string** | Definition of the feature | [optional] 
-**FeatureExplanation** | Pointer to **string** | Detailed explanation of the feature | [optional] 
-**PeerDisplayName** | Pointer to **NullableString** | outlier's peer identity display name | [optional] 
-**PeerIdentityId** | Pointer to **NullableString** | outlier's peer identity id | [optional] 
-**AccessItemReference** | Pointer to **map[string]interface{}** | Access Item reference | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ContributingFeatureName** | Pointer to **string** | Contributing feature name | [optional] |
+| **IdentityOutlierDisplayName** | Pointer to **string** | Identity display name | [optional] |
+| **OutlierFeatureDisplayValues** | Pointer to [**[]OutlierFeatureSummaryOutlierFeatureDisplayValuesInner**](outlier-feature-summary-outlier-feature-display-values-inner) |  | [optional] |
+| **FeatureDefinition** | Pointer to **string** | Definition of the feature | [optional] |
+| **FeatureExplanation** | Pointer to **string** | Detailed explanation of the feature | [optional] |
+| **PeerDisplayName** | Pointer to **NullableString** | outlier's peer identity display name | [optional] |
+| **PeerIdentityId** | Pointer to **NullableString** | outlier's peer identity id | [optional] |
+| **AccessItemReference** | Pointer to **map[string]interface{}** | Access Item reference | [optional] |
 
 ## Methods
 
@@ -30,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewOutlierFeatureSummary() *OutlierFeatureSummary`
 
-NewOutlierFeatureSummary instantiates a new OutlierFeatureSummary object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewOutlierFeatureSummary instantiates a new OutlierFeatureSummary object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewOutlierFeatureSummaryWithDefaults
 
 `func NewOutlierFeatureSummaryWithDefaults() *OutlierFeatureSummary`
 
-NewOutlierFeatureSummaryWithDefaults instantiates a new OutlierFeatureSummary object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewOutlierFeatureSummaryWithDefaults instantiates a new OutlierFeatureSummary object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetContributingFeatureName
 
@@ -53,8 +55,7 @@ GetContributingFeatureName returns the ContributingFeatureName field if non-nil,
 
 `func (o *OutlierFeatureSummary) GetContributingFeatureNameOk() (*string, bool)`
 
-GetContributingFeatureNameOk returns a tuple with the ContributingFeatureName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetContributingFeatureNameOk returns a tuple with the ContributingFeatureName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetContributingFeatureName
 
@@ -78,8 +79,7 @@ GetIdentityOutlierDisplayName returns the IdentityOutlierDisplayName field if no
 
 `func (o *OutlierFeatureSummary) GetIdentityOutlierDisplayNameOk() (*string, bool)`
 
-GetIdentityOutlierDisplayNameOk returns a tuple with the IdentityOutlierDisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityOutlierDisplayNameOk returns a tuple with the IdentityOutlierDisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityOutlierDisplayName
 
@@ -103,8 +103,7 @@ GetOutlierFeatureDisplayValues returns the OutlierFeatureDisplayValues field if 
 
 `func (o *OutlierFeatureSummary) GetOutlierFeatureDisplayValuesOk() (*[]OutlierFeatureSummaryOutlierFeatureDisplayValuesInner, bool)`
 
-GetOutlierFeatureDisplayValuesOk returns a tuple with the OutlierFeatureDisplayValues field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOutlierFeatureDisplayValuesOk returns a tuple with the OutlierFeatureDisplayValues field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOutlierFeatureDisplayValues
 
@@ -128,8 +127,7 @@ GetFeatureDefinition returns the FeatureDefinition field if non-nil, zero value 
 
 `func (o *OutlierFeatureSummary) GetFeatureDefinitionOk() (*string, bool)`
 
-GetFeatureDefinitionOk returns a tuple with the FeatureDefinition field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFeatureDefinitionOk returns a tuple with the FeatureDefinition field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFeatureDefinition
 
@@ -153,8 +151,7 @@ GetFeatureExplanation returns the FeatureExplanation field if non-nil, zero valu
 
 `func (o *OutlierFeatureSummary) GetFeatureExplanationOk() (*string, bool)`
 
-GetFeatureExplanationOk returns a tuple with the FeatureExplanation field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFeatureExplanationOk returns a tuple with the FeatureExplanation field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFeatureExplanation
 
@@ -178,8 +175,7 @@ GetPeerDisplayName returns the PeerDisplayName field if non-nil, zero value othe
 
 `func (o *OutlierFeatureSummary) GetPeerDisplayNameOk() (*string, bool)`
 
-GetPeerDisplayNameOk returns a tuple with the PeerDisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPeerDisplayNameOk returns a tuple with the PeerDisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPeerDisplayName
 
@@ -197,12 +193,14 @@ HasPeerDisplayName returns a boolean if a field has been set.
 
 `func (o *OutlierFeatureSummary) SetPeerDisplayNameNil(b bool)`
 
- SetPeerDisplayNameNil sets the value for PeerDisplayName to be an explicit nil
+SetPeerDisplayNameNil sets the value for PeerDisplayName to be an explicit nil
 
 ### UnsetPeerDisplayName
+
 `func (o *OutlierFeatureSummary) UnsetPeerDisplayName()`
 
 UnsetPeerDisplayName ensures that no value is present for PeerDisplayName, not even an explicit nil
+
 ### GetPeerIdentityId
 
 `func (o *OutlierFeatureSummary) GetPeerIdentityId() string`
@@ -213,8 +211,7 @@ GetPeerIdentityId returns the PeerIdentityId field if non-nil, zero value otherw
 
 `func (o *OutlierFeatureSummary) GetPeerIdentityIdOk() (*string, bool)`
 
-GetPeerIdentityIdOk returns a tuple with the PeerIdentityId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPeerIdentityIdOk returns a tuple with the PeerIdentityId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPeerIdentityId
 
@@ -232,12 +229,14 @@ HasPeerIdentityId returns a boolean if a field has been set.
 
 `func (o *OutlierFeatureSummary) SetPeerIdentityIdNil(b bool)`
 
- SetPeerIdentityIdNil sets the value for PeerIdentityId to be an explicit nil
+SetPeerIdentityIdNil sets the value for PeerIdentityId to be an explicit nil
 
 ### UnsetPeerIdentityId
+
 `func (o *OutlierFeatureSummary) UnsetPeerIdentityId()`
 
 UnsetPeerIdentityId ensures that no value is present for PeerIdentityId, not even an explicit nil
+
 ### GetAccessItemReference
 
 `func (o *OutlierFeatureSummary) GetAccessItemReference() map[string]interface{}`
@@ -248,8 +247,7 @@ GetAccessItemReference returns the AccessItemReference field if non-nil, zero va
 
 `func (o *OutlierFeatureSummary) GetAccessItemReferenceOk() (*map[string]interface{}, bool)`
 
-GetAccessItemReferenceOk returns a tuple with the AccessItemReference field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessItemReferenceOk returns a tuple with the AccessItemReference field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessItemReference
 
@@ -262,5 +260,3 @@ SetAccessItemReference sets AccessItemReference field to given value.
 `func (o *OutlierFeatureSummary) HasAccessItemReference() bool`
 
 HasAccessItemReference returns a boolean if a field has been set.
-
-

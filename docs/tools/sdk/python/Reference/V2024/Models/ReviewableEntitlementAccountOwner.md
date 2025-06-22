@@ -4,9 +4,22 @@ title: ReviewableEntitlementAccountOwner
 pagination_label: ReviewableEntitlementAccountOwner
 sidebar_label: ReviewableEntitlementAccountOwner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ReviewableEntitlementAccountOwner', 'V2024ReviewableEntitlementAccountOwner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ReviewableEntitlementAccountOwner',
+    'V2024ReviewableEntitlementAccountOwner',
+  ]
 slug: /tools/sdk/python/v2024/models/reviewable-entitlement-account-owner
-tags: ['SDK', 'Software Development Kit', 'ReviewableEntitlementAccountOwner', 'V2024ReviewableEntitlementAccountOwner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ReviewableEntitlementAccountOwner',
+    'V2024ReviewableEntitlementAccountOwner',
+  ]
 ---
 
 # ReviewableEntitlementAccountOwner
@@ -15,11 +28,12 @@ Information about the machine account owner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The id associated with the machine account owner | [optional] 
-**type** |  **Enum** [  'IDENTITY' ] | An enumeration of the types of Owner supported within the IdentityNow infrastructure. | [optional] 
-**display_name** | **str** | The machine account owner's display name | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The id associated with the machine account owner | [optional] |
+| **type** | **Enum** [ 'IDENTITY' ] | An enumeration of the types of Owner supported within the IdentityNow infrastructure. | [optional] |
+| **display_name** | **str** | The machine account owner's display name | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ display_name='Alison Ferguson'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

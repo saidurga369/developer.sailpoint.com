@@ -4,108 +4,98 @@ title: TaggedObjects
 pagination_label: TaggedObjects
 sidebar_label: TaggedObjects
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'TaggedObjects', 'BetaTaggedObjects'] 
+keywords: ['go', 'Golang', 'sdk', 'TaggedObjects', 'BetaTaggedObjects']
 slug: /tools/sdk/go/beta/methods/tagged-objects
 tags: ['SDK', 'Software Development Kit', 'TaggedObjects', 'BetaTaggedObjects']
 ---
 
 # TaggedObjectsAPI
-  Use this API to implement object tagging functionality. 
-With object tagging functionality in place, any user in an organization can use tags as a way to group objects together and find them more quickly when the user searches Identity Security Cloud. 
 
-In Identity Security Cloud, users can search their tenants for information and add tags objects they find.
-Tagging an object provides users with a way of grouping objects together and makes it easier to find these objects in the future. 
+Use this API to implement object tagging functionality. With object tagging functionality in place, any user in an organization can use tags as a way to group objects together and find them more quickly when the user searches Identity Security Cloud.
 
-For example, if a user is searching for an entitlement that grants a risky level of access to Active Directory, it&#39;s possible that the user may have to search through hundreds of entitlements to find the correct one. 
-Once the user finds that entitlement, the user can add a tag to the entitlement, &quot;AD_RISKY&quot; to make it easier to find the entitlement again.
-The user can add the same tag to multiple objects the user wants to group together for an easy future search, and the user can also do so in bulk.
-When the user wants to find that tagged entitlement again, the user can search for &quot;tags:AD_RISKY&quot; to find all objects with that tag. 
+In Identity Security Cloud, users can search their tenants for information and add tags objects they find. Tagging an object provides users with a way of grouping objects together and makes it easier to find these objects in the future.
 
-With the API, you can tag even more different object types than you can in Identity Security Cloud (access profiles, entitlements, identities, and roles). 
-You can use the API to tag all these objects:
+For example, if a user is searching for an entitlement that grants a risky level of access to Active Directory, it&#39;s possible that the user may have to search through hundreds of entitlements to find the correct one. Once the user finds that entitlement, the user can add a tag to the entitlement, &quot;AD_RISKY&quot; to make it easier to find the entitlement again. The user can add the same tag to multiple objects the user wants to group together for an easy future search, and the user can also do so in bulk. When the user wants to find that tagged entitlement again, the user can search for &quot;tags:AD_RISKY&quot; to find all objects with that tag.
 
-- Access profiles 
+With the API, you can tag even more different object types than you can in Identity Security Cloud (access profiles, entitlements, identities, and roles). You can use the API to tag all these objects:
 
-- Applications 
+- Access profiles
+
+- Applications
 
 - Certification campaigns
 
 - Entitlements
 
-- Identities 
+- Identities
 
-- Roles 
+- Roles
 
 - SOD (separation of duties) policies
 
-- Sources 
+- Sources
 
-You can also use the API to directly find, create, and manage tagged objects without using search queries. 
+You can also use the API to directly find, create, and manage tagged objects without using search queries.
 
-There are limits to tags: 
+There are limits to tags:
 
 - You can have up to 500 different tags in your tenant.
 
-- You can apply up to 30 tags to one object. 
+- You can apply up to 30 tags to one object.
 
-- You can have up to 10,000 tag associations, pairings of 1 tag to 1 object, in your tenant. 
+- You can have up to 10,000 tag associations, pairings of 1 tag to 1 object, in your tenant.
 
-Because of these limits, it is recommended that you work with your governance experts and security teams to establish a list of tags that are most expressive of governance objects and access managed by Identity Security Cloud. 
+Because of these limits, it is recommended that you work with your governance experts and security teams to establish a list of tags that are most expressive of governance objects and access managed by Identity Security Cloud.
 
-These are the types of information often expressed in tags: 
+These are the types of information often expressed in tags:
 
 - Affected departments
 
-- Compliance and regulatory categories 
+- Compliance and regulatory categories
 
-- Remediation urgency levels 
+- Remediation urgency levels
 
-- Risk levels 
+- Risk levels
 
-Refer to [Tagging Items in Search](https://documentation.sailpoint.com/saas/help/search/index.html?h&#x3D;tags#tagging-items-in-search) for more information about tagging objects in Identity Security Cloud.
- 
+Refer to [Tagging Items in Search](https://documentation.sailpoint.com/saas/help/search/index.html?h=tags#tagging-items-in-search) for more information about tagging objects in Identity Security Cloud.
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/beta*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**delete-tagged-object**](#delete-tagged-object) | **Delete** `/tagged-objects/{type}/{id}` | Delete object tags
-[**delete-tags-to-many-object**](#delete-tags-to-many-object) | **Post** `/tagged-objects/bulk-remove` | Remove tags from multiple objects
-[**get-tagged-object**](#get-tagged-object) | **Get** `/tagged-objects/{type}/{id}` | Get tagged object
-[**list-tagged-objects**](#list-tagged-objects) | **Get** `/tagged-objects` | List tagged objects
-[**list-tagged-objects-by-type**](#list-tagged-objects-by-type) | **Get** `/tagged-objects/{type}` | List tagged objects by type
-[**put-tagged-object**](#put-tagged-object) | **Put** `/tagged-objects/{type}/{id}` | Update tagged object
-[**set-tag-to-object**](#set-tag-to-object) | **Post** `/tagged-objects` | Add tag to object
-[**set-tags-to-many-objects**](#set-tags-to-many-objects) | **Post** `/tagged-objects/bulk-add` | Tag multiple objects
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**delete-tagged-object**](#delete-tagged-object) | **Delete** `/tagged-objects/{type}/{id}` | Delete object tags |
+| [**delete-tags-to-many-object**](#delete-tags-to-many-object) | **Post** `/tagged-objects/bulk-remove` | Remove tags from multiple objects |
+| [**get-tagged-object**](#get-tagged-object) | **Get** `/tagged-objects/{type}/{id}` | Get tagged object |
+| [**list-tagged-objects**](#list-tagged-objects) | **Get** `/tagged-objects` | List tagged objects |
+| [**list-tagged-objects-by-type**](#list-tagged-objects-by-type) | **Get** `/tagged-objects/{type}` | List tagged objects by type |
+| [**put-tagged-object**](#put-tagged-object) | **Put** `/tagged-objects/{type}/{id}` | Update tagged object |
+| [**set-tag-to-object**](#set-tag-to-object) | **Post** `/tagged-objects` | Add tag to object |
+| [**set-tags-to-many-objects**](#set-tags-to-many-objects) | **Post** `/tagged-objects/bulk-add` | Tag multiple objects |
 
 ## delete-tagged-object
-Delete object tags
-Delete all tags from a tagged object.
+
+Delete object tags Delete all tags from a tagged object.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/delete-tagged-object)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**type_** | **string** | The type of object to delete tags from. | 
-**id** | **string** | The ID of the object to delete tags from. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **type\_** | **string** | The type of object to delete tags from. |
+| **id** | **string** | The ID of the object to delete tags from. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteTaggedObjectRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -121,8 +111,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -130,7 +120,7 @@ func main() {
     type_ := `ROLE` // string | The type of object to delete tags from. # string | The type of object to delete tags from.
     id := `ef38f94347e94562b5bb8424a56397d8` // string | The ID of the object to delete tags from. # string | The ID of the object to delete tags from.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -140,15 +130,15 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `TaggedObjectsAPI.DeleteTaggedObject``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## delete-tags-to-many-object
-Remove tags from multiple objects
-This API removes tags from multiple objects.
+
+Remove tags from multiple objects This API removes tags from multiple objects.
 
 A token with API, CERT_ADMIN, ORG_ADMIN, REPORT_ADMIN, ROLE_ADMIN, ROLE_SUBADMIN, SOURCE_ADMIN, or SOURCE_SUBADMIN authority is required to call this API.
 
@@ -156,20 +146,17 @@ A token with API, CERT_ADMIN, ORG_ADMIN, REPORT_ADMIN, ROLE_ADMIN, ROLE_SUBADMIN
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteTagsToManyObjectRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **bulkTaggedObject** | [**BulkTaggedObject**](../models/bulk-tagged-object) | Supported object types are ACCESS_PROFILE, APPLICATION, CAMPAIGN, ENTITLEMENT, IDENTITY, ROLE, SOD_POLICY, SOURCE. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **bulkTaggedObject** | [**BulkTaggedObject**](../models/bulk-tagged-object) | Supported object types are ACCESS_PROFILE, APPLICATION, CAMPAIGN, ENTITLEMENT, IDENTITY, ROLE, SOD_POLICY, SOURCE. |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -210,7 +197,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -220,36 +207,32 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `TaggedObjectsAPI.DeleteTagsToManyObject``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## get-tagged-object
-Get tagged object
-This gets a tagged object for the specified type.
+
+Get tagged object This gets a tagged object for the specified type.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-tagged-object)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**type_** | **string** | The type of tagged object to retrieve. | 
-**id** | **string** | The ID of the object reference to retrieve. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **type\_** | **string** | The type of tagged object to retrieve. |
+| **id** | **string** | The ID of the object reference to retrieve. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetTaggedObjectRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -269,8 +252,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -278,7 +261,7 @@ func main() {
     type_ := `ROLE` // string | The type of tagged object to retrieve. # string | The type of tagged object to retrieve.
     id := `ef38f94347e94562b5bb8424a56397d8` // string | The ID of the object reference to retrieve. # string | The ID of the object reference to retrieve.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -296,8 +279,8 @@ func main() {
 [[Back to top]](#)
 
 ## list-tagged-objects
-List tagged objects
-This API returns a list of all tagged objects.
+
+List tagged objects This API returns a list of all tagged objects.
 
 Any authenticated token may be used to call this API.
 
@@ -305,19 +288,16 @@ Any authenticated token may be used to call this API.
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListTaggedObjectsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **objectRef.id**: *eq, in*  **objectRef.type**: *eq, in*  **tagName**: *eq, in* | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
+| **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false] |
+| **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **objectRef.id**: _eq, in_ **objectRef.type**: _eq, in_ **tagName**: _eq, in_ |
 
 ### Return type
 
@@ -337,8 +317,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -348,7 +328,7 @@ func main() {
     count := true // bool | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to false) # bool | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to false)
     filters := `tagName eq "BU_FINANCE"` // string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **objectRef.id**: *eq, in*  **objectRef.type**: *eq, in*  **tagName**: *eq, in* (optional) # string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **objectRef.id**: *eq, in*  **objectRef.type**: *eq, in*  **tagName**: *eq, in* (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -366,8 +346,8 @@ func main() {
 [[Back to top]](#)
 
 ## list-tagged-objects-by-type
-List tagged objects by type
-This API returns a list of all tagged objects by type.
+
+List tagged objects by type This API returns a list of all tagged objects by type.
 
 Any authenticated token may be used to call this API.
 
@@ -375,24 +355,19 @@ Any authenticated token may be used to call this API.
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**type_** | **string** | The type of tagged object to retrieve. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **type\_** | **string** | The type of tagged object to retrieve. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListTaggedObjectsByTypeRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **objectRef.id**: *eq*  **objectRef.type**: *eq* | 
+**limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false] **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **objectRef.id**: _eq_ **objectRef.type**: _eq_ |
 
 ### Return type
 
@@ -412,8 +387,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -424,7 +399,7 @@ func main() {
     count := true // bool | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to false) # bool | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to false)
     filters := `objectRef.id eq "2c91808568c529c60168cca6f90c1313"` // string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **objectRef.id**: *eq*  **objectRef.type**: *eq* (optional) # string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **objectRef.id**: *eq*  **objectRef.type**: *eq* (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -442,30 +417,27 @@ func main() {
 [[Back to top]](#)
 
 ## put-tagged-object
-Update tagged object
-This updates a tagged object for the specified type.
+
+Update tagged object This updates a tagged object for the specified type.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/put-tagged-object)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**type_** | **string** | The type of tagged object to update. | 
-**id** | **string** | The ID of the object reference to update. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **type\_** | **string** | The type of tagged object to update. |
+| **id** | **string** | The ID of the object reference to update. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiPutTaggedObjectRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
-
- **taggedObject** | [**TaggedObject**](../models/tagged-object) |  | 
+**taggedObject** | [**TaggedObject**](../models/tagged-object) | |
 
 ### Return type
 
@@ -500,14 +472,14 @@ func main() {
             "type" : "IDENTITY"
           },
           "tags" : [ "BU_FINANCE", "PCI" ]
-        }`) // TaggedObject | 
+        }`) // TaggedObject |
 
     var taggedObject beta.TaggedObject
     if err := json.Unmarshal(taggedobject, &taggedObject); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -525,8 +497,8 @@ func main() {
 [[Back to top]](#)
 
 ## set-tag-to-object
-Add tag to object
-This adds a tag to an object.
+
+Add tag to object This adds a tag to an object.
 
 Any authenticated token may be used to call this API.
 
@@ -534,20 +506,17 @@ Any authenticated token may be used to call this API.
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSetTagToObjectRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **taggedObject** | [**TaggedObject**](../models/tagged-object) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **taggedObject** | [**TaggedObject**](../models/tagged-object) |  |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -576,14 +545,14 @@ func main() {
             "type" : "IDENTITY"
           },
           "tags" : [ "BU_FINANCE", "PCI" ]
-        }`) // TaggedObject | 
+        }`) // TaggedObject |
 
     var taggedObject beta.TaggedObject
     if err := json.Unmarshal(taggedobject, &taggedObject); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -593,15 +562,15 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `TaggedObjectsAPI.SetTagToObject``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## set-tags-to-many-objects
-Tag multiple objects
-This API adds tags to multiple objects.
+
+Tag multiple objects This API adds tags to multiple objects.
 
 A token with API, CERT_ADMIN, ORG_ADMIN, REPORT_ADMIN, ROLE_ADMIN, ROLE_SUBADMIN, SOURCE_ADMIN, or SOURCE_SUBADMIN authority is required to call this API.
 
@@ -609,16 +578,13 @@ A token with API, CERT_ADMIN, ORG_ADMIN, REPORT_ADMIN, ROLE_ADMIN, ROLE_SUBADMIN
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSetTagsToManyObjectsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **bulkTaggedObject** | [**BulkTaggedObject**](../models/bulk-tagged-object) | Supported object types are ACCESS_PROFILE, APPLICATION, CAMPAIGN, ENTITLEMENT, IDENTITY, ROLE, SOD_POLICY, SOURCE. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **bulkTaggedObject** | [**BulkTaggedObject**](../models/bulk-tagged-object) | Supported object types are ACCESS_PROFILE, APPLICATION, CAMPAIGN, ENTITLEMENT, IDENTITY, ROLE, SOD_POLICY, SOURCE. |
 
 ### Return type
 
@@ -663,7 +629,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -679,4 +645,3 @@ func main() {
 ```
 
 [[Back to top]](#)
-

@@ -4,25 +4,38 @@ title: SpConfigMessage1
 pagination_label: SpConfigMessage1
 sidebar_label: SpConfigMessage1
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'SpConfigMessage1', 'V2025SpConfigMessage1'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'SpConfigMessage1',
+    'V2025SpConfigMessage1',
+  ]
 slug: /tools/sdk/powershell/v2025/models/sp-config-message1
-tags: ['SDK', 'Software Development Kit', 'SpConfigMessage1', 'V2025SpConfigMessage1']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SpConfigMessage1',
+    'V2025SpConfigMessage1',
+  ]
 ---
-
 
 # SpConfigMessage1
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Key** | **String** | Message key. | [required]
-**Text** | **String** | Message text. | [required]
-**Details** | [**map[string]SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | Message details if any, in key:value pairs. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Key** | **String** | Message key. | [required] |
+| **Text** | **String** | Message text. | [required] |
+| **Details** | [**map[string]SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | Message details if any, in key:value pairs. | [required] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $SpConfigMessage1 = Initialize-V2025SpConfigMessage1  -Key UNKNOWN_REFERENCE_RESOLVER `
  -Text Unable to resolve reference for object [type: IDENTITY, id: 2c91808c746e9c9601747d6507332ecz, name: random identity] `
@@ -30,10 +43,9 @@ $SpConfigMessage1 = Initialize-V2025SpConfigMessage1  -Key UNKNOWN_REFERENCE_RES
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $SpConfigMessage1 | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

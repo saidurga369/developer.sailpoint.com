@@ -4,21 +4,34 @@ title: AccessRequestResponse1
 pagination_label: AccessRequestResponse1
 sidebar_label: AccessRequestResponse1
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccessRequestResponse1', 'V2024AccessRequestResponse1'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccessRequestResponse1',
+    'V2024AccessRequestResponse1',
+  ]
 slug: /tools/sdk/python/v2024/models/access-request-response1
-tags: ['SDK', 'Software Development Kit', 'AccessRequestResponse1', 'V2024AccessRequestResponse1']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessRequestResponse1',
+    'V2024AccessRequestResponse1',
+  ]
 ---
 
 # AccessRequestResponse1
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**requester_id** | **str** | the requester Id | [optional] 
-**requester_name** | **str** | the requesterName | [optional] 
-**items** | [**[]AccessRequestItemResponse**](access-request-item-response) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **requester_id** | **str** | the requester Id | [optional] |
+| **requester_name** | **str** | the requesterName | [optional] |
+| **items** | [**[]AccessRequestItemResponse**](access-request-item-response) |  | [optional] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ items=[{operation=Add, accessItemType=role, name=Role-1, decision=APPROVED, desc
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

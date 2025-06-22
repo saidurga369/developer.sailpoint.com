@@ -4,20 +4,20 @@ title: AccessCriteria
 pagination_label: AccessCriteria
 sidebar_label: AccessCriteria
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccessCriteria', 'AccessCriteria'] 
+keywords: ['python', 'Python', 'sdk', 'AccessCriteria', 'AccessCriteria']
 slug: /tools/sdk/python/v3/models/access-criteria
 tags: ['SDK', 'Software Development Kit', 'AccessCriteria', 'AccessCriteria']
 ---
 
 # AccessCriteria
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | Business name for the access construct list | [optional] 
-**criteria_list** | [**[]AccessCriteriaCriteriaListInner**](access-criteria-criteria-list-inner) | List of criteria. There is a min of 1 and max of 50 items in the list. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **name** | **str** | Business name for the access construct list | [optional] |
+| **criteria_list** | [**[]AccessCriteriaCriteriaListInner**](access-criteria-criteria-list-inner) | List of criteria. There is a min of 1 and max of 50 items in the list. | [optional] |
+
 }
 
 ## Example
@@ -31,5 +31,5 @@ criteria_list=[{type=ENTITLEMENT, id=2c9180866166b5b0016167c32ef31a66, name=Admi
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

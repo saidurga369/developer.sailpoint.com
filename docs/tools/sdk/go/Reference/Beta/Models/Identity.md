@@ -4,7 +4,7 @@ title: Identity
 pagination_label: Identity
 sidebar_label: Identity
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Identity', 'BetaIdentity'] 
+keywords: ['go', 'Golang', 'sdk', 'Identity', 'BetaIdentity']
 slug: /tools/sdk/go/beta/models/identity
 tags: ['SDK', 'Software Development Kit', 'Identity', 'BetaIdentity']
 ---
@@ -13,21 +13,21 @@ tags: ['SDK', 'Software Development Kit', 'Identity', 'BetaIdentity']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | System-generated unique ID of the identity | [optional] [readonly] 
-**Name** | **string** | The identity's name is equivalent to its Display Name attribute. | 
-**Created** | Pointer to **SailPointTime** | Creation date of the identity | [optional] [readonly] 
-**Modified** | Pointer to **SailPointTime** | Last modification date of the identity | [optional] [readonly] 
-**Alias** | Pointer to **string** | The identity's alternate unique identifier is equivalent to its Account Name on the authoritative source account schema. | [optional] 
-**EmailAddress** | Pointer to **NullableString** | The email address of the identity | [optional] 
-**ProcessingState** | Pointer to **NullableString** | The processing state of the identity | [optional] 
-**IdentityStatus** | Pointer to **string** | The identity's status in the system | [optional] 
-**ManagerRef** | Pointer to [**NullableIdentityManagerRef**](identity-manager-ref) |  | [optional] 
-**IsManager** | Pointer to **bool** | Whether this identity is a manager of another identity | [optional] [default to false]
-**LastRefresh** | Pointer to **SailPointTime** | The last time the identity was refreshed by the system | [optional] 
-**Attributes** | Pointer to **map[string]interface{}** | A map with the identity attributes for the identity | [optional] 
-**LifecycleState** | Pointer to [**IdentityLifecycleState**](identity-lifecycle-state) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | System-generated unique ID of the identity | [optional] [readonly] |
+| **Name** | **string** | The identity's name is equivalent to its Display Name attribute. |
+| **Created** | Pointer to **SailPointTime** | Creation date of the identity | [optional] [readonly] |
+| **Modified** | Pointer to **SailPointTime** | Last modification date of the identity | [optional] [readonly] |
+| **Alias** | Pointer to **string** | The identity's alternate unique identifier is equivalent to its Account Name on the authoritative source account schema. | [optional] |
+| **EmailAddress** | Pointer to **NullableString** | The email address of the identity | [optional] |
+| **ProcessingState** | Pointer to **NullableString** | The processing state of the identity | [optional] |
+| **IdentityStatus** | Pointer to **string** | The identity's status in the system | [optional] |
+| **ManagerRef** | Pointer to [**NullableIdentityManagerRef**](identity-manager-ref) |  | [optional] |
+| **IsManager** | Pointer to **bool** | Whether this identity is a manager of another identity | [optional] [default to false] |
+| **LastRefresh** | Pointer to **SailPointTime** | The last time the identity was refreshed by the system | [optional] |
+| **Attributes** | Pointer to **map[string]interface{}** | A map with the identity attributes for the identity | [optional] |
+| **LifecycleState** | Pointer to [**IdentityLifecycleState**](identity-lifecycle-state) |  | [optional] |
 
 ## Methods
 
@@ -35,18 +35,13 @@ Name | Type | Description | Notes
 
 `func NewIdentity(name string, ) *Identity`
 
-NewIdentity instantiates a new Identity object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewIdentity instantiates a new Identity object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewIdentityWithDefaults
 
 `func NewIdentityWithDefaults() *Identity`
 
-NewIdentityWithDefaults instantiates a new Identity object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewIdentityWithDefaults instantiates a new Identity object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -58,8 +53,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *Identity) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -83,15 +77,13 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *Identity) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
 `func (o *Identity) SetName(v string)`
 
 SetName sets Name field to given value.
-
 
 ### GetCreated
 
@@ -103,8 +95,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *Identity) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -128,8 +119,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *Identity) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -153,8 +143,7 @@ GetAlias returns the Alias field if non-nil, zero value otherwise.
 
 `func (o *Identity) GetAliasOk() (*string, bool)`
 
-GetAliasOk returns a tuple with the Alias field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAliasOk returns a tuple with the Alias field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAlias
 
@@ -178,8 +167,7 @@ GetEmailAddress returns the EmailAddress field if non-nil, zero value otherwise.
 
 `func (o *Identity) GetEmailAddressOk() (*string, bool)`
 
-GetEmailAddressOk returns a tuple with the EmailAddress field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEmailAddressOk returns a tuple with the EmailAddress field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEmailAddress
 
@@ -197,12 +185,14 @@ HasEmailAddress returns a boolean if a field has been set.
 
 `func (o *Identity) SetEmailAddressNil(b bool)`
 
- SetEmailAddressNil sets the value for EmailAddress to be an explicit nil
+SetEmailAddressNil sets the value for EmailAddress to be an explicit nil
 
 ### UnsetEmailAddress
+
 `func (o *Identity) UnsetEmailAddress()`
 
 UnsetEmailAddress ensures that no value is present for EmailAddress, not even an explicit nil
+
 ### GetProcessingState
 
 `func (o *Identity) GetProcessingState() string`
@@ -213,8 +203,7 @@ GetProcessingState returns the ProcessingState field if non-nil, zero value othe
 
 `func (o *Identity) GetProcessingStateOk() (*string, bool)`
 
-GetProcessingStateOk returns a tuple with the ProcessingState field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProcessingStateOk returns a tuple with the ProcessingState field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProcessingState
 
@@ -232,12 +221,14 @@ HasProcessingState returns a boolean if a field has been set.
 
 `func (o *Identity) SetProcessingStateNil(b bool)`
 
- SetProcessingStateNil sets the value for ProcessingState to be an explicit nil
+SetProcessingStateNil sets the value for ProcessingState to be an explicit nil
 
 ### UnsetProcessingState
+
 `func (o *Identity) UnsetProcessingState()`
 
 UnsetProcessingState ensures that no value is present for ProcessingState, not even an explicit nil
+
 ### GetIdentityStatus
 
 `func (o *Identity) GetIdentityStatus() string`
@@ -248,8 +239,7 @@ GetIdentityStatus returns the IdentityStatus field if non-nil, zero value otherw
 
 `func (o *Identity) GetIdentityStatusOk() (*string, bool)`
 
-GetIdentityStatusOk returns a tuple with the IdentityStatus field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityStatusOk returns a tuple with the IdentityStatus field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityStatus
 
@@ -273,8 +263,7 @@ GetManagerRef returns the ManagerRef field if non-nil, zero value otherwise.
 
 `func (o *Identity) GetManagerRefOk() (*IdentityManagerRef, bool)`
 
-GetManagerRefOk returns a tuple with the ManagerRef field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetManagerRefOk returns a tuple with the ManagerRef field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetManagerRef
 
@@ -292,12 +281,14 @@ HasManagerRef returns a boolean if a field has been set.
 
 `func (o *Identity) SetManagerRefNil(b bool)`
 
- SetManagerRefNil sets the value for ManagerRef to be an explicit nil
+SetManagerRefNil sets the value for ManagerRef to be an explicit nil
 
 ### UnsetManagerRef
+
 `func (o *Identity) UnsetManagerRef()`
 
 UnsetManagerRef ensures that no value is present for ManagerRef, not even an explicit nil
+
 ### GetIsManager
 
 `func (o *Identity) GetIsManager() bool`
@@ -308,8 +299,7 @@ GetIsManager returns the IsManager field if non-nil, zero value otherwise.
 
 `func (o *Identity) GetIsManagerOk() (*bool, bool)`
 
-GetIsManagerOk returns a tuple with the IsManager field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIsManagerOk returns a tuple with the IsManager field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIsManager
 
@@ -333,8 +323,7 @@ GetLastRefresh returns the LastRefresh field if non-nil, zero value otherwise.
 
 `func (o *Identity) GetLastRefreshOk() (*SailPointTime, bool)`
 
-GetLastRefreshOk returns a tuple with the LastRefresh field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLastRefreshOk returns a tuple with the LastRefresh field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLastRefresh
 
@@ -358,8 +347,7 @@ GetAttributes returns the Attributes field if non-nil, zero value otherwise.
 
 `func (o *Identity) GetAttributesOk() (*map[string]interface{}, bool)`
 
-GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributes
 
@@ -383,8 +371,7 @@ GetLifecycleState returns the LifecycleState field if non-nil, zero value otherw
 
 `func (o *Identity) GetLifecycleStateOk() (*IdentityLifecycleState, bool)`
 
-GetLifecycleStateOk returns a tuple with the LifecycleState field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLifecycleStateOk returns a tuple with the LifecycleState field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLifecycleState
 
@@ -397,5 +384,3 @@ SetLifecycleState sets LifecycleState field to given value.
 `func (o *Identity) HasLifecycleState() bool`
 
 HasLifecycleState returns a boolean if a field has been set.
-
-

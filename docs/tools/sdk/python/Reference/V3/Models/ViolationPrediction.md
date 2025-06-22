@@ -4,9 +4,16 @@ title: ViolationPrediction
 pagination_label: ViolationPrediction
 sidebar_label: ViolationPrediction
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ViolationPrediction', 'ViolationPrediction'] 
+keywords:
+  ['python', 'Python', 'sdk', 'ViolationPrediction', 'ViolationPrediction']
 slug: /tools/sdk/python/v3/models/violation-prediction
-tags: ['SDK', 'Software Development Kit', 'ViolationPrediction', 'ViolationPrediction']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ViolationPrediction',
+    'ViolationPrediction',
+  ]
 ---
 
 # ViolationPrediction
@@ -15,9 +22,10 @@ An object containing a listing of the SOD violation reasons detected by this che
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**violation_contexts** | [**[]ViolationContext**](violation-context) | List of Violation Contexts | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **violation_contexts** | [**[]ViolationContext**](violation-context) | List of Violation Contexts | [optional] |
+
 }
 
 ## Example
@@ -29,15 +37,15 @@ violation_prediction = ViolationPrediction(
 violation_contexts=[
                     sailpoint.v3.models.violation_context.ViolationContext(
                         policy = sailpoint.v3.models.violation_context_policy.ViolationContext_policy(
-                            type = ENTITLEMENT, ), 
+                            type = ENTITLEMENT, ),
                         conflicting_access_criteria = sailpoint.v3.models.exception_access_criteria.ExceptionAccessCriteria(
                             left_criteria = sailpoint.v3.models.exception_criteria.ExceptionCriteria(
-                                criteria_list = [{type=ENTITLEMENT, id=2c9180866166b5b0016167c32ef31a66, existing=true}, {type=ENTITLEMENT, id=2c9180866166b5b0016167c32ef31a67, existing=false}], ), 
+                                criteria_list = [{type=ENTITLEMENT, id=2c9180866166b5b0016167c32ef31a66, existing=true}, {type=ENTITLEMENT, id=2c9180866166b5b0016167c32ef31a67, existing=false}], ),
                             right_criteria = sailpoint.v3.models.exception_criteria.ExceptionCriteria(
                                 criteria_list = [{type=ENTITLEMENT, id=2c9180866166b5b0016167c32ef31a66, existing=true}, {type=ENTITLEMENT, id=2c9180866166b5b0016167c32ef31a67, existing=false}], ), ), )
                     ]
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,32 +4,44 @@ title: RecommenderCalculationsIdentityAttributesValue
 pagination_label: RecommenderCalculationsIdentityAttributesValue
 sidebar_label: RecommenderCalculationsIdentityAttributesValue
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'RecommenderCalculationsIdentityAttributesValue', 'BetaRecommenderCalculationsIdentityAttributesValue'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'RecommenderCalculationsIdentityAttributesValue',
+    'BetaRecommenderCalculationsIdentityAttributesValue',
+  ]
 slug: /tools/sdk/powershell/beta/models/recommender-calculations-identity-attributes-value
-tags: ['SDK', 'Software Development Kit', 'RecommenderCalculationsIdentityAttributesValue', 'BetaRecommenderCalculationsIdentityAttributesValue']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RecommenderCalculationsIdentityAttributesValue',
+    'BetaRecommenderCalculationsIdentityAttributesValue',
+  ]
 ---
-
 
 # RecommenderCalculationsIdentityAttributesValue
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Value** | **String** |  | [optional] 
+| Name      | Type       | Description | Notes      |
+| --------- | ---------- | ----------- | ---------- |
+| **Value** | **String** |             | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $RecommenderCalculationsIdentityAttributesValue = Initialize-BetaRecommenderCalculationsIdentityAttributesValue  -Value null
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $RecommenderCalculationsIdentityAttributesValue | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

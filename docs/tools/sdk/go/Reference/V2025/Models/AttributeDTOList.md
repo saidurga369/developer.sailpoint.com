@@ -4,18 +4,24 @@ title: AttributeDTOList
 pagination_label: AttributeDTOList
 sidebar_label: AttributeDTOList
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AttributeDTOList', 'V2025AttributeDTOList'] 
+keywords: ['go', 'Golang', 'sdk', 'AttributeDTOList', 'V2025AttributeDTOList']
 slug: /tools/sdk/go/v2025/models/attribute-dto-list
-tags: ['SDK', 'Software Development Kit', 'AttributeDTOList', 'V2025AttributeDTOList']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AttributeDTOList',
+    'V2025AttributeDTOList',
+  ]
 ---
 
 # AttributeDTOList
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Attributes** | Pointer to [**[]AttributeDTO**](attribute-dto) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Attributes** | Pointer to [**[]AttributeDTO**](attribute-dto) |  | [optional] |
 
 ## Methods
 
@@ -23,18 +29,13 @@ Name | Type | Description | Notes
 
 `func NewAttributeDTOList() *AttributeDTOList`
 
-NewAttributeDTOList instantiates a new AttributeDTOList object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAttributeDTOList instantiates a new AttributeDTOList object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAttributeDTOListWithDefaults
 
 `func NewAttributeDTOListWithDefaults() *AttributeDTOList`
 
-NewAttributeDTOListWithDefaults instantiates a new AttributeDTOList object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAttributeDTOListWithDefaults instantiates a new AttributeDTOList object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetAttributes
 
@@ -46,8 +47,7 @@ GetAttributes returns the Attributes field if non-nil, zero value otherwise.
 
 `func (o *AttributeDTOList) GetAttributesOk() (*[]AttributeDTO, bool)`
 
-GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributes
 
@@ -65,10 +65,10 @@ HasAttributes returns a boolean if a field has been set.
 
 `func (o *AttributeDTOList) SetAttributesNil(b bool)`
 
- SetAttributesNil sets the value for Attributes to be an explicit nil
+SetAttributesNil sets the value for Attributes to be an explicit nil
 
 ### UnsetAttributes
+
 `func (o *AttributeDTOList) UnsetAttributes()`
 
 UnsetAttributes ensures that no value is present for Attributes, not even an explicit nil
-

@@ -4,19 +4,32 @@ title: DataAccessPoliciesInner
 pagination_label: DataAccessPoliciesInner
 sidebar_label: DataAccessPoliciesInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'DataAccessPoliciesInner', 'V2025DataAccessPoliciesInner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'DataAccessPoliciesInner',
+    'V2025DataAccessPoliciesInner',
+  ]
 slug: /tools/sdk/python/v2025/models/data-access-policies-inner
-tags: ['SDK', 'Software Development Kit', 'DataAccessPoliciesInner', 'V2025DataAccessPoliciesInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'DataAccessPoliciesInner',
+    'V2025DataAccessPoliciesInner',
+  ]
 ---
 
 # DataAccessPoliciesInner
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**value** | **str** | Value of the policy | [optional] 
+| Name      | Type    | Description         | Notes      |
+| --------- | ------- | ------------------- | ---------- |
+| **value** | **str** | Value of the policy | [optional] |
+
 }
 
 ## Example
@@ -29,5 +42,5 @@ value='GDPR-20'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

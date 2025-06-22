@@ -4,25 +4,32 @@ title: AccessModelMetadata
 pagination_label: AccessModelMetadata
 sidebar_label: AccessModelMetadata
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessModelMetadata', 'V2025AccessModelMetadata'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'AccessModelMetadata', 'V2025AccessModelMetadata']
 slug: /tools/sdk/go/v2025/models/access-model-metadata
-tags: ['SDK', 'Software Development Kit', 'AccessModelMetadata', 'V2025AccessModelMetadata']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessModelMetadata',
+    'V2025AccessModelMetadata',
+  ]
 ---
 
 # AccessModelMetadata
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Key** | Pointer to **string** | Unique identifier for the metadata type | [optional] 
-**Name** | Pointer to **string** | Human readable name of the metadata type | [optional] 
-**Multiselect** | Pointer to **bool** | Allows selecting multiple values | [optional] [default to false]
-**Status** | Pointer to **string** | The state of the metadata item | [optional] 
-**Type** | Pointer to **string** | The type of the metadata item | [optional] 
-**ObjectTypes** | Pointer to **[]string** | The types of objects | [optional] 
-**Description** | Pointer to **string** | Describes the metadata item | [optional] 
-**Values** | Pointer to [**[]AccessModelMetadataValuesInner**](access-model-metadata-values-inner) | The value to assign to the metadata item | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Key** | Pointer to **string** | Unique identifier for the metadata type | [optional] |
+| **Name** | Pointer to **string** | Human readable name of the metadata type | [optional] |
+| **Multiselect** | Pointer to **bool** | Allows selecting multiple values | [optional] [default to false] |
+| **Status** | Pointer to **string** | The state of the metadata item | [optional] |
+| **Type** | Pointer to **string** | The type of the metadata item | [optional] |
+| **ObjectTypes** | Pointer to **[]string** | The types of objects | [optional] |
+| **Description** | Pointer to **string** | Describes the metadata item | [optional] |
+| **Values** | Pointer to [**[]AccessModelMetadataValuesInner**](access-model-metadata-values-inner) | The value to assign to the metadata item | [optional] |
 
 ## Methods
 
@@ -30,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewAccessModelMetadata() *AccessModelMetadata`
 
-NewAccessModelMetadata instantiates a new AccessModelMetadata object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessModelMetadata instantiates a new AccessModelMetadata object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessModelMetadataWithDefaults
 
 `func NewAccessModelMetadataWithDefaults() *AccessModelMetadata`
 
-NewAccessModelMetadataWithDefaults instantiates a new AccessModelMetadata object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessModelMetadataWithDefaults instantiates a new AccessModelMetadata object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetKey
 
@@ -53,8 +55,7 @@ GetKey returns the Key field if non-nil, zero value otherwise.
 
 `func (o *AccessModelMetadata) GetKeyOk() (*string, bool)`
 
-GetKeyOk returns a tuple with the Key field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetKeyOk returns a tuple with the Key field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetKey
 
@@ -78,8 +79,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *AccessModelMetadata) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -103,8 +103,7 @@ GetMultiselect returns the Multiselect field if non-nil, zero value otherwise.
 
 `func (o *AccessModelMetadata) GetMultiselectOk() (*bool, bool)`
 
-GetMultiselectOk returns a tuple with the Multiselect field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMultiselectOk returns a tuple with the Multiselect field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMultiselect
 
@@ -128,8 +127,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *AccessModelMetadata) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -153,8 +151,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *AccessModelMetadata) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -178,8 +175,7 @@ GetObjectTypes returns the ObjectTypes field if non-nil, zero value otherwise.
 
 `func (o *AccessModelMetadata) GetObjectTypesOk() (*[]string, bool)`
 
-GetObjectTypesOk returns a tuple with the ObjectTypes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetObjectTypesOk returns a tuple with the ObjectTypes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetObjectTypes
 
@@ -203,8 +199,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *AccessModelMetadata) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -228,8 +223,7 @@ GetValues returns the Values field if non-nil, zero value otherwise.
 
 `func (o *AccessModelMetadata) GetValuesOk() (*[]AccessModelMetadataValuesInner, bool)`
 
-GetValuesOk returns a tuple with the Values field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValuesOk returns a tuple with the Values field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValues
 
@@ -242,5 +236,3 @@ SetValues sets Values field to given value.
 `func (o *AccessModelMetadata) HasValues() bool`
 
 HasValues returns a boolean if a field has been set.
-
-

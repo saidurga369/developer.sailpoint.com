@@ -1,19 +1,19 @@
-import React from "react";
+import React from 'react';
 
-import { ErrorMessage } from "@hookform/error-message";
-import FormMultiSelect from "@theme/ApiExplorer/FormMultiSelect";
-import { Param, setParam } from "@theme/ApiExplorer/ParamOptions/slice";
-import { useTypedDispatch, useTypedSelector } from "@theme/ApiItem/hooks";
-import { Controller, useFormContext } from "react-hook-form";
+import {ErrorMessage} from '@hookform/error-message';
+import FormMultiSelect from '@theme/ApiExplorer/FormMultiSelect';
+import {Param, setParam} from '@theme/ApiExplorer/ParamOptions/slice';
+import {useTypedDispatch, useTypedSelector} from '@theme/ApiItem/hooks';
+import {Controller, useFormContext} from 'react-hook-form';
 
 export interface ParamProps {
   param: Param;
 }
 
-export default function ParamMultiSelectFormItem({ param }: ParamProps) {
+export default function ParamMultiSelectFormItem({param}: ParamProps) {
   const {
     control,
-    formState: { errors },
+    formState: {errors},
   } = useFormContext();
 
   const showErrorMessage = errors?.paramMultiSelect;
@@ -30,10 +30,10 @@ export default function ParamMultiSelectFormItem({ param }: ParamProps) {
   const paramTypeToWatch = pathParams.length
     ? pathParams
     : queryParams.length
-      ? queryParams
-      : cookieParams.length
-        ? cookieParams
-        : headerParams;
+    ? queryParams
+    : cookieParams.length
+    ? cookieParams
+    : headerParams;
 
   const handleChange = (e: any, onChange: any) => {
     const values = Array.prototype.filter
@@ -44,7 +44,7 @@ export default function ParamMultiSelectFormItem({ param }: ParamProps) {
       setParam({
         ...param,
         value: values.length > 0 ? values : undefined,
-      })
+      }),
     );
 
     onChange(paramTypeToWatch);
@@ -54,9 +54,9 @@ export default function ParamMultiSelectFormItem({ param }: ParamProps) {
     <>
       <Controller
         control={control}
-        rules={{ required: param.required ? "This field is required" : false }}
+        rules={{required: param.required ? 'This field is required' : false}}
         name="paramMultiSelect"
-        render={({ field: { onChange, name } }) => (
+        render={({field: {onChange, name}}) => (
           <FormMultiSelect
             options={options as string[]}
             name={name}
@@ -69,7 +69,7 @@ export default function ParamMultiSelectFormItem({ param }: ParamProps) {
         <ErrorMessage
           errors={errors}
           name="paramMultiSelect"
-          render={({ message }) => (
+          render={({message}) => (
             <div className="openapi-explorer__input-error">{message}</div>
           )}
         />

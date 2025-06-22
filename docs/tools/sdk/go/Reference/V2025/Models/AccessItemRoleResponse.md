@@ -4,24 +4,37 @@ title: AccessItemRoleResponse
 pagination_label: AccessItemRoleResponse
 sidebar_label: AccessItemRoleResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessItemRoleResponse', 'V2025AccessItemRoleResponse'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'AccessItemRoleResponse',
+    'V2025AccessItemRoleResponse',
+  ]
 slug: /tools/sdk/go/v2025/models/access-item-role-response
-tags: ['SDK', 'Software Development Kit', 'AccessItemRoleResponse', 'V2025AccessItemRoleResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessItemRoleResponse',
+    'V2025AccessItemRoleResponse',
+  ]
 ---
 
 # AccessItemRoleResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**AccessType** | Pointer to **string** | the access item type. role in this case | [optional] 
-**Id** | Pointer to **string** | the access item id | [optional] 
-**DisplayName** | Pointer to **string** | the role display name | [optional] 
-**Description** | Pointer to **string** | the description for the role | [optional] 
-**SourceName** | Pointer to **string** | the associated source name if it exists | [optional] 
-**RemoveDate** | Pointer to **string** | the date the role is no longer assigned to the specified identity | [optional] 
-**Revocable** | **bool** | indicates whether the role is revocable | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **AccessType** | Pointer to **string** | the access item type. role in this case | [optional] |
+| **Id** | Pointer to **string** | the access item id | [optional] |
+| **DisplayName** | Pointer to **string** | the role display name | [optional] |
+| **Description** | Pointer to **string** | the description for the role | [optional] |
+| **SourceName** | Pointer to **string** | the associated source name if it exists | [optional] |
+| **RemoveDate** | Pointer to **string** | the date the role is no longer assigned to the specified identity | [optional] |
+| **Revocable** | **bool** | indicates whether the role is revocable |
 
 ## Methods
 
@@ -29,18 +42,13 @@ Name | Type | Description | Notes
 
 `func NewAccessItemRoleResponse(revocable bool, ) *AccessItemRoleResponse`
 
-NewAccessItemRoleResponse instantiates a new AccessItemRoleResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessItemRoleResponse instantiates a new AccessItemRoleResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessItemRoleResponseWithDefaults
 
 `func NewAccessItemRoleResponseWithDefaults() *AccessItemRoleResponse`
 
-NewAccessItemRoleResponseWithDefaults instantiates a new AccessItemRoleResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessItemRoleResponseWithDefaults instantiates a new AccessItemRoleResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetAccessType
 
@@ -52,8 +60,7 @@ GetAccessType returns the AccessType field if non-nil, zero value otherwise.
 
 `func (o *AccessItemRoleResponse) GetAccessTypeOk() (*string, bool)`
 
-GetAccessTypeOk returns a tuple with the AccessType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessTypeOk returns a tuple with the AccessType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessType
 
@@ -77,8 +84,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *AccessItemRoleResponse) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -102,8 +108,7 @@ GetDisplayName returns the DisplayName field if non-nil, zero value otherwise.
 
 `func (o *AccessItemRoleResponse) GetDisplayNameOk() (*string, bool)`
 
-GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayName
 
@@ -127,8 +132,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *AccessItemRoleResponse) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -152,8 +156,7 @@ GetSourceName returns the SourceName field if non-nil, zero value otherwise.
 
 `func (o *AccessItemRoleResponse) GetSourceNameOk() (*string, bool)`
 
-GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceName
 
@@ -177,8 +180,7 @@ GetRemoveDate returns the RemoveDate field if non-nil, zero value otherwise.
 
 `func (o *AccessItemRoleResponse) GetRemoveDateOk() (*string, bool)`
 
-GetRemoveDateOk returns a tuple with the RemoveDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRemoveDateOk returns a tuple with the RemoveDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRemoveDate
 
@@ -202,14 +204,10 @@ GetRevocable returns the Revocable field if non-nil, zero value otherwise.
 
 `func (o *AccessItemRoleResponse) GetRevocableOk() (*bool, bool)`
 
-GetRevocableOk returns a tuple with the Revocable field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRevocableOk returns a tuple with the Revocable field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRevocable
 
 `func (o *AccessItemRoleResponse) SetRevocable(v bool)`
 
 SetRevocable sets Revocable field to given value.
-
-
-

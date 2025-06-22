@@ -4,9 +4,22 @@ title: ScheduledActionResponseContentBackupOptions
 pagination_label: ScheduledActionResponseContentBackupOptions
 sidebar_label: ScheduledActionResponseContentBackupOptions
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ScheduledActionResponseContentBackupOptions', 'V2025ScheduledActionResponseContentBackupOptions'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ScheduledActionResponseContentBackupOptions',
+    'V2025ScheduledActionResponseContentBackupOptions',
+  ]
 slug: /tools/sdk/python/v2025/models/scheduled-action-response-content-backup-options
-tags: ['SDK', 'Software Development Kit', 'ScheduledActionResponseContentBackupOptions', 'V2025ScheduledActionResponseContentBackupOptions']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ScheduledActionResponseContentBackupOptions',
+    'V2025ScheduledActionResponseContentBackupOptions',
+  ]
 ---
 
 # ScheduledActionResponseContentBackupOptions
@@ -15,10 +28,11 @@ Options for BACKUP type jobs. Optional, applicable for BACKUP jobs only.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**include_types** | **[]str** | Object types that are to be included in the backup. | [optional] 
-**object_options** | [**map[string]ScheduledActionResponseContentBackupOptionsObjectOptionsValue**](scheduled-action-response-content-backup-options-object-options-value) | Map of objectType string to the options to be passed to the target service for that objectType. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **include_types** | **[]str** | Object types that are to be included in the backup. | [optional] |
+| **object_options** | [**map[string]ScheduledActionResponseContentBackupOptionsObjectOptionsValue**](scheduled-action-response-content-backup-options-object-options-value) | Map of objectType string to the options to be passed to the target service for that objectType. | [optional] |
+
 }
 
 ## Example
@@ -32,5 +46,5 @@ object_options={SOURCE={includedNames=[Source1, Source2]}, ROLE={includedNames=[
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

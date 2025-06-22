@@ -4,9 +4,16 @@ title: ManagedClientStatus
 pagination_label: ManagedClientStatus
 sidebar_label: ManagedClientStatus
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ManagedClientStatus', 'BetaManagedClientStatus'] 
+keywords:
+  ['python', 'Python', 'sdk', 'ManagedClientStatus', 'BetaManagedClientStatus']
 slug: /tools/sdk/python/beta/models/managed-client-status
-tags: ['SDK', 'Software Development Kit', 'ManagedClientStatus', 'BetaManagedClientStatus']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ManagedClientStatus',
+    'BetaManagedClientStatus',
+  ]
 ---
 
 # ManagedClientStatus
@@ -15,12 +22,13 @@ Managed Client Status
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**body** | **object** | ManagedClientStatus body information | [required]
-**status** | [**ManagedClientStatusEnum**](managed-client-status-enum) |  | [required]
-**type** | [**ManagedClientType**](managed-client-type) |  | [required]
-**timestamp** | **datetime** | timestamp on the Client Status update | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **body** | **object** | ManagedClientStatus body information | [required] |
+| **status** | [**ManagedClientStatusEnum**](managed-client-status-enum) |  | [required] |
+| **type** | [**ManagedClientType**](managed-client-type) |  | [required] |
+| **timestamp** | **datetime** | timestamp on the Client Status update | [required] |
+
 }
 
 ## Example
@@ -36,5 +44,5 @@ timestamp='2020-01-01T00:00Z'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

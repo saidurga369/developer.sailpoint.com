@@ -4,20 +4,33 @@ title: ConnectorRuleValidationResponseDetailsInner
 pagination_label: ConnectorRuleValidationResponseDetailsInner
 sidebar_label: ConnectorRuleValidationResponseDetailsInner
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ConnectorRuleValidationResponseDetailsInner', 'V2025ConnectorRuleValidationResponseDetailsInner'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ConnectorRuleValidationResponseDetailsInner',
+    'V2025ConnectorRuleValidationResponseDetailsInner',
+  ]
 slug: /tools/sdk/go/v2025/models/connector-rule-validation-response-details-inner
-tags: ['SDK', 'Software Development Kit', 'ConnectorRuleValidationResponseDetailsInner', 'V2025ConnectorRuleValidationResponseDetailsInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ConnectorRuleValidationResponseDetailsInner',
+    'V2025ConnectorRuleValidationResponseDetailsInner',
+  ]
 ---
 
 # ConnectorRuleValidationResponseDetailsInner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Line** | **int32** | The line number where the issue occurred | 
-**Column** | **int32** | the column number where the issue occurred | 
-**Messsage** | Pointer to **string** | a description of the issue in the code | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Line** | **int32** | The line number where the issue occurred |
+| **Column** | **int32** | the column number where the issue occurred |
+| **Messsage** | Pointer to **string** | a description of the issue in the code | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewConnectorRuleValidationResponseDetailsInner(line int32, column int32, ) *ConnectorRuleValidationResponseDetailsInner`
 
-NewConnectorRuleValidationResponseDetailsInner instantiates a new ConnectorRuleValidationResponseDetailsInner object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewConnectorRuleValidationResponseDetailsInner instantiates a new ConnectorRuleValidationResponseDetailsInner object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewConnectorRuleValidationResponseDetailsInnerWithDefaults
 
 `func NewConnectorRuleValidationResponseDetailsInnerWithDefaults() *ConnectorRuleValidationResponseDetailsInner`
 
-NewConnectorRuleValidationResponseDetailsInnerWithDefaults instantiates a new ConnectorRuleValidationResponseDetailsInner object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewConnectorRuleValidationResponseDetailsInnerWithDefaults instantiates a new ConnectorRuleValidationResponseDetailsInner object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetLine
 
@@ -48,15 +56,13 @@ GetLine returns the Line field if non-nil, zero value otherwise.
 
 `func (o *ConnectorRuleValidationResponseDetailsInner) GetLineOk() (*int32, bool)`
 
-GetLineOk returns a tuple with the Line field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLineOk returns a tuple with the Line field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLine
 
 `func (o *ConnectorRuleValidationResponseDetailsInner) SetLine(v int32)`
 
 SetLine sets Line field to given value.
-
 
 ### GetColumn
 
@@ -68,15 +74,13 @@ GetColumn returns the Column field if non-nil, zero value otherwise.
 
 `func (o *ConnectorRuleValidationResponseDetailsInner) GetColumnOk() (*int32, bool)`
 
-GetColumnOk returns a tuple with the Column field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetColumnOk returns a tuple with the Column field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetColumn
 
 `func (o *ConnectorRuleValidationResponseDetailsInner) SetColumn(v int32)`
 
 SetColumn sets Column field to given value.
-
 
 ### GetMesssage
 
@@ -88,8 +92,7 @@ GetMesssage returns the Messsage field if non-nil, zero value otherwise.
 
 `func (o *ConnectorRuleValidationResponseDetailsInner) GetMesssageOk() (*string, bool)`
 
-GetMesssageOk returns a tuple with the Messsage field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMesssageOk returns a tuple with the Messsage field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMesssage
 
@@ -102,5 +105,3 @@ SetMesssage sets Messsage field to given value.
 `func (o *ConnectorRuleValidationResponseDetailsInner) HasMesssage() bool`
 
 HasMesssage returns a boolean if a field has been set.
-
-

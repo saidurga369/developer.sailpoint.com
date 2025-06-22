@@ -11,13 +11,13 @@ slug: /tools/ui-development-kit/getting-started
 tags: ['UI']
 ---
 
-Read this guide to learn about the UI Development Kit and how to use it. Once you have read this guide, you will be able to do the following: 
+Read this guide to learn about the UI Development Kit and how to use it. Once you have read this guide, you will be able to do the following:
 
 - [Change your custom user interface (UI) name](#change-your-custom-ui-name)
 - [Update your sidebar to include new items](#update-the-sidebar)
 - [Add route and new page](#add-route-and-new-page)
 
-## Change your custom UI name 
+## Change your custom UI name
 
 By default, the name of this project is 'UI Development Kit'. To update the name of your custom UI, you must update the code in two different places.
 
@@ -47,12 +47,10 @@ export const navigation = [
   {
     name: 'Main',
     content: [
-      ...
-      {
+      ...{
         url: '/home/account-list',
         name: 'Account List',
-        description:
-          'an example showcasing how to list accounts',
+        description: 'an example showcasing how to list accounts',
         icon: ReportsSvg,
       },
     ],
@@ -60,9 +58,7 @@ export const navigation = [
 ];
 ```
 
-:::info
-You can add a custom SVG icon for each sidebar item. Save and import your icon svg under `lib/Components/SVGs/*`.
-:::
+:::info You can add a custom SVG icon for each sidebar item. Save and import your icon svg under `lib/Components/SVGs/*`. :::
 
 You now have a new sidebar link, but it points to a route that doesn't exist yet. If you click the link, you will encounter a 404 error.
 
@@ -70,7 +66,7 @@ To learn how to add a route and page for the new sidebar item, refer to [Add rou
 
 ## Add route and new page
 
-To create new routes, you can create new folders and pages for those routes under `src/routes`. 
+To create new routes, you can create new folders and pages for those routes under `src/routes`.
 
 Here is an example of how to create a new route:
 
@@ -126,11 +122,10 @@ import TabItem from '@theme/TabItem';
 
 ```html
 <div class="flex justify-center flex-col align-middle gap-2">
-	<div class="card p-4">
-		<p class="text-2xl text-center">Accounts Homepage</p>
-	</div>
+  <div class="card p-4">
+    <p class="text-2xl text-center">Accounts Homepage</p>
+  </div>
 </div>
-
 ```
 
 </TabItem>
@@ -138,29 +133,29 @@ import TabItem from '@theme/TabItem';
 
 ```html
 <div class="flex justify-center flex-col align-middle gap-2">
-	<div class="card p-4">
-		<p class="text-2xl text-center">List of all Accounts</p>
-	</div>
+  <div class="card p-4">
+    <p class="text-2xl text-center">List of all Accounts</p>
+  </div>
 </div>
 ```
 
 </TabItem>
 </Tabs>
 
-To see the new sidebar item, as well as its new route and page, restart the project. 
+To see the new sidebar item, as well as its new route and page, restart the project.
 
-To restart the project, run this command: 
+To restart the project, run this command:
 
 ```bash
 npm run dev
 ```
 
-Once you have run the command, the new sidebar item, as well as its new route and page, will display. 
+Once you have run the command, the new sidebar item, as well as its new route and page, will display.
 
 Now that you have the new sidebar item, its new route, and its new page, you can implement the page. To continue following this example and learn how to implement an accounts list page, refer to [Accounts List](/docs/tools/ui-development-kit/accounts-list).
 
-## Discuss 
+## Discuss
 
-The most valuable resource for ISC developers is the SailPoint Developer Community itself, where ISC users and experts all over the world come together to ask questions and provide solutions. 
+The most valuable resource for ISC developers is the SailPoint Developer Community itself, where ISC users and experts all over the world come together to ask questions and provide solutions.
 
-To learn more about the ISC UI Development Kit and discuss it with SailPoint Developer Community members, go to the [SailPoint Developer Community Forum](https://developer.sailpoint.com/discuss/c/identity-security-cloud/6). 
+To learn more about the ISC UI Development Kit and discuss it with SailPoint Developer Community members, go to the [SailPoint Developer Community Forum](https://developer.sailpoint.com/discuss/c/identity-security-cloud/6).

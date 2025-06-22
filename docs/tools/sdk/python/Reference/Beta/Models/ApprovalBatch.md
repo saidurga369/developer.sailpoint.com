@@ -4,7 +4,7 @@ title: ApprovalBatch
 pagination_label: ApprovalBatch
 sidebar_label: ApprovalBatch
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ApprovalBatch', 'BetaApprovalBatch'] 
+keywords: ['python', 'Python', 'sdk', 'ApprovalBatch', 'BetaApprovalBatch']
 slug: /tools/sdk/python/beta/models/approval-batch
 tags: ['SDK', 'Software Development Kit', 'ApprovalBatch', 'BetaApprovalBatch']
 ---
@@ -15,10 +15,11 @@ Batch properties if an approval is sent via batching.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**batch_id** | **str** | ID of the batch | [optional] 
-**batch_size** | **int** | How many approvals are going to be in this batch. Defaults to 1 if not provided. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **batch_id** | **str** | ID of the batch | [optional] |
+| **batch_size** | **int** | How many approvals are going to be in this batch. Defaults to 1 if not provided. | [optional] |
+
 }
 
 ## Example
@@ -32,5 +33,5 @@ batch_size=100
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

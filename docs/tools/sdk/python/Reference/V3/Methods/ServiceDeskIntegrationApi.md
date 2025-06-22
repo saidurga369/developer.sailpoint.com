@@ -4,22 +4,33 @@ title: Service_Desk_Integration
 pagination_label: Service_Desk_Integration
 sidebar_label: Service_Desk_Integration
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'Service_Desk_Integration', 'Service_Desk_Integration'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'Service_Desk_Integration',
+    'Service_Desk_Integration',
+  ]
 slug: /tools/sdk/python/v3/methods/service-desk-integration
-tags: ['SDK', 'Software Development Kit', 'Service_Desk_Integration', 'Service_Desk_Integration']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'Service_Desk_Integration',
+    'Service_Desk_Integration',
+  ]
 ---
 
 # sailpoint.v3.ServiceDeskIntegrationApi
-  Use this API to build an integration between Identity Security Cloud and a service desk ITSM (IT service management) solution. 
-Once an administrator builds this integration between Identity Security Cloud and a service desk, users can use Identity Security Cloud to raise and track tickets that are synchronized between Identity Security Cloud and the service desk. 
+
+Use this API to build an integration between Identity Security Cloud and a service desk ITSM (IT service management) solution. Once an administrator builds this integration between Identity Security Cloud and a service desk, users can use Identity Security Cloud to raise and track tickets that are synchronized between Identity Security Cloud and the service desk.
 
 In Identity Security Cloud, administrators can create a service desk integration (sometimes also called an SDIM, or Service Desk Integration Module) by going to Admin &gt; Connections &gt; Service Desk and selecting &#39;Create.&#39;
 
-To create a Generic Service Desk integration, for example, administrators must provide the required information on the General Settings page, the Connectivity and Authentication information, Ticket Creation information, Status Mapping information, and Requester Source information on the Configure page. 
-Refer to [Integrating SailPoint with Generic Service Desk](https://documentation.sailpoint.com/connectors/generic_sd/help/integrating_generic_service_desk/intro.html) for more information about the process of setting up a Generic Service Desk in Identity Security Cloud.
+To create a Generic Service Desk integration, for example, administrators must provide the required information on the General Settings page, the Connectivity and Authentication information, Ticket Creation information, Status Mapping information, and Requester Source information on the Configure page. Refer to [Integrating SailPoint with Generic Service Desk](https://documentation.sailpoint.com/connectors/generic_sd/help/integrating_generic_service_desk/intro.html) for more information about the process of setting up a Generic Service Desk in Identity Security Cloud.
 
-Administrators can create various service desk integrations, all with their own nuances. 
-The following service desk integrations are available: 
+Administrators can create various service desk integrations, all with their own nuances. The following service desk integrations are available:
 
 - [Atlassian Cloud Jira Service Management](https://documentation.sailpoint.com/connectors/atlassian/jira_cloud/help/integrating_jira_cloud_sd/introduction.html)
 
@@ -34,52 +45,54 @@ The following service desk integrations are available:
 - [ServiceNow Service Desk](https://documentation.sailpoint.com/connectors/servicenow/sdim/help/integrating_servicenow_sdim/intro.html)
 
 - [Zendesk Service Desk](https://documentation.sailpoint.com/connectors/zendesk/help/integrating_zendesk_sd/introduction.html)
- 
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/v3*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create-service-desk-integration**](#create-service-desk-integration) | **POST** `/service-desk-integrations` | Create new service desk integration
-[**delete-service-desk-integration**](#delete-service-desk-integration) | **DELETE** `/service-desk-integrations/{id}` | Delete a service desk integration
-[**get-service-desk-integration**](#get-service-desk-integration) | **GET** `/service-desk-integrations/{id}` | Get a service desk integration
-[**get-service-desk-integration-template**](#get-service-desk-integration-template) | **GET** `/service-desk-integrations/templates/{scriptName}` | Service desk integration template by scriptname
-[**get-service-desk-integration-types**](#get-service-desk-integration-types) | **GET** `/service-desk-integrations/types` | List service desk integration types
-[**get-service-desk-integrations**](#get-service-desk-integrations) | **GET** `/service-desk-integrations` | List existing service desk integrations
-[**get-status-check-details**](#get-status-check-details) | **GET** `/service-desk-integrations/status-check-configuration` | Get the time check configuration
-[**patch-service-desk-integration**](#patch-service-desk-integration) | **PATCH** `/service-desk-integrations/{id}` | Patch a service desk integration
-[**put-service-desk-integration**](#put-service-desk-integration) | **PUT** `/service-desk-integrations/{id}` | Update a service desk integration
-[**update-status-check-details**](#update-status-check-details) | **PUT** `/service-desk-integrations/status-check-configuration` | Update the time check configuration
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**create-service-desk-integration**](#create-service-desk-integration) | **POST** `/service-desk-integrations` | Create new service desk integration |
+| [**delete-service-desk-integration**](#delete-service-desk-integration) | **DELETE** `/service-desk-integrations/{id}` | Delete a service desk integration |
+| [**get-service-desk-integration**](#get-service-desk-integration) | **GET** `/service-desk-integrations/{id}` | Get a service desk integration |
+| [**get-service-desk-integration-template**](#get-service-desk-integration-template) | **GET** `/service-desk-integrations/templates/{scriptName}` | Service desk integration template by scriptname |
+| [**get-service-desk-integration-types**](#get-service-desk-integration-types) | **GET** `/service-desk-integrations/types` | List service desk integration types |
+| [**get-service-desk-integrations**](#get-service-desk-integrations) | **GET** `/service-desk-integrations` | List existing service desk integrations |
+| [**get-status-check-details**](#get-status-check-details) | **GET** `/service-desk-integrations/status-check-configuration` | Get the time check configuration |
+| [**patch-service-desk-integration**](#patch-service-desk-integration) | **PATCH** `/service-desk-integrations/{id}` | Patch a service desk integration |
+| [**put-service-desk-integration**](#put-service-desk-integration) | **PUT** `/service-desk-integrations/{id}` | Update a service desk integration |
+| [**update-status-check-details**](#update-status-check-details) | **PUT** `/service-desk-integrations/status-check-configuration` | Update the time check configuration |
 
 ## create-service-desk-integration
-Create new service desk integration
-Create a new Service Desk integration.
+
+Create new service desk integration Create a new Service Desk integration.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/create-service-desk-integration)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
- Body  | service_desk_integration_dto | [**ServiceDeskIntegrationDto**](../models/service-desk-integration-dto) | True  | The specifics of a new integration to create
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Body | service_desk_integration_dto | [**ServiceDeskIntegrationDto**](../models/service-desk-integration-dto) | True | The specifics of a new integration to create |
 
 ### Return type
+
 [**ServiceDeskIntegrationDto**](../models/service-desk-integration-dto)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Details of the created integration | ServiceDeskIntegrationDto |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Details of the created integration | ServiceDeskIntegrationDto | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json
- - **Accept**: application/json
+
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### Example
 
@@ -139,39 +152,40 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling ServiceDeskIntegrationApi->create_service_desk_integration: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## delete-service-desk-integration
-Delete a service desk integration
-Delete an existing Service Desk integration by ID.
+
+Delete a service desk integration Delete an existing Service Desk integration by ID.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/delete-service-desk-integration)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | id | **str** | True  | ID of Service Desk integration to delete
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | id | **str** | True | ID of Service Desk integration to delete |
 
 ### Return type
- (empty response body)
+
+(empty response body)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-204 | Service Desk integration with the given ID successfully deleted |  |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 204 | Service Desk integration with the given ID successfully deleted |  | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -187,7 +201,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Delete a service desk integration
-        
+
         ServiceDeskIntegrationApi(api_client).delete_service_desk_integration(id=id)
         # Below is a request that includes all optional parameters
         # ServiceDeskIntegrationApi(api_client).delete_service_desk_integration(id)
@@ -195,39 +209,40 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling ServiceDeskIntegrationApi->delete_service_desk_integration: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## get-service-desk-integration
-Get a service desk integration
-Get an existing Service Desk integration by ID.
+
+Get a service desk integration Get an existing Service Desk integration by ID.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/get-service-desk-integration)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | id | **str** | True  | ID of the Service Desk integration to get
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | id | **str** | True | ID of the Service Desk integration to get |
 
 ### Return type
+
 [**ServiceDeskIntegrationDto**](../models/service-desk-integration-dto)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | ServiceDeskIntegrationDto with the given ID | ServiceDeskIntegrationDto |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | ServiceDeskIntegrationDto with the given ID | ServiceDeskIntegrationDto | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -244,7 +259,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Get a service desk integration
-        
+
         results = ServiceDeskIntegrationApi(api_client).get_service_desk_integration(id=id)
         # Below is a request that includes all optional parameters
         # results = ServiceDeskIntegrationApi(api_client).get_service_desk_integration(id)
@@ -254,39 +269,40 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling ServiceDeskIntegrationApi->get_service_desk_integration: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## get-service-desk-integration-template
-Service desk integration template by scriptname
-This API endpoint returns an existing Service Desk integration template by scriptName.
+
+Service desk integration template by scriptname This API endpoint returns an existing Service Desk integration template by scriptName.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/get-service-desk-integration-template)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | script_name | **str** | True  | The scriptName value of the Service Desk integration template to get
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | script_name | **str** | True | The scriptName value of the Service Desk integration template to get |
 
 ### Return type
+
 [**ServiceDeskIntegrationTemplateDto**](../models/service-desk-integration-template-dto)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Responds with the ServiceDeskIntegrationTemplateDto with the specified scriptName. | ServiceDeskIntegrationTemplateDto |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Responds with the ServiceDeskIntegrationTemplateDto with the specified scriptName. | ServiceDeskIntegrationTemplateDto | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -303,7 +319,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Service desk integration template by scriptname
-        
+
         results = ServiceDeskIntegrationApi(api_client).get_service_desk_integration_template(script_name=script_name)
         # Below is a request that includes all optional parameters
         # results = ServiceDeskIntegrationApi(api_client).get_service_desk_integration_template(script_name)
@@ -313,36 +329,38 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling ServiceDeskIntegrationApi->get_service_desk_integration_template: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## get-service-desk-integration-types
-List service desk integration types
-This API endpoint returns the current list of supported Service Desk integration types.
+
+List service desk integration types This API endpoint returns the current list of supported Service Desk integration types.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/get-service-desk-integration-types)
 
-### Parameters 
-This endpoint does not need any parameter. 
+### Parameters
+
+This endpoint does not need any parameter.
 
 ### Return type
+
 [**List[ServiceDeskIntegrationTemplateType]**](../models/service-desk-integration-template-type)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Responds with an array of the currently supported Service Desk integration types. | List[ServiceDeskIntegrationTemplateType] |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Responds with an array of the currently supported Service Desk integration types. | List[ServiceDeskIntegrationTemplateType] | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -358,7 +376,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # List service desk integration types
-        
+
         results = ServiceDeskIntegrationApi(api_client).get_service_desk_integration_types()
         # Below is a request that includes all optional parameters
         # results = ServiceDeskIntegrationApi(api_client).get_service_desk_integration_types()
@@ -369,43 +387,44 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling ServiceDeskIntegrationApi->get_service_desk_integration_types: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## get-service-desk-integrations
-List existing service desk integrations
-Get a list of Service Desk integration objects.
+
+List existing service desk integrations Get a list of Service Desk integration objects.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/get-service-desk-integrations)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-  Query | offset | **int** |   (optional) (default to 0) | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | limit | **int** |   (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | sorters | **str** |   (optional) | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **name**
-  Query | filters | **str** |   (optional) | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, in*  **name**: *eq*  **type**: *eq, in*  **cluster**: *eq, in*
-  Query | count | **bool** |   (optional) (default to False) | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Query | offset | **int** | (optional) (default to 0) | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | limit | **int** | (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | sorters | **str** | (optional) | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results) Sorting is supported for the following fields: **name** |
+| Query | filters | **str** | (optional) | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **id**: _eq, in_ **name**: _eq_ **type**: _eq, in_ **cluster**: _eq, in_ |
+| Query | count | **bool** | (optional) (default to False) | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
 
 ### Return type
+
 [**List[ServiceDeskIntegrationDto]**](../models/service-desk-integration-dto)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | List of ServiceDeskIntegrationDto | List[ServiceDeskIntegrationDto] |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | List of ServiceDeskIntegrationDto | List[ServiceDeskIntegrationDto] | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -426,7 +445,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # List existing service desk integrations
-        
+
         results = ServiceDeskIntegrationApi(api_client).get_service_desk_integrations()
         # Below is a request that includes all optional parameters
         # results = ServiceDeskIntegrationApi(api_client).get_service_desk_integrations(offset, limit, sorters, filters, count)
@@ -437,36 +456,38 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling ServiceDeskIntegrationApi->get_service_desk_integrations: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## get-status-check-details
-Get the time check configuration
-Get the time check configuration of queued SDIM tickets.
+
+Get the time check configuration Get the time check configuration of queued SDIM tickets.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/get-status-check-details)
 
-### Parameters 
-This endpoint does not need any parameter. 
+### Parameters
+
+This endpoint does not need any parameter.
 
 ### Return type
+
 [**QueuedCheckConfigDetails**](../models/queued-check-config-details)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | QueuedCheckConfigDetails containing the configured values | QueuedCheckConfigDetails |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | QueuedCheckConfigDetails containing the configured values | QueuedCheckConfigDetails | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -482,7 +503,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Get the time check configuration
-        
+
         results = ServiceDeskIntegrationApi(api_client).get_status_check_details()
         # Below is a request that includes all optional parameters
         # results = ServiceDeskIntegrationApi(api_client).get_status_check_details()
@@ -492,40 +513,41 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling ServiceDeskIntegrationApi->get_status_check_details: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## patch-service-desk-integration
-Patch a service desk integration
-Update an existing Service Desk integration by ID with a PATCH request.
+
+Patch a service desk integration Update an existing Service Desk integration by ID with a PATCH request.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/patch-service-desk-integration)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | id | **str** | True  | ID of the Service Desk integration to update
- Body  | json_patch_operation | [**[]JsonPatchOperation**](../models/json-patch-operation) | True  | A list of SDIM update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard.  Only `replace` operations are accepted by this endpoint.  A 403 Forbidden Error indicates that a PATCH operation was attempted that is not allowed. 
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | id | **str** | True | ID of the Service Desk integration to update |
+| Body | json_patch_operation | [**[]JsonPatchOperation**](../models/json-patch-operation) | True | A list of SDIM update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard. Only `replace` operations are accepted by this endpoint. A 403 Forbidden Error indicates that a PATCH operation was attempted that is not allowed. |
 
 ### Return type
+
 [**ServiceDeskIntegrationDto**](../models/service-desk-integration-dto)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | ServiceDeskIntegrationDto as updated | ServiceDeskIntegrationDto |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | ServiceDeskIntegrationDto as updated | ServiceDeskIntegrationDto | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json-patch+json
- - **Accept**: application/json
+
+- **Content-Type**: application/json-patch+json
+- **Accept**: application/json
 
 ### Example
 
@@ -540,7 +562,7 @@ configuration = Configuration()
 
 with ApiClient(configuration) as api_client:
     id = 'anId' # str | ID of the Service Desk integration to update # str | ID of the Service Desk integration to update
-    json_patch_operation = '''[sailpoint.v3.JsonPatchOperation()]''' # List[JsonPatchOperation] | A list of SDIM update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard.  Only `replace` operations are accepted by this endpoint.  A 403 Forbidden Error indicates that a PATCH operation was attempted that is not allowed. 
+    json_patch_operation = '''[sailpoint.v3.JsonPatchOperation()]''' # List[JsonPatchOperation] | A list of SDIM update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard.  Only `replace` operations are accepted by this endpoint.  A 403 Forbidden Error indicates that a PATCH operation was attempted that is not allowed.
 
     try:
         # Patch a service desk integration
@@ -554,40 +576,41 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling ServiceDeskIntegrationApi->patch_service_desk_integration: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## put-service-desk-integration
-Update a service desk integration
-Update an existing Service Desk integration by ID.
+
+Update a service desk integration Update an existing Service Desk integration by ID.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/put-service-desk-integration)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | id | **str** | True  | ID of the Service Desk integration to update
- Body  | service_desk_integration_dto | [**ServiceDeskIntegrationDto**](../models/service-desk-integration-dto) | True  | The specifics of the integration to update
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | id | **str** | True | ID of the Service Desk integration to update |
+| Body | service_desk_integration_dto | [**ServiceDeskIntegrationDto**](../models/service-desk-integration-dto) | True | The specifics of the integration to update |
 
 ### Return type
+
 [**ServiceDeskIntegrationDto**](../models/service-desk-integration-dto)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | ServiceDeskIntegrationDto as updated | ServiceDeskIntegrationDto |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | ServiceDeskIntegrationDto as updated | ServiceDeskIntegrationDto | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json
- - **Accept**: application/json
+
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### Example
 
@@ -648,39 +671,40 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling ServiceDeskIntegrationApi->put_service_desk_integration: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## update-status-check-details
-Update the time check configuration
-Update the time check configuration of queued SDIM tickets.
+
+Update the time check configuration Update the time check configuration of queued SDIM tickets.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/update-status-check-details)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
- Body  | queued_check_config_details | [**QueuedCheckConfigDetails**](../models/queued-check-config-details) | True  | The modified time check configuration
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Body | queued_check_config_details | [**QueuedCheckConfigDetails**](../models/queued-check-config-details) | True | The modified time check configuration |
 
 ### Return type
+
 [**QueuedCheckConfigDetails**](../models/queued-check-config-details)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | QueuedCheckConfigDetails as updated | QueuedCheckConfigDetails |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | QueuedCheckConfigDetails as updated | QueuedCheckConfigDetails | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json
- - **Accept**: application/json
+
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### Example
 
@@ -710,9 +734,4 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling ServiceDeskIntegrationApi->update_status_check_details: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
-
-
-
+[[Back to top]](#)

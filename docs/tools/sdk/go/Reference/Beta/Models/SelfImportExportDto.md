@@ -4,20 +4,27 @@ title: SelfImportExportDto
 pagination_label: SelfImportExportDto
 sidebar_label: SelfImportExportDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SelfImportExportDto', 'BetaSelfImportExportDto'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'SelfImportExportDto', 'BetaSelfImportExportDto']
 slug: /tools/sdk/go/beta/models/self-import-export-dto
-tags: ['SDK', 'Software Development Kit', 'SelfImportExportDto', 'BetaSelfImportExportDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SelfImportExportDto',
+    'BetaSelfImportExportDto',
+  ]
 ---
 
 # SelfImportExportDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | Imported/exported object's DTO type. Import is currently only possible with the CONNECTOR_RULE, IDENTITY_OBJECT_CONFIG, IDENTITY_PROFILE, RULE, SOURCE, TRANSFORM, and TRIGGER_SUBSCRIPTION object types. | [optional] 
-**Id** | Pointer to **string** | Imported/exported object's ID. | [optional] 
-**Name** | Pointer to **string** | Imported/exported object's display name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to **string** | Imported/exported object's DTO type. Import is currently only possible with the CONNECTOR_RULE, IDENTITY_OBJECT_CONFIG, IDENTITY_PROFILE, RULE, SOURCE, TRANSFORM, and TRIGGER_SUBSCRIPTION object types. | [optional] |
+| **Id** | Pointer to **string** | Imported/exported object's ID. | [optional] |
+| **Name** | Pointer to **string** | Imported/exported object's display name. | [optional] |
 
 ## Methods
 
@@ -25,18 +32,13 @@ Name | Type | Description | Notes
 
 `func NewSelfImportExportDto() *SelfImportExportDto`
 
-NewSelfImportExportDto instantiates a new SelfImportExportDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSelfImportExportDto instantiates a new SelfImportExportDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSelfImportExportDtoWithDefaults
 
 `func NewSelfImportExportDtoWithDefaults() *SelfImportExportDto`
 
-NewSelfImportExportDtoWithDefaults instantiates a new SelfImportExportDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSelfImportExportDtoWithDefaults instantiates a new SelfImportExportDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -48,8 +50,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *SelfImportExportDto) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -73,8 +74,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *SelfImportExportDto) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -98,8 +98,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *SelfImportExportDto) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -112,5 +111,3 @@ SetName sets Name field to given value.
 `func (o *SelfImportExportDto) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

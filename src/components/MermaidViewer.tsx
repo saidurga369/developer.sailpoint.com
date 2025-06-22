@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import mermaid from 'mermaid';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
@@ -17,7 +17,7 @@ interface MovingState {
   y: number;
 }
 
-const MermaidViewer: React.FC<MermaidViewerProps> = ({ diagram }) => {
+const MermaidViewer: React.FC<MermaidViewerProps> = ({diagram}) => {
   mermaid.contentLoaded();
 
   const [width, setWidth] = useState<number>(0);
@@ -48,7 +48,7 @@ const MermaidViewer: React.FC<MermaidViewerProps> = ({ diagram }) => {
       offsetX: 0,
       offsetY: 0,
     });
-    setMermaidCursorMoving({ x: 0, y: 0 });
+    setMermaidCursorMoving({x: 0, y: 0});
   };
 
   const setMouseDown = (e: React.MouseEvent | React.TouchEvent) => {
@@ -65,7 +65,7 @@ const MermaidViewer: React.FC<MermaidViewerProps> = ({ diagram }) => {
   };
 
   const setMouseUp = () => {
-    setMermaidCursorStart((prev) => ({ ...prev, cursor: 'grab' }));
+    setMermaidCursorStart((prev) => ({...prev, cursor: 'grab'}));
   };
 
   const drag = (e: React.MouseEvent | React.TouchEvent) => {
@@ -82,20 +82,19 @@ const MermaidViewer: React.FC<MermaidViewerProps> = ({ diagram }) => {
 
   useEffect(() => {
     setMermaidRender(true); // Immediately set render state
-  
+
     let canceled = false;
     const timeout = setTimeout(() => {
       if (!canceled) {
         setMermaidRender(true);
       }
     }, 100); // Small delay to ensure mermaid.js processes correctly
-  
+
     return () => {
       canceled = true;
       clearTimeout(timeout);
     };
   }, []);
-  
 
   return (
     <div>
@@ -118,7 +117,7 @@ const MermaidViewer: React.FC<MermaidViewerProps> = ({ diagram }) => {
         alt="Zoom Out"
       />
       <div
-        style={{ cursor: mermaidCursorStart.cursor }}
+        style={{cursor: mermaidCursorStart.cursor}}
         className={styles.mermaidContainer}
         onMouseMove={drag}
         onTouchMove={drag}
@@ -126,8 +125,7 @@ const MermaidViewer: React.FC<MermaidViewerProps> = ({ diagram }) => {
         onTouchStart={setMouseDown}
         onMouseUp={setMouseUp}
         onTouchEnd={setMouseUp}
-        onMouseLeave={setMouseUp}
-      >
+        onMouseLeave={setMouseUp}>
         {mermaidRender ? (
           <div
             id="mermaid"
@@ -139,8 +137,7 @@ const MermaidViewer: React.FC<MermaidViewerProps> = ({ diagram }) => {
               left: -mermaidCursorMoving.x + 'px',
               width: `calc(100% + ${width}px)`,
               maxHeight: '1000px',
-            }}
-          >
+            }}>
             {diagram}
           </div>
         ) : (

@@ -4,21 +4,28 @@ title: ProvisioningPolicyDto
 pagination_label: ProvisioningPolicyDto
 sidebar_label: ProvisioningPolicyDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ProvisioningPolicyDto', 'ProvisioningPolicyDto'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'ProvisioningPolicyDto', 'ProvisioningPolicyDto']
 slug: /tools/sdk/go/v3/models/provisioning-policy-dto
-tags: ['SDK', 'Software Development Kit', 'ProvisioningPolicyDto', 'ProvisioningPolicyDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ProvisioningPolicyDto',
+    'ProvisioningPolicyDto',
+  ]
 ---
 
 # ProvisioningPolicyDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | **NullableString** | the provisioning policy name | 
-**Description** | Pointer to **string** | the description of the provisioning policy | [optional] 
-**UsageType** | Pointer to [**UsageType**](usage-type) |  | [optional] 
-**Fields** | Pointer to [**[]FieldDetailsDto**](field-details-dto) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | **NullableString** | the provisioning policy name |
+| **Description** | Pointer to **string** | the description of the provisioning policy | [optional] |
+| **UsageType** | Pointer to [**UsageType**](usage-type) |  | [optional] |
+| **Fields** | Pointer to [**[]FieldDetailsDto**](field-details-dto) |  | [optional] |
 
 ## Methods
 
@@ -26,18 +33,13 @@ Name | Type | Description | Notes
 
 `func NewProvisioningPolicyDto(name NullableString, ) *ProvisioningPolicyDto`
 
-NewProvisioningPolicyDto instantiates a new ProvisioningPolicyDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewProvisioningPolicyDto instantiates a new ProvisioningPolicyDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewProvisioningPolicyDtoWithDefaults
 
 `func NewProvisioningPolicyDtoWithDefaults() *ProvisioningPolicyDto`
 
-NewProvisioningPolicyDtoWithDefaults instantiates a new ProvisioningPolicyDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewProvisioningPolicyDtoWithDefaults instantiates a new ProvisioningPolicyDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -49,8 +51,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *ProvisioningPolicyDto) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -58,17 +59,18 @@ and a boolean to check if the value has been set.
 
 SetName sets Name field to given value.
 
-
 ### SetNameNil
 
 `func (o *ProvisioningPolicyDto) SetNameNil(b bool)`
 
- SetNameNil sets the value for Name to be an explicit nil
+SetNameNil sets the value for Name to be an explicit nil
 
 ### UnsetName
+
 `func (o *ProvisioningPolicyDto) UnsetName()`
 
 UnsetName ensures that no value is present for Name, not even an explicit nil
+
 ### GetDescription
 
 `func (o *ProvisioningPolicyDto) GetDescription() string`
@@ -79,8 +81,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *ProvisioningPolicyDto) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -104,8 +105,7 @@ GetUsageType returns the UsageType field if non-nil, zero value otherwise.
 
 `func (o *ProvisioningPolicyDto) GetUsageTypeOk() (*UsageType, bool)`
 
-GetUsageTypeOk returns a tuple with the UsageType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUsageTypeOk returns a tuple with the UsageType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUsageType
 
@@ -129,8 +129,7 @@ GetFields returns the Fields field if non-nil, zero value otherwise.
 
 `func (o *ProvisioningPolicyDto) GetFieldsOk() (*[]FieldDetailsDto, bool)`
 
-GetFieldsOk returns a tuple with the Fields field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFieldsOk returns a tuple with the Fields field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFields
 
@@ -143,5 +142,3 @@ SetFields sets Fields field to given value.
 `func (o *ProvisioningPolicyDto) HasFields() bool`
 
 HasFields returns a boolean if a field has been set.
-
-

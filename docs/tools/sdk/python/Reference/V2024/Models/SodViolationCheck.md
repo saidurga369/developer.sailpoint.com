@@ -4,9 +4,16 @@ title: SodViolationCheck
 pagination_label: SodViolationCheck
 sidebar_label: SodViolationCheck
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SodViolationCheck', 'V2024SodViolationCheck'] 
+keywords:
+  ['python', 'Python', 'sdk', 'SodViolationCheck', 'V2024SodViolationCheck']
 slug: /tools/sdk/python/v2024/models/sod-violation-check
-tags: ['SDK', 'Software Development Kit', 'SodViolationCheck', 'V2024SodViolationCheck']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SodViolationCheck',
+    'V2024SodViolationCheck',
+  ]
 ---
 
 # SodViolationCheck
@@ -15,10 +22,11 @@ An object referencing an SOD violation check
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**request_id** | **str** | The id of the original request | [required]
-**created** | **datetime** | The date-time when this request was created. | [optional] [readonly] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **request_id** | **str** | The id of the original request | [required] |
+| **created** | **datetime** | The date-time when this request was created. | [optional] [readonly] |
+
 }
 
 ## Example
@@ -32,5 +40,5 @@ created='2020-01-01T00:00Z'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

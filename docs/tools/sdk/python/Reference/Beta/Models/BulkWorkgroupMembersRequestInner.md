@@ -4,9 +4,22 @@ title: BulkWorkgroupMembersRequestInner
 pagination_label: BulkWorkgroupMembersRequestInner
 sidebar_label: BulkWorkgroupMembersRequestInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'BulkWorkgroupMembersRequestInner', 'BetaBulkWorkgroupMembersRequestInner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'BulkWorkgroupMembersRequestInner',
+    'BetaBulkWorkgroupMembersRequestInner',
+  ]
 slug: /tools/sdk/python/beta/models/bulk-workgroup-members-request-inner
-tags: ['SDK', 'Software Development Kit', 'BulkWorkgroupMembersRequestInner', 'BetaBulkWorkgroupMembersRequestInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'BulkWorkgroupMembersRequestInner',
+    'BetaBulkWorkgroupMembersRequestInner',
+  ]
 ---
 
 # BulkWorkgroupMembersRequestInner
@@ -15,11 +28,12 @@ Identity's basic details.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] | Identity's DTO type. | [optional] 
-**id** | **str** | Identity ID. | [optional] 
-**name** | **str** | Identity's display name. | [optional] 
+| Name     | Type                    | Description              | Notes      |
+| -------- | ----------------------- | ------------------------ | ---------- |
+| **type** | **Enum** [ 'IDENTITY' ] | Identity's DTO type.     | [optional] |
+| **id**   | **str**                 | Identity ID.             | [optional] |
+| **name** | **str**                 | Identity's display name. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Michael Michaels'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

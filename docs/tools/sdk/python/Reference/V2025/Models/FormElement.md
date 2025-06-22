@@ -4,23 +4,23 @@ title: FormElement
 pagination_label: FormElement
 sidebar_label: FormElement
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'FormElement', 'V2025FormElement'] 
+keywords: ['python', 'Python', 'sdk', 'FormElement', 'V2025FormElement']
 slug: /tools/sdk/python/v2025/models/form-element
 tags: ['SDK', 'Software Development Kit', 'FormElement', 'V2025FormElement']
 ---
 
 # FormElement
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Form element identifier. | [optional] 
-**element_type** |  **Enum** [  'TEXT',    'TOGGLE',    'TEXTAREA',    'HIDDEN',    'PHONE',    'EMAIL',    'SELECT',    'DATE',    'SECTION',    'COLUMN_SET',    'IMAGE',    'DESCRIPTION' ] | FormElementType value.  TEXT FormElementTypeText TOGGLE FormElementTypeToggle TEXTAREA FormElementTypeTextArea HIDDEN FormElementTypeHidden PHONE FormElementTypePhone EMAIL FormElementTypeEmail SELECT FormElementTypeSelect DATE FormElementTypeDate SECTION FormElementTypeSection COLUMN_SET FormElementTypeColumns IMAGE FormElementTypeImage DESCRIPTION FormElementTypeDescription | [optional] 
-**config** | **map[string]object** | Config object. | [optional] 
-**key** | **str** | Technical key. | [optional] 
-**validations** | [**[]FormElementValidationsSet**](form-element-validations-set) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | Form element identifier. | [optional] |
+| **element_type** | **Enum** [ 'TEXT', 'TOGGLE', 'TEXTAREA', 'HIDDEN', 'PHONE', 'EMAIL', 'SELECT', 'DATE', 'SECTION', 'COLUMN_SET', 'IMAGE', 'DESCRIPTION' ] | FormElementType value. TEXT FormElementTypeText TOGGLE FormElementTypeToggle TEXTAREA FormElementTypeTextArea HIDDEN FormElementTypeHidden PHONE FormElementTypePhone EMAIL FormElementTypeEmail SELECT FormElementTypeSelect DATE FormElementTypeDate SECTION FormElementTypeSection COLUMN_SET FormElementTypeColumns IMAGE FormElementTypeImage DESCRIPTION FormElementTypeDescription | [optional] |
+| **config** | **map[string]object** | Config object. | [optional] |
+| **key** | **str** | Technical key. | [optional] |
+| **validations** | [**[]FormElementValidationsSet**](form-element-validations-set) |  | [optional] |
+
 }
 
 ## Example
@@ -40,5 +40,5 @@ validations=[
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

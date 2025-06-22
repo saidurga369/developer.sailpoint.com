@@ -4,7 +4,7 @@ title: Column
 pagination_label: Column
 sidebar_label: Column
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Column', 'V2024Column'] 
+keywords: ['go', 'Golang', 'sdk', 'Column', 'V2024Column']
 slug: /tools/sdk/go/v2024/models/column
 tags: ['SDK', 'Software Development Kit', 'Column', 'V2024Column']
 ---
@@ -13,10 +13,10 @@ tags: ['SDK', 'Software Development Kit', 'Column', 'V2024Column']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Field** | **string** | The name of the field.  | 
-**Header** | Pointer to **string** | The value of the header.  | [optional] 
+| Name       | Type                  | Description              | Notes      |
+| ---------- | --------------------- | ------------------------ | ---------- |
+| **Field**  | **string**            | The name of the field.   |
+| **Header** | Pointer to **string** | The value of the header. | [optional] |
 
 ## Methods
 
@@ -24,18 +24,13 @@ Name | Type | Description | Notes
 
 `func NewColumn(field string, ) *Column`
 
-NewColumn instantiates a new Column object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewColumn instantiates a new Column object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewColumnWithDefaults
 
 `func NewColumnWithDefaults() *Column`
 
-NewColumnWithDefaults instantiates a new Column object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewColumnWithDefaults instantiates a new Column object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetField
 
@@ -47,15 +42,13 @@ GetField returns the Field field if non-nil, zero value otherwise.
 
 `func (o *Column) GetFieldOk() (*string, bool)`
 
-GetFieldOk returns a tuple with the Field field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFieldOk returns a tuple with the Field field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetField
 
 `func (o *Column) SetField(v string)`
 
 SetField sets Field field to given value.
-
 
 ### GetHeader
 
@@ -67,8 +60,7 @@ GetHeader returns the Header field if non-nil, zero value otherwise.
 
 `func (o *Column) GetHeaderOk() (*string, bool)`
 
-GetHeaderOk returns a tuple with the Header field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetHeaderOk returns a tuple with the Header field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetHeader
 
@@ -81,5 +73,3 @@ SetHeader sets Header field to given value.
 `func (o *Column) HasHeader() bool`
 
 HasHeader returns a boolean if a field has been set.
-
-

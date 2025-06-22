@@ -4,21 +4,34 @@ title: RoleMiningPotentialRoleSourceUsage
 pagination_label: RoleMiningPotentialRoleSourceUsage
 sidebar_label: RoleMiningPotentialRoleSourceUsage
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleMiningPotentialRoleSourceUsage', 'V2025RoleMiningPotentialRoleSourceUsage'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'RoleMiningPotentialRoleSourceUsage',
+    'V2025RoleMiningPotentialRoleSourceUsage',
+  ]
 slug: /tools/sdk/go/v2025/models/role-mining-potential-role-source-usage
-tags: ['SDK', 'Software Development Kit', 'RoleMiningPotentialRoleSourceUsage', 'V2025RoleMiningPotentialRoleSourceUsage']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningPotentialRoleSourceUsage',
+    'V2025RoleMiningPotentialRoleSourceUsage',
+  ]
 ---
 
 # RoleMiningPotentialRoleSourceUsage
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The identity ID | [optional] 
-**DisplayName** | Pointer to **string** | Display name for the identity | [optional] 
-**Email** | Pointer to **string** | Email address for the identity | [optional] 
-**UsageCount** | Pointer to **int32** | The number of days there has been usage of the source by the identity. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The identity ID | [optional] |
+| **DisplayName** | Pointer to **string** | Display name for the identity | [optional] |
+| **Email** | Pointer to **string** | Email address for the identity | [optional] |
+| **UsageCount** | Pointer to **int32** | The number of days there has been usage of the source by the identity. | [optional] |
 
 ## Methods
 
@@ -26,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewRoleMiningPotentialRoleSourceUsage() *RoleMiningPotentialRoleSourceUsage`
 
-NewRoleMiningPotentialRoleSourceUsage instantiates a new RoleMiningPotentialRoleSourceUsage object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleMiningPotentialRoleSourceUsage instantiates a new RoleMiningPotentialRoleSourceUsage object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleMiningPotentialRoleSourceUsageWithDefaults
 
 `func NewRoleMiningPotentialRoleSourceUsageWithDefaults() *RoleMiningPotentialRoleSourceUsage`
 
-NewRoleMiningPotentialRoleSourceUsageWithDefaults instantiates a new RoleMiningPotentialRoleSourceUsage object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleMiningPotentialRoleSourceUsageWithDefaults instantiates a new RoleMiningPotentialRoleSourceUsage object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -49,8 +57,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningPotentialRoleSourceUsage) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -74,8 +81,7 @@ GetDisplayName returns the DisplayName field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningPotentialRoleSourceUsage) GetDisplayNameOk() (*string, bool)`
 
-GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayName
 
@@ -99,8 +105,7 @@ GetEmail returns the Email field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningPotentialRoleSourceUsage) GetEmailOk() (*string, bool)`
 
-GetEmailOk returns a tuple with the Email field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEmailOk returns a tuple with the Email field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEmail
 
@@ -124,8 +129,7 @@ GetUsageCount returns the UsageCount field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningPotentialRoleSourceUsage) GetUsageCountOk() (*int32, bool)`
 
-GetUsageCountOk returns a tuple with the UsageCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUsageCountOk returns a tuple with the UsageCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUsageCount
 
@@ -138,5 +142,3 @@ SetUsageCount sets UsageCount field to given value.
 `func (o *RoleMiningPotentialRoleSourceUsage) HasUsageCount() bool`
 
 HasUsageCount returns a boolean if a field has been set.
-
-

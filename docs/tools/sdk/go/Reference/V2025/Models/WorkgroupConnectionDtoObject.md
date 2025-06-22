@@ -4,21 +4,34 @@ title: WorkgroupConnectionDtoObject
 pagination_label: WorkgroupConnectionDtoObject
 sidebar_label: WorkgroupConnectionDtoObject
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'WorkgroupConnectionDtoObject', 'V2025WorkgroupConnectionDtoObject'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'WorkgroupConnectionDtoObject',
+    'V2025WorkgroupConnectionDtoObject',
+  ]
 slug: /tools/sdk/go/v2025/models/workgroup-connection-dto-object
-tags: ['SDK', 'Software Development Kit', 'WorkgroupConnectionDtoObject', 'V2025WorkgroupConnectionDtoObject']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'WorkgroupConnectionDtoObject',
+    'V2025WorkgroupConnectionDtoObject',
+  ]
 ---
 
 # WorkgroupConnectionDtoObject
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to [**ConnectedObjectType**](connected-object-type) |  | [optional] 
-**Id** | Pointer to **string** | ID of the object to which this reference applies | [optional] 
-**Name** | Pointer to **string** | Human-readable name of Connected object | [optional] 
-**Description** | Pointer to **NullableString** | Description of the Connected object. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to [**ConnectedObjectType**](connected-object-type) |  | [optional] |
+| **Id** | Pointer to **string** | ID of the object to which this reference applies | [optional] |
+| **Name** | Pointer to **string** | Human-readable name of Connected object | [optional] |
+| **Description** | Pointer to **NullableString** | Description of the Connected object. | [optional] |
 
 ## Methods
 
@@ -26,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewWorkgroupConnectionDtoObject() *WorkgroupConnectionDtoObject`
 
-NewWorkgroupConnectionDtoObject instantiates a new WorkgroupConnectionDtoObject object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewWorkgroupConnectionDtoObject instantiates a new WorkgroupConnectionDtoObject object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewWorkgroupConnectionDtoObjectWithDefaults
 
 `func NewWorkgroupConnectionDtoObjectWithDefaults() *WorkgroupConnectionDtoObject`
 
-NewWorkgroupConnectionDtoObjectWithDefaults instantiates a new WorkgroupConnectionDtoObject object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewWorkgroupConnectionDtoObjectWithDefaults instantiates a new WorkgroupConnectionDtoObject object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -49,8 +57,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *WorkgroupConnectionDtoObject) GetTypeOk() (*ConnectedObjectType, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -74,8 +81,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *WorkgroupConnectionDtoObject) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -99,8 +105,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *WorkgroupConnectionDtoObject) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -124,8 +129,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *WorkgroupConnectionDtoObject) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -143,10 +147,10 @@ HasDescription returns a boolean if a field has been set.
 
 `func (o *WorkgroupConnectionDtoObject) SetDescriptionNil(b bool)`
 
- SetDescriptionNil sets the value for Description to be an explicit nil
+SetDescriptionNil sets the value for Description to be an explicit nil
 
 ### UnsetDescription
+
 `func (o *WorkgroupConnectionDtoObject) UnsetDescription()`
 
 UnsetDescription ensures that no value is present for Description, not even an explicit nil
-

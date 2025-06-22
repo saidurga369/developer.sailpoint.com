@@ -4,27 +4,40 @@ title: WorkflowLibraryOperator
 pagination_label: WorkflowLibraryOperator
 sidebar_label: WorkflowLibraryOperator
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'WorkflowLibraryOperator', 'V2024WorkflowLibraryOperator'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'WorkflowLibraryOperator',
+    'V2024WorkflowLibraryOperator',
+  ]
 slug: /tools/sdk/python/v2024/models/workflow-library-operator
-tags: ['SDK', 'Software Development Kit', 'WorkflowLibraryOperator', 'V2024WorkflowLibraryOperator']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'WorkflowLibraryOperator',
+    'V2024WorkflowLibraryOperator',
+  ]
 ---
 
 # WorkflowLibraryOperator
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Operator ID. | [optional] 
-**name** | **str** | Operator friendly name | [optional] 
-**type** | **str** | Operator type | [optional] 
-**description** | **str** | Description of the operator | [optional] 
-**is_dynamic_schema** | **bool** | Determines whether the dynamic output schema is returned in place of the action's output schema. The dynamic schema lists non-static properties, like properties of a workflow form where each form has different fields. These will be provided dynamically based on available form fields. | [optional] 
-**deprecated** | **bool** |  | [optional] 
-**deprecated_by** | **datetime** |  | [optional] 
-**is_simulation_enabled** | **bool** |  | [optional] 
-**form_fields** | [**[]WorkflowLibraryFormFields**](workflow-library-form-fields) | One or more inputs that the operator accepts | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | Operator ID. | [optional] |
+| **name** | **str** | Operator friendly name | [optional] |
+| **type** | **str** | Operator type | [optional] |
+| **description** | **str** | Description of the operator | [optional] |
+| **is_dynamic_schema** | **bool** | Determines whether the dynamic output schema is returned in place of the action's output schema. The dynamic schema lists non-static properties, like properties of a workflow form where each form has different fields. These will be provided dynamically based on available form fields. | [optional] |
+| **deprecated** | **bool** |  | [optional] |
+| **deprecated_by** | **datetime** |  | [optional] |
+| **is_simulation_enabled** | **bool** |  | [optional] |
+| **form_fields** | [**[]WorkflowLibraryFormFields**](workflow-library-form-fields) | One or more inputs that the operator accepts | [optional] |
+
 }
 
 ## Example
@@ -45,5 +58,5 @@ form_fields=[{description=Enter the JSONPath to a value from the input to compar
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

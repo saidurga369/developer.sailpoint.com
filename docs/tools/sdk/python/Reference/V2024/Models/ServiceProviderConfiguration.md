@@ -4,9 +4,22 @@ title: ServiceProviderConfiguration
 pagination_label: ServiceProviderConfiguration
 sidebar_label: ServiceProviderConfiguration
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ServiceProviderConfiguration', 'V2024ServiceProviderConfiguration'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ServiceProviderConfiguration',
+    'V2024ServiceProviderConfiguration',
+  ]
 slug: /tools/sdk/python/v2024/models/service-provider-configuration
-tags: ['SDK', 'Software Development Kit', 'ServiceProviderConfiguration', 'V2024ServiceProviderConfiguration']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ServiceProviderConfiguration',
+    'V2024ServiceProviderConfiguration',
+  ]
 ---
 
 # ServiceProviderConfiguration
@@ -15,12 +28,13 @@ Represents the IdentityNow as Service Provider Configuration allowing customers 
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**enabled** | **bool** | This determines whether or not the SAML authentication flow is enabled for an org | [optional] [default to False]
-**bypass_idp** | **bool** | This allows basic login with the parameter prompt=true. This is often toggled on when debugging SAML authentication setup. When false, only org admins with MFA-enabled can bypass the IDP. | [optional] [default to False]
-**saml_configuration_valid** | **bool** | This indicates whether or not the SAML configuration is valid. | [optional] [default to False]
-**federation_protocol_details** | [**[]ServiceProviderConfigurationFederationProtocolDetailsInner**](service-provider-configuration-federation-protocol-details-inner) | A list of the abstract implementations of the Federation Protocol details. Typically, this will include on SpDetails object and one IdpDetails object used in tandem to define a SAML integration between a customer's identity provider and a customer's SailPoint instance (i.e., the service provider). | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **enabled** | **bool** | This determines whether or not the SAML authentication flow is enabled for an org | [optional] [default to False] |
+| **bypass_idp** | **bool** | This allows basic login with the parameter prompt=true. This is often toggled on when debugging SAML authentication setup. When false, only org admins with MFA-enabled can bypass the IDP. | [optional] [default to False] |
+| **saml_configuration_valid** | **bool** | This indicates whether or not the SAML configuration is valid. | [optional] [default to False] |
+| **federation_protocol_details** | [**[]ServiceProviderConfigurationFederationProtocolDetailsInner**](service-provider-configuration-federation-protocol-details-inner) | A list of the abstract implementations of the Federation Protocol details. Typically, this will include on SpDetails object and one IdpDetails object used in tandem to define a SAML integration between a customer's identity provider and a customer's SailPoint instance (i.e., the service provider). | [optional] |
+
 }
 
 ## Example
@@ -36,5 +50,5 @@ federation_protocol_details=[{role=SAML_IDP, entityId=http://www.okta.com/exktq4
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

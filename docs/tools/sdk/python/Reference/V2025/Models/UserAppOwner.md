@@ -4,22 +4,22 @@ title: UserAppOwner
 pagination_label: UserAppOwner
 sidebar_label: UserAppOwner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'UserAppOwner', 'V2025UserAppOwner'] 
+keywords: ['python', 'Python', 'sdk', 'UserAppOwner', 'V2025UserAppOwner']
 slug: /tools/sdk/python/v2025/models/user-app-owner
 tags: ['SDK', 'Software Development Kit', 'UserAppOwner', 'V2025UserAppOwner']
 ---
 
 # UserAppOwner
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The identity ID | [optional] 
-**type** | **str** | It will always be \"IDENTITY\" | [optional] 
-**name** | **str** | The identity name | [optional] 
-**alias** | **str** | The identity alias | [optional] 
+| Name      | Type    | Description                    | Notes      |
+| --------- | ------- | ------------------------------ | ---------- |
+| **id**    | **str** | The identity ID                | [optional] |
+| **type**  | **str** | It will always be \"IDENTITY\" | [optional] |
+| **name**  | **str** | The identity name              | [optional] |
+| **alias** | **str** | The identity alias             | [optional] |
+
 }
 
 ## Example
@@ -35,5 +35,5 @@ alias='John.Doe'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

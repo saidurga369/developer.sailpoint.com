@@ -4,19 +4,32 @@ title: ConflictingAccessCriteria
 pagination_label: ConflictingAccessCriteria
 sidebar_label: ConflictingAccessCriteria
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ConflictingAccessCriteria', 'BetaConflictingAccessCriteria'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ConflictingAccessCriteria',
+    'BetaConflictingAccessCriteria',
+  ]
 slug: /tools/sdk/go/beta/models/conflicting-access-criteria
-tags: ['SDK', 'Software Development Kit', 'ConflictingAccessCriteria', 'BetaConflictingAccessCriteria']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ConflictingAccessCriteria',
+    'BetaConflictingAccessCriteria',
+  ]
 ---
 
 # ConflictingAccessCriteria
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**LeftCriteria** | Pointer to [**AccessCriteria**](access-criteria) |  | [optional] 
-**RightCriteria** | Pointer to [**AccessCriteria**](access-criteria) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **LeftCriteria** | Pointer to [**AccessCriteria**](access-criteria) |  | [optional] |
+| **RightCriteria** | Pointer to [**AccessCriteria**](access-criteria) |  | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewConflictingAccessCriteria() *ConflictingAccessCriteria`
 
-NewConflictingAccessCriteria instantiates a new ConflictingAccessCriteria object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewConflictingAccessCriteria instantiates a new ConflictingAccessCriteria object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewConflictingAccessCriteriaWithDefaults
 
 `func NewConflictingAccessCriteriaWithDefaults() *ConflictingAccessCriteria`
 
-NewConflictingAccessCriteriaWithDefaults instantiates a new ConflictingAccessCriteria object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewConflictingAccessCriteriaWithDefaults instantiates a new ConflictingAccessCriteria object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetLeftCriteria
 
@@ -47,8 +55,7 @@ GetLeftCriteria returns the LeftCriteria field if non-nil, zero value otherwise.
 
 `func (o *ConflictingAccessCriteria) GetLeftCriteriaOk() (*AccessCriteria, bool)`
 
-GetLeftCriteriaOk returns a tuple with the LeftCriteria field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLeftCriteriaOk returns a tuple with the LeftCriteria field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLeftCriteria
 
@@ -72,8 +79,7 @@ GetRightCriteria returns the RightCriteria field if non-nil, zero value otherwis
 
 `func (o *ConflictingAccessCriteria) GetRightCriteriaOk() (*AccessCriteria, bool)`
 
-GetRightCriteriaOk returns a tuple with the RightCriteria field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRightCriteriaOk returns a tuple with the RightCriteria field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRightCriteria
 
@@ -86,5 +92,3 @@ SetRightCriteria sets RightCriteria field to given value.
 `func (o *ConflictingAccessCriteria) HasRightCriteria() bool`
 
 HasRightCriteria returns a boolean if a field has been set.
-
-

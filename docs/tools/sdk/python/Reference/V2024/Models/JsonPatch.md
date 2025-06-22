@@ -4,7 +4,7 @@ title: JsonPatch
 pagination_label: JsonPatch
 sidebar_label: JsonPatch
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'JsonPatch', 'V2024JsonPatch'] 
+keywords: ['python', 'Python', 'sdk', 'JsonPatch', 'V2024JsonPatch']
 slug: /tools/sdk/python/v2024/models/json-patch
 tags: ['SDK', 'Software Development Kit', 'JsonPatch', 'V2024JsonPatch']
 ---
@@ -15,9 +15,10 @@ A JSONPatch document as defined by [RFC 6902 - JSON Patch](https://tools.ietf.or
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**operations** | [**[]JsonPatchOperation**](json-patch-operation) | Operations to be applied | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **operations** | [**[]JsonPatchOperation**](json-patch-operation) | Operations to be applied | [optional] |
+
 }
 
 ## Example
@@ -28,12 +29,12 @@ from sailpoint.v2024.models.json_patch import JsonPatch
 json_patch = JsonPatch(
 operations=[
                     sailpoint.v2024.models.json_patch_operation.JsonPatchOperation(
-                        op = 'replace', 
-                        path = '/description', 
+                        op = 'replace',
+                        path = '/description',
                         value = New description, )
                     ]
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

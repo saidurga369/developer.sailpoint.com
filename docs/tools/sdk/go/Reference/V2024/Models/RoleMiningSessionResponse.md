@@ -4,35 +4,48 @@ title: RoleMiningSessionResponse
 pagination_label: RoleMiningSessionResponse
 sidebar_label: RoleMiningSessionResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleMiningSessionResponse', 'V2024RoleMiningSessionResponse'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'RoleMiningSessionResponse',
+    'V2024RoleMiningSessionResponse',
+  ]
 slug: /tools/sdk/go/v2024/models/role-mining-session-response
-tags: ['SDK', 'Software Development Kit', 'RoleMiningSessionResponse', 'V2024RoleMiningSessionResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningSessionResponse',
+    'V2024RoleMiningSessionResponse',
+  ]
 ---
 
 # RoleMiningSessionResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Scope** | Pointer to [**RoleMiningSessionScope**](role-mining-session-scope) |  | [optional] 
-**MinNumIdentitiesInPotentialRole** | Pointer to **NullableInt32** | Minimum number of identities in a potential role | [optional] 
-**ScopingMethod** | Pointer to **NullableString** | The scoping method of the role mining session | [optional] 
-**PrescribedPruneThreshold** | Pointer to **NullableInt32** | The computed (or prescribed) prune threshold for this session | [optional] 
-**PruneThreshold** | Pointer to **NullableInt32** | The prune threshold to be used for this role mining session | [optional] 
-**PotentialRoleCount** | Pointer to **int32** | The number of potential roles | [optional] 
-**PotentialRolesReadyCount** | Pointer to **int32** | The number of potential roles which have completed processing | [optional] 
-**Status** | Pointer to [**RoleMiningSessionStatus**](role-mining-session-status) |  | [optional] 
-**EmailRecipientId** | Pointer to **NullableString** | The id of the user who will receive an email about the role mining session | [optional] 
-**CreatedBy** | Pointer to [**RoleMiningSessionResponseCreatedBy**](role-mining-session-response-created-by) |  | [optional] 
-**IdentityCount** | Pointer to **int32** | The number of identities | [optional] 
-**Saved** | Pointer to **bool** | The session's saved status | [optional] [default to false]
-**Name** | Pointer to **NullableString** | The session's saved name | [optional] 
-**DataFilePath** | Pointer to **NullableString** | The data file path of the role mining session | [optional] 
-**Id** | Pointer to **string** | Session Id for this role mining session | [optional] 
-**CreatedDate** | Pointer to **SailPointTime** | The date-time when this role mining session was created. | [optional] 
-**ModifiedDate** | Pointer to **SailPointTime** | The date-time when this role mining session was completed. | [optional] 
-**Type** | Pointer to [**RoleMiningRoleType**](role-mining-role-type) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Scope** | Pointer to [**RoleMiningSessionScope**](role-mining-session-scope) |  | [optional] |
+| **MinNumIdentitiesInPotentialRole** | Pointer to **NullableInt32** | Minimum number of identities in a potential role | [optional] |
+| **ScopingMethod** | Pointer to **NullableString** | The scoping method of the role mining session | [optional] |
+| **PrescribedPruneThreshold** | Pointer to **NullableInt32** | The computed (or prescribed) prune threshold for this session | [optional] |
+| **PruneThreshold** | Pointer to **NullableInt32** | The prune threshold to be used for this role mining session | [optional] |
+| **PotentialRoleCount** | Pointer to **int32** | The number of potential roles | [optional] |
+| **PotentialRolesReadyCount** | Pointer to **int32** | The number of potential roles which have completed processing | [optional] |
+| **Status** | Pointer to [**RoleMiningSessionStatus**](role-mining-session-status) |  | [optional] |
+| **EmailRecipientId** | Pointer to **NullableString** | The id of the user who will receive an email about the role mining session | [optional] |
+| **CreatedBy** | Pointer to [**RoleMiningSessionResponseCreatedBy**](role-mining-session-response-created-by) |  | [optional] |
+| **IdentityCount** | Pointer to **int32** | The number of identities | [optional] |
+| **Saved** | Pointer to **bool** | The session's saved status | [optional] [default to false] |
+| **Name** | Pointer to **NullableString** | The session's saved name | [optional] |
+| **DataFilePath** | Pointer to **NullableString** | The data file path of the role mining session | [optional] |
+| **Id** | Pointer to **string** | Session Id for this role mining session | [optional] |
+| **CreatedDate** | Pointer to **SailPointTime** | The date-time when this role mining session was created. | [optional] |
+| **ModifiedDate** | Pointer to **SailPointTime** | The date-time when this role mining session was completed. | [optional] |
+| **Type** | Pointer to [**RoleMiningRoleType**](role-mining-role-type) |  | [optional] |
 
 ## Methods
 
@@ -40,18 +53,13 @@ Name | Type | Description | Notes
 
 `func NewRoleMiningSessionResponse() *RoleMiningSessionResponse`
 
-NewRoleMiningSessionResponse instantiates a new RoleMiningSessionResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleMiningSessionResponse instantiates a new RoleMiningSessionResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleMiningSessionResponseWithDefaults
 
 `func NewRoleMiningSessionResponseWithDefaults() *RoleMiningSessionResponse`
 
-NewRoleMiningSessionResponseWithDefaults instantiates a new RoleMiningSessionResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleMiningSessionResponseWithDefaults instantiates a new RoleMiningSessionResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetScope
 
@@ -63,8 +71,7 @@ GetScope returns the Scope field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningSessionResponse) GetScopeOk() (*RoleMiningSessionScope, bool)`
 
-GetScopeOk returns a tuple with the Scope field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetScopeOk returns a tuple with the Scope field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetScope
 
@@ -88,8 +95,7 @@ GetMinNumIdentitiesInPotentialRole returns the MinNumIdentitiesInPotentialRole f
 
 `func (o *RoleMiningSessionResponse) GetMinNumIdentitiesInPotentialRoleOk() (*int32, bool)`
 
-GetMinNumIdentitiesInPotentialRoleOk returns a tuple with the MinNumIdentitiesInPotentialRole field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMinNumIdentitiesInPotentialRoleOk returns a tuple with the MinNumIdentitiesInPotentialRole field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMinNumIdentitiesInPotentialRole
 
@@ -107,12 +113,14 @@ HasMinNumIdentitiesInPotentialRole returns a boolean if a field has been set.
 
 `func (o *RoleMiningSessionResponse) SetMinNumIdentitiesInPotentialRoleNil(b bool)`
 
- SetMinNumIdentitiesInPotentialRoleNil sets the value for MinNumIdentitiesInPotentialRole to be an explicit nil
+SetMinNumIdentitiesInPotentialRoleNil sets the value for MinNumIdentitiesInPotentialRole to be an explicit nil
 
 ### UnsetMinNumIdentitiesInPotentialRole
+
 `func (o *RoleMiningSessionResponse) UnsetMinNumIdentitiesInPotentialRole()`
 
 UnsetMinNumIdentitiesInPotentialRole ensures that no value is present for MinNumIdentitiesInPotentialRole, not even an explicit nil
+
 ### GetScopingMethod
 
 `func (o *RoleMiningSessionResponse) GetScopingMethod() string`
@@ -123,8 +131,7 @@ GetScopingMethod returns the ScopingMethod field if non-nil, zero value otherwis
 
 `func (o *RoleMiningSessionResponse) GetScopingMethodOk() (*string, bool)`
 
-GetScopingMethodOk returns a tuple with the ScopingMethod field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetScopingMethodOk returns a tuple with the ScopingMethod field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetScopingMethod
 
@@ -142,12 +149,14 @@ HasScopingMethod returns a boolean if a field has been set.
 
 `func (o *RoleMiningSessionResponse) SetScopingMethodNil(b bool)`
 
- SetScopingMethodNil sets the value for ScopingMethod to be an explicit nil
+SetScopingMethodNil sets the value for ScopingMethod to be an explicit nil
 
 ### UnsetScopingMethod
+
 `func (o *RoleMiningSessionResponse) UnsetScopingMethod()`
 
 UnsetScopingMethod ensures that no value is present for ScopingMethod, not even an explicit nil
+
 ### GetPrescribedPruneThreshold
 
 `func (o *RoleMiningSessionResponse) GetPrescribedPruneThreshold() int32`
@@ -158,8 +167,7 @@ GetPrescribedPruneThreshold returns the PrescribedPruneThreshold field if non-ni
 
 `func (o *RoleMiningSessionResponse) GetPrescribedPruneThresholdOk() (*int32, bool)`
 
-GetPrescribedPruneThresholdOk returns a tuple with the PrescribedPruneThreshold field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPrescribedPruneThresholdOk returns a tuple with the PrescribedPruneThreshold field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPrescribedPruneThreshold
 
@@ -177,12 +185,14 @@ HasPrescribedPruneThreshold returns a boolean if a field has been set.
 
 `func (o *RoleMiningSessionResponse) SetPrescribedPruneThresholdNil(b bool)`
 
- SetPrescribedPruneThresholdNil sets the value for PrescribedPruneThreshold to be an explicit nil
+SetPrescribedPruneThresholdNil sets the value for PrescribedPruneThreshold to be an explicit nil
 
 ### UnsetPrescribedPruneThreshold
+
 `func (o *RoleMiningSessionResponse) UnsetPrescribedPruneThreshold()`
 
 UnsetPrescribedPruneThreshold ensures that no value is present for PrescribedPruneThreshold, not even an explicit nil
+
 ### GetPruneThreshold
 
 `func (o *RoleMiningSessionResponse) GetPruneThreshold() int32`
@@ -193,8 +203,7 @@ GetPruneThreshold returns the PruneThreshold field if non-nil, zero value otherw
 
 `func (o *RoleMiningSessionResponse) GetPruneThresholdOk() (*int32, bool)`
 
-GetPruneThresholdOk returns a tuple with the PruneThreshold field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPruneThresholdOk returns a tuple with the PruneThreshold field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPruneThreshold
 
@@ -212,12 +221,14 @@ HasPruneThreshold returns a boolean if a field has been set.
 
 `func (o *RoleMiningSessionResponse) SetPruneThresholdNil(b bool)`
 
- SetPruneThresholdNil sets the value for PruneThreshold to be an explicit nil
+SetPruneThresholdNil sets the value for PruneThreshold to be an explicit nil
 
 ### UnsetPruneThreshold
+
 `func (o *RoleMiningSessionResponse) UnsetPruneThreshold()`
 
 UnsetPruneThreshold ensures that no value is present for PruneThreshold, not even an explicit nil
+
 ### GetPotentialRoleCount
 
 `func (o *RoleMiningSessionResponse) GetPotentialRoleCount() int32`
@@ -228,8 +239,7 @@ GetPotentialRoleCount returns the PotentialRoleCount field if non-nil, zero valu
 
 `func (o *RoleMiningSessionResponse) GetPotentialRoleCountOk() (*int32, bool)`
 
-GetPotentialRoleCountOk returns a tuple with the PotentialRoleCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPotentialRoleCountOk returns a tuple with the PotentialRoleCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPotentialRoleCount
 
@@ -253,8 +263,7 @@ GetPotentialRolesReadyCount returns the PotentialRolesReadyCount field if non-ni
 
 `func (o *RoleMiningSessionResponse) GetPotentialRolesReadyCountOk() (*int32, bool)`
 
-GetPotentialRolesReadyCountOk returns a tuple with the PotentialRolesReadyCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPotentialRolesReadyCountOk returns a tuple with the PotentialRolesReadyCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPotentialRolesReadyCount
 
@@ -278,8 +287,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningSessionResponse) GetStatusOk() (*RoleMiningSessionStatus, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -303,8 +311,7 @@ GetEmailRecipientId returns the EmailRecipientId field if non-nil, zero value ot
 
 `func (o *RoleMiningSessionResponse) GetEmailRecipientIdOk() (*string, bool)`
 
-GetEmailRecipientIdOk returns a tuple with the EmailRecipientId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEmailRecipientIdOk returns a tuple with the EmailRecipientId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEmailRecipientId
 
@@ -322,12 +329,14 @@ HasEmailRecipientId returns a boolean if a field has been set.
 
 `func (o *RoleMiningSessionResponse) SetEmailRecipientIdNil(b bool)`
 
- SetEmailRecipientIdNil sets the value for EmailRecipientId to be an explicit nil
+SetEmailRecipientIdNil sets the value for EmailRecipientId to be an explicit nil
 
 ### UnsetEmailRecipientId
+
 `func (o *RoleMiningSessionResponse) UnsetEmailRecipientId()`
 
 UnsetEmailRecipientId ensures that no value is present for EmailRecipientId, not even an explicit nil
+
 ### GetCreatedBy
 
 `func (o *RoleMiningSessionResponse) GetCreatedBy() RoleMiningSessionResponseCreatedBy`
@@ -338,8 +347,7 @@ GetCreatedBy returns the CreatedBy field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningSessionResponse) GetCreatedByOk() (*RoleMiningSessionResponseCreatedBy, bool)`
 
-GetCreatedByOk returns a tuple with the CreatedBy field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedByOk returns a tuple with the CreatedBy field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreatedBy
 
@@ -363,8 +371,7 @@ GetIdentityCount returns the IdentityCount field if non-nil, zero value otherwis
 
 `func (o *RoleMiningSessionResponse) GetIdentityCountOk() (*int32, bool)`
 
-GetIdentityCountOk returns a tuple with the IdentityCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityCountOk returns a tuple with the IdentityCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityCount
 
@@ -388,8 +395,7 @@ GetSaved returns the Saved field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningSessionResponse) GetSavedOk() (*bool, bool)`
 
-GetSavedOk returns a tuple with the Saved field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSavedOk returns a tuple with the Saved field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSaved
 
@@ -413,8 +419,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningSessionResponse) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -432,12 +437,14 @@ HasName returns a boolean if a field has been set.
 
 `func (o *RoleMiningSessionResponse) SetNameNil(b bool)`
 
- SetNameNil sets the value for Name to be an explicit nil
+SetNameNil sets the value for Name to be an explicit nil
 
 ### UnsetName
+
 `func (o *RoleMiningSessionResponse) UnsetName()`
 
 UnsetName ensures that no value is present for Name, not even an explicit nil
+
 ### GetDataFilePath
 
 `func (o *RoleMiningSessionResponse) GetDataFilePath() string`
@@ -448,8 +455,7 @@ GetDataFilePath returns the DataFilePath field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningSessionResponse) GetDataFilePathOk() (*string, bool)`
 
-GetDataFilePathOk returns a tuple with the DataFilePath field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDataFilePathOk returns a tuple with the DataFilePath field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDataFilePath
 
@@ -467,12 +473,14 @@ HasDataFilePath returns a boolean if a field has been set.
 
 `func (o *RoleMiningSessionResponse) SetDataFilePathNil(b bool)`
 
- SetDataFilePathNil sets the value for DataFilePath to be an explicit nil
+SetDataFilePathNil sets the value for DataFilePath to be an explicit nil
 
 ### UnsetDataFilePath
+
 `func (o *RoleMiningSessionResponse) UnsetDataFilePath()`
 
 UnsetDataFilePath ensures that no value is present for DataFilePath, not even an explicit nil
+
 ### GetId
 
 `func (o *RoleMiningSessionResponse) GetId() string`
@@ -483,8 +491,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningSessionResponse) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -508,8 +515,7 @@ GetCreatedDate returns the CreatedDate field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningSessionResponse) GetCreatedDateOk() (*SailPointTime, bool)`
 
-GetCreatedDateOk returns a tuple with the CreatedDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedDateOk returns a tuple with the CreatedDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreatedDate
 
@@ -533,8 +539,7 @@ GetModifiedDate returns the ModifiedDate field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningSessionResponse) GetModifiedDateOk() (*SailPointTime, bool)`
 
-GetModifiedDateOk returns a tuple with the ModifiedDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedDateOk returns a tuple with the ModifiedDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModifiedDate
 
@@ -558,8 +563,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningSessionResponse) GetTypeOk() (*RoleMiningRoleType, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -572,5 +576,3 @@ SetType sets Type field to given value.
 `func (o *RoleMiningSessionResponse) HasType() bool`
 
 HasType returns a boolean if a field has been set.
-
-

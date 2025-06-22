@@ -4,9 +4,22 @@ title: ConditionEffectConfig
 pagination_label: ConditionEffectConfig
 sidebar_label: ConditionEffectConfig
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ConditionEffectConfig', 'BetaConditionEffectConfig'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ConditionEffectConfig',
+    'BetaConditionEffectConfig',
+  ]
 slug: /tools/sdk/python/beta/models/condition-effect-config
-tags: ['SDK', 'Software Development Kit', 'ConditionEffectConfig', 'BetaConditionEffectConfig']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ConditionEffectConfig',
+    'BetaConditionEffectConfig',
+  ]
 ---
 
 # ConditionEffectConfig
@@ -15,10 +28,11 @@ Arbitrary map containing a configuration based on the EffectType.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**default_value_label** | **str** | Effect type's label. | [optional] 
-**element** | **str** | Element's identifier. | [optional] 
+| Name                    | Type    | Description           | Notes      |
+| ----------------------- | ------- | --------------------- | ---------- |
+| **default_value_label** | **str** | Effect type's label.  | [optional] |
+| **element**             | **str** | Element's identifier. | [optional] |
+
 }
 
 ## Example
@@ -32,5 +46,5 @@ element='8110662963316867'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

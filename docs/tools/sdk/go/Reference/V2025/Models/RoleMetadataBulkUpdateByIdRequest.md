@@ -4,21 +4,34 @@ title: RoleMetadataBulkUpdateByIdRequest
 pagination_label: RoleMetadataBulkUpdateByIdRequest
 sidebar_label: RoleMetadataBulkUpdateByIdRequest
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleMetadataBulkUpdateByIdRequest', 'V2025RoleMetadataBulkUpdateByIdRequest'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'RoleMetadataBulkUpdateByIdRequest',
+    'V2025RoleMetadataBulkUpdateByIdRequest',
+  ]
 slug: /tools/sdk/go/v2025/models/role-metadata-bulk-update-by-id-request
-tags: ['SDK', 'Software Development Kit', 'RoleMetadataBulkUpdateByIdRequest', 'V2025RoleMetadataBulkUpdateByIdRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMetadataBulkUpdateByIdRequest',
+    'V2025RoleMetadataBulkUpdateByIdRequest',
+  ]
 ---
 
 # RoleMetadataBulkUpdateByIdRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Roles** | **[]string** | Roles' Id to be updated | 
-**Operation** | **string** | The operation to be performed | 
-**ReplaceScope** | Pointer to **string** | The choice of update scope. | [optional] 
-**Values** | [**[]RoleMetadataBulkUpdateByIdRequestValuesInner**](role-metadata-bulk-update-by-id-request-values-inner) | The metadata to be updated, including attribute key and value. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Roles** | **[]string** | Roles' Id to be updated |
+| **Operation** | **string** | The operation to be performed |
+| **ReplaceScope** | Pointer to **string** | The choice of update scope. | [optional] |
+| **Values** | [**[]RoleMetadataBulkUpdateByIdRequestValuesInner**](role-metadata-bulk-update-by-id-request-values-inner) | The metadata to be updated, including attribute key and value. |
 
 ## Methods
 
@@ -26,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewRoleMetadataBulkUpdateByIdRequest(roles []string, operation string, values []RoleMetadataBulkUpdateByIdRequestValuesInner, ) *RoleMetadataBulkUpdateByIdRequest`
 
-NewRoleMetadataBulkUpdateByIdRequest instantiates a new RoleMetadataBulkUpdateByIdRequest object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleMetadataBulkUpdateByIdRequest instantiates a new RoleMetadataBulkUpdateByIdRequest object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleMetadataBulkUpdateByIdRequestWithDefaults
 
 `func NewRoleMetadataBulkUpdateByIdRequestWithDefaults() *RoleMetadataBulkUpdateByIdRequest`
 
-NewRoleMetadataBulkUpdateByIdRequestWithDefaults instantiates a new RoleMetadataBulkUpdateByIdRequest object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleMetadataBulkUpdateByIdRequestWithDefaults instantiates a new RoleMetadataBulkUpdateByIdRequest object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetRoles
 
@@ -49,15 +57,13 @@ GetRoles returns the Roles field if non-nil, zero value otherwise.
 
 `func (o *RoleMetadataBulkUpdateByIdRequest) GetRolesOk() (*[]string, bool)`
 
-GetRolesOk returns a tuple with the Roles field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRolesOk returns a tuple with the Roles field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRoles
 
 `func (o *RoleMetadataBulkUpdateByIdRequest) SetRoles(v []string)`
 
 SetRoles sets Roles field to given value.
-
 
 ### GetOperation
 
@@ -69,15 +75,13 @@ GetOperation returns the Operation field if non-nil, zero value otherwise.
 
 `func (o *RoleMetadataBulkUpdateByIdRequest) GetOperationOk() (*string, bool)`
 
-GetOperationOk returns a tuple with the Operation field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOperationOk returns a tuple with the Operation field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOperation
 
 `func (o *RoleMetadataBulkUpdateByIdRequest) SetOperation(v string)`
 
 SetOperation sets Operation field to given value.
-
 
 ### GetReplaceScope
 
@@ -89,8 +93,7 @@ GetReplaceScope returns the ReplaceScope field if non-nil, zero value otherwise.
 
 `func (o *RoleMetadataBulkUpdateByIdRequest) GetReplaceScopeOk() (*string, bool)`
 
-GetReplaceScopeOk returns a tuple with the ReplaceScope field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReplaceScopeOk returns a tuple with the ReplaceScope field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReplaceScope
 
@@ -114,14 +117,10 @@ GetValues returns the Values field if non-nil, zero value otherwise.
 
 `func (o *RoleMetadataBulkUpdateByIdRequest) GetValuesOk() (*[]RoleMetadataBulkUpdateByIdRequestValuesInner, bool)`
 
-GetValuesOk returns a tuple with the Values field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValuesOk returns a tuple with the Values field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValues
 
 `func (o *RoleMetadataBulkUpdateByIdRequest) SetValues(v []RoleMetadataBulkUpdateByIdRequestValuesInner)`
 
 SetValues sets Values field to given value.
-
-
-

@@ -4,19 +4,32 @@ title: IdentityPreviewRequest
 pagination_label: IdentityPreviewRequest
 sidebar_label: IdentityPreviewRequest
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IdentityPreviewRequest', 'V2024IdentityPreviewRequest'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'IdentityPreviewRequest',
+    'V2024IdentityPreviewRequest',
+  ]
 slug: /tools/sdk/go/v2024/models/identity-preview-request
-tags: ['SDK', 'Software Development Kit', 'IdentityPreviewRequest', 'V2024IdentityPreviewRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityPreviewRequest',
+    'V2024IdentityPreviewRequest',
+  ]
 ---
 
 # IdentityPreviewRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**IdentityId** | Pointer to **string** | The Identity id | [optional] 
-**IdentityAttributeConfig** | Pointer to [**IdentityAttributeConfig**](identity-attribute-config) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **IdentityId** | Pointer to **string** | The Identity id | [optional] |
+| **IdentityAttributeConfig** | Pointer to [**IdentityAttributeConfig**](identity-attribute-config) |  | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewIdentityPreviewRequest() *IdentityPreviewRequest`
 
-NewIdentityPreviewRequest instantiates a new IdentityPreviewRequest object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewIdentityPreviewRequest instantiates a new IdentityPreviewRequest object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewIdentityPreviewRequestWithDefaults
 
 `func NewIdentityPreviewRequestWithDefaults() *IdentityPreviewRequest`
 
-NewIdentityPreviewRequestWithDefaults instantiates a new IdentityPreviewRequest object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewIdentityPreviewRequestWithDefaults instantiates a new IdentityPreviewRequest object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetIdentityId
 
@@ -47,8 +55,7 @@ GetIdentityId returns the IdentityId field if non-nil, zero value otherwise.
 
 `func (o *IdentityPreviewRequest) GetIdentityIdOk() (*string, bool)`
 
-GetIdentityIdOk returns a tuple with the IdentityId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityIdOk returns a tuple with the IdentityId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityId
 
@@ -72,8 +79,7 @@ GetIdentityAttributeConfig returns the IdentityAttributeConfig field if non-nil,
 
 `func (o *IdentityPreviewRequest) GetIdentityAttributeConfigOk() (*IdentityAttributeConfig, bool)`
 
-GetIdentityAttributeConfigOk returns a tuple with the IdentityAttributeConfig field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityAttributeConfigOk returns a tuple with the IdentityAttributeConfig field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityAttributeConfig
 
@@ -86,5 +92,3 @@ SetIdentityAttributeConfig sets IdentityAttributeConfig field to given value.
 `func (o *IdentityPreviewRequest) HasIdentityAttributeConfig() bool`
 
 HasIdentityAttributeConfig returns a boolean if a field has been set.
-
-

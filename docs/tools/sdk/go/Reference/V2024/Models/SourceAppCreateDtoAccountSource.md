@@ -4,20 +4,33 @@ title: SourceAppCreateDtoAccountSource
 pagination_label: SourceAppCreateDtoAccountSource
 sidebar_label: SourceAppCreateDtoAccountSource
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SourceAppCreateDtoAccountSource', 'V2024SourceAppCreateDtoAccountSource'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'SourceAppCreateDtoAccountSource',
+    'V2024SourceAppCreateDtoAccountSource',
+  ]
 slug: /tools/sdk/go/v2024/models/source-app-create-dto-account-source
-tags: ['SDK', 'Software Development Kit', 'SourceAppCreateDtoAccountSource', 'V2024SourceAppCreateDtoAccountSource']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SourceAppCreateDtoAccountSource',
+    'V2024SourceAppCreateDtoAccountSource',
+  ]
 ---
 
 # SourceAppCreateDtoAccountSource
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **string** | The source ID | 
-**Type** | Pointer to **string** | The source type, will always be \"SOURCE\" | [optional] 
-**Name** | Pointer to **string** | The source name | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **string** | The source ID |
+| **Type** | Pointer to **string** | The source type, will always be \"SOURCE\" | [optional] |
+| **Name** | Pointer to **string** | The source name | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewSourceAppCreateDtoAccountSource(id string, ) *SourceAppCreateDtoAccountSource`
 
-NewSourceAppCreateDtoAccountSource instantiates a new SourceAppCreateDtoAccountSource object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSourceAppCreateDtoAccountSource instantiates a new SourceAppCreateDtoAccountSource object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSourceAppCreateDtoAccountSourceWithDefaults
 
 `func NewSourceAppCreateDtoAccountSourceWithDefaults() *SourceAppCreateDtoAccountSource`
 
-NewSourceAppCreateDtoAccountSourceWithDefaults instantiates a new SourceAppCreateDtoAccountSource object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSourceAppCreateDtoAccountSourceWithDefaults instantiates a new SourceAppCreateDtoAccountSource object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -48,15 +56,13 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *SourceAppCreateDtoAccountSource) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
 `func (o *SourceAppCreateDtoAccountSource) SetId(v string)`
 
 SetId sets Id field to given value.
-
 
 ### GetType
 
@@ -68,8 +74,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *SourceAppCreateDtoAccountSource) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -93,8 +98,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *SourceAppCreateDtoAccountSource) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -107,5 +111,3 @@ SetName sets Name field to given value.
 `func (o *SourceAppCreateDtoAccountSource) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

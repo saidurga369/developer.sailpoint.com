@@ -4,20 +4,33 @@ title: RequestOnBehalfOfConfig
 pagination_label: RequestOnBehalfOfConfig
 sidebar_label: RequestOnBehalfOfConfig
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RequestOnBehalfOfConfig', 'RequestOnBehalfOfConfig'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'RequestOnBehalfOfConfig',
+    'RequestOnBehalfOfConfig',
+  ]
 slug: /tools/sdk/python/v3/models/request-on-behalf-of-config
-tags: ['SDK', 'Software Development Kit', 'RequestOnBehalfOfConfig', 'RequestOnBehalfOfConfig']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RequestOnBehalfOfConfig',
+    'RequestOnBehalfOfConfig',
+  ]
 ---
 
 # RequestOnBehalfOfConfig
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**allow_request_on_behalf_of_anyone_by_anyone** | **bool** | If this is true, anyone can request access for anyone. | [optional] [default to False]
-**allow_request_on_behalf_of_employee_by_manager** | **bool** | If this is true, a manager can request access for his or her direct reports. | [optional] [default to False]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **allow_request_on_behalf_of_anyone_by_anyone** | **bool** | If this is true, anyone can request access for anyone. | [optional] [default to False] |
+| **allow_request_on_behalf_of_employee_by_manager** | **bool** | If this is true, a manager can request access for his or her direct reports. | [optional] [default to False] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ allow_request_on_behalf_of_employee_by_manager=True
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,29 +4,42 @@ title: RequestedItemAccountSelections
 pagination_label: RequestedItemAccountSelections
 sidebar_label: RequestedItemAccountSelections
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'RequestedItemAccountSelections', 'V2025RequestedItemAccountSelections'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'RequestedItemAccountSelections',
+    'V2025RequestedItemAccountSelections',
+  ]
 slug: /tools/sdk/powershell/v2025/models/requested-item-account-selections
-tags: ['SDK', 'Software Development Kit', 'RequestedItemAccountSelections', 'V2025RequestedItemAccountSelections']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RequestedItemAccountSelections',
+    'V2025RequestedItemAccountSelections',
+  ]
 ---
-
 
 # RequestedItemAccountSelections
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Description** | **String** | The description for this requested item | [optional] 
-**AccountsSelectionBlocked** | **Boolean** | This field indicates if account selections are not allowed for this requested item. * If true, this field indicates that account selections will not be available for this item and user combination. In this case, no account selections should be provided in the access request for this item and user combination, irrespective of whether the user has single or multiple accounts on a source. * An example is where a user is requesting an access profile that is already assigned to one of their accounts.  | [optional] [default to $false]
-**AccountsSelectionBlockedReason** | **String** | If account selections are not allowed for an item, this field will denote the reason. | [optional] 
-**Type** |  **Enum** [  "ACCESS_PROFILE",    "ROLE",    "ENTITLEMENT" ] | The type of the item being requested. | [optional] 
-**Id** | **String** | The id of the requested item | [optional] 
-**Name** | **String** | The name of the requested item | [optional] 
-**Sources** | [**[]SourceAccountSelections**](source-account-selections) | The details for the sources and accounts for the requested item and identity combination | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Description** | **String** | The description for this requested item | [optional] |
+| **AccountsSelectionBlocked** | **Boolean** | This field indicates if account selections are not allowed for this requested item. _ If true, this field indicates that account selections will not be available for this item and user combination. In this case, no account selections should be provided in the access request for this item and user combination, irrespective of whether the user has single or multiple accounts on a source. _ An example is where a user is requesting an access profile that is already assigned to one of their accounts. | [optional] [default to $false] |
+| **AccountsSelectionBlockedReason** | **String** | If account selections are not allowed for an item, this field will denote the reason. | [optional] |
+| **Type** | **Enum** [ "ACCESS_PROFILE", "ROLE", "ENTITLEMENT" ] | The type of the item being requested. | [optional] |
+| **Id** | **String** | The id of the requested item | [optional] |
+| **Name** | **String** | The name of the requested item | [optional] |
+| **Sources** | [**[]SourceAccountSelections**](source-account-selections) | The details for the sources and accounts for the requested item and identity combination | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $RequestedItemAccountSelections = Initialize-V2025RequestedItemAccountSelections  -Description An access profile for the admins `
  -AccountsSelectionBlocked false `
@@ -38,10 +51,9 @@ $RequestedItemAccountSelections = Initialize-V2025RequestedItemAccountSelections
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $RequestedItemAccountSelections | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

@@ -4,28 +4,41 @@ title: WorkflowLibraryTrigger
 pagination_label: WorkflowLibraryTrigger
 sidebar_label: WorkflowLibraryTrigger
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'WorkflowLibraryTrigger', 'V2024WorkflowLibraryTrigger'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'WorkflowLibraryTrigger',
+    'V2024WorkflowLibraryTrigger',
+  ]
 slug: /tools/sdk/go/v2024/models/workflow-library-trigger
-tags: ['SDK', 'Software Development Kit', 'WorkflowLibraryTrigger', 'V2024WorkflowLibraryTrigger']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'WorkflowLibraryTrigger',
+    'V2024WorkflowLibraryTrigger',
+  ]
 ---
 
 # WorkflowLibraryTrigger
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Trigger ID. This is a static namespaced ID for the trigger. | [optional] 
-**Type** | Pointer to **string** | Trigger type | [optional] 
-**Deprecated** | Pointer to **bool** |  | [optional] 
-**DeprecatedBy** | Pointer to **SailPointTime** |  | [optional] 
-**IsSimulationEnabled** | Pointer to **bool** |  | [optional] 
-**OutputSchema** | Pointer to **map[string]interface{}** | Example output schema | [optional] 
-**Name** | Pointer to **string** | Trigger Name | [optional] 
-**Description** | Pointer to **string** | Trigger Description | [optional] 
-**IsDynamicSchema** | Pointer to **bool** | Determines whether the dynamic output schema is returned in place of the action's output schema. The dynamic schema lists non-static properties, like properties of a workflow form where each form has different fields. These will be provided dynamically based on available form fields. | [optional] [default to false]
-**InputExample** | Pointer to **map[string]interface{}** | Example trigger payload if applicable | [optional] 
-**FormFields** | Pointer to [**[]WorkflowLibraryFormFields**](workflow-library-form-fields) | One or more inputs that the trigger accepts | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Trigger ID. This is a static namespaced ID for the trigger. | [optional] |
+| **Type** | Pointer to **string** | Trigger type | [optional] |
+| **Deprecated** | Pointer to **bool** |  | [optional] |
+| **DeprecatedBy** | Pointer to **SailPointTime** |  | [optional] |
+| **IsSimulationEnabled** | Pointer to **bool** |  | [optional] |
+| **OutputSchema** | Pointer to **map[string]interface{}** | Example output schema | [optional] |
+| **Name** | Pointer to **string** | Trigger Name | [optional] |
+| **Description** | Pointer to **string** | Trigger Description | [optional] |
+| **IsDynamicSchema** | Pointer to **bool** | Determines whether the dynamic output schema is returned in place of the action's output schema. The dynamic schema lists non-static properties, like properties of a workflow form where each form has different fields. These will be provided dynamically based on available form fields. | [optional] [default to false] |
+| **InputExample** | Pointer to **map[string]interface{}** | Example trigger payload if applicable | [optional] |
+| **FormFields** | Pointer to [**[]WorkflowLibraryFormFields**](workflow-library-form-fields) | One or more inputs that the trigger accepts | [optional] |
 
 ## Methods
 
@@ -33,18 +46,13 @@ Name | Type | Description | Notes
 
 `func NewWorkflowLibraryTrigger() *WorkflowLibraryTrigger`
 
-NewWorkflowLibraryTrigger instantiates a new WorkflowLibraryTrigger object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewWorkflowLibraryTrigger instantiates a new WorkflowLibraryTrigger object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewWorkflowLibraryTriggerWithDefaults
 
 `func NewWorkflowLibraryTriggerWithDefaults() *WorkflowLibraryTrigger`
 
-NewWorkflowLibraryTriggerWithDefaults instantiates a new WorkflowLibraryTrigger object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewWorkflowLibraryTriggerWithDefaults instantiates a new WorkflowLibraryTrigger object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -56,8 +64,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *WorkflowLibraryTrigger) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -81,8 +88,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *WorkflowLibraryTrigger) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -106,8 +112,7 @@ GetDeprecated returns the Deprecated field if non-nil, zero value otherwise.
 
 `func (o *WorkflowLibraryTrigger) GetDeprecatedOk() (*bool, bool)`
 
-GetDeprecatedOk returns a tuple with the Deprecated field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDeprecatedOk returns a tuple with the Deprecated field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDeprecated
 
@@ -131,8 +136,7 @@ GetDeprecatedBy returns the DeprecatedBy field if non-nil, zero value otherwise.
 
 `func (o *WorkflowLibraryTrigger) GetDeprecatedByOk() (*SailPointTime, bool)`
 
-GetDeprecatedByOk returns a tuple with the DeprecatedBy field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDeprecatedByOk returns a tuple with the DeprecatedBy field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDeprecatedBy
 
@@ -156,8 +160,7 @@ GetIsSimulationEnabled returns the IsSimulationEnabled field if non-nil, zero va
 
 `func (o *WorkflowLibraryTrigger) GetIsSimulationEnabledOk() (*bool, bool)`
 
-GetIsSimulationEnabledOk returns a tuple with the IsSimulationEnabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIsSimulationEnabledOk returns a tuple with the IsSimulationEnabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIsSimulationEnabled
 
@@ -181,8 +184,7 @@ GetOutputSchema returns the OutputSchema field if non-nil, zero value otherwise.
 
 `func (o *WorkflowLibraryTrigger) GetOutputSchemaOk() (*map[string]interface{}, bool)`
 
-GetOutputSchemaOk returns a tuple with the OutputSchema field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOutputSchemaOk returns a tuple with the OutputSchema field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOutputSchema
 
@@ -206,8 +208,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *WorkflowLibraryTrigger) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -231,8 +232,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *WorkflowLibraryTrigger) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -256,8 +256,7 @@ GetIsDynamicSchema returns the IsDynamicSchema field if non-nil, zero value othe
 
 `func (o *WorkflowLibraryTrigger) GetIsDynamicSchemaOk() (*bool, bool)`
 
-GetIsDynamicSchemaOk returns a tuple with the IsDynamicSchema field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIsDynamicSchemaOk returns a tuple with the IsDynamicSchema field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIsDynamicSchema
 
@@ -281,8 +280,7 @@ GetInputExample returns the InputExample field if non-nil, zero value otherwise.
 
 `func (o *WorkflowLibraryTrigger) GetInputExampleOk() (*map[string]interface{}, bool)`
 
-GetInputExampleOk returns a tuple with the InputExample field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetInputExampleOk returns a tuple with the InputExample field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetInputExample
 
@@ -300,12 +298,14 @@ HasInputExample returns a boolean if a field has been set.
 
 `func (o *WorkflowLibraryTrigger) SetInputExampleNil(b bool)`
 
- SetInputExampleNil sets the value for InputExample to be an explicit nil
+SetInputExampleNil sets the value for InputExample to be an explicit nil
 
 ### UnsetInputExample
+
 `func (o *WorkflowLibraryTrigger) UnsetInputExample()`
 
 UnsetInputExample ensures that no value is present for InputExample, not even an explicit nil
+
 ### GetFormFields
 
 `func (o *WorkflowLibraryTrigger) GetFormFields() []WorkflowLibraryFormFields`
@@ -316,8 +316,7 @@ GetFormFields returns the FormFields field if non-nil, zero value otherwise.
 
 `func (o *WorkflowLibraryTrigger) GetFormFieldsOk() (*[]WorkflowLibraryFormFields, bool)`
 
-GetFormFieldsOk returns a tuple with the FormFields field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFormFieldsOk returns a tuple with the FormFields field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFormFields
 
@@ -335,10 +334,10 @@ HasFormFields returns a boolean if a field has been set.
 
 `func (o *WorkflowLibraryTrigger) SetFormFieldsNil(b bool)`
 
- SetFormFieldsNil sets the value for FormFields to be an explicit nil
+SetFormFieldsNil sets the value for FormFields to be an explicit nil
 
 ### UnsetFormFields
+
 `func (o *WorkflowLibraryTrigger) UnsetFormFields()`
 
 UnsetFormFields ensures that no value is present for FormFields, not even an explicit nil
-

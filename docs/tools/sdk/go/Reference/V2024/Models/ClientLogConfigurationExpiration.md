@@ -4,21 +4,34 @@ title: ClientLogConfigurationExpiration
 pagination_label: ClientLogConfigurationExpiration
 sidebar_label: ClientLogConfigurationExpiration
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ClientLogConfigurationExpiration', 'V2024ClientLogConfigurationExpiration'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ClientLogConfigurationExpiration',
+    'V2024ClientLogConfigurationExpiration',
+  ]
 slug: /tools/sdk/go/v2024/models/client-log-configuration-expiration
-tags: ['SDK', 'Software Development Kit', 'ClientLogConfigurationExpiration', 'V2024ClientLogConfigurationExpiration']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ClientLogConfigurationExpiration',
+    'V2024ClientLogConfigurationExpiration',
+  ]
 ---
 
 # ClientLogConfigurationExpiration
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ClientId** | Pointer to **string** | Log configuration's client ID | [optional] 
-**Expiration** | Pointer to **SailPointTime** | Expiration date-time of the log configuration request.  Can be no greater than 24 hours from current date-time. | [optional] 
-**RootLevel** | [**StandardLevel**](standard-level) |  | 
-**LogLevels** | Pointer to [**map[string]StandardLevel**](standard-level) | Mapping of identifiers to Standard Log Level values | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ClientId** | Pointer to **string** | Log configuration's client ID | [optional] |
+| **Expiration** | Pointer to **SailPointTime** | Expiration date-time of the log configuration request. Can be no greater than 24 hours from current date-time. | [optional] |
+| **RootLevel** | [**StandardLevel**](standard-level) |  |
+| **LogLevels** | Pointer to [**map[string]StandardLevel**](standard-level) | Mapping of identifiers to Standard Log Level values | [optional] |
 
 ## Methods
 
@@ -26,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewClientLogConfigurationExpiration(rootLevel StandardLevel, ) *ClientLogConfigurationExpiration`
 
-NewClientLogConfigurationExpiration instantiates a new ClientLogConfigurationExpiration object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewClientLogConfigurationExpiration instantiates a new ClientLogConfigurationExpiration object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewClientLogConfigurationExpirationWithDefaults
 
 `func NewClientLogConfigurationExpirationWithDefaults() *ClientLogConfigurationExpiration`
 
-NewClientLogConfigurationExpirationWithDefaults instantiates a new ClientLogConfigurationExpiration object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewClientLogConfigurationExpirationWithDefaults instantiates a new ClientLogConfigurationExpiration object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetClientId
 
@@ -49,8 +57,7 @@ GetClientId returns the ClientId field if non-nil, zero value otherwise.
 
 `func (o *ClientLogConfigurationExpiration) GetClientIdOk() (*string, bool)`
 
-GetClientIdOk returns a tuple with the ClientId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetClientIdOk returns a tuple with the ClientId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetClientId
 
@@ -74,8 +81,7 @@ GetExpiration returns the Expiration field if non-nil, zero value otherwise.
 
 `func (o *ClientLogConfigurationExpiration) GetExpirationOk() (*SailPointTime, bool)`
 
-GetExpirationOk returns a tuple with the Expiration field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetExpirationOk returns a tuple with the Expiration field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetExpiration
 
@@ -99,15 +105,13 @@ GetRootLevel returns the RootLevel field if non-nil, zero value otherwise.
 
 `func (o *ClientLogConfigurationExpiration) GetRootLevelOk() (*StandardLevel, bool)`
 
-GetRootLevelOk returns a tuple with the RootLevel field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRootLevelOk returns a tuple with the RootLevel field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRootLevel
 
 `func (o *ClientLogConfigurationExpiration) SetRootLevel(v StandardLevel)`
 
 SetRootLevel sets RootLevel field to given value.
-
 
 ### GetLogLevels
 
@@ -119,8 +123,7 @@ GetLogLevels returns the LogLevels field if non-nil, zero value otherwise.
 
 `func (o *ClientLogConfigurationExpiration) GetLogLevelsOk() (*map[string]StandardLevel, bool)`
 
-GetLogLevelsOk returns a tuple with the LogLevels field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLogLevelsOk returns a tuple with the LogLevels field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLogLevels
 
@@ -133,5 +136,3 @@ SetLogLevels sets LogLevels field to given value.
 `func (o *ClientLogConfigurationExpiration) HasLogLevels() bool`
 
 HasLogLevels returns a boolean if a field has been set.
-
-

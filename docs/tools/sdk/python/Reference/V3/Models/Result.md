@@ -4,19 +4,19 @@ title: Result
 pagination_label: Result
 sidebar_label: Result
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'Result', 'Result'] 
+keywords: ['python', 'Python', 'sdk', 'Result', 'Result']
 slug: /tools/sdk/python/v3/models/result
 tags: ['SDK', 'Software Development Kit', 'Result', 'Result']
 ---
 
 # Result
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**status** | **str** | Request result status | [optional] 
+| Name       | Type    | Description           | Notes      |
+| ---------- | ------- | --------------------- | ---------- |
+| **status** | **str** | Request result status | [optional] |
+
 }
 
 ## Example
@@ -29,5 +29,5 @@ status='Manual Task Created'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

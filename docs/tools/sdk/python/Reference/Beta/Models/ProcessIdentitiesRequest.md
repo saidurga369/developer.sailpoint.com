@@ -4,19 +4,32 @@ title: ProcessIdentitiesRequest
 pagination_label: ProcessIdentitiesRequest
 sidebar_label: ProcessIdentitiesRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ProcessIdentitiesRequest', 'BetaProcessIdentitiesRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ProcessIdentitiesRequest',
+    'BetaProcessIdentitiesRequest',
+  ]
 slug: /tools/sdk/python/beta/models/process-identities-request
-tags: ['SDK', 'Software Development Kit', 'ProcessIdentitiesRequest', 'BetaProcessIdentitiesRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ProcessIdentitiesRequest',
+    'BetaProcessIdentitiesRequest',
+  ]
 ---
 
 # ProcessIdentitiesRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**identity_ids** | **[]str** | List of up to 250 identity IDs to process. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **identity_ids** | **[]str** | List of up to 250 identity IDs to process. | [optional] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ identity_ids=[
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

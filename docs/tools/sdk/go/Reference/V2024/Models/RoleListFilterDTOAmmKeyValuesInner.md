@@ -4,19 +4,32 @@ title: RoleListFilterDTOAmmKeyValuesInner
 pagination_label: RoleListFilterDTOAmmKeyValuesInner
 sidebar_label: RoleListFilterDTOAmmKeyValuesInner
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleListFilterDTOAmmKeyValuesInner', 'V2024RoleListFilterDTOAmmKeyValuesInner'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'RoleListFilterDTOAmmKeyValuesInner',
+    'V2024RoleListFilterDTOAmmKeyValuesInner',
+  ]
 slug: /tools/sdk/go/v2024/models/role-list-filter-dto-amm-key-values-inner
-tags: ['SDK', 'Software Development Kit', 'RoleListFilterDTOAmmKeyValuesInner', 'V2024RoleListFilterDTOAmmKeyValuesInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleListFilterDTOAmmKeyValuesInner',
+    'V2024RoleListFilterDTOAmmKeyValuesInner',
+  ]
 ---
 
 # RoleListFilterDTOAmmKeyValuesInner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Attribute** | Pointer to **string** | attribute key of a metadata. | [optional] 
-**Values** | Pointer to **[]string** | A list of attribute key names to filter roles. If the values is empty, will only filter by attribute key. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Attribute** | Pointer to **string** | attribute key of a metadata. | [optional] |
+| **Values** | Pointer to **[]string** | A list of attribute key names to filter roles. If the values is empty, will only filter by attribute key. | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewRoleListFilterDTOAmmKeyValuesInner() *RoleListFilterDTOAmmKeyValuesInner`
 
-NewRoleListFilterDTOAmmKeyValuesInner instantiates a new RoleListFilterDTOAmmKeyValuesInner object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleListFilterDTOAmmKeyValuesInner instantiates a new RoleListFilterDTOAmmKeyValuesInner object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleListFilterDTOAmmKeyValuesInnerWithDefaults
 
 `func NewRoleListFilterDTOAmmKeyValuesInnerWithDefaults() *RoleListFilterDTOAmmKeyValuesInner`
 
-NewRoleListFilterDTOAmmKeyValuesInnerWithDefaults instantiates a new RoleListFilterDTOAmmKeyValuesInner object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleListFilterDTOAmmKeyValuesInnerWithDefaults instantiates a new RoleListFilterDTOAmmKeyValuesInner object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetAttribute
 
@@ -47,8 +55,7 @@ GetAttribute returns the Attribute field if non-nil, zero value otherwise.
 
 `func (o *RoleListFilterDTOAmmKeyValuesInner) GetAttributeOk() (*string, bool)`
 
-GetAttributeOk returns a tuple with the Attribute field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributeOk returns a tuple with the Attribute field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttribute
 
@@ -72,8 +79,7 @@ GetValues returns the Values field if non-nil, zero value otherwise.
 
 `func (o *RoleListFilterDTOAmmKeyValuesInner) GetValuesOk() (*[]string, bool)`
 
-GetValuesOk returns a tuple with the Values field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValuesOk returns a tuple with the Values field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValues
 
@@ -86,5 +92,3 @@ SetValues sets Values field to given value.
 `func (o *RoleListFilterDTOAmmKeyValuesInner) HasValues() bool`
 
 HasValues returns a boolean if a field has been set.
-
-

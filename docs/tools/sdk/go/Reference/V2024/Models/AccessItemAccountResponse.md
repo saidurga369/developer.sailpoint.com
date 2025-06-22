@@ -4,24 +4,37 @@ title: AccessItemAccountResponse
 pagination_label: AccessItemAccountResponse
 sidebar_label: AccessItemAccountResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessItemAccountResponse', 'V2024AccessItemAccountResponse'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'AccessItemAccountResponse',
+    'V2024AccessItemAccountResponse',
+  ]
 slug: /tools/sdk/go/v2024/models/access-item-account-response
-tags: ['SDK', 'Software Development Kit', 'AccessItemAccountResponse', 'V2024AccessItemAccountResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessItemAccountResponse',
+    'V2024AccessItemAccountResponse',
+  ]
 ---
 
 # AccessItemAccountResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**AccessType** | Pointer to **string** | the access item type. account in this case | [optional] 
-**Id** | Pointer to **string** | the access item id | [optional] 
-**NativeIdentity** | Pointer to **string** | the native identifier used to uniquely identify an acccount | [optional] 
-**SourceName** | Pointer to **string** | the name of the source | [optional] 
-**SourceId** | Pointer to **string** | the id of the source | [optional] 
-**EntitlementCount** | Pointer to **string** | the number of entitlements the account will create | [optional] 
-**DisplayName** | Pointer to **string** | the display name of the identity | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **AccessType** | Pointer to **string** | the access item type. account in this case | [optional] |
+| **Id** | Pointer to **string** | the access item id | [optional] |
+| **NativeIdentity** | Pointer to **string** | the native identifier used to uniquely identify an acccount | [optional] |
+| **SourceName** | Pointer to **string** | the name of the source | [optional] |
+| **SourceId** | Pointer to **string** | the id of the source | [optional] |
+| **EntitlementCount** | Pointer to **string** | the number of entitlements the account will create | [optional] |
+| **DisplayName** | Pointer to **string** | the display name of the identity | [optional] |
 
 ## Methods
 
@@ -29,18 +42,13 @@ Name | Type | Description | Notes
 
 `func NewAccessItemAccountResponse() *AccessItemAccountResponse`
 
-NewAccessItemAccountResponse instantiates a new AccessItemAccountResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessItemAccountResponse instantiates a new AccessItemAccountResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessItemAccountResponseWithDefaults
 
 `func NewAccessItemAccountResponseWithDefaults() *AccessItemAccountResponse`
 
-NewAccessItemAccountResponseWithDefaults instantiates a new AccessItemAccountResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessItemAccountResponseWithDefaults instantiates a new AccessItemAccountResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetAccessType
 
@@ -52,8 +60,7 @@ GetAccessType returns the AccessType field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAccountResponse) GetAccessTypeOk() (*string, bool)`
 
-GetAccessTypeOk returns a tuple with the AccessType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessTypeOk returns a tuple with the AccessType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessType
 
@@ -77,8 +84,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAccountResponse) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -102,8 +108,7 @@ GetNativeIdentity returns the NativeIdentity field if non-nil, zero value otherw
 
 `func (o *AccessItemAccountResponse) GetNativeIdentityOk() (*string, bool)`
 
-GetNativeIdentityOk returns a tuple with the NativeIdentity field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNativeIdentityOk returns a tuple with the NativeIdentity field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNativeIdentity
 
@@ -127,8 +132,7 @@ GetSourceName returns the SourceName field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAccountResponse) GetSourceNameOk() (*string, bool)`
 
-GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceName
 
@@ -152,8 +156,7 @@ GetSourceId returns the SourceId field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAccountResponse) GetSourceIdOk() (*string, bool)`
 
-GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceId
 
@@ -177,8 +180,7 @@ GetEntitlementCount returns the EntitlementCount field if non-nil, zero value ot
 
 `func (o *AccessItemAccountResponse) GetEntitlementCountOk() (*string, bool)`
 
-GetEntitlementCountOk returns a tuple with the EntitlementCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEntitlementCountOk returns a tuple with the EntitlementCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEntitlementCount
 
@@ -202,8 +204,7 @@ GetDisplayName returns the DisplayName field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAccountResponse) GetDisplayNameOk() (*string, bool)`
 
-GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayName
 
@@ -216,5 +217,3 @@ SetDisplayName sets DisplayName field to given value.
 `func (o *AccessItemAccountResponse) HasDisplayName() bool`
 
 HasDisplayName returns a boolean if a field has been set.
-
-

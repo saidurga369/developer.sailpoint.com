@@ -1,26 +1,32 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import styles from './styles.module.css';
-import { getTags } from '../../../services/DiscourseService';
-import { forEach } from 'lodash';
+import {getTags} from '../../../services/DiscourseService';
+import {forEach} from 'lodash';
 
 // Define the props interface
 interface MarketplaceSidebarProps {
-  filterCallback: (filters: { tag: string[] | string | null }) => void;
+  filterCallback: (filters: {tag: string[] | string | null}) => void;
 }
 
-const VideoSidebar: React.FC<MarketplaceSidebarProps> = ({ filterCallback }) => {
+const VideoSidebar: React.FC<MarketplaceSidebarProps> = ({filterCallback}) => {
   const [tagProductData, setTagProductData] = useState<string[] | null>(null);
   const [videoTag, setVideoTag] = useState<string[] | null>(null);
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [productTags, setProductTags] = useState<string>('Filter by Product');
   const [videoTags, setVideoTags] = useState<string>('Filter by Video Type');
-  const [checkedItemsProduct, setCheckedItemsProduct] = useState<Record<string, boolean>>({});
-  const [checkedItemsVideo, setCheckedItemsVideo] = useState<string | null>(null);
+  const [checkedItemsProduct, setCheckedItemsProduct] = useState<
+    Record<string, boolean>
+  >({});
+  const [checkedItemsVideo, setCheckedItemsVideo] = useState<string | null>(
+    null,
+  );
 
   const toggleDropdown = () => setIsOpen(!isOpen);
 
-  const handleCheckboxChangeProduct = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, checked } = event.target;
+  const handleCheckboxChangeProduct = (
+    event: React.ChangeEvent<HTMLInputElement>,
+  ) => {
+    const {name, checked} = event.target;
     setCheckedItemsProduct((prevState) => ({
       ...prevState,
       [name]: checked,
@@ -41,11 +47,13 @@ const VideoSidebar: React.FC<MarketplaceSidebarProps> = ({ filterCallback }) => 
     }
 
     setProductTags(product || 'Filter by Product');
-    filterCallback({ tag: filters.length > 0 ? filters : null });
+    filterCallback({tag: filters.length > 0 ? filters : null});
   };
 
-  const handleCheckboxChangeVideo = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, checked } = event.target;
+  const handleCheckboxChangeVideo = (
+    event: React.ChangeEvent<HTMLInputElement>,
+  ) => {
+    const {name, checked} = event.target;
     const newCheckedItem = checked ? name : null;
     setCheckedItemsVideo(newCheckedItem);
     setVideoTags(newCheckedItem || 'Filter by Video Type');
@@ -56,7 +64,7 @@ const VideoSidebar: React.FC<MarketplaceSidebarProps> = ({ filterCallback }) => 
       if (value) filters.push(key);
     });
 
-    filterCallback({ tag: filters.length > 0 ? filters : null });
+    filterCallback({tag: filters.length > 0 ? filters : null});
   };
 
   const getTagData = async () => {
@@ -67,10 +75,14 @@ const VideoSidebar: React.FC<MarketplaceSidebarProps> = ({ filterCallback }) => 
     if (data.extras?.tag_groups) {
       for (const tagGroup of data.extras.tag_groups) {
         if (tagGroup.name === 'Products') {
-          tagGroup.tags.forEach((tag: { name: string }) => uniqueProductTags.add(tag.name));
+          tagGroup.tags.forEach((tag: {name: string}) =>
+            uniqueProductTags.add(tag.name),
+          );
         }
         if (tagGroup.name === 'Video Library') {
-          tagGroup.tags.forEach((tag: { name: string }) => uniqueTags.add(tag.name));
+          tagGroup.tags.forEach((tag: {name: string}) =>
+            uniqueTags.add(tag.name),
+          );
         }
       }
     }

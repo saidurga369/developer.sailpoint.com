@@ -4,24 +4,31 @@ title: IdentityListItem
 pagination_label: IdentityListItem
 sidebar_label: IdentityListItem
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentityListItem', 'V2024IdentityListItem'] 
+keywords:
+  ['python', 'Python', 'sdk', 'IdentityListItem', 'V2024IdentityListItem']
 slug: /tools/sdk/python/v2024/models/identity-list-item
-tags: ['SDK', 'Software Development Kit', 'IdentityListItem', 'V2024IdentityListItem']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityListItem',
+    'V2024IdentityListItem',
+  ]
 ---
 
 # IdentityListItem
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | the identity ID | [optional] 
-**display_name** | **str** | the display name of the identity | [optional] 
-**first_name** | **str** | the first name of the identity | [optional] 
-**last_name** | **str** | the last name of the identity | [optional] 
-**active** | **bool** | indicates if an identity is active or not | [optional] [default to True]
-**deleted_date** | **str** | the date when the identity was deleted | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | the identity ID | [optional] |
+| **display_name** | **str** | the display name of the identity | [optional] |
+| **first_name** | **str** | the first name of the identity | [optional] |
+| **last_name** | **str** | the last name of the identity | [optional] |
+| **active** | **bool** | indicates if an identity is active or not | [optional] [default to True] |
+| **deleted_date** | **str** | the date when the identity was deleted | [optional] |
+
 }
 
 ## Example
@@ -39,5 +46,5 @@ deleted_date='2007-03-01T13:00:00.000Z'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,58 +4,50 @@ title: AccessRequests
 pagination_label: AccessRequests
 sidebar_label: AccessRequests
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessRequests', 'AccessRequests'] 
+keywords: ['go', 'Golang', 'sdk', 'AccessRequests', 'AccessRequests']
 slug: /tools/sdk/go/v3/methods/access-requests
 tags: ['SDK', 'Software Development Kit', 'AccessRequests', 'AccessRequests']
 ---
 
 # AccessRequestsAPI
-  Use this API to implement and customize access request functionality. 
-With this functionality in place, users can request access to applications, entitlements, or roles, and managers can request that team members&#39; access be revoked.
-This allows users to get access to the tools they need quickly and securely, and it allows managers to take away access to those tools. 
+
+Use this API to implement and customize access request functionality. With this functionality in place, users can request access to applications, entitlements, or roles, and managers can request that team members&#39; access be revoked. This allows users to get access to the tools they need quickly and securely, and it allows managers to take away access to those tools.
 
 Identity Security Cloud&#39;s Access Request service allows end users to request access that requires approval before it can be granted to users and enables qualified users to review those requests and approve or deny them.
 
-In the Request Center in Identity Security Cloud, users can view available applications, roles, and entitlements and request access to them. 
-If the requested tools requires approval, the requests appear as &#39;Pending&#39; under the My Requests tab until the required approver approves, rejects, or cancels them. 
+In the Request Center in Identity Security Cloud, users can view available applications, roles, and entitlements and request access to them. If the requested tools requires approval, the requests appear as &#39;Pending&#39; under the My Requests tab until the required approver approves, rejects, or cancels them.
 
 Users can use My Requests to track and/or cancel the requests.
 
-In My Team on the Identity Security Cloud Home, managers can submit requests to revoke their team members&#39; access. 
-They can use the My Requests tab under Request Center to track and/or cancel the requests.
+In My Team on the Identity Security Cloud Home, managers can submit requests to revoke their team members&#39; access. They can use the My Requests tab under Request Center to track and/or cancel the requests.
 
 Refer to [Requesting Access](https://documentation.sailpoint.com/saas/user-help/requests/requesting_access.html) for more information about access requests.
- 
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/v3*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**cancel-access-request**](#cancel-access-request) | **Post** `/access-requests/cancel` | Cancel access request
-[**create-access-request**](#create-access-request) | **Post** `/access-requests` | Submit access request
-[**get-access-request-config**](#get-access-request-config) | **Get** `/access-request-config` | Get access request configuration
-[**list-access-request-status**](#list-access-request-status) | **Get** `/access-request-status` | Access request status
-[**set-access-request-config**](#set-access-request-config) | **Put** `/access-request-config` | Update access request configuration
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**cancel-access-request**](#cancel-access-request) | **Post** `/access-requests/cancel` | Cancel access request |
+| [**create-access-request**](#create-access-request) | **Post** `/access-requests` | Submit access request |
+| [**get-access-request-config**](#get-access-request-config) | **Get** `/access-request-config` | Get access request configuration |
+| [**list-access-request-status**](#list-access-request-status) | **Get** `/access-request-status` | Access request status |
+| [**set-access-request-config**](#set-access-request-config) | **Put** `/access-request-config` | Update access request configuration |
 
 ## cancel-access-request
-Cancel access request
-This API endpoint cancels a pending access request. An access request can be cancelled only if it has not passed the approval step.
-In addition to users with ORG_ADMIN, any user who originally submitted the access request may cancel it.
+
+Cancel access request This API endpoint cancels a pending access request. An access request can be cancelled only if it has not passed the approval step. In addition to users with ORG_ADMIN, any user who originally submitted the access request may cancel it.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/cancel-access-request)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCancelAccessRequestRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **cancelAccessRequest** | [**CancelAccessRequest**](../models/cancel-access-request) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **cancelAccessRequest** | [**CancelAccessRequest**](../models/cancel-access-request) |  |
 
 ### Return type
 
@@ -84,14 +76,14 @@ func main() {
     cancelaccessrequest := []byte(`{
           "accountActivityId" : "2c9180835d2e5168015d32f890ca1581",
           "comment" : "I requested this role by mistake."
-        }`) // CancelAccessRequest | 
+        }`) // CancelAccessRequest |
 
     var cancelAccessRequest v3.CancelAccessRequest
     if err := json.Unmarshal(cancelaccessrequest, &cancelAccessRequest); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -109,59 +101,50 @@ func main() {
 [[Back to top]](#)
 
 ## create-access-request
-Submit access request
-Use this API to submit an access request in Identity Security Cloud (ISC), where it follows any ISC approval processes.
 
-Access requests are processed asynchronously by ISC. A successful response from this endpoint means that the request
-has been submitted to ISC and is queued for processing. Because this endpoint is asynchronous, it doesn't return an error
-if you submit duplicate access requests in quick succession or submit an access request for access that is already in progress, approved, or rejected.
+Submit access request Use this API to submit an access request in Identity Security Cloud (ISC), where it follows any ISC approval processes.
 
-It's best practice to check for any existing access requests that reference the same access items before submitting a new access request. This can
-be accomplished by using the [List Access Request Status](https://developer.sailpoint.com/idn/api/v3/list-access-request-status) or the [Pending Access Request Approvals](https://developer.sailpoint.com/idn/api/v3/list-pending-approvals) APIs. You can also
-use the [Search API](https://developer.sailpoint.com/idn/api/v3/search) to check the existing access items an identity has before submitting
-an access request to ensure that you aren't requesting access that is already granted. If you use this API to request access that an identity already has, 
-without changing the account details or end date information from the existing assignment, 
-the API will cancel the request as a duplicate.
+Access requests are processed asynchronously by ISC. A successful response from this endpoint means that the request has been submitted to ISC and is queued for processing. Because this endpoint is asynchronous, it doesn't return an error if you submit duplicate access requests in quick succession or submit an access request for access that is already in progress, approved, or rejected.
+
+It's best practice to check for any existing access requests that reference the same access items before submitting a new access request. This can be accomplished by using the [List Access Request Status](https://developer.sailpoint.com/idn/api/v3/list-access-request-status) or the [Pending Access Request Approvals](https://developer.sailpoint.com/idn/api/v3/list-pending-approvals) APIs. You can also use the [Search API](https://developer.sailpoint.com/idn/api/v3/search) to check the existing access items an identity has before submitting an access request to ensure that you aren't requesting access that is already granted. If you use this API to request access that an identity already has, without changing the account details or end date information from the existing assignment, the API will cancel the request as a duplicate.
 
 There are two types of access request:
 
-__GRANT_ACCESS__
-* Can be requested for multiple identities in a single request.
-* Supports self request and request on behalf of other users. Refer to the [Get Access Request Configuration](https://developer.sailpoint.com/idn/api/v3/get-access-request-config) endpoint for request configuration options.  
-* Allows any authenticated token (except API) to call this endpoint to request to grant access to themselves. Depending on the configuration, a user can request access for others.
-* Roles, access profiles and entitlements can be requested.
-* You can specify a `removeDate` to set or alter a sunset date-time on an assignment. The removeDate must be a future date-time, in the UTC timezone. Additionally, if the user already has the access assigned with a sunset date, you can also submit a request without a `removeDate` to request removal of the sunset date and time.
-* If a `removeDate` is specified, then the requested role, access profile, or entitlement will be removed on that date and time.
-* While requesting entitlements, maximum of 25 entitlements and 10 recipients are allowed in a request.
-* Now supports an alternate field 'requestedForWithRequestedItems' for users to specify account selections while requesting items where they have more than one account on the source.
- 
-__REVOKE_ACCESS__
-* Can only be requested for a single identity at a time.
-* You cannot use an access request to revoke access from an identity if that access has been granted by role membership or by birthright provisioning. 
-* Does not support self request. Only manager can request to revoke access for their directly managed employees.
-* If a `removeDate` is specified, then the requested role, access profile, or entitlement will be removed on that date and time.
-* Roles, access profiles, and entitlements can be requested for revocation.
-* Revoke requests for entitlements are limited to 1 entitlement per access request currently.
-* You can specify a `removeDate` to add or alter a sunset date and time on an assignment. The `removeDate` must be a future date-time, in the UTC timezone. If the user already has the access assigned with a sunset date and time, the removeDate must be a date-time earlier than the existing sunset date and time. 
-* Allows a manager to request to revoke access for direct employees. A user with ORG_ADMIN authority can also request to revoke access from anyone.
-* Now supports REVOKE_ACCESS requests for identities with multiple accounts on a single source, with the help of 'assignmentId' and 'nativeIdentity' fields. These fields should be used within the 'requestedItems' section for the revoke requests. 
-* Usage of 'requestedForWithRequestedItems' field is not supported for revoke requests.
+**GRANT_ACCESS**
 
+- Can be requested for multiple identities in a single request.
+- Supports self request and request on behalf of other users. Refer to the [Get Access Request Configuration](https://developer.sailpoint.com/idn/api/v3/get-access-request-config) endpoint for request configuration options.
+- Allows any authenticated token (except API) to call this endpoint to request to grant access to themselves. Depending on the configuration, a user can request access for others.
+- Roles, access profiles and entitlements can be requested.
+- You can specify a `removeDate` to set or alter a sunset date-time on an assignment. The removeDate must be a future date-time, in the UTC timezone. Additionally, if the user already has the access assigned with a sunset date, you can also submit a request without a `removeDate` to request removal of the sunset date and time.
+- If a `removeDate` is specified, then the requested role, access profile, or entitlement will be removed on that date and time.
+- While requesting entitlements, maximum of 25 entitlements and 10 recipients are allowed in a request.
+- Now supports an alternate field 'requestedForWithRequestedItems' for users to specify account selections while requesting items where they have more than one account on the source.
+
+**REVOKE_ACCESS**
+
+- Can only be requested for a single identity at a time.
+- You cannot use an access request to revoke access from an identity if that access has been granted by role membership or by birthright provisioning.
+- Does not support self request. Only manager can request to revoke access for their directly managed employees.
+- If a `removeDate` is specified, then the requested role, access profile, or entitlement will be removed on that date and time.
+- Roles, access profiles, and entitlements can be requested for revocation.
+- Revoke requests for entitlements are limited to 1 entitlement per access request currently.
+- You can specify a `removeDate` to add or alter a sunset date and time on an assignment. The `removeDate` must be a future date-time, in the UTC timezone. If the user already has the access assigned with a sunset date and time, the removeDate must be a date-time earlier than the existing sunset date and time.
+- Allows a manager to request to revoke access for direct employees. A user with ORG_ADMIN authority can also request to revoke access from anyone.
+- Now supports REVOKE_ACCESS requests for identities with multiple accounts on a single source, with the help of 'assignmentId' and 'nativeIdentity' fields. These fields should be used within the 'requestedItems' section for the revoke requests.
+- Usage of 'requestedForWithRequestedItems' field is not supported for revoke requests.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/create-access-request)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCreateAccessRequestRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **accessRequest** | [**AccessRequest**](../models/access-request) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **accessRequest** | [**AccessRequest**](../models/access-request) |  |
 
 ### Return type
 
@@ -369,14 +352,14 @@ func main() {
               "type" : "ACCESS_PROFILE"
             } ]
           } ]
-        }`) // AccessRequest | 
+        }`) // AccessRequest |
 
     var accessRequest v3.AccessRequest
     if err := json.Unmarshal(accessrequest, &accessRequest); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -394,8 +377,8 @@ func main() {
 [[Back to top]](#)
 
 ## get-access-request-config
-Get access request configuration
-This endpoint returns the current access-request configuration.
+
+Get access request configuration This endpoint returns the current access-request configuration.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/get-access-request-config)
 
@@ -406,7 +389,6 @@ This endpoint does not need any parameter.
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetAccessRequestConfigRequest struct via the builder pattern
-
 
 ### Return type
 
@@ -426,14 +408,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -451,34 +433,29 @@ func main() {
 [[Back to top]](#)
 
 ## list-access-request-status
-Access request status
-Use this API to return a list of access request statuses based on the specified query parameters.
-If an access request was made for access that an identity already has, the API ignores the access request.  These ignored requests do not display in the list of access request statuses.
-Any user with any user level can get the status of their own access requests. A user with ORG_ADMIN is required to call this API to get a list of statuses for other users.
+
+Access request status Use this API to return a list of access request statuses based on the specified query parameters. If an access request was made for access that an identity already has, the API ignores the access request. These ignored requests do not display in the list of access request statuses. Any user with any user level can get the status of their own access requests. A user with ORG_ADMIN is required to call this API to get a list of statuses for other users.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/list-access-request-status)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListAccessRequestStatusRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **requestedFor** | **string** | Filter the results by the identity the requests were made for. *me* indicates the current user. Mutually exclusive with *regarding-identity*. | 
- **requestedBy** | **string** | Filter the results by the identity who made the requests. *me* indicates the current user. Mutually exclusive with *regarding-identity*. | 
- **regardingIdentity** | **string** | Filter the results by the specified identity who is either the requester or target of the requests. *me* indicates the current user. Mutually exclusive with *requested-for* and *requested-by*. | 
- **assignedTo** | **string** | Filter the results by the specified identity who is the owner of the Identity Request Work Item. *me* indicates the current user. | 
- **count** | **bool** | If this is true, the *X-Total-Count* response header populates with the number of results that would be returned if limit and offset were ignored. | [default to false]
- **limit** | **int32** | Max number of results to return. | [default to 250]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. Defaults to 0 if not specified. | 
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **accessRequestId**: *in*  **accountActivityItemId**: *eq, in, ge, gt, le, lt, ne, isnull, sw*  **created**: *eq, in, ge, gt, le, lt, ne, isnull, sw* | 
- **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **created, modified, accountActivityItemId, name** | 
- **requestState** | **string** | Filter the results by the state of the request. The only valid value is *EXECUTING*. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **requestedFor** | **string** | Filter the results by the identity the requests were made for. _me_ indicates the current user. Mutually exclusive with _regarding-identity_. |
+| **requestedBy** | **string** | Filter the results by the identity who made the requests. _me_ indicates the current user. Mutually exclusive with _regarding-identity_. |
+| **regardingIdentity** | **string** | Filter the results by the specified identity who is either the requester or target of the requests. _me_ indicates the current user. Mutually exclusive with _requested-for_ and _requested-by_. |
+| **assignedTo** | **string** | Filter the results by the specified identity who is the owner of the Identity Request Work Item. _me_ indicates the current user. |
+| **count** | **bool** | If this is true, the _X-Total-Count_ response header populates with the number of results that would be returned if limit and offset were ignored. | [default to false] |
+| **limit** | **int32** | Max number of results to return. | [default to 250] |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. Defaults to 0 if not specified. |
+| **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **accessRequestId**: _in_ **accountActivityItemId**: _eq, in, ge, gt, le, lt, ne, isnull, sw_ **created**: _eq, in, ge, gt, le, lt, ne, isnull, sw_ |
+| **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results) Sorting is supported for the following fields: **created, modified, accountActivityItemId, name** |
+| **requestState** | **string** | Filter the results by the state of the request. The only valid value is _EXECUTING_. |
 
 ### Return type
 
@@ -498,8 +475,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -515,7 +492,7 @@ func main() {
     sorters := `created` // string | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **created, modified, accountActivityItemId, name** (optional) # string | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **created, modified, accountActivityItemId, name** (optional)
     requestState := `request-state=EXECUTING` // string | Filter the results by the state of the request. The only valid value is *EXECUTING*. (optional) # string | Filter the results by the state of the request. The only valid value is *EXECUTING*. (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -533,23 +510,20 @@ func main() {
 [[Back to top]](#)
 
 ## set-access-request-config
-Update access request configuration
-This endpoint replaces the current access-request configuration.
+
+Update access request configuration This endpoint replaces the current access-request configuration.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/set-access-request-config)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSetAccessRequestConfigRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **accessRequestConfig** | [**AccessRequestConfig**](../models/access-request-config) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **accessRequestConfig** | [**AccessRequestConfig**](../models/access-request-config) |  |
 
 ### Return type
 
@@ -600,14 +574,14 @@ func main() {
           },
           "reauthorizationEnabled" : true,
           "approvalsMustBeExternal" : true
-        }`) // AccessRequestConfig | 
+        }`) // AccessRequestConfig |
 
     var accessRequestConfig v3.AccessRequestConfig
     if err := json.Unmarshal(accessrequestconfig, &accessRequestConfig); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -623,4 +597,3 @@ func main() {
 ```
 
 [[Back to top]](#)
-

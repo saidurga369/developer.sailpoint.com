@@ -4,7 +4,7 @@ title: OwnerReference
 pagination_label: OwnerReference
 sidebar_label: OwnerReference
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'OwnerReference', 'OwnerReference'] 
+keywords: ['python', 'Python', 'sdk', 'OwnerReference', 'OwnerReference']
 slug: /tools/sdk/python/v3/models/owner-reference
 tags: ['SDK', 'Software Development Kit', 'OwnerReference', 'OwnerReference']
 ---
@@ -15,11 +15,12 @@ Owner of the object.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] | Owner type. This field must be either left null or set to 'IDENTITY' on input, otherwise a 400 Bad Request error will result. | [optional] 
-**id** | **str** | Owner's identity ID. | [optional] 
-**name** | **str** | Owner's name. It may be left null or omitted in a POST or PATCH. If set, it must match the current value of the owner's display name, otherwise a 400 Bad Request error will result. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'IDENTITY' ] | Owner type. This field must be either left null or set to 'IDENTITY' on input, otherwise a 400 Bad Request error will result. | [optional] |
+| **id** | **str** | Owner's identity ID. | [optional] |
+| **name** | **str** | Owner's name. It may be left null or omitted in a POST or PATCH. If set, it must match the current value of the owner's display name, otherwise a 400 Bad Request error will result. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +35,5 @@ name='support'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

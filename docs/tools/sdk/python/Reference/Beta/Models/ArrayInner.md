@@ -4,18 +4,18 @@ title: ArrayInner
 pagination_label: ArrayInner
 sidebar_label: ArrayInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ArrayInner', 'BetaArrayInner'] 
+keywords: ['python', 'Python', 'sdk', 'ArrayInner', 'BetaArrayInner']
 slug: /tools/sdk/python/beta/models/array-inner
 tags: ['SDK', 'Software Development Kit', 'ArrayInner', 'BetaArrayInner']
 ---
 
 # ArrayInner
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
+
 }
 
 ## Example
@@ -27,5 +27,5 @@ array_inner = ArrayInner(
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

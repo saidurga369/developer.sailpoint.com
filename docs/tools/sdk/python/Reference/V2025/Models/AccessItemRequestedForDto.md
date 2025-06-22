@@ -4,9 +4,22 @@ title: AccessItemRequestedForDto
 pagination_label: AccessItemRequestedForDto
 sidebar_label: AccessItemRequestedForDto
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccessItemRequestedForDto', 'V2025AccessItemRequestedForDto'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccessItemRequestedForDto',
+    'V2025AccessItemRequestedForDto',
+  ]
 slug: /tools/sdk/python/v2025/models/access-item-requested-for-dto
-tags: ['SDK', 'Software Development Kit', 'AccessItemRequestedForDto', 'V2025AccessItemRequestedForDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessItemRequestedForDto',
+    'V2025AccessItemRequestedForDto',
+  ]
 ---
 
 # AccessItemRequestedForDto
@@ -15,11 +28,12 @@ Identity the access item is requested for.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] | DTO type of identity the access item is requested for. | [optional] 
-**id** | **str** | ID of identity the access item is requested for. | [optional] 
-**name** | **str** | Human-readable display name of identity the access item is requested for. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'IDENTITY' ] | DTO type of identity the access item is requested for. | [optional] |
+| **id** | **str** | ID of identity the access item is requested for. | [optional] |
+| **name** | **str** | Human-readable display name of identity the access item is requested for. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Robert Robinson'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

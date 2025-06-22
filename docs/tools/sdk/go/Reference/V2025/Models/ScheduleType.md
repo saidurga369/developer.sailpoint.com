@@ -4,7 +4,7 @@ title: ScheduleType
 pagination_label: ScheduleType
 sidebar_label: ScheduleType
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ScheduleType', 'V2025ScheduleType'] 
+keywords: ['go', 'Golang', 'sdk', 'ScheduleType', 'V2025ScheduleType']
 slug: /tools/sdk/go/v2025/models/schedule-type
 tags: ['SDK', 'Software Development Kit', 'ScheduleType', 'V2025ScheduleType']
 ---
@@ -13,15 +13,12 @@ tags: ['SDK', 'Software Development Kit', 'ScheduleType', 'V2025ScheduleType']
 
 ## Enum
 
+- `DAILY` (value: `"DAILY"`)
 
-* `DAILY` (value: `"DAILY"`)
+- `WEEKLY` (value: `"WEEKLY"`)
 
-* `WEEKLY` (value: `"WEEKLY"`)
+- `MONTHLY` (value: `"MONTHLY"`)
 
-* `MONTHLY` (value: `"MONTHLY"`)
+- `CALENDAR` (value: `"CALENDAR"`)
 
-* `CALENDAR` (value: `"CALENDAR"`)
-
-* `ANNUALLY` (value: `"ANNUALLY"`)
-
-
+- `ANNUALLY` (value: `"ANNUALLY"`)

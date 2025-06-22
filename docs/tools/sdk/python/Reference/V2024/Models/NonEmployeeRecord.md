@@ -4,31 +4,38 @@ title: NonEmployeeRecord
 pagination_label: NonEmployeeRecord
 sidebar_label: NonEmployeeRecord
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'NonEmployeeRecord', 'V2024NonEmployeeRecord'] 
+keywords:
+  ['python', 'Python', 'sdk', 'NonEmployeeRecord', 'V2024NonEmployeeRecord']
 slug: /tools/sdk/python/v2024/models/non-employee-record
-tags: ['SDK', 'Software Development Kit', 'NonEmployeeRecord', 'V2024NonEmployeeRecord']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NonEmployeeRecord',
+    'V2024NonEmployeeRecord',
+  ]
 ---
 
 # NonEmployeeRecord
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Non-Employee record id. | [optional] 
-**account_name** | **str** | Requested identity account name. | [optional] 
-**first_name** | **str** | Non-Employee's first name. | [optional] 
-**last_name** | **str** | Non-Employee's last name. | [optional] 
-**email** | **str** | Non-Employee's email. | [optional] 
-**phone** | **str** | Non-Employee's phone. | [optional] 
-**manager** | **str** | The account ID of a valid identity to serve as this non-employee's manager. | [optional] 
-**source_id** | **str** | Non-Employee's source id. | [optional] 
-**data** | **map[string]str** | Additional attributes for a non-employee. Up to 10 custom attributes can be added. | [optional] 
-**start_date** | **datetime** | Non-Employee employment start date. | [optional] 
-**end_date** | **datetime** | Non-Employee employment end date. | [optional] 
-**modified** | **datetime** | When the request was last modified. | [optional] 
-**created** | **datetime** | When the request was created. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | Non-Employee record id. | [optional] |
+| **account_name** | **str** | Requested identity account name. | [optional] |
+| **first_name** | **str** | Non-Employee's first name. | [optional] |
+| **last_name** | **str** | Non-Employee's last name. | [optional] |
+| **email** | **str** | Non-Employee's email. | [optional] |
+| **phone** | **str** | Non-Employee's phone. | [optional] |
+| **manager** | **str** | The account ID of a valid identity to serve as this non-employee's manager. | [optional] |
+| **source_id** | **str** | Non-Employee's source id. | [optional] |
+| **data** | **map[string]str** | Additional attributes for a non-employee. Up to 10 custom attributes can be added. | [optional] |
+| **start_date** | **datetime** | Non-Employee employment start date. | [optional] |
+| **end_date** | **datetime** | Non-Employee employment end date. | [optional] |
+| **modified** | **datetime** | When the request was last modified. | [optional] |
+| **created** | **datetime** | When the request was created. | [optional] |
+
 }
 
 ## Example
@@ -53,5 +60,5 @@ created='2019-08-23T18:40:35.772Z'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

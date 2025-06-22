@@ -4,22 +4,35 @@ title: ScheduledActionPayload
 pagination_label: ScheduledActionPayload
 sidebar_label: ScheduledActionPayload
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ScheduledActionPayload', 'V2025ScheduledActionPayload'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ScheduledActionPayload',
+    'V2025ScheduledActionPayload',
+  ]
 slug: /tools/sdk/go/v2025/models/scheduled-action-payload
-tags: ['SDK', 'Software Development Kit', 'ScheduledActionPayload', 'V2025ScheduledActionPayload']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ScheduledActionPayload',
+    'V2025ScheduledActionPayload',
+  ]
 ---
 
 # ScheduledActionPayload
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**JobType** | **string** | Type of the scheduled job. | 
-**StartTime** | Pointer to **SailPointTime** | The time when this scheduled action should start. Optional. | [optional] 
-**CronString** | Pointer to **string** | Cron expression defining the schedule for this action. Optional for repeated events. | [optional] 
-**TimeZoneId** | Pointer to **string** | Time zone ID for interpreting the cron expression. Optional, will default to current time zone. | [optional] 
-**Content** | [**ScheduledActionPayloadContent**](scheduled-action-payload-content) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **JobType** | **string** | Type of the scheduled job. |
+| **StartTime** | Pointer to **SailPointTime** | The time when this scheduled action should start. Optional. | [optional] |
+| **CronString** | Pointer to **string** | Cron expression defining the schedule for this action. Optional for repeated events. | [optional] |
+| **TimeZoneId** | Pointer to **string** | Time zone ID for interpreting the cron expression. Optional, will default to current time zone. | [optional] |
+| **Content** | [**ScheduledActionPayloadContent**](scheduled-action-payload-content) |  |
 
 ## Methods
 
@@ -27,18 +40,13 @@ Name | Type | Description | Notes
 
 `func NewScheduledActionPayload(jobType string, content ScheduledActionPayloadContent, ) *ScheduledActionPayload`
 
-NewScheduledActionPayload instantiates a new ScheduledActionPayload object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewScheduledActionPayload instantiates a new ScheduledActionPayload object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewScheduledActionPayloadWithDefaults
 
 `func NewScheduledActionPayloadWithDefaults() *ScheduledActionPayload`
 
-NewScheduledActionPayloadWithDefaults instantiates a new ScheduledActionPayload object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewScheduledActionPayloadWithDefaults instantiates a new ScheduledActionPayload object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetJobType
 
@@ -50,15 +58,13 @@ GetJobType returns the JobType field if non-nil, zero value otherwise.
 
 `func (o *ScheduledActionPayload) GetJobTypeOk() (*string, bool)`
 
-GetJobTypeOk returns a tuple with the JobType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetJobTypeOk returns a tuple with the JobType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetJobType
 
 `func (o *ScheduledActionPayload) SetJobType(v string)`
 
 SetJobType sets JobType field to given value.
-
 
 ### GetStartTime
 
@@ -70,8 +76,7 @@ GetStartTime returns the StartTime field if non-nil, zero value otherwise.
 
 `func (o *ScheduledActionPayload) GetStartTimeOk() (*SailPointTime, bool)`
 
-GetStartTimeOk returns a tuple with the StartTime field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStartTimeOk returns a tuple with the StartTime field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStartTime
 
@@ -95,8 +100,7 @@ GetCronString returns the CronString field if non-nil, zero value otherwise.
 
 `func (o *ScheduledActionPayload) GetCronStringOk() (*string, bool)`
 
-GetCronStringOk returns a tuple with the CronString field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCronStringOk returns a tuple with the CronString field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCronString
 
@@ -120,8 +124,7 @@ GetTimeZoneId returns the TimeZoneId field if non-nil, zero value otherwise.
 
 `func (o *ScheduledActionPayload) GetTimeZoneIdOk() (*string, bool)`
 
-GetTimeZoneIdOk returns a tuple with the TimeZoneId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTimeZoneIdOk returns a tuple with the TimeZoneId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTimeZoneId
 
@@ -145,14 +148,10 @@ GetContent returns the Content field if non-nil, zero value otherwise.
 
 `func (o *ScheduledActionPayload) GetContentOk() (*ScheduledActionPayloadContent, bool)`
 
-GetContentOk returns a tuple with the Content field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetContentOk returns a tuple with the Content field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetContent
 
 `func (o *ScheduledActionPayload) SetContent(v ScheduledActionPayloadContent)`
 
 SetContent sets Content field to given value.
-
-
-

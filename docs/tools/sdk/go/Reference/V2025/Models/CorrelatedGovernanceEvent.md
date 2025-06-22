@@ -4,24 +4,37 @@ title: CorrelatedGovernanceEvent
 pagination_label: CorrelatedGovernanceEvent
 sidebar_label: CorrelatedGovernanceEvent
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'CorrelatedGovernanceEvent', 'V2025CorrelatedGovernanceEvent'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'CorrelatedGovernanceEvent',
+    'V2025CorrelatedGovernanceEvent',
+  ]
 slug: /tools/sdk/go/v2025/models/correlated-governance-event
-tags: ['SDK', 'Software Development Kit', 'CorrelatedGovernanceEvent', 'V2025CorrelatedGovernanceEvent']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CorrelatedGovernanceEvent',
+    'V2025CorrelatedGovernanceEvent',
+  ]
 ---
 
 # CorrelatedGovernanceEvent
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | Pointer to **string** | The name of the governance event, such as the certification name or access request ID. | [optional] 
-**Dt** | Pointer to **string** | The date that the certification or access request was completed. | [optional] 
-**Type** | Pointer to **string** | The type of governance event. | [optional] 
-**GovernanceId** | Pointer to **string** | The ID of the instance that caused the event - either the certification ID or access request ID. | [optional] 
-**Owners** | Pointer to [**[]CertifierResponse**](certifier-response) | The owners of the governance event (the certifiers or approvers) | [optional] 
-**Reviewers** | Pointer to [**[]CertifierResponse**](certifier-response) | The owners of the governance event (the certifiers or approvers), this field should be preferred over owners | [optional] 
-**DecisionMaker** | Pointer to [**CertifierResponse**](certifier-response) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | Pointer to **string** | The name of the governance event, such as the certification name or access request ID. | [optional] |
+| **Dt** | Pointer to **string** | The date that the certification or access request was completed. | [optional] |
+| **Type** | Pointer to **string** | The type of governance event. | [optional] |
+| **GovernanceId** | Pointer to **string** | The ID of the instance that caused the event - either the certification ID or access request ID. | [optional] |
+| **Owners** | Pointer to [**[]CertifierResponse**](certifier-response) | The owners of the governance event (the certifiers or approvers) | [optional] |
+| **Reviewers** | Pointer to [**[]CertifierResponse**](certifier-response) | The owners of the governance event (the certifiers or approvers), this field should be preferred over owners | [optional] |
+| **DecisionMaker** | Pointer to [**CertifierResponse**](certifier-response) |  | [optional] |
 
 ## Methods
 
@@ -29,18 +42,13 @@ Name | Type | Description | Notes
 
 `func NewCorrelatedGovernanceEvent() *CorrelatedGovernanceEvent`
 
-NewCorrelatedGovernanceEvent instantiates a new CorrelatedGovernanceEvent object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewCorrelatedGovernanceEvent instantiates a new CorrelatedGovernanceEvent object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewCorrelatedGovernanceEventWithDefaults
 
 `func NewCorrelatedGovernanceEventWithDefaults() *CorrelatedGovernanceEvent`
 
-NewCorrelatedGovernanceEventWithDefaults instantiates a new CorrelatedGovernanceEvent object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewCorrelatedGovernanceEventWithDefaults instantiates a new CorrelatedGovernanceEvent object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -52,8 +60,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *CorrelatedGovernanceEvent) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -77,8 +84,7 @@ GetDt returns the Dt field if non-nil, zero value otherwise.
 
 `func (o *CorrelatedGovernanceEvent) GetDtOk() (*string, bool)`
 
-GetDtOk returns a tuple with the Dt field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDtOk returns a tuple with the Dt field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDt
 
@@ -102,8 +108,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *CorrelatedGovernanceEvent) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -127,8 +132,7 @@ GetGovernanceId returns the GovernanceId field if non-nil, zero value otherwise.
 
 `func (o *CorrelatedGovernanceEvent) GetGovernanceIdOk() (*string, bool)`
 
-GetGovernanceIdOk returns a tuple with the GovernanceId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetGovernanceIdOk returns a tuple with the GovernanceId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetGovernanceId
 
@@ -152,8 +156,7 @@ GetOwners returns the Owners field if non-nil, zero value otherwise.
 
 `func (o *CorrelatedGovernanceEvent) GetOwnersOk() (*[]CertifierResponse, bool)`
 
-GetOwnersOk returns a tuple with the Owners field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnersOk returns a tuple with the Owners field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwners
 
@@ -177,8 +180,7 @@ GetReviewers returns the Reviewers field if non-nil, zero value otherwise.
 
 `func (o *CorrelatedGovernanceEvent) GetReviewersOk() (*[]CertifierResponse, bool)`
 
-GetReviewersOk returns a tuple with the Reviewers field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReviewersOk returns a tuple with the Reviewers field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReviewers
 
@@ -202,8 +204,7 @@ GetDecisionMaker returns the DecisionMaker field if non-nil, zero value otherwis
 
 `func (o *CorrelatedGovernanceEvent) GetDecisionMakerOk() (*CertifierResponse, bool)`
 
-GetDecisionMakerOk returns a tuple with the DecisionMaker field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDecisionMakerOk returns a tuple with the DecisionMaker field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDecisionMaker
 
@@ -216,5 +217,3 @@ SetDecisionMaker sets DecisionMaker field to given value.
 `func (o *CorrelatedGovernanceEvent) HasDecisionMaker() bool`
 
 HasDecisionMaker returns a boolean if a field has been set.
-
-

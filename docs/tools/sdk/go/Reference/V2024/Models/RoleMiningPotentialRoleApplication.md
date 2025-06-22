@@ -4,19 +4,32 @@ title: RoleMiningPotentialRoleApplication
 pagination_label: RoleMiningPotentialRoleApplication
 sidebar_label: RoleMiningPotentialRoleApplication
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleMiningPotentialRoleApplication', 'V2024RoleMiningPotentialRoleApplication'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'RoleMiningPotentialRoleApplication',
+    'V2024RoleMiningPotentialRoleApplication',
+  ]
 slug: /tools/sdk/go/v2024/models/role-mining-potential-role-application
-tags: ['SDK', 'Software Development Kit', 'RoleMiningPotentialRoleApplication', 'V2024RoleMiningPotentialRoleApplication']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningPotentialRoleApplication',
+    'V2024RoleMiningPotentialRoleApplication',
+  ]
 ---
 
 # RoleMiningPotentialRoleApplication
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Id of the application | [optional] 
-**Name** | Pointer to **string** | Name of the application | [optional] 
+| Name     | Type                  | Description             | Notes      |
+| -------- | --------------------- | ----------------------- | ---------- |
+| **Id**   | Pointer to **string** | Id of the application   | [optional] |
+| **Name** | Pointer to **string** | Name of the application | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewRoleMiningPotentialRoleApplication() *RoleMiningPotentialRoleApplication`
 
-NewRoleMiningPotentialRoleApplication instantiates a new RoleMiningPotentialRoleApplication object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleMiningPotentialRoleApplication instantiates a new RoleMiningPotentialRoleApplication object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleMiningPotentialRoleApplicationWithDefaults
 
 `func NewRoleMiningPotentialRoleApplicationWithDefaults() *RoleMiningPotentialRoleApplication`
 
-NewRoleMiningPotentialRoleApplicationWithDefaults instantiates a new RoleMiningPotentialRoleApplication object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleMiningPotentialRoleApplicationWithDefaults instantiates a new RoleMiningPotentialRoleApplication object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -47,8 +55,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningPotentialRoleApplication) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -72,8 +79,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningPotentialRoleApplication) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -86,5 +92,3 @@ SetName sets Name field to given value.
 `func (o *RoleMiningPotentialRoleApplication) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

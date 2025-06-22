@@ -4,19 +4,32 @@ title: VerificationPollRequest
 pagination_label: VerificationPollRequest
 sidebar_label: VerificationPollRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'VerificationPollRequest', 'BetaVerificationPollRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'VerificationPollRequest',
+    'BetaVerificationPollRequest',
+  ]
 slug: /tools/sdk/python/beta/models/verification-poll-request
-tags: ['SDK', 'Software Development Kit', 'VerificationPollRequest', 'BetaVerificationPollRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'VerificationPollRequest',
+    'BetaVerificationPollRequest',
+  ]
 ---
 
 # VerificationPollRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**request_id** | **str** | Verification request Id | [required]
+| Name           | Type    | Description             | Notes      |
+| -------------- | ------- | ----------------------- | ---------- |
+| **request_id** | **str** | Verification request Id | [required] |
+
 }
 
 ## Example
@@ -29,5 +42,5 @@ request_id='089899f13a8f4da7824996191587bab9'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

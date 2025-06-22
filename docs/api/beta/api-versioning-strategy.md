@@ -25,49 +25,49 @@ SailPoint’s API versioning process is subject to change at any time. SailPoint
 
 Public APIs are production ready APIs that are meant to be used by customers, partners, and other external users. Public APIs will generally not receive any breaking changes, but additional features that don’t break compatibility may be introduced. When possible, it is preferred to use the latest public API version in your custom integrations to avoid any short notice deprecations or other complications. Examples of non-breaking changes include, but are not limited to:
 
-* Adding a new endpoint.
+- Adding a new endpoint.
 
-* Adding an optional parameter.
+- Adding an optional parameter.
 
-* Adding an optional request header.
+- Adding an optional request header.
 
-* Adding a response property.
+- Adding a response property.
 
-* Adding a response header.
+- Adding a response header.
 
-* Adding enum values.
+- Adding enum values.
 
-* Changing a required parameter to an optional parameter.
+- Changing a required parameter to an optional parameter.
 
-* Changing response properties or status code for requests using new enums, new optional parameters, or new request headers.
+- Changing response properties or status code for requests using new enums, new optional parameters, or new request headers.
 
-* Expanding authentication or authorization requirements.
+- Expanding authentication or authorization requirements.
 
 ### Experimental
 
 Experimental APIs are APIs that are still under development, but may be used by customers, partners, and other external users for evaluation purposes. We offer these APIs to the public in order to get feedback from users on how we can improve them before they are released into production. These APIs may introduce breaking changes with little to no notice, and are not suitable for production use cases. Examples of breaking changes include, but are not limited to:
 
-* Removing an entire endpoint.
+- Removing an entire endpoint.
 
-* Removing or renaming a parameter.
+- Removing or renaming a parameter.
 
-* Removing or renaming a response property.
+- Removing or renaming a response property.
 
-* Removing enum values.
+- Removing enum values.
 
-* Adding a new required parameter.
+- Adding a new required parameter.
 
-* Adding a new validation rule to an existing parameter.
+- Adding a new validation rule to an existing parameter.
 
-* Changing the type of a request parameter or response property.
+- Changing the type of a request parameter or response property.
 
-* Changing the response status code.
+- Changing the response status code.
 
-* Changing synchronous effects to asynchronous effects.
+- Changing synchronous effects to asynchronous effects.
 
-* Restricting authentication or authorization requirements.
+- Restricting authentication or authorization requirements.
 
-* Changing the definition of request parameter or response property
+- Changing the definition of request parameter or response property
 
 Experimental APIs will be marked as "Experimental" in the API specification.
 
@@ -83,8 +83,7 @@ curl --header "X-SailPoint-Experimental: true" https://acme.api.identitynow.com/
 
 :::warning
 
-If you attempt to invoke an experimental API without specifying the `X-SailPoint-Experimental` header, you will receive an error message indicating that the endpoint is in preview status and requires the `X-SailPoint-Experimental` header.
-:::
+If you attempt to invoke an experimental API without specifying the `X-SailPoint-Experimental` header, you will receive an error message indicating that the endpoint is in preview status and requires the `X-SailPoint-Experimental` header. :::
 
 ## Release schedule
 
@@ -94,7 +93,7 @@ Each annual release may be accompanied by an experimental release if there is at
 
 When a new annual release is introduced, non-deprecated endpoints will generally be transferred to the new release without modifications. As a result, the same endpoint will usually be able to be accessed via both the old and new versions. Only the latest public release will receive new functionality. If at anytime throughout the year a experimental API is deemed ready for production, it will be released into the current year’s public version, but not previous years.
 
-Annual release versions will typically be supported for 3 years and then remain operational for an additional 2-year transition period, unless otherwise noted or an exception applies.  Customers will be expected to move to the latest public release during those two years. Customers seeking support for an annual release that is over 3 years old will be asked to transition to a newer version.
+Annual release versions will typically be supported for 3 years and then remain operational for an additional 2-year transition period, unless otherwise noted or an exception applies. Customers will be expected to move to the latest public release during those two years. Customers seeking support for an annual release that is over 3 years old will be asked to transition to a newer version.
 
 The following image demonstrates the support model for public and experimental releases. The green bars represent how long an annual release version will be supported by our support team. When a annual release is older than three years, it may still remain operational, but it is no longer supported. During each calendar year’s main release (e.g., v2025), an optional experimental release may be introduced in preparation for the following year’s version (e.g., v2026). Blue bars on the timeline represent these experimental releases. For example, in 2025, if breaking changes are required for a public api, an experimental version (v2026) of the api may be published during the v2025 cycle.
 

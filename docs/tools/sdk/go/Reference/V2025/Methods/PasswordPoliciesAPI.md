@@ -4,50 +4,50 @@ title: PasswordPolicies
 pagination_label: PasswordPolicies
 sidebar_label: PasswordPolicies
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'PasswordPolicies', 'V2025PasswordPolicies'] 
+keywords: ['go', 'Golang', 'sdk', 'PasswordPolicies', 'V2025PasswordPolicies']
 slug: /tools/sdk/go/v2025/methods/password-policies
-tags: ['SDK', 'Software Development Kit', 'PasswordPolicies', 'V2025PasswordPolicies']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PasswordPolicies',
+    'V2025PasswordPolicies',
+  ]
 ---
 
 # PasswordPoliciesAPI
-  Use these APIs to implement password policies functionality.
-These APIs allow you to define the policy parameters for choosing passwords.
 
-IdentityNow comes with a default policy that you can modify to define the password requirements your users must meet to log in to IdentityNow, such as requiring a minimum password length, including special characters, and disallowing certain patterns.
-If you have licensed Password Management, you can create additional password policies beyond the default one to manage passwords for supported sources in your org.
+Use these APIs to implement password policies functionality. These APIs allow you to define the policy parameters for choosing passwords.
 
-In the Identity Security Cloud Admin panel, administrators can use the Password Mgmt dropdown menu to select Sync Groups.
-Refer to [Managing Password Policies](https://documentation.sailpoint.com/saas/help/pwd/pwd_policies/pwd_policies.html) for more information about password policies.
- 
+IdentityNow comes with a default policy that you can modify to define the password requirements your users must meet to log in to IdentityNow, such as requiring a minimum password length, including special characters, and disallowing certain patterns. If you have licensed Password Management, you can create additional password policies beyond the default one to manage passwords for supported sources in your org.
+
+In the Identity Security Cloud Admin panel, administrators can use the Password Mgmt dropdown menu to select Sync Groups. Refer to [Managing Password Policies](https://documentation.sailpoint.com/saas/help/pwd/pwd_policies/pwd_policies.html) for more information about password policies.
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/v2025*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create-password-policy**](#create-password-policy) | **Post** `/password-policies` | Create password policy
-[**delete-password-policy**](#delete-password-policy) | **Delete** `/password-policies/{id}` | Delete password policy by id
-[**get-password-policy-by-id**](#get-password-policy-by-id) | **Get** `/password-policies/{id}` | Get password policy by id
-[**list-password-policies**](#list-password-policies) | **Get** `/password-policies` | List password policies
-[**set-password-policy**](#set-password-policy) | **Put** `/password-policies/{id}` | Update password policy by id
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**create-password-policy**](#create-password-policy) | **Post** `/password-policies` | Create password policy |
+| [**delete-password-policy**](#delete-password-policy) | **Delete** `/password-policies/{id}` | Delete password policy by id |
+| [**get-password-policy-by-id**](#get-password-policy-by-id) | **Get** `/password-policies/{id}` | Get password policy by id |
+| [**list-password-policies**](#list-password-policies) | **Get** `/password-policies` | List password policies |
+| [**set-password-policy**](#set-password-policy) | **Put** `/password-policies/{id}` | Update password policy by id |
 
 ## create-password-policy
-Create password policy
-This API creates the specified password policy.
+
+Create password policy This API creates the specified password policy.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/create-password-policy)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCreatePasswordPolicyRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **passwordPolicyV3Dto** | [**PasswordPolicyV3Dto**](../models/password-policy-v3-dto) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **passwordPolicyV3Dto** | [**PasswordPolicyV3Dto**](../models/password-policy-v3-dto) |  |
 
 ### Return type
 
@@ -105,14 +105,14 @@ func main() {
           "requireStrongAuthOffNetwork" : true,
           "name" : "PasswordPolicy Example",
           "maxLength" : 25
-        }`) // PasswordPolicyV3Dto | 
+        }`) // PasswordPolicyV3Dto |
 
     var passwordPolicyV3Dto v2025.PasswordPolicyV3Dto
     if err := json.Unmarshal(passwordpolicyv3dto, &passwordPolicyV3Dto); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -130,31 +130,28 @@ func main() {
 [[Back to top]](#)
 
 ## delete-password-policy
-Delete password policy by id
-This API deletes the specified password policy.
+
+Delete password policy by id This API deletes the specified password policy.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/delete-password-policy)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The ID of password policy to delete. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The ID of password policy to delete. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeletePasswordPolicyRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -170,15 +167,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `ff808081838d9e9d01838da6a03e0002` // string | The ID of password policy to delete. # string | The ID of password policy to delete.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -188,34 +185,31 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `PasswordPoliciesAPI.DeletePasswordPolicy``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## get-password-policy-by-id
-Get password policy by id
-This API returns the password policy for the specified ID.
+
+Get password policy by id This API returns the password policy for the specified ID.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/get-password-policy-by-id)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The ID of password policy to retrieve. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The ID of password policy to retrieve. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetPasswordPolicyByIdRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -235,15 +229,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `ff808081838d9e9d01838da6a03e0005` // string | The ID of password policy to retrieve. # string | The ID of password policy to retrieve.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -261,26 +255,22 @@ func main() {
 [[Back to top]](#)
 
 ## list-password-policies
-List password policies
-This gets list of all Password Policies.
-Requires role of ORG_ADMIN
+
+List password policies This gets list of all Password Policies. Requires role of ORG_ADMIN
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/list-password-policies)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListPasswordPoliciesRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
+| **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false] |
 
 ### Return type
 
@@ -300,8 +290,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -310,7 +300,7 @@ func main() {
     offset := 0 // int32 | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 0) # int32 | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 0)
     count := true // bool | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to false) # bool | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to false)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -328,28 +318,26 @@ func main() {
 [[Back to top]](#)
 
 ## set-password-policy
-Update password policy by id
-This API updates the specified password policy.
+
+Update password policy by id This API updates the specified password policy.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/set-password-policy)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The ID of password policy to update. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The ID of password policy to update. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSetPasswordPolicyRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **passwordPolicyV3Dto** | [**PasswordPolicyV3Dto**](../models/password-policy-v3-dto) |  | 
+**passwordPolicyV3Dto** | [**PasswordPolicyV3Dto**](../models/password-policy-v3-dto) | |
 
 ### Return type
 
@@ -408,14 +396,14 @@ func main() {
           "requireStrongAuthOffNetwork" : true,
           "name" : "PasswordPolicy Example",
           "maxLength" : 25
-        }`) // PasswordPolicyV3Dto | 
+        }`) // PasswordPolicyV3Dto |
 
     var passwordPolicyV3Dto v2025.PasswordPolicyV3Dto
     if err := json.Unmarshal(passwordpolicyv3dto, &passwordPolicyV3Dto); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -431,4 +419,3 @@ func main() {
 ```
 
 [[Back to top]](#)
-

@@ -4,21 +4,34 @@ title: AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInner
 pagination_label: AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInner
 sidebar_label: AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInner
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInner', 'V2024AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInner'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInner',
+    'V2024AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInner',
+  ]
 slug: /tools/sdk/go/v2024/models/access-request-post-approval-requested-items-status-inner-approval-info-inner
-tags: ['SDK', 'Software Development Kit', 'AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInner', 'V2024AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInner',
+    'V2024AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInner',
+  ]
 ---
 
 # AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ApprovalComment** | Pointer to **NullableString** | A comment left by the approver. | [optional] 
-**ApprovalDecision** | **map[string]interface{}** | The final decision of the approver. | 
-**ApproverName** | **string** | The name of the approver | 
-**Approver** | [**AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInnerApprover**](access-request-post-approval-requested-items-status-inner-approval-info-inner-approver) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ApprovalComment** | Pointer to **NullableString** | A comment left by the approver. | [optional] |
+| **ApprovalDecision** | **map[string]interface{}** | The final decision of the approver. |
+| **ApproverName** | **string** | The name of the approver |
+| **Approver** | [**AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInnerApprover**](access-request-post-approval-requested-items-status-inner-approval-info-inner-approver) |  |
 
 ## Methods
 
@@ -26,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewAccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInner(approvalDecision map[string]interface{}, approverName string, approver AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInnerApprover, ) *AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInner`
 
-NewAccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInner instantiates a new AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInner object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInner instantiates a new AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInner object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInnerWithDefaults
 
 `func NewAccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInnerWithDefaults() *AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInner`
 
-NewAccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInnerWithDefaults instantiates a new AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInner object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInnerWithDefaults instantiates a new AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInner object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetApprovalComment
 
@@ -49,8 +57,7 @@ GetApprovalComment returns the ApprovalComment field if non-nil, zero value othe
 
 `func (o *AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInner) GetApprovalCommentOk() (*string, bool)`
 
-GetApprovalCommentOk returns a tuple with the ApprovalComment field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApprovalCommentOk returns a tuple with the ApprovalComment field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApprovalComment
 
@@ -68,12 +75,14 @@ HasApprovalComment returns a boolean if a field has been set.
 
 `func (o *AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInner) SetApprovalCommentNil(b bool)`
 
- SetApprovalCommentNil sets the value for ApprovalComment to be an explicit nil
+SetApprovalCommentNil sets the value for ApprovalComment to be an explicit nil
 
 ### UnsetApprovalComment
+
 `func (o *AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInner) UnsetApprovalComment()`
 
 UnsetApprovalComment ensures that no value is present for ApprovalComment, not even an explicit nil
+
 ### GetApprovalDecision
 
 `func (o *AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInner) GetApprovalDecision() map[string]interface{}`
@@ -84,15 +93,13 @@ GetApprovalDecision returns the ApprovalDecision field if non-nil, zero value ot
 
 `func (o *AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInner) GetApprovalDecisionOk() (*map[string]interface{}, bool)`
 
-GetApprovalDecisionOk returns a tuple with the ApprovalDecision field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApprovalDecisionOk returns a tuple with the ApprovalDecision field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApprovalDecision
 
 `func (o *AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInner) SetApprovalDecision(v map[string]interface{})`
 
 SetApprovalDecision sets ApprovalDecision field to given value.
-
 
 ### GetApproverName
 
@@ -104,15 +111,13 @@ GetApproverName returns the ApproverName field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInner) GetApproverNameOk() (*string, bool)`
 
-GetApproverNameOk returns a tuple with the ApproverName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApproverNameOk returns a tuple with the ApproverName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApproverName
 
 `func (o *AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInner) SetApproverName(v string)`
 
 SetApproverName sets ApproverName field to given value.
-
 
 ### GetApprover
 
@@ -124,14 +129,10 @@ GetApprover returns the Approver field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInner) GetApproverOk() (*AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInnerApprover, bool)`
 
-GetApproverOk returns a tuple with the Approver field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApproverOk returns a tuple with the Approver field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApprover
 
 `func (o *AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInner) SetApprover(v AccessRequestPostApprovalRequestedItemsStatusInnerApprovalInfoInnerApprover)`
 
 SetApprover sets Approver field to given value.
-
-
-

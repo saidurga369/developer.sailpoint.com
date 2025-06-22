@@ -4,22 +4,35 @@ title: CertificationIdentitySummary
 pagination_label: CertificationIdentitySummary
 sidebar_label: CertificationIdentitySummary
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'CertificationIdentitySummary', 'V2025CertificationIdentitySummary'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'CertificationIdentitySummary',
+    'V2025CertificationIdentitySummary',
+  ]
 slug: /tools/sdk/python/v2025/models/certification-identity-summary
-tags: ['SDK', 'Software Development Kit', 'CertificationIdentitySummary', 'V2025CertificationIdentitySummary']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CertificationIdentitySummary',
+    'V2025CertificationIdentitySummary',
+  ]
 ---
 
 # CertificationIdentitySummary
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The ID of the identity summary | [optional] 
-**name** | **str** | Name of the linked identity | [optional] 
-**identity_id** | **str** | The ID of the identity being certified | [optional] 
-**completed** | **bool** | Indicates whether the review items for the linked identity's certification have been completed | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The ID of the identity summary | [optional] |
+| **name** | **str** | Name of the linked identity | [optional] |
+| **identity_id** | **str** | The ID of the identity being certified | [optional] |
+| **completed** | **bool** | Indicates whether the review items for the linked identity's certification have been completed | [optional] |
+
 }
 
 ## Example
@@ -35,5 +48,5 @@ completed=True
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

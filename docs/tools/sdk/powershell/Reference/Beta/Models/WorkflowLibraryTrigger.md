@@ -4,33 +4,46 @@ title: WorkflowLibraryTrigger
 pagination_label: WorkflowLibraryTrigger
 sidebar_label: WorkflowLibraryTrigger
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'WorkflowLibraryTrigger', 'BetaWorkflowLibraryTrigger'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'WorkflowLibraryTrigger',
+    'BetaWorkflowLibraryTrigger',
+  ]
 slug: /tools/sdk/powershell/beta/models/workflow-library-trigger
-tags: ['SDK', 'Software Development Kit', 'WorkflowLibraryTrigger', 'BetaWorkflowLibraryTrigger']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'WorkflowLibraryTrigger',
+    'BetaWorkflowLibraryTrigger',
+  ]
 ---
-
 
 # WorkflowLibraryTrigger
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | Trigger ID. This is a static namespaced ID for the trigger. | [optional] 
-**Type** |  **Enum** [  "EVENT",    "SCHEDULED",    "EXTERNAL" ] | Trigger type | [optional] 
-**Deprecated** | **Boolean** |  | [optional] 
-**DeprecatedBy** | **System.DateTime** |  | [optional] 
-**IsSimulationEnabled** | **Boolean** |  | [optional] 
-**OutputSchema** | [**SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | Example output schema | [optional] 
-**Name** | **String** | Trigger Name | [optional] 
-**Description** | **String** | Trigger Description | [optional] 
-**IsDynamicSchema** | **Boolean** | Determines whether the dynamic output schema is returned in place of the action's output schema. The dynamic schema lists non-static properties, like properties of a workflow form where each form has different fields. These will be provided dynamically based on available form fields. | [optional] 
-**InputExample** | [**SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | Example trigger payload if applicable | [optional] 
-**FormFields** | [**[]WorkflowLibraryFormFields**](workflow-library-form-fields) | One or more inputs that the trigger accepts | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | Trigger ID. This is a static namespaced ID for the trigger. | [optional] |
+| **Type** | **Enum** [ "EVENT", "SCHEDULED", "EXTERNAL" ] | Trigger type | [optional] |
+| **Deprecated** | **Boolean** |  | [optional] |
+| **DeprecatedBy** | **System.DateTime** |  | [optional] |
+| **IsSimulationEnabled** | **Boolean** |  | [optional] |
+| **OutputSchema** | [**SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | Example output schema | [optional] |
+| **Name** | **String** | Trigger Name | [optional] |
+| **Description** | **String** | Trigger Description | [optional] |
+| **IsDynamicSchema** | **Boolean** | Determines whether the dynamic output schema is returned in place of the action's output schema. The dynamic schema lists non-static properties, like properties of a workflow form where each form has different fields. These will be provided dynamically based on available form fields. | [optional] |
+| **InputExample** | [**SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | Example trigger payload if applicable | [optional] |
+| **FormFields** | [**[]WorkflowLibraryFormFields**](workflow-library-form-fields) | One or more inputs that the trigger accepts | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $WorkflowLibraryTrigger = Initialize-BetaWorkflowLibraryTrigger  -Id idn:identity-attributes-changed `
  -Type EVENT `
@@ -46,10 +59,9 @@ $WorkflowLibraryTrigger = Initialize-BetaWorkflowLibraryTrigger  -Id idn:identit
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $WorkflowLibraryTrigger | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

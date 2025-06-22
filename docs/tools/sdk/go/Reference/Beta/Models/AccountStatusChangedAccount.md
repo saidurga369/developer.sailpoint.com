@@ -4,24 +4,37 @@ title: AccountStatusChangedAccount
 pagination_label: AccountStatusChangedAccount
 sidebar_label: AccountStatusChangedAccount
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccountStatusChangedAccount', 'BetaAccountStatusChangedAccount'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'AccountStatusChangedAccount',
+    'BetaAccountStatusChangedAccount',
+  ]
 slug: /tools/sdk/go/beta/models/account-status-changed-account
-tags: ['SDK', 'Software Development Kit', 'AccountStatusChangedAccount', 'BetaAccountStatusChangedAccount']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountStatusChangedAccount',
+    'BetaAccountStatusChangedAccount',
+  ]
 ---
 
 # AccountStatusChangedAccount
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | the ID of the account in the database | [optional] 
-**NativeIdentity** | Pointer to **string** | the native identifier of the account | [optional] 
-**DisplayName** | Pointer to **string** | the display name of the account | [optional] 
-**SourceId** | Pointer to **string** | the ID of the source for this account | [optional] 
-**SourceName** | Pointer to **string** | the name of the source for this account | [optional] 
-**EntitlementCount** | Pointer to **int32** | the number of entitlements on this account | [optional] 
-**AccessType** | Pointer to **string** | this value is always \"account\" | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | the ID of the account in the database | [optional] |
+| **NativeIdentity** | Pointer to **string** | the native identifier of the account | [optional] |
+| **DisplayName** | Pointer to **string** | the display name of the account | [optional] |
+| **SourceId** | Pointer to **string** | the ID of the source for this account | [optional] |
+| **SourceName** | Pointer to **string** | the name of the source for this account | [optional] |
+| **EntitlementCount** | Pointer to **int32** | the number of entitlements on this account | [optional] |
+| **AccessType** | Pointer to **string** | this value is always \"account\" | [optional] |
 
 ## Methods
 
@@ -29,18 +42,13 @@ Name | Type | Description | Notes
 
 `func NewAccountStatusChangedAccount() *AccountStatusChangedAccount`
 
-NewAccountStatusChangedAccount instantiates a new AccountStatusChangedAccount object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccountStatusChangedAccount instantiates a new AccountStatusChangedAccount object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccountStatusChangedAccountWithDefaults
 
 `func NewAccountStatusChangedAccountWithDefaults() *AccountStatusChangedAccount`
 
-NewAccountStatusChangedAccountWithDefaults instantiates a new AccountStatusChangedAccount object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccountStatusChangedAccountWithDefaults instantiates a new AccountStatusChangedAccount object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -52,8 +60,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *AccountStatusChangedAccount) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -77,8 +84,7 @@ GetNativeIdentity returns the NativeIdentity field if non-nil, zero value otherw
 
 `func (o *AccountStatusChangedAccount) GetNativeIdentityOk() (*string, bool)`
 
-GetNativeIdentityOk returns a tuple with the NativeIdentity field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNativeIdentityOk returns a tuple with the NativeIdentity field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNativeIdentity
 
@@ -102,8 +108,7 @@ GetDisplayName returns the DisplayName field if non-nil, zero value otherwise.
 
 `func (o *AccountStatusChangedAccount) GetDisplayNameOk() (*string, bool)`
 
-GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayName
 
@@ -127,8 +132,7 @@ GetSourceId returns the SourceId field if non-nil, zero value otherwise.
 
 `func (o *AccountStatusChangedAccount) GetSourceIdOk() (*string, bool)`
 
-GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceId
 
@@ -152,8 +156,7 @@ GetSourceName returns the SourceName field if non-nil, zero value otherwise.
 
 `func (o *AccountStatusChangedAccount) GetSourceNameOk() (*string, bool)`
 
-GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceName
 
@@ -177,8 +180,7 @@ GetEntitlementCount returns the EntitlementCount field if non-nil, zero value ot
 
 `func (o *AccountStatusChangedAccount) GetEntitlementCountOk() (*int32, bool)`
 
-GetEntitlementCountOk returns a tuple with the EntitlementCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEntitlementCountOk returns a tuple with the EntitlementCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEntitlementCount
 
@@ -202,8 +204,7 @@ GetAccessType returns the AccessType field if non-nil, zero value otherwise.
 
 `func (o *AccountStatusChangedAccount) GetAccessTypeOk() (*string, bool)`
 
-GetAccessTypeOk returns a tuple with the AccessType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessTypeOk returns a tuple with the AccessType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessType
 
@@ -216,5 +217,3 @@ SetAccessType sets AccessType field to given value.
 `func (o *AccountStatusChangedAccount) HasAccessType() bool`
 
 HasAccessType returns a boolean if a field has been set.
-
-

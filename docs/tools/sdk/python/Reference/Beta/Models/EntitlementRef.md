@@ -4,9 +4,10 @@ title: EntitlementRef
 pagination_label: EntitlementRef
 sidebar_label: EntitlementRef
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'EntitlementRef', 'BetaEntitlementRef'] 
+keywords: ['python', 'Python', 'sdk', 'EntitlementRef', 'BetaEntitlementRef']
 slug: /tools/sdk/python/beta/models/entitlement-ref
-tags: ['SDK', 'Software Development Kit', 'EntitlementRef', 'BetaEntitlementRef']
+tags:
+  ['SDK', 'Software Development Kit', 'EntitlementRef', 'BetaEntitlementRef']
 ---
 
 # EntitlementRef
@@ -15,11 +16,12 @@ Entitlement including a specific set of access.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'ENTITLEMENT' ] | Entitlement's DTO type. | [optional] 
-**id** | **str** | Entitlement's ID. | [optional] 
-**name** | **str** | Entitlement's display name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'ENTITLEMENT' ] | Entitlement's DTO type. | [optional] |
+| **id** | **str** | Entitlement's ID. | [optional] |
+| **name** | **str** | Entitlement's display name. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +36,5 @@ name='CN=entitlement.490efde5,OU=OrgCo,OU=ServiceDept,DC=HQAD,DC=local'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

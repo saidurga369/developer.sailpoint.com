@@ -4,20 +4,33 @@ title: AccountAttributesChangedChangesInner
 pagination_label: AccountAttributesChangedChangesInner
 sidebar_label: AccountAttributesChangedChangesInner
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccountAttributesChangedChangesInner', 'V2024AccountAttributesChangedChangesInner'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'AccountAttributesChangedChangesInner',
+    'V2024AccountAttributesChangedChangesInner',
+  ]
 slug: /tools/sdk/go/v2024/models/account-attributes-changed-changes-inner
-tags: ['SDK', 'Software Development Kit', 'AccountAttributesChangedChangesInner', 'V2024AccountAttributesChangedChangesInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountAttributesChangedChangesInner',
+    'V2024AccountAttributesChangedChangesInner',
+  ]
 ---
 
 # AccountAttributesChangedChangesInner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Attribute** | **string** | The name of the attribute. | 
-**OldValue** | [**NullableAccountAttributesChangedChangesInnerOldValue**](account-attributes-changed-changes-inner-old-value) |  | 
-**NewValue** | [**NullableAccountAttributesChangedChangesInnerNewValue**](account-attributes-changed-changes-inner-new-value) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Attribute** | **string** | The name of the attribute. |
+| **OldValue** | [**NullableAccountAttributesChangedChangesInnerOldValue**](account-attributes-changed-changes-inner-old-value) |  |
+| **NewValue** | [**NullableAccountAttributesChangedChangesInnerNewValue**](account-attributes-changed-changes-inner-new-value) |  |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewAccountAttributesChangedChangesInner(attribute string, oldValue NullableAccountAttributesChangedChangesInnerOldValue, newValue NullableAccountAttributesChangedChangesInnerNewValue, ) *AccountAttributesChangedChangesInner`
 
-NewAccountAttributesChangedChangesInner instantiates a new AccountAttributesChangedChangesInner object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccountAttributesChangedChangesInner instantiates a new AccountAttributesChangedChangesInner object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccountAttributesChangedChangesInnerWithDefaults
 
 `func NewAccountAttributesChangedChangesInnerWithDefaults() *AccountAttributesChangedChangesInner`
 
-NewAccountAttributesChangedChangesInnerWithDefaults instantiates a new AccountAttributesChangedChangesInner object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccountAttributesChangedChangesInnerWithDefaults instantiates a new AccountAttributesChangedChangesInner object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetAttribute
 
@@ -48,15 +56,13 @@ GetAttribute returns the Attribute field if non-nil, zero value otherwise.
 
 `func (o *AccountAttributesChangedChangesInner) GetAttributeOk() (*string, bool)`
 
-GetAttributeOk returns a tuple with the Attribute field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributeOk returns a tuple with the Attribute field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttribute
 
 `func (o *AccountAttributesChangedChangesInner) SetAttribute(v string)`
 
 SetAttribute sets Attribute field to given value.
-
 
 ### GetOldValue
 
@@ -68,8 +74,7 @@ GetOldValue returns the OldValue field if non-nil, zero value otherwise.
 
 `func (o *AccountAttributesChangedChangesInner) GetOldValueOk() (*AccountAttributesChangedChangesInnerOldValue, bool)`
 
-GetOldValueOk returns a tuple with the OldValue field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOldValueOk returns a tuple with the OldValue field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOldValue
 
@@ -77,17 +82,18 @@ and a boolean to check if the value has been set.
 
 SetOldValue sets OldValue field to given value.
 
-
 ### SetOldValueNil
 
 `func (o *AccountAttributesChangedChangesInner) SetOldValueNil(b bool)`
 
- SetOldValueNil sets the value for OldValue to be an explicit nil
+SetOldValueNil sets the value for OldValue to be an explicit nil
 
 ### UnsetOldValue
+
 `func (o *AccountAttributesChangedChangesInner) UnsetOldValue()`
 
 UnsetOldValue ensures that no value is present for OldValue, not even an explicit nil
+
 ### GetNewValue
 
 `func (o *AccountAttributesChangedChangesInner) GetNewValue() AccountAttributesChangedChangesInnerNewValue`
@@ -98,8 +104,7 @@ GetNewValue returns the NewValue field if non-nil, zero value otherwise.
 
 `func (o *AccountAttributesChangedChangesInner) GetNewValueOk() (*AccountAttributesChangedChangesInnerNewValue, bool)`
 
-GetNewValueOk returns a tuple with the NewValue field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNewValueOk returns a tuple with the NewValue field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNewValue
 
@@ -107,15 +112,14 @@ and a boolean to check if the value has been set.
 
 SetNewValue sets NewValue field to given value.
 
-
 ### SetNewValueNil
 
 `func (o *AccountAttributesChangedChangesInner) SetNewValueNil(b bool)`
 
- SetNewValueNil sets the value for NewValue to be an explicit nil
+SetNewValueNil sets the value for NewValue to be an explicit nil
 
 ### UnsetNewValue
+
 `func (o *AccountAttributesChangedChangesInner) UnsetNewValue()`
 
 UnsetNewValue ensures that no value is present for NewValue, not even an explicit nil
-

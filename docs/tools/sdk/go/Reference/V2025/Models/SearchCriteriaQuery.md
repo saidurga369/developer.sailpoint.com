@@ -4,18 +4,25 @@ title: SearchCriteriaQuery
 pagination_label: SearchCriteriaQuery
 sidebar_label: SearchCriteriaQuery
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SearchCriteriaQuery', 'V2025SearchCriteriaQuery'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'SearchCriteriaQuery', 'V2025SearchCriteriaQuery']
 slug: /tools/sdk/go/v2025/models/search-criteria-query
-tags: ['SDK', 'Software Development Kit', 'SearchCriteriaQuery', 'V2025SearchCriteriaQuery']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SearchCriteriaQuery',
+    'V2025SearchCriteriaQuery',
+  ]
 ---
 
 # SearchCriteriaQuery
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Query** | Pointer to **string** | A structured query for advanced search. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Query** | Pointer to **string** | A structured query for advanced search. | [optional] |
 
 ## Methods
 
@@ -23,18 +30,13 @@ Name | Type | Description | Notes
 
 `func NewSearchCriteriaQuery() *SearchCriteriaQuery`
 
-NewSearchCriteriaQuery instantiates a new SearchCriteriaQuery object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSearchCriteriaQuery instantiates a new SearchCriteriaQuery object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSearchCriteriaQueryWithDefaults
 
 `func NewSearchCriteriaQueryWithDefaults() *SearchCriteriaQuery`
 
-NewSearchCriteriaQueryWithDefaults instantiates a new SearchCriteriaQuery object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSearchCriteriaQueryWithDefaults instantiates a new SearchCriteriaQuery object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetQuery
 
@@ -46,8 +48,7 @@ GetQuery returns the Query field if non-nil, zero value otherwise.
 
 `func (o *SearchCriteriaQuery) GetQueryOk() (*string, bool)`
 
-GetQueryOk returns a tuple with the Query field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetQueryOk returns a tuple with the Query field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetQuery
 
@@ -60,5 +61,3 @@ SetQuery sets Query field to given value.
 `func (o *SearchCriteriaQuery) HasQuery() bool`
 
 HasQuery returns a boolean if a field has been set.
-
-

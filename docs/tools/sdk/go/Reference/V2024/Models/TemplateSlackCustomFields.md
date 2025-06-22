@@ -4,21 +4,34 @@ title: TemplateSlackCustomFields
 pagination_label: TemplateSlackCustomFields
 sidebar_label: TemplateSlackCustomFields
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'TemplateSlackCustomFields', 'V2024TemplateSlackCustomFields'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'TemplateSlackCustomFields',
+    'V2024TemplateSlackCustomFields',
+  ]
 slug: /tools/sdk/go/v2024/models/template-slack-custom-fields
-tags: ['SDK', 'Software Development Kit', 'TemplateSlackCustomFields', 'V2024TemplateSlackCustomFields']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'TemplateSlackCustomFields',
+    'V2024TemplateSlackCustomFields',
+  ]
 ---
 
 # TemplateSlackCustomFields
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**RequestType** | Pointer to **NullableString** |  | [optional] 
-**ContainsDeny** | Pointer to **NullableString** |  | [optional] 
-**CampaignId** | Pointer to **NullableString** |  | [optional] 
-**CampaignStatus** | Pointer to **NullableString** |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **RequestType** | Pointer to **NullableString** |  | [optional] |
+| **ContainsDeny** | Pointer to **NullableString** |  | [optional] |
+| **CampaignId** | Pointer to **NullableString** |  | [optional] |
+| **CampaignStatus** | Pointer to **NullableString** |  | [optional] |
 
 ## Methods
 
@@ -26,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewTemplateSlackCustomFields() *TemplateSlackCustomFields`
 
-NewTemplateSlackCustomFields instantiates a new TemplateSlackCustomFields object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewTemplateSlackCustomFields instantiates a new TemplateSlackCustomFields object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewTemplateSlackCustomFieldsWithDefaults
 
 `func NewTemplateSlackCustomFieldsWithDefaults() *TemplateSlackCustomFields`
 
-NewTemplateSlackCustomFieldsWithDefaults instantiates a new TemplateSlackCustomFields object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewTemplateSlackCustomFieldsWithDefaults instantiates a new TemplateSlackCustomFields object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetRequestType
 
@@ -49,8 +57,7 @@ GetRequestType returns the RequestType field if non-nil, zero value otherwise.
 
 `func (o *TemplateSlackCustomFields) GetRequestTypeOk() (*string, bool)`
 
-GetRequestTypeOk returns a tuple with the RequestType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestTypeOk returns a tuple with the RequestType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequestType
 
@@ -68,12 +75,14 @@ HasRequestType returns a boolean if a field has been set.
 
 `func (o *TemplateSlackCustomFields) SetRequestTypeNil(b bool)`
 
- SetRequestTypeNil sets the value for RequestType to be an explicit nil
+SetRequestTypeNil sets the value for RequestType to be an explicit nil
 
 ### UnsetRequestType
+
 `func (o *TemplateSlackCustomFields) UnsetRequestType()`
 
 UnsetRequestType ensures that no value is present for RequestType, not even an explicit nil
+
 ### GetContainsDeny
 
 `func (o *TemplateSlackCustomFields) GetContainsDeny() string`
@@ -84,8 +93,7 @@ GetContainsDeny returns the ContainsDeny field if non-nil, zero value otherwise.
 
 `func (o *TemplateSlackCustomFields) GetContainsDenyOk() (*string, bool)`
 
-GetContainsDenyOk returns a tuple with the ContainsDeny field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetContainsDenyOk returns a tuple with the ContainsDeny field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetContainsDeny
 
@@ -103,12 +111,14 @@ HasContainsDeny returns a boolean if a field has been set.
 
 `func (o *TemplateSlackCustomFields) SetContainsDenyNil(b bool)`
 
- SetContainsDenyNil sets the value for ContainsDeny to be an explicit nil
+SetContainsDenyNil sets the value for ContainsDeny to be an explicit nil
 
 ### UnsetContainsDeny
+
 `func (o *TemplateSlackCustomFields) UnsetContainsDeny()`
 
 UnsetContainsDeny ensures that no value is present for ContainsDeny, not even an explicit nil
+
 ### GetCampaignId
 
 `func (o *TemplateSlackCustomFields) GetCampaignId() string`
@@ -119,8 +129,7 @@ GetCampaignId returns the CampaignId field if non-nil, zero value otherwise.
 
 `func (o *TemplateSlackCustomFields) GetCampaignIdOk() (*string, bool)`
 
-GetCampaignIdOk returns a tuple with the CampaignId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCampaignIdOk returns a tuple with the CampaignId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCampaignId
 
@@ -138,12 +147,14 @@ HasCampaignId returns a boolean if a field has been set.
 
 `func (o *TemplateSlackCustomFields) SetCampaignIdNil(b bool)`
 
- SetCampaignIdNil sets the value for CampaignId to be an explicit nil
+SetCampaignIdNil sets the value for CampaignId to be an explicit nil
 
 ### UnsetCampaignId
+
 `func (o *TemplateSlackCustomFields) UnsetCampaignId()`
 
 UnsetCampaignId ensures that no value is present for CampaignId, not even an explicit nil
+
 ### GetCampaignStatus
 
 `func (o *TemplateSlackCustomFields) GetCampaignStatus() string`
@@ -154,8 +165,7 @@ GetCampaignStatus returns the CampaignStatus field if non-nil, zero value otherw
 
 `func (o *TemplateSlackCustomFields) GetCampaignStatusOk() (*string, bool)`
 
-GetCampaignStatusOk returns a tuple with the CampaignStatus field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCampaignStatusOk returns a tuple with the CampaignStatus field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCampaignStatus
 
@@ -173,10 +183,10 @@ HasCampaignStatus returns a boolean if a field has been set.
 
 `func (o *TemplateSlackCustomFields) SetCampaignStatusNil(b bool)`
 
- SetCampaignStatusNil sets the value for CampaignStatus to be an explicit nil
+SetCampaignStatusNil sets the value for CampaignStatus to be an explicit nil
 
 ### UnsetCampaignStatus
+
 `func (o *TemplateSlackCustomFields) UnsetCampaignStatus()`
 
 UnsetCampaignStatus ensures that no value is present for CampaignStatus, not even an explicit nil
-

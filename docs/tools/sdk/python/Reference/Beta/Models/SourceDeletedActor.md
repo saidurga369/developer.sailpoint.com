@@ -4,9 +4,16 @@ title: SourceDeletedActor
 pagination_label: SourceDeletedActor
 sidebar_label: SourceDeletedActor
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SourceDeletedActor', 'BetaSourceDeletedActor'] 
+keywords:
+  ['python', 'Python', 'sdk', 'SourceDeletedActor', 'BetaSourceDeletedActor']
 slug: /tools/sdk/python/beta/models/source-deleted-actor
-tags: ['SDK', 'Software Development Kit', 'SourceDeletedActor', 'BetaSourceDeletedActor']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SourceDeletedActor',
+    'BetaSourceDeletedActor',
+  ]
 ---
 
 # SourceDeletedActor
@@ -15,11 +22,12 @@ Identity who deleted the source.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] | DTO type of the identity who deleted the source. | [required]
-**id** | **str** | ID of the identity who deleted the source. | [required]
-**name** | **str** | Name of the identity who deleted the source. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'IDENTITY' ] | DTO type of the identity who deleted the source. | [required] |
+| **id** | **str** | ID of the identity who deleted the source. | [required] |
+| **name** | **str** | Name of the identity who deleted the source. | [required] |
+
 }
 
 ## Example
@@ -34,5 +42,5 @@ name='William Wilson'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

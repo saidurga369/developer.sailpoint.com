@@ -4,26 +4,39 @@ title: DependantAppConnections
 pagination_label: DependantAppConnections
 sidebar_label: DependantAppConnections
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'DependantAppConnections', 'V2025DependantAppConnections'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'DependantAppConnections',
+    'V2025DependantAppConnections',
+  ]
 slug: /tools/sdk/go/v2025/models/dependant-app-connections
-tags: ['SDK', 'Software Development Kit', 'DependantAppConnections', 'V2025DependantAppConnections']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'DependantAppConnections',
+    'V2025DependantAppConnections',
+  ]
 ---
 
 # DependantAppConnections
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**CloudAppId** | Pointer to **string** | Id of the connected Application | [optional] 
-**Description** | Pointer to **string** | Description of the connected Application | [optional] 
-**Enabled** | Pointer to **bool** | Is the Application enabled | [optional] [default to true]
-**ProvisionRequestEnabled** | Pointer to **bool** | Is Provisioning enabled for connected Application | [optional] [default to true]
-**AccountSource** | Pointer to [**DependantAppConnectionsAccountSource**](dependant-app-connections-account-source) |  | [optional] 
-**LauncherCount** | Pointer to **int64** | The amount of launchers for connected Application (long type) | [optional] 
-**MatchAllAccount** | Pointer to **bool** | Is Provisioning enabled for connected Application | [optional] [default to false]
-**Owner** | Pointer to [**[]BaseReferenceDto**](base-reference-dto) | The owner of the connected Application | [optional] 
-**AppCenterEnabled** | Pointer to **bool** | Is App Center enabled for connected Application | [optional] [default to false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **CloudAppId** | Pointer to **string** | Id of the connected Application | [optional] |
+| **Description** | Pointer to **string** | Description of the connected Application | [optional] |
+| **Enabled** | Pointer to **bool** | Is the Application enabled | [optional] [default to true] |
+| **ProvisionRequestEnabled** | Pointer to **bool** | Is Provisioning enabled for connected Application | [optional] [default to true] |
+| **AccountSource** | Pointer to [**DependantAppConnectionsAccountSource**](dependant-app-connections-account-source) |  | [optional] |
+| **LauncherCount** | Pointer to **int64** | The amount of launchers for connected Application (long type) | [optional] |
+| **MatchAllAccount** | Pointer to **bool** | Is Provisioning enabled for connected Application | [optional] [default to false] |
+| **Owner** | Pointer to [**[]BaseReferenceDto**](base-reference-dto) | The owner of the connected Application | [optional] |
+| **AppCenterEnabled** | Pointer to **bool** | Is App Center enabled for connected Application | [optional] [default to false] |
 
 ## Methods
 
@@ -31,18 +44,13 @@ Name | Type | Description | Notes
 
 `func NewDependantAppConnections() *DependantAppConnections`
 
-NewDependantAppConnections instantiates a new DependantAppConnections object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewDependantAppConnections instantiates a new DependantAppConnections object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewDependantAppConnectionsWithDefaults
 
 `func NewDependantAppConnectionsWithDefaults() *DependantAppConnections`
 
-NewDependantAppConnectionsWithDefaults instantiates a new DependantAppConnections object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewDependantAppConnectionsWithDefaults instantiates a new DependantAppConnections object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetCloudAppId
 
@@ -54,8 +62,7 @@ GetCloudAppId returns the CloudAppId field if non-nil, zero value otherwise.
 
 `func (o *DependantAppConnections) GetCloudAppIdOk() (*string, bool)`
 
-GetCloudAppIdOk returns a tuple with the CloudAppId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCloudAppIdOk returns a tuple with the CloudAppId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCloudAppId
 
@@ -79,8 +86,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *DependantAppConnections) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -104,8 +110,7 @@ GetEnabled returns the Enabled field if non-nil, zero value otherwise.
 
 `func (o *DependantAppConnections) GetEnabledOk() (*bool, bool)`
 
-GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEnabled
 
@@ -129,8 +134,7 @@ GetProvisionRequestEnabled returns the ProvisionRequestEnabled field if non-nil,
 
 `func (o *DependantAppConnections) GetProvisionRequestEnabledOk() (*bool, bool)`
 
-GetProvisionRequestEnabledOk returns a tuple with the ProvisionRequestEnabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProvisionRequestEnabledOk returns a tuple with the ProvisionRequestEnabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProvisionRequestEnabled
 
@@ -154,8 +158,7 @@ GetAccountSource returns the AccountSource field if non-nil, zero value otherwis
 
 `func (o *DependantAppConnections) GetAccountSourceOk() (*DependantAppConnectionsAccountSource, bool)`
 
-GetAccountSourceOk returns a tuple with the AccountSource field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountSourceOk returns a tuple with the AccountSource field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountSource
 
@@ -179,8 +182,7 @@ GetLauncherCount returns the LauncherCount field if non-nil, zero value otherwis
 
 `func (o *DependantAppConnections) GetLauncherCountOk() (*int64, bool)`
 
-GetLauncherCountOk returns a tuple with the LauncherCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLauncherCountOk returns a tuple with the LauncherCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLauncherCount
 
@@ -204,8 +206,7 @@ GetMatchAllAccount returns the MatchAllAccount field if non-nil, zero value othe
 
 `func (o *DependantAppConnections) GetMatchAllAccountOk() (*bool, bool)`
 
-GetMatchAllAccountOk returns a tuple with the MatchAllAccount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMatchAllAccountOk returns a tuple with the MatchAllAccount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMatchAllAccount
 
@@ -229,8 +230,7 @@ GetOwner returns the Owner field if non-nil, zero value otherwise.
 
 `func (o *DependantAppConnections) GetOwnerOk() (*[]BaseReferenceDto, bool)`
 
-GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwner
 
@@ -254,8 +254,7 @@ GetAppCenterEnabled returns the AppCenterEnabled field if non-nil, zero value ot
 
 `func (o *DependantAppConnections) GetAppCenterEnabledOk() (*bool, bool)`
 
-GetAppCenterEnabledOk returns a tuple with the AppCenterEnabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAppCenterEnabledOk returns a tuple with the AppCenterEnabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAppCenterEnabled
 
@@ -268,5 +267,3 @@ SetAppCenterEnabled sets AppCenterEnabled field to given value.
 `func (o *DependantAppConnections) HasAppCenterEnabled() bool`
 
 HasAppCenterEnabled returns a boolean if a field has been set.
-
-

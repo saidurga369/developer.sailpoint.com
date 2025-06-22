@@ -4,25 +4,26 @@ title: ScheduleHours
 pagination_label: ScheduleHours
 sidebar_label: ScheduleHours
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'ScheduleHours', 'BetaScheduleHours'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'ScheduleHours', 'BetaScheduleHours']
 slug: /tools/sdk/powershell/beta/models/schedule-hours
 tags: ['SDK', 'Software Development Kit', 'ScheduleHours', 'BetaScheduleHours']
 ---
-
 
 # ScheduleHours
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** |  **Enum** [  "LIST",    "RANGE" ] | Enum type to specify hours value | [required]
-**Values** | **[]String** | Values of the days based on the enum type mentioned above | [required]
-**Interval** | **Int64** | Interval between the cert generations | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | **Enum** [ "LIST", "RANGE" ] | Enum type to specify hours value | [required] |
+| **Values** | **[]String** | Values of the days based on the enum type mentioned above | [required] |
+| **Interval** | **Int64** | Interval between the cert generations | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $ScheduleHours = Initialize-BetaScheduleHours  -Type LIST `
  -Values [1] `
@@ -30,10 +31,9 @@ $ScheduleHours = Initialize-BetaScheduleHours  -Type LIST `
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $ScheduleHours | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

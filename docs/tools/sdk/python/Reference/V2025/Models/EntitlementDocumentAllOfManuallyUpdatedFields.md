@@ -4,9 +4,22 @@ title: EntitlementDocumentAllOfManuallyUpdatedFields
 pagination_label: EntitlementDocumentAllOfManuallyUpdatedFields
 sidebar_label: EntitlementDocumentAllOfManuallyUpdatedFields
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'EntitlementDocumentAllOfManuallyUpdatedFields', 'V2025EntitlementDocumentAllOfManuallyUpdatedFields'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'EntitlementDocumentAllOfManuallyUpdatedFields',
+    'V2025EntitlementDocumentAllOfManuallyUpdatedFields',
+  ]
 slug: /tools/sdk/python/v2025/models/entitlement-document-all-of-manually-updated-fields
-tags: ['SDK', 'Software Development Kit', 'EntitlementDocumentAllOfManuallyUpdatedFields', 'V2025EntitlementDocumentAllOfManuallyUpdatedFields']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'EntitlementDocumentAllOfManuallyUpdatedFields',
+    'V2025EntitlementDocumentAllOfManuallyUpdatedFields',
+  ]
 ---
 
 # EntitlementDocumentAllOfManuallyUpdatedFields
@@ -15,10 +28,11 @@ Indicates whether the entitlement's display name and/or description have been ma
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**description** | **bool** |  | [optional] [default to False]
-**display_name** | **bool** |  | [optional] [default to False]
+| Name             | Type     | Description | Notes                         |
+| ---------------- | -------- | ----------- | ----------------------------- |
+| **description**  | **bool** |             | [optional] [default to False] |
+| **display_name** | **bool** |             | [optional] [default to False] |
+
 }
 
 ## Example
@@ -32,5 +46,5 @@ display_name=False
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

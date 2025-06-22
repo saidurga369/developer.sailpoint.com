@@ -4,26 +4,39 @@ title: NonEmployeeApprovalItemDetail
 pagination_label: NonEmployeeApprovalItemDetail
 sidebar_label: NonEmployeeApprovalItemDetail
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'NonEmployeeApprovalItemDetail', 'V2024NonEmployeeApprovalItemDetail'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'NonEmployeeApprovalItemDetail',
+    'V2024NonEmployeeApprovalItemDetail',
+  ]
 slug: /tools/sdk/go/v2024/models/non-employee-approval-item-detail
-tags: ['SDK', 'Software Development Kit', 'NonEmployeeApprovalItemDetail', 'V2024NonEmployeeApprovalItemDetail']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NonEmployeeApprovalItemDetail',
+    'V2024NonEmployeeApprovalItemDetail',
+  ]
 ---
 
 # NonEmployeeApprovalItemDetail
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Non-Employee approval item id | [optional] 
-**Approver** | Pointer to [**NonEmployeeIdentityReferenceWithId**](non-employee-identity-reference-with-id) |  | [optional] 
-**AccountName** | Pointer to **string** | Requested identity account name | [optional] 
-**ApprovalStatus** | Pointer to [**ApprovalStatus**](approval-status) |  | [optional] 
-**ApprovalOrder** | Pointer to **float32** | Approval order | [optional] 
-**Comment** | Pointer to **string** | comment of approver | [optional] 
-**Modified** | Pointer to **SailPointTime** | When the request was last modified. | [optional] 
-**Created** | Pointer to **SailPointTime** | When the request was created. | [optional] 
-**NonEmployeeRequest** | Pointer to [**NonEmployeeRequestWithoutApprovalItem**](non-employee-request-without-approval-item) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Non-Employee approval item id | [optional] |
+| **Approver** | Pointer to [**NonEmployeeIdentityReferenceWithId**](non-employee-identity-reference-with-id) |  | [optional] |
+| **AccountName** | Pointer to **string** | Requested identity account name | [optional] |
+| **ApprovalStatus** | Pointer to [**ApprovalStatus**](approval-status) |  | [optional] |
+| **ApprovalOrder** | Pointer to **float32** | Approval order | [optional] |
+| **Comment** | Pointer to **string** | comment of approver | [optional] |
+| **Modified** | Pointer to **SailPointTime** | When the request was last modified. | [optional] |
+| **Created** | Pointer to **SailPointTime** | When the request was created. | [optional] |
+| **NonEmployeeRequest** | Pointer to [**NonEmployeeRequestWithoutApprovalItem**](non-employee-request-without-approval-item) |  | [optional] |
 
 ## Methods
 
@@ -31,18 +44,13 @@ Name | Type | Description | Notes
 
 `func NewNonEmployeeApprovalItemDetail() *NonEmployeeApprovalItemDetail`
 
-NewNonEmployeeApprovalItemDetail instantiates a new NonEmployeeApprovalItemDetail object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewNonEmployeeApprovalItemDetail instantiates a new NonEmployeeApprovalItemDetail object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewNonEmployeeApprovalItemDetailWithDefaults
 
 `func NewNonEmployeeApprovalItemDetailWithDefaults() *NonEmployeeApprovalItemDetail`
 
-NewNonEmployeeApprovalItemDetailWithDefaults instantiates a new NonEmployeeApprovalItemDetail object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewNonEmployeeApprovalItemDetailWithDefaults instantiates a new NonEmployeeApprovalItemDetail object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -54,8 +62,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeApprovalItemDetail) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -79,8 +86,7 @@ GetApprover returns the Approver field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeApprovalItemDetail) GetApproverOk() (*NonEmployeeIdentityReferenceWithId, bool)`
 
-GetApproverOk returns a tuple with the Approver field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApproverOk returns a tuple with the Approver field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApprover
 
@@ -104,8 +110,7 @@ GetAccountName returns the AccountName field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeApprovalItemDetail) GetAccountNameOk() (*string, bool)`
 
-GetAccountNameOk returns a tuple with the AccountName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountNameOk returns a tuple with the AccountName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountName
 
@@ -129,8 +134,7 @@ GetApprovalStatus returns the ApprovalStatus field if non-nil, zero value otherw
 
 `func (o *NonEmployeeApprovalItemDetail) GetApprovalStatusOk() (*ApprovalStatus, bool)`
 
-GetApprovalStatusOk returns a tuple with the ApprovalStatus field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApprovalStatusOk returns a tuple with the ApprovalStatus field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApprovalStatus
 
@@ -154,8 +158,7 @@ GetApprovalOrder returns the ApprovalOrder field if non-nil, zero value otherwis
 
 `func (o *NonEmployeeApprovalItemDetail) GetApprovalOrderOk() (*float32, bool)`
 
-GetApprovalOrderOk returns a tuple with the ApprovalOrder field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApprovalOrderOk returns a tuple with the ApprovalOrder field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApprovalOrder
 
@@ -179,8 +182,7 @@ GetComment returns the Comment field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeApprovalItemDetail) GetCommentOk() (*string, bool)`
 
-GetCommentOk returns a tuple with the Comment field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCommentOk returns a tuple with the Comment field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetComment
 
@@ -204,8 +206,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeApprovalItemDetail) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -229,8 +230,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeApprovalItemDetail) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -254,8 +254,7 @@ GetNonEmployeeRequest returns the NonEmployeeRequest field if non-nil, zero valu
 
 `func (o *NonEmployeeApprovalItemDetail) GetNonEmployeeRequestOk() (*NonEmployeeRequestWithoutApprovalItem, bool)`
 
-GetNonEmployeeRequestOk returns a tuple with the NonEmployeeRequest field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNonEmployeeRequestOk returns a tuple with the NonEmployeeRequest field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNonEmployeeRequest
 
@@ -268,5 +267,3 @@ SetNonEmployeeRequest sets NonEmployeeRequest field to given value.
 `func (o *NonEmployeeApprovalItemDetail) HasNonEmployeeRequest() bool`
 
 HasNonEmployeeRequest returns a boolean if a field has been set.
-
-

@@ -4,19 +4,32 @@ title: SodViolationContextConflictingAccessCriteria
 pagination_label: SodViolationContextConflictingAccessCriteria
 sidebar_label: SodViolationContextConflictingAccessCriteria
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SodViolationContextConflictingAccessCriteria', 'V2024SodViolationContextConflictingAccessCriteria'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'SodViolationContextConflictingAccessCriteria',
+    'V2024SodViolationContextConflictingAccessCriteria',
+  ]
 slug: /tools/sdk/go/v2024/models/sod-violation-context-conflicting-access-criteria
-tags: ['SDK', 'Software Development Kit', 'SodViolationContextConflictingAccessCriteria', 'V2024SodViolationContextConflictingAccessCriteria']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SodViolationContextConflictingAccessCriteria',
+    'V2024SodViolationContextConflictingAccessCriteria',
+  ]
 ---
 
 # SodViolationContextConflictingAccessCriteria
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**LeftCriteria** | Pointer to [**SodViolationContextConflictingAccessCriteriaLeftCriteria**](sod-violation-context-conflicting-access-criteria-left-criteria) |  | [optional] 
-**RightCriteria** | Pointer to [**SodViolationContextConflictingAccessCriteriaLeftCriteria**](sod-violation-context-conflicting-access-criteria-left-criteria) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **LeftCriteria** | Pointer to [**SodViolationContextConflictingAccessCriteriaLeftCriteria**](sod-violation-context-conflicting-access-criteria-left-criteria) |  | [optional] |
+| **RightCriteria** | Pointer to [**SodViolationContextConflictingAccessCriteriaLeftCriteria**](sod-violation-context-conflicting-access-criteria-left-criteria) |  | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewSodViolationContextConflictingAccessCriteria() *SodViolationContextConflictingAccessCriteria`
 
-NewSodViolationContextConflictingAccessCriteria instantiates a new SodViolationContextConflictingAccessCriteria object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSodViolationContextConflictingAccessCriteria instantiates a new SodViolationContextConflictingAccessCriteria object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSodViolationContextConflictingAccessCriteriaWithDefaults
 
 `func NewSodViolationContextConflictingAccessCriteriaWithDefaults() *SodViolationContextConflictingAccessCriteria`
 
-NewSodViolationContextConflictingAccessCriteriaWithDefaults instantiates a new SodViolationContextConflictingAccessCriteria object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSodViolationContextConflictingAccessCriteriaWithDefaults instantiates a new SodViolationContextConflictingAccessCriteria object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetLeftCriteria
 
@@ -47,8 +55,7 @@ GetLeftCriteria returns the LeftCriteria field if non-nil, zero value otherwise.
 
 `func (o *SodViolationContextConflictingAccessCriteria) GetLeftCriteriaOk() (*SodViolationContextConflictingAccessCriteriaLeftCriteria, bool)`
 
-GetLeftCriteriaOk returns a tuple with the LeftCriteria field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLeftCriteriaOk returns a tuple with the LeftCriteria field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLeftCriteria
 
@@ -72,8 +79,7 @@ GetRightCriteria returns the RightCriteria field if non-nil, zero value otherwis
 
 `func (o *SodViolationContextConflictingAccessCriteria) GetRightCriteriaOk() (*SodViolationContextConflictingAccessCriteriaLeftCriteria, bool)`
 
-GetRightCriteriaOk returns a tuple with the RightCriteria field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRightCriteriaOk returns a tuple with the RightCriteria field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRightCriteria
 
@@ -86,5 +92,3 @@ SetRightCriteria sets RightCriteria field to given value.
 `func (o *SodViolationContextConflictingAccessCriteria) HasRightCriteria() bool`
 
 HasRightCriteria returns a boolean if a field has been set.
-
-

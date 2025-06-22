@@ -4,20 +4,26 @@ title: ServiceDeskSource
 pagination_label: ServiceDeskSource
 sidebar_label: ServiceDeskSource
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ServiceDeskSource', 'BetaServiceDeskSource'] 
+keywords: ['go', 'Golang', 'sdk', 'ServiceDeskSource', 'BetaServiceDeskSource']
 slug: /tools/sdk/go/beta/models/service-desk-source
-tags: ['SDK', 'Software Development Kit', 'ServiceDeskSource', 'BetaServiceDeskSource']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ServiceDeskSource',
+    'BetaServiceDeskSource',
+  ]
 ---
 
 # ServiceDeskSource
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | DTO type of source for service desk integration template. | [optional] 
-**Id** | Pointer to **string** | ID of source for service desk integration template. | [optional] 
-**Name** | Pointer to **string** | Human-readable name of source for service desk integration template. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to **string** | DTO type of source for service desk integration template. | [optional] |
+| **Id** | Pointer to **string** | ID of source for service desk integration template. | [optional] |
+| **Name** | Pointer to **string** | Human-readable name of source for service desk integration template. | [optional] |
 
 ## Methods
 
@@ -25,18 +31,13 @@ Name | Type | Description | Notes
 
 `func NewServiceDeskSource() *ServiceDeskSource`
 
-NewServiceDeskSource instantiates a new ServiceDeskSource object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewServiceDeskSource instantiates a new ServiceDeskSource object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewServiceDeskSourceWithDefaults
 
 `func NewServiceDeskSourceWithDefaults() *ServiceDeskSource`
 
-NewServiceDeskSourceWithDefaults instantiates a new ServiceDeskSource object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewServiceDeskSourceWithDefaults instantiates a new ServiceDeskSource object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -48,8 +49,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *ServiceDeskSource) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -73,8 +73,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *ServiceDeskSource) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -98,8 +97,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *ServiceDeskSource) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -112,5 +110,3 @@ SetName sets Name field to given value.
 `func (o *ServiceDeskSource) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

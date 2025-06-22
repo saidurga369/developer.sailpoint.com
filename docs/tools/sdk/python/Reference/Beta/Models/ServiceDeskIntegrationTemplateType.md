@@ -4,9 +4,22 @@ title: ServiceDeskIntegrationTemplateType
 pagination_label: ServiceDeskIntegrationTemplateType
 sidebar_label: ServiceDeskIntegrationTemplateType
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ServiceDeskIntegrationTemplateType', 'BetaServiceDeskIntegrationTemplateType'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ServiceDeskIntegrationTemplateType',
+    'BetaServiceDeskIntegrationTemplateType',
+  ]
 slug: /tools/sdk/python/beta/models/service-desk-integration-template-type
-tags: ['SDK', 'Software Development Kit', 'ServiceDeskIntegrationTemplateType', 'BetaServiceDeskIntegrationTemplateType']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ServiceDeskIntegrationTemplateType',
+    'BetaServiceDeskIntegrationTemplateType',
+  ]
 ---
 
 # ServiceDeskIntegrationTemplateType
@@ -15,11 +28,12 @@ This represents a Service Desk Integration template type.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | This is the name of the type. | [optional] 
-**type** | **str** | This is the type value for the type. | [required]
-**script_name** | **str** | This is the scriptName attribute value for the type. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **name** | **str** | This is the name of the type. | [optional] |
+| **type** | **str** | This is the type value for the type. | [required] |
+| **script_name** | **str** | This is the scriptName attribute value for the type. | [required] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ script_name='aScriptName'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

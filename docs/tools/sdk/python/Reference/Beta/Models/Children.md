@@ -4,22 +4,22 @@ title: Children
 pagination_label: Children
 sidebar_label: Children
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'Children', 'BetaChildren'] 
+keywords: ['python', 'Python', 'sdk', 'Children', 'BetaChildren']
 slug: /tools/sdk/python/beta/models/children
 tags: ['SDK', 'Software Development Kit', 'Children', 'BetaChildren']
 ---
 
 # Children
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**operator** | **str** |  | [optional] 
-**attribute** | **str** |  | [optional] 
-**value** | [**Value**](value) |  | [optional] 
-**children** | **str** |  | [optional] 
+| Name          | Type               | Description | Notes      |
+| ------------- | ------------------ | ----------- | ---------- |
+| **operator**  | **str**            |             | [optional] |
+| **attribute** | **str**            |             | [optional] |
+| **value**     | [**Value**](value) |             | [optional] |
+| **children**  | **str**            |             | [optional] |
+
 }
 
 ## Example
@@ -36,5 +36,5 @@ children=''
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

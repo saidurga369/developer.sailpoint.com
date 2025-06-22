@@ -4,7 +4,7 @@ title: Outlier
 pagination_label: Outlier
 sidebar_label: Outlier
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Outlier', 'V2024Outlier'] 
+keywords: ['go', 'Golang', 'sdk', 'Outlier', 'V2024Outlier']
 slug: /tools/sdk/go/v2024/models/outlier
 tags: ['SDK', 'Software Development Kit', 'Outlier', 'V2024Outlier']
 ---
@@ -13,19 +13,19 @@ tags: ['SDK', 'Software Development Kit', 'Outlier', 'V2024Outlier']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The identity's unique identifier for the outlier record | [optional] 
-**IdentityId** | Pointer to **string** | The ID of the identity that is detected as an outlier | [optional] 
-**Type** | Pointer to **string** | The type of outlier summary | [optional] 
-**FirstDetectionDate** | Pointer to **SailPointTime** | The first date the outlier was detected | [optional] 
-**LatestDetectionDate** | Pointer to **SailPointTime** | The most recent date the outlier was detected | [optional] 
-**Ignored** | Pointer to **bool** | Flag whether or not the outlier has been ignored | [optional] 
-**Attributes** | Pointer to **map[string]interface{}** | Object containing mapped identity attributes | [optional] 
-**Score** | Pointer to **float32** | The outlier score determined by the detection engine ranging from 0..1 | [optional] 
-**UnignoreType** | Pointer to **NullableString** | Enum value of if the outlier manually or automatically un-ignored. Will be NULL if outlier is not ignored | [optional] 
-**UnignoreDate** | Pointer to **NullableTime** | shows date when last time has been unignored outlier | [optional] 
-**IgnoreDate** | Pointer to **NullableTime** | shows date when last time has been ignored outlier | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The identity's unique identifier for the outlier record | [optional] |
+| **IdentityId** | Pointer to **string** | The ID of the identity that is detected as an outlier | [optional] |
+| **Type** | Pointer to **string** | The type of outlier summary | [optional] |
+| **FirstDetectionDate** | Pointer to **SailPointTime** | The first date the outlier was detected | [optional] |
+| **LatestDetectionDate** | Pointer to **SailPointTime** | The most recent date the outlier was detected | [optional] |
+| **Ignored** | Pointer to **bool** | Flag whether or not the outlier has been ignored | [optional] |
+| **Attributes** | Pointer to **map[string]interface{}** | Object containing mapped identity attributes | [optional] |
+| **Score** | Pointer to **float32** | The outlier score determined by the detection engine ranging from 0..1 | [optional] |
+| **UnignoreType** | Pointer to **NullableString** | Enum value of if the outlier manually or automatically un-ignored. Will be NULL if outlier is not ignored | [optional] |
+| **UnignoreDate** | Pointer to **NullableTime** | shows date when last time has been unignored outlier | [optional] |
+| **IgnoreDate** | Pointer to **NullableTime** | shows date when last time has been ignored outlier | [optional] |
 
 ## Methods
 
@@ -33,18 +33,13 @@ Name | Type | Description | Notes
 
 `func NewOutlier() *Outlier`
 
-NewOutlier instantiates a new Outlier object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewOutlier instantiates a new Outlier object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewOutlierWithDefaults
 
 `func NewOutlierWithDefaults() *Outlier`
 
-NewOutlierWithDefaults instantiates a new Outlier object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewOutlierWithDefaults instantiates a new Outlier object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -56,8 +51,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *Outlier) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -81,8 +75,7 @@ GetIdentityId returns the IdentityId field if non-nil, zero value otherwise.
 
 `func (o *Outlier) GetIdentityIdOk() (*string, bool)`
 
-GetIdentityIdOk returns a tuple with the IdentityId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityIdOk returns a tuple with the IdentityId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityId
 
@@ -106,8 +99,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *Outlier) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -131,8 +123,7 @@ GetFirstDetectionDate returns the FirstDetectionDate field if non-nil, zero valu
 
 `func (o *Outlier) GetFirstDetectionDateOk() (*SailPointTime, bool)`
 
-GetFirstDetectionDateOk returns a tuple with the FirstDetectionDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFirstDetectionDateOk returns a tuple with the FirstDetectionDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFirstDetectionDate
 
@@ -156,8 +147,7 @@ GetLatestDetectionDate returns the LatestDetectionDate field if non-nil, zero va
 
 `func (o *Outlier) GetLatestDetectionDateOk() (*SailPointTime, bool)`
 
-GetLatestDetectionDateOk returns a tuple with the LatestDetectionDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLatestDetectionDateOk returns a tuple with the LatestDetectionDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLatestDetectionDate
 
@@ -181,8 +171,7 @@ GetIgnored returns the Ignored field if non-nil, zero value otherwise.
 
 `func (o *Outlier) GetIgnoredOk() (*bool, bool)`
 
-GetIgnoredOk returns a tuple with the Ignored field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIgnoredOk returns a tuple with the Ignored field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIgnored
 
@@ -206,8 +195,7 @@ GetAttributes returns the Attributes field if non-nil, zero value otherwise.
 
 `func (o *Outlier) GetAttributesOk() (*map[string]interface{}, bool)`
 
-GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributes
 
@@ -231,8 +219,7 @@ GetScore returns the Score field if non-nil, zero value otherwise.
 
 `func (o *Outlier) GetScoreOk() (*float32, bool)`
 
-GetScoreOk returns a tuple with the Score field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetScoreOk returns a tuple with the Score field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetScore
 
@@ -256,8 +243,7 @@ GetUnignoreType returns the UnignoreType field if non-nil, zero value otherwise.
 
 `func (o *Outlier) GetUnignoreTypeOk() (*string, bool)`
 
-GetUnignoreTypeOk returns a tuple with the UnignoreType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUnignoreTypeOk returns a tuple with the UnignoreType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUnignoreType
 
@@ -275,12 +261,14 @@ HasUnignoreType returns a boolean if a field has been set.
 
 `func (o *Outlier) SetUnignoreTypeNil(b bool)`
 
- SetUnignoreTypeNil sets the value for UnignoreType to be an explicit nil
+SetUnignoreTypeNil sets the value for UnignoreType to be an explicit nil
 
 ### UnsetUnignoreType
+
 `func (o *Outlier) UnsetUnignoreType()`
 
 UnsetUnignoreType ensures that no value is present for UnignoreType, not even an explicit nil
+
 ### GetUnignoreDate
 
 `func (o *Outlier) GetUnignoreDate() SailPointTime`
@@ -291,8 +279,7 @@ GetUnignoreDate returns the UnignoreDate field if non-nil, zero value otherwise.
 
 `func (o *Outlier) GetUnignoreDateOk() (*SailPointTime, bool)`
 
-GetUnignoreDateOk returns a tuple with the UnignoreDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUnignoreDateOk returns a tuple with the UnignoreDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUnignoreDate
 
@@ -310,12 +297,14 @@ HasUnignoreDate returns a boolean if a field has been set.
 
 `func (o *Outlier) SetUnignoreDateNil(b bool)`
 
- SetUnignoreDateNil sets the value for UnignoreDate to be an explicit nil
+SetUnignoreDateNil sets the value for UnignoreDate to be an explicit nil
 
 ### UnsetUnignoreDate
+
 `func (o *Outlier) UnsetUnignoreDate()`
 
 UnsetUnignoreDate ensures that no value is present for UnignoreDate, not even an explicit nil
+
 ### GetIgnoreDate
 
 `func (o *Outlier) GetIgnoreDate() SailPointTime`
@@ -326,8 +315,7 @@ GetIgnoreDate returns the IgnoreDate field if non-nil, zero value otherwise.
 
 `func (o *Outlier) GetIgnoreDateOk() (*SailPointTime, bool)`
 
-GetIgnoreDateOk returns a tuple with the IgnoreDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIgnoreDateOk returns a tuple with the IgnoreDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIgnoreDate
 
@@ -345,10 +333,10 @@ HasIgnoreDate returns a boolean if a field has been set.
 
 `func (o *Outlier) SetIgnoreDateNil(b bool)`
 
- SetIgnoreDateNil sets the value for IgnoreDate to be an explicit nil
+SetIgnoreDateNil sets the value for IgnoreDate to be an explicit nil
 
 ### UnsetIgnoreDate
+
 `func (o *Outlier) UnsetIgnoreDate()`
 
 UnsetIgnoreDate ensures that no value is present for IgnoreDate, not even an explicit nil
-

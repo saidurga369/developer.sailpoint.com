@@ -4,24 +4,37 @@ title: NonEmployeeSourceRequestBody
 pagination_label: NonEmployeeSourceRequestBody
 sidebar_label: NonEmployeeSourceRequestBody
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'NonEmployeeSourceRequestBody', 'BetaNonEmployeeSourceRequestBody'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'NonEmployeeSourceRequestBody',
+    'BetaNonEmployeeSourceRequestBody',
+  ]
 slug: /tools/sdk/python/beta/models/non-employee-source-request-body
-tags: ['SDK', 'Software Development Kit', 'NonEmployeeSourceRequestBody', 'BetaNonEmployeeSourceRequestBody']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NonEmployeeSourceRequestBody',
+    'BetaNonEmployeeSourceRequestBody',
+  ]
 ---
 
 # NonEmployeeSourceRequestBody
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | Name of non-employee source. | [required]
-**description** | **str** | Description of non-employee source. | [required]
-**owner** | [**NonEmployeeIdnUserRequest**](non-employee-idn-user-request) |  | [required]
-**management_workgroup** | **str** | The ID for the management workgroup that contains source sub-admins | [optional] 
-**approvers** | [**[]NonEmployeeIdnUserRequest**](non-employee-idn-user-request) | List of approvers. | [optional] 
-**account_managers** | [**[]NonEmployeeIdnUserRequest**](non-employee-idn-user-request) | List of account managers. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **name** | **str** | Name of non-employee source. | [required] |
+| **description** | **str** | Description of non-employee source. | [required] |
+| **owner** | [**NonEmployeeIdnUserRequest**](non-employee-idn-user-request) |  | [required] |
+| **management_workgroup** | **str** | The ID for the management workgroup that contains source sub-admins | [optional] |
+| **approvers** | [**[]NonEmployeeIdnUserRequest**](non-employee-idn-user-request) | List of approvers. | [optional] |
+| **account_managers** | [**[]NonEmployeeIdnUserRequest**](non-employee-idn-user-request) | List of account managers. | [optional] |
+
 }
 
 ## Example
@@ -46,5 +59,5 @@ account_managers=[
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,20 +4,27 @@ title: WorkgroupDeleteItem
 pagination_label: WorkgroupDeleteItem
 sidebar_label: WorkgroupDeleteItem
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'WorkgroupDeleteItem', 'BetaWorkgroupDeleteItem'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'WorkgroupDeleteItem', 'BetaWorkgroupDeleteItem']
 slug: /tools/sdk/go/beta/models/workgroup-delete-item
-tags: ['SDK', 'Software Development Kit', 'WorkgroupDeleteItem', 'BetaWorkgroupDeleteItem']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'WorkgroupDeleteItem',
+    'BetaWorkgroupDeleteItem',
+  ]
 ---
 
 # WorkgroupDeleteItem
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **string** | Id of the Governance Group. | 
-**Status** | **int32** |  The HTTP response status code returned for an individual Governance Group that is requested for deletion during a bulk delete operation.  > 204   -  Governance Group deleted successfully.  > 409   - Governance Group is in use,hence can not be deleted.  > 404   - Governance Group not found.  | 
-**Description** | Pointer to **string** | Human readable status description and containing additional context information about success or failures etc.  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **string** | Id of the Governance Group. |
+| **Status** | **int32** | The HTTP response status code returned for an individual Governance Group that is requested for deletion during a bulk delete operation. > 204 - Governance Group deleted successfully. > 409 - Governance Group is in use,hence can not be deleted. > 404 - Governance Group not found. |
+| **Description** | Pointer to **string** | Human readable status description and containing additional context information about success or failures etc. | [optional] |
 
 ## Methods
 
@@ -25,18 +32,13 @@ Name | Type | Description | Notes
 
 `func NewWorkgroupDeleteItem(id string, status int32, ) *WorkgroupDeleteItem`
 
-NewWorkgroupDeleteItem instantiates a new WorkgroupDeleteItem object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewWorkgroupDeleteItem instantiates a new WorkgroupDeleteItem object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewWorkgroupDeleteItemWithDefaults
 
 `func NewWorkgroupDeleteItemWithDefaults() *WorkgroupDeleteItem`
 
-NewWorkgroupDeleteItemWithDefaults instantiates a new WorkgroupDeleteItem object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewWorkgroupDeleteItemWithDefaults instantiates a new WorkgroupDeleteItem object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -48,15 +50,13 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *WorkgroupDeleteItem) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
 `func (o *WorkgroupDeleteItem) SetId(v string)`
 
 SetId sets Id field to given value.
-
 
 ### GetStatus
 
@@ -68,15 +68,13 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *WorkgroupDeleteItem) GetStatusOk() (*int32, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
 `func (o *WorkgroupDeleteItem) SetStatus(v int32)`
 
 SetStatus sets Status field to given value.
-
 
 ### GetDescription
 
@@ -88,8 +86,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *WorkgroupDeleteItem) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -102,5 +99,3 @@ SetDescription sets Description field to given value.
 `func (o *WorkgroupDeleteItem) HasDescription() bool`
 
 HasDescription returns a boolean if a field has been set.
-
-

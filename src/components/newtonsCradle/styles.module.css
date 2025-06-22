@@ -120,7 +120,6 @@
   animation-delay: calc(var(--uib-speed) / -12 * 11);
 }
 
-
 @keyframes pulse {
   0%,
   80%,

@@ -4,9 +4,22 @@ title: AccountAggregationCompletedSource
 pagination_label: AccountAggregationCompletedSource
 sidebar_label: AccountAggregationCompletedSource
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccountAggregationCompletedSource', 'V2024AccountAggregationCompletedSource'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccountAggregationCompletedSource',
+    'V2024AccountAggregationCompletedSource',
+  ]
 slug: /tools/sdk/python/v2024/models/account-aggregation-completed-source
-tags: ['SDK', 'Software Development Kit', 'AccountAggregationCompletedSource', 'V2024AccountAggregationCompletedSource']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountAggregationCompletedSource',
+    'V2024AccountAggregationCompletedSource',
+  ]
 ---
 
 # AccountAggregationCompletedSource
@@ -15,11 +28,12 @@ The source the accounts are being aggregated from.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'SOURCE' ] | The DTO type of the source the accounts are being aggregated from. | [required]
-**id** | **str** | The ID of the source the accounts are being aggregated from. | [required]
-**name** | **str** | Display name of the source the accounts are being aggregated from. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'SOURCE' ] | The DTO type of the source the accounts are being aggregated from. | [required] |
+| **id** | **str** | The ID of the source the accounts are being aggregated from. | [required] |
+| **name** | **str** | Display name of the source the accounts are being aggregated from. | [required] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='HR Active Directory'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

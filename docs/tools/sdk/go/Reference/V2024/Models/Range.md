@@ -4,7 +4,7 @@ title: Range
 pagination_label: Range
 sidebar_label: Range
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Range', 'V2024Range'] 
+keywords: ['go', 'Golang', 'sdk', 'Range', 'V2024Range']
 slug: /tools/sdk/go/v2024/models/range
 tags: ['SDK', 'Software Development Kit', 'Range', 'V2024Range']
 ---
@@ -13,10 +13,10 @@ tags: ['SDK', 'Software Development Kit', 'Range', 'V2024Range']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Lower** | Pointer to [**Bound**](bound) |  | [optional] 
-**Upper** | Pointer to [**Bound**](bound) |  | [optional] 
+| Name      | Type                          | Description | Notes      |
+| --------- | ----------------------------- | ----------- | ---------- |
+| **Lower** | Pointer to [**Bound**](bound) |             | [optional] |
+| **Upper** | Pointer to [**Bound**](bound) |             | [optional] |
 
 ## Methods
 
@@ -24,18 +24,13 @@ Name | Type | Description | Notes
 
 `func NewRange() *Range`
 
-NewRange instantiates a new Range object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRange instantiates a new Range object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRangeWithDefaults
 
 `func NewRangeWithDefaults() *Range`
 
-NewRangeWithDefaults instantiates a new Range object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRangeWithDefaults instantiates a new Range object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetLower
 
@@ -47,8 +42,7 @@ GetLower returns the Lower field if non-nil, zero value otherwise.
 
 `func (o *Range) GetLowerOk() (*Bound, bool)`
 
-GetLowerOk returns a tuple with the Lower field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLowerOk returns a tuple with the Lower field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLower
 
@@ -72,8 +66,7 @@ GetUpper returns the Upper field if non-nil, zero value otherwise.
 
 `func (o *Range) GetUpperOk() (*Bound, bool)`
 
-GetUpperOk returns a tuple with the Upper field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUpperOk returns a tuple with the Upper field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUpper
 
@@ -86,5 +79,3 @@ SetUpper sets Upper field to given value.
 `func (o *Range) HasUpper() bool`
 
 HasUpper returns a boolean if a field has been set.
-
-

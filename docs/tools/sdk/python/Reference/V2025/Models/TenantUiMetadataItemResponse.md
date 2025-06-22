@@ -4,21 +4,34 @@ title: TenantUiMetadataItemResponse
 pagination_label: TenantUiMetadataItemResponse
 sidebar_label: TenantUiMetadataItemResponse
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'TenantUiMetadataItemResponse', 'V2025TenantUiMetadataItemResponse'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'TenantUiMetadataItemResponse',
+    'V2025TenantUiMetadataItemResponse',
+  ]
 slug: /tools/sdk/python/v2025/models/tenant-ui-metadata-item-response
-tags: ['SDK', 'Software Development Kit', 'TenantUiMetadataItemResponse', 'V2025TenantUiMetadataItemResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'TenantUiMetadataItemResponse',
+    'V2025TenantUiMetadataItemResponse',
+  ]
 ---
 
 # TenantUiMetadataItemResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**iframe_white_list** | **str** | Parameter that organizational administrators can adjust to permit another domain to encapsulate IDN within an iframe. If you would like to reset the value use \"null\". It will only allow include into iframe non authenticated portions of the product, such as password reset. | [optional] 
-**username_label** | **str** | Descriptor for the username input field. If you would like to reset the value use \"null\". | [optional] 
-**username_empty_text** | **str** | Placeholder text displayed in the username input field. If you would like to reset the value use \"null\". | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **iframe_white_list** | **str** | Parameter that organizational administrators can adjust to permit another domain to encapsulate IDN within an iframe. If you would like to reset the value use \"null\". It will only allow include into iframe non authenticated portions of the product, such as password reset. | [optional] |
+| **username_label** | **str** | Descriptor for the username input field. If you would like to reset the value use \"null\". | [optional] |
+| **username_empty_text** | **str** | Placeholder text displayed in the username input field. If you would like to reset the value use \"null\". | [optional] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ username_empty_text='Please provide your work email address...'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

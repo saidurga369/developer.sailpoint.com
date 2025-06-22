@@ -4,19 +4,17 @@ title: SearchFilterType
 pagination_label: SearchFilterType
 sidebar_label: SearchFilterType
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'SearchFilterType', 'SearchFilterType'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'SearchFilterType', 'SearchFilterType']
 slug: /tools/sdk/powershell/v3/models/search-filter-type
-tags: ['SDK', 'Software Development Kit', 'SearchFilterType', 'SearchFilterType']
+tags:
+  ['SDK', 'Software Development Kit', 'SearchFilterType', 'SearchFilterType']
 ---
-
 
 # SearchFilterType
 
 ## Enum
 
+- `TERM` (value: `"TERM"`)
 
-* `TERM` (value: `"TERM"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

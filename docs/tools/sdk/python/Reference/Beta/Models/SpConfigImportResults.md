@@ -4,9 +4,22 @@ title: SpConfigImportResults
 pagination_label: SpConfigImportResults
 sidebar_label: SpConfigImportResults
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SpConfigImportResults', 'BetaSpConfigImportResults'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'SpConfigImportResults',
+    'BetaSpConfigImportResults',
+  ]
 slug: /tools/sdk/python/beta/models/sp-config-import-results
-tags: ['SDK', 'Software Development Kit', 'SpConfigImportResults', 'BetaSpConfigImportResults']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SpConfigImportResults',
+    'BetaSpConfigImportResults',
+  ]
 ---
 
 # SpConfigImportResults
@@ -15,10 +28,11 @@ Response Body for Config Import command.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**results** | [**map[string]ObjectImportResult**](object-import-result) | The results of an object configuration import job. | [required]
-**export_job_id** | **str** | If a backup was performed before the import, this will contain the jobId of the backup job. This id can be used to retrieve the json file of the backup export. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **results** | [**map[string]ObjectImportResult**](object-import-result) | The results of an object configuration import job. | [required] |
+| **export_job_id** | **str** | If a backup was performed before the import, this will contain the jobId of the backup job. This id can be used to retrieve the json file of the backup export. | [optional] |
+
 }
 
 ## Example
@@ -32,5 +46,5 @@ export_job_id='be9e116d-08e1-49fc-ab7f-fa585e96c9e4'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

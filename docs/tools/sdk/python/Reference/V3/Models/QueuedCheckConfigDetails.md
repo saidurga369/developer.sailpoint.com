@@ -4,9 +4,22 @@ title: QueuedCheckConfigDetails
 pagination_label: QueuedCheckConfigDetails
 sidebar_label: QueuedCheckConfigDetails
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'QueuedCheckConfigDetails', 'QueuedCheckConfigDetails'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'QueuedCheckConfigDetails',
+    'QueuedCheckConfigDetails',
+  ]
 slug: /tools/sdk/python/v3/models/queued-check-config-details
-tags: ['SDK', 'Software Development Kit', 'QueuedCheckConfigDetails', 'QueuedCheckConfigDetails']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'QueuedCheckConfigDetails',
+    'QueuedCheckConfigDetails',
+  ]
 ---
 
 # QueuedCheckConfigDetails
@@ -15,10 +28,11 @@ Configuration of maximum number of days and interval for checking Service Desk i
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**provisioning_status_check_interval_minutes** | **str** | Interval in minutes between status checks | [required]
-**provisioning_max_status_check_days** | **str** | Maximum number of days to check | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **provisioning_status_check_interval_minutes** | **str** | Interval in minutes between status checks | [required] |
+| **provisioning_max_status_check_days** | **str** | Maximum number of days to check | [required] |
+
 }
 
 ## Example
@@ -32,5 +46,5 @@ provisioning_max_status_check_days='2'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

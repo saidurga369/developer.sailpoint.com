@@ -4,20 +4,33 @@ title: ImportAccountsRequest
 pagination_label: ImportAccountsRequest
 sidebar_label: ImportAccountsRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ImportAccountsRequest', 'BetaImportAccountsRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ImportAccountsRequest',
+    'BetaImportAccountsRequest',
+  ]
 slug: /tools/sdk/python/beta/models/import-accounts-request
-tags: ['SDK', 'Software Development Kit', 'ImportAccountsRequest', 'BetaImportAccountsRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ImportAccountsRequest',
+    'BetaImportAccountsRequest',
+  ]
 ---
 
 # ImportAccountsRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**file** | **bytearray** | The CSV file containing the source accounts to aggregate. | [optional] 
-**disable_optimization** |  **Enum** [  'true',    'false' ] | Use this flag to reprocess every account whether or not the data has changed. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **file** | **bytearray** | The CSV file containing the source accounts to aggregate. | [optional] |
+| **disable_optimization** | **Enum** [ 'true', 'false' ] | Use this flag to reprocess every account whether or not the data has changed. | [optional] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ disable_optimization='true'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

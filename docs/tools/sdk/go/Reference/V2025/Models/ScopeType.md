@@ -4,7 +4,7 @@ title: ScopeType
 pagination_label: ScopeType
 sidebar_label: ScopeType
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ScopeType', 'V2025ScopeType'] 
+keywords: ['go', 'Golang', 'sdk', 'ScopeType', 'V2025ScopeType']
 slug: /tools/sdk/go/v2025/models/scope-type
 tags: ['SDK', 'Software Development Kit', 'ScopeType', 'V2025ScopeType']
 ---
@@ -13,13 +13,10 @@ tags: ['SDK', 'Software Development Kit', 'ScopeType', 'V2025ScopeType']
 
 ## Enum
 
+- `ENTITLEMENT` (value: `"ENTITLEMENT"`)
 
-* `ENTITLEMENT` (value: `"ENTITLEMENT"`)
+- `CERTIFICATION` (value: `"CERTIFICATION"`)
 
-* `CERTIFICATION` (value: `"CERTIFICATION"`)
+- `IDENTITY` (value: `"IDENTITY"`)
 
-* `IDENTITY` (value: `"IDENTITY"`)
-
-* `ENTITLEMENTREQUEST` (value: `"ENTITLEMENTREQUEST"`)
-
-
+- `ENTITLEMENTREQUEST` (value: `"ENTITLEMENTREQUEST"`)

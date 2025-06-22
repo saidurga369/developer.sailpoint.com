@@ -1,9 +1,9 @@
-import React, { useCallback, useState, useRef, useEffect } from "react";
+import React, {useCallback, useState, useRef, useEffect} from 'react';
 
-import { CopyButtonProps } from "@docusaurus/theme-common/internal";
-import { translate } from "@docusaurus/Translate";
-import clsx from "clsx";
-import copy from "copy-text-to-clipboard";
+import {CopyButtonProps} from '@docusaurus/theme-common/internal';
+import {translate} from '@docusaurus/Translate';
+import clsx from 'clsx';
+import copy from 'copy-text-to-clipboard';
 
 export default function CopyButton({
   code,
@@ -27,43 +27,39 @@ export default function CopyButton({
       aria-label={
         isCopied
           ? translate({
-              id: "theme.CodeBlock.copied",
-              message: "Copied",
-              description: "The copied button label on code blocks",
+              id: 'theme.CodeBlock.copied',
+              message: 'Copied',
+              description: 'The copied button label on code blocks',
             })
           : translate({
-              id: "theme.CodeBlock.copyButtonAriaLabel",
-              message: "Copy code to clipboard",
-              description: "The ARIA label for copy code blocks button",
+              id: 'theme.CodeBlock.copyButtonAriaLabel',
+              message: 'Copy code to clipboard',
+              description: 'The ARIA label for copy code blocks button',
             })
       }
       title={translate({
-        id: "theme.CodeBlock.copy",
-        message: "Copy",
-        description: "The copy button label on code blocks",
+        id: 'theme.CodeBlock.copy',
+        message: 'Copy',
+        description: 'The copy button label on code blocks',
       })}
       className={clsx(
-        "clean-btn",
+        'clean-btn',
         className,
-        "openapi-explorer__code-block-copy-btn",
-        isCopied && "openapi-explorer__code-block-copy-btn--copied"
+        'openapi-explorer__code-block-copy-btn',
+        isCopied && 'openapi-explorer__code-block-copy-btn--copied',
       )}
-      onClick={handleCopyCode}
-    >
+      onClick={handleCopyCode}>
       <span
         className="openapi-explorer__code-block-copy-btn-icons"
-        aria-hidden="true"
-      >
+        aria-hidden="true">
         <svg
           className="openapi-explorer__code-block-copy-btn-icon"
-          viewBox="0 0 24 24"
-        >
+          viewBox="0 0 24 24">
           <path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z" />
         </svg>
         <svg
           className="openapi-explorer__code-block-copy-btn-icon--success"
-          viewBox="0 0 24 24"
-        >
+          viewBox="0 0 24 24">
           <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" />
         </svg>
       </span>

@@ -1,6 +1,6 @@
 ---
 id: beta
-title: Beta 
+title: Beta
 pagination_label: Beta
 sidebar_label: Beta
 sidebar_position: 2
@@ -9,8 +9,7 @@ keywords: ['beta', 'Golang']
 description: Golang SDK reference Beta.
 slug: /tools/go/reference/beta
 tags: ['beta']
---- 
-
+---
 
 Welcome to the Golang SDK documentation for the Identity Security Cloud (ISC) Beta API. This reference guide provides an overview of both methods and models, which will help you understand how to interact with the API effectively.
 

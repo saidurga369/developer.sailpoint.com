@@ -4,19 +4,25 @@ title: EvaluateResponse
 pagination_label: EvaluateResponse
 sidebar_label: EvaluateResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'EvaluateResponse', 'V2025EvaluateResponse'] 
+keywords: ['go', 'Golang', 'sdk', 'EvaluateResponse', 'V2025EvaluateResponse']
 slug: /tools/sdk/go/v2025/models/evaluate-response
-tags: ['SDK', 'Software Development Kit', 'EvaluateResponse', 'V2025EvaluateResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'EvaluateResponse',
+    'V2025EvaluateResponse',
+  ]
 ---
 
 # EvaluateResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ReassignToId** | Pointer to **string** | The Identity ID which should be the recipient of any work items sent to a specific identity & work type | [optional] 
-**LookupTrail** | Pointer to [**[]LookupStep**](lookup-step) | List of Reassignments found by looking up the next `TargetIdentity` in a ReassignmentConfiguration | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ReassignToId** | Pointer to **string** | The Identity ID which should be the recipient of any work items sent to a specific identity & work type | [optional] |
+| **LookupTrail** | Pointer to [**[]LookupStep**](lookup-step) | List of Reassignments found by looking up the next `TargetIdentity` in a ReassignmentConfiguration | [optional] |
 
 ## Methods
 
@@ -24,18 +30,13 @@ Name | Type | Description | Notes
 
 `func NewEvaluateResponse() *EvaluateResponse`
 
-NewEvaluateResponse instantiates a new EvaluateResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewEvaluateResponse instantiates a new EvaluateResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewEvaluateResponseWithDefaults
 
 `func NewEvaluateResponseWithDefaults() *EvaluateResponse`
 
-NewEvaluateResponseWithDefaults instantiates a new EvaluateResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewEvaluateResponseWithDefaults instantiates a new EvaluateResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetReassignToId
 
@@ -47,8 +48,7 @@ GetReassignToId returns the ReassignToId field if non-nil, zero value otherwise.
 
 `func (o *EvaluateResponse) GetReassignToIdOk() (*string, bool)`
 
-GetReassignToIdOk returns a tuple with the ReassignToId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReassignToIdOk returns a tuple with the ReassignToId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReassignToId
 
@@ -72,8 +72,7 @@ GetLookupTrail returns the LookupTrail field if non-nil, zero value otherwise.
 
 `func (o *EvaluateResponse) GetLookupTrailOk() (*[]LookupStep, bool)`
 
-GetLookupTrailOk returns a tuple with the LookupTrail field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLookupTrailOk returns a tuple with the LookupTrail field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLookupTrail
 
@@ -86,5 +85,3 @@ SetLookupTrail sets LookupTrail field to given value.
 `func (o *EvaluateResponse) HasLookupTrail() bool`
 
 HasLookupTrail returns a boolean if a field has been set.
-
-

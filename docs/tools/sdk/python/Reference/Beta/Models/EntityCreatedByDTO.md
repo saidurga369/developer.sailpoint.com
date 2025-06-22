@@ -4,20 +4,27 @@ title: EntityCreatedByDTO
 pagination_label: EntityCreatedByDTO
 sidebar_label: EntityCreatedByDTO
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'EntityCreatedByDTO', 'BetaEntityCreatedByDTO'] 
+keywords:
+  ['python', 'Python', 'sdk', 'EntityCreatedByDTO', 'BetaEntityCreatedByDTO']
 slug: /tools/sdk/python/beta/models/entity-created-by-dto
-tags: ['SDK', 'Software Development Kit', 'EntityCreatedByDTO', 'BetaEntityCreatedByDTO']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'EntityCreatedByDTO',
+    'BetaEntityCreatedByDTO',
+  ]
 ---
 
 # EntityCreatedByDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | ID of the creator | [optional] 
-**display_name** | **str** | The display name of the creator | [optional] 
+| Name             | Type    | Description                     | Notes      |
+| ---------------- | ------- | ------------------------------- | ---------- |
+| **id**           | **str** | ID of the creator               | [optional] |
+| **display_name** | **str** | The display name of the creator | [optional] |
+
 }
 
 ## Example
@@ -31,5 +38,5 @@ display_name='Ashley.Pierce'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

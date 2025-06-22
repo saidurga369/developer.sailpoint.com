@@ -4,26 +4,25 @@ title: ScheduleType
 pagination_label: ScheduleType
 sidebar_label: ScheduleType
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ScheduleType', 'V2024ScheduleType'] 
+keywords: ['python', 'Python', 'sdk', 'ScheduleType', 'V2024ScheduleType']
 slug: /tools/sdk/python/v2024/models/schedule-type
 tags: ['SDK', 'Software Development Kit', 'ScheduleType', 'V2024ScheduleType']
 ---
 
 # ScheduleType
 
-Enum representing the currently supported schedule types.  Additional values may be added in the future without notice. 
+Enum representing the currently supported schedule types. Additional values may be added in the future without notice.
 
 ## Enum
 
-* `DAILY` (value: `'DAILY'`)
+- `DAILY` (value: `'DAILY'`)
 
-* `WEEKLY` (value: `'WEEKLY'`)
+- `WEEKLY` (value: `'WEEKLY'`)
 
-* `MONTHLY` (value: `'MONTHLY'`)
+- `MONTHLY` (value: `'MONTHLY'`)
 
-* `CALENDAR` (value: `'CALENDAR'`)
+- `CALENDAR` (value: `'CALENDAR'`)
 
-* `ANNUALLY` (value: `'ANNUALLY'`)
+- `ANNUALLY` (value: `'ANNUALLY'`)
 
-[[Back to top]](#) 
-
+[[Back to top]](#)

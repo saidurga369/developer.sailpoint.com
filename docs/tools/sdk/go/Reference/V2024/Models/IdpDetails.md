@@ -4,7 +4,7 @@ title: IdpDetails
 pagination_label: IdpDetails
 sidebar_label: IdpDetails
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IdpDetails', 'V2024IdpDetails'] 
+keywords: ['go', 'Golang', 'sdk', 'IdpDetails', 'V2024IdpDetails']
 slug: /tools/sdk/go/v2024/models/idp-details
 tags: ['SDK', 'Software Development Kit', 'IdpDetails', 'V2024IdpDetails']
 ---
@@ -13,22 +13,22 @@ tags: ['SDK', 'Software Development Kit', 'IdpDetails', 'V2024IdpDetails']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Role** | Pointer to **string** | Federation protocol role | [optional] 
-**EntityId** | Pointer to **string** | An entity ID is a globally unique name for a SAML entity, either an Identity Provider (IDP) or a Service Provider (SP). | [optional] 
-**Binding** | Pointer to **string** | Defines the binding used for the SAML flow. Used with IDP configurations. | [optional] 
-**AuthnContext** | Pointer to **string** | Specifies the SAML authentication method to use. Used with IDP configurations. | [optional] 
-**LogoutUrl** | Pointer to **string** | The IDP logout URL. Used with IDP configurations. | [optional] 
-**IncludeAuthnContext** | Pointer to **bool** | Determines if the configured AuthnContext should be used or the default. Used with IDP configurations. | [optional] [default to false]
-**NameId** | Pointer to **string** | The name id format to use. Used with IDP configurations. | [optional] 
-**JitConfiguration** | Pointer to [**JITConfiguration**](jit-configuration) |  | [optional] 
-**Cert** | Pointer to **string** | The Base64-encoded certificate used by the IDP. Used with IDP configurations. | [optional] 
-**LoginUrlPost** | Pointer to **string** | The IDP POST URL, used with IDP HTTP-POST bindings for IDP-initiated logins. Used with IDP configurations. | [optional] 
-**LoginUrlRedirect** | Pointer to **string** | The IDP Redirect URL. Used with IDP configurations. | [optional] 
-**MappingAttribute** | **string** | Return the saml Id for the given user, based on the IDN as SP settings of the org. Used with IDP configurations. | 
-**CertificateExpirationDate** | Pointer to **string** | The expiration date extracted from the certificate. | [optional] 
-**CertificateName** | Pointer to **string** | The name extracted from the certificate. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Role** | Pointer to **string** | Federation protocol role | [optional] |
+| **EntityId** | Pointer to **string** | An entity ID is a globally unique name for a SAML entity, either an Identity Provider (IDP) or a Service Provider (SP). | [optional] |
+| **Binding** | Pointer to **string** | Defines the binding used for the SAML flow. Used with IDP configurations. | [optional] |
+| **AuthnContext** | Pointer to **string** | Specifies the SAML authentication method to use. Used with IDP configurations. | [optional] |
+| **LogoutUrl** | Pointer to **string** | The IDP logout URL. Used with IDP configurations. | [optional] |
+| **IncludeAuthnContext** | Pointer to **bool** | Determines if the configured AuthnContext should be used or the default. Used with IDP configurations. | [optional] [default to false] |
+| **NameId** | Pointer to **string** | The name id format to use. Used with IDP configurations. | [optional] |
+| **JitConfiguration** | Pointer to [**JITConfiguration**](jit-configuration) |  | [optional] |
+| **Cert** | Pointer to **string** | The Base64-encoded certificate used by the IDP. Used with IDP configurations. | [optional] |
+| **LoginUrlPost** | Pointer to **string** | The IDP POST URL, used with IDP HTTP-POST bindings for IDP-initiated logins. Used with IDP configurations. | [optional] |
+| **LoginUrlRedirect** | Pointer to **string** | The IDP Redirect URL. Used with IDP configurations. | [optional] |
+| **MappingAttribute** | **string** | Return the saml Id for the given user, based on the IDN as SP settings of the org. Used with IDP configurations. |
+| **CertificateExpirationDate** | Pointer to **string** | The expiration date extracted from the certificate. | [optional] |
+| **CertificateName** | Pointer to **string** | The name extracted from the certificate. | [optional] |
 
 ## Methods
 
@@ -36,18 +36,13 @@ Name | Type | Description | Notes
 
 `func NewIdpDetails(mappingAttribute string, ) *IdpDetails`
 
-NewIdpDetails instantiates a new IdpDetails object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewIdpDetails instantiates a new IdpDetails object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewIdpDetailsWithDefaults
 
 `func NewIdpDetailsWithDefaults() *IdpDetails`
 
-NewIdpDetailsWithDefaults instantiates a new IdpDetails object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewIdpDetailsWithDefaults instantiates a new IdpDetails object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetRole
 
@@ -59,8 +54,7 @@ GetRole returns the Role field if non-nil, zero value otherwise.
 
 `func (o *IdpDetails) GetRoleOk() (*string, bool)`
 
-GetRoleOk returns a tuple with the Role field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRoleOk returns a tuple with the Role field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRole
 
@@ -84,8 +78,7 @@ GetEntityId returns the EntityId field if non-nil, zero value otherwise.
 
 `func (o *IdpDetails) GetEntityIdOk() (*string, bool)`
 
-GetEntityIdOk returns a tuple with the EntityId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEntityIdOk returns a tuple with the EntityId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEntityId
 
@@ -109,8 +102,7 @@ GetBinding returns the Binding field if non-nil, zero value otherwise.
 
 `func (o *IdpDetails) GetBindingOk() (*string, bool)`
 
-GetBindingOk returns a tuple with the Binding field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetBindingOk returns a tuple with the Binding field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetBinding
 
@@ -134,8 +126,7 @@ GetAuthnContext returns the AuthnContext field if non-nil, zero value otherwise.
 
 `func (o *IdpDetails) GetAuthnContextOk() (*string, bool)`
 
-GetAuthnContextOk returns a tuple with the AuthnContext field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAuthnContextOk returns a tuple with the AuthnContext field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAuthnContext
 
@@ -159,8 +150,7 @@ GetLogoutUrl returns the LogoutUrl field if non-nil, zero value otherwise.
 
 `func (o *IdpDetails) GetLogoutUrlOk() (*string, bool)`
 
-GetLogoutUrlOk returns a tuple with the LogoutUrl field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLogoutUrlOk returns a tuple with the LogoutUrl field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLogoutUrl
 
@@ -184,8 +174,7 @@ GetIncludeAuthnContext returns the IncludeAuthnContext field if non-nil, zero va
 
 `func (o *IdpDetails) GetIncludeAuthnContextOk() (*bool, bool)`
 
-GetIncludeAuthnContextOk returns a tuple with the IncludeAuthnContext field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIncludeAuthnContextOk returns a tuple with the IncludeAuthnContext field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIncludeAuthnContext
 
@@ -209,8 +198,7 @@ GetNameId returns the NameId field if non-nil, zero value otherwise.
 
 `func (o *IdpDetails) GetNameIdOk() (*string, bool)`
 
-GetNameIdOk returns a tuple with the NameId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameIdOk returns a tuple with the NameId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNameId
 
@@ -234,8 +222,7 @@ GetJitConfiguration returns the JitConfiguration field if non-nil, zero value ot
 
 `func (o *IdpDetails) GetJitConfigurationOk() (*JITConfiguration, bool)`
 
-GetJitConfigurationOk returns a tuple with the JitConfiguration field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetJitConfigurationOk returns a tuple with the JitConfiguration field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetJitConfiguration
 
@@ -259,8 +246,7 @@ GetCert returns the Cert field if non-nil, zero value otherwise.
 
 `func (o *IdpDetails) GetCertOk() (*string, bool)`
 
-GetCertOk returns a tuple with the Cert field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCertOk returns a tuple with the Cert field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCert
 
@@ -284,8 +270,7 @@ GetLoginUrlPost returns the LoginUrlPost field if non-nil, zero value otherwise.
 
 `func (o *IdpDetails) GetLoginUrlPostOk() (*string, bool)`
 
-GetLoginUrlPostOk returns a tuple with the LoginUrlPost field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLoginUrlPostOk returns a tuple with the LoginUrlPost field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLoginUrlPost
 
@@ -309,8 +294,7 @@ GetLoginUrlRedirect returns the LoginUrlRedirect field if non-nil, zero value ot
 
 `func (o *IdpDetails) GetLoginUrlRedirectOk() (*string, bool)`
 
-GetLoginUrlRedirectOk returns a tuple with the LoginUrlRedirect field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLoginUrlRedirectOk returns a tuple with the LoginUrlRedirect field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLoginUrlRedirect
 
@@ -334,15 +318,13 @@ GetMappingAttribute returns the MappingAttribute field if non-nil, zero value ot
 
 `func (o *IdpDetails) GetMappingAttributeOk() (*string, bool)`
 
-GetMappingAttributeOk returns a tuple with the MappingAttribute field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMappingAttributeOk returns a tuple with the MappingAttribute field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMappingAttribute
 
 `func (o *IdpDetails) SetMappingAttribute(v string)`
 
 SetMappingAttribute sets MappingAttribute field to given value.
-
 
 ### GetCertificateExpirationDate
 
@@ -354,8 +336,7 @@ GetCertificateExpirationDate returns the CertificateExpirationDate field if non-
 
 `func (o *IdpDetails) GetCertificateExpirationDateOk() (*string, bool)`
 
-GetCertificateExpirationDateOk returns a tuple with the CertificateExpirationDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCertificateExpirationDateOk returns a tuple with the CertificateExpirationDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCertificateExpirationDate
 
@@ -379,8 +360,7 @@ GetCertificateName returns the CertificateName field if non-nil, zero value othe
 
 `func (o *IdpDetails) GetCertificateNameOk() (*string, bool)`
 
-GetCertificateNameOk returns a tuple with the CertificateName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCertificateNameOk returns a tuple with the CertificateName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCertificateName
 
@@ -393,5 +373,3 @@ SetCertificateName sets CertificateName field to given value.
 `func (o *IdpDetails) HasCertificateName() bool`
 
 HasCertificateName returns a boolean if a field has been set.
-
-

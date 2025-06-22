@@ -1,15 +1,15 @@
-import React, { cloneElement, ReactElement, useEffect, useRef } from "react";
+import React, {cloneElement, ReactElement, useEffect, useRef} from 'react';
 
 import {
   sanitizeTabsChildren,
   type TabProps,
   useScrollPositionBlocker,
   useTabs,
-} from "@docusaurus/theme-common/internal";
-import { TabItemProps } from "@docusaurus/theme-common/lib/utils/tabsUtils";
-import useIsBrowser from "@docusaurus/useIsBrowser";
-import { Language } from "@theme/ApiExplorer/CodeSnippets";
-import clsx from "clsx";
+} from '@docusaurus/theme-common/internal';
+import {TabItemProps} from '@docusaurus/theme-common/lib/utils/tabsUtils';
+import useIsBrowser from '@docusaurus/useIsBrowser';
+import {Language} from '@theme/ApiExplorer/CodeSnippets';
+import clsx from 'clsx';
 
 export interface Props {
   action: {
@@ -38,12 +38,12 @@ function TabList({
 }: CodeTabsProps & ReturnType<typeof useTabs>) {
   const tabRefs = useRef<(HTMLLIElement | null)[]>([]);
   const tabsScrollContainerRef = useRef<any>();
-  const { blockElementScrollPositionUntilNextRender } =
+  const {blockElementScrollPositionUntilNextRender} =
     useScrollPositionBlocker();
 
   useEffect(() => {
     const activeTab = tabRefs.current.find(
-      (tab) => tab?.getAttribute("aria-selected") === "true"
+      (tab) => tab?.getAttribute('aria-selected') === 'true',
     );
 
     if (activeTab && tabsScrollContainerRef.current) {
@@ -72,7 +72,7 @@ function TabList({
     event:
       | React.FocusEvent<HTMLLIElement>
       | React.MouseEvent<HTMLLIElement>
-      | React.KeyboardEvent<HTMLLIElement>
+      | React.KeyboardEvent<HTMLLIElement>,
   ) => {
     const newTab = event.currentTarget;
     const newTabIndex = tabRefs.current.indexOf(newTab);
@@ -87,19 +87,19 @@ function TabList({
       let newLanguage: Language;
       if (currentLanguage && includeVariant) {
         newLanguage = languageSet.filter(
-          (lang: Language) => lang.language === currentLanguage
+          (lang: Language) => lang.language === currentLanguage,
         )[0];
         newLanguage.variant = newTabValue;
         action.setSelectedVariant(newTabValue.toLowerCase());
       } else if (currentLanguage && includeSample) {
         newLanguage = languageSet.filter(
-          (lang: Language) => lang.language === currentLanguage
+          (lang: Language) => lang.language === currentLanguage,
         )[0];
         newLanguage.sample = newTabValue;
         action.setSelectedSample(newTabValue);
       } else {
         newLanguage = languageSet.filter(
-          (lang: Language) => lang.language === newTabValue
+          (lang: Language) => lang.language === newTabValue,
         )[0];
         action.setSelectedVariant(newLanguage.variants[0].toLowerCase());
         action.setSelectedSample(newLanguage.sample);
@@ -112,16 +112,16 @@ function TabList({
     let focusElement: HTMLLIElement | null = null;
 
     switch (event.key) {
-      case "Enter": {
+      case 'Enter': {
         handleTabChange(event);
         break;
       }
-      case "ArrowRight": {
+      case 'ArrowRight': {
         const nextTab = tabRefs.current.indexOf(event.currentTarget) + 1;
         focusElement = tabRefs.current[nextTab] ?? tabRefs.current[0]!;
         break;
       }
-      case "ArrowLeft": {
+      case 'ArrowLeft': {
         const prevTab = tabRefs.current.indexOf(event.currentTarget) - 1;
         focusElement =
           tabRefs.current[prevTab] ??
@@ -136,21 +136,19 @@ function TabList({
   };
 
   return (
-    
     <ul
       role="tablist"
       aria-orientation="horizontal"
       className={clsx(
-        "tabs",
-        "openapi-tabs__code-list-container",
+        'tabs',
+        'openapi-tabs__code-list-container',
         {
-          "tabs--block": block,
+          'tabs--block': block,
         },
-        className
+        className,
       )}
-      ref={tabsScrollContainerRef}
-    >
-      {tabValues.map(({ value, label, attributes }) => (
+      ref={tabsScrollContainerRef}>
+      {tabValues.map(({value, label, attributes}) => (
         <li
           // TODO extract TabListItem
           role="tab"
@@ -162,14 +160,13 @@ function TabList({
           onClick={handleTabChange}
           {...attributes}
           className={clsx(
-            "tabs__item",
-            "openapi-tabs__code-item",
+            'tabs__item',
+            'openapi-tabs__code-item',
             attributes?.className as string,
             {
               active: selectedValue === value,
-            }
-          )}
-        >
+            },
+          )}>
           <span>{label ?? value}</span>
         </li>
       ))}
@@ -183,17 +180,17 @@ function TabContent({
   selectedValue,
 }: CodeTabsProps & ReturnType<typeof useTabs>): React.JSX.Element | null {
   const childTabs = (Array.isArray(children) ? children : [children]).filter(
-    Boolean
+    Boolean,
   ) as ReactElement<TabItemProps>[];
   if (lazy) {
     const selectedTabItem = childTabs.find(
-      (tabItem) => tabItem.props.value === selectedValue
+      (tabItem) => tabItem.props.value === selectedValue,
     );
     if (!selectedTabItem) {
       // fail-safe or fail-fast? not sure what's best here
       return null;
     }
-    return cloneElement(selectedTabItem, { className: "margin-top--md" });
+    return cloneElement(selectedTabItem, {className: 'margin-top--md'});
   }
   return (
     <div className="margin-top--md openapi-tabs__code-content">
@@ -201,7 +198,7 @@ function TabContent({
         cloneElement(tabItem, {
           key: i,
           hidden: tabItem.props.value !== selectedValue,
-        })
+        }),
       )}
     </div>
   );
@@ -209,11 +206,13 @@ function TabContent({
 
 function TabsComponent(props: CodeTabsProps & Props): React.JSX.Element {
   const tabs = useTabs(props);
-  const { className } = props;
+  const {className} = props;
   return (
     <div
-      className={clsx("tabs-container openapi-tabs__code-container", className)}
-    >
+      className={clsx(
+        'tabs-container openapi-tabs__code-container',
+        className,
+      )}>
       <TabList {...props} {...tabs} />
       <TabContent {...props} {...tabs} />
     </div>
@@ -221,7 +220,7 @@ function TabsComponent(props: CodeTabsProps & Props): React.JSX.Element {
 }
 
 export default function CodeTabs(
-  props: CodeTabsProps & Props
+  props: CodeTabsProps & Props,
 ): React.JSX.Element {
   const isBrowser = useIsBrowser();
   return (
@@ -229,8 +228,7 @@ export default function CodeTabs(
       // Remount tabs after hydration
       // Temporary fix for https://github.com/facebook/docusaurus/issues/5653
       key={String(isBrowser)}
-      {...props}
-    >
+      {...props}>
       {sanitizeTabsChildren(props.children)}
     </TabsComponent>
   );

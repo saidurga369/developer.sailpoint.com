@@ -4,26 +4,36 @@ title: AccountActivityApprovalStatus
 pagination_label: AccountActivityApprovalStatus
 sidebar_label: AccountActivityApprovalStatus
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccountActivityApprovalStatus', 'V2025AccountActivityApprovalStatus'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'AccountActivityApprovalStatus',
+    'V2025AccountActivityApprovalStatus',
+  ]
 slug: /tools/sdk/go/v2025/models/account-activity-approval-status
-tags: ['SDK', 'Software Development Kit', 'AccountActivityApprovalStatus', 'V2025AccountActivityApprovalStatus']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountActivityApprovalStatus',
+    'V2025AccountActivityApprovalStatus',
+  ]
 ---
 
 # AccountActivityApprovalStatus
 
 ## Enum
 
+- `FINISHED` (value: `"FINISHED"`)
 
-* `FINISHED` (value: `"FINISHED"`)
+- `REJECTED` (value: `"REJECTED"`)
 
-* `REJECTED` (value: `"REJECTED"`)
+- `RETURNED` (value: `"RETURNED"`)
 
-* `RETURNED` (value: `"RETURNED"`)
+- `EXPIRED` (value: `"EXPIRED"`)
 
-* `EXPIRED` (value: `"EXPIRED"`)
+- `PENDING` (value: `"PENDING"`)
 
-* `PENDING` (value: `"PENDING"`)
-
-* `CANCELED` (value: `"CANCELED"`)
-
-
+- `CANCELED` (value: `"CANCELED"`)

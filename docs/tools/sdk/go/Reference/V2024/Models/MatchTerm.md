@@ -4,7 +4,7 @@ title: MatchTerm
 pagination_label: MatchTerm
 sidebar_label: MatchTerm
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'MatchTerm', 'V2024MatchTerm'] 
+keywords: ['go', 'Golang', 'sdk', 'MatchTerm', 'V2024MatchTerm']
 slug: /tools/sdk/go/v2024/models/match-term
 tags: ['SDK', 'Software Development Kit', 'MatchTerm', 'V2024MatchTerm']
 ---
@@ -13,14 +13,14 @@ tags: ['SDK', 'Software Development Kit', 'MatchTerm', 'V2024MatchTerm']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | Pointer to **string** | The attribute name | [optional] 
-**Value** | Pointer to **string** | The attribute value | [optional] 
-**Op** | Pointer to **string** | The operator between name and value | [optional] 
-**Container** | Pointer to **bool** | If it is a container or a real match term | [optional] [default to false]
-**And** | Pointer to **bool** | If it is AND logical operator for the children match terms | [optional] [default to false]
-**Children** | Pointer to **[]map[string]interface{}** | The children under this match term | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | Pointer to **string** | The attribute name | [optional] |
+| **Value** | Pointer to **string** | The attribute value | [optional] |
+| **Op** | Pointer to **string** | The operator between name and value | [optional] |
+| **Container** | Pointer to **bool** | If it is a container or a real match term | [optional] [default to false] |
+| **And** | Pointer to **bool** | If it is AND logical operator for the children match terms | [optional] [default to false] |
+| **Children** | Pointer to **[]map[string]interface{}** | The children under this match term | [optional] |
 
 ## Methods
 
@@ -28,18 +28,13 @@ Name | Type | Description | Notes
 
 `func NewMatchTerm() *MatchTerm`
 
-NewMatchTerm instantiates a new MatchTerm object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewMatchTerm instantiates a new MatchTerm object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewMatchTermWithDefaults
 
 `func NewMatchTermWithDefaults() *MatchTerm`
 
-NewMatchTermWithDefaults instantiates a new MatchTerm object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewMatchTermWithDefaults instantiates a new MatchTerm object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -51,8 +46,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *MatchTerm) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -76,8 +70,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *MatchTerm) GetValueOk() (*string, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -101,8 +94,7 @@ GetOp returns the Op field if non-nil, zero value otherwise.
 
 `func (o *MatchTerm) GetOpOk() (*string, bool)`
 
-GetOpOk returns a tuple with the Op field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOpOk returns a tuple with the Op field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOp
 
@@ -126,8 +118,7 @@ GetContainer returns the Container field if non-nil, zero value otherwise.
 
 `func (o *MatchTerm) GetContainerOk() (*bool, bool)`
 
-GetContainerOk returns a tuple with the Container field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetContainerOk returns a tuple with the Container field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetContainer
 
@@ -151,8 +142,7 @@ GetAnd returns the And field if non-nil, zero value otherwise.
 
 `func (o *MatchTerm) GetAndOk() (*bool, bool)`
 
-GetAndOk returns a tuple with the And field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAndOk returns a tuple with the And field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAnd
 
@@ -176,8 +166,7 @@ GetChildren returns the Children field if non-nil, zero value otherwise.
 
 `func (o *MatchTerm) GetChildrenOk() (*[]map[string]interface{}, bool)`
 
-GetChildrenOk returns a tuple with the Children field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetChildrenOk returns a tuple with the Children field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetChildren
 
@@ -195,10 +184,10 @@ HasChildren returns a boolean if a field has been set.
 
 `func (o *MatchTerm) SetChildrenNil(b bool)`
 
- SetChildrenNil sets the value for Children to be an explicit nil
+SetChildrenNil sets the value for Children to be an explicit nil
 
 ### UnsetChildren
+
 `func (o *MatchTerm) UnsetChildren()`
 
 UnsetChildren ensures that no value is present for Children, not even an explicit nil
-

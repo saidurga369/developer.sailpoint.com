@@ -4,9 +4,10 @@ title: RoleCriteriaKey
 pagination_label: RoleCriteriaKey
 sidebar_label: RoleCriteriaKey
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RoleCriteriaKey', 'V2024RoleCriteriaKey'] 
+keywords: ['python', 'Python', 'sdk', 'RoleCriteriaKey', 'V2024RoleCriteriaKey']
 slug: /tools/sdk/python/v2024/models/role-criteria-key
-tags: ['SDK', 'Software Development Kit', 'RoleCriteriaKey', 'V2024RoleCriteriaKey']
+tags:
+  ['SDK', 'Software Development Kit', 'RoleCriteriaKey', 'V2024RoleCriteriaKey']
 ---
 
 # RoleCriteriaKey
@@ -15,11 +16,12 @@ Refers to a specific Identity attribute, Account attibute, or Entitlement used i
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** | [**RoleCriteriaKeyType**](role-criteria-key-type) |  | [required]
-**var_property** | **str** | The name of the attribute or entitlement to which the associated criteria applies. | [required]
-**source_id** | **str** | ID of the Source from which an account attribute or entitlement is drawn. Required if type is ACCOUNT or ENTITLEMENT | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | [**RoleCriteriaKeyType**](role-criteria-key-type) |  | [required] |
+| **var_property** | **str** | The name of the attribute or entitlement to which the associated criteria applies. | [required] |
+| **source_id** | **str** | ID of the Source from which an account attribute or entitlement is drawn. Required if type is ACCOUNT or ENTITLEMENT | [optional] |
+
 }
 
 ## Example
@@ -34,5 +36,5 @@ source_id='2c9180867427f3a301745aec18211519'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,25 +4,34 @@ title: ConnectedObjectType
 pagination_label: ConnectedObjectType
 sidebar_label: ConnectedObjectType
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'ConnectedObjectType', 'BetaConnectedObjectType'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'ConnectedObjectType',
+    'BetaConnectedObjectType',
+  ]
 slug: /tools/sdk/powershell/beta/models/connected-object-type
-tags: ['SDK', 'Software Development Kit', 'ConnectedObjectType', 'BetaConnectedObjectType']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ConnectedObjectType',
+    'BetaConnectedObjectType',
+  ]
 ---
-
 
 # ConnectedObjectType
 
 ## Enum
 
+- `ACCESS_PROFILE` (value: `"ACCESS_PROFILE"`)
 
-* `ACCESS_PROFILE` (value: `"ACCESS_PROFILE"`)
+- `ROLE` (value: `"ROLE"`)
 
-* `ROLE` (value: `"ROLE"`)
+- `SOD_POLICY` (value: `"SOD_POLICY"`)
 
-* `SOD_POLICY` (value: `"SOD_POLICY"`)
+- `SOURCE` (value: `"SOURCE"`)
 
-* `SOURCE` (value: `"SOURCE"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

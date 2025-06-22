@@ -4,21 +4,34 @@ title: SearchAttributeConfig
 pagination_label: SearchAttributeConfig
 sidebar_label: SearchAttributeConfig
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SearchAttributeConfig', 'BetaSearchAttributeConfig'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'SearchAttributeConfig',
+    'BetaSearchAttributeConfig',
+  ]
 slug: /tools/sdk/python/beta/models/search-attribute-config
-tags: ['SDK', 'Software Development Kit', 'SearchAttributeConfig', 'BetaSearchAttributeConfig']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SearchAttributeConfig',
+    'BetaSearchAttributeConfig',
+  ]
 ---
 
 # SearchAttributeConfig
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | Name of the new attribute | [optional] 
-**display_name** | **str** | The display name of the new attribute | [optional] 
-**application_attributes** | **object** | Map of application id and their associated attribute. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **name** | **str** | Name of the new attribute | [optional] |
+| **display_name** | **str** | The display name of the new attribute | [optional] |
+| **application_attributes** | **object** | Map of application id and their associated attribute. | [optional] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ application_attributes={2c91808b79fd2422017a0b35d30f3968=employeeNumber, 2c91808
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

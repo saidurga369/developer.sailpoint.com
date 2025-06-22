@@ -4,9 +4,22 @@ title: IdentityAttributesChangedChangesInnerNewValue
 pagination_label: IdentityAttributesChangedChangesInnerNewValue
 sidebar_label: IdentityAttributesChangedChangesInnerNewValue
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentityAttributesChangedChangesInnerNewValue', 'V2025IdentityAttributesChangedChangesInnerNewValue'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'IdentityAttributesChangedChangesInnerNewValue',
+    'V2025IdentityAttributesChangedChangesInnerNewValue',
+  ]
 slug: /tools/sdk/python/v2025/models/identity-attributes-changed-changes-inner-new-value
-tags: ['SDK', 'Software Development Kit', 'IdentityAttributesChangedChangesInnerNewValue', 'V2025IdentityAttributesChangedChangesInnerNewValue']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityAttributesChangedChangesInnerNewValue',
+    'V2025IdentityAttributesChangedChangesInnerNewValue',
+  ]
 ---
 
 # IdentityAttributesChangedChangesInnerNewValue
@@ -15,8 +28,9 @@ The value of the identity attribute after it changed.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
+
 }
 
 ## Example
@@ -28,5 +42,5 @@ identity_attributes_changed_changes_inner_new_value = IdentityAttributesChangedC
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

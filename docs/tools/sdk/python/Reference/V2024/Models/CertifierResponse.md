@@ -4,20 +4,27 @@ title: CertifierResponse
 pagination_label: CertifierResponse
 sidebar_label: CertifierResponse
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'CertifierResponse', 'V2024CertifierResponse'] 
+keywords:
+  ['python', 'Python', 'sdk', 'CertifierResponse', 'V2024CertifierResponse']
 slug: /tools/sdk/python/v2024/models/certifier-response
-tags: ['SDK', 'Software Development Kit', 'CertifierResponse', 'V2024CertifierResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CertifierResponse',
+    'V2024CertifierResponse',
+  ]
 ---
 
 # CertifierResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | the id of the certifier | [optional] 
-**display_name** | **str** | the name of the certifier | [optional] 
+| Name             | Type    | Description               | Notes      |
+| ---------------- | ------- | ------------------------- | ---------- |
+| **id**           | **str** | the id of the certifier   | [optional] |
+| **display_name** | **str** | the name of the certifier | [optional] |
+
 }
 
 ## Example
@@ -31,5 +38,5 @@ display_name='John Snow'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

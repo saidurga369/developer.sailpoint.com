@@ -4,35 +4,48 @@ title: NonEmployeeRecord
 pagination_label: NonEmployeeRecord
 sidebar_label: NonEmployeeRecord
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'NonEmployeeRecord', 'V2024NonEmployeeRecord'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'NonEmployeeRecord',
+    'V2024NonEmployeeRecord',
+  ]
 slug: /tools/sdk/powershell/v2024/models/non-employee-record
-tags: ['SDK', 'Software Development Kit', 'NonEmployeeRecord', 'V2024NonEmployeeRecord']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NonEmployeeRecord',
+    'V2024NonEmployeeRecord',
+  ]
 ---
-
 
 # NonEmployeeRecord
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | Non-Employee record id. | [optional] 
-**AccountName** | **String** | Requested identity account name. | [optional] 
-**FirstName** | **String** | Non-Employee's first name. | [optional] 
-**LastName** | **String** | Non-Employee's last name. | [optional] 
-**Email** | **String** | Non-Employee's email. | [optional] 
-**Phone** | **String** | Non-Employee's phone. | [optional] 
-**Manager** | **String** | The account ID of a valid identity to serve as this non-employee's manager. | [optional] 
-**SourceId** | **String** | Non-Employee's source id. | [optional] 
-**VarData** | **map[string]String** | Additional attributes for a non-employee. Up to 10 custom attributes can be added. | [optional] 
-**StartDate** | **System.DateTime** | Non-Employee employment start date. | [optional] 
-**EndDate** | **System.DateTime** | Non-Employee employment end date. | [optional] 
-**Modified** | **System.DateTime** | When the request was last modified. | [optional] 
-**Created** | **System.DateTime** | When the request was created. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | Non-Employee record id. | [optional] |
+| **AccountName** | **String** | Requested identity account name. | [optional] |
+| **FirstName** | **String** | Non-Employee's first name. | [optional] |
+| **LastName** | **String** | Non-Employee's last name. | [optional] |
+| **Email** | **String** | Non-Employee's email. | [optional] |
+| **Phone** | **String** | Non-Employee's phone. | [optional] |
+| **Manager** | **String** | The account ID of a valid identity to serve as this non-employee's manager. | [optional] |
+| **SourceId** | **String** | Non-Employee's source id. | [optional] |
+| **VarData** | **map[string]String** | Additional attributes for a non-employee. Up to 10 custom attributes can be added. | [optional] |
+| **StartDate** | **System.DateTime** | Non-Employee employment start date. | [optional] |
+| **EndDate** | **System.DateTime** | Non-Employee employment end date. | [optional] |
+| **Modified** | **System.DateTime** | When the request was last modified. | [optional] |
+| **Created** | **System.DateTime** | When the request was created. | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $NonEmployeeRecord = Initialize-V2024NonEmployeeRecord  -Id ef38f94347e94562b5bb8424a56397d8 `
  -AccountName Abby.Smith `
@@ -50,10 +63,9 @@ $NonEmployeeRecord = Initialize-V2024NonEmployeeRecord  -Id ef38f94347e94562b5bb
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $NonEmployeeRecord | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

@@ -4,18 +4,31 @@ title: RoleMiningSessionStatus
 pagination_label: RoleMiningSessionStatus
 sidebar_label: RoleMiningSessionStatus
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleMiningSessionStatus', 'BetaRoleMiningSessionStatus'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'RoleMiningSessionStatus',
+    'BetaRoleMiningSessionStatus',
+  ]
 slug: /tools/sdk/go/beta/models/role-mining-session-status
-tags: ['SDK', 'Software Development Kit', 'RoleMiningSessionStatus', 'BetaRoleMiningSessionStatus']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningSessionStatus',
+    'BetaRoleMiningSessionStatus',
+  ]
 ---
 
 # RoleMiningSessionStatus
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**State** | Pointer to [**RoleMiningSessionState**](role-mining-session-state) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **State** | Pointer to [**RoleMiningSessionState**](role-mining-session-state) |  | [optional] |
 
 ## Methods
 
@@ -23,18 +36,13 @@ Name | Type | Description | Notes
 
 `func NewRoleMiningSessionStatus() *RoleMiningSessionStatus`
 
-NewRoleMiningSessionStatus instantiates a new RoleMiningSessionStatus object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleMiningSessionStatus instantiates a new RoleMiningSessionStatus object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleMiningSessionStatusWithDefaults
 
 `func NewRoleMiningSessionStatusWithDefaults() *RoleMiningSessionStatus`
 
-NewRoleMiningSessionStatusWithDefaults instantiates a new RoleMiningSessionStatus object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleMiningSessionStatusWithDefaults instantiates a new RoleMiningSessionStatus object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetState
 
@@ -46,8 +54,7 @@ GetState returns the State field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningSessionStatus) GetStateOk() (*RoleMiningSessionState, bool)`
 
-GetStateOk returns a tuple with the State field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStateOk returns a tuple with the State field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetState
 
@@ -60,5 +67,3 @@ SetState sets State field to given value.
 `func (o *RoleMiningSessionStatus) HasState() bool`
 
 HasState returns a boolean if a field has been set.
-
-

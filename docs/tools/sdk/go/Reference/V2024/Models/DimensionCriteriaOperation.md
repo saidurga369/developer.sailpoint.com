@@ -4,20 +4,30 @@ title: DimensionCriteriaOperation
 pagination_label: DimensionCriteriaOperation
 sidebar_label: DimensionCriteriaOperation
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'DimensionCriteriaOperation', 'V2024DimensionCriteriaOperation'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'DimensionCriteriaOperation',
+    'V2024DimensionCriteriaOperation',
+  ]
 slug: /tools/sdk/go/v2024/models/dimension-criteria-operation
-tags: ['SDK', 'Software Development Kit', 'DimensionCriteriaOperation', 'V2024DimensionCriteriaOperation']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'DimensionCriteriaOperation',
+    'V2024DimensionCriteriaOperation',
+  ]
 ---
 
 # DimensionCriteriaOperation
 
 ## Enum
 
+- `EQUALS` (value: `"EQUALS"`)
 
-* `EQUALS` (value: `"EQUALS"`)
+- `AND` (value: `"AND"`)
 
-* `AND` (value: `"AND"`)
-
-* `OR` (value: `"OR"`)
-
-
+- `OR` (value: `"OR"`)

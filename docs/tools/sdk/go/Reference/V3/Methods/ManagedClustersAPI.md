@@ -4,47 +4,42 @@ title: ManagedClusters
 pagination_label: ManagedClusters
 sidebar_label: ManagedClusters
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ManagedClusters', 'ManagedClusters'] 
+keywords: ['go', 'Golang', 'sdk', 'ManagedClusters', 'ManagedClusters']
 slug: /tools/sdk/go/v3/methods/managed-clusters
 tags: ['SDK', 'Software Development Kit', 'ManagedClusters', 'ManagedClusters']
 ---
 
 # ManagedClustersAPI
-  Use this API to implement managed cluster functionality. 
-With this functionality in place, administrators can modify and delete existing managed clients, get their statuses, and create new ones. 
- 
+
+Use this API to implement managed cluster functionality. With this functionality in place, administrators can modify and delete existing managed clients, get their statuses, and create new ones.
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/v3*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create-managed-cluster**](#create-managed-cluster) | **Post** `/managed-clusters` | Create create managed cluster
-[**delete-managed-cluster**](#delete-managed-cluster) | **Delete** `/managed-clusters/{id}` | Delete managed cluster
-[**get-client-log-configuration**](#get-client-log-configuration) | **Get** `/managed-clusters/{id}/log-config` | Get managed cluster log configuration
-[**get-managed-cluster**](#get-managed-cluster) | **Get** `/managed-clusters/{id}` | Get managed cluster
-[**get-managed-clusters**](#get-managed-clusters) | **Get** `/managed-clusters` | Get managed clusters
-[**put-client-log-configuration**](#put-client-log-configuration) | **Put** `/managed-clusters/{id}/log-config` | Update managed cluster log configuration
-[**update-managed-cluster**](#update-managed-cluster) | **Patch** `/managed-clusters/{id}` | Update managed cluster
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**create-managed-cluster**](#create-managed-cluster) | **Post** `/managed-clusters` | Create create managed cluster |
+| [**delete-managed-cluster**](#delete-managed-cluster) | **Delete** `/managed-clusters/{id}` | Delete managed cluster |
+| [**get-client-log-configuration**](#get-client-log-configuration) | **Get** `/managed-clusters/{id}/log-config` | Get managed cluster log configuration |
+| [**get-managed-cluster**](#get-managed-cluster) | **Get** `/managed-clusters/{id}` | Get managed cluster |
+| [**get-managed-clusters**](#get-managed-clusters) | **Get** `/managed-clusters` | Get managed clusters |
+| [**put-client-log-configuration**](#put-client-log-configuration) | **Put** `/managed-clusters/{id}/log-config` | Update managed cluster log configuration |
+| [**update-managed-cluster**](#update-managed-cluster) | **Patch** `/managed-clusters/{id}` | Update managed cluster |
 
 ## create-managed-cluster
-Create create managed cluster
-Create a new Managed Cluster.
-The API returns a result that includes the managed cluster ID.
+
+Create create managed cluster Create a new Managed Cluster. The API returns a result that includes the managed cluster ID.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/create-managed-cluster)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCreateManagedClusterRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **managedClusterRequest** | [**ManagedClusterRequest**](../models/managed-cluster-request) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **managedClusterRequest** | [**ManagedClusterRequest**](../models/managed-cluster-request) |  |
 
 ### Return type
 
@@ -78,14 +73,14 @@ func main() {
           "name" : "Managed Cluster Name",
           "description" : "A short description of the managed cluster.",
           "type" : "idn"
-        }`) // ManagedClusterRequest | 
+        }`) // ManagedClusterRequest |
 
     var managedClusterRequest v3.ManagedClusterRequest
     if err := json.Unmarshal(managedclusterrequest, &managedClusterRequest); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -103,32 +98,30 @@ func main() {
 [[Back to top]](#)
 
 ## delete-managed-cluster
-Delete managed cluster
-Delete an existing managed cluster.
+
+Delete managed cluster Delete an existing managed cluster.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/delete-managed-cluster)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Managed cluster ID. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Managed cluster ID. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteManagedClusterRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **removeClients** | **bool** | Flag to determine the need to delete a cluster with clients. | [default to false]
+**removeClients** | **bool** | Flag to determine the need to delete a cluster with clients. | [default to false]
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -144,8 +137,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -153,7 +146,7 @@ func main() {
     id := `2c9180897de347a2017de8859e8c5039` // string | Managed cluster ID. # string | Managed cluster ID.
     removeClients := false // bool | Flag to determine the need to delete a cluster with clients. (optional) (default to false) # bool | Flag to determine the need to delete a cluster with clients. (optional) (default to false)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -163,34 +156,31 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `ManagedClustersAPI.DeleteManagedCluster``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## get-client-log-configuration
-Get managed cluster log configuration
-Get a managed cluster's log configuration.
+
+Get managed cluster log configuration Get a managed cluster's log configuration.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/get-client-log-configuration)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | ID of managed cluster to get log configuration for. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | ID of managed cluster to get log configuration for. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetClientLogConfigurationRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -210,15 +200,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `2b838de9-db9b-abcf-e646-d4f274ad4238` // string | ID of managed cluster to get log configuration for. # string | ID of managed cluster to get log configuration for.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -236,27 +226,24 @@ func main() {
 [[Back to top]](#)
 
 ## get-managed-cluster
-Get managed cluster
-Get a managed cluster by ID.
+
+Get managed cluster Get a managed cluster by ID.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/get-managed-cluster)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Managed cluster ID. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Managed cluster ID. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetManagedClusterRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -276,15 +263,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `2c9180897de347a2017de8859e8c5039` // string | Managed cluster ID. # string | Managed cluster ID.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -302,26 +289,23 @@ func main() {
 [[Back to top]](#)
 
 ## get-managed-clusters
-Get managed clusters
-List current organization's managed clusters, based on request context.
+
+Get managed clusters List current organization's managed clusters, based on request context.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/get-managed-clusters)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetManagedClustersRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **operational**: *eq* | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
+| **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false] |
+| **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **operational**: _eq_ |
 
 ### Return type
 
@@ -341,8 +325,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -352,7 +336,7 @@ func main() {
     count := true // bool | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to false) # bool | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to false)
     filters := `operational eq "operation"` // string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **operational**: *eq* (optional) # string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **operational**: *eq* (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -370,28 +354,26 @@ func main() {
 [[Back to top]](#)
 
 ## put-client-log-configuration
-Update managed cluster log configuration
-Update a managed cluster's log configuration. You may only specify one of `durationMinutes` or `expiration`, up to 1440 minutes (24 hours) in the future. If neither is specified, the default value for `durationMinutes` is 240.
+
+Update managed cluster log configuration Update a managed cluster's log configuration. You may only specify one of `durationMinutes` or `expiration`, up to 1440 minutes (24 hours) in the future. If neither is specified, the default value for `durationMinutes` is 240.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/put-client-log-configuration)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | ID of the managed cluster to update the log configuration for. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | ID of the managed cluster to update the log configuration for. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiPutClientLogConfigurationRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **putClientLogConfigurationRequest** | [**PutClientLogConfigurationRequest**](../models/put-client-log-configuration-request) | Client log configuration for the given managed cluster. | 
+**putClientLogConfigurationRequest** | [**PutClientLogConfigurationRequest**](../models/put-client-log-configuration-request) | Client log configuration for the given managed cluster. |
 
 ### Return type
 
@@ -425,7 +407,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -443,28 +425,26 @@ func main() {
 [[Back to top]](#)
 
 ## update-managed-cluster
-Update managed cluster
-Update an existing managed cluster.
+
+Update managed cluster Update an existing managed cluster.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/update-managed-cluster)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Managed cluster ID. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Managed cluster ID. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiUpdateManagedClusterRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **jsonPatchOperation** | [**[]JsonPatchOperation**](../models/json-patch-operation) | JSONPatch payload used to update the object. | 
+**jsonPatchOperation** | [**[]JsonPatchOperation**](../models/json-patch-operation) | JSONPatch payload used to update the object. |
 
 ### Return type
 
@@ -498,7 +478,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -514,4 +494,3 @@ func main() {
 ```
 
 [[Back to top]](#)
-

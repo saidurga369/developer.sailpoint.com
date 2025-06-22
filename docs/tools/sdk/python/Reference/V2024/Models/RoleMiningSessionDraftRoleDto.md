@@ -4,28 +4,41 @@ title: RoleMiningSessionDraftRoleDto
 pagination_label: RoleMiningSessionDraftRoleDto
 sidebar_label: RoleMiningSessionDraftRoleDto
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RoleMiningSessionDraftRoleDto', 'V2024RoleMiningSessionDraftRoleDto'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'RoleMiningSessionDraftRoleDto',
+    'V2024RoleMiningSessionDraftRoleDto',
+  ]
 slug: /tools/sdk/python/v2024/models/role-mining-session-draft-role-dto
-tags: ['SDK', 'Software Development Kit', 'RoleMiningSessionDraftRoleDto', 'V2024RoleMiningSessionDraftRoleDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningSessionDraftRoleDto',
+    'V2024RoleMiningSessionDraftRoleDto',
+  ]
 ---
 
 # RoleMiningSessionDraftRoleDto
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | Name of the draft role | [optional] 
-**description** | **str** | Draft role description | [optional] 
-**identity_ids** | **[]str** | The list of identities for this role mining session. | [optional] 
-**entitlement_ids** | **[]str** | The list of entitlement ids for this role mining session. | [optional] 
-**excluded_entitlements** | **[]str** | The list of excluded entitlement ids. | [optional] 
-**modified** | **datetime** | Last modified date | [optional] 
-**type** | [**RoleMiningRoleType**](role-mining-role-type) |  | [optional] 
-**id** | **str** | Id of the potential draft role | [optional] 
-**created_date** | **datetime** | The date-time when this potential draft role was created. | [optional] 
-**modified_date** | **datetime** | The date-time when this potential draft role was modified. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **name** | **str** | Name of the draft role | [optional] |
+| **description** | **str** | Draft role description | [optional] |
+| **identity_ids** | **[]str** | The list of identities for this role mining session. | [optional] |
+| **entitlement_ids** | **[]str** | The list of entitlement ids for this role mining session. | [optional] |
+| **excluded_entitlements** | **[]str** | The list of excluded entitlement ids. | [optional] |
+| **modified** | **datetime** | Last modified date | [optional] |
+| **type** | [**RoleMiningRoleType**](role-mining-role-type) |  | [optional] |
+| **id** | **str** | Id of the potential draft role | [optional] |
+| **created_date** | **datetime** | The date-time when this potential draft role was created. | [optional] |
+| **modified_date** | **datetime** | The date-time when this potential draft role was modified. | [optional] |
+
 }
 
 ## Example
@@ -47,5 +60,5 @@ modified_date=datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

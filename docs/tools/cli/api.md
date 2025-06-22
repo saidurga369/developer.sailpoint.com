@@ -55,9 +55,7 @@ Use the `--query` or `-q` flag to provide query parameters.
 
 For example, run this command to retrieve a list of entitlements owned by a specific identity:
 
-:::tip
-Query parameters may need to be escaped depending on their use.
-:::
+:::tip Query parameters may need to be escaped depending on their use. :::
 
 ```shell
 sail api get /v2025/entitlements -q filters="owner.id eq\"<identity_id>\"" -H "X-SailPoint-Experimental:true"

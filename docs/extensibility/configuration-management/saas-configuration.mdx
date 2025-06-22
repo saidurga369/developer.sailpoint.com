@@ -13,10 +13,9 @@ tags: ['SaaS Configuration']
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-You can use the SailPoint SaaS Configuration APIs to export snapshots of your tenant configurations and import them to restore those configurations in other SaaS systems, such as new or existing tenants. 
-Use these APIs to get configurations in bulk in support of environmental promotion, go-live, or tenant-to-tenant configuration management processes and pipelines. 
+You can use the SailPoint SaaS Configuration APIs to export snapshots of your tenant configurations and import them to restore those configurations in other SaaS systems, such as new or existing tenants. Use these APIs to get configurations in bulk in support of environmental promotion, go-live, or tenant-to-tenant configuration management processes and pipelines.
 
-Read this document to learn about the different SaaS Configuration APIs and what you can do with them. 
+Read this document to learn about the different SaaS Configuration APIs and what you can do with them.
 
 For more details around how to manage configurations, refer to [SailPoint SaaS Change Management and Deployment Best Practices](https://community.sailpoint.com/t5/IdentityNow-Articles/SailPoint-SaaS-Change-Management-and-Deployment-Best-Practices/ta-p/189871).
 
@@ -26,15 +25,11 @@ This document is intended for technically proficient administrators, implementer
 
 ## Supported objects
 
-A SailPoint tenant configuration comprises various objects and their details, such as an organization's different identity profiles, roles, certification campaigns, and more. 
-You can use the SaaS Configuration APIs to exclude objects from the imports and exports. 
+A SailPoint tenant configuration comprises various objects and their details, such as an organization's different identity profiles, roles, certification campaigns, and more. You can use the SaaS Configuration APIs to exclude objects from the imports and exports.
 
 This table lists the objects supported for import and export with the SaaS Configuration APIs:
 
-:::note
-This table also lists the objects supported for backup and deploy, the terms used in Configuration Hub for export and import functionality. 
-To learn more about Configuration Hub, refer to [Configuration Hub](https://documentation.sailpoint.com/saas/help/confighub/config_hub.html).
-:::
+:::note This table also lists the objects supported for backup and deploy, the terms used in Configuration Hub for export and import functionality. To learn more about Configuration Hub, refer to [Configuration Hub](https://documentation.sailpoint.com/saas/help/confighub/config_hub.html). :::
 
 | **Object** | **Object Type** | **Export** | **Import** | **Backup** | **Deploy** |
 | :-- | :-- | :-- | :-- | :-- | :-- |
@@ -116,13 +111,13 @@ Source passwords, secret token or other sensitive data is not exported. Those ne
 
 :::caution
 
-You cannot import Non-Employee sources. 
+You cannot import Non-Employee sources.
 
 :::
 
 ## API reference guide
 
-| **Description**     | **REST API Endpoint**                     |
+| **Description**     | **REST API Endpoint**                      |
 | :------------------ | :----------------------------------------- |
 | List Config Objects | `GET /beta/sp-config/config-objects`       |
 | Export Objects      | `POST /beta/sp-config/export`              |
@@ -136,7 +131,7 @@ You cannot import Non-Employee sources.
 
 **Description**
 
-[This endpoint](https://developer.sailpoint.com/docs/api/beta/list-sp-config-objects) gets the list of object configurations the tenant export/import service knows. 
+[This endpoint](https://developer.sailpoint.com/docs/api/beta/list-sp-config-objects) gets the list of object configurations the tenant export/import service knows.
 
 <Tabs>
   <TabItem value="request" label="Request" default>
@@ -312,7 +307,7 @@ Content-Type: application/json
   </TabItem>
 </Tabs>
 
-:::note 
+:::note
 
 You can only use the `includedIds` and `includedNames` filters when you're exporting objects that also support import functionality.
 
@@ -324,7 +319,7 @@ You can only use the `includedIds` and `includedNames` filters when you're expor
 
 [This endpoint](https://developer.sailpoint.com/docs/api/beta/export-sp-config-job-status) gets the status of the export job identified by its `id` parameter.
 
-This request requires one of the following security scopes: 
+This request requires one of the following security scopes:
 
 - `sp:config:read` - `sp:config:manage`
 
@@ -527,13 +522,9 @@ Content-Type: application/json
 
 **Description**
 
-[This endpoint](https://developer.sailpoint.com/docs/api/beta/import-sp-config) imports objects from a JSON configuration file into a tenant. 
-By default, every import job first exports all existing objects supported by sp-config as a backup before attempting the import. 
-The import job provides a backup so the configuration's import status is available for inspection or restore if needed. 
-You can skip the backup by setting `excludeBackup` to `true` in the import options. 
-If a backup occurs, the ImportResult provides the backup's ID as the `exportJobId`. 
+[This endpoint](https://developer.sailpoint.com/docs/api/beta/import-sp-config) imports objects from a JSON configuration file into a tenant. By default, every import job first exports all existing objects supported by sp-config as a backup before attempting the import. The import job provides a backup so the configuration's import status is available for inspection or restore if needed. You can skip the backup by setting `excludeBackup` to `true` in the import options. If a backup occurs, the ImportResult provides the backup's ID as the `exportJobId`.
 
-This request requires the following security scope: 
+This request requires the following security scope:
 
 - sp:config:manage
 
@@ -583,9 +574,9 @@ Example: POST /beta/sp-config/import?preview=true
 
 **Description**
 
-[This endpoint](https://developer.sailpoint.com/docs/api/beta/import-sp-config-job-status) gets the status of the import job identified by its `id` parameter. 
+[This endpoint](https://developer.sailpoint.com/docs/api/beta/import-sp-config-job-status) gets the status of the import job identified by its `id` parameter.
 
-This request requires the following security scope: 
+This request requires the following security scope:
 
 - `sp:config:manage`
 
@@ -624,8 +615,7 @@ Content-Type: application/json
 
 **Description**
 
-[This endpoint](https://developer.sailpoint.com/docs/api/beta/import-sp-config-download) gets the import job's resulting import file by using the requested `id` and downloads the file. 
-The downloaded file will contain the import job's results, including any associated error, warning or informational messages.
+[This endpoint](https://developer.sailpoint.com/docs/api/beta/import-sp-config-download) gets the import job's resulting import file by using the requested `id` and downloads the file. The downloaded file will contain the import job's results, including any associated error, warning or informational messages.
 
 This request requires the following security scope:
 

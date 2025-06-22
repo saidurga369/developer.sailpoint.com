@@ -4,20 +4,27 @@ title: LockoutConfiguration
 pagination_label: LockoutConfiguration
 sidebar_label: LockoutConfiguration
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'LockoutConfiguration', 'V2025LockoutConfiguration'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'LockoutConfiguration', 'V2025LockoutConfiguration']
 slug: /tools/sdk/go/v2025/models/lockout-configuration
-tags: ['SDK', 'Software Development Kit', 'LockoutConfiguration', 'V2025LockoutConfiguration']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'LockoutConfiguration',
+    'V2025LockoutConfiguration',
+  ]
 ---
 
 # LockoutConfiguration
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**MaximumAttempts** | Pointer to **int32** | The maximum attempts allowed before lockout occurs. | [optional] 
-**LockoutDuration** | Pointer to **int32** | The total time in minutes a user will be locked out. | [optional] 
-**LockoutWindow** | Pointer to **int32** | A rolling window where authentication attempts in a series count towards the maximum before lockout occurs. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **MaximumAttempts** | Pointer to **int32** | The maximum attempts allowed before lockout occurs. | [optional] |
+| **LockoutDuration** | Pointer to **int32** | The total time in minutes a user will be locked out. | [optional] |
+| **LockoutWindow** | Pointer to **int32** | A rolling window where authentication attempts in a series count towards the maximum before lockout occurs. | [optional] |
 
 ## Methods
 
@@ -25,18 +32,13 @@ Name | Type | Description | Notes
 
 `func NewLockoutConfiguration() *LockoutConfiguration`
 
-NewLockoutConfiguration instantiates a new LockoutConfiguration object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewLockoutConfiguration instantiates a new LockoutConfiguration object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewLockoutConfigurationWithDefaults
 
 `func NewLockoutConfigurationWithDefaults() *LockoutConfiguration`
 
-NewLockoutConfigurationWithDefaults instantiates a new LockoutConfiguration object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewLockoutConfigurationWithDefaults instantiates a new LockoutConfiguration object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetMaximumAttempts
 
@@ -48,8 +50,7 @@ GetMaximumAttempts returns the MaximumAttempts field if non-nil, zero value othe
 
 `func (o *LockoutConfiguration) GetMaximumAttemptsOk() (*int32, bool)`
 
-GetMaximumAttemptsOk returns a tuple with the MaximumAttempts field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMaximumAttemptsOk returns a tuple with the MaximumAttempts field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMaximumAttempts
 
@@ -73,8 +74,7 @@ GetLockoutDuration returns the LockoutDuration field if non-nil, zero value othe
 
 `func (o *LockoutConfiguration) GetLockoutDurationOk() (*int32, bool)`
 
-GetLockoutDurationOk returns a tuple with the LockoutDuration field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLockoutDurationOk returns a tuple with the LockoutDuration field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLockoutDuration
 
@@ -98,8 +98,7 @@ GetLockoutWindow returns the LockoutWindow field if non-nil, zero value otherwis
 
 `func (o *LockoutConfiguration) GetLockoutWindowOk() (*int32, bool)`
 
-GetLockoutWindowOk returns a tuple with the LockoutWindow field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLockoutWindowOk returns a tuple with the LockoutWindow field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLockoutWindow
 
@@ -112,5 +111,3 @@ SetLockoutWindow sets LockoutWindow field to given value.
 `func (o *LockoutConfiguration) HasLockoutWindow() bool`
 
 HasLockoutWindow returns a boolean if a field has been set.
-
-

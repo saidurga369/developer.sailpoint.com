@@ -4,9 +4,10 @@ title: DomainStatusDto
 pagination_label: DomainStatusDto
 sidebar_label: DomainStatusDto
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'DomainStatusDto', 'V2025DomainStatusDto'] 
+keywords: ['python', 'Python', 'sdk', 'DomainStatusDto', 'V2025DomainStatusDto']
 slug: /tools/sdk/python/v2025/models/domain-status-dto
-tags: ['SDK', 'Software Development Kit', 'DomainStatusDto', 'V2025DomainStatusDto']
+tags:
+  ['SDK', 'Software Development Kit', 'DomainStatusDto', 'V2025DomainStatusDto']
 ---
 
 # DomainStatusDto
@@ -15,13 +16,14 @@ Domain status DTO containing everything required to verify via DKIM
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | New UUID associated with domain to be verified | [optional] 
-**domain** | **str** | A domain address | [optional] 
-**dkim_enabled** | **object** | DKIM is enabled for this domain | [optional] 
-**dkim_tokens** | **[]str** | DKIM tokens required for authentication | [optional] 
-**dkim_verification_status** | **str** | Status of DKIM authentication | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | New UUID associated with domain to be verified | [optional] |
+| **domain** | **str** | A domain address | [optional] |
+| **dkim_enabled** | **object** | DKIM is enabled for this domain | [optional] |
+| **dkim_tokens** | **[]str** | DKIM tokens required for authentication | [optional] |
+| **dkim_verification_status** | **str** | Status of DKIM authentication | [optional] |
+
 }
 
 ## Example
@@ -38,5 +40,5 @@ dkim_verification_status='PENDING'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,20 +4,21 @@ title: AttrSyncSource
 pagination_label: AttrSyncSource
 sidebar_label: AttrSyncSource
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AttrSyncSource', 'V2025AttrSyncSource'] 
+keywords: ['go', 'Golang', 'sdk', 'AttrSyncSource', 'V2025AttrSyncSource']
 slug: /tools/sdk/go/v2025/models/attr-sync-source
-tags: ['SDK', 'Software Development Kit', 'AttrSyncSource', 'V2025AttrSyncSource']
+tags:
+  ['SDK', 'Software Development Kit', 'AttrSyncSource', 'V2025AttrSyncSource']
 ---
 
 # AttrSyncSource
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | DTO type of target source for attribute synchronization. | [optional] 
-**Id** | Pointer to **string** | ID of target source for attribute synchronization. | [optional] 
-**Name** | Pointer to **NullableString** | Human-readable name of target source for attribute synchronization. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to **string** | DTO type of target source for attribute synchronization. | [optional] |
+| **Id** | Pointer to **string** | ID of target source for attribute synchronization. | [optional] |
+| **Name** | Pointer to **NullableString** | Human-readable name of target source for attribute synchronization. | [optional] |
 
 ## Methods
 
@@ -25,18 +26,13 @@ Name | Type | Description | Notes
 
 `func NewAttrSyncSource() *AttrSyncSource`
 
-NewAttrSyncSource instantiates a new AttrSyncSource object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAttrSyncSource instantiates a new AttrSyncSource object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAttrSyncSourceWithDefaults
 
 `func NewAttrSyncSourceWithDefaults() *AttrSyncSource`
 
-NewAttrSyncSourceWithDefaults instantiates a new AttrSyncSource object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAttrSyncSourceWithDefaults instantiates a new AttrSyncSource object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -48,8 +44,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *AttrSyncSource) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -73,8 +68,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *AttrSyncSource) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -98,8 +92,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *AttrSyncSource) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -117,10 +110,10 @@ HasName returns a boolean if a field has been set.
 
 `func (o *AttrSyncSource) SetNameNil(b bool)`
 
- SetNameNil sets the value for Name to be an explicit nil
+SetNameNil sets the value for Name to be an explicit nil
 
 ### UnsetName
+
 `func (o *AttrSyncSource) UnsetName()`
 
 UnsetName ensures that no value is present for Name, not even an explicit nil
-

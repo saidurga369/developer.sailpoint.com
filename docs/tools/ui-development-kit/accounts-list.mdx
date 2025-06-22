@@ -13,7 +13,7 @@ tags: ['UI']
 
 ## Overview
 
-This guide will walk you through the process of implementing a new page that lists all the accounts in your tenant. This serves as an example you can use to learn how to implement many different types of custom UI pages. 
+This guide will walk you through the process of implementing a new page that lists all the accounts in your tenant. This serves as an example you can use to learn how to implement many different types of custom UI pages.
 
 This guide is a continuation of [Getting Started](./getting-started). To implement a new page, you must have already created your routes and pages. To learn how to do so, refer to the [Add New Route and Page section](./getting-started#add-route-and-new-page).
 
@@ -104,7 +104,7 @@ To do so, add this code to `src/routes/accounts/account-list/+page.svelte`:
 		</div>
 	{:then accountData}
     <!-- If there is no account data show a message to the user -->
-		{#if accountData.length === 0} 
+		{#if accountData.length === 0}
 			<div class="card p-4">
 				<p class=" text-center text-success-500">No Accounts found</p>
 			</div>
@@ -176,8 +176,7 @@ Save the `+page.svelte` file and return to the accounts list page. You will see 
 
 ## Pagination
 
-You will likely have more than 250 accounts in your tenant. To handle more than 250 accounts, you must implement pagination on your front end page. 
-Pagination is the process of paging through your records. With pagination, you can handle 1000 accounts in 4 pages of 250, for example. 
+You will likely have more than 250 accounts in your tenant. To handle more than 250 accounts, you must implement pagination on your front end page. Pagination is the process of paging through your records. With pagination, you can handle 1000 accounts in 4 pages of 250, for example.
 
 To implement pagination, add the following code. This code allows you to paginate accounts in groups of 5, 10, 50, 100 and 250, depending on your requirement:
 
@@ -318,40 +317,46 @@ import TabItem from '@theme/TabItem';
 <TabItem value="accounts_list_server" label="accounts-list/+page.server.ts">
 
 ```typescript
-import { createConfiguration } from '$lib/sailpoint/sdk.js';
+import {createConfiguration} from '$lib/sailpoint/sdk.js';
 // highlight-next-line
-import { getLimit, getPage } from '$lib/Utils.js';
-import type { Account } from 'sailpoint-api-client';
-import { AccountsApi } from 'sailpoint-api-client';
+import {getLimit, getPage} from '$lib/Utils.js';
+import type {Account} from 'sailpoint-api-client';
+import {AccountsApi} from 'sailpoint-api-client';
 
-export const load = async ({ url, locals }) => {
-    const config = createConfiguration(locals.session!.baseUrl, locals.idnSession!.access_token);
-	const api = new AccountsApi(config);
+export const load = async ({url, locals}) => {
+  const config = createConfiguration(
+    locals.session!.baseUrl,
+    locals.idnSession!.access_token,
+  );
+  const api = new AccountsApi(config);
 
-	// highlight-start
-    const page = getPage(url);
-	const limit = getLimit(url);
-	// highlight-end
+  // highlight-start
+  const page = getPage(url);
+  const limit = getLimit(url);
+  // highlight-end
 
-	// highlight-next-line
-    const reportResp = api.listAccounts({count: true, limit: Number(limit), offset: Number(page) * Number(limit)});
+  // highlight-next-line
+  const reportResp = api.listAccounts({
+    count: true,
+    limit: Number(limit),
+    offset: Number(page) * Number(limit),
+  });
 
-	const totalCount = new Promise<number>((resolve) => {
-		reportResp.then((response) => {
-			resolve(response.headers['x-total-count']);
-		});
-	});
+  const totalCount = new Promise<number>((resolve) => {
+    reportResp.then((response) => {
+      resolve(response.headers['x-total-count']);
+    });
+  });
 
-	const accountData = new Promise<Account[]>((resolve) => {
-		reportResp.then((response) => {
-			resolve(response.data);
-		});
-	});
+  const accountData = new Promise<Account[]>((resolve) => {
+    reportResp.then((response) => {
+      resolve(response.data);
+    });
+  });
 
-	// highlight-next-line
-	return { accountData, totalCount, params: {page, limit}};
+  // highlight-next-line
+  return {accountData, totalCount, params: {page, limit}};
 };
-
 ```
 
 </TabItem>
@@ -361,16 +366,13 @@ Return to the accounts list page. You will see the paginator at the top of the p
 
 ## Sort and filter
 
-To better view and organize the data displayed in your accounts list page, you may want to implement sorting and filtering. 
-Sorting is the process of organizing the data. You may want to provide users with a way to sort the data in ascending or descending alphabetical order based on the account name, for example. 
-Filtering is the process of limiting the displayed data based on specified details. You may want to provide users with a way to filter the data to only include accounts associated with one source, for example. 
+To better view and organize the data displayed in your accounts list page, you may want to implement sorting and filtering. Sorting is the process of organizing the data. You may want to provide users with a way to sort the data in ascending or descending alphabetical order based on the account name, for example. Filtering is the process of limiting the displayed data based on specified details. You may want to provide users with a way to filter the data to only include accounts associated with one source, for example.
 
 To implement sorting and filtering, add the following highlighted code. It allows you to sort and filter the accounts in your tenant:
 
 With this implementation, once a user types in a filter or sorter and clicks the 'Go' button, the UI Development Kit calls the `onCreateGo` function and reloads the page with the new sorters and filters.
 
-On the server side, the kit uses the `getFilters` and `getSorters` functions to get the filters and sorters from the URL. 
-The kit then passes these functions to the [List Accounts endpoint](https://developer.sailpoint.com/docs/api/v3/list-accounts) to filter and sort the accounts.
+On the server side, the kit uses the `getFilters` and `getSorters` functions to get the filters and sorters from the URL. The kit then passes these functions to the [List Accounts endpoint](https://developer.sailpoint.com/docs/api/v3/list-accounts) to filter and sort the accounts.
 
 <Tabs>
 <TabItem value="accounts_page" label="account-list/+page.svelte" default>
@@ -513,40 +515,49 @@ The kit then passes these functions to the [List Accounts endpoint](https://deve
 <TabItem value="accounts_list_server" label="accounts-list/+page.server.ts">
 
 ```typescript
-import { createConfiguration } from '$lib/sailpoint/sdk.js';
+import {createConfiguration} from '$lib/sailpoint/sdk.js';
 // highlight-next-line
-import { getFilters, getLimit, getPage, getSorters } from '$lib/Utils.js';
-import type { Account } from 'sailpoint-api-client';
-import { AccountsApi } from 'sailpoint-api-client';
+import {getFilters, getLimit, getPage, getSorters} from '$lib/Utils.js';
+import type {Account} from 'sailpoint-api-client';
+import {AccountsApi} from 'sailpoint-api-client';
 
-export const load = async ({ url, locals }) => {
-    const config = createConfiguration(locals.session!.baseUrl, locals.idnSession!.access_token);
-    const api = new AccountsApi(config);
+export const load = async ({url, locals}) => {
+  const config = createConfiguration(
+    locals.session!.baseUrl,
+    locals.idnSession!.access_token,
+  );
+  const api = new AccountsApi(config);
 
-    const page = getPage(url);
-    const limit = getLimit(url);
-	// highlight-start
-    const sorters = getSorters(url);
-    const filters = getFilters(url);
-	// highlight-end
+  const page = getPage(url);
+  const limit = getLimit(url);
+  // highlight-start
+  const sorters = getSorters(url);
+  const filters = getFilters(url);
+  // highlight-end
 
-	// highlight-next-line
-    const reportResp = api.listAccounts({count: true, sorters: sorters, filters: filters, limit: Number(limit), offset: Number(page) * Number(limit)});
+  // highlight-next-line
+  const reportResp = api.listAccounts({
+    count: true,
+    sorters: sorters,
+    filters: filters,
+    limit: Number(limit),
+    offset: Number(page) * Number(limit),
+  });
 
-    const totalCount = new Promise<number>((resolve) => {
-        reportResp.then((response) => {
-            resolve(response.headers['x-total-count']);
-        });
+  const totalCount = new Promise<number>((resolve) => {
+    reportResp.then((response) => {
+      resolve(response.headers['x-total-count']);
     });
+  });
 
-    const accountData = new Promise<Account[]>((resolve) => {
-        reportResp.then((response) => {
-            resolve(response.data);
-        });
+  const accountData = new Promise<Account[]>((resolve) => {
+    reportResp.then((response) => {
+      resolve(response.data);
     });
+  });
 
-	// highlight-next-line
-    return { accountData, totalCount, params: {page, limit, sorters, filters}};
+  // highlight-next-line
+  return {accountData, totalCount, params: {page, limit, sorters, filters}};
 };
 ```
 
@@ -555,15 +566,14 @@ export const load = async ({ url, locals }) => {
 
 ## Error handling
 
-You have now implemented a new page that lists all the accounts in your tenant, and you can now paginate, sort and filter the accounts in your tenant. 
+You have now implemented a new page that lists all the accounts in your tenant, and you can now paginate, sort and filter the accounts in your tenant.
 
-Ideally, everything in your custom UIs will work smoothly, but you will likely encounter errors at some point when you're implementing a page. If you provide an invalid filter or sorter, the list accounts endpoint will return a 400 error, for example. 
-You can handle this error by adding a `try catch` block to the server side of the accounts list page.
+Ideally, everything in your custom UIs will work smoothly, but you will likely encounter errors at some point when you're implementing a page. If you provide an invalid filter or sorter, the list accounts endpoint will return a 400 error, for example. You can handle this error by adding a `try catch` block to the server side of the accounts list page.
 
-To learn more about handling errors in your UI, refer to [Error Handling](./error-handling). 
+To learn more about handling errors in your UI, refer to [Error Handling](./error-handling).
 
-## Discuss 
+## Discuss
 
-The most valuable resource for ISC developers is the SailPoint Developer Community itself, where ISC users and experts all over the world come together to ask questions and provide solutions. 
+The most valuable resource for ISC developers is the SailPoint Developer Community itself, where ISC users and experts all over the world come together to ask questions and provide solutions.
 
-To learn more about the ISC UI Development Kit and discuss it with SailPoint Developer Community members, go to the [SailPoint Developer Community Forum](https://developer.sailpoint.com/discuss/c/identity-security-cloud/6). 
+To learn more about the ISC UI Development Kit and discuss it with SailPoint Developer Community members, go to the [SailPoint Developer Community Forum](https://developer.sailpoint.com/discuss/c/identity-security-cloud/6).

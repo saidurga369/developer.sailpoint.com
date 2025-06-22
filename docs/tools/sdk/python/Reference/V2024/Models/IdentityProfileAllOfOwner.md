@@ -4,9 +4,22 @@ title: IdentityProfileAllOfOwner
 pagination_label: IdentityProfileAllOfOwner
 sidebar_label: IdentityProfileAllOfOwner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentityProfileAllOfOwner', 'V2024IdentityProfileAllOfOwner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'IdentityProfileAllOfOwner',
+    'V2024IdentityProfileAllOfOwner',
+  ]
 slug: /tools/sdk/python/v2024/models/identity-profile-all-of-owner
-tags: ['SDK', 'Software Development Kit', 'IdentityProfileAllOfOwner', 'V2024IdentityProfileAllOfOwner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityProfileAllOfOwner',
+    'V2024IdentityProfileAllOfOwner',
+  ]
 ---
 
 # IdentityProfileAllOfOwner
@@ -15,11 +28,12 @@ Identity profile's owner.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] | Owner's object type. | [optional] 
-**id** | **str** | Owner's ID. | [optional] 
-**name** | **str** | Owner's name. | [optional] 
+| Name     | Type                    | Description          | Notes      |
+| -------- | ----------------------- | -------------------- | ---------- |
+| **type** | **Enum** [ 'IDENTITY' ] | Owner's object type. | [optional] |
+| **id**   | **str**                 | Owner's ID.          | [optional] |
+| **name** | **str**                 | Owner's name.        | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='William Wilson'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

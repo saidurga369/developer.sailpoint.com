@@ -4,7 +4,7 @@ title: DimensionRef
 pagination_label: DimensionRef
 sidebar_label: DimensionRef
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'DimensionRef', 'DimensionRef'] 
+keywords: ['go', 'Golang', 'sdk', 'DimensionRef', 'DimensionRef']
 slug: /tools/sdk/go/v3/models/dimension-ref
 tags: ['SDK', 'Software Development Kit', 'DimensionRef', 'DimensionRef']
 ---
@@ -13,11 +13,11 @@ tags: ['SDK', 'Software Development Kit', 'DimensionRef', 'DimensionRef']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | The type of the object to which this reference applies | [optional] 
-**Id** | Pointer to **string** | ID of the object to which this reference applies | [optional] 
-**Name** | Pointer to **string** | Human-readable display name of the object to which this reference applies | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to **string** | The type of the object to which this reference applies | [optional] |
+| **Id** | Pointer to **string** | ID of the object to which this reference applies | [optional] |
+| **Name** | Pointer to **string** | Human-readable display name of the object to which this reference applies | [optional] |
 
 ## Methods
 
@@ -25,18 +25,13 @@ Name | Type | Description | Notes
 
 `func NewDimensionRef() *DimensionRef`
 
-NewDimensionRef instantiates a new DimensionRef object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewDimensionRef instantiates a new DimensionRef object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewDimensionRefWithDefaults
 
 `func NewDimensionRefWithDefaults() *DimensionRef`
 
-NewDimensionRefWithDefaults instantiates a new DimensionRef object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewDimensionRefWithDefaults instantiates a new DimensionRef object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -48,8 +43,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *DimensionRef) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -73,8 +67,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *DimensionRef) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -98,8 +91,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *DimensionRef) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -112,5 +104,3 @@ SetName sets Name field to given value.
 `func (o *DimensionRef) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

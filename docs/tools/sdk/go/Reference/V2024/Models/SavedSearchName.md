@@ -4,19 +4,20 @@ title: SavedSearchName
 pagination_label: SavedSearchName
 sidebar_label: SavedSearchName
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SavedSearchName', 'V2024SavedSearchName'] 
+keywords: ['go', 'Golang', 'sdk', 'SavedSearchName', 'V2024SavedSearchName']
 slug: /tools/sdk/go/v2024/models/saved-search-name
-tags: ['SDK', 'Software Development Kit', 'SavedSearchName', 'V2024SavedSearchName']
+tags:
+  ['SDK', 'Software Development Kit', 'SavedSearchName', 'V2024SavedSearchName']
 ---
 
 # SavedSearchName
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | Pointer to **string** | The name of the saved search.  | [optional] 
-**Description** | Pointer to **NullableString** | The description of the saved search.  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | Pointer to **string** | The name of the saved search. | [optional] |
+| **Description** | Pointer to **NullableString** | The description of the saved search. | [optional] |
 
 ## Methods
 
@@ -24,18 +25,13 @@ Name | Type | Description | Notes
 
 `func NewSavedSearchName() *SavedSearchName`
 
-NewSavedSearchName instantiates a new SavedSearchName object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSavedSearchName instantiates a new SavedSearchName object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSavedSearchNameWithDefaults
 
 `func NewSavedSearchNameWithDefaults() *SavedSearchName`
 
-NewSavedSearchNameWithDefaults instantiates a new SavedSearchName object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSavedSearchNameWithDefaults instantiates a new SavedSearchName object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -47,8 +43,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *SavedSearchName) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -72,8 +67,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *SavedSearchName) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -91,10 +85,10 @@ HasDescription returns a boolean if a field has been set.
 
 `func (o *SavedSearchName) SetDescriptionNil(b bool)`
 
- SetDescriptionNil sets the value for Description to be an explicit nil
+SetDescriptionNil sets the value for Description to be an explicit nil
 
 ### UnsetDescription
+
 `func (o *SavedSearchName) UnsetDescription()`
 
 UnsetDescription ensures that no value is present for Description, not even an explicit nil
-

@@ -4,9 +4,22 @@ title: MultiHostIntegrationsCluster
 pagination_label: MultiHostIntegrationsCluster
 sidebar_label: MultiHostIntegrationsCluster
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'MultiHostIntegrationsCluster', 'BetaMultiHostIntegrationsCluster'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'MultiHostIntegrationsCluster',
+    'BetaMultiHostIntegrationsCluster',
+  ]
 slug: /tools/sdk/python/beta/models/multi-host-integrations-cluster
-tags: ['SDK', 'Software Development Kit', 'MultiHostIntegrationsCluster', 'BetaMultiHostIntegrationsCluster']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'MultiHostIntegrationsCluster',
+    'BetaMultiHostIntegrationsCluster',
+  ]
 ---
 
 # MultiHostIntegrationsCluster
@@ -15,11 +28,12 @@ Reference to the source's associated cluster.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'CLUSTER' ] | Type of object being referenced. | [required]
-**id** | **str** | Cluster ID. | [required]
-**name** | **str** | Cluster's human-readable display name. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'CLUSTER' ] | Type of object being referenced. | [required] |
+| **id** | **str** | Cluster ID. | [required] |
+| **name** | **str** | Cluster's human-readable display name. | [required] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Corporate Cluster'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

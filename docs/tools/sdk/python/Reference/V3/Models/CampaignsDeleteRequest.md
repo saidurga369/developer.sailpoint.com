@@ -4,19 +4,32 @@ title: CampaignsDeleteRequest
 pagination_label: CampaignsDeleteRequest
 sidebar_label: CampaignsDeleteRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'CampaignsDeleteRequest', 'CampaignsDeleteRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'CampaignsDeleteRequest',
+    'CampaignsDeleteRequest',
+  ]
 slug: /tools/sdk/python/v3/models/campaigns-delete-request
-tags: ['SDK', 'Software Development Kit', 'CampaignsDeleteRequest', 'CampaignsDeleteRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CampaignsDeleteRequest',
+    'CampaignsDeleteRequest',
+  ]
 ---
 
 # CampaignsDeleteRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ids** | **[]str** | The ids of the campaigns to delete | [optional] 
+| Name    | Type      | Description                        | Notes      |
+| ------- | --------- | ---------------------------------- | ---------- |
+| **ids** | **[]str** | The ids of the campaigns to delete | [optional] |
+
 }
 
 ## Example
@@ -29,5 +42,5 @@ ids=[2c9180887335cee10173490db1776c26, 2c9180836a712436016a7125a90c0021]
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

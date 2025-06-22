@@ -4,7 +4,7 @@ title: EventAttributes
 pagination_label: EventAttributes
 sidebar_label: EventAttributes
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'EventAttributes', 'EventAttributes'] 
+keywords: ['python', 'Python', 'sdk', 'EventAttributes', 'EventAttributes']
 slug: /tools/sdk/python/v3/models/event-attributes
 tags: ['SDK', 'Software Development Kit', 'EventAttributes', 'EventAttributes']
 ---
@@ -15,13 +15,14 @@ Attributes related to an IdentityNow ETS event
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The unique ID of the trigger | [required]
-**filter_** | **str** | JSON path expression that will limit which events the trigger will fire on | [optional] 
-**description** | **str** | Description of the event trigger | [optional] 
-**attribute_to_filter** | **str** | The attribute to filter on | [optional] 
-**form_definition_id** | **str** | Form definition's unique identifier. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The unique ID of the trigger | [required] |
+| **filter\_** | **str** | JSON path expression that will limit which events the trigger will fire on | [optional] |
+| **description** | **str** | Description of the event trigger | [optional] |
+| **attribute_to_filter** | **str** | The attribute to filter on | [optional] |
+| **form_definition_id** | **str** | Form definition's unique identifier. | [optional] |
+
 }
 
 ## Example
@@ -38,5 +39,5 @@ form_definition_id='Admin_Access_Request_Form'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

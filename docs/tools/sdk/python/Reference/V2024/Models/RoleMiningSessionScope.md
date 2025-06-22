@@ -4,21 +4,34 @@ title: RoleMiningSessionScope
 pagination_label: RoleMiningSessionScope
 sidebar_label: RoleMiningSessionScope
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RoleMiningSessionScope', 'V2024RoleMiningSessionScope'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'RoleMiningSessionScope',
+    'V2024RoleMiningSessionScope',
+  ]
 slug: /tools/sdk/python/v2024/models/role-mining-session-scope
-tags: ['SDK', 'Software Development Kit', 'RoleMiningSessionScope', 'V2024RoleMiningSessionScope']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningSessionScope',
+    'V2024RoleMiningSessionScope',
+  ]
 ---
 
 # RoleMiningSessionScope
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**identity_ids** | **[]str** | The list of identities for this role mining session. | [optional] 
-**criteria** | **str** | The \"search\" criteria that produces the list of identities for this role mining session. | [optional] 
-**attribute_filter_criteria** | **[]object** | The filter criteria for this role mining session. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **identity_ids** | **[]str** | The list of identities for this role mining session. | [optional] |
+| **criteria** | **str** | The \"search\" criteria that produces the list of identities for this role mining session. | [optional] |
+| **attribute_filter_criteria** | **[]object** | The filter criteria for this role mining session. | [optional] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ attribute_filter_criteria={displayName={untranslated=Location: Miami}, ariaLabel
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

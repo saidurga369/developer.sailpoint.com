@@ -4,24 +4,37 @@ title: OutliersContributingFeatureAccessItems
 pagination_label: OutliersContributingFeatureAccessItems
 sidebar_label: OutliersContributingFeatureAccessItems
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'OutliersContributingFeatureAccessItems', 'V2025OutliersContributingFeatureAccessItems'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'OutliersContributingFeatureAccessItems',
+    'V2025OutliersContributingFeatureAccessItems',
+  ]
 slug: /tools/sdk/python/v2025/models/outliers-contributing-feature-access-items
-tags: ['SDK', 'Software Development Kit', 'OutliersContributingFeatureAccessItems', 'V2025OutliersContributingFeatureAccessItems']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'OutliersContributingFeatureAccessItems',
+    'V2025OutliersContributingFeatureAccessItems',
+  ]
 ---
 
 # OutliersContributingFeatureAccessItems
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The ID of the access item | [optional] 
-**display_name** | **str** | the display name of the access item | [optional] 
-**description** | **str** | Description of the access item. | [optional] 
-**access_type** |  **Enum** [  'ENTITLEMENT',    'ACCESS_PROFILE',    'ROLE' ] | The type of the access item. | [optional] 
-**source_name** | **str** | the associated source name if it exists | [optional] 
-**extremely_rare** | **bool** | rarest access | [optional] [default to False]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The ID of the access item | [optional] |
+| **display_name** | **str** | the display name of the access item | [optional] |
+| **description** | **str** | Description of the access item. | [optional] |
+| **access_type** | **Enum** [ 'ENTITLEMENT', 'ACCESS_PROFILE', 'ROLE' ] | The type of the access item. | [optional] |
+| **source_name** | **str** | the associated source name if it exists | [optional] |
+| **extremely_rare** | **bool** | rarest access | [optional] [default to False] |
+
 }
 
 ## Example
@@ -39,5 +52,5 @@ extremely_rare=True
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,9 +4,22 @@ title: VAClusterStatusChangeEventApplication
 pagination_label: VAClusterStatusChangeEventApplication
 sidebar_label: VAClusterStatusChangeEventApplication
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'VAClusterStatusChangeEventApplication', 'V2025VAClusterStatusChangeEventApplication'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'VAClusterStatusChangeEventApplication',
+    'V2025VAClusterStatusChangeEventApplication',
+  ]
 slug: /tools/sdk/python/v2025/models/va-cluster-status-change-event-application
-tags: ['SDK', 'Software Development Kit', 'VAClusterStatusChangeEventApplication', 'V2025VAClusterStatusChangeEventApplication']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'VAClusterStatusChangeEventApplication',
+    'V2025VAClusterStatusChangeEventApplication',
+  ]
 ---
 
 # VAClusterStatusChangeEventApplication
@@ -15,11 +28,12 @@ Details about the `CLUSTER` or `SOURCE` that initiated this event.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The GUID of the application | [required]
-**name** | **str** | The name of the application | [required]
-**attributes** | **map[string]object** | Custom map of attributes for a source.  This will only be populated if type is `SOURCE` and the source has a proxy. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The GUID of the application | [required] |
+| **name** | **str** | The name of the application | [required] |
+| **attributes** | **map[string]object** | Custom map of attributes for a source. This will only be populated if type is `SOURCE` and the source has a proxy. | [required] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ attributes={ }
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

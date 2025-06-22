@@ -4,36 +4,36 @@ title: Sed
 pagination_label: Sed
 sidebar_label: Sed
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'Sed', 'V2024Sed'] 
+keywords: ['powershell', 'PowerShell', 'sdk', 'Sed', 'V2024Sed']
 slug: /tools/sdk/powershell/v2024/models/sed
 tags: ['SDK', 'Software Development Kit', 'Sed', 'V2024Sed']
 ---
-
 
 # Sed
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | **String** | name of the entitlement | [optional] 
-**ApprovedBy** | **String** | entitlement approved by | [optional] 
-**ApprovedType** | **String** | entitlement approved type | [optional] 
-**ApprovedWhen** | **System.DateTime** | entitlement approved then | [optional] 
-**Attribute** | **String** | entitlement attribute | [optional] 
-**Description** | **String** | description of entitlement | [optional] 
-**DisplayName** | **String** | entitlement display name | [optional] 
-**Id** | **String** | sed id | [optional] 
-**SourceId** | **String** | entitlement source id | [optional] 
-**SourceName** | **String** | entitlement source name | [optional] 
-**Status** | **String** | entitlement status | [optional] 
-**SuggestedDescription** | **String** | llm suggested entitlement description | [optional] 
-**Type** | **String** | entitlement type | [optional] 
-**Value** | **String** | entitlement value | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | **String** | name of the entitlement | [optional] |
+| **ApprovedBy** | **String** | entitlement approved by | [optional] |
+| **ApprovedType** | **String** | entitlement approved type | [optional] |
+| **ApprovedWhen** | **System.DateTime** | entitlement approved then | [optional] |
+| **Attribute** | **String** | entitlement attribute | [optional] |
+| **Description** | **String** | description of entitlement | [optional] |
+| **DisplayName** | **String** | entitlement display name | [optional] |
+| **Id** | **String** | sed id | [optional] |
+| **SourceId** | **String** | entitlement source id | [optional] |
+| **SourceName** | **String** | entitlement source name | [optional] |
+| **Status** | **String** | entitlement status | [optional] |
+| **SuggestedDescription** | **String** | llm suggested entitlement description | [optional] |
+| **Type** | **String** | entitlement type | [optional] |
+| **Value** | **String** | entitlement value | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $Sed = Initialize-V2024Sed  -Name BatchInvoiceProcessing `
  -ApprovedBy 2c918086-76de-afbf-0176-f6d28f65565a `
@@ -52,10 +52,9 @@ $Sed = Initialize-V2024Sed  -Name BatchInvoiceProcessing `
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $Sed | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

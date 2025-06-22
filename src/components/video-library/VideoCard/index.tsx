@@ -26,18 +26,36 @@ const VideoCard: React.FC<VideoCardProps> = ({
 }) => {
   return (
     <Link to={videoURL}>
-      <div title={username} className={featured ? styles.featuredCard : styles.card}>
+      <div
+        title={username}
+        className={featured ? styles.featuredCard : styles.card}>
         <div className={styles.cardText}>
-          <div className={featured ? styles.featuredThumbContainer : styles.thumbContainer}>
-            <img className={featured ? styles.featuredCardImage : styles.cardImage} src={thumbnail} alt={title} />
+          <div
+            className={
+              featured ? styles.featuredThumbContainer : styles.thumbContainer
+            }>
+            <img
+              className={featured ? styles.featuredCardImage : styles.cardImage}
+              src={thumbnail}
+              alt={title}
+            />
           </div>
 
-          <div className={featured ? styles.featuredCardTitle : styles.cardTitle}>
+          <div
+            className={featured ? styles.featuredCardTitle : styles.cardTitle}>
             <div className={styles.avatarContainer}>
-              <img title={username} className={styles.avatar} src={useBaseUrl(avatar)} alt={username} />
+              <img
+                title={username}
+                className={styles.avatar}
+                src={useBaseUrl(avatar)}
+                alt={username}
+              />
             </div>
 
-            <div className={featured ? styles.featuredTitleContainer : styles.titleContainer}>
+            <div
+              className={
+                featured ? styles.featuredTitleContainer : styles.titleContainer
+              }>
               {title}
             </div>
           </div>

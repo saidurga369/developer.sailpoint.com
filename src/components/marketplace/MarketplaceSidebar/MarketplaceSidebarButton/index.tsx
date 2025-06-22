@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import styles from './styles.module.css';
 
 // Define props interface
 interface MarketplaceSidebarButtonProps {
-  filterCallback: (filter: { category?: string; tag?: string }) => void;
+  filterCallback: (filter: {category?: string; tag?: string}) => void;
   text: string;
   id: string;
   isCategory?: boolean;
@@ -38,14 +38,14 @@ const MarketplaceSidebarButton: React.FC<MarketplaceSidebarButtonProps> = ({
   const setFilters = (id: string) => {
     if (isCategory) {
       if (category === id) {
-        filterCallback({ category: 'colab' });
+        filterCallback({category: 'colab'});
         setIsActive(false);
       } else {
-        filterCallback({ category: id });
+        filterCallback({category: id});
         setIsActive(true);
       }
     } else {
-      filterCallback({ tag: id });
+      filterCallback({tag: id});
       setIsActive((current) => !current);
     }
   };

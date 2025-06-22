@@ -4,9 +4,16 @@ title: LocalizedMessage
 pagination_label: LocalizedMessage
 sidebar_label: LocalizedMessage
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'LocalizedMessage', 'V2024LocalizedMessage'] 
+keywords:
+  ['python', 'Python', 'sdk', 'LocalizedMessage', 'V2024LocalizedMessage']
 slug: /tools/sdk/python/v2024/models/localized-message
-tags: ['SDK', 'Software Development Kit', 'LocalizedMessage', 'V2024LocalizedMessage']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'LocalizedMessage',
+    'V2024LocalizedMessage',
+  ]
 ---
 
 # LocalizedMessage
@@ -15,10 +22,11 @@ Localized error message to indicate a failed invocation or error if any.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**locale** | **str** | Message locale | [required]
-**message** | **str** | Message text | [required]
+| Name        | Type    | Description    | Notes      |
+| ----------- | ------- | -------------- | ---------- |
+| **locale**  | **str** | Message locale | [required] |
+| **message** | **str** | Message text   | [required] |
+
 }
 
 ## Example
@@ -32,5 +40,5 @@ message='Error has occurred!'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

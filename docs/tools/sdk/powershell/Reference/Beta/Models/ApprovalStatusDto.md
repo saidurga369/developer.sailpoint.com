@@ -4,32 +4,45 @@ title: ApprovalStatusDto
 pagination_label: ApprovalStatusDto
 sidebar_label: ApprovalStatusDto
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'ApprovalStatusDto', 'BetaApprovalStatusDto'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'ApprovalStatusDto',
+    'BetaApprovalStatusDto',
+  ]
 slug: /tools/sdk/powershell/beta/models/approval-status-dto
-tags: ['SDK', 'Software Development Kit', 'ApprovalStatusDto', 'BetaApprovalStatusDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ApprovalStatusDto',
+    'BetaApprovalStatusDto',
+  ]
 ---
-
 
 # ApprovalStatusDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ApprovalId** | **String** | Unique identifier for the approval. | [optional] 
-**Forwarded** | **Boolean** | True if the request for this item was forwarded from one owner to another. | [optional] [default to $false]
-**OriginalOwner** | [**ApprovalStatusDtoOriginalOwner**](approval-status-dto-original-owner) |  | [optional] 
-**CurrentOwner** | [**ApprovalStatusDtoCurrentOwner**](approval-status-dto-current-owner) |  | [optional] 
-**Modified** | **System.DateTime** | Time at which item was modified. | [optional] 
-**Status** | [**ManualWorkItemState**](manual-work-item-state) |  | [optional] 
-**Scheme** | [**ApprovalScheme**](approval-scheme) |  | [optional] 
-**ErrorMessages** | [**[]ErrorMessageDto**](error-message-dto) | If the request failed, includes any error messages that were generated. | [optional] 
-**Comment** | **String** | Comment, if any, provided by the approver. | [optional] 
-**RemoveDate** | **System.DateTime** | The date the role or access profile or entitlement is no longer assigned to the specified identity. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ApprovalId** | **String** | Unique identifier for the approval. | [optional] |
+| **Forwarded** | **Boolean** | True if the request for this item was forwarded from one owner to another. | [optional] [default to $false] |
+| **OriginalOwner** | [**ApprovalStatusDtoOriginalOwner**](approval-status-dto-original-owner) |  | [optional] |
+| **CurrentOwner** | [**ApprovalStatusDtoCurrentOwner**](approval-status-dto-current-owner) |  | [optional] |
+| **Modified** | **System.DateTime** | Time at which item was modified. | [optional] |
+| **Status** | [**ManualWorkItemState**](manual-work-item-state) |  | [optional] |
+| **Scheme** | [**ApprovalScheme**](approval-scheme) |  | [optional] |
+| **ErrorMessages** | [**[]ErrorMessageDto**](error-message-dto) | If the request failed, includes any error messages that were generated. | [optional] |
+| **Comment** | **String** | Comment, if any, provided by the approver. | [optional] |
+| **RemoveDate** | **System.DateTime** | The date the role or access profile or entitlement is no longer assigned to the specified identity. | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $ApprovalStatusDto = Initialize-BetaApprovalStatusDto  -ApprovalId 2c9180877b2b6ea4017b2c545f971429 `
  -Forwarded false `
@@ -44,10 +57,9 @@ $ApprovalStatusDto = Initialize-BetaApprovalStatusDto  -ApprovalId 2c9180877b2b6
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $ApprovalStatusDto | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

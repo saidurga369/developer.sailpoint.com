@@ -4,19 +4,26 @@ title: SourceUsageStatus
 pagination_label: SourceUsageStatus
 sidebar_label: SourceUsageStatus
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SourceUsageStatus', 'V2025SourceUsageStatus'] 
+keywords:
+  ['python', 'Python', 'sdk', 'SourceUsageStatus', 'V2025SourceUsageStatus']
 slug: /tools/sdk/python/v2025/models/source-usage-status
-tags: ['SDK', 'Software Development Kit', 'SourceUsageStatus', 'V2025SourceUsageStatus']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SourceUsageStatus',
+    'V2025SourceUsageStatus',
+  ]
 ---
 
 # SourceUsageStatus
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**status** |  **Enum** [  'COMPLETE',    'INCOMPLETE' ] | Source Usage Status. Acceptable values are:   - COMPLETE       - This status means that an activity data source has been setup and usage insights are available for the source.   - INCOMPLETE       - This status means that an activity data source has not been setup and usage insights are not available for the source. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **status** | **Enum** [ 'COMPLETE', 'INCOMPLETE' ] | Source Usage Status. Acceptable values are: - COMPLETE - This status means that an activity data source has been setup and usage insights are available for the source. - INCOMPLETE - This status means that an activity data source has not been setup and usage insights are not available for the source. | [optional] |
+
 }
 
 ## Example
@@ -29,5 +36,5 @@ status='COMPLETE'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

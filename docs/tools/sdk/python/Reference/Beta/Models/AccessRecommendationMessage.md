@@ -4,19 +4,32 @@ title: AccessRecommendationMessage
 pagination_label: AccessRecommendationMessage
 sidebar_label: AccessRecommendationMessage
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccessRecommendationMessage', 'BetaAccessRecommendationMessage'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccessRecommendationMessage',
+    'BetaAccessRecommendationMessage',
+  ]
 slug: /tools/sdk/python/beta/models/access-recommendation-message
-tags: ['SDK', 'Software Development Kit', 'AccessRecommendationMessage', 'BetaAccessRecommendationMessage']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessRecommendationMessage',
+    'BetaAccessRecommendationMessage',
+  ]
 ---
 
 # AccessRecommendationMessage
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**interpretation** | **str** | Information about why the access item was recommended. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **interpretation** | **str** | Information about why the access item was recommended. | [optional] |
+
 }
 
 ## Example
@@ -29,5 +42,5 @@ interpretation='95% of your peers have this access.'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

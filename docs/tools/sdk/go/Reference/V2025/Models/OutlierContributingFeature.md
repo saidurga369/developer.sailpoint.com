@@ -4,25 +4,38 @@ title: OutlierContributingFeature
 pagination_label: OutlierContributingFeature
 sidebar_label: OutlierContributingFeature
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'OutlierContributingFeature', 'V2025OutlierContributingFeature'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'OutlierContributingFeature',
+    'V2025OutlierContributingFeature',
+  ]
 slug: /tools/sdk/go/v2025/models/outlier-contributing-feature
-tags: ['SDK', 'Software Development Kit', 'OutlierContributingFeature', 'V2025OutlierContributingFeature']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'OutlierContributingFeature',
+    'V2025OutlierContributingFeature',
+  ]
 ---
 
 # OutlierContributingFeature
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Contributing feature id | [optional] 
-**Name** | Pointer to **string** | The name of the feature | [optional] 
-**ValueType** | Pointer to [**OutlierValueType**](outlier-value-type) |  | [optional] 
-**Value** | Pointer to **float32** | The feature value | [optional] 
-**Importance** | Pointer to **float32** | The importance of the feature. This can also be a negative value | [optional] 
-**DisplayName** | Pointer to **string** | The (translated if header is passed) displayName for the feature | [optional] 
-**Description** | Pointer to **string** | The (translated if header is passed) description for the feature | [optional] 
-**TranslationMessages** | Pointer to [**NullableOutlierFeatureTranslation**](outlier-feature-translation) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Contributing feature id | [optional] |
+| **Name** | Pointer to **string** | The name of the feature | [optional] |
+| **ValueType** | Pointer to [**OutlierValueType**](outlier-value-type) |  | [optional] |
+| **Value** | Pointer to **float32** | The feature value | [optional] |
+| **Importance** | Pointer to **float32** | The importance of the feature. This can also be a negative value | [optional] |
+| **DisplayName** | Pointer to **string** | The (translated if header is passed) displayName for the feature | [optional] |
+| **Description** | Pointer to **string** | The (translated if header is passed) description for the feature | [optional] |
+| **TranslationMessages** | Pointer to [**NullableOutlierFeatureTranslation**](outlier-feature-translation) |  | [optional] |
 
 ## Methods
 
@@ -30,18 +43,13 @@ Name | Type | Description | Notes
 
 `func NewOutlierContributingFeature() *OutlierContributingFeature`
 
-NewOutlierContributingFeature instantiates a new OutlierContributingFeature object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewOutlierContributingFeature instantiates a new OutlierContributingFeature object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewOutlierContributingFeatureWithDefaults
 
 `func NewOutlierContributingFeatureWithDefaults() *OutlierContributingFeature`
 
-NewOutlierContributingFeatureWithDefaults instantiates a new OutlierContributingFeature object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewOutlierContributingFeatureWithDefaults instantiates a new OutlierContributingFeature object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -53,8 +61,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *OutlierContributingFeature) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -78,8 +85,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *OutlierContributingFeature) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -103,8 +109,7 @@ GetValueType returns the ValueType field if non-nil, zero value otherwise.
 
 `func (o *OutlierContributingFeature) GetValueTypeOk() (*OutlierValueType, bool)`
 
-GetValueTypeOk returns a tuple with the ValueType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueTypeOk returns a tuple with the ValueType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValueType
 
@@ -128,8 +133,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *OutlierContributingFeature) GetValueOk() (*float32, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -153,8 +157,7 @@ GetImportance returns the Importance field if non-nil, zero value otherwise.
 
 `func (o *OutlierContributingFeature) GetImportanceOk() (*float32, bool)`
 
-GetImportanceOk returns a tuple with the Importance field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetImportanceOk returns a tuple with the Importance field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetImportance
 
@@ -178,8 +181,7 @@ GetDisplayName returns the DisplayName field if non-nil, zero value otherwise.
 
 `func (o *OutlierContributingFeature) GetDisplayNameOk() (*string, bool)`
 
-GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayName
 
@@ -203,8 +205,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *OutlierContributingFeature) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -228,8 +229,7 @@ GetTranslationMessages returns the TranslationMessages field if non-nil, zero va
 
 `func (o *OutlierContributingFeature) GetTranslationMessagesOk() (*OutlierFeatureTranslation, bool)`
 
-GetTranslationMessagesOk returns a tuple with the TranslationMessages field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTranslationMessagesOk returns a tuple with the TranslationMessages field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTranslationMessages
 
@@ -247,10 +247,10 @@ HasTranslationMessages returns a boolean if a field has been set.
 
 `func (o *OutlierContributingFeature) SetTranslationMessagesNil(b bool)`
 
- SetTranslationMessagesNil sets the value for TranslationMessages to be an explicit nil
+SetTranslationMessagesNil sets the value for TranslationMessages to be an explicit nil
 
 ### UnsetTranslationMessages
+
 `func (o *OutlierContributingFeature) UnsetTranslationMessages()`
 
 UnsetTranslationMessages ensures that no value is present for TranslationMessages, not even an explicit nil
-

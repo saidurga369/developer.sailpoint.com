@@ -4,27 +4,40 @@ title: ConfigurationDetailsResponse
 pagination_label: ConfigurationDetailsResponse
 sidebar_label: ConfigurationDetailsResponse
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'ConfigurationDetailsResponse', 'V2025ConfigurationDetailsResponse'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'ConfigurationDetailsResponse',
+    'V2025ConfigurationDetailsResponse',
+  ]
 slug: /tools/sdk/powershell/v2025/models/configuration-details-response
-tags: ['SDK', 'Software Development Kit', 'ConfigurationDetailsResponse', 'V2025ConfigurationDetailsResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ConfigurationDetailsResponse',
+    'V2025ConfigurationDetailsResponse',
+  ]
 ---
-
 
 # ConfigurationDetailsResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ConfigType** | [**ConfigTypeEnum**](config-type-enum) |  | [optional] 
-**TargetIdentity** | [**Identity1**](identity1) |  | [optional] 
-**StartDate** | **System.DateTime** | The date from which to start reassigning work items | [optional] 
-**EndDate** | **System.DateTime** | The date from which to stop reassigning work items.  If this is an empty string it indicates a permanent reassignment. | [optional] 
-**AuditDetails** | [**AuditDetails**](audit-details) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ConfigType** | [**ConfigTypeEnum**](config-type-enum) |  | [optional] |
+| **TargetIdentity** | [**Identity1**](identity1) |  | [optional] |
+| **StartDate** | **System.DateTime** | The date from which to start reassigning work items | [optional] |
+| **EndDate** | **System.DateTime** | The date from which to stop reassigning work items. If this is an empty string it indicates a permanent reassignment. | [optional] |
+| **AuditDetails** | [**AuditDetails**](audit-details) |  | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $ConfigurationDetailsResponse = Initialize-V2025ConfigurationDetailsResponse  -ConfigType null `
  -TargetIdentity null `
@@ -34,10 +47,9 @@ $ConfigurationDetailsResponse = Initialize-V2025ConfigurationDetailsResponse  -C
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $ConfigurationDetailsResponse | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

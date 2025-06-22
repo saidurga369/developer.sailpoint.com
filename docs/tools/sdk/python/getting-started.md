@@ -15,9 +15,9 @@ Once your SDK is installed and configured, you can start accessing the SDK's dif
 
 ## List transforms
 
-One of the most useful functionalities of the Python SDK is the ability to easily access all the [V3 APIs](/docs/api/v3) and [Beta APIs](/docs/api/beta) and implement them in your project. 
+One of the most useful functionalities of the Python SDK is the ability to easily access all the [V3 APIs](/docs/api/v3) and [Beta APIs](/docs/api/beta) and implement them in your project.
 
-Here is an example of how to use the SDK to get a list of available [transforms](/docs/extensibility/transforms). This example leverages the [List Transforms endpoint](/docs/api/v3/list-transforms). 
+Here is an example of how to use the SDK to get a list of available [transforms](/docs/extensibility/transforms). This example leverages the [List Transforms endpoint](/docs/api/v3/list-transforms).
 
 Create a file in your project called "sdk.py" and copy this content into it:
 
@@ -41,7 +41,7 @@ with sailpoint.v3.ApiClient(configuration) as api_client:
         print("Exception when calling TransformsApi->list_transforms: %s\n" % e)
 ```
 
-This example imports the V3 APIs, which allows you to call the List Transforms V3 endpoint in your code. 
+This example imports the V3 APIs, which allows you to call the List Transforms V3 endpoint in your code.
 
 To run the code, run this command:
 
@@ -49,17 +49,17 @@ To run the code, run this command:
 python sdk.py
 ```
 
-The SDK will return a list of available transforms. 
+The SDK will return a list of available transforms.
 
-You can use this example as a guide for how to access all the V3 and Beta APIs (you would use `import sailpoint.beta` to import the Beta APIs). 
+You can use this example as a guide for how to access all the V3 and Beta APIs (you would use `import sailpoint.beta` to import the Beta APIs).
 
 ### Use query parameters to filter your tenant's transform list
 
-With the same SDK function, you can use query parameters to limit the results of your transforms list to only the results you want. 
+With the same SDK function, you can use query parameters to limit the results of your transforms list to only the results you want.
 
-Refer to the [List Transforms endpoint specification](/docs/api/v3/list-transforms) to view all its query parameters. 
+Refer to the [List Transforms endpoint specification](/docs/api/v3/list-transforms) to view all its query parameters.
 
-Here is an example that uses query parameters to limit the list to no more than 10 transforms that all start with the name "Test": 
+Here is an example that uses query parameters to limit the list to no more than 10 transforms that all start with the name "Test":
 
 ```python
 import sailpoint
@@ -87,7 +87,7 @@ To run the code, run this command:
 python sdk.py
 ```
 
-The SDK will return a list of no more than 10 transforms that all start with the name "Test". 
+The SDK will return a list of no more than 10 transforms that all start with the name "Test".
 
 ## Use methods that return HTTP Info
 
@@ -95,4 +95,4 @@ Each method has two versions - one returns only the response sent back from the 
 
 An example of the first method version is the `list_transforms()` method from earlier example. This method returns the response from the endpoint but no status or headers.
 
-This is what the second method version would be: `list_transforms_with_http_info()`. This method will return the response as well as status, headers and raw data from the endpoint. 
+This is what the second method version would be: `list_transforms_with_http_info()`. This method will return the response as well as status, headers and raw data from the endpoint.

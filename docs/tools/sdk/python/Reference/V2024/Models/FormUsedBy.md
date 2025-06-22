@@ -4,21 +4,21 @@ title: FormUsedBy
 pagination_label: FormUsedBy
 sidebar_label: FormUsedBy
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'FormUsedBy', 'V2024FormUsedBy'] 
+keywords: ['python', 'Python', 'sdk', 'FormUsedBy', 'V2024FormUsedBy']
 slug: /tools/sdk/python/v2024/models/form-used-by
 tags: ['SDK', 'Software Development Kit', 'FormUsedBy', 'V2024FormUsedBy']
 ---
 
 # FormUsedBy
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'WORKFLOW',    'SOURCE',    'MySailPoint' ] | FormUsedByType value.  WORKFLOW FormUsedByTypeWorkflow SOURCE FormUsedByTypeSource MySailPoint FormUsedByType | [optional] 
-**id** | **str** | Unique identifier of the system using the form. | [optional] 
-**name** | **str** | Name of the system using the form. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'WORKFLOW', 'SOURCE', 'MySailPoint' ] | FormUsedByType value. WORKFLOW FormUsedByTypeWorkflow SOURCE FormUsedByTypeSource MySailPoint FormUsedByType | [optional] |
+| **id** | **str** | Unique identifier of the system using the form. | [optional] |
+| **name** | **str** | Name of the system using the form. | [optional] |
+
 }
 
 ## Example
@@ -33,5 +33,5 @@ name='Access Request Form'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

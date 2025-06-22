@@ -4,20 +4,33 @@ title: IdentityLifecycleState
 pagination_label: IdentityLifecycleState
 sidebar_label: IdentityLifecycleState
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentityLifecycleState', 'V2024IdentityLifecycleState'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'IdentityLifecycleState',
+    'V2024IdentityLifecycleState',
+  ]
 slug: /tools/sdk/python/v2024/models/identity-lifecycle-state
-tags: ['SDK', 'Software Development Kit', 'IdentityLifecycleState', 'V2024IdentityLifecycleState']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityLifecycleState',
+    'V2024IdentityLifecycleState',
+  ]
 ---
 
 # IdentityLifecycleState
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**state_name** | **str** | The name of the lifecycle state | [required]
-**manually_updated** | **bool** | Whether the lifecycle state has been manually or automatically set | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **state_name** | **str** | The name of the lifecycle state | [required] |
+| **manually_updated** | **bool** | Whether the lifecycle state has been manually or automatically set | [required] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ manually_updated=True
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

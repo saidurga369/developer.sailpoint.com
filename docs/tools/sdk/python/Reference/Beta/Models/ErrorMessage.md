@@ -4,21 +4,21 @@ title: ErrorMessage
 pagination_label: ErrorMessage
 sidebar_label: ErrorMessage
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ErrorMessage', 'BetaErrorMessage'] 
+keywords: ['python', 'Python', 'sdk', 'ErrorMessage', 'BetaErrorMessage']
 slug: /tools/sdk/python/beta/models/error-message
 tags: ['SDK', 'Software Development Kit', 'ErrorMessage', 'BetaErrorMessage']
 ---
 
 # ErrorMessage
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**locale** | **str** | Locale is the current Locale | [optional] 
-**locale_origin** | **str** | LocaleOrigin holds possible values of how the locale was selected | [optional] 
-**text** | **str** | Text is the actual text of the error message | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **locale** | **str** | Locale is the current Locale | [optional] |
+| **locale_origin** | **str** | LocaleOrigin holds possible values of how the locale was selected | [optional] |
+| **text** | **str** | Text is the actual text of the error message | [optional] |
+
 }
 
 ## Example
@@ -33,5 +33,5 @@ text='This is an error'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

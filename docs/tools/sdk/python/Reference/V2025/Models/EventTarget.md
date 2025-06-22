@@ -4,19 +4,19 @@ title: EventTarget
 pagination_label: EventTarget
 sidebar_label: EventTarget
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'EventTarget', 'V2025EventTarget'] 
+keywords: ['python', 'Python', 'sdk', 'EventTarget', 'V2025EventTarget']
 slug: /tools/sdk/python/v2025/models/event-target
 tags: ['SDK', 'Software Development Kit', 'EventTarget', 'V2025EventTarget']
 ---
 
 # EventTarget
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | Name of the target, or recipient, of the event. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **name** | **str** | Name of the target, or recipient, of the event. | [optional] |
+
 }
 
 ## Example
@@ -29,5 +29,5 @@ name='Carol.Adams'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

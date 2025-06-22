@@ -4,7 +4,7 @@ title: RoleInsight
 pagination_label: RoleInsight
 sidebar_label: RoleInsight
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleInsight', 'V2024RoleInsight'] 
+keywords: ['go', 'Golang', 'sdk', 'RoleInsight', 'V2024RoleInsight']
 slug: /tools/sdk/go/v2024/models/role-insight
 tags: ['SDK', 'Software Development Kit', 'RoleInsight', 'V2024RoleInsight']
 ---
@@ -13,14 +13,14 @@ tags: ['SDK', 'Software Development Kit', 'RoleInsight', 'V2024RoleInsight']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Insight id | [optional] 
-**NumberOfUpdates** | Pointer to **int32** | Total number of updates for this role | [optional] 
-**CreatedDate** | Pointer to **SailPointTime** | The date-time insights were last created for this role. | [optional] 
-**ModifiedDate** | Pointer to **NullableTime** | The date-time insights were last modified for this role. | [optional] 
-**Role** | Pointer to [**RoleInsightsRole**](role-insights-role) |  | [optional] 
-**Insight** | Pointer to [**RoleInsightsInsight**](role-insights-insight) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Insight id | [optional] |
+| **NumberOfUpdates** | Pointer to **int32** | Total number of updates for this role | [optional] |
+| **CreatedDate** | Pointer to **SailPointTime** | The date-time insights were last created for this role. | [optional] |
+| **ModifiedDate** | Pointer to **NullableTime** | The date-time insights were last modified for this role. | [optional] |
+| **Role** | Pointer to [**RoleInsightsRole**](role-insights-role) |  | [optional] |
+| **Insight** | Pointer to [**RoleInsightsInsight**](role-insights-insight) |  | [optional] |
 
 ## Methods
 
@@ -28,18 +28,13 @@ Name | Type | Description | Notes
 
 `func NewRoleInsight() *RoleInsight`
 
-NewRoleInsight instantiates a new RoleInsight object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleInsight instantiates a new RoleInsight object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleInsightWithDefaults
 
 `func NewRoleInsightWithDefaults() *RoleInsight`
 
-NewRoleInsightWithDefaults instantiates a new RoleInsight object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleInsightWithDefaults instantiates a new RoleInsight object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -51,8 +46,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *RoleInsight) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -76,8 +70,7 @@ GetNumberOfUpdates returns the NumberOfUpdates field if non-nil, zero value othe
 
 `func (o *RoleInsight) GetNumberOfUpdatesOk() (*int32, bool)`
 
-GetNumberOfUpdatesOk returns a tuple with the NumberOfUpdates field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNumberOfUpdatesOk returns a tuple with the NumberOfUpdates field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNumberOfUpdates
 
@@ -101,8 +94,7 @@ GetCreatedDate returns the CreatedDate field if non-nil, zero value otherwise.
 
 `func (o *RoleInsight) GetCreatedDateOk() (*SailPointTime, bool)`
 
-GetCreatedDateOk returns a tuple with the CreatedDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedDateOk returns a tuple with the CreatedDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreatedDate
 
@@ -126,8 +118,7 @@ GetModifiedDate returns the ModifiedDate field if non-nil, zero value otherwise.
 
 `func (o *RoleInsight) GetModifiedDateOk() (*SailPointTime, bool)`
 
-GetModifiedDateOk returns a tuple with the ModifiedDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedDateOk returns a tuple with the ModifiedDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModifiedDate
 
@@ -145,12 +136,14 @@ HasModifiedDate returns a boolean if a field has been set.
 
 `func (o *RoleInsight) SetModifiedDateNil(b bool)`
 
- SetModifiedDateNil sets the value for ModifiedDate to be an explicit nil
+SetModifiedDateNil sets the value for ModifiedDate to be an explicit nil
 
 ### UnsetModifiedDate
+
 `func (o *RoleInsight) UnsetModifiedDate()`
 
 UnsetModifiedDate ensures that no value is present for ModifiedDate, not even an explicit nil
+
 ### GetRole
 
 `func (o *RoleInsight) GetRole() RoleInsightsRole`
@@ -161,8 +154,7 @@ GetRole returns the Role field if non-nil, zero value otherwise.
 
 `func (o *RoleInsight) GetRoleOk() (*RoleInsightsRole, bool)`
 
-GetRoleOk returns a tuple with the Role field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRoleOk returns a tuple with the Role field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRole
 
@@ -186,8 +178,7 @@ GetInsight returns the Insight field if non-nil, zero value otherwise.
 
 `func (o *RoleInsight) GetInsightOk() (*RoleInsightsInsight, bool)`
 
-GetInsightOk returns a tuple with the Insight field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetInsightOk returns a tuple with the Insight field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetInsight
 
@@ -200,5 +191,3 @@ SetInsight sets Insight field to given value.
 `func (o *RoleInsight) HasInsight() bool`
 
 HasInsight returns a boolean if a field has been set.
-
-

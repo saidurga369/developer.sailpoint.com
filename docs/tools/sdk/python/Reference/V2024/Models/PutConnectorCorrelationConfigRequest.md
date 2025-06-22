@@ -4,19 +4,32 @@ title: PutConnectorCorrelationConfigRequest
 pagination_label: PutConnectorCorrelationConfigRequest
 sidebar_label: PutConnectorCorrelationConfigRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'PutConnectorCorrelationConfigRequest', 'V2024PutConnectorCorrelationConfigRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'PutConnectorCorrelationConfigRequest',
+    'V2024PutConnectorCorrelationConfigRequest',
+  ]
 slug: /tools/sdk/python/v2024/models/put-connector-correlation-config-request
-tags: ['SDK', 'Software Development Kit', 'PutConnectorCorrelationConfigRequest', 'V2024PutConnectorCorrelationConfigRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PutConnectorCorrelationConfigRequest',
+    'V2024PutConnectorCorrelationConfigRequest',
+  ]
 ---
 
 # PutConnectorCorrelationConfigRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**file** | **bytearray** | connector correlation config xml file | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **file** | **bytearray** | connector correlation config xml file | [required] |
+
 }
 
 ## Example
@@ -29,5 +42,5 @@ file=bytes(b'blah')
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,21 +4,28 @@ title: ExpressionChildrenInner
 pagination_label: ExpressionChildrenInner
 sidebar_label: ExpressionChildrenInner
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ExpressionChildrenInner', 'ExpressionChildrenInner'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'ExpressionChildrenInner', 'ExpressionChildrenInner']
 slug: /tools/sdk/go/v3/models/expression-children-inner
-tags: ['SDK', 'Software Development Kit', 'ExpressionChildrenInner', 'ExpressionChildrenInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ExpressionChildrenInner',
+    'ExpressionChildrenInner',
+  ]
 ---
 
 # ExpressionChildrenInner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Operator** | Pointer to **string** | Operator for the expression | [optional] 
-**Attribute** | Pointer to **NullableString** | Name for the attribute | [optional] 
-**Value** | Pointer to [**NullableValue**](value) |  | [optional] 
-**Children** | Pointer to **NullableString** | There cannot be anymore nested children. This will always be null. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Operator** | Pointer to **string** | Operator for the expression | [optional] |
+| **Attribute** | Pointer to **NullableString** | Name for the attribute | [optional] |
+| **Value** | Pointer to [**NullableValue**](value) |  | [optional] |
+| **Children** | Pointer to **NullableString** | There cannot be anymore nested children. This will always be null. | [optional] |
 
 ## Methods
 
@@ -26,18 +33,13 @@ Name | Type | Description | Notes
 
 `func NewExpressionChildrenInner() *ExpressionChildrenInner`
 
-NewExpressionChildrenInner instantiates a new ExpressionChildrenInner object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewExpressionChildrenInner instantiates a new ExpressionChildrenInner object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewExpressionChildrenInnerWithDefaults
 
 `func NewExpressionChildrenInnerWithDefaults() *ExpressionChildrenInner`
 
-NewExpressionChildrenInnerWithDefaults instantiates a new ExpressionChildrenInner object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewExpressionChildrenInnerWithDefaults instantiates a new ExpressionChildrenInner object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetOperator
 
@@ -49,8 +51,7 @@ GetOperator returns the Operator field if non-nil, zero value otherwise.
 
 `func (o *ExpressionChildrenInner) GetOperatorOk() (*string, bool)`
 
-GetOperatorOk returns a tuple with the Operator field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOperatorOk returns a tuple with the Operator field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOperator
 
@@ -74,8 +75,7 @@ GetAttribute returns the Attribute field if non-nil, zero value otherwise.
 
 `func (o *ExpressionChildrenInner) GetAttributeOk() (*string, bool)`
 
-GetAttributeOk returns a tuple with the Attribute field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributeOk returns a tuple with the Attribute field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttribute
 
@@ -93,12 +93,14 @@ HasAttribute returns a boolean if a field has been set.
 
 `func (o *ExpressionChildrenInner) SetAttributeNil(b bool)`
 
- SetAttributeNil sets the value for Attribute to be an explicit nil
+SetAttributeNil sets the value for Attribute to be an explicit nil
 
 ### UnsetAttribute
+
 `func (o *ExpressionChildrenInner) UnsetAttribute()`
 
 UnsetAttribute ensures that no value is present for Attribute, not even an explicit nil
+
 ### GetValue
 
 `func (o *ExpressionChildrenInner) GetValue() Value`
@@ -109,8 +111,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *ExpressionChildrenInner) GetValueOk() (*Value, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -128,12 +129,14 @@ HasValue returns a boolean if a field has been set.
 
 `func (o *ExpressionChildrenInner) SetValueNil(b bool)`
 
- SetValueNil sets the value for Value to be an explicit nil
+SetValueNil sets the value for Value to be an explicit nil
 
 ### UnsetValue
+
 `func (o *ExpressionChildrenInner) UnsetValue()`
 
 UnsetValue ensures that no value is present for Value, not even an explicit nil
+
 ### GetChildren
 
 `func (o *ExpressionChildrenInner) GetChildren() string`
@@ -144,8 +147,7 @@ GetChildren returns the Children field if non-nil, zero value otherwise.
 
 `func (o *ExpressionChildrenInner) GetChildrenOk() (*string, bool)`
 
-GetChildrenOk returns a tuple with the Children field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetChildrenOk returns a tuple with the Children field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetChildren
 
@@ -163,10 +165,10 @@ HasChildren returns a boolean if a field has been set.
 
 `func (o *ExpressionChildrenInner) SetChildrenNil(b bool)`
 
- SetChildrenNil sets the value for Children to be an explicit nil
+SetChildrenNil sets the value for Children to be an explicit nil
 
 ### UnsetChildren
+
 `func (o *ExpressionChildrenInner) UnsetChildren()`
 
 UnsetChildren ensures that no value is present for Children, not even an explicit nil
-

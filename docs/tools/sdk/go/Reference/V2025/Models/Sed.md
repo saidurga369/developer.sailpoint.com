@@ -4,7 +4,7 @@ title: Sed
 pagination_label: Sed
 sidebar_label: Sed
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Sed', 'V2025Sed'] 
+keywords: ['go', 'Golang', 'sdk', 'Sed', 'V2025Sed']
 slug: /tools/sdk/go/v2025/models/sed
 tags: ['SDK', 'Software Development Kit', 'Sed', 'V2025Sed']
 ---
@@ -13,22 +13,22 @@ tags: ['SDK', 'Software Development Kit', 'Sed', 'V2025Sed']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | Pointer to **string** | name of the entitlement | [optional] 
-**ApprovedBy** | Pointer to **string** | entitlement approved by | [optional] 
-**ApprovedType** | Pointer to **string** | entitlement approved type | [optional] 
-**ApprovedWhen** | Pointer to **SailPointTime** | entitlement approved then | [optional] 
-**Attribute** | Pointer to **string** | entitlement attribute | [optional] 
-**Description** | Pointer to **string** | description of entitlement | [optional] 
-**DisplayName** | Pointer to **string** | entitlement display name | [optional] 
-**Id** | Pointer to **string** | sed id | [optional] 
-**SourceId** | Pointer to **string** | entitlement source id | [optional] 
-**SourceName** | Pointer to **string** | entitlement source name | [optional] 
-**Status** | Pointer to **string** | entitlement status | [optional] 
-**SuggestedDescription** | Pointer to **string** | llm suggested entitlement description | [optional] 
-**Type** | Pointer to **string** | entitlement type | [optional] 
-**Value** | Pointer to **string** | entitlement value | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | Pointer to **string** | name of the entitlement | [optional] |
+| **ApprovedBy** | Pointer to **string** | entitlement approved by | [optional] |
+| **ApprovedType** | Pointer to **string** | entitlement approved type | [optional] |
+| **ApprovedWhen** | Pointer to **SailPointTime** | entitlement approved then | [optional] |
+| **Attribute** | Pointer to **string** | entitlement attribute | [optional] |
+| **Description** | Pointer to **string** | description of entitlement | [optional] |
+| **DisplayName** | Pointer to **string** | entitlement display name | [optional] |
+| **Id** | Pointer to **string** | sed id | [optional] |
+| **SourceId** | Pointer to **string** | entitlement source id | [optional] |
+| **SourceName** | Pointer to **string** | entitlement source name | [optional] |
+| **Status** | Pointer to **string** | entitlement status | [optional] |
+| **SuggestedDescription** | Pointer to **string** | llm suggested entitlement description | [optional] |
+| **Type** | Pointer to **string** | entitlement type | [optional] |
+| **Value** | Pointer to **string** | entitlement value | [optional] |
 
 ## Methods
 
@@ -36,18 +36,13 @@ Name | Type | Description | Notes
 
 `func NewSed() *Sed`
 
-NewSed instantiates a new Sed object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSed instantiates a new Sed object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSedWithDefaults
 
 `func NewSedWithDefaults() *Sed`
 
-NewSedWithDefaults instantiates a new Sed object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSedWithDefaults instantiates a new Sed object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -59,8 +54,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *Sed) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -84,8 +78,7 @@ GetApprovedBy returns the ApprovedBy field if non-nil, zero value otherwise.
 
 `func (o *Sed) GetApprovedByOk() (*string, bool)`
 
-GetApprovedByOk returns a tuple with the ApprovedBy field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApprovedByOk returns a tuple with the ApprovedBy field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApprovedBy
 
@@ -109,8 +102,7 @@ GetApprovedType returns the ApprovedType field if non-nil, zero value otherwise.
 
 `func (o *Sed) GetApprovedTypeOk() (*string, bool)`
 
-GetApprovedTypeOk returns a tuple with the ApprovedType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApprovedTypeOk returns a tuple with the ApprovedType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApprovedType
 
@@ -134,8 +126,7 @@ GetApprovedWhen returns the ApprovedWhen field if non-nil, zero value otherwise.
 
 `func (o *Sed) GetApprovedWhenOk() (*SailPointTime, bool)`
 
-GetApprovedWhenOk returns a tuple with the ApprovedWhen field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApprovedWhenOk returns a tuple with the ApprovedWhen field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApprovedWhen
 
@@ -159,8 +150,7 @@ GetAttribute returns the Attribute field if non-nil, zero value otherwise.
 
 `func (o *Sed) GetAttributeOk() (*string, bool)`
 
-GetAttributeOk returns a tuple with the Attribute field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributeOk returns a tuple with the Attribute field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttribute
 
@@ -184,8 +174,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *Sed) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -209,8 +198,7 @@ GetDisplayName returns the DisplayName field if non-nil, zero value otherwise.
 
 `func (o *Sed) GetDisplayNameOk() (*string, bool)`
 
-GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayName
 
@@ -234,8 +222,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *Sed) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -259,8 +246,7 @@ GetSourceId returns the SourceId field if non-nil, zero value otherwise.
 
 `func (o *Sed) GetSourceIdOk() (*string, bool)`
 
-GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceId
 
@@ -284,8 +270,7 @@ GetSourceName returns the SourceName field if non-nil, zero value otherwise.
 
 `func (o *Sed) GetSourceNameOk() (*string, bool)`
 
-GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceName
 
@@ -309,8 +294,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *Sed) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -334,8 +318,7 @@ GetSuggestedDescription returns the SuggestedDescription field if non-nil, zero 
 
 `func (o *Sed) GetSuggestedDescriptionOk() (*string, bool)`
 
-GetSuggestedDescriptionOk returns a tuple with the SuggestedDescription field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSuggestedDescriptionOk returns a tuple with the SuggestedDescription field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSuggestedDescription
 
@@ -359,8 +342,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *Sed) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -384,8 +366,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *Sed) GetValueOk() (*string, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -398,5 +379,3 @@ SetValue sets Value field to given value.
 `func (o *Sed) HasValue() bool`
 
 HasValue returns a boolean if a field has been set.
-
-

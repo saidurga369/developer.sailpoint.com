@@ -4,19 +4,26 @@ title: MultiPolicyRequest
 pagination_label: MultiPolicyRequest
 sidebar_label: MultiPolicyRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'MultiPolicyRequest', 'V2025MultiPolicyRequest'] 
+keywords:
+  ['python', 'Python', 'sdk', 'MultiPolicyRequest', 'V2025MultiPolicyRequest']
 slug: /tools/sdk/python/v2025/models/multi-policy-request
-tags: ['SDK', 'Software Development Kit', 'MultiPolicyRequest', 'V2025MultiPolicyRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'MultiPolicyRequest',
+    'V2025MultiPolicyRequest',
+  ]
 ---
 
 # MultiPolicyRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**filtered_policy_list** | **[]str** | Multi-policy report will be run for this list of ids | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **filtered_policy_list** | **[]str** | Multi-policy report will be run for this list of ids | [optional] |
+
 }
 
 ## Example
@@ -31,5 +38,5 @@ filtered_policy_list=[
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

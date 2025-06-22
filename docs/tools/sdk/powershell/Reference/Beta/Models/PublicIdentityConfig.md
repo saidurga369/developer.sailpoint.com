@@ -4,25 +4,38 @@ title: PublicIdentityConfig
 pagination_label: PublicIdentityConfig
 sidebar_label: PublicIdentityConfig
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'PublicIdentityConfig', 'BetaPublicIdentityConfig'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'PublicIdentityConfig',
+    'BetaPublicIdentityConfig',
+  ]
 slug: /tools/sdk/powershell/beta/models/public-identity-config
-tags: ['SDK', 'Software Development Kit', 'PublicIdentityConfig', 'BetaPublicIdentityConfig']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PublicIdentityConfig',
+    'BetaPublicIdentityConfig',
+  ]
 ---
-
 
 # PublicIdentityConfig
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Attributes** | [**[]PublicIdentityAttributeConfig**](public-identity-attribute-config) |  | [optional] 
-**ModifiedBy** | [**IdentityReference**](identity-reference) |  | [optional] 
-**Modified** | **System.DateTime** | the date/time of the modification | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Attributes** | [**[]PublicIdentityAttributeConfig**](public-identity-attribute-config) |  | [optional] |
+| **ModifiedBy** | [**IdentityReference**](identity-reference) |  | [optional] |
+| **Modified** | **System.DateTime** | the date/time of the modification | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $PublicIdentityConfig = Initialize-BetaPublicIdentityConfig  -Attributes null `
  -ModifiedBy null `
@@ -30,10 +43,9 @@ $PublicIdentityConfig = Initialize-BetaPublicIdentityConfig  -Attributes null `
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $PublicIdentityConfig | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

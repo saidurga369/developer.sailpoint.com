@@ -4,22 +4,28 @@ title: RequestedAccountRef
 pagination_label: RequestedAccountRef
 sidebar_label: RequestedAccountRef
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RequestedAccountRef', 'RequestedAccountRef'] 
+keywords: ['go', 'Golang', 'sdk', 'RequestedAccountRef', 'RequestedAccountRef']
 slug: /tools/sdk/go/v3/models/requested-account-ref
-tags: ['SDK', 'Software Development Kit', 'RequestedAccountRef', 'RequestedAccountRef']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RequestedAccountRef',
+    'RequestedAccountRef',
+  ]
 ---
 
 # RequestedAccountRef
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | Pointer to **string** | Display name of the account for the user | [optional] 
-**Type** | Pointer to [**DtoType**](dto-type) |  | [optional] 
-**AccountUuid** | Pointer to **NullableString** | The uuid for the account | [optional] 
-**AccountId** | Pointer to **NullableString** | The native identity for the account | [optional] 
-**SourceName** | Pointer to **string** | Display name of the source for the account | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | Pointer to **string** | Display name of the account for the user | [optional] |
+| **Type** | Pointer to [**DtoType**](dto-type) |  | [optional] |
+| **AccountUuid** | Pointer to **NullableString** | The uuid for the account | [optional] |
+| **AccountId** | Pointer to **NullableString** | The native identity for the account | [optional] |
+| **SourceName** | Pointer to **string** | Display name of the source for the account | [optional] |
 
 ## Methods
 
@@ -27,18 +33,13 @@ Name | Type | Description | Notes
 
 `func NewRequestedAccountRef() *RequestedAccountRef`
 
-NewRequestedAccountRef instantiates a new RequestedAccountRef object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRequestedAccountRef instantiates a new RequestedAccountRef object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRequestedAccountRefWithDefaults
 
 `func NewRequestedAccountRefWithDefaults() *RequestedAccountRef`
 
-NewRequestedAccountRefWithDefaults instantiates a new RequestedAccountRef object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRequestedAccountRefWithDefaults instantiates a new RequestedAccountRef object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -50,8 +51,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *RequestedAccountRef) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -75,8 +75,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *RequestedAccountRef) GetTypeOk() (*DtoType, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -100,8 +99,7 @@ GetAccountUuid returns the AccountUuid field if non-nil, zero value otherwise.
 
 `func (o *RequestedAccountRef) GetAccountUuidOk() (*string, bool)`
 
-GetAccountUuidOk returns a tuple with the AccountUuid field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountUuidOk returns a tuple with the AccountUuid field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountUuid
 
@@ -119,12 +117,14 @@ HasAccountUuid returns a boolean if a field has been set.
 
 `func (o *RequestedAccountRef) SetAccountUuidNil(b bool)`
 
- SetAccountUuidNil sets the value for AccountUuid to be an explicit nil
+SetAccountUuidNil sets the value for AccountUuid to be an explicit nil
 
 ### UnsetAccountUuid
+
 `func (o *RequestedAccountRef) UnsetAccountUuid()`
 
 UnsetAccountUuid ensures that no value is present for AccountUuid, not even an explicit nil
+
 ### GetAccountId
 
 `func (o *RequestedAccountRef) GetAccountId() string`
@@ -135,8 +135,7 @@ GetAccountId returns the AccountId field if non-nil, zero value otherwise.
 
 `func (o *RequestedAccountRef) GetAccountIdOk() (*string, bool)`
 
-GetAccountIdOk returns a tuple with the AccountId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountIdOk returns a tuple with the AccountId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountId
 
@@ -154,12 +153,14 @@ HasAccountId returns a boolean if a field has been set.
 
 `func (o *RequestedAccountRef) SetAccountIdNil(b bool)`
 
- SetAccountIdNil sets the value for AccountId to be an explicit nil
+SetAccountIdNil sets the value for AccountId to be an explicit nil
 
 ### UnsetAccountId
+
 `func (o *RequestedAccountRef) UnsetAccountId()`
 
 UnsetAccountId ensures that no value is present for AccountId, not even an explicit nil
+
 ### GetSourceName
 
 `func (o *RequestedAccountRef) GetSourceName() string`
@@ -170,8 +171,7 @@ GetSourceName returns the SourceName field if non-nil, zero value otherwise.
 
 `func (o *RequestedAccountRef) GetSourceNameOk() (*string, bool)`
 
-GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceName
 
@@ -184,5 +184,3 @@ SetSourceName sets SourceName field to given value.
 `func (o *RequestedAccountRef) HasSourceName() bool`
 
 HasSourceName returns a boolean if a field has been set.
-
-

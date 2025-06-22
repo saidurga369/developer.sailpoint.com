@@ -4,7 +4,7 @@ title: QueryType
 pagination_label: QueryType
 sidebar_label: QueryType
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'QueryType', 'V2024QueryType'] 
+keywords: ['go', 'Golang', 'sdk', 'QueryType', 'V2024QueryType']
 slug: /tools/sdk/go/v2024/models/query-type
 tags: ['SDK', 'Software Development Kit', 'QueryType', 'V2024QueryType']
 ---
@@ -13,13 +13,10 @@ tags: ['SDK', 'Software Development Kit', 'QueryType', 'V2024QueryType']
 
 ## Enum
 
+- `DSL` (value: `"DSL"`)
 
-* `DSL` (value: `"DSL"`)
+- `SAILPOINT` (value: `"SAILPOINT"`)
 
-* `SAILPOINT` (value: `"SAILPOINT"`)
+- `TEXT` (value: `"TEXT"`)
 
-* `TEXT` (value: `"TEXT"`)
-
-* `TYPEAHEAD` (value: `"TYPEAHEAD"`)
-
-
+- `TYPEAHEAD` (value: `"TYPEAHEAD"`)

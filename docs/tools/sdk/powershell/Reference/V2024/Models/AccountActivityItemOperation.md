@@ -4,37 +4,46 @@ title: AccountActivityItemOperation
 pagination_label: AccountActivityItemOperation
 sidebar_label: AccountActivityItemOperation
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'AccountActivityItemOperation', 'V2024AccountActivityItemOperation'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'AccountActivityItemOperation',
+    'V2024AccountActivityItemOperation',
+  ]
 slug: /tools/sdk/powershell/v2024/models/account-activity-item-operation
-tags: ['SDK', 'Software Development Kit', 'AccountActivityItemOperation', 'V2024AccountActivityItemOperation']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountActivityItemOperation',
+    'V2024AccountActivityItemOperation',
+  ]
 ---
-
 
 # AccountActivityItemOperation
 
 ## Enum
 
+- `ADD` (value: `"ADD"`)
 
-* `ADD` (value: `"ADD"`)
+- `CREATE` (value: `"CREATE"`)
 
-* `CREATE` (value: `"CREATE"`)
+- `MODIFY` (value: `"MODIFY"`)
 
-* `MODIFY` (value: `"MODIFY"`)
+- `DELETE` (value: `"DELETE"`)
 
-* `DELETE` (value: `"DELETE"`)
+- `DISABLE` (value: `"DISABLE"`)
 
-* `DISABLE` (value: `"DISABLE"`)
+- `ENABLE` (value: `"ENABLE"`)
 
-* `ENABLE` (value: `"ENABLE"`)
+- `UNLOCK` (value: `"UNLOCK"`)
 
-* `UNLOCK` (value: `"UNLOCK"`)
+- `LOCK` (value: `"LOCK"`)
 
-* `LOCK` (value: `"LOCK"`)
+- `REMOVE` (value: `"REMOVE"`)
 
-* `REMOVE` (value: `"REMOVE"`)
+- `SET` (value: `"SET"`)
 
-* `SET` (value: `"SET"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

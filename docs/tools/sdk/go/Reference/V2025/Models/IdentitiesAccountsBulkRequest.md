@@ -4,18 +4,31 @@ title: IdentitiesAccountsBulkRequest
 pagination_label: IdentitiesAccountsBulkRequest
 sidebar_label: IdentitiesAccountsBulkRequest
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IdentitiesAccountsBulkRequest', 'V2025IdentitiesAccountsBulkRequest'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'IdentitiesAccountsBulkRequest',
+    'V2025IdentitiesAccountsBulkRequest',
+  ]
 slug: /tools/sdk/go/v2025/models/identities-accounts-bulk-request
-tags: ['SDK', 'Software Development Kit', 'IdentitiesAccountsBulkRequest', 'V2025IdentitiesAccountsBulkRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentitiesAccountsBulkRequest',
+    'V2025IdentitiesAccountsBulkRequest',
+  ]
 ---
 
 # IdentitiesAccountsBulkRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**IdentityIds** | Pointer to **[]string** | The ids of the identities for which enable/disable accounts. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **IdentityIds** | Pointer to **[]string** | The ids of the identities for which enable/disable accounts. | [optional] |
 
 ## Methods
 
@@ -23,18 +36,13 @@ Name | Type | Description | Notes
 
 `func NewIdentitiesAccountsBulkRequest() *IdentitiesAccountsBulkRequest`
 
-NewIdentitiesAccountsBulkRequest instantiates a new IdentitiesAccountsBulkRequest object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewIdentitiesAccountsBulkRequest instantiates a new IdentitiesAccountsBulkRequest object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewIdentitiesAccountsBulkRequestWithDefaults
 
 `func NewIdentitiesAccountsBulkRequestWithDefaults() *IdentitiesAccountsBulkRequest`
 
-NewIdentitiesAccountsBulkRequestWithDefaults instantiates a new IdentitiesAccountsBulkRequest object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewIdentitiesAccountsBulkRequestWithDefaults instantiates a new IdentitiesAccountsBulkRequest object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetIdentityIds
 
@@ -46,8 +54,7 @@ GetIdentityIds returns the IdentityIds field if non-nil, zero value otherwise.
 
 `func (o *IdentitiesAccountsBulkRequest) GetIdentityIdsOk() (*[]string, bool)`
 
-GetIdentityIdsOk returns a tuple with the IdentityIds field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityIdsOk returns a tuple with the IdentityIds field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityIds
 
@@ -60,5 +67,3 @@ SetIdentityIds sets IdentityIds field to given value.
 `func (o *IdentitiesAccountsBulkRequest) HasIdentityIds() bool`
 
 HasIdentityIds returns a boolean if a field has been set.
-
-

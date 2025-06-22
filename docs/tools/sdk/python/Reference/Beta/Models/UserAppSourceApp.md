@@ -4,21 +4,28 @@ title: UserAppSourceApp
 pagination_label: UserAppSourceApp
 sidebar_label: UserAppSourceApp
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'UserAppSourceApp', 'BetaUserAppSourceApp'] 
+keywords:
+  ['python', 'Python', 'sdk', 'UserAppSourceApp', 'BetaUserAppSourceApp']
 slug: /tools/sdk/python/beta/models/user-app-source-app
-tags: ['SDK', 'Software Development Kit', 'UserAppSourceApp', 'BetaUserAppSourceApp']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'UserAppSourceApp',
+    'BetaUserAppSourceApp',
+  ]
 ---
 
 # UserAppSourceApp
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | the source app ID | [optional] 
-**type** | **str** | It will always be \"APPLICATION\" | [optional] 
-**name** | **str** | the source app name | [optional] 
+| Name     | Type    | Description                       | Notes      |
+| -------- | ------- | --------------------------------- | ---------- |
+| **id**   | **str** | the source app ID                 | [optional] |
+| **type** | **str** | It will always be \"APPLICATION\" | [optional] |
+| **name** | **str** | the source app name               | [optional] |
+
 }
 
 ## Example
@@ -33,5 +40,5 @@ name='test-app'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

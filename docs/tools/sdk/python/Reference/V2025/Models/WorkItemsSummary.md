@@ -4,21 +4,28 @@ title: WorkItemsSummary
 pagination_label: WorkItemsSummary
 sidebar_label: WorkItemsSummary
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'WorkItemsSummary', 'V2025WorkItemsSummary'] 
+keywords:
+  ['python', 'Python', 'sdk', 'WorkItemsSummary', 'V2025WorkItemsSummary']
 slug: /tools/sdk/python/v2025/models/work-items-summary
-tags: ['SDK', 'Software Development Kit', 'WorkItemsSummary', 'V2025WorkItemsSummary']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'WorkItemsSummary',
+    'V2025WorkItemsSummary',
+  ]
 ---
 
 # WorkItemsSummary
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**open** | **int** | The count of open work items | [optional] 
-**completed** | **int** | The count of completed work items | [optional] 
-**total** | **int** | The count of total work items | [optional] 
+| Name          | Type    | Description                       | Notes      |
+| ------------- | ------- | --------------------------------- | ---------- |
+| **open**      | **int** | The count of open work items      | [optional] |
+| **completed** | **int** | The count of completed work items | [optional] |
+| **total**     | **int** | The count of total work items     | [optional] |
+
 }
 
 ## Example
@@ -33,5 +40,5 @@ total=30
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

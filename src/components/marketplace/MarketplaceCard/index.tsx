@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './styles.module.css';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShield } from '@fortawesome/free-solid-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faShield} from '@fortawesome/free-solid-svg-icons';
 import Link from '@docusaurus/Link';
 
 // Define the props interface
@@ -19,7 +19,7 @@ interface MarketplaceCardProps {
   featured?: boolean;
 }
 
-const MarketplaceCard: React.FC<MarketplaceCardProps> = ({ post, featured }) => {
+const MarketplaceCard: React.FC<MarketplaceCardProps> = ({post, featured}) => {
   let badge: JSX.Element = <div></div>;
 
   if (post.tags.includes('sailpoint-developed')) {
@@ -37,7 +37,11 @@ const MarketplaceCard: React.FC<MarketplaceCardProps> = ({ post, featured }) => 
     badge = (
       <div className={styles.badgeContainer}>
         <div title="SailPoint Certified" className={styles.cardBadgeCertified}>
-          <FontAwesomeIcon icon={faShield} className={styles.docCardIcon} size="2x" />
+          <FontAwesomeIcon
+            icon={faShield}
+            className={styles.docCardIcon}
+            size="2x"
+          />
         </div>
       </div>
     );
@@ -53,7 +57,10 @@ const MarketplaceCard: React.FC<MarketplaceCardProps> = ({ post, featured }) => 
             alt={post.title}
           />
           <div className={styles.split}></div>
-          <div className={featured ? styles.featuredCardTitle : styles.cardTitle}>{post.title}</div>
+          <div
+            className={featured ? styles.featuredCardTitle : styles.cardTitle}>
+            {post.title}
+          </div>
 
           <div className={styles.cardUser}>
             <img

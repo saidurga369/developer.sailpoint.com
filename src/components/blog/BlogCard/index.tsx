@@ -39,7 +39,8 @@ const BlogCard: React.FC<BlogCardProps> = ({
           />
           <div className={styles.split}></div>
 
-          <div className={featured ? styles.featuredCardTitle : styles.cardTitle}>
+          <div
+            className={featured ? styles.featuredCardTitle : styles.cardTitle}>
             {title}
           </div>
 

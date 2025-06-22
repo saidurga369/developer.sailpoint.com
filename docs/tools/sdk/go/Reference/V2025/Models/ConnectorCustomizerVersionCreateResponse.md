@@ -4,21 +4,34 @@ title: ConnectorCustomizerVersionCreateResponse
 pagination_label: ConnectorCustomizerVersionCreateResponse
 sidebar_label: ConnectorCustomizerVersionCreateResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ConnectorCustomizerVersionCreateResponse', 'V2025ConnectorCustomizerVersionCreateResponse'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ConnectorCustomizerVersionCreateResponse',
+    'V2025ConnectorCustomizerVersionCreateResponse',
+  ]
 slug: /tools/sdk/go/v2025/models/connector-customizer-version-create-response
-tags: ['SDK', 'Software Development Kit', 'ConnectorCustomizerVersionCreateResponse', 'V2025ConnectorCustomizerVersionCreateResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ConnectorCustomizerVersionCreateResponse',
+    'V2025ConnectorCustomizerVersionCreateResponse',
+  ]
 ---
 
 # ConnectorCustomizerVersionCreateResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**CustomizerID** | Pointer to **string** | ID of connector customizer. | [optional] 
-**ImageID** | Pointer to **string** | ImageID of the connector customizer. | [optional] 
-**Version** | Pointer to **int64** | Image version of the connector customizer. | [optional] 
-**Created** | Pointer to **SailPointTime** | Date-time when the connector customizer version was created. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **CustomizerID** | Pointer to **string** | ID of connector customizer. | [optional] |
+| **ImageID** | Pointer to **string** | ImageID of the connector customizer. | [optional] |
+| **Version** | Pointer to **int64** | Image version of the connector customizer. | [optional] |
+| **Created** | Pointer to **SailPointTime** | Date-time when the connector customizer version was created. | [optional] |
 
 ## Methods
 
@@ -26,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewConnectorCustomizerVersionCreateResponse() *ConnectorCustomizerVersionCreateResponse`
 
-NewConnectorCustomizerVersionCreateResponse instantiates a new ConnectorCustomizerVersionCreateResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewConnectorCustomizerVersionCreateResponse instantiates a new ConnectorCustomizerVersionCreateResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewConnectorCustomizerVersionCreateResponseWithDefaults
 
 `func NewConnectorCustomizerVersionCreateResponseWithDefaults() *ConnectorCustomizerVersionCreateResponse`
 
-NewConnectorCustomizerVersionCreateResponseWithDefaults instantiates a new ConnectorCustomizerVersionCreateResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewConnectorCustomizerVersionCreateResponseWithDefaults instantiates a new ConnectorCustomizerVersionCreateResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetCustomizerID
 
@@ -49,8 +57,7 @@ GetCustomizerID returns the CustomizerID field if non-nil, zero value otherwise.
 
 `func (o *ConnectorCustomizerVersionCreateResponse) GetCustomizerIDOk() (*string, bool)`
 
-GetCustomizerIDOk returns a tuple with the CustomizerID field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCustomizerIDOk returns a tuple with the CustomizerID field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCustomizerID
 
@@ -74,8 +81,7 @@ GetImageID returns the ImageID field if non-nil, zero value otherwise.
 
 `func (o *ConnectorCustomizerVersionCreateResponse) GetImageIDOk() (*string, bool)`
 
-GetImageIDOk returns a tuple with the ImageID field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetImageIDOk returns a tuple with the ImageID field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetImageID
 
@@ -99,8 +105,7 @@ GetVersion returns the Version field if non-nil, zero value otherwise.
 
 `func (o *ConnectorCustomizerVersionCreateResponse) GetVersionOk() (*int64, bool)`
 
-GetVersionOk returns a tuple with the Version field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetVersionOk returns a tuple with the Version field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetVersion
 
@@ -124,8 +129,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *ConnectorCustomizerVersionCreateResponse) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -138,5 +142,3 @@ SetCreated sets Created field to given value.
 `func (o *ConnectorCustomizerVersionCreateResponse) HasCreated() bool`
 
 HasCreated returns a boolean if a field has been set.
-
-

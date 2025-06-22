@@ -4,7 +4,7 @@ title: SourceOwner
 pagination_label: SourceOwner
 sidebar_label: SourceOwner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SourceOwner', 'V2024SourceOwner'] 
+keywords: ['python', 'Python', 'sdk', 'SourceOwner', 'V2024SourceOwner']
 slug: /tools/sdk/python/v2024/models/source-owner
 tags: ['SDK', 'Software Development Kit', 'SourceOwner', 'V2024SourceOwner']
 ---
@@ -15,11 +15,12 @@ Reference to identity object who owns the source.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] | Type of object being referenced. | [optional] 
-**id** | **str** | Owner identity's ID. | [optional] 
-**name** | **str** | Owner identity's human-readable display name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'IDENTITY' ] | Type of object being referenced. | [optional] |
+| **id** | **str** | Owner identity's ID. | [optional] |
+| **name** | **str** | Owner identity's human-readable display name. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +35,5 @@ name='MyName'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

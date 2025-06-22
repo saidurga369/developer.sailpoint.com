@@ -4,19 +4,32 @@ title: IdentityExceptionReportReference
 pagination_label: IdentityExceptionReportReference
 sidebar_label: IdentityExceptionReportReference
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IdentityExceptionReportReference', 'BetaIdentityExceptionReportReference'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'IdentityExceptionReportReference',
+    'BetaIdentityExceptionReportReference',
+  ]
 slug: /tools/sdk/go/beta/models/identity-exception-report-reference
-tags: ['SDK', 'Software Development Kit', 'IdentityExceptionReportReference', 'BetaIdentityExceptionReportReference']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityExceptionReportReference',
+    'BetaIdentityExceptionReportReference',
+  ]
 ---
 
 # IdentityExceptionReportReference
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**TaskResultId** | Pointer to **string** | Task result ID. | [optional] 
-**ReportName** | Pointer to **string** | Report name. | [optional] 
+| Name             | Type                  | Description     | Notes      |
+| ---------------- | --------------------- | --------------- | ---------- |
+| **TaskResultId** | Pointer to **string** | Task result ID. | [optional] |
+| **ReportName**   | Pointer to **string** | Report name.    | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewIdentityExceptionReportReference() *IdentityExceptionReportReference`
 
-NewIdentityExceptionReportReference instantiates a new IdentityExceptionReportReference object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewIdentityExceptionReportReference instantiates a new IdentityExceptionReportReference object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewIdentityExceptionReportReferenceWithDefaults
 
 `func NewIdentityExceptionReportReferenceWithDefaults() *IdentityExceptionReportReference`
 
-NewIdentityExceptionReportReferenceWithDefaults instantiates a new IdentityExceptionReportReference object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewIdentityExceptionReportReferenceWithDefaults instantiates a new IdentityExceptionReportReference object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetTaskResultId
 
@@ -47,8 +55,7 @@ GetTaskResultId returns the TaskResultId field if non-nil, zero value otherwise.
 
 `func (o *IdentityExceptionReportReference) GetTaskResultIdOk() (*string, bool)`
 
-GetTaskResultIdOk returns a tuple with the TaskResultId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTaskResultIdOk returns a tuple with the TaskResultId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTaskResultId
 
@@ -72,8 +79,7 @@ GetReportName returns the ReportName field if non-nil, zero value otherwise.
 
 `func (o *IdentityExceptionReportReference) GetReportNameOk() (*string, bool)`
 
-GetReportNameOk returns a tuple with the ReportName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReportNameOk returns a tuple with the ReportName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReportName
 
@@ -86,5 +92,3 @@ SetReportName sets ReportName field to given value.
 `func (o *IdentityExceptionReportReference) HasReportName() bool`
 
 HasReportName returns a boolean if a field has been set.
-
-

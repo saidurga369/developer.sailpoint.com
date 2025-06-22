@@ -4,18 +4,31 @@ title: TaskStatusMessageParametersInner
 pagination_label: TaskStatusMessageParametersInner
 sidebar_label: TaskStatusMessageParametersInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'TaskStatusMessageParametersInner', 'V2025TaskStatusMessageParametersInner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'TaskStatusMessageParametersInner',
+    'V2025TaskStatusMessageParametersInner',
+  ]
 slug: /tools/sdk/python/v2025/models/task-status-message-parameters-inner
-tags: ['SDK', 'Software Development Kit', 'TaskStatusMessageParametersInner', 'V2025TaskStatusMessageParametersInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'TaskStatusMessageParametersInner',
+    'V2025TaskStatusMessageParametersInner',
+  ]
 ---
 
 # TaskStatusMessageParametersInner
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
+
 }
 
 ## Example
@@ -27,5 +40,5 @@ task_status_message_parameters_inner = TaskStatusMessageParametersInner(
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

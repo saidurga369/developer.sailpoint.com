@@ -4,25 +4,38 @@ title: AccessRequestResponse1
 pagination_label: AccessRequestResponse1
 sidebar_label: AccessRequestResponse1
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'AccessRequestResponse1', 'V2024AccessRequestResponse1'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'AccessRequestResponse1',
+    'V2024AccessRequestResponse1',
+  ]
 slug: /tools/sdk/powershell/v2024/models/access-request-response1
-tags: ['SDK', 'Software Development Kit', 'AccessRequestResponse1', 'V2024AccessRequestResponse1']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessRequestResponse1',
+    'V2024AccessRequestResponse1',
+  ]
 ---
-
 
 # AccessRequestResponse1
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**RequesterId** | **String** | the requester Id | [optional] 
-**RequesterName** | **String** | the requesterName | [optional] 
-**Items** | [**[]AccessRequestItemResponse**](access-request-item-response) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **RequesterId** | **String** | the requester Id | [optional] |
+| **RequesterName** | **String** | the requesterName | [optional] |
+| **Items** | [**[]AccessRequestItemResponse**](access-request-item-response) |  | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $AccessRequestResponse1 = Initialize-V2024AccessRequestResponse1  -RequesterId 2c91808a77ff216301782327a50f09bf `
  -RequesterName Bing C `
@@ -30,10 +43,9 @@ $AccessRequestResponse1 = Initialize-V2024AccessRequestResponse1  -RequesterId 2
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $AccessRequestResponse1 | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

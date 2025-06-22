@@ -31,19 +31,23 @@ For example, you want to test this connector:
 
 ```javascript
 export const connector = async () => {
+  // Get connector source config
+  const config = await readConfig();
 
-    // Get connector source config
-    const config = await readConfig()
+  // Use the vendor SDK, or implement own client as necessary, to initialize a client
+  const myClient = new MyClient(config);
 
-    // Use the vendor SDK, or implement own client as necessary, to initialize a client
-    const myClient = new MyClient(config)
-
-    return createConnector()
-        .stdTestConnection(async (context: Context, input: undefined, res: Response<StdTestConnectionOutput>) => {
-            logger.info("Running test connection")
-            res.send(await myClient.testConnection())
-        })
-}
+  return createConnector().stdTestConnection(
+    async (
+      context: Context,
+      input: undefined,
+      res: Response<StdTestConnectionOutput>,
+    ) => {
+      logger.info('Running test connection');
+      res.send(await myClient.testConnection());
+    },
+  );
+};
 ```
 
 You can test a customizer by simply appending the customizer code to the end of the file:
@@ -51,33 +55,36 @@ You can test a customizer by simply appending the customizer code to the end of 
 ```javascript
 // existing custom connector code
 export const connector = async () => {
+  // Get connector source config
+  const config = await readConfig();
 
-    // Get connector source config
-    const config = await readConfig()
+  // Use the vendor SDK, or implement own client as necessary, to initialize a client
+  const myClient = new MyClient(config);
 
-    // Use the vendor SDK, or implement own client as necessary, to initialize a client
-    const myClient = new MyClient(config)
-
-    return createConnector()
-        .stdTestConnection(async (context: Context, input: undefined, res: Response<StdTestConnectionOutput>) => {
-            logger.info("Running test connection")
-            res.send(await myClient.testConnection())
-        })
-}
+  return createConnector().stdTestConnection(
+    async (
+      context: Context,
+      input: undefined,
+      res: Response<StdTestConnectionOutput>,
+    ) => {
+      logger.info('Running test connection');
+      res.send(await myClient.testConnection());
+    },
+  );
+};
 
 // appended customizer code that will also get run
 export const connectorCustomizer = async () => {
+  // Get connector source config
+  const config = await readConfig();
 
-    // Get connector source config
-    const config = await readConfig()
-
-    return createConnectorCustomizer()
-        .afterStdTestConnection(async (context: Context, output: StdTestConnectionOutput) => {
-            logger.info('Running after test connection')
-            return output
-        })
-}
-
+  return createConnectorCustomizer().afterStdTestConnection(
+    async (context: Context, output: StdTestConnectionOutput) => {
+      logger.info('Running after test connection');
+      return output;
+    },
+  );
+};
 ```
 
 Now, when you run the test-connection command, the customizer after the test-connection command will also run.

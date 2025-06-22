@@ -4,24 +4,37 @@ title: RequestedItemAccountSelections
 pagination_label: RequestedItemAccountSelections
 sidebar_label: RequestedItemAccountSelections
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RequestedItemAccountSelections', 'V2024RequestedItemAccountSelections'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'RequestedItemAccountSelections',
+    'V2024RequestedItemAccountSelections',
+  ]
 slug: /tools/sdk/go/v2024/models/requested-item-account-selections
-tags: ['SDK', 'Software Development Kit', 'RequestedItemAccountSelections', 'V2024RequestedItemAccountSelections']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RequestedItemAccountSelections',
+    'V2024RequestedItemAccountSelections',
+  ]
 ---
 
 # RequestedItemAccountSelections
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Description** | Pointer to **string** | The description for this requested item | [optional] 
-**AccountsSelectionBlocked** | Pointer to **bool** | This field indicates if account selections are not allowed for this requested item. * If true, this field indicates that account selections will not be available for this item and user combination. In this case, no account selections should be provided in the access request for this item and user combination, irrespective of whether the user has single or multiple accounts on a source. * An example is where a user is requesting an access profile that is already assigned to one of their accounts.  | [optional] [default to false]
-**AccountsSelectionBlockedReason** | Pointer to **NullableString** | If account selections are not allowed for an item, this field will denote the reason. | [optional] 
-**Type** | Pointer to **string** | The type of the item being requested. | [optional] 
-**Id** | Pointer to **string** | The id of the requested item | [optional] 
-**Name** | Pointer to **string** | The name of the requested item | [optional] 
-**Sources** | Pointer to [**[]SourceAccountSelections**](source-account-selections) | The details for the sources and accounts for the requested item and identity combination | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Description** | Pointer to **string** | The description for this requested item | [optional] |
+| **AccountsSelectionBlocked** | Pointer to **bool** | This field indicates if account selections are not allowed for this requested item. _ If true, this field indicates that account selections will not be available for this item and user combination. In this case, no account selections should be provided in the access request for this item and user combination, irrespective of whether the user has single or multiple accounts on a source. _ An example is where a user is requesting an access profile that is already assigned to one of their accounts. | [optional] [default to false] |
+| **AccountsSelectionBlockedReason** | Pointer to **NullableString** | If account selections are not allowed for an item, this field will denote the reason. | [optional] |
+| **Type** | Pointer to **string** | The type of the item being requested. | [optional] |
+| **Id** | Pointer to **string** | The id of the requested item | [optional] |
+| **Name** | Pointer to **string** | The name of the requested item | [optional] |
+| **Sources** | Pointer to [**[]SourceAccountSelections**](source-account-selections) | The details for the sources and accounts for the requested item and identity combination | [optional] |
 
 ## Methods
 
@@ -29,18 +42,13 @@ Name | Type | Description | Notes
 
 `func NewRequestedItemAccountSelections() *RequestedItemAccountSelections`
 
-NewRequestedItemAccountSelections instantiates a new RequestedItemAccountSelections object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRequestedItemAccountSelections instantiates a new RequestedItemAccountSelections object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRequestedItemAccountSelectionsWithDefaults
 
 `func NewRequestedItemAccountSelectionsWithDefaults() *RequestedItemAccountSelections`
 
-NewRequestedItemAccountSelectionsWithDefaults instantiates a new RequestedItemAccountSelections object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRequestedItemAccountSelectionsWithDefaults instantiates a new RequestedItemAccountSelections object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetDescription
 
@@ -52,8 +60,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *RequestedItemAccountSelections) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -77,8 +84,7 @@ GetAccountsSelectionBlocked returns the AccountsSelectionBlocked field if non-ni
 
 `func (o *RequestedItemAccountSelections) GetAccountsSelectionBlockedOk() (*bool, bool)`
 
-GetAccountsSelectionBlockedOk returns a tuple with the AccountsSelectionBlocked field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountsSelectionBlockedOk returns a tuple with the AccountsSelectionBlocked field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountsSelectionBlocked
 
@@ -102,8 +108,7 @@ GetAccountsSelectionBlockedReason returns the AccountsSelectionBlockedReason fie
 
 `func (o *RequestedItemAccountSelections) GetAccountsSelectionBlockedReasonOk() (*string, bool)`
 
-GetAccountsSelectionBlockedReasonOk returns a tuple with the AccountsSelectionBlockedReason field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountsSelectionBlockedReasonOk returns a tuple with the AccountsSelectionBlockedReason field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountsSelectionBlockedReason
 
@@ -121,12 +126,14 @@ HasAccountsSelectionBlockedReason returns a boolean if a field has been set.
 
 `func (o *RequestedItemAccountSelections) SetAccountsSelectionBlockedReasonNil(b bool)`
 
- SetAccountsSelectionBlockedReasonNil sets the value for AccountsSelectionBlockedReason to be an explicit nil
+SetAccountsSelectionBlockedReasonNil sets the value for AccountsSelectionBlockedReason to be an explicit nil
 
 ### UnsetAccountsSelectionBlockedReason
+
 `func (o *RequestedItemAccountSelections) UnsetAccountsSelectionBlockedReason()`
 
 UnsetAccountsSelectionBlockedReason ensures that no value is present for AccountsSelectionBlockedReason, not even an explicit nil
+
 ### GetType
 
 `func (o *RequestedItemAccountSelections) GetType() string`
@@ -137,8 +144,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *RequestedItemAccountSelections) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -162,8 +168,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *RequestedItemAccountSelections) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -187,8 +192,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *RequestedItemAccountSelections) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -212,8 +216,7 @@ GetSources returns the Sources field if non-nil, zero value otherwise.
 
 `func (o *RequestedItemAccountSelections) GetSourcesOk() (*[]SourceAccountSelections, bool)`
 
-GetSourcesOk returns a tuple with the Sources field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourcesOk returns a tuple with the Sources field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSources
 
@@ -226,5 +229,3 @@ SetSources sets Sources field to given value.
 `func (o *RequestedItemAccountSelections) HasSources() bool`
 
 HasSources returns a boolean if a field has been set.
-
-

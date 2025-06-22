@@ -4,19 +4,32 @@ title: PublicIdentityAttributeConfig
 pagination_label: PublicIdentityAttributeConfig
 sidebar_label: PublicIdentityAttributeConfig
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'PublicIdentityAttributeConfig', 'V2025PublicIdentityAttributeConfig'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'PublicIdentityAttributeConfig',
+    'V2025PublicIdentityAttributeConfig',
+  ]
 slug: /tools/sdk/go/v2025/models/public-identity-attribute-config
-tags: ['SDK', 'Software Development Kit', 'PublicIdentityAttributeConfig', 'V2025PublicIdentityAttributeConfig']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PublicIdentityAttributeConfig',
+    'V2025PublicIdentityAttributeConfig',
+  ]
 ---
 
 # PublicIdentityAttributeConfig
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Key** | Pointer to **string** | The attribute key | [optional] 
-**Name** | Pointer to **string** | The attribute display name | [optional] 
+| Name     | Type                  | Description                | Notes      |
+| -------- | --------------------- | -------------------------- | ---------- |
+| **Key**  | Pointer to **string** | The attribute key          | [optional] |
+| **Name** | Pointer to **string** | The attribute display name | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewPublicIdentityAttributeConfig() *PublicIdentityAttributeConfig`
 
-NewPublicIdentityAttributeConfig instantiates a new PublicIdentityAttributeConfig object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewPublicIdentityAttributeConfig instantiates a new PublicIdentityAttributeConfig object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewPublicIdentityAttributeConfigWithDefaults
 
 `func NewPublicIdentityAttributeConfigWithDefaults() *PublicIdentityAttributeConfig`
 
-NewPublicIdentityAttributeConfigWithDefaults instantiates a new PublicIdentityAttributeConfig object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewPublicIdentityAttributeConfigWithDefaults instantiates a new PublicIdentityAttributeConfig object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetKey
 
@@ -47,8 +55,7 @@ GetKey returns the Key field if non-nil, zero value otherwise.
 
 `func (o *PublicIdentityAttributeConfig) GetKeyOk() (*string, bool)`
 
-GetKeyOk returns a tuple with the Key field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetKeyOk returns a tuple with the Key field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetKey
 
@@ -72,8 +79,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *PublicIdentityAttributeConfig) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -86,5 +92,3 @@ SetName sets Name field to given value.
 `func (o *PublicIdentityAttributeConfig) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

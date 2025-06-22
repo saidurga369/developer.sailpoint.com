@@ -4,20 +4,33 @@ title: AttributeMappingsAllOfTarget
 pagination_label: AttributeMappingsAllOfTarget
 sidebar_label: AttributeMappingsAllOfTarget
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AttributeMappingsAllOfTarget', 'V2025AttributeMappingsAllOfTarget'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'AttributeMappingsAllOfTarget',
+    'V2025AttributeMappingsAllOfTarget',
+  ]
 slug: /tools/sdk/go/v2025/models/attribute-mappings-all-of-target
-tags: ['SDK', 'Software Development Kit', 'AttributeMappingsAllOfTarget', 'V2025AttributeMappingsAllOfTarget']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AttributeMappingsAllOfTarget',
+    'V2025AttributeMappingsAllOfTarget',
+  ]
 ---
 
 # AttributeMappingsAllOfTarget
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | The type of target entity | [optional] 
-**AttributeName** | Pointer to **string** | Name of the targeted attribute | [optional] 
-**SourceId** | Pointer to **string** | The ID of Source | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to **string** | The type of target entity | [optional] |
+| **AttributeName** | Pointer to **string** | Name of the targeted attribute | [optional] |
+| **SourceId** | Pointer to **string** | The ID of Source | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewAttributeMappingsAllOfTarget() *AttributeMappingsAllOfTarget`
 
-NewAttributeMappingsAllOfTarget instantiates a new AttributeMappingsAllOfTarget object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAttributeMappingsAllOfTarget instantiates a new AttributeMappingsAllOfTarget object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAttributeMappingsAllOfTargetWithDefaults
 
 `func NewAttributeMappingsAllOfTargetWithDefaults() *AttributeMappingsAllOfTarget`
 
-NewAttributeMappingsAllOfTargetWithDefaults instantiates a new AttributeMappingsAllOfTarget object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAttributeMappingsAllOfTargetWithDefaults instantiates a new AttributeMappingsAllOfTarget object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -48,8 +56,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *AttributeMappingsAllOfTarget) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -73,8 +80,7 @@ GetAttributeName returns the AttributeName field if non-nil, zero value otherwis
 
 `func (o *AttributeMappingsAllOfTarget) GetAttributeNameOk() (*string, bool)`
 
-GetAttributeNameOk returns a tuple with the AttributeName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributeNameOk returns a tuple with the AttributeName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributeName
 
@@ -98,8 +104,7 @@ GetSourceId returns the SourceId field if non-nil, zero value otherwise.
 
 `func (o *AttributeMappingsAllOfTarget) GetSourceIdOk() (*string, bool)`
 
-GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceId
 
@@ -112,5 +117,3 @@ SetSourceId sets SourceId field to given value.
 `func (o *AttributeMappingsAllOfTarget) HasSourceId() bool`
 
 HasSourceId returns a boolean if a field has been set.
-
-

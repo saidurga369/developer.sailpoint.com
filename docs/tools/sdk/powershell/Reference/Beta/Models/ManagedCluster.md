@@ -4,47 +4,49 @@ title: ManagedCluster
 pagination_label: ManagedCluster
 sidebar_label: ManagedCluster
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'ManagedCluster', 'BetaManagedCluster'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'ManagedCluster', 'BetaManagedCluster']
 slug: /tools/sdk/powershell/beta/models/managed-cluster
-tags: ['SDK', 'Software Development Kit', 'ManagedCluster', 'BetaManagedCluster']
+tags:
+  ['SDK', 'Software Development Kit', 'ManagedCluster', 'BetaManagedCluster']
 ---
-
 
 # ManagedCluster
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | ManagedCluster ID | [required]
-**Name** | **String** | ManagedCluster name | [optional] 
-**Pod** | **String** | ManagedCluster pod | [optional] 
-**Org** | **String** | ManagedCluster org | [optional] 
-**Type** | [**ManagedClusterTypes**](managed-cluster-types) |  | [optional] 
-**Configuration** | **map[string]String** | ManagedProcess configuration map | [optional] 
-**KeyPair** | [**ManagedClusterKeyPair**](managed-cluster-key-pair) |  | [optional] 
-**Attributes** | [**ManagedClusterAttributes**](managed-cluster-attributes) |  | [optional] 
-**Description** | **String** | ManagedCluster description | [optional] 
-**Redis** | [**ManagedClusterRedis**](managed-cluster-redis) |  | [optional] 
-**ClientType** | [**ManagedClientType**](managed-client-type) |  | [required]
-**CcgVersion** | **String** | CCG version used by the ManagedCluster | [required]
-**PinnedConfig** | **Boolean** | boolean flag indiacting whether or not the cluster configuration is pinned | [optional] [default to $false]
-**LogConfiguration** | [**ClientLogConfiguration**](client-log-configuration) |  | [optional] 
-**Operational** | **Boolean** | Whether or not the cluster is operational or not | [optional] [default to $false]
-**Status** | **String** | Cluster status | [optional] 
-**PublicKeyCertificate** | **String** | Public key certificate | [optional] 
-**PublicKeyThumbprint** | **String** | Public key thumbprint | [optional] 
-**PublicKey** | **String** | Public key | [optional] 
-**AlertKey** | **String** | Key describing any immediate cluster alerts | [optional] 
-**ClientIds** | **[]String** | List of clients in a cluster | [optional] 
-**ServiceCount** | **Int32** | Number of services bound to a cluster | [optional] [default to 0]
-**CcId** | **String** | CC ID only used in calling CC, will be removed without notice when Migration to CEGS is finished | [optional] [default to "0"]
-**CreatedAt** | **System.DateTime** | The date/time this cluster was created | [optional] 
-**UpdatedAt** | **System.DateTime** | The date/time this cluster was last updated | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | ManagedCluster ID | [required] |
+| **Name** | **String** | ManagedCluster name | [optional] |
+| **Pod** | **String** | ManagedCluster pod | [optional] |
+| **Org** | **String** | ManagedCluster org | [optional] |
+| **Type** | [**ManagedClusterTypes**](managed-cluster-types) |  | [optional] |
+| **Configuration** | **map[string]String** | ManagedProcess configuration map | [optional] |
+| **KeyPair** | [**ManagedClusterKeyPair**](managed-cluster-key-pair) |  | [optional] |
+| **Attributes** | [**ManagedClusterAttributes**](managed-cluster-attributes) |  | [optional] |
+| **Description** | **String** | ManagedCluster description | [optional] |
+| **Redis** | [**ManagedClusterRedis**](managed-cluster-redis) |  | [optional] |
+| **ClientType** | [**ManagedClientType**](managed-client-type) |  | [required] |
+| **CcgVersion** | **String** | CCG version used by the ManagedCluster | [required] |
+| **PinnedConfig** | **Boolean** | boolean flag indiacting whether or not the cluster configuration is pinned | [optional] [default to $false] |
+| **LogConfiguration** | [**ClientLogConfiguration**](client-log-configuration) |  | [optional] |
+| **Operational** | **Boolean** | Whether or not the cluster is operational or not | [optional] [default to $false] |
+| **Status** | **String** | Cluster status | [optional] |
+| **PublicKeyCertificate** | **String** | Public key certificate | [optional] |
+| **PublicKeyThumbprint** | **String** | Public key thumbprint | [optional] |
+| **PublicKey** | **String** | Public key | [optional] |
+| **AlertKey** | **String** | Key describing any immediate cluster alerts | [optional] |
+| **ClientIds** | **[]String** | List of clients in a cluster | [optional] |
+| **ServiceCount** | **Int32** | Number of services bound to a cluster | [optional] [default to 0] |
+| **CcId** | **String** | CC ID only used in calling CC, will be removed without notice when Migration to CEGS is finished | [optional] [default to "0"] |
+| **CreatedAt** | **System.DateTime** | The date/time this cluster was created | [optional] |
+| **UpdatedAt** | **System.DateTime** | The date/time this cluster was last updated | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $ManagedCluster = Initialize-BetaManagedCluster  -Id aClusterId `
  -Name Managed Cluster Name `
@@ -74,10 +76,9 @@ $ManagedCluster = Initialize-BetaManagedCluster  -Id aClusterId `
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $ManagedCluster | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

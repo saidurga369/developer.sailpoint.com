@@ -4,23 +4,30 @@ title: RoleInsightsResponse
 pagination_label: RoleInsightsResponse
 sidebar_label: RoleInsightsResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleInsightsResponse', 'V2024RoleInsightsResponse'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'RoleInsightsResponse', 'V2024RoleInsightsResponse']
 slug: /tools/sdk/go/v2024/models/role-insights-response
-tags: ['SDK', 'Software Development Kit', 'RoleInsightsResponse', 'V2024RoleInsightsResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleInsightsResponse',
+    'V2024RoleInsightsResponse',
+  ]
 ---
 
 # RoleInsightsResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Request Id for a role insight generation request | [optional] 
-**CreatedDate** | Pointer to **SailPointTime** | The date-time role insights request was created. | [optional] 
-**LastGenerated** | Pointer to **SailPointTime** | The date-time role insights request was completed. | [optional] 
-**NumberOfUpdates** | Pointer to **int32** | Total number of updates for this request. Starts with 0 and will have correct number when request is COMPLETED. | [optional] 
-**RoleIds** | Pointer to **[]string** | The role IDs that are in this request. | [optional] 
-**Status** | Pointer to **string** | Request status | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Request Id for a role insight generation request | [optional] |
+| **CreatedDate** | Pointer to **SailPointTime** | The date-time role insights request was created. | [optional] |
+| **LastGenerated** | Pointer to **SailPointTime** | The date-time role insights request was completed. | [optional] |
+| **NumberOfUpdates** | Pointer to **int32** | Total number of updates for this request. Starts with 0 and will have correct number when request is COMPLETED. | [optional] |
+| **RoleIds** | Pointer to **[]string** | The role IDs that are in this request. | [optional] |
+| **Status** | Pointer to **string** | Request status | [optional] |
 
 ## Methods
 
@@ -28,18 +35,13 @@ Name | Type | Description | Notes
 
 `func NewRoleInsightsResponse() *RoleInsightsResponse`
 
-NewRoleInsightsResponse instantiates a new RoleInsightsResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleInsightsResponse instantiates a new RoleInsightsResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleInsightsResponseWithDefaults
 
 `func NewRoleInsightsResponseWithDefaults() *RoleInsightsResponse`
 
-NewRoleInsightsResponseWithDefaults instantiates a new RoleInsightsResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleInsightsResponseWithDefaults instantiates a new RoleInsightsResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -51,8 +53,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *RoleInsightsResponse) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -76,8 +77,7 @@ GetCreatedDate returns the CreatedDate field if non-nil, zero value otherwise.
 
 `func (o *RoleInsightsResponse) GetCreatedDateOk() (*SailPointTime, bool)`
 
-GetCreatedDateOk returns a tuple with the CreatedDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedDateOk returns a tuple with the CreatedDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreatedDate
 
@@ -101,8 +101,7 @@ GetLastGenerated returns the LastGenerated field if non-nil, zero value otherwis
 
 `func (o *RoleInsightsResponse) GetLastGeneratedOk() (*SailPointTime, bool)`
 
-GetLastGeneratedOk returns a tuple with the LastGenerated field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLastGeneratedOk returns a tuple with the LastGenerated field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLastGenerated
 
@@ -126,8 +125,7 @@ GetNumberOfUpdates returns the NumberOfUpdates field if non-nil, zero value othe
 
 `func (o *RoleInsightsResponse) GetNumberOfUpdatesOk() (*int32, bool)`
 
-GetNumberOfUpdatesOk returns a tuple with the NumberOfUpdates field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNumberOfUpdatesOk returns a tuple with the NumberOfUpdates field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNumberOfUpdates
 
@@ -151,8 +149,7 @@ GetRoleIds returns the RoleIds field if non-nil, zero value otherwise.
 
 `func (o *RoleInsightsResponse) GetRoleIdsOk() (*[]string, bool)`
 
-GetRoleIdsOk returns a tuple with the RoleIds field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRoleIdsOk returns a tuple with the RoleIds field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRoleIds
 
@@ -176,8 +173,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *RoleInsightsResponse) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -190,5 +186,3 @@ SetStatus sets Status field to given value.
 `func (o *RoleInsightsResponse) HasStatus() bool`
 
 HasStatus returns a boolean if a field has been set.
-
-

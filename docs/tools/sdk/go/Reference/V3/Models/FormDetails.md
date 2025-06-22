@@ -4,7 +4,7 @@ title: FormDetails
 pagination_label: FormDetails
 sidebar_label: FormDetails
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'FormDetails', 'FormDetails'] 
+keywords: ['go', 'Golang', 'sdk', 'FormDetails', 'FormDetails']
 slug: /tools/sdk/go/v3/models/form-details
 tags: ['SDK', 'Software Development Kit', 'FormDetails', 'FormDetails']
 ---
@@ -13,14 +13,14 @@ tags: ['SDK', 'Software Development Kit', 'FormDetails', 'FormDetails']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **NullableString** | ID of the form | [optional] 
-**Name** | Pointer to **NullableString** | Name of the form | [optional] 
-**Title** | Pointer to **string** | The form title | [optional] 
-**Subtitle** | Pointer to **string** | The form subtitle. | [optional] 
-**TargetUser** | Pointer to **string** | The name of the user that should be shown this form | [optional] 
-**Sections** | Pointer to [**[]SectionDetails**](section-details) | Sections of the form | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **NullableString** | ID of the form | [optional] |
+| **Name** | Pointer to **NullableString** | Name of the form | [optional] |
+| **Title** | Pointer to **string** | The form title | [optional] |
+| **Subtitle** | Pointer to **string** | The form subtitle. | [optional] |
+| **TargetUser** | Pointer to **string** | The name of the user that should be shown this form | [optional] |
+| **Sections** | Pointer to [**[]SectionDetails**](section-details) | Sections of the form | [optional] |
 
 ## Methods
 
@@ -28,18 +28,13 @@ Name | Type | Description | Notes
 
 `func NewFormDetails() *FormDetails`
 
-NewFormDetails instantiates a new FormDetails object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewFormDetails instantiates a new FormDetails object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewFormDetailsWithDefaults
 
 `func NewFormDetailsWithDefaults() *FormDetails`
 
-NewFormDetailsWithDefaults instantiates a new FormDetails object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewFormDetailsWithDefaults instantiates a new FormDetails object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -51,8 +46,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *FormDetails) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -70,12 +64,14 @@ HasId returns a boolean if a field has been set.
 
 `func (o *FormDetails) SetIdNil(b bool)`
 
- SetIdNil sets the value for Id to be an explicit nil
+SetIdNil sets the value for Id to be an explicit nil
 
 ### UnsetId
+
 `func (o *FormDetails) UnsetId()`
 
 UnsetId ensures that no value is present for Id, not even an explicit nil
+
 ### GetName
 
 `func (o *FormDetails) GetName() string`
@@ -86,8 +82,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *FormDetails) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -105,12 +100,14 @@ HasName returns a boolean if a field has been set.
 
 `func (o *FormDetails) SetNameNil(b bool)`
 
- SetNameNil sets the value for Name to be an explicit nil
+SetNameNil sets the value for Name to be an explicit nil
 
 ### UnsetName
+
 `func (o *FormDetails) UnsetName()`
 
 UnsetName ensures that no value is present for Name, not even an explicit nil
+
 ### GetTitle
 
 `func (o *FormDetails) GetTitle() string`
@@ -121,8 +118,7 @@ GetTitle returns the Title field if non-nil, zero value otherwise.
 
 `func (o *FormDetails) GetTitleOk() (*string, bool)`
 
-GetTitleOk returns a tuple with the Title field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTitleOk returns a tuple with the Title field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTitle
 
@@ -146,8 +142,7 @@ GetSubtitle returns the Subtitle field if non-nil, zero value otherwise.
 
 `func (o *FormDetails) GetSubtitleOk() (*string, bool)`
 
-GetSubtitleOk returns a tuple with the Subtitle field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSubtitleOk returns a tuple with the Subtitle field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSubtitle
 
@@ -171,8 +166,7 @@ GetTargetUser returns the TargetUser field if non-nil, zero value otherwise.
 
 `func (o *FormDetails) GetTargetUserOk() (*string, bool)`
 
-GetTargetUserOk returns a tuple with the TargetUser field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTargetUserOk returns a tuple with the TargetUser field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTargetUser
 
@@ -196,8 +190,7 @@ GetSections returns the Sections field if non-nil, zero value otherwise.
 
 `func (o *FormDetails) GetSectionsOk() (*[]SectionDetails, bool)`
 
-GetSectionsOk returns a tuple with the Sections field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSectionsOk returns a tuple with the Sections field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSections
 
@@ -210,5 +203,3 @@ SetSections sets Sections field to given value.
 `func (o *FormDetails) HasSections() bool`
 
 HasSections returns a boolean if a field has been set.
-
-

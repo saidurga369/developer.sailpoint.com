@@ -4,83 +4,77 @@ title: ScheduledSearch
 pagination_label: ScheduledSearch
 sidebar_label: ScheduledSearch
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'ScheduledSearch', 'V2024ScheduledSearch'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'ScheduledSearch', 'V2024ScheduledSearch']
 slug: /tools/sdk/powershell/v2024/methods/scheduled-search
-tags: ['SDK', 'Software Development Kit', 'ScheduledSearch', 'V2024ScheduledSearch']
+tags:
+  ['SDK', 'Software Development Kit', 'ScheduledSearch', 'V2024ScheduledSearch']
 ---
 
 # ScheduledSearch
-  Use this API to implement scheduled search functionality. 
-With scheduled search functionality in place, users can run saved search queries on their tenants on a schedule, and Identity Security Cloud emails them the search results. 
-Users can also share these search results with other users by email by adding those users as subscribers, or those users can subscribe themselves. 
 
-One of the greatest benefits of saving searches is the ability to run those searches on a schedule. 
-This is essential for organizations to constantly detect any changes to user information or access throughout their tenants and across all their sources. 
-For example, the manager Amanda Ross can schedule a saved search &quot;manager.name:amanda.ross AND attributes.location:austin&quot; on a schedule to regularly stay aware of changes with the Austin employees reporting to her.
-Identity Security Cloud emails her the search results when the search runs, so she can work on other tasks instead of actively running this search.
+Use this API to implement scheduled search functionality. With scheduled search functionality in place, users can run saved search queries on their tenants on a schedule, and Identity Security Cloud emails them the search results. Users can also share these search results with other users by email by adding those users as subscribers, or those users can subscribe themselves.
 
-In Identity Security Cloud, scheduling a search involves a subscription. 
-Users can create a subscription for a saved search and schedule it to run daily, weekly, or monthly (you can only use one schedule option at a time). 
-The user can add other identities as subscribers so when the scheduled search runs, the subscribers and the user all receive emails. 
+One of the greatest benefits of saving searches is the ability to run those searches on a schedule. This is essential for organizations to constantly detect any changes to user information or access throughout their tenants and across all their sources. For example, the manager Amanda Ross can schedule a saved search &quot;manager.name:amanda.ross AND attributes.location:austin&quot; on a schedule to regularly stay aware of changes with the Austin employees reporting to her. Identity Security Cloud emails her the search results when the search runs, so she can work on other tasks instead of actively running this search.
 
-By default, subscriptions exclude detailed results from the emails, for security purposes. 
-Including detailed results about user access in an email may expose sensitive information.
-However, the subscription creator can choose to include the information in the emails.  
+In Identity Security Cloud, scheduling a search involves a subscription. Users can create a subscription for a saved search and schedule it to run daily, weekly, or monthly (you can only use one schedule option at a time). The user can add other identities as subscribers so when the scheduled search runs, the subscribers and the user all receive emails.
 
-By default, Identity Security Cloud sends emails to the subscribers even when the searches do not return new results. 
-However, the subscription creator can choose to suppress these empty emails. 
+By default, subscriptions exclude detailed results from the emails, for security purposes. Including detailed results about user access in an email may expose sensitive information. However, the subscription creator can choose to include the information in the emails.
 
-Users can also subscribe to saved searches that already have existing subscriptions so they receive emails when the searches run. 
-A saved search can have up to 10 subscriptions configured at a time. 
+By default, Identity Security Cloud sends emails to the subscribers even when the searches do not return new results. However, the subscription creator can choose to suppress these empty emails.
 
-The subscription creator can enable, disable, or delete the subscription. 
+Users can also subscribe to saved searches that already have existing subscriptions so they receive emails when the searches run. A saved search can have up to 10 subscriptions configured at a time.
+
+The subscription creator can enable, disable, or delete the subscription.
 
 Refer to [Subscribing to Saved Searches](https://documentation.sailpoint.com/saas/help/search/saved-searches.html#subscribing-to-saved-searches) for more information about scheduling searches and subscribing to them.
- 
-  
 
 All URIs are relative to *https://sailpoint.api.identitynow.com/v2024*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**New-V2024ScheduledSearch**](#create-scheduled-search) | **POST** `/scheduled-searches` | Create a new scheduled search
-[**Remove-V2024ScheduledSearch**](#delete-scheduled-search) | **DELETE** `/scheduled-searches/{id}` | Delete a scheduled search
-[**Get-V2024ScheduledSearch**](#get-scheduled-search) | **GET** `/scheduled-searches/{id}` | Get a scheduled search
-[**Get-V2024ScheduledSearch**](#list-scheduled-search) | **GET** `/scheduled-searches` | List scheduled searches
-[**Invoke-V2024UnsubscribeScheduledSearch**](#unsubscribe-scheduled-search) | **POST** `/scheduled-searches/{id}/unsubscribe` | Unsubscribe a recipient from scheduled search
-[**Update-V2024ScheduledSearch**](#update-scheduled-search) | **PUT** `/scheduled-searches/{id}` | Update an existing scheduled search
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**New-V2024ScheduledSearch**](#create-scheduled-search) | **POST** `/scheduled-searches` | Create a new scheduled search |
+| [**Remove-V2024ScheduledSearch**](#delete-scheduled-search) | **DELETE** `/scheduled-searches/{id}` | Delete a scheduled search |
+| [**Get-V2024ScheduledSearch**](#get-scheduled-search) | **GET** `/scheduled-searches/{id}` | Get a scheduled search |
+| [**Get-V2024ScheduledSearch**](#list-scheduled-search) | **GET** `/scheduled-searches` | List scheduled searches |
+| [**Invoke-V2024UnsubscribeScheduledSearch**](#unsubscribe-scheduled-search) | **POST** `/scheduled-searches/{id}/unsubscribe` | Unsubscribe a recipient from scheduled search |
+| [**Update-V2024ScheduledSearch**](#update-scheduled-search) | **PUT** `/scheduled-searches/{id}` | Update an existing scheduled search |
 
 ## create-scheduled-search
-Creates a new scheduled search.
 
+Creates a new scheduled search.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/create-scheduled-search)
 
-### Parameters 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
- Body  | CreateScheduledSearchRequest | [**CreateScheduledSearchRequest**](../models/create-scheduled-search-request) | True  | The scheduled search to persist.
+### Parameters
+
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Body | CreateScheduledSearchRequest | [**CreateScheduledSearchRequest**](../models/create-scheduled-search-request) | True | The scheduled search to persist. |
 
 ### Return type
+
 [**ScheduledSearch**](../models/scheduled-search)
 
 ### Responses
-Code | Description  | Data Type
-------------- | ------------- | -------------
-201 | The persisted scheduled search. | ScheduledSearch
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto
+
+| Code | Description | Data Type |
+| --- | --- | --- |
+| 201 | The persisted scheduled search. | ScheduledSearch |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |
 
 ### HTTP request headers
+
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 ### Example
+
 ```powershell
 $CreateScheduledSearchRequest = @"{savedSearchId=9c620e13-cd33-4804-a13d-403bd7bcdbad, schedule={type=DAILY, hours={type=LIST, values=[9]}}, recipients=[{type=IDENTITY, id=2c9180867624cbd7017642d8c8c81f67}]}"@
 
@@ -88,143 +82,162 @@ $CreateScheduledSearchRequest = @"{savedSearchId=9c620e13-cd33-4804-a13d-403bd7b
 
 try {
     $Result = ConvertFrom-JsonToCreateScheduledSearchRequest -Json $CreateScheduledSearchRequest
-    New-V2024ScheduledSearch -CreateScheduledSearchRequest $Result 
-    
+    New-V2024ScheduledSearch -CreateScheduledSearchRequest $Result
+
     # Below is a request that includes all optional parameters
-    # New-V2024ScheduledSearch -CreateScheduledSearchRequest $Result  
+    # New-V2024ScheduledSearch -CreateScheduledSearchRequest $Result
 } catch {
     Write-Host $_.Exception.Response.StatusCode.value__ "Exception occurred when calling New-V2024ScheduledSearch"
     Write-Host $_.ErrorDetails
 }
 ```
-[[Back to top]](#) 
+
+[[Back to top]](#)
 
 ## delete-scheduled-search
-Deletes the specified scheduled search.
 
+Deletes the specified scheduled search.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/delete-scheduled-search)
 
-### Parameters 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | Id | **String** | True  | ID of the requested document.
+### Parameters
+
+| Param Type | Name | Data Type  | Required | Description                   |
+| ---------- | ---- | ---------- | -------- | ----------------------------- |
+| Path       | Id   | **String** | True     | ID of the requested document. |
 
 ### Return type
- (empty response body)
+
+(empty response body)
 
 ### Responses
-Code | Description  | Data Type
-------------- | ------------- | -------------
-204 | No Content - Indicates the request was successful but there is no content to be returned in the response. | 
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto
+
+| Code | Description | Data Type |
+| --- | --- | --- |
+| 204 | No Content - Indicates the request was successful but there is no content to be returned in the response. |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |
 
 ### HTTP request headers
+
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 ### Example
+
 ```powershell
 $Id = "2c91808568c529c60168cca6f90c1313" # String | ID of the requested document.
 
 # Delete a scheduled search
 
 try {
-    Remove-V2024ScheduledSearch -Id $Id 
-    
+    Remove-V2024ScheduledSearch -Id $Id
+
     # Below is a request that includes all optional parameters
-    # Remove-V2024ScheduledSearch -Id $Id  
+    # Remove-V2024ScheduledSearch -Id $Id
 } catch {
     Write-Host $_.Exception.Response.StatusCode.value__ "Exception occurred when calling Remove-V2024ScheduledSearch"
     Write-Host $_.ErrorDetails
 }
 ```
-[[Back to top]](#) 
+
+[[Back to top]](#)
 
 ## get-scheduled-search
+
 Returns the specified scheduled search.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/get-scheduled-search)
 
-### Parameters 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | Id | **String** | True  | ID of the requested document.
+### Parameters
+
+| Param Type | Name | Data Type  | Required | Description                   |
+| ---------- | ---- | ---------- | -------- | ----------------------------- |
+| Path       | Id   | **String** | True     | ID of the requested document. |
 
 ### Return type
+
 [**ScheduledSearch**](../models/scheduled-search)
 
 ### Responses
-Code | Description  | Data Type
-------------- | ------------- | -------------
-200 | The requested scheduled search. | ScheduledSearch
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto
+
+| Code | Description | Data Type |
+| --- | --- | --- |
+| 200 | The requested scheduled search. | ScheduledSearch |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |
 
 ### HTTP request headers
+
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 ### Example
+
 ```powershell
 $Id = "2c91808568c529c60168cca6f90c1313" # String | ID of the requested document.
 
 # Get a scheduled search
 
 try {
-    Get-V2024ScheduledSearch -Id $Id 
-    
+    Get-V2024ScheduledSearch -Id $Id
+
     # Below is a request that includes all optional parameters
-    # Get-V2024ScheduledSearch -Id $Id  
+    # Get-V2024ScheduledSearch -Id $Id
 } catch {
     Write-Host $_.Exception.Response.StatusCode.value__ "Exception occurred when calling Get-V2024ScheduledSearch"
     Write-Host $_.ErrorDetails
 }
 ```
-[[Back to top]](#) 
+
+[[Back to top]](#)
 
 ## list-scheduled-search
-Returns a list of scheduled searches.
 
+Returns a list of scheduled searches.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/list-scheduled-search)
 
-### Parameters 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-  Query | Offset | **Int32** |   (optional) (default to 0) | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | Limit | **Int32** |   (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | Count | **Boolean** |   (optional) (default to $false) | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | Filters | **String** |   (optional) | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **owner.id**: *eq*  **savedSearchId**: *eq*
+### Parameters
+
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Query | Offset | **Int32** | (optional) (default to 0) | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | Limit | **Int32** | (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | Count | **Boolean** | (optional) (default to $false) | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | Filters | **String** | (optional) | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **owner.id**: _eq_ **savedSearchId**: _eq_ |
 
 ### Return type
+
 [**ScheduledSearch[]**](../models/scheduled-search)
 
 ### Responses
-Code | Description  | Data Type
-------------- | ------------- | -------------
-200 | The list of requested scheduled searches. | ScheduledSearch[]
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto
+
+| Code | Description | Data Type |
+| --- | --- | --- |
+| 200 | The list of requested scheduled searches. | ScheduledSearch[] |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |
 
 ### HTTP request headers
+
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 ### Example
+
 ```powershell
 $Offset = 0 # Int32 | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 0)
 $Limit = 250 # Int32 | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 250)
@@ -234,45 +247,51 @@ $Filters = 'savedSearchId eq "6cc0945d-9eeb-4948-9033-72d066e1153e"' # String | 
 # List scheduled searches
 
 try {
-    Get-V2024ScheduledSearch 
-    
+    Get-V2024ScheduledSearch
+
     # Below is a request that includes all optional parameters
-    # Get-V2024ScheduledSearch -Offset $Offset -Limit $Limit -Count $Count -Filters $Filters  
+    # Get-V2024ScheduledSearch -Offset $Offset -Limit $Limit -Count $Count -Filters $Filters
 } catch {
     Write-Host $_.Exception.Response.StatusCode.value__ "Exception occurred when calling Get-V2024ScheduledSearch"
     Write-Host $_.ErrorDetails
 }
 ```
-[[Back to top]](#) 
+
+[[Back to top]](#)
 
 ## unsubscribe-scheduled-search
-Unsubscribes a recipient from the specified scheduled search.
 
+Unsubscribes a recipient from the specified scheduled search.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/unsubscribe-scheduled-search)
 
-### Parameters 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | Id | **String** | True  | ID of the requested document.
- Body  | TypedReference | [**TypedReference**](../models/typed-reference) | True  | The recipient to be removed from the scheduled search. 
+### Parameters
+
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | Id | **String** | True | ID of the requested document. |
+| Body | TypedReference | [**TypedReference**](../models/typed-reference) | True | The recipient to be removed from the scheduled search. |
 
 ### Return type
- (empty response body)
+
+(empty response body)
 
 ### Responses
-Code | Description  | Data Type
-------------- | ------------- | -------------
-204 | No Content - Indicates the request was successful but there is no content to be returned in the response. | 
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto
+
+| Code | Description | Data Type |
+| --- | --- | --- |
+| 204 | No Content - Indicates the request was successful but there is no content to be returned in the response. |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |
 
 ### HTTP request headers
+
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 ### Example
+
 ```powershell
 $Id = "2c91808568c529c60168cca6f90c1313" # String | ID of the requested document.
 $TypedReference = @"{
@@ -284,48 +303,54 @@ $TypedReference = @"{
 
 try {
     $Result = ConvertFrom-JsonToTypedReference -Json $TypedReference
-    Invoke-V2024UnsubscribeScheduledSearch -Id $Id -TypedReference $Result 
-    
+    Invoke-V2024UnsubscribeScheduledSearch -Id $Id -TypedReference $Result
+
     # Below is a request that includes all optional parameters
-    # Invoke-V2024UnsubscribeScheduledSearch -Id $Id -TypedReference $Result  
+    # Invoke-V2024UnsubscribeScheduledSearch -Id $Id -TypedReference $Result
 } catch {
     Write-Host $_.Exception.Response.StatusCode.value__ "Exception occurred when calling Invoke-V2024UnsubscribeScheduledSearch"
     Write-Host $_.ErrorDetails
 }
 ```
-[[Back to top]](#) 
+
+[[Back to top]](#)
 
 ## update-scheduled-search
-Updates an existing scheduled search.
 
+Updates an existing scheduled search.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/update-scheduled-search)
 
-### Parameters 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | Id | **String** | True  | ID of the requested document.
- Body  | ScheduledSearch | [**ScheduledSearch**](../models/scheduled-search) | True  | The scheduled search to persist.
+### Parameters
+
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | Id | **String** | True | ID of the requested document. |
+| Body | ScheduledSearch | [**ScheduledSearch**](../models/scheduled-search) | True | The scheduled search to persist. |
 
 ### Return type
+
 [**ScheduledSearch**](../models/scheduled-search)
 
 ### Responses
-Code | Description  | Data Type
-------------- | ------------- | -------------
-200 | The persisted scheduled search. | ScheduledSearch
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto
+
+| Code | Description | Data Type |
+| --- | --- | --- |
+| 200 | The persisted scheduled search. | ScheduledSearch |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |
 
 ### HTTP request headers
+
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 ### Example
+
 ```powershell
 $Id = "2c91808568c529c60168cca6f90c1313" # String | ID of the requested document.
 $ScheduledSearch = @"{
@@ -424,13 +449,14 @@ $ScheduledSearch = @"{
 
 try {
     $Result = ConvertFrom-JsonToScheduledSearch -Json $ScheduledSearch
-    Update-V2024ScheduledSearch -Id $Id -ScheduledSearch $Result 
-    
+    Update-V2024ScheduledSearch -Id $Id -ScheduledSearch $Result
+
     # Below is a request that includes all optional parameters
-    # Update-V2024ScheduledSearch -Id $Id -ScheduledSearch $Result  
+    # Update-V2024ScheduledSearch -Id $Id -ScheduledSearch $Result
 } catch {
     Write-Host $_.Exception.Response.StatusCode.value__ "Exception occurred when calling Update-V2024ScheduledSearch"
     Write-Host $_.ErrorDetails
 }
 ```
-[[Back to top]](#) 
+
+[[Back to top]](#)

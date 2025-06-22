@@ -13,9 +13,9 @@ tags: ['SDK']
 
 You can use the SDK to delete resources.
 
-For example, you can run a script that searches by name for a created work group, also known as a [governance group](https://documentation.sailpoint.com/saas/help/common/users/governance_groups.html), and calls the delete method to remove it from your environment. 
+For example, you can run a script that searches by name for a created work group, also known as a [governance group](https://documentation.sailpoint.com/saas/help/common/users/governance_groups.html), and calls the delete method to remove it from your environment.
 
-This script searches by name for the work group created in the example in [Creating resources](./creating-resources.md) and calls the delete method to remove it from your environment. Copy the script into your Python project to try it out: 
+This script searches by name for the work group created in the example in [Creating resources](./creating-resources.md) and calls the delete method to remove it from your environment. Copy the script into your Python project to try it out:
 
 ```python
 import sailpoint
@@ -55,8 +55,8 @@ The SDK returns the `deletionStatus` with a value of 204.
 ```python
 The response of GovernanceGroupsApi->patch_workgroup:
 
-status_code=204 
-headers={'Date': 'Wed, 31 Jan 2024 18:37:33 GMT', 'Connection': 'keep-alive', 'Server': 'nginx', 'Vary': 'Access-Control-Request-Headers', 'Cache-Control': 'no-cache, no-store, must-revalidate', 'SLPT-Request-ID': 'acdbe637fc044befbfe0ce16ad2224ad', 'Access-Control-Expose-Headers': 'Retry-After,Connection,SLPT-Request-ID,Date,X-Zuul-ServiceId', 'X-Robots-Tag': 'noindex'} 
-data=None 
+status_code=204
+headers={'Date': 'Wed, 31 Jan 2024 18:37:33 GMT', 'Connection': 'keep-alive', 'Server': 'nginx', 'Vary': 'Access-Control-Request-Headers', 'Cache-Control': 'no-cache, no-store, must-revalidate', 'SLPT-Request-ID': 'acdbe637fc044befbfe0ce16ad2224ad', 'Access-Control-Expose-Headers': 'Retry-After,Connection,SLPT-Request-ID,Date,X-Zuul-ServiceId', 'X-Robots-Tag': 'noindex'}
+data=None
 raw_data=b''s
 ```

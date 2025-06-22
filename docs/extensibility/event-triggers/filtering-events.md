@@ -176,9 +176,7 @@ POST https://{tenant}.api.identitynow.com/beta/trigger-subscriptions/validate-fi
 
 If SailPoint accepts your trigger filter, you must test whether it actually works. You must configure your trigger subscription to point to the URL of your testing service. [webhook.site](https://webhook.site) is an easy to use testing service. Just copy the unique URL it generates and paste it into your subscription's integration URL field. The easiest way to test a trigger subscription is to use the UI to fire off a test event.
 
-:::warning
-Third party websites like the one mentioned earlier must be treated with caution. Do not use real data from your tenant when you're interacting with these tools.
-:::
+:::warning Third party websites like the one mentioned earlier must be treated with caution. Do not use real data from your tenant when you're interacting with these tools. :::
 
 ![test subscription](./img/test-subscription.png)
 

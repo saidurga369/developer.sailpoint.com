@@ -4,25 +4,38 @@ title: AdminReviewReassign
 pagination_label: AdminReviewReassign
 sidebar_label: AdminReviewReassign
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'AdminReviewReassign', 'AdminReviewReassign'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'AdminReviewReassign',
+    'AdminReviewReassign',
+  ]
 slug: /tools/sdk/powershell/v3/models/admin-review-reassign
-tags: ['SDK', 'Software Development Kit', 'AdminReviewReassign', 'AdminReviewReassign']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AdminReviewReassign',
+    'AdminReviewReassign',
+  ]
 ---
-
 
 # AdminReviewReassign
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**CertificationIds** | **[]String** | List of certification IDs to reassign | [optional] 
-**ReassignTo** | [**AdminReviewReassignReassignTo**](admin-review-reassign-reassign-to) |  | [optional] 
-**Reason** | **String** | Comment to explain why the certification was reassigned | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **CertificationIds** | **[]String** | List of certification IDs to reassign | [optional] |
+| **ReassignTo** | [**AdminReviewReassignReassignTo**](admin-review-reassign-reassign-to) |  | [optional] |
+| **Reason** | **String** | Comment to explain why the certification was reassigned | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $AdminReviewReassign = Initialize-AdminReviewReassign  -CertificationIds [af3859464779471211bb8424a563abc1, af3859464779471211bb8424a563abc2, af3859464779471211bb8424a563abc3] `
  -ReassignTo null `
@@ -30,10 +43,9 @@ $AdminReviewReassign = Initialize-AdminReviewReassign  -CertificationIds [af3859
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $AdminReviewReassign | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

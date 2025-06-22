@@ -4,23 +4,36 @@ title: NonEmployeeBulkUploadJob
 pagination_label: NonEmployeeBulkUploadJob
 sidebar_label: NonEmployeeBulkUploadJob
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'NonEmployeeBulkUploadJob', 'V2024NonEmployeeBulkUploadJob'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'NonEmployeeBulkUploadJob',
+    'V2024NonEmployeeBulkUploadJob',
+  ]
 slug: /tools/sdk/python/v2024/models/non-employee-bulk-upload-job
-tags: ['SDK', 'Software Development Kit', 'NonEmployeeBulkUploadJob', 'V2024NonEmployeeBulkUploadJob']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NonEmployeeBulkUploadJob',
+    'V2024NonEmployeeBulkUploadJob',
+  ]
 ---
 
 # NonEmployeeBulkUploadJob
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The bulk upload job's ID. (UUID) | [optional] 
-**source_id** | **str** | The ID of the source to bulk-upload non-employees to. (UUID) | [optional] 
-**created** | **datetime** | The date-time the job was submitted. | [optional] 
-**modified** | **datetime** | The date-time that the job was last updated. | [optional] 
-**status** |  **Enum** [  'PENDING',    'IN_PROGRESS',    'COMPLETED',    'ERROR' ] | Returns the following values indicating the progress or result of the bulk upload job. \"PENDING\" means the job is queued and waiting to be processed. \"IN_PROGRESS\" means the job is currently being processed. \"COMPLETED\" means the job has been completed without any errors. \"ERROR\" means the job failed to process with errors.  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The bulk upload job's ID. (UUID) | [optional] |
+| **source_id** | **str** | The ID of the source to bulk-upload non-employees to. (UUID) | [optional] |
+| **created** | **datetime** | The date-time the job was submitted. | [optional] |
+| **modified** | **datetime** | The date-time that the job was last updated. | [optional] |
+| **status** | **Enum** [ 'PENDING', 'IN_PROGRESS', 'COMPLETED', 'ERROR' ] | Returns the following values indicating the progress or result of the bulk upload job. \"PENDING\" means the job is queued and waiting to be processed. \"IN_PROGRESS\" means the job is currently being processed. \"COMPLETED\" means the job has been completed without any errors. \"ERROR\" means the job failed to process with errors. | [optional] |
+
 }
 
 ## Example
@@ -37,5 +50,5 @@ status='PENDING'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,25 +4,32 @@ title: ObjectMappingResponse
 pagination_label: ObjectMappingResponse
 sidebar_label: ObjectMappingResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ObjectMappingResponse', 'ObjectMappingResponse'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'ObjectMappingResponse', 'ObjectMappingResponse']
 slug: /tools/sdk/go/v3/models/object-mapping-response
-tags: ['SDK', 'Software Development Kit', 'ObjectMappingResponse', 'ObjectMappingResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ObjectMappingResponse',
+    'ObjectMappingResponse',
+  ]
 ---
 
 # ObjectMappingResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ObjectMappingId** | Pointer to **string** | Id of the object mapping | [optional] 
-**ObjectType** | Pointer to **string** | Type of the object the mapping value applies to | [optional] 
-**JsonPath** | Pointer to **string** | JSONPath expression denoting the path within the object where the mapping value should be applied | [optional] 
-**SourceValue** | Pointer to **string** | Original value at the jsonPath location within the object | [optional] 
-**TargetValue** | Pointer to **string** | Value to be assigned at the jsonPath location within the object | [optional] 
-**Enabled** | Pointer to **bool** | Whether or not this object mapping is enabled | [optional] [default to false]
-**Created** | Pointer to **string** | Object mapping creation timestamp | [optional] 
-**Modified** | Pointer to **string** | Object mapping latest update timestamp | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ObjectMappingId** | Pointer to **string** | Id of the object mapping | [optional] |
+| **ObjectType** | Pointer to **string** | Type of the object the mapping value applies to | [optional] |
+| **JsonPath** | Pointer to **string** | JSONPath expression denoting the path within the object where the mapping value should be applied | [optional] |
+| **SourceValue** | Pointer to **string** | Original value at the jsonPath location within the object | [optional] |
+| **TargetValue** | Pointer to **string** | Value to be assigned at the jsonPath location within the object | [optional] |
+| **Enabled** | Pointer to **bool** | Whether or not this object mapping is enabled | [optional] [default to false] |
+| **Created** | Pointer to **string** | Object mapping creation timestamp | [optional] |
+| **Modified** | Pointer to **string** | Object mapping latest update timestamp | [optional] |
 
 ## Methods
 
@@ -30,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewObjectMappingResponse() *ObjectMappingResponse`
 
-NewObjectMappingResponse instantiates a new ObjectMappingResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewObjectMappingResponse instantiates a new ObjectMappingResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewObjectMappingResponseWithDefaults
 
 `func NewObjectMappingResponseWithDefaults() *ObjectMappingResponse`
 
-NewObjectMappingResponseWithDefaults instantiates a new ObjectMappingResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewObjectMappingResponseWithDefaults instantiates a new ObjectMappingResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetObjectMappingId
 
@@ -53,8 +55,7 @@ GetObjectMappingId returns the ObjectMappingId field if non-nil, zero value othe
 
 `func (o *ObjectMappingResponse) GetObjectMappingIdOk() (*string, bool)`
 
-GetObjectMappingIdOk returns a tuple with the ObjectMappingId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetObjectMappingIdOk returns a tuple with the ObjectMappingId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetObjectMappingId
 
@@ -78,8 +79,7 @@ GetObjectType returns the ObjectType field if non-nil, zero value otherwise.
 
 `func (o *ObjectMappingResponse) GetObjectTypeOk() (*string, bool)`
 
-GetObjectTypeOk returns a tuple with the ObjectType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetObjectTypeOk returns a tuple with the ObjectType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetObjectType
 
@@ -103,8 +103,7 @@ GetJsonPath returns the JsonPath field if non-nil, zero value otherwise.
 
 `func (o *ObjectMappingResponse) GetJsonPathOk() (*string, bool)`
 
-GetJsonPathOk returns a tuple with the JsonPath field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetJsonPathOk returns a tuple with the JsonPath field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetJsonPath
 
@@ -128,8 +127,7 @@ GetSourceValue returns the SourceValue field if non-nil, zero value otherwise.
 
 `func (o *ObjectMappingResponse) GetSourceValueOk() (*string, bool)`
 
-GetSourceValueOk returns a tuple with the SourceValue field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceValueOk returns a tuple with the SourceValue field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceValue
 
@@ -153,8 +151,7 @@ GetTargetValue returns the TargetValue field if non-nil, zero value otherwise.
 
 `func (o *ObjectMappingResponse) GetTargetValueOk() (*string, bool)`
 
-GetTargetValueOk returns a tuple with the TargetValue field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTargetValueOk returns a tuple with the TargetValue field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTargetValue
 
@@ -178,8 +175,7 @@ GetEnabled returns the Enabled field if non-nil, zero value otherwise.
 
 `func (o *ObjectMappingResponse) GetEnabledOk() (*bool, bool)`
 
-GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEnabled
 
@@ -203,8 +199,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *ObjectMappingResponse) GetCreatedOk() (*string, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -228,8 +223,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *ObjectMappingResponse) GetModifiedOk() (*string, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -242,5 +236,3 @@ SetModified sets Modified field to given value.
 `func (o *ObjectMappingResponse) HasModified() bool`
 
 HasModified returns a boolean if a field has been set.
-
-

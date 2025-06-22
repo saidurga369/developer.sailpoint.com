@@ -4,19 +4,32 @@ title: DeleteNonEmployeeRecordInBulkRequest
 pagination_label: DeleteNonEmployeeRecordInBulkRequest
 sidebar_label: DeleteNonEmployeeRecordInBulkRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'DeleteNonEmployeeRecordInBulkRequest', 'BetaDeleteNonEmployeeRecordInBulkRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'DeleteNonEmployeeRecordInBulkRequest',
+    'BetaDeleteNonEmployeeRecordInBulkRequest',
+  ]
 slug: /tools/sdk/python/beta/models/delete-non-employee-record-in-bulk-request
-tags: ['SDK', 'Software Development Kit', 'DeleteNonEmployeeRecordInBulkRequest', 'BetaDeleteNonEmployeeRecordInBulkRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'DeleteNonEmployeeRecordInBulkRequest',
+    'BetaDeleteNonEmployeeRecordInBulkRequest',
+  ]
 ---
 
 # DeleteNonEmployeeRecordInBulkRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ids** | **[]str** | List of non-employee ids. | [required]
+| Name    | Type      | Description               | Notes      |
+| ------- | --------- | ------------------------- | ---------- |
+| **ids** | **[]str** | List of non-employee ids. | [required] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ ids=[
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

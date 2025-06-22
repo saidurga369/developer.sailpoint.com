@@ -4,7 +4,7 @@ title: ApprovalItems
 pagination_label: ApprovalItems
 sidebar_label: ApprovalItems
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ApprovalItems', 'ApprovalItems'] 
+keywords: ['go', 'Golang', 'sdk', 'ApprovalItems', 'ApprovalItems']
 slug: /tools/sdk/go/v3/models/approval-items
 tags: ['SDK', 'Software Development Kit', 'ApprovalItems', 'ApprovalItems']
 ---
@@ -13,15 +13,15 @@ tags: ['SDK', 'Software Development Kit', 'ApprovalItems', 'ApprovalItems']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The approval item's ID | [optional] 
-**Account** | Pointer to **NullableString** | The account referenced by the approval item | [optional] 
-**Application** | Pointer to **string** | The name of the application/source | [optional] 
-**Name** | Pointer to **NullableString** | The attribute's name | [optional] 
-**Operation** | Pointer to **string** | The attribute's operation | [optional] 
-**Value** | Pointer to **NullableString** | The attribute's value | [optional] 
-**State** | Pointer to [**WorkItemState**](work-item-state) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The approval item's ID | [optional] |
+| **Account** | Pointer to **NullableString** | The account referenced by the approval item | [optional] |
+| **Application** | Pointer to **string** | The name of the application/source | [optional] |
+| **Name** | Pointer to **NullableString** | The attribute's name | [optional] |
+| **Operation** | Pointer to **string** | The attribute's operation | [optional] |
+| **Value** | Pointer to **NullableString** | The attribute's value | [optional] |
+| **State** | Pointer to [**WorkItemState**](work-item-state) |  | [optional] |
 
 ## Methods
 
@@ -29,18 +29,13 @@ Name | Type | Description | Notes
 
 `func NewApprovalItems() *ApprovalItems`
 
-NewApprovalItems instantiates a new ApprovalItems object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewApprovalItems instantiates a new ApprovalItems object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewApprovalItemsWithDefaults
 
 `func NewApprovalItemsWithDefaults() *ApprovalItems`
 
-NewApprovalItemsWithDefaults instantiates a new ApprovalItems object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewApprovalItemsWithDefaults instantiates a new ApprovalItems object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -52,8 +47,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *ApprovalItems) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -77,8 +71,7 @@ GetAccount returns the Account field if non-nil, zero value otherwise.
 
 `func (o *ApprovalItems) GetAccountOk() (*string, bool)`
 
-GetAccountOk returns a tuple with the Account field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountOk returns a tuple with the Account field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccount
 
@@ -96,12 +89,14 @@ HasAccount returns a boolean if a field has been set.
 
 `func (o *ApprovalItems) SetAccountNil(b bool)`
 
- SetAccountNil sets the value for Account to be an explicit nil
+SetAccountNil sets the value for Account to be an explicit nil
 
 ### UnsetAccount
+
 `func (o *ApprovalItems) UnsetAccount()`
 
 UnsetAccount ensures that no value is present for Account, not even an explicit nil
+
 ### GetApplication
 
 `func (o *ApprovalItems) GetApplication() string`
@@ -112,8 +107,7 @@ GetApplication returns the Application field if non-nil, zero value otherwise.
 
 `func (o *ApprovalItems) GetApplicationOk() (*string, bool)`
 
-GetApplicationOk returns a tuple with the Application field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApplicationOk returns a tuple with the Application field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApplication
 
@@ -137,8 +131,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *ApprovalItems) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -156,12 +149,14 @@ HasName returns a boolean if a field has been set.
 
 `func (o *ApprovalItems) SetNameNil(b bool)`
 
- SetNameNil sets the value for Name to be an explicit nil
+SetNameNil sets the value for Name to be an explicit nil
 
 ### UnsetName
+
 `func (o *ApprovalItems) UnsetName()`
 
 UnsetName ensures that no value is present for Name, not even an explicit nil
+
 ### GetOperation
 
 `func (o *ApprovalItems) GetOperation() string`
@@ -172,8 +167,7 @@ GetOperation returns the Operation field if non-nil, zero value otherwise.
 
 `func (o *ApprovalItems) GetOperationOk() (*string, bool)`
 
-GetOperationOk returns a tuple with the Operation field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOperationOk returns a tuple with the Operation field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOperation
 
@@ -197,8 +191,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *ApprovalItems) GetValueOk() (*string, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -216,12 +209,14 @@ HasValue returns a boolean if a field has been set.
 
 `func (o *ApprovalItems) SetValueNil(b bool)`
 
- SetValueNil sets the value for Value to be an explicit nil
+SetValueNil sets the value for Value to be an explicit nil
 
 ### UnsetValue
+
 `func (o *ApprovalItems) UnsetValue()`
 
 UnsetValue ensures that no value is present for Value, not even an explicit nil
+
 ### GetState
 
 `func (o *ApprovalItems) GetState() WorkItemState`
@@ -232,8 +227,7 @@ GetState returns the State field if non-nil, zero value otherwise.
 
 `func (o *ApprovalItems) GetStateOk() (*WorkItemState, bool)`
 
-GetStateOk returns a tuple with the State field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStateOk returns a tuple with the State field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetState
 
@@ -246,5 +240,3 @@ SetState sets State field to given value.
 `func (o *ApprovalItems) HasState() bool`
 
 HasState returns a boolean if a field has been set.
-
-

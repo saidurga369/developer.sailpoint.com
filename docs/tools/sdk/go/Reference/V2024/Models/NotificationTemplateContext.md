@@ -4,20 +4,33 @@ title: NotificationTemplateContext
 pagination_label: NotificationTemplateContext
 sidebar_label: NotificationTemplateContext
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'NotificationTemplateContext', 'V2024NotificationTemplateContext'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'NotificationTemplateContext',
+    'V2024NotificationTemplateContext',
+  ]
 slug: /tools/sdk/go/v2024/models/notification-template-context
-tags: ['SDK', 'Software Development Kit', 'NotificationTemplateContext', 'V2024NotificationTemplateContext']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NotificationTemplateContext',
+    'V2024NotificationTemplateContext',
+  ]
 ---
 
 # NotificationTemplateContext
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Attributes** | Pointer to **map[string]interface{}** | A JSON object that stores the context. | [optional] 
-**Created** | Pointer to **SailPointTime** | When the global context was created | [optional] 
-**Modified** | Pointer to **SailPointTime** | When the global context was last modified | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Attributes** | Pointer to **map[string]interface{}** | A JSON object that stores the context. | [optional] |
+| **Created** | Pointer to **SailPointTime** | When the global context was created | [optional] |
+| **Modified** | Pointer to **SailPointTime** | When the global context was last modified | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewNotificationTemplateContext() *NotificationTemplateContext`
 
-NewNotificationTemplateContext instantiates a new NotificationTemplateContext object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewNotificationTemplateContext instantiates a new NotificationTemplateContext object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewNotificationTemplateContextWithDefaults
 
 `func NewNotificationTemplateContextWithDefaults() *NotificationTemplateContext`
 
-NewNotificationTemplateContextWithDefaults instantiates a new NotificationTemplateContext object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewNotificationTemplateContextWithDefaults instantiates a new NotificationTemplateContext object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetAttributes
 
@@ -48,8 +56,7 @@ GetAttributes returns the Attributes field if non-nil, zero value otherwise.
 
 `func (o *NotificationTemplateContext) GetAttributesOk() (*map[string]interface{}, bool)`
 
-GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributes
 
@@ -73,8 +80,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *NotificationTemplateContext) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -98,8 +104,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *NotificationTemplateContext) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -112,5 +117,3 @@ SetModified sets Modified field to given value.
 `func (o *NotificationTemplateContext) HasModified() bool`
 
 HasModified returns a boolean if a field has been set.
-
-

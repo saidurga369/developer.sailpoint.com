@@ -4,19 +4,32 @@ title: RecommenderCalculationsIdentityAttributesValue
 pagination_label: RecommenderCalculationsIdentityAttributesValue
 sidebar_label: RecommenderCalculationsIdentityAttributesValue
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RecommenderCalculationsIdentityAttributesValue', 'V2024RecommenderCalculationsIdentityAttributesValue'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'RecommenderCalculationsIdentityAttributesValue',
+    'V2024RecommenderCalculationsIdentityAttributesValue',
+  ]
 slug: /tools/sdk/python/v2024/models/recommender-calculations-identity-attributes-value
-tags: ['SDK', 'Software Development Kit', 'RecommenderCalculationsIdentityAttributesValue', 'V2024RecommenderCalculationsIdentityAttributesValue']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RecommenderCalculationsIdentityAttributesValue',
+    'V2024RecommenderCalculationsIdentityAttributesValue',
+  ]
 ---
 
 # RecommenderCalculationsIdentityAttributesValue
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**value** | **str** |  | [optional] 
+| Name      | Type    | Description | Notes      |
+| --------- | ------- | ----------- | ---------- |
+| **value** | **str** |             | [optional] |
+
 }
 
 ## Example
@@ -29,5 +42,5 @@ value=''
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

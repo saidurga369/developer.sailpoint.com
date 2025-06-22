@@ -4,7 +4,7 @@ title: TextQuery
 pagination_label: TextQuery
 sidebar_label: TextQuery
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'TextQuery', 'TextQuery'] 
+keywords: ['python', 'Python', 'sdk', 'TextQuery', 'TextQuery']
 slug: /tools/sdk/python/v3/models/text-query
 tags: ['SDK', 'Software Development Kit', 'TextQuery', 'TextQuery']
 ---
@@ -15,12 +15,13 @@ Query parameters used to construct an Elasticsearch text query object.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**terms** | **[]str** | Words or characters that specify a particular thing to be searched for. | [required]
-**fields** | **[]str** | The fields to be searched. | [required]
-**match_any** | **bool** | Indicates that at least one of the terms must be found in the specified fields;  otherwise, all terms must be found. | [optional] [default to False]
-**contains** | **bool** | Indicates that the terms can be located anywhere in the specified fields;  otherwise, the fields must begin with the terms. | [optional] [default to False]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **terms** | **[]str** | Words or characters that specify a particular thing to be searched for. | [required] |
+| **fields** | **[]str** | The fields to be searched. | [required] |
+| **match_any** | **bool** | Indicates that at least one of the terms must be found in the specified fields; otherwise, all terms must be found. | [optional] [default to False] |
+| **contains** | **bool** | Indicates that the terms can be located anywhere in the specified fields; otherwise, the fields must begin with the terms. | [optional] [default to False] |
+
 }
 
 ## Example
@@ -36,5 +37,5 @@ contains=True
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

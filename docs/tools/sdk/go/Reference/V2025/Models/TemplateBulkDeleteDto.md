@@ -4,20 +4,27 @@ title: TemplateBulkDeleteDto
 pagination_label: TemplateBulkDeleteDto
 sidebar_label: TemplateBulkDeleteDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'TemplateBulkDeleteDto', 'V2025TemplateBulkDeleteDto'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'TemplateBulkDeleteDto', 'V2025TemplateBulkDeleteDto']
 slug: /tools/sdk/go/v2025/models/template-bulk-delete-dto
-tags: ['SDK', 'Software Development Kit', 'TemplateBulkDeleteDto', 'V2025TemplateBulkDeleteDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'TemplateBulkDeleteDto',
+    'V2025TemplateBulkDeleteDto',
+  ]
 ---
 
 # TemplateBulkDeleteDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Key** | **string** |  | 
-**Medium** | Pointer to **string** |  | [optional] 
-**Locale** | Pointer to **string** | The locale for the message text, a BCP 47 language tag. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Key** | **string** |  |
+| **Medium** | Pointer to **string** |  | [optional] |
+| **Locale** | Pointer to **string** | The locale for the message text, a BCP 47 language tag. | [optional] |
 
 ## Methods
 
@@ -25,18 +32,13 @@ Name | Type | Description | Notes
 
 `func NewTemplateBulkDeleteDto(key string, ) *TemplateBulkDeleteDto`
 
-NewTemplateBulkDeleteDto instantiates a new TemplateBulkDeleteDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewTemplateBulkDeleteDto instantiates a new TemplateBulkDeleteDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewTemplateBulkDeleteDtoWithDefaults
 
 `func NewTemplateBulkDeleteDtoWithDefaults() *TemplateBulkDeleteDto`
 
-NewTemplateBulkDeleteDtoWithDefaults instantiates a new TemplateBulkDeleteDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewTemplateBulkDeleteDtoWithDefaults instantiates a new TemplateBulkDeleteDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetKey
 
@@ -48,15 +50,13 @@ GetKey returns the Key field if non-nil, zero value otherwise.
 
 `func (o *TemplateBulkDeleteDto) GetKeyOk() (*string, bool)`
 
-GetKeyOk returns a tuple with the Key field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetKeyOk returns a tuple with the Key field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetKey
 
 `func (o *TemplateBulkDeleteDto) SetKey(v string)`
 
 SetKey sets Key field to given value.
-
 
 ### GetMedium
 
@@ -68,8 +68,7 @@ GetMedium returns the Medium field if non-nil, zero value otherwise.
 
 `func (o *TemplateBulkDeleteDto) GetMediumOk() (*string, bool)`
 
-GetMediumOk returns a tuple with the Medium field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMediumOk returns a tuple with the Medium field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMedium
 
@@ -93,8 +92,7 @@ GetLocale returns the Locale field if non-nil, zero value otherwise.
 
 `func (o *TemplateBulkDeleteDto) GetLocaleOk() (*string, bool)`
 
-GetLocaleOk returns a tuple with the Locale field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLocaleOk returns a tuple with the Locale field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLocale
 
@@ -107,5 +105,3 @@ SetLocale sets Locale field to given value.
 `func (o *TemplateBulkDeleteDto) HasLocale() bool`
 
 HasLocale returns a boolean if a field has been set.
-
-

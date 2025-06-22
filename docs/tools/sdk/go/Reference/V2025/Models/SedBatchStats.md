@@ -4,7 +4,7 @@ title: SedBatchStats
 pagination_label: SedBatchStats
 sidebar_label: SedBatchStats
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SedBatchStats', 'V2025SedBatchStats'] 
+keywords: ['go', 'Golang', 'sdk', 'SedBatchStats', 'V2025SedBatchStats']
 slug: /tools/sdk/go/v2025/models/sed-batch-stats
 tags: ['SDK', 'Software Development Kit', 'SedBatchStats', 'V2025SedBatchStats']
 ---
@@ -13,13 +13,13 @@ tags: ['SDK', 'Software Development Kit', 'SedBatchStats', 'V2025SedBatchStats']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**BatchComplete** | Pointer to **bool** | batch complete | [optional] [default to false]
-**BatchId** | Pointer to **string** | batch Id | [optional] 
-**DiscoveredCount** | Pointer to **int64** | discovered count | [optional] 
-**DiscoveryComplete** | Pointer to **bool** | discovery complete | [optional] [default to false]
-**ProcessedCount** | Pointer to **int64** | processed count | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **BatchComplete** | Pointer to **bool** | batch complete | [optional] [default to false] |
+| **BatchId** | Pointer to **string** | batch Id | [optional] |
+| **DiscoveredCount** | Pointer to **int64** | discovered count | [optional] |
+| **DiscoveryComplete** | Pointer to **bool** | discovery complete | [optional] [default to false] |
+| **ProcessedCount** | Pointer to **int64** | processed count | [optional] |
 
 ## Methods
 
@@ -27,18 +27,13 @@ Name | Type | Description | Notes
 
 `func NewSedBatchStats() *SedBatchStats`
 
-NewSedBatchStats instantiates a new SedBatchStats object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSedBatchStats instantiates a new SedBatchStats object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSedBatchStatsWithDefaults
 
 `func NewSedBatchStatsWithDefaults() *SedBatchStats`
 
-NewSedBatchStatsWithDefaults instantiates a new SedBatchStats object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSedBatchStatsWithDefaults instantiates a new SedBatchStats object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetBatchComplete
 
@@ -50,8 +45,7 @@ GetBatchComplete returns the BatchComplete field if non-nil, zero value otherwis
 
 `func (o *SedBatchStats) GetBatchCompleteOk() (*bool, bool)`
 
-GetBatchCompleteOk returns a tuple with the BatchComplete field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetBatchCompleteOk returns a tuple with the BatchComplete field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetBatchComplete
 
@@ -75,8 +69,7 @@ GetBatchId returns the BatchId field if non-nil, zero value otherwise.
 
 `func (o *SedBatchStats) GetBatchIdOk() (*string, bool)`
 
-GetBatchIdOk returns a tuple with the BatchId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetBatchIdOk returns a tuple with the BatchId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetBatchId
 
@@ -100,8 +93,7 @@ GetDiscoveredCount returns the DiscoveredCount field if non-nil, zero value othe
 
 `func (o *SedBatchStats) GetDiscoveredCountOk() (*int64, bool)`
 
-GetDiscoveredCountOk returns a tuple with the DiscoveredCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDiscoveredCountOk returns a tuple with the DiscoveredCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDiscoveredCount
 
@@ -125,8 +117,7 @@ GetDiscoveryComplete returns the DiscoveryComplete field if non-nil, zero value 
 
 `func (o *SedBatchStats) GetDiscoveryCompleteOk() (*bool, bool)`
 
-GetDiscoveryCompleteOk returns a tuple with the DiscoveryComplete field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDiscoveryCompleteOk returns a tuple with the DiscoveryComplete field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDiscoveryComplete
 
@@ -150,8 +141,7 @@ GetProcessedCount returns the ProcessedCount field if non-nil, zero value otherw
 
 `func (o *SedBatchStats) GetProcessedCountOk() (*int64, bool)`
 
-GetProcessedCountOk returns a tuple with the ProcessedCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProcessedCountOk returns a tuple with the ProcessedCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProcessedCount
 
@@ -164,5 +154,3 @@ SetProcessedCount sets ProcessedCount field to given value.
 `func (o *SedBatchStats) HasProcessedCount() bool`
 
 HasProcessedCount returns a boolean if a field has been set.
-
-

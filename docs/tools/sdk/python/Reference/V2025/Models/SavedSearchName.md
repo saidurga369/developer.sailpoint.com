@@ -4,20 +4,21 @@ title: SavedSearchName
 pagination_label: SavedSearchName
 sidebar_label: SavedSearchName
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SavedSearchName', 'V2025SavedSearchName'] 
+keywords: ['python', 'Python', 'sdk', 'SavedSearchName', 'V2025SavedSearchName']
 slug: /tools/sdk/python/v2025/models/saved-search-name
-tags: ['SDK', 'Software Development Kit', 'SavedSearchName', 'V2025SavedSearchName']
+tags:
+  ['SDK', 'Software Development Kit', 'SavedSearchName', 'V2025SavedSearchName']
 ---
 
 # SavedSearchName
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | The name of the saved search.  | [optional] 
-**description** | **str** | The description of the saved search.  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **name** | **str** | The name of the saved search. | [optional] |
+| **description** | **str** | The description of the saved search. | [optional] |
+
 }
 
 ## Example
@@ -31,5 +32,5 @@ description='Disabled accounts'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

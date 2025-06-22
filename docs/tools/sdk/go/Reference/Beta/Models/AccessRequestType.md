@@ -4,18 +4,21 @@ title: AccessRequestType
 pagination_label: AccessRequestType
 sidebar_label: AccessRequestType
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessRequestType', 'BetaAccessRequestType'] 
+keywords: ['go', 'Golang', 'sdk', 'AccessRequestType', 'BetaAccessRequestType']
 slug: /tools/sdk/go/beta/models/access-request-type
-tags: ['SDK', 'Software Development Kit', 'AccessRequestType', 'BetaAccessRequestType']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessRequestType',
+    'BetaAccessRequestType',
+  ]
 ---
 
 # AccessRequestType
 
 ## Enum
 
+- `GRANT_ACCESS` (value: `"GRANT_ACCESS"`)
 
-* `GRANT_ACCESS` (value: `"GRANT_ACCESS"`)
-
-* `REVOKE_ACCESS` (value: `"REVOKE_ACCESS"`)
-
-
+- `REVOKE_ACCESS` (value: `"REVOKE_ACCESS"`)

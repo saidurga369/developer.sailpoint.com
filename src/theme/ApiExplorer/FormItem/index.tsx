@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import clsx from "clsx";
+import clsx from 'clsx';
 
 export interface Props {
   label?: string;
@@ -10,13 +10,13 @@ export interface Props {
   className?: string;
 }
 
-function FormItem({ label, type, required, children, className }: Props) {
+function FormItem({label, type, required, children, className}: Props) {
   return (
-    <div className={clsx("openapi-explorer__form-item", className)}>
+    <div className={clsx('openapi-explorer__form-item', className)}>
       {label && (
         <label className="openapi-explorer__form-item-label">{label}</label>
       )}
-      {type && <span style={{ opacity: 0.6 }}> — {type}</span>}
+      {type && <span style={{opacity: 0.6}}> — {type}</span>}
       {required && <span className="openapi-schema__required">required</span>}
       <div>{children}</div>
     </div>

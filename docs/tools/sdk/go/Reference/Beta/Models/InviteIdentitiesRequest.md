@@ -4,19 +4,32 @@ title: InviteIdentitiesRequest
 pagination_label: InviteIdentitiesRequest
 sidebar_label: InviteIdentitiesRequest
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'InviteIdentitiesRequest', 'BetaInviteIdentitiesRequest'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'InviteIdentitiesRequest',
+    'BetaInviteIdentitiesRequest',
+  ]
 slug: /tools/sdk/go/beta/models/invite-identities-request
-tags: ['SDK', 'Software Development Kit', 'InviteIdentitiesRequest', 'BetaInviteIdentitiesRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'InviteIdentitiesRequest',
+    'BetaInviteIdentitiesRequest',
+  ]
 ---
 
 # InviteIdentitiesRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Ids** | Pointer to **[]string** | The list of Identities IDs to invite - required when 'uninvited' is false | [optional] 
-**Uninvited** | Pointer to **bool** | indicator (optional) to invite all unregistered identities in the system within a limit 1000. This parameter makes sense only when 'ids' is empty. | [optional] [default to false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Ids** | Pointer to **[]string** | The list of Identities IDs to invite - required when 'uninvited' is false | [optional] |
+| **Uninvited** | Pointer to **bool** | indicator (optional) to invite all unregistered identities in the system within a limit 1000. This parameter makes sense only when 'ids' is empty. | [optional] [default to false] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewInviteIdentitiesRequest() *InviteIdentitiesRequest`
 
-NewInviteIdentitiesRequest instantiates a new InviteIdentitiesRequest object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewInviteIdentitiesRequest instantiates a new InviteIdentitiesRequest object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewInviteIdentitiesRequestWithDefaults
 
 `func NewInviteIdentitiesRequestWithDefaults() *InviteIdentitiesRequest`
 
-NewInviteIdentitiesRequestWithDefaults instantiates a new InviteIdentitiesRequest object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewInviteIdentitiesRequestWithDefaults instantiates a new InviteIdentitiesRequest object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetIds
 
@@ -47,8 +55,7 @@ GetIds returns the Ids field if non-nil, zero value otherwise.
 
 `func (o *InviteIdentitiesRequest) GetIdsOk() (*[]string, bool)`
 
-GetIdsOk returns a tuple with the Ids field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdsOk returns a tuple with the Ids field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIds
 
@@ -66,12 +73,14 @@ HasIds returns a boolean if a field has been set.
 
 `func (o *InviteIdentitiesRequest) SetIdsNil(b bool)`
 
- SetIdsNil sets the value for Ids to be an explicit nil
+SetIdsNil sets the value for Ids to be an explicit nil
 
 ### UnsetIds
+
 `func (o *InviteIdentitiesRequest) UnsetIds()`
 
 UnsetIds ensures that no value is present for Ids, not even an explicit nil
+
 ### GetUninvited
 
 `func (o *InviteIdentitiesRequest) GetUninvited() bool`
@@ -82,8 +91,7 @@ GetUninvited returns the Uninvited field if non-nil, zero value otherwise.
 
 `func (o *InviteIdentitiesRequest) GetUninvitedOk() (*bool, bool)`
 
-GetUninvitedOk returns a tuple with the Uninvited field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUninvitedOk returns a tuple with the Uninvited field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUninvited
 
@@ -96,5 +104,3 @@ SetUninvited sets Uninvited field to given value.
 `func (o *InviteIdentitiesRequest) HasUninvited() bool`
 
 HasUninvited returns a boolean if a field has been set.
-
-

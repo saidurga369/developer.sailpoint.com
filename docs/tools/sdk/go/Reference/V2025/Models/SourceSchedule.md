@@ -4,19 +4,20 @@ title: SourceSchedule
 pagination_label: SourceSchedule
 sidebar_label: SourceSchedule
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SourceSchedule', 'V2025SourceSchedule'] 
+keywords: ['go', 'Golang', 'sdk', 'SourceSchedule', 'V2025SourceSchedule']
 slug: /tools/sdk/go/v2025/models/source-schedule
-tags: ['SDK', 'Software Development Kit', 'SourceSchedule', 'V2025SourceSchedule']
+tags:
+  ['SDK', 'Software Development Kit', 'SourceSchedule', 'V2025SourceSchedule']
 ---
 
 # SourceSchedule
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | **string** | The type of the Schedule. | 
-**CronExpression** | **string** | The cron expression of the schedule. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | **string** | The type of the Schedule. |
+| **CronExpression** | **string** | The cron expression of the schedule. |
 
 ## Methods
 
@@ -24,18 +25,13 @@ Name | Type | Description | Notes
 
 `func NewSourceSchedule(type_ string, cronExpression string, ) *SourceSchedule`
 
-NewSourceSchedule instantiates a new SourceSchedule object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSourceSchedule instantiates a new SourceSchedule object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSourceScheduleWithDefaults
 
 `func NewSourceScheduleWithDefaults() *SourceSchedule`
 
-NewSourceScheduleWithDefaults instantiates a new SourceSchedule object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSourceScheduleWithDefaults instantiates a new SourceSchedule object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -47,15 +43,13 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *SourceSchedule) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
 `func (o *SourceSchedule) SetType(v string)`
 
 SetType sets Type field to given value.
-
 
 ### GetCronExpression
 
@@ -67,14 +61,10 @@ GetCronExpression returns the CronExpression field if non-nil, zero value otherw
 
 `func (o *SourceSchedule) GetCronExpressionOk() (*string, bool)`
 
-GetCronExpressionOk returns a tuple with the CronExpression field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCronExpressionOk returns a tuple with the CronExpression field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCronExpression
 
 `func (o *SourceSchedule) SetCronExpression(v string)`
 
 SetCronExpression sets CronExpression field to given value.
-
-
-

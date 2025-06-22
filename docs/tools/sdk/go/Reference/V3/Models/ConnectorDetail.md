@@ -4,7 +4,7 @@ title: ConnectorDetail
 pagination_label: ConnectorDetail
 sidebar_label: ConnectorDetail
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ConnectorDetail', 'ConnectorDetail'] 
+keywords: ['go', 'Golang', 'sdk', 'ConnectorDetail', 'ConnectorDetail']
 slug: /tools/sdk/go/v3/models/connector-detail
 tags: ['SDK', 'Software Development Kit', 'ConnectorDetail', 'ConnectorDetail']
 ---
@@ -13,24 +13,24 @@ tags: ['SDK', 'Software Development Kit', 'ConnectorDetail', 'ConnectorDetail']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | Pointer to **string** | The connector name | [optional] 
-**Type** | Pointer to **string** | The connector type | [optional] 
-**ClassName** | Pointer to **string** | The connector class name | [optional] 
-**ScriptName** | Pointer to **string** | The connector script name | [optional] 
-**ApplicationXml** | Pointer to **string** | The connector application xml | [optional] 
-**CorrelationConfigXml** | Pointer to **string** | The connector correlation config xml | [optional] 
-**SourceConfigXml** | Pointer to **string** | The connector source config xml | [optional] 
-**SourceConfig** | Pointer to **string** | The connector source config | [optional] 
-**SourceConfigFrom** | Pointer to **string** | The connector source config origin | [optional] 
-**S3Location** | Pointer to **string** | storage path key for this connector | [optional] 
-**UploadedFiles** | Pointer to **[]string** | The list of uploaded files supported by the connector. If there was any executable files uploaded to thee connector. Typically this be empty as the executable be uploaded at source creation. | [optional] 
-**FileUpload** | Pointer to **bool** | true if the source is file upload | [optional] [default to false]
-**DirectConnect** | Pointer to **bool** | true if the source is a direct connect source | [optional] [default to false]
-**TranslationProperties** | Pointer to **map[string]interface{}** | A map containing translation attributes by loacale key | [optional] 
-**ConnectorMetadata** | Pointer to **map[string]interface{}** | A map containing metadata pertinent to the UI to be used | [optional] 
-**Status** | Pointer to **string** | The connector status | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | Pointer to **string** | The connector name | [optional] |
+| **Type** | Pointer to **string** | The connector type | [optional] |
+| **ClassName** | Pointer to **string** | The connector class name | [optional] |
+| **ScriptName** | Pointer to **string** | The connector script name | [optional] |
+| **ApplicationXml** | Pointer to **string** | The connector application xml | [optional] |
+| **CorrelationConfigXml** | Pointer to **string** | The connector correlation config xml | [optional] |
+| **SourceConfigXml** | Pointer to **string** | The connector source config xml | [optional] |
+| **SourceConfig** | Pointer to **string** | The connector source config | [optional] |
+| **SourceConfigFrom** | Pointer to **string** | The connector source config origin | [optional] |
+| **S3Location** | Pointer to **string** | storage path key for this connector | [optional] |
+| **UploadedFiles** | Pointer to **[]string** | The list of uploaded files supported by the connector. If there was any executable files uploaded to thee connector. Typically this be empty as the executable be uploaded at source creation. | [optional] |
+| **FileUpload** | Pointer to **bool** | true if the source is file upload | [optional] [default to false] |
+| **DirectConnect** | Pointer to **bool** | true if the source is a direct connect source | [optional] [default to false] |
+| **TranslationProperties** | Pointer to **map[string]interface{}** | A map containing translation attributes by loacale key | [optional] |
+| **ConnectorMetadata** | Pointer to **map[string]interface{}** | A map containing metadata pertinent to the UI to be used | [optional] |
+| **Status** | Pointer to **string** | The connector status | [optional] |
 
 ## Methods
 
@@ -38,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewConnectorDetail() *ConnectorDetail`
 
-NewConnectorDetail instantiates a new ConnectorDetail object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewConnectorDetail instantiates a new ConnectorDetail object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewConnectorDetailWithDefaults
 
 `func NewConnectorDetailWithDefaults() *ConnectorDetail`
 
-NewConnectorDetailWithDefaults instantiates a new ConnectorDetail object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewConnectorDetailWithDefaults instantiates a new ConnectorDetail object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -61,8 +56,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *ConnectorDetail) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -86,8 +80,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *ConnectorDetail) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -111,8 +104,7 @@ GetClassName returns the ClassName field if non-nil, zero value otherwise.
 
 `func (o *ConnectorDetail) GetClassNameOk() (*string, bool)`
 
-GetClassNameOk returns a tuple with the ClassName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetClassNameOk returns a tuple with the ClassName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetClassName
 
@@ -136,8 +128,7 @@ GetScriptName returns the ScriptName field if non-nil, zero value otherwise.
 
 `func (o *ConnectorDetail) GetScriptNameOk() (*string, bool)`
 
-GetScriptNameOk returns a tuple with the ScriptName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetScriptNameOk returns a tuple with the ScriptName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetScriptName
 
@@ -161,8 +152,7 @@ GetApplicationXml returns the ApplicationXml field if non-nil, zero value otherw
 
 `func (o *ConnectorDetail) GetApplicationXmlOk() (*string, bool)`
 
-GetApplicationXmlOk returns a tuple with the ApplicationXml field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApplicationXmlOk returns a tuple with the ApplicationXml field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApplicationXml
 
@@ -186,8 +176,7 @@ GetCorrelationConfigXml returns the CorrelationConfigXml field if non-nil, zero 
 
 `func (o *ConnectorDetail) GetCorrelationConfigXmlOk() (*string, bool)`
 
-GetCorrelationConfigXmlOk returns a tuple with the CorrelationConfigXml field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCorrelationConfigXmlOk returns a tuple with the CorrelationConfigXml field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCorrelationConfigXml
 
@@ -211,8 +200,7 @@ GetSourceConfigXml returns the SourceConfigXml field if non-nil, zero value othe
 
 `func (o *ConnectorDetail) GetSourceConfigXmlOk() (*string, bool)`
 
-GetSourceConfigXmlOk returns a tuple with the SourceConfigXml field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceConfigXmlOk returns a tuple with the SourceConfigXml field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceConfigXml
 
@@ -236,8 +224,7 @@ GetSourceConfig returns the SourceConfig field if non-nil, zero value otherwise.
 
 `func (o *ConnectorDetail) GetSourceConfigOk() (*string, bool)`
 
-GetSourceConfigOk returns a tuple with the SourceConfig field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceConfigOk returns a tuple with the SourceConfig field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceConfig
 
@@ -261,8 +248,7 @@ GetSourceConfigFrom returns the SourceConfigFrom field if non-nil, zero value ot
 
 `func (o *ConnectorDetail) GetSourceConfigFromOk() (*string, bool)`
 
-GetSourceConfigFromOk returns a tuple with the SourceConfigFrom field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceConfigFromOk returns a tuple with the SourceConfigFrom field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceConfigFrom
 
@@ -286,8 +272,7 @@ GetS3Location returns the S3Location field if non-nil, zero value otherwise.
 
 `func (o *ConnectorDetail) GetS3LocationOk() (*string, bool)`
 
-GetS3LocationOk returns a tuple with the S3Location field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetS3LocationOk returns a tuple with the S3Location field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetS3Location
 
@@ -311,8 +296,7 @@ GetUploadedFiles returns the UploadedFiles field if non-nil, zero value otherwis
 
 `func (o *ConnectorDetail) GetUploadedFilesOk() (*[]string, bool)`
 
-GetUploadedFilesOk returns a tuple with the UploadedFiles field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUploadedFilesOk returns a tuple with the UploadedFiles field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUploadedFiles
 
@@ -330,12 +314,14 @@ HasUploadedFiles returns a boolean if a field has been set.
 
 `func (o *ConnectorDetail) SetUploadedFilesNil(b bool)`
 
- SetUploadedFilesNil sets the value for UploadedFiles to be an explicit nil
+SetUploadedFilesNil sets the value for UploadedFiles to be an explicit nil
 
 ### UnsetUploadedFiles
+
 `func (o *ConnectorDetail) UnsetUploadedFiles()`
 
 UnsetUploadedFiles ensures that no value is present for UploadedFiles, not even an explicit nil
+
 ### GetFileUpload
 
 `func (o *ConnectorDetail) GetFileUpload() bool`
@@ -346,8 +332,7 @@ GetFileUpload returns the FileUpload field if non-nil, zero value otherwise.
 
 `func (o *ConnectorDetail) GetFileUploadOk() (*bool, bool)`
 
-GetFileUploadOk returns a tuple with the FileUpload field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFileUploadOk returns a tuple with the FileUpload field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFileUpload
 
@@ -371,8 +356,7 @@ GetDirectConnect returns the DirectConnect field if non-nil, zero value otherwis
 
 `func (o *ConnectorDetail) GetDirectConnectOk() (*bool, bool)`
 
-GetDirectConnectOk returns a tuple with the DirectConnect field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDirectConnectOk returns a tuple with the DirectConnect field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDirectConnect
 
@@ -396,8 +380,7 @@ GetTranslationProperties returns the TranslationProperties field if non-nil, zer
 
 `func (o *ConnectorDetail) GetTranslationPropertiesOk() (*map[string]interface{}, bool)`
 
-GetTranslationPropertiesOk returns a tuple with the TranslationProperties field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTranslationPropertiesOk returns a tuple with the TranslationProperties field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTranslationProperties
 
@@ -421,8 +404,7 @@ GetConnectorMetadata returns the ConnectorMetadata field if non-nil, zero value 
 
 `func (o *ConnectorDetail) GetConnectorMetadataOk() (*map[string]interface{}, bool)`
 
-GetConnectorMetadataOk returns a tuple with the ConnectorMetadata field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConnectorMetadataOk returns a tuple with the ConnectorMetadata field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConnectorMetadata
 
@@ -446,8 +428,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *ConnectorDetail) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -460,5 +441,3 @@ SetStatus sets Status field to given value.
 `func (o *ConnectorDetail) HasStatus() bool`
 
 HasStatus returns a boolean if a field has been set.
-
-

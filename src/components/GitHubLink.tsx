@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 interface GitHubPublicFileComponentProps {
@@ -6,7 +6,10 @@ interface GitHubPublicFileComponentProps {
   source: string;
 }
 
-const GitHubPublicFileComponent: React.FC<GitHubPublicFileComponentProps> = ({ children, source }) => {
+const GitHubPublicFileComponent: React.FC<GitHubPublicFileComponentProps> = ({
+  children,
+  source,
+}) => {
   const [fileContent, setFileContent] = useState<string>('');
 
   useEffect(() => {

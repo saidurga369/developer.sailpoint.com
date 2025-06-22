@@ -4,26 +4,39 @@ title: VendorConnectorMapping
 pagination_label: VendorConnectorMapping
 sidebar_label: VendorConnectorMapping
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'VendorConnectorMapping', 'BetaVendorConnectorMapping'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'VendorConnectorMapping',
+    'BetaVendorConnectorMapping',
+  ]
 slug: /tools/sdk/go/beta/models/vendor-connector-mapping
-tags: ['SDK', 'Software Development Kit', 'VendorConnectorMapping', 'BetaVendorConnectorMapping']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'VendorConnectorMapping',
+    'BetaVendorConnectorMapping',
+  ]
 ---
 
 # VendorConnectorMapping
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The unique identifier for the vendor-connector mapping. | [optional] 
-**Vendor** | Pointer to **string** | The name of the vendor. | [optional] 
-**Connector** | Pointer to **string** | The name of the connector. | [optional] 
-**CreatedAt** | Pointer to **SailPointTime** | The creation timestamp of the mapping. | [optional] 
-**CreatedBy** | Pointer to **string** | The identifier of the user who created the mapping. | [optional] 
-**UpdatedAt** | Pointer to [**NullableVendorConnectorMappingUpdatedAt**](vendor-connector-mapping-updated-at) |  | [optional] 
-**UpdatedBy** | Pointer to [**NullableVendorConnectorMappingUpdatedBy**](vendor-connector-mapping-updated-by) |  | [optional] 
-**DeletedAt** | Pointer to [**NullableVendorConnectorMappingDeletedAt**](vendor-connector-mapping-deleted-at) |  | [optional] 
-**DeletedBy** | Pointer to [**NullableVendorConnectorMappingDeletedBy**](vendor-connector-mapping-deleted-by) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The unique identifier for the vendor-connector mapping. | [optional] |
+| **Vendor** | Pointer to **string** | The name of the vendor. | [optional] |
+| **Connector** | Pointer to **string** | The name of the connector. | [optional] |
+| **CreatedAt** | Pointer to **SailPointTime** | The creation timestamp of the mapping. | [optional] |
+| **CreatedBy** | Pointer to **string** | The identifier of the user who created the mapping. | [optional] |
+| **UpdatedAt** | Pointer to [**NullableVendorConnectorMappingUpdatedAt**](vendor-connector-mapping-updated-at) |  | [optional] |
+| **UpdatedBy** | Pointer to [**NullableVendorConnectorMappingUpdatedBy**](vendor-connector-mapping-updated-by) |  | [optional] |
+| **DeletedAt** | Pointer to [**NullableVendorConnectorMappingDeletedAt**](vendor-connector-mapping-deleted-at) |  | [optional] |
+| **DeletedBy** | Pointer to [**NullableVendorConnectorMappingDeletedBy**](vendor-connector-mapping-deleted-by) |  | [optional] |
 
 ## Methods
 
@@ -31,18 +44,13 @@ Name | Type | Description | Notes
 
 `func NewVendorConnectorMapping() *VendorConnectorMapping`
 
-NewVendorConnectorMapping instantiates a new VendorConnectorMapping object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewVendorConnectorMapping instantiates a new VendorConnectorMapping object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewVendorConnectorMappingWithDefaults
 
 `func NewVendorConnectorMappingWithDefaults() *VendorConnectorMapping`
 
-NewVendorConnectorMappingWithDefaults instantiates a new VendorConnectorMapping object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewVendorConnectorMappingWithDefaults instantiates a new VendorConnectorMapping object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -54,8 +62,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *VendorConnectorMapping) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -79,8 +86,7 @@ GetVendor returns the Vendor field if non-nil, zero value otherwise.
 
 `func (o *VendorConnectorMapping) GetVendorOk() (*string, bool)`
 
-GetVendorOk returns a tuple with the Vendor field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetVendorOk returns a tuple with the Vendor field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetVendor
 
@@ -104,8 +110,7 @@ GetConnector returns the Connector field if non-nil, zero value otherwise.
 
 `func (o *VendorConnectorMapping) GetConnectorOk() (*string, bool)`
 
-GetConnectorOk returns a tuple with the Connector field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConnectorOk returns a tuple with the Connector field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConnector
 
@@ -129,8 +134,7 @@ GetCreatedAt returns the CreatedAt field if non-nil, zero value otherwise.
 
 `func (o *VendorConnectorMapping) GetCreatedAtOk() (*SailPointTime, bool)`
 
-GetCreatedAtOk returns a tuple with the CreatedAt field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedAtOk returns a tuple with the CreatedAt field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreatedAt
 
@@ -154,8 +158,7 @@ GetCreatedBy returns the CreatedBy field if non-nil, zero value otherwise.
 
 `func (o *VendorConnectorMapping) GetCreatedByOk() (*string, bool)`
 
-GetCreatedByOk returns a tuple with the CreatedBy field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedByOk returns a tuple with the CreatedBy field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreatedBy
 
@@ -179,8 +182,7 @@ GetUpdatedAt returns the UpdatedAt field if non-nil, zero value otherwise.
 
 `func (o *VendorConnectorMapping) GetUpdatedAtOk() (*VendorConnectorMappingUpdatedAt, bool)`
 
-GetUpdatedAtOk returns a tuple with the UpdatedAt field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUpdatedAtOk returns a tuple with the UpdatedAt field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUpdatedAt
 
@@ -198,12 +200,14 @@ HasUpdatedAt returns a boolean if a field has been set.
 
 `func (o *VendorConnectorMapping) SetUpdatedAtNil(b bool)`
 
- SetUpdatedAtNil sets the value for UpdatedAt to be an explicit nil
+SetUpdatedAtNil sets the value for UpdatedAt to be an explicit nil
 
 ### UnsetUpdatedAt
+
 `func (o *VendorConnectorMapping) UnsetUpdatedAt()`
 
 UnsetUpdatedAt ensures that no value is present for UpdatedAt, not even an explicit nil
+
 ### GetUpdatedBy
 
 `func (o *VendorConnectorMapping) GetUpdatedBy() VendorConnectorMappingUpdatedBy`
@@ -214,8 +218,7 @@ GetUpdatedBy returns the UpdatedBy field if non-nil, zero value otherwise.
 
 `func (o *VendorConnectorMapping) GetUpdatedByOk() (*VendorConnectorMappingUpdatedBy, bool)`
 
-GetUpdatedByOk returns a tuple with the UpdatedBy field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUpdatedByOk returns a tuple with the UpdatedBy field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUpdatedBy
 
@@ -233,12 +236,14 @@ HasUpdatedBy returns a boolean if a field has been set.
 
 `func (o *VendorConnectorMapping) SetUpdatedByNil(b bool)`
 
- SetUpdatedByNil sets the value for UpdatedBy to be an explicit nil
+SetUpdatedByNil sets the value for UpdatedBy to be an explicit nil
 
 ### UnsetUpdatedBy
+
 `func (o *VendorConnectorMapping) UnsetUpdatedBy()`
 
 UnsetUpdatedBy ensures that no value is present for UpdatedBy, not even an explicit nil
+
 ### GetDeletedAt
 
 `func (o *VendorConnectorMapping) GetDeletedAt() VendorConnectorMappingDeletedAt`
@@ -249,8 +254,7 @@ GetDeletedAt returns the DeletedAt field if non-nil, zero value otherwise.
 
 `func (o *VendorConnectorMapping) GetDeletedAtOk() (*VendorConnectorMappingDeletedAt, bool)`
 
-GetDeletedAtOk returns a tuple with the DeletedAt field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDeletedAtOk returns a tuple with the DeletedAt field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDeletedAt
 
@@ -268,12 +272,14 @@ HasDeletedAt returns a boolean if a field has been set.
 
 `func (o *VendorConnectorMapping) SetDeletedAtNil(b bool)`
 
- SetDeletedAtNil sets the value for DeletedAt to be an explicit nil
+SetDeletedAtNil sets the value for DeletedAt to be an explicit nil
 
 ### UnsetDeletedAt
+
 `func (o *VendorConnectorMapping) UnsetDeletedAt()`
 
 UnsetDeletedAt ensures that no value is present for DeletedAt, not even an explicit nil
+
 ### GetDeletedBy
 
 `func (o *VendorConnectorMapping) GetDeletedBy() VendorConnectorMappingDeletedBy`
@@ -284,8 +290,7 @@ GetDeletedBy returns the DeletedBy field if non-nil, zero value otherwise.
 
 `func (o *VendorConnectorMapping) GetDeletedByOk() (*VendorConnectorMappingDeletedBy, bool)`
 
-GetDeletedByOk returns a tuple with the DeletedBy field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDeletedByOk returns a tuple with the DeletedBy field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDeletedBy
 
@@ -303,10 +308,10 @@ HasDeletedBy returns a boolean if a field has been set.
 
 `func (o *VendorConnectorMapping) SetDeletedByNil(b bool)`
 
- SetDeletedByNil sets the value for DeletedBy to be an explicit nil
+SetDeletedByNil sets the value for DeletedBy to be an explicit nil
 
 ### UnsetDeletedBy
+
 `func (o *VendorConnectorMapping) UnsetDeletedBy()`
 
 UnsetDeletedBy ensures that no value is present for DeletedBy, not even an explicit nil
-

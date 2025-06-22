@@ -10,10 +10,14 @@ const HomepageGettingStarted: React.FC = () => {
             <div className={styles.gettingStartedOne}>
               📢 SailPoint Developer Days Call To Papers 📢
             </div>
-            <div className={styles.gettingStartedTwo}>Submit by: February 24, 2025</div>
+            <div className={styles.gettingStartedTwo}>
+              Submit by: February 24, 2025
+            </div>
             <div className={styles.gettingStartedThree}>
-              Want to present at SailPoint Developer Days?<br />
-              We're looking for hands-on sessions showcasing SailPoint APIs, workflows, and more!
+              Want to present at SailPoint Developer Days?
+              <br />
+              We're looking for hands-on sessions showcasing SailPoint APIs,
+              workflows, and more!
             </div>
           </div>
 
@@ -24,7 +28,10 @@ const HomepageGettingStarted: React.FC = () => {
               Apply now!
             </a>
             <p className="extra-link">
-              <a href="https://developer.sailpoint.com/discuss/t/announcing-sailpoints-developer-days-2025/99813" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://developer.sailpoint.com/discuss/t/announcing-sailpoints-developer-days-2025/99813"
+                target="_blank"
+                rel="noopener noreferrer">
                 Learn more about SailPoint Developer Days 2025
               </a>
             </p>

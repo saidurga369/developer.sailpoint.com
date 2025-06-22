@@ -4,19 +4,26 @@ title: AuthProfileSummary
 pagination_label: AuthProfileSummary
 sidebar_label: AuthProfileSummary
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AuthProfileSummary', 'V2025AuthProfileSummary'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'AuthProfileSummary', 'V2025AuthProfileSummary']
 slug: /tools/sdk/go/v2025/models/auth-profile-summary
-tags: ['SDK', 'Software Development Kit', 'AuthProfileSummary', 'V2025AuthProfileSummary']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AuthProfileSummary',
+    'V2025AuthProfileSummary',
+  ]
 ---
 
 # AuthProfileSummary
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Tenant** | Pointer to **string** | Tenant name. | [optional] 
-**Id** | Pointer to **string** | Identity ID. | [optional] 
+| Name       | Type                  | Description  | Notes      |
+| ---------- | --------------------- | ------------ | ---------- |
+| **Tenant** | Pointer to **string** | Tenant name. | [optional] |
+| **Id**     | Pointer to **string** | Identity ID. | [optional] |
 
 ## Methods
 
@@ -24,18 +31,13 @@ Name | Type | Description | Notes
 
 `func NewAuthProfileSummary() *AuthProfileSummary`
 
-NewAuthProfileSummary instantiates a new AuthProfileSummary object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAuthProfileSummary instantiates a new AuthProfileSummary object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAuthProfileSummaryWithDefaults
 
 `func NewAuthProfileSummaryWithDefaults() *AuthProfileSummary`
 
-NewAuthProfileSummaryWithDefaults instantiates a new AuthProfileSummary object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAuthProfileSummaryWithDefaults instantiates a new AuthProfileSummary object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetTenant
 
@@ -47,8 +49,7 @@ GetTenant returns the Tenant field if non-nil, zero value otherwise.
 
 `func (o *AuthProfileSummary) GetTenantOk() (*string, bool)`
 
-GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTenant
 
@@ -72,8 +73,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *AuthProfileSummary) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -86,5 +86,3 @@ SetId sets Id field to given value.
 `func (o *AuthProfileSummary) HasId() bool`
 
 HasId returns a boolean if a field has been set.
-
-

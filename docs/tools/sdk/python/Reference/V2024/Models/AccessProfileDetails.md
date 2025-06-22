@@ -4,41 +4,54 @@ title: AccessProfileDetails
 pagination_label: AccessProfileDetails
 sidebar_label: AccessProfileDetails
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccessProfileDetails', 'V2024AccessProfileDetails'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccessProfileDetails',
+    'V2024AccessProfileDetails',
+  ]
 slug: /tools/sdk/python/v2024/models/access-profile-details
-tags: ['SDK', 'Software Development Kit', 'AccessProfileDetails', 'V2024AccessProfileDetails']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessProfileDetails',
+    'V2024AccessProfileDetails',
+  ]
 ---
 
 # AccessProfileDetails
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The ID of the Access Profile | [optional] 
-**name** | **str** | Name of the Access Profile | [optional] 
-**description** | **str** | Information about the Access Profile | [optional] 
-**created** | **datetime** | Date the Access Profile was created | [optional] 
-**modified** | **datetime** | Date the Access Profile was last modified. | [optional] 
-**disabled** | **bool** | Whether the Access Profile is enabled. | [optional] [default to True]
-**requestable** | **bool** | Whether the Access Profile is requestable via access request. | [optional] [default to False]
-**protected** | **bool** | Whether the Access Profile is protected. | [optional] [default to False]
-**owner_id** | **str** | The owner ID of the Access Profile | [optional] 
-**source_id** | **int** | The source ID of the Access Profile | [optional] 
-**source_name** | **str** | The source name of the Access Profile | [optional] 
-**app_id** | **int** | The source app ID of the Access Profile | [optional] 
-**app_name** | **str** | The source app name of the Access Profile | [optional] 
-**application_id** | **str** | The id of the application | [optional] 
-**type** | **str** | The type of the access profile | [optional] 
-**entitlements** | **[]str** | List of IDs of entitlements | [optional] 
-**entitlement_count** | **int** | The number of entitlements in the access profile | [optional] 
-**segments** | **[]str** | List of IDs of segments, if any, to which this Access Profile is assigned. | [optional] 
-**approval_schemes** | **str** | Comma-separated list of approval schemes. Each approval scheme is one of - manager - appOwner - sourceOwner - accessProfileOwner - workgroup:&lt;workgroupId&gt;  | [optional] 
-**revoke_request_approval_schemes** | **str** | Comma-separated list of revoke request approval schemes. Each approval scheme is one of - manager - sourceOwner - accessProfileOwner - workgroup:&lt;workgroupId&gt;  | [optional] 
-**request_comments_required** | **bool** | Whether the access profile require request comment for access request. | [optional] [default to False]
-**denied_comments_required** | **bool** | Whether denied comment is required when access request is denied. | [optional] [default to False]
-**account_selector** | [**AccessProfileDetailsAccountSelector**](access-profile-details-account-selector) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The ID of the Access Profile | [optional] |
+| **name** | **str** | Name of the Access Profile | [optional] |
+| **description** | **str** | Information about the Access Profile | [optional] |
+| **created** | **datetime** | Date the Access Profile was created | [optional] |
+| **modified** | **datetime** | Date the Access Profile was last modified. | [optional] |
+| **disabled** | **bool** | Whether the Access Profile is enabled. | [optional] [default to True] |
+| **requestable** | **bool** | Whether the Access Profile is requestable via access request. | [optional] [default to False] |
+| **protected** | **bool** | Whether the Access Profile is protected. | [optional] [default to False] |
+| **owner_id** | **str** | The owner ID of the Access Profile | [optional] |
+| **source_id** | **int** | The source ID of the Access Profile | [optional] |
+| **source_name** | **str** | The source name of the Access Profile | [optional] |
+| **app_id** | **int** | The source app ID of the Access Profile | [optional] |
+| **app_name** | **str** | The source app name of the Access Profile | [optional] |
+| **application_id** | **str** | The id of the application | [optional] |
+| **type** | **str** | The type of the access profile | [optional] |
+| **entitlements** | **[]str** | List of IDs of entitlements | [optional] |
+| **entitlement_count** | **int** | The number of entitlements in the access profile | [optional] |
+| **segments** | **[]str** | List of IDs of segments, if any, to which this Access Profile is assigned. | [optional] |
+| **approval_schemes** | **str** | Comma-separated list of approval schemes. Each approval scheme is one of - manager - appOwner - sourceOwner - accessProfileOwner - workgroup:&lt;workgroupId&gt; | [optional] |
+| **revoke_request_approval_schemes** | **str** | Comma-separated list of revoke request approval schemes. Each approval scheme is one of - manager - sourceOwner - accessProfileOwner - workgroup:&lt;workgroupId&gt; | [optional] |
+| **request_comments_required** | **bool** | Whether the access profile require request comment for access request. | [optional] [default to False] |
+| **denied_comments_required** | **bool** | Whether denied comment is required when access request is denied. | [optional] [default to False] |
+| **account_selector** | [**AccessProfileDetailsAccountSelector**](access-profile-details-account-selector) |  | [optional] |
+
 }
 
 ## Example
@@ -72,14 +85,14 @@ denied_comments_required=True,
 account_selector=sailpoint.v2024.models.access_profile_details_account_selector.AccessProfileDetails_accountSelector(
                     selectors = [
                         sailpoint.v2024.models.selector.selector(
-                            application_id = '2c91808874ff91550175097daaec161c"', 
+                            application_id = '2c91808874ff91550175097daaec161c"',
                             account_match_config = sailpoint.v2024.models.selector_account_match_config.selector_accountMatchConfig(
                                 match_expression = sailpoint.v2024.models.selector_account_match_config_match_expression.selector_accountMatchConfig_matchExpression(
-                                    match_terms = [{name=, value=, op=null, container=true, and=false, children=[{name=businessCategory, value=Service, op=eq, container=false, and=false, children=null}]}], 
+                                    match_terms = [{name=, value=, op=null, container=true, and=false, children=[{name=businessCategory, value=Service, op=eq, container=false, and=false, children=null}]}],
                                     and = True, ), ), )
                         ], )
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

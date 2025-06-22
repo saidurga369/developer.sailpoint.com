@@ -4,9 +4,22 @@ title: ConnectorCustomizerVersionCreateResponse
 pagination_label: ConnectorCustomizerVersionCreateResponse
 sidebar_label: ConnectorCustomizerVersionCreateResponse
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ConnectorCustomizerVersionCreateResponse', 'V2024ConnectorCustomizerVersionCreateResponse'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ConnectorCustomizerVersionCreateResponse',
+    'V2024ConnectorCustomizerVersionCreateResponse',
+  ]
 slug: /tools/sdk/python/v2024/models/connector-customizer-version-create-response
-tags: ['SDK', 'Software Development Kit', 'ConnectorCustomizerVersionCreateResponse', 'V2024ConnectorCustomizerVersionCreateResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ConnectorCustomizerVersionCreateResponse',
+    'V2024ConnectorCustomizerVersionCreateResponse',
+  ]
 ---
 
 # ConnectorCustomizerVersionCreateResponse
@@ -15,12 +28,13 @@ ConnectorCustomizerVersionCreateResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**customizer_id** | **str** | ID of connector customizer. | [optional] 
-**image_id** | **str** | ImageID of the connector customizer. | [optional] 
-**version** | **int** | Image version of the connector customizer. | [optional] 
-**created** | **datetime** | Date-time when the connector customizer version was created. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **customizer_id** | **str** | ID of connector customizer. | [optional] |
+| **image_id** | **str** | ImageID of the connector customizer. | [optional] |
+| **version** | **int** | Image version of the connector customizer. | [optional] |
+| **created** | **datetime** | Date-time when the connector customizer version was created. | [optional] |
+
 }
 
 ## Example
@@ -36,5 +50,5 @@ created='2022-02-08T14:50:03.827Z'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

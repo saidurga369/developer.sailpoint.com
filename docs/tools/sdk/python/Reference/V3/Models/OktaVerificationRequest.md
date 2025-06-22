@@ -4,19 +4,32 @@ title: OktaVerificationRequest
 pagination_label: OktaVerificationRequest
 sidebar_label: OktaVerificationRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'OktaVerificationRequest', 'OktaVerificationRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'OktaVerificationRequest',
+    'OktaVerificationRequest',
+  ]
 slug: /tools/sdk/python/v3/models/okta-verification-request
-tags: ['SDK', 'Software Development Kit', 'OktaVerificationRequest', 'OktaVerificationRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'OktaVerificationRequest',
+    'OktaVerificationRequest',
+  ]
 ---
 
 # OktaVerificationRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**user_id** | **str** | User identifier for Verification request. The value of the user's attribute. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **user_id** | **str** | User identifier for Verification request. The value of the user's attribute. | [required] |
+
 }
 
 ## Example
@@ -29,5 +42,5 @@ user_id='example@mail.com'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

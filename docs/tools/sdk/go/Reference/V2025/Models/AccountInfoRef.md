@@ -4,22 +4,23 @@ title: AccountInfoRef
 pagination_label: AccountInfoRef
 sidebar_label: AccountInfoRef
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccountInfoRef', 'V2025AccountInfoRef'] 
+keywords: ['go', 'Golang', 'sdk', 'AccountInfoRef', 'V2025AccountInfoRef']
 slug: /tools/sdk/go/v2025/models/account-info-ref
-tags: ['SDK', 'Software Development Kit', 'AccountInfoRef', 'V2025AccountInfoRef']
+tags:
+  ['SDK', 'Software Development Kit', 'AccountInfoRef', 'V2025AccountInfoRef']
 ---
 
 # AccountInfoRef
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Uuid** | Pointer to **string** | The uuid for the account, available under the 'objectguid' attribute | [optional] 
-**NativeIdentity** | Pointer to **string** | The 'distinguishedName' attribute for the account | [optional] 
-**Type** | Pointer to [**DtoType**](dto-type) |  | [optional] 
-**Id** | Pointer to **string** | The account id | [optional] 
-**Name** | Pointer to **string** | The account display name | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Uuid** | Pointer to **string** | The uuid for the account, available under the 'objectguid' attribute | [optional] |
+| **NativeIdentity** | Pointer to **string** | The 'distinguishedName' attribute for the account | [optional] |
+| **Type** | Pointer to [**DtoType**](dto-type) |  | [optional] |
+| **Id** | Pointer to **string** | The account id | [optional] |
+| **Name** | Pointer to **string** | The account display name | [optional] |
 
 ## Methods
 
@@ -27,18 +28,13 @@ Name | Type | Description | Notes
 
 `func NewAccountInfoRef() *AccountInfoRef`
 
-NewAccountInfoRef instantiates a new AccountInfoRef object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccountInfoRef instantiates a new AccountInfoRef object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccountInfoRefWithDefaults
 
 `func NewAccountInfoRefWithDefaults() *AccountInfoRef`
 
-NewAccountInfoRefWithDefaults instantiates a new AccountInfoRef object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccountInfoRefWithDefaults instantiates a new AccountInfoRef object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetUuid
 
@@ -50,8 +46,7 @@ GetUuid returns the Uuid field if non-nil, zero value otherwise.
 
 `func (o *AccountInfoRef) GetUuidOk() (*string, bool)`
 
-GetUuidOk returns a tuple with the Uuid field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUuidOk returns a tuple with the Uuid field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUuid
 
@@ -75,8 +70,7 @@ GetNativeIdentity returns the NativeIdentity field if non-nil, zero value otherw
 
 `func (o *AccountInfoRef) GetNativeIdentityOk() (*string, bool)`
 
-GetNativeIdentityOk returns a tuple with the NativeIdentity field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNativeIdentityOk returns a tuple with the NativeIdentity field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNativeIdentity
 
@@ -100,8 +94,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *AccountInfoRef) GetTypeOk() (*DtoType, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -125,8 +118,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *AccountInfoRef) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -150,8 +142,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *AccountInfoRef) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -164,5 +155,3 @@ SetName sets Name field to given value.
 `func (o *AccountInfoRef) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

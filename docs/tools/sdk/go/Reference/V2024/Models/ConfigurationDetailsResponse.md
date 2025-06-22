@@ -4,22 +4,35 @@ title: ConfigurationDetailsResponse
 pagination_label: ConfigurationDetailsResponse
 sidebar_label: ConfigurationDetailsResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ConfigurationDetailsResponse', 'V2024ConfigurationDetailsResponse'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ConfigurationDetailsResponse',
+    'V2024ConfigurationDetailsResponse',
+  ]
 slug: /tools/sdk/go/v2024/models/configuration-details-response
-tags: ['SDK', 'Software Development Kit', 'ConfigurationDetailsResponse', 'V2024ConfigurationDetailsResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ConfigurationDetailsResponse',
+    'V2024ConfigurationDetailsResponse',
+  ]
 ---
 
 # ConfigurationDetailsResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ConfigType** | Pointer to [**ConfigTypeEnum**](config-type-enum) |  | [optional] 
-**TargetIdentity** | Pointer to [**Identity1**](identity1) |  | [optional] 
-**StartDate** | Pointer to **SailPointTime** | The date from which to start reassigning work items | [optional] 
-**EndDate** | Pointer to **SailPointTime** | The date from which to stop reassigning work items.  If this is an empty string it indicates a permanent reassignment. | [optional] 
-**AuditDetails** | Pointer to [**AuditDetails**](audit-details) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ConfigType** | Pointer to [**ConfigTypeEnum**](config-type-enum) |  | [optional] |
+| **TargetIdentity** | Pointer to [**Identity1**](identity1) |  | [optional] |
+| **StartDate** | Pointer to **SailPointTime** | The date from which to start reassigning work items | [optional] |
+| **EndDate** | Pointer to **SailPointTime** | The date from which to stop reassigning work items. If this is an empty string it indicates a permanent reassignment. | [optional] |
+| **AuditDetails** | Pointer to [**AuditDetails**](audit-details) |  | [optional] |
 
 ## Methods
 
@@ -27,18 +40,13 @@ Name | Type | Description | Notes
 
 `func NewConfigurationDetailsResponse() *ConfigurationDetailsResponse`
 
-NewConfigurationDetailsResponse instantiates a new ConfigurationDetailsResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewConfigurationDetailsResponse instantiates a new ConfigurationDetailsResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewConfigurationDetailsResponseWithDefaults
 
 `func NewConfigurationDetailsResponseWithDefaults() *ConfigurationDetailsResponse`
 
-NewConfigurationDetailsResponseWithDefaults instantiates a new ConfigurationDetailsResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewConfigurationDetailsResponseWithDefaults instantiates a new ConfigurationDetailsResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetConfigType
 
@@ -50,8 +58,7 @@ GetConfigType returns the ConfigType field if non-nil, zero value otherwise.
 
 `func (o *ConfigurationDetailsResponse) GetConfigTypeOk() (*ConfigTypeEnum, bool)`
 
-GetConfigTypeOk returns a tuple with the ConfigType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConfigTypeOk returns a tuple with the ConfigType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConfigType
 
@@ -75,8 +82,7 @@ GetTargetIdentity returns the TargetIdentity field if non-nil, zero value otherw
 
 `func (o *ConfigurationDetailsResponse) GetTargetIdentityOk() (*Identity1, bool)`
 
-GetTargetIdentityOk returns a tuple with the TargetIdentity field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTargetIdentityOk returns a tuple with the TargetIdentity field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTargetIdentity
 
@@ -100,8 +106,7 @@ GetStartDate returns the StartDate field if non-nil, zero value otherwise.
 
 `func (o *ConfigurationDetailsResponse) GetStartDateOk() (*SailPointTime, bool)`
 
-GetStartDateOk returns a tuple with the StartDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStartDateOk returns a tuple with the StartDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStartDate
 
@@ -125,8 +130,7 @@ GetEndDate returns the EndDate field if non-nil, zero value otherwise.
 
 `func (o *ConfigurationDetailsResponse) GetEndDateOk() (*SailPointTime, bool)`
 
-GetEndDateOk returns a tuple with the EndDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEndDateOk returns a tuple with the EndDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEndDate
 
@@ -150,8 +154,7 @@ GetAuditDetails returns the AuditDetails field if non-nil, zero value otherwise.
 
 `func (o *ConfigurationDetailsResponse) GetAuditDetailsOk() (*AuditDetails, bool)`
 
-GetAuditDetailsOk returns a tuple with the AuditDetails field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAuditDetailsOk returns a tuple with the AuditDetails field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAuditDetails
 
@@ -164,5 +167,3 @@ SetAuditDetails sets AuditDetails field to given value.
 `func (o *ConfigurationDetailsResponse) HasAuditDetails() bool`
 
 HasAuditDetails returns a boolean if a field has been set.
-
-

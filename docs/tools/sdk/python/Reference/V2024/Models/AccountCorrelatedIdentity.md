@@ -4,9 +4,22 @@ title: AccountCorrelatedIdentity
 pagination_label: AccountCorrelatedIdentity
 sidebar_label: AccountCorrelatedIdentity
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccountCorrelatedIdentity', 'V2024AccountCorrelatedIdentity'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccountCorrelatedIdentity',
+    'V2024AccountCorrelatedIdentity',
+  ]
 slug: /tools/sdk/python/v2024/models/account-correlated-identity
-tags: ['SDK', 'Software Development Kit', 'AccountCorrelatedIdentity', 'V2024AccountCorrelatedIdentity']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountCorrelatedIdentity',
+    'V2024AccountCorrelatedIdentity',
+  ]
 ---
 
 # AccountCorrelatedIdentity
@@ -15,11 +28,12 @@ Identity the account is correlated with.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] | DTO type of the identity the account is correlated with. | [required]
-**id** | **str** | ID of the identity the account is correlated with. | [required]
-**name** | **str** | Display name of the identity the account is correlated with. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'IDENTITY' ] | DTO type of the identity the account is correlated with. | [required] |
+| **id** | **str** | ID of the identity the account is correlated with. | [required] |
+| **name** | **str** | Display name of the identity the account is correlated with. | [required] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Michael Michaels'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

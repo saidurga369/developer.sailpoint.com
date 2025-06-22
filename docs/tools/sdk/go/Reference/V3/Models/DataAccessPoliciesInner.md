@@ -4,18 +4,25 @@ title: DataAccessPoliciesInner
 pagination_label: DataAccessPoliciesInner
 sidebar_label: DataAccessPoliciesInner
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'DataAccessPoliciesInner', 'DataAccessPoliciesInner'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'DataAccessPoliciesInner', 'DataAccessPoliciesInner']
 slug: /tools/sdk/go/v3/models/data-access-policies-inner
-tags: ['SDK', 'Software Development Kit', 'DataAccessPoliciesInner', 'DataAccessPoliciesInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'DataAccessPoliciesInner',
+    'DataAccessPoliciesInner',
+  ]
 ---
 
 # DataAccessPoliciesInner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Value** | Pointer to **string** | Value of the policy | [optional] 
+| Name      | Type                  | Description         | Notes      |
+| --------- | --------------------- | ------------------- | ---------- |
+| **Value** | Pointer to **string** | Value of the policy | [optional] |
 
 ## Methods
 
@@ -23,18 +30,13 @@ Name | Type | Description | Notes
 
 `func NewDataAccessPoliciesInner() *DataAccessPoliciesInner`
 
-NewDataAccessPoliciesInner instantiates a new DataAccessPoliciesInner object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewDataAccessPoliciesInner instantiates a new DataAccessPoliciesInner object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewDataAccessPoliciesInnerWithDefaults
 
 `func NewDataAccessPoliciesInnerWithDefaults() *DataAccessPoliciesInner`
 
-NewDataAccessPoliciesInnerWithDefaults instantiates a new DataAccessPoliciesInner object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewDataAccessPoliciesInnerWithDefaults instantiates a new DataAccessPoliciesInner object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetValue
 
@@ -46,8 +48,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *DataAccessPoliciesInner) GetValueOk() (*string, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -60,5 +61,3 @@ SetValue sets Value field to given value.
 `func (o *DataAccessPoliciesInner) HasValue() bool`
 
 HasValue returns a boolean if a field has been set.
-
-

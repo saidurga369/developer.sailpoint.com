@@ -4,9 +4,16 @@ title: ManagedClientStatus
 pagination_label: ManagedClientStatus
 sidebar_label: ManagedClientStatus
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ManagedClientStatus', 'V2024ManagedClientStatus'] 
+keywords:
+  ['python', 'Python', 'sdk', 'ManagedClientStatus', 'V2024ManagedClientStatus']
 slug: /tools/sdk/python/v2024/models/managed-client-status
-tags: ['SDK', 'Software Development Kit', 'ManagedClientStatus', 'V2024ManagedClientStatus']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ManagedClientStatus',
+    'V2024ManagedClientStatus',
+  ]
 ---
 
 # ManagedClientStatus
@@ -15,12 +22,13 @@ Managed Client Status
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**body** | **object** | ManagedClientStatus body information | [required]
-**status** | [**ManagedClientStatusCode**](managed-client-status-code) |  | [required]
-**type** | [**ManagedClientType**](managed-client-type) |  | [required]
-**timestamp** | **datetime** | timestamp on the Client Status update | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **body** | **object** | ManagedClientStatus body information | [required] |
+| **status** | [**ManagedClientStatusCode**](managed-client-status-code) |  | [required] |
+| **type** | [**ManagedClientType**](managed-client-type) |  | [required] |
+| **timestamp** | **datetime** | timestamp on the Client Status update | [required] |
+
 }
 
 ## Example
@@ -36,5 +44,5 @@ timestamp='2020-01-01T00:00Z'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

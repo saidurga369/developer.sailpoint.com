@@ -4,9 +4,22 @@ title: PreApprovalTriggerDetails
 pagination_label: PreApprovalTriggerDetails
 sidebar_label: PreApprovalTriggerDetails
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'PreApprovalTriggerDetails', 'BetaPreApprovalTriggerDetails'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'PreApprovalTriggerDetails',
+    'BetaPreApprovalTriggerDetails',
+  ]
 slug: /tools/sdk/python/beta/models/pre-approval-trigger-details
-tags: ['SDK', 'Software Development Kit', 'PreApprovalTriggerDetails', 'BetaPreApprovalTriggerDetails']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PreApprovalTriggerDetails',
+    'BetaPreApprovalTriggerDetails',
+  ]
 ---
 
 # PreApprovalTriggerDetails
@@ -15,11 +28,12 @@ Provides additional details about the pre-approval trigger for this request.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**comment** | **str** | Comment left for the pre-approval decision | [optional] 
-**reviewer** | **str** | The reviewer of the pre-approval decision | [optional] 
-**decision** |  **Enum** [  'APPROVED',    'REJECTED' ] | The decision of the pre-approval trigger | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **comment** | **str** | Comment left for the pre-approval decision | [optional] |
+| **reviewer** | **str** | The reviewer of the pre-approval decision | [optional] |
+| **decision** | **Enum** [ 'APPROVED', 'REJECTED' ] | The decision of the pre-approval trigger | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ decision='APPROVED'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

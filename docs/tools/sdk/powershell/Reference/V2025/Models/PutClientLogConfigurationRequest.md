@@ -4,27 +4,40 @@ title: PutClientLogConfigurationRequest
 pagination_label: PutClientLogConfigurationRequest
 sidebar_label: PutClientLogConfigurationRequest
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'PutClientLogConfigurationRequest', 'V2025PutClientLogConfigurationRequest'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'PutClientLogConfigurationRequest',
+    'V2025PutClientLogConfigurationRequest',
+  ]
 slug: /tools/sdk/powershell/v2025/models/put-client-log-configuration-request
-tags: ['SDK', 'Software Development Kit', 'PutClientLogConfigurationRequest', 'V2025PutClientLogConfigurationRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PutClientLogConfigurationRequest',
+    'V2025PutClientLogConfigurationRequest',
+  ]
 ---
-
 
 # PutClientLogConfigurationRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ClientId** | **String** | Log configuration's client ID | [optional] 
-**DurationMinutes** | **Int32** | Duration in minutes for log configuration to remain in effect before resetting to defaults. | [optional] [default to 240]
-**RootLevel** | [**StandardLevel**](standard-level) |  | [required]
-**LogLevels** | [**map[string]StandardLevel**](standard-level) | Mapping of identifiers to Standard Log Level values | [optional] 
-**Expiration** | **System.DateTime** | Expiration date-time of the log configuration request.  Can be no greater than 24 hours from current date-time. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ClientId** | **String** | Log configuration's client ID | [optional] |
+| **DurationMinutes** | **Int32** | Duration in minutes for log configuration to remain in effect before resetting to defaults. | [optional] [default to 240] |
+| **RootLevel** | [**StandardLevel**](standard-level) |  | [required] |
+| **LogLevels** | [**map[string]StandardLevel**](standard-level) | Mapping of identifiers to Standard Log Level values | [optional] |
+| **Expiration** | **System.DateTime** | Expiration date-time of the log configuration request. Can be no greater than 24 hours from current date-time. | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $PutClientLogConfigurationRequest = Initialize-V2025PutClientLogConfigurationRequest  -ClientId 3a38a51992e8445ab51a549c0a70ee66 `
  -DurationMinutes 120 `
@@ -34,10 +47,9 @@ $PutClientLogConfigurationRequest = Initialize-V2025PutClientLogConfigurationReq
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $PutClientLogConfigurationRequest | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

@@ -4,21 +4,30 @@ title: RoleMembershipSelectorType
 pagination_label: RoleMembershipSelectorType
 sidebar_label: RoleMembershipSelectorType
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'RoleMembershipSelectorType', 'V2024RoleMembershipSelectorType'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'RoleMembershipSelectorType',
+    'V2024RoleMembershipSelectorType',
+  ]
 slug: /tools/sdk/powershell/v2024/models/role-membership-selector-type
-tags: ['SDK', 'Software Development Kit', 'RoleMembershipSelectorType', 'V2024RoleMembershipSelectorType']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMembershipSelectorType',
+    'V2024RoleMembershipSelectorType',
+  ]
 ---
-
 
 # RoleMembershipSelectorType
 
 ## Enum
 
+- `STANDARD` (value: `"STANDARD"`)
 
-* `STANDARD` (value: `"STANDARD"`)
+- `IDENTITY_LIST` (value: `"IDENTITY_LIST"`)
 
-* `IDENTITY_LIST` (value: `"IDENTITY_LIST"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

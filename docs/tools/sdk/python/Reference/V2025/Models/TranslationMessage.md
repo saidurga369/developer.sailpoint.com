@@ -4,20 +4,27 @@ title: TranslationMessage
 pagination_label: TranslationMessage
 sidebar_label: TranslationMessage
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'TranslationMessage', 'V2025TranslationMessage'] 
+keywords:
+  ['python', 'Python', 'sdk', 'TranslationMessage', 'V2025TranslationMessage']
 slug: /tools/sdk/python/v2025/models/translation-message
-tags: ['SDK', 'Software Development Kit', 'TranslationMessage', 'V2025TranslationMessage']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'TranslationMessage',
+    'V2025TranslationMessage',
+  ]
 ---
 
 # TranslationMessage
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**key** | **str** | The key of the translation message | [optional] 
-**values** | **[]str** | The values corresponding to the translation messages | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **key** | **str** | The key of the translation message | [optional] |
+| **values** | **[]str** | The values corresponding to the translation messages | [optional] |
+
 }
 
 ## Example
@@ -31,5 +38,5 @@ values=[75, department]
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

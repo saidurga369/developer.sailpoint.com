@@ -4,20 +4,33 @@ title: WorkflowExecutionEvent
 pagination_label: WorkflowExecutionEvent
 sidebar_label: WorkflowExecutionEvent
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'WorkflowExecutionEvent', 'V2025WorkflowExecutionEvent'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'WorkflowExecutionEvent',
+    'V2025WorkflowExecutionEvent',
+  ]
 slug: /tools/sdk/go/v2025/models/workflow-execution-event
-tags: ['SDK', 'Software Development Kit', 'WorkflowExecutionEvent', 'V2025WorkflowExecutionEvent']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'WorkflowExecutionEvent',
+    'V2025WorkflowExecutionEvent',
+  ]
 ---
 
 # WorkflowExecutionEvent
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | The type of event | [optional] 
-**Timestamp** | Pointer to **SailPointTime** | The date-time when the event occurred | [optional] 
-**Attributes** | Pointer to **map[string]interface{}** | Additional attributes associated with the event | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to **string** | The type of event | [optional] |
+| **Timestamp** | Pointer to **SailPointTime** | The date-time when the event occurred | [optional] |
+| **Attributes** | Pointer to **map[string]interface{}** | Additional attributes associated with the event | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewWorkflowExecutionEvent() *WorkflowExecutionEvent`
 
-NewWorkflowExecutionEvent instantiates a new WorkflowExecutionEvent object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewWorkflowExecutionEvent instantiates a new WorkflowExecutionEvent object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewWorkflowExecutionEventWithDefaults
 
 `func NewWorkflowExecutionEventWithDefaults() *WorkflowExecutionEvent`
 
-NewWorkflowExecutionEventWithDefaults instantiates a new WorkflowExecutionEvent object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewWorkflowExecutionEventWithDefaults instantiates a new WorkflowExecutionEvent object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -48,8 +56,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *WorkflowExecutionEvent) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -73,8 +80,7 @@ GetTimestamp returns the Timestamp field if non-nil, zero value otherwise.
 
 `func (o *WorkflowExecutionEvent) GetTimestampOk() (*SailPointTime, bool)`
 
-GetTimestampOk returns a tuple with the Timestamp field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTimestampOk returns a tuple with the Timestamp field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTimestamp
 
@@ -98,8 +104,7 @@ GetAttributes returns the Attributes field if non-nil, zero value otherwise.
 
 `func (o *WorkflowExecutionEvent) GetAttributesOk() (*map[string]interface{}, bool)`
 
-GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributes
 
@@ -112,5 +117,3 @@ SetAttributes sets Attributes field to given value.
 `func (o *WorkflowExecutionEvent) HasAttributes() bool`
 
 HasAttributes returns a boolean if a field has been set.
-
-

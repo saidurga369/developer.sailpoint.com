@@ -4,23 +4,30 @@ title: AccessRequestPhases
 pagination_label: AccessRequestPhases
 sidebar_label: AccessRequestPhases
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessRequestPhases', 'BetaAccessRequestPhases'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'AccessRequestPhases', 'BetaAccessRequestPhases']
 slug: /tools/sdk/go/beta/models/access-request-phases
-tags: ['SDK', 'Software Development Kit', 'AccessRequestPhases', 'BetaAccessRequestPhases']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessRequestPhases',
+    'BetaAccessRequestPhases',
+  ]
 ---
 
 # AccessRequestPhases
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Started** | Pointer to **SailPointTime** | The time that this phase started. | [optional] 
-**Finished** | Pointer to **NullableTime** | The time that this phase finished. | [optional] 
-**Name** | Pointer to **string** | The name of this phase. | [optional] 
-**State** | Pointer to **string** | The state of this phase. | [optional] 
-**Result** | Pointer to **NullableString** | The state of this phase. | [optional] 
-**PhaseReference** | Pointer to **NullableString** | A reference to another object on the RequestedItemStatus that contains more details about the phase. Note that for the Provisioning phase, this will be empty if there are no manual work items. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Started** | Pointer to **SailPointTime** | The time that this phase started. | [optional] |
+| **Finished** | Pointer to **NullableTime** | The time that this phase finished. | [optional] |
+| **Name** | Pointer to **string** | The name of this phase. | [optional] |
+| **State** | Pointer to **string** | The state of this phase. | [optional] |
+| **Result** | Pointer to **NullableString** | The state of this phase. | [optional] |
+| **PhaseReference** | Pointer to **NullableString** | A reference to another object on the RequestedItemStatus that contains more details about the phase. Note that for the Provisioning phase, this will be empty if there are no manual work items. | [optional] |
 
 ## Methods
 
@@ -28,18 +35,13 @@ Name | Type | Description | Notes
 
 `func NewAccessRequestPhases() *AccessRequestPhases`
 
-NewAccessRequestPhases instantiates a new AccessRequestPhases object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessRequestPhases instantiates a new AccessRequestPhases object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessRequestPhasesWithDefaults
 
 `func NewAccessRequestPhasesWithDefaults() *AccessRequestPhases`
 
-NewAccessRequestPhasesWithDefaults instantiates a new AccessRequestPhases object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessRequestPhasesWithDefaults instantiates a new AccessRequestPhases object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetStarted
 
@@ -51,8 +53,7 @@ GetStarted returns the Started field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestPhases) GetStartedOk() (*SailPointTime, bool)`
 
-GetStartedOk returns a tuple with the Started field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStartedOk returns a tuple with the Started field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStarted
 
@@ -76,8 +77,7 @@ GetFinished returns the Finished field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestPhases) GetFinishedOk() (*SailPointTime, bool)`
 
-GetFinishedOk returns a tuple with the Finished field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFinishedOk returns a tuple with the Finished field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFinished
 
@@ -95,12 +95,14 @@ HasFinished returns a boolean if a field has been set.
 
 `func (o *AccessRequestPhases) SetFinishedNil(b bool)`
 
- SetFinishedNil sets the value for Finished to be an explicit nil
+SetFinishedNil sets the value for Finished to be an explicit nil
 
 ### UnsetFinished
+
 `func (o *AccessRequestPhases) UnsetFinished()`
 
 UnsetFinished ensures that no value is present for Finished, not even an explicit nil
+
 ### GetName
 
 `func (o *AccessRequestPhases) GetName() string`
@@ -111,8 +113,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestPhases) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -136,8 +137,7 @@ GetState returns the State field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestPhases) GetStateOk() (*string, bool)`
 
-GetStateOk returns a tuple with the State field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStateOk returns a tuple with the State field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetState
 
@@ -161,8 +161,7 @@ GetResult returns the Result field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestPhases) GetResultOk() (*string, bool)`
 
-GetResultOk returns a tuple with the Result field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetResultOk returns a tuple with the Result field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetResult
 
@@ -180,12 +179,14 @@ HasResult returns a boolean if a field has been set.
 
 `func (o *AccessRequestPhases) SetResultNil(b bool)`
 
- SetResultNil sets the value for Result to be an explicit nil
+SetResultNil sets the value for Result to be an explicit nil
 
 ### UnsetResult
+
 `func (o *AccessRequestPhases) UnsetResult()`
 
 UnsetResult ensures that no value is present for Result, not even an explicit nil
+
 ### GetPhaseReference
 
 `func (o *AccessRequestPhases) GetPhaseReference() string`
@@ -196,8 +197,7 @@ GetPhaseReference returns the PhaseReference field if non-nil, zero value otherw
 
 `func (o *AccessRequestPhases) GetPhaseReferenceOk() (*string, bool)`
 
-GetPhaseReferenceOk returns a tuple with the PhaseReference field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPhaseReferenceOk returns a tuple with the PhaseReference field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPhaseReference
 
@@ -215,10 +215,10 @@ HasPhaseReference returns a boolean if a field has been set.
 
 `func (o *AccessRequestPhases) SetPhaseReferenceNil(b bool)`
 
- SetPhaseReferenceNil sets the value for PhaseReference to be an explicit nil
+SetPhaseReferenceNil sets the value for PhaseReference to be an explicit nil
 
 ### UnsetPhaseReference
+
 `func (o *AccessRequestPhases) UnsetPhaseReference()`
 
 UnsetPhaseReference ensures that no value is present for PhaseReference, not even an explicit nil
-

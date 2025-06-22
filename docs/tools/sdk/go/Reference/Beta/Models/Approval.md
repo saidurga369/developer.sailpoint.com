@@ -4,7 +4,7 @@ title: Approval
 pagination_label: Approval
 sidebar_label: Approval
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Approval', 'BetaApproval'] 
+keywords: ['go', 'Golang', 'sdk', 'Approval', 'BetaApproval']
 slug: /tools/sdk/go/beta/models/approval
 tags: ['SDK', 'Software Development Kit', 'Approval', 'BetaApproval']
 ---
@@ -13,25 +13,25 @@ tags: ['SDK', 'Software Development Kit', 'Approval', 'BetaApproval']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ApprovalId** | Pointer to **string** | The Approval ID | [optional] 
-**Approvers** | Pointer to [**[]ApprovalIdentity**](approval-identity) | Object representation of an approver of an approval | [optional] 
-**CreatedDate** | Pointer to **string** | Date the approval was created | [optional] 
-**Type** | Pointer to **string** | Type of approval | [optional] 
-**Name** | Pointer to [**[]ApprovalName**](approval-name) | The name of the approval for a given locale | [optional] 
-**BatchRequest** | Pointer to [**ApprovalBatch**](approval-batch) | The name of the approval for a given locale | [optional] 
-**Description** | Pointer to [**[]ApprovalDescription**](approval-description) | The description of the approval for a given locale | [optional] 
-**Priority** | Pointer to **string** | The priority of the approval | [optional] 
-**Requester** | Pointer to [**ApprovalIdentity**](approval-identity) | Object representation of the requester of the approval | [optional] 
-**Comments** | Pointer to [**[]ApprovalComment**](approval-comment) | Object representation of a comment on the approval | [optional] 
-**ApprovedBy** | Pointer to [**[]ApprovalIdentity**](approval-identity) | Array of approvers who have approved the approval | [optional] 
-**RejectedBy** | Pointer to [**[]ApprovalIdentity**](approval-identity) | Array of approvers who have rejected the approval | [optional] 
-**CompletedDate** | Pointer to **string** | Date the approval was completed | [optional] 
-**ApprovalCriteria** | Pointer to **string** | Criteria that needs to be met for an approval to be marked as approved | [optional] 
-**Status** | Pointer to **string** | The current status of the approval | [optional] 
-**AdditionalAttributes** | Pointer to **string** | Json string representing additional attributes known about the object to be approved. | [optional] 
-**ReferenceData** | Pointer to [**[]ApprovalReference**](approval-reference) | Reference data related to the approval | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ApprovalId** | Pointer to **string** | The Approval ID | [optional] |
+| **Approvers** | Pointer to [**[]ApprovalIdentity**](approval-identity) | Object representation of an approver of an approval | [optional] |
+| **CreatedDate** | Pointer to **string** | Date the approval was created | [optional] |
+| **Type** | Pointer to **string** | Type of approval | [optional] |
+| **Name** | Pointer to [**[]ApprovalName**](approval-name) | The name of the approval for a given locale | [optional] |
+| **BatchRequest** | Pointer to [**ApprovalBatch**](approval-batch) | The name of the approval for a given locale | [optional] |
+| **Description** | Pointer to [**[]ApprovalDescription**](approval-description) | The description of the approval for a given locale | [optional] |
+| **Priority** | Pointer to **string** | The priority of the approval | [optional] |
+| **Requester** | Pointer to [**ApprovalIdentity**](approval-identity) | Object representation of the requester of the approval | [optional] |
+| **Comments** | Pointer to [**[]ApprovalComment**](approval-comment) | Object representation of a comment on the approval | [optional] |
+| **ApprovedBy** | Pointer to [**[]ApprovalIdentity**](approval-identity) | Array of approvers who have approved the approval | [optional] |
+| **RejectedBy** | Pointer to [**[]ApprovalIdentity**](approval-identity) | Array of approvers who have rejected the approval | [optional] |
+| **CompletedDate** | Pointer to **string** | Date the approval was completed | [optional] |
+| **ApprovalCriteria** | Pointer to **string** | Criteria that needs to be met for an approval to be marked as approved | [optional] |
+| **Status** | Pointer to **string** | The current status of the approval | [optional] |
+| **AdditionalAttributes** | Pointer to **string** | Json string representing additional attributes known about the object to be approved. | [optional] |
+| **ReferenceData** | Pointer to [**[]ApprovalReference**](approval-reference) | Reference data related to the approval | [optional] |
 
 ## Methods
 
@@ -39,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewApproval() *Approval`
 
-NewApproval instantiates a new Approval object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewApproval instantiates a new Approval object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewApprovalWithDefaults
 
 `func NewApprovalWithDefaults() *Approval`
 
-NewApprovalWithDefaults instantiates a new Approval object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewApprovalWithDefaults instantiates a new Approval object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetApprovalId
 
@@ -62,8 +57,7 @@ GetApprovalId returns the ApprovalId field if non-nil, zero value otherwise.
 
 `func (o *Approval) GetApprovalIdOk() (*string, bool)`
 
-GetApprovalIdOk returns a tuple with the ApprovalId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApprovalIdOk returns a tuple with the ApprovalId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApprovalId
 
@@ -87,8 +81,7 @@ GetApprovers returns the Approvers field if non-nil, zero value otherwise.
 
 `func (o *Approval) GetApproversOk() (*[]ApprovalIdentity, bool)`
 
-GetApproversOk returns a tuple with the Approvers field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApproversOk returns a tuple with the Approvers field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApprovers
 
@@ -112,8 +105,7 @@ GetCreatedDate returns the CreatedDate field if non-nil, zero value otherwise.
 
 `func (o *Approval) GetCreatedDateOk() (*string, bool)`
 
-GetCreatedDateOk returns a tuple with the CreatedDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedDateOk returns a tuple with the CreatedDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreatedDate
 
@@ -137,8 +129,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *Approval) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -162,8 +153,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *Approval) GetNameOk() (*[]ApprovalName, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -187,8 +177,7 @@ GetBatchRequest returns the BatchRequest field if non-nil, zero value otherwise.
 
 `func (o *Approval) GetBatchRequestOk() (*ApprovalBatch, bool)`
 
-GetBatchRequestOk returns a tuple with the BatchRequest field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetBatchRequestOk returns a tuple with the BatchRequest field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetBatchRequest
 
@@ -212,8 +201,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *Approval) GetDescriptionOk() (*[]ApprovalDescription, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -237,8 +225,7 @@ GetPriority returns the Priority field if non-nil, zero value otherwise.
 
 `func (o *Approval) GetPriorityOk() (*string, bool)`
 
-GetPriorityOk returns a tuple with the Priority field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPriorityOk returns a tuple with the Priority field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPriority
 
@@ -262,8 +249,7 @@ GetRequester returns the Requester field if non-nil, zero value otherwise.
 
 `func (o *Approval) GetRequesterOk() (*ApprovalIdentity, bool)`
 
-GetRequesterOk returns a tuple with the Requester field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequesterOk returns a tuple with the Requester field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequester
 
@@ -287,8 +273,7 @@ GetComments returns the Comments field if non-nil, zero value otherwise.
 
 `func (o *Approval) GetCommentsOk() (*[]ApprovalComment, bool)`
 
-GetCommentsOk returns a tuple with the Comments field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCommentsOk returns a tuple with the Comments field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetComments
 
@@ -312,8 +297,7 @@ GetApprovedBy returns the ApprovedBy field if non-nil, zero value otherwise.
 
 `func (o *Approval) GetApprovedByOk() (*[]ApprovalIdentity, bool)`
 
-GetApprovedByOk returns a tuple with the ApprovedBy field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApprovedByOk returns a tuple with the ApprovedBy field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApprovedBy
 
@@ -337,8 +321,7 @@ GetRejectedBy returns the RejectedBy field if non-nil, zero value otherwise.
 
 `func (o *Approval) GetRejectedByOk() (*[]ApprovalIdentity, bool)`
 
-GetRejectedByOk returns a tuple with the RejectedBy field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRejectedByOk returns a tuple with the RejectedBy field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRejectedBy
 
@@ -362,8 +345,7 @@ GetCompletedDate returns the CompletedDate field if non-nil, zero value otherwis
 
 `func (o *Approval) GetCompletedDateOk() (*string, bool)`
 
-GetCompletedDateOk returns a tuple with the CompletedDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCompletedDateOk returns a tuple with the CompletedDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCompletedDate
 
@@ -387,8 +369,7 @@ GetApprovalCriteria returns the ApprovalCriteria field if non-nil, zero value ot
 
 `func (o *Approval) GetApprovalCriteriaOk() (*string, bool)`
 
-GetApprovalCriteriaOk returns a tuple with the ApprovalCriteria field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApprovalCriteriaOk returns a tuple with the ApprovalCriteria field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApprovalCriteria
 
@@ -412,8 +393,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *Approval) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -437,8 +417,7 @@ GetAdditionalAttributes returns the AdditionalAttributes field if non-nil, zero 
 
 `func (o *Approval) GetAdditionalAttributesOk() (*string, bool)`
 
-GetAdditionalAttributesOk returns a tuple with the AdditionalAttributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAdditionalAttributesOk returns a tuple with the AdditionalAttributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAdditionalAttributes
 
@@ -462,8 +441,7 @@ GetReferenceData returns the ReferenceData field if non-nil, zero value otherwis
 
 `func (o *Approval) GetReferenceDataOk() (*[]ApprovalReference, bool)`
 
-GetReferenceDataOk returns a tuple with the ReferenceData field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReferenceDataOk returns a tuple with the ReferenceData field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReferenceData
 
@@ -476,5 +454,3 @@ SetReferenceData sets ReferenceData field to given value.
 `func (o *Approval) HasReferenceData() bool`
 
 HasReferenceData returns a boolean if a field has been set.
-
-

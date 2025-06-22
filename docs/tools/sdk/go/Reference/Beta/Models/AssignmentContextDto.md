@@ -4,20 +4,27 @@ title: AssignmentContextDto
 pagination_label: AssignmentContextDto
 sidebar_label: AssignmentContextDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AssignmentContextDto', 'BetaAssignmentContextDto'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'AssignmentContextDto', 'BetaAssignmentContextDto']
 slug: /tools/sdk/go/beta/models/assignment-context-dto
-tags: ['SDK', 'Software Development Kit', 'AssignmentContextDto', 'BetaAssignmentContextDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AssignmentContextDto',
+    'BetaAssignmentContextDto',
+  ]
 ---
 
 # AssignmentContextDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Requested** | Pointer to [**AccessRequestContext**](access-request-context) |  | [optional] 
-**Matched** | Pointer to [**[]RoleMatchDto**](role-match-dto) |  | [optional] 
-**ComputedDate** | Pointer to **string** | Date that the assignment will was evaluated | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Requested** | Pointer to [**AccessRequestContext**](access-request-context) |  | [optional] |
+| **Matched** | Pointer to [**[]RoleMatchDto**](role-match-dto) |  | [optional] |
+| **ComputedDate** | Pointer to **string** | Date that the assignment will was evaluated | [optional] |
 
 ## Methods
 
@@ -25,18 +32,13 @@ Name | Type | Description | Notes
 
 `func NewAssignmentContextDto() *AssignmentContextDto`
 
-NewAssignmentContextDto instantiates a new AssignmentContextDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAssignmentContextDto instantiates a new AssignmentContextDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAssignmentContextDtoWithDefaults
 
 `func NewAssignmentContextDtoWithDefaults() *AssignmentContextDto`
 
-NewAssignmentContextDtoWithDefaults instantiates a new AssignmentContextDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAssignmentContextDtoWithDefaults instantiates a new AssignmentContextDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetRequested
 
@@ -48,8 +50,7 @@ GetRequested returns the Requested field if non-nil, zero value otherwise.
 
 `func (o *AssignmentContextDto) GetRequestedOk() (*AccessRequestContext, bool)`
 
-GetRequestedOk returns a tuple with the Requested field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestedOk returns a tuple with the Requested field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequested
 
@@ -73,8 +74,7 @@ GetMatched returns the Matched field if non-nil, zero value otherwise.
 
 `func (o *AssignmentContextDto) GetMatchedOk() (*[]RoleMatchDto, bool)`
 
-GetMatchedOk returns a tuple with the Matched field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMatchedOk returns a tuple with the Matched field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMatched
 
@@ -98,8 +98,7 @@ GetComputedDate returns the ComputedDate field if non-nil, zero value otherwise.
 
 `func (o *AssignmentContextDto) GetComputedDateOk() (*string, bool)`
 
-GetComputedDateOk returns a tuple with the ComputedDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetComputedDateOk returns a tuple with the ComputedDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetComputedDate
 
@@ -112,5 +111,3 @@ SetComputedDate sets ComputedDate field to given value.
 `func (o *AssignmentContextDto) HasComputedDate() bool`
 
 HasComputedDate returns a boolean if a field has been set.
-
-

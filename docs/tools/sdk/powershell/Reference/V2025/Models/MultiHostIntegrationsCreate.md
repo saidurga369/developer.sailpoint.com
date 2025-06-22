@@ -4,31 +4,44 @@ title: MultiHostIntegrationsCreate
 pagination_label: MultiHostIntegrationsCreate
 sidebar_label: MultiHostIntegrationsCreate
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'MultiHostIntegrationsCreate', 'V2025MultiHostIntegrationsCreate'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'MultiHostIntegrationsCreate',
+    'V2025MultiHostIntegrationsCreate',
+  ]
 slug: /tools/sdk/powershell/v2025/models/multi-host-integrations-create
-tags: ['SDK', 'Software Development Kit', 'MultiHostIntegrationsCreate', 'V2025MultiHostIntegrationsCreate']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'MultiHostIntegrationsCreate',
+    'V2025MultiHostIntegrationsCreate',
+  ]
 ---
-
 
 # MultiHostIntegrationsCreate
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | **String** | Multi-Host Integration's human-readable name. | [required]
-**Description** | **String** | Multi-Host Integration's human-readable description. | [required]
-**Owner** | [**SourceOwner**](source-owner) |  | [required]
-**Cluster** | [**SourceCluster**](source-cluster) |  | [optional] 
-**Connector** | **String** | Connector script name. | [required]
-**ConnectorAttributes** | [**map[string]AnyType**]https://learn.microsoft.com/en-us/powershell/scripting/lang-spec/chapter-04?view=powershell-7.4 | Multi-Host Integration specific configuration. User can add any number of additional attributes. e.g. maxSourcesPerAggGroup, maxAllowedSources etc. | [optional] 
-**ManagementWorkgroup** | [**SourceManagementWorkgroup**](source-management-workgroup) |  | [optional] 
-**Created** | **System.DateTime** | Date-time when the source was created | [optional] 
-**Modified** | **System.DateTime** | Date-time when the source was last modified. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | **String** | Multi-Host Integration's human-readable name. | [required] |
+| **Description** | **String** | Multi-Host Integration's human-readable description. | [required] |
+| **Owner** | [**SourceOwner**](source-owner) |  | [required] |
+| **Cluster** | [**SourceCluster**](source-cluster) |  | [optional] |
+| **Connector** | **String** | Connector script name. | [required] |
+| **ConnectorAttributes** | [**map[string]AnyType**]https://learn.microsoft.com/en-us/powershell/scripting/lang-spec/chapter-04?view=powershell-7.4 | Multi-Host Integration specific configuration. User can add any number of additional attributes. e.g. maxSourcesPerAggGroup, maxAllowedSources etc. | [optional] |
+| **ManagementWorkgroup** | [**SourceManagementWorkgroup**](source-management-workgroup) |  | [optional] |
+| **Created** | **System.DateTime** | Date-time when the source was created | [optional] |
+| **Modified** | **System.DateTime** | Date-time when the source was last modified. | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $MultiHostIntegrationsCreate = Initialize-V2025MultiHostIntegrationsCreate  -Name My Multi-Host Integration `
  -Description This is the Multi-Host Integration. `
@@ -42,10 +55,9 @@ $MultiHostIntegrationsCreate = Initialize-V2025MultiHostIntegrationsCreate  -Nam
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $MultiHostIntegrationsCreate | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

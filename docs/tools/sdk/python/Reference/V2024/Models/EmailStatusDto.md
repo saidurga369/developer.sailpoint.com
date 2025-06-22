@@ -4,22 +4,23 @@ title: EmailStatusDto
 pagination_label: EmailStatusDto
 sidebar_label: EmailStatusDto
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'EmailStatusDto', 'V2024EmailStatusDto'] 
+keywords: ['python', 'Python', 'sdk', 'EmailStatusDto', 'V2024EmailStatusDto']
 slug: /tools/sdk/python/v2024/models/email-status-dto
-tags: ['SDK', 'Software Development Kit', 'EmailStatusDto', 'V2024EmailStatusDto']
+tags:
+  ['SDK', 'Software Development Kit', 'EmailStatusDto', 'V2024EmailStatusDto']
 ---
 
 # EmailStatusDto
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**email** | **str** |  | [optional] 
-**is_verified_by_domain** | **bool** |  | [optional] 
-**verification_status** |  **Enum** [  'PENDING',    'SUCCESS',    'FAILED' ] |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** |  | [optional] |
+| **email** | **str** |  | [optional] |
+| **is_verified_by_domain** | **bool** |  | [optional] |
+| **verification_status** | **Enum** [ 'PENDING', 'SUCCESS', 'FAILED' ] |  | [optional] |
+
 }
 
 ## Example
@@ -35,5 +36,5 @@ verification_status='PENDING'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

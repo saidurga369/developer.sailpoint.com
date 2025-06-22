@@ -4,9 +4,22 @@ title: LifecyclestateDeleted
 pagination_label: LifecyclestateDeleted
 sidebar_label: LifecyclestateDeleted
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'LifecyclestateDeleted', 'V2024LifecyclestateDeleted'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'LifecyclestateDeleted',
+    'V2024LifecyclestateDeleted',
+  ]
 slug: /tools/sdk/python/v2024/models/lifecyclestate-deleted
-tags: ['SDK', 'Software Development Kit', 'LifecyclestateDeleted', 'V2024LifecyclestateDeleted']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'LifecyclestateDeleted',
+    'V2024LifecyclestateDeleted',
+  ]
 ---
 
 # LifecyclestateDeleted
@@ -15,11 +28,12 @@ Deleted lifecycle state.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'LIFECYCLE_STATE',    'TASK_RESULT' ] | Deleted lifecycle state's DTO type. | [optional] 
-**id** | **str** | Deleted lifecycle state ID. | [optional] 
-**name** | **str** | Deleted lifecycle state's display name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'LIFECYCLE_STATE', 'TASK_RESULT' ] | Deleted lifecycle state's DTO type. | [optional] |
+| **id** | **str** | Deleted lifecycle state ID. | [optional] |
+| **name** | **str** | Deleted lifecycle state's display name. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Contractor Lifecycle'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,47 +4,42 @@ title: Transforms
 pagination_label: Transforms
 sidebar_label: Transforms
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Transforms', 'V2025Transforms'] 
+keywords: ['go', 'Golang', 'sdk', 'Transforms', 'V2025Transforms']
 slug: /tools/sdk/go/v2025/methods/transforms
 tags: ['SDK', 'Software Development Kit', 'Transforms', 'V2025Transforms']
 ---
 
 # TransformsAPI
-  The purpose of this API is to expose functionality for the manipulation of Transform objects.
-Transforms are a form of configurable objects which define an easy way to manipulate attribute data without having
-to write code. 
+
+The purpose of this API is to expose functionality for the manipulation of Transform objects. Transforms are a form of configurable objects which define an easy way to manipulate attribute data without having to write code.
 
 Refer to [Transforms](https://developer.sailpoint.com/docs/extensibility/transforms/) for more information about transforms.
- 
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/v2025*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create-transform**](#create-transform) | **Post** `/transforms` | Create transform
-[**delete-transform**](#delete-transform) | **Delete** `/transforms/{id}` | Delete a transform
-[**get-transform**](#get-transform) | **Get** `/transforms/{id}` | Transform by id
-[**list-transforms**](#list-transforms) | **Get** `/transforms` | List transforms
-[**update-transform**](#update-transform) | **Put** `/transforms/{id}` | Update a transform
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**create-transform**](#create-transform) | **Post** `/transforms` | Create transform |
+| [**delete-transform**](#delete-transform) | **Delete** `/transforms/{id}` | Delete a transform |
+| [**get-transform**](#get-transform) | **Get** `/transforms/{id}` | Transform by id |
+| [**list-transforms**](#list-transforms) | **Get** `/transforms` | List transforms |
+| [**update-transform**](#update-transform) | **Put** `/transforms/{id}` | Update a transform |
 
 ## create-transform
-Create transform
-Creates a new transform object immediately. By default, the internal flag is set to false to indicate that this is a custom transform. Only SailPoint employees have the ability to create a transform with internal set to true. Newly created Transforms can be used in the Identity Profile mappings within the UI.
+
+Create transform Creates a new transform object immediately. By default, the internal flag is set to false to indicate that this is a custom transform. Only SailPoint employees have the ability to create a transform with internal set to true. Newly created Transforms can be used in the Identity Profile mappings within the UI.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/create-transform)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCreateTransformRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **transform** | [**Transform**](../models/transform) | The transform to be created. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **transform** | [**Transform**](../models/transform) | The transform to be created. |
 
 ### Return type
 
@@ -81,7 +76,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -99,31 +94,28 @@ func main() {
 [[Back to top]](#)
 
 ## delete-transform
-Delete a transform
-Deletes the transform specified by the given ID. Attempting to delete a transform that is used in one or more Identity Profile mappings will result in an error. If this occurs, you must first remove the transform from all mappings before deleting the transform.
+
+Delete a transform Deletes the transform specified by the given ID. Attempting to delete a transform that is used in one or more Identity Profile mappings will result in an error. If this occurs, you must first remove the transform from all mappings before deleting the transform.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/delete-transform)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | ID of the transform to delete | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | ID of the transform to delete |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteTransformRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -139,15 +131,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `2cd78adghjkja34jh2b1hkjhasuecd` // string | ID of the transform to delete # string | ID of the transform to delete
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -157,34 +149,31 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `TransformsAPI.DeleteTransform``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## get-transform
-Transform by id
-This API returns the transform specified by the given ID.
+
+Transform by id This API returns the transform specified by the given ID.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/get-transform)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | ID of the transform to retrieve | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | ID of the transform to retrieve |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetTransformRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -204,15 +193,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `2cd78adghjkja34jh2b1hkjhasuecd` // string | ID of the transform to retrieve # string | ID of the transform to retrieve
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -230,27 +219,24 @@ func main() {
 [[Back to top]](#)
 
 ## list-transforms
-List transforms
-Gets a list of all saved transform objects.
+
+List transforms Gets a list of all saved transform objects.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/list-transforms)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListTransformsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
- **name** | **string** | Name of the transform to retrieve from the list. | 
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **internal**: *eq*  **name**: *eq, sw* | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
+| **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false] |
+| **name** | **string** | Name of the transform to retrieve from the list. |
+| **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **internal**: _eq_ **name**: _eq, sw_ |
 
 ### Return type
 
@@ -270,8 +256,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -282,7 +268,7 @@ func main() {
     name := `ExampleTransformName123` // string | Name of the transform to retrieve from the list. (optional) # string | Name of the transform to retrieve from the list. (optional)
     filters := `name eq "Uppercase"` // string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **internal**: *eq*  **name**: *eq, sw* (optional) # string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **internal**: *eq*  **name**: *eq, sw* (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -300,28 +286,26 @@ func main() {
 [[Back to top]](#)
 
 ## update-transform
-Update a transform
-Replaces the transform specified by the given ID with the transform provided in the request body. Only the "attributes" field is mutable. Attempting to change other properties (ex. "name" and "type") will result in an error.
+
+Update a transform Replaces the transform specified by the given ID with the transform provided in the request body. Only the "attributes" field is mutable. Attempting to change other properties (ex. "name" and "type") will result in an error.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2025/update-transform)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | ID of the transform to update | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | ID of the transform to update |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiUpdateTransformRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **transform** | [**Transform**](../models/transform) | The updated transform object. Must include \&quot;name\&quot;, \&quot;type\&quot;, and \&quot;attributes\&quot; fields, but \&quot;name\&quot; and \&quot;type\&quot; must not be modified. | 
+**transform** | [**Transform**](../models/transform) | The updated transform object. Must include \&quot;name\&quot;, \&quot;type\&quot;, and \&quot;attributes\&quot; fields, but \&quot;name\&quot; and \&quot;type\&quot; must not be modified. |
 
 ### Return type
 
@@ -341,8 +325,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -354,7 +338,7 @@ func main() {
           "type" : "dateFormat"
         }`) // Transform | The updated transform object. Must include \"name\", \"type\", and \"attributes\" fields, but \"name\" and \"type\" must not be modified. (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -370,4 +354,3 @@ func main() {
 ```
 
 [[Back to top]](#)
-

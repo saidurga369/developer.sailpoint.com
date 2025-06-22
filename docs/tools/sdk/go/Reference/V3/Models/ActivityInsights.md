@@ -4,20 +4,21 @@ title: ActivityInsights
 pagination_label: ActivityInsights
 sidebar_label: ActivityInsights
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ActivityInsights', 'ActivityInsights'] 
+keywords: ['go', 'Golang', 'sdk', 'ActivityInsights', 'ActivityInsights']
 slug: /tools/sdk/go/v3/models/activity-insights
-tags: ['SDK', 'Software Development Kit', 'ActivityInsights', 'ActivityInsights']
+tags:
+  ['SDK', 'Software Development Kit', 'ActivityInsights', 'ActivityInsights']
 ---
 
 # ActivityInsights
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**AccountID** | Pointer to **string** | UUID of the account | [optional] 
-**UsageDays** | Pointer to **int32** | The number of days of activity | [optional] 
-**UsageDaysState** | Pointer to **string** | Status indicating if the activity is complete or unknown | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **AccountID** | Pointer to **string** | UUID of the account | [optional] |
+| **UsageDays** | Pointer to **int32** | The number of days of activity | [optional] |
+| **UsageDaysState** | Pointer to **string** | Status indicating if the activity is complete or unknown | [optional] |
 
 ## Methods
 
@@ -25,18 +26,13 @@ Name | Type | Description | Notes
 
 `func NewActivityInsights() *ActivityInsights`
 
-NewActivityInsights instantiates a new ActivityInsights object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewActivityInsights instantiates a new ActivityInsights object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewActivityInsightsWithDefaults
 
 `func NewActivityInsightsWithDefaults() *ActivityInsights`
 
-NewActivityInsightsWithDefaults instantiates a new ActivityInsights object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewActivityInsightsWithDefaults instantiates a new ActivityInsights object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetAccountID
 
@@ -48,8 +44,7 @@ GetAccountID returns the AccountID field if non-nil, zero value otherwise.
 
 `func (o *ActivityInsights) GetAccountIDOk() (*string, bool)`
 
-GetAccountIDOk returns a tuple with the AccountID field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountIDOk returns a tuple with the AccountID field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountID
 
@@ -73,8 +68,7 @@ GetUsageDays returns the UsageDays field if non-nil, zero value otherwise.
 
 `func (o *ActivityInsights) GetUsageDaysOk() (*int32, bool)`
 
-GetUsageDaysOk returns a tuple with the UsageDays field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUsageDaysOk returns a tuple with the UsageDays field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUsageDays
 
@@ -98,8 +92,7 @@ GetUsageDaysState returns the UsageDaysState field if non-nil, zero value otherw
 
 `func (o *ActivityInsights) GetUsageDaysStateOk() (*string, bool)`
 
-GetUsageDaysStateOk returns a tuple with the UsageDaysState field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUsageDaysStateOk returns a tuple with the UsageDaysState field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUsageDaysState
 
@@ -112,5 +105,3 @@ SetUsageDaysState sets UsageDaysState field to given value.
 `func (o *ActivityInsights) HasUsageDaysState() bool`
 
 HasUsageDaysState returns a boolean if a field has been set.
-
-

@@ -4,7 +4,7 @@ title: WorkItemState
 pagination_label: WorkItemState
 sidebar_label: WorkItemState
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'WorkItemState', 'BetaWorkItemState'] 
+keywords: ['python', 'Python', 'sdk', 'WorkItemState', 'BetaWorkItemState']
 slug: /tools/sdk/python/beta/models/work-item-state
 tags: ['SDK', 'Software Development Kit', 'WorkItemState', 'BetaWorkItemState']
 ---
@@ -15,17 +15,16 @@ The state of a work item
 
 ## Enum
 
-* `FINISHED` (value: `'Finished'`)
+- `FINISHED` (value: `'Finished'`)
 
-* `REJECTED` (value: `'Rejected'`)
+- `REJECTED` (value: `'Rejected'`)
 
-* `RETURNED` (value: `'Returned'`)
+- `RETURNED` (value: `'Returned'`)
 
-* `EXPIRED` (value: `'Expired'`)
+- `EXPIRED` (value: `'Expired'`)
 
-* `PENDING` (value: `'Pending'`)
+- `PENDING` (value: `'Pending'`)
 
-* `CANCELED` (value: `'Canceled'`)
+- `CANCELED` (value: `'Canceled'`)
 
-[[Back to top]](#) 
-
+[[Back to top]](#)

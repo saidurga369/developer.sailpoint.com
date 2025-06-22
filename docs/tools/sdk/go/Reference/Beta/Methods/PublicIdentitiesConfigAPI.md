@@ -4,37 +4,42 @@ title: PublicIdentitiesConfig
 pagination_label: PublicIdentitiesConfig
 sidebar_label: PublicIdentitiesConfig
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'PublicIdentitiesConfig', 'BetaPublicIdentitiesConfig'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'PublicIdentitiesConfig',
+    'BetaPublicIdentitiesConfig',
+  ]
 slug: /tools/sdk/go/beta/methods/public-identities-config
-tags: ['SDK', 'Software Development Kit', 'PublicIdentitiesConfig', 'BetaPublicIdentitiesConfig']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PublicIdentitiesConfig',
+    'BetaPublicIdentitiesConfig',
+  ]
 ---
 
 # PublicIdentitiesConfigAPI
-  Use this API to implement public identity configuration functionality.
-With this functionality in place, administrators can make up to 5 identity attributes publicly visible so other non-administrator users can see the relevant information they need to make decisions.
-This can be helpful for access approvers, certification reviewers, managers viewing their direct reports&#39; access, and source owners viewing their tasks.
 
-By default, non-administrators can select an identity and view the following attributes: email, lifecycle state, and manager.
-However, it may be helpful for a non-administrator reviewer to see other identity attributes like department, region, title, etc.
-Administrators can use this API to make those necessary identity attributes public to non-administrators.
+Use this API to implement public identity configuration functionality. With this functionality in place, administrators can make up to 5 identity attributes publicly visible so other non-administrator users can see the relevant information they need to make decisions. This can be helpful for access approvers, certification reviewers, managers viewing their direct reports&#39; access, and source owners viewing their tasks.
 
-For example, a non-administrator deciding whether to approve another identity&#39;s request for access to the Workday application, whose access may be restricted to members of the HR department, would want to know whether the identity is a member of the HR department.
-If an administrator has used [Update Public Identity Config](https://developer.sailpoint.com/docs/api/beta/update-public-identity-config/) to make the &quot;department&quot; attribute public, the approver can see the department and make a decision without requesting any more information.
- 
+By default, non-administrators can select an identity and view the following attributes: email, lifecycle state, and manager. However, it may be helpful for a non-administrator reviewer to see other identity attributes like department, region, title, etc. Administrators can use this API to make those necessary identity attributes public to non-administrators.
+
+For example, a non-administrator deciding whether to approve another identity&#39;s request for access to the Workday application, whose access may be restricted to members of the HR department, would want to know whether the identity is a member of the HR department. If an administrator has used [Update Public Identity Config](https://developer.sailpoint.com/docs/api/beta/update-public-identity-config/) to make the &quot;department&quot; attribute public, the approver can see the department and make a decision without requesting any more information.
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/beta*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**get-public-identity-config**](#get-public-identity-config) | **Get** `/public-identities-config` | Get public identity config
-[**update-public-identity-config**](#update-public-identity-config) | **Put** `/public-identities-config` | Update public identity config
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**get-public-identity-config**](#get-public-identity-config) | **Get** `/public-identities-config` | Get public identity config |
+| [**update-public-identity-config**](#update-public-identity-config) | **Put** `/public-identities-config` | Update public identity config |
 
 ## get-public-identity-config
-:::caution deprecated 
-This endpoint has been deprecated and may be replaced or removed in future versions of the API.
-:::
-Get public identity config
-This gets details of public identity config.
+
+:::caution deprecated This endpoint has been deprecated and may be replaced or removed in future versions of the API. ::: Get public identity config This gets details of public identity config.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-public-identity-config)
 
@@ -45,7 +50,6 @@ This endpoint does not need any parameter.
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetPublicIdentityConfigRequest struct via the builder pattern
-
 
 ### Return type
 
@@ -65,14 +69,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -90,26 +94,20 @@ func main() {
 [[Back to top]](#)
 
 ## update-public-identity-config
-:::caution deprecated 
-This endpoint has been deprecated and may be replaced or removed in future versions of the API.
-:::
-Update public identity config
-This updates the details of public identity config.
+
+:::caution deprecated This endpoint has been deprecated and may be replaced or removed in future versions of the API. ::: Update public identity config This updates the details of public identity config.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/update-public-identity-config)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiUpdatePublicIdentityConfigRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **publicIdentityConfig** | [**PublicIdentityConfig**](../models/public-identity-config) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **publicIdentityConfig** | [**PublicIdentityConfig**](../models/public-identity-config) |  |
 
 ### Return type
 
@@ -149,14 +147,14 @@ func main() {
             "id" : "2c9180a46faadee4016fb4e018c20639",
             "type" : "IDENTITY"
           }
-        }`) // PublicIdentityConfig | 
+        }`) // PublicIdentityConfig |
 
     var publicIdentityConfig beta.PublicIdentityConfig
     if err := json.Unmarshal(publicidentityconfig, &publicIdentityConfig); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -172,4 +170,3 @@ func main() {
 ```
 
 [[Back to top]](#)
-

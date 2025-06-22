@@ -4,21 +4,34 @@ title: OutlierFeatureSummaryOutlierFeatureDisplayValuesInner
 pagination_label: OutlierFeatureSummaryOutlierFeatureDisplayValuesInner
 sidebar_label: OutlierFeatureSummaryOutlierFeatureDisplayValuesInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'OutlierFeatureSummaryOutlierFeatureDisplayValuesInner', 'BetaOutlierFeatureSummaryOutlierFeatureDisplayValuesInner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'OutlierFeatureSummaryOutlierFeatureDisplayValuesInner',
+    'BetaOutlierFeatureSummaryOutlierFeatureDisplayValuesInner',
+  ]
 slug: /tools/sdk/python/beta/models/outlier-feature-summary-outlier-feature-display-values-inner
-tags: ['SDK', 'Software Development Kit', 'OutlierFeatureSummaryOutlierFeatureDisplayValuesInner', 'BetaOutlierFeatureSummaryOutlierFeatureDisplayValuesInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'OutlierFeatureSummaryOutlierFeatureDisplayValuesInner',
+    'BetaOutlierFeatureSummaryOutlierFeatureDisplayValuesInner',
+  ]
 ---
 
 # OutlierFeatureSummaryOutlierFeatureDisplayValuesInner
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**display_name** | **str** | display name | [optional] 
-**value** | **str** | value | [optional] 
-**value_type** |  **Enum** [  'INTEGER',    'FLOAT' ] | The data type of the value field | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **display_name** | **str** | display name | [optional] |
+| **value** | **str** | value | [optional] |
+| **value_type** | **Enum** [ 'INTEGER', 'FLOAT' ] | The data type of the value field | [optional] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ value_type='INTEGER'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

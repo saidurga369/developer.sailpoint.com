@@ -4,19 +4,19 @@ title: DomainAddress
 pagination_label: DomainAddress
 sidebar_label: DomainAddress
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'DomainAddress', 'V2024DomainAddress'] 
+keywords: ['python', 'Python', 'sdk', 'DomainAddress', 'V2024DomainAddress']
 slug: /tools/sdk/python/v2024/models/domain-address
 tags: ['SDK', 'Software Development Kit', 'DomainAddress', 'V2024DomainAddress']
 ---
 
 # DomainAddress
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**domain** | **str** | A domain address | [optional] 
+| Name       | Type    | Description      | Notes      |
+| ---------- | ------- | ---------------- | ---------- |
+| **domain** | **str** | A domain address | [optional] |
+
 }
 
 ## Example
@@ -29,5 +29,5 @@ domain='sailpoint.com'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

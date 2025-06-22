@@ -4,20 +4,21 @@ title: AttributeChange
 pagination_label: AttributeChange
 sidebar_label: AttributeChange
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AttributeChange', 'V2024AttributeChange'] 
+keywords: ['go', 'Golang', 'sdk', 'AttributeChange', 'V2024AttributeChange']
 slug: /tools/sdk/go/v2024/models/attribute-change
-tags: ['SDK', 'Software Development Kit', 'AttributeChange', 'V2024AttributeChange']
+tags:
+  ['SDK', 'Software Development Kit', 'AttributeChange', 'V2024AttributeChange']
 ---
 
 # AttributeChange
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | Pointer to **string** | the attribute name | [optional] 
-**PreviousValue** | Pointer to **string** | the old value of attribute | [optional] 
-**NewValue** | Pointer to **string** | the new value of attribute | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | Pointer to **string** | the attribute name | [optional] |
+| **PreviousValue** | Pointer to **string** | the old value of attribute | [optional] |
+| **NewValue** | Pointer to **string** | the new value of attribute | [optional] |
 
 ## Methods
 
@@ -25,18 +26,13 @@ Name | Type | Description | Notes
 
 `func NewAttributeChange() *AttributeChange`
 
-NewAttributeChange instantiates a new AttributeChange object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAttributeChange instantiates a new AttributeChange object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAttributeChangeWithDefaults
 
 `func NewAttributeChangeWithDefaults() *AttributeChange`
 
-NewAttributeChangeWithDefaults instantiates a new AttributeChange object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAttributeChangeWithDefaults instantiates a new AttributeChange object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -48,8 +44,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *AttributeChange) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -73,8 +68,7 @@ GetPreviousValue returns the PreviousValue field if non-nil, zero value otherwis
 
 `func (o *AttributeChange) GetPreviousValueOk() (*string, bool)`
 
-GetPreviousValueOk returns a tuple with the PreviousValue field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPreviousValueOk returns a tuple with the PreviousValue field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPreviousValue
 
@@ -98,8 +92,7 @@ GetNewValue returns the NewValue field if non-nil, zero value otherwise.
 
 `func (o *AttributeChange) GetNewValueOk() (*string, bool)`
 
-GetNewValueOk returns a tuple with the NewValue field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNewValueOk returns a tuple with the NewValue field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNewValue
 
@@ -112,5 +105,3 @@ SetNewValue sets NewValue field to given value.
 `func (o *AttributeChange) HasNewValue() bool`
 
 HasNewValue returns a boolean if a field has been set.
-
-

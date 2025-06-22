@@ -4,19 +4,32 @@ title: SendClassifyMachineAccount200Response
 pagination_label: SendClassifyMachineAccount200Response
 sidebar_label: SendClassifyMachineAccount200Response
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SendClassifyMachineAccount200Response', 'V2024SendClassifyMachineAccount200Response'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'SendClassifyMachineAccount200Response',
+    'V2024SendClassifyMachineAccount200Response',
+  ]
 slug: /tools/sdk/python/v2024/models/send-classify-machine-account200-response
-tags: ['SDK', 'Software Development Kit', 'SendClassifyMachineAccount200Response', 'V2024SendClassifyMachineAccount200Response']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SendClassifyMachineAccount200Response',
+    'V2024SendClassifyMachineAccount200Response',
+  ]
 ---
 
 # SendClassifyMachineAccount200Response
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**is_machine** | **bool** | Indicates if account is classified as machine | [optional] [default to False]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **is_machine** | **bool** | Indicates if account is classified as machine | [optional] [default to False] |
+
 }
 
 ## Example
@@ -29,5 +42,5 @@ is_machine=True
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

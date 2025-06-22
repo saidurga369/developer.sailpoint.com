@@ -4,7 +4,7 @@ title: Result
 pagination_label: Result
 sidebar_label: Result
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Result', 'Result'] 
+keywords: ['go', 'Golang', 'sdk', 'Result', 'Result']
 slug: /tools/sdk/go/v3/models/result
 tags: ['SDK', 'Software Development Kit', 'Result', 'Result']
 ---
@@ -13,9 +13,9 @@ tags: ['SDK', 'Software Development Kit', 'Result', 'Result']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Status** | Pointer to **string** | Request result status | [optional] 
+| Name       | Type                  | Description           | Notes      |
+| ---------- | --------------------- | --------------------- | ---------- |
+| **Status** | Pointer to **string** | Request result status | [optional] |
 
 ## Methods
 
@@ -23,18 +23,13 @@ Name | Type | Description | Notes
 
 `func NewResult() *Result`
 
-NewResult instantiates a new Result object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewResult instantiates a new Result object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewResultWithDefaults
 
 `func NewResultWithDefaults() *Result`
 
-NewResultWithDefaults instantiates a new Result object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewResultWithDefaults instantiates a new Result object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetStatus
 
@@ -46,8 +41,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *Result) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -60,5 +54,3 @@ SetStatus sets Status field to given value.
 `func (o *Result) HasStatus() bool`
 
 HasStatus returns a boolean if a field has been set.
-
-

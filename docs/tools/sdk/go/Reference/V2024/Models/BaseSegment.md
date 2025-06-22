@@ -4,7 +4,7 @@ title: BaseSegment
 pagination_label: BaseSegment
 sidebar_label: BaseSegment
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'BaseSegment', 'V2024BaseSegment'] 
+keywords: ['go', 'Golang', 'sdk', 'BaseSegment', 'V2024BaseSegment']
 slug: /tools/sdk/go/v2024/models/base-segment
 tags: ['SDK', 'Software Development Kit', 'BaseSegment', 'V2024BaseSegment']
 ---
@@ -13,10 +13,10 @@ tags: ['SDK', 'Software Development Kit', 'BaseSegment', 'V2024BaseSegment']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Segment's unique ID. | [optional] 
-**Name** | Pointer to **string** | Segment's display name. | [optional] 
+| Name     | Type                  | Description             | Notes      |
+| -------- | --------------------- | ----------------------- | ---------- |
+| **Id**   | Pointer to **string** | Segment's unique ID.    | [optional] |
+| **Name** | Pointer to **string** | Segment's display name. | [optional] |
 
 ## Methods
 
@@ -24,18 +24,13 @@ Name | Type | Description | Notes
 
 `func NewBaseSegment() *BaseSegment`
 
-NewBaseSegment instantiates a new BaseSegment object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewBaseSegment instantiates a new BaseSegment object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewBaseSegmentWithDefaults
 
 `func NewBaseSegmentWithDefaults() *BaseSegment`
 
-NewBaseSegmentWithDefaults instantiates a new BaseSegment object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewBaseSegmentWithDefaults instantiates a new BaseSegment object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -47,8 +42,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *BaseSegment) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -72,8 +66,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *BaseSegment) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -86,5 +79,3 @@ SetName sets Name field to given value.
 `func (o *BaseSegment) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

@@ -4,22 +4,35 @@ title: ConfigurationItemRequest
 pagination_label: ConfigurationItemRequest
 sidebar_label: ConfigurationItemRequest
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ConfigurationItemRequest', 'V2025ConfigurationItemRequest'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ConfigurationItemRequest',
+    'V2025ConfigurationItemRequest',
+  ]
 slug: /tools/sdk/go/v2025/models/configuration-item-request
-tags: ['SDK', 'Software Development Kit', 'ConfigurationItemRequest', 'V2025ConfigurationItemRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ConfigurationItemRequest',
+    'V2025ConfigurationItemRequest',
+  ]
 ---
 
 # ConfigurationItemRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ReassignedFromId** | Pointer to **string** | The identity id to reassign an item from | [optional] 
-**ReassignedToId** | Pointer to **string** | The identity id to reassign an item to | [optional] 
-**ConfigType** | Pointer to [**ConfigTypeEnum**](config-type-enum) |  | [optional] 
-**StartDate** | Pointer to **SailPointTime** | The date from which to start reassigning work items | [optional] 
-**EndDate** | Pointer to **NullableTime** | The date from which to stop reassigning work items.  If this is an null string it indicates a permanent reassignment. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ReassignedFromId** | Pointer to **string** | The identity id to reassign an item from | [optional] |
+| **ReassignedToId** | Pointer to **string** | The identity id to reassign an item to | [optional] |
+| **ConfigType** | Pointer to [**ConfigTypeEnum**](config-type-enum) |  | [optional] |
+| **StartDate** | Pointer to **SailPointTime** | The date from which to start reassigning work items | [optional] |
+| **EndDate** | Pointer to **NullableTime** | The date from which to stop reassigning work items. If this is an null string it indicates a permanent reassignment. | [optional] |
 
 ## Methods
 
@@ -27,18 +40,13 @@ Name | Type | Description | Notes
 
 `func NewConfigurationItemRequest() *ConfigurationItemRequest`
 
-NewConfigurationItemRequest instantiates a new ConfigurationItemRequest object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewConfigurationItemRequest instantiates a new ConfigurationItemRequest object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewConfigurationItemRequestWithDefaults
 
 `func NewConfigurationItemRequestWithDefaults() *ConfigurationItemRequest`
 
-NewConfigurationItemRequestWithDefaults instantiates a new ConfigurationItemRequest object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewConfigurationItemRequestWithDefaults instantiates a new ConfigurationItemRequest object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetReassignedFromId
 
@@ -50,8 +58,7 @@ GetReassignedFromId returns the ReassignedFromId field if non-nil, zero value ot
 
 `func (o *ConfigurationItemRequest) GetReassignedFromIdOk() (*string, bool)`
 
-GetReassignedFromIdOk returns a tuple with the ReassignedFromId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReassignedFromIdOk returns a tuple with the ReassignedFromId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReassignedFromId
 
@@ -75,8 +82,7 @@ GetReassignedToId returns the ReassignedToId field if non-nil, zero value otherw
 
 `func (o *ConfigurationItemRequest) GetReassignedToIdOk() (*string, bool)`
 
-GetReassignedToIdOk returns a tuple with the ReassignedToId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReassignedToIdOk returns a tuple with the ReassignedToId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReassignedToId
 
@@ -100,8 +106,7 @@ GetConfigType returns the ConfigType field if non-nil, zero value otherwise.
 
 `func (o *ConfigurationItemRequest) GetConfigTypeOk() (*ConfigTypeEnum, bool)`
 
-GetConfigTypeOk returns a tuple with the ConfigType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConfigTypeOk returns a tuple with the ConfigType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConfigType
 
@@ -125,8 +130,7 @@ GetStartDate returns the StartDate field if non-nil, zero value otherwise.
 
 `func (o *ConfigurationItemRequest) GetStartDateOk() (*SailPointTime, bool)`
 
-GetStartDateOk returns a tuple with the StartDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStartDateOk returns a tuple with the StartDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStartDate
 
@@ -150,8 +154,7 @@ GetEndDate returns the EndDate field if non-nil, zero value otherwise.
 
 `func (o *ConfigurationItemRequest) GetEndDateOk() (*SailPointTime, bool)`
 
-GetEndDateOk returns a tuple with the EndDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEndDateOk returns a tuple with the EndDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEndDate
 
@@ -169,10 +172,10 @@ HasEndDate returns a boolean if a field has been set.
 
 `func (o *ConfigurationItemRequest) SetEndDateNil(b bool)`
 
- SetEndDateNil sets the value for EndDate to be an explicit nil
+SetEndDateNil sets the value for EndDate to be an explicit nil
 
 ### UnsetEndDate
+
 `func (o *ConfigurationItemRequest) UnsetEndDate()`
 
 UnsetEndDate ensures that no value is present for EndDate, not even an explicit nil
-

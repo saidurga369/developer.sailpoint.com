@@ -4,19 +4,26 @@ title: AccessRequestResponse
 pagination_label: AccessRequestResponse
 sidebar_label: AccessRequestResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessRequestResponse', 'V2024AccessRequestResponse'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'AccessRequestResponse', 'V2024AccessRequestResponse']
 slug: /tools/sdk/go/v2024/models/access-request-response
-tags: ['SDK', 'Software Development Kit', 'AccessRequestResponse', 'V2024AccessRequestResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessRequestResponse',
+    'V2024AccessRequestResponse',
+  ]
 ---
 
 # AccessRequestResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**NewRequests** | Pointer to [**[]AccessRequestTracking**](access-request-tracking) | A list of new access request tracking data mapped to the values requested. | [optional] 
-**ExistingRequests** | Pointer to [**[]AccessRequestTracking**](access-request-tracking) | A list of existing access request tracking data mapped to the values requested.  This indicates access has already been requested for this item. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **NewRequests** | Pointer to [**[]AccessRequestTracking**](access-request-tracking) | A list of new access request tracking data mapped to the values requested. | [optional] |
+| **ExistingRequests** | Pointer to [**[]AccessRequestTracking**](access-request-tracking) | A list of existing access request tracking data mapped to the values requested. This indicates access has already been requested for this item. | [optional] |
 
 ## Methods
 
@@ -24,18 +31,13 @@ Name | Type | Description | Notes
 
 `func NewAccessRequestResponse() *AccessRequestResponse`
 
-NewAccessRequestResponse instantiates a new AccessRequestResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessRequestResponse instantiates a new AccessRequestResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessRequestResponseWithDefaults
 
 `func NewAccessRequestResponseWithDefaults() *AccessRequestResponse`
 
-NewAccessRequestResponseWithDefaults instantiates a new AccessRequestResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessRequestResponseWithDefaults instantiates a new AccessRequestResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetNewRequests
 
@@ -47,8 +49,7 @@ GetNewRequests returns the NewRequests field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestResponse) GetNewRequestsOk() (*[]AccessRequestTracking, bool)`
 
-GetNewRequestsOk returns a tuple with the NewRequests field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNewRequestsOk returns a tuple with the NewRequests field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNewRequests
 
@@ -72,8 +73,7 @@ GetExistingRequests returns the ExistingRequests field if non-nil, zero value ot
 
 `func (o *AccessRequestResponse) GetExistingRequestsOk() (*[]AccessRequestTracking, bool)`
 
-GetExistingRequestsOk returns a tuple with the ExistingRequests field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetExistingRequestsOk returns a tuple with the ExistingRequests field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetExistingRequests
 
@@ -86,5 +86,3 @@ SetExistingRequests sets ExistingRequests field to given value.
 `func (o *AccessRequestResponse) HasExistingRequests() bool`
 
 HasExistingRequests returns a boolean if a field has been set.
-
-

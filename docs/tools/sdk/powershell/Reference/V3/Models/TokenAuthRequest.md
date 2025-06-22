@@ -4,25 +4,27 @@ title: TokenAuthRequest
 pagination_label: TokenAuthRequest
 sidebar_label: TokenAuthRequest
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'TokenAuthRequest', 'TokenAuthRequest'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'TokenAuthRequest', 'TokenAuthRequest']
 slug: /tools/sdk/powershell/v3/models/token-auth-request
-tags: ['SDK', 'Software Development Kit', 'TokenAuthRequest', 'TokenAuthRequest']
+tags:
+  ['SDK', 'Software Development Kit', 'TokenAuthRequest', 'TokenAuthRequest']
 ---
-
 
 # TokenAuthRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Token** | **String** | Token value | [required]
-**UserAlias** | **String** | User alias from table spt_identity field named 'name' | [required]
-**DeliveryType** |  **Enum** [  "SMS_PERSONAL",    "VOICE_PERSONAL",    "SMS_WORK",    "VOICE_WORK",    "EMAIL_WORK",    "EMAIL_PERSONAL" ] | Token delivery type | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Token** | **String** | Token value | [required] |
+| **UserAlias** | **String** | User alias from table spt_identity field named 'name' | [required] |
+| **DeliveryType** | **Enum** [ "SMS_PERSONAL", "VOICE_PERSONAL", "SMS_WORK", "VOICE_WORK", "EMAIL_WORK", "EMAIL_PERSONAL" ] | Token delivery type | [required] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $TokenAuthRequest = Initialize-TokenAuthRequest  -Token 12345 `
  -UserAlias will.albin `
@@ -30,10 +32,9 @@ $TokenAuthRequest = Initialize-TokenAuthRequest  -Token 12345 `
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $TokenAuthRequest | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

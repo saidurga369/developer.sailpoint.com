@@ -4,7 +4,7 @@ title: RoleSummary
 pagination_label: RoleSummary
 sidebar_label: RoleSummary
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleSummary', 'V2024RoleSummary'] 
+keywords: ['go', 'Golang', 'sdk', 'RoleSummary', 'V2024RoleSummary']
 slug: /tools/sdk/go/v2024/models/role-summary
 tags: ['SDK', 'Software Development Kit', 'RoleSummary', 'V2024RoleSummary']
 ---
@@ -13,16 +13,16 @@ tags: ['SDK', 'Software Development Kit', 'RoleSummary', 'V2024RoleSummary']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The unique ID of the referenced object. | [optional] 
-**Name** | Pointer to **string** | The human readable name of the referenced object. | [optional] 
-**DisplayName** | Pointer to **string** |  | [optional] 
-**Description** | Pointer to **NullableString** | Description of access item. | [optional] 
-**Type** | Pointer to **string** | Type of the access item. | [optional] 
-**Owner** | Pointer to [**DisplayReference**](display-reference) |  | [optional] 
-**Disabled** | Pointer to **bool** |  | [optional] 
-**Revocable** | Pointer to **bool** |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The unique ID of the referenced object. | [optional] |
+| **Name** | Pointer to **string** | The human readable name of the referenced object. | [optional] |
+| **DisplayName** | Pointer to **string** |  | [optional] |
+| **Description** | Pointer to **NullableString** | Description of access item. | [optional] |
+| **Type** | Pointer to **string** | Type of the access item. | [optional] |
+| **Owner** | Pointer to [**DisplayReference**](display-reference) |  | [optional] |
+| **Disabled** | Pointer to **bool** |  | [optional] |
+| **Revocable** | Pointer to **bool** |  | [optional] |
 
 ## Methods
 
@@ -30,18 +30,13 @@ Name | Type | Description | Notes
 
 `func NewRoleSummary() *RoleSummary`
 
-NewRoleSummary instantiates a new RoleSummary object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleSummary instantiates a new RoleSummary object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleSummaryWithDefaults
 
 `func NewRoleSummaryWithDefaults() *RoleSummary`
 
-NewRoleSummaryWithDefaults instantiates a new RoleSummary object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleSummaryWithDefaults instantiates a new RoleSummary object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -53,8 +48,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *RoleSummary) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -78,8 +72,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *RoleSummary) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -103,8 +96,7 @@ GetDisplayName returns the DisplayName field if non-nil, zero value otherwise.
 
 `func (o *RoleSummary) GetDisplayNameOk() (*string, bool)`
 
-GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayName
 
@@ -128,8 +120,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *RoleSummary) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -147,12 +138,14 @@ HasDescription returns a boolean if a field has been set.
 
 `func (o *RoleSummary) SetDescriptionNil(b bool)`
 
- SetDescriptionNil sets the value for Description to be an explicit nil
+SetDescriptionNil sets the value for Description to be an explicit nil
 
 ### UnsetDescription
+
 `func (o *RoleSummary) UnsetDescription()`
 
 UnsetDescription ensures that no value is present for Description, not even an explicit nil
+
 ### GetType
 
 `func (o *RoleSummary) GetType() string`
@@ -163,8 +156,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *RoleSummary) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -188,8 +180,7 @@ GetOwner returns the Owner field if non-nil, zero value otherwise.
 
 `func (o *RoleSummary) GetOwnerOk() (*DisplayReference, bool)`
 
-GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwner
 
@@ -213,8 +204,7 @@ GetDisabled returns the Disabled field if non-nil, zero value otherwise.
 
 `func (o *RoleSummary) GetDisabledOk() (*bool, bool)`
 
-GetDisabledOk returns a tuple with the Disabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisabledOk returns a tuple with the Disabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisabled
 
@@ -238,8 +228,7 @@ GetRevocable returns the Revocable field if non-nil, zero value otherwise.
 
 `func (o *RoleSummary) GetRevocableOk() (*bool, bool)`
 
-GetRevocableOk returns a tuple with the Revocable field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRevocableOk returns a tuple with the Revocable field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRevocable
 
@@ -252,5 +241,3 @@ SetRevocable sets Revocable field to given value.
 `func (o *RoleSummary) HasRevocable() bool`
 
 HasRevocable returns a boolean if a field has been set.
-
-

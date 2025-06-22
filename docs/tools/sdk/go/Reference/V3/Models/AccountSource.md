@@ -4,7 +4,7 @@ title: AccountSource
 pagination_label: AccountSource
 sidebar_label: AccountSource
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccountSource', 'AccountSource'] 
+keywords: ['go', 'Golang', 'sdk', 'AccountSource', 'AccountSource']
 slug: /tools/sdk/go/v3/models/account-source
 tags: ['SDK', 'Software Development Kit', 'AccountSource', 'AccountSource']
 ---
@@ -13,11 +13,11 @@ tags: ['SDK', 'Software Development Kit', 'AccountSource', 'AccountSource']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The unique ID of the referenced object. | [optional] 
-**Name** | Pointer to **string** | The human readable name of the referenced object. | [optional] 
-**Type** | Pointer to **string** | Type of source returned. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The unique ID of the referenced object. | [optional] |
+| **Name** | Pointer to **string** | The human readable name of the referenced object. | [optional] |
+| **Type** | Pointer to **string** | Type of source returned. | [optional] |
 
 ## Methods
 
@@ -25,18 +25,13 @@ Name | Type | Description | Notes
 
 `func NewAccountSource() *AccountSource`
 
-NewAccountSource instantiates a new AccountSource object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccountSource instantiates a new AccountSource object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccountSourceWithDefaults
 
 `func NewAccountSourceWithDefaults() *AccountSource`
 
-NewAccountSourceWithDefaults instantiates a new AccountSource object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccountSourceWithDefaults instantiates a new AccountSource object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -48,8 +43,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *AccountSource) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -73,8 +67,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *AccountSource) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -98,8 +91,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *AccountSource) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -112,5 +104,3 @@ SetType sets Type field to given value.
 `func (o *AccountSource) HasType() bool`
 
 HasType returns a boolean if a field has been set.
-
-

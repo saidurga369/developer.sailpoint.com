@@ -4,26 +4,39 @@ title: CampaignGeneratedCampaign
 pagination_label: CampaignGeneratedCampaign
 sidebar_label: CampaignGeneratedCampaign
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'CampaignGeneratedCampaign', 'BetaCampaignGeneratedCampaign'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'CampaignGeneratedCampaign',
+    'BetaCampaignGeneratedCampaign',
+  ]
 slug: /tools/sdk/go/beta/models/campaign-generated-campaign
-tags: ['SDK', 'Software Development Kit', 'CampaignGeneratedCampaign', 'BetaCampaignGeneratedCampaign']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CampaignGeneratedCampaign',
+    'BetaCampaignGeneratedCampaign',
+  ]
 ---
 
 # CampaignGeneratedCampaign
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **string** | Campaign's unique ID. | 
-**Name** | **string** | Campaign's name. | 
-**Description** | **string** | Campaign's extended description. | 
-**Created** | **SailPointTime** | Date and time when the campaign was created. | 
-**Modified** | Pointer to **NullableString** | Date and time when the campaign was last modified. | [optional] 
-**Deadline** | Pointer to **NullableString** | Date and time when the campaign must be finished. | [optional] 
-**Type** | **map[string]interface{}** | Campaign's type. | 
-**CampaignOwner** | [**CampaignGeneratedCampaignCampaignOwner**](campaign-generated-campaign-campaign-owner) |  | 
-**Status** | **map[string]interface{}** | Campaign's current status. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **string** | Campaign's unique ID. |
+| **Name** | **string** | Campaign's name. |
+| **Description** | **string** | Campaign's extended description. |
+| **Created** | **SailPointTime** | Date and time when the campaign was created. |
+| **Modified** | Pointer to **NullableString** | Date and time when the campaign was last modified. | [optional] |
+| **Deadline** | Pointer to **NullableString** | Date and time when the campaign must be finished. | [optional] |
+| **Type** | **map[string]interface{}** | Campaign's type. |
+| **CampaignOwner** | [**CampaignGeneratedCampaignCampaignOwner**](campaign-generated-campaign-campaign-owner) |  |
+| **Status** | **map[string]interface{}** | Campaign's current status. |
 
 ## Methods
 
@@ -31,18 +44,13 @@ Name | Type | Description | Notes
 
 `func NewCampaignGeneratedCampaign(id string, name string, description string, created SailPointTime, type_ map[string]interface{}, campaignOwner CampaignGeneratedCampaignCampaignOwner, status map[string]interface{}, ) *CampaignGeneratedCampaign`
 
-NewCampaignGeneratedCampaign instantiates a new CampaignGeneratedCampaign object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewCampaignGeneratedCampaign instantiates a new CampaignGeneratedCampaign object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewCampaignGeneratedCampaignWithDefaults
 
 `func NewCampaignGeneratedCampaignWithDefaults() *CampaignGeneratedCampaign`
 
-NewCampaignGeneratedCampaignWithDefaults instantiates a new CampaignGeneratedCampaign object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewCampaignGeneratedCampaignWithDefaults instantiates a new CampaignGeneratedCampaign object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -54,15 +62,13 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *CampaignGeneratedCampaign) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
 `func (o *CampaignGeneratedCampaign) SetId(v string)`
 
 SetId sets Id field to given value.
-
 
 ### GetName
 
@@ -74,15 +80,13 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *CampaignGeneratedCampaign) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
 `func (o *CampaignGeneratedCampaign) SetName(v string)`
 
 SetName sets Name field to given value.
-
 
 ### GetDescription
 
@@ -94,15 +98,13 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *CampaignGeneratedCampaign) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
 `func (o *CampaignGeneratedCampaign) SetDescription(v string)`
 
 SetDescription sets Description field to given value.
-
 
 ### GetCreated
 
@@ -114,15 +116,13 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *CampaignGeneratedCampaign) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
 `func (o *CampaignGeneratedCampaign) SetCreated(v SailPointTime)`
 
 SetCreated sets Created field to given value.
-
 
 ### GetModified
 
@@ -134,8 +134,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *CampaignGeneratedCampaign) GetModifiedOk() (*string, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -153,12 +152,14 @@ HasModified returns a boolean if a field has been set.
 
 `func (o *CampaignGeneratedCampaign) SetModifiedNil(b bool)`
 
- SetModifiedNil sets the value for Modified to be an explicit nil
+SetModifiedNil sets the value for Modified to be an explicit nil
 
 ### UnsetModified
+
 `func (o *CampaignGeneratedCampaign) UnsetModified()`
 
 UnsetModified ensures that no value is present for Modified, not even an explicit nil
+
 ### GetDeadline
 
 `func (o *CampaignGeneratedCampaign) GetDeadline() string`
@@ -169,8 +170,7 @@ GetDeadline returns the Deadline field if non-nil, zero value otherwise.
 
 `func (o *CampaignGeneratedCampaign) GetDeadlineOk() (*string, bool)`
 
-GetDeadlineOk returns a tuple with the Deadline field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDeadlineOk returns a tuple with the Deadline field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDeadline
 
@@ -188,12 +188,14 @@ HasDeadline returns a boolean if a field has been set.
 
 `func (o *CampaignGeneratedCampaign) SetDeadlineNil(b bool)`
 
- SetDeadlineNil sets the value for Deadline to be an explicit nil
+SetDeadlineNil sets the value for Deadline to be an explicit nil
 
 ### UnsetDeadline
+
 `func (o *CampaignGeneratedCampaign) UnsetDeadline()`
 
 UnsetDeadline ensures that no value is present for Deadline, not even an explicit nil
+
 ### GetType
 
 `func (o *CampaignGeneratedCampaign) GetType() map[string]interface{}`
@@ -204,15 +206,13 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *CampaignGeneratedCampaign) GetTypeOk() (*map[string]interface{}, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
 `func (o *CampaignGeneratedCampaign) SetType(v map[string]interface{})`
 
 SetType sets Type field to given value.
-
 
 ### GetCampaignOwner
 
@@ -224,15 +224,13 @@ GetCampaignOwner returns the CampaignOwner field if non-nil, zero value otherwis
 
 `func (o *CampaignGeneratedCampaign) GetCampaignOwnerOk() (*CampaignGeneratedCampaignCampaignOwner, bool)`
 
-GetCampaignOwnerOk returns a tuple with the CampaignOwner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCampaignOwnerOk returns a tuple with the CampaignOwner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCampaignOwner
 
 `func (o *CampaignGeneratedCampaign) SetCampaignOwner(v CampaignGeneratedCampaignCampaignOwner)`
 
 SetCampaignOwner sets CampaignOwner field to given value.
-
 
 ### GetStatus
 
@@ -244,14 +242,10 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *CampaignGeneratedCampaign) GetStatusOk() (*map[string]interface{}, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
 `func (o *CampaignGeneratedCampaign) SetStatus(v map[string]interface{})`
 
 SetStatus sets Status field to given value.
-
-
-

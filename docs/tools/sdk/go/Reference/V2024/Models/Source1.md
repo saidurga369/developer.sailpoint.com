@@ -4,7 +4,7 @@ title: Source1
 pagination_label: Source1
 sidebar_label: Source1
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Source1', 'V2024Source1'] 
+keywords: ['go', 'Golang', 'sdk', 'Source1', 'V2024Source1']
 slug: /tools/sdk/go/v2024/models/source1
 tags: ['SDK', 'Software Development Kit', 'Source1', 'V2024Source1']
 ---
@@ -13,10 +13,10 @@ tags: ['SDK', 'Software Development Kit', 'Source1', 'V2024Source1']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | Attribute mapping type. | [optional] 
-**Properties** | Pointer to **map[string]interface{}** | Attribute mapping properties. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to **string** | Attribute mapping type. | [optional] |
+| **Properties** | Pointer to **map[string]interface{}** | Attribute mapping properties. | [optional] |
 
 ## Methods
 
@@ -24,18 +24,13 @@ Name | Type | Description | Notes
 
 `func NewSource1() *Source1`
 
-NewSource1 instantiates a new Source1 object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSource1 instantiates a new Source1 object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSource1WithDefaults
 
 `func NewSource1WithDefaults() *Source1`
 
-NewSource1WithDefaults instantiates a new Source1 object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSource1WithDefaults instantiates a new Source1 object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -47,8 +42,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *Source1) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -72,8 +66,7 @@ GetProperties returns the Properties field if non-nil, zero value otherwise.
 
 `func (o *Source1) GetPropertiesOk() (*map[string]interface{}, bool)`
 
-GetPropertiesOk returns a tuple with the Properties field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPropertiesOk returns a tuple with the Properties field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProperties
 
@@ -86,5 +79,3 @@ SetProperties sets Properties field to given value.
 `func (o *Source1) HasProperties() bool`
 
 HasProperties returns a boolean if a field has been set.
-
-

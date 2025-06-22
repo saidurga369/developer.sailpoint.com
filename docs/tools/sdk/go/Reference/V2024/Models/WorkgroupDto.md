@@ -4,7 +4,7 @@ title: WorkgroupDto
 pagination_label: WorkgroupDto
 sidebar_label: WorkgroupDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'WorkgroupDto', 'V2024WorkgroupDto'] 
+keywords: ['go', 'Golang', 'sdk', 'WorkgroupDto', 'V2024WorkgroupDto']
 slug: /tools/sdk/go/v2024/models/workgroup-dto
 tags: ['SDK', 'Software Development Kit', 'WorkgroupDto', 'V2024WorkgroupDto']
 ---
@@ -13,16 +13,16 @@ tags: ['SDK', 'Software Development Kit', 'WorkgroupDto', 'V2024WorkgroupDto']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Owner** | Pointer to [**WorkgroupDtoOwner**](workgroup-dto-owner) |  | [optional] 
-**Id** | Pointer to **string** | Governance group ID. | [optional] [readonly] 
-**Name** | Pointer to **string** | Governance group name. | [optional] 
-**Description** | Pointer to **string** | Governance group description. | [optional] 
-**MemberCount** | Pointer to **int64** | Number of members in the governance group. | [optional] [readonly] 
-**ConnectionCount** | Pointer to **int64** | Number of connections in the governance group. | [optional] [readonly] 
-**Created** | Pointer to **SailPointTime** |  | [optional] 
-**Modified** | Pointer to **SailPointTime** |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Owner** | Pointer to [**WorkgroupDtoOwner**](workgroup-dto-owner) |  | [optional] |
+| **Id** | Pointer to **string** | Governance group ID. | [optional] [readonly] |
+| **Name** | Pointer to **string** | Governance group name. | [optional] |
+| **Description** | Pointer to **string** | Governance group description. | [optional] |
+| **MemberCount** | Pointer to **int64** | Number of members in the governance group. | [optional] [readonly] |
+| **ConnectionCount** | Pointer to **int64** | Number of connections in the governance group. | [optional] [readonly] |
+| **Created** | Pointer to **SailPointTime** |  | [optional] |
+| **Modified** | Pointer to **SailPointTime** |  | [optional] |
 
 ## Methods
 
@@ -30,18 +30,13 @@ Name | Type | Description | Notes
 
 `func NewWorkgroupDto() *WorkgroupDto`
 
-NewWorkgroupDto instantiates a new WorkgroupDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewWorkgroupDto instantiates a new WorkgroupDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewWorkgroupDtoWithDefaults
 
 `func NewWorkgroupDtoWithDefaults() *WorkgroupDto`
 
-NewWorkgroupDtoWithDefaults instantiates a new WorkgroupDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewWorkgroupDtoWithDefaults instantiates a new WorkgroupDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetOwner
 
@@ -53,8 +48,7 @@ GetOwner returns the Owner field if non-nil, zero value otherwise.
 
 `func (o *WorkgroupDto) GetOwnerOk() (*WorkgroupDtoOwner, bool)`
 
-GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwner
 
@@ -78,8 +72,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *WorkgroupDto) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -103,8 +96,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *WorkgroupDto) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -128,8 +120,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *WorkgroupDto) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -153,8 +144,7 @@ GetMemberCount returns the MemberCount field if non-nil, zero value otherwise.
 
 `func (o *WorkgroupDto) GetMemberCountOk() (*int64, bool)`
 
-GetMemberCountOk returns a tuple with the MemberCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMemberCountOk returns a tuple with the MemberCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMemberCount
 
@@ -178,8 +168,7 @@ GetConnectionCount returns the ConnectionCount field if non-nil, zero value othe
 
 `func (o *WorkgroupDto) GetConnectionCountOk() (*int64, bool)`
 
-GetConnectionCountOk returns a tuple with the ConnectionCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConnectionCountOk returns a tuple with the ConnectionCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConnectionCount
 
@@ -203,8 +192,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *WorkgroupDto) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -228,8 +216,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *WorkgroupDto) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -242,5 +229,3 @@ SetModified sets Modified field to given value.
 `func (o *WorkgroupDto) HasModified() bool`
 
 HasModified returns a boolean if a field has been set.
-
-

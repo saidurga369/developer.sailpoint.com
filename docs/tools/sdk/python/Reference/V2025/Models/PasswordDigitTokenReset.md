@@ -4,21 +4,34 @@ title: PasswordDigitTokenReset
 pagination_label: PasswordDigitTokenReset
 sidebar_label: PasswordDigitTokenReset
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'PasswordDigitTokenReset', 'V2025PasswordDigitTokenReset'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'PasswordDigitTokenReset',
+    'V2025PasswordDigitTokenReset',
+  ]
 slug: /tools/sdk/python/v2025/models/password-digit-token-reset
-tags: ['SDK', 'Software Development Kit', 'PasswordDigitTokenReset', 'V2025PasswordDigitTokenReset']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PasswordDigitTokenReset',
+    'V2025PasswordDigitTokenReset',
+  ]
 ---
 
 # PasswordDigitTokenReset
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**user_id** | **str** | The uid of the user requested for digit token | [required]
-**length** | **int** | The length of digit token. It should be from 6 to 18, inclusive. The default value is 6. | [optional] 
-**duration_minutes** | **int** | The time to live for the digit token in minutes. The default value is 5 minutes. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **user_id** | **str** | The uid of the user requested for digit token | [required] |
+| **length** | **int** | The length of digit token. It should be from 6 to 18, inclusive. The default value is 6. | [optional] |
+| **duration_minutes** | **int** | The time to live for the digit token in minutes. The default value is 5 minutes. | [optional] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ duration_minutes=5
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,20 +4,33 @@ title: ImportFormDefinitionsRequestInner
 pagination_label: ImportFormDefinitionsRequestInner
 sidebar_label: ImportFormDefinitionsRequestInner
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ImportFormDefinitionsRequestInner', 'V2025ImportFormDefinitionsRequestInner'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ImportFormDefinitionsRequestInner',
+    'V2025ImportFormDefinitionsRequestInner',
+  ]
 slug: /tools/sdk/go/v2025/models/import-form-definitions-request-inner
-tags: ['SDK', 'Software Development Kit', 'ImportFormDefinitionsRequestInner', 'V2025ImportFormDefinitionsRequestInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ImportFormDefinitionsRequestInner',
+    'V2025ImportFormDefinitionsRequestInner',
+  ]
 ---
 
 # ImportFormDefinitionsRequestInner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Object** | Pointer to [**FormDefinitionResponse**](form-definition-response) |  | [optional] 
-**Self** | Pointer to **string** |  | [optional] 
-**Version** | Pointer to **int32** |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Object** | Pointer to [**FormDefinitionResponse**](form-definition-response) |  | [optional] |
+| **Self** | Pointer to **string** |  | [optional] |
+| **Version** | Pointer to **int32** |  | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewImportFormDefinitionsRequestInner() *ImportFormDefinitionsRequestInner`
 
-NewImportFormDefinitionsRequestInner instantiates a new ImportFormDefinitionsRequestInner object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewImportFormDefinitionsRequestInner instantiates a new ImportFormDefinitionsRequestInner object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewImportFormDefinitionsRequestInnerWithDefaults
 
 `func NewImportFormDefinitionsRequestInnerWithDefaults() *ImportFormDefinitionsRequestInner`
 
-NewImportFormDefinitionsRequestInnerWithDefaults instantiates a new ImportFormDefinitionsRequestInner object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewImportFormDefinitionsRequestInnerWithDefaults instantiates a new ImportFormDefinitionsRequestInner object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetObject
 
@@ -48,8 +56,7 @@ GetObject returns the Object field if non-nil, zero value otherwise.
 
 `func (o *ImportFormDefinitionsRequestInner) GetObjectOk() (*FormDefinitionResponse, bool)`
 
-GetObjectOk returns a tuple with the Object field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetObjectOk returns a tuple with the Object field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetObject
 
@@ -73,8 +80,7 @@ GetSelf returns the Self field if non-nil, zero value otherwise.
 
 `func (o *ImportFormDefinitionsRequestInner) GetSelfOk() (*string, bool)`
 
-GetSelfOk returns a tuple with the Self field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSelfOk returns a tuple with the Self field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSelf
 
@@ -98,8 +104,7 @@ GetVersion returns the Version field if non-nil, zero value otherwise.
 
 `func (o *ImportFormDefinitionsRequestInner) GetVersionOk() (*int32, bool)`
 
-GetVersionOk returns a tuple with the Version field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetVersionOk returns a tuple with the Version field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetVersion
 
@@ -112,5 +117,3 @@ SetVersion sets Version field to given value.
 `func (o *ImportFormDefinitionsRequestInner) HasVersion() bool`
 
 HasVersion returns a boolean if a field has been set.
-
-

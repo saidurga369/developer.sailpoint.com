@@ -4,7 +4,7 @@ title: RoleDocument
 pagination_label: RoleDocument
 sidebar_label: RoleDocument
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleDocument', 'RoleDocument'] 
+keywords: ['go', 'Golang', 'sdk', 'RoleDocument', 'RoleDocument']
 slug: /tools/sdk/go/v3/models/role-document
 tags: ['SDK', 'Software Development Kit', 'RoleDocument', 'RoleDocument']
 ---
@@ -13,29 +13,29 @@ tags: ['SDK', 'Software Development Kit', 'RoleDocument', 'RoleDocument']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Description** | Pointer to **string** | Access item's description. | [optional] 
-**Created** | Pointer to **NullableTime** | ISO-8601 date-time referring to the time when the object was created. | [optional] 
-**Modified** | Pointer to **NullableTime** | ISO-8601 date-time referring to the time when the object was last modified. | [optional] 
-**Synced** | Pointer to **NullableTime** | ISO-8601 date-time referring to the date-time when object was queued to be synced into search database for use in the search API.   This date-time changes anytime there is an update to the object, which triggers a synchronization event being sent to the search database.  There may be some delay between the `synced` time and the time when the updated data is actually available in the search API.  | [optional] 
-**Enabled** | Pointer to **bool** | Indicates whether the access item is currently enabled. | [optional] [default to false]
-**Requestable** | Pointer to **bool** | Indicates whether the access item can be requested. | [optional] [default to true]
-**RequestCommentsRequired** | Pointer to **bool** | Indicates whether comments are required for requests to access the item. | [optional] [default to false]
-**Owner** | Pointer to [**BaseAccessOwner**](base-access-owner) |  | [optional] 
-**Id** | **string** | ID of the role. | 
-**Name** | **string** | Name of the role. | 
-**AccessProfiles** | Pointer to [**[]BaseAccessProfile**](base-access-profile) | Access profiles included with the role. | [optional] 
-**AccessProfileCount** | Pointer to **NullableInt32** | Number of access profiles included with the role. | [optional] 
-**Tags** | Pointer to **[]string** | Tags that have been applied to the object. | [optional] 
-**Segments** | Pointer to [**[]BaseSegment**](base-segment) | Segments with the role. | [optional] 
-**SegmentCount** | Pointer to **NullableInt32** | Number of segments with the role. | [optional] 
-**Entitlements** | Pointer to [**[]RoleDocumentAllOfEntitlements**](role-document-all-of-entitlements) | Entitlements included with the role. | [optional] 
-**EntitlementCount** | Pointer to **NullableInt32** | Number of entitlements included with the role. | [optional] 
-**Dimensional** | Pointer to **bool** |  | [optional] [default to false]
-**DimensionSchemaAttributeCount** | Pointer to **NullableInt32** | Number of dimension attributes included with the role. | [optional] 
-**DimensionSchemaAttributes** | Pointer to [**[]RoleDocumentAllOfDimensionSchemaAttributes**](role-document-all-of-dimension-schema-attributes) | Dimension attributes included with the role. | [optional] 
-**Dimensions** | Pointer to [**[]RoleDocumentAllOfDimensions**](role-document-all-of-dimensions) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Description** | Pointer to **string** | Access item's description. | [optional] |
+| **Created** | Pointer to **NullableTime** | ISO-8601 date-time referring to the time when the object was created. | [optional] |
+| **Modified** | Pointer to **NullableTime** | ISO-8601 date-time referring to the time when the object was last modified. | [optional] |
+| **Synced** | Pointer to **NullableTime** | ISO-8601 date-time referring to the date-time when object was queued to be synced into search database for use in the search API. This date-time changes anytime there is an update to the object, which triggers a synchronization event being sent to the search database. There may be some delay between the `synced` time and the time when the updated data is actually available in the search API. | [optional] |
+| **Enabled** | Pointer to **bool** | Indicates whether the access item is currently enabled. | [optional] [default to false] |
+| **Requestable** | Pointer to **bool** | Indicates whether the access item can be requested. | [optional] [default to true] |
+| **RequestCommentsRequired** | Pointer to **bool** | Indicates whether comments are required for requests to access the item. | [optional] [default to false] |
+| **Owner** | Pointer to [**BaseAccessOwner**](base-access-owner) |  | [optional] |
+| **Id** | **string** | ID of the role. |
+| **Name** | **string** | Name of the role. |
+| **AccessProfiles** | Pointer to [**[]BaseAccessProfile**](base-access-profile) | Access profiles included with the role. | [optional] |
+| **AccessProfileCount** | Pointer to **NullableInt32** | Number of access profiles included with the role. | [optional] |
+| **Tags** | Pointer to **[]string** | Tags that have been applied to the object. | [optional] |
+| **Segments** | Pointer to [**[]BaseSegment**](base-segment) | Segments with the role. | [optional] |
+| **SegmentCount** | Pointer to **NullableInt32** | Number of segments with the role. | [optional] |
+| **Entitlements** | Pointer to [**[]RoleDocumentAllOfEntitlements**](role-document-all-of-entitlements) | Entitlements included with the role. | [optional] |
+| **EntitlementCount** | Pointer to **NullableInt32** | Number of entitlements included with the role. | [optional] |
+| **Dimensional** | Pointer to **bool** |  | [optional] [default to false] |
+| **DimensionSchemaAttributeCount** | Pointer to **NullableInt32** | Number of dimension attributes included with the role. | [optional] |
+| **DimensionSchemaAttributes** | Pointer to [**[]RoleDocumentAllOfDimensionSchemaAttributes**](role-document-all-of-dimension-schema-attributes) | Dimension attributes included with the role. | [optional] |
+| **Dimensions** | Pointer to [**[]RoleDocumentAllOfDimensions**](role-document-all-of-dimensions) |  | [optional] |
 
 ## Methods
 
@@ -43,18 +43,13 @@ Name | Type | Description | Notes
 
 `func NewRoleDocument(id string, name string, ) *RoleDocument`
 
-NewRoleDocument instantiates a new RoleDocument object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleDocument instantiates a new RoleDocument object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleDocumentWithDefaults
 
 `func NewRoleDocumentWithDefaults() *RoleDocument`
 
-NewRoleDocumentWithDefaults instantiates a new RoleDocument object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleDocumentWithDefaults instantiates a new RoleDocument object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetDescription
 
@@ -66,8 +61,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *RoleDocument) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -91,8 +85,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *RoleDocument) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -110,12 +103,14 @@ HasCreated returns a boolean if a field has been set.
 
 `func (o *RoleDocument) SetCreatedNil(b bool)`
 
- SetCreatedNil sets the value for Created to be an explicit nil
+SetCreatedNil sets the value for Created to be an explicit nil
 
 ### UnsetCreated
+
 `func (o *RoleDocument) UnsetCreated()`
 
 UnsetCreated ensures that no value is present for Created, not even an explicit nil
+
 ### GetModified
 
 `func (o *RoleDocument) GetModified() SailPointTime`
@@ -126,8 +121,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *RoleDocument) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -145,12 +139,14 @@ HasModified returns a boolean if a field has been set.
 
 `func (o *RoleDocument) SetModifiedNil(b bool)`
 
- SetModifiedNil sets the value for Modified to be an explicit nil
+SetModifiedNil sets the value for Modified to be an explicit nil
 
 ### UnsetModified
+
 `func (o *RoleDocument) UnsetModified()`
 
 UnsetModified ensures that no value is present for Modified, not even an explicit nil
+
 ### GetSynced
 
 `func (o *RoleDocument) GetSynced() SailPointTime`
@@ -161,8 +157,7 @@ GetSynced returns the Synced field if non-nil, zero value otherwise.
 
 `func (o *RoleDocument) GetSyncedOk() (*SailPointTime, bool)`
 
-GetSyncedOk returns a tuple with the Synced field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSyncedOk returns a tuple with the Synced field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSynced
 
@@ -180,12 +175,14 @@ HasSynced returns a boolean if a field has been set.
 
 `func (o *RoleDocument) SetSyncedNil(b bool)`
 
- SetSyncedNil sets the value for Synced to be an explicit nil
+SetSyncedNil sets the value for Synced to be an explicit nil
 
 ### UnsetSynced
+
 `func (o *RoleDocument) UnsetSynced()`
 
 UnsetSynced ensures that no value is present for Synced, not even an explicit nil
+
 ### GetEnabled
 
 `func (o *RoleDocument) GetEnabled() bool`
@@ -196,8 +193,7 @@ GetEnabled returns the Enabled field if non-nil, zero value otherwise.
 
 `func (o *RoleDocument) GetEnabledOk() (*bool, bool)`
 
-GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEnabled
 
@@ -221,8 +217,7 @@ GetRequestable returns the Requestable field if non-nil, zero value otherwise.
 
 `func (o *RoleDocument) GetRequestableOk() (*bool, bool)`
 
-GetRequestableOk returns a tuple with the Requestable field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestableOk returns a tuple with the Requestable field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequestable
 
@@ -246,8 +241,7 @@ GetRequestCommentsRequired returns the RequestCommentsRequired field if non-nil,
 
 `func (o *RoleDocument) GetRequestCommentsRequiredOk() (*bool, bool)`
 
-GetRequestCommentsRequiredOk returns a tuple with the RequestCommentsRequired field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestCommentsRequiredOk returns a tuple with the RequestCommentsRequired field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequestCommentsRequired
 
@@ -271,8 +265,7 @@ GetOwner returns the Owner field if non-nil, zero value otherwise.
 
 `func (o *RoleDocument) GetOwnerOk() (*BaseAccessOwner, bool)`
 
-GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwner
 
@@ -296,15 +289,13 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *RoleDocument) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
 `func (o *RoleDocument) SetId(v string)`
 
 SetId sets Id field to given value.
-
 
 ### GetName
 
@@ -316,15 +307,13 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *RoleDocument) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
 `func (o *RoleDocument) SetName(v string)`
 
 SetName sets Name field to given value.
-
 
 ### GetAccessProfiles
 
@@ -336,8 +325,7 @@ GetAccessProfiles returns the AccessProfiles field if non-nil, zero value otherw
 
 `func (o *RoleDocument) GetAccessProfilesOk() (*[]BaseAccessProfile, bool)`
 
-GetAccessProfilesOk returns a tuple with the AccessProfiles field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessProfilesOk returns a tuple with the AccessProfiles field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessProfiles
 
@@ -355,12 +343,14 @@ HasAccessProfiles returns a boolean if a field has been set.
 
 `func (o *RoleDocument) SetAccessProfilesNil(b bool)`
 
- SetAccessProfilesNil sets the value for AccessProfiles to be an explicit nil
+SetAccessProfilesNil sets the value for AccessProfiles to be an explicit nil
 
 ### UnsetAccessProfiles
+
 `func (o *RoleDocument) UnsetAccessProfiles()`
 
 UnsetAccessProfiles ensures that no value is present for AccessProfiles, not even an explicit nil
+
 ### GetAccessProfileCount
 
 `func (o *RoleDocument) GetAccessProfileCount() int32`
@@ -371,8 +361,7 @@ GetAccessProfileCount returns the AccessProfileCount field if non-nil, zero valu
 
 `func (o *RoleDocument) GetAccessProfileCountOk() (*int32, bool)`
 
-GetAccessProfileCountOk returns a tuple with the AccessProfileCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessProfileCountOk returns a tuple with the AccessProfileCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessProfileCount
 
@@ -390,12 +379,14 @@ HasAccessProfileCount returns a boolean if a field has been set.
 
 `func (o *RoleDocument) SetAccessProfileCountNil(b bool)`
 
- SetAccessProfileCountNil sets the value for AccessProfileCount to be an explicit nil
+SetAccessProfileCountNil sets the value for AccessProfileCount to be an explicit nil
 
 ### UnsetAccessProfileCount
+
 `func (o *RoleDocument) UnsetAccessProfileCount()`
 
 UnsetAccessProfileCount ensures that no value is present for AccessProfileCount, not even an explicit nil
+
 ### GetTags
 
 `func (o *RoleDocument) GetTags() []string`
@@ -406,8 +397,7 @@ GetTags returns the Tags field if non-nil, zero value otherwise.
 
 `func (o *RoleDocument) GetTagsOk() (*[]string, bool)`
 
-GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTags
 
@@ -431,8 +421,7 @@ GetSegments returns the Segments field if non-nil, zero value otherwise.
 
 `func (o *RoleDocument) GetSegmentsOk() (*[]BaseSegment, bool)`
 
-GetSegmentsOk returns a tuple with the Segments field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSegmentsOk returns a tuple with the Segments field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSegments
 
@@ -450,12 +439,14 @@ HasSegments returns a boolean if a field has been set.
 
 `func (o *RoleDocument) SetSegmentsNil(b bool)`
 
- SetSegmentsNil sets the value for Segments to be an explicit nil
+SetSegmentsNil sets the value for Segments to be an explicit nil
 
 ### UnsetSegments
+
 `func (o *RoleDocument) UnsetSegments()`
 
 UnsetSegments ensures that no value is present for Segments, not even an explicit nil
+
 ### GetSegmentCount
 
 `func (o *RoleDocument) GetSegmentCount() int32`
@@ -466,8 +457,7 @@ GetSegmentCount returns the SegmentCount field if non-nil, zero value otherwise.
 
 `func (o *RoleDocument) GetSegmentCountOk() (*int32, bool)`
 
-GetSegmentCountOk returns a tuple with the SegmentCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSegmentCountOk returns a tuple with the SegmentCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSegmentCount
 
@@ -485,12 +475,14 @@ HasSegmentCount returns a boolean if a field has been set.
 
 `func (o *RoleDocument) SetSegmentCountNil(b bool)`
 
- SetSegmentCountNil sets the value for SegmentCount to be an explicit nil
+SetSegmentCountNil sets the value for SegmentCount to be an explicit nil
 
 ### UnsetSegmentCount
+
 `func (o *RoleDocument) UnsetSegmentCount()`
 
 UnsetSegmentCount ensures that no value is present for SegmentCount, not even an explicit nil
+
 ### GetEntitlements
 
 `func (o *RoleDocument) GetEntitlements() []RoleDocumentAllOfEntitlements`
@@ -501,8 +493,7 @@ GetEntitlements returns the Entitlements field if non-nil, zero value otherwise.
 
 `func (o *RoleDocument) GetEntitlementsOk() (*[]RoleDocumentAllOfEntitlements, bool)`
 
-GetEntitlementsOk returns a tuple with the Entitlements field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEntitlementsOk returns a tuple with the Entitlements field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEntitlements
 
@@ -520,12 +511,14 @@ HasEntitlements returns a boolean if a field has been set.
 
 `func (o *RoleDocument) SetEntitlementsNil(b bool)`
 
- SetEntitlementsNil sets the value for Entitlements to be an explicit nil
+SetEntitlementsNil sets the value for Entitlements to be an explicit nil
 
 ### UnsetEntitlements
+
 `func (o *RoleDocument) UnsetEntitlements()`
 
 UnsetEntitlements ensures that no value is present for Entitlements, not even an explicit nil
+
 ### GetEntitlementCount
 
 `func (o *RoleDocument) GetEntitlementCount() int32`
@@ -536,8 +529,7 @@ GetEntitlementCount returns the EntitlementCount field if non-nil, zero value ot
 
 `func (o *RoleDocument) GetEntitlementCountOk() (*int32, bool)`
 
-GetEntitlementCountOk returns a tuple with the EntitlementCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEntitlementCountOk returns a tuple with the EntitlementCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEntitlementCount
 
@@ -555,12 +547,14 @@ HasEntitlementCount returns a boolean if a field has been set.
 
 `func (o *RoleDocument) SetEntitlementCountNil(b bool)`
 
- SetEntitlementCountNil sets the value for EntitlementCount to be an explicit nil
+SetEntitlementCountNil sets the value for EntitlementCount to be an explicit nil
 
 ### UnsetEntitlementCount
+
 `func (o *RoleDocument) UnsetEntitlementCount()`
 
 UnsetEntitlementCount ensures that no value is present for EntitlementCount, not even an explicit nil
+
 ### GetDimensional
 
 `func (o *RoleDocument) GetDimensional() bool`
@@ -571,8 +565,7 @@ GetDimensional returns the Dimensional field if non-nil, zero value otherwise.
 
 `func (o *RoleDocument) GetDimensionalOk() (*bool, bool)`
 
-GetDimensionalOk returns a tuple with the Dimensional field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDimensionalOk returns a tuple with the Dimensional field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDimensional
 
@@ -596,8 +589,7 @@ GetDimensionSchemaAttributeCount returns the DimensionSchemaAttributeCount field
 
 `func (o *RoleDocument) GetDimensionSchemaAttributeCountOk() (*int32, bool)`
 
-GetDimensionSchemaAttributeCountOk returns a tuple with the DimensionSchemaAttributeCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDimensionSchemaAttributeCountOk returns a tuple with the DimensionSchemaAttributeCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDimensionSchemaAttributeCount
 
@@ -615,12 +607,14 @@ HasDimensionSchemaAttributeCount returns a boolean if a field has been set.
 
 `func (o *RoleDocument) SetDimensionSchemaAttributeCountNil(b bool)`
 
- SetDimensionSchemaAttributeCountNil sets the value for DimensionSchemaAttributeCount to be an explicit nil
+SetDimensionSchemaAttributeCountNil sets the value for DimensionSchemaAttributeCount to be an explicit nil
 
 ### UnsetDimensionSchemaAttributeCount
+
 `func (o *RoleDocument) UnsetDimensionSchemaAttributeCount()`
 
 UnsetDimensionSchemaAttributeCount ensures that no value is present for DimensionSchemaAttributeCount, not even an explicit nil
+
 ### GetDimensionSchemaAttributes
 
 `func (o *RoleDocument) GetDimensionSchemaAttributes() []RoleDocumentAllOfDimensionSchemaAttributes`
@@ -631,8 +625,7 @@ GetDimensionSchemaAttributes returns the DimensionSchemaAttributes field if non-
 
 `func (o *RoleDocument) GetDimensionSchemaAttributesOk() (*[]RoleDocumentAllOfDimensionSchemaAttributes, bool)`
 
-GetDimensionSchemaAttributesOk returns a tuple with the DimensionSchemaAttributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDimensionSchemaAttributesOk returns a tuple with the DimensionSchemaAttributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDimensionSchemaAttributes
 
@@ -650,12 +643,14 @@ HasDimensionSchemaAttributes returns a boolean if a field has been set.
 
 `func (o *RoleDocument) SetDimensionSchemaAttributesNil(b bool)`
 
- SetDimensionSchemaAttributesNil sets the value for DimensionSchemaAttributes to be an explicit nil
+SetDimensionSchemaAttributesNil sets the value for DimensionSchemaAttributes to be an explicit nil
 
 ### UnsetDimensionSchemaAttributes
+
 `func (o *RoleDocument) UnsetDimensionSchemaAttributes()`
 
 UnsetDimensionSchemaAttributes ensures that no value is present for DimensionSchemaAttributes, not even an explicit nil
+
 ### GetDimensions
 
 `func (o *RoleDocument) GetDimensions() []RoleDocumentAllOfDimensions`
@@ -666,8 +661,7 @@ GetDimensions returns the Dimensions field if non-nil, zero value otherwise.
 
 `func (o *RoleDocument) GetDimensionsOk() (*[]RoleDocumentAllOfDimensions, bool)`
 
-GetDimensionsOk returns a tuple with the Dimensions field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDimensionsOk returns a tuple with the Dimensions field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDimensions
 
@@ -685,10 +679,10 @@ HasDimensions returns a boolean if a field has been set.
 
 `func (o *RoleDocument) SetDimensionsNil(b bool)`
 
- SetDimensionsNil sets the value for Dimensions to be an explicit nil
+SetDimensionsNil sets the value for Dimensions to be an explicit nil
 
 ### UnsetDimensions
+
 `func (o *RoleDocument) UnsetDimensions()`
 
 UnsetDimensions ensures that no value is present for Dimensions, not even an explicit nil
-

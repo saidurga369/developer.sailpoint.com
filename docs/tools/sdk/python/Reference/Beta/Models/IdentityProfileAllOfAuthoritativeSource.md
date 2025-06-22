@@ -4,9 +4,22 @@ title: IdentityProfileAllOfAuthoritativeSource
 pagination_label: IdentityProfileAllOfAuthoritativeSource
 sidebar_label: IdentityProfileAllOfAuthoritativeSource
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentityProfileAllOfAuthoritativeSource', 'BetaIdentityProfileAllOfAuthoritativeSource'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'IdentityProfileAllOfAuthoritativeSource',
+    'BetaIdentityProfileAllOfAuthoritativeSource',
+  ]
 slug: /tools/sdk/python/beta/models/identity-profile-all-of-authoritative-source
-tags: ['SDK', 'Software Development Kit', 'IdentityProfileAllOfAuthoritativeSource', 'BetaIdentityProfileAllOfAuthoritativeSource']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityProfileAllOfAuthoritativeSource',
+    'BetaIdentityProfileAllOfAuthoritativeSource',
+  ]
 ---
 
 # IdentityProfileAllOfAuthoritativeSource
@@ -15,11 +28,12 @@ Identity profile's authoritative source.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'SOURCE' ] | Authoritative source's object type. | [optional] 
-**id** | **str** | Authoritative source's ID. | [optional] 
-**name** | **str** | Authoritative source's name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'SOURCE' ] | Authoritative source's object type. | [optional] |
+| **id** | **str** | Authoritative source's ID. | [optional] |
+| **name** | **str** | Authoritative source's name. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='HR Active Directory'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

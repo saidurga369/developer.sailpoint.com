@@ -4,21 +4,34 @@ title: StartInvocationInput
 pagination_label: StartInvocationInput
 sidebar_label: StartInvocationInput
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'StartInvocationInput', 'V2025StartInvocationInput'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'StartInvocationInput',
+    'V2025StartInvocationInput',
+  ]
 slug: /tools/sdk/python/v2025/models/start-invocation-input
-tags: ['SDK', 'Software Development Kit', 'StartInvocationInput', 'V2025StartInvocationInput']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'StartInvocationInput',
+    'V2025StartInvocationInput',
+  ]
 ---
 
 # StartInvocationInput
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**trigger_id** | **str** | Trigger ID | [optional] 
-**input** | **object** | Trigger input payload. Its schema is defined in the trigger definition. | [optional] 
-**content_json** | **object** | JSON map of invocation metadata | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **trigger_id** | **str** | Trigger ID | [optional] |
+| **input** | **object** | Trigger input payload. Its schema is defined in the trigger definition. | [optional] |
+| **content_json** | **object** | JSON map of invocation metadata | [optional] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ content_json={workflowId=1234}
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

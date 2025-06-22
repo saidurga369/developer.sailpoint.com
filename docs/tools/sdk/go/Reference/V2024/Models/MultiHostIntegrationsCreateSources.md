@@ -4,20 +4,33 @@ title: MultiHostIntegrationsCreateSources
 pagination_label: MultiHostIntegrationsCreateSources
 sidebar_label: MultiHostIntegrationsCreateSources
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'MultiHostIntegrationsCreateSources', 'V2024MultiHostIntegrationsCreateSources'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'MultiHostIntegrationsCreateSources',
+    'V2024MultiHostIntegrationsCreateSources',
+  ]
 slug: /tools/sdk/go/v2024/models/multi-host-integrations-create-sources
-tags: ['SDK', 'Software Development Kit', 'MultiHostIntegrationsCreateSources', 'V2024MultiHostIntegrationsCreateSources']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'MultiHostIntegrationsCreateSources',
+    'V2024MultiHostIntegrationsCreateSources',
+  ]
 ---
 
 # MultiHostIntegrationsCreateSources
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | **string** | Source's human-readable name. | 
-**Description** | Pointer to **string** | Source's human-readable description. | [optional] 
-**ConnectorAttributes** | Pointer to **map[string]interface{}** | Connector specific configuration. This configuration will differ from type to type. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | **string** | Source's human-readable name. |
+| **Description** | Pointer to **string** | Source's human-readable description. | [optional] |
+| **ConnectorAttributes** | Pointer to **map[string]interface{}** | Connector specific configuration. This configuration will differ from type to type. | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewMultiHostIntegrationsCreateSources(name string, ) *MultiHostIntegrationsCreateSources`
 
-NewMultiHostIntegrationsCreateSources instantiates a new MultiHostIntegrationsCreateSources object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewMultiHostIntegrationsCreateSources instantiates a new MultiHostIntegrationsCreateSources object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewMultiHostIntegrationsCreateSourcesWithDefaults
 
 `func NewMultiHostIntegrationsCreateSourcesWithDefaults() *MultiHostIntegrationsCreateSources`
 
-NewMultiHostIntegrationsCreateSourcesWithDefaults instantiates a new MultiHostIntegrationsCreateSources object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewMultiHostIntegrationsCreateSourcesWithDefaults instantiates a new MultiHostIntegrationsCreateSources object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -48,15 +56,13 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *MultiHostIntegrationsCreateSources) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
 `func (o *MultiHostIntegrationsCreateSources) SetName(v string)`
 
 SetName sets Name field to given value.
-
 
 ### GetDescription
 
@@ -68,8 +74,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *MultiHostIntegrationsCreateSources) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -93,8 +98,7 @@ GetConnectorAttributes returns the ConnectorAttributes field if non-nil, zero va
 
 `func (o *MultiHostIntegrationsCreateSources) GetConnectorAttributesOk() (*map[string]interface{}, bool)`
 
-GetConnectorAttributesOk returns a tuple with the ConnectorAttributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConnectorAttributesOk returns a tuple with the ConnectorAttributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConnectorAttributes
 
@@ -107,5 +111,3 @@ SetConnectorAttributes sets ConnectorAttributes field to given value.
 `func (o *MultiHostIntegrationsCreateSources) HasConnectorAttributes() bool`
 
 HasConnectorAttributes returns a boolean if a field has been set.
-
-

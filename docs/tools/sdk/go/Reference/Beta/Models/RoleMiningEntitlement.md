@@ -4,26 +4,33 @@ title: RoleMiningEntitlement
 pagination_label: RoleMiningEntitlement
 sidebar_label: RoleMiningEntitlement
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleMiningEntitlement', 'BetaRoleMiningEntitlement'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'RoleMiningEntitlement', 'BetaRoleMiningEntitlement']
 slug: /tools/sdk/go/beta/models/role-mining-entitlement
-tags: ['SDK', 'Software Development Kit', 'RoleMiningEntitlement', 'BetaRoleMiningEntitlement']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningEntitlement',
+    'BetaRoleMiningEntitlement',
+  ]
 ---
 
 # RoleMiningEntitlement
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**EntitlementRef** | Pointer to [**RoleMiningEntitlementRef**](role-mining-entitlement-ref) |  | [optional] 
-**Name** | Pointer to **string** | Name of the entitlement | [optional] 
-**ApplicationName** | Pointer to **string** | Application name of the entitlement | [optional] 
-**IdentityCount** | Pointer to **int32** | The number of identities with this entitlement in a role. | [optional] 
-**Popularity** | Pointer to **float32** | The % popularity of this entitlement in a role. | [optional] 
-**PopularityInOrg** | Pointer to **float32** | The % popularity of this entitlement in the org. | [optional] 
-**SourceId** | Pointer to **string** | The ID of the source/application. | [optional] 
-**ActivitySourceState** | Pointer to **NullableString** | The status of activity data for the source.   Value is complete or notComplete. | [optional] 
-**SourceUsagePercent** | Pointer to **NullableFloat32** | The percentage of identities in the potential role that have usage of the source/application of this entitlement. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **EntitlementRef** | Pointer to [**RoleMiningEntitlementRef**](role-mining-entitlement-ref) |  | [optional] |
+| **Name** | Pointer to **string** | Name of the entitlement | [optional] |
+| **ApplicationName** | Pointer to **string** | Application name of the entitlement | [optional] |
+| **IdentityCount** | Pointer to **int32** | The number of identities with this entitlement in a role. | [optional] |
+| **Popularity** | Pointer to **float32** | The % popularity of this entitlement in a role. | [optional] |
+| **PopularityInOrg** | Pointer to **float32** | The % popularity of this entitlement in the org. | [optional] |
+| **SourceId** | Pointer to **string** | The ID of the source/application. | [optional] |
+| **ActivitySourceState** | Pointer to **NullableString** | The status of activity data for the source. Value is complete or notComplete. | [optional] |
+| **SourceUsagePercent** | Pointer to **NullableFloat32** | The percentage of identities in the potential role that have usage of the source/application of this entitlement. | [optional] |
 
 ## Methods
 
@@ -31,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewRoleMiningEntitlement() *RoleMiningEntitlement`
 
-NewRoleMiningEntitlement instantiates a new RoleMiningEntitlement object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleMiningEntitlement instantiates a new RoleMiningEntitlement object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleMiningEntitlementWithDefaults
 
 `func NewRoleMiningEntitlementWithDefaults() *RoleMiningEntitlement`
 
-NewRoleMiningEntitlementWithDefaults instantiates a new RoleMiningEntitlement object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleMiningEntitlementWithDefaults instantiates a new RoleMiningEntitlement object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetEntitlementRef
 
@@ -54,8 +56,7 @@ GetEntitlementRef returns the EntitlementRef field if non-nil, zero value otherw
 
 `func (o *RoleMiningEntitlement) GetEntitlementRefOk() (*RoleMiningEntitlementRef, bool)`
 
-GetEntitlementRefOk returns a tuple with the EntitlementRef field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEntitlementRefOk returns a tuple with the EntitlementRef field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEntitlementRef
 
@@ -79,8 +80,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningEntitlement) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -104,8 +104,7 @@ GetApplicationName returns the ApplicationName field if non-nil, zero value othe
 
 `func (o *RoleMiningEntitlement) GetApplicationNameOk() (*string, bool)`
 
-GetApplicationNameOk returns a tuple with the ApplicationName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApplicationNameOk returns a tuple with the ApplicationName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApplicationName
 
@@ -129,8 +128,7 @@ GetIdentityCount returns the IdentityCount field if non-nil, zero value otherwis
 
 `func (o *RoleMiningEntitlement) GetIdentityCountOk() (*int32, bool)`
 
-GetIdentityCountOk returns a tuple with the IdentityCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityCountOk returns a tuple with the IdentityCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityCount
 
@@ -154,8 +152,7 @@ GetPopularity returns the Popularity field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningEntitlement) GetPopularityOk() (*float32, bool)`
 
-GetPopularityOk returns a tuple with the Popularity field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPopularityOk returns a tuple with the Popularity field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPopularity
 
@@ -179,8 +176,7 @@ GetPopularityInOrg returns the PopularityInOrg field if non-nil, zero value othe
 
 `func (o *RoleMiningEntitlement) GetPopularityInOrgOk() (*float32, bool)`
 
-GetPopularityInOrgOk returns a tuple with the PopularityInOrg field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPopularityInOrgOk returns a tuple with the PopularityInOrg field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPopularityInOrg
 
@@ -204,8 +200,7 @@ GetSourceId returns the SourceId field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningEntitlement) GetSourceIdOk() (*string, bool)`
 
-GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceId
 
@@ -229,8 +224,7 @@ GetActivitySourceState returns the ActivitySourceState field if non-nil, zero va
 
 `func (o *RoleMiningEntitlement) GetActivitySourceStateOk() (*string, bool)`
 
-GetActivitySourceStateOk returns a tuple with the ActivitySourceState field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetActivitySourceStateOk returns a tuple with the ActivitySourceState field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetActivitySourceState
 
@@ -248,12 +242,14 @@ HasActivitySourceState returns a boolean if a field has been set.
 
 `func (o *RoleMiningEntitlement) SetActivitySourceStateNil(b bool)`
 
- SetActivitySourceStateNil sets the value for ActivitySourceState to be an explicit nil
+SetActivitySourceStateNil sets the value for ActivitySourceState to be an explicit nil
 
 ### UnsetActivitySourceState
+
 `func (o *RoleMiningEntitlement) UnsetActivitySourceState()`
 
 UnsetActivitySourceState ensures that no value is present for ActivitySourceState, not even an explicit nil
+
 ### GetSourceUsagePercent
 
 `func (o *RoleMiningEntitlement) GetSourceUsagePercent() float32`
@@ -264,8 +260,7 @@ GetSourceUsagePercent returns the SourceUsagePercent field if non-nil, zero valu
 
 `func (o *RoleMiningEntitlement) GetSourceUsagePercentOk() (*float32, bool)`
 
-GetSourceUsagePercentOk returns a tuple with the SourceUsagePercent field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceUsagePercentOk returns a tuple with the SourceUsagePercent field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceUsagePercent
 
@@ -283,10 +278,10 @@ HasSourceUsagePercent returns a boolean if a field has been set.
 
 `func (o *RoleMiningEntitlement) SetSourceUsagePercentNil(b bool)`
 
- SetSourceUsagePercentNil sets the value for SourceUsagePercent to be an explicit nil
+SetSourceUsagePercentNil sets the value for SourceUsagePercent to be an explicit nil
 
 ### UnsetSourceUsagePercent
+
 `func (o *RoleMiningEntitlement) UnsetSourceUsagePercent()`
 
 UnsetSourceUsagePercent ensures that no value is present for SourceUsagePercent, not even an explicit nil
-

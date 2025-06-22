@@ -4,26 +4,27 @@ title: SedBatchRecord
 pagination_label: SedBatchRecord
 sidebar_label: SedBatchRecord
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SedBatchRecord', 'V2024SedBatchRecord'] 
+keywords: ['go', 'Golang', 'sdk', 'SedBatchRecord', 'V2024SedBatchRecord']
 slug: /tools/sdk/go/v2024/models/sed-batch-record
-tags: ['SDK', 'Software Development Kit', 'SedBatchRecord', 'V2024SedBatchRecord']
+tags:
+  ['SDK', 'Software Development Kit', 'SedBatchRecord', 'V2024SedBatchRecord']
 ---
 
 # SedBatchRecord
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**TenantId** | Pointer to **string** | The tenant ID associated with the batch. | [optional] 
-**BatchId** | Pointer to **string** | The unique ID of the batch. | [optional] 
-**Name** | Pointer to **NullableString** | The name of the batch. | [optional] 
-**ProcessedState** | Pointer to **NullableString** | The current state of the batch (e.g., submitted, materialized, completed). | [optional] 
-**RequestedBy** | Pointer to **string** | The ID of the user who requested the batch. | [optional] 
-**MaterializedCount** | Pointer to **int32** | The number of items materialized in the batch. | [optional] 
-**ProcessedCount** | Pointer to **int32** | The number of items processed in the batch. | [optional] 
-**CreatedAt** | Pointer to **SailPointTime** | The timestamp when the batch was created. | [optional] 
-**UpdatedAt** | Pointer to **NullableTime** | The timestamp when the batch was last updated. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **TenantId** | Pointer to **string** | The tenant ID associated with the batch. | [optional] |
+| **BatchId** | Pointer to **string** | The unique ID of the batch. | [optional] |
+| **Name** | Pointer to **NullableString** | The name of the batch. | [optional] |
+| **ProcessedState** | Pointer to **NullableString** | The current state of the batch (e.g., submitted, materialized, completed). | [optional] |
+| **RequestedBy** | Pointer to **string** | The ID of the user who requested the batch. | [optional] |
+| **MaterializedCount** | Pointer to **int32** | The number of items materialized in the batch. | [optional] |
+| **ProcessedCount** | Pointer to **int32** | The number of items processed in the batch. | [optional] |
+| **CreatedAt** | Pointer to **SailPointTime** | The timestamp when the batch was created. | [optional] |
+| **UpdatedAt** | Pointer to **NullableTime** | The timestamp when the batch was last updated. | [optional] |
 
 ## Methods
 
@@ -31,18 +32,13 @@ Name | Type | Description | Notes
 
 `func NewSedBatchRecord() *SedBatchRecord`
 
-NewSedBatchRecord instantiates a new SedBatchRecord object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSedBatchRecord instantiates a new SedBatchRecord object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSedBatchRecordWithDefaults
 
 `func NewSedBatchRecordWithDefaults() *SedBatchRecord`
 
-NewSedBatchRecordWithDefaults instantiates a new SedBatchRecord object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSedBatchRecordWithDefaults instantiates a new SedBatchRecord object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetTenantId
 
@@ -54,8 +50,7 @@ GetTenantId returns the TenantId field if non-nil, zero value otherwise.
 
 `func (o *SedBatchRecord) GetTenantIdOk() (*string, bool)`
 
-GetTenantIdOk returns a tuple with the TenantId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTenantIdOk returns a tuple with the TenantId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTenantId
 
@@ -79,8 +74,7 @@ GetBatchId returns the BatchId field if non-nil, zero value otherwise.
 
 `func (o *SedBatchRecord) GetBatchIdOk() (*string, bool)`
 
-GetBatchIdOk returns a tuple with the BatchId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetBatchIdOk returns a tuple with the BatchId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetBatchId
 
@@ -104,8 +98,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *SedBatchRecord) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -123,12 +116,14 @@ HasName returns a boolean if a field has been set.
 
 `func (o *SedBatchRecord) SetNameNil(b bool)`
 
- SetNameNil sets the value for Name to be an explicit nil
+SetNameNil sets the value for Name to be an explicit nil
 
 ### UnsetName
+
 `func (o *SedBatchRecord) UnsetName()`
 
 UnsetName ensures that no value is present for Name, not even an explicit nil
+
 ### GetProcessedState
 
 `func (o *SedBatchRecord) GetProcessedState() string`
@@ -139,8 +134,7 @@ GetProcessedState returns the ProcessedState field if non-nil, zero value otherw
 
 `func (o *SedBatchRecord) GetProcessedStateOk() (*string, bool)`
 
-GetProcessedStateOk returns a tuple with the ProcessedState field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProcessedStateOk returns a tuple with the ProcessedState field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProcessedState
 
@@ -158,12 +152,14 @@ HasProcessedState returns a boolean if a field has been set.
 
 `func (o *SedBatchRecord) SetProcessedStateNil(b bool)`
 
- SetProcessedStateNil sets the value for ProcessedState to be an explicit nil
+SetProcessedStateNil sets the value for ProcessedState to be an explicit nil
 
 ### UnsetProcessedState
+
 `func (o *SedBatchRecord) UnsetProcessedState()`
 
 UnsetProcessedState ensures that no value is present for ProcessedState, not even an explicit nil
+
 ### GetRequestedBy
 
 `func (o *SedBatchRecord) GetRequestedBy() string`
@@ -174,8 +170,7 @@ GetRequestedBy returns the RequestedBy field if non-nil, zero value otherwise.
 
 `func (o *SedBatchRecord) GetRequestedByOk() (*string, bool)`
 
-GetRequestedByOk returns a tuple with the RequestedBy field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestedByOk returns a tuple with the RequestedBy field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequestedBy
 
@@ -199,8 +194,7 @@ GetMaterializedCount returns the MaterializedCount field if non-nil, zero value 
 
 `func (o *SedBatchRecord) GetMaterializedCountOk() (*int32, bool)`
 
-GetMaterializedCountOk returns a tuple with the MaterializedCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMaterializedCountOk returns a tuple with the MaterializedCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMaterializedCount
 
@@ -224,8 +218,7 @@ GetProcessedCount returns the ProcessedCount field if non-nil, zero value otherw
 
 `func (o *SedBatchRecord) GetProcessedCountOk() (*int32, bool)`
 
-GetProcessedCountOk returns a tuple with the ProcessedCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProcessedCountOk returns a tuple with the ProcessedCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProcessedCount
 
@@ -249,8 +242,7 @@ GetCreatedAt returns the CreatedAt field if non-nil, zero value otherwise.
 
 `func (o *SedBatchRecord) GetCreatedAtOk() (*SailPointTime, bool)`
 
-GetCreatedAtOk returns a tuple with the CreatedAt field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedAtOk returns a tuple with the CreatedAt field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreatedAt
 
@@ -274,8 +266,7 @@ GetUpdatedAt returns the UpdatedAt field if non-nil, zero value otherwise.
 
 `func (o *SedBatchRecord) GetUpdatedAtOk() (*SailPointTime, bool)`
 
-GetUpdatedAtOk returns a tuple with the UpdatedAt field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUpdatedAtOk returns a tuple with the UpdatedAt field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUpdatedAt
 
@@ -293,10 +284,10 @@ HasUpdatedAt returns a boolean if a field has been set.
 
 `func (o *SedBatchRecord) SetUpdatedAtNil(b bool)`
 
- SetUpdatedAtNil sets the value for UpdatedAt to be an explicit nil
+SetUpdatedAtNil sets the value for UpdatedAt to be an explicit nil
 
 ### UnsetUpdatedAt
+
 `func (o *SedBatchRecord) UnsetUpdatedAt()`
 
 UnsetUpdatedAt ensures that no value is present for UpdatedAt, not even an explicit nil
-

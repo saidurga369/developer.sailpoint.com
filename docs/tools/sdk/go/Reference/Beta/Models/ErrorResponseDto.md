@@ -4,21 +4,27 @@ title: ErrorResponseDto
 pagination_label: ErrorResponseDto
 sidebar_label: ErrorResponseDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ErrorResponseDto', 'BetaErrorResponseDto'] 
+keywords: ['go', 'Golang', 'sdk', 'ErrorResponseDto', 'BetaErrorResponseDto']
 slug: /tools/sdk/go/beta/models/error-response-dto
-tags: ['SDK', 'Software Development Kit', 'ErrorResponseDto', 'BetaErrorResponseDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ErrorResponseDto',
+    'BetaErrorResponseDto',
+  ]
 ---
 
 # ErrorResponseDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**DetailCode** | Pointer to **string** | Fine-grained error code providing more detail of the error. | [optional] 
-**TrackingId** | Pointer to **string** | Unique tracking id for the error. | [optional] 
-**Messages** | Pointer to [**[]ErrorMessageDto**](error-message-dto) | Generic localized reason for error | [optional] 
-**Causes** | Pointer to [**[]ErrorMessageDto**](error-message-dto) | Plain-text descriptive reasons to provide additional detail to the text provided in the messages field | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **DetailCode** | Pointer to **string** | Fine-grained error code providing more detail of the error. | [optional] |
+| **TrackingId** | Pointer to **string** | Unique tracking id for the error. | [optional] |
+| **Messages** | Pointer to [**[]ErrorMessageDto**](error-message-dto) | Generic localized reason for error | [optional] |
+| **Causes** | Pointer to [**[]ErrorMessageDto**](error-message-dto) | Plain-text descriptive reasons to provide additional detail to the text provided in the messages field | [optional] |
 
 ## Methods
 
@@ -26,18 +32,13 @@ Name | Type | Description | Notes
 
 `func NewErrorResponseDto() *ErrorResponseDto`
 
-NewErrorResponseDto instantiates a new ErrorResponseDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewErrorResponseDto instantiates a new ErrorResponseDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewErrorResponseDtoWithDefaults
 
 `func NewErrorResponseDtoWithDefaults() *ErrorResponseDto`
 
-NewErrorResponseDtoWithDefaults instantiates a new ErrorResponseDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewErrorResponseDtoWithDefaults instantiates a new ErrorResponseDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetDetailCode
 
@@ -49,8 +50,7 @@ GetDetailCode returns the DetailCode field if non-nil, zero value otherwise.
 
 `func (o *ErrorResponseDto) GetDetailCodeOk() (*string, bool)`
 
-GetDetailCodeOk returns a tuple with the DetailCode field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDetailCodeOk returns a tuple with the DetailCode field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDetailCode
 
@@ -74,8 +74,7 @@ GetTrackingId returns the TrackingId field if non-nil, zero value otherwise.
 
 `func (o *ErrorResponseDto) GetTrackingIdOk() (*string, bool)`
 
-GetTrackingIdOk returns a tuple with the TrackingId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTrackingIdOk returns a tuple with the TrackingId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTrackingId
 
@@ -99,8 +98,7 @@ GetMessages returns the Messages field if non-nil, zero value otherwise.
 
 `func (o *ErrorResponseDto) GetMessagesOk() (*[]ErrorMessageDto, bool)`
 
-GetMessagesOk returns a tuple with the Messages field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMessagesOk returns a tuple with the Messages field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMessages
 
@@ -124,8 +122,7 @@ GetCauses returns the Causes field if non-nil, zero value otherwise.
 
 `func (o *ErrorResponseDto) GetCausesOk() (*[]ErrorMessageDto, bool)`
 
-GetCausesOk returns a tuple with the Causes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCausesOk returns a tuple with the Causes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCauses
 
@@ -138,5 +135,3 @@ SetCauses sets Causes field to given value.
 `func (o *ErrorResponseDto) HasCauses() bool`
 
 HasCauses returns a boolean if a field has been set.
-
-

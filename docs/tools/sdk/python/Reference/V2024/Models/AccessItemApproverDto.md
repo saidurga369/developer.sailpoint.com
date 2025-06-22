@@ -4,9 +4,22 @@ title: AccessItemApproverDto
 pagination_label: AccessItemApproverDto
 sidebar_label: AccessItemApproverDto
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccessItemApproverDto', 'V2024AccessItemApproverDto'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccessItemApproverDto',
+    'V2024AccessItemApproverDto',
+  ]
 slug: /tools/sdk/python/v2024/models/access-item-approver-dto
-tags: ['SDK', 'Software Development Kit', 'AccessItemApproverDto', 'V2024AccessItemApproverDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessItemApproverDto',
+    'V2024AccessItemApproverDto',
+  ]
 ---
 
 # AccessItemApproverDto
@@ -15,11 +28,12 @@ Identity who approved the access item request.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] | DTO type of identity who approved the access item request. | [optional] 
-**id** | **str** | ID of identity who approved the access item request. | [optional] 
-**name** | **str** | Human-readable display name of identity who approved the access item request. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'IDENTITY' ] | DTO type of identity who approved the access item request. | [optional] |
+| **id** | **str** | ID of identity who approved the access item request. | [optional] |
+| **name** | **str** | Human-readable display name of identity who approved the access item request. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Allen Albertson'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

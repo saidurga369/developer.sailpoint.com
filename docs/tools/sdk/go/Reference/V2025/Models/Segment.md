@@ -4,7 +4,7 @@ title: Segment
 pagination_label: Segment
 sidebar_label: Segment
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Segment', 'V2025Segment'] 
+keywords: ['go', 'Golang', 'sdk', 'Segment', 'V2025Segment']
 slug: /tools/sdk/go/v2025/models/segment
 tags: ['SDK', 'Software Development Kit', 'Segment', 'V2025Segment']
 ---
@@ -13,16 +13,16 @@ tags: ['SDK', 'Software Development Kit', 'Segment', 'V2025Segment']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The segment's ID. | [optional] 
-**Name** | Pointer to **string** | The segment's business name. | [optional] 
-**Created** | Pointer to **SailPointTime** | The time when the segment is created. | [optional] 
-**Modified** | Pointer to **SailPointTime** | The time when the segment is modified. | [optional] 
-**Description** | Pointer to **string** | The segment's optional description. | [optional] 
-**Owner** | Pointer to [**NullableOwnerReferenceSegments**](owner-reference-segments) |  | [optional] 
-**VisibilityCriteria** | Pointer to [**SegmentVisibilityCriteria**](segment-visibility-criteria) |  | [optional] 
-**Active** | Pointer to **bool** | This boolean indicates whether the segment is currently active. Inactive segments have no effect. | [optional] [default to false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The segment's ID. | [optional] |
+| **Name** | Pointer to **string** | The segment's business name. | [optional] |
+| **Created** | Pointer to **SailPointTime** | The time when the segment is created. | [optional] |
+| **Modified** | Pointer to **SailPointTime** | The time when the segment is modified. | [optional] |
+| **Description** | Pointer to **string** | The segment's optional description. | [optional] |
+| **Owner** | Pointer to [**NullableOwnerReferenceSegments**](owner-reference-segments) |  | [optional] |
+| **VisibilityCriteria** | Pointer to [**SegmentVisibilityCriteria**](segment-visibility-criteria) |  | [optional] |
+| **Active** | Pointer to **bool** | This boolean indicates whether the segment is currently active. Inactive segments have no effect. | [optional] [default to false] |
 
 ## Methods
 
@@ -30,18 +30,13 @@ Name | Type | Description | Notes
 
 `func NewSegment() *Segment`
 
-NewSegment instantiates a new Segment object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSegment instantiates a new Segment object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSegmentWithDefaults
 
 `func NewSegmentWithDefaults() *Segment`
 
-NewSegmentWithDefaults instantiates a new Segment object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSegmentWithDefaults instantiates a new Segment object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -53,8 +48,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *Segment) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -78,8 +72,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *Segment) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -103,8 +96,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *Segment) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -128,8 +120,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *Segment) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -153,8 +144,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *Segment) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -178,8 +168,7 @@ GetOwner returns the Owner field if non-nil, zero value otherwise.
 
 `func (o *Segment) GetOwnerOk() (*OwnerReferenceSegments, bool)`
 
-GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwner
 
@@ -197,12 +186,14 @@ HasOwner returns a boolean if a field has been set.
 
 `func (o *Segment) SetOwnerNil(b bool)`
 
- SetOwnerNil sets the value for Owner to be an explicit nil
+SetOwnerNil sets the value for Owner to be an explicit nil
 
 ### UnsetOwner
+
 `func (o *Segment) UnsetOwner()`
 
 UnsetOwner ensures that no value is present for Owner, not even an explicit nil
+
 ### GetVisibilityCriteria
 
 `func (o *Segment) GetVisibilityCriteria() SegmentVisibilityCriteria`
@@ -213,8 +204,7 @@ GetVisibilityCriteria returns the VisibilityCriteria field if non-nil, zero valu
 
 `func (o *Segment) GetVisibilityCriteriaOk() (*SegmentVisibilityCriteria, bool)`
 
-GetVisibilityCriteriaOk returns a tuple with the VisibilityCriteria field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetVisibilityCriteriaOk returns a tuple with the VisibilityCriteria field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetVisibilityCriteria
 
@@ -238,8 +228,7 @@ GetActive returns the Active field if non-nil, zero value otherwise.
 
 `func (o *Segment) GetActiveOk() (*bool, bool)`
 
-GetActiveOk returns a tuple with the Active field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetActiveOk returns a tuple with the Active field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetActive
 
@@ -252,5 +241,3 @@ SetActive sets Active field to given value.
 `func (o *Segment) HasActive() bool`
 
 HasActive returns a boolean if a field has been set.
-
-

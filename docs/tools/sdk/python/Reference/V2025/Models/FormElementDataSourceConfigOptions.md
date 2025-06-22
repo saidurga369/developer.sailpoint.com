@@ -4,21 +4,34 @@ title: FormElementDataSourceConfigOptions
 pagination_label: FormElementDataSourceConfigOptions
 sidebar_label: FormElementDataSourceConfigOptions
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'FormElementDataSourceConfigOptions', 'V2025FormElementDataSourceConfigOptions'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'FormElementDataSourceConfigOptions',
+    'V2025FormElementDataSourceConfigOptions',
+  ]
 slug: /tools/sdk/python/v2025/models/form-element-data-source-config-options
-tags: ['SDK', 'Software Development Kit', 'FormElementDataSourceConfigOptions', 'V2025FormElementDataSourceConfigOptions']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'FormElementDataSourceConfigOptions',
+    'V2025FormElementDataSourceConfigOptions',
+  ]
 ---
 
 # FormElementDataSourceConfigOptions
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**label** | **str** | Label is the main label to display to the user when selecting this option | [optional] 
-**sub_label** | **str** | SubLabel is the sub label to display below the label in diminutive styling to help describe or identify this option | [optional] 
-**value** | **str** | Value is the value to save as an entry when the user selects this option | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **label** | **str** | Label is the main label to display to the user when selecting this option | [optional] |
+| **sub_label** | **str** | SubLabel is the sub label to display below the label in diminutive styling to help describe or identify this option | [optional] |
+| **value** | **str** | Value is the value to save as an entry when the user selects this option | [optional] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ value='e96674448eba4ca1ba04eee999a8f3cd'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

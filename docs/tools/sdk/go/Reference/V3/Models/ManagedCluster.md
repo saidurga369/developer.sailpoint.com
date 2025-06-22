@@ -4,7 +4,7 @@ title: ManagedCluster
 pagination_label: ManagedCluster
 sidebar_label: ManagedCluster
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ManagedCluster', 'ManagedCluster'] 
+keywords: ['go', 'Golang', 'sdk', 'ManagedCluster', 'ManagedCluster']
 slug: /tools/sdk/go/v3/models/managed-cluster
 tags: ['SDK', 'Software Development Kit', 'ManagedCluster', 'ManagedCluster']
 ---
@@ -13,33 +13,33 @@ tags: ['SDK', 'Software Development Kit', 'ManagedCluster', 'ManagedCluster']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **string** | ManagedCluster ID | 
-**Name** | Pointer to **string** | ManagedCluster name | [optional] 
-**Pod** | Pointer to **string** | ManagedCluster pod | [optional] 
-**Org** | Pointer to **string** | ManagedCluster org | [optional] 
-**Type** | Pointer to [**ManagedClusterTypes**](managed-cluster-types) |  | [optional] 
-**Configuration** | Pointer to **map[string]string** | ManagedProcess configuration map | [optional] 
-**KeyPair** | Pointer to [**ManagedClusterKeyPair**](managed-cluster-key-pair) |  | [optional] 
-**Attributes** | Pointer to [**ManagedClusterAttributes**](managed-cluster-attributes) |  | [optional] 
-**Description** | Pointer to **string** | ManagedCluster description | [optional] [default to "q"]
-**Redis** | Pointer to [**ManagedClusterRedis**](managed-cluster-redis) |  | [optional] 
-**ClientType** | [**NullableManagedClientType**](managed-client-type) |  | 
-**CcgVersion** | **string** | CCG version used by the ManagedCluster | 
-**PinnedConfig** | Pointer to **bool** | boolean flag indiacting whether or not the cluster configuration is pinned | [optional] [default to false]
-**LogConfiguration** | Pointer to [**NullableClientLogConfiguration**](client-log-configuration) |  | [optional] 
-**Operational** | Pointer to **bool** | Whether or not the cluster is operational or not | [optional] [default to false]
-**Status** | Pointer to **string** | Cluster status | [optional] 
-**PublicKeyCertificate** | Pointer to **NullableString** | Public key certificate | [optional] 
-**PublicKeyThumbprint** | Pointer to **NullableString** | Public key thumbprint | [optional] 
-**PublicKey** | Pointer to **NullableString** | Public key | [optional] 
-**AlertKey** | Pointer to **string** | Key describing any immediate cluster alerts | [optional] 
-**ClientIds** | Pointer to **[]string** | List of clients in a cluster | [optional] 
-**ServiceCount** | Pointer to **int32** | Number of services bound to a cluster | [optional] [default to 0]
-**CcId** | Pointer to **string** | CC ID only used in calling CC, will be removed without notice when Migration to CEGS is finished | [optional] [default to "0"]
-**CreatedAt** | Pointer to **NullableTime** | The date/time this cluster was created | [optional] 
-**UpdatedAt** | Pointer to **NullableTime** | The date/time this cluster was last updated | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **string** | ManagedCluster ID |
+| **Name** | Pointer to **string** | ManagedCluster name | [optional] |
+| **Pod** | Pointer to **string** | ManagedCluster pod | [optional] |
+| **Org** | Pointer to **string** | ManagedCluster org | [optional] |
+| **Type** | Pointer to [**ManagedClusterTypes**](managed-cluster-types) |  | [optional] |
+| **Configuration** | Pointer to **map[string]string** | ManagedProcess configuration map | [optional] |
+| **KeyPair** | Pointer to [**ManagedClusterKeyPair**](managed-cluster-key-pair) |  | [optional] |
+| **Attributes** | Pointer to [**ManagedClusterAttributes**](managed-cluster-attributes) |  | [optional] |
+| **Description** | Pointer to **string** | ManagedCluster description | [optional] [default to "q"] |
+| **Redis** | Pointer to [**ManagedClusterRedis**](managed-cluster-redis) |  | [optional] |
+| **ClientType** | [**NullableManagedClientType**](managed-client-type) |  |
+| **CcgVersion** | **string** | CCG version used by the ManagedCluster |
+| **PinnedConfig** | Pointer to **bool** | boolean flag indiacting whether or not the cluster configuration is pinned | [optional] [default to false] |
+| **LogConfiguration** | Pointer to [**NullableClientLogConfiguration**](client-log-configuration) |  | [optional] |
+| **Operational** | Pointer to **bool** | Whether or not the cluster is operational or not | [optional] [default to false] |
+| **Status** | Pointer to **string** | Cluster status | [optional] |
+| **PublicKeyCertificate** | Pointer to **NullableString** | Public key certificate | [optional] |
+| **PublicKeyThumbprint** | Pointer to **NullableString** | Public key thumbprint | [optional] |
+| **PublicKey** | Pointer to **NullableString** | Public key | [optional] |
+| **AlertKey** | Pointer to **string** | Key describing any immediate cluster alerts | [optional] |
+| **ClientIds** | Pointer to **[]string** | List of clients in a cluster | [optional] |
+| **ServiceCount** | Pointer to **int32** | Number of services bound to a cluster | [optional] [default to 0] |
+| **CcId** | Pointer to **string** | CC ID only used in calling CC, will be removed without notice when Migration to CEGS is finished | [optional] [default to "0"] |
+| **CreatedAt** | Pointer to **NullableTime** | The date/time this cluster was created | [optional] |
+| **UpdatedAt** | Pointer to **NullableTime** | The date/time this cluster was last updated | [optional] |
 
 ## Methods
 
@@ -47,18 +47,13 @@ Name | Type | Description | Notes
 
 `func NewManagedCluster(id string, clientType NullableManagedClientType, ccgVersion string, ) *ManagedCluster`
 
-NewManagedCluster instantiates a new ManagedCluster object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewManagedCluster instantiates a new ManagedCluster object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewManagedClusterWithDefaults
 
 `func NewManagedClusterWithDefaults() *ManagedCluster`
 
-NewManagedClusterWithDefaults instantiates a new ManagedCluster object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewManagedClusterWithDefaults instantiates a new ManagedCluster object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -70,15 +65,13 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *ManagedCluster) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
 `func (o *ManagedCluster) SetId(v string)`
 
 SetId sets Id field to given value.
-
 
 ### GetName
 
@@ -90,8 +83,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *ManagedCluster) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -115,8 +107,7 @@ GetPod returns the Pod field if non-nil, zero value otherwise.
 
 `func (o *ManagedCluster) GetPodOk() (*string, bool)`
 
-GetPodOk returns a tuple with the Pod field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPodOk returns a tuple with the Pod field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPod
 
@@ -140,8 +131,7 @@ GetOrg returns the Org field if non-nil, zero value otherwise.
 
 `func (o *ManagedCluster) GetOrgOk() (*string, bool)`
 
-GetOrgOk returns a tuple with the Org field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOrgOk returns a tuple with the Org field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOrg
 
@@ -165,8 +155,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *ManagedCluster) GetTypeOk() (*ManagedClusterTypes, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -190,8 +179,7 @@ GetConfiguration returns the Configuration field if non-nil, zero value otherwis
 
 `func (o *ManagedCluster) GetConfigurationOk() (*map[string]string, bool)`
 
-GetConfigurationOk returns a tuple with the Configuration field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConfigurationOk returns a tuple with the Configuration field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConfiguration
 
@@ -215,8 +203,7 @@ GetKeyPair returns the KeyPair field if non-nil, zero value otherwise.
 
 `func (o *ManagedCluster) GetKeyPairOk() (*ManagedClusterKeyPair, bool)`
 
-GetKeyPairOk returns a tuple with the KeyPair field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetKeyPairOk returns a tuple with the KeyPair field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetKeyPair
 
@@ -240,8 +227,7 @@ GetAttributes returns the Attributes field if non-nil, zero value otherwise.
 
 `func (o *ManagedCluster) GetAttributesOk() (*ManagedClusterAttributes, bool)`
 
-GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributes
 
@@ -265,8 +251,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *ManagedCluster) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -290,8 +275,7 @@ GetRedis returns the Redis field if non-nil, zero value otherwise.
 
 `func (o *ManagedCluster) GetRedisOk() (*ManagedClusterRedis, bool)`
 
-GetRedisOk returns a tuple with the Redis field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRedisOk returns a tuple with the Redis field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRedis
 
@@ -315,8 +299,7 @@ GetClientType returns the ClientType field if non-nil, zero value otherwise.
 
 `func (o *ManagedCluster) GetClientTypeOk() (*ManagedClientType, bool)`
 
-GetClientTypeOk returns a tuple with the ClientType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetClientTypeOk returns a tuple with the ClientType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetClientType
 
@@ -324,17 +307,18 @@ and a boolean to check if the value has been set.
 
 SetClientType sets ClientType field to given value.
 
-
 ### SetClientTypeNil
 
 `func (o *ManagedCluster) SetClientTypeNil(b bool)`
 
- SetClientTypeNil sets the value for ClientType to be an explicit nil
+SetClientTypeNil sets the value for ClientType to be an explicit nil
 
 ### UnsetClientType
+
 `func (o *ManagedCluster) UnsetClientType()`
 
 UnsetClientType ensures that no value is present for ClientType, not even an explicit nil
+
 ### GetCcgVersion
 
 `func (o *ManagedCluster) GetCcgVersion() string`
@@ -345,15 +329,13 @@ GetCcgVersion returns the CcgVersion field if non-nil, zero value otherwise.
 
 `func (o *ManagedCluster) GetCcgVersionOk() (*string, bool)`
 
-GetCcgVersionOk returns a tuple with the CcgVersion field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCcgVersionOk returns a tuple with the CcgVersion field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCcgVersion
 
 `func (o *ManagedCluster) SetCcgVersion(v string)`
 
 SetCcgVersion sets CcgVersion field to given value.
-
 
 ### GetPinnedConfig
 
@@ -365,8 +347,7 @@ GetPinnedConfig returns the PinnedConfig field if non-nil, zero value otherwise.
 
 `func (o *ManagedCluster) GetPinnedConfigOk() (*bool, bool)`
 
-GetPinnedConfigOk returns a tuple with the PinnedConfig field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPinnedConfigOk returns a tuple with the PinnedConfig field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPinnedConfig
 
@@ -390,8 +371,7 @@ GetLogConfiguration returns the LogConfiguration field if non-nil, zero value ot
 
 `func (o *ManagedCluster) GetLogConfigurationOk() (*ClientLogConfiguration, bool)`
 
-GetLogConfigurationOk returns a tuple with the LogConfiguration field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLogConfigurationOk returns a tuple with the LogConfiguration field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLogConfiguration
 
@@ -409,12 +389,14 @@ HasLogConfiguration returns a boolean if a field has been set.
 
 `func (o *ManagedCluster) SetLogConfigurationNil(b bool)`
 
- SetLogConfigurationNil sets the value for LogConfiguration to be an explicit nil
+SetLogConfigurationNil sets the value for LogConfiguration to be an explicit nil
 
 ### UnsetLogConfiguration
+
 `func (o *ManagedCluster) UnsetLogConfiguration()`
 
 UnsetLogConfiguration ensures that no value is present for LogConfiguration, not even an explicit nil
+
 ### GetOperational
 
 `func (o *ManagedCluster) GetOperational() bool`
@@ -425,8 +407,7 @@ GetOperational returns the Operational field if non-nil, zero value otherwise.
 
 `func (o *ManagedCluster) GetOperationalOk() (*bool, bool)`
 
-GetOperationalOk returns a tuple with the Operational field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOperationalOk returns a tuple with the Operational field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOperational
 
@@ -450,8 +431,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *ManagedCluster) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -475,8 +455,7 @@ GetPublicKeyCertificate returns the PublicKeyCertificate field if non-nil, zero 
 
 `func (o *ManagedCluster) GetPublicKeyCertificateOk() (*string, bool)`
 
-GetPublicKeyCertificateOk returns a tuple with the PublicKeyCertificate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPublicKeyCertificateOk returns a tuple with the PublicKeyCertificate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPublicKeyCertificate
 
@@ -494,12 +473,14 @@ HasPublicKeyCertificate returns a boolean if a field has been set.
 
 `func (o *ManagedCluster) SetPublicKeyCertificateNil(b bool)`
 
- SetPublicKeyCertificateNil sets the value for PublicKeyCertificate to be an explicit nil
+SetPublicKeyCertificateNil sets the value for PublicKeyCertificate to be an explicit nil
 
 ### UnsetPublicKeyCertificate
+
 `func (o *ManagedCluster) UnsetPublicKeyCertificate()`
 
 UnsetPublicKeyCertificate ensures that no value is present for PublicKeyCertificate, not even an explicit nil
+
 ### GetPublicKeyThumbprint
 
 `func (o *ManagedCluster) GetPublicKeyThumbprint() string`
@@ -510,8 +491,7 @@ GetPublicKeyThumbprint returns the PublicKeyThumbprint field if non-nil, zero va
 
 `func (o *ManagedCluster) GetPublicKeyThumbprintOk() (*string, bool)`
 
-GetPublicKeyThumbprintOk returns a tuple with the PublicKeyThumbprint field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPublicKeyThumbprintOk returns a tuple with the PublicKeyThumbprint field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPublicKeyThumbprint
 
@@ -529,12 +509,14 @@ HasPublicKeyThumbprint returns a boolean if a field has been set.
 
 `func (o *ManagedCluster) SetPublicKeyThumbprintNil(b bool)`
 
- SetPublicKeyThumbprintNil sets the value for PublicKeyThumbprint to be an explicit nil
+SetPublicKeyThumbprintNil sets the value for PublicKeyThumbprint to be an explicit nil
 
 ### UnsetPublicKeyThumbprint
+
 `func (o *ManagedCluster) UnsetPublicKeyThumbprint()`
 
 UnsetPublicKeyThumbprint ensures that no value is present for PublicKeyThumbprint, not even an explicit nil
+
 ### GetPublicKey
 
 `func (o *ManagedCluster) GetPublicKey() string`
@@ -545,8 +527,7 @@ GetPublicKey returns the PublicKey field if non-nil, zero value otherwise.
 
 `func (o *ManagedCluster) GetPublicKeyOk() (*string, bool)`
 
-GetPublicKeyOk returns a tuple with the PublicKey field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPublicKeyOk returns a tuple with the PublicKey field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPublicKey
 
@@ -564,12 +545,14 @@ HasPublicKey returns a boolean if a field has been set.
 
 `func (o *ManagedCluster) SetPublicKeyNil(b bool)`
 
- SetPublicKeyNil sets the value for PublicKey to be an explicit nil
+SetPublicKeyNil sets the value for PublicKey to be an explicit nil
 
 ### UnsetPublicKey
+
 `func (o *ManagedCluster) UnsetPublicKey()`
 
 UnsetPublicKey ensures that no value is present for PublicKey, not even an explicit nil
+
 ### GetAlertKey
 
 `func (o *ManagedCluster) GetAlertKey() string`
@@ -580,8 +563,7 @@ GetAlertKey returns the AlertKey field if non-nil, zero value otherwise.
 
 `func (o *ManagedCluster) GetAlertKeyOk() (*string, bool)`
 
-GetAlertKeyOk returns a tuple with the AlertKey field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAlertKeyOk returns a tuple with the AlertKey field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAlertKey
 
@@ -605,8 +587,7 @@ GetClientIds returns the ClientIds field if non-nil, zero value otherwise.
 
 `func (o *ManagedCluster) GetClientIdsOk() (*[]string, bool)`
 
-GetClientIdsOk returns a tuple with the ClientIds field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetClientIdsOk returns a tuple with the ClientIds field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetClientIds
 
@@ -630,8 +611,7 @@ GetServiceCount returns the ServiceCount field if non-nil, zero value otherwise.
 
 `func (o *ManagedCluster) GetServiceCountOk() (*int32, bool)`
 
-GetServiceCountOk returns a tuple with the ServiceCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetServiceCountOk returns a tuple with the ServiceCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetServiceCount
 
@@ -655,8 +635,7 @@ GetCcId returns the CcId field if non-nil, zero value otherwise.
 
 `func (o *ManagedCluster) GetCcIdOk() (*string, bool)`
 
-GetCcIdOk returns a tuple with the CcId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCcIdOk returns a tuple with the CcId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCcId
 
@@ -680,8 +659,7 @@ GetCreatedAt returns the CreatedAt field if non-nil, zero value otherwise.
 
 `func (o *ManagedCluster) GetCreatedAtOk() (*SailPointTime, bool)`
 
-GetCreatedAtOk returns a tuple with the CreatedAt field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedAtOk returns a tuple with the CreatedAt field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreatedAt
 
@@ -699,12 +677,14 @@ HasCreatedAt returns a boolean if a field has been set.
 
 `func (o *ManagedCluster) SetCreatedAtNil(b bool)`
 
- SetCreatedAtNil sets the value for CreatedAt to be an explicit nil
+SetCreatedAtNil sets the value for CreatedAt to be an explicit nil
 
 ### UnsetCreatedAt
+
 `func (o *ManagedCluster) UnsetCreatedAt()`
 
 UnsetCreatedAt ensures that no value is present for CreatedAt, not even an explicit nil
+
 ### GetUpdatedAt
 
 `func (o *ManagedCluster) GetUpdatedAt() SailPointTime`
@@ -715,8 +695,7 @@ GetUpdatedAt returns the UpdatedAt field if non-nil, zero value otherwise.
 
 `func (o *ManagedCluster) GetUpdatedAtOk() (*SailPointTime, bool)`
 
-GetUpdatedAtOk returns a tuple with the UpdatedAt field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUpdatedAtOk returns a tuple with the UpdatedAt field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUpdatedAt
 
@@ -734,10 +713,10 @@ HasUpdatedAt returns a boolean if a field has been set.
 
 `func (o *ManagedCluster) SetUpdatedAtNil(b bool)`
 
- SetUpdatedAtNil sets the value for UpdatedAt to be an explicit nil
+SetUpdatedAtNil sets the value for UpdatedAt to be an explicit nil
 
 ### UnsetUpdatedAt
+
 `func (o *ManagedCluster) UnsetUpdatedAt()`
 
 UnsetUpdatedAt ensures that no value is present for UpdatedAt, not even an explicit nil
-

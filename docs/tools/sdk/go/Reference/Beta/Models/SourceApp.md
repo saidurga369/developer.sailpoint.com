@@ -4,7 +4,7 @@ title: SourceApp
 pagination_label: SourceApp
 sidebar_label: SourceApp
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SourceApp', 'BetaSourceApp'] 
+keywords: ['go', 'Golang', 'sdk', 'SourceApp', 'BetaSourceApp']
 slug: /tools/sdk/go/beta/models/source-app
 tags: ['SDK', 'Software Development Kit', 'SourceApp', 'BetaSourceApp']
 ---
@@ -13,20 +13,20 @@ tags: ['SDK', 'Software Development Kit', 'SourceApp', 'BetaSourceApp']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The source app id | [optional] 
-**CloudAppId** | Pointer to **string** | The deprecated source app id | [optional] 
-**Name** | Pointer to **string** | The source app name | [optional] 
-**Created** | Pointer to **SailPointTime** | Time when the source app was created | [optional] 
-**Modified** | Pointer to **SailPointTime** | Time when the source app was last modified | [optional] 
-**Enabled** | Pointer to **bool** | True if the source app is enabled | [optional] [default to false]
-**ProvisionRequestEnabled** | Pointer to **bool** | True if the source app is provision request enabled | [optional] [default to false]
-**Description** | Pointer to **string** | The description of the source app | [optional] 
-**MatchAllAccounts** | Pointer to **bool** | True if the source app match all accounts | [optional] [default to false]
-**AppCenterEnabled** | Pointer to **bool** | True if the source app is shown in the app center | [optional] [default to true]
-**AccountSource** | Pointer to [**NullableSourceAppAccountSource**](source-app-account-source) |  | [optional] 
-**Owner** | Pointer to [**NullableBaseReferenceDto**](base-reference-dto) | The owner of source app | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The source app id | [optional] |
+| **CloudAppId** | Pointer to **string** | The deprecated source app id | [optional] |
+| **Name** | Pointer to **string** | The source app name | [optional] |
+| **Created** | Pointer to **SailPointTime** | Time when the source app was created | [optional] |
+| **Modified** | Pointer to **SailPointTime** | Time when the source app was last modified | [optional] |
+| **Enabled** | Pointer to **bool** | True if the source app is enabled | [optional] [default to false] |
+| **ProvisionRequestEnabled** | Pointer to **bool** | True if the source app is provision request enabled | [optional] [default to false] |
+| **Description** | Pointer to **string** | The description of the source app | [optional] |
+| **MatchAllAccounts** | Pointer to **bool** | True if the source app match all accounts | [optional] [default to false] |
+| **AppCenterEnabled** | Pointer to **bool** | True if the source app is shown in the app center | [optional] [default to true] |
+| **AccountSource** | Pointer to [**NullableSourceAppAccountSource**](source-app-account-source) |  | [optional] |
+| **Owner** | Pointer to [**NullableBaseReferenceDto**](base-reference-dto) | The owner of source app | [optional] |
 
 ## Methods
 
@@ -34,18 +34,13 @@ Name | Type | Description | Notes
 
 `func NewSourceApp() *SourceApp`
 
-NewSourceApp instantiates a new SourceApp object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSourceApp instantiates a new SourceApp object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSourceAppWithDefaults
 
 `func NewSourceAppWithDefaults() *SourceApp`
 
-NewSourceAppWithDefaults instantiates a new SourceApp object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSourceAppWithDefaults instantiates a new SourceApp object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -57,8 +52,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *SourceApp) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -82,8 +76,7 @@ GetCloudAppId returns the CloudAppId field if non-nil, zero value otherwise.
 
 `func (o *SourceApp) GetCloudAppIdOk() (*string, bool)`
 
-GetCloudAppIdOk returns a tuple with the CloudAppId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCloudAppIdOk returns a tuple with the CloudAppId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCloudAppId
 
@@ -107,8 +100,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *SourceApp) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -132,8 +124,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *SourceApp) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -157,8 +148,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *SourceApp) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -182,8 +172,7 @@ GetEnabled returns the Enabled field if non-nil, zero value otherwise.
 
 `func (o *SourceApp) GetEnabledOk() (*bool, bool)`
 
-GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEnabled
 
@@ -207,8 +196,7 @@ GetProvisionRequestEnabled returns the ProvisionRequestEnabled field if non-nil,
 
 `func (o *SourceApp) GetProvisionRequestEnabledOk() (*bool, bool)`
 
-GetProvisionRequestEnabledOk returns a tuple with the ProvisionRequestEnabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProvisionRequestEnabledOk returns a tuple with the ProvisionRequestEnabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProvisionRequestEnabled
 
@@ -232,8 +220,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *SourceApp) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -257,8 +244,7 @@ GetMatchAllAccounts returns the MatchAllAccounts field if non-nil, zero value ot
 
 `func (o *SourceApp) GetMatchAllAccountsOk() (*bool, bool)`
 
-GetMatchAllAccountsOk returns a tuple with the MatchAllAccounts field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMatchAllAccountsOk returns a tuple with the MatchAllAccounts field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMatchAllAccounts
 
@@ -282,8 +268,7 @@ GetAppCenterEnabled returns the AppCenterEnabled field if non-nil, zero value ot
 
 `func (o *SourceApp) GetAppCenterEnabledOk() (*bool, bool)`
 
-GetAppCenterEnabledOk returns a tuple with the AppCenterEnabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAppCenterEnabledOk returns a tuple with the AppCenterEnabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAppCenterEnabled
 
@@ -307,8 +292,7 @@ GetAccountSource returns the AccountSource field if non-nil, zero value otherwis
 
 `func (o *SourceApp) GetAccountSourceOk() (*SourceAppAccountSource, bool)`
 
-GetAccountSourceOk returns a tuple with the AccountSource field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountSourceOk returns a tuple with the AccountSource field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountSource
 
@@ -326,12 +310,14 @@ HasAccountSource returns a boolean if a field has been set.
 
 `func (o *SourceApp) SetAccountSourceNil(b bool)`
 
- SetAccountSourceNil sets the value for AccountSource to be an explicit nil
+SetAccountSourceNil sets the value for AccountSource to be an explicit nil
 
 ### UnsetAccountSource
+
 `func (o *SourceApp) UnsetAccountSource()`
 
 UnsetAccountSource ensures that no value is present for AccountSource, not even an explicit nil
+
 ### GetOwner
 
 `func (o *SourceApp) GetOwner() BaseReferenceDto`
@@ -342,8 +328,7 @@ GetOwner returns the Owner field if non-nil, zero value otherwise.
 
 `func (o *SourceApp) GetOwnerOk() (*BaseReferenceDto, bool)`
 
-GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwner
 
@@ -361,10 +346,10 @@ HasOwner returns a boolean if a field has been set.
 
 `func (o *SourceApp) SetOwnerNil(b bool)`
 
- SetOwnerNil sets the value for Owner to be an explicit nil
+SetOwnerNil sets the value for Owner to be an explicit nil
 
 ### UnsetOwner
+
 `func (o *SourceApp) UnsetOwner()`
 
 UnsetOwner ensures that no value is present for Owner, not even an explicit nil
-

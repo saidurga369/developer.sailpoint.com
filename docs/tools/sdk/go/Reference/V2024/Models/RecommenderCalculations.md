@@ -4,25 +4,38 @@ title: RecommenderCalculations
 pagination_label: RecommenderCalculations
 sidebar_label: RecommenderCalculations
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RecommenderCalculations', 'V2024RecommenderCalculations'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'RecommenderCalculations',
+    'V2024RecommenderCalculations',
+  ]
 slug: /tools/sdk/go/v2024/models/recommender-calculations
-tags: ['SDK', 'Software Development Kit', 'RecommenderCalculations', 'V2024RecommenderCalculations']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RecommenderCalculations',
+    'V2024RecommenderCalculations',
+  ]
 ---
 
 # RecommenderCalculations
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**IdentityId** | Pointer to **string** | The ID of the identity | [optional] 
-**EntitlementId** | Pointer to **string** | The entitlement ID | [optional] 
-**Recommendation** | Pointer to **string** | The actual recommendation | [optional] 
-**OverallWeightedScore** | Pointer to **float32** | The overall weighted score | [optional] 
-**FeatureWeightedScores** | Pointer to **map[string]float32** | The weighted score of each individual feature | [optional] 
-**Threshold** | Pointer to **float32** | The configured value against which the overallWeightedScore is compared | [optional] 
-**IdentityAttributes** | Pointer to [**map[string]RecommenderCalculationsIdentityAttributesValue**](recommender-calculations-identity-attributes-value) | The values for your configured features | [optional] 
-**FeatureValues** | Pointer to [**FeatureValueDto**](feature-value-dto) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **IdentityId** | Pointer to **string** | The ID of the identity | [optional] |
+| **EntitlementId** | Pointer to **string** | The entitlement ID | [optional] |
+| **Recommendation** | Pointer to **string** | The actual recommendation | [optional] |
+| **OverallWeightedScore** | Pointer to **float32** | The overall weighted score | [optional] |
+| **FeatureWeightedScores** | Pointer to **map[string]float32** | The weighted score of each individual feature | [optional] |
+| **Threshold** | Pointer to **float32** | The configured value against which the overallWeightedScore is compared | [optional] |
+| **IdentityAttributes** | Pointer to [**map[string]RecommenderCalculationsIdentityAttributesValue**](recommender-calculations-identity-attributes-value) | The values for your configured features | [optional] |
+| **FeatureValues** | Pointer to [**FeatureValueDto**](feature-value-dto) |  | [optional] |
 
 ## Methods
 
@@ -30,18 +43,13 @@ Name | Type | Description | Notes
 
 `func NewRecommenderCalculations() *RecommenderCalculations`
 
-NewRecommenderCalculations instantiates a new RecommenderCalculations object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRecommenderCalculations instantiates a new RecommenderCalculations object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRecommenderCalculationsWithDefaults
 
 `func NewRecommenderCalculationsWithDefaults() *RecommenderCalculations`
 
-NewRecommenderCalculationsWithDefaults instantiates a new RecommenderCalculations object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRecommenderCalculationsWithDefaults instantiates a new RecommenderCalculations object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetIdentityId
 
@@ -53,8 +61,7 @@ GetIdentityId returns the IdentityId field if non-nil, zero value otherwise.
 
 `func (o *RecommenderCalculations) GetIdentityIdOk() (*string, bool)`
 
-GetIdentityIdOk returns a tuple with the IdentityId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityIdOk returns a tuple with the IdentityId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityId
 
@@ -78,8 +85,7 @@ GetEntitlementId returns the EntitlementId field if non-nil, zero value otherwis
 
 `func (o *RecommenderCalculations) GetEntitlementIdOk() (*string, bool)`
 
-GetEntitlementIdOk returns a tuple with the EntitlementId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEntitlementIdOk returns a tuple with the EntitlementId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEntitlementId
 
@@ -103,8 +109,7 @@ GetRecommendation returns the Recommendation field if non-nil, zero value otherw
 
 `func (o *RecommenderCalculations) GetRecommendationOk() (*string, bool)`
 
-GetRecommendationOk returns a tuple with the Recommendation field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRecommendationOk returns a tuple with the Recommendation field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRecommendation
 
@@ -128,8 +133,7 @@ GetOverallWeightedScore returns the OverallWeightedScore field if non-nil, zero 
 
 `func (o *RecommenderCalculations) GetOverallWeightedScoreOk() (*float32, bool)`
 
-GetOverallWeightedScoreOk returns a tuple with the OverallWeightedScore field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOverallWeightedScoreOk returns a tuple with the OverallWeightedScore field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOverallWeightedScore
 
@@ -153,8 +157,7 @@ GetFeatureWeightedScores returns the FeatureWeightedScores field if non-nil, zer
 
 `func (o *RecommenderCalculations) GetFeatureWeightedScoresOk() (*map[string]float32, bool)`
 
-GetFeatureWeightedScoresOk returns a tuple with the FeatureWeightedScores field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFeatureWeightedScoresOk returns a tuple with the FeatureWeightedScores field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFeatureWeightedScores
 
@@ -178,8 +181,7 @@ GetThreshold returns the Threshold field if non-nil, zero value otherwise.
 
 `func (o *RecommenderCalculations) GetThresholdOk() (*float32, bool)`
 
-GetThresholdOk returns a tuple with the Threshold field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetThresholdOk returns a tuple with the Threshold field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetThreshold
 
@@ -203,8 +205,7 @@ GetIdentityAttributes returns the IdentityAttributes field if non-nil, zero valu
 
 `func (o *RecommenderCalculations) GetIdentityAttributesOk() (*map[string]RecommenderCalculationsIdentityAttributesValue, bool)`
 
-GetIdentityAttributesOk returns a tuple with the IdentityAttributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityAttributesOk returns a tuple with the IdentityAttributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityAttributes
 
@@ -228,8 +229,7 @@ GetFeatureValues returns the FeatureValues field if non-nil, zero value otherwis
 
 `func (o *RecommenderCalculations) GetFeatureValuesOk() (*FeatureValueDto, bool)`
 
-GetFeatureValuesOk returns a tuple with the FeatureValues field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFeatureValuesOk returns a tuple with the FeatureValues field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFeatureValues
 
@@ -242,5 +242,3 @@ SetFeatureValues sets FeatureValues field to given value.
 `func (o *RecommenderCalculations) HasFeatureValues() bool`
 
 HasFeatureValues returns a boolean if a field has been set.
-
-

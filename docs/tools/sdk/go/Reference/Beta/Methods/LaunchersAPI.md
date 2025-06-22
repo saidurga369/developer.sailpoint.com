@@ -4,46 +4,43 @@ title: Launchers
 pagination_label: Launchers
 sidebar_label: Launchers
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Launchers', 'BetaLaunchers'] 
+keywords: ['go', 'Golang', 'sdk', 'Launchers', 'BetaLaunchers']
 slug: /tools/sdk/go/beta/methods/launchers
 tags: ['SDK', 'Software Development Kit', 'Launchers', 'BetaLaunchers']
 ---
 
 # LaunchersAPI
-  Use this API to manage Launchers.
+
+Use this API to manage Launchers.
 
 Launchers are objects that allow users to launch various tasks from ISC such as Privileged Workflows.
- 
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/beta*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create-launcher**](#create-launcher) | **Post** `/launchers` | Create launcher
-[**delete-launcher**](#delete-launcher) | **Delete** `/launchers/{launcherID}` | Delete launcher
-[**get-launcher**](#get-launcher) | **Get** `/launchers/{launcherID}` | Get launcher by id
-[**get-launchers**](#get-launchers) | **Get** `/launchers` | List all launchers for tenant
-[**put-launcher**](#put-launcher) | **Put** `/launchers/{launcherID}` | Replace launcher
-[**start-launcher**](#start-launcher) | **Post** `/beta/launchers/{launcherID}/launch` | Launch a launcher
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**create-launcher**](#create-launcher) | **Post** `/launchers` | Create launcher |
+| [**delete-launcher**](#delete-launcher) | **Delete** `/launchers/{launcherID}` | Delete launcher |
+| [**get-launcher**](#get-launcher) | **Get** `/launchers/{launcherID}` | Get launcher by id |
+| [**get-launchers**](#get-launchers) | **Get** `/launchers` | List all launchers for tenant |
+| [**put-launcher**](#put-launcher) | **Put** `/launchers/{launcherID}` | Replace launcher |
+| [**start-launcher**](#start-launcher) | **Post** `/beta/launchers/{launcherID}/launch` | Launch a launcher |
 
 ## create-launcher
-Create launcher
-Create a Launcher with given information
+
+Create launcher Create a Launcher with given information
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/create-launcher)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCreateLauncherRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **launcherRequest** | [**LauncherRequest**](../models/launcher-request) | Payload to create a Launcher | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **launcherRequest** | [**LauncherRequest**](../models/launcher-request) | Payload to create a Launcher |
 
 ### Return type
 
@@ -86,7 +83,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -104,31 +101,28 @@ func main() {
 [[Back to top]](#)
 
 ## delete-launcher
-Delete launcher
-Delete the given Launcher ID
+
+Delete launcher Delete the given Launcher ID
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/delete-launcher)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**launcherID** | **string** | ID of the Launcher to be deleted | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **launcherID** | **string** | ID of the Launcher to be deleted |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteLauncherRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -144,15 +138,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     launcherID := `e3012408-8b61-4564-ad41-c5ec131c325b` // string | ID of the Launcher to be deleted # string | ID of the Launcher to be deleted
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -162,34 +156,31 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `LaunchersAPI.DeleteLauncher``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## get-launcher
-Get launcher by id
-Get details for the given Launcher ID
+
+Get launcher by id Get details for the given Launcher ID
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-launcher)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**launcherID** | **string** | ID of the Launcher to be retrieved | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **launcherID** | **string** | ID of the Launcher to be retrieved |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetLauncherRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -209,15 +200,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     launcherID := `e3012408-8b61-4564-ad41-c5ec131c325b` // string | ID of the Launcher to be retrieved # string | ID of the Launcher to be retrieved
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -235,25 +226,22 @@ func main() {
 [[Back to top]](#)
 
 ## get-launchers
-List all launchers for tenant
-Return a list of Launchers for the authenticated tenant
+
+List all launchers for tenant Return a list of Launchers for the authenticated tenant
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-launchers)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetLaunchersRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **description**: *sw*  **disabled**: *eq*  **name**: *sw* | 
- **next** | **string** | Pagination marker | 
- **limit** | **int32** | Number of Launchers to return | [default to 10]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **description**: _sw_ **disabled**: _eq_ **name**: _sw_ |
+| **next** | **string** | Pagination marker |
+| **limit** | **int32** | Number of Launchers to return | [default to 10] |
 
 ### Return type
 
@@ -273,8 +261,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -283,7 +271,7 @@ func main() {
     next := `eyJuZXh0IjoxMjN9Cg==` // string | Pagination marker (optional) # string | Pagination marker (optional)
     limit := 42 // int32 | Number of Launchers to return (optional) (default to 10) # int32 | Number of Launchers to return (optional) (default to 10)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -301,28 +289,26 @@ func main() {
 [[Back to top]](#)
 
 ## put-launcher
-Replace launcher
-Replace the given Launcher ID with given payload
+
+Replace launcher Replace the given Launcher ID with given payload
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/put-launcher)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**launcherID** | **string** | ID of the Launcher to be replaced | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **launcherID** | **string** | ID of the Launcher to be replaced |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiPutLauncherRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **launcherRequest** | [**LauncherRequest**](../models/launcher-request) | Payload to replace Launcher | 
+**launcherRequest** | [**LauncherRequest**](../models/launcher-request) | Payload to replace Launcher |
 
 ### Return type
 
@@ -366,7 +352,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -384,27 +370,24 @@ func main() {
 [[Back to top]](#)
 
 ## start-launcher
-Launch a launcher
-Launch the given Launcher ID
+
+Launch a launcher Launch the given Launcher ID
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/start-launcher)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**launcherID** | **string** | ID of the Launcher to be launched | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **launcherID** | **string** | ID of the Launcher to be launched |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiStartLauncherRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -424,15 +407,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     launcherID := `e3012408-8b61-4564-ad41-c5ec131c325b` // string | ID of the Launcher to be launched # string | ID of the Launcher to be launched
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -448,4 +431,3 @@ func main() {
 ```
 
 [[Back to top]](#)
-

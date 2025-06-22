@@ -4,19 +4,32 @@ title: CreateFormDefinitionFileRequestRequest
 pagination_label: CreateFormDefinitionFileRequestRequest
 sidebar_label: CreateFormDefinitionFileRequestRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'CreateFormDefinitionFileRequestRequest', 'BetaCreateFormDefinitionFileRequestRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'CreateFormDefinitionFileRequestRequest',
+    'BetaCreateFormDefinitionFileRequestRequest',
+  ]
 slug: /tools/sdk/python/beta/models/create-form-definition-file-request-request
-tags: ['SDK', 'Software Development Kit', 'CreateFormDefinitionFileRequestRequest', 'BetaCreateFormDefinitionFileRequestRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CreateFormDefinitionFileRequestRequest',
+    'BetaCreateFormDefinitionFileRequestRequest',
+  ]
 ---
 
 # CreateFormDefinitionFileRequestRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**file** | **bytearray** | File specifying the multipart | [required]
+| Name     | Type          | Description                   | Notes      |
+| -------- | ------------- | ----------------------------- | ---------- |
+| **file** | **bytearray** | File specifying the multipart | [required] |
+
 }
 
 ## Example
@@ -29,5 +42,5 @@ file=bytes(b'blah')
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

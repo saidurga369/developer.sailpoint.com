@@ -4,7 +4,7 @@ title: SodPolicyDto
 pagination_label: SodPolicyDto
 sidebar_label: SodPolicyDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SodPolicyDto', 'V2024SodPolicyDto'] 
+keywords: ['go', 'Golang', 'sdk', 'SodPolicyDto', 'V2024SodPolicyDto']
 slug: /tools/sdk/go/v2024/models/sod-policy-dto
 tags: ['SDK', 'Software Development Kit', 'SodPolicyDto', 'V2024SodPolicyDto']
 ---
@@ -13,11 +13,11 @@ tags: ['SDK', 'Software Development Kit', 'SodPolicyDto', 'V2024SodPolicyDto']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | SOD policy DTO type. | [optional] 
-**Id** | Pointer to **string** | SOD policy ID. | [optional] 
-**Name** | Pointer to **string** | SOD policy display name. | [optional] 
+| Name     | Type                  | Description              | Notes      |
+| -------- | --------------------- | ------------------------ | ---------- |
+| **Type** | Pointer to **string** | SOD policy DTO type.     | [optional] |
+| **Id**   | Pointer to **string** | SOD policy ID.           | [optional] |
+| **Name** | Pointer to **string** | SOD policy display name. | [optional] |
 
 ## Methods
 
@@ -25,18 +25,13 @@ Name | Type | Description | Notes
 
 `func NewSodPolicyDto() *SodPolicyDto`
 
-NewSodPolicyDto instantiates a new SodPolicyDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSodPolicyDto instantiates a new SodPolicyDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSodPolicyDtoWithDefaults
 
 `func NewSodPolicyDtoWithDefaults() *SodPolicyDto`
 
-NewSodPolicyDtoWithDefaults instantiates a new SodPolicyDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSodPolicyDtoWithDefaults instantiates a new SodPolicyDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -48,8 +43,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *SodPolicyDto) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -73,8 +67,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *SodPolicyDto) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -98,8 +91,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *SodPolicyDto) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -112,5 +104,3 @@ SetName sets Name field to given value.
 `func (o *SodPolicyDto) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

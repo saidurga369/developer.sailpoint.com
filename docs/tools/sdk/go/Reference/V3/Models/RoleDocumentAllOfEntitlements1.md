@@ -4,27 +4,40 @@ title: RoleDocumentAllOfEntitlements1
 pagination_label: RoleDocumentAllOfEntitlements1
 sidebar_label: RoleDocumentAllOfEntitlements1
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleDocumentAllOfEntitlements1', 'RoleDocumentAllOfEntitlements1'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'RoleDocumentAllOfEntitlements1',
+    'RoleDocumentAllOfEntitlements1',
+  ]
 slug: /tools/sdk/go/v3/models/role-document-all-of-entitlements1
-tags: ['SDK', 'Software Development Kit', 'RoleDocumentAllOfEntitlements1', 'RoleDocumentAllOfEntitlements1']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleDocumentAllOfEntitlements1',
+    'RoleDocumentAllOfEntitlements1',
+  ]
 ---
 
 # RoleDocumentAllOfEntitlements1
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**HasPermissions** | Pointer to **bool** | Indicates whether the entitlement has permissions. | [optional] [default to false]
-**Description** | Pointer to **NullableString** | Entitlement's description. | [optional] 
-**Attribute** | Pointer to **string** | Entitlement attribute's name. | [optional] 
-**Value** | Pointer to **string** | Entitlement's value. | [optional] 
-**Schema** | Pointer to **string** | Entitlement's schema. | [optional] 
-**Privileged** | Pointer to **bool** | Indicates whether the entitlement is privileged. | [optional] [default to false]
-**Id** | Pointer to **string** | Entitlement's ID. | [optional] 
-**Name** | Pointer to **string** | Entitlement's name. | [optional] 
-**SourceSchemaObjectType** | Pointer to **string** | Schema objectType. | [optional] 
-**Hash** | Pointer to **string** | Read-only calculated hash value of an entitlement. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **HasPermissions** | Pointer to **bool** | Indicates whether the entitlement has permissions. | [optional] [default to false] |
+| **Description** | Pointer to **NullableString** | Entitlement's description. | [optional] |
+| **Attribute** | Pointer to **string** | Entitlement attribute's name. | [optional] |
+| **Value** | Pointer to **string** | Entitlement's value. | [optional] |
+| **Schema** | Pointer to **string** | Entitlement's schema. | [optional] |
+| **Privileged** | Pointer to **bool** | Indicates whether the entitlement is privileged. | [optional] [default to false] |
+| **Id** | Pointer to **string** | Entitlement's ID. | [optional] |
+| **Name** | Pointer to **string** | Entitlement's name. | [optional] |
+| **SourceSchemaObjectType** | Pointer to **string** | Schema objectType. | [optional] |
+| **Hash** | Pointer to **string** | Read-only calculated hash value of an entitlement. | [optional] |
 
 ## Methods
 
@@ -32,18 +45,13 @@ Name | Type | Description | Notes
 
 `func NewRoleDocumentAllOfEntitlements1() *RoleDocumentAllOfEntitlements1`
 
-NewRoleDocumentAllOfEntitlements1 instantiates a new RoleDocumentAllOfEntitlements1 object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleDocumentAllOfEntitlements1 instantiates a new RoleDocumentAllOfEntitlements1 object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleDocumentAllOfEntitlements1WithDefaults
 
 `func NewRoleDocumentAllOfEntitlements1WithDefaults() *RoleDocumentAllOfEntitlements1`
 
-NewRoleDocumentAllOfEntitlements1WithDefaults instantiates a new RoleDocumentAllOfEntitlements1 object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleDocumentAllOfEntitlements1WithDefaults instantiates a new RoleDocumentAllOfEntitlements1 object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetHasPermissions
 
@@ -55,8 +63,7 @@ GetHasPermissions returns the HasPermissions field if non-nil, zero value otherw
 
 `func (o *RoleDocumentAllOfEntitlements1) GetHasPermissionsOk() (*bool, bool)`
 
-GetHasPermissionsOk returns a tuple with the HasPermissions field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetHasPermissionsOk returns a tuple with the HasPermissions field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetHasPermissions
 
@@ -80,8 +87,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *RoleDocumentAllOfEntitlements1) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -99,12 +105,14 @@ HasDescription returns a boolean if a field has been set.
 
 `func (o *RoleDocumentAllOfEntitlements1) SetDescriptionNil(b bool)`
 
- SetDescriptionNil sets the value for Description to be an explicit nil
+SetDescriptionNil sets the value for Description to be an explicit nil
 
 ### UnsetDescription
+
 `func (o *RoleDocumentAllOfEntitlements1) UnsetDescription()`
 
 UnsetDescription ensures that no value is present for Description, not even an explicit nil
+
 ### GetAttribute
 
 `func (o *RoleDocumentAllOfEntitlements1) GetAttribute() string`
@@ -115,8 +123,7 @@ GetAttribute returns the Attribute field if non-nil, zero value otherwise.
 
 `func (o *RoleDocumentAllOfEntitlements1) GetAttributeOk() (*string, bool)`
 
-GetAttributeOk returns a tuple with the Attribute field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributeOk returns a tuple with the Attribute field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttribute
 
@@ -140,8 +147,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *RoleDocumentAllOfEntitlements1) GetValueOk() (*string, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -165,8 +171,7 @@ GetSchema returns the Schema field if non-nil, zero value otherwise.
 
 `func (o *RoleDocumentAllOfEntitlements1) GetSchemaOk() (*string, bool)`
 
-GetSchemaOk returns a tuple with the Schema field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSchemaOk returns a tuple with the Schema field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSchema
 
@@ -190,8 +195,7 @@ GetPrivileged returns the Privileged field if non-nil, zero value otherwise.
 
 `func (o *RoleDocumentAllOfEntitlements1) GetPrivilegedOk() (*bool, bool)`
 
-GetPrivilegedOk returns a tuple with the Privileged field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPrivilegedOk returns a tuple with the Privileged field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPrivileged
 
@@ -215,8 +219,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *RoleDocumentAllOfEntitlements1) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -240,8 +243,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *RoleDocumentAllOfEntitlements1) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -265,8 +267,7 @@ GetSourceSchemaObjectType returns the SourceSchemaObjectType field if non-nil, z
 
 `func (o *RoleDocumentAllOfEntitlements1) GetSourceSchemaObjectTypeOk() (*string, bool)`
 
-GetSourceSchemaObjectTypeOk returns a tuple with the SourceSchemaObjectType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceSchemaObjectTypeOk returns a tuple with the SourceSchemaObjectType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceSchemaObjectType
 
@@ -290,8 +291,7 @@ GetHash returns the Hash field if non-nil, zero value otherwise.
 
 `func (o *RoleDocumentAllOfEntitlements1) GetHashOk() (*string, bool)`
 
-GetHashOk returns a tuple with the Hash field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetHashOk returns a tuple with the Hash field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetHash
 
@@ -304,5 +304,3 @@ SetHash sets Hash field to given value.
 `func (o *RoleDocumentAllOfEntitlements1) HasHash() bool`
 
 HasHash returns a boolean if a field has been set.
-
-

@@ -4,18 +4,16 @@ title: Connectors
 pagination_label: Connectors
 sidebar_label: Connectors
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Connectors', 'V2024Connectors'] 
+keywords: ['go', 'Golang', 'sdk', 'Connectors', 'V2024Connectors']
 slug: /tools/sdk/go/v2024/methods/connectors
 tags: ['SDK', 'Software Development Kit', 'Connectors', 'V2024Connectors']
 ---
 
 # ConnectorsAPI
-  Use this API to implement connector functionality.
-With this functionality in place, administrators can view available connectors.
 
-Connectors are the bridges Identity Security Cloud uses to communicate with and aggregate data from sources.
-For example, if it is necessary to set up a connection between Identity Security Cloud and the Active Directory source, a connector can bridge the two and enable Identity Security Cloud to synchronize data between the systems.
-This ensures account entitlements and states are correct throughout the organization.
+Use this API to implement connector functionality. With this functionality in place, administrators can view available connectors.
+
+Connectors are the bridges Identity Security Cloud uses to communicate with and aggregate data from sources. For example, if it is necessary to set up a connection between Identity Security Cloud and the Active Directory source, a connector can bridge the two and enable Identity Security Cloud to synchronize data between the systems. This ensures account entitlements and states are correct throughout the organization.
 
 In Identity Security Cloud, administrators can use the Connections drop-down menu and select Sources to view the available source connectors.
 
@@ -24,44 +22,40 @@ Refer to [Identity Security Cloud Connectors](https://documentation.sailpoint.co
 Refer to [SaaS Connectivity](https://developer.sailpoint.com/docs/connectivity/saas-connectivity/) for more information about the SaaS custom connectors that do not need VAs (virtual appliances) to communicate with their sources.
 
 Refer to [Managing Sources](https://documentation.sailpoint.com/saas/help/sources/managing_sources.html) for more information about using connectors in Identity Security Cloud.
- 
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/v2024*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create-custom-connector**](#create-custom-connector) | **Post** `/connectors` | Create custom connector
-[**delete-custom-connector**](#delete-custom-connector) | **Delete** `/connectors/{scriptName}` | Delete connector by script name
-[**get-connector**](#get-connector) | **Get** `/connectors/{scriptName}` | Get connector by script name
-[**get-connector-correlation-config**](#get-connector-correlation-config) | **Get** `/connectors/{scriptName}/correlation-config` | Get connector correlation configuration
-[**get-connector-list**](#get-connector-list) | **Get** `/connectors` | Get connector list
-[**get-connector-source-config**](#get-connector-source-config) | **Get** `/connectors/{scriptName}/source-config` | Get connector source configuration
-[**get-connector-source-template**](#get-connector-source-template) | **Get** `/connectors/{scriptName}/source-template` | Get connector source template
-[**get-connector-translations**](#get-connector-translations) | **Get** `/connectors/{scriptName}/translations/{locale}` | Get connector translations
-[**put-connector-correlation-config**](#put-connector-correlation-config) | **Put** `/connectors/{scriptName}/correlation-config` | Update connector correlation configuration
-[**put-connector-source-config**](#put-connector-source-config) | **Put** `/connectors/{scriptName}/source-config` | Update connector source configuration
-[**put-connector-source-template**](#put-connector-source-template) | **Put** `/connectors/{scriptName}/source-template` | Update connector source template
-[**put-connector-translations**](#put-connector-translations) | **Put** `/connectors/{scriptName}/translations/{locale}` | Update connector translations
-[**update-connector**](#update-connector) | **Patch** `/connectors/{scriptName}` | Update connector by script name
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**create-custom-connector**](#create-custom-connector) | **Post** `/connectors` | Create custom connector |
+| [**delete-custom-connector**](#delete-custom-connector) | **Delete** `/connectors/{scriptName}` | Delete connector by script name |
+| [**get-connector**](#get-connector) | **Get** `/connectors/{scriptName}` | Get connector by script name |
+| [**get-connector-correlation-config**](#get-connector-correlation-config) | **Get** `/connectors/{scriptName}/correlation-config` | Get connector correlation configuration |
+| [**get-connector-list**](#get-connector-list) | **Get** `/connectors` | Get connector list |
+| [**get-connector-source-config**](#get-connector-source-config) | **Get** `/connectors/{scriptName}/source-config` | Get connector source configuration |
+| [**get-connector-source-template**](#get-connector-source-template) | **Get** `/connectors/{scriptName}/source-template` | Get connector source template |
+| [**get-connector-translations**](#get-connector-translations) | **Get** `/connectors/{scriptName}/translations/{locale}` | Get connector translations |
+| [**put-connector-correlation-config**](#put-connector-correlation-config) | **Put** `/connectors/{scriptName}/correlation-config` | Update connector correlation configuration |
+| [**put-connector-source-config**](#put-connector-source-config) | **Put** `/connectors/{scriptName}/source-config` | Update connector source configuration |
+| [**put-connector-source-template**](#put-connector-source-template) | **Put** `/connectors/{scriptName}/source-template` | Update connector source template |
+| [**put-connector-translations**](#put-connector-translations) | **Put** `/connectors/{scriptName}/translations/{locale}` | Update connector translations |
+| [**update-connector**](#update-connector) | **Patch** `/connectors/{scriptName}` | Update connector by script name |
 
 ## create-custom-connector
-Create custom connector
-Create custom connector.    
+
+Create custom connector Create custom connector.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/create-custom-connector)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCreateCustomConnectorRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **v3CreateConnectorDto** | [**V3CreateConnectorDto**](../models/v3-create-connector-dto) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **v3CreateConnectorDto** | [**V3CreateConnectorDto**](../models/v3-create-connector-dto) |  |
 
 ### Return type
 
@@ -93,14 +87,14 @@ func main() {
           "className" : "sailpoint.connector.OpenConnectorAdapter",
           "type" : "custom connector type",
           "status" : "RELEASED"
-        }`) // V3CreateConnectorDto | 
+        }`) // V3CreateConnectorDto |
 
     var v3CreateConnectorDto v2024.V3CreateConnectorDto
     if err := json.Unmarshal(v3createconnectordto, &v3CreateConnectorDto); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -118,31 +112,28 @@ func main() {
 [[Back to top]](#)
 
 ## delete-custom-connector
-Delete connector by script name
-Delete a custom connector that using its script name.
+
+Delete connector by script name Delete a custom connector that using its script name.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/delete-custom-connector)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**scriptName** | **string** | The scriptName value of the connector. ScriptName is the unique id generated at connector creation. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **scriptName** | **string** | The scriptName value of the connector. ScriptName is the unique id generated at connector creation. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteCustomConnectorRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -158,15 +149,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     scriptName := `aScriptName` // string | The scriptName value of the connector. ScriptName is the unique id generated at connector creation. # string | The scriptName value of the connector. ScriptName is the unique id generated at connector creation.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -176,35 +167,33 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `ConnectorsAPI.DeleteCustomConnector``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## get-connector
-Get connector by script name
-Fetches a connector that using its script name.    
+
+Get connector by script name Fetches a connector that using its script name.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/get-connector)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**scriptName** | **string** | The scriptName value of the connector. ScriptName is the unique id generated at connector creation. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **scriptName** | **string** | The scriptName value of the connector. ScriptName is the unique id generated at connector creation. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetConnectorRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **locale** | **string** | The locale to apply to the config. If no viable locale is given, it will default to \&quot;en\&quot; | 
+**locale** | **string** | The locale to apply to the config. If no viable locale is given, it will default to \&quot;en\&quot; |
 
 ### Return type
 
@@ -224,8 +213,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -233,7 +222,7 @@ func main() {
     scriptName := `aScriptName` // string | The scriptName value of the connector. ScriptName is the unique id generated at connector creation. # string | The scriptName value of the connector. ScriptName is the unique id generated at connector creation.
     locale := `de` // string | The locale to apply to the config. If no viable locale is given, it will default to \"en\" (optional) # string | The locale to apply to the config. If no viable locale is given, it will default to \"en\" (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -251,27 +240,24 @@ func main() {
 [[Back to top]](#)
 
 ## get-connector-correlation-config
-Get connector correlation configuration
-Fetches a connector's correlation config using its script name.    
+
+Get connector correlation configuration Fetches a connector's correlation config using its script name.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/get-connector-correlation-config)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**scriptName** | **string** | The scriptName value of the connector. Scriptname is the unique id generated at connector creation. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **scriptName** | **string** | The scriptName value of the connector. Scriptname is the unique id generated at connector creation. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetConnectorCorrelationConfigRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -291,15 +277,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     scriptName := `aScriptName` // string | The scriptName value of the connector. Scriptname is the unique id generated at connector creation. # string | The scriptName value of the connector. Scriptname is the unique id generated at connector creation.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -317,27 +303,24 @@ func main() {
 [[Back to top]](#)
 
 ## get-connector-list
-Get connector list
-Fetches list of connectors that have 'RELEASED' status using filtering and pagination.
+
+Get connector list Fetches list of connectors that have 'RELEASED' status using filtering and pagination.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/get-connector-list)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetConnectorListRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **name**: *sw, co*  **type**: *sw, co, eq*  **directConnect**: *eq*  **category**: *eq*  **features**: *ca*  **labels**: *ca* | 
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
- **locale** | **string** | The locale to apply to the config. If no viable locale is given, it will default to \&quot;en\&quot; | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **name**: _sw, co_ **type**: _sw, co, eq_ **directConnect**: _eq_ **category**: _eq_ **features**: _ca_ **labels**: _ca_ |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
+| **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false] |
+| **locale** | **string** | The locale to apply to the config. If no viable locale is given, it will default to \&quot;en\&quot; |
 
 ### Return type
 
@@ -357,8 +340,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -369,7 +352,7 @@ func main() {
     count := true // bool | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to false) # bool | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to false)
     locale := `de` // string | The locale to apply to the config. If no viable locale is given, it will default to \"en\" (optional) # string | The locale to apply to the config. If no viable locale is given, it will default to \"en\" (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -387,27 +370,24 @@ func main() {
 [[Back to top]](#)
 
 ## get-connector-source-config
-Get connector source configuration
-Fetches a connector's source config using its script name.    
+
+Get connector source configuration Fetches a connector's source config using its script name.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/get-connector-source-config)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**scriptName** | **string** | The scriptName value of the connector. ScriptName is the unique id generated at connector creation. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **scriptName** | **string** | The scriptName value of the connector. ScriptName is the unique id generated at connector creation. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetConnectorSourceConfigRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -427,15 +407,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     scriptName := `aScriptName` // string | The scriptName value of the connector. ScriptName is the unique id generated at connector creation. # string | The scriptName value of the connector. ScriptName is the unique id generated at connector creation.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -453,27 +433,24 @@ func main() {
 [[Back to top]](#)
 
 ## get-connector-source-template
-Get connector source template
-Fetches a connector's source template using its script name.    
+
+Get connector source template Fetches a connector's source template using its script name.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/get-connector-source-template)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**scriptName** | **string** | The scriptName value of the connector. ScriptName is the unique id generated at connector creation. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **scriptName** | **string** | The scriptName value of the connector. ScriptName is the unique id generated at connector creation. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetConnectorSourceTemplateRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -493,15 +470,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     scriptName := `aScriptName` // string | The scriptName value of the connector. ScriptName is the unique id generated at connector creation. # string | The scriptName value of the connector. ScriptName is the unique id generated at connector creation.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -519,29 +496,25 @@ func main() {
 [[Back to top]](#)
 
 ## get-connector-translations
-Get connector translations
-Fetches a connector's translations using its script name.    
+
+Get connector translations Fetches a connector's translations using its script name.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/get-connector-translations)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**scriptName** | **string** | The scriptName value of the connector. Scriptname is the unique id generated at connector creation. | 
-**locale** | **string** | The locale to apply to the config. If no viable locale is given, it will default to \&quot;en\&quot; | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **scriptName** | **string** | The scriptName value of the connector. Scriptname is the unique id generated at connector creation. |
+| **locale** | **string** | The locale to apply to the config. If no viable locale is given, it will default to \&quot;en\&quot; |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetConnectorTranslationsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -561,8 +534,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -570,7 +543,7 @@ func main() {
     scriptName := `aScriptName` // string | The scriptName value of the connector. Scriptname is the unique id generated at connector creation. # string | The scriptName value of the connector. Scriptname is the unique id generated at connector creation.
     locale := `de` // string | The locale to apply to the config. If no viable locale is given, it will default to \"en\" # string | The locale to apply to the config. If no viable locale is given, it will default to \"en\"
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -588,28 +561,26 @@ func main() {
 [[Back to top]](#)
 
 ## put-connector-correlation-config
-Update connector correlation configuration
-Update a connector's correlation config using its script name.    
+
+Update connector correlation configuration Update a connector's correlation config using its script name.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/put-connector-correlation-config)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**scriptName** | **string** | The scriptName value of the connector. Scriptname is the unique id generated at connector creation. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **scriptName** | **string** | The scriptName value of the connector. Scriptname is the unique id generated at connector creation. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiPutConnectorCorrelationConfigRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **file** | ***os.File** | connector correlation config xml file | 
+**file** | **\*os.File** | connector correlation config xml file |
 
 ### Return type
 
@@ -629,8 +600,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -638,7 +609,7 @@ func main() {
     scriptName := `aScriptName` // string | The scriptName value of the connector. Scriptname is the unique id generated at connector creation. # string | The scriptName value of the connector. Scriptname is the unique id generated at connector creation.
     file := BINARY_DATA_HERE // *os.File | connector correlation config xml file # *os.File | connector correlation config xml file
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -656,28 +627,26 @@ func main() {
 [[Back to top]](#)
 
 ## put-connector-source-config
-Update connector source configuration
-Update a connector's source config using its script name.    
+
+Update connector source configuration Update a connector's source config using its script name.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/put-connector-source-config)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**scriptName** | **string** | The scriptName value of the connector. ScriptName is the unique id generated at connector creation. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **scriptName** | **string** | The scriptName value of the connector. ScriptName is the unique id generated at connector creation. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiPutConnectorSourceConfigRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **file** | ***os.File** | connector source config xml file | 
+**file** | **\*os.File** | connector source config xml file |
 
 ### Return type
 
@@ -697,8 +666,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -706,7 +675,7 @@ func main() {
     scriptName := `aScriptName` // string | The scriptName value of the connector. ScriptName is the unique id generated at connector creation. # string | The scriptName value of the connector. ScriptName is the unique id generated at connector creation.
     file := BINARY_DATA_HERE // *os.File | connector source config xml file # *os.File | connector source config xml file
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -724,28 +693,26 @@ func main() {
 [[Back to top]](#)
 
 ## put-connector-source-template
-Update connector source template
-Update a connector's source template using its script name.    
+
+Update connector source template Update a connector's source template using its script name.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/put-connector-source-template)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**scriptName** | **string** | The scriptName value of the connector. ScriptName is the unique id generated at connector creation. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **scriptName** | **string** | The scriptName value of the connector. ScriptName is the unique id generated at connector creation. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiPutConnectorSourceTemplateRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **file** | ***os.File** | connector source template xml file | 
+**file** | **\*os.File** | connector source template xml file |
 
 ### Return type
 
@@ -765,8 +732,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -774,7 +741,7 @@ func main() {
     scriptName := `aScriptName` // string | The scriptName value of the connector. ScriptName is the unique id generated at connector creation. # string | The scriptName value of the connector. ScriptName is the unique id generated at connector creation.
     file := BINARY_DATA_HERE // *os.File | connector source template xml file # *os.File | connector source template xml file
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -792,29 +759,25 @@ func main() {
 [[Back to top]](#)
 
 ## put-connector-translations
-Update connector translations
-Update a connector's translations using its script name.    
+
+Update connector translations Update a connector's translations using its script name.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/put-connector-translations)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**scriptName** | **string** | The scriptName value of the connector. Scriptname is the unique id generated at connector creation. | 
-**locale** | **string** | The locale to apply to the config. If no viable locale is given, it will default to \&quot;en\&quot; | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **scriptName** | **string** | The scriptName value of the connector. Scriptname is the unique id generated at connector creation. |
+| **locale** | **string** | The locale to apply to the config. If no viable locale is given, it will default to \&quot;en\&quot; |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiPutConnectorTranslationsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -834,8 +797,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -843,7 +806,7 @@ func main() {
     scriptName := `aScriptName` // string | The scriptName value of the connector. Scriptname is the unique id generated at connector creation. # string | The scriptName value of the connector. Scriptname is the unique id generated at connector creation.
     locale := `de` // string | The locale to apply to the config. If no viable locale is given, it will default to \"en\" # string | The locale to apply to the config. If no viable locale is given, it will default to \"en\"
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -861,40 +824,36 @@ func main() {
 [[Back to top]](#)
 
 ## update-connector
-Update connector by script name
-This API updates a custom connector by script name using [JSON Patch](https://tools.ietf.org/html/rfc6902) syntax.
+
+Update connector by script name This API updates a custom connector by script name using [JSON Patch](https://tools.ietf.org/html/rfc6902) syntax.
 
 The following fields are patchable:
 
+- connectorMetadata
 
-* connectorMetadata
+- applicationXml
 
-* applicationXml
+- correlationConfigXml
 
-* correlationConfigXml
-
-* sourceConfigXml
-
+- sourceConfigXml
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/update-connector)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**scriptName** | **string** | The scriptName value of the connector. ScriptName is the unique id generated at connector creation. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **scriptName** | **string** | The scriptName value of the connector. ScriptName is the unique id generated at connector creation. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiUpdateConnectorRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **jsonPatchOperation** | [**[]JsonPatchOperation**](../models/json-patch-operation) | A list of connector detail update operations  | 
+**jsonPatchOperation** | [**[]JsonPatchOperation**](../models/json-patch-operation) | A list of connector detail update operations |
 
 ### Return type
 
@@ -921,14 +880,14 @@ import (
 
 func main() {
     scriptName := `aScriptName` // string | The scriptName value of the connector. ScriptName is the unique id generated at connector creation. # string | The scriptName value of the connector. ScriptName is the unique id generated at connector creation.
-    jsonpatchoperation := []byte(``) // []JsonPatchOperation | A list of connector detail update operations 
+    jsonpatchoperation := []byte(``) // []JsonPatchOperation | A list of connector detail update operations
 
     var jsonPatchOperation []v2024.JsonPatchOperation
     if err := json.Unmarshal(jsonpatchoperation, &jsonPatchOperation); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -944,4 +903,3 @@ func main() {
 ```
 
 [[Back to top]](#)
-

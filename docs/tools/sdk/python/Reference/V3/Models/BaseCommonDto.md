@@ -4,22 +4,22 @@ title: BaseCommonDto
 pagination_label: BaseCommonDto
 sidebar_label: BaseCommonDto
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'BaseCommonDto', 'BaseCommonDto'] 
+keywords: ['python', 'Python', 'sdk', 'BaseCommonDto', 'BaseCommonDto']
 slug: /tools/sdk/python/v3/models/base-common-dto
 tags: ['SDK', 'Software Development Kit', 'BaseCommonDto', 'BaseCommonDto']
 ---
 
 # BaseCommonDto
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | System-generated unique ID of the Object | [optional] [readonly] 
-**name** | **str** | Name of the Object | [required]
-**created** | **datetime** | Creation date of the Object | [optional] [readonly] 
-**modified** | **datetime** | Last modification date of the Object | [optional] [readonly] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | System-generated unique ID of the Object | [optional] [readonly] |
+| **name** | **str** | Name of the Object | [required] |
+| **created** | **datetime** | Creation date of the Object | [optional] [readonly] |
+| **modified** | **datetime** | Last modification date of the Object | [optional] [readonly] |
+
 }
 
 ## Example
@@ -35,5 +35,5 @@ modified='2015-05-28T14:07:17Z'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

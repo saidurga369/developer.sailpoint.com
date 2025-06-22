@@ -4,19 +4,20 @@ title: ViolationContext
 pagination_label: ViolationContext
 sidebar_label: ViolationContext
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ViolationContext', 'ViolationContext'] 
+keywords: ['go', 'Golang', 'sdk', 'ViolationContext', 'ViolationContext']
 slug: /tools/sdk/go/v3/models/violation-context
-tags: ['SDK', 'Software Development Kit', 'ViolationContext', 'ViolationContext']
+tags:
+  ['SDK', 'Software Development Kit', 'ViolationContext', 'ViolationContext']
 ---
 
 # ViolationContext
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Policy** | Pointer to [**ViolationContextPolicy**](violation-context-policy) |  | [optional] 
-**ConflictingAccessCriteria** | Pointer to [**ExceptionAccessCriteria**](exception-access-criteria) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Policy** | Pointer to [**ViolationContextPolicy**](violation-context-policy) |  | [optional] |
+| **ConflictingAccessCriteria** | Pointer to [**ExceptionAccessCriteria**](exception-access-criteria) |  | [optional] |
 
 ## Methods
 
@@ -24,18 +25,13 @@ Name | Type | Description | Notes
 
 `func NewViolationContext() *ViolationContext`
 
-NewViolationContext instantiates a new ViolationContext object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewViolationContext instantiates a new ViolationContext object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewViolationContextWithDefaults
 
 `func NewViolationContextWithDefaults() *ViolationContext`
 
-NewViolationContextWithDefaults instantiates a new ViolationContext object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewViolationContextWithDefaults instantiates a new ViolationContext object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetPolicy
 
@@ -47,8 +43,7 @@ GetPolicy returns the Policy field if non-nil, zero value otherwise.
 
 `func (o *ViolationContext) GetPolicyOk() (*ViolationContextPolicy, bool)`
 
-GetPolicyOk returns a tuple with the Policy field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPolicyOk returns a tuple with the Policy field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPolicy
 
@@ -72,8 +67,7 @@ GetConflictingAccessCriteria returns the ConflictingAccessCriteria field if non-
 
 `func (o *ViolationContext) GetConflictingAccessCriteriaOk() (*ExceptionAccessCriteria, bool)`
 
-GetConflictingAccessCriteriaOk returns a tuple with the ConflictingAccessCriteria field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConflictingAccessCriteriaOk returns a tuple with the ConflictingAccessCriteria field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConflictingAccessCriteria
 
@@ -86,5 +80,3 @@ SetConflictingAccessCriteria sets ConflictingAccessCriteria field to given value
 `func (o *ViolationContext) HasConflictingAccessCriteria() bool`
 
 HasConflictingAccessCriteria returns a boolean if a field has been set.
-
-

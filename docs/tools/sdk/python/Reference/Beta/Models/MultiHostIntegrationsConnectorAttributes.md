@@ -4,9 +4,22 @@ title: MultiHostIntegrationsConnectorAttributes
 pagination_label: MultiHostIntegrationsConnectorAttributes
 sidebar_label: MultiHostIntegrationsConnectorAttributes
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'MultiHostIntegrationsConnectorAttributes', 'BetaMultiHostIntegrationsConnectorAttributes'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'MultiHostIntegrationsConnectorAttributes',
+    'BetaMultiHostIntegrationsConnectorAttributes',
+  ]
 slug: /tools/sdk/python/beta/models/multi-host-integrations-connector-attributes
-tags: ['SDK', 'Software Development Kit', 'MultiHostIntegrationsConnectorAttributes', 'BetaMultiHostIntegrationsConnectorAttributes']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'MultiHostIntegrationsConnectorAttributes',
+    'BetaMultiHostIntegrationsConnectorAttributes',
+  ]
 ---
 
 # MultiHostIntegrationsConnectorAttributes
@@ -15,15 +28,16 @@ Connector specific configuration. This configuration will differ for Multi-Host 
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**max_allowed_sources** | **int** | Maximum sources allowed count of a Multi-Host Integration | [optional] 
-**last_source_upload_count** | **int** | Last upload sources count of a Multi-Host Integration | [optional] 
-**connector_file_upload_history** | [**MultiHostIntegrationsConnectorAttributesConnectorFileUploadHistory**](multi-host-integrations-connector-attributes-connector-file-upload-history) |  | [optional] 
-**multihost_status** |  **Enum** [  'ready',    'processing',    'fileUploadInProgress',    'sourceCreationInProgress',    'aggregationGroupingInProgress',    'aggregationScheduleInProgress',    'deleteInProgress',    'deleteFailed' ] | Multi-Host integration status. | [optional] 
-**show_account_schema** | **bool** | Show account schema | [optional] [default to True]
-**show_entitlement_schema** | **bool** | Show entitlement schema | [optional] [default to True]
-**multi_host_attributes** | [**MultiHostIntegrationsConnectorAttributesMultiHostAttributes**](multi-host-integrations-connector-attributes-multi-host-attributes) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **max_allowed_sources** | **int** | Maximum sources allowed count of a Multi-Host Integration | [optional] |
+| **last_source_upload_count** | **int** | Last upload sources count of a Multi-Host Integration | [optional] |
+| **connector_file_upload_history** | [**MultiHostIntegrationsConnectorAttributesConnectorFileUploadHistory**](multi-host-integrations-connector-attributes-connector-file-upload-history) |  | [optional] |
+| **multihost_status** | **Enum** [ 'ready', 'processing', 'fileUploadInProgress', 'sourceCreationInProgress', 'aggregationGroupingInProgress', 'aggregationScheduleInProgress', 'deleteInProgress', 'deleteFailed' ] | Multi-Host integration status. | [optional] |
+| **show_account_schema** | **bool** | Show account schema | [optional] [default to True] |
+| **show_entitlement_schema** | **bool** | Show entitlement schema | [optional] [default to True] |
+| **multi_host_attributes** | [**MultiHostIntegrationsConnectorAttributesMultiHostAttributes**](multi-host-integrations-connector-attributes-multi-host-attributes) |  | [optional] |
+
 }
 
 ## Example
@@ -40,12 +54,12 @@ multihost_status='ready',
 show_account_schema=True,
 show_entitlement_schema=True,
 multi_host_attributes=sailpoint.beta.models.multi_host_integrations_connector_attributes_multi_host_attributes.MultiHostIntegrations_connectorAttributes_multiHostAttributes(
-                    password = 'Password', 
-                    connector_files = 'mssql-jdbc-8.4.1.jre8.jar', 
-                    auth_type = 'SQLAuthentication', 
+                    password = 'Password',
+                    connector_files = 'mssql-jdbc-8.4.1.jre8.jar',
+                    auth_type = 'SQLAuthentication',
                     user = 'My Username', )
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

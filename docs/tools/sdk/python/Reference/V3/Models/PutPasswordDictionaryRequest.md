@@ -4,19 +4,32 @@ title: PutPasswordDictionaryRequest
 pagination_label: PutPasswordDictionaryRequest
 sidebar_label: PutPasswordDictionaryRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'PutPasswordDictionaryRequest', 'PutPasswordDictionaryRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'PutPasswordDictionaryRequest',
+    'PutPasswordDictionaryRequest',
+  ]
 slug: /tools/sdk/python/v3/models/put-password-dictionary-request
-tags: ['SDK', 'Software Development Kit', 'PutPasswordDictionaryRequest', 'PutPasswordDictionaryRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PutPasswordDictionaryRequest',
+    'PutPasswordDictionaryRequest',
+  ]
 ---
 
 # PutPasswordDictionaryRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**file** | **bytearray** |  | [optional] 
+| Name     | Type          | Description | Notes      |
+| -------- | ------------- | ----------- | ---------- |
+| **file** | **bytearray** |             | [optional] |
+
 }
 
 ## Example
@@ -29,5 +42,5 @@ file=bytes(b'blah')
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

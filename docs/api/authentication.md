@@ -79,15 +79,16 @@ If you have admin access but don't know your tenant name, you can learn it by fo
 4. Find the tenant name ('Org Name') in the dashboard's `Org Details` section.
 
 This is an example of the OAuth details of the tenant, `iga-acme-sb`, that does not use a vanity URL:
+
 ```json
 {
-    "tenantId": "6d9b2709-915f-47f0-879e-cee65d6bc9af",
-    "tenantName": "iga-acme-sb",
-    "authorizeEndpoint": "https://iga-acme-sb.login.sailpoint.com/oauth/authorize",
-    "tokenEndpoint": "https://iga-acme-sb.api.identitynow.com/oauth/token",
-    "cloudDomainUrl": "https://iga-acme-sb.identitynow.com",
-    "logoutUrl": "https://iga-acme-sb.identitynow.com/logout",
-    "pod": "stg01-useast1"
+  "tenantId": "6d9b2709-915f-47f0-879e-cee65d6bc9af",
+  "tenantName": "iga-acme-sb",
+  "authorizeEndpoint": "https://iga-acme-sb.login.sailpoint.com/oauth/authorize",
+  "tokenEndpoint": "https://iga-acme-sb.api.identitynow.com/oauth/token",
+  "cloudDomainUrl": "https://iga-acme-sb.identitynow.com",
+  "logoutUrl": "https://iga-acme-sb.identitynow.com/logout",
+  "pod": "stg01-useast1"
 }
 ```
 

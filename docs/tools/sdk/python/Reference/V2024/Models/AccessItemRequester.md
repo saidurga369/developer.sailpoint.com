@@ -4,9 +4,16 @@ title: AccessItemRequester
 pagination_label: AccessItemRequester
 sidebar_label: AccessItemRequester
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccessItemRequester', 'V2024AccessItemRequester'] 
+keywords:
+  ['python', 'Python', 'sdk', 'AccessItemRequester', 'V2024AccessItemRequester']
 slug: /tools/sdk/python/v2024/models/access-item-requester
-tags: ['SDK', 'Software Development Kit', 'AccessItemRequester', 'V2024AccessItemRequester']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessItemRequester',
+    'V2024AccessItemRequester',
+  ]
 ---
 
 # AccessItemRequester
@@ -15,11 +22,12 @@ Access item requester's identity.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] | Access item requester's DTO type. | [optional] 
-**id** | **str** | Access item requester's identity ID. | [optional] 
-**name** | **str** | Access item owner's human-readable display name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'IDENTITY' ] | Access item requester's DTO type. | [optional] |
+| **id** | **str** | Access item requester's identity ID. | [optional] |
+| **name** | **str** | Access item owner's human-readable display name. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +42,5 @@ name='William Wilson'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

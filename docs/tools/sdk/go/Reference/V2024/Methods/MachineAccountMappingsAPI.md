@@ -4,47 +4,56 @@ title: MachineAccountMappings
 pagination_label: MachineAccountMappings
 sidebar_label: MachineAccountMappings
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'MachineAccountMappings', 'V2024MachineAccountMappings'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'MachineAccountMappings',
+    'V2024MachineAccountMappings',
+  ]
 slug: /tools/sdk/go/v2024/methods/machine-account-mappings
-tags: ['SDK', 'Software Development Kit', 'MachineAccountMappings', 'V2024MachineAccountMappings']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'MachineAccountMappings',
+    'V2024MachineAccountMappings',
+  ]
 ---
 
 # MachineAccountMappingsAPI
-   
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/v2024*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create-machine-account-mappings**](#create-machine-account-mappings) | **Post** `/sources/{sourceId}/machine-account-mappings` | Create machine account mappings
-[**delete-machine-account-mappings**](#delete-machine-account-mappings) | **Delete** `/sources/{sourceId}/machine-account-mappings` | Delete source&#39;s machine account mappings
-[**list-machine-account-mappings**](#list-machine-account-mappings) | **Get** `/sources/{sourceId}/machine-account-mappings` | Machine account mapping for source
-[**set-machine-account-mappings**](#set-machine-account-mappings) | **Put** `/sources/{sourceId}/machine-mappings` | Update Source&#39;s Machine Account Mappings
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**create-machine-account-mappings**](#create-machine-account-mappings) | **Post** `/sources/{sourceId}/machine-account-mappings` | Create machine account mappings |
+| [**delete-machine-account-mappings**](#delete-machine-account-mappings) | **Delete** `/sources/{sourceId}/machine-account-mappings` | Delete source&#39;s machine account mappings |
+| [**list-machine-account-mappings**](#list-machine-account-mappings) | **Get** `/sources/{sourceId}/machine-account-mappings` | Machine account mapping for source |
+| [**set-machine-account-mappings**](#set-machine-account-mappings) | **Put** `/sources/{sourceId}/machine-mappings` | Update Source&#39;s Machine Account Mappings |
 
 ## create-machine-account-mappings
-Create machine account mappings
-Creates Machine Account Mappings for both identities and accounts for a source.
-A token with API, ORG_ADMIN, ROLE_ADMIN, ROLE_SUBADMIN, SOURCE_ADMIN, or SOURCE_SUBADMIN authority is required to call this API.
+
+Create machine account mappings Creates Machine Account Mappings for both identities and accounts for a source. A token with API, ORG_ADMIN, ROLE_ADMIN, ROLE_SUBADMIN, SOURCE_ADMIN, or SOURCE_SUBADMIN authority is required to call this API.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/create-machine-account-mappings)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Source ID. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Source ID. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCreateMachineAccountMappingsRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **attributeMappings** | [**AttributeMappings**](../models/attribute-mappings) |  | 
+**attributeMappings** | [**AttributeMappings**](../models/attribute-mappings) | |
 
 ### Return type
 
@@ -91,14 +100,14 @@ func main() {
             "attributeName" : "businessApplication",
             "type" : "IDENTITY"
           }
-        }`) // AttributeMappings | 
+        }`) // AttributeMappings |
 
     var attributeMappings v2024.AttributeMappings
     if err := json.Unmarshal(attributemappings, &attributeMappings); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -116,32 +125,28 @@ func main() {
 [[Back to top]](#)
 
 ## delete-machine-account-mappings
-Delete source's machine account mappings
-Use this API to remove machine account attribute mappings for a Source. 
-A token with ORG_ADMIN, SOURCE_ADMIN, or SOURCE_SUBADMIN authority is required to call this API.
+
+Delete source's machine account mappings Use this API to remove machine account attribute mappings for a Source. A token with ORG_ADMIN, SOURCE_ADMIN, or SOURCE_SUBADMIN authority is required to call this API.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/delete-machine-account-mappings)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | source ID. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | source ID. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteMachineAccountMappingsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -157,15 +162,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `ef38f94347e94562b5bb8424a56397d8` // string | source ID. # string | source ID.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -175,36 +180,33 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `MachineAccountMappingsAPI.DeleteMachineAccountMappings``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## list-machine-account-mappings
-Machine account mapping for source
-Retrieves Machine account mappings for a specified source using Source ID.
+
+Machine account mapping for source Retrieves Machine account mappings for a specified source using Source ID.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/list-machine-account-mappings)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Source ID | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Source ID |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListMachineAccountMappingsRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
+**limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
 
 ### Return type
 
@@ -224,8 +226,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -234,7 +236,7 @@ func main() {
     limit := 250 // int32 | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 250) # int32 | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 250)
     offset := 0 // int32 | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 0) # int32 | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 0)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -252,28 +254,26 @@ func main() {
 [[Back to top]](#)
 
 ## set-machine-account-mappings
-Update Source's Machine Account Mappings
-Use this API to update Machine Account Attribute Mapping for a Source. A token with ORG_ADMIN, SOURCE_ADMIN, or SOURCE_SUBADMIN authority is required to call this API.
+
+Update Source's Machine Account Mappings Use this API to update Machine Account Attribute Mapping for a Source. A token with ORG_ADMIN, SOURCE_ADMIN, or SOURCE_SUBADMIN authority is required to call this API.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/set-machine-account-mappings)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Source ID. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Source ID. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSetMachineAccountMappingsRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **attributeMappings** | [**AttributeMappings**](../models/attribute-mappings) |  | 
+**attributeMappings** | [**AttributeMappings**](../models/attribute-mappings) | |
 
 ### Return type
 
@@ -320,14 +320,14 @@ func main() {
             "attributeName" : "businessApplication",
             "type" : "IDENTITY"
           }
-        }`) // AttributeMappings | 
+        }`) // AttributeMappings |
 
     var attributeMappings v2024.AttributeMappings
     if err := json.Unmarshal(attributemappings, &attributeMappings); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -343,4 +343,3 @@ func main() {
 ```
 
 [[Back to top]](#)
-

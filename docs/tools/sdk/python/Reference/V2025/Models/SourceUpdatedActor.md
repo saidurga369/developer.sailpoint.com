@@ -4,9 +4,16 @@ title: SourceUpdatedActor
 pagination_label: SourceUpdatedActor
 sidebar_label: SourceUpdatedActor
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SourceUpdatedActor', 'V2025SourceUpdatedActor'] 
+keywords:
+  ['python', 'Python', 'sdk', 'SourceUpdatedActor', 'V2025SourceUpdatedActor']
 slug: /tools/sdk/python/v2025/models/source-updated-actor
-tags: ['SDK', 'Software Development Kit', 'SourceUpdatedActor', 'V2025SourceUpdatedActor']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SourceUpdatedActor',
+    'V2025SourceUpdatedActor',
+  ]
 ---
 
 # SourceUpdatedActor
@@ -15,11 +22,12 @@ Identity who updated the source.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] | DTO type of identity who updated the source. | [required]
-**id** | **str** | ID of identity who updated the source. | [optional] 
-**name** | **str** | Display name of identity who updated the source. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'IDENTITY' ] | DTO type of identity who updated the source. | [required] |
+| **id** | **str** | ID of identity who updated the source. | [optional] |
+| **name** | **str** | Display name of identity who updated the source. | [required] |
+
 }
 
 ## Example
@@ -34,5 +42,5 @@ name='William Wilson'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

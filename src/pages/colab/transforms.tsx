@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import Layout from '@theme/Layout';
 import styles from './filter.module.css';
 import BlogSidebar from '../../components/blog/BlogSidebar';

@@ -4,19 +4,32 @@ title: RoleMiningSessionResponseCreatedBy
 pagination_label: RoleMiningSessionResponseCreatedBy
 sidebar_label: RoleMiningSessionResponseCreatedBy
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleMiningSessionResponseCreatedBy', 'BetaRoleMiningSessionResponseCreatedBy'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'RoleMiningSessionResponseCreatedBy',
+    'BetaRoleMiningSessionResponseCreatedBy',
+  ]
 slug: /tools/sdk/go/beta/models/role-mining-session-response-created-by
-tags: ['SDK', 'Software Development Kit', 'RoleMiningSessionResponseCreatedBy', 'BetaRoleMiningSessionResponseCreatedBy']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningSessionResponseCreatedBy',
+    'BetaRoleMiningSessionResponseCreatedBy',
+  ]
 ---
 
 # RoleMiningSessionResponseCreatedBy
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | ID of the creator | [optional] 
-**DisplayName** | Pointer to **string** | The display name of the creator | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | ID of the creator | [optional] |
+| **DisplayName** | Pointer to **string** | The display name of the creator | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewRoleMiningSessionResponseCreatedBy() *RoleMiningSessionResponseCreatedBy`
 
-NewRoleMiningSessionResponseCreatedBy instantiates a new RoleMiningSessionResponseCreatedBy object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleMiningSessionResponseCreatedBy instantiates a new RoleMiningSessionResponseCreatedBy object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleMiningSessionResponseCreatedByWithDefaults
 
 `func NewRoleMiningSessionResponseCreatedByWithDefaults() *RoleMiningSessionResponseCreatedBy`
 
-NewRoleMiningSessionResponseCreatedByWithDefaults instantiates a new RoleMiningSessionResponseCreatedBy object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleMiningSessionResponseCreatedByWithDefaults instantiates a new RoleMiningSessionResponseCreatedBy object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -47,8 +55,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningSessionResponseCreatedBy) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -72,8 +79,7 @@ GetDisplayName returns the DisplayName field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningSessionResponseCreatedBy) GetDisplayNameOk() (*string, bool)`
 
-GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayName
 
@@ -86,5 +92,3 @@ SetDisplayName sets DisplayName field to given value.
 `func (o *RoleMiningSessionResponseCreatedBy) HasDisplayName() bool`
 
 HasDisplayName returns a boolean if a field has been set.
-
-

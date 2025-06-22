@@ -4,21 +4,28 @@ title: ManagedClusterRequest
 pagination_label: ManagedClusterRequest
 sidebar_label: ManagedClusterRequest
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ManagedClusterRequest', 'V2025ManagedClusterRequest'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'ManagedClusterRequest', 'V2025ManagedClusterRequest']
 slug: /tools/sdk/go/v2025/models/managed-cluster-request
-tags: ['SDK', 'Software Development Kit', 'ManagedClusterRequest', 'V2025ManagedClusterRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ManagedClusterRequest',
+    'V2025ManagedClusterRequest',
+  ]
 ---
 
 # ManagedClusterRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | **string** | ManagedCluster name | 
-**Type** | Pointer to [**ManagedClusterTypes**](managed-cluster-types) |  | [optional] 
-**Configuration** | Pointer to **map[string]string** | ManagedProcess configuration map | [optional] 
-**Description** | Pointer to **NullableString** | ManagedCluster description | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | **string** | ManagedCluster name |
+| **Type** | Pointer to [**ManagedClusterTypes**](managed-cluster-types) |  | [optional] |
+| **Configuration** | Pointer to **map[string]string** | ManagedProcess configuration map | [optional] |
+| **Description** | Pointer to **NullableString** | ManagedCluster description | [optional] |
 
 ## Methods
 
@@ -26,18 +33,13 @@ Name | Type | Description | Notes
 
 `func NewManagedClusterRequest(name string, ) *ManagedClusterRequest`
 
-NewManagedClusterRequest instantiates a new ManagedClusterRequest object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewManagedClusterRequest instantiates a new ManagedClusterRequest object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewManagedClusterRequestWithDefaults
 
 `func NewManagedClusterRequestWithDefaults() *ManagedClusterRequest`
 
-NewManagedClusterRequestWithDefaults instantiates a new ManagedClusterRequest object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewManagedClusterRequestWithDefaults instantiates a new ManagedClusterRequest object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -49,15 +51,13 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *ManagedClusterRequest) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
 `func (o *ManagedClusterRequest) SetName(v string)`
 
 SetName sets Name field to given value.
-
 
 ### GetType
 
@@ -69,8 +69,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *ManagedClusterRequest) GetTypeOk() (*ManagedClusterTypes, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -94,8 +93,7 @@ GetConfiguration returns the Configuration field if non-nil, zero value otherwis
 
 `func (o *ManagedClusterRequest) GetConfigurationOk() (*map[string]string, bool)`
 
-GetConfigurationOk returns a tuple with the Configuration field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConfigurationOk returns a tuple with the Configuration field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConfiguration
 
@@ -119,8 +117,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *ManagedClusterRequest) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -138,10 +135,10 @@ HasDescription returns a boolean if a field has been set.
 
 `func (o *ManagedClusterRequest) SetDescriptionNil(b bool)`
 
- SetDescriptionNil sets the value for Description to be an explicit nil
+SetDescriptionNil sets the value for Description to be an explicit nil
 
 ### UnsetDescription
+
 `func (o *ManagedClusterRequest) UnsetDescription()`
 
 UnsetDescription ensures that no value is present for Description, not even an explicit nil
-

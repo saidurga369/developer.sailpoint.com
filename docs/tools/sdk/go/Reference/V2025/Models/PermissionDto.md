@@ -4,7 +4,7 @@ title: PermissionDto
 pagination_label: PermissionDto
 sidebar_label: PermissionDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'PermissionDto', 'V2025PermissionDto'] 
+keywords: ['go', 'Golang', 'sdk', 'PermissionDto', 'V2025PermissionDto']
 slug: /tools/sdk/go/v2025/models/permission-dto
 tags: ['SDK', 'Software Development Kit', 'PermissionDto', 'V2025PermissionDto']
 ---
@@ -13,10 +13,10 @@ tags: ['SDK', 'Software Development Kit', 'PermissionDto', 'V2025PermissionDto']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Rights** | Pointer to **[]string** | All the rights (e.g. actions) that this permission allows on the target | [optional] [readonly] 
-**Target** | Pointer to **string** | The target the permission would grants rights on. | [optional] [readonly] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Rights** | Pointer to **[]string** | All the rights (e.g. actions) that this permission allows on the target | [optional] [readonly] |
+| **Target** | Pointer to **string** | The target the permission would grants rights on. | [optional] [readonly] |
 
 ## Methods
 
@@ -24,18 +24,13 @@ Name | Type | Description | Notes
 
 `func NewPermissionDto() *PermissionDto`
 
-NewPermissionDto instantiates a new PermissionDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewPermissionDto instantiates a new PermissionDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewPermissionDtoWithDefaults
 
 `func NewPermissionDtoWithDefaults() *PermissionDto`
 
-NewPermissionDtoWithDefaults instantiates a new PermissionDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewPermissionDtoWithDefaults instantiates a new PermissionDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetRights
 
@@ -47,8 +42,7 @@ GetRights returns the Rights field if non-nil, zero value otherwise.
 
 `func (o *PermissionDto) GetRightsOk() (*[]string, bool)`
 
-GetRightsOk returns a tuple with the Rights field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRightsOk returns a tuple with the Rights field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRights
 
@@ -72,8 +66,7 @@ GetTarget returns the Target field if non-nil, zero value otherwise.
 
 `func (o *PermissionDto) GetTargetOk() (*string, bool)`
 
-GetTargetOk returns a tuple with the Target field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTargetOk returns a tuple with the Target field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTarget
 
@@ -86,5 +79,3 @@ SetTarget sets Target field to given value.
 `func (o *PermissionDto) HasTarget() bool`
 
 HasTarget returns a boolean if a field has been set.
-
-

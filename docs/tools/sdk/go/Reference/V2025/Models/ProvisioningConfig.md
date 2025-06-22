@@ -4,22 +4,29 @@ title: ProvisioningConfig
 pagination_label: ProvisioningConfig
 sidebar_label: ProvisioningConfig
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ProvisioningConfig', 'V2025ProvisioningConfig'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'ProvisioningConfig', 'V2025ProvisioningConfig']
 slug: /tools/sdk/go/v2025/models/provisioning-config
-tags: ['SDK', 'Software Development Kit', 'ProvisioningConfig', 'V2025ProvisioningConfig']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ProvisioningConfig',
+    'V2025ProvisioningConfig',
+  ]
 ---
 
 # ProvisioningConfig
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**UniversalManager** | Pointer to **bool** | Specifies whether this configuration is used to manage provisioning requests for all sources from the org.  If true, no managedResourceRefs are allowed. | [optional] [readonly] [default to false]
-**ManagedResourceRefs** | Pointer to [**[]ServiceDeskSource**](service-desk-source) | References to sources for the Service Desk integration template.  May only be specified if universalManager is false. | [optional] 
-**PlanInitializerScript** | Pointer to [**NullableProvisioningConfigPlanInitializerScript**](provisioning-config-plan-initializer-script) |  | [optional] 
-**NoProvisioningRequests** | Pointer to **bool** | Name of an attribute that when true disables the saving of ProvisioningRequest objects whenever plans are sent through this integration. | [optional] [default to false]
-**ProvisioningRequestExpiration** | Pointer to **int32** | When saving pending requests is enabled, this defines the number of hours the request is allowed to live before it is considered expired and no longer affects plan compilation. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **UniversalManager** | Pointer to **bool** | Specifies whether this configuration is used to manage provisioning requests for all sources from the org. If true, no managedResourceRefs are allowed. | [optional] [readonly] [default to false] |
+| **ManagedResourceRefs** | Pointer to [**[]ServiceDeskSource**](service-desk-source) | References to sources for the Service Desk integration template. May only be specified if universalManager is false. | [optional] |
+| **PlanInitializerScript** | Pointer to [**NullableProvisioningConfigPlanInitializerScript**](provisioning-config-plan-initializer-script) |  | [optional] |
+| **NoProvisioningRequests** | Pointer to **bool** | Name of an attribute that when true disables the saving of ProvisioningRequest objects whenever plans are sent through this integration. | [optional] [default to false] |
+| **ProvisioningRequestExpiration** | Pointer to **int32** | When saving pending requests is enabled, this defines the number of hours the request is allowed to live before it is considered expired and no longer affects plan compilation. | [optional] |
 
 ## Methods
 
@@ -27,18 +34,13 @@ Name | Type | Description | Notes
 
 `func NewProvisioningConfig() *ProvisioningConfig`
 
-NewProvisioningConfig instantiates a new ProvisioningConfig object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewProvisioningConfig instantiates a new ProvisioningConfig object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewProvisioningConfigWithDefaults
 
 `func NewProvisioningConfigWithDefaults() *ProvisioningConfig`
 
-NewProvisioningConfigWithDefaults instantiates a new ProvisioningConfig object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewProvisioningConfigWithDefaults instantiates a new ProvisioningConfig object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetUniversalManager
 
@@ -50,8 +52,7 @@ GetUniversalManager returns the UniversalManager field if non-nil, zero value ot
 
 `func (o *ProvisioningConfig) GetUniversalManagerOk() (*bool, bool)`
 
-GetUniversalManagerOk returns a tuple with the UniversalManager field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUniversalManagerOk returns a tuple with the UniversalManager field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUniversalManager
 
@@ -75,8 +76,7 @@ GetManagedResourceRefs returns the ManagedResourceRefs field if non-nil, zero va
 
 `func (o *ProvisioningConfig) GetManagedResourceRefsOk() (*[]ServiceDeskSource, bool)`
 
-GetManagedResourceRefsOk returns a tuple with the ManagedResourceRefs field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetManagedResourceRefsOk returns a tuple with the ManagedResourceRefs field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetManagedResourceRefs
 
@@ -100,8 +100,7 @@ GetPlanInitializerScript returns the PlanInitializerScript field if non-nil, zer
 
 `func (o *ProvisioningConfig) GetPlanInitializerScriptOk() (*ProvisioningConfigPlanInitializerScript, bool)`
 
-GetPlanInitializerScriptOk returns a tuple with the PlanInitializerScript field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPlanInitializerScriptOk returns a tuple with the PlanInitializerScript field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPlanInitializerScript
 
@@ -119,12 +118,14 @@ HasPlanInitializerScript returns a boolean if a field has been set.
 
 `func (o *ProvisioningConfig) SetPlanInitializerScriptNil(b bool)`
 
- SetPlanInitializerScriptNil sets the value for PlanInitializerScript to be an explicit nil
+SetPlanInitializerScriptNil sets the value for PlanInitializerScript to be an explicit nil
 
 ### UnsetPlanInitializerScript
+
 `func (o *ProvisioningConfig) UnsetPlanInitializerScript()`
 
 UnsetPlanInitializerScript ensures that no value is present for PlanInitializerScript, not even an explicit nil
+
 ### GetNoProvisioningRequests
 
 `func (o *ProvisioningConfig) GetNoProvisioningRequests() bool`
@@ -135,8 +136,7 @@ GetNoProvisioningRequests returns the NoProvisioningRequests field if non-nil, z
 
 `func (o *ProvisioningConfig) GetNoProvisioningRequestsOk() (*bool, bool)`
 
-GetNoProvisioningRequestsOk returns a tuple with the NoProvisioningRequests field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNoProvisioningRequestsOk returns a tuple with the NoProvisioningRequests field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNoProvisioningRequests
 
@@ -160,8 +160,7 @@ GetProvisioningRequestExpiration returns the ProvisioningRequestExpiration field
 
 `func (o *ProvisioningConfig) GetProvisioningRequestExpirationOk() (*int32, bool)`
 
-GetProvisioningRequestExpirationOk returns a tuple with the ProvisioningRequestExpiration field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProvisioningRequestExpirationOk returns a tuple with the ProvisioningRequestExpiration field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProvisioningRequestExpiration
 
@@ -174,5 +173,3 @@ SetProvisioningRequestExpiration sets ProvisioningRequestExpiration field to giv
 `func (o *ProvisioningConfig) HasProvisioningRequestExpiration() bool`
 
 HasProvisioningRequestExpiration returns a boolean if a field has been set.
-
-

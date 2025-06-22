@@ -4,9 +4,10 @@ title: StatusResponse
 pagination_label: StatusResponse
 sidebar_label: StatusResponse
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'StatusResponse', 'BetaStatusResponse'] 
+keywords: ['python', 'Python', 'sdk', 'StatusResponse', 'BetaStatusResponse']
 slug: /tools/sdk/python/beta/models/status-response
-tags: ['SDK', 'Software Development Kit', 'StatusResponse', 'BetaStatusResponse']
+tags:
+  ['SDK', 'Software Development Kit', 'StatusResponse', 'BetaStatusResponse']
 ---
 
 # StatusResponse
@@ -15,13 +16,14 @@ Response model for connection check, configuration test and ping of source conne
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | ID of the source | [optional] [readonly] 
-**name** | **str** | Name of the source | [optional] [readonly] 
-**status** |  **Enum** [  'SUCCESS',    'FAILURE' ] | The status of the health check. | [optional] [readonly] 
-**elapsed_millis** | **int** | The number of milliseconds spent on the entire request. | [optional] [readonly] 
-**details** | **object** | The document contains the results of the health check. The schema of this document depends on the type of source used.  | [optional] [readonly] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | ID of the source | [optional] [readonly] |
+| **name** | **str** | Name of the source | [optional] [readonly] |
+| **status** | **Enum** [ 'SUCCESS', 'FAILURE' ] | The status of the health check. | [optional] [readonly] |
+| **elapsed_millis** | **int** | The number of milliseconds spent on the entire request. | [optional] [readonly] |
+| **details** | **object** | The document contains the results of the health check. The schema of this document depends on the type of source used. | [optional] [readonly] |
+
 }
 
 ## Example
@@ -38,5 +40,5 @@ details={useTLSForIQService=false, IQService={TLS Port=0, .NET CLR Version=4.0.3
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

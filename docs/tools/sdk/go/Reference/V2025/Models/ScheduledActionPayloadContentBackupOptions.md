@@ -4,19 +4,32 @@ title: ScheduledActionPayloadContentBackupOptions
 pagination_label: ScheduledActionPayloadContentBackupOptions
 sidebar_label: ScheduledActionPayloadContentBackupOptions
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ScheduledActionPayloadContentBackupOptions', 'V2025ScheduledActionPayloadContentBackupOptions'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ScheduledActionPayloadContentBackupOptions',
+    'V2025ScheduledActionPayloadContentBackupOptions',
+  ]
 slug: /tools/sdk/go/v2025/models/scheduled-action-payload-content-backup-options
-tags: ['SDK', 'Software Development Kit', 'ScheduledActionPayloadContentBackupOptions', 'V2025ScheduledActionPayloadContentBackupOptions']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ScheduledActionPayloadContentBackupOptions',
+    'V2025ScheduledActionPayloadContentBackupOptions',
+  ]
 ---
 
 # ScheduledActionPayloadContentBackupOptions
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**IncludeTypes** | Pointer to **[]string** | Object types that are to be included in the backup. | [optional] 
-**ObjectOptions** | Pointer to [**map[string]ScheduledActionResponseContentBackupOptionsObjectOptionsValue**](scheduled-action-response-content-backup-options-object-options-value) | Map of objectType string to the options to be passed to the target service for that objectType. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **IncludeTypes** | Pointer to **[]string** | Object types that are to be included in the backup. | [optional] |
+| **ObjectOptions** | Pointer to [**map[string]ScheduledActionResponseContentBackupOptionsObjectOptionsValue**](scheduled-action-response-content-backup-options-object-options-value) | Map of objectType string to the options to be passed to the target service for that objectType. | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewScheduledActionPayloadContentBackupOptions() *ScheduledActionPayloadContentBackupOptions`
 
-NewScheduledActionPayloadContentBackupOptions instantiates a new ScheduledActionPayloadContentBackupOptions object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewScheduledActionPayloadContentBackupOptions instantiates a new ScheduledActionPayloadContentBackupOptions object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewScheduledActionPayloadContentBackupOptionsWithDefaults
 
 `func NewScheduledActionPayloadContentBackupOptionsWithDefaults() *ScheduledActionPayloadContentBackupOptions`
 
-NewScheduledActionPayloadContentBackupOptionsWithDefaults instantiates a new ScheduledActionPayloadContentBackupOptions object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewScheduledActionPayloadContentBackupOptionsWithDefaults instantiates a new ScheduledActionPayloadContentBackupOptions object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetIncludeTypes
 
@@ -47,8 +55,7 @@ GetIncludeTypes returns the IncludeTypes field if non-nil, zero value otherwise.
 
 `func (o *ScheduledActionPayloadContentBackupOptions) GetIncludeTypesOk() (*[]string, bool)`
 
-GetIncludeTypesOk returns a tuple with the IncludeTypes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIncludeTypesOk returns a tuple with the IncludeTypes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIncludeTypes
 
@@ -72,8 +79,7 @@ GetObjectOptions returns the ObjectOptions field if non-nil, zero value otherwis
 
 `func (o *ScheduledActionPayloadContentBackupOptions) GetObjectOptionsOk() (*map[string]ScheduledActionResponseContentBackupOptionsObjectOptionsValue, bool)`
 
-GetObjectOptionsOk returns a tuple with the ObjectOptions field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetObjectOptionsOk returns a tuple with the ObjectOptions field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetObjectOptions
 
@@ -86,5 +92,3 @@ SetObjectOptions sets ObjectOptions field to given value.
 `func (o *ScheduledActionPayloadContentBackupOptions) HasObjectOptions() bool`
 
 HasObjectOptions returns a boolean if a field has been set.
-
-

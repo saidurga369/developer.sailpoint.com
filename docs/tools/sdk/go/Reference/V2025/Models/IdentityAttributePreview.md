@@ -4,21 +4,34 @@ title: IdentityAttributePreview
 pagination_label: IdentityAttributePreview
 sidebar_label: IdentityAttributePreview
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IdentityAttributePreview', 'V2025IdentityAttributePreview'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'IdentityAttributePreview',
+    'V2025IdentityAttributePreview',
+  ]
 slug: /tools/sdk/go/v2025/models/identity-attribute-preview
-tags: ['SDK', 'Software Development Kit', 'IdentityAttributePreview', 'V2025IdentityAttributePreview']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityAttributePreview',
+    'V2025IdentityAttributePreview',
+  ]
 ---
 
 # IdentityAttributePreview
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | Pointer to **string** | Name of the attribute that is being previewed. | [optional] 
-**Value** | Pointer to **string** | Value that was derived during the preview. | [optional] 
-**PreviousValue** | Pointer to **string** | The value of the attribute before the preview. | [optional] 
-**ErrorMessages** | Pointer to [**[]ErrorMessageDto**](error-message-dto) | List of error messages | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | Pointer to **string** | Name of the attribute that is being previewed. | [optional] |
+| **Value** | Pointer to **string** | Value that was derived during the preview. | [optional] |
+| **PreviousValue** | Pointer to **string** | The value of the attribute before the preview. | [optional] |
+| **ErrorMessages** | Pointer to [**[]ErrorMessageDto**](error-message-dto) | List of error messages | [optional] |
 
 ## Methods
 
@@ -26,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewIdentityAttributePreview() *IdentityAttributePreview`
 
-NewIdentityAttributePreview instantiates a new IdentityAttributePreview object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewIdentityAttributePreview instantiates a new IdentityAttributePreview object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewIdentityAttributePreviewWithDefaults
 
 `func NewIdentityAttributePreviewWithDefaults() *IdentityAttributePreview`
 
-NewIdentityAttributePreviewWithDefaults instantiates a new IdentityAttributePreview object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewIdentityAttributePreviewWithDefaults instantiates a new IdentityAttributePreview object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -49,8 +57,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *IdentityAttributePreview) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -74,8 +81,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *IdentityAttributePreview) GetValueOk() (*string, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -99,8 +105,7 @@ GetPreviousValue returns the PreviousValue field if non-nil, zero value otherwis
 
 `func (o *IdentityAttributePreview) GetPreviousValueOk() (*string, bool)`
 
-GetPreviousValueOk returns a tuple with the PreviousValue field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPreviousValueOk returns a tuple with the PreviousValue field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPreviousValue
 
@@ -124,8 +129,7 @@ GetErrorMessages returns the ErrorMessages field if non-nil, zero value otherwis
 
 `func (o *IdentityAttributePreview) GetErrorMessagesOk() (*[]ErrorMessageDto, bool)`
 
-GetErrorMessagesOk returns a tuple with the ErrorMessages field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetErrorMessagesOk returns a tuple with the ErrorMessages field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetErrorMessages
 
@@ -138,5 +142,3 @@ SetErrorMessages sets ErrorMessages field to given value.
 `func (o *IdentityAttributePreview) HasErrorMessages() bool`
 
 HasErrorMessages returns a boolean if a field has been set.
-
-

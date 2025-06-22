@@ -4,7 +4,7 @@ title: Sed
 pagination_label: Sed
 sidebar_label: Sed
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'Sed', 'V2024Sed'] 
+keywords: ['python', 'Python', 'sdk', 'Sed', 'V2024Sed']
 slug: /tools/sdk/python/v2024/models/sed
 tags: ['SDK', 'Software Development Kit', 'Sed', 'V2024Sed']
 ---
@@ -15,22 +15,23 @@ Suggested Entitlement Description
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | name of the entitlement | [optional] 
-**approved_by** | **str** | entitlement approved by | [optional] 
-**approved_type** | **str** | entitlement approved type | [optional] 
-**approved_when** | **datetime** | entitlement approved then | [optional] 
-**attribute** | **str** | entitlement attribute | [optional] 
-**description** | **str** | description of entitlement | [optional] 
-**display_name** | **str** | entitlement display name | [optional] 
-**id** | **str** | sed id | [optional] 
-**source_id** | **str** | entitlement source id | [optional] 
-**source_name** | **str** | entitlement source name | [optional] 
-**status** | **str** | entitlement status | [optional] 
-**suggested_description** | **str** | llm suggested entitlement description | [optional] 
-**type** | **str** | entitlement type | [optional] 
-**value** | **str** | entitlement value | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **name** | **str** | name of the entitlement | [optional] |
+| **approved_by** | **str** | entitlement approved by | [optional] |
+| **approved_type** | **str** | entitlement approved type | [optional] |
+| **approved_when** | **datetime** | entitlement approved then | [optional] |
+| **attribute** | **str** | entitlement attribute | [optional] |
+| **description** | **str** | description of entitlement | [optional] |
+| **display_name** | **str** | entitlement display name | [optional] |
+| **id** | **str** | sed id | [optional] |
+| **source_id** | **str** | entitlement source id | [optional] |
+| **source_name** | **str** | entitlement source name | [optional] |
+| **status** | **str** | entitlement status | [optional] |
+| **suggested_description** | **str** | llm suggested entitlement description | [optional] |
+| **type** | **str** | entitlement type | [optional] |
+| **value** | **str** | entitlement value | [optional] |
+
 }
 
 ## Example
@@ -56,5 +57,5 @@ value='group'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

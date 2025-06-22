@@ -4,27 +4,29 @@ title: BucketAggregation
 pagination_label: BucketAggregation
 sidebar_label: BucketAggregation
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'BucketAggregation', 'BucketAggregation'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'BucketAggregation', 'BucketAggregation']
 slug: /tools/sdk/powershell/v3/models/bucket-aggregation
-tags: ['SDK', 'Software Development Kit', 'BucketAggregation', 'BucketAggregation']
+tags:
+  ['SDK', 'Software Development Kit', 'BucketAggregation', 'BucketAggregation']
 ---
-
 
 # BucketAggregation
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | **String** | The name of the bucket aggregate to be included in the result. | [required]
-**Type** | [**BucketType**](bucket-type) |  | [optional] 
-**Field** | **String** | The field to bucket on. Prefix the field name with '@' to reference a nested object. | [required]
-**Size** | **Int32** | Maximum number of buckets to include. | [optional] 
-**MinDocCount** | **Int32** | Minimum number of documents a bucket should have. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | **String** | The name of the bucket aggregate to be included in the result. | [required] |
+| **Type** | [**BucketType**](bucket-type) |  | [optional] |
+| **Field** | **String** | The field to bucket on. Prefix the field name with '@' to reference a nested object. | [required] |
+| **Size** | **Int32** | Maximum number of buckets to include. | [optional] |
+| **MinDocCount** | **Int32** | Minimum number of documents a bucket should have. | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $BucketAggregation = Initialize-BucketAggregation  -Name Identity Locations `
  -Type null `
@@ -34,10 +36,9 @@ $BucketAggregation = Initialize-BucketAggregation  -Name Identity Locations `
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $BucketAggregation | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

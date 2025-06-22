@@ -4,25 +4,38 @@ title: AccessItemRoleResponse
 pagination_label: AccessItemRoleResponse
 sidebar_label: AccessItemRoleResponse
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccessItemRoleResponse', 'BetaAccessItemRoleResponse'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccessItemRoleResponse',
+    'BetaAccessItemRoleResponse',
+  ]
 slug: /tools/sdk/python/beta/models/access-item-role-response
-tags: ['SDK', 'Software Development Kit', 'AccessItemRoleResponse', 'BetaAccessItemRoleResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessItemRoleResponse',
+    'BetaAccessItemRoleResponse',
+  ]
 ---
 
 # AccessItemRoleResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**access_type** | **str** | the access item type. role in this case | [optional] 
-**id** | **str** | the access item id | [optional] 
-**display_name** | **str** | the role display name | [optional] 
-**description** | **str** | the description for the role | [optional] 
-**source_name** | **str** | the associated source name if it exists | [optional] 
-**remove_date** | **str** | the date the role is no longer assigned to the specified identity | [optional] 
-**revocable** | **bool** | indicates whether the role is revocable | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **access_type** | **str** | the access item type. role in this case | [optional] |
+| **id** | **str** | the access item id | [optional] |
+| **display_name** | **str** | the role display name | [optional] |
+| **description** | **str** | the description for the role | [optional] |
+| **source_name** | **str** | the associated source name if it exists | [optional] |
+| **remove_date** | **str** | the date the role is no longer assigned to the specified identity | [optional] |
+| **revocable** | **bool** | indicates whether the role is revocable | [required] |
+
 }
 
 ## Example
@@ -41,5 +54,5 @@ revocable=True
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

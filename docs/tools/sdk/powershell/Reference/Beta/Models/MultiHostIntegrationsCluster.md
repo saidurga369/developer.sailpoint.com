@@ -4,25 +4,38 @@ title: MultiHostIntegrationsCluster
 pagination_label: MultiHostIntegrationsCluster
 sidebar_label: MultiHostIntegrationsCluster
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'MultiHostIntegrationsCluster', 'BetaMultiHostIntegrationsCluster'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'MultiHostIntegrationsCluster',
+    'BetaMultiHostIntegrationsCluster',
+  ]
 slug: /tools/sdk/powershell/beta/models/multi-host-integrations-cluster
-tags: ['SDK', 'Software Development Kit', 'MultiHostIntegrationsCluster', 'BetaMultiHostIntegrationsCluster']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'MultiHostIntegrationsCluster',
+    'BetaMultiHostIntegrationsCluster',
+  ]
 ---
-
 
 # MultiHostIntegrationsCluster
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** |  **Enum** [  "CLUSTER" ] | Type of object being referenced. | [required]
-**Id** | **String** | Cluster ID. | [required]
-**Name** | **String** | Cluster's human-readable display name. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | **Enum** [ "CLUSTER" ] | Type of object being referenced. | [required] |
+| **Id** | **String** | Cluster ID. | [required] |
+| **Name** | **String** | Cluster's human-readable display name. | [required] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $MultiHostIntegrationsCluster = Initialize-BetaMultiHostIntegrationsCluster  -Type CLUSTER `
  -Id 2c9180866166b5b0016167c32ef31a66 `
@@ -30,10 +43,9 @@ $MultiHostIntegrationsCluster = Initialize-BetaMultiHostIntegrationsCluster  -Ty
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $MultiHostIntegrationsCluster | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

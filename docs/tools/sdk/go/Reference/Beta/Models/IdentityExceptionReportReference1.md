@@ -4,19 +4,32 @@ title: IdentityExceptionReportReference1
 pagination_label: IdentityExceptionReportReference1
 sidebar_label: IdentityExceptionReportReference1
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IdentityExceptionReportReference1', 'BetaIdentityExceptionReportReference1'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'IdentityExceptionReportReference1',
+    'BetaIdentityExceptionReportReference1',
+  ]
 slug: /tools/sdk/go/beta/models/identity-exception-report-reference1
-tags: ['SDK', 'Software Development Kit', 'IdentityExceptionReportReference1', 'BetaIdentityExceptionReportReference1']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityExceptionReportReference1',
+    'BetaIdentityExceptionReportReference1',
+  ]
 ---
 
 # IdentityExceptionReportReference1
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**TaskResultId** | Pointer to **string** | Task result ID. | [optional] 
-**ReportName** | Pointer to **string** | Report name. | [optional] 
+| Name             | Type                  | Description     | Notes      |
+| ---------------- | --------------------- | --------------- | ---------- |
+| **TaskResultId** | Pointer to **string** | Task result ID. | [optional] |
+| **ReportName**   | Pointer to **string** | Report name.    | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewIdentityExceptionReportReference1() *IdentityExceptionReportReference1`
 
-NewIdentityExceptionReportReference1 instantiates a new IdentityExceptionReportReference1 object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewIdentityExceptionReportReference1 instantiates a new IdentityExceptionReportReference1 object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewIdentityExceptionReportReference1WithDefaults
 
 `func NewIdentityExceptionReportReference1WithDefaults() *IdentityExceptionReportReference1`
 
-NewIdentityExceptionReportReference1WithDefaults instantiates a new IdentityExceptionReportReference1 object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewIdentityExceptionReportReference1WithDefaults instantiates a new IdentityExceptionReportReference1 object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetTaskResultId
 
@@ -47,8 +55,7 @@ GetTaskResultId returns the TaskResultId field if non-nil, zero value otherwise.
 
 `func (o *IdentityExceptionReportReference1) GetTaskResultIdOk() (*string, bool)`
 
-GetTaskResultIdOk returns a tuple with the TaskResultId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTaskResultIdOk returns a tuple with the TaskResultId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTaskResultId
 
@@ -72,8 +79,7 @@ GetReportName returns the ReportName field if non-nil, zero value otherwise.
 
 `func (o *IdentityExceptionReportReference1) GetReportNameOk() (*string, bool)`
 
-GetReportNameOk returns a tuple with the ReportName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReportNameOk returns a tuple with the ReportName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReportName
 
@@ -86,5 +92,3 @@ SetReportName sets ReportName field to given value.
 `func (o *IdentityExceptionReportReference1) HasReportName() bool`
 
 HasReportName returns a boolean if a field has been set.
-
-

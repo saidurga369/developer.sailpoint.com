@@ -4,9 +4,22 @@ title: AccountCorrelatedSource
 pagination_label: AccountCorrelatedSource
 sidebar_label: AccountCorrelatedSource
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccountCorrelatedSource', 'V2024AccountCorrelatedSource'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccountCorrelatedSource',
+    'V2024AccountCorrelatedSource',
+  ]
 slug: /tools/sdk/python/v2024/models/account-correlated-source
-tags: ['SDK', 'Software Development Kit', 'AccountCorrelatedSource', 'V2024AccountCorrelatedSource']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountCorrelatedSource',
+    'V2024AccountCorrelatedSource',
+  ]
 ---
 
 # AccountCorrelatedSource
@@ -15,11 +28,12 @@ The source the accounts are being correlated from.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'SOURCE' ] | The DTO type of the source the accounts are being correlated from. | [required]
-**id** | **str** | The ID of the source the accounts are being correlated from. | [required]
-**name** | **str** | Display name of the source the accounts are being correlated from. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'SOURCE' ] | The DTO type of the source the accounts are being correlated from. | [required] |
+| **id** | **str** | The ID of the source the accounts are being correlated from. | [required] |
+| **name** | **str** | Display name of the source the accounts are being correlated from. | [required] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='HR Active Directory'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

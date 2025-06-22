@@ -4,9 +4,22 @@ title: ConfigurationItemRequest
 pagination_label: ConfigurationItemRequest
 sidebar_label: ConfigurationItemRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ConfigurationItemRequest', 'BetaConfigurationItemRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ConfigurationItemRequest',
+    'BetaConfigurationItemRequest',
+  ]
 slug: /tools/sdk/python/beta/models/configuration-item-request
-tags: ['SDK', 'Software Development Kit', 'ConfigurationItemRequest', 'BetaConfigurationItemRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ConfigurationItemRequest',
+    'BetaConfigurationItemRequest',
+  ]
 ---
 
 # ConfigurationItemRequest
@@ -15,13 +28,14 @@ The request body for creation or update of a Reassignment Configuration for a si
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**reassigned_from_id** | **str** | The identity id to reassign an item from | [optional] 
-**reassigned_to_id** | **str** | The identity id to reassign an item to | [optional] 
-**config_type** | [**ConfigTypeEnum**](config-type-enum) |  | [optional] 
-**start_date** | **datetime** | The date from which to start reassigning work items | [optional] 
-**end_date** | **datetime** | The date from which to stop reassigning work items.  If this is an null string it indicates a permanent reassignment. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **reassigned_from_id** | **str** | The identity id to reassign an item from | [optional] |
+| **reassigned_to_id** | **str** | The identity id to reassign an item to | [optional] |
+| **config_type** | [**ConfigTypeEnum**](config-type-enum) |  | [optional] |
+| **start_date** | **datetime** | The date from which to start reassigning work items | [optional] |
+| **end_date** | **datetime** | The date from which to stop reassigning work items. If this is an null string it indicates a permanent reassignment. | [optional] |
+
 }
 
 ## Example
@@ -38,5 +52,5 @@ end_date='2022-07-30T17:00Z'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

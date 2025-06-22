@@ -4,19 +4,26 @@ title: FormInstanceRecipient
 pagination_label: FormInstanceRecipient
 sidebar_label: FormInstanceRecipient
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'FormInstanceRecipient', 'V2024FormInstanceRecipient'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'FormInstanceRecipient', 'V2024FormInstanceRecipient']
 slug: /tools/sdk/go/v2024/models/form-instance-recipient
-tags: ['SDK', 'Software Development Kit', 'FormInstanceRecipient', 'V2024FormInstanceRecipient']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'FormInstanceRecipient',
+    'V2024FormInstanceRecipient',
+  ]
 ---
 
 # FormInstanceRecipient
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | ID is a unique identifier | [optional] 
-**Type** | Pointer to **string** | Type is a FormInstanceRecipientType value IDENTITY FormInstanceRecipientIdentity | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | ID is a unique identifier | [optional] |
+| **Type** | Pointer to **string** | Type is a FormInstanceRecipientType value IDENTITY FormInstanceRecipientIdentity | [optional] |
 
 ## Methods
 
@@ -24,18 +31,13 @@ Name | Type | Description | Notes
 
 `func NewFormInstanceRecipient() *FormInstanceRecipient`
 
-NewFormInstanceRecipient instantiates a new FormInstanceRecipient object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewFormInstanceRecipient instantiates a new FormInstanceRecipient object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewFormInstanceRecipientWithDefaults
 
 `func NewFormInstanceRecipientWithDefaults() *FormInstanceRecipient`
 
-NewFormInstanceRecipientWithDefaults instantiates a new FormInstanceRecipient object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewFormInstanceRecipientWithDefaults instantiates a new FormInstanceRecipient object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -47,8 +49,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *FormInstanceRecipient) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -72,8 +73,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *FormInstanceRecipient) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -86,5 +86,3 @@ SetType sets Type field to given value.
 `func (o *FormInstanceRecipient) HasType() bool`
 
 HasType returns a boolean if a field has been set.
-
-

@@ -4,18 +4,31 @@ title: SubscriptionPatchRequestInnerValueAnyOfInner
 pagination_label: SubscriptionPatchRequestInnerValueAnyOfInner
 sidebar_label: SubscriptionPatchRequestInnerValueAnyOfInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SubscriptionPatchRequestInnerValueAnyOfInner', 'V2024SubscriptionPatchRequestInnerValueAnyOfInner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'SubscriptionPatchRequestInnerValueAnyOfInner',
+    'V2024SubscriptionPatchRequestInnerValueAnyOfInner',
+  ]
 slug: /tools/sdk/python/v2024/models/subscription-patch-request-inner-value-any-of-inner
-tags: ['SDK', 'Software Development Kit', 'SubscriptionPatchRequestInnerValueAnyOfInner', 'V2024SubscriptionPatchRequestInnerValueAnyOfInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SubscriptionPatchRequestInnerValueAnyOfInner',
+    'V2024SubscriptionPatchRequestInnerValueAnyOfInner',
+  ]
 ---
 
 # SubscriptionPatchRequestInnerValueAnyOfInner
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
+
 }
 
 ## Example
@@ -27,5 +40,5 @@ subscription_patch_request_inner_value_any_of_inner = SubscriptionPatchRequestIn
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

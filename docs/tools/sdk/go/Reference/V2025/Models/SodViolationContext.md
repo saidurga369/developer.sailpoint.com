@@ -4,19 +4,26 @@ title: SodViolationContext
 pagination_label: SodViolationContext
 sidebar_label: SodViolationContext
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SodViolationContext', 'V2025SodViolationContext'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'SodViolationContext', 'V2025SodViolationContext']
 slug: /tools/sdk/go/v2025/models/sod-violation-context
-tags: ['SDK', 'Software Development Kit', 'SodViolationContext', 'V2025SodViolationContext']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SodViolationContext',
+    'V2025SodViolationContext',
+  ]
 ---
 
 # SodViolationContext
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Policy** | Pointer to [**SodPolicyDto**](sod-policy-dto) |  | [optional] 
-**ConflictingAccessCriteria** | Pointer to [**SodViolationContextConflictingAccessCriteria**](sod-violation-context-conflicting-access-criteria) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Policy** | Pointer to [**SodPolicyDto**](sod-policy-dto) |  | [optional] |
+| **ConflictingAccessCriteria** | Pointer to [**SodViolationContextConflictingAccessCriteria**](sod-violation-context-conflicting-access-criteria) |  | [optional] |
 
 ## Methods
 
@@ -24,18 +31,13 @@ Name | Type | Description | Notes
 
 `func NewSodViolationContext() *SodViolationContext`
 
-NewSodViolationContext instantiates a new SodViolationContext object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSodViolationContext instantiates a new SodViolationContext object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSodViolationContextWithDefaults
 
 `func NewSodViolationContextWithDefaults() *SodViolationContext`
 
-NewSodViolationContextWithDefaults instantiates a new SodViolationContext object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSodViolationContextWithDefaults instantiates a new SodViolationContext object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetPolicy
 
@@ -47,8 +49,7 @@ GetPolicy returns the Policy field if non-nil, zero value otherwise.
 
 `func (o *SodViolationContext) GetPolicyOk() (*SodPolicyDto, bool)`
 
-GetPolicyOk returns a tuple with the Policy field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPolicyOk returns a tuple with the Policy field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPolicy
 
@@ -72,8 +73,7 @@ GetConflictingAccessCriteria returns the ConflictingAccessCriteria field if non-
 
 `func (o *SodViolationContext) GetConflictingAccessCriteriaOk() (*SodViolationContextConflictingAccessCriteria, bool)`
 
-GetConflictingAccessCriteriaOk returns a tuple with the ConflictingAccessCriteria field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConflictingAccessCriteriaOk returns a tuple with the ConflictingAccessCriteria field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConflictingAccessCriteria
 
@@ -86,5 +86,3 @@ SetConflictingAccessCriteria sets ConflictingAccessCriteria field to given value
 `func (o *SodViolationContext) HasConflictingAccessCriteria() bool`
 
 HasConflictingAccessCriteria returns a boolean if a field has been set.
-
-

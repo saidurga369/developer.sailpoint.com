@@ -4,48 +4,61 @@ title: RequestedItemStatus
 pagination_label: RequestedItemStatus
 sidebar_label: RequestedItemStatus
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'RequestedItemStatus', 'V2024RequestedItemStatus'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'RequestedItemStatus',
+    'V2024RequestedItemStatus',
+  ]
 slug: /tools/sdk/powershell/v2024/models/requested-item-status
-tags: ['SDK', 'Software Development Kit', 'RequestedItemStatus', 'V2024RequestedItemStatus']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RequestedItemStatus',
+    'V2024RequestedItemStatus',
+  ]
 ---
-
 
 # RequestedItemStatus
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | The ID of the access request. As of 2025, this is a new property. Older access requests might not have an ID. | [optional] 
-**Name** | **String** | Human-readable display name of the item being requested. | [optional] 
-**Type** |  **Enum** [  "ACCESS_PROFILE",    "ROLE",    "ENTITLEMENT" ] | Type of requested object. | [optional] 
-**CancelledRequestDetails** | [**RequestedItemStatusCancelledRequestDetails**](requested-item-status-cancelled-request-details) |  | [optional] 
-**ErrorMessages** | [**[]ErrorMessageDto[]**](error-message-dto) | List of list of localized error messages, if any, encountered during the approval/provisioning process. | [optional] 
-**State** | [**RequestedItemStatusRequestState**](requested-item-status-request-state) |  | [optional] 
-**ApprovalDetails** | [**[]ApprovalStatusDto**](approval-status-dto) | Approval details for each item. | [optional] 
-**ApprovalIds** | **[]String** | List of approval IDs associated with the request. | [optional] 
-**ManualWorkItemDetails** | [**[]ManualWorkItemDetails**](manual-work-item-details) | Manual work items created for provisioning the item. | [optional] 
-**AccountActivityItemId** | **String** | Id of associated account activity item. | [optional] 
-**RequestType** | [**AccessRequestType**](access-request-type) |  | [optional] 
-**Modified** | **System.DateTime** | When the request was last modified. | [optional] 
-**Created** | **System.DateTime** | When the request was created. | [optional] 
-**Requester** | [**AccessItemRequester**](access-item-requester) |  | [optional] 
-**RequestedFor** | [**RequestedItemStatusRequestedFor**](requested-item-status-requested-for) |  | [optional] 
-**RequesterComment** | [**RequestedItemStatusRequesterComment**](requested-item-status-requester-comment) |  | [optional] 
-**SodViolationContext** | [**RequestedItemStatusSodViolationContext**](requested-item-status-sod-violation-context) |  | [optional] 
-**ProvisioningDetails** | [**RequestedItemStatusProvisioningDetails**](requested-item-status-provisioning-details) |  | [optional] 
-**PreApprovalTriggerDetails** | [**RequestedItemStatusPreApprovalTriggerDetails**](requested-item-status-pre-approval-trigger-details) |  | [optional] 
-**AccessRequestPhases** | [**[]AccessRequestPhases**](access-request-phases) | A list of Phases that the Access Request has gone through in order, to help determine the status of the request. | [optional] 
-**Description** | **String** | Description associated to the requested object. | [optional] 
-**RemoveDate** | **System.DateTime** | When the role access is scheduled for removal. | [optional] 
-**Cancelable** | **Boolean** | True if the request can be canceled. | [optional] [default to $false]
-**AccessRequestId** | **String** | This is the account activity id. | [optional] 
-**ClientMetadata** | **map[string]String** | Arbitrary key-value pairs, if any were included in the corresponding access request | [optional] 
-**RequestedAccounts** | [**[]RequestedAccountRef**](requested-account-ref) | The accounts selected by the user for the access to be provisioned on, in case they have multiple accounts on one or more sources. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | The ID of the access request. As of 2025, this is a new property. Older access requests might not have an ID. | [optional] |
+| **Name** | **String** | Human-readable display name of the item being requested. | [optional] |
+| **Type** | **Enum** [ "ACCESS_PROFILE", "ROLE", "ENTITLEMENT" ] | Type of requested object. | [optional] |
+| **CancelledRequestDetails** | [**RequestedItemStatusCancelledRequestDetails**](requested-item-status-cancelled-request-details) |  | [optional] |
+| **ErrorMessages** | [**[]ErrorMessageDto[]**](error-message-dto) | List of list of localized error messages, if any, encountered during the approval/provisioning process. | [optional] |
+| **State** | [**RequestedItemStatusRequestState**](requested-item-status-request-state) |  | [optional] |
+| **ApprovalDetails** | [**[]ApprovalStatusDto**](approval-status-dto) | Approval details for each item. | [optional] |
+| **ApprovalIds** | **[]String** | List of approval IDs associated with the request. | [optional] |
+| **ManualWorkItemDetails** | [**[]ManualWorkItemDetails**](manual-work-item-details) | Manual work items created for provisioning the item. | [optional] |
+| **AccountActivityItemId** | **String** | Id of associated account activity item. | [optional] |
+| **RequestType** | [**AccessRequestType**](access-request-type) |  | [optional] |
+| **Modified** | **System.DateTime** | When the request was last modified. | [optional] |
+| **Created** | **System.DateTime** | When the request was created. | [optional] |
+| **Requester** | [**AccessItemRequester**](access-item-requester) |  | [optional] |
+| **RequestedFor** | [**RequestedItemStatusRequestedFor**](requested-item-status-requested-for) |  | [optional] |
+| **RequesterComment** | [**RequestedItemStatusRequesterComment**](requested-item-status-requester-comment) |  | [optional] |
+| **SodViolationContext** | [**RequestedItemStatusSodViolationContext**](requested-item-status-sod-violation-context) |  | [optional] |
+| **ProvisioningDetails** | [**RequestedItemStatusProvisioningDetails**](requested-item-status-provisioning-details) |  | [optional] |
+| **PreApprovalTriggerDetails** | [**RequestedItemStatusPreApprovalTriggerDetails**](requested-item-status-pre-approval-trigger-details) |  | [optional] |
+| **AccessRequestPhases** | [**[]AccessRequestPhases**](access-request-phases) | A list of Phases that the Access Request has gone through in order, to help determine the status of the request. | [optional] |
+| **Description** | **String** | Description associated to the requested object. | [optional] |
+| **RemoveDate** | **System.DateTime** | When the role access is scheduled for removal. | [optional] |
+| **Cancelable** | **Boolean** | True if the request can be canceled. | [optional] [default to $false] |
+| **AccessRequestId** | **String** | This is the account activity id. | [optional] |
+| **ClientMetadata** | **map[string]String** | Arbitrary key-value pairs, if any were included in the corresponding access request | [optional] |
+| **RequestedAccounts** | [**[]RequestedAccountRef**](requested-account-ref) | The accounts selected by the user for the access to be provisioned on, in case they have multiple accounts on one or more sources. | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $RequestedItemStatus = Initialize-V2024RequestedItemStatus  -Id 2c9180926cbfbddd016cbfc7c3b10010 `
  -Name AccessProfile1 `
@@ -76,10 +89,9 @@ $RequestedItemStatus = Initialize-V2024RequestedItemStatus  -Id 2c9180926cbfbddd
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $RequestedItemStatus | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

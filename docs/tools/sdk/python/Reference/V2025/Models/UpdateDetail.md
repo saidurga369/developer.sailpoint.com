@@ -4,22 +4,22 @@ title: UpdateDetail
 pagination_label: UpdateDetail
 sidebar_label: UpdateDetail
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'UpdateDetail', 'V2025UpdateDetail'] 
+keywords: ['python', 'Python', 'sdk', 'UpdateDetail', 'V2025UpdateDetail']
 slug: /tools/sdk/python/v2025/models/update-detail
 tags: ['SDK', 'Software Development Kit', 'UpdateDetail', 'V2025UpdateDetail']
 ---
 
 # UpdateDetail
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**message** | **str** | The detailed message for an update. Typically the relevent error message when status is error. | [optional] 
-**script_name** | **str** | The connector script name | [optional] 
-**updated_files** | **[]str** | The list of updated files supported by the connector | [optional] 
-**status** |  **Enum** [  'ERROR',    'UPDATED',    'UNCHANGED',    'SKIPPED' ] | The connector update status | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **message** | **str** | The detailed message for an update. Typically the relevent error message when status is error. | [optional] |
+| **script_name** | **str** | The connector script name | [optional] |
+| **updated_files** | **[]str** | The list of updated files supported by the connector | [optional] |
+| **status** | **Enum** [ 'ERROR', 'UPDATED', 'UNCHANGED', 'SKIPPED' ] | The connector update status | [optional] |
+
 }
 
 ## Example
@@ -35,5 +35,5 @@ status='ERROR'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

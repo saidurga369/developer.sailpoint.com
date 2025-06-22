@@ -4,9 +4,22 @@ title: UpdateMultiHostSourcesRequestInnerValue
 pagination_label: UpdateMultiHostSourcesRequestInnerValue
 sidebar_label: UpdateMultiHostSourcesRequestInnerValue
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'UpdateMultiHostSourcesRequestInnerValue', 'V2024UpdateMultiHostSourcesRequestInnerValue'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'UpdateMultiHostSourcesRequestInnerValue',
+    'V2024UpdateMultiHostSourcesRequestInnerValue',
+  ]
 slug: /tools/sdk/python/v2024/models/update-multi-host-sources-request-inner-value
-tags: ['SDK', 'Software Development Kit', 'UpdateMultiHostSourcesRequestInnerValue', 'V2024UpdateMultiHostSourcesRequestInnerValue']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'UpdateMultiHostSourcesRequestInnerValue',
+    'V2024UpdateMultiHostSourcesRequestInnerValue',
+  ]
 ---
 
 # UpdateMultiHostSourcesRequestInnerValue
@@ -15,8 +28,9 @@ The value to be used for the operation, required for \"add\" and \"replace\" ope
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
+
 }
 
 ## Example
@@ -28,5 +42,5 @@ update_multi_host_sources_request_inner_value = UpdateMultiHostSourcesRequestInn
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

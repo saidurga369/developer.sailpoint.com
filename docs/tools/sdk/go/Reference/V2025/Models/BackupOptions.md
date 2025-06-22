@@ -4,7 +4,7 @@ title: BackupOptions
 pagination_label: BackupOptions
 sidebar_label: BackupOptions
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'BackupOptions', 'V2025BackupOptions'] 
+keywords: ['go', 'Golang', 'sdk', 'BackupOptions', 'V2025BackupOptions']
 slug: /tools/sdk/go/v2025/models/backup-options
 tags: ['SDK', 'Software Development Kit', 'BackupOptions', 'V2025BackupOptions']
 ---
@@ -13,10 +13,10 @@ tags: ['SDK', 'Software Development Kit', 'BackupOptions', 'V2025BackupOptions']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**IncludeTypes** | Pointer to **[]string** | Object type names to be included in a Configuration Hub backup command. | [optional] 
-**ObjectOptions** | Pointer to [**map[string]ObjectExportImportNames**](object-export-import-names) | Additional options targeting specific objects related to each item in the includeTypes field. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **IncludeTypes** | Pointer to **[]string** | Object type names to be included in a Configuration Hub backup command. | [optional] |
+| **ObjectOptions** | Pointer to [**map[string]ObjectExportImportNames**](object-export-import-names) | Additional options targeting specific objects related to each item in the includeTypes field. | [optional] |
 
 ## Methods
 
@@ -24,18 +24,13 @@ Name | Type | Description | Notes
 
 `func NewBackupOptions() *BackupOptions`
 
-NewBackupOptions instantiates a new BackupOptions object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewBackupOptions instantiates a new BackupOptions object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewBackupOptionsWithDefaults
 
 `func NewBackupOptionsWithDefaults() *BackupOptions`
 
-NewBackupOptionsWithDefaults instantiates a new BackupOptions object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewBackupOptionsWithDefaults instantiates a new BackupOptions object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetIncludeTypes
 
@@ -47,8 +42,7 @@ GetIncludeTypes returns the IncludeTypes field if non-nil, zero value otherwise.
 
 `func (o *BackupOptions) GetIncludeTypesOk() (*[]string, bool)`
 
-GetIncludeTypesOk returns a tuple with the IncludeTypes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIncludeTypesOk returns a tuple with the IncludeTypes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIncludeTypes
 
@@ -72,8 +66,7 @@ GetObjectOptions returns the ObjectOptions field if non-nil, zero value otherwis
 
 `func (o *BackupOptions) GetObjectOptionsOk() (*map[string]ObjectExportImportNames, bool)`
 
-GetObjectOptionsOk returns a tuple with the ObjectOptions field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetObjectOptionsOk returns a tuple with the ObjectOptions field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetObjectOptions
 
@@ -86,5 +79,3 @@ SetObjectOptions sets ObjectOptions field to given value.
 `func (o *BackupOptions) HasObjectOptions() bool`
 
 HasObjectOptions returns a boolean if a field has been set.
-
-

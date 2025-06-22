@@ -4,20 +4,26 @@ title: AppAccountDetails
 pagination_label: AppAccountDetails
 sidebar_label: AppAccountDetails
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AppAccountDetails', 'V2025AppAccountDetails'] 
+keywords: ['go', 'Golang', 'sdk', 'AppAccountDetails', 'V2025AppAccountDetails']
 slug: /tools/sdk/go/v2025/models/app-account-details
-tags: ['SDK', 'Software Development Kit', 'AppAccountDetails', 'V2025AppAccountDetails']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AppAccountDetails',
+    'V2025AppAccountDetails',
+  ]
 ---
 
 # AppAccountDetails
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**AppId** | Pointer to **string** | The source app ID | [optional] 
-**AppDisplayName** | Pointer to **string** | The source app display name | [optional] 
-**SourceAccount** | Pointer to [**AppAccountDetailsSourceAccount**](app-account-details-source-account) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **AppId** | Pointer to **string** | The source app ID | [optional] |
+| **AppDisplayName** | Pointer to **string** | The source app display name | [optional] |
+| **SourceAccount** | Pointer to [**AppAccountDetailsSourceAccount**](app-account-details-source-account) |  | [optional] |
 
 ## Methods
 
@@ -25,18 +31,13 @@ Name | Type | Description | Notes
 
 `func NewAppAccountDetails() *AppAccountDetails`
 
-NewAppAccountDetails instantiates a new AppAccountDetails object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAppAccountDetails instantiates a new AppAccountDetails object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAppAccountDetailsWithDefaults
 
 `func NewAppAccountDetailsWithDefaults() *AppAccountDetails`
 
-NewAppAccountDetailsWithDefaults instantiates a new AppAccountDetails object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAppAccountDetailsWithDefaults instantiates a new AppAccountDetails object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetAppId
 
@@ -48,8 +49,7 @@ GetAppId returns the AppId field if non-nil, zero value otherwise.
 
 `func (o *AppAccountDetails) GetAppIdOk() (*string, bool)`
 
-GetAppIdOk returns a tuple with the AppId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAppIdOk returns a tuple with the AppId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAppId
 
@@ -73,8 +73,7 @@ GetAppDisplayName returns the AppDisplayName field if non-nil, zero value otherw
 
 `func (o *AppAccountDetails) GetAppDisplayNameOk() (*string, bool)`
 
-GetAppDisplayNameOk returns a tuple with the AppDisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAppDisplayNameOk returns a tuple with the AppDisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAppDisplayName
 
@@ -98,8 +97,7 @@ GetSourceAccount returns the SourceAccount field if non-nil, zero value otherwis
 
 `func (o *AppAccountDetails) GetSourceAccountOk() (*AppAccountDetailsSourceAccount, bool)`
 
-GetSourceAccountOk returns a tuple with the SourceAccount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceAccountOk returns a tuple with the SourceAccount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceAccount
 
@@ -112,5 +110,3 @@ SetSourceAccount sets SourceAccount field to given value.
 `func (o *AppAccountDetails) HasSourceAccount() bool`
 
 HasSourceAccount returns a boolean if a field has been set.
-
-

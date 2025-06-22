@@ -4,7 +4,7 @@ title: CommentDto
 pagination_label: CommentDto
 sidebar_label: CommentDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'CommentDto', 'V2024CommentDto'] 
+keywords: ['go', 'Golang', 'sdk', 'CommentDto', 'V2024CommentDto']
 slug: /tools/sdk/go/v2024/models/comment-dto
 tags: ['SDK', 'Software Development Kit', 'CommentDto', 'V2024CommentDto']
 ---
@@ -13,11 +13,11 @@ tags: ['SDK', 'Software Development Kit', 'CommentDto', 'V2024CommentDto']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Comment** | Pointer to **NullableString** | Comment content. | [optional] 
-**Created** | Pointer to **SailPointTime** | Date and time comment was created. | [optional] 
-**Author** | Pointer to [**CommentDtoAuthor**](comment-dto-author) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Comment** | Pointer to **NullableString** | Comment content. | [optional] |
+| **Created** | Pointer to **SailPointTime** | Date and time comment was created. | [optional] |
+| **Author** | Pointer to [**CommentDtoAuthor**](comment-dto-author) |  | [optional] |
 
 ## Methods
 
@@ -25,18 +25,13 @@ Name | Type | Description | Notes
 
 `func NewCommentDto() *CommentDto`
 
-NewCommentDto instantiates a new CommentDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewCommentDto instantiates a new CommentDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewCommentDtoWithDefaults
 
 `func NewCommentDtoWithDefaults() *CommentDto`
 
-NewCommentDtoWithDefaults instantiates a new CommentDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewCommentDtoWithDefaults instantiates a new CommentDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetComment
 
@@ -48,8 +43,7 @@ GetComment returns the Comment field if non-nil, zero value otherwise.
 
 `func (o *CommentDto) GetCommentOk() (*string, bool)`
 
-GetCommentOk returns a tuple with the Comment field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCommentOk returns a tuple with the Comment field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetComment
 
@@ -67,12 +61,14 @@ HasComment returns a boolean if a field has been set.
 
 `func (o *CommentDto) SetCommentNil(b bool)`
 
- SetCommentNil sets the value for Comment to be an explicit nil
+SetCommentNil sets the value for Comment to be an explicit nil
 
 ### UnsetComment
+
 `func (o *CommentDto) UnsetComment()`
 
 UnsetComment ensures that no value is present for Comment, not even an explicit nil
+
 ### GetCreated
 
 `func (o *CommentDto) GetCreated() SailPointTime`
@@ -83,8 +79,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *CommentDto) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -108,8 +103,7 @@ GetAuthor returns the Author field if non-nil, zero value otherwise.
 
 `func (o *CommentDto) GetAuthorOk() (*CommentDtoAuthor, bool)`
 
-GetAuthorOk returns a tuple with the Author field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAuthorOk returns a tuple with the Author field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAuthor
 
@@ -122,5 +116,3 @@ SetAuthor sets Author field to given value.
 `func (o *CommentDto) HasAuthor() bool`
 
 HasAuthor returns a boolean if a field has been set.
-
-

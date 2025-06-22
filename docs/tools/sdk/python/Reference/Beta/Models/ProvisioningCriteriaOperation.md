@@ -4,9 +4,22 @@ title: ProvisioningCriteriaOperation
 pagination_label: ProvisioningCriteriaOperation
 sidebar_label: ProvisioningCriteriaOperation
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ProvisioningCriteriaOperation', 'BetaProvisioningCriteriaOperation'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ProvisioningCriteriaOperation',
+    'BetaProvisioningCriteriaOperation',
+  ]
 slug: /tools/sdk/python/beta/models/provisioning-criteria-operation
-tags: ['SDK', 'Software Development Kit', 'ProvisioningCriteriaOperation', 'BetaProvisioningCriteriaOperation']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ProvisioningCriteriaOperation',
+    'BetaProvisioningCriteriaOperation',
+  ]
 ---
 
 # ProvisioningCriteriaOperation
@@ -15,17 +28,16 @@ Supported operations on `ProvisioningCriteria`.
 
 ## Enum
 
-* `EQUALS` (value: `'EQUALS'`)
+- `EQUALS` (value: `'EQUALS'`)
 
-* `NOT_EQUALS` (value: `'NOT_EQUALS'`)
+- `NOT_EQUALS` (value: `'NOT_EQUALS'`)
 
-* `CONTAINS` (value: `'CONTAINS'`)
+- `CONTAINS` (value: `'CONTAINS'`)
 
-* `HAS` (value: `'HAS'`)
+- `HAS` (value: `'HAS'`)
 
-* `AND` (value: `'AND'`)
+- `AND` (value: `'AND'`)
 
-* `OR` (value: `'OR'`)
+- `OR` (value: `'OR'`)
 
-[[Back to top]](#) 
-
+[[Back to top]](#)

@@ -4,7 +4,7 @@ title: LookupStep
 pagination_label: LookupStep
 sidebar_label: LookupStep
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'LookupStep', 'BetaLookupStep'] 
+keywords: ['python', 'Python', 'sdk', 'LookupStep', 'BetaLookupStep']
 slug: /tools/sdk/python/beta/models/lookup-step
 tags: ['SDK', 'Software Development Kit', 'LookupStep', 'BetaLookupStep']
 ---
@@ -15,11 +15,12 @@ The definition of an Identity according to the Reassignment Configuration servic
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**reassigned_to_id** | **str** | The ID of the Identity who work is reassigned to | [optional] 
-**reassigned_from_id** | **str** | The ID of the Identity who work is reassigned from | [optional] 
-**reassignment_type** | [**ReassignmentTypeEnum**](reassignment-type-enum) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **reassigned_to_id** | **str** | The ID of the Identity who work is reassigned to | [optional] |
+| **reassigned_from_id** | **str** | The ID of the Identity who work is reassigned from | [optional] |
+| **reassignment_type** | [**ReassignmentTypeEnum**](reassignment-type-enum) |  | [optional] |
+
 }
 
 ## Example
@@ -34,5 +35,5 @@ reassignment_type='AUTOMATIC_REASSIGNMENT'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

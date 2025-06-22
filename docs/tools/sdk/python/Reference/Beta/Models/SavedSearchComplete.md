@@ -4,25 +4,32 @@ title: SavedSearchComplete
 pagination_label: SavedSearchComplete
 sidebar_label: SavedSearchComplete
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SavedSearchComplete', 'BetaSavedSearchComplete'] 
+keywords:
+  ['python', 'Python', 'sdk', 'SavedSearchComplete', 'BetaSavedSearchComplete']
 slug: /tools/sdk/python/beta/models/saved-search-complete
-tags: ['SDK', 'Software Development Kit', 'SavedSearchComplete', 'BetaSavedSearchComplete']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SavedSearchComplete',
+    'BetaSavedSearchComplete',
+  ]
 ---
 
 # SavedSearchComplete
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**file_name** | **str** | Report file name. | [required]
-**owner_email** | **str** | Email address of the identity who owns the saved search. | [required]
-**owner_name** | **str** | Name of the identity who owns the saved search. | [required]
-**query** | **str** | Search query used to generate the report. | [required]
-**search_name** | **str** | Saved search name. | [required]
-**search_results** | [**SavedSearchCompleteSearchResults**](saved-search-complete-search-results) |  | [required]
-**signed_s3_url** | **str** | The Amazon S3 URL to download the report from. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **file_name** | **str** | Report file name. | [required] |
+| **owner_email** | **str** | Email address of the identity who owns the saved search. | [required] |
+| **owner_name** | **str** | Name of the identity who owns the saved search. | [required] |
+| **query** | **str** | Search query used to generate the report. | [required] |
+| **search_name** | **str** | Saved search name. | [required] |
+| **search_results** | [**SavedSearchCompleteSearchResults**](saved-search-complete-search-results) |  | [required] |
+| **signed_s3_url** | **str** | The Amazon S3 URL to download the report from. | [required] |
+
 }
 
 ## Example
@@ -38,20 +45,20 @@ query='modified:[now-7y/d TO now]',
 search_name='Modified Activity',
 search_results=sailpoint.beta.models.saved_search_complete_search_results.SavedSearchComplete_searchResults(
                     account = sailpoint.beta.models.saved_search_complete_search_results_account.SavedSearchComplete_searchResults_Account(
-                        count = '3', 
-                        noun = 'accounts', 
+                        count = '3',
+                        noun = 'accounts',
                         preview = [
                             []
-                            ], ), 
+                            ], ),
                     entitlement = sailpoint.beta.models.saved_search_complete_search_results_entitlement.SavedSearchComplete_searchResults_Entitlement(
-                        count = '2', 
-                        noun = 'entitlements', 
+                        count = '2',
+                        noun = 'entitlements',
                         preview = [
                             []
-                            ], ), 
+                            ], ),
                     identity = sailpoint.beta.models.saved_search_complete_search_results_identity.SavedSearchComplete_searchResults_Identity(
-                        count = '2', 
-                        noun = 'identities', 
+                        count = '2',
+                        noun = 'identities',
                         preview = [
                             []
                             ], ), ),
@@ -59,5 +66,5 @@ signed_s3_url='https://sptcbu-org-data-useast1.s3.amazonaws.com/arsenal-john/rep
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,7 +4,7 @@ title: AccessSummary
 pagination_label: AccessSummary
 sidebar_label: AccessSummary
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessSummary', 'AccessSummary'] 
+keywords: ['go', 'Golang', 'sdk', 'AccessSummary', 'AccessSummary']
 slug: /tools/sdk/go/v3/models/access-summary
 tags: ['SDK', 'Software Development Kit', 'AccessSummary', 'AccessSummary']
 ---
@@ -13,12 +13,12 @@ tags: ['SDK', 'Software Development Kit', 'AccessSummary', 'AccessSummary']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Access** | Pointer to [**AccessSummaryAccess**](access-summary-access) |  | [optional] 
-**Entitlement** | Pointer to [**NullableReviewableEntitlement**](reviewable-entitlement) |  | [optional] 
-**AccessProfile** | Pointer to [**ReviewableAccessProfile**](reviewable-access-profile) |  | [optional] 
-**Role** | Pointer to [**NullableReviewableRole**](reviewable-role) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Access** | Pointer to [**AccessSummaryAccess**](access-summary-access) |  | [optional] |
+| **Entitlement** | Pointer to [**NullableReviewableEntitlement**](reviewable-entitlement) |  | [optional] |
+| **AccessProfile** | Pointer to [**ReviewableAccessProfile**](reviewable-access-profile) |  | [optional] |
+| **Role** | Pointer to [**NullableReviewableRole**](reviewable-role) |  | [optional] |
 
 ## Methods
 
@@ -26,18 +26,13 @@ Name | Type | Description | Notes
 
 `func NewAccessSummary() *AccessSummary`
 
-NewAccessSummary instantiates a new AccessSummary object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessSummary instantiates a new AccessSummary object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessSummaryWithDefaults
 
 `func NewAccessSummaryWithDefaults() *AccessSummary`
 
-NewAccessSummaryWithDefaults instantiates a new AccessSummary object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessSummaryWithDefaults instantiates a new AccessSummary object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetAccess
 
@@ -49,8 +44,7 @@ GetAccess returns the Access field if non-nil, zero value otherwise.
 
 `func (o *AccessSummary) GetAccessOk() (*AccessSummaryAccess, bool)`
 
-GetAccessOk returns a tuple with the Access field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessOk returns a tuple with the Access field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccess
 
@@ -74,8 +68,7 @@ GetEntitlement returns the Entitlement field if non-nil, zero value otherwise.
 
 `func (o *AccessSummary) GetEntitlementOk() (*ReviewableEntitlement, bool)`
 
-GetEntitlementOk returns a tuple with the Entitlement field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEntitlementOk returns a tuple with the Entitlement field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEntitlement
 
@@ -93,12 +86,14 @@ HasEntitlement returns a boolean if a field has been set.
 
 `func (o *AccessSummary) SetEntitlementNil(b bool)`
 
- SetEntitlementNil sets the value for Entitlement to be an explicit nil
+SetEntitlementNil sets the value for Entitlement to be an explicit nil
 
 ### UnsetEntitlement
+
 `func (o *AccessSummary) UnsetEntitlement()`
 
 UnsetEntitlement ensures that no value is present for Entitlement, not even an explicit nil
+
 ### GetAccessProfile
 
 `func (o *AccessSummary) GetAccessProfile() ReviewableAccessProfile`
@@ -109,8 +104,7 @@ GetAccessProfile returns the AccessProfile field if non-nil, zero value otherwis
 
 `func (o *AccessSummary) GetAccessProfileOk() (*ReviewableAccessProfile, bool)`
 
-GetAccessProfileOk returns a tuple with the AccessProfile field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessProfileOk returns a tuple with the AccessProfile field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessProfile
 
@@ -134,8 +128,7 @@ GetRole returns the Role field if non-nil, zero value otherwise.
 
 `func (o *AccessSummary) GetRoleOk() (*ReviewableRole, bool)`
 
-GetRoleOk returns a tuple with the Role field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRoleOk returns a tuple with the Role field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRole
 
@@ -153,10 +146,10 @@ HasRole returns a boolean if a field has been set.
 
 `func (o *AccessSummary) SetRoleNil(b bool)`
 
- SetRoleNil sets the value for Role to be an explicit nil
+SetRoleNil sets the value for Role to be an explicit nil
 
 ### UnsetRole
+
 `func (o *AccessSummary) UnsetRole()`
 
 UnsetRole ensures that no value is present for Role, not even an explicit nil
-

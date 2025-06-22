@@ -4,18 +4,31 @@ title: SodViolationContextConflictingAccessCriteriaLeftCriteria
 pagination_label: SodViolationContextConflictingAccessCriteriaLeftCriteria
 sidebar_label: SodViolationContextConflictingAccessCriteriaLeftCriteria
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SodViolationContextConflictingAccessCriteriaLeftCriteria', 'V2024SodViolationContextConflictingAccessCriteriaLeftCriteria'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'SodViolationContextConflictingAccessCriteriaLeftCriteria',
+    'V2024SodViolationContextConflictingAccessCriteriaLeftCriteria',
+  ]
 slug: /tools/sdk/go/v2024/models/sod-violation-context-conflicting-access-criteria-left-criteria
-tags: ['SDK', 'Software Development Kit', 'SodViolationContextConflictingAccessCriteriaLeftCriteria', 'V2024SodViolationContextConflictingAccessCriteriaLeftCriteria']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SodViolationContextConflictingAccessCriteriaLeftCriteria',
+    'V2024SodViolationContextConflictingAccessCriteriaLeftCriteria',
+  ]
 ---
 
 # SodViolationContextConflictingAccessCriteriaLeftCriteria
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**CriteriaList** | Pointer to [**[]SodExemptCriteria**](sod-exempt-criteria) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **CriteriaList** | Pointer to [**[]SodExemptCriteria**](sod-exempt-criteria) |  | [optional] |
 
 ## Methods
 
@@ -23,18 +36,13 @@ Name | Type | Description | Notes
 
 `func NewSodViolationContextConflictingAccessCriteriaLeftCriteria() *SodViolationContextConflictingAccessCriteriaLeftCriteria`
 
-NewSodViolationContextConflictingAccessCriteriaLeftCriteria instantiates a new SodViolationContextConflictingAccessCriteriaLeftCriteria object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSodViolationContextConflictingAccessCriteriaLeftCriteria instantiates a new SodViolationContextConflictingAccessCriteriaLeftCriteria object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSodViolationContextConflictingAccessCriteriaLeftCriteriaWithDefaults
 
 `func NewSodViolationContextConflictingAccessCriteriaLeftCriteriaWithDefaults() *SodViolationContextConflictingAccessCriteriaLeftCriteria`
 
-NewSodViolationContextConflictingAccessCriteriaLeftCriteriaWithDefaults instantiates a new SodViolationContextConflictingAccessCriteriaLeftCriteria object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSodViolationContextConflictingAccessCriteriaLeftCriteriaWithDefaults instantiates a new SodViolationContextConflictingAccessCriteriaLeftCriteria object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetCriteriaList
 
@@ -46,8 +54,7 @@ GetCriteriaList returns the CriteriaList field if non-nil, zero value otherwise.
 
 `func (o *SodViolationContextConflictingAccessCriteriaLeftCriteria) GetCriteriaListOk() (*[]SodExemptCriteria, bool)`
 
-GetCriteriaListOk returns a tuple with the CriteriaList field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCriteriaListOk returns a tuple with the CriteriaList field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCriteriaList
 
@@ -60,5 +67,3 @@ SetCriteriaList sets CriteriaList field to given value.
 `func (o *SodViolationContextConflictingAccessCriteriaLeftCriteria) HasCriteriaList() bool`
 
 HasCriteriaList returns a boolean if a field has been set.
-
-

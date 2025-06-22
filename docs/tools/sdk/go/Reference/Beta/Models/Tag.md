@@ -4,7 +4,7 @@ title: Tag
 pagination_label: Tag
 sidebar_label: Tag
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Tag', 'BetaTag'] 
+keywords: ['go', 'Golang', 'sdk', 'Tag', 'BetaTag']
 slug: /tools/sdk/go/beta/models/tag
 tags: ['SDK', 'Software Development Kit', 'Tag', 'BetaTag']
 ---
@@ -13,13 +13,13 @@ tags: ['SDK', 'Software Development Kit', 'Tag', 'BetaTag']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **string** | Tag id | [readonly] 
-**Name** | **string** | Name of the tag. | 
-**Created** | **SailPointTime** | Date the tag was created. | [readonly] 
-**Modified** | **SailPointTime** | Date the tag was last modified. | [readonly] 
-**TagCategoryRefs** | [**[]TagTagCategoryRefsInner**](tag-tag-category-refs-inner) |  | [readonly] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **string** | Tag id | [readonly] |
+| **Name** | **string** | Name of the tag. |
+| **Created** | **SailPointTime** | Date the tag was created. | [readonly] |
+| **Modified** | **SailPointTime** | Date the tag was last modified. | [readonly] |
+| **TagCategoryRefs** | [**[]TagTagCategoryRefsInner**](tag-tag-category-refs-inner) |  | [readonly] |
 
 ## Methods
 
@@ -27,18 +27,13 @@ Name | Type | Description | Notes
 
 `func NewTag(id string, name string, created SailPointTime, modified SailPointTime, tagCategoryRefs []TagTagCategoryRefsInner, ) *Tag`
 
-NewTag instantiates a new Tag object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewTag instantiates a new Tag object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewTagWithDefaults
 
 `func NewTagWithDefaults() *Tag`
 
-NewTagWithDefaults instantiates a new Tag object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewTagWithDefaults instantiates a new Tag object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -50,15 +45,13 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *Tag) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
 `func (o *Tag) SetId(v string)`
 
 SetId sets Id field to given value.
-
 
 ### GetName
 
@@ -70,15 +63,13 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *Tag) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
 `func (o *Tag) SetName(v string)`
 
 SetName sets Name field to given value.
-
 
 ### GetCreated
 
@@ -90,15 +81,13 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *Tag) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
 `func (o *Tag) SetCreated(v SailPointTime)`
 
 SetCreated sets Created field to given value.
-
 
 ### GetModified
 
@@ -110,15 +99,13 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *Tag) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
 `func (o *Tag) SetModified(v SailPointTime)`
 
 SetModified sets Modified field to given value.
-
 
 ### GetTagCategoryRefs
 
@@ -130,14 +117,10 @@ GetTagCategoryRefs returns the TagCategoryRefs field if non-nil, zero value othe
 
 `func (o *Tag) GetTagCategoryRefsOk() (*[]TagTagCategoryRefsInner, bool)`
 
-GetTagCategoryRefsOk returns a tuple with the TagCategoryRefs field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTagCategoryRefsOk returns a tuple with the TagCategoryRefs field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTagCategoryRefs
 
 `func (o *Tag) SetTagCategoryRefs(v []TagTagCategoryRefsInner)`
 
 SetTagCategoryRefs sets TagCategoryRefs field to given value.
-
-
-

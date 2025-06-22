@@ -4,19 +4,32 @@ title: CertificationSignedOff
 pagination_label: CertificationSignedOff
 sidebar_label: CertificationSignedOff
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'CertificationSignedOff', 'V2025CertificationSignedOff'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'CertificationSignedOff',
+    'V2025CertificationSignedOff',
+  ]
 slug: /tools/sdk/python/v2025/models/certification-signed-off
-tags: ['SDK', 'Software Development Kit', 'CertificationSignedOff', 'V2025CertificationSignedOff']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CertificationSignedOff',
+    'V2025CertificationSignedOff',
+  ]
 ---
 
 # CertificationSignedOff
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**certification** | [**CertificationSignedOffCertification**](certification-signed-off-certification) |  | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **certification** | [**CertificationSignedOffCertification**](certification-signed-off-certification) |  | [required] |
+
 }
 
 ## Example
@@ -26,12 +39,12 @@ from sailpoint.v2025.models.certification_signed_off import CertificationSignedO
 
 certification_signed_off = CertificationSignedOff(
 certification=sailpoint.v2025.models.certification_signed_off_certification.CertificationSignedOff_certification(
-                    id = '2c91808576f886190176f88caf0d0067', 
-                    name = 'Manager Access Review for Alice Baker', 
-                    created = '2020-02-16T03:04:45.815Z', 
+                    id = '2c91808576f886190176f88caf0d0067',
+                    name = 'Manager Access Review for Alice Baker',
+                    created = '2020-02-16T03:04:45.815Z',
                     modified = '2020-02-16T03:06:45.815Z', )
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

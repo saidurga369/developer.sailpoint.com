@@ -1,4 +1,8 @@
-export async function sendCode(gatewayUrl: string, code: string, state: string) {
+export async function sendCode(
+  gatewayUrl: string,
+  code: string,
+  state: string,
+) {
   const url = new URL(`${gatewayUrl}sailapps/code`);
   url.searchParams.set('state', state);
   url.searchParams.set('code', code);
@@ -11,4 +15,3 @@ export async function sendCode(gatewayUrl: string, code: string, state: string) 
     return [];
   }
 }
-

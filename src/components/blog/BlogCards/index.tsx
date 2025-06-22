@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import styles from './styles.module.css';
 import BlogCard from '../BlogCard';
 import NewtonsCradle from '../../newtonsCradle';
-import { discourseBaseURL, developerWebsiteDomain } from '../../../util/util';
-import { getBlogPosts, getUserTitle } from '../../../services/DiscourseService';
+import {discourseBaseURL, developerWebsiteDomain} from '../../../util/util';
+import {getBlogPosts, getUserTitle} from '../../../services/DiscourseService';
 
 // Define the types for props
 interface BlogCardsProps {
@@ -29,17 +29,21 @@ interface BlogPost {
   readTime: number;
 }
 
-const BlogCards: React.FC<BlogCardsProps> = ({ filterCallback, limit, featured }) => {
+const BlogCards: React.FC<BlogCardsProps> = ({
+  filterCallback,
+  limit,
+  featured,
+}) => {
   const [cardData, setCardData] = useState<BlogPost[] | undefined>();
   const [loadingCards, setLoadingCards] = useState<boolean>(true);
 
   const getPosts = async () => {
     let filters = filterCallback ?? ['identity-security-cloud'];
     if (featured) filters = ['featured'];
-    
+
     const data = await getBlogPosts(filters.join('+'));
     const resultset: BlogPost[] = [];
-    const titleList: { group: string; title: string }[] = [];
+    const titleList: {group: string; title: string}[] = [];
 
     if (data.topic_list?.topics) {
       for (const topic of data.topic_list.topics) {
@@ -49,11 +53,18 @@ const BlogCards: React.FC<BlogCardsProps> = ({ filterCallback, limit, featured }
             if (topicUser.description.includes('Original Poster')) {
               for (let user of data.users) {
                 if (user.id === topicUser.user_id) {
-                  const existingTitle = titleList.find((x) => x.group === user.primary_group_name);
+                  const existingTitle = titleList.find(
+                    (x) => x.group === user.primary_group_name,
+                  );
                   if (!existingTitle) {
                     if (user.primary_group_name) {
-                      const userTitle = await getUserTitle(user.primary_group_name);
-                      titleList.push({ group: user.primary_group_name, title: userTitle.group.title });
+                      const userTitle = await getUserTitle(
+                        user.primary_group_name,
+                      );
+                      titleList.push({
+                        group: user.primary_group_name,
+                        title: userTitle.group.title,
+                      });
                       user.title = userTitle.group.title;
                     }
                   } else {
@@ -87,11 +98,17 @@ const BlogCards: React.FC<BlogCardsProps> = ({ filterCallback, limit, featured }
   return (
     <div className={featured ? styles.featuredCenter : styles.center}>
       {loadingCards ? (
-        <div className={featured ? styles.featuredSpinnerCenter : styles.spinnerCenter}>
+        <div
+          className={
+            featured ? styles.featuredSpinnerCenter : styles.spinnerCenter
+          }>
           <NewtonsCradle />
         </div>
       ) : cardData && cardData.length > 0 ? (
-        <div className={featured ? styles.featuredGridContainer : styles.gridContainer}>
+        <div
+          className={
+            featured ? styles.featuredGridContainer : styles.gridContainer
+          }>
           {cardData.map((a, index) => (
             <BlogCard
               featured={featured}
@@ -111,7 +128,9 @@ const BlogCards: React.FC<BlogCardsProps> = ({ filterCallback, limit, featured }
           ))}
         </div>
       ) : (
-        <div className={styles.noFound}>No Blogposts Found with the Given Search Criteria</div>
+        <div className={styles.noFound}>
+          No Blogposts Found with the Given Search Criteria
+        </div>
       )}
     </div>
   );
@@ -142,7 +161,9 @@ function getAvatarURL(avatar: string): string {
 }
 
 function styleExcerpt(excerpt: string): string {
-  return excerpt.length > 150 ? excerpt.slice(0, 150) + '...' : excerpt.replace('&hellip;', '');
+  return excerpt.length > 150
+    ? excerpt.slice(0, 150) + '...'
+    : excerpt.replace('&hellip;', '');
 }
 
 function shortenTitle(title: string): string {
@@ -150,7 +171,9 @@ function shortenTitle(title: string): string {
 }
 
 function shortenUserTitle(userTitle?: string): string {
-  return userTitle && userTitle.length > 31 ? userTitle.substring(0, 30) + '...' : userTitle || '';
+  return userTitle && userTitle.length > 31
+    ? userTitle.substring(0, 30) + '...'
+    : userTitle || '';
 }
 
 export default BlogCards;

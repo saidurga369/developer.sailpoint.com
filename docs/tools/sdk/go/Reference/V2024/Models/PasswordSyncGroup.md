@@ -4,23 +4,29 @@ title: PasswordSyncGroup
 pagination_label: PasswordSyncGroup
 sidebar_label: PasswordSyncGroup
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'PasswordSyncGroup', 'V2024PasswordSyncGroup'] 
+keywords: ['go', 'Golang', 'sdk', 'PasswordSyncGroup', 'V2024PasswordSyncGroup']
 slug: /tools/sdk/go/v2024/models/password-sync-group
-tags: ['SDK', 'Software Development Kit', 'PasswordSyncGroup', 'V2024PasswordSyncGroup']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PasswordSyncGroup',
+    'V2024PasswordSyncGroup',
+  ]
 ---
 
 # PasswordSyncGroup
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | ID of the sync group | [optional] 
-**Name** | Pointer to **string** | Name of the sync group | [optional] 
-**PasswordPolicyId** | Pointer to **string** | ID of the password policy | [optional] 
-**SourceIds** | Pointer to **[]string** | List of password managed sources IDs | [optional] 
-**Created** | Pointer to **NullableTime** | The date and time this sync group was created | [optional] 
-**Modified** | Pointer to **NullableTime** | The date and time this sync group was last modified | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | ID of the sync group | [optional] |
+| **Name** | Pointer to **string** | Name of the sync group | [optional] |
+| **PasswordPolicyId** | Pointer to **string** | ID of the password policy | [optional] |
+| **SourceIds** | Pointer to **[]string** | List of password managed sources IDs | [optional] |
+| **Created** | Pointer to **NullableTime** | The date and time this sync group was created | [optional] |
+| **Modified** | Pointer to **NullableTime** | The date and time this sync group was last modified | [optional] |
 
 ## Methods
 
@@ -28,18 +34,13 @@ Name | Type | Description | Notes
 
 `func NewPasswordSyncGroup() *PasswordSyncGroup`
 
-NewPasswordSyncGroup instantiates a new PasswordSyncGroup object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewPasswordSyncGroup instantiates a new PasswordSyncGroup object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewPasswordSyncGroupWithDefaults
 
 `func NewPasswordSyncGroupWithDefaults() *PasswordSyncGroup`
 
-NewPasswordSyncGroupWithDefaults instantiates a new PasswordSyncGroup object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewPasswordSyncGroupWithDefaults instantiates a new PasswordSyncGroup object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -51,8 +52,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *PasswordSyncGroup) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -76,8 +76,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *PasswordSyncGroup) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -101,8 +100,7 @@ GetPasswordPolicyId returns the PasswordPolicyId field if non-nil, zero value ot
 
 `func (o *PasswordSyncGroup) GetPasswordPolicyIdOk() (*string, bool)`
 
-GetPasswordPolicyIdOk returns a tuple with the PasswordPolicyId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPasswordPolicyIdOk returns a tuple with the PasswordPolicyId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPasswordPolicyId
 
@@ -126,8 +124,7 @@ GetSourceIds returns the SourceIds field if non-nil, zero value otherwise.
 
 `func (o *PasswordSyncGroup) GetSourceIdsOk() (*[]string, bool)`
 
-GetSourceIdsOk returns a tuple with the SourceIds field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceIdsOk returns a tuple with the SourceIds field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceIds
 
@@ -151,8 +148,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *PasswordSyncGroup) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -170,12 +166,14 @@ HasCreated returns a boolean if a field has been set.
 
 `func (o *PasswordSyncGroup) SetCreatedNil(b bool)`
 
- SetCreatedNil sets the value for Created to be an explicit nil
+SetCreatedNil sets the value for Created to be an explicit nil
 
 ### UnsetCreated
+
 `func (o *PasswordSyncGroup) UnsetCreated()`
 
 UnsetCreated ensures that no value is present for Created, not even an explicit nil
+
 ### GetModified
 
 `func (o *PasswordSyncGroup) GetModified() SailPointTime`
@@ -186,8 +184,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *PasswordSyncGroup) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -205,10 +202,10 @@ HasModified returns a boolean if a field has been set.
 
 `func (o *PasswordSyncGroup) SetModifiedNil(b bool)`
 
- SetModifiedNil sets the value for Modified to be an explicit nil
+SetModifiedNil sets the value for Modified to be an explicit nil
 
 ### UnsetModified
+
 `func (o *PasswordSyncGroup) UnsetModified()`
 
 UnsetModified ensures that no value is present for Modified, not even an explicit nil
-

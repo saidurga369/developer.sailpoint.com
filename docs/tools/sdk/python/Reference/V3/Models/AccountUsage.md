@@ -4,20 +4,20 @@ title: AccountUsage
 pagination_label: AccountUsage
 sidebar_label: AccountUsage
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccountUsage', 'AccountUsage'] 
+keywords: ['python', 'Python', 'sdk', 'AccountUsage', 'AccountUsage']
 slug: /tools/sdk/python/v3/models/account-usage
 tags: ['SDK', 'Software Development Kit', 'AccountUsage', 'AccountUsage']
 ---
 
 # AccountUsage
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**var_date** | **date** | The first day of the month for which activity is aggregated. | [optional] 
-**count** | **int** | The number of days within the month that the account was active in a source. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **var_date** | **date** | The first day of the month for which activity is aggregated. | [optional] |
+| **count** | **int** | The number of days within the month that the account was active in a source. | [optional] |
+
 }
 
 ## Example
@@ -31,5 +31,5 @@ count=10
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

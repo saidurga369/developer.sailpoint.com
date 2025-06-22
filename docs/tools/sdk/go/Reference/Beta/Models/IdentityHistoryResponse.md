@@ -4,23 +4,36 @@ title: IdentityHistoryResponse
 pagination_label: IdentityHistoryResponse
 sidebar_label: IdentityHistoryResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IdentityHistoryResponse', 'BetaIdentityHistoryResponse'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'IdentityHistoryResponse',
+    'BetaIdentityHistoryResponse',
+  ]
 slug: /tools/sdk/go/beta/models/identity-history-response
-tags: ['SDK', 'Software Development Kit', 'IdentityHistoryResponse', 'BetaIdentityHistoryResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityHistoryResponse',
+    'BetaIdentityHistoryResponse',
+  ]
 ---
 
 # IdentityHistoryResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | the identity ID | [optional] 
-**DisplayName** | Pointer to **string** | the display name of the identity | [optional] 
-**Snapshot** | Pointer to **string** | the date when the identity record was created | [optional] 
-**DeletedDate** | Pointer to **string** | the date when the identity was deleted | [optional] 
-**AccessItemCount** | Pointer to **map[string]int32** | A map containing the count of each access item | [optional] 
-**Attributes** | Pointer to **map[string]interface{}** | A map containing the identity attributes | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | the identity ID | [optional] |
+| **DisplayName** | Pointer to **string** | the display name of the identity | [optional] |
+| **Snapshot** | Pointer to **string** | the date when the identity record was created | [optional] |
+| **DeletedDate** | Pointer to **string** | the date when the identity was deleted | [optional] |
+| **AccessItemCount** | Pointer to **map[string]int32** | A map containing the count of each access item | [optional] |
+| **Attributes** | Pointer to **map[string]interface{}** | A map containing the identity attributes | [optional] |
 
 ## Methods
 
@@ -28,18 +41,13 @@ Name | Type | Description | Notes
 
 `func NewIdentityHistoryResponse() *IdentityHistoryResponse`
 
-NewIdentityHistoryResponse instantiates a new IdentityHistoryResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewIdentityHistoryResponse instantiates a new IdentityHistoryResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewIdentityHistoryResponseWithDefaults
 
 `func NewIdentityHistoryResponseWithDefaults() *IdentityHistoryResponse`
 
-NewIdentityHistoryResponseWithDefaults instantiates a new IdentityHistoryResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewIdentityHistoryResponseWithDefaults instantiates a new IdentityHistoryResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -51,8 +59,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *IdentityHistoryResponse) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -76,8 +83,7 @@ GetDisplayName returns the DisplayName field if non-nil, zero value otherwise.
 
 `func (o *IdentityHistoryResponse) GetDisplayNameOk() (*string, bool)`
 
-GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayName
 
@@ -101,8 +107,7 @@ GetSnapshot returns the Snapshot field if non-nil, zero value otherwise.
 
 `func (o *IdentityHistoryResponse) GetSnapshotOk() (*string, bool)`
 
-GetSnapshotOk returns a tuple with the Snapshot field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSnapshotOk returns a tuple with the Snapshot field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSnapshot
 
@@ -126,8 +131,7 @@ GetDeletedDate returns the DeletedDate field if non-nil, zero value otherwise.
 
 `func (o *IdentityHistoryResponse) GetDeletedDateOk() (*string, bool)`
 
-GetDeletedDateOk returns a tuple with the DeletedDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDeletedDateOk returns a tuple with the DeletedDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDeletedDate
 
@@ -151,8 +155,7 @@ GetAccessItemCount returns the AccessItemCount field if non-nil, zero value othe
 
 `func (o *IdentityHistoryResponse) GetAccessItemCountOk() (*map[string]int32, bool)`
 
-GetAccessItemCountOk returns a tuple with the AccessItemCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessItemCountOk returns a tuple with the AccessItemCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessItemCount
 
@@ -176,8 +179,7 @@ GetAttributes returns the Attributes field if non-nil, zero value otherwise.
 
 `func (o *IdentityHistoryResponse) GetAttributesOk() (*map[string]interface{}, bool)`
 
-GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributes
 
@@ -190,5 +192,3 @@ SetAttributes sets Attributes field to given value.
 `func (o *IdentityHistoryResponse) HasAttributes() bool`
 
 HasAttributes returns a boolean if a field has been set.
-
-

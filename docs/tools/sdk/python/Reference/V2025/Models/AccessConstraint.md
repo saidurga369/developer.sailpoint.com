@@ -4,21 +4,28 @@ title: AccessConstraint
 pagination_label: AccessConstraint
 sidebar_label: AccessConstraint
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccessConstraint', 'V2025AccessConstraint'] 
+keywords:
+  ['python', 'Python', 'sdk', 'AccessConstraint', 'V2025AccessConstraint']
 slug: /tools/sdk/python/v2025/models/access-constraint
-tags: ['SDK', 'Software Development Kit', 'AccessConstraint', 'V2025AccessConstraint']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessConstraint',
+    'V2025AccessConstraint',
+  ]
 ---
 
 # AccessConstraint
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'ENTITLEMENT',    'ACCESS_PROFILE',    'ROLE' ] | Type of Access | [required]
-**ids** | **[]str** | Must be set only if operator is SELECTED. | [optional] 
-**operator** |  **Enum** [  'ALL',    'SELECTED' ] | Used to determine whether the scope of the campaign should be reduced for selected ids or all. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'ENTITLEMENT', 'ACCESS_PROFILE', 'ROLE' ] | Type of Access | [required] |
+| **ids** | **[]str** | Must be set only if operator is SELECTED. | [optional] |
+| **operator** | **Enum** [ 'ALL', 'SELECTED' ] | Used to determine whether the scope of the campaign should be reduced for selected ids or all. | [required] |
+
 }
 
 ## Example
@@ -33,5 +40,5 @@ operator='SELECTED'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

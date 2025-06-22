@@ -4,19 +4,16 @@ title: Roles
 pagination_label: Roles
 sidebar_label: Roles
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'Roles', 'Roles'] 
+keywords: ['powershell', 'PowerShell', 'sdk', 'Roles', 'Roles']
 slug: /tools/sdk/powershell/v3/methods/roles
 tags: ['SDK', 'Software Development Kit', 'Roles', 'Roles']
 ---
 
 # Roles
-  Use this API to implement and customize role functionality.
-With this functionality in place, administrators can create roles and configure them for use throughout Identity Security Cloud. 
-Identity Security Cloud can use established criteria to automatically assign the roles to qualified users. This enables users to get all the access they need quickly and securely and administrators to spend their time on other tasks.
 
-Entitlements represent the most granular level of access in Identity Security Cloud. 
-Access profiles represent the next level and often group entitlements. 
-Roles represent the broadest level of access and often group access profiles. 
+Use this API to implement and customize role functionality. With this functionality in place, administrators can create roles and configure them for use throughout Identity Security Cloud. Identity Security Cloud can use established criteria to automatically assign the roles to qualified users. This enables users to get all the access they need quickly and securely and administrators to spend their time on other tasks.
+
+Entitlements represent the most granular level of access in Identity Security Cloud. Access profiles represent the next level and often group entitlements. Roles represent the broadest level of access and often group access profiles.
 
 For example, an Active Directory source in Identity Security Cloud can have multiple entitlements: the first, &#39;Employees,&#39; may represent the access all employees have at the organization, and a second, &#39;Developers,&#39; may represent the access all developers have at the organization.
 
@@ -28,72 +25,68 @@ When users only need Active Directory employee access, they can request access t
 
 When users need both Active Directory employee and developer access, they can request access to the &#39;AD Developers&#39; access profile.
 
-When users need both the &#39;AD Developers&#39; access profile and the &#39;GitHub Developers&#39; access profile, they can request access to the role grouping both. 
+When users need both the &#39;AD Developers&#39; access profile and the &#39;GitHub Developers&#39; access profile, they can request access to the role grouping both.
 
-Roles often represent positions within organizations. 
-For example, an organization&#39;s accountant can access all the tools the organization&#39;s accountants need with the &#39;Accountant&#39; role. 
-If the accountant switches to engineering, a qualified member of the organization can quickly revoke the accountant&#39;s &#39;Accountant&#39; access and grant access to the &#39;Engineer&#39; role instead, granting access to all the tools the organization&#39;s engineers need.
+Roles often represent positions within organizations. For example, an organization&#39;s accountant can access all the tools the organization&#39;s accountants need with the &#39;Accountant&#39; role. If the accountant switches to engineering, a qualified member of the organization can quickly revoke the accountant&#39;s &#39;Accountant&#39; access and grant access to the &#39;Engineer&#39; role instead, granting access to all the tools the organization&#39;s engineers need.
 
-In Identity Security Cloud, adminstrators can use the Access drop-down menu and select Roles to view, configure, and delete existing roles, as well as create new ones. 
-Administrators can enable and disable the role, and they can also make the following configurations: 
+In Identity Security Cloud, adminstrators can use the Access drop-down menu and select Roles to view, configure, and delete existing roles, as well as create new ones. Administrators can enable and disable the role, and they can also make the following configurations:
 
 - Manage Access: Manage the role&#39;s access by adding or removing access profiles.
 
-- Define Assignment: Define the criteria Identity Security Cloud uses to assign the role to identities. 
-Use the first option, &#39;Standard Criteria,&#39; to provide specific criteria for assignment like specific account attributes, entitlements, or identity attributes. 
-Use the second, &#39;Identity List,&#39; to specify the identities for assignment.
+- Define Assignment: Define the criteria Identity Security Cloud uses to assign the role to identities. Use the first option, &#39;Standard Criteria,&#39; to provide specific criteria for assignment like specific account attributes, entitlements, or identity attributes. Use the second, &#39;Identity List,&#39; to specify the identities for assignment.
 
-- Access Requests: Configure roles to be requestable and establish an approval process for any requests that the role be granted or revoked. 
-Do not configure a role to be requestable without establishing a secure access request approval process for that role first. 
+- Access Requests: Configure roles to be requestable and establish an approval process for any requests that the role be granted or revoked. Do not configure a role to be requestable without establishing a secure access request approval process for that role first.
 
 Refer to [Working with Roles](https://documentation.sailpoint.com/saas/help/access/roles.html) for more information about roles.
- 
-  
 
 All URIs are relative to *https://sailpoint.api.identitynow.com/v3*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**New-Role**](#create-role) | **POST** `/roles` | Create a role
-[**Remove-BulkRoles**](#delete-bulk-roles) | **POST** `/roles/bulk-delete` | Delete role(s)
-[**Remove-Role**](#delete-role) | **DELETE** `/roles/{id}` | Delete role
-[**Get-Role**](#get-role) | **GET** `/roles/{id}` | Get role
-[**Get-RoleAssignedIdentities**](#get-role-assigned-identities) | **GET** `/roles/{id}/assigned-identities` | List identities assigned a role
-[**Get-Roles**](#list-roles) | **GET** `/roles` | List roles
-[**Update-Role**](#patch-role) | **PATCH** `/roles/{id}` | Patch role
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**New-Role**](#create-role) | **POST** `/roles` | Create a role |
+| [**Remove-BulkRoles**](#delete-bulk-roles) | **POST** `/roles/bulk-delete` | Delete role(s) |
+| [**Remove-Role**](#delete-role) | **DELETE** `/roles/{id}` | Delete role |
+| [**Get-Role**](#get-role) | **GET** `/roles/{id}` | Get role |
+| [**Get-RoleAssignedIdentities**](#get-role-assigned-identities) | **GET** `/roles/{id}/assigned-identities` | List identities assigned a role |
+| [**Get-Roles**](#list-roles) | **GET** `/roles` | List roles |
+| [**Update-Role**](#patch-role) | **PATCH** `/roles/{id}` | Patch role |
 
 ## create-role
-This API creates a role.
-In addition, a ROLE_SUBADMIN may not create a role including an access profile if that access profile is associated with a source the ROLE_SUBADMIN is not associated with themselves. 
+
+This API creates a role. In addition, a ROLE_SUBADMIN may not create a role including an access profile if that access profile is associated with a source the ROLE_SUBADMIN is not associated with themselves.
 
 The maximum supported length for the description field is 2000 characters. Longer descriptions will be preserved for existing roles. However, any new roles as well as any updates to existing descriptions will be limited to 2000 characters.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/create-role)
 
-### Parameters 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
- Body  | Role | [**Role**](../models/role) | True  | 
+### Parameters
+
+| Param Type | Name | Data Type                  | Required | Description |
+| ---------- | ---- | -------------------------- | -------- | ----------- |
+| Body       | Role | [**Role**](../models/role) | True     |
 
 ### Return type
+
 [**Role**](../models/role)
 
 ### Responses
-Code | Description  | Data Type
-------------- | ------------- | -------------
-201 | Role created | Role
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto
+
+| Code | Description | Data Type |
+| --- | --- | --- |
+| 201 | Role created | Role |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |
 
 ### HTTP request headers
+
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 ### Example
+
 ```powershell
 $Role = @"{
   "owner" : {
@@ -259,48 +252,52 @@ $Role = @"{
 
 try {
     $Result = ConvertFrom-JsonToRole -Json $Role
-    New-Role -Role $Result 
-    
+    New-Role -Role $Result
+
     # Below is a request that includes all optional parameters
-    # New-Role -Role $Result  
+    # New-Role -Role $Result
 } catch {
     Write-Host $_.Exception.Response.StatusCode.value__ "Exception occurred when calling New-Role"
     Write-Host $_.ErrorDetails
 }
 ```
-[[Back to top]](#) 
+
+[[Back to top]](#)
 
 ## delete-bulk-roles
-This endpoint initiates a bulk deletion of one or more roles.
-When the request is successful, the endpoint returns the bulk delete's task result ID.  To follow the task, you can use [Get Task Status by ID](https://developer.sailpoint.com/docs/api/beta/get-task-status), which will return the task result's status and information. 
-This endpoint can only bulk delete up to a limit of 50 roles per request. 
-A user with ROLE_SUBADMIN authority can only call this endpoint if all roles included in the request are associated with sources with management workgroups the ROLE_SUBADMIN is a member of.
+
+This endpoint initiates a bulk deletion of one or more roles. When the request is successful, the endpoint returns the bulk delete's task result ID. To follow the task, you can use [Get Task Status by ID](https://developer.sailpoint.com/docs/api/beta/get-task-status), which will return the task result's status and information. This endpoint can only bulk delete up to a limit of 50 roles per request. A user with ROLE_SUBADMIN authority can only call this endpoint if all roles included in the request are associated with sources with management workgroups the ROLE_SUBADMIN is a member of.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/delete-bulk-roles)
 
-### Parameters 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
- Body  | RoleBulkDeleteRequest | [**RoleBulkDeleteRequest**](../models/role-bulk-delete-request) | True  | 
+### Parameters
+
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Body | RoleBulkDeleteRequest | [**RoleBulkDeleteRequest**](../models/role-bulk-delete-request) | True |
 
 ### Return type
+
 [**TaskResultDto**](../models/task-result-dto)
 
 ### Responses
-Code | Description  | Data Type
-------------- | ------------- | -------------
-202 | Returns an object with the id of the task performing the delete operation. | TaskResultDto
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto
+
+| Code | Description | Data Type |
+| --- | --- | --- |
+| 202 | Returns an object with the id of the task performing the delete operation. | TaskResultDto |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |
 
 ### HTTP request headers
+
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 ### Example
+
 ```powershell
 $RoleBulkDeleteRequest = @"{
   "roleIds" : [ "2c9180847812e0b1017817051919ecca", "2c9180887812e0b201781e129f151816" ]
@@ -310,143 +307,161 @@ $RoleBulkDeleteRequest = @"{
 
 try {
     $Result = ConvertFrom-JsonToRoleBulkDeleteRequest -Json $RoleBulkDeleteRequest
-    Remove-BulkRoles -RoleBulkDeleteRequest $Result 
-    
+    Remove-BulkRoles -RoleBulkDeleteRequest $Result
+
     # Below is a request that includes all optional parameters
-    # Remove-BulkRoles -RoleBulkDeleteRequest $Result  
+    # Remove-BulkRoles -RoleBulkDeleteRequest $Result
 } catch {
     Write-Host $_.Exception.Response.StatusCode.value__ "Exception occurred when calling Remove-BulkRoles"
     Write-Host $_.ErrorDetails
 }
 ```
-[[Back to top]](#) 
+
+[[Back to top]](#)
 
 ## delete-role
+
 Delete a role by ID.
 
 A user with ROLE_SUBADMIN authority may only call this API if all access profiles included in the role are associated to sources with management workgroups the ROLE_SUBADMIN is a member of.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/delete-role)
 
-### Parameters 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | Id | **String** | True  | Role ID.
+### Parameters
+
+| Param Type | Name | Data Type  | Required | Description |
+| ---------- | ---- | ---------- | -------- | ----------- |
+| Path       | Id   | **String** | True     | Role ID.    |
 
 ### Return type
- (empty response body)
+
+(empty response body)
 
 ### Responses
-Code | Description  | Data Type
-------------- | ------------- | -------------
-204 | No content - indicates the request was successful but there is no content to be returned in the response. | 
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto
+
+| Code | Description | Data Type |
+| --- | --- | --- |
+| 204 | No content - indicates the request was successful but there is no content to be returned in the response. |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |
 
 ### HTTP request headers
+
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 ### Example
+
 ```powershell
 $Id = "2c91808a7813090a017814121e121518" # String | Role ID.
 
 # Delete role
 
 try {
-    Remove-Role -Id $Id 
-    
+    Remove-Role -Id $Id
+
     # Below is a request that includes all optional parameters
-    # Remove-Role -Id $Id  
+    # Remove-Role -Id $Id
 } catch {
     Write-Host $_.Exception.Response.StatusCode.value__ "Exception occurred when calling Remove-Role"
     Write-Host $_.ErrorDetails
 }
 ```
-[[Back to top]](#) 
+
+[[Back to top]](#)
 
 ## get-role
-Get a role by ID.
-A user with ROLE_SUBADMIN authority may only call this API if all access profiles included in the role are associated to sources with management workgroups of the ROLE_SUBADMIN is a member of.
+
+Get a role by ID. A user with ROLE_SUBADMIN authority may only call this API if all access profiles included in the role are associated to sources with management workgroups of the ROLE_SUBADMIN is a member of.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/get-role)
 
-### Parameters 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | Id | **String** | True  | Role ID.
+### Parameters
+
+| Param Type | Name | Data Type  | Required | Description |
+| ---------- | ---- | ---------- | -------- | ----------- |
+| Path       | Id   | **String** | True     | Role ID.    |
 
 ### Return type
+
 [**Role**](../models/role)
 
 ### Responses
-Code | Description  | Data Type
-------------- | ------------- | -------------
-200 | List of all roles | Role
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto
+
+| Code | Description | Data Type |
+| --- | --- | --- |
+| 200 | List of all roles | Role |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |
 
 ### HTTP request headers
+
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 ### Example
+
 ```powershell
 $Id = "2c91808a7813090a017814121e121518" # String | Role ID.
 
 # Get role
 
 try {
-    Get-Role -Id $Id 
-    
+    Get-Role -Id $Id
+
     # Below is a request that includes all optional parameters
-    # Get-Role -Id $Id  
+    # Get-Role -Id $Id
 } catch {
     Write-Host $_.Exception.Response.StatusCode.value__ "Exception occurred when calling Get-Role"
     Write-Host $_.ErrorDetails
 }
 ```
-[[Back to top]](#) 
+
+[[Back to top]](#)
 
 ## get-role-assigned-identities
 
-
 [API Spec](https://developer.sailpoint.com/docs/api/v3/get-role-assigned-identities)
 
-### Parameters 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | Id | **String** | True  | ID of the Role for which the assigned Identities are to be listed
-  Query | Limit | **Int32** |   (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | Offset | **Int32** |   (optional) (default to 0) | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | Count | **Boolean** |   (optional) (default to $false) | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | Filters | **String** |   (optional) | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, in*  **aliasName**: *eq, sw*  **email**: *eq, sw*  **name**: *eq, sw, co*
-  Query | Sorters | **String** |   (optional) | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **id, name, aliasName, email**
+### Parameters
+
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | Id | **String** | True | ID of the Role for which the assigned Identities are to be listed |
+| Query | Limit | **Int32** | (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | Offset | **Int32** | (optional) (default to 0) | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | Count | **Boolean** | (optional) (default to $false) | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | Filters | **String** | (optional) | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **id**: _eq, in_ **aliasName**: _eq, sw_ **email**: _eq, sw_ **name**: _eq, sw, co_ |
+| Query | Sorters | **String** | (optional) | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results) Sorting is supported for the following fields: **id, name, aliasName, email** |
 
 ### Return type
+
 [**RoleIdentity[]**](../models/role-identity)
 
 ### Responses
-Code | Description  | Data Type
-------------- | ------------- | -------------
-200 | List of Identities assigned the Role | RoleIdentity[]
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto
+
+| Code | Description | Data Type |
+| --- | --- | --- |
+| 200 | List of Identities assigned the Role | RoleIdentity[] |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |
 
 ### HTTP request headers
+
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 ### Example
+
 ```powershell
 $Id = "2c91808a7813090a017814121e121518" # String | ID of the Role for which the assigned Identities are to be listed
 $Limit = 250 # Int32 | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 250)
@@ -458,52 +473,59 @@ $Sorters = "aliasName,name" # String | Sort results using the standard syntax de
 # List identities assigned a role
 
 try {
-    Get-RoleAssignedIdentities -Id $Id 
-    
+    Get-RoleAssignedIdentities -Id $Id
+
     # Below is a request that includes all optional parameters
-    # Get-RoleAssignedIdentities -Id $Id -Limit $Limit -Offset $Offset -Count $Count -Filters $Filters -Sorters $Sorters  
+    # Get-RoleAssignedIdentities -Id $Id -Limit $Limit -Offset $Offset -Count $Count -Filters $Filters -Sorters $Sorters
 } catch {
     Write-Host $_.Exception.Response.StatusCode.value__ "Exception occurred when calling Get-RoleAssignedIdentities"
     Write-Host $_.ErrorDetails
 }
 ```
-[[Back to top]](#) 
+
+[[Back to top]](#)
 
 ## list-roles
+
 This API returns a list of Roles.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/list-roles)
 
-### Parameters 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-  Query | ForSubadmin | **String** |   (optional) | If provided, filters the returned list according to what is visible to the indicated ROLE_SUBADMIN Identity. The value of the parameter is either an Identity ID, or the special value **me**, which is shorthand for the calling Identity's ID. A 400 Bad Request error is returned if the **for-subadmin** parameter is specified for an Identity that is not a subadmin.
-  Query | Limit | **Int32** |   (optional) (default to 50) | Note that for this API the maximum value for limit is 50. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | Offset | **Int32** |   (optional) (default to 0) | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | Count | **Boolean** |   (optional) (default to $false) | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | Filters | **String** |   (optional) | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, in*  **name**: *eq, sw*  **created**: *gt, ge, le*  **modified**: *lt, ge, le*  **owner.id**: *eq, in*  **requestable**: *eq*  **dimensional**: *eq*
-  Query | Sorters | **String** |   (optional) | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **name, created, modified**
-  Query | ForSegmentIds | **String** |   (optional) | If present and not empty, additionally filters Roles to those which are assigned to the Segment(s) with the specified IDs.  If segmentation is currently unavailable, specifying this parameter results in an error.
-  Query | IncludeUnsegmented | **Boolean** |   (optional) (default to $true) | Whether or not the response list should contain unsegmented Roles. If *for-segment-ids* is absent or empty, specifying *include-unsegmented* as false results in an error.
+### Parameters
+
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Query | ForSubadmin | **String** | (optional) | If provided, filters the returned list according to what is visible to the indicated ROLE_SUBADMIN Identity. The value of the parameter is either an Identity ID, or the special value **me**, which is shorthand for the calling Identity's ID. A 400 Bad Request error is returned if the **for-subadmin** parameter is specified for an Identity that is not a subadmin. |
+| Query | Limit | **Int32** | (optional) (default to 50) | Note that for this API the maximum value for limit is 50. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | Offset | **Int32** | (optional) (default to 0) | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | Count | **Boolean** | (optional) (default to $false) | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | Filters | **String** | (optional) | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **id**: _eq, in_ **name**: _eq, sw_ **created**: _gt, ge, le_ **modified**: _lt, ge, le_ **owner.id**: _eq, in_ **requestable**: _eq_ **dimensional**: _eq_ |
+| Query | Sorters | **String** | (optional) | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results) Sorting is supported for the following fields: **name, created, modified** |
+| Query | ForSegmentIds | **String** | (optional) | If present and not empty, additionally filters Roles to those which are assigned to the Segment(s) with the specified IDs. If segmentation is currently unavailable, specifying this parameter results in an error. |
+| Query | IncludeUnsegmented | **Boolean** | (optional) (default to $true) | Whether or not the response list should contain unsegmented Roles. If _for-segment-ids_ is absent or empty, specifying _include-unsegmented_ as false results in an error. |
 
 ### Return type
+
 [**Role[]**](../models/role)
 
 ### Responses
-Code | Description  | Data Type
-------------- | ------------- | -------------
-200 | List of Roles | Role[]
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto
+
+| Code | Description | Data Type |
+| --- | --- | --- |
+| 200 | List of Roles | Role[] |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |
 
 ### HTTP request headers
+
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 ### Example
+
 ```powershell
 $ForSubadmin = "5168015d32f890ca15812c9180835d2e" # String | If provided, filters the returned list according to what is visible to the indicated ROLE_SUBADMIN Identity. The value of the parameter is either an Identity ID, or the special value **me**, which is shorthand for the calling Identity's ID. A 400 Bad Request error is returned if the **for-subadmin** parameter is specified for an Identity that is not a subadmin. (optional)
 $Limit = 50 # Int32 | Note that for this API the maximum value for limit is 50. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 50)
@@ -517,85 +539,93 @@ $IncludeUnsegmented = $false # Boolean | Whether or not the response list should
 # List roles
 
 try {
-    Get-Roles 
-    
+    Get-Roles
+
     # Below is a request that includes all optional parameters
-    # Get-Roles -ForSubadmin $ForSubadmin -Limit $Limit -Offset $Offset -Count $Count -Filters $Filters -Sorters $Sorters -ForSegmentIds $ForSegmentIds -IncludeUnsegmented $IncludeUnsegmented  
+    # Get-Roles -ForSubadmin $ForSubadmin -Limit $Limit -Offset $Offset -Count $Count -Filters $Filters -Sorters $Sorters -ForSegmentIds $ForSegmentIds -IncludeUnsegmented $IncludeUnsegmented
 } catch {
     Write-Host $_.Exception.Response.StatusCode.value__ "Exception occurred when calling Get-Roles"
     Write-Host $_.ErrorDetails
 }
 ```
-[[Back to top]](#) 
+
+[[Back to top]](#)
 
 ## patch-role
-Update an existing role, using the [JSON Patch](https://tools.ietf.org/html/rfc6902) syntax.
-The following fields are patchable:
-* name
-* description
-* enabled
-* owner
-* accessProfiles
-* entitlements
-* membership
-* requestable
-* accessRequestConfig
-* revokeRequestConfig
-* segments
-* accessModelMetadata
+
+Update an existing role, using the [JSON Patch](https://tools.ietf.org/html/rfc6902) syntax. The following fields are patchable:
+
+- name
+- description
+- enabled
+- owner
+- accessProfiles
+- entitlements
+- membership
+- requestable
+- accessRequestConfig
+- revokeRequestConfig
+- segments
+- accessModelMetadata
 
 A user with ROLE_SUBADMIN authority may only call this API if all access profiles included in the role are associated to sources with management workgroups of the ROLE_SUBADMIN is a member of.
 
 The maximum supported length for the description field is 2000 characters. ISC preserves longer descriptions for existing roles. However, any new roles as well as any updates to existing descriptions are limited to 2000 characters.
 
-When you use this API to modify a role's membership identities, you can only modify up to a limit of 500 membership identities at a time. 
+When you use this API to modify a role's membership identities, you can only modify up to a limit of 500 membership identities at a time.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/patch-role)
 
-### Parameters 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | Id | **String** | True  | Role ID to patch
- Body  | JsonPatchOperation | [**[]JsonPatchOperation**](../models/json-patch-operation) | True  | 
+### Parameters
+
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | Id | **String** | True | Role ID to patch |
+| Body | JsonPatchOperation | [**[]JsonPatchOperation**](../models/json-patch-operation) | True |
 
 ### Return type
+
 [**Role**](../models/role)
 
 ### Responses
-Code | Description  | Data Type
-------------- | ------------- | -------------
-200 | Response with the updated role. | Role
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto
+
+| Code | Description | Data Type |
+| --- | --- | --- |
+| 200 | Response with the updated role. | Role |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |
 
 ### HTTP request headers
+
 - **Content-Type**: application/json-patch+json
 - **Accept**: application/json
 
 ### Example
+
 ```powershell
 $Id = "2c91808a7813090a017814121e121518" # String | Role ID to patch
  $JsonPatchOperation = @"{
   "op" : "replace",
   "path" : "/description",
   "value" : "New description"
-}"@ # JsonPatchOperation[] | 
- 
+}"@ # JsonPatchOperation[] |
+
 
 # Patch role
 
 try {
     $Result = ConvertFrom-JsonToJsonPatchOperation -Json $JsonPatchOperation
-    Update-Role -Id $Id -JsonPatchOperation $Result 
-    
+    Update-Role -Id $Id -JsonPatchOperation $Result
+
     # Below is a request that includes all optional parameters
-    # Update-Role -Id $Id -JsonPatchOperation $Result  
+    # Update-Role -Id $Id -JsonPatchOperation $Result
 } catch {
     Write-Host $_.Exception.Response.StatusCode.value__ "Exception occurred when calling Update-Role"
     Write-Host $_.ErrorDetails
 }
 ```
-[[Back to top]](#) 
+
+[[Back to top]](#)

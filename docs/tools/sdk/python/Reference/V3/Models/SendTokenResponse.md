@@ -4,21 +4,22 @@ title: SendTokenResponse
 pagination_label: SendTokenResponse
 sidebar_label: SendTokenResponse
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SendTokenResponse', 'SendTokenResponse'] 
+keywords: ['python', 'Python', 'sdk', 'SendTokenResponse', 'SendTokenResponse']
 slug: /tools/sdk/python/v3/models/send-token-response
-tags: ['SDK', 'Software Development Kit', 'SendTokenResponse', 'SendTokenResponse']
+tags:
+  ['SDK', 'Software Development Kit', 'SendTokenResponse', 'SendTokenResponse']
 ---
 
 # SendTokenResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**request_id** | **str** | The token request ID | [optional] 
-**status** |  **Enum** [  'SUCCESS',    'FAILED' ] | Status of sending token | [optional] 
-**error_message** | **str** | Error messages from token send request | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **request_id** | **str** | The token request ID | [optional] |
+| **status** | **Enum** [ 'SUCCESS', 'FAILED' ] | Status of sending token | [optional] |
+| **error_message** | **str** | Error messages from token send request | [optional] |
+
 }
 
 ## Example
@@ -33,5 +34,5 @@ error_message='Unable to sent text message'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

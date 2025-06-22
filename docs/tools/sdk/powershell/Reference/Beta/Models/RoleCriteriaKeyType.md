@@ -4,23 +4,32 @@ title: RoleCriteriaKeyType
 pagination_label: RoleCriteriaKeyType
 sidebar_label: RoleCriteriaKeyType
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'RoleCriteriaKeyType', 'BetaRoleCriteriaKeyType'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'RoleCriteriaKeyType',
+    'BetaRoleCriteriaKeyType',
+  ]
 slug: /tools/sdk/powershell/beta/models/role-criteria-key-type
-tags: ['SDK', 'Software Development Kit', 'RoleCriteriaKeyType', 'BetaRoleCriteriaKeyType']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleCriteriaKeyType',
+    'BetaRoleCriteriaKeyType',
+  ]
 ---
-
 
 # RoleCriteriaKeyType
 
 ## Enum
 
+- `IDENTITY` (value: `"IDENTITY"`)
 
-* `IDENTITY` (value: `"IDENTITY"`)
+- `ACCOUNT` (value: `"ACCOUNT"`)
 
-* `ACCOUNT` (value: `"ACCOUNT"`)
+- `ENTITLEMENT` (value: `"ENTITLEMENT"`)
 
-* `ENTITLEMENT` (value: `"ENTITLEMENT"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

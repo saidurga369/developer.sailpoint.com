@@ -4,7 +4,7 @@ title: Reviewer
 pagination_label: Reviewer
 sidebar_label: Reviewer
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Reviewer', 'V2024Reviewer'] 
+keywords: ['go', 'Golang', 'sdk', 'Reviewer', 'V2024Reviewer']
 slug: /tools/sdk/go/v2024/models/reviewer
 tags: ['SDK', 'Software Development Kit', 'Reviewer', 'V2024Reviewer']
 ---
@@ -13,14 +13,14 @@ tags: ['SDK', 'Software Development Kit', 'Reviewer', 'V2024Reviewer']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The id of the reviewer. | [optional] 
-**Name** | Pointer to **string** | The name of the reviewer. | [optional] 
-**Email** | Pointer to **string** | The email of the reviewing identity. | [optional] 
-**Type** | Pointer to **string** | The type of the reviewing identity. | [optional] 
-**Created** | Pointer to **NullableTime** | The created date of the reviewing identity. | [optional] 
-**Modified** | Pointer to **NullableTime** | The modified date of the reviewing identity. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The id of the reviewer. | [optional] |
+| **Name** | Pointer to **string** | The name of the reviewer. | [optional] |
+| **Email** | Pointer to **string** | The email of the reviewing identity. | [optional] |
+| **Type** | Pointer to **string** | The type of the reviewing identity. | [optional] |
+| **Created** | Pointer to **NullableTime** | The created date of the reviewing identity. | [optional] |
+| **Modified** | Pointer to **NullableTime** | The modified date of the reviewing identity. | [optional] |
 
 ## Methods
 
@@ -28,18 +28,13 @@ Name | Type | Description | Notes
 
 `func NewReviewer() *Reviewer`
 
-NewReviewer instantiates a new Reviewer object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewReviewer instantiates a new Reviewer object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewReviewerWithDefaults
 
 `func NewReviewerWithDefaults() *Reviewer`
 
-NewReviewerWithDefaults instantiates a new Reviewer object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewReviewerWithDefaults instantiates a new Reviewer object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -51,8 +46,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *Reviewer) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -76,8 +70,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *Reviewer) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -101,8 +94,7 @@ GetEmail returns the Email field if non-nil, zero value otherwise.
 
 `func (o *Reviewer) GetEmailOk() (*string, bool)`
 
-GetEmailOk returns a tuple with the Email field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEmailOk returns a tuple with the Email field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEmail
 
@@ -126,8 +118,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *Reviewer) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -151,8 +142,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *Reviewer) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -170,12 +160,14 @@ HasCreated returns a boolean if a field has been set.
 
 `func (o *Reviewer) SetCreatedNil(b bool)`
 
- SetCreatedNil sets the value for Created to be an explicit nil
+SetCreatedNil sets the value for Created to be an explicit nil
 
 ### UnsetCreated
+
 `func (o *Reviewer) UnsetCreated()`
 
 UnsetCreated ensures that no value is present for Created, not even an explicit nil
+
 ### GetModified
 
 `func (o *Reviewer) GetModified() SailPointTime`
@@ -186,8 +178,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *Reviewer) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -205,10 +196,10 @@ HasModified returns a boolean if a field has been set.
 
 `func (o *Reviewer) SetModifiedNil(b bool)`
 
- SetModifiedNil sets the value for Modified to be an explicit nil
+SetModifiedNil sets the value for Modified to be an explicit nil
 
 ### UnsetModified
+
 `func (o *Reviewer) UnsetModified()`
 
 UnsetModified ensures that no value is present for Modified, not even an explicit nil
-

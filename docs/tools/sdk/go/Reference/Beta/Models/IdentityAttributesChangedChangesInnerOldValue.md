@@ -4,17 +4,30 @@ title: IdentityAttributesChangedChangesInnerOldValue
 pagination_label: IdentityAttributesChangedChangesInnerOldValue
 sidebar_label: IdentityAttributesChangedChangesInnerOldValue
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IdentityAttributesChangedChangesInnerOldValue', 'BetaIdentityAttributesChangedChangesInnerOldValue'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'IdentityAttributesChangedChangesInnerOldValue',
+    'BetaIdentityAttributesChangedChangesInnerOldValue',
+  ]
 slug: /tools/sdk/go/beta/models/identity-attributes-changed-changes-inner-old-value
-tags: ['SDK', 'Software Development Kit', 'IdentityAttributesChangedChangesInnerOldValue', 'BetaIdentityAttributesChangedChangesInnerOldValue']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityAttributesChangedChangesInnerOldValue',
+    'BetaIdentityAttributesChangedChangesInnerOldValue',
+  ]
 ---
 
 # IdentityAttributesChangedChangesInnerOldValue
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ## Methods
 
@@ -22,17 +35,10 @@ Name | Type | Description | Notes
 
 `func NewIdentityAttributesChangedChangesInnerOldValue() *IdentityAttributesChangedChangesInnerOldValue`
 
-NewIdentityAttributesChangedChangesInnerOldValue instantiates a new IdentityAttributesChangedChangesInnerOldValue object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewIdentityAttributesChangedChangesInnerOldValue instantiates a new IdentityAttributesChangedChangesInnerOldValue object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewIdentityAttributesChangedChangesInnerOldValueWithDefaults
 
 `func NewIdentityAttributesChangedChangesInnerOldValueWithDefaults() *IdentityAttributesChangedChangesInnerOldValue`
 
-NewIdentityAttributesChangedChangesInnerOldValueWithDefaults instantiates a new IdentityAttributesChangedChangesInnerOldValue object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
-
-
+NewIdentityAttributesChangedChangesInnerOldValueWithDefaults instantiates a new IdentityAttributesChangedChangesInnerOldValue object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set

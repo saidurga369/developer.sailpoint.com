@@ -4,20 +4,33 @@ title: AccountAllOfSourceOwner
 pagination_label: AccountAllOfSourceOwner
 sidebar_label: AccountAllOfSourceOwner
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccountAllOfSourceOwner', 'V2025AccountAllOfSourceOwner'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'AccountAllOfSourceOwner',
+    'V2025AccountAllOfSourceOwner',
+  ]
 slug: /tools/sdk/go/v2025/models/account-all-of-source-owner
-tags: ['SDK', 'Software Development Kit', 'AccountAllOfSourceOwner', 'V2025AccountAllOfSourceOwner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountAllOfSourceOwner',
+    'V2025AccountAllOfSourceOwner',
+  ]
 ---
 
 # AccountAllOfSourceOwner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The ID of the identity | [optional] 
-**Type** | Pointer to **string** | The type of object being referenced | [optional] 
-**Name** | Pointer to **string** | display name of identity | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The ID of the identity | [optional] |
+| **Type** | Pointer to **string** | The type of object being referenced | [optional] |
+| **Name** | Pointer to **string** | display name of identity | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewAccountAllOfSourceOwner() *AccountAllOfSourceOwner`
 
-NewAccountAllOfSourceOwner instantiates a new AccountAllOfSourceOwner object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccountAllOfSourceOwner instantiates a new AccountAllOfSourceOwner object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccountAllOfSourceOwnerWithDefaults
 
 `func NewAccountAllOfSourceOwnerWithDefaults() *AccountAllOfSourceOwner`
 
-NewAccountAllOfSourceOwnerWithDefaults instantiates a new AccountAllOfSourceOwner object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccountAllOfSourceOwnerWithDefaults instantiates a new AccountAllOfSourceOwner object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -48,8 +56,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *AccountAllOfSourceOwner) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -73,8 +80,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *AccountAllOfSourceOwner) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -98,8 +104,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *AccountAllOfSourceOwner) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -112,5 +117,3 @@ SetName sets Name field to given value.
 `func (o *AccountAllOfSourceOwner) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

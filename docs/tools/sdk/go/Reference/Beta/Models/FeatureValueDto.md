@@ -4,20 +4,21 @@ title: FeatureValueDto
 pagination_label: FeatureValueDto
 sidebar_label: FeatureValueDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'FeatureValueDto', 'BetaFeatureValueDto'] 
+keywords: ['go', 'Golang', 'sdk', 'FeatureValueDto', 'BetaFeatureValueDto']
 slug: /tools/sdk/go/beta/models/feature-value-dto
-tags: ['SDK', 'Software Development Kit', 'FeatureValueDto', 'BetaFeatureValueDto']
+tags:
+  ['SDK', 'Software Development Kit', 'FeatureValueDto', 'BetaFeatureValueDto']
 ---
 
 # FeatureValueDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Feature** | Pointer to **string** | The type of feature | [optional] 
-**Numerator** | Pointer to **int32** | The number of identities that have access to the feature | [optional] 
-**Denominator** | Pointer to **int32** | The number of identities with the corresponding feature | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Feature** | Pointer to **string** | The type of feature | [optional] |
+| **Numerator** | Pointer to **int32** | The number of identities that have access to the feature | [optional] |
+| **Denominator** | Pointer to **int32** | The number of identities with the corresponding feature | [optional] |
 
 ## Methods
 
@@ -25,18 +26,13 @@ Name | Type | Description | Notes
 
 `func NewFeatureValueDto() *FeatureValueDto`
 
-NewFeatureValueDto instantiates a new FeatureValueDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewFeatureValueDto instantiates a new FeatureValueDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewFeatureValueDtoWithDefaults
 
 `func NewFeatureValueDtoWithDefaults() *FeatureValueDto`
 
-NewFeatureValueDtoWithDefaults instantiates a new FeatureValueDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewFeatureValueDtoWithDefaults instantiates a new FeatureValueDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetFeature
 
@@ -48,8 +44,7 @@ GetFeature returns the Feature field if non-nil, zero value otherwise.
 
 `func (o *FeatureValueDto) GetFeatureOk() (*string, bool)`
 
-GetFeatureOk returns a tuple with the Feature field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFeatureOk returns a tuple with the Feature field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFeature
 
@@ -73,8 +68,7 @@ GetNumerator returns the Numerator field if non-nil, zero value otherwise.
 
 `func (o *FeatureValueDto) GetNumeratorOk() (*int32, bool)`
 
-GetNumeratorOk returns a tuple with the Numerator field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNumeratorOk returns a tuple with the Numerator field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNumerator
 
@@ -98,8 +92,7 @@ GetDenominator returns the Denominator field if non-nil, zero value otherwise.
 
 `func (o *FeatureValueDto) GetDenominatorOk() (*int32, bool)`
 
-GetDenominatorOk returns a tuple with the Denominator field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDenominatorOk returns a tuple with the Denominator field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDenominator
 
@@ -112,5 +105,3 @@ SetDenominator sets Denominator field to given value.
 `func (o *FeatureValueDto) HasDenominator() bool`
 
 HasDenominator returns a boolean if a field has been set.
-
-

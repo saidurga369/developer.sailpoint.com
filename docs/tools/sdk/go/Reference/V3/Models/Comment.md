@@ -4,7 +4,7 @@ title: Comment
 pagination_label: Comment
 sidebar_label: Comment
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Comment', 'Comment'] 
+keywords: ['go', 'Golang', 'sdk', 'Comment', 'Comment']
 slug: /tools/sdk/go/v3/models/comment
 tags: ['SDK', 'Software Development Kit', 'Comment', 'Comment']
 ---
@@ -13,12 +13,12 @@ tags: ['SDK', 'Software Development Kit', 'Comment', 'Comment']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**CommenterId** | Pointer to **string** | Id of the identity making the comment | [optional] 
-**CommenterName** | Pointer to **string** | Human-readable display name of the identity making the comment | [optional] 
-**Body** | Pointer to **string** | Content of the comment | [optional] 
-**Date** | Pointer to **SailPointTime** | Date and time comment was made | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **CommenterId** | Pointer to **string** | Id of the identity making the comment | [optional] |
+| **CommenterName** | Pointer to **string** | Human-readable display name of the identity making the comment | [optional] |
+| **Body** | Pointer to **string** | Content of the comment | [optional] |
+| **Date** | Pointer to **SailPointTime** | Date and time comment was made | [optional] |
 
 ## Methods
 
@@ -26,18 +26,13 @@ Name | Type | Description | Notes
 
 `func NewComment() *Comment`
 
-NewComment instantiates a new Comment object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewComment instantiates a new Comment object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewCommentWithDefaults
 
 `func NewCommentWithDefaults() *Comment`
 
-NewCommentWithDefaults instantiates a new Comment object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewCommentWithDefaults instantiates a new Comment object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetCommenterId
 
@@ -49,8 +44,7 @@ GetCommenterId returns the CommenterId field if non-nil, zero value otherwise.
 
 `func (o *Comment) GetCommenterIdOk() (*string, bool)`
 
-GetCommenterIdOk returns a tuple with the CommenterId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCommenterIdOk returns a tuple with the CommenterId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCommenterId
 
@@ -74,8 +68,7 @@ GetCommenterName returns the CommenterName field if non-nil, zero value otherwis
 
 `func (o *Comment) GetCommenterNameOk() (*string, bool)`
 
-GetCommenterNameOk returns a tuple with the CommenterName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCommenterNameOk returns a tuple with the CommenterName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCommenterName
 
@@ -99,8 +92,7 @@ GetBody returns the Body field if non-nil, zero value otherwise.
 
 `func (o *Comment) GetBodyOk() (*string, bool)`
 
-GetBodyOk returns a tuple with the Body field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetBodyOk returns a tuple with the Body field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetBody
 
@@ -124,8 +116,7 @@ GetDate returns the Date field if non-nil, zero value otherwise.
 
 `func (o *Comment) GetDateOk() (*SailPointTime, bool)`
 
-GetDateOk returns a tuple with the Date field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDateOk returns a tuple with the Date field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDate
 
@@ -138,5 +129,3 @@ SetDate sets Date field to given value.
 `func (o *Comment) HasDate() bool`
 
 HasDate returns a boolean if a field has been set.
-
-

@@ -4,22 +4,35 @@ title: ClusterManualUpgradeJobsInnerManagedProcessConfiguration
 pagination_label: ClusterManualUpgradeJobsInnerManagedProcessConfiguration
 sidebar_label: ClusterManualUpgradeJobsInnerManagedProcessConfiguration
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ClusterManualUpgradeJobsInnerManagedProcessConfiguration', 'V2024ClusterManualUpgradeJobsInnerManagedProcessConfiguration'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ClusterManualUpgradeJobsInnerManagedProcessConfiguration',
+    'V2024ClusterManualUpgradeJobsInnerManagedProcessConfiguration',
+  ]
 slug: /tools/sdk/go/v2024/models/cluster-manual-upgrade-jobs-inner-managed-process-configuration
-tags: ['SDK', 'Software Development Kit', 'ClusterManualUpgradeJobsInnerManagedProcessConfiguration', 'V2024ClusterManualUpgradeJobsInnerManagedProcessConfiguration']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ClusterManualUpgradeJobsInnerManagedProcessConfiguration',
+    'V2024ClusterManualUpgradeJobsInnerManagedProcessConfiguration',
+  ]
 ---
 
 # ClusterManualUpgradeJobsInnerManagedProcessConfiguration
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Charon** | Pointer to [**ClusterManualUpgradeJobsInnerManagedProcessConfigurationCharon**](cluster-manual-upgrade-jobs-inner-managed-process-configuration-charon) |  | [optional] 
-**Ccg** | Pointer to [**ClusterManualUpgradeJobsInnerManagedProcessConfigurationCcg**](cluster-manual-upgrade-jobs-inner-managed-process-configuration-ccg) |  | [optional] 
-**OtelAgent** | Pointer to [**ClusterManualUpgradeJobsInnerManagedProcessConfigurationOtelAgent**](cluster-manual-upgrade-jobs-inner-managed-process-configuration-otel-agent) |  | [optional] 
-**Relay** | Pointer to [**ClusterManualUpgradeJobsInnerManagedProcessConfigurationRelay**](cluster-manual-upgrade-jobs-inner-managed-process-configuration-relay) |  | [optional] 
-**Toolbox** | Pointer to [**ClusterManualUpgradeJobsInnerManagedProcessConfigurationToolbox**](cluster-manual-upgrade-jobs-inner-managed-process-configuration-toolbox) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Charon** | Pointer to [**ClusterManualUpgradeJobsInnerManagedProcessConfigurationCharon**](cluster-manual-upgrade-jobs-inner-managed-process-configuration-charon) |  | [optional] |
+| **Ccg** | Pointer to [**ClusterManualUpgradeJobsInnerManagedProcessConfigurationCcg**](cluster-manual-upgrade-jobs-inner-managed-process-configuration-ccg) |  | [optional] |
+| **OtelAgent** | Pointer to [**ClusterManualUpgradeJobsInnerManagedProcessConfigurationOtelAgent**](cluster-manual-upgrade-jobs-inner-managed-process-configuration-otel-agent) |  | [optional] |
+| **Relay** | Pointer to [**ClusterManualUpgradeJobsInnerManagedProcessConfigurationRelay**](cluster-manual-upgrade-jobs-inner-managed-process-configuration-relay) |  | [optional] |
+| **Toolbox** | Pointer to [**ClusterManualUpgradeJobsInnerManagedProcessConfigurationToolbox**](cluster-manual-upgrade-jobs-inner-managed-process-configuration-toolbox) |  | [optional] |
 
 ## Methods
 
@@ -27,18 +40,13 @@ Name | Type | Description | Notes
 
 `func NewClusterManualUpgradeJobsInnerManagedProcessConfiguration() *ClusterManualUpgradeJobsInnerManagedProcessConfiguration`
 
-NewClusterManualUpgradeJobsInnerManagedProcessConfiguration instantiates a new ClusterManualUpgradeJobsInnerManagedProcessConfiguration object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewClusterManualUpgradeJobsInnerManagedProcessConfiguration instantiates a new ClusterManualUpgradeJobsInnerManagedProcessConfiguration object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewClusterManualUpgradeJobsInnerManagedProcessConfigurationWithDefaults
 
 `func NewClusterManualUpgradeJobsInnerManagedProcessConfigurationWithDefaults() *ClusterManualUpgradeJobsInnerManagedProcessConfiguration`
 
-NewClusterManualUpgradeJobsInnerManagedProcessConfigurationWithDefaults instantiates a new ClusterManualUpgradeJobsInnerManagedProcessConfiguration object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewClusterManualUpgradeJobsInnerManagedProcessConfigurationWithDefaults instantiates a new ClusterManualUpgradeJobsInnerManagedProcessConfiguration object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetCharon
 
@@ -50,8 +58,7 @@ GetCharon returns the Charon field if non-nil, zero value otherwise.
 
 `func (o *ClusterManualUpgradeJobsInnerManagedProcessConfiguration) GetCharonOk() (*ClusterManualUpgradeJobsInnerManagedProcessConfigurationCharon, bool)`
 
-GetCharonOk returns a tuple with the Charon field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCharonOk returns a tuple with the Charon field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCharon
 
@@ -75,8 +82,7 @@ GetCcg returns the Ccg field if non-nil, zero value otherwise.
 
 `func (o *ClusterManualUpgradeJobsInnerManagedProcessConfiguration) GetCcgOk() (*ClusterManualUpgradeJobsInnerManagedProcessConfigurationCcg, bool)`
 
-GetCcgOk returns a tuple with the Ccg field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCcgOk returns a tuple with the Ccg field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCcg
 
@@ -100,8 +106,7 @@ GetOtelAgent returns the OtelAgent field if non-nil, zero value otherwise.
 
 `func (o *ClusterManualUpgradeJobsInnerManagedProcessConfiguration) GetOtelAgentOk() (*ClusterManualUpgradeJobsInnerManagedProcessConfigurationOtelAgent, bool)`
 
-GetOtelAgentOk returns a tuple with the OtelAgent field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOtelAgentOk returns a tuple with the OtelAgent field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOtelAgent
 
@@ -125,8 +130,7 @@ GetRelay returns the Relay field if non-nil, zero value otherwise.
 
 `func (o *ClusterManualUpgradeJobsInnerManagedProcessConfiguration) GetRelayOk() (*ClusterManualUpgradeJobsInnerManagedProcessConfigurationRelay, bool)`
 
-GetRelayOk returns a tuple with the Relay field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRelayOk returns a tuple with the Relay field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRelay
 
@@ -150,8 +154,7 @@ GetToolbox returns the Toolbox field if non-nil, zero value otherwise.
 
 `func (o *ClusterManualUpgradeJobsInnerManagedProcessConfiguration) GetToolboxOk() (*ClusterManualUpgradeJobsInnerManagedProcessConfigurationToolbox, bool)`
 
-GetToolboxOk returns a tuple with the Toolbox field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetToolboxOk returns a tuple with the Toolbox field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetToolbox
 
@@ -164,5 +167,3 @@ SetToolbox sets Toolbox field to given value.
 `func (o *ClusterManualUpgradeJobsInnerManagedProcessConfiguration) HasToolbox() bool`
 
 HasToolbox returns a boolean if a field has been set.
-
-

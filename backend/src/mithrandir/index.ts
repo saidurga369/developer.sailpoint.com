@@ -51,7 +51,10 @@ const ddbClient = process.env.ENDPOINT_OVERRIDE
 const ddbDocClient = DynamoDBDocumentClient.from(ddbClient);
 
 // Helper functions
-async function validateApiUrl(apiBaseURL?: string, tenant?: string): Promise<string> {
+async function validateApiUrl(
+  apiBaseURL?: string,
+  tenant?: string,
+): Promise<string> {
   if (!apiBaseURL && !tenant) {
     throw new HTTPException(400, {
       message: 'apiBaseURL or tenant must be provided',
@@ -162,11 +165,7 @@ function encryptToken(tokenData: any, encryptionKey: string) {
   const encryptionKeyBuffer = Buffer.from(encryptionKey, 'hex');
   const cipher = createCipheriv('aes-256-cbc', encryptionKeyBuffer, iv);
 
-  let encryptedToken = cipher.update(
-    JSON.stringify(tokenData),
-    'utf8',
-    'hex',
-  );
+  let encryptedToken = cipher.update(JSON.stringify(tokenData), 'utf8', 'hex');
   encryptedToken += cipher.final('hex');
 
   return iv.toString('hex') + ':' + encryptedToken;
@@ -225,7 +224,7 @@ app.post('/Prod/sailapps/uuid', async (c) => {
 });
 
 // Exchange the code for a token
-app.post('/Prod/sailapps/code', async (c) => {  
+app.post('/Prod/sailapps/code', async (c) => {
   const {state, code} = c.req.query();
 
   if (!code) {

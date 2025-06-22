@@ -4,21 +4,22 @@ title: SodExemptCriteria
 pagination_label: SodExemptCriteria
 sidebar_label: SodExemptCriteria
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SodExemptCriteria', 'SodExemptCriteria'] 
+keywords: ['go', 'Golang', 'sdk', 'SodExemptCriteria', 'SodExemptCriteria']
 slug: /tools/sdk/go/v3/models/sod-exempt-criteria
-tags: ['SDK', 'Software Development Kit', 'SodExemptCriteria', 'SodExemptCriteria']
+tags:
+  ['SDK', 'Software Development Kit', 'SodExemptCriteria', 'SodExemptCriteria']
 ---
 
 # SodExemptCriteria
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Existing** | Pointer to **bool** | If the entitlement already belonged to the user or not. | [optional] [default to false]
-**Type** | Pointer to [**DtoType**](dto-type) |  | [optional] 
-**Id** | Pointer to **string** | Entitlement ID | [optional] 
-**Name** | Pointer to **string** | Entitlement name | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Existing** | Pointer to **bool** | If the entitlement already belonged to the user or not. | [optional] [default to false] |
+| **Type** | Pointer to [**DtoType**](dto-type) |  | [optional] |
+| **Id** | Pointer to **string** | Entitlement ID | [optional] |
+| **Name** | Pointer to **string** | Entitlement name | [optional] |
 
 ## Methods
 
@@ -26,18 +27,13 @@ Name | Type | Description | Notes
 
 `func NewSodExemptCriteria() *SodExemptCriteria`
 
-NewSodExemptCriteria instantiates a new SodExemptCriteria object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSodExemptCriteria instantiates a new SodExemptCriteria object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSodExemptCriteriaWithDefaults
 
 `func NewSodExemptCriteriaWithDefaults() *SodExemptCriteria`
 
-NewSodExemptCriteriaWithDefaults instantiates a new SodExemptCriteria object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSodExemptCriteriaWithDefaults instantiates a new SodExemptCriteria object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetExisting
 
@@ -49,8 +45,7 @@ GetExisting returns the Existing field if non-nil, zero value otherwise.
 
 `func (o *SodExemptCriteria) GetExistingOk() (*bool, bool)`
 
-GetExistingOk returns a tuple with the Existing field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetExistingOk returns a tuple with the Existing field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetExisting
 
@@ -74,8 +69,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *SodExemptCriteria) GetTypeOk() (*DtoType, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -99,8 +93,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *SodExemptCriteria) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -124,8 +117,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *SodExemptCriteria) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -138,5 +130,3 @@ SetName sets Name field to given value.
 `func (o *SodExemptCriteria) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

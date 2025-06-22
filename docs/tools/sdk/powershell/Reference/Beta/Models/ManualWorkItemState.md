@@ -4,29 +4,38 @@ title: ManualWorkItemState
 pagination_label: ManualWorkItemState
 sidebar_label: ManualWorkItemState
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'ManualWorkItemState', 'BetaManualWorkItemState'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'ManualWorkItemState',
+    'BetaManualWorkItemState',
+  ]
 slug: /tools/sdk/powershell/beta/models/manual-work-item-state
-tags: ['SDK', 'Software Development Kit', 'ManualWorkItemState', 'BetaManualWorkItemState']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ManualWorkItemState',
+    'BetaManualWorkItemState',
+  ]
 ---
-
 
 # ManualWorkItemState
 
 ## Enum
 
+- `PENDING` (value: `"PENDING"`)
 
-* `PENDING` (value: `"PENDING"`)
+- `APPROVED` (value: `"APPROVED"`)
 
-* `APPROVED` (value: `"APPROVED"`)
+- `REJECTED` (value: `"REJECTED"`)
 
-* `REJECTED` (value: `"REJECTED"`)
+- `EXPIRED` (value: `"EXPIRED"`)
 
-* `EXPIRED` (value: `"EXPIRED"`)
+- `CANCELLED` (value: `"CANCELLED"`)
 
-* `CANCELLED` (value: `"CANCELLED"`)
+- `ARCHIVED` (value: `"ARCHIVED"`)
 
-* `ARCHIVED` (value: `"ARCHIVED"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

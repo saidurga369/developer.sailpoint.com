@@ -4,21 +4,22 @@ title: TestInvocation
 pagination_label: TestInvocation
 sidebar_label: TestInvocation
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'TestInvocation', 'BetaTestInvocation'] 
+keywords: ['go', 'Golang', 'sdk', 'TestInvocation', 'BetaTestInvocation']
 slug: /tools/sdk/go/beta/models/test-invocation
-tags: ['SDK', 'Software Development Kit', 'TestInvocation', 'BetaTestInvocation']
+tags:
+  ['SDK', 'Software Development Kit', 'TestInvocation', 'BetaTestInvocation']
 ---
 
 # TestInvocation
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**TriggerId** | **string** | Trigger ID | 
-**Input** | Pointer to **map[string]interface{}** | Mock input to use for test invocation.  This must adhere to the input schema defined in the trigger being invoked.  If this property is omitted, then the default trigger sample payload will be sent. | [optional] 
-**ContentJson** | **map[string]interface{}** | JSON map of invocation metadata. | 
-**SubscriptionIds** | Pointer to **[]string** | Only send the test event to the subscription IDs listed.  If omitted, the test event will be sent to all subscribers. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **TriggerId** | **string** | Trigger ID |
+| **Input** | Pointer to **map[string]interface{}** | Mock input to use for test invocation. This must adhere to the input schema defined in the trigger being invoked. If this property is omitted, then the default trigger sample payload will be sent. | [optional] |
+| **ContentJson** | **map[string]interface{}** | JSON map of invocation metadata. |
+| **SubscriptionIds** | Pointer to **[]string** | Only send the test event to the subscription IDs listed. If omitted, the test event will be sent to all subscribers. | [optional] |
 
 ## Methods
 
@@ -26,18 +27,13 @@ Name | Type | Description | Notes
 
 `func NewTestInvocation(triggerId string, contentJson map[string]interface{}, ) *TestInvocation`
 
-NewTestInvocation instantiates a new TestInvocation object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewTestInvocation instantiates a new TestInvocation object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewTestInvocationWithDefaults
 
 `func NewTestInvocationWithDefaults() *TestInvocation`
 
-NewTestInvocationWithDefaults instantiates a new TestInvocation object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewTestInvocationWithDefaults instantiates a new TestInvocation object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetTriggerId
 
@@ -49,15 +45,13 @@ GetTriggerId returns the TriggerId field if non-nil, zero value otherwise.
 
 `func (o *TestInvocation) GetTriggerIdOk() (*string, bool)`
 
-GetTriggerIdOk returns a tuple with the TriggerId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTriggerIdOk returns a tuple with the TriggerId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTriggerId
 
 `func (o *TestInvocation) SetTriggerId(v string)`
 
 SetTriggerId sets TriggerId field to given value.
-
 
 ### GetInput
 
@@ -69,8 +63,7 @@ GetInput returns the Input field if non-nil, zero value otherwise.
 
 `func (o *TestInvocation) GetInputOk() (*map[string]interface{}, bool)`
 
-GetInputOk returns a tuple with the Input field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetInputOk returns a tuple with the Input field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetInput
 
@@ -94,15 +87,13 @@ GetContentJson returns the ContentJson field if non-nil, zero value otherwise.
 
 `func (o *TestInvocation) GetContentJsonOk() (*map[string]interface{}, bool)`
 
-GetContentJsonOk returns a tuple with the ContentJson field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetContentJsonOk returns a tuple with the ContentJson field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetContentJson
 
 `func (o *TestInvocation) SetContentJson(v map[string]interface{})`
 
 SetContentJson sets ContentJson field to given value.
-
 
 ### GetSubscriptionIds
 
@@ -114,8 +105,7 @@ GetSubscriptionIds returns the SubscriptionIds field if non-nil, zero value othe
 
 `func (o *TestInvocation) GetSubscriptionIdsOk() (*[]string, bool)`
 
-GetSubscriptionIdsOk returns a tuple with the SubscriptionIds field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSubscriptionIdsOk returns a tuple with the SubscriptionIds field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSubscriptionIds
 
@@ -128,5 +118,3 @@ SetSubscriptionIds sets SubscriptionIds field to given value.
 `func (o *TestInvocation) HasSubscriptionIds() bool`
 
 HasSubscriptionIds returns a boolean if a field has been set.
-
-

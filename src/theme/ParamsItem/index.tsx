@@ -1,36 +1,35 @@
-import React from "react";
+import React from 'react';
 
-import Markdown from "@theme/Markdown";
-import SchemaTabs from "@theme/SchemaTabs";
-import TabItem from "@theme/TabItem";
+import Markdown from '@theme/Markdown';
+import SchemaTabs from '@theme/SchemaTabs';
+import TabItem from '@theme/TabItem';
 /* eslint-disable import/no-extraneous-dependencies*/
-import clsx from "clsx";
-import { SchemaObject } from "docusaurus-theme-openapi-docs/src/types";
-import { ReactNode } from "react";
-import { useState, useEffect } from "react";
-
+import clsx from 'clsx';
+import {SchemaObject} from 'docusaurus-theme-openapi-docs/src/types';
+import {ReactNode} from 'react';
+import {useState, useEffect} from 'react';
 
 function render(children: ReactNode) {
   if (Array.isArray(children)) {
-    return children.filter((c) => c !== undefined).join("");
+    return children.filter((c) => c !== undefined).join('');
   }
-  return children ?? "";
+  return children ?? '';
 }
 
 export function guard<T>(
   value: T | undefined | string,
-  cb: (value: T) => ReactNode
+  cb: (value: T) => ReactNode,
 ) {
   if (!!value || value === 0) {
     const children = cb(value as T);
     return render(children);
   }
-  return "";
+  return '';
 }
 
 export function toString(value: any): string | undefined {
   // Return as-is if already string
-  if (typeof value === "string") {
+  if (typeof value === 'string') {
     return value;
   }
   // Return undefined if null or undefined
@@ -39,10 +38,10 @@ export function toString(value: any): string | undefined {
   }
   // Return formatted array if Array
   if (Array.isArray(value)) {
-    return `[${value.join(", ")}]`;
+    return `[${value.join(', ')}]`;
   }
   // Coerce to string in all other cases,
-  return value + "";
+  return value + '';
 }
 
 function prettyName(schema, circular?: boolean) {
@@ -51,29 +50,29 @@ function prettyName(schema, circular?: boolean) {
   }
 
   if (schema.allOf) {
-    if (typeof schema.allOf[0] === "string") {
+    if (typeof schema.allOf[0] === 'string') {
       // @ts-ignore
-      if (schema.allOf[0].includes("circular")) {
+      if (schema.allOf[0].includes('circular')) {
         return schema.allOf[0];
       }
     }
-    return "object";
+    return 'object';
   }
 
   if (schema.oneOf) {
-    return "object";
+    return 'object';
   }
 
   if (schema.anyOf) {
-    return "object";
+    return 'object';
   }
 
-  if (schema.type === "object") {
+  if (schema.type === 'object') {
     return schema.xml?.name ?? schema.type;
     // return schema.type;
   }
 
-  if (schema.type === "array") {
+  if (schema.type === 'array') {
     return schema.xml?.name ?? schema.type;
     // return schema.type;
   }
@@ -81,15 +80,12 @@ function prettyName(schema, circular?: boolean) {
   return schema.title ?? schema.type;
 }
 
-function getSchemaName(
-  schema: SchemaObject,
-  circular?: boolean
-): string {
+function getSchemaName(schema: SchemaObject, circular?: boolean): string {
   if (schema.items) {
-    return prettyName(schema.items, circular) + "[]";
+    return prettyName(schema.items, circular) + '[]';
   }
 
-  return prettyName(schema, circular) ?? "";
+  return prettyName(schema, circular) ?? '';
 }
 
 function getQualifierMessage(schema?: SchemaObject): string | undefined {
@@ -110,20 +106,20 @@ function getQualifierMessage(schema?: SchemaObject): string | undefined {
     return getQualifierMessage(schema.items);
   }
 
-  let message = "**Possible values:** ";
+  let message = '**Possible values:** ';
 
   let qualifierGroups = [];
 
   if (schema.items && schema.items.enum) {
     if (schema.items.enum) {
       qualifierGroups.push(
-        `[${schema.items.enum.map((e) => `\`${e}\``).join(", ")}]`
+        `[${schema.items.enum.map((e) => `\`${e}\``).join(', ')}]`,
       );
     }
   }
 
   if (schema.minLength || schema.maxLength) {
-    let lengthQualifier = "";
+    let lengthQualifier = '';
     let minLength;
     let maxLength;
     if (schema.minLength && schema.minLength > 1) {
@@ -152,20 +148,20 @@ function getQualifierMessage(schema?: SchemaObject): string | undefined {
   if (
     schema.minimum ||
     schema.maximum ||
-    typeof schema.exclusiveMinimum === "number" ||
-    typeof schema.exclusiveMaximum === "number"
+    typeof schema.exclusiveMinimum === 'number' ||
+    typeof schema.exclusiveMaximum === 'number'
   ) {
-    let minmaxQualifier = "";
+    let minmaxQualifier = '';
     let minimum;
     let maximum;
-    if (typeof schema.exclusiveMinimum === "number") {
+    if (typeof schema.exclusiveMinimum === 'number') {
       minimum = `\`> ${schema.exclusiveMinimum}\``;
     } else if (schema.minimum && !schema.exclusiveMinimum) {
       minimum = `\`>= ${schema.minimum}\``;
     } else if (schema.minimum && schema.exclusiveMinimum === true) {
       minimum = `\`> ${schema.minimum}\``;
     }
-    if (typeof schema.exclusiveMaximum === "number") {
+    if (typeof schema.exclusiveMaximum === 'number') {
       maximum = `\`< ${schema.exclusiveMaximum}\``;
     } else if (schema.maximum && !schema.exclusiveMaximum) {
       maximum = `\`<= ${schema.maximum}\``;
@@ -188,7 +184,7 @@ function getQualifierMessage(schema?: SchemaObject): string | undefined {
 
   if (schema.pattern) {
     qualifierGroups.push(
-      `Value must match regular expression \`${schema.pattern}\``
+      `Value must match regular expression \`${schema.pattern}\``,
     );
   }
 
@@ -196,11 +192,11 @@ function getQualifierMessage(schema?: SchemaObject): string | undefined {
   const discriminator = schema as any;
   if (discriminator.mapping) {
     const values = Object.keys(discriminator.mapping);
-    qualifierGroups.push(`[${values.map((e) => `\`${e}\``).join(", ")}]`);
+    qualifierGroups.push(`[${values.map((e) => `\`${e}\``).join(', ')}]`);
   }
 
   if (schema.enum) {
-    qualifierGroups.push(`[${schema.enum.map((e) => `\`${e}\``).join(", ")}]`);
+    qualifierGroups.push(`[${schema.enum.map((e) => `\`${e}\``).join(', ')}]`);
   }
 
   if (schema.minItems) {
@@ -215,7 +211,7 @@ function getQualifierMessage(schema?: SchemaObject): string | undefined {
     return undefined;
   }
 
-  return message + qualifierGroups.join(", ");
+  return message + qualifierGroups.join(', ');
 }
 
 interface Map<T> {
@@ -249,16 +245,16 @@ const getEnumDescriptionMarkdown = (enumDescriptions?: [string, string][]) => {
 | ---- | ----- |
 ${enumDescriptions
   .map((desc) => {
-    return `| ${desc[0]} | ${desc[1]} | `.replaceAll("\n", "<br/>");
+    return `| ${desc[0]} | ${desc[1]} | `.replaceAll('\n', '<br/>');
   })
-  .join("\n")}
+  .join('\n')}
     `;
   }
 
-  return "";
+  return '';
 };
 
-function ParamsItem({ param, ...rest }: Props) {
+function ParamsItem({param, ...rest}: Props) {
   const {
     description,
     example,
@@ -273,7 +269,7 @@ function ParamsItem({ param, ...rest }: Props) {
   let defaultValue: string | undefined;
 
   if (!schema || !schema?.type) {
-    schema = { type: "any" };
+    schema = {type: 'any'};
   }
   if (schema) {
     if (schema.items) {
@@ -307,16 +303,16 @@ function ParamsItem({ param, ...rest }: Props) {
     getEnumDescriptionMarkdown(enumDescriptions),
     (value) => {
       return (
-        <div style={{ marginTop: ".5rem" }}>
+        <div style={{marginTop: '.5rem'}}>
           <Markdown>{value}</Markdown>
         </div>
       );
-    }
+    },
   );
 
   function renderDefaultValue() {
     if (defaultValue !== undefined) {
-      if (typeof defaultValue === "string") {
+      if (typeof defaultValue === 'string') {
         return (
           <div>
             <strong>Default value: </strong>
@@ -378,15 +374,17 @@ function ParamsItem({ param, ...rest }: Props) {
 
   function camelToTitleCase(str: string) {
     return str
-        .replace(/([A-Z])/g, ' $1') // Insert space before capital letters
-        .replace(/^./, match => match.toUpperCase()) // Capitalize the first letter
-        .trim();
-}
+      .replace(/([A-Z])/g, ' $1') // Insert space before capital letters
+      .replace(/^./, (match) => match.toUpperCase()) // Capitalize the first letter
+      .trim();
+  }
 
-  async function checkFirstAvailableUrl(urls: string[]): Promise<string | null> {
+  async function checkFirstAvailableUrl(
+    urls: string[],
+  ): Promise<string | null> {
     for (const url of urls) {
       try {
-        const response = await fetch(url, { method: "HEAD" });
+        const response = await fetch(url, {method: 'HEAD'});
         if (response.ok) {
           return url;
         }
@@ -396,53 +394,67 @@ function ParamsItem({ param, ...rest }: Props) {
     }
     return null;
   }
-  
 
   function renderSailPointResource() {
-    if (param["x-sailpoint-resource-operation-id"]) {
-      return <RenderSailPointResource operationId={param["x-sailpoint-resource-operation-id"]} />;
+    if (param['x-sailpoint-resource-operation-id']) {
+      return (
+        <RenderSailPointResource
+          operationId={param['x-sailpoint-resource-operation-id']}
+        />
+      );
     }
   }
 
-  function RenderSailPointResource({ operationId }: { operationId: string }) {
+  function RenderSailPointResource({operationId}: {operationId: string}) {
     const [resourceLink, setResourceLink] = useState<string | null>(null);
-  
+
     useEffect(() => {
       async function fetchAvailableUrl() {
         const baseUrls = [
-          `https://developer.sailpoint.com/docs/api/v2025/${camelToKebab(operationId)}`,
-          `https://developer.sailpoint.com/docs/api/v2024/${camelToKebab(operationId)}`,
-          `https://developer.sailpoint.com/docs/api/v3/${camelToKebab(operationId)}`,
-          `https://developer.sailpoint.com/docs/api/beta/${camelToKebab(operationId)}`,
+          `https://developer.sailpoint.com/docs/api/v2025/${camelToKebab(
+            operationId,
+          )}`,
+          `https://developer.sailpoint.com/docs/api/v2024/${camelToKebab(
+            operationId,
+          )}`,
+          `https://developer.sailpoint.com/docs/api/v3/${camelToKebab(
+            operationId,
+          )}`,
+          `https://developer.sailpoint.com/docs/api/beta/${camelToKebab(
+            operationId,
+          )}`,
         ];
         const availableUrl = await checkFirstAvailableUrl(baseUrls);
         setResourceLink(availableUrl);
       }
-  
+
       fetchAvailableUrl();
     }, [operationId]);
-  
+
     if (resourceLink) {
       return (
         <>
-         <text>Found in </text>
-          <a href={resourceLink} id="operationIdLink" target="_blank" rel="noopener noreferrer"  style={{ color: 'var(--ifm-color-primary)' }}>
-           {camelToTitleCase(operationId)}
+          <text>Found in </text>
+          <a
+            href={resourceLink}
+            id="operationIdLink"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{color: 'var(--ifm-color-primary)'}}>
+            {camelToTitleCase(operationId)}
           </a>
         </>
       );
     }
   }
-  
 
   return (
     <div className="openapi-params__list-item">
       <span className="openapi-schema__container">
         <strong
-          className={clsx("openapi-schema__property", {
-            "openapi-schema__strikethrough": deprecated,
-          })}
-        >
+          className={clsx('openapi-schema__property', {
+            'openapi-schema__strikethrough': deprecated,
+          })}>
           {name}
         </strong>
         {renderSchemaName}

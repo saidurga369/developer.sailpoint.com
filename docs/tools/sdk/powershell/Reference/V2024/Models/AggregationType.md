@@ -4,21 +4,19 @@ title: AggregationType
 pagination_label: AggregationType
 sidebar_label: AggregationType
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'AggregationType', 'V2024AggregationType'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'AggregationType', 'V2024AggregationType']
 slug: /tools/sdk/powershell/v2024/models/aggregation-type
-tags: ['SDK', 'Software Development Kit', 'AggregationType', 'V2024AggregationType']
+tags:
+  ['SDK', 'Software Development Kit', 'AggregationType', 'V2024AggregationType']
 ---
-
 
 # AggregationType
 
 ## Enum
 
+- `DSL` (value: `"DSL"`)
 
-* `DSL` (value: `"DSL"`)
+- `SAILPOINT` (value: `"SAILPOINT"`)
 
-* `SAILPOINT` (value: `"SAILPOINT"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

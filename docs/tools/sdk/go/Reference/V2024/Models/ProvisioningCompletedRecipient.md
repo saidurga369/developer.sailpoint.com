@@ -4,20 +4,33 @@ title: ProvisioningCompletedRecipient
 pagination_label: ProvisioningCompletedRecipient
 sidebar_label: ProvisioningCompletedRecipient
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ProvisioningCompletedRecipient', 'V2024ProvisioningCompletedRecipient'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ProvisioningCompletedRecipient',
+    'V2024ProvisioningCompletedRecipient',
+  ]
 slug: /tools/sdk/go/v2024/models/provisioning-completed-recipient
-tags: ['SDK', 'Software Development Kit', 'ProvisioningCompletedRecipient', 'V2024ProvisioningCompletedRecipient']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ProvisioningCompletedRecipient',
+    'V2024ProvisioningCompletedRecipient',
+  ]
 ---
 
 # ProvisioningCompletedRecipient
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | **string** | Provisioning recipient DTO type. | 
-**Id** | **string** | Provisioning recipient's identity ID. | 
-**Name** | **string** | Provisioning recipient's display name. | 
+| Name     | Type       | Description                            | Notes |
+| -------- | ---------- | -------------------------------------- | ----- |
+| **Type** | **string** | Provisioning recipient DTO type.       |
+| **Id**   | **string** | Provisioning recipient's identity ID.  |
+| **Name** | **string** | Provisioning recipient's display name. |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewProvisioningCompletedRecipient(type_ string, id string, name string, ) *ProvisioningCompletedRecipient`
 
-NewProvisioningCompletedRecipient instantiates a new ProvisioningCompletedRecipient object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewProvisioningCompletedRecipient instantiates a new ProvisioningCompletedRecipient object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewProvisioningCompletedRecipientWithDefaults
 
 `func NewProvisioningCompletedRecipientWithDefaults() *ProvisioningCompletedRecipient`
 
-NewProvisioningCompletedRecipientWithDefaults instantiates a new ProvisioningCompletedRecipient object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewProvisioningCompletedRecipientWithDefaults instantiates a new ProvisioningCompletedRecipient object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -48,15 +56,13 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *ProvisioningCompletedRecipient) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
 `func (o *ProvisioningCompletedRecipient) SetType(v string)`
 
 SetType sets Type field to given value.
-
 
 ### GetId
 
@@ -68,15 +74,13 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *ProvisioningCompletedRecipient) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
 `func (o *ProvisioningCompletedRecipient) SetId(v string)`
 
 SetId sets Id field to given value.
-
 
 ### GetName
 
@@ -88,14 +92,10 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *ProvisioningCompletedRecipient) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
 `func (o *ProvisioningCompletedRecipient) SetName(v string)`
 
 SetName sets Name field to given value.
-
-
-

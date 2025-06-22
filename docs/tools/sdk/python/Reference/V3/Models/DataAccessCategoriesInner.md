@@ -4,20 +4,33 @@ title: DataAccessCategoriesInner
 pagination_label: DataAccessCategoriesInner
 sidebar_label: DataAccessCategoriesInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'DataAccessCategoriesInner', 'DataAccessCategoriesInner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'DataAccessCategoriesInner',
+    'DataAccessCategoriesInner',
+  ]
 slug: /tools/sdk/python/v3/models/data-access-categories-inner
-tags: ['SDK', 'Software Development Kit', 'DataAccessCategoriesInner', 'DataAccessCategoriesInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'DataAccessCategoriesInner',
+    'DataAccessCategoriesInner',
+  ]
 ---
 
 # DataAccessCategoriesInner
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**value** | **str** | Value of the category | [optional] 
-**match_count** | **int** | Number of matched for each category | [optional] 
+| Name            | Type    | Description                         | Notes      |
+| --------------- | ------- | ----------------------------------- | ---------- |
+| **value**       | **str** | Value of the category               | [optional] |
+| **match_count** | **int** | Number of matched for each category | [optional] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ match_count=10
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

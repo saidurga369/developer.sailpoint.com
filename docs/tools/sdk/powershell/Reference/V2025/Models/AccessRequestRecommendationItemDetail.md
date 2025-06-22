@@ -4,29 +4,42 @@ title: AccessRequestRecommendationItemDetail
 pagination_label: AccessRequestRecommendationItemDetail
 sidebar_label: AccessRequestRecommendationItemDetail
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'AccessRequestRecommendationItemDetail', 'V2025AccessRequestRecommendationItemDetail'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'AccessRequestRecommendationItemDetail',
+    'V2025AccessRequestRecommendationItemDetail',
+  ]
 slug: /tools/sdk/powershell/v2025/models/access-request-recommendation-item-detail
-tags: ['SDK', 'Software Development Kit', 'AccessRequestRecommendationItemDetail', 'V2025AccessRequestRecommendationItemDetail']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessRequestRecommendationItemDetail',
+    'V2025AccessRequestRecommendationItemDetail',
+  ]
 ---
-
 
 # AccessRequestRecommendationItemDetail
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**IdentityId** | **String** | Identity ID for the recommendation | [optional] 
-**Access** | [**AccessRequestRecommendationItemDetailAccess**](access-request-recommendation-item-detail-access) |  | [optional] 
-**Ignored** | **Boolean** | Whether or not the identity has already chosen to ignore this recommendation. | [optional] 
-**Requested** | **Boolean** | Whether or not the identity has already chosen to request this recommendation. | [optional] 
-**Viewed** | **Boolean** | Whether or not the identity reportedly viewed this recommendation. | [optional] 
-**Messages** | [**[]AccessRecommendationMessage**](access-recommendation-message) |  | [optional] 
-**TranslationMessages** | [**[]TranslationMessage**](translation-message) | The list of translation messages | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **IdentityId** | **String** | Identity ID for the recommendation | [optional] |
+| **Access** | [**AccessRequestRecommendationItemDetailAccess**](access-request-recommendation-item-detail-access) |  | [optional] |
+| **Ignored** | **Boolean** | Whether or not the identity has already chosen to ignore this recommendation. | [optional] |
+| **Requested** | **Boolean** | Whether or not the identity has already chosen to request this recommendation. | [optional] |
+| **Viewed** | **Boolean** | Whether or not the identity reportedly viewed this recommendation. | [optional] |
+| **Messages** | [**[]AccessRecommendationMessage**](access-recommendation-message) |  | [optional] |
+| **TranslationMessages** | [**[]TranslationMessage**](translation-message) | The list of translation messages | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $AccessRequestRecommendationItemDetail = Initialize-V2025AccessRequestRecommendationItemDetail  -IdentityId 2c91808570313110017040b06f344ec9 `
  -Access null `
@@ -38,10 +51,9 @@ $AccessRequestRecommendationItemDetail = Initialize-V2025AccessRequestRecommenda
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $AccessRequestRecommendationItemDetail | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

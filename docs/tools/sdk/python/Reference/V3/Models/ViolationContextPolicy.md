@@ -4,9 +4,22 @@ title: ViolationContextPolicy
 pagination_label: ViolationContextPolicy
 sidebar_label: ViolationContextPolicy
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ViolationContextPolicy', 'ViolationContextPolicy'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ViolationContextPolicy',
+    'ViolationContextPolicy',
+  ]
 slug: /tools/sdk/python/v3/models/violation-context-policy
-tags: ['SDK', 'Software Development Kit', 'ViolationContextPolicy', 'ViolationContextPolicy']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ViolationContextPolicy',
+    'ViolationContextPolicy',
+  ]
 ---
 
 # ViolationContextPolicy
@@ -15,11 +28,12 @@ The types of objects supported for SOD violations
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'ENTITLEMENT' ] | The type of object that is referenced | [optional] 
-**id** | **str** | SOD policy ID. | [optional] 
-**name** | **str** |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'ENTITLEMENT' ] | The type of object that is referenced | [optional] |
+| **id** | **str** | SOD policy ID. | [optional] |
+| **name** | **str** |  | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='A very cool policy name'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

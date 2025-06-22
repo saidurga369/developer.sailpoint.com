@@ -4,20 +4,27 @@ title: AccountRequestInfo
 pagination_label: AccountRequestInfo
 sidebar_label: AccountRequestInfo
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccountRequestInfo', 'V2024AccountRequestInfo'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'AccountRequestInfo', 'V2024AccountRequestInfo']
 slug: /tools/sdk/go/v2024/models/account-request-info
-tags: ['SDK', 'Software Development Kit', 'AccountRequestInfo', 'V2024AccountRequestInfo']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountRequestInfo',
+    'V2024AccountRequestInfo',
+  ]
 ---
 
 # AccountRequestInfo
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**RequestedObjectId** | Pointer to **string** | Id of requested object | [optional] 
-**RequestedObjectName** | Pointer to **string** | Human-readable name of requested object | [optional] 
-**RequestedObjectType** | Pointer to [**RequestableObjectType**](requestable-object-type) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **RequestedObjectId** | Pointer to **string** | Id of requested object | [optional] |
+| **RequestedObjectName** | Pointer to **string** | Human-readable name of requested object | [optional] |
+| **RequestedObjectType** | Pointer to [**RequestableObjectType**](requestable-object-type) |  | [optional] |
 
 ## Methods
 
@@ -25,18 +32,13 @@ Name | Type | Description | Notes
 
 `func NewAccountRequestInfo() *AccountRequestInfo`
 
-NewAccountRequestInfo instantiates a new AccountRequestInfo object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccountRequestInfo instantiates a new AccountRequestInfo object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccountRequestInfoWithDefaults
 
 `func NewAccountRequestInfoWithDefaults() *AccountRequestInfo`
 
-NewAccountRequestInfoWithDefaults instantiates a new AccountRequestInfo object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccountRequestInfoWithDefaults instantiates a new AccountRequestInfo object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetRequestedObjectId
 
@@ -48,8 +50,7 @@ GetRequestedObjectId returns the RequestedObjectId field if non-nil, zero value 
 
 `func (o *AccountRequestInfo) GetRequestedObjectIdOk() (*string, bool)`
 
-GetRequestedObjectIdOk returns a tuple with the RequestedObjectId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestedObjectIdOk returns a tuple with the RequestedObjectId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequestedObjectId
 
@@ -73,8 +74,7 @@ GetRequestedObjectName returns the RequestedObjectName field if non-nil, zero va
 
 `func (o *AccountRequestInfo) GetRequestedObjectNameOk() (*string, bool)`
 
-GetRequestedObjectNameOk returns a tuple with the RequestedObjectName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestedObjectNameOk returns a tuple with the RequestedObjectName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequestedObjectName
 
@@ -98,8 +98,7 @@ GetRequestedObjectType returns the RequestedObjectType field if non-nil, zero va
 
 `func (o *AccountRequestInfo) GetRequestedObjectTypeOk() (*RequestableObjectType, bool)`
 
-GetRequestedObjectTypeOk returns a tuple with the RequestedObjectType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestedObjectTypeOk returns a tuple with the RequestedObjectType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequestedObjectType
 
@@ -112,5 +111,3 @@ SetRequestedObjectType sets RequestedObjectType field to given value.
 `func (o *AccountRequestInfo) HasRequestedObjectType() bool`
 
 HasRequestedObjectType returns a boolean if a field has been set.
-
-

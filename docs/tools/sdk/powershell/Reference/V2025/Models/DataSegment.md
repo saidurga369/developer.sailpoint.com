@@ -4,33 +4,33 @@ title: DataSegment
 pagination_label: DataSegment
 sidebar_label: DataSegment
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'DataSegment', 'V2025DataSegment'] 
+keywords: ['powershell', 'PowerShell', 'sdk', 'DataSegment', 'V2025DataSegment']
 slug: /tools/sdk/powershell/v2025/models/data-segment
 tags: ['SDK', 'Software Development Kit', 'DataSegment', 'V2025DataSegment']
 ---
-
 
 # DataSegment
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | The segment's ID. | [optional] 
-**Name** | **String** | The segment's business name. | [optional] 
-**Created** | **System.DateTime** | The time when the segment is created. | [optional] 
-**Modified** | **System.DateTime** | The time when the segment is modified. | [optional] 
-**Description** | **String** | The segment's optional description. | [optional] 
-**Scopes** | [**[]Scope**](scope) | List of Scopes that are assigned to the segment | [optional] 
-**MemberSelection** | [**[]Ref**](ref) | List of Identities that are assigned to the segment | [optional] 
-**MemberFilter** | [**VisibilityCriteria**](visibility-criteria) |  | [optional] 
-**Membership** | [**MembershipType**](membership-type) |  | [optional] 
-**Enabled** | **Boolean** | This boolean indicates whether the segment is currently active. Inactive segments have no effect. | [optional] [default to $false]
-**Published** | **Boolean** | This boolean indicates whether the segment is being applied to the accounts. If unpublished its being actively modified to until published | [optional] [default to $false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | The segment's ID. | [optional] |
+| **Name** | **String** | The segment's business name. | [optional] |
+| **Created** | **System.DateTime** | The time when the segment is created. | [optional] |
+| **Modified** | **System.DateTime** | The time when the segment is modified. | [optional] |
+| **Description** | **String** | The segment's optional description. | [optional] |
+| **Scopes** | [**[]Scope**](scope) | List of Scopes that are assigned to the segment | [optional] |
+| **MemberSelection** | [**[]Ref**](ref) | List of Identities that are assigned to the segment | [optional] |
+| **MemberFilter** | [**VisibilityCriteria**](visibility-criteria) |  | [optional] |
+| **Membership** | [**MembershipType**](membership-type) |  | [optional] |
+| **Enabled** | **Boolean** | This boolean indicates whether the segment is currently active. Inactive segments have no effect. | [optional] [default to $false] |
+| **Published** | **Boolean** | This boolean indicates whether the segment is being applied to the accounts. If unpublished its being actively modified to until published | [optional] [default to $false] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $DataSegment = Initialize-V2025DataSegment  -Id 0f11f2a4-7c94-4bf3-a2bd-742580fe3bde `
  -Name segment-xyz `
@@ -46,10 +46,9 @@ $DataSegment = Initialize-V2025DataSegment  -Id 0f11f2a4-7c94-4bf3-a2bd-742580fe
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $DataSegment | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

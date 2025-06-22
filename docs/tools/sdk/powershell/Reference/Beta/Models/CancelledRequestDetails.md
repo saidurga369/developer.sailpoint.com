@@ -4,25 +4,38 @@ title: CancelledRequestDetails
 pagination_label: CancelledRequestDetails
 sidebar_label: CancelledRequestDetails
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'CancelledRequestDetails', 'BetaCancelledRequestDetails'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'CancelledRequestDetails',
+    'BetaCancelledRequestDetails',
+  ]
 slug: /tools/sdk/powershell/beta/models/cancelled-request-details
-tags: ['SDK', 'Software Development Kit', 'CancelledRequestDetails', 'BetaCancelledRequestDetails']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CancelledRequestDetails',
+    'BetaCancelledRequestDetails',
+  ]
 ---
-
 
 # CancelledRequestDetails
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Comment** | **String** | Comment made by the owner when cancelling the associated request. | [optional] 
-**Owner** | [**OwnerDto**](owner-dto) |  | [optional] 
-**Modified** | **System.DateTime** | Date comment was added by the owner when cancelling the associated request. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Comment** | **String** | Comment made by the owner when cancelling the associated request. | [optional] |
+| **Owner** | [**OwnerDto**](owner-dto) |  | [optional] |
+| **Modified** | **System.DateTime** | Date comment was added by the owner when cancelling the associated request. | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $CancelledRequestDetails = Initialize-BetaCancelledRequestDetails  -Comment This request must be cancelled. `
  -Owner null `
@@ -30,10 +43,9 @@ $CancelledRequestDetails = Initialize-BetaCancelledRequestDetails  -Comment This
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $CancelledRequestDetails | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

@@ -4,24 +4,31 @@ title: SourceConnectionsDto
 pagination_label: SourceConnectionsDto
 sidebar_label: SourceConnectionsDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SourceConnectionsDto', 'V2025SourceConnectionsDto'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'SourceConnectionsDto', 'V2025SourceConnectionsDto']
 slug: /tools/sdk/go/v2025/models/source-connections-dto
-tags: ['SDK', 'Software Development Kit', 'SourceConnectionsDto', 'V2025SourceConnectionsDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SourceConnectionsDto',
+    'V2025SourceConnectionsDto',
+  ]
 ---
 
 # SourceConnectionsDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**IdentityProfiles** | Pointer to [**[]IdentityProfilesConnections**](identity-profiles-connections) | The IdentityProfile attached to this source | [optional] 
-**CredentialProfiles** | Pointer to **[]string** | Name of the CredentialProfile attached to this source | [optional] 
-**SourceAttributes** | Pointer to **[]string** | The attributes attached to this source | [optional] 
-**MappingProfiles** | Pointer to **[]string** | The profiles attached to this source | [optional] 
-**DependentCustomTransforms** | Pointer to [**[]TransformRead**](transform-read) | A list of custom transforms associated with this source. A transform will be considered associated with a source if any attributes of the transform specify the source as the sourceName. | [optional] 
-**DependentApps** | Pointer to [**[]DependantAppConnections**](dependant-app-connections) |  | [optional] 
-**MissingDependents** | Pointer to [**[]DependantConnectionsMissingDto**](dependant-connections-missing-dto) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **IdentityProfiles** | Pointer to [**[]IdentityProfilesConnections**](identity-profiles-connections) | The IdentityProfile attached to this source | [optional] |
+| **CredentialProfiles** | Pointer to **[]string** | Name of the CredentialProfile attached to this source | [optional] |
+| **SourceAttributes** | Pointer to **[]string** | The attributes attached to this source | [optional] |
+| **MappingProfiles** | Pointer to **[]string** | The profiles attached to this source | [optional] |
+| **DependentCustomTransforms** | Pointer to [**[]TransformRead**](transform-read) | A list of custom transforms associated with this source. A transform will be considered associated with a source if any attributes of the transform specify the source as the sourceName. | [optional] |
+| **DependentApps** | Pointer to [**[]DependantAppConnections**](dependant-app-connections) |  | [optional] |
+| **MissingDependents** | Pointer to [**[]DependantConnectionsMissingDto**](dependant-connections-missing-dto) |  | [optional] |
 
 ## Methods
 
@@ -29,18 +36,13 @@ Name | Type | Description | Notes
 
 `func NewSourceConnectionsDto() *SourceConnectionsDto`
 
-NewSourceConnectionsDto instantiates a new SourceConnectionsDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSourceConnectionsDto instantiates a new SourceConnectionsDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSourceConnectionsDtoWithDefaults
 
 `func NewSourceConnectionsDtoWithDefaults() *SourceConnectionsDto`
 
-NewSourceConnectionsDtoWithDefaults instantiates a new SourceConnectionsDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSourceConnectionsDtoWithDefaults instantiates a new SourceConnectionsDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetIdentityProfiles
 
@@ -52,8 +54,7 @@ GetIdentityProfiles returns the IdentityProfiles field if non-nil, zero value ot
 
 `func (o *SourceConnectionsDto) GetIdentityProfilesOk() (*[]IdentityProfilesConnections, bool)`
 
-GetIdentityProfilesOk returns a tuple with the IdentityProfiles field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityProfilesOk returns a tuple with the IdentityProfiles field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityProfiles
 
@@ -77,8 +78,7 @@ GetCredentialProfiles returns the CredentialProfiles field if non-nil, zero valu
 
 `func (o *SourceConnectionsDto) GetCredentialProfilesOk() (*[]string, bool)`
 
-GetCredentialProfilesOk returns a tuple with the CredentialProfiles field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCredentialProfilesOk returns a tuple with the CredentialProfiles field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCredentialProfiles
 
@@ -102,8 +102,7 @@ GetSourceAttributes returns the SourceAttributes field if non-nil, zero value ot
 
 `func (o *SourceConnectionsDto) GetSourceAttributesOk() (*[]string, bool)`
 
-GetSourceAttributesOk returns a tuple with the SourceAttributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceAttributesOk returns a tuple with the SourceAttributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceAttributes
 
@@ -127,8 +126,7 @@ GetMappingProfiles returns the MappingProfiles field if non-nil, zero value othe
 
 `func (o *SourceConnectionsDto) GetMappingProfilesOk() (*[]string, bool)`
 
-GetMappingProfilesOk returns a tuple with the MappingProfiles field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMappingProfilesOk returns a tuple with the MappingProfiles field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMappingProfiles
 
@@ -152,8 +150,7 @@ GetDependentCustomTransforms returns the DependentCustomTransforms field if non-
 
 `func (o *SourceConnectionsDto) GetDependentCustomTransformsOk() (*[]TransformRead, bool)`
 
-GetDependentCustomTransformsOk returns a tuple with the DependentCustomTransforms field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDependentCustomTransformsOk returns a tuple with the DependentCustomTransforms field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDependentCustomTransforms
 
@@ -177,8 +174,7 @@ GetDependentApps returns the DependentApps field if non-nil, zero value otherwis
 
 `func (o *SourceConnectionsDto) GetDependentAppsOk() (*[]DependantAppConnections, bool)`
 
-GetDependentAppsOk returns a tuple with the DependentApps field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDependentAppsOk returns a tuple with the DependentApps field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDependentApps
 
@@ -202,8 +198,7 @@ GetMissingDependents returns the MissingDependents field if non-nil, zero value 
 
 `func (o *SourceConnectionsDto) GetMissingDependentsOk() (*[]DependantConnectionsMissingDto, bool)`
 
-GetMissingDependentsOk returns a tuple with the MissingDependents field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMissingDependentsOk returns a tuple with the MissingDependents field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMissingDependents
 
@@ -216,5 +211,3 @@ SetMissingDependents sets MissingDependents field to given value.
 `func (o *SourceConnectionsDto) HasMissingDependents() bool`
 
 HasMissingDependents returns a boolean if a field has been set.
-
-

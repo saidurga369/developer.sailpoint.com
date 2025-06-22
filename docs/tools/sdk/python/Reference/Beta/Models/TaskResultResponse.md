@@ -4,21 +4,28 @@ title: TaskResultResponse
 pagination_label: TaskResultResponse
 sidebar_label: TaskResultResponse
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'TaskResultResponse', 'BetaTaskResultResponse'] 
+keywords:
+  ['python', 'Python', 'sdk', 'TaskResultResponse', 'BetaTaskResultResponse']
 slug: /tools/sdk/python/beta/models/task-result-response
-tags: ['SDK', 'Software Development Kit', 'TaskResultResponse', 'BetaTaskResultResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'TaskResultResponse',
+    'BetaTaskResultResponse',
+  ]
 ---
 
 # TaskResultResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** | **str** | the type of response reference | [optional] 
-**id** | **str** | the task ID | [optional] 
-**name** | **str** | the task name (not used in this endpoint, always null) | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **str** | the type of response reference | [optional] |
+| **id** | **str** | the task ID | [optional] |
+| **name** | **str** | the task name (not used in this endpoint, always null) | [optional] |
+
 }
 
 ## Example
@@ -33,5 +40,5 @@ name='null'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

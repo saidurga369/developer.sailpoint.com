@@ -4,20 +4,33 @@ title: SearchCriteriaTextQuery
 pagination_label: SearchCriteriaTextQuery
 sidebar_label: SearchCriteriaTextQuery
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SearchCriteriaTextQuery', 'V2025SearchCriteriaTextQuery'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'SearchCriteriaTextQuery',
+    'V2025SearchCriteriaTextQuery',
+  ]
 slug: /tools/sdk/go/v2025/models/search-criteria-text-query
-tags: ['SDK', 'Software Development Kit', 'SearchCriteriaTextQuery', 'V2025SearchCriteriaTextQuery']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SearchCriteriaTextQuery',
+    'V2025SearchCriteriaTextQuery',
+  ]
 ---
 
 # SearchCriteriaTextQuery
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Terms** | Pointer to **[]string** | Terms to search for. | [optional] 
-**Fields** | Pointer to **[]string** | Fields to search within. | [optional] 
-**MatchAny** | Pointer to **bool** | Whether to match any of the terms. | [optional] [default to false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Terms** | Pointer to **[]string** | Terms to search for. | [optional] |
+| **Fields** | Pointer to **[]string** | Fields to search within. | [optional] |
+| **MatchAny** | Pointer to **bool** | Whether to match any of the terms. | [optional] [default to false] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewSearchCriteriaTextQuery() *SearchCriteriaTextQuery`
 
-NewSearchCriteriaTextQuery instantiates a new SearchCriteriaTextQuery object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSearchCriteriaTextQuery instantiates a new SearchCriteriaTextQuery object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSearchCriteriaTextQueryWithDefaults
 
 `func NewSearchCriteriaTextQueryWithDefaults() *SearchCriteriaTextQuery`
 
-NewSearchCriteriaTextQueryWithDefaults instantiates a new SearchCriteriaTextQuery object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSearchCriteriaTextQueryWithDefaults instantiates a new SearchCriteriaTextQuery object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetTerms
 
@@ -48,8 +56,7 @@ GetTerms returns the Terms field if non-nil, zero value otherwise.
 
 `func (o *SearchCriteriaTextQuery) GetTermsOk() (*[]string, bool)`
 
-GetTermsOk returns a tuple with the Terms field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTermsOk returns a tuple with the Terms field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTerms
 
@@ -73,8 +80,7 @@ GetFields returns the Fields field if non-nil, zero value otherwise.
 
 `func (o *SearchCriteriaTextQuery) GetFieldsOk() (*[]string, bool)`
 
-GetFieldsOk returns a tuple with the Fields field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFieldsOk returns a tuple with the Fields field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFields
 
@@ -98,8 +104,7 @@ GetMatchAny returns the MatchAny field if non-nil, zero value otherwise.
 
 `func (o *SearchCriteriaTextQuery) GetMatchAnyOk() (*bool, bool)`
 
-GetMatchAnyOk returns a tuple with the MatchAny field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMatchAnyOk returns a tuple with the MatchAny field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMatchAny
 
@@ -112,5 +117,3 @@ SetMatchAny sets MatchAny field to given value.
 `func (o *SearchCriteriaTextQuery) HasMatchAny() bool`
 
 HasMatchAny returns a boolean if a field has been set.
-
-

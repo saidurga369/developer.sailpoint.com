@@ -4,52 +4,48 @@ title: Notifications
 pagination_label: Notifications
 sidebar_label: Notifications
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Notifications', 'BetaNotifications'] 
+keywords: ['go', 'Golang', 'sdk', 'Notifications', 'BetaNotifications']
 slug: /tools/sdk/go/beta/methods/notifications
 tags: ['SDK', 'Software Development Kit', 'Notifications', 'BetaNotifications']
 ---
 
 # NotificationsAPI
-   
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/beta*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create-domain-dkim**](#create-domain-dkim) | **Post** `/verified-domains` | Verify domain address via dkim
-[**create-notification-template**](#create-notification-template) | **Post** `/notification-templates` | Create notification template
-[**create-verified-from-address**](#create-verified-from-address) | **Post** `/verified-from-addresses` | Create verified from address
-[**delete-notification-templates-in-bulk**](#delete-notification-templates-in-bulk) | **Post** `/notification-templates/bulk-delete` | Bulk delete notification templates
-[**delete-verified-from-address**](#delete-verified-from-address) | **Delete** `/verified-from-addresses/{id}` | Delete verified from address
-[**get-dkim-attributes**](#get-dkim-attributes) | **Get** `/verified-domains` | Get dkim attributes
-[**get-mail-from-attributes**](#get-mail-from-attributes) | **Get** `/mail-from-attributes/{identityId}` | Get mail from attributes
-[**get-notification-template**](#get-notification-template) | **Get** `/notification-templates/{id}` | Get notification template by id
-[**get-notifications-template-context**](#get-notifications-template-context) | **Get** `/notification-template-context` | Get notification template context
-[**list-from-addresses**](#list-from-addresses) | **Get** `/verified-from-addresses` | List from addresses
-[**list-notification-preferences**](#list-notification-preferences) | **Get** `/notification-preferences/{key}` | List notification preferences for tenant.
-[**list-notification-template-defaults**](#list-notification-template-defaults) | **Get** `/notification-template-defaults` | List notification template defaults
-[**list-notification-templates**](#list-notification-templates) | **Get** `/notification-templates` | List notification templates
-[**put-mail-from-attributes**](#put-mail-from-attributes) | **Put** `/mail-from-attributes` | Change mail from domain
-[**send-test-notification**](#send-test-notification) | **Post** `/send-test-notification` | Send test notification
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**create-domain-dkim**](#create-domain-dkim) | **Post** `/verified-domains` | Verify domain address via dkim |
+| [**create-notification-template**](#create-notification-template) | **Post** `/notification-templates` | Create notification template |
+| [**create-verified-from-address**](#create-verified-from-address) | **Post** `/verified-from-addresses` | Create verified from address |
+| [**delete-notification-templates-in-bulk**](#delete-notification-templates-in-bulk) | **Post** `/notification-templates/bulk-delete` | Bulk delete notification templates |
+| [**delete-verified-from-address**](#delete-verified-from-address) | **Delete** `/verified-from-addresses/{id}` | Delete verified from address |
+| [**get-dkim-attributes**](#get-dkim-attributes) | **Get** `/verified-domains` | Get dkim attributes |
+| [**get-mail-from-attributes**](#get-mail-from-attributes) | **Get** `/mail-from-attributes/{identityId}` | Get mail from attributes |
+| [**get-notification-template**](#get-notification-template) | **Get** `/notification-templates/{id}` | Get notification template by id |
+| [**get-notifications-template-context**](#get-notifications-template-context) | **Get** `/notification-template-context` | Get notification template context |
+| [**list-from-addresses**](#list-from-addresses) | **Get** `/verified-from-addresses` | List from addresses |
+| [**list-notification-preferences**](#list-notification-preferences) | **Get** `/notification-preferences/{key}` | List notification preferences for tenant. |
+| [**list-notification-template-defaults**](#list-notification-template-defaults) | **Get** `/notification-template-defaults` | List notification template defaults |
+| [**list-notification-templates**](#list-notification-templates) | **Get** `/notification-templates` | List notification templates |
+| [**put-mail-from-attributes**](#put-mail-from-attributes) | **Put** `/mail-from-attributes` | Change mail from domain |
+| [**send-test-notification**](#send-test-notification) | **Post** `/send-test-notification` | Send test notification |
 
 ## create-domain-dkim
-Verify domain address via dkim
-Create a domain to be verified via DKIM (DomainKeys Identified Mail)
+
+Verify domain address via dkim Create a domain to be verified via DKIM (DomainKeys Identified Mail)
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/create-domain-dkim)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCreateDomainDkimRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **domainAddress** | [**DomainAddress**](../models/domain-address) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **domainAddress** | [**DomainAddress**](../models/domain-address) |  |
 
 ### Return type
 
@@ -77,14 +73,14 @@ import (
 func main() {
     domainaddress := []byte(`{
           "domain" : "sailpoint.com"
-        }`) // DomainAddress | 
+        }`) // DomainAddress |
 
     var domainAddress beta.DomainAddress
     if err := json.Unmarshal(domainaddress, &domainAddress); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -102,25 +98,22 @@ func main() {
 [[Back to top]](#)
 
 ## create-notification-template
-Create notification template
-This creates a template for your site. 
 
-You can also use this endpoint to update a template.  First, copy the response body from the [get notification template endpoint](https://developer.sailpoint.com/idn/api/beta/get-notification-template) for a template you wish to update and paste it into the request body for this endpoint.   Modify the fields you want to change and submit the POST request when ready.
+Create notification template This creates a template for your site.
+
+You can also use this endpoint to update a template. First, copy the response body from the [get notification template endpoint](https://developer.sailpoint.com/idn/api/beta/get-notification-template) for a template you wish to update and paste it into the request body for this endpoint. Modify the fields you want to change and submit the POST request when ready.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/create-notification-template)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCreateNotificationTemplateRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **templateDto** | [**TemplateDto**](../models/template-dto) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **templateDto** | [**TemplateDto**](../models/template-dto) |  |
 
 ### Return type
 
@@ -163,14 +156,14 @@ func main() {
           "from" : "$__global.emailFromAddress",
           "id" : "c17bea3a-574d-453c-9e04-4365fbf5af0b",
           "key" : "cloud_manual_work_item_summary"
-        }`) // TemplateDto | 
+        }`) // TemplateDto |
 
     var templateDto beta.TemplateDto
     if err := json.Unmarshal(templatedto, &templateDto); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -188,23 +181,20 @@ func main() {
 [[Back to top]](#)
 
 ## create-verified-from-address
-Create verified from address
-Create a new sender email address and initiate verification process.
+
+Create verified from address Create a new sender email address and initiate verification process.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/create-verified-from-address)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCreateVerifiedFromAddressRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **emailStatusDto** | [**EmailStatusDto**](../models/email-status-dto) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **emailStatusDto** | [**EmailStatusDto**](../models/email-status-dto) |  |
 
 ### Return type
 
@@ -235,14 +225,14 @@ func main() {
           "verificationStatus" : "PENDING",
           "id" : "id",
           "email" : "sender@example.com"
-        }`) // EmailStatusDto | 
+        }`) // EmailStatusDto |
 
     var emailStatusDto beta.EmailStatusDto
     if err := json.Unmarshal(emailstatusdto, &emailStatusDto); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -260,27 +250,24 @@ func main() {
 [[Back to top]](#)
 
 ## delete-notification-templates-in-bulk
-Bulk delete notification templates
-This lets you bulk delete templates that you previously created for your site. Since this is a beta feature, please contact support to enable usage.
+
+Bulk delete notification templates This lets you bulk delete templates that you previously created for your site. Since this is a beta feature, please contact support to enable usage.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/delete-notification-templates-in-bulk)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteNotificationTemplatesInBulkRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **templateBulkDeleteDto** | [**[]TemplateBulkDeleteDto**](../models/template-bulk-delete-dto) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **templateBulkDeleteDto** | [**[]TemplateBulkDeleteDto**](../models/template-bulk-delete-dto) |  |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -302,14 +289,14 @@ import (
 )
 
 func main() {
-    templatebulkdeletedto := []byte(``) // []TemplateBulkDeleteDto | 
+    templatebulkdeletedto := []byte(``) // []TemplateBulkDeleteDto |
 
     var templateBulkDeleteDto []beta.TemplateBulkDeleteDto
     if err := json.Unmarshal(templatebulkdeletedto, &templateBulkDeleteDto); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -319,38 +306,35 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `NotificationsAPI.DeleteNotificationTemplatesInBulk``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## delete-verified-from-address
-Delete verified from address
-Delete a verified sender email address
+
+Delete verified from address Delete a verified sender email address
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/delete-verified-from-address)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** |  |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteVerifiedFromAddressRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -366,15 +350,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
-    id := `id_example` // string |  # string | 
+    id := `id_example` // string |  # string |
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -384,15 +368,15 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `NotificationsAPI.DeleteVerifiedFromAddress``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## get-dkim-attributes
-Get dkim attributes
-Retrieve DKIM (DomainKeys Identified Mail) attributes for all your tenants' AWS SES identities. Limits retrieval to 100 identities per call.
+
+Get dkim attributes Retrieve DKIM (DomainKeys Identified Mail) attributes for all your tenants' AWS SES identities. Limits retrieval to 100 identities per call.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-dkim-attributes)
 
@@ -403,7 +387,6 @@ This endpoint does not need any parameter.
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetDkimAttributesRequest struct via the builder pattern
-
 
 ### Return type
 
@@ -423,14 +406,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -448,27 +431,24 @@ func main() {
 [[Back to top]](#)
 
 ## get-mail-from-attributes
-Get mail from attributes
-Retrieve MAIL FROM attributes for a given AWS SES identity.
+
+Get mail from attributes Retrieve MAIL FROM attributes for a given AWS SES identity.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-mail-from-attributes)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**identityId** | **string** | Returns the MX and TXT record to be put in your DNS, as well as the MAIL FROM domain status | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **identityId** | **string** | Returns the MX and TXT record to be put in your DNS, as well as the MAIL FROM domain status |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetMailFromAttributesRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -488,15 +468,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     identityId := `bobsmith@sailpoint.com` // string | Returns the MX and TXT record to be put in your DNS, as well as the MAIL FROM domain status # string | Returns the MX and TXT record to be put in your DNS, as well as the MAIL FROM domain status
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -514,27 +494,24 @@ func main() {
 [[Back to top]](#)
 
 ## get-notification-template
-Get notification template by id
-This gets a template that you have modified for your site by Id.
+
+Get notification template by id This gets a template that you have modified for your site by Id.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-notification-template)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Id of the Notification Template | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Id of the Notification Template |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetNotificationTemplateRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -554,15 +531,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `c17bea3a-574d-453c-9e04-4365fbf5af0b` // string | Id of the Notification Template # string | Id of the Notification Template
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -580,9 +557,8 @@ func main() {
 [[Back to top]](#)
 
 ## get-notifications-template-context
-Get notification template context
-The notification service maintains metadata to construct the notification templates or supply any information during the event propagation. The data-store where this information is retrieved is called "Global Context" (a.k.a. notification template context). It defines a set of attributes
- that will be available per tenant (organization).
+
+Get notification template context The notification service maintains metadata to construct the notification templates or supply any information during the event propagation. The data-store where this information is retrieved is called "Global Context" (a.k.a. notification template context). It defines a set of attributes that will be available per tenant (organization).
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-notifications-template-context)
 
@@ -593,7 +569,6 @@ This endpoint does not need any parameter.
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetNotificationsTemplateContextRequest struct via the builder pattern
-
 
 ### Return type
 
@@ -613,14 +588,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -638,27 +613,24 @@ func main() {
 [[Back to top]](#)
 
 ## list-from-addresses
-List from addresses
-Retrieve a list of sender email addresses and their verification statuses
+
+List from addresses Retrieve a list of sender email addresses and their verification statuses
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/list-from-addresses)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListFromAddressesRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **email**: *eq, ge, le, sw* | 
- **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **email** | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
+| **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false] |
+| **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **email**: _eq, ge, le, sw_ |
+| **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results) Sorting is supported for the following fields: **email** |
 
 ### Return type
 
@@ -678,8 +650,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -690,7 +662,7 @@ func main() {
     filters := `email eq "john.doe@company.com"` // string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **email**: *eq, ge, le, sw* (optional) # string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **email**: *eq, ge, le, sw* (optional)
     sorters := `email` // string | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **email** (optional) # string | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **email** (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -708,27 +680,24 @@ func main() {
 [[Back to top]](#)
 
 ## list-notification-preferences
-List notification preferences for tenant.
-Returns a list of notification preferences for tenant.
+
+List notification preferences for tenant. Returns a list of notification preferences for tenant.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/list-notification-preferences)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**key** | **string** | The notification key. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **key** | **string** | The notification key. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListNotificationPreferencesRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -748,15 +717,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     key := `cloud_manual_work_item_summary` // string | The notification key. # string | The notification key.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -774,25 +743,22 @@ func main() {
 [[Back to top]](#)
 
 ## list-notification-template-defaults
-List notification template defaults
-This lists the default templates used for notifications, such as emails from IdentityNow.
+
+List notification template defaults This lists the default templates used for notifications, such as emails from IdentityNow.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/list-notification-template-defaults)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListNotificationTemplateDefaultsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **key**: *eq, in, sw*  **medium**: *eq, sw*  **locale**: *eq, sw* | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
+| **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **key**: _eq, in, sw_ **medium**: _eq, sw_ **locale**: _eq, sw_ |
 
 ### Return type
 
@@ -812,8 +778,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -822,7 +788,7 @@ func main() {
     offset := 0 // int32 | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 0) # int32 | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 0)
     filters := `key eq "cloud_manual_work_item_summary"` // string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **key**: *eq, in, sw*  **medium**: *eq, sw*  **locale**: *eq, sw* (optional) # string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **key**: *eq, in, sw*  **medium**: *eq, sw*  **locale**: *eq, sw* (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -840,25 +806,22 @@ func main() {
 [[Back to top]](#)
 
 ## list-notification-templates
-List notification templates
-This lists the templates that you have modified for your site.
+
+List notification templates This lists the templates that you have modified for your site.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/list-notification-templates)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListNotificationTemplatesRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **key**: *eq, in, sw*  **medium**: *eq, sw*  **locale**: *eq, sw* | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
+| **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **key**: _eq, in, sw_ **medium**: _eq, sw_ **locale**: _eq, sw_ |
 
 ### Return type
 
@@ -878,8 +841,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -888,7 +851,7 @@ func main() {
     offset := 0 // int32 | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 0) # int32 | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 0)
     filters := `medium eq "EMAIL"` // string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **key**: *eq, in, sw*  **medium**: *eq, sw*  **locale**: *eq, sw* (optional) # string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **key**: *eq, in, sw*  **medium**: *eq, sw*  **locale**: *eq, sw* (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -906,23 +869,20 @@ func main() {
 [[Back to top]](#)
 
 ## put-mail-from-attributes
-Change mail from domain
-Change the MAIL FROM domain of an AWS SES email identity and provide the MX and TXT records to be placed in the caller's DNS
+
+Change mail from domain Change the MAIL FROM domain of an AWS SES email identity and provide the MX and TXT records to be placed in the caller's DNS
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/put-mail-from-attributes)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiPutMailFromAttributesRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **mailFromAttributesDto** | [**MailFromAttributesDto**](../models/mail-from-attributes-dto) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **mailFromAttributesDto** | [**MailFromAttributesDto**](../models/mail-from-attributes-dto) |  |
 
 ### Return type
 
@@ -951,14 +911,14 @@ func main() {
     mailfromattributesdto := []byte(`{
           "identity" : "BobSmith@sailpoint.com",
           "mailFromDomain" : "example.sailpoint.com"
-        }`) // MailFromAttributesDto | 
+        }`) // MailFromAttributesDto |
 
     var mailFromAttributesDto beta.MailFromAttributesDto
     if err := json.Unmarshal(mailfromattributesdto, &mailFromAttributesDto); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -976,27 +936,24 @@ func main() {
 [[Back to top]](#)
 
 ## send-test-notification
-Send test notification
-Send a Test Notification
+
+Send test notification Send a Test Notification
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/send-test-notification)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSendTestNotificationRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **sendTestNotificationRequestDto** | [**SendTestNotificationRequestDto**](../models/send-test-notification-request-dto) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **sendTestNotificationRequestDto** | [**SendTestNotificationRequestDto**](../models/send-test-notification-request-dto) |  |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -1022,14 +979,14 @@ func main() {
           "context" : "{}",
           "medium" : "EMAIL",
           "key" : "cloud_manual_work_item_summary"
-        }`) // SendTestNotificationRequestDto | 
+        }`) // SendTestNotificationRequestDto |
 
     var sendTestNotificationRequestDto beta.SendTestNotificationRequestDto
     if err := json.Unmarshal(sendtestnotificationrequestdto, &sendTestNotificationRequestDto); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1039,9 +996,8 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `NotificationsAPI.SendTestNotification``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
-

@@ -4,26 +4,28 @@ title: PasswordStatus
 pagination_label: PasswordStatus
 sidebar_label: PasswordStatus
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'PasswordStatus', 'V2024PasswordStatus'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'PasswordStatus', 'V2024PasswordStatus']
 slug: /tools/sdk/powershell/v2024/models/password-status
-tags: ['SDK', 'Software Development Kit', 'PasswordStatus', 'V2024PasswordStatus']
+tags:
+  ['SDK', 'Software Development Kit', 'PasswordStatus', 'V2024PasswordStatus']
 ---
-
 
 # PasswordStatus
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**RequestId** | **String** | The password change request ID | [optional] 
-**State** |  **Enum** [  "IN_PROGRESS",    "FINISHED",    "FAILED" ] | Password change state | [optional] 
-**Errors** | **[]String** | The errors during the password change request | [optional] 
-**SourceIds** | **[]String** | List of source IDs in the password change request | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **RequestId** | **String** | The password change request ID | [optional] |
+| **State** | **Enum** [ "IN_PROGRESS", "FINISHED", "FAILED" ] | Password change state | [optional] |
+| **Errors** | **[]String** | The errors during the password change request | [optional] |
+| **SourceIds** | **[]String** | List of source IDs in the password change request | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $PasswordStatus = Initialize-V2024PasswordStatus  -RequestId 089899f13a8f4da7824996191587bab9 `
  -State IN_PROGRESS `
@@ -32,10 +34,9 @@ $PasswordStatus = Initialize-V2024PasswordStatus  -RequestId 089899f13a8f4da7824
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $PasswordStatus | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

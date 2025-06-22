@@ -15,21 +15,19 @@ Learn how to use the SailPoint CLI to reassign the owner on objects in Identity 
 
 The `reassign` command makes it easy to reassign ownership for the following supported object types:
 
-* sources
-* roles
-* access profiles
-* entitlements
-* identity profiles
-* governance groups
-* workflows
+- sources
+- roles
+- access profiles
+- entitlements
+- identity profiles
+- governance groups
+- workflows
 
 ## Reassign all object types
 
 Use the following command to reassign all supported object types from one identity to another:
 
-:::caution
-It is recommended to use the `--dry-run` flag first to make sure the objects gathered are in fact the ones you wish to modify.
-:::
+:::caution It is recommended to use the `--dry-run` flag first to make sure the objects gathered are in fact the ones you wish to modify. :::
 
 ```shell
 sail reassign --from <old-owner-id> --to <new-owner-id> --dry-run

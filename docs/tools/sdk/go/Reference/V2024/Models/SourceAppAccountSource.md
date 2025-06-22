@@ -4,22 +4,35 @@ title: SourceAppAccountSource
 pagination_label: SourceAppAccountSource
 sidebar_label: SourceAppAccountSource
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SourceAppAccountSource', 'V2024SourceAppAccountSource'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'SourceAppAccountSource',
+    'V2024SourceAppAccountSource',
+  ]
 slug: /tools/sdk/go/v2024/models/source-app-account-source
-tags: ['SDK', 'Software Development Kit', 'SourceAppAccountSource', 'V2024SourceAppAccountSource']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SourceAppAccountSource',
+    'V2024SourceAppAccountSource',
+  ]
 ---
 
 # SourceAppAccountSource
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The source ID | [optional] 
-**Type** | Pointer to **string** | The source type, will always be \"SOURCE\" | [optional] 
-**Name** | Pointer to **string** | The source name | [optional] 
-**UseForPasswordManagement** | Pointer to **bool** | If the source is used for password management | [optional] [default to false]
-**PasswordPolicies** | Pointer to [**[]BaseReferenceDto**](base-reference-dto) | The password policies for the source | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The source ID | [optional] |
+| **Type** | Pointer to **string** | The source type, will always be \"SOURCE\" | [optional] |
+| **Name** | Pointer to **string** | The source name | [optional] |
+| **UseForPasswordManagement** | Pointer to **bool** | If the source is used for password management | [optional] [default to false] |
+| **PasswordPolicies** | Pointer to [**[]BaseReferenceDto**](base-reference-dto) | The password policies for the source | [optional] |
 
 ## Methods
 
@@ -27,18 +40,13 @@ Name | Type | Description | Notes
 
 `func NewSourceAppAccountSource() *SourceAppAccountSource`
 
-NewSourceAppAccountSource instantiates a new SourceAppAccountSource object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSourceAppAccountSource instantiates a new SourceAppAccountSource object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSourceAppAccountSourceWithDefaults
 
 `func NewSourceAppAccountSourceWithDefaults() *SourceAppAccountSource`
 
-NewSourceAppAccountSourceWithDefaults instantiates a new SourceAppAccountSource object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSourceAppAccountSourceWithDefaults instantiates a new SourceAppAccountSource object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -50,8 +58,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *SourceAppAccountSource) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -75,8 +82,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *SourceAppAccountSource) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -100,8 +106,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *SourceAppAccountSource) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -125,8 +130,7 @@ GetUseForPasswordManagement returns the UseForPasswordManagement field if non-ni
 
 `func (o *SourceAppAccountSource) GetUseForPasswordManagementOk() (*bool, bool)`
 
-GetUseForPasswordManagementOk returns a tuple with the UseForPasswordManagement field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUseForPasswordManagementOk returns a tuple with the UseForPasswordManagement field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUseForPasswordManagement
 
@@ -150,8 +154,7 @@ GetPasswordPolicies returns the PasswordPolicies field if non-nil, zero value ot
 
 `func (o *SourceAppAccountSource) GetPasswordPoliciesOk() (*[]BaseReferenceDto, bool)`
 
-GetPasswordPoliciesOk returns a tuple with the PasswordPolicies field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPasswordPoliciesOk returns a tuple with the PasswordPolicies field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPasswordPolicies
 
@@ -169,10 +172,10 @@ HasPasswordPolicies returns a boolean if a field has been set.
 
 `func (o *SourceAppAccountSource) SetPasswordPoliciesNil(b bool)`
 
- SetPasswordPoliciesNil sets the value for PasswordPolicies to be an explicit nil
+SetPasswordPoliciesNil sets the value for PasswordPolicies to be an explicit nil
 
 ### UnsetPasswordPolicies
+
 `func (o *SourceAppAccountSource) UnsetPasswordPolicies()`
 
 UnsetPasswordPolicies ensures that no value is present for PasswordPolicies, not even an explicit nil
-

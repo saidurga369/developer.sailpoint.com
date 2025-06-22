@@ -4,31 +4,44 @@ title: ListCompleteWorkflowLibrary200ResponseInner
 pagination_label: ListCompleteWorkflowLibrary200ResponseInner
 sidebar_label: ListCompleteWorkflowLibrary200ResponseInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ListCompleteWorkflowLibrary200ResponseInner', 'ListCompleteWorkflowLibrary200ResponseInner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ListCompleteWorkflowLibrary200ResponseInner',
+    'ListCompleteWorkflowLibrary200ResponseInner',
+  ]
 slug: /tools/sdk/python/v3/models/list-complete-workflow-library200-response-inner
-tags: ['SDK', 'Software Development Kit', 'ListCompleteWorkflowLibrary200ResponseInner', 'ListCompleteWorkflowLibrary200ResponseInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ListCompleteWorkflowLibrary200ResponseInner',
+    'ListCompleteWorkflowLibrary200ResponseInner',
+  ]
 ---
 
 # ListCompleteWorkflowLibrary200ResponseInner
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Operator ID. | [optional] 
-**name** | **str** | Operator friendly name | [optional] 
-**type** | **str** | Operator type | [optional] 
-**description** | **str** | Description of the operator | [optional] 
-**form_fields** | [**[]WorkflowLibraryFormFields**](workflow-library-form-fields) | One or more inputs that the operator accepts | [optional] 
-**example_output** | [**WorkflowLibraryActionExampleOutput**](workflow-library-action-example-output) |  | [optional] 
-**deprecated** | **bool** |  | [optional] 
-**deprecated_by** | **datetime** |  | [optional] 
-**version_number** | **int** | Version number | [optional] 
-**is_simulation_enabled** | **bool** |  | [optional] 
-**is_dynamic_schema** | **bool** | Determines whether the dynamic output schema is returned in place of the action's output schema. The dynamic schema lists non-static properties, like properties of a workflow form where each form has different fields. These will be provided dynamically based on available form fields. | [optional] 
-**output_schema** | **object** | Example output schema | [optional] 
-**input_example** | **object** | Example trigger payload if applicable | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | Operator ID. | [optional] |
+| **name** | **str** | Operator friendly name | [optional] |
+| **type** | **str** | Operator type | [optional] |
+| **description** | **str** | Description of the operator | [optional] |
+| **form_fields** | [**[]WorkflowLibraryFormFields**](workflow-library-form-fields) | One or more inputs that the operator accepts | [optional] |
+| **example_output** | [**WorkflowLibraryActionExampleOutput**](workflow-library-action-example-output) |  | [optional] |
+| **deprecated** | **bool** |  | [optional] |
+| **deprecated_by** | **datetime** |  | [optional] |
+| **version_number** | **int** | Version number | [optional] |
+| **is_simulation_enabled** | **bool** |  | [optional] |
+| **is_dynamic_schema** | **bool** | Determines whether the dynamic output schema is returned in place of the action's output schema. The dynamic schema lists non-static properties, like properties of a workflow form where each form has different fields. These will be provided dynamically based on available form fields. | [optional] |
+| **output_schema** | **object** | Example output schema | [optional] |
+| **input_example** | **object** | Example trigger payload if applicable | [optional] |
+
 }
 
 ## Example
@@ -53,5 +66,5 @@ input_example={changes=[{attribute=department, newValue=marketing, oldValue=sale
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

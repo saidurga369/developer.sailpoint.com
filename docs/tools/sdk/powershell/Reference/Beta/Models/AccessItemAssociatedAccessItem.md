@@ -4,41 +4,54 @@ title: AccessItemAssociatedAccessItem
 pagination_label: AccessItemAssociatedAccessItem
 sidebar_label: AccessItemAssociatedAccessItem
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'AccessItemAssociatedAccessItem', 'BetaAccessItemAssociatedAccessItem'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'AccessItemAssociatedAccessItem',
+    'BetaAccessItemAssociatedAccessItem',
+  ]
 slug: /tools/sdk/powershell/beta/models/access-item-associated-access-item
-tags: ['SDK', 'Software Development Kit', 'AccessItemAssociatedAccessItem', 'BetaAccessItemAssociatedAccessItem']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessItemAssociatedAccessItem',
+    'BetaAccessItemAssociatedAccessItem',
+  ]
 ---
-
 
 # AccessItemAssociatedAccessItem
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**AccessType** | **String** | the access item type. role in this case | [optional] 
-**Id** | **String** | the access item id | [optional] 
-**Name** | **String** | the access profile name | [optional] 
-**SourceName** | **String** | the associated source name if it exists | [optional] 
-**SourceId** | **String** | the id of the source | [optional] 
-**Description** | **String** | the description for the role | [optional] 
-**DisplayName** | **String** | the role display name | [optional] 
-**EntitlementCount** | **String** | the number of entitlements the account will create | [optional] 
-**AppDisplayName** | **String** | the name of | [optional] 
-**RemoveDate** | **String** | the date the role is no longer assigned to the specified identity | [optional] 
-**Standalone** | **Boolean** | indicates whether the entitlement is standalone | [required]
-**Revocable** | **Boolean** | indicates whether the role is revocable | [required]
-**NativeIdentity** | **String** | the native identifier used to uniquely identify an acccount | [optional] 
-**AppRoleId** | **String** | the app role id | [optional] 
-**Attribute** | **String** | the entitlement attribute | [optional] 
-**Value** | **String** | the associated value | [optional] 
-**EntitlementType** | **String** | the type of entitlement | [optional] 
-**Privileged** | **Boolean** | indicates whether the entitlement is privileged | [required]
-**CloudGoverned** | **Boolean** | indicates whether the entitlement is cloud governed | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **AccessType** | **String** | the access item type. role in this case | [optional] |
+| **Id** | **String** | the access item id | [optional] |
+| **Name** | **String** | the access profile name | [optional] |
+| **SourceName** | **String** | the associated source name if it exists | [optional] |
+| **SourceId** | **String** | the id of the source | [optional] |
+| **Description** | **String** | the description for the role | [optional] |
+| **DisplayName** | **String** | the role display name | [optional] |
+| **EntitlementCount** | **String** | the number of entitlements the account will create | [optional] |
+| **AppDisplayName** | **String** | the name of | [optional] |
+| **RemoveDate** | **String** | the date the role is no longer assigned to the specified identity | [optional] |
+| **Standalone** | **Boolean** | indicates whether the entitlement is standalone | [required] |
+| **Revocable** | **Boolean** | indicates whether the role is revocable | [required] |
+| **NativeIdentity** | **String** | the native identifier used to uniquely identify an acccount | [optional] |
+| **AppRoleId** | **String** | the app role id | [optional] |
+| **Attribute** | **String** | the entitlement attribute | [optional] |
+| **Value** | **String** | the associated value | [optional] |
+| **EntitlementType** | **String** | the type of entitlement | [optional] |
+| **Privileged** | **Boolean** | indicates whether the entitlement is privileged | [required] |
+| **CloudGoverned** | **Boolean** | indicates whether the entitlement is cloud governed | [required] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $AccessItemAssociatedAccessItem = Initialize-BetaAccessItemAssociatedAccessItem  -AccessType role `
  -Id 2c918087763e69d901763e72e97f006f `
@@ -62,10 +75,9 @@ $AccessItemAssociatedAccessItem = Initialize-BetaAccessItemAssociatedAccessItem 
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $AccessItemAssociatedAccessItem | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

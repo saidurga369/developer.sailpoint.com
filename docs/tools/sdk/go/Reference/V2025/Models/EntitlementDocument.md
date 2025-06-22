@@ -4,40 +4,47 @@ title: EntitlementDocument
 pagination_label: EntitlementDocument
 sidebar_label: EntitlementDocument
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'EntitlementDocument', 'V2025EntitlementDocument'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'EntitlementDocument', 'V2025EntitlementDocument']
 slug: /tools/sdk/go/v2025/models/entitlement-document
-tags: ['SDK', 'Software Development Kit', 'EntitlementDocument', 'V2025EntitlementDocument']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'EntitlementDocument',
+    'V2025EntitlementDocument',
+  ]
 ---
 
 # EntitlementDocument
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **string** | ID of the referenced object. | 
-**Name** | **string** | The human readable name of the referenced object. | 
-**Modified** | Pointer to **NullableTime** | ISO-8601 date-time referring to the time when the object was last modified. | [optional] 
-**Synced** | Pointer to **string** | ISO-8601 date-time referring to the date-time when object was queued to be synced into search database for use in the search API.   This date-time changes anytime there is an update to the object, which triggers a synchronization event being sent to the search database.  There may be some delay between the `synced` time and the time when the updated data is actually available in the search API.  | [optional] 
-**DisplayName** | Pointer to **string** | Entitlement's display name. | [optional] 
-**Source** | Pointer to [**EntitlementDocumentAllOfSource**](entitlement-document-all-of-source) |  | [optional] 
-**Segments** | Pointer to [**[]BaseSegment**](base-segment) | Segments with the entitlement. | [optional] 
-**SegmentCount** | Pointer to **int32** | Number of segments with the role. | [optional] 
-**Requestable** | Pointer to **bool** | Indicates whether the entitlement is requestable. | [optional] [default to false]
-**CloudGoverned** | Pointer to **bool** | Indicates whether the entitlement is cloud governed. | [optional] [default to false]
-**Created** | Pointer to **NullableTime** | ISO-8601 date-time referring to the time when the object was created. | [optional] 
-**Privileged** | Pointer to **bool** | Indicates whether the entitlement is privileged. | [optional] [default to false]
-**Tags** | Pointer to **[]string** | Tags that have been applied to the object. | [optional] 
-**Attribute** | Pointer to **string** | Attribute information for the entitlement. | [optional] 
-**Value** | Pointer to **string** | Value of the entitlement. | [optional] 
-**SourceSchemaObjectType** | Pointer to **string** | Source schema object type of the entitlement. | [optional] 
-**Schema** | Pointer to **string** | Schema type of the entitlement. | [optional] 
-**Hash** | Pointer to **string** | Read-only calculated hash value of an entitlement. | [optional] 
-**Attributes** | Pointer to **map[string]interface{}** | Attributes of the entitlement. | [optional] 
-**TruncatedAttributes** | Pointer to **[]string** | Truncated attributes of the entitlement. | [optional] 
-**ContainsDataAccess** | Pointer to **bool** | Indicates whether the entitlement contains data access. | [optional] [default to false]
-**ManuallyUpdatedFields** | Pointer to [**NullableEntitlementDocumentAllOfManuallyUpdatedFields**](entitlement-document-all-of-manually-updated-fields) |  | [optional] 
-**Permissions** | Pointer to [**[]EntitlementDocumentAllOfPermissions**](entitlement-document-all-of-permissions) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **string** | ID of the referenced object. |
+| **Name** | **string** | The human readable name of the referenced object. |
+| **Modified** | Pointer to **NullableTime** | ISO-8601 date-time referring to the time when the object was last modified. | [optional] |
+| **Synced** | Pointer to **string** | ISO-8601 date-time referring to the date-time when object was queued to be synced into search database for use in the search API. This date-time changes anytime there is an update to the object, which triggers a synchronization event being sent to the search database. There may be some delay between the `synced` time and the time when the updated data is actually available in the search API. | [optional] |
+| **DisplayName** | Pointer to **string** | Entitlement's display name. | [optional] |
+| **Source** | Pointer to [**EntitlementDocumentAllOfSource**](entitlement-document-all-of-source) |  | [optional] |
+| **Segments** | Pointer to [**[]BaseSegment**](base-segment) | Segments with the entitlement. | [optional] |
+| **SegmentCount** | Pointer to **int32** | Number of segments with the role. | [optional] |
+| **Requestable** | Pointer to **bool** | Indicates whether the entitlement is requestable. | [optional] [default to false] |
+| **CloudGoverned** | Pointer to **bool** | Indicates whether the entitlement is cloud governed. | [optional] [default to false] |
+| **Created** | Pointer to **NullableTime** | ISO-8601 date-time referring to the time when the object was created. | [optional] |
+| **Privileged** | Pointer to **bool** | Indicates whether the entitlement is privileged. | [optional] [default to false] |
+| **Tags** | Pointer to **[]string** | Tags that have been applied to the object. | [optional] |
+| **Attribute** | Pointer to **string** | Attribute information for the entitlement. | [optional] |
+| **Value** | Pointer to **string** | Value of the entitlement. | [optional] |
+| **SourceSchemaObjectType** | Pointer to **string** | Source schema object type of the entitlement. | [optional] |
+| **Schema** | Pointer to **string** | Schema type of the entitlement. | [optional] |
+| **Hash** | Pointer to **string** | Read-only calculated hash value of an entitlement. | [optional] |
+| **Attributes** | Pointer to **map[string]interface{}** | Attributes of the entitlement. | [optional] |
+| **TruncatedAttributes** | Pointer to **[]string** | Truncated attributes of the entitlement. | [optional] |
+| **ContainsDataAccess** | Pointer to **bool** | Indicates whether the entitlement contains data access. | [optional] [default to false] |
+| **ManuallyUpdatedFields** | Pointer to [**NullableEntitlementDocumentAllOfManuallyUpdatedFields**](entitlement-document-all-of-manually-updated-fields) |  | [optional] |
+| **Permissions** | Pointer to [**[]EntitlementDocumentAllOfPermissions**](entitlement-document-all-of-permissions) |  | [optional] |
 
 ## Methods
 
@@ -45,18 +52,13 @@ Name | Type | Description | Notes
 
 `func NewEntitlementDocument(id string, name string, ) *EntitlementDocument`
 
-NewEntitlementDocument instantiates a new EntitlementDocument object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewEntitlementDocument instantiates a new EntitlementDocument object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewEntitlementDocumentWithDefaults
 
 `func NewEntitlementDocumentWithDefaults() *EntitlementDocument`
 
-NewEntitlementDocumentWithDefaults instantiates a new EntitlementDocument object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewEntitlementDocumentWithDefaults instantiates a new EntitlementDocument object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -68,15 +70,13 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *EntitlementDocument) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
 `func (o *EntitlementDocument) SetId(v string)`
 
 SetId sets Id field to given value.
-
 
 ### GetName
 
@@ -88,15 +88,13 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *EntitlementDocument) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
 `func (o *EntitlementDocument) SetName(v string)`
 
 SetName sets Name field to given value.
-
 
 ### GetModified
 
@@ -108,8 +106,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *EntitlementDocument) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -127,12 +124,14 @@ HasModified returns a boolean if a field has been set.
 
 `func (o *EntitlementDocument) SetModifiedNil(b bool)`
 
- SetModifiedNil sets the value for Modified to be an explicit nil
+SetModifiedNil sets the value for Modified to be an explicit nil
 
 ### UnsetModified
+
 `func (o *EntitlementDocument) UnsetModified()`
 
 UnsetModified ensures that no value is present for Modified, not even an explicit nil
+
 ### GetSynced
 
 `func (o *EntitlementDocument) GetSynced() string`
@@ -143,8 +142,7 @@ GetSynced returns the Synced field if non-nil, zero value otherwise.
 
 `func (o *EntitlementDocument) GetSyncedOk() (*string, bool)`
 
-GetSyncedOk returns a tuple with the Synced field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSyncedOk returns a tuple with the Synced field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSynced
 
@@ -168,8 +166,7 @@ GetDisplayName returns the DisplayName field if non-nil, zero value otherwise.
 
 `func (o *EntitlementDocument) GetDisplayNameOk() (*string, bool)`
 
-GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayName
 
@@ -193,8 +190,7 @@ GetSource returns the Source field if non-nil, zero value otherwise.
 
 `func (o *EntitlementDocument) GetSourceOk() (*EntitlementDocumentAllOfSource, bool)`
 
-GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSource
 
@@ -218,8 +214,7 @@ GetSegments returns the Segments field if non-nil, zero value otherwise.
 
 `func (o *EntitlementDocument) GetSegmentsOk() (*[]BaseSegment, bool)`
 
-GetSegmentsOk returns a tuple with the Segments field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSegmentsOk returns a tuple with the Segments field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSegments
 
@@ -243,8 +238,7 @@ GetSegmentCount returns the SegmentCount field if non-nil, zero value otherwise.
 
 `func (o *EntitlementDocument) GetSegmentCountOk() (*int32, bool)`
 
-GetSegmentCountOk returns a tuple with the SegmentCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSegmentCountOk returns a tuple with the SegmentCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSegmentCount
 
@@ -268,8 +262,7 @@ GetRequestable returns the Requestable field if non-nil, zero value otherwise.
 
 `func (o *EntitlementDocument) GetRequestableOk() (*bool, bool)`
 
-GetRequestableOk returns a tuple with the Requestable field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestableOk returns a tuple with the Requestable field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequestable
 
@@ -293,8 +286,7 @@ GetCloudGoverned returns the CloudGoverned field if non-nil, zero value otherwis
 
 `func (o *EntitlementDocument) GetCloudGovernedOk() (*bool, bool)`
 
-GetCloudGovernedOk returns a tuple with the CloudGoverned field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCloudGovernedOk returns a tuple with the CloudGoverned field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCloudGoverned
 
@@ -318,8 +310,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *EntitlementDocument) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -337,12 +328,14 @@ HasCreated returns a boolean if a field has been set.
 
 `func (o *EntitlementDocument) SetCreatedNil(b bool)`
 
- SetCreatedNil sets the value for Created to be an explicit nil
+SetCreatedNil sets the value for Created to be an explicit nil
 
 ### UnsetCreated
+
 `func (o *EntitlementDocument) UnsetCreated()`
 
 UnsetCreated ensures that no value is present for Created, not even an explicit nil
+
 ### GetPrivileged
 
 `func (o *EntitlementDocument) GetPrivileged() bool`
@@ -353,8 +346,7 @@ GetPrivileged returns the Privileged field if non-nil, zero value otherwise.
 
 `func (o *EntitlementDocument) GetPrivilegedOk() (*bool, bool)`
 
-GetPrivilegedOk returns a tuple with the Privileged field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPrivilegedOk returns a tuple with the Privileged field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPrivileged
 
@@ -378,8 +370,7 @@ GetTags returns the Tags field if non-nil, zero value otherwise.
 
 `func (o *EntitlementDocument) GetTagsOk() (*[]string, bool)`
 
-GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTags
 
@@ -403,8 +394,7 @@ GetAttribute returns the Attribute field if non-nil, zero value otherwise.
 
 `func (o *EntitlementDocument) GetAttributeOk() (*string, bool)`
 
-GetAttributeOk returns a tuple with the Attribute field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributeOk returns a tuple with the Attribute field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttribute
 
@@ -428,8 +418,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *EntitlementDocument) GetValueOk() (*string, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -453,8 +442,7 @@ GetSourceSchemaObjectType returns the SourceSchemaObjectType field if non-nil, z
 
 `func (o *EntitlementDocument) GetSourceSchemaObjectTypeOk() (*string, bool)`
 
-GetSourceSchemaObjectTypeOk returns a tuple with the SourceSchemaObjectType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceSchemaObjectTypeOk returns a tuple with the SourceSchemaObjectType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceSchemaObjectType
 
@@ -478,8 +466,7 @@ GetSchema returns the Schema field if non-nil, zero value otherwise.
 
 `func (o *EntitlementDocument) GetSchemaOk() (*string, bool)`
 
-GetSchemaOk returns a tuple with the Schema field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSchemaOk returns a tuple with the Schema field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSchema
 
@@ -503,8 +490,7 @@ GetHash returns the Hash field if non-nil, zero value otherwise.
 
 `func (o *EntitlementDocument) GetHashOk() (*string, bool)`
 
-GetHashOk returns a tuple with the Hash field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetHashOk returns a tuple with the Hash field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetHash
 
@@ -528,8 +514,7 @@ GetAttributes returns the Attributes field if non-nil, zero value otherwise.
 
 `func (o *EntitlementDocument) GetAttributesOk() (*map[string]interface{}, bool)`
 
-GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributes
 
@@ -553,8 +538,7 @@ GetTruncatedAttributes returns the TruncatedAttributes field if non-nil, zero va
 
 `func (o *EntitlementDocument) GetTruncatedAttributesOk() (*[]string, bool)`
 
-GetTruncatedAttributesOk returns a tuple with the TruncatedAttributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTruncatedAttributesOk returns a tuple with the TruncatedAttributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTruncatedAttributes
 
@@ -578,8 +562,7 @@ GetContainsDataAccess returns the ContainsDataAccess field if non-nil, zero valu
 
 `func (o *EntitlementDocument) GetContainsDataAccessOk() (*bool, bool)`
 
-GetContainsDataAccessOk returns a tuple with the ContainsDataAccess field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetContainsDataAccessOk returns a tuple with the ContainsDataAccess field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetContainsDataAccess
 
@@ -603,8 +586,7 @@ GetManuallyUpdatedFields returns the ManuallyUpdatedFields field if non-nil, zer
 
 `func (o *EntitlementDocument) GetManuallyUpdatedFieldsOk() (*EntitlementDocumentAllOfManuallyUpdatedFields, bool)`
 
-GetManuallyUpdatedFieldsOk returns a tuple with the ManuallyUpdatedFields field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetManuallyUpdatedFieldsOk returns a tuple with the ManuallyUpdatedFields field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetManuallyUpdatedFields
 
@@ -622,12 +604,14 @@ HasManuallyUpdatedFields returns a boolean if a field has been set.
 
 `func (o *EntitlementDocument) SetManuallyUpdatedFieldsNil(b bool)`
 
- SetManuallyUpdatedFieldsNil sets the value for ManuallyUpdatedFields to be an explicit nil
+SetManuallyUpdatedFieldsNil sets the value for ManuallyUpdatedFields to be an explicit nil
 
 ### UnsetManuallyUpdatedFields
+
 `func (o *EntitlementDocument) UnsetManuallyUpdatedFields()`
 
 UnsetManuallyUpdatedFields ensures that no value is present for ManuallyUpdatedFields, not even an explicit nil
+
 ### GetPermissions
 
 `func (o *EntitlementDocument) GetPermissions() []EntitlementDocumentAllOfPermissions`
@@ -638,8 +622,7 @@ GetPermissions returns the Permissions field if non-nil, zero value otherwise.
 
 `func (o *EntitlementDocument) GetPermissionsOk() (*[]EntitlementDocumentAllOfPermissions, bool)`
 
-GetPermissionsOk returns a tuple with the Permissions field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPermissionsOk returns a tuple with the Permissions field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPermissions
 
@@ -652,5 +635,3 @@ SetPermissions sets Permissions field to given value.
 `func (o *EntitlementDocument) HasPermissions() bool`
 
 HasPermissions returns a boolean if a field has been set.
-
-

@@ -4,7 +4,7 @@ title: ExpansionItem
 pagination_label: ExpansionItem
 sidebar_label: ExpansionItem
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ExpansionItem', 'V2025ExpansionItem'] 
+keywords: ['go', 'Golang', 'sdk', 'ExpansionItem', 'V2025ExpansionItem']
 slug: /tools/sdk/go/v2025/models/expansion-item
 tags: ['SDK', 'Software Development Kit', 'ExpansionItem', 'V2025ExpansionItem']
 ---
@@ -13,15 +13,15 @@ tags: ['SDK', 'Software Development Kit', 'ExpansionItem', 'V2025ExpansionItem']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**AccountId** | Pointer to **string** | The ID of the account | [optional] 
-**Cause** | Pointer to **string** | Cause of the expansion item. | [optional] 
-**Name** | Pointer to **string** | The name of the item | [optional] 
-**AttributeRequest** | Pointer to [**AttributeRequest**](attribute-request) |  | [optional] 
-**Source** | Pointer to [**AccountSource**](account-source) |  | [optional] 
-**Id** | Pointer to **string** | ID of the expansion item | [optional] 
-**State** | Pointer to **string** | State of the expansion item | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **AccountId** | Pointer to **string** | The ID of the account | [optional] |
+| **Cause** | Pointer to **string** | Cause of the expansion item. | [optional] |
+| **Name** | Pointer to **string** | The name of the item | [optional] |
+| **AttributeRequest** | Pointer to [**AttributeRequest**](attribute-request) |  | [optional] |
+| **Source** | Pointer to [**AccountSource**](account-source) |  | [optional] |
+| **Id** | Pointer to **string** | ID of the expansion item | [optional] |
+| **State** | Pointer to **string** | State of the expansion item | [optional] |
 
 ## Methods
 
@@ -29,18 +29,13 @@ Name | Type | Description | Notes
 
 `func NewExpansionItem() *ExpansionItem`
 
-NewExpansionItem instantiates a new ExpansionItem object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewExpansionItem instantiates a new ExpansionItem object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewExpansionItemWithDefaults
 
 `func NewExpansionItemWithDefaults() *ExpansionItem`
 
-NewExpansionItemWithDefaults instantiates a new ExpansionItem object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewExpansionItemWithDefaults instantiates a new ExpansionItem object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetAccountId
 
@@ -52,8 +47,7 @@ GetAccountId returns the AccountId field if non-nil, zero value otherwise.
 
 `func (o *ExpansionItem) GetAccountIdOk() (*string, bool)`
 
-GetAccountIdOk returns a tuple with the AccountId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountIdOk returns a tuple with the AccountId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountId
 
@@ -77,8 +71,7 @@ GetCause returns the Cause field if non-nil, zero value otherwise.
 
 `func (o *ExpansionItem) GetCauseOk() (*string, bool)`
 
-GetCauseOk returns a tuple with the Cause field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCauseOk returns a tuple with the Cause field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCause
 
@@ -102,8 +95,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *ExpansionItem) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -127,8 +119,7 @@ GetAttributeRequest returns the AttributeRequest field if non-nil, zero value ot
 
 `func (o *ExpansionItem) GetAttributeRequestOk() (*AttributeRequest, bool)`
 
-GetAttributeRequestOk returns a tuple with the AttributeRequest field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributeRequestOk returns a tuple with the AttributeRequest field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributeRequest
 
@@ -152,8 +143,7 @@ GetSource returns the Source field if non-nil, zero value otherwise.
 
 `func (o *ExpansionItem) GetSourceOk() (*AccountSource, bool)`
 
-GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSource
 
@@ -177,8 +167,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *ExpansionItem) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -202,8 +191,7 @@ GetState returns the State field if non-nil, zero value otherwise.
 
 `func (o *ExpansionItem) GetStateOk() (*string, bool)`
 
-GetStateOk returns a tuple with the State field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStateOk returns a tuple with the State field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetState
 
@@ -216,5 +204,3 @@ SetState sets State field to given value.
 `func (o *ExpansionItem) HasState() bool`
 
 HasState returns a boolean if a field has been set.
-
-

@@ -4,9 +4,22 @@ title: AccessItemRequesterDto1
 pagination_label: AccessItemRequesterDto1
 sidebar_label: AccessItemRequesterDto1
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccessItemRequesterDto1', 'BetaAccessItemRequesterDto1'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccessItemRequesterDto1',
+    'BetaAccessItemRequesterDto1',
+  ]
 slug: /tools/sdk/python/beta/models/access-item-requester-dto1
-tags: ['SDK', 'Software Development Kit', 'AccessItemRequesterDto1', 'BetaAccessItemRequesterDto1']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessItemRequesterDto1',
+    'BetaAccessItemRequesterDto1',
+  ]
 ---
 
 # AccessItemRequesterDto1
@@ -15,11 +28,12 @@ Access item requester's identity.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] | Access item requester's DTO type. | [optional] 
-**id** | **str** | Access item requester's identity ID. | [optional] 
-**name** | **str** | Access item requester's name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'IDENTITY' ] | Access item requester's DTO type. | [optional] |
+| **id** | **str** | Access item requester's identity ID. | [optional] |
+| **name** | **str** | Access item requester's name. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='William Wilson'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

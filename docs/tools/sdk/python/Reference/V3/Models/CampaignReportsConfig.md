@@ -4,19 +4,26 @@ title: CampaignReportsConfig
 pagination_label: CampaignReportsConfig
 sidebar_label: CampaignReportsConfig
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'CampaignReportsConfig', 'CampaignReportsConfig'] 
+keywords:
+  ['python', 'Python', 'sdk', 'CampaignReportsConfig', 'CampaignReportsConfig']
 slug: /tools/sdk/python/v3/models/campaign-reports-config
-tags: ['SDK', 'Software Development Kit', 'CampaignReportsConfig', 'CampaignReportsConfig']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CampaignReportsConfig',
+    'CampaignReportsConfig',
+  ]
 ---
 
 # CampaignReportsConfig
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**identity_attribute_columns** | **[]str** | list of identity attribute columns | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **identity_attribute_columns** | **[]str** | list of identity attribute columns | [optional] |
+
 }
 
 ## Example
@@ -29,5 +36,5 @@ identity_attribute_columns=[firstname, lastname]
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

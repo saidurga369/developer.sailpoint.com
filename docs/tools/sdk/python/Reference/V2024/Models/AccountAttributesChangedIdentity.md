@@ -4,9 +4,22 @@ title: AccountAttributesChangedIdentity
 pagination_label: AccountAttributesChangedIdentity
 sidebar_label: AccountAttributesChangedIdentity
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccountAttributesChangedIdentity', 'V2024AccountAttributesChangedIdentity'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccountAttributesChangedIdentity',
+    'V2024AccountAttributesChangedIdentity',
+  ]
 slug: /tools/sdk/python/v2024/models/account-attributes-changed-identity
-tags: ['SDK', 'Software Development Kit', 'AccountAttributesChangedIdentity', 'V2024AccountAttributesChangedIdentity']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountAttributesChangedIdentity',
+    'V2024AccountAttributesChangedIdentity',
+  ]
 ---
 
 # AccountAttributesChangedIdentity
@@ -15,11 +28,12 @@ The identity whose account attributes were updated.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] | DTO type of the identity whose account attributes were updated. | [required]
-**id** | **str** | ID of the identity whose account attributes were updated. | [required]
-**name** | **str** | Display name of the identity whose account attributes were updated. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'IDENTITY' ] | DTO type of the identity whose account attributes were updated. | [required] |
+| **id** | **str** | ID of the identity whose account attributes were updated. | [required] |
+| **name** | **str** | Display name of the identity whose account attributes were updated. | [required] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Michael Michaels'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

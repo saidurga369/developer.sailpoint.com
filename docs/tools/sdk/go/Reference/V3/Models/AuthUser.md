@@ -4,7 +4,7 @@ title: AuthUser
 pagination_label: AuthUser
 sidebar_label: AuthUser
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AuthUser', 'AuthUser'] 
+keywords: ['go', 'Golang', 'sdk', 'AuthUser', 'AuthUser']
 slug: /tools/sdk/go/v3/models/auth-user
 tags: ['SDK', 'Software Development Kit', 'AuthUser', 'AuthUser']
 ---
@@ -13,26 +13,26 @@ tags: ['SDK', 'Software Development Kit', 'AuthUser', 'AuthUser']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Tenant** | Pointer to **string** | Tenant name. | [optional] 
-**Id** | Pointer to **string** | Identity ID. | [optional] 
-**Uid** | Pointer to **string** | Identity's unique identitifier. | [optional] 
-**Profile** | Pointer to **string** | ID of the auth profile associated with the auth user. | [optional] 
-**IdentificationNumber** | Pointer to **NullableString** | Auth user's employee number. | [optional] 
-**Email** | Pointer to **NullableString** | Auth user's email. | [optional] 
-**Phone** | Pointer to **NullableString** | Auth user's phone number. | [optional] 
-**WorkPhone** | Pointer to **NullableString** | Auth user's work phone number. | [optional] 
-**PersonalEmail** | Pointer to **NullableString** | Auth user's personal email. | [optional] 
-**Firstname** | Pointer to **NullableString** | Auth user's first name. | [optional] 
-**Lastname** | Pointer to **NullableString** | Auth user's last name. | [optional] 
-**DisplayName** | Pointer to **string** | Auth user's name in displayed format. | [optional] 
-**Alias** | Pointer to **string** | Auth user's alias. | [optional] 
-**LastPasswordChangeDate** | Pointer to **NullableTime** | Date of last password change. | [optional] 
-**LastLoginTimestamp** | Pointer to **int64** | Timestamp of the last login (long type value). | [optional] 
-**CurrentLoginTimestamp** | Pointer to **int64** | Timestamp of the current login (long type value). | [optional] 
-**LastUnlockTimestamp** | Pointer to **NullableTime** | The date and time when the user was last unlocked. | [optional] 
-**Capabilities** | Pointer to **[]string** | Array of the auth user's capabilities. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Tenant** | Pointer to **string** | Tenant name. | [optional] |
+| **Id** | Pointer to **string** | Identity ID. | [optional] |
+| **Uid** | Pointer to **string** | Identity's unique identitifier. | [optional] |
+| **Profile** | Pointer to **string** | ID of the auth profile associated with the auth user. | [optional] |
+| **IdentificationNumber** | Pointer to **NullableString** | Auth user's employee number. | [optional] |
+| **Email** | Pointer to **NullableString** | Auth user's email. | [optional] |
+| **Phone** | Pointer to **NullableString** | Auth user's phone number. | [optional] |
+| **WorkPhone** | Pointer to **NullableString** | Auth user's work phone number. | [optional] |
+| **PersonalEmail** | Pointer to **NullableString** | Auth user's personal email. | [optional] |
+| **Firstname** | Pointer to **NullableString** | Auth user's first name. | [optional] |
+| **Lastname** | Pointer to **NullableString** | Auth user's last name. | [optional] |
+| **DisplayName** | Pointer to **string** | Auth user's name in displayed format. | [optional] |
+| **Alias** | Pointer to **string** | Auth user's alias. | [optional] |
+| **LastPasswordChangeDate** | Pointer to **NullableTime** | Date of last password change. | [optional] |
+| **LastLoginTimestamp** | Pointer to **int64** | Timestamp of the last login (long type value). | [optional] |
+| **CurrentLoginTimestamp** | Pointer to **int64** | Timestamp of the current login (long type value). | [optional] |
+| **LastUnlockTimestamp** | Pointer to **NullableTime** | The date and time when the user was last unlocked. | [optional] |
+| **Capabilities** | Pointer to **[]string** | Array of the auth user's capabilities. | [optional] |
 
 ## Methods
 
@@ -40,18 +40,13 @@ Name | Type | Description | Notes
 
 `func NewAuthUser() *AuthUser`
 
-NewAuthUser instantiates a new AuthUser object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAuthUser instantiates a new AuthUser object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAuthUserWithDefaults
 
 `func NewAuthUserWithDefaults() *AuthUser`
 
-NewAuthUserWithDefaults instantiates a new AuthUser object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAuthUserWithDefaults instantiates a new AuthUser object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetTenant
 
@@ -63,8 +58,7 @@ GetTenant returns the Tenant field if non-nil, zero value otherwise.
 
 `func (o *AuthUser) GetTenantOk() (*string, bool)`
 
-GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTenant
 
@@ -88,8 +82,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *AuthUser) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -113,8 +106,7 @@ GetUid returns the Uid field if non-nil, zero value otherwise.
 
 `func (o *AuthUser) GetUidOk() (*string, bool)`
 
-GetUidOk returns a tuple with the Uid field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUidOk returns a tuple with the Uid field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUid
 
@@ -138,8 +130,7 @@ GetProfile returns the Profile field if non-nil, zero value otherwise.
 
 `func (o *AuthUser) GetProfileOk() (*string, bool)`
 
-GetProfileOk returns a tuple with the Profile field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProfileOk returns a tuple with the Profile field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProfile
 
@@ -163,8 +154,7 @@ GetIdentificationNumber returns the IdentificationNumber field if non-nil, zero 
 
 `func (o *AuthUser) GetIdentificationNumberOk() (*string, bool)`
 
-GetIdentificationNumberOk returns a tuple with the IdentificationNumber field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentificationNumberOk returns a tuple with the IdentificationNumber field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentificationNumber
 
@@ -182,12 +172,14 @@ HasIdentificationNumber returns a boolean if a field has been set.
 
 `func (o *AuthUser) SetIdentificationNumberNil(b bool)`
 
- SetIdentificationNumberNil sets the value for IdentificationNumber to be an explicit nil
+SetIdentificationNumberNil sets the value for IdentificationNumber to be an explicit nil
 
 ### UnsetIdentificationNumber
+
 `func (o *AuthUser) UnsetIdentificationNumber()`
 
 UnsetIdentificationNumber ensures that no value is present for IdentificationNumber, not even an explicit nil
+
 ### GetEmail
 
 `func (o *AuthUser) GetEmail() string`
@@ -198,8 +190,7 @@ GetEmail returns the Email field if non-nil, zero value otherwise.
 
 `func (o *AuthUser) GetEmailOk() (*string, bool)`
 
-GetEmailOk returns a tuple with the Email field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEmailOk returns a tuple with the Email field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEmail
 
@@ -217,12 +208,14 @@ HasEmail returns a boolean if a field has been set.
 
 `func (o *AuthUser) SetEmailNil(b bool)`
 
- SetEmailNil sets the value for Email to be an explicit nil
+SetEmailNil sets the value for Email to be an explicit nil
 
 ### UnsetEmail
+
 `func (o *AuthUser) UnsetEmail()`
 
 UnsetEmail ensures that no value is present for Email, not even an explicit nil
+
 ### GetPhone
 
 `func (o *AuthUser) GetPhone() string`
@@ -233,8 +226,7 @@ GetPhone returns the Phone field if non-nil, zero value otherwise.
 
 `func (o *AuthUser) GetPhoneOk() (*string, bool)`
 
-GetPhoneOk returns a tuple with the Phone field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPhoneOk returns a tuple with the Phone field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPhone
 
@@ -252,12 +244,14 @@ HasPhone returns a boolean if a field has been set.
 
 `func (o *AuthUser) SetPhoneNil(b bool)`
 
- SetPhoneNil sets the value for Phone to be an explicit nil
+SetPhoneNil sets the value for Phone to be an explicit nil
 
 ### UnsetPhone
+
 `func (o *AuthUser) UnsetPhone()`
 
 UnsetPhone ensures that no value is present for Phone, not even an explicit nil
+
 ### GetWorkPhone
 
 `func (o *AuthUser) GetWorkPhone() string`
@@ -268,8 +262,7 @@ GetWorkPhone returns the WorkPhone field if non-nil, zero value otherwise.
 
 `func (o *AuthUser) GetWorkPhoneOk() (*string, bool)`
 
-GetWorkPhoneOk returns a tuple with the WorkPhone field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetWorkPhoneOk returns a tuple with the WorkPhone field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetWorkPhone
 
@@ -287,12 +280,14 @@ HasWorkPhone returns a boolean if a field has been set.
 
 `func (o *AuthUser) SetWorkPhoneNil(b bool)`
 
- SetWorkPhoneNil sets the value for WorkPhone to be an explicit nil
+SetWorkPhoneNil sets the value for WorkPhone to be an explicit nil
 
 ### UnsetWorkPhone
+
 `func (o *AuthUser) UnsetWorkPhone()`
 
 UnsetWorkPhone ensures that no value is present for WorkPhone, not even an explicit nil
+
 ### GetPersonalEmail
 
 `func (o *AuthUser) GetPersonalEmail() string`
@@ -303,8 +298,7 @@ GetPersonalEmail returns the PersonalEmail field if non-nil, zero value otherwis
 
 `func (o *AuthUser) GetPersonalEmailOk() (*string, bool)`
 
-GetPersonalEmailOk returns a tuple with the PersonalEmail field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPersonalEmailOk returns a tuple with the PersonalEmail field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPersonalEmail
 
@@ -322,12 +316,14 @@ HasPersonalEmail returns a boolean if a field has been set.
 
 `func (o *AuthUser) SetPersonalEmailNil(b bool)`
 
- SetPersonalEmailNil sets the value for PersonalEmail to be an explicit nil
+SetPersonalEmailNil sets the value for PersonalEmail to be an explicit nil
 
 ### UnsetPersonalEmail
+
 `func (o *AuthUser) UnsetPersonalEmail()`
 
 UnsetPersonalEmail ensures that no value is present for PersonalEmail, not even an explicit nil
+
 ### GetFirstname
 
 `func (o *AuthUser) GetFirstname() string`
@@ -338,8 +334,7 @@ GetFirstname returns the Firstname field if non-nil, zero value otherwise.
 
 `func (o *AuthUser) GetFirstnameOk() (*string, bool)`
 
-GetFirstnameOk returns a tuple with the Firstname field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFirstnameOk returns a tuple with the Firstname field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFirstname
 
@@ -357,12 +352,14 @@ HasFirstname returns a boolean if a field has been set.
 
 `func (o *AuthUser) SetFirstnameNil(b bool)`
 
- SetFirstnameNil sets the value for Firstname to be an explicit nil
+SetFirstnameNil sets the value for Firstname to be an explicit nil
 
 ### UnsetFirstname
+
 `func (o *AuthUser) UnsetFirstname()`
 
 UnsetFirstname ensures that no value is present for Firstname, not even an explicit nil
+
 ### GetLastname
 
 `func (o *AuthUser) GetLastname() string`
@@ -373,8 +370,7 @@ GetLastname returns the Lastname field if non-nil, zero value otherwise.
 
 `func (o *AuthUser) GetLastnameOk() (*string, bool)`
 
-GetLastnameOk returns a tuple with the Lastname field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLastnameOk returns a tuple with the Lastname field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLastname
 
@@ -392,12 +388,14 @@ HasLastname returns a boolean if a field has been set.
 
 `func (o *AuthUser) SetLastnameNil(b bool)`
 
- SetLastnameNil sets the value for Lastname to be an explicit nil
+SetLastnameNil sets the value for Lastname to be an explicit nil
 
 ### UnsetLastname
+
 `func (o *AuthUser) UnsetLastname()`
 
 UnsetLastname ensures that no value is present for Lastname, not even an explicit nil
+
 ### GetDisplayName
 
 `func (o *AuthUser) GetDisplayName() string`
@@ -408,8 +406,7 @@ GetDisplayName returns the DisplayName field if non-nil, zero value otherwise.
 
 `func (o *AuthUser) GetDisplayNameOk() (*string, bool)`
 
-GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayName
 
@@ -433,8 +430,7 @@ GetAlias returns the Alias field if non-nil, zero value otherwise.
 
 `func (o *AuthUser) GetAliasOk() (*string, bool)`
 
-GetAliasOk returns a tuple with the Alias field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAliasOk returns a tuple with the Alias field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAlias
 
@@ -458,8 +454,7 @@ GetLastPasswordChangeDate returns the LastPasswordChangeDate field if non-nil, z
 
 `func (o *AuthUser) GetLastPasswordChangeDateOk() (*SailPointTime, bool)`
 
-GetLastPasswordChangeDateOk returns a tuple with the LastPasswordChangeDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLastPasswordChangeDateOk returns a tuple with the LastPasswordChangeDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLastPasswordChangeDate
 
@@ -477,12 +472,14 @@ HasLastPasswordChangeDate returns a boolean if a field has been set.
 
 `func (o *AuthUser) SetLastPasswordChangeDateNil(b bool)`
 
- SetLastPasswordChangeDateNil sets the value for LastPasswordChangeDate to be an explicit nil
+SetLastPasswordChangeDateNil sets the value for LastPasswordChangeDate to be an explicit nil
 
 ### UnsetLastPasswordChangeDate
+
 `func (o *AuthUser) UnsetLastPasswordChangeDate()`
 
 UnsetLastPasswordChangeDate ensures that no value is present for LastPasswordChangeDate, not even an explicit nil
+
 ### GetLastLoginTimestamp
 
 `func (o *AuthUser) GetLastLoginTimestamp() int64`
@@ -493,8 +490,7 @@ GetLastLoginTimestamp returns the LastLoginTimestamp field if non-nil, zero valu
 
 `func (o *AuthUser) GetLastLoginTimestampOk() (*int64, bool)`
 
-GetLastLoginTimestampOk returns a tuple with the LastLoginTimestamp field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLastLoginTimestampOk returns a tuple with the LastLoginTimestamp field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLastLoginTimestamp
 
@@ -518,8 +514,7 @@ GetCurrentLoginTimestamp returns the CurrentLoginTimestamp field if non-nil, zer
 
 `func (o *AuthUser) GetCurrentLoginTimestampOk() (*int64, bool)`
 
-GetCurrentLoginTimestampOk returns a tuple with the CurrentLoginTimestamp field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCurrentLoginTimestampOk returns a tuple with the CurrentLoginTimestamp field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCurrentLoginTimestamp
 
@@ -543,8 +538,7 @@ GetLastUnlockTimestamp returns the LastUnlockTimestamp field if non-nil, zero va
 
 `func (o *AuthUser) GetLastUnlockTimestampOk() (*SailPointTime, bool)`
 
-GetLastUnlockTimestampOk returns a tuple with the LastUnlockTimestamp field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLastUnlockTimestampOk returns a tuple with the LastUnlockTimestamp field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLastUnlockTimestamp
 
@@ -562,12 +556,14 @@ HasLastUnlockTimestamp returns a boolean if a field has been set.
 
 `func (o *AuthUser) SetLastUnlockTimestampNil(b bool)`
 
- SetLastUnlockTimestampNil sets the value for LastUnlockTimestamp to be an explicit nil
+SetLastUnlockTimestampNil sets the value for LastUnlockTimestamp to be an explicit nil
 
 ### UnsetLastUnlockTimestamp
+
 `func (o *AuthUser) UnsetLastUnlockTimestamp()`
 
 UnsetLastUnlockTimestamp ensures that no value is present for LastUnlockTimestamp, not even an explicit nil
+
 ### GetCapabilities
 
 `func (o *AuthUser) GetCapabilities() []string`
@@ -578,8 +574,7 @@ GetCapabilities returns the Capabilities field if non-nil, zero value otherwise.
 
 `func (o *AuthUser) GetCapabilitiesOk() (*[]string, bool)`
 
-GetCapabilitiesOk returns a tuple with the Capabilities field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCapabilitiesOk returns a tuple with the Capabilities field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCapabilities
 
@@ -597,10 +592,10 @@ HasCapabilities returns a boolean if a field has been set.
 
 `func (o *AuthUser) SetCapabilitiesNil(b bool)`
 
- SetCapabilitiesNil sets the value for Capabilities to be an explicit nil
+SetCapabilitiesNil sets the value for Capabilities to be an explicit nil
 
 ### UnsetCapabilities
+
 `func (o *AuthUser) UnsetCapabilities()`
 
 UnsetCapabilities ensures that no value is present for Capabilities, not even an explicit nil
-

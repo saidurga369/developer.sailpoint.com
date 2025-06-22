@@ -4,30 +4,43 @@ title: MultiHostIntegrationsAggScheduleUpdate
 pagination_label: MultiHostIntegrationsAggScheduleUpdate
 sidebar_label: MultiHostIntegrationsAggScheduleUpdate
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'MultiHostIntegrationsAggScheduleUpdate', 'BetaMultiHostIntegrationsAggScheduleUpdate'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'MultiHostIntegrationsAggScheduleUpdate',
+    'BetaMultiHostIntegrationsAggScheduleUpdate',
+  ]
 slug: /tools/sdk/powershell/beta/models/multi-host-integrations-agg-schedule-update
-tags: ['SDK', 'Software Development Kit', 'MultiHostIntegrationsAggScheduleUpdate', 'BetaMultiHostIntegrationsAggScheduleUpdate']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'MultiHostIntegrationsAggScheduleUpdate',
+    'BetaMultiHostIntegrationsAggScheduleUpdate',
+  ]
 ---
-
 
 # MultiHostIntegrationsAggScheduleUpdate
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**MultihostId** | **String** | Multi-Host Integration ID. The ID must be unique | [required]
-**AggregationGrpId** | **String** | Multi-Host Integration aggregation group ID | [required]
-**AggregationGrpName** | **String** | Multi-Host Integration name | [required]
-**AggregationCronSchedule** | **String** | Cron expression to schedule aggregation | [required]
-**EnableSchedule** | **Boolean** | Boolean value for Multi-Host Integration aggregation schedule.  This specifies if scheduled aggregation is enabled or disabled. | [required][default to $false]
-**SourceIdList** | **[]String** | Source IDs of the Multi-Host Integration | [required]
-**Created** | **System.DateTime** | Created date of Multi-Host Integration aggregation schedule | [optional] 
-**Modified** | **System.DateTime** | Modified date of Multi-Host Integration aggregation schedule | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **MultihostId** | **String** | Multi-Host Integration ID. The ID must be unique | [required] |
+| **AggregationGrpId** | **String** | Multi-Host Integration aggregation group ID | [required] |
+| **AggregationGrpName** | **String** | Multi-Host Integration name | [required] |
+| **AggregationCronSchedule** | **String** | Cron expression to schedule aggregation | [required] |
+| **EnableSchedule** | **Boolean** | Boolean value for Multi-Host Integration aggregation schedule. This specifies if scheduled aggregation is enabled or disabled. | [required][default to $false] |
+| **SourceIdList** | **[]String** | Source IDs of the Multi-Host Integration | [required] |
+| **Created** | **System.DateTime** | Created date of Multi-Host Integration aggregation schedule | [optional] |
+| **Modified** | **System.DateTime** | Modified date of Multi-Host Integration aggregation schedule | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $MultiHostIntegrationsAggScheduleUpdate = Initialize-BetaMultiHostIntegrationsAggScheduleUpdate  -MultihostId 004091cb79b04636b88662afa50a4456 `
  -AggregationGrpId 004091cb79b04636b88662afa50a4448 `
@@ -40,10 +53,9 @@ $MultiHostIntegrationsAggScheduleUpdate = Initialize-BetaMultiHostIntegrationsAg
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $MultiHostIntegrationsAggScheduleUpdate | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

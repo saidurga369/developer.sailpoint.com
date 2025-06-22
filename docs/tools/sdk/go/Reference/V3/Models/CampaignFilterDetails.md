@@ -4,24 +4,31 @@ title: CampaignFilterDetails
 pagination_label: CampaignFilterDetails
 sidebar_label: CampaignFilterDetails
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'CampaignFilterDetails', 'CampaignFilterDetails'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'CampaignFilterDetails', 'CampaignFilterDetails']
 slug: /tools/sdk/go/v3/models/campaign-filter-details
-tags: ['SDK', 'Software Development Kit', 'CampaignFilterDetails', 'CampaignFilterDetails']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CampaignFilterDetails',
+    'CampaignFilterDetails',
+  ]
 ---
 
 # CampaignFilterDetails
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **string** | The unique ID of the campaign filter | 
-**Name** | **string** | Campaign filter name. | 
-**Description** | Pointer to **string** | Campaign filter description. | [optional] 
-**Owner** | **NullableString** | Owner of the filter. This field automatically populates at creation time with the current user. | 
-**Mode** | **string** | Mode/type of filter, either the INCLUSION or EXCLUSION type. The INCLUSION type includes the data in generated campaigns  as per specified in the criteria, whereas the EXCLUSION type excludes the data in generated campaigns as per specified in criteria. | 
-**CriteriaList** | Pointer to [**[]CampaignFilterDetailsCriteriaListInner**](campaign-filter-details-criteria-list-inner) | List of criteria. | [optional] 
-**IsSystemFilter** | **bool** | If true, the filter is created by the system. If false, the filter is created by a user. | [default to false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **string** | The unique ID of the campaign filter |
+| **Name** | **string** | Campaign filter name. |
+| **Description** | Pointer to **string** | Campaign filter description. | [optional] |
+| **Owner** | **NullableString** | Owner of the filter. This field automatically populates at creation time with the current user. |
+| **Mode** | **string** | Mode/type of filter, either the INCLUSION or EXCLUSION type. The INCLUSION type includes the data in generated campaigns as per specified in the criteria, whereas the EXCLUSION type excludes the data in generated campaigns as per specified in criteria. |
+| **CriteriaList** | Pointer to [**[]CampaignFilterDetailsCriteriaListInner**](campaign-filter-details-criteria-list-inner) | List of criteria. | [optional] |
+| **IsSystemFilter** | **bool** | If true, the filter is created by the system. If false, the filter is created by a user. | [default to false] |
 
 ## Methods
 
@@ -29,18 +36,13 @@ Name | Type | Description | Notes
 
 `func NewCampaignFilterDetails(id string, name string, owner NullableString, mode string, isSystemFilter bool, ) *CampaignFilterDetails`
 
-NewCampaignFilterDetails instantiates a new CampaignFilterDetails object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewCampaignFilterDetails instantiates a new CampaignFilterDetails object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewCampaignFilterDetailsWithDefaults
 
 `func NewCampaignFilterDetailsWithDefaults() *CampaignFilterDetails`
 
-NewCampaignFilterDetailsWithDefaults instantiates a new CampaignFilterDetails object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewCampaignFilterDetailsWithDefaults instantiates a new CampaignFilterDetails object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -52,15 +54,13 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *CampaignFilterDetails) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
 `func (o *CampaignFilterDetails) SetId(v string)`
 
 SetId sets Id field to given value.
-
 
 ### GetName
 
@@ -72,15 +72,13 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *CampaignFilterDetails) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
 `func (o *CampaignFilterDetails) SetName(v string)`
 
 SetName sets Name field to given value.
-
 
 ### GetDescription
 
@@ -92,8 +90,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *CampaignFilterDetails) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -117,8 +114,7 @@ GetOwner returns the Owner field if non-nil, zero value otherwise.
 
 `func (o *CampaignFilterDetails) GetOwnerOk() (*string, bool)`
 
-GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwner
 
@@ -126,17 +122,18 @@ and a boolean to check if the value has been set.
 
 SetOwner sets Owner field to given value.
 
-
 ### SetOwnerNil
 
 `func (o *CampaignFilterDetails) SetOwnerNil(b bool)`
 
- SetOwnerNil sets the value for Owner to be an explicit nil
+SetOwnerNil sets the value for Owner to be an explicit nil
 
 ### UnsetOwner
+
 `func (o *CampaignFilterDetails) UnsetOwner()`
 
 UnsetOwner ensures that no value is present for Owner, not even an explicit nil
+
 ### GetMode
 
 `func (o *CampaignFilterDetails) GetMode() string`
@@ -147,15 +144,13 @@ GetMode returns the Mode field if non-nil, zero value otherwise.
 
 `func (o *CampaignFilterDetails) GetModeOk() (*string, bool)`
 
-GetModeOk returns a tuple with the Mode field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModeOk returns a tuple with the Mode field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMode
 
 `func (o *CampaignFilterDetails) SetMode(v string)`
 
 SetMode sets Mode field to given value.
-
 
 ### GetCriteriaList
 
@@ -167,8 +162,7 @@ GetCriteriaList returns the CriteriaList field if non-nil, zero value otherwise.
 
 `func (o *CampaignFilterDetails) GetCriteriaListOk() (*[]CampaignFilterDetailsCriteriaListInner, bool)`
 
-GetCriteriaListOk returns a tuple with the CriteriaList field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCriteriaListOk returns a tuple with the CriteriaList field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCriteriaList
 
@@ -192,14 +186,10 @@ GetIsSystemFilter returns the IsSystemFilter field if non-nil, zero value otherw
 
 `func (o *CampaignFilterDetails) GetIsSystemFilterOk() (*bool, bool)`
 
-GetIsSystemFilterOk returns a tuple with the IsSystemFilter field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIsSystemFilterOk returns a tuple with the IsSystemFilter field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIsSystemFilter
 
 `func (o *CampaignFilterDetails) SetIsSystemFilter(v bool)`
 
 SetIsSystemFilter sets IsSystemFilter field to given value.
-
-
-

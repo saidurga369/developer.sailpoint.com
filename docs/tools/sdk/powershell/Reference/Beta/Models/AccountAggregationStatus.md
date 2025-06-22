@@ -4,26 +4,39 @@ title: AccountAggregationStatus
 pagination_label: AccountAggregationStatus
 sidebar_label: AccountAggregationStatus
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'AccountAggregationStatus', 'BetaAccountAggregationStatus'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'AccountAggregationStatus',
+    'BetaAccountAggregationStatus',
+  ]
 slug: /tools/sdk/powershell/beta/models/account-aggregation-status
-tags: ['SDK', 'Software Development Kit', 'AccountAggregationStatus', 'BetaAccountAggregationStatus']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountAggregationStatus',
+    'BetaAccountAggregationStatus',
+  ]
 ---
-
 
 # AccountAggregationStatus
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Start** | **System.DateTime** | When the aggregation started. | [optional] 
-**Status** |  **Enum** [  "STARTED",    "ACCOUNTS_COLLECTED",    "COMPLETED",    "CANCELLED",    "RETRIED",    "TERMINATED" ] | STARTED - Aggregation started, but source account iteration has not completed.  ACCOUNTS_COLLECTED - Source account iteration completed, but all accounts have not yet been processed.  COMPLETED - Aggregation completed (*possibly with errors*).  CANCELLED - Aggregation cancelled by user.  RETRIED - Aggregation retried because of connectivity issues with the Virtual Appliance.  TERMINATED - Aggregation marked as failed after 3 tries after connectivity issues with the Virtual Appliance.  | [optional] 
-**TotalAccounts** | **Int32** | The total number of *NEW, CHANGED and DELETED* accounts that need to be processed for this aggregation. This does not include accounts that were unchanged since the previous aggregation. This can be zero if there were no new, changed or deleted accounts since the previous aggregation. *Only available when status is ACCOUNTS_COLLECTED or COMPLETED.* | [optional] 
-**ProcessedAccounts** | **Int32** | The number of *NEW, CHANGED and DELETED* accounts that have been processed so far. This reflects the number of accounts that have been processed at the time of the API call, and may increase on subsequent API calls while the status is ACCOUNTS_COLLECTED. *Only available when status is ACCOUNTS_COLLECTED or COMPLETED.* | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Start** | **System.DateTime** | When the aggregation started. | [optional] |
+| **Status** | **Enum** [ "STARTED", "ACCOUNTS_COLLECTED", "COMPLETED", "CANCELLED", "RETRIED", "TERMINATED" ] | STARTED - Aggregation started, but source account iteration has not completed. ACCOUNTS_COLLECTED - Source account iteration completed, but all accounts have not yet been processed. COMPLETED - Aggregation completed (_possibly with errors_). CANCELLED - Aggregation cancelled by user. RETRIED - Aggregation retried because of connectivity issues with the Virtual Appliance. TERMINATED - Aggregation marked as failed after 3 tries after connectivity issues with the Virtual Appliance. | [optional] |
+| **TotalAccounts** | **Int32** | The total number of _NEW, CHANGED and DELETED_ accounts that need to be processed for this aggregation. This does not include accounts that were unchanged since the previous aggregation. This can be zero if there were no new, changed or deleted accounts since the previous aggregation. _Only available when status is ACCOUNTS_COLLECTED or COMPLETED._ | [optional] |
+| **ProcessedAccounts** | **Int32** | The number of _NEW, CHANGED and DELETED_ accounts that have been processed so far. This reflects the number of accounts that have been processed at the time of the API call, and may increase on subsequent API calls while the status is ACCOUNTS_COLLECTED. _Only available when status is ACCOUNTS_COLLECTED or COMPLETED._ | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $AccountAggregationStatus = Initialize-BetaAccountAggregationStatus  -Start 2021-01-31T14:30:05.104Z `
  -Status ACCOUNTS_COLLECTED `
@@ -32,10 +45,9 @@ $AccountAggregationStatus = Initialize-BetaAccountAggregationStatus  -Start 2021
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $AccountAggregationStatus | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

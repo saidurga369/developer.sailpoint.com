@@ -4,24 +4,37 @@ title: CommonAccessItemAccess
 pagination_label: CommonAccessItemAccess
 sidebar_label: CommonAccessItemAccess
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'CommonAccessItemAccess', 'BetaCommonAccessItemAccess'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'CommonAccessItemAccess',
+    'BetaCommonAccessItemAccess',
+  ]
 slug: /tools/sdk/python/beta/models/common-access-item-access
-tags: ['SDK', 'Software Development Kit', 'CommonAccessItemAccess', 'BetaCommonAccessItemAccess']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CommonAccessItemAccess',
+    'BetaCommonAccessItemAccess',
+  ]
 ---
 
 # CommonAccessItemAccess
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Common access ID | [optional] 
-**type** | [**CommonAccessType**](common-access-type) |  | [optional] 
-**name** | **str** | Common access name | [optional] 
-**description** | **str** | Common access description | [optional] 
-**owner_name** | **str** | Common access owner name | [optional] 
-**owner_id** | **str** | Common access owner ID | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | Common access ID | [optional] |
+| **type** | [**CommonAccessType**](common-access-type) |  | [optional] |
+| **name** | **str** | Common access name | [optional] |
+| **description** | **str** | Common access description | [optional] |
+| **owner_name** | **str** | Common access owner name | [optional] |
+| **owner_id** | **str** | Common access owner ID | [optional] |
+
 }
 
 ## Example
@@ -39,5 +52,5 @@ owner_id=''
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

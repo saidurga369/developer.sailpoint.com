@@ -4,20 +4,27 @@ title: StartInvocationInput
 pagination_label: StartInvocationInput
 sidebar_label: StartInvocationInput
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'StartInvocationInput', 'V2024StartInvocationInput'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'StartInvocationInput', 'V2024StartInvocationInput']
 slug: /tools/sdk/go/v2024/models/start-invocation-input
-tags: ['SDK', 'Software Development Kit', 'StartInvocationInput', 'V2024StartInvocationInput']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'StartInvocationInput',
+    'V2024StartInvocationInput',
+  ]
 ---
 
 # StartInvocationInput
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**TriggerId** | Pointer to **string** | Trigger ID | [optional] 
-**Input** | Pointer to **map[string]interface{}** | Trigger input payload. Its schema is defined in the trigger definition. | [optional] 
-**ContentJson** | Pointer to **map[string]interface{}** | JSON map of invocation metadata | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **TriggerId** | Pointer to **string** | Trigger ID | [optional] |
+| **Input** | Pointer to **map[string]interface{}** | Trigger input payload. Its schema is defined in the trigger definition. | [optional] |
+| **ContentJson** | Pointer to **map[string]interface{}** | JSON map of invocation metadata | [optional] |
 
 ## Methods
 
@@ -25,18 +32,13 @@ Name | Type | Description | Notes
 
 `func NewStartInvocationInput() *StartInvocationInput`
 
-NewStartInvocationInput instantiates a new StartInvocationInput object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewStartInvocationInput instantiates a new StartInvocationInput object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewStartInvocationInputWithDefaults
 
 `func NewStartInvocationInputWithDefaults() *StartInvocationInput`
 
-NewStartInvocationInputWithDefaults instantiates a new StartInvocationInput object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewStartInvocationInputWithDefaults instantiates a new StartInvocationInput object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetTriggerId
 
@@ -48,8 +50,7 @@ GetTriggerId returns the TriggerId field if non-nil, zero value otherwise.
 
 `func (o *StartInvocationInput) GetTriggerIdOk() (*string, bool)`
 
-GetTriggerIdOk returns a tuple with the TriggerId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTriggerIdOk returns a tuple with the TriggerId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTriggerId
 
@@ -73,8 +74,7 @@ GetInput returns the Input field if non-nil, zero value otherwise.
 
 `func (o *StartInvocationInput) GetInputOk() (*map[string]interface{}, bool)`
 
-GetInputOk returns a tuple with the Input field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetInputOk returns a tuple with the Input field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetInput
 
@@ -98,8 +98,7 @@ GetContentJson returns the ContentJson field if non-nil, zero value otherwise.
 
 `func (o *StartInvocationInput) GetContentJsonOk() (*map[string]interface{}, bool)`
 
-GetContentJsonOk returns a tuple with the ContentJson field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetContentJsonOk returns a tuple with the ContentJson field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetContentJson
 
@@ -112,5 +111,3 @@ SetContentJson sets ContentJson field to given value.
 `func (o *StartInvocationInput) HasContentJson() bool`
 
 HasContentJson returns a boolean if a field has been set.
-
-

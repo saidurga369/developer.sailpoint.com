@@ -4,23 +4,30 @@ title: RequestedItemDtoRef
 pagination_label: RequestedItemDtoRef
 sidebar_label: RequestedItemDtoRef
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RequestedItemDtoRef', 'V2025RequestedItemDtoRef'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'RequestedItemDtoRef', 'V2025RequestedItemDtoRef']
 slug: /tools/sdk/go/v2025/models/requested-item-dto-ref
-tags: ['SDK', 'Software Development Kit', 'RequestedItemDtoRef', 'V2025RequestedItemDtoRef']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RequestedItemDtoRef',
+    'V2025RequestedItemDtoRef',
+  ]
 ---
 
 # RequestedItemDtoRef
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | **string** | The type of the item being requested. | 
-**Id** | **string** | ID of Role, Access Profile or Entitlement being requested. | 
-**Comment** | Pointer to **string** | Comment provided by requester. * Comment is required when the request is of type Revoke Access.  | [optional] 
-**ClientMetadata** | Pointer to **map[string]string** | Arbitrary key-value pairs. They will never be processed by the IdentityNow system but will be returned on associated APIs such as /account-activities and /access-request-status. | [optional] 
-**RemoveDate** | Pointer to **SailPointTime** | The date and time the role or access profile or entitlement is no longer assigned to the specified identity. Also known as the expiration date. * Specify a date-time in the future. * The current SLA for the deprovisioning is 24 hours. * This date-time can be used to change the duration of an existing access item assignment for the specified identity. A GRANT_ACCESS request can extend duration or even remove an expiration date, and either a  GRANT_ACCESS or REVOKE_ACCESS request can reduce duration or add an expiration date where one has not previously been present. You can change the expiration date in requests for yourself or others you are authorized to request for.  | [optional] 
-**AccountSelection** | Pointer to [**[]SourceItemRef**](source-item-ref) | The accounts where the access item will be provisioned to * Includes selections performed by the user in the event of multiple accounts existing on the same source * Also includes details for sources where user only has one account  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | **string** | The type of the item being requested. |
+| **Id** | **string** | ID of Role, Access Profile or Entitlement being requested. |
+| **Comment** | Pointer to **string** | Comment provided by requester. \* Comment is required when the request is of type Revoke Access. | [optional] |
+| **ClientMetadata** | Pointer to **map[string]string** | Arbitrary key-value pairs. They will never be processed by the IdentityNow system but will be returned on associated APIs such as /account-activities and /access-request-status. | [optional] |
+| **RemoveDate** | Pointer to **SailPointTime** | The date and time the role or access profile or entitlement is no longer assigned to the specified identity. Also known as the expiration date. _ Specify a date-time in the future. _ The current SLA for the deprovisioning is 24 hours. \* This date-time can be used to change the duration of an existing access item assignment for the specified identity. A GRANT_ACCESS request can extend duration or even remove an expiration date, and either a GRANT_ACCESS or REVOKE_ACCESS request can reduce duration or add an expiration date where one has not previously been present. You can change the expiration date in requests for yourself or others you are authorized to request for. | [optional] |
+| **AccountSelection** | Pointer to [**[]SourceItemRef**](source-item-ref) | The accounts where the access item will be provisioned to _ Includes selections performed by the user in the event of multiple accounts existing on the same source _ Also includes details for sources where user only has one account | [optional] |
 
 ## Methods
 
@@ -28,18 +35,13 @@ Name | Type | Description | Notes
 
 `func NewRequestedItemDtoRef(type_ string, id string, ) *RequestedItemDtoRef`
 
-NewRequestedItemDtoRef instantiates a new RequestedItemDtoRef object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRequestedItemDtoRef instantiates a new RequestedItemDtoRef object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRequestedItemDtoRefWithDefaults
 
 `func NewRequestedItemDtoRefWithDefaults() *RequestedItemDtoRef`
 
-NewRequestedItemDtoRefWithDefaults instantiates a new RequestedItemDtoRef object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRequestedItemDtoRefWithDefaults instantiates a new RequestedItemDtoRef object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -51,15 +53,13 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *RequestedItemDtoRef) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
 `func (o *RequestedItemDtoRef) SetType(v string)`
 
 SetType sets Type field to given value.
-
 
 ### GetId
 
@@ -71,15 +71,13 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *RequestedItemDtoRef) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
 `func (o *RequestedItemDtoRef) SetId(v string)`
 
 SetId sets Id field to given value.
-
 
 ### GetComment
 
@@ -91,8 +89,7 @@ GetComment returns the Comment field if non-nil, zero value otherwise.
 
 `func (o *RequestedItemDtoRef) GetCommentOk() (*string, bool)`
 
-GetCommentOk returns a tuple with the Comment field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCommentOk returns a tuple with the Comment field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetComment
 
@@ -116,8 +113,7 @@ GetClientMetadata returns the ClientMetadata field if non-nil, zero value otherw
 
 `func (o *RequestedItemDtoRef) GetClientMetadataOk() (*map[string]string, bool)`
 
-GetClientMetadataOk returns a tuple with the ClientMetadata field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetClientMetadataOk returns a tuple with the ClientMetadata field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetClientMetadata
 
@@ -141,8 +137,7 @@ GetRemoveDate returns the RemoveDate field if non-nil, zero value otherwise.
 
 `func (o *RequestedItemDtoRef) GetRemoveDateOk() (*SailPointTime, bool)`
 
-GetRemoveDateOk returns a tuple with the RemoveDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRemoveDateOk returns a tuple with the RemoveDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRemoveDate
 
@@ -166,8 +161,7 @@ GetAccountSelection returns the AccountSelection field if non-nil, zero value ot
 
 `func (o *RequestedItemDtoRef) GetAccountSelectionOk() (*[]SourceItemRef, bool)`
 
-GetAccountSelectionOk returns a tuple with the AccountSelection field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountSelectionOk returns a tuple with the AccountSelection field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountSelection
 
@@ -185,10 +179,10 @@ HasAccountSelection returns a boolean if a field has been set.
 
 `func (o *RequestedItemDtoRef) SetAccountSelectionNil(b bool)`
 
- SetAccountSelectionNil sets the value for AccountSelection to be an explicit nil
+SetAccountSelectionNil sets the value for AccountSelection to be an explicit nil
 
 ### UnsetAccountSelection
+
 `func (o *RequestedItemDtoRef) UnsetAccountSelection()`
 
 UnsetAccountSelection ensures that no value is present for AccountSelection, not even an explicit nil
-

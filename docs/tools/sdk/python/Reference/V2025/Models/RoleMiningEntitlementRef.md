@@ -4,22 +4,35 @@ title: RoleMiningEntitlementRef
 pagination_label: RoleMiningEntitlementRef
 sidebar_label: RoleMiningEntitlementRef
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RoleMiningEntitlementRef', 'V2025RoleMiningEntitlementRef'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'RoleMiningEntitlementRef',
+    'V2025RoleMiningEntitlementRef',
+  ]
 slug: /tools/sdk/python/v2025/models/role-mining-entitlement-ref
-tags: ['SDK', 'Software Development Kit', 'RoleMiningEntitlementRef', 'V2025RoleMiningEntitlementRef']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningEntitlementRef',
+    'V2025RoleMiningEntitlementRef',
+  ]
 ---
 
 # RoleMiningEntitlementRef
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Id of the entitlement | [optional] 
-**name** | **str** | Name of the entitlement | [optional] 
-**description** | **str** | Description forthe entitlement | [optional] 
-**attribute** | **str** | The entitlement attribute | [optional] 
+| Name            | Type    | Description                    | Notes      |
+| --------------- | ------- | ------------------------------ | ---------- |
+| **id**          | **str** | Id of the entitlement          | [optional] |
+| **name**        | **str** | Name of the entitlement        | [optional] |
+| **description** | **str** | Description forthe entitlement | [optional] |
+| **attribute**   | **str** | The entitlement attribute      | [optional] |
+
 }
 
 ## Example
@@ -35,5 +48,5 @@ attribute='groups'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

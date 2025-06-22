@@ -4,7 +4,7 @@ title: SodPolicy
 pagination_label: SodPolicy
 sidebar_label: SodPolicy
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SodPolicy', 'V2025SodPolicy'] 
+keywords: ['go', 'Golang', 'sdk', 'SodPolicy', 'V2025SodPolicy']
 slug: /tools/sdk/go/v2025/models/sod-policy
 tags: ['SDK', 'Software Development Kit', 'SodPolicy', 'V2025SodPolicy']
 ---
@@ -13,26 +13,26 @@ tags: ['SDK', 'Software Development Kit', 'SodPolicy', 'V2025SodPolicy']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Policy id | [optional] [readonly] 
-**Name** | Pointer to **string** | Policy Business Name | [optional] 
-**Created** | Pointer to **SailPointTime** | The time when this SOD policy is created. | [optional] [readonly] 
-**Modified** | Pointer to **SailPointTime** | The time when this SOD policy is modified. | [optional] [readonly] 
-**Description** | Pointer to **NullableString** | Optional description of the SOD policy | [optional] 
-**OwnerRef** | Pointer to [**SodPolicyOwnerRef**](sod-policy-owner-ref) |  | [optional] 
-**ExternalPolicyReference** | Pointer to **NullableString** | Optional External Policy Reference | [optional] 
-**PolicyQuery** | Pointer to **string** | Search query of the SOD policy | [optional] 
-**CompensatingControls** | Pointer to **NullableString** | Optional compensating controls(Mitigating Controls) | [optional] 
-**CorrectionAdvice** | Pointer to **NullableString** | Optional correction advice | [optional] 
-**State** | Pointer to **string** | whether the policy is enforced or not | [optional] 
-**Tags** | Pointer to **[]string** | tags for this policy object | [optional] 
-**CreatorId** | Pointer to **string** | Policy's creator ID | [optional] [readonly] 
-**ModifierId** | Pointer to **NullableString** | Policy's modifier ID | [optional] [readonly] 
-**ViolationOwnerAssignmentConfig** | Pointer to [**ViolationOwnerAssignmentConfig**](violation-owner-assignment-config) |  | [optional] 
-**Scheduled** | Pointer to **bool** | defines whether a policy has been scheduled or not | [optional] [default to false]
-**Type** | Pointer to **string** | whether a policy is query based or conflicting access based | [optional] [default to "GENERAL"]
-**ConflictingAccessCriteria** | Pointer to [**SodPolicyConflictingAccessCriteria**](sod-policy-conflicting-access-criteria) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Policy id | [optional] [readonly] |
+| **Name** | Pointer to **string** | Policy Business Name | [optional] |
+| **Created** | Pointer to **SailPointTime** | The time when this SOD policy is created. | [optional] [readonly] |
+| **Modified** | Pointer to **SailPointTime** | The time when this SOD policy is modified. | [optional] [readonly] |
+| **Description** | Pointer to **NullableString** | Optional description of the SOD policy | [optional] |
+| **OwnerRef** | Pointer to [**SodPolicyOwnerRef**](sod-policy-owner-ref) |  | [optional] |
+| **ExternalPolicyReference** | Pointer to **NullableString** | Optional External Policy Reference | [optional] |
+| **PolicyQuery** | Pointer to **string** | Search query of the SOD policy | [optional] |
+| **CompensatingControls** | Pointer to **NullableString** | Optional compensating controls(Mitigating Controls) | [optional] |
+| **CorrectionAdvice** | Pointer to **NullableString** | Optional correction advice | [optional] |
+| **State** | Pointer to **string** | whether the policy is enforced or not | [optional] |
+| **Tags** | Pointer to **[]string** | tags for this policy object | [optional] |
+| **CreatorId** | Pointer to **string** | Policy's creator ID | [optional] [readonly] |
+| **ModifierId** | Pointer to **NullableString** | Policy's modifier ID | [optional] [readonly] |
+| **ViolationOwnerAssignmentConfig** | Pointer to [**ViolationOwnerAssignmentConfig**](violation-owner-assignment-config) |  | [optional] |
+| **Scheduled** | Pointer to **bool** | defines whether a policy has been scheduled or not | [optional] [default to false] |
+| **Type** | Pointer to **string** | whether a policy is query based or conflicting access based | [optional] [default to "GENERAL"] |
+| **ConflictingAccessCriteria** | Pointer to [**SodPolicyConflictingAccessCriteria**](sod-policy-conflicting-access-criteria) |  | [optional] |
 
 ## Methods
 
@@ -40,18 +40,13 @@ Name | Type | Description | Notes
 
 `func NewSodPolicy() *SodPolicy`
 
-NewSodPolicy instantiates a new SodPolicy object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSodPolicy instantiates a new SodPolicy object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSodPolicyWithDefaults
 
 `func NewSodPolicyWithDefaults() *SodPolicy`
 
-NewSodPolicyWithDefaults instantiates a new SodPolicy object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSodPolicyWithDefaults instantiates a new SodPolicy object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -63,8 +58,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *SodPolicy) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -88,8 +82,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *SodPolicy) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -113,8 +106,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *SodPolicy) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -138,8 +130,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *SodPolicy) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -163,8 +154,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *SodPolicy) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -182,12 +172,14 @@ HasDescription returns a boolean if a field has been set.
 
 `func (o *SodPolicy) SetDescriptionNil(b bool)`
 
- SetDescriptionNil sets the value for Description to be an explicit nil
+SetDescriptionNil sets the value for Description to be an explicit nil
 
 ### UnsetDescription
+
 `func (o *SodPolicy) UnsetDescription()`
 
 UnsetDescription ensures that no value is present for Description, not even an explicit nil
+
 ### GetOwnerRef
 
 `func (o *SodPolicy) GetOwnerRef() SodPolicyOwnerRef`
@@ -198,8 +190,7 @@ GetOwnerRef returns the OwnerRef field if non-nil, zero value otherwise.
 
 `func (o *SodPolicy) GetOwnerRefOk() (*SodPolicyOwnerRef, bool)`
 
-GetOwnerRefOk returns a tuple with the OwnerRef field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerRefOk returns a tuple with the OwnerRef field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwnerRef
 
@@ -223,8 +214,7 @@ GetExternalPolicyReference returns the ExternalPolicyReference field if non-nil,
 
 `func (o *SodPolicy) GetExternalPolicyReferenceOk() (*string, bool)`
 
-GetExternalPolicyReferenceOk returns a tuple with the ExternalPolicyReference field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetExternalPolicyReferenceOk returns a tuple with the ExternalPolicyReference field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetExternalPolicyReference
 
@@ -242,12 +232,14 @@ HasExternalPolicyReference returns a boolean if a field has been set.
 
 `func (o *SodPolicy) SetExternalPolicyReferenceNil(b bool)`
 
- SetExternalPolicyReferenceNil sets the value for ExternalPolicyReference to be an explicit nil
+SetExternalPolicyReferenceNil sets the value for ExternalPolicyReference to be an explicit nil
 
 ### UnsetExternalPolicyReference
+
 `func (o *SodPolicy) UnsetExternalPolicyReference()`
 
 UnsetExternalPolicyReference ensures that no value is present for ExternalPolicyReference, not even an explicit nil
+
 ### GetPolicyQuery
 
 `func (o *SodPolicy) GetPolicyQuery() string`
@@ -258,8 +250,7 @@ GetPolicyQuery returns the PolicyQuery field if non-nil, zero value otherwise.
 
 `func (o *SodPolicy) GetPolicyQueryOk() (*string, bool)`
 
-GetPolicyQueryOk returns a tuple with the PolicyQuery field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPolicyQueryOk returns a tuple with the PolicyQuery field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPolicyQuery
 
@@ -283,8 +274,7 @@ GetCompensatingControls returns the CompensatingControls field if non-nil, zero 
 
 `func (o *SodPolicy) GetCompensatingControlsOk() (*string, bool)`
 
-GetCompensatingControlsOk returns a tuple with the CompensatingControls field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCompensatingControlsOk returns a tuple with the CompensatingControls field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCompensatingControls
 
@@ -302,12 +292,14 @@ HasCompensatingControls returns a boolean if a field has been set.
 
 `func (o *SodPolicy) SetCompensatingControlsNil(b bool)`
 
- SetCompensatingControlsNil sets the value for CompensatingControls to be an explicit nil
+SetCompensatingControlsNil sets the value for CompensatingControls to be an explicit nil
 
 ### UnsetCompensatingControls
+
 `func (o *SodPolicy) UnsetCompensatingControls()`
 
 UnsetCompensatingControls ensures that no value is present for CompensatingControls, not even an explicit nil
+
 ### GetCorrectionAdvice
 
 `func (o *SodPolicy) GetCorrectionAdvice() string`
@@ -318,8 +310,7 @@ GetCorrectionAdvice returns the CorrectionAdvice field if non-nil, zero value ot
 
 `func (o *SodPolicy) GetCorrectionAdviceOk() (*string, bool)`
 
-GetCorrectionAdviceOk returns a tuple with the CorrectionAdvice field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCorrectionAdviceOk returns a tuple with the CorrectionAdvice field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCorrectionAdvice
 
@@ -337,12 +328,14 @@ HasCorrectionAdvice returns a boolean if a field has been set.
 
 `func (o *SodPolicy) SetCorrectionAdviceNil(b bool)`
 
- SetCorrectionAdviceNil sets the value for CorrectionAdvice to be an explicit nil
+SetCorrectionAdviceNil sets the value for CorrectionAdvice to be an explicit nil
 
 ### UnsetCorrectionAdvice
+
 `func (o *SodPolicy) UnsetCorrectionAdvice()`
 
 UnsetCorrectionAdvice ensures that no value is present for CorrectionAdvice, not even an explicit nil
+
 ### GetState
 
 `func (o *SodPolicy) GetState() string`
@@ -353,8 +346,7 @@ GetState returns the State field if non-nil, zero value otherwise.
 
 `func (o *SodPolicy) GetStateOk() (*string, bool)`
 
-GetStateOk returns a tuple with the State field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStateOk returns a tuple with the State field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetState
 
@@ -378,8 +370,7 @@ GetTags returns the Tags field if non-nil, zero value otherwise.
 
 `func (o *SodPolicy) GetTagsOk() (*[]string, bool)`
 
-GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTags
 
@@ -403,8 +394,7 @@ GetCreatorId returns the CreatorId field if non-nil, zero value otherwise.
 
 `func (o *SodPolicy) GetCreatorIdOk() (*string, bool)`
 
-GetCreatorIdOk returns a tuple with the CreatorId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatorIdOk returns a tuple with the CreatorId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreatorId
 
@@ -428,8 +418,7 @@ GetModifierId returns the ModifierId field if non-nil, zero value otherwise.
 
 `func (o *SodPolicy) GetModifierIdOk() (*string, bool)`
 
-GetModifierIdOk returns a tuple with the ModifierId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifierIdOk returns a tuple with the ModifierId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModifierId
 
@@ -447,12 +436,14 @@ HasModifierId returns a boolean if a field has been set.
 
 `func (o *SodPolicy) SetModifierIdNil(b bool)`
 
- SetModifierIdNil sets the value for ModifierId to be an explicit nil
+SetModifierIdNil sets the value for ModifierId to be an explicit nil
 
 ### UnsetModifierId
+
 `func (o *SodPolicy) UnsetModifierId()`
 
 UnsetModifierId ensures that no value is present for ModifierId, not even an explicit nil
+
 ### GetViolationOwnerAssignmentConfig
 
 `func (o *SodPolicy) GetViolationOwnerAssignmentConfig() ViolationOwnerAssignmentConfig`
@@ -463,8 +454,7 @@ GetViolationOwnerAssignmentConfig returns the ViolationOwnerAssignmentConfig fie
 
 `func (o *SodPolicy) GetViolationOwnerAssignmentConfigOk() (*ViolationOwnerAssignmentConfig, bool)`
 
-GetViolationOwnerAssignmentConfigOk returns a tuple with the ViolationOwnerAssignmentConfig field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetViolationOwnerAssignmentConfigOk returns a tuple with the ViolationOwnerAssignmentConfig field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetViolationOwnerAssignmentConfig
 
@@ -488,8 +478,7 @@ GetScheduled returns the Scheduled field if non-nil, zero value otherwise.
 
 `func (o *SodPolicy) GetScheduledOk() (*bool, bool)`
 
-GetScheduledOk returns a tuple with the Scheduled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetScheduledOk returns a tuple with the Scheduled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetScheduled
 
@@ -513,8 +502,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *SodPolicy) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -538,8 +526,7 @@ GetConflictingAccessCriteria returns the ConflictingAccessCriteria field if non-
 
 `func (o *SodPolicy) GetConflictingAccessCriteriaOk() (*SodPolicyConflictingAccessCriteria, bool)`
 
-GetConflictingAccessCriteriaOk returns a tuple with the ConflictingAccessCriteria field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConflictingAccessCriteriaOk returns a tuple with the ConflictingAccessCriteria field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConflictingAccessCriteria
 
@@ -552,5 +539,3 @@ SetConflictingAccessCriteria sets ConflictingAccessCriteria field to given value
 `func (o *SodPolicy) HasConflictingAccessCriteria() bool`
 
 HasConflictingAccessCriteria returns a boolean if a field has been set.
-
-

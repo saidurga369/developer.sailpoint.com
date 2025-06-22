@@ -4,24 +4,24 @@ title: FormDetails
 pagination_label: FormDetails
 sidebar_label: FormDetails
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'FormDetails', 'V2025FormDetails'] 
+keywords: ['python', 'Python', 'sdk', 'FormDetails', 'V2025FormDetails']
 slug: /tools/sdk/python/v2025/models/form-details
 tags: ['SDK', 'Software Development Kit', 'FormDetails', 'V2025FormDetails']
 ---
 
 # FormDetails
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | ID of the form | [optional] 
-**name** | **str** | Name of the form | [optional] 
-**title** | **str** | The form title | [optional] 
-**subtitle** | **str** | The form subtitle. | [optional] 
-**target_user** | **str** | The name of the user that should be shown this form | [optional] 
-**sections** | [**[]SectionDetails**](section-details) | Sections of the form | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | ID of the form | [optional] |
+| **name** | **str** | Name of the form | [optional] |
+| **title** | **str** | The form title | [optional] |
+| **subtitle** | **str** | The form subtitle. | [optional] |
+| **target_user** | **str** | The name of the user that should be shown this form | [optional] |
+| **sections** | [**[]SectionDetails**](section-details) | Sections of the form | [optional] |
+
 }
 
 ## Example
@@ -41,5 +41,5 @@ sections=[
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

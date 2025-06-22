@@ -13,7 +13,7 @@ tags: ['SDK']
 
 You can use the SDK to create new resources.
 
-For example, you can run a script to create a work group, also known as a [governance group](https://documentation.sailpoint.com/saas/help/common/users/governance_groups.html). 
+For example, you can run a script to create a work group, also known as a [governance group](https://documentation.sailpoint.com/saas/help/common/users/governance_groups.html).
 
 Copy this 'create WorkGroup' script from the beta APIs into your Python project to try it out:
 
@@ -35,10 +35,10 @@ workgroups_api_instance = sailpoint.beta.GovernanceGroupsApi(api_client_beta)
 
 identity = identities_api_instance.get_public_identities(limit=1)[0]
 
-workgroup = WorkgroupDto(name='DB Access Governance Group', 
-                         description='Description of the Governance Group', 
-                         owner=OwnerDto(id=identity.id, 
-                                        name=identity.name, 
+workgroup = WorkgroupDto(name='DB Access Governance Group',
+                         description='Description of the Governance Group',
+                         owner=OwnerDto(id=identity.id,
+                                        name=identity.name,
                                         type='IDENTITY'))
 
 
@@ -63,12 +63,12 @@ The `create_workgroup` request is initialized on lines 18-22, using the identity
 The SDK will return the created work group:
 
 ```bash
-id='d287a1e2-81fc-474e-bc0c-155bd8ab0899' 
-name='DB Access Governance Group' 
-description='Description of the Governance Group' 
-member_count=0 
+id='d287a1e2-81fc-474e-bc0c-155bd8ab0899'
+name='DB Access Governance Group'
+description='Description of the Governance Group'
+member_count=0
 connection_count=0
-owner=OwnerDto(type='IDENTITY', 
-               id='0003c25c365e492381d4e557b6159f9b', 
+owner=OwnerDto(type='IDENTITY',
+               id='0003c25c365e492381d4e557b6159f9b',
                name='Brian Mendoza')
 ```

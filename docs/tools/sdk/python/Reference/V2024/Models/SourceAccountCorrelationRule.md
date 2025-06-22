@@ -4,9 +4,22 @@ title: SourceAccountCorrelationRule
 pagination_label: SourceAccountCorrelationRule
 sidebar_label: SourceAccountCorrelationRule
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SourceAccountCorrelationRule', 'V2024SourceAccountCorrelationRule'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'SourceAccountCorrelationRule',
+    'V2024SourceAccountCorrelationRule',
+  ]
 slug: /tools/sdk/python/v2024/models/source-account-correlation-rule
-tags: ['SDK', 'Software Development Kit', 'SourceAccountCorrelationRule', 'V2024SourceAccountCorrelationRule']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SourceAccountCorrelationRule',
+    'V2024SourceAccountCorrelationRule',
+  ]
 ---
 
 # SourceAccountCorrelationRule
@@ -15,11 +28,12 @@ Reference to a rule that can do COMPLEX correlation. Only use this rule when you
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'RULE' ] | Type of object being referenced. | [optional] 
-**id** | **str** | Rule ID. | [optional] 
-**name** | **str** | Rule's human-readable display name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'RULE' ] | Type of object being referenced. | [optional] |
+| **id** | **str** | Rule ID. | [optional] |
+| **name** | **str** | Rule's human-readable display name. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Example Rule'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

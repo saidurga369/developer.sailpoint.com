@@ -7,7 +7,7 @@ import styles from './ambassador.module.css';
 import AmbassadorCards from '../components/ambassador/AmbassadorCards';
 
 const Ambassador: React.FC = () => {
-  const { siteConfig } = useDocusaurusContext();
+  const {siteConfig} = useDocusaurusContext();
 
   return (
     <Layout description="The SailPoint Developer Community has everything you need to build, extend, and automate scalable identity solutions.">
@@ -26,8 +26,7 @@ const Ambassador: React.FC = () => {
             growth, enabling knowledge-sharing among experts like you.
             <Link
               className={styles.link}
-              to="https://developer.sailpoint.com/discuss/t/announcing-the-developer-community-ambassador-program/10634"
-            >
+              to="https://developer.sailpoint.com/discuss/t/announcing-the-developer-community-ambassador-program/10634">
               <div className={styles.button}>Become an Ambassador</div>
             </Link>
           </div>

@@ -4,7 +4,7 @@ title: Product
 pagination_label: Product
 sidebar_label: Product
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Product', 'V2025Product'] 
+keywords: ['go', 'Golang', 'sdk', 'Product', 'V2025Product']
 slug: /tools/sdk/go/v2025/models/product
 tags: ['SDK', 'Software Development Kit', 'Product', 'V2025Product']
 ---
@@ -13,24 +13,24 @@ tags: ['SDK', 'Software Development Kit', 'Product', 'V2025Product']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ProductName** | Pointer to **string** | Name of the Product | [optional] 
-**Url** | Pointer to **string** | URL of the Product | [optional] 
-**ProductTenantId** | Pointer to **string** | An identifier for a specific product-tenant combination | [optional] 
-**ProductRegion** | Pointer to **string** | Product region | [optional] 
-**ProductRight** | Pointer to **string** | Right needed for the Product | [optional] 
-**ApiUrl** | Pointer to **NullableString** | API URL of the Product | [optional] 
-**Licenses** | Pointer to [**[]License**](license) |  | [optional] 
-**Attributes** | Pointer to **map[string]interface{}** | Additional attributes for a product | [optional] 
-**Zone** | Pointer to **string** | Zone | [optional] 
-**Status** | Pointer to **string** | Status of the product | [optional] 
-**StatusDateTime** | Pointer to **SailPointTime** | Status datetime | [optional] 
-**Reason** | Pointer to **string** | If there's a tenant provisioning failure then reason will have the description of error | [optional] 
-**Notes** | Pointer to **string** | Product could have additional notes added during tenant provisioning. | [optional] 
-**DateCreated** | Pointer to **NullableTime** | Date when the product was created | [optional] 
-**LastUpdated** | Pointer to **NullableTime** | Date when the product was last updated | [optional] 
-**OrgType** | Pointer to **NullableString** | Type of org | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ProductName** | Pointer to **string** | Name of the Product | [optional] |
+| **Url** | Pointer to **string** | URL of the Product | [optional] |
+| **ProductTenantId** | Pointer to **string** | An identifier for a specific product-tenant combination | [optional] |
+| **ProductRegion** | Pointer to **string** | Product region | [optional] |
+| **ProductRight** | Pointer to **string** | Right needed for the Product | [optional] |
+| **ApiUrl** | Pointer to **NullableString** | API URL of the Product | [optional] |
+| **Licenses** | Pointer to [**[]License**](license) |  | [optional] |
+| **Attributes** | Pointer to **map[string]interface{}** | Additional attributes for a product | [optional] |
+| **Zone** | Pointer to **string** | Zone | [optional] |
+| **Status** | Pointer to **string** | Status of the product | [optional] |
+| **StatusDateTime** | Pointer to **SailPointTime** | Status datetime | [optional] |
+| **Reason** | Pointer to **string** | If there's a tenant provisioning failure then reason will have the description of error | [optional] |
+| **Notes** | Pointer to **string** | Product could have additional notes added during tenant provisioning. | [optional] |
+| **DateCreated** | Pointer to **NullableTime** | Date when the product was created | [optional] |
+| **LastUpdated** | Pointer to **NullableTime** | Date when the product was last updated | [optional] |
+| **OrgType** | Pointer to **NullableString** | Type of org | [optional] |
 
 ## Methods
 
@@ -38,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewProduct() *Product`
 
-NewProduct instantiates a new Product object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewProduct instantiates a new Product object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewProductWithDefaults
 
 `func NewProductWithDefaults() *Product`
 
-NewProductWithDefaults instantiates a new Product object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewProductWithDefaults instantiates a new Product object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetProductName
 
@@ -61,8 +56,7 @@ GetProductName returns the ProductName field if non-nil, zero value otherwise.
 
 `func (o *Product) GetProductNameOk() (*string, bool)`
 
-GetProductNameOk returns a tuple with the ProductName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProductNameOk returns a tuple with the ProductName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProductName
 
@@ -86,8 +80,7 @@ GetUrl returns the Url field if non-nil, zero value otherwise.
 
 `func (o *Product) GetUrlOk() (*string, bool)`
 
-GetUrlOk returns a tuple with the Url field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUrlOk returns a tuple with the Url field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUrl
 
@@ -111,8 +104,7 @@ GetProductTenantId returns the ProductTenantId field if non-nil, zero value othe
 
 `func (o *Product) GetProductTenantIdOk() (*string, bool)`
 
-GetProductTenantIdOk returns a tuple with the ProductTenantId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProductTenantIdOk returns a tuple with the ProductTenantId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProductTenantId
 
@@ -136,8 +128,7 @@ GetProductRegion returns the ProductRegion field if non-nil, zero value otherwis
 
 `func (o *Product) GetProductRegionOk() (*string, bool)`
 
-GetProductRegionOk returns a tuple with the ProductRegion field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProductRegionOk returns a tuple with the ProductRegion field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProductRegion
 
@@ -161,8 +152,7 @@ GetProductRight returns the ProductRight field if non-nil, zero value otherwise.
 
 `func (o *Product) GetProductRightOk() (*string, bool)`
 
-GetProductRightOk returns a tuple with the ProductRight field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProductRightOk returns a tuple with the ProductRight field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProductRight
 
@@ -186,8 +176,7 @@ GetApiUrl returns the ApiUrl field if non-nil, zero value otherwise.
 
 `func (o *Product) GetApiUrlOk() (*string, bool)`
 
-GetApiUrlOk returns a tuple with the ApiUrl field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApiUrlOk returns a tuple with the ApiUrl field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApiUrl
 
@@ -205,12 +194,14 @@ HasApiUrl returns a boolean if a field has been set.
 
 `func (o *Product) SetApiUrlNil(b bool)`
 
- SetApiUrlNil sets the value for ApiUrl to be an explicit nil
+SetApiUrlNil sets the value for ApiUrl to be an explicit nil
 
 ### UnsetApiUrl
+
 `func (o *Product) UnsetApiUrl()`
 
 UnsetApiUrl ensures that no value is present for ApiUrl, not even an explicit nil
+
 ### GetLicenses
 
 `func (o *Product) GetLicenses() []License`
@@ -221,8 +212,7 @@ GetLicenses returns the Licenses field if non-nil, zero value otherwise.
 
 `func (o *Product) GetLicensesOk() (*[]License, bool)`
 
-GetLicensesOk returns a tuple with the Licenses field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLicensesOk returns a tuple with the Licenses field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLicenses
 
@@ -246,8 +236,7 @@ GetAttributes returns the Attributes field if non-nil, zero value otherwise.
 
 `func (o *Product) GetAttributesOk() (*map[string]interface{}, bool)`
 
-GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributes
 
@@ -271,8 +260,7 @@ GetZone returns the Zone field if non-nil, zero value otherwise.
 
 `func (o *Product) GetZoneOk() (*string, bool)`
 
-GetZoneOk returns a tuple with the Zone field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetZoneOk returns a tuple with the Zone field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetZone
 
@@ -296,8 +284,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *Product) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -321,8 +308,7 @@ GetStatusDateTime returns the StatusDateTime field if non-nil, zero value otherw
 
 `func (o *Product) GetStatusDateTimeOk() (*SailPointTime, bool)`
 
-GetStatusDateTimeOk returns a tuple with the StatusDateTime field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusDateTimeOk returns a tuple with the StatusDateTime field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatusDateTime
 
@@ -346,8 +332,7 @@ GetReason returns the Reason field if non-nil, zero value otherwise.
 
 `func (o *Product) GetReasonOk() (*string, bool)`
 
-GetReasonOk returns a tuple with the Reason field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReasonOk returns a tuple with the Reason field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReason
 
@@ -371,8 +356,7 @@ GetNotes returns the Notes field if non-nil, zero value otherwise.
 
 `func (o *Product) GetNotesOk() (*string, bool)`
 
-GetNotesOk returns a tuple with the Notes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNotesOk returns a tuple with the Notes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNotes
 
@@ -396,8 +380,7 @@ GetDateCreated returns the DateCreated field if non-nil, zero value otherwise.
 
 `func (o *Product) GetDateCreatedOk() (*SailPointTime, bool)`
 
-GetDateCreatedOk returns a tuple with the DateCreated field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDateCreatedOk returns a tuple with the DateCreated field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDateCreated
 
@@ -415,12 +398,14 @@ HasDateCreated returns a boolean if a field has been set.
 
 `func (o *Product) SetDateCreatedNil(b bool)`
 
- SetDateCreatedNil sets the value for DateCreated to be an explicit nil
+SetDateCreatedNil sets the value for DateCreated to be an explicit nil
 
 ### UnsetDateCreated
+
 `func (o *Product) UnsetDateCreated()`
 
 UnsetDateCreated ensures that no value is present for DateCreated, not even an explicit nil
+
 ### GetLastUpdated
 
 `func (o *Product) GetLastUpdated() SailPointTime`
@@ -431,8 +416,7 @@ GetLastUpdated returns the LastUpdated field if non-nil, zero value otherwise.
 
 `func (o *Product) GetLastUpdatedOk() (*SailPointTime, bool)`
 
-GetLastUpdatedOk returns a tuple with the LastUpdated field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLastUpdatedOk returns a tuple with the LastUpdated field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLastUpdated
 
@@ -450,12 +434,14 @@ HasLastUpdated returns a boolean if a field has been set.
 
 `func (o *Product) SetLastUpdatedNil(b bool)`
 
- SetLastUpdatedNil sets the value for LastUpdated to be an explicit nil
+SetLastUpdatedNil sets the value for LastUpdated to be an explicit nil
 
 ### UnsetLastUpdated
+
 `func (o *Product) UnsetLastUpdated()`
 
 UnsetLastUpdated ensures that no value is present for LastUpdated, not even an explicit nil
+
 ### GetOrgType
 
 `func (o *Product) GetOrgType() string`
@@ -466,8 +452,7 @@ GetOrgType returns the OrgType field if non-nil, zero value otherwise.
 
 `func (o *Product) GetOrgTypeOk() (*string, bool)`
 
-GetOrgTypeOk returns a tuple with the OrgType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOrgTypeOk returns a tuple with the OrgType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOrgType
 
@@ -485,10 +470,10 @@ HasOrgType returns a boolean if a field has been set.
 
 `func (o *Product) SetOrgTypeNil(b bool)`
 
- SetOrgTypeNil sets the value for OrgType to be an explicit nil
+SetOrgTypeNil sets the value for OrgType to be an explicit nil
 
 ### UnsetOrgType
+
 `func (o *Product) UnsetOrgType()`
 
 UnsetOrgType ensures that no value is present for OrgType, not even an explicit nil
-

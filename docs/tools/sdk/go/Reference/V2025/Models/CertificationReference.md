@@ -4,21 +4,34 @@ title: CertificationReference
 pagination_label: CertificationReference
 sidebar_label: CertificationReference
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'CertificationReference', 'V2025CertificationReference'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'CertificationReference',
+    'V2025CertificationReference',
+  ]
 slug: /tools/sdk/go/v2025/models/certification-reference
-tags: ['SDK', 'Software Development Kit', 'CertificationReference', 'V2025CertificationReference']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CertificationReference',
+    'V2025CertificationReference',
+  ]
 ---
 
 # CertificationReference
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The id of the certification. | [optional] 
-**Name** | Pointer to **string** | The name of the certification. | [optional] 
-**Type** | Pointer to **string** |  | [optional] 
-**Reviewer** | Pointer to [**Reviewer**](reviewer) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The id of the certification. | [optional] |
+| **Name** | Pointer to **string** | The name of the certification. | [optional] |
+| **Type** | Pointer to **string** |  | [optional] |
+| **Reviewer** | Pointer to [**Reviewer**](reviewer) |  | [optional] |
 
 ## Methods
 
@@ -26,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewCertificationReference() *CertificationReference`
 
-NewCertificationReference instantiates a new CertificationReference object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewCertificationReference instantiates a new CertificationReference object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewCertificationReferenceWithDefaults
 
 `func NewCertificationReferenceWithDefaults() *CertificationReference`
 
-NewCertificationReferenceWithDefaults instantiates a new CertificationReference object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewCertificationReferenceWithDefaults instantiates a new CertificationReference object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -49,8 +57,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *CertificationReference) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -74,8 +81,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *CertificationReference) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -99,8 +105,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *CertificationReference) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -124,8 +129,7 @@ GetReviewer returns the Reviewer field if non-nil, zero value otherwise.
 
 `func (o *CertificationReference) GetReviewerOk() (*Reviewer, bool)`
 
-GetReviewerOk returns a tuple with the Reviewer field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReviewerOk returns a tuple with the Reviewer field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReviewer
 
@@ -138,5 +142,3 @@ SetReviewer sets Reviewer field to given value.
 `func (o *CertificationReference) HasReviewer() bool`
 
 HasReviewer returns a boolean if a field has been set.
-
-

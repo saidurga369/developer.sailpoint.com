@@ -4,21 +4,30 @@ title: CompletedApprovalState
 pagination_label: CompletedApprovalState
 sidebar_label: CompletedApprovalState
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'CompletedApprovalState', 'BetaCompletedApprovalState'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'CompletedApprovalState',
+    'BetaCompletedApprovalState',
+  ]
 slug: /tools/sdk/powershell/beta/models/completed-approval-state
-tags: ['SDK', 'Software Development Kit', 'CompletedApprovalState', 'BetaCompletedApprovalState']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CompletedApprovalState',
+    'BetaCompletedApprovalState',
+  ]
 ---
-
 
 # CompletedApprovalState
 
 ## Enum
 
+- `APPROVED` (value: `"APPROVED"`)
 
-* `APPROVED` (value: `"APPROVED"`)
+- `REJECTED` (value: `"REJECTED"`)
 
-* `REJECTED` (value: `"REJECTED"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

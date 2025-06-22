@@ -72,4 +72,5 @@ return returnMap;
   ]]></Source>
 </Rule>
 ```
+
 **Note:** The attribute mentioned in `identityAttributeName` should be a [searchable](https://documentation.sailpoint.com/saas/help/accounts/correlation.html?#using-custom-identity-attributes-in-correlation) one.

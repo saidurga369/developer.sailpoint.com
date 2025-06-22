@@ -4,31 +4,43 @@ title: IdentityAttributesChangedChangesInnerOldValue
 pagination_label: IdentityAttributesChangedChangesInnerOldValue
 sidebar_label: IdentityAttributesChangedChangesInnerOldValue
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'IdentityAttributesChangedChangesInnerOldValue', 'V2024IdentityAttributesChangedChangesInnerOldValue'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'IdentityAttributesChangedChangesInnerOldValue',
+    'V2024IdentityAttributesChangedChangesInnerOldValue',
+  ]
 slug: /tools/sdk/powershell/v2024/models/identity-attributes-changed-changes-inner-old-value
-tags: ['SDK', 'Software Development Kit', 'IdentityAttributesChangedChangesInnerOldValue', 'V2024IdentityAttributesChangedChangesInnerOldValue']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityAttributesChangedChangesInnerOldValue',
+    'V2024IdentityAttributesChangedChangesInnerOldValue',
+  ]
 ---
-
 
 # IdentityAttributesChangedChangesInnerOldValue
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
-$IdentityAttributesChangedChangesInnerOldValue = Initialize-V2024IdentityAttributesChangedChangesInnerOldValue 
+$IdentityAttributesChangedChangesInnerOldValue = Initialize-V2024IdentityAttributesChangedChangesInnerOldValue
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $IdentityAttributesChangedChangesInnerOldValue | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

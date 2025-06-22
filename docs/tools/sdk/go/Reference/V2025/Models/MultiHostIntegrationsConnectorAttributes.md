@@ -4,24 +4,37 @@ title: MultiHostIntegrationsConnectorAttributes
 pagination_label: MultiHostIntegrationsConnectorAttributes
 sidebar_label: MultiHostIntegrationsConnectorAttributes
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'MultiHostIntegrationsConnectorAttributes', 'V2025MultiHostIntegrationsConnectorAttributes'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'MultiHostIntegrationsConnectorAttributes',
+    'V2025MultiHostIntegrationsConnectorAttributes',
+  ]
 slug: /tools/sdk/go/v2025/models/multi-host-integrations-connector-attributes
-tags: ['SDK', 'Software Development Kit', 'MultiHostIntegrationsConnectorAttributes', 'V2025MultiHostIntegrationsConnectorAttributes']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'MultiHostIntegrationsConnectorAttributes',
+    'V2025MultiHostIntegrationsConnectorAttributes',
+  ]
 ---
 
 # MultiHostIntegrationsConnectorAttributes
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**MaxAllowedSources** | Pointer to **int32** | Maximum sources allowed count of a Multi-Host Integration | [optional] 
-**LastSourceUploadCount** | Pointer to **int32** | Last upload sources count of a Multi-Host Integration | [optional] 
-**ConnectorFileUploadHistory** | Pointer to [**MultiHostIntegrationsConnectorAttributesConnectorFileUploadHistory**](multi-host-integrations-connector-attributes-connector-file-upload-history) |  | [optional] 
-**MultihostStatus** | Pointer to **string** | Multi-Host integration status. | [optional] 
-**ShowAccountSchema** | Pointer to **bool** | Show account schema | [optional] [default to true]
-**ShowEntitlementSchema** | Pointer to **bool** | Show entitlement schema | [optional] [default to true]
-**MultiHostAttributes** | Pointer to [**MultiHostIntegrationsConnectorAttributesMultiHostAttributes**](multi-host-integrations-connector-attributes-multi-host-attributes) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **MaxAllowedSources** | Pointer to **int32** | Maximum sources allowed count of a Multi-Host Integration | [optional] |
+| **LastSourceUploadCount** | Pointer to **int32** | Last upload sources count of a Multi-Host Integration | [optional] |
+| **ConnectorFileUploadHistory** | Pointer to [**MultiHostIntegrationsConnectorAttributesConnectorFileUploadHistory**](multi-host-integrations-connector-attributes-connector-file-upload-history) |  | [optional] |
+| **MultihostStatus** | Pointer to **string** | Multi-Host integration status. | [optional] |
+| **ShowAccountSchema** | Pointer to **bool** | Show account schema | [optional] [default to true] |
+| **ShowEntitlementSchema** | Pointer to **bool** | Show entitlement schema | [optional] [default to true] |
+| **MultiHostAttributes** | Pointer to [**MultiHostIntegrationsConnectorAttributesMultiHostAttributes**](multi-host-integrations-connector-attributes-multi-host-attributes) |  | [optional] |
 
 ## Methods
 
@@ -29,18 +42,13 @@ Name | Type | Description | Notes
 
 `func NewMultiHostIntegrationsConnectorAttributes() *MultiHostIntegrationsConnectorAttributes`
 
-NewMultiHostIntegrationsConnectorAttributes instantiates a new MultiHostIntegrationsConnectorAttributes object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewMultiHostIntegrationsConnectorAttributes instantiates a new MultiHostIntegrationsConnectorAttributes object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewMultiHostIntegrationsConnectorAttributesWithDefaults
 
 `func NewMultiHostIntegrationsConnectorAttributesWithDefaults() *MultiHostIntegrationsConnectorAttributes`
 
-NewMultiHostIntegrationsConnectorAttributesWithDefaults instantiates a new MultiHostIntegrationsConnectorAttributes object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewMultiHostIntegrationsConnectorAttributesWithDefaults instantiates a new MultiHostIntegrationsConnectorAttributes object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetMaxAllowedSources
 
@@ -52,8 +60,7 @@ GetMaxAllowedSources returns the MaxAllowedSources field if non-nil, zero value 
 
 `func (o *MultiHostIntegrationsConnectorAttributes) GetMaxAllowedSourcesOk() (*int32, bool)`
 
-GetMaxAllowedSourcesOk returns a tuple with the MaxAllowedSources field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMaxAllowedSourcesOk returns a tuple with the MaxAllowedSources field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMaxAllowedSources
 
@@ -77,8 +84,7 @@ GetLastSourceUploadCount returns the LastSourceUploadCount field if non-nil, zer
 
 `func (o *MultiHostIntegrationsConnectorAttributes) GetLastSourceUploadCountOk() (*int32, bool)`
 
-GetLastSourceUploadCountOk returns a tuple with the LastSourceUploadCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLastSourceUploadCountOk returns a tuple with the LastSourceUploadCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLastSourceUploadCount
 
@@ -102,8 +108,7 @@ GetConnectorFileUploadHistory returns the ConnectorFileUploadHistory field if no
 
 `func (o *MultiHostIntegrationsConnectorAttributes) GetConnectorFileUploadHistoryOk() (*MultiHostIntegrationsConnectorAttributesConnectorFileUploadHistory, bool)`
 
-GetConnectorFileUploadHistoryOk returns a tuple with the ConnectorFileUploadHistory field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConnectorFileUploadHistoryOk returns a tuple with the ConnectorFileUploadHistory field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConnectorFileUploadHistory
 
@@ -127,8 +132,7 @@ GetMultihostStatus returns the MultihostStatus field if non-nil, zero value othe
 
 `func (o *MultiHostIntegrationsConnectorAttributes) GetMultihostStatusOk() (*string, bool)`
 
-GetMultihostStatusOk returns a tuple with the MultihostStatus field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMultihostStatusOk returns a tuple with the MultihostStatus field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMultihostStatus
 
@@ -152,8 +156,7 @@ GetShowAccountSchema returns the ShowAccountSchema field if non-nil, zero value 
 
 `func (o *MultiHostIntegrationsConnectorAttributes) GetShowAccountSchemaOk() (*bool, bool)`
 
-GetShowAccountSchemaOk returns a tuple with the ShowAccountSchema field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetShowAccountSchemaOk returns a tuple with the ShowAccountSchema field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetShowAccountSchema
 
@@ -177,8 +180,7 @@ GetShowEntitlementSchema returns the ShowEntitlementSchema field if non-nil, zer
 
 `func (o *MultiHostIntegrationsConnectorAttributes) GetShowEntitlementSchemaOk() (*bool, bool)`
 
-GetShowEntitlementSchemaOk returns a tuple with the ShowEntitlementSchema field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetShowEntitlementSchemaOk returns a tuple with the ShowEntitlementSchema field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetShowEntitlementSchema
 
@@ -202,8 +204,7 @@ GetMultiHostAttributes returns the MultiHostAttributes field if non-nil, zero va
 
 `func (o *MultiHostIntegrationsConnectorAttributes) GetMultiHostAttributesOk() (*MultiHostIntegrationsConnectorAttributesMultiHostAttributes, bool)`
 
-GetMultiHostAttributesOk returns a tuple with the MultiHostAttributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMultiHostAttributesOk returns a tuple with the MultiHostAttributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMultiHostAttributes
 
@@ -216,5 +217,3 @@ SetMultiHostAttributes sets MultiHostAttributes field to given value.
 `func (o *MultiHostIntegrationsConnectorAttributes) HasMultiHostAttributes() bool`
 
 HasMultiHostAttributes returns a boolean if a field has been set.
-
-

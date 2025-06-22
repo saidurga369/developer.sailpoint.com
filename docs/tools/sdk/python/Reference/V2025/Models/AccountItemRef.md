@@ -4,20 +4,21 @@ title: AccountItemRef
 pagination_label: AccountItemRef
 sidebar_label: AccountItemRef
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccountItemRef', 'V2025AccountItemRef'] 
+keywords: ['python', 'Python', 'sdk', 'AccountItemRef', 'V2025AccountItemRef']
 slug: /tools/sdk/python/v2025/models/account-item-ref
-tags: ['SDK', 'Software Development Kit', 'AccountItemRef', 'V2025AccountItemRef']
+tags:
+  ['SDK', 'Software Development Kit', 'AccountItemRef', 'V2025AccountItemRef']
 ---
 
 # AccountItemRef
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**account_uuid** | **str** | The uuid for the account, available under the 'objectguid' attribute | [optional] 
-**native_identity** | **str** | The 'distinguishedName' attribute for the account | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **account_uuid** | **str** | The uuid for the account, available under the 'objectguid' attribute | [optional] |
+| **native_identity** | **str** | The 'distinguishedName' attribute for the account | [optional] |
+
 }
 
 ## Example
@@ -31,5 +32,5 @@ native_identity='CN=Glen 067da3248e914,OU=YOUROU,OU=org-data-service,DC=YOURDC,D
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

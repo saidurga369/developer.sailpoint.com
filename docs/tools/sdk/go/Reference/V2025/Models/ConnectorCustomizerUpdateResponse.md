@@ -4,23 +4,36 @@ title: ConnectorCustomizerUpdateResponse
 pagination_label: ConnectorCustomizerUpdateResponse
 sidebar_label: ConnectorCustomizerUpdateResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ConnectorCustomizerUpdateResponse', 'V2025ConnectorCustomizerUpdateResponse'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ConnectorCustomizerUpdateResponse',
+    'V2025ConnectorCustomizerUpdateResponse',
+  ]
 slug: /tools/sdk/go/v2025/models/connector-customizer-update-response
-tags: ['SDK', 'Software Development Kit', 'ConnectorCustomizerUpdateResponse', 'V2025ConnectorCustomizerUpdateResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ConnectorCustomizerUpdateResponse',
+    'V2025ConnectorCustomizerUpdateResponse',
+  ]
 ---
 
 # ConnectorCustomizerUpdateResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | the ID of connector customizer. | [optional] 
-**Name** | Pointer to **string** | name of the connector customizer. | [optional] 
-**TenantID** | Pointer to **string** | Connector customizer tenant id. | [optional] 
-**Created** | Pointer to **SailPointTime** | Date-time when the connector customizer was created. | [optional] 
-**ImageVersion** | Pointer to **int64** | Connector customizer image version. | [optional] 
-**ImageID** | Pointer to **string** | Connector customizer image id. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | the ID of connector customizer. | [optional] |
+| **Name** | Pointer to **string** | name of the connector customizer. | [optional] |
+| **TenantID** | Pointer to **string** | Connector customizer tenant id. | [optional] |
+| **Created** | Pointer to **SailPointTime** | Date-time when the connector customizer was created. | [optional] |
+| **ImageVersion** | Pointer to **int64** | Connector customizer image version. | [optional] |
+| **ImageID** | Pointer to **string** | Connector customizer image id. | [optional] |
 
 ## Methods
 
@@ -28,18 +41,13 @@ Name | Type | Description | Notes
 
 `func NewConnectorCustomizerUpdateResponse() *ConnectorCustomizerUpdateResponse`
 
-NewConnectorCustomizerUpdateResponse instantiates a new ConnectorCustomizerUpdateResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewConnectorCustomizerUpdateResponse instantiates a new ConnectorCustomizerUpdateResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewConnectorCustomizerUpdateResponseWithDefaults
 
 `func NewConnectorCustomizerUpdateResponseWithDefaults() *ConnectorCustomizerUpdateResponse`
 
-NewConnectorCustomizerUpdateResponseWithDefaults instantiates a new ConnectorCustomizerUpdateResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewConnectorCustomizerUpdateResponseWithDefaults instantiates a new ConnectorCustomizerUpdateResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -51,8 +59,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *ConnectorCustomizerUpdateResponse) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -76,8 +83,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *ConnectorCustomizerUpdateResponse) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -101,8 +107,7 @@ GetTenantID returns the TenantID field if non-nil, zero value otherwise.
 
 `func (o *ConnectorCustomizerUpdateResponse) GetTenantIDOk() (*string, bool)`
 
-GetTenantIDOk returns a tuple with the TenantID field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTenantIDOk returns a tuple with the TenantID field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTenantID
 
@@ -126,8 +131,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *ConnectorCustomizerUpdateResponse) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -151,8 +155,7 @@ GetImageVersion returns the ImageVersion field if non-nil, zero value otherwise.
 
 `func (o *ConnectorCustomizerUpdateResponse) GetImageVersionOk() (*int64, bool)`
 
-GetImageVersionOk returns a tuple with the ImageVersion field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetImageVersionOk returns a tuple with the ImageVersion field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetImageVersion
 
@@ -176,8 +179,7 @@ GetImageID returns the ImageID field if non-nil, zero value otherwise.
 
 `func (o *ConnectorCustomizerUpdateResponse) GetImageIDOk() (*string, bool)`
 
-GetImageIDOk returns a tuple with the ImageID field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetImageIDOk returns a tuple with the ImageID field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetImageID
 
@@ -190,5 +192,3 @@ SetImageID sets ImageID field to given value.
 `func (o *ConnectorCustomizerUpdateResponse) HasImageID() bool`
 
 HasImageID returns a boolean if a field has been set.
-
-

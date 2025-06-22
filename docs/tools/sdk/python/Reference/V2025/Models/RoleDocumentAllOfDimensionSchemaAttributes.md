@@ -4,21 +4,34 @@ title: RoleDocumentAllOfDimensionSchemaAttributes
 pagination_label: RoleDocumentAllOfDimensionSchemaAttributes
 sidebar_label: RoleDocumentAllOfDimensionSchemaAttributes
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RoleDocumentAllOfDimensionSchemaAttributes', 'V2025RoleDocumentAllOfDimensionSchemaAttributes'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'RoleDocumentAllOfDimensionSchemaAttributes',
+    'V2025RoleDocumentAllOfDimensionSchemaAttributes',
+  ]
 slug: /tools/sdk/python/v2025/models/role-document-all-of-dimension-schema-attributes
-tags: ['SDK', 'Software Development Kit', 'RoleDocumentAllOfDimensionSchemaAttributes', 'V2025RoleDocumentAllOfDimensionSchemaAttributes']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleDocumentAllOfDimensionSchemaAttributes',
+    'V2025RoleDocumentAllOfDimensionSchemaAttributes',
+  ]
 ---
 
 # RoleDocumentAllOfDimensionSchemaAttributes
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**derived** | **bool** |  | [optional] [default to True]
-**display_name** | **str** | Displayname of the dimension attribute. | [optional] 
-**name** | **str** | Name of the dimension attribute. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **derived** | **bool** |  | [optional] [default to True] |
+| **display_name** | **str** | Displayname of the dimension attribute. | [optional] |
+| **name** | **str** | Name of the dimension attribute. | [optional] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ name='department'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

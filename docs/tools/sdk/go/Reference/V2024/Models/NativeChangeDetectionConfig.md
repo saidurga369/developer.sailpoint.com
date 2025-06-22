@@ -4,23 +4,36 @@ title: NativeChangeDetectionConfig
 pagination_label: NativeChangeDetectionConfig
 sidebar_label: NativeChangeDetectionConfig
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'NativeChangeDetectionConfig', 'V2024NativeChangeDetectionConfig'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'NativeChangeDetectionConfig',
+    'V2024NativeChangeDetectionConfig',
+  ]
 slug: /tools/sdk/go/v2024/models/native-change-detection-config
-tags: ['SDK', 'Software Development Kit', 'NativeChangeDetectionConfig', 'V2024NativeChangeDetectionConfig']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NativeChangeDetectionConfig',
+    'V2024NativeChangeDetectionConfig',
+  ]
 ---
 
 # NativeChangeDetectionConfig
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Enabled** | Pointer to **bool** | A flag indicating if Native Change Detection is enabled for a source. | [optional] [default to false]
-**Operations** | Pointer to **[]string** | Operation types for which Native Change Detection is enabled for a source. | [optional] 
-**AllEntitlements** | Pointer to **bool** | A flag indicating that all entitlements participate in Native Change Detection. | [optional] [default to false]
-**AllNonEntitlementAttributes** | Pointer to **bool** | A flag indicating that all non-entitlement account attributes participate in Native Change Detection. | [optional] [default to false]
-**SelectedEntitlements** | Pointer to **[]string** | If allEntitlements flag is off this field lists entitlements that participate in Native Change Detection. | [optional] 
-**SelectedNonEntitlementAttributes** | Pointer to **[]string** | If allNonEntitlementAttributes flag is off this field lists non-entitlement account attributes that participate in Native Change Detection. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Enabled** | Pointer to **bool** | A flag indicating if Native Change Detection is enabled for a source. | [optional] [default to false] |
+| **Operations** | Pointer to **[]string** | Operation types for which Native Change Detection is enabled for a source. | [optional] |
+| **AllEntitlements** | Pointer to **bool** | A flag indicating that all entitlements participate in Native Change Detection. | [optional] [default to false] |
+| **AllNonEntitlementAttributes** | Pointer to **bool** | A flag indicating that all non-entitlement account attributes participate in Native Change Detection. | [optional] [default to false] |
+| **SelectedEntitlements** | Pointer to **[]string** | If allEntitlements flag is off this field lists entitlements that participate in Native Change Detection. | [optional] |
+| **SelectedNonEntitlementAttributes** | Pointer to **[]string** | If allNonEntitlementAttributes flag is off this field lists non-entitlement account attributes that participate in Native Change Detection. | [optional] |
 
 ## Methods
 
@@ -28,18 +41,13 @@ Name | Type | Description | Notes
 
 `func NewNativeChangeDetectionConfig() *NativeChangeDetectionConfig`
 
-NewNativeChangeDetectionConfig instantiates a new NativeChangeDetectionConfig object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewNativeChangeDetectionConfig instantiates a new NativeChangeDetectionConfig object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewNativeChangeDetectionConfigWithDefaults
 
 `func NewNativeChangeDetectionConfigWithDefaults() *NativeChangeDetectionConfig`
 
-NewNativeChangeDetectionConfigWithDefaults instantiates a new NativeChangeDetectionConfig object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewNativeChangeDetectionConfigWithDefaults instantiates a new NativeChangeDetectionConfig object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetEnabled
 
@@ -51,8 +59,7 @@ GetEnabled returns the Enabled field if non-nil, zero value otherwise.
 
 `func (o *NativeChangeDetectionConfig) GetEnabledOk() (*bool, bool)`
 
-GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEnabled
 
@@ -76,8 +83,7 @@ GetOperations returns the Operations field if non-nil, zero value otherwise.
 
 `func (o *NativeChangeDetectionConfig) GetOperationsOk() (*[]string, bool)`
 
-GetOperationsOk returns a tuple with the Operations field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOperationsOk returns a tuple with the Operations field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOperations
 
@@ -101,8 +107,7 @@ GetAllEntitlements returns the AllEntitlements field if non-nil, zero value othe
 
 `func (o *NativeChangeDetectionConfig) GetAllEntitlementsOk() (*bool, bool)`
 
-GetAllEntitlementsOk returns a tuple with the AllEntitlements field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAllEntitlementsOk returns a tuple with the AllEntitlements field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAllEntitlements
 
@@ -126,8 +131,7 @@ GetAllNonEntitlementAttributes returns the AllNonEntitlementAttributes field if 
 
 `func (o *NativeChangeDetectionConfig) GetAllNonEntitlementAttributesOk() (*bool, bool)`
 
-GetAllNonEntitlementAttributesOk returns a tuple with the AllNonEntitlementAttributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAllNonEntitlementAttributesOk returns a tuple with the AllNonEntitlementAttributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAllNonEntitlementAttributes
 
@@ -151,8 +155,7 @@ GetSelectedEntitlements returns the SelectedEntitlements field if non-nil, zero 
 
 `func (o *NativeChangeDetectionConfig) GetSelectedEntitlementsOk() (*[]string, bool)`
 
-GetSelectedEntitlementsOk returns a tuple with the SelectedEntitlements field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSelectedEntitlementsOk returns a tuple with the SelectedEntitlements field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSelectedEntitlements
 
@@ -176,8 +179,7 @@ GetSelectedNonEntitlementAttributes returns the SelectedNonEntitlementAttributes
 
 `func (o *NativeChangeDetectionConfig) GetSelectedNonEntitlementAttributesOk() (*[]string, bool)`
 
-GetSelectedNonEntitlementAttributesOk returns a tuple with the SelectedNonEntitlementAttributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSelectedNonEntitlementAttributesOk returns a tuple with the SelectedNonEntitlementAttributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSelectedNonEntitlementAttributes
 
@@ -190,5 +192,3 @@ SetSelectedNonEntitlementAttributes sets SelectedNonEntitlementAttributes field 
 `func (o *NativeChangeDetectionConfig) HasSelectedNonEntitlementAttributes() bool`
 
 HasSelectedNonEntitlementAttributes returns a boolean if a field has been set.
-
-

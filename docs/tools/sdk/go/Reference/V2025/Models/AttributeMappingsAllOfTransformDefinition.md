@@ -4,20 +4,33 @@ title: AttributeMappingsAllOfTransformDefinition
 pagination_label: AttributeMappingsAllOfTransformDefinition
 sidebar_label: AttributeMappingsAllOfTransformDefinition
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AttributeMappingsAllOfTransformDefinition', 'V2025AttributeMappingsAllOfTransformDefinition'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'AttributeMappingsAllOfTransformDefinition',
+    'V2025AttributeMappingsAllOfTransformDefinition',
+  ]
 slug: /tools/sdk/go/v2025/models/attribute-mappings-all-of-transform-definition
-tags: ['SDK', 'Software Development Kit', 'AttributeMappingsAllOfTransformDefinition', 'V2025AttributeMappingsAllOfTransformDefinition']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AttributeMappingsAllOfTransformDefinition',
+    'V2025AttributeMappingsAllOfTransformDefinition',
+  ]
 ---
 
 # AttributeMappingsAllOfTransformDefinition
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | The type of transform | [optional] 
-**Attributes** | Pointer to [**AttributeMappingsAllOfTransformDefinitionAttributes**](attribute-mappings-all-of-transform-definition-attributes) |  | [optional] 
-**Id** | Pointer to **string** | Transform Operation | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to **string** | The type of transform | [optional] |
+| **Attributes** | Pointer to [**AttributeMappingsAllOfTransformDefinitionAttributes**](attribute-mappings-all-of-transform-definition-attributes) |  | [optional] |
+| **Id** | Pointer to **string** | Transform Operation | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewAttributeMappingsAllOfTransformDefinition() *AttributeMappingsAllOfTransformDefinition`
 
-NewAttributeMappingsAllOfTransformDefinition instantiates a new AttributeMappingsAllOfTransformDefinition object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAttributeMappingsAllOfTransformDefinition instantiates a new AttributeMappingsAllOfTransformDefinition object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAttributeMappingsAllOfTransformDefinitionWithDefaults
 
 `func NewAttributeMappingsAllOfTransformDefinitionWithDefaults() *AttributeMappingsAllOfTransformDefinition`
 
-NewAttributeMappingsAllOfTransformDefinitionWithDefaults instantiates a new AttributeMappingsAllOfTransformDefinition object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAttributeMappingsAllOfTransformDefinitionWithDefaults instantiates a new AttributeMappingsAllOfTransformDefinition object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -48,8 +56,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *AttributeMappingsAllOfTransformDefinition) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -73,8 +80,7 @@ GetAttributes returns the Attributes field if non-nil, zero value otherwise.
 
 `func (o *AttributeMappingsAllOfTransformDefinition) GetAttributesOk() (*AttributeMappingsAllOfTransformDefinitionAttributes, bool)`
 
-GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributes
 
@@ -98,8 +104,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *AttributeMappingsAllOfTransformDefinition) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -112,5 +117,3 @@ SetId sets Id field to given value.
 `func (o *AttributeMappingsAllOfTransformDefinition) HasId() bool`
 
 HasId returns a boolean if a field has been set.
-
-

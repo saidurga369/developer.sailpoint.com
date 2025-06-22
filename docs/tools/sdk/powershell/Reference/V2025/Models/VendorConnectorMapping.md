@@ -4,31 +4,44 @@ title: VendorConnectorMapping
 pagination_label: VendorConnectorMapping
 sidebar_label: VendorConnectorMapping
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'VendorConnectorMapping', 'V2025VendorConnectorMapping'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'VendorConnectorMapping',
+    'V2025VendorConnectorMapping',
+  ]
 slug: /tools/sdk/powershell/v2025/models/vendor-connector-mapping
-tags: ['SDK', 'Software Development Kit', 'VendorConnectorMapping', 'V2025VendorConnectorMapping']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'VendorConnectorMapping',
+    'V2025VendorConnectorMapping',
+  ]
 ---
-
 
 # VendorConnectorMapping
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | The unique identifier for the vendor-connector mapping. | [optional] 
-**Vendor** | **String** | The name of the vendor. | [optional] 
-**Connector** | **String** | The name of the connector. | [optional] 
-**CreatedAt** | **System.DateTime** | The creation timestamp of the mapping. | [optional] 
-**CreatedBy** | **String** | The identifier of the user who created the mapping. | [optional] 
-**UpdatedAt** | [**VendorConnectorMappingUpdatedAt**](vendor-connector-mapping-updated-at) |  | [optional] 
-**UpdatedBy** | [**VendorConnectorMappingUpdatedBy**](vendor-connector-mapping-updated-by) |  | [optional] 
-**DeletedAt** | [**VendorConnectorMappingDeletedAt**](vendor-connector-mapping-deleted-at) |  | [optional] 
-**DeletedBy** | [**VendorConnectorMappingDeletedBy**](vendor-connector-mapping-deleted-by) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | The unique identifier for the vendor-connector mapping. | [optional] |
+| **Vendor** | **String** | The name of the vendor. | [optional] |
+| **Connector** | **String** | The name of the connector. | [optional] |
+| **CreatedAt** | **System.DateTime** | The creation timestamp of the mapping. | [optional] |
+| **CreatedBy** | **String** | The identifier of the user who created the mapping. | [optional] |
+| **UpdatedAt** | [**VendorConnectorMappingUpdatedAt**](vendor-connector-mapping-updated-at) |  | [optional] |
+| **UpdatedBy** | [**VendorConnectorMappingUpdatedBy**](vendor-connector-mapping-updated-by) |  | [optional] |
+| **DeletedAt** | [**VendorConnectorMappingDeletedAt**](vendor-connector-mapping-deleted-at) |  | [optional] |
+| **DeletedBy** | [**VendorConnectorMappingDeletedBy**](vendor-connector-mapping-deleted-by) |  | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $VendorConnectorMapping = Initialize-V2025VendorConnectorMapping  -Id 78733556-9ea3-4f59-bf69-e5cd92b011b4 `
  -Vendor Example vendor `
@@ -42,10 +55,9 @@ $VendorConnectorMapping = Initialize-V2025VendorConnectorMapping  -Id 78733556-9
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $VendorConnectorMapping | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

@@ -4,20 +4,33 @@ title: RoleMiningPotentialRoleApplication
 pagination_label: RoleMiningPotentialRoleApplication
 sidebar_label: RoleMiningPotentialRoleApplication
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RoleMiningPotentialRoleApplication', 'V2025RoleMiningPotentialRoleApplication'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'RoleMiningPotentialRoleApplication',
+    'V2025RoleMiningPotentialRoleApplication',
+  ]
 slug: /tools/sdk/python/v2025/models/role-mining-potential-role-application
-tags: ['SDK', 'Software Development Kit', 'RoleMiningPotentialRoleApplication', 'V2025RoleMiningPotentialRoleApplication']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningPotentialRoleApplication',
+    'V2025RoleMiningPotentialRoleApplication',
+  ]
 ---
 
 # RoleMiningPotentialRoleApplication
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Id of the application | [optional] 
-**name** | **str** | Name of the application | [optional] 
+| Name     | Type    | Description             | Notes      |
+| -------- | ------- | ----------------------- | ---------- |
+| **id**   | **str** | Id of the application   | [optional] |
+| **name** | **str** | Name of the application | [optional] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ name='{name=Slack}'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

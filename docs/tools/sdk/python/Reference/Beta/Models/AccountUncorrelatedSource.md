@@ -4,9 +4,22 @@ title: AccountUncorrelatedSource
 pagination_label: AccountUncorrelatedSource
 sidebar_label: AccountUncorrelatedSource
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccountUncorrelatedSource', 'BetaAccountUncorrelatedSource'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccountUncorrelatedSource',
+    'BetaAccountUncorrelatedSource',
+  ]
 slug: /tools/sdk/python/beta/models/account-uncorrelated-source
-tags: ['SDK', 'Software Development Kit', 'AccountUncorrelatedSource', 'BetaAccountUncorrelatedSource']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountUncorrelatedSource',
+    'BetaAccountUncorrelatedSource',
+  ]
 ---
 
 # AccountUncorrelatedSource
@@ -15,11 +28,12 @@ The source the accounts are uncorrelated from.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'SOURCE' ] | The DTO type of the source the accounts are uncorrelated from. | [required]
-**id** | **str** | The ID of the source the accounts are uncorrelated from. | [required]
-**name** | **str** | Display name of the source the accounts are uncorrelated from. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'SOURCE' ] | The DTO type of the source the accounts are uncorrelated from. | [required] |
+| **id** | **str** | The ID of the source the accounts are uncorrelated from. | [required] |
+| **name** | **str** | Display name of the source the accounts are uncorrelated from. | [required] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Corporate Directory'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

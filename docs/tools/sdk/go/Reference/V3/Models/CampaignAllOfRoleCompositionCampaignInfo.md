@@ -4,22 +4,35 @@ title: CampaignAllOfRoleCompositionCampaignInfo
 pagination_label: CampaignAllOfRoleCompositionCampaignInfo
 sidebar_label: CampaignAllOfRoleCompositionCampaignInfo
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'CampaignAllOfRoleCompositionCampaignInfo', 'CampaignAllOfRoleCompositionCampaignInfo'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'CampaignAllOfRoleCompositionCampaignInfo',
+    'CampaignAllOfRoleCompositionCampaignInfo',
+  ]
 slug: /tools/sdk/go/v3/models/campaign-all-of-role-composition-campaign-info
-tags: ['SDK', 'Software Development Kit', 'CampaignAllOfRoleCompositionCampaignInfo', 'CampaignAllOfRoleCompositionCampaignInfo']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CampaignAllOfRoleCompositionCampaignInfo',
+    'CampaignAllOfRoleCompositionCampaignInfo',
+  ]
 ---
 
 # CampaignAllOfRoleCompositionCampaignInfo
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Reviewer** | Pointer to [**CampaignAllOfSearchCampaignInfoReviewer**](campaign-all-of-search-campaign-info-reviewer) |  | [optional] 
-**RoleIds** | Pointer to **[]string** | Optional list of roles to include in this campaign. Only one of `roleIds` and `query` may be set; if neither are set, all roles are included. | [optional] 
-**RemediatorRef** | [**CampaignAllOfRoleCompositionCampaignInfoRemediatorRef**](campaign-all-of-role-composition-campaign-info-remediator-ref) |  | 
-**Query** | Pointer to **string** | Optional search query to scope this campaign to a set of roles. Only one of `roleIds` and `query` may be set; if neither are set, all roles are included. | [optional] 
-**Description** | Pointer to **string** | Describes this role composition campaign. Intended for storing the query used, and possibly the number of roles selected/available. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Reviewer** | Pointer to [**CampaignAllOfSearchCampaignInfoReviewer**](campaign-all-of-search-campaign-info-reviewer) |  | [optional] |
+| **RoleIds** | Pointer to **[]string** | Optional list of roles to include in this campaign. Only one of `roleIds` and `query` may be set; if neither are set, all roles are included. | [optional] |
+| **RemediatorRef** | [**CampaignAllOfRoleCompositionCampaignInfoRemediatorRef**](campaign-all-of-role-composition-campaign-info-remediator-ref) |  |
+| **Query** | Pointer to **string** | Optional search query to scope this campaign to a set of roles. Only one of `roleIds` and `query` may be set; if neither are set, all roles are included. | [optional] |
+| **Description** | Pointer to **string** | Describes this role composition campaign. Intended for storing the query used, and possibly the number of roles selected/available. | [optional] |
 
 ## Methods
 
@@ -27,18 +40,13 @@ Name | Type | Description | Notes
 
 `func NewCampaignAllOfRoleCompositionCampaignInfo(remediatorRef CampaignAllOfRoleCompositionCampaignInfoRemediatorRef, ) *CampaignAllOfRoleCompositionCampaignInfo`
 
-NewCampaignAllOfRoleCompositionCampaignInfo instantiates a new CampaignAllOfRoleCompositionCampaignInfo object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewCampaignAllOfRoleCompositionCampaignInfo instantiates a new CampaignAllOfRoleCompositionCampaignInfo object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewCampaignAllOfRoleCompositionCampaignInfoWithDefaults
 
 `func NewCampaignAllOfRoleCompositionCampaignInfoWithDefaults() *CampaignAllOfRoleCompositionCampaignInfo`
 
-NewCampaignAllOfRoleCompositionCampaignInfoWithDefaults instantiates a new CampaignAllOfRoleCompositionCampaignInfo object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewCampaignAllOfRoleCompositionCampaignInfoWithDefaults instantiates a new CampaignAllOfRoleCompositionCampaignInfo object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetReviewer
 
@@ -50,8 +58,7 @@ GetReviewer returns the Reviewer field if non-nil, zero value otherwise.
 
 `func (o *CampaignAllOfRoleCompositionCampaignInfo) GetReviewerOk() (*CampaignAllOfSearchCampaignInfoReviewer, bool)`
 
-GetReviewerOk returns a tuple with the Reviewer field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReviewerOk returns a tuple with the Reviewer field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReviewer
 
@@ -75,8 +82,7 @@ GetRoleIds returns the RoleIds field if non-nil, zero value otherwise.
 
 `func (o *CampaignAllOfRoleCompositionCampaignInfo) GetRoleIdsOk() (*[]string, bool)`
 
-GetRoleIdsOk returns a tuple with the RoleIds field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRoleIdsOk returns a tuple with the RoleIds field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRoleIds
 
@@ -100,15 +106,13 @@ GetRemediatorRef returns the RemediatorRef field if non-nil, zero value otherwis
 
 `func (o *CampaignAllOfRoleCompositionCampaignInfo) GetRemediatorRefOk() (*CampaignAllOfRoleCompositionCampaignInfoRemediatorRef, bool)`
 
-GetRemediatorRefOk returns a tuple with the RemediatorRef field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRemediatorRefOk returns a tuple with the RemediatorRef field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRemediatorRef
 
 `func (o *CampaignAllOfRoleCompositionCampaignInfo) SetRemediatorRef(v CampaignAllOfRoleCompositionCampaignInfoRemediatorRef)`
 
 SetRemediatorRef sets RemediatorRef field to given value.
-
 
 ### GetQuery
 
@@ -120,8 +124,7 @@ GetQuery returns the Query field if non-nil, zero value otherwise.
 
 `func (o *CampaignAllOfRoleCompositionCampaignInfo) GetQueryOk() (*string, bool)`
 
-GetQueryOk returns a tuple with the Query field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetQueryOk returns a tuple with the Query field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetQuery
 
@@ -145,8 +148,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *CampaignAllOfRoleCompositionCampaignInfo) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -159,5 +161,3 @@ SetDescription sets Description field to given value.
 `func (o *CampaignAllOfRoleCompositionCampaignInfo) HasDescription() bool`
 
 HasDescription returns a boolean if a field has been set.
-
-

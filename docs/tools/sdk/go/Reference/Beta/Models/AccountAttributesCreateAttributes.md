@@ -4,18 +4,31 @@ title: AccountAttributesCreateAttributes
 pagination_label: AccountAttributesCreateAttributes
 sidebar_label: AccountAttributesCreateAttributes
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccountAttributesCreateAttributes', 'BetaAccountAttributesCreateAttributes'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'AccountAttributesCreateAttributes',
+    'BetaAccountAttributesCreateAttributes',
+  ]
 slug: /tools/sdk/go/beta/models/account-attributes-create-attributes
-tags: ['SDK', 'Software Development Kit', 'AccountAttributesCreateAttributes', 'BetaAccountAttributesCreateAttributes']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountAttributesCreateAttributes',
+    'BetaAccountAttributesCreateAttributes',
+  ]
 ---
 
 # AccountAttributesCreateAttributes
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**SourceId** | **string** | Target source to create an account | 
+| Name         | Type       | Description                        | Notes |
+| ------------ | ---------- | ---------------------------------- | ----- |
+| **SourceId** | **string** | Target source to create an account |
 
 ## Methods
 
@@ -23,18 +36,13 @@ Name | Type | Description | Notes
 
 `func NewAccountAttributesCreateAttributes(sourceId string, ) *AccountAttributesCreateAttributes`
 
-NewAccountAttributesCreateAttributes instantiates a new AccountAttributesCreateAttributes object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccountAttributesCreateAttributes instantiates a new AccountAttributesCreateAttributes object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccountAttributesCreateAttributesWithDefaults
 
 `func NewAccountAttributesCreateAttributesWithDefaults() *AccountAttributesCreateAttributes`
 
-NewAccountAttributesCreateAttributesWithDefaults instantiates a new AccountAttributesCreateAttributes object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccountAttributesCreateAttributesWithDefaults instantiates a new AccountAttributesCreateAttributes object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetSourceId
 
@@ -46,14 +54,10 @@ GetSourceId returns the SourceId field if non-nil, zero value otherwise.
 
 `func (o *AccountAttributesCreateAttributes) GetSourceIdOk() (*string, bool)`
 
-GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceId
 
 `func (o *AccountAttributesCreateAttributes) SetSourceId(v string)`
 
 SetSourceId sets SourceId field to given value.
-
-
-

@@ -4,9 +4,16 @@ title: WorkflowDefinition
 pagination_label: WorkflowDefinition
 sidebar_label: WorkflowDefinition
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'WorkflowDefinition', 'BetaWorkflowDefinition'] 
+keywords:
+  ['python', 'Python', 'sdk', 'WorkflowDefinition', 'BetaWorkflowDefinition']
 slug: /tools/sdk/python/beta/models/workflow-definition
-tags: ['SDK', 'Software Development Kit', 'WorkflowDefinition', 'BetaWorkflowDefinition']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'WorkflowDefinition',
+    'BetaWorkflowDefinition',
+  ]
 ---
 
 # WorkflowDefinition
@@ -15,10 +22,11 @@ The map of steps that the workflow will execute.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**start** | **str** | The name of the starting step. | [optional] 
-**steps** | **map[string]object** | One or more step objects that comprise this workflow.  Please see the Workflow documentation to see the JSON schema for each step type. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **start** | **str** | The name of the starting step. | [optional] |
+| **steps** | **map[string]object** | One or more step objects that comprise this workflow. Please see the Workflow documentation to see the JSON schema for each step type. | [optional] |
+
 }
 
 ## Example
@@ -32,5 +40,5 @@ steps={Send Email={actionId=sp:send-email, attributes={body=This is a test, from
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

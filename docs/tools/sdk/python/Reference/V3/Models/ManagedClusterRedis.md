@@ -4,9 +4,16 @@ title: ManagedClusterRedis
 pagination_label: ManagedClusterRedis
 sidebar_label: ManagedClusterRedis
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ManagedClusterRedis', 'ManagedClusterRedis'] 
+keywords:
+  ['python', 'Python', 'sdk', 'ManagedClusterRedis', 'ManagedClusterRedis']
 slug: /tools/sdk/python/v3/models/managed-cluster-redis
-tags: ['SDK', 'Software Development Kit', 'ManagedClusterRedis', 'ManagedClusterRedis']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ManagedClusterRedis',
+    'ManagedClusterRedis',
+  ]
 ---
 
 # ManagedClusterRedis
@@ -15,10 +22,11 @@ Managed Cluster Redis Configuration
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**redis_host** | **str** | ManagedCluster redisHost | [optional] 
-**redis_port** | **int** | ManagedCluster redisPort | [optional] 
+| Name           | Type    | Description              | Notes      |
+| -------------- | ------- | ------------------------ | ---------- |
+| **redis_host** | **str** | ManagedCluster redisHost | [optional] |
+| **redis_port** | **int** | ManagedCluster redisPort | [optional] |
+
 }
 
 ## Example
@@ -32,5 +40,5 @@ redis_port=6379
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

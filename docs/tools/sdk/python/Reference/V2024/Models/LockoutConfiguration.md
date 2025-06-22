@@ -4,21 +4,34 @@ title: LockoutConfiguration
 pagination_label: LockoutConfiguration
 sidebar_label: LockoutConfiguration
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'LockoutConfiguration', 'V2024LockoutConfiguration'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'LockoutConfiguration',
+    'V2024LockoutConfiguration',
+  ]
 slug: /tools/sdk/python/v2024/models/lockout-configuration
-tags: ['SDK', 'Software Development Kit', 'LockoutConfiguration', 'V2024LockoutConfiguration']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'LockoutConfiguration',
+    'V2024LockoutConfiguration',
+  ]
 ---
 
 # LockoutConfiguration
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**maximum_attempts** | **int** | The maximum attempts allowed before lockout occurs. | [optional] 
-**lockout_duration** | **int** | The total time in minutes a user will be locked out. | [optional] 
-**lockout_window** | **int** | A rolling window where authentication attempts in a series count towards the maximum before lockout occurs. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **maximum_attempts** | **int** | The maximum attempts allowed before lockout occurs. | [optional] |
+| **lockout_duration** | **int** | The total time in minutes a user will be locked out. | [optional] |
+| **lockout_window** | **int** | A rolling window where authentication attempts in a series count towards the maximum before lockout occurs. | [optional] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ lockout_window=5
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

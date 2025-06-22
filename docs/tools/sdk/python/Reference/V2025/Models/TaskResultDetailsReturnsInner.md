@@ -4,20 +4,33 @@ title: TaskResultDetailsReturnsInner
 pagination_label: TaskResultDetailsReturnsInner
 sidebar_label: TaskResultDetailsReturnsInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'TaskResultDetailsReturnsInner', 'V2025TaskResultDetailsReturnsInner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'TaskResultDetailsReturnsInner',
+    'V2025TaskResultDetailsReturnsInner',
+  ]
 slug: /tools/sdk/python/v2025/models/task-result-details-returns-inner
-tags: ['SDK', 'Software Development Kit', 'TaskResultDetailsReturnsInner', 'V2025TaskResultDetailsReturnsInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'TaskResultDetailsReturnsInner',
+    'V2025TaskResultDetailsReturnsInner',
+  ]
 ---
 
 # TaskResultDetailsReturnsInner
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**display_label** | **str** | Attribute description. | [optional] 
-**attribute_name** | **str** | System or database attribute name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **display_label** | **str** | Attribute description. | [optional] |
+| **attribute_name** | **str** | System or database attribute name. | [optional] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ attribute_name=' '
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,9 +4,16 @@ title: ConfigTypeEnumCamel
 pagination_label: ConfigTypeEnumCamel
 sidebar_label: ConfigTypeEnumCamel
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ConfigTypeEnumCamel', 'BetaConfigTypeEnumCamel'] 
+keywords:
+  ['python', 'Python', 'sdk', 'ConfigTypeEnumCamel', 'BetaConfigTypeEnumCamel']
 slug: /tools/sdk/python/beta/models/config-type-enum-camel
-tags: ['SDK', 'Software Development Kit', 'ConfigTypeEnumCamel', 'BetaConfigTypeEnumCamel']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ConfigTypeEnumCamel',
+    'BetaConfigTypeEnumCamel',
+  ]
 ---
 
 # ConfigTypeEnumCamel
@@ -15,11 +22,10 @@ Enum list of valid work types that can be selected for a Reassignment Configurat
 
 ## Enum
 
-* `ACCESSREQUESTS` (value: `'accessRequests'`)
+- `ACCESSREQUESTS` (value: `'accessRequests'`)
 
-* `CERTIFICATIONS` (value: `'certifications'`)
+- `CERTIFICATIONS` (value: `'certifications'`)
 
-* `MANUALTASKS` (value: `'manualTasks'`)
+- `MANUALTASKS` (value: `'manualTasks'`)
 
-[[Back to top]](#) 
-
+[[Back to top]](#)

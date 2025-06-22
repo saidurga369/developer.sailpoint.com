@@ -4,19 +4,26 @@ title: DimensionCriteriaKey
 pagination_label: DimensionCriteriaKey
 sidebar_label: DimensionCriteriaKey
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'DimensionCriteriaKey', 'V2024DimensionCriteriaKey'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'DimensionCriteriaKey', 'V2024DimensionCriteriaKey']
 slug: /tools/sdk/go/v2024/models/dimension-criteria-key
-tags: ['SDK', 'Software Development Kit', 'DimensionCriteriaKey', 'V2024DimensionCriteriaKey']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'DimensionCriteriaKey',
+    'V2024DimensionCriteriaKey',
+  ]
 ---
 
 # DimensionCriteriaKey
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | [**DimensionCriteriaKeyType**](dimension-criteria-key-type) |  | 
-**Property** | **string** | The name of the identity attribute to which the associated criteria applies. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | [**DimensionCriteriaKeyType**](dimension-criteria-key-type) |  |
+| **Property** | **string** | The name of the identity attribute to which the associated criteria applies. |
 
 ## Methods
 
@@ -24,18 +31,13 @@ Name | Type | Description | Notes
 
 `func NewDimensionCriteriaKey(type_ DimensionCriteriaKeyType, property string, ) *DimensionCriteriaKey`
 
-NewDimensionCriteriaKey instantiates a new DimensionCriteriaKey object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewDimensionCriteriaKey instantiates a new DimensionCriteriaKey object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewDimensionCriteriaKeyWithDefaults
 
 `func NewDimensionCriteriaKeyWithDefaults() *DimensionCriteriaKey`
 
-NewDimensionCriteriaKeyWithDefaults instantiates a new DimensionCriteriaKey object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewDimensionCriteriaKeyWithDefaults instantiates a new DimensionCriteriaKey object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -47,15 +49,13 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *DimensionCriteriaKey) GetTypeOk() (*DimensionCriteriaKeyType, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
 `func (o *DimensionCriteriaKey) SetType(v DimensionCriteriaKeyType)`
 
 SetType sets Type field to given value.
-
 
 ### GetProperty
 
@@ -67,14 +67,10 @@ GetProperty returns the Property field if non-nil, zero value otherwise.
 
 `func (o *DimensionCriteriaKey) GetPropertyOk() (*string, bool)`
 
-GetPropertyOk returns a tuple with the Property field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPropertyOk returns a tuple with the Property field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProperty
 
 `func (o *DimensionCriteriaKey) SetProperty(v string)`
 
 SetProperty sets Property field to given value.
-
-
-

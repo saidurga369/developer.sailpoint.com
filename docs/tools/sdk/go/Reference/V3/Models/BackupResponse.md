@@ -4,7 +4,7 @@ title: BackupResponse
 pagination_label: BackupResponse
 sidebar_label: BackupResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'BackupResponse', 'BackupResponse'] 
+keywords: ['go', 'Golang', 'sdk', 'BackupResponse', 'BackupResponse']
 slug: /tools/sdk/go/v3/models/backup-response
 tags: ['SDK', 'Software Development Kit', 'BackupResponse', 'BackupResponse']
 ---
@@ -13,25 +13,25 @@ tags: ['SDK', 'Software Development Kit', 'BackupResponse', 'BackupResponse']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**JobId** | Pointer to **string** | Unique id assigned to this backup. | [optional] 
-**Status** | Pointer to **string** | Status of the backup. | [optional] 
-**Type** | Pointer to **string** | Type of the job, will always be BACKUP for this type of job. | [optional] 
-**Tenant** | Pointer to **string** | The name of the tenant performing the upload | [optional] 
-**RequesterName** | Pointer to **string** | The name of the requester. | [optional] 
-**FileExists** | Pointer to **bool** | Whether or not a file was created and stored for this backup. | [optional] [default to true]
-**Created** | Pointer to **SailPointTime** | The time the job was started. | [optional] 
-**Modified** | Pointer to **SailPointTime** | The time of the last update to the job. | [optional] 
-**Completed** | Pointer to **SailPointTime** | The time the job was completed. | [optional] 
-**Name** | Pointer to **string** | The name assigned to the upload file in the request body. | [optional] 
-**UserCanDelete** | Pointer to **bool** | Whether this backup can be deleted by a regular user. | [optional] [default to true]
-**IsPartial** | Pointer to **bool** | Whether this backup contains all supported object types or only some of them. | [optional] [default to false]
-**BackupType** | Pointer to **string** | Denotes how this backup was created. - MANUAL - The backup was created by a user. - AUTOMATED - The backup was created by devops. - AUTOMATED_DRAFT - The backup was created during a draft process. - UPLOADED - The backup was created by uploading an existing configuration file. | [optional] 
-**Options** | Pointer to [**NullableBackupOptions**](backup-options) |  | [optional] 
-**HydrationStatus** | Pointer to **string** | Whether the object details of this backup are ready. | [optional] 
-**TotalObjectCount** | Pointer to **int64** | Number of objects contained in this backup. | [optional] 
-**CloudStorageStatus** | Pointer to **string** | Whether this backup has been transferred to a customer storage location. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **JobId** | Pointer to **string** | Unique id assigned to this backup. | [optional] |
+| **Status** | Pointer to **string** | Status of the backup. | [optional] |
+| **Type** | Pointer to **string** | Type of the job, will always be BACKUP for this type of job. | [optional] |
+| **Tenant** | Pointer to **string** | The name of the tenant performing the upload | [optional] |
+| **RequesterName** | Pointer to **string** | The name of the requester. | [optional] |
+| **FileExists** | Pointer to **bool** | Whether or not a file was created and stored for this backup. | [optional] [default to true] |
+| **Created** | Pointer to **SailPointTime** | The time the job was started. | [optional] |
+| **Modified** | Pointer to **SailPointTime** | The time of the last update to the job. | [optional] |
+| **Completed** | Pointer to **SailPointTime** | The time the job was completed. | [optional] |
+| **Name** | Pointer to **string** | The name assigned to the upload file in the request body. | [optional] |
+| **UserCanDelete** | Pointer to **bool** | Whether this backup can be deleted by a regular user. | [optional] [default to true] |
+| **IsPartial** | Pointer to **bool** | Whether this backup contains all supported object types or only some of them. | [optional] [default to false] |
+| **BackupType** | Pointer to **string** | Denotes how this backup was created. - MANUAL - The backup was created by a user. - AUTOMATED - The backup was created by devops. - AUTOMATED_DRAFT - The backup was created during a draft process. - UPLOADED - The backup was created by uploading an existing configuration file. | [optional] |
+| **Options** | Pointer to [**NullableBackupOptions**](backup-options) |  | [optional] |
+| **HydrationStatus** | Pointer to **string** | Whether the object details of this backup are ready. | [optional] |
+| **TotalObjectCount** | Pointer to **int64** | Number of objects contained in this backup. | [optional] |
+| **CloudStorageStatus** | Pointer to **string** | Whether this backup has been transferred to a customer storage location. | [optional] |
 
 ## Methods
 
@@ -39,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewBackupResponse() *BackupResponse`
 
-NewBackupResponse instantiates a new BackupResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewBackupResponse instantiates a new BackupResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewBackupResponseWithDefaults
 
 `func NewBackupResponseWithDefaults() *BackupResponse`
 
-NewBackupResponseWithDefaults instantiates a new BackupResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewBackupResponseWithDefaults instantiates a new BackupResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetJobId
 
@@ -62,8 +57,7 @@ GetJobId returns the JobId field if non-nil, zero value otherwise.
 
 `func (o *BackupResponse) GetJobIdOk() (*string, bool)`
 
-GetJobIdOk returns a tuple with the JobId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetJobIdOk returns a tuple with the JobId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetJobId
 
@@ -87,8 +81,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *BackupResponse) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -112,8 +105,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *BackupResponse) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -137,8 +129,7 @@ GetTenant returns the Tenant field if non-nil, zero value otherwise.
 
 `func (o *BackupResponse) GetTenantOk() (*string, bool)`
 
-GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTenant
 
@@ -162,8 +153,7 @@ GetRequesterName returns the RequesterName field if non-nil, zero value otherwis
 
 `func (o *BackupResponse) GetRequesterNameOk() (*string, bool)`
 
-GetRequesterNameOk returns a tuple with the RequesterName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequesterNameOk returns a tuple with the RequesterName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequesterName
 
@@ -187,8 +177,7 @@ GetFileExists returns the FileExists field if non-nil, zero value otherwise.
 
 `func (o *BackupResponse) GetFileExistsOk() (*bool, bool)`
 
-GetFileExistsOk returns a tuple with the FileExists field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFileExistsOk returns a tuple with the FileExists field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFileExists
 
@@ -212,8 +201,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *BackupResponse) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -237,8 +225,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *BackupResponse) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -262,8 +249,7 @@ GetCompleted returns the Completed field if non-nil, zero value otherwise.
 
 `func (o *BackupResponse) GetCompletedOk() (*SailPointTime, bool)`
 
-GetCompletedOk returns a tuple with the Completed field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCompletedOk returns a tuple with the Completed field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCompleted
 
@@ -287,8 +273,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *BackupResponse) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -312,8 +297,7 @@ GetUserCanDelete returns the UserCanDelete field if non-nil, zero value otherwis
 
 `func (o *BackupResponse) GetUserCanDeleteOk() (*bool, bool)`
 
-GetUserCanDeleteOk returns a tuple with the UserCanDelete field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUserCanDeleteOk returns a tuple with the UserCanDelete field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUserCanDelete
 
@@ -337,8 +321,7 @@ GetIsPartial returns the IsPartial field if non-nil, zero value otherwise.
 
 `func (o *BackupResponse) GetIsPartialOk() (*bool, bool)`
 
-GetIsPartialOk returns a tuple with the IsPartial field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIsPartialOk returns a tuple with the IsPartial field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIsPartial
 
@@ -362,8 +345,7 @@ GetBackupType returns the BackupType field if non-nil, zero value otherwise.
 
 `func (o *BackupResponse) GetBackupTypeOk() (*string, bool)`
 
-GetBackupTypeOk returns a tuple with the BackupType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetBackupTypeOk returns a tuple with the BackupType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetBackupType
 
@@ -387,8 +369,7 @@ GetOptions returns the Options field if non-nil, zero value otherwise.
 
 `func (o *BackupResponse) GetOptionsOk() (*BackupOptions, bool)`
 
-GetOptionsOk returns a tuple with the Options field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOptionsOk returns a tuple with the Options field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOptions
 
@@ -406,12 +387,14 @@ HasOptions returns a boolean if a field has been set.
 
 `func (o *BackupResponse) SetOptionsNil(b bool)`
 
- SetOptionsNil sets the value for Options to be an explicit nil
+SetOptionsNil sets the value for Options to be an explicit nil
 
 ### UnsetOptions
+
 `func (o *BackupResponse) UnsetOptions()`
 
 UnsetOptions ensures that no value is present for Options, not even an explicit nil
+
 ### GetHydrationStatus
 
 `func (o *BackupResponse) GetHydrationStatus() string`
@@ -422,8 +405,7 @@ GetHydrationStatus returns the HydrationStatus field if non-nil, zero value othe
 
 `func (o *BackupResponse) GetHydrationStatusOk() (*string, bool)`
 
-GetHydrationStatusOk returns a tuple with the HydrationStatus field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetHydrationStatusOk returns a tuple with the HydrationStatus field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetHydrationStatus
 
@@ -447,8 +429,7 @@ GetTotalObjectCount returns the TotalObjectCount field if non-nil, zero value ot
 
 `func (o *BackupResponse) GetTotalObjectCountOk() (*int64, bool)`
 
-GetTotalObjectCountOk returns a tuple with the TotalObjectCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTotalObjectCountOk returns a tuple with the TotalObjectCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTotalObjectCount
 
@@ -472,8 +453,7 @@ GetCloudStorageStatus returns the CloudStorageStatus field if non-nil, zero valu
 
 `func (o *BackupResponse) GetCloudStorageStatusOk() (*string, bool)`
 
-GetCloudStorageStatusOk returns a tuple with the CloudStorageStatus field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCloudStorageStatusOk returns a tuple with the CloudStorageStatus field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCloudStorageStatus
 
@@ -486,5 +466,3 @@ SetCloudStorageStatus sets CloudStorageStatus field to given value.
 `func (o *BackupResponse) HasCloudStorageStatus() bool`
 
 HasCloudStorageStatus returns a boolean if a field has been set.
-
-

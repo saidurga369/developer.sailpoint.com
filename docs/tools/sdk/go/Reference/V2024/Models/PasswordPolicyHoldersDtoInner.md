@@ -4,20 +4,33 @@ title: PasswordPolicyHoldersDtoInner
 pagination_label: PasswordPolicyHoldersDtoInner
 sidebar_label: PasswordPolicyHoldersDtoInner
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'PasswordPolicyHoldersDtoInner', 'V2024PasswordPolicyHoldersDtoInner'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'PasswordPolicyHoldersDtoInner',
+    'V2024PasswordPolicyHoldersDtoInner',
+  ]
 slug: /tools/sdk/go/v2024/models/password-policy-holders-dto-inner
-tags: ['SDK', 'Software Development Kit', 'PasswordPolicyHoldersDtoInner', 'V2024PasswordPolicyHoldersDtoInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PasswordPolicyHoldersDtoInner',
+    'V2024PasswordPolicyHoldersDtoInner',
+  ]
 ---
 
 # PasswordPolicyHoldersDtoInner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**PolicyId** | Pointer to **string** | The password policy Id. | [optional] 
-**PolicyName** | Pointer to **string** | The name of the password policy. | [optional] 
-**Selectors** | Pointer to [**PasswordPolicyHoldersDtoAttributes**](password-policy-holders-dto-attributes) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **PolicyId** | Pointer to **string** | The password policy Id. | [optional] |
+| **PolicyName** | Pointer to **string** | The name of the password policy. | [optional] |
+| **Selectors** | Pointer to [**PasswordPolicyHoldersDtoAttributes**](password-policy-holders-dto-attributes) |  | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewPasswordPolicyHoldersDtoInner() *PasswordPolicyHoldersDtoInner`
 
-NewPasswordPolicyHoldersDtoInner instantiates a new PasswordPolicyHoldersDtoInner object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewPasswordPolicyHoldersDtoInner instantiates a new PasswordPolicyHoldersDtoInner object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewPasswordPolicyHoldersDtoInnerWithDefaults
 
 `func NewPasswordPolicyHoldersDtoInnerWithDefaults() *PasswordPolicyHoldersDtoInner`
 
-NewPasswordPolicyHoldersDtoInnerWithDefaults instantiates a new PasswordPolicyHoldersDtoInner object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewPasswordPolicyHoldersDtoInnerWithDefaults instantiates a new PasswordPolicyHoldersDtoInner object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetPolicyId
 
@@ -48,8 +56,7 @@ GetPolicyId returns the PolicyId field if non-nil, zero value otherwise.
 
 `func (o *PasswordPolicyHoldersDtoInner) GetPolicyIdOk() (*string, bool)`
 
-GetPolicyIdOk returns a tuple with the PolicyId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPolicyIdOk returns a tuple with the PolicyId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPolicyId
 
@@ -73,8 +80,7 @@ GetPolicyName returns the PolicyName field if non-nil, zero value otherwise.
 
 `func (o *PasswordPolicyHoldersDtoInner) GetPolicyNameOk() (*string, bool)`
 
-GetPolicyNameOk returns a tuple with the PolicyName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPolicyNameOk returns a tuple with the PolicyName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPolicyName
 
@@ -98,8 +104,7 @@ GetSelectors returns the Selectors field if non-nil, zero value otherwise.
 
 `func (o *PasswordPolicyHoldersDtoInner) GetSelectorsOk() (*PasswordPolicyHoldersDtoAttributes, bool)`
 
-GetSelectorsOk returns a tuple with the Selectors field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSelectorsOk returns a tuple with the Selectors field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSelectors
 
@@ -112,5 +117,3 @@ SetSelectors sets Selectors field to given value.
 `func (o *PasswordPolicyHoldersDtoInner) HasSelectors() bool`
 
 HasSelectors returns a boolean if a field has been set.
-
-

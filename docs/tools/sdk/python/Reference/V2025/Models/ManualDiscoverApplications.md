@@ -4,19 +4,32 @@ title: ManualDiscoverApplications
 pagination_label: ManualDiscoverApplications
 sidebar_label: ManualDiscoverApplications
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ManualDiscoverApplications', 'V2025ManualDiscoverApplications'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ManualDiscoverApplications',
+    'V2025ManualDiscoverApplications',
+  ]
 slug: /tools/sdk/python/v2025/models/manual-discover-applications
-tags: ['SDK', 'Software Development Kit', 'ManualDiscoverApplications', 'V2025ManualDiscoverApplications']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ManualDiscoverApplications',
+    'V2025ManualDiscoverApplications',
+  ]
 ---
 
 # ManualDiscoverApplications
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**file** | **bytearray** | The CSV file to upload containing `application_name` and `description` columns. Each row represents an application to be discovered. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **file** | **bytearray** | The CSV file to upload containing `application_name` and `description` columns. Each row represents an application to be discovered. | [required] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ file='application_name,description
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

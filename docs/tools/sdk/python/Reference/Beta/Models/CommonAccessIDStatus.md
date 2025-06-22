@@ -4,20 +4,33 @@ title: CommonAccessIDStatus
 pagination_label: CommonAccessIDStatus
 sidebar_label: CommonAccessIDStatus
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'CommonAccessIDStatus', 'BetaCommonAccessIDStatus'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'CommonAccessIDStatus',
+    'BetaCommonAccessIDStatus',
+  ]
 slug: /tools/sdk/python/beta/models/common-access-id-status
-tags: ['SDK', 'Software Development Kit', 'CommonAccessIDStatus', 'BetaCommonAccessIDStatus']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CommonAccessIDStatus',
+    'BetaCommonAccessIDStatus',
+  ]
 ---
 
 # CommonAccessIDStatus
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**confirmed_ids** | **[]str** | List of confirmed common access ids. | [optional] 
-**denied_ids** | **[]str** | List of denied common access ids. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **confirmed_ids** | **[]str** | List of confirmed common access ids. | [optional] |
+| **denied_ids** | **[]str** | List of denied common access ids. | [optional] |
+
 }
 
 ## Example
@@ -35,5 +48,5 @@ denied_ids=[
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

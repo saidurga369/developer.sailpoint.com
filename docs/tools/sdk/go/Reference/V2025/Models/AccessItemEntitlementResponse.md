@@ -4,29 +4,42 @@ title: AccessItemEntitlementResponse
 pagination_label: AccessItemEntitlementResponse
 sidebar_label: AccessItemEntitlementResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessItemEntitlementResponse', 'V2025AccessItemEntitlementResponse'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'AccessItemEntitlementResponse',
+    'V2025AccessItemEntitlementResponse',
+  ]
 slug: /tools/sdk/go/v2025/models/access-item-entitlement-response
-tags: ['SDK', 'Software Development Kit', 'AccessItemEntitlementResponse', 'V2025AccessItemEntitlementResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessItemEntitlementResponse',
+    'V2025AccessItemEntitlementResponse',
+  ]
 ---
 
 # AccessItemEntitlementResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**AccessType** | Pointer to **string** | the access item type. entitlement in this case | [optional] 
-**Id** | Pointer to **string** | the access item id | [optional] 
-**Attribute** | Pointer to **string** | the entitlement attribute | [optional] 
-**Value** | Pointer to **string** | the associated value | [optional] 
-**EntitlementType** | Pointer to **string** | the type of entitlement | [optional] 
-**SourceName** | Pointer to **string** | the name of the source | [optional] 
-**SourceId** | Pointer to **string** | the id of the source | [optional] 
-**Description** | Pointer to **string** | the description for the entitlment | [optional] 
-**DisplayName** | Pointer to **string** | the display name of the identity | [optional] 
-**Standalone** | **bool** | indicates whether the entitlement is standalone | 
-**Privileged** | **bool** | indicates whether the entitlement is privileged | 
-**CloudGoverned** | **bool** | indicates whether the entitlement is cloud governed | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **AccessType** | Pointer to **string** | the access item type. entitlement in this case | [optional] |
+| **Id** | Pointer to **string** | the access item id | [optional] |
+| **Attribute** | Pointer to **string** | the entitlement attribute | [optional] |
+| **Value** | Pointer to **string** | the associated value | [optional] |
+| **EntitlementType** | Pointer to **string** | the type of entitlement | [optional] |
+| **SourceName** | Pointer to **string** | the name of the source | [optional] |
+| **SourceId** | Pointer to **string** | the id of the source | [optional] |
+| **Description** | Pointer to **string** | the description for the entitlment | [optional] |
+| **DisplayName** | Pointer to **string** | the display name of the identity | [optional] |
+| **Standalone** | **bool** | indicates whether the entitlement is standalone |
+| **Privileged** | **bool** | indicates whether the entitlement is privileged |
+| **CloudGoverned** | **bool** | indicates whether the entitlement is cloud governed |
 
 ## Methods
 
@@ -34,18 +47,13 @@ Name | Type | Description | Notes
 
 `func NewAccessItemEntitlementResponse(standalone bool, privileged bool, cloudGoverned bool, ) *AccessItemEntitlementResponse`
 
-NewAccessItemEntitlementResponse instantiates a new AccessItemEntitlementResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessItemEntitlementResponse instantiates a new AccessItemEntitlementResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessItemEntitlementResponseWithDefaults
 
 `func NewAccessItemEntitlementResponseWithDefaults() *AccessItemEntitlementResponse`
 
-NewAccessItemEntitlementResponseWithDefaults instantiates a new AccessItemEntitlementResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessItemEntitlementResponseWithDefaults instantiates a new AccessItemEntitlementResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetAccessType
 
@@ -57,8 +65,7 @@ GetAccessType returns the AccessType field if non-nil, zero value otherwise.
 
 `func (o *AccessItemEntitlementResponse) GetAccessTypeOk() (*string, bool)`
 
-GetAccessTypeOk returns a tuple with the AccessType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessTypeOk returns a tuple with the AccessType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessType
 
@@ -82,8 +89,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *AccessItemEntitlementResponse) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -107,8 +113,7 @@ GetAttribute returns the Attribute field if non-nil, zero value otherwise.
 
 `func (o *AccessItemEntitlementResponse) GetAttributeOk() (*string, bool)`
 
-GetAttributeOk returns a tuple with the Attribute field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributeOk returns a tuple with the Attribute field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttribute
 
@@ -132,8 +137,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *AccessItemEntitlementResponse) GetValueOk() (*string, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -157,8 +161,7 @@ GetEntitlementType returns the EntitlementType field if non-nil, zero value othe
 
 `func (o *AccessItemEntitlementResponse) GetEntitlementTypeOk() (*string, bool)`
 
-GetEntitlementTypeOk returns a tuple with the EntitlementType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEntitlementTypeOk returns a tuple with the EntitlementType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEntitlementType
 
@@ -182,8 +185,7 @@ GetSourceName returns the SourceName field if non-nil, zero value otherwise.
 
 `func (o *AccessItemEntitlementResponse) GetSourceNameOk() (*string, bool)`
 
-GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceName
 
@@ -207,8 +209,7 @@ GetSourceId returns the SourceId field if non-nil, zero value otherwise.
 
 `func (o *AccessItemEntitlementResponse) GetSourceIdOk() (*string, bool)`
 
-GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceId
 
@@ -232,8 +233,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *AccessItemEntitlementResponse) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -257,8 +257,7 @@ GetDisplayName returns the DisplayName field if non-nil, zero value otherwise.
 
 `func (o *AccessItemEntitlementResponse) GetDisplayNameOk() (*string, bool)`
 
-GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayName
 
@@ -282,15 +281,13 @@ GetStandalone returns the Standalone field if non-nil, zero value otherwise.
 
 `func (o *AccessItemEntitlementResponse) GetStandaloneOk() (*bool, bool)`
 
-GetStandaloneOk returns a tuple with the Standalone field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStandaloneOk returns a tuple with the Standalone field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStandalone
 
 `func (o *AccessItemEntitlementResponse) SetStandalone(v bool)`
 
 SetStandalone sets Standalone field to given value.
-
 
 ### GetPrivileged
 
@@ -302,15 +299,13 @@ GetPrivileged returns the Privileged field if non-nil, zero value otherwise.
 
 `func (o *AccessItemEntitlementResponse) GetPrivilegedOk() (*bool, bool)`
 
-GetPrivilegedOk returns a tuple with the Privileged field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPrivilegedOk returns a tuple with the Privileged field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPrivileged
 
 `func (o *AccessItemEntitlementResponse) SetPrivileged(v bool)`
 
 SetPrivileged sets Privileged field to given value.
-
 
 ### GetCloudGoverned
 
@@ -322,14 +317,10 @@ GetCloudGoverned returns the CloudGoverned field if non-nil, zero value otherwis
 
 `func (o *AccessItemEntitlementResponse) GetCloudGovernedOk() (*bool, bool)`
 
-GetCloudGovernedOk returns a tuple with the CloudGoverned field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCloudGovernedOk returns a tuple with the CloudGoverned field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCloudGoverned
 
 `func (o *AccessItemEntitlementResponse) SetCloudGoverned(v bool)`
 
 SetCloudGoverned sets CloudGoverned field to given value.
-
-
-

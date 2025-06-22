@@ -4,18 +4,22 @@ title: CommonAccessItemState
 pagination_label: CommonAccessItemState
 sidebar_label: CommonAccessItemState
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'CommonAccessItemState', 'BetaCommonAccessItemState'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'CommonAccessItemState', 'BetaCommonAccessItemState']
 slug: /tools/sdk/go/beta/models/common-access-item-state
-tags: ['SDK', 'Software Development Kit', 'CommonAccessItemState', 'BetaCommonAccessItemState']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CommonAccessItemState',
+    'BetaCommonAccessItemState',
+  ]
 ---
 
 # CommonAccessItemState
 
 ## Enum
 
+- `CONFIRMED` (value: `"CONFIRMED"`)
 
-* `CONFIRMED` (value: `"CONFIRMED"`)
-
-* `DENIED` (value: `"DENIED"`)
-
-
+- `DENIED` (value: `"DENIED"`)

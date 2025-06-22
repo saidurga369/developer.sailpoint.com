@@ -4,29 +4,42 @@ title: ReviewableEntitlementAccount
 pagination_label: ReviewableEntitlementAccount
 sidebar_label: ReviewableEntitlementAccount
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ReviewableEntitlementAccount', 'V2024ReviewableEntitlementAccount'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ReviewableEntitlementAccount',
+    'V2024ReviewableEntitlementAccount',
+  ]
 slug: /tools/sdk/go/v2024/models/reviewable-entitlement-account
-tags: ['SDK', 'Software Development Kit', 'ReviewableEntitlementAccount', 'V2024ReviewableEntitlementAccount']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ReviewableEntitlementAccount',
+    'V2024ReviewableEntitlementAccount',
+  ]
 ---
 
 # ReviewableEntitlementAccount
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**NativeIdentity** | Pointer to **string** | The native identity for this account | [optional] 
-**Disabled** | Pointer to **bool** | Indicates whether this account is currently disabled | [optional] [default to false]
-**Locked** | Pointer to **bool** | Indicates whether this account is currently locked | [optional] [default to false]
-**Type** | Pointer to [**DtoType**](dto-type) |  | [optional] 
-**Id** | Pointer to **NullableString** | The id associated with the account | [optional] 
-**Name** | Pointer to **NullableString** | The account name | [optional] 
-**Created** | Pointer to **NullableTime** | When the account was created | [optional] 
-**Modified** | Pointer to **NullableTime** | When the account was last modified | [optional] 
-**ActivityInsights** | Pointer to [**ActivityInsights**](activity-insights) |  | [optional] 
-**Description** | Pointer to **NullableString** | Information about the account | [optional] 
-**GovernanceGroupId** | Pointer to **NullableString** | The id associated with the machine Account Governance Group | [optional] 
-**Owner** | Pointer to [**NullableReviewableEntitlementAccountOwner**](reviewable-entitlement-account-owner) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **NativeIdentity** | Pointer to **string** | The native identity for this account | [optional] |
+| **Disabled** | Pointer to **bool** | Indicates whether this account is currently disabled | [optional] [default to false] |
+| **Locked** | Pointer to **bool** | Indicates whether this account is currently locked | [optional] [default to false] |
+| **Type** | Pointer to [**DtoType**](dto-type) |  | [optional] |
+| **Id** | Pointer to **NullableString** | The id associated with the account | [optional] |
+| **Name** | Pointer to **NullableString** | The account name | [optional] |
+| **Created** | Pointer to **NullableTime** | When the account was created | [optional] |
+| **Modified** | Pointer to **NullableTime** | When the account was last modified | [optional] |
+| **ActivityInsights** | Pointer to [**ActivityInsights**](activity-insights) |  | [optional] |
+| **Description** | Pointer to **NullableString** | Information about the account | [optional] |
+| **GovernanceGroupId** | Pointer to **NullableString** | The id associated with the machine Account Governance Group | [optional] |
+| **Owner** | Pointer to [**NullableReviewableEntitlementAccountOwner**](reviewable-entitlement-account-owner) |  | [optional] |
 
 ## Methods
 
@@ -34,18 +47,13 @@ Name | Type | Description | Notes
 
 `func NewReviewableEntitlementAccount() *ReviewableEntitlementAccount`
 
-NewReviewableEntitlementAccount instantiates a new ReviewableEntitlementAccount object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewReviewableEntitlementAccount instantiates a new ReviewableEntitlementAccount object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewReviewableEntitlementAccountWithDefaults
 
 `func NewReviewableEntitlementAccountWithDefaults() *ReviewableEntitlementAccount`
 
-NewReviewableEntitlementAccountWithDefaults instantiates a new ReviewableEntitlementAccount object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewReviewableEntitlementAccountWithDefaults instantiates a new ReviewableEntitlementAccount object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetNativeIdentity
 
@@ -57,8 +65,7 @@ GetNativeIdentity returns the NativeIdentity field if non-nil, zero value otherw
 
 `func (o *ReviewableEntitlementAccount) GetNativeIdentityOk() (*string, bool)`
 
-GetNativeIdentityOk returns a tuple with the NativeIdentity field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNativeIdentityOk returns a tuple with the NativeIdentity field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNativeIdentity
 
@@ -82,8 +89,7 @@ GetDisabled returns the Disabled field if non-nil, zero value otherwise.
 
 `func (o *ReviewableEntitlementAccount) GetDisabledOk() (*bool, bool)`
 
-GetDisabledOk returns a tuple with the Disabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisabledOk returns a tuple with the Disabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisabled
 
@@ -107,8 +113,7 @@ GetLocked returns the Locked field if non-nil, zero value otherwise.
 
 `func (o *ReviewableEntitlementAccount) GetLockedOk() (*bool, bool)`
 
-GetLockedOk returns a tuple with the Locked field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLockedOk returns a tuple with the Locked field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLocked
 
@@ -132,8 +137,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *ReviewableEntitlementAccount) GetTypeOk() (*DtoType, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -157,8 +161,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *ReviewableEntitlementAccount) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -176,12 +179,14 @@ HasId returns a boolean if a field has been set.
 
 `func (o *ReviewableEntitlementAccount) SetIdNil(b bool)`
 
- SetIdNil sets the value for Id to be an explicit nil
+SetIdNil sets the value for Id to be an explicit nil
 
 ### UnsetId
+
 `func (o *ReviewableEntitlementAccount) UnsetId()`
 
 UnsetId ensures that no value is present for Id, not even an explicit nil
+
 ### GetName
 
 `func (o *ReviewableEntitlementAccount) GetName() string`
@@ -192,8 +197,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *ReviewableEntitlementAccount) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -211,12 +215,14 @@ HasName returns a boolean if a field has been set.
 
 `func (o *ReviewableEntitlementAccount) SetNameNil(b bool)`
 
- SetNameNil sets the value for Name to be an explicit nil
+SetNameNil sets the value for Name to be an explicit nil
 
 ### UnsetName
+
 `func (o *ReviewableEntitlementAccount) UnsetName()`
 
 UnsetName ensures that no value is present for Name, not even an explicit nil
+
 ### GetCreated
 
 `func (o *ReviewableEntitlementAccount) GetCreated() SailPointTime`
@@ -227,8 +233,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *ReviewableEntitlementAccount) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -246,12 +251,14 @@ HasCreated returns a boolean if a field has been set.
 
 `func (o *ReviewableEntitlementAccount) SetCreatedNil(b bool)`
 
- SetCreatedNil sets the value for Created to be an explicit nil
+SetCreatedNil sets the value for Created to be an explicit nil
 
 ### UnsetCreated
+
 `func (o *ReviewableEntitlementAccount) UnsetCreated()`
 
 UnsetCreated ensures that no value is present for Created, not even an explicit nil
+
 ### GetModified
 
 `func (o *ReviewableEntitlementAccount) GetModified() SailPointTime`
@@ -262,8 +269,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *ReviewableEntitlementAccount) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -281,12 +287,14 @@ HasModified returns a boolean if a field has been set.
 
 `func (o *ReviewableEntitlementAccount) SetModifiedNil(b bool)`
 
- SetModifiedNil sets the value for Modified to be an explicit nil
+SetModifiedNil sets the value for Modified to be an explicit nil
 
 ### UnsetModified
+
 `func (o *ReviewableEntitlementAccount) UnsetModified()`
 
 UnsetModified ensures that no value is present for Modified, not even an explicit nil
+
 ### GetActivityInsights
 
 `func (o *ReviewableEntitlementAccount) GetActivityInsights() ActivityInsights`
@@ -297,8 +305,7 @@ GetActivityInsights returns the ActivityInsights field if non-nil, zero value ot
 
 `func (o *ReviewableEntitlementAccount) GetActivityInsightsOk() (*ActivityInsights, bool)`
 
-GetActivityInsightsOk returns a tuple with the ActivityInsights field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetActivityInsightsOk returns a tuple with the ActivityInsights field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetActivityInsights
 
@@ -322,8 +329,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *ReviewableEntitlementAccount) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -341,12 +347,14 @@ HasDescription returns a boolean if a field has been set.
 
 `func (o *ReviewableEntitlementAccount) SetDescriptionNil(b bool)`
 
- SetDescriptionNil sets the value for Description to be an explicit nil
+SetDescriptionNil sets the value for Description to be an explicit nil
 
 ### UnsetDescription
+
 `func (o *ReviewableEntitlementAccount) UnsetDescription()`
 
 UnsetDescription ensures that no value is present for Description, not even an explicit nil
+
 ### GetGovernanceGroupId
 
 `func (o *ReviewableEntitlementAccount) GetGovernanceGroupId() string`
@@ -357,8 +365,7 @@ GetGovernanceGroupId returns the GovernanceGroupId field if non-nil, zero value 
 
 `func (o *ReviewableEntitlementAccount) GetGovernanceGroupIdOk() (*string, bool)`
 
-GetGovernanceGroupIdOk returns a tuple with the GovernanceGroupId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetGovernanceGroupIdOk returns a tuple with the GovernanceGroupId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetGovernanceGroupId
 
@@ -376,12 +383,14 @@ HasGovernanceGroupId returns a boolean if a field has been set.
 
 `func (o *ReviewableEntitlementAccount) SetGovernanceGroupIdNil(b bool)`
 
- SetGovernanceGroupIdNil sets the value for GovernanceGroupId to be an explicit nil
+SetGovernanceGroupIdNil sets the value for GovernanceGroupId to be an explicit nil
 
 ### UnsetGovernanceGroupId
+
 `func (o *ReviewableEntitlementAccount) UnsetGovernanceGroupId()`
 
 UnsetGovernanceGroupId ensures that no value is present for GovernanceGroupId, not even an explicit nil
+
 ### GetOwner
 
 `func (o *ReviewableEntitlementAccount) GetOwner() ReviewableEntitlementAccountOwner`
@@ -392,8 +401,7 @@ GetOwner returns the Owner field if non-nil, zero value otherwise.
 
 `func (o *ReviewableEntitlementAccount) GetOwnerOk() (*ReviewableEntitlementAccountOwner, bool)`
 
-GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwner
 
@@ -411,10 +419,10 @@ HasOwner returns a boolean if a field has been set.
 
 `func (o *ReviewableEntitlementAccount) SetOwnerNil(b bool)`
 
- SetOwnerNil sets the value for Owner to be an explicit nil
+SetOwnerNil sets the value for Owner to be an explicit nil
 
 ### UnsetOwner
+
 `func (o *ReviewableEntitlementAccount) UnsetOwner()`
 
 UnsetOwner ensures that no value is present for Owner, not even an explicit nil
-

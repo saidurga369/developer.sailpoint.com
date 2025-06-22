@@ -4,9 +4,16 @@ title: OwnerReferenceDto
 pagination_label: OwnerReferenceDto
 sidebar_label: OwnerReferenceDto
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'OwnerReferenceDto', 'BetaOwnerReferenceDto'] 
+keywords:
+  ['python', 'Python', 'sdk', 'OwnerReferenceDto', 'BetaOwnerReferenceDto']
 slug: /tools/sdk/python/beta/models/owner-reference-dto
-tags: ['SDK', 'Software Development Kit', 'OwnerReferenceDto', 'BetaOwnerReferenceDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'OwnerReferenceDto',
+    'BetaOwnerReferenceDto',
+  ]
 ---
 
 # OwnerReferenceDto
@@ -15,11 +22,12 @@ Simplified DTO for the owner object of the entitlement
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The owner id for the entitlement | [optional] 
-**name** | **str** | The owner name for the entitlement | [optional] 
-**type** |  **Enum** [  'IDENTITY' ] | The type of the owner. Initially only type IDENTITY is supported | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The owner id for the entitlement | [optional] |
+| **name** | **str** | The owner name for the entitlement | [optional] |
+| **type** | **Enum** [ 'IDENTITY' ] | The type of the owner. Initially only type IDENTITY is supported | [optional] |
+
 }
 
 ## Example
@@ -34,5 +42,5 @@ type='IDENTITY'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

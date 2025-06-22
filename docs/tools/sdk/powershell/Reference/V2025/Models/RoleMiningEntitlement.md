@@ -4,31 +4,44 @@ title: RoleMiningEntitlement
 pagination_label: RoleMiningEntitlement
 sidebar_label: RoleMiningEntitlement
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'RoleMiningEntitlement', 'V2025RoleMiningEntitlement'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'RoleMiningEntitlement',
+    'V2025RoleMiningEntitlement',
+  ]
 slug: /tools/sdk/powershell/v2025/models/role-mining-entitlement
-tags: ['SDK', 'Software Development Kit', 'RoleMiningEntitlement', 'V2025RoleMiningEntitlement']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningEntitlement',
+    'V2025RoleMiningEntitlement',
+  ]
 ---
-
 
 # RoleMiningEntitlement
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**EntitlementRef** | [**RoleMiningEntitlementRef**](role-mining-entitlement-ref) |  | [optional] 
-**Name** | **String** | Name of the entitlement | [optional] 
-**ApplicationName** | **String** | Application name of the entitlement | [optional] 
-**IdentityCount** | **Int32** | The number of identities with this entitlement in a role. | [optional] 
-**Popularity** | **Double** | The % popularity of this entitlement in a role. | [optional] 
-**PopularityInOrg** | **Double** | The % popularity of this entitlement in the org. | [optional] 
-**SourceId** | **String** | The ID of the source/application. | [optional] 
-**ActivitySourceState** | **String** | The status of activity data for the source.   Value is complete or notComplete. | [optional] 
-**SourceUsagePercent** | **Double** | The percentage of identities in the potential role that have usage of the source/application of this entitlement. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **EntitlementRef** | [**RoleMiningEntitlementRef**](role-mining-entitlement-ref) |  | [optional] |
+| **Name** | **String** | Name of the entitlement | [optional] |
+| **ApplicationName** | **String** | Application name of the entitlement | [optional] |
+| **IdentityCount** | **Int32** | The number of identities with this entitlement in a role. | [optional] |
+| **Popularity** | **Double** | The % popularity of this entitlement in a role. | [optional] |
+| **PopularityInOrg** | **Double** | The % popularity of this entitlement in the org. | [optional] |
+| **SourceId** | **String** | The ID of the source/application. | [optional] |
+| **ActivitySourceState** | **String** | The status of activity data for the source. Value is complete or notComplete. | [optional] |
+| **SourceUsagePercent** | **Double** | The percentage of identities in the potential role that have usage of the source/application of this entitlement. | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $RoleMiningEntitlement = Initialize-V2025RoleMiningEntitlement  -EntitlementRef null `
  -Name Add/modify/delete users `
@@ -42,10 +55,9 @@ $RoleMiningEntitlement = Initialize-V2025RoleMiningEntitlement  -EntitlementRef 
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $RoleMiningEntitlement | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

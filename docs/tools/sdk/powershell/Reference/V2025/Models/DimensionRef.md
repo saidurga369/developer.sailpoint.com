@@ -4,25 +4,26 @@ title: DimensionRef
 pagination_label: DimensionRef
 sidebar_label: DimensionRef
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'DimensionRef', 'V2025DimensionRef'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'DimensionRef', 'V2025DimensionRef']
 slug: /tools/sdk/powershell/v2025/models/dimension-ref
 tags: ['SDK', 'Software Development Kit', 'DimensionRef', 'V2025DimensionRef']
 ---
-
 
 # DimensionRef
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** |  **Enum** [  "DIMENSION" ] | The type of the object to which this reference applies | [optional] 
-**Id** | **String** | ID of the object to which this reference applies | [optional] 
-**Name** | **String** | Human-readable display name of the object to which this reference applies | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | **Enum** [ "DIMENSION" ] | The type of the object to which this reference applies | [optional] |
+| **Id** | **String** | ID of the object to which this reference applies | [optional] |
+| **Name** | **String** | Human-readable display name of the object to which this reference applies | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $DimensionRef = Initialize-V2025DimensionRef  -Type DIMENSION `
  -Id 2c91808568c529c60168cca6f90c1313 `
@@ -30,10 +31,9 @@ $DimensionRef = Initialize-V2025DimensionRef  -Type DIMENSION `
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $DimensionRef | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

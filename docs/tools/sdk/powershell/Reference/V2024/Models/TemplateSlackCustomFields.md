@@ -4,26 +4,39 @@ title: TemplateSlackCustomFields
 pagination_label: TemplateSlackCustomFields
 sidebar_label: TemplateSlackCustomFields
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'TemplateSlackCustomFields', 'V2024TemplateSlackCustomFields'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'TemplateSlackCustomFields',
+    'V2024TemplateSlackCustomFields',
+  ]
 slug: /tools/sdk/powershell/v2024/models/template-slack-custom-fields
-tags: ['SDK', 'Software Development Kit', 'TemplateSlackCustomFields', 'V2024TemplateSlackCustomFields']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'TemplateSlackCustomFields',
+    'V2024TemplateSlackCustomFields',
+  ]
 ---
-
 
 # TemplateSlackCustomFields
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**RequestType** | **String** |  | [optional] 
-**ContainsDeny** | **String** |  | [optional] 
-**CampaignId** | **String** |  | [optional] 
-**CampaignStatus** | **String** |  | [optional] 
+| Name               | Type       | Description | Notes      |
+| ------------------ | ---------- | ----------- | ---------- |
+| **RequestType**    | **String** |             | [optional] |
+| **ContainsDeny**   | **String** |             | [optional] |
+| **CampaignId**     | **String** |             | [optional] |
+| **CampaignStatus** | **String** |             | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $TemplateSlackCustomFields = Initialize-V2024TemplateSlackCustomFields  -RequestType null `
  -ContainsDeny null `
@@ -32,10 +45,9 @@ $TemplateSlackCustomFields = Initialize-V2024TemplateSlackCustomFields  -Request
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $TemplateSlackCustomFields | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

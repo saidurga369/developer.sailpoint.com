@@ -4,7 +4,7 @@ title: Role
 pagination_label: Role
 sidebar_label: Role
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Role', 'BetaRole'] 
+keywords: ['go', 'Golang', 'sdk', 'Role', 'BetaRole']
 slug: /tools/sdk/go/beta/models/role
 tags: ['SDK', 'Software Development Kit', 'Role', 'BetaRole']
 ---
@@ -13,26 +13,26 @@ tags: ['SDK', 'Software Development Kit', 'Role', 'BetaRole']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The id of the Role. This field must be left null when creating an Role, otherwise a 400 Bad Request error will result. | [optional] 
-**Name** | **string** | The human-readable display name of the Role | 
-**Created** | Pointer to **SailPointTime** | Date the Role was created | [optional] [readonly] 
-**Modified** | Pointer to **SailPointTime** | Date the Role was last modified. | [optional] [readonly] 
-**Description** | Pointer to **NullableString** | A human-readable description of the Role | [optional] 
-**Owner** | [**OwnerReference**](owner-reference) |  | 
-**AccessProfiles** | Pointer to [**[]AccessProfileRef**](access-profile-ref) |  | [optional] 
-**Entitlements** | Pointer to [**[]EntitlementRef**](entitlement-ref) |  | [optional] 
-**Membership** | Pointer to [**NullableRoleMembershipSelector**](role-membership-selector) |  | [optional] 
-**LegacyMembershipInfo** | Pointer to **map[string]interface{}** | This field is not directly modifiable and is generally expected to be *null*. In very rare instances, some Roles may have been created using membership selection criteria that are no longer fully supported. While these Roles will still work, they should be migrated to STANDARD or IDENTITY_LIST selection criteria. This field exists for informational purposes as an aid to such migration. | [optional] 
-**Enabled** | Pointer to **bool** | Whether the Role is enabled or not. | [optional] [default to false]
-**Requestable** | Pointer to **bool** | Whether the Role can be the target of access requests. | [optional] [default to false]
-**AccessRequestConfig** | Pointer to [**RequestabilityForRole**](requestability-for-role) |  | [optional] 
-**RevocationRequestConfig** | Pointer to [**RevocabilityForRole**](revocability-for-role) |  | [optional] 
-**Segments** | Pointer to **[]string** | List of IDs of segments, if any, to which this Role is assigned. | [optional] 
-**Dimensional** | Pointer to **NullableBool** | Whether the Role is dimensional. | [optional] [default to false]
-**DimensionRefs** | Pointer to [**[]DimensionRef**](dimension-ref) | List of references to dimensions to which this Role is assigned. This field is only relevant if the Role is dimensional. | [optional] 
-**AccessModelMetadata** | Pointer to [**AttributeDTOList**](attribute-dto-list) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The id of the Role. This field must be left null when creating an Role, otherwise a 400 Bad Request error will result. | [optional] |
+| **Name** | **string** | The human-readable display name of the Role |
+| **Created** | Pointer to **SailPointTime** | Date the Role was created | [optional] [readonly] |
+| **Modified** | Pointer to **SailPointTime** | Date the Role was last modified. | [optional] [readonly] |
+| **Description** | Pointer to **NullableString** | A human-readable description of the Role | [optional] |
+| **Owner** | [**OwnerReference**](owner-reference) |  |
+| **AccessProfiles** | Pointer to [**[]AccessProfileRef**](access-profile-ref) |  | [optional] |
+| **Entitlements** | Pointer to [**[]EntitlementRef**](entitlement-ref) |  | [optional] |
+| **Membership** | Pointer to [**NullableRoleMembershipSelector**](role-membership-selector) |  | [optional] |
+| **LegacyMembershipInfo** | Pointer to **map[string]interface{}** | This field is not directly modifiable and is generally expected to be _null_. In very rare instances, some Roles may have been created using membership selection criteria that are no longer fully supported. While these Roles will still work, they should be migrated to STANDARD or IDENTITY_LIST selection criteria. This field exists for informational purposes as an aid to such migration. | [optional] |
+| **Enabled** | Pointer to **bool** | Whether the Role is enabled or not. | [optional] [default to false] |
+| **Requestable** | Pointer to **bool** | Whether the Role can be the target of access requests. | [optional] [default to false] |
+| **AccessRequestConfig** | Pointer to [**RequestabilityForRole**](requestability-for-role) |  | [optional] |
+| **RevocationRequestConfig** | Pointer to [**RevocabilityForRole**](revocability-for-role) |  | [optional] |
+| **Segments** | Pointer to **[]string** | List of IDs of segments, if any, to which this Role is assigned. | [optional] |
+| **Dimensional** | Pointer to **NullableBool** | Whether the Role is dimensional. | [optional] [default to false] |
+| **DimensionRefs** | Pointer to [**[]DimensionRef**](dimension-ref) | List of references to dimensions to which this Role is assigned. This field is only relevant if the Role is dimensional. | [optional] |
+| **AccessModelMetadata** | Pointer to [**AttributeDTOList**](attribute-dto-list) |  | [optional] |
 
 ## Methods
 
@@ -40,18 +40,13 @@ Name | Type | Description | Notes
 
 `func NewRole(name string, owner OwnerReference, ) *Role`
 
-NewRole instantiates a new Role object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRole instantiates a new Role object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleWithDefaults
 
 `func NewRoleWithDefaults() *Role`
 
-NewRoleWithDefaults instantiates a new Role object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleWithDefaults instantiates a new Role object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -63,8 +58,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *Role) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -88,15 +82,13 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *Role) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
 `func (o *Role) SetName(v string)`
 
 SetName sets Name field to given value.
-
 
 ### GetCreated
 
@@ -108,8 +100,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *Role) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -133,8 +124,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *Role) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -158,8 +148,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *Role) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -177,12 +166,14 @@ HasDescription returns a boolean if a field has been set.
 
 `func (o *Role) SetDescriptionNil(b bool)`
 
- SetDescriptionNil sets the value for Description to be an explicit nil
+SetDescriptionNil sets the value for Description to be an explicit nil
 
 ### UnsetDescription
+
 `func (o *Role) UnsetDescription()`
 
 UnsetDescription ensures that no value is present for Description, not even an explicit nil
+
 ### GetOwner
 
 `func (o *Role) GetOwner() OwnerReference`
@@ -193,15 +184,13 @@ GetOwner returns the Owner field if non-nil, zero value otherwise.
 
 `func (o *Role) GetOwnerOk() (*OwnerReference, bool)`
 
-GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwner
 
 `func (o *Role) SetOwner(v OwnerReference)`
 
 SetOwner sets Owner field to given value.
-
 
 ### GetAccessProfiles
 
@@ -213,8 +202,7 @@ GetAccessProfiles returns the AccessProfiles field if non-nil, zero value otherw
 
 `func (o *Role) GetAccessProfilesOk() (*[]AccessProfileRef, bool)`
 
-GetAccessProfilesOk returns a tuple with the AccessProfiles field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessProfilesOk returns a tuple with the AccessProfiles field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessProfiles
 
@@ -232,12 +220,14 @@ HasAccessProfiles returns a boolean if a field has been set.
 
 `func (o *Role) SetAccessProfilesNil(b bool)`
 
- SetAccessProfilesNil sets the value for AccessProfiles to be an explicit nil
+SetAccessProfilesNil sets the value for AccessProfiles to be an explicit nil
 
 ### UnsetAccessProfiles
+
 `func (o *Role) UnsetAccessProfiles()`
 
 UnsetAccessProfiles ensures that no value is present for AccessProfiles, not even an explicit nil
+
 ### GetEntitlements
 
 `func (o *Role) GetEntitlements() []EntitlementRef`
@@ -248,8 +238,7 @@ GetEntitlements returns the Entitlements field if non-nil, zero value otherwise.
 
 `func (o *Role) GetEntitlementsOk() (*[]EntitlementRef, bool)`
 
-GetEntitlementsOk returns a tuple with the Entitlements field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEntitlementsOk returns a tuple with the Entitlements field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEntitlements
 
@@ -273,8 +262,7 @@ GetMembership returns the Membership field if non-nil, zero value otherwise.
 
 `func (o *Role) GetMembershipOk() (*RoleMembershipSelector, bool)`
 
-GetMembershipOk returns a tuple with the Membership field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMembershipOk returns a tuple with the Membership field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMembership
 
@@ -292,12 +280,14 @@ HasMembership returns a boolean if a field has been set.
 
 `func (o *Role) SetMembershipNil(b bool)`
 
- SetMembershipNil sets the value for Membership to be an explicit nil
+SetMembershipNil sets the value for Membership to be an explicit nil
 
 ### UnsetMembership
+
 `func (o *Role) UnsetMembership()`
 
 UnsetMembership ensures that no value is present for Membership, not even an explicit nil
+
 ### GetLegacyMembershipInfo
 
 `func (o *Role) GetLegacyMembershipInfo() map[string]interface{}`
@@ -308,8 +298,7 @@ GetLegacyMembershipInfo returns the LegacyMembershipInfo field if non-nil, zero 
 
 `func (o *Role) GetLegacyMembershipInfoOk() (*map[string]interface{}, bool)`
 
-GetLegacyMembershipInfoOk returns a tuple with the LegacyMembershipInfo field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLegacyMembershipInfoOk returns a tuple with the LegacyMembershipInfo field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLegacyMembershipInfo
 
@@ -327,12 +316,14 @@ HasLegacyMembershipInfo returns a boolean if a field has been set.
 
 `func (o *Role) SetLegacyMembershipInfoNil(b bool)`
 
- SetLegacyMembershipInfoNil sets the value for LegacyMembershipInfo to be an explicit nil
+SetLegacyMembershipInfoNil sets the value for LegacyMembershipInfo to be an explicit nil
 
 ### UnsetLegacyMembershipInfo
+
 `func (o *Role) UnsetLegacyMembershipInfo()`
 
 UnsetLegacyMembershipInfo ensures that no value is present for LegacyMembershipInfo, not even an explicit nil
+
 ### GetEnabled
 
 `func (o *Role) GetEnabled() bool`
@@ -343,8 +334,7 @@ GetEnabled returns the Enabled field if non-nil, zero value otherwise.
 
 `func (o *Role) GetEnabledOk() (*bool, bool)`
 
-GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEnabled
 
@@ -368,8 +358,7 @@ GetRequestable returns the Requestable field if non-nil, zero value otherwise.
 
 `func (o *Role) GetRequestableOk() (*bool, bool)`
 
-GetRequestableOk returns a tuple with the Requestable field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestableOk returns a tuple with the Requestable field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequestable
 
@@ -393,8 +382,7 @@ GetAccessRequestConfig returns the AccessRequestConfig field if non-nil, zero va
 
 `func (o *Role) GetAccessRequestConfigOk() (*RequestabilityForRole, bool)`
 
-GetAccessRequestConfigOk returns a tuple with the AccessRequestConfig field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessRequestConfigOk returns a tuple with the AccessRequestConfig field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessRequestConfig
 
@@ -418,8 +406,7 @@ GetRevocationRequestConfig returns the RevocationRequestConfig field if non-nil,
 
 `func (o *Role) GetRevocationRequestConfigOk() (*RevocabilityForRole, bool)`
 
-GetRevocationRequestConfigOk returns a tuple with the RevocationRequestConfig field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRevocationRequestConfigOk returns a tuple with the RevocationRequestConfig field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRevocationRequestConfig
 
@@ -443,8 +430,7 @@ GetSegments returns the Segments field if non-nil, zero value otherwise.
 
 `func (o *Role) GetSegmentsOk() (*[]string, bool)`
 
-GetSegmentsOk returns a tuple with the Segments field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSegmentsOk returns a tuple with the Segments field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSegments
 
@@ -462,12 +448,14 @@ HasSegments returns a boolean if a field has been set.
 
 `func (o *Role) SetSegmentsNil(b bool)`
 
- SetSegmentsNil sets the value for Segments to be an explicit nil
+SetSegmentsNil sets the value for Segments to be an explicit nil
 
 ### UnsetSegments
+
 `func (o *Role) UnsetSegments()`
 
 UnsetSegments ensures that no value is present for Segments, not even an explicit nil
+
 ### GetDimensional
 
 `func (o *Role) GetDimensional() bool`
@@ -478,8 +466,7 @@ GetDimensional returns the Dimensional field if non-nil, zero value otherwise.
 
 `func (o *Role) GetDimensionalOk() (*bool, bool)`
 
-GetDimensionalOk returns a tuple with the Dimensional field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDimensionalOk returns a tuple with the Dimensional field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDimensional
 
@@ -497,12 +484,14 @@ HasDimensional returns a boolean if a field has been set.
 
 `func (o *Role) SetDimensionalNil(b bool)`
 
- SetDimensionalNil sets the value for Dimensional to be an explicit nil
+SetDimensionalNil sets the value for Dimensional to be an explicit nil
 
 ### UnsetDimensional
+
 `func (o *Role) UnsetDimensional()`
 
 UnsetDimensional ensures that no value is present for Dimensional, not even an explicit nil
+
 ### GetDimensionRefs
 
 `func (o *Role) GetDimensionRefs() []DimensionRef`
@@ -513,8 +502,7 @@ GetDimensionRefs returns the DimensionRefs field if non-nil, zero value otherwis
 
 `func (o *Role) GetDimensionRefsOk() (*[]DimensionRef, bool)`
 
-GetDimensionRefsOk returns a tuple with the DimensionRefs field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDimensionRefsOk returns a tuple with the DimensionRefs field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDimensionRefs
 
@@ -532,12 +520,14 @@ HasDimensionRefs returns a boolean if a field has been set.
 
 `func (o *Role) SetDimensionRefsNil(b bool)`
 
- SetDimensionRefsNil sets the value for DimensionRefs to be an explicit nil
+SetDimensionRefsNil sets the value for DimensionRefs to be an explicit nil
 
 ### UnsetDimensionRefs
+
 `func (o *Role) UnsetDimensionRefs()`
 
 UnsetDimensionRefs ensures that no value is present for DimensionRefs, not even an explicit nil
+
 ### GetAccessModelMetadata
 
 `func (o *Role) GetAccessModelMetadata() AttributeDTOList`
@@ -548,8 +538,7 @@ GetAccessModelMetadata returns the AccessModelMetadata field if non-nil, zero va
 
 `func (o *Role) GetAccessModelMetadataOk() (*AttributeDTOList, bool)`
 
-GetAccessModelMetadataOk returns a tuple with the AccessModelMetadata field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessModelMetadataOk returns a tuple with the AccessModelMetadata field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessModelMetadata
 
@@ -562,5 +551,3 @@ SetAccessModelMetadata sets AccessModelMetadata field to given value.
 `func (o *Role) HasAccessModelMetadata() bool`
 
 HasAccessModelMetadata returns a boolean if a field has been set.
-
-

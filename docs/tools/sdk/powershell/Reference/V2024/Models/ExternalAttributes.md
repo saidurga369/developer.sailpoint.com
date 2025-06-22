@@ -4,26 +4,39 @@ title: ExternalAttributes
 pagination_label: ExternalAttributes
 sidebar_label: ExternalAttributes
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'ExternalAttributes', 'V2024ExternalAttributes'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'ExternalAttributes',
+    'V2024ExternalAttributes',
+  ]
 slug: /tools/sdk/powershell/v2024/models/external-attributes
-tags: ['SDK', 'Software Development Kit', 'ExternalAttributes', 'V2024ExternalAttributes']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ExternalAttributes',
+    'V2024ExternalAttributes',
+  ]
 ---
-
 
 # ExternalAttributes
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | **String** | A unique name for the external trigger | [optional] 
-**Description** | **String** | Additional context about the external trigger | [optional] 
-**ClientId** | **String** | OAuth Client ID to authenticate with this trigger | [optional] 
-**Url** | **String** | URL to invoke this workflow | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | **String** | A unique name for the external trigger | [optional] |
+| **Description** | **String** | Additional context about the external trigger | [optional] |
+| **ClientId** | **String** | OAuth Client ID to authenticate with this trigger | [optional] |
+| **Url** | **String** | URL to invoke this workflow | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $ExternalAttributes = Initialize-V2024ExternalAttributes  -Name search-and-notify `
  -Description Run a search and notify the results `
@@ -32,10 +45,9 @@ $ExternalAttributes = Initialize-V2024ExternalAttributes  -Name search-and-notif
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $ExternalAttributes | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

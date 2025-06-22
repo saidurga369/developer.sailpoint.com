@@ -4,22 +4,29 @@ title: AccessItemAppResponse
 pagination_label: AccessItemAppResponse
 sidebar_label: AccessItemAppResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessItemAppResponse', 'V2024AccessItemAppResponse'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'AccessItemAppResponse', 'V2024AccessItemAppResponse']
 slug: /tools/sdk/go/v2024/models/access-item-app-response
-tags: ['SDK', 'Software Development Kit', 'AccessItemAppResponse', 'V2024AccessItemAppResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessItemAppResponse',
+    'V2024AccessItemAppResponse',
+  ]
 ---
 
 # AccessItemAppResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**AccessType** | Pointer to **string** | the access item type. entitlement in this case | [optional] 
-**Id** | Pointer to **string** | the access item id | [optional] 
-**DisplayName** | Pointer to **string** | the access item display name | [optional] 
-**SourceName** | Pointer to **string** | the associated source name if it exists | [optional] 
-**AppRoleId** | Pointer to **string** | the app role id | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **AccessType** | Pointer to **string** | the access item type. entitlement in this case | [optional] |
+| **Id** | Pointer to **string** | the access item id | [optional] |
+| **DisplayName** | Pointer to **string** | the access item display name | [optional] |
+| **SourceName** | Pointer to **string** | the associated source name if it exists | [optional] |
+| **AppRoleId** | Pointer to **string** | the app role id | [optional] |
 
 ## Methods
 
@@ -27,18 +34,13 @@ Name | Type | Description | Notes
 
 `func NewAccessItemAppResponse() *AccessItemAppResponse`
 
-NewAccessItemAppResponse instantiates a new AccessItemAppResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessItemAppResponse instantiates a new AccessItemAppResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessItemAppResponseWithDefaults
 
 `func NewAccessItemAppResponseWithDefaults() *AccessItemAppResponse`
 
-NewAccessItemAppResponseWithDefaults instantiates a new AccessItemAppResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessItemAppResponseWithDefaults instantiates a new AccessItemAppResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetAccessType
 
@@ -50,8 +52,7 @@ GetAccessType returns the AccessType field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAppResponse) GetAccessTypeOk() (*string, bool)`
 
-GetAccessTypeOk returns a tuple with the AccessType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessTypeOk returns a tuple with the AccessType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessType
 
@@ -75,8 +76,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAppResponse) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -100,8 +100,7 @@ GetDisplayName returns the DisplayName field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAppResponse) GetDisplayNameOk() (*string, bool)`
 
-GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayName
 
@@ -125,8 +124,7 @@ GetSourceName returns the SourceName field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAppResponse) GetSourceNameOk() (*string, bool)`
 
-GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceName
 
@@ -150,8 +148,7 @@ GetAppRoleId returns the AppRoleId field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAppResponse) GetAppRoleIdOk() (*string, bool)`
 
-GetAppRoleIdOk returns a tuple with the AppRoleId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAppRoleIdOk returns a tuple with the AppRoleId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAppRoleId
 
@@ -164,5 +161,3 @@ SetAppRoleId sets AppRoleId field to given value.
 `func (o *AccessItemAppResponse) HasAppRoleId() bool`
 
 HasAppRoleId returns a boolean if a field has been set.
-
-

@@ -4,22 +4,35 @@ title: RoleMiningPotentialRoleProvisionRequest
 pagination_label: RoleMiningPotentialRoleProvisionRequest
 sidebar_label: RoleMiningPotentialRoleProvisionRequest
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleMiningPotentialRoleProvisionRequest', 'V2025RoleMiningPotentialRoleProvisionRequest'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'RoleMiningPotentialRoleProvisionRequest',
+    'V2025RoleMiningPotentialRoleProvisionRequest',
+  ]
 slug: /tools/sdk/go/v2025/models/role-mining-potential-role-provision-request
-tags: ['SDK', 'Software Development Kit', 'RoleMiningPotentialRoleProvisionRequest', 'V2025RoleMiningPotentialRoleProvisionRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningPotentialRoleProvisionRequest',
+    'V2025RoleMiningPotentialRoleProvisionRequest',
+  ]
 ---
 
 # RoleMiningPotentialRoleProvisionRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**RoleName** | Pointer to **string** | Name of the new role being created | [optional] 
-**RoleDescription** | Pointer to **string** | Short description of the new role being created | [optional] 
-**OwnerId** | Pointer to **string** | ID of the identity that will own this role | [optional] 
-**IncludeIdentities** | Pointer to **bool** | When true, create access requests for the identities associated with the potential role | [optional] [default to false]
-**DirectlyAssignedEntitlements** | Pointer to **bool** | When true, assign entitlements directly to the role; otherwise, create access profiles containing the entitlements | [optional] [default to false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **RoleName** | Pointer to **string** | Name of the new role being created | [optional] |
+| **RoleDescription** | Pointer to **string** | Short description of the new role being created | [optional] |
+| **OwnerId** | Pointer to **string** | ID of the identity that will own this role | [optional] |
+| **IncludeIdentities** | Pointer to **bool** | When true, create access requests for the identities associated with the potential role | [optional] [default to false] |
+| **DirectlyAssignedEntitlements** | Pointer to **bool** | When true, assign entitlements directly to the role; otherwise, create access profiles containing the entitlements | [optional] [default to false] |
 
 ## Methods
 
@@ -27,18 +40,13 @@ Name | Type | Description | Notes
 
 `func NewRoleMiningPotentialRoleProvisionRequest() *RoleMiningPotentialRoleProvisionRequest`
 
-NewRoleMiningPotentialRoleProvisionRequest instantiates a new RoleMiningPotentialRoleProvisionRequest object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleMiningPotentialRoleProvisionRequest instantiates a new RoleMiningPotentialRoleProvisionRequest object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleMiningPotentialRoleProvisionRequestWithDefaults
 
 `func NewRoleMiningPotentialRoleProvisionRequestWithDefaults() *RoleMiningPotentialRoleProvisionRequest`
 
-NewRoleMiningPotentialRoleProvisionRequestWithDefaults instantiates a new RoleMiningPotentialRoleProvisionRequest object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleMiningPotentialRoleProvisionRequestWithDefaults instantiates a new RoleMiningPotentialRoleProvisionRequest object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetRoleName
 
@@ -50,8 +58,7 @@ GetRoleName returns the RoleName field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningPotentialRoleProvisionRequest) GetRoleNameOk() (*string, bool)`
 
-GetRoleNameOk returns a tuple with the RoleName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRoleNameOk returns a tuple with the RoleName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRoleName
 
@@ -75,8 +82,7 @@ GetRoleDescription returns the RoleDescription field if non-nil, zero value othe
 
 `func (o *RoleMiningPotentialRoleProvisionRequest) GetRoleDescriptionOk() (*string, bool)`
 
-GetRoleDescriptionOk returns a tuple with the RoleDescription field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRoleDescriptionOk returns a tuple with the RoleDescription field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRoleDescription
 
@@ -100,8 +106,7 @@ GetOwnerId returns the OwnerId field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningPotentialRoleProvisionRequest) GetOwnerIdOk() (*string, bool)`
 
-GetOwnerIdOk returns a tuple with the OwnerId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerIdOk returns a tuple with the OwnerId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwnerId
 
@@ -125,8 +130,7 @@ GetIncludeIdentities returns the IncludeIdentities field if non-nil, zero value 
 
 `func (o *RoleMiningPotentialRoleProvisionRequest) GetIncludeIdentitiesOk() (*bool, bool)`
 
-GetIncludeIdentitiesOk returns a tuple with the IncludeIdentities field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIncludeIdentitiesOk returns a tuple with the IncludeIdentities field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIncludeIdentities
 
@@ -150,8 +154,7 @@ GetDirectlyAssignedEntitlements returns the DirectlyAssignedEntitlements field i
 
 `func (o *RoleMiningPotentialRoleProvisionRequest) GetDirectlyAssignedEntitlementsOk() (*bool, bool)`
 
-GetDirectlyAssignedEntitlementsOk returns a tuple with the DirectlyAssignedEntitlements field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDirectlyAssignedEntitlementsOk returns a tuple with the DirectlyAssignedEntitlements field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDirectlyAssignedEntitlements
 
@@ -164,5 +167,3 @@ SetDirectlyAssignedEntitlements sets DirectlyAssignedEntitlements field to given
 `func (o *RoleMiningPotentialRoleProvisionRequest) HasDirectlyAssignedEntitlements() bool`
 
 HasDirectlyAssignedEntitlements returns a boolean if a field has been set.
-
-

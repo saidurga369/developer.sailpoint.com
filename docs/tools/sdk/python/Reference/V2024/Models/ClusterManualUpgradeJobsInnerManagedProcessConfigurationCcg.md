@@ -4,9 +4,22 @@ title: ClusterManualUpgradeJobsInnerManagedProcessConfigurationCcg
 pagination_label: ClusterManualUpgradeJobsInnerManagedProcessConfigurationCcg
 sidebar_label: ClusterManualUpgradeJobsInnerManagedProcessConfigurationCcg
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ClusterManualUpgradeJobsInnerManagedProcessConfigurationCcg', 'V2024ClusterManualUpgradeJobsInnerManagedProcessConfigurationCcg'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ClusterManualUpgradeJobsInnerManagedProcessConfigurationCcg',
+    'V2024ClusterManualUpgradeJobsInnerManagedProcessConfigurationCcg',
+  ]
 slug: /tools/sdk/python/v2024/models/cluster-manual-upgrade-jobs-inner-managed-process-configuration-ccg
-tags: ['SDK', 'Software Development Kit', 'ClusterManualUpgradeJobsInnerManagedProcessConfigurationCcg', 'V2024ClusterManualUpgradeJobsInnerManagedProcessConfigurationCcg']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ClusterManualUpgradeJobsInnerManagedProcessConfigurationCcg',
+    'V2024ClusterManualUpgradeJobsInnerManagedProcessConfigurationCcg',
+  ]
 ---
 
 # ClusterManualUpgradeJobsInnerManagedProcessConfigurationCcg
@@ -15,13 +28,14 @@ Configuration details for the 'ccg' process.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**version** | **str** | Version of the 'ccg' process. | [required]
-**path** | **str** | Path to the 'ccg' process. | [required]
-**description** | **str** | A brief description of the 'ccg' process. | [required]
-**restart_needed** | **bool** | Indicates whether the process needs to be restarted. | [required]
-**dependencies** | **map[string]str** | A map of dependencies for the 'ccg' process. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **version** | **str** | Version of the 'ccg' process. | [required] |
+| **path** | **str** | Path to the 'ccg' process. | [required] |
+| **description** | **str** | A brief description of the 'ccg' process. | [required] |
+| **restart_needed** | **bool** | Indicates whether the process needs to be restarted. | [required] |
+| **dependencies** | **map[string]str** | A map of dependencies for the 'ccg' process. | [required] |
+
 }
 
 ## Example
@@ -38,5 +52,5 @@ dependencies={IQService=743/IQService-743.zip, connector-bundle-jdbc=432/connect
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

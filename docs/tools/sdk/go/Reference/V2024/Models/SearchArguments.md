@@ -4,20 +4,21 @@ title: SearchArguments
 pagination_label: SearchArguments
 sidebar_label: SearchArguments
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SearchArguments', 'V2024SearchArguments'] 
+keywords: ['go', 'Golang', 'sdk', 'SearchArguments', 'V2024SearchArguments']
 slug: /tools/sdk/go/v2024/models/search-arguments
-tags: ['SDK', 'Software Development Kit', 'SearchArguments', 'V2024SearchArguments']
+tags:
+  ['SDK', 'Software Development Kit', 'SearchArguments', 'V2024SearchArguments']
 ---
 
 # SearchArguments
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ScheduleId** | Pointer to **string** | The ID of the scheduled search that triggered the saved search execution.  | [optional] 
-**Owner** | Pointer to [**TypedReference**](typed-reference) | The owner of the scheduled search being tested.  | [optional] 
-**Recipients** | Pointer to [**[]TypedReference**](typed-reference) | The email recipients of the scheduled search being tested.  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ScheduleId** | Pointer to **string** | The ID of the scheduled search that triggered the saved search execution. | [optional] |
+| **Owner** | Pointer to [**TypedReference**](typed-reference) | The owner of the scheduled search being tested. | [optional] |
+| **Recipients** | Pointer to [**[]TypedReference**](typed-reference) | The email recipients of the scheduled search being tested. | [optional] |
 
 ## Methods
 
@@ -25,18 +26,13 @@ Name | Type | Description | Notes
 
 `func NewSearchArguments() *SearchArguments`
 
-NewSearchArguments instantiates a new SearchArguments object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSearchArguments instantiates a new SearchArguments object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSearchArgumentsWithDefaults
 
 `func NewSearchArgumentsWithDefaults() *SearchArguments`
 
-NewSearchArgumentsWithDefaults instantiates a new SearchArguments object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSearchArgumentsWithDefaults instantiates a new SearchArguments object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetScheduleId
 
@@ -48,8 +44,7 @@ GetScheduleId returns the ScheduleId field if non-nil, zero value otherwise.
 
 `func (o *SearchArguments) GetScheduleIdOk() (*string, bool)`
 
-GetScheduleIdOk returns a tuple with the ScheduleId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetScheduleIdOk returns a tuple with the ScheduleId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetScheduleId
 
@@ -73,8 +68,7 @@ GetOwner returns the Owner field if non-nil, zero value otherwise.
 
 `func (o *SearchArguments) GetOwnerOk() (*TypedReference, bool)`
 
-GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwner
 
@@ -98,8 +92,7 @@ GetRecipients returns the Recipients field if non-nil, zero value otherwise.
 
 `func (o *SearchArguments) GetRecipientsOk() (*[]TypedReference, bool)`
 
-GetRecipientsOk returns a tuple with the Recipients field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRecipientsOk returns a tuple with the Recipients field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRecipients
 
@@ -112,5 +105,3 @@ SetRecipients sets Recipients field to given value.
 `func (o *SearchArguments) HasRecipients() bool`
 
 HasRecipients returns a boolean if a field has been set.
-
-

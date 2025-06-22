@@ -4,32 +4,45 @@ title: RoleMiningSessionDraftRoleDto
 pagination_label: RoleMiningSessionDraftRoleDto
 sidebar_label: RoleMiningSessionDraftRoleDto
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'RoleMiningSessionDraftRoleDto', 'V2025RoleMiningSessionDraftRoleDto'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'RoleMiningSessionDraftRoleDto',
+    'V2025RoleMiningSessionDraftRoleDto',
+  ]
 slug: /tools/sdk/powershell/v2025/models/role-mining-session-draft-role-dto
-tags: ['SDK', 'Software Development Kit', 'RoleMiningSessionDraftRoleDto', 'V2025RoleMiningSessionDraftRoleDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningSessionDraftRoleDto',
+    'V2025RoleMiningSessionDraftRoleDto',
+  ]
 ---
-
 
 # RoleMiningSessionDraftRoleDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | **String** | Name of the draft role | [optional] 
-**Description** | **String** | Draft role description | [optional] 
-**IdentityIds** | **[]String** | The list of identities for this role mining session. | [optional] 
-**EntitlementIds** | **[]String** | The list of entitlement ids for this role mining session. | [optional] 
-**ExcludedEntitlements** | **[]String** | The list of excluded entitlement ids. | [optional] 
-**Modified** | **System.DateTime** | Last modified date | [optional] 
-**Type** | [**RoleMiningRoleType**](role-mining-role-type) |  | [optional] 
-**Id** | **String** | Id of the potential draft role | [optional] 
-**CreatedDate** | **System.DateTime** | The date-time when this potential draft role was created. | [optional] 
-**ModifiedDate** | **System.DateTime** | The date-time when this potential draft role was modified. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | **String** | Name of the draft role | [optional] |
+| **Description** | **String** | Draft role description | [optional] |
+| **IdentityIds** | **[]String** | The list of identities for this role mining session. | [optional] |
+| **EntitlementIds** | **[]String** | The list of entitlement ids for this role mining session. | [optional] |
+| **ExcludedEntitlements** | **[]String** | The list of excluded entitlement ids. | [optional] |
+| **Modified** | **System.DateTime** | Last modified date | [optional] |
+| **Type** | [**RoleMiningRoleType**](role-mining-role-type) |  | [optional] |
+| **Id** | **String** | Id of the potential draft role | [optional] |
+| **CreatedDate** | **System.DateTime** | The date-time when this potential draft role was created. | [optional] |
+| **ModifiedDate** | **System.DateTime** | The date-time when this potential draft role was modified. | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $RoleMiningSessionDraftRoleDto = Initialize-V2025RoleMiningSessionDraftRoleDto  -Name Saved RM Session - 07/10 `
  -Description Person who develops software `
@@ -44,10 +57,9 @@ $RoleMiningSessionDraftRoleDto = Initialize-V2025RoleMiningSessionDraftRoleDto  
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $RoleMiningSessionDraftRoleDto | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

@@ -4,28 +4,41 @@ title: ApprovalForwardHistory
 pagination_label: ApprovalForwardHistory
 sidebar_label: ApprovalForwardHistory
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'ApprovalForwardHistory', 'ApprovalForwardHistory'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'ApprovalForwardHistory',
+    'ApprovalForwardHistory',
+  ]
 slug: /tools/sdk/powershell/v3/models/approval-forward-history
-tags: ['SDK', 'Software Development Kit', 'ApprovalForwardHistory', 'ApprovalForwardHistory']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ApprovalForwardHistory',
+    'ApprovalForwardHistory',
+  ]
 ---
-
 
 # ApprovalForwardHistory
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**OldApproverName** | **String** | Display name of approver from whom the approval was forwarded. | [optional] 
-**NewApproverName** | **String** | Display name of approver to whom the approval was forwarded. | [optional] 
-**Comment** | **String** | Comment made while forwarding. | [optional] 
-**Modified** | **System.DateTime** | Time at which approval was forwarded. | [optional] 
-**ForwarderName** | **String** | Display name of forwarder who forwarded the approval. | [optional] 
-**ReassignmentType** | [**ReassignmentType**](reassignment-type) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **OldApproverName** | **String** | Display name of approver from whom the approval was forwarded. | [optional] |
+| **NewApproverName** | **String** | Display name of approver to whom the approval was forwarded. | [optional] |
+| **Comment** | **String** | Comment made while forwarding. | [optional] |
+| **Modified** | **System.DateTime** | Time at which approval was forwarded. | [optional] |
+| **ForwarderName** | **String** | Display name of forwarder who forwarded the approval. | [optional] |
+| **ReassignmentType** | [**ReassignmentType**](reassignment-type) |  | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $ApprovalForwardHistory = Initialize-ApprovalForwardHistory  -OldApproverName Frank Mir `
  -NewApproverName Al Volta `
@@ -36,10 +49,9 @@ $ApprovalForwardHistory = Initialize-ApprovalForwardHistory  -OldApproverName Fr
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $ApprovalForwardHistory | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

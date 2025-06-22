@@ -4,9 +4,22 @@ title: SimIntegrationDetailsAllOfBeforeProvisioningRule
 pagination_label: SimIntegrationDetailsAllOfBeforeProvisioningRule
 sidebar_label: SimIntegrationDetailsAllOfBeforeProvisioningRule
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SimIntegrationDetailsAllOfBeforeProvisioningRule', 'BetaSimIntegrationDetailsAllOfBeforeProvisioningRule'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'SimIntegrationDetailsAllOfBeforeProvisioningRule',
+    'BetaSimIntegrationDetailsAllOfBeforeProvisioningRule',
+  ]
 slug: /tools/sdk/python/beta/models/sim-integration-details-all-of-before-provisioning-rule
-tags: ['SDK', 'Software Development Kit', 'SimIntegrationDetailsAllOfBeforeProvisioningRule', 'BetaSimIntegrationDetailsAllOfBeforeProvisioningRule']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SimIntegrationDetailsAllOfBeforeProvisioningRule',
+    'BetaSimIntegrationDetailsAllOfBeforeProvisioningRule',
+  ]
 ---
 
 # SimIntegrationDetailsAllOfBeforeProvisioningRule
@@ -15,11 +28,12 @@ Before provisioning rule of integration
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** | [**DtoType**](dto-type) |  | [optional] 
-**id** | **str** | ID of the rule | [optional] 
-**name** | **str** | Human-readable display name of the rule | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | [**DtoType**](dto-type) |  | [optional] |
+| **id** | **str** | ID of the rule | [optional] |
+| **name** | **str** | Human-readable display name of the rule | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Example Rule'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

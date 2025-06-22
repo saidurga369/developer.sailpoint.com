@@ -4,23 +4,24 @@ title: OutlierSummary
 pagination_label: OutlierSummary
 sidebar_label: OutlierSummary
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'OutlierSummary', 'BetaOutlierSummary'] 
+keywords: ['python', 'Python', 'sdk', 'OutlierSummary', 'BetaOutlierSummary']
 slug: /tools/sdk/python/beta/models/outlier-summary
-tags: ['SDK', 'Software Development Kit', 'OutlierSummary', 'BetaOutlierSummary']
+tags:
+  ['SDK', 'Software Development Kit', 'OutlierSummary', 'BetaOutlierSummary']
 ---
 
 # OutlierSummary
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'LOW_SIMILARITY',    'STRUCTURAL' ] | The type of outlier summary | [optional] 
-**snapshot_date** | **datetime** | The date the bulk outlier detection ran/snapshot was created | [optional] 
-**total_outliers** | **int** | Total number of outliers for the customer making the request | [optional] 
-**total_identities** | **int** | Total number of identities for the customer making the request | [optional] 
-**total_ignored** | **int** |  | [optional] [default to 0]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'LOW_SIMILARITY', 'STRUCTURAL' ] | The type of outlier summary | [optional] |
+| **snapshot_date** | **datetime** | The date the bulk outlier detection ran/snapshot was created | [optional] |
+| **total_outliers** | **int** | Total number of outliers for the customer making the request | [optional] |
+| **total_identities** | **int** | Total number of identities for the customer making the request | [optional] |
+| **total_ignored** | **int** |  | [optional] [default to 0] |
+
 }
 
 ## Example
@@ -37,5 +38,5 @@ total_ignored=0
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

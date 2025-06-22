@@ -4,20 +4,33 @@ title: FederationProtocolDetails
 pagination_label: FederationProtocolDetails
 sidebar_label: FederationProtocolDetails
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'FederationProtocolDetails', 'FederationProtocolDetails'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'FederationProtocolDetails',
+    'FederationProtocolDetails',
+  ]
 slug: /tools/sdk/python/v3/models/federation-protocol-details
-tags: ['SDK', 'Software Development Kit', 'FederationProtocolDetails', 'FederationProtocolDetails']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'FederationProtocolDetails',
+    'FederationProtocolDetails',
+  ]
 ---
 
 # FederationProtocolDetails
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**role** |  **Enum** [  'SAML_IDP',    'SAML_SP' ] | Federation protocol role | [optional] 
-**entity_id** | **str** | An entity ID is a globally unique name for a SAML entity, either an Identity Provider (IDP) or a Service Provider (SP). | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **role** | **Enum** [ 'SAML_IDP', 'SAML_SP' ] | Federation protocol role | [optional] |
+| **entity_id** | **str** | An entity ID is a globally unique name for a SAML entity, either an Identity Provider (IDP) or a Service Provider (SP). | [optional] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ entity_id='http://www.okta.com/exkdaruy8Ln5Ry7C54x6'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

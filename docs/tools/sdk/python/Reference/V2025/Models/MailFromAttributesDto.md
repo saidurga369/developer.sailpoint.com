@@ -4,9 +4,22 @@ title: MailFromAttributesDto
 pagination_label: MailFromAttributesDto
 sidebar_label: MailFromAttributesDto
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'MailFromAttributesDto', 'V2025MailFromAttributesDto'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'MailFromAttributesDto',
+    'V2025MailFromAttributesDto',
+  ]
 slug: /tools/sdk/python/v2025/models/mail-from-attributes-dto
-tags: ['SDK', 'Software Development Kit', 'MailFromAttributesDto', 'V2025MailFromAttributesDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'MailFromAttributesDto',
+    'V2025MailFromAttributesDto',
+  ]
 ---
 
 # MailFromAttributesDto
@@ -15,10 +28,11 @@ MAIL FROM attributes for a domain / identity
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**identity** | **str** | The identity or domain address | [optional] 
-**mail_from_domain** | **str** | The new MAIL FROM domain of the identity. Must be a subdomain of the identity. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **identity** | **str** | The identity or domain address | [optional] |
+| **mail_from_domain** | **str** | The new MAIL FROM domain of the identity. Must be a subdomain of the identity. | [optional] |
+
 }
 
 ## Example
@@ -32,5 +46,5 @@ mail_from_domain='example.sailpoint.com'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

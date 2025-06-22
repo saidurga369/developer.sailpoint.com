@@ -4,25 +4,38 @@ title: VAClusterStatusChangeEventHealthCheckResult
 pagination_label: VAClusterStatusChangeEventHealthCheckResult
 sidebar_label: VAClusterStatusChangeEventHealthCheckResult
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'VAClusterStatusChangeEventHealthCheckResult', 'V2024VAClusterStatusChangeEventHealthCheckResult'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'VAClusterStatusChangeEventHealthCheckResult',
+    'V2024VAClusterStatusChangeEventHealthCheckResult',
+  ]
 slug: /tools/sdk/powershell/v2024/models/va-cluster-status-change-event-health-check-result
-tags: ['SDK', 'Software Development Kit', 'VAClusterStatusChangeEventHealthCheckResult', 'V2024VAClusterStatusChangeEventHealthCheckResult']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'VAClusterStatusChangeEventHealthCheckResult',
+    'V2024VAClusterStatusChangeEventHealthCheckResult',
+  ]
 ---
-
 
 # VAClusterStatusChangeEventHealthCheckResult
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Message** | **String** | Detailed message of the result of the health check. | [required]
-**ResultType** | **String** | The type of the health check result. | [required]
-**Status** |  **Enum** [  "Succeeded",    "Failed" ] | The status of the health check. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Message** | **String** | Detailed message of the result of the health check. | [required] |
+| **ResultType** | **String** | The type of the health check result. | [required] |
+| **Status** | **Enum** [ "Succeeded", "Failed" ] | The status of the health check. | [required] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $VAClusterStatusChangeEventHealthCheckResult = Initialize-V2024VAClusterStatusChangeEventHealthCheckResult  -Message Test Connection failed with exception. Error message - java.lang Exception `
  -ResultType SOURCE_STATE_ERROR_CLUSTER `
@@ -30,10 +43,9 @@ $VAClusterStatusChangeEventHealthCheckResult = Initialize-V2024VAClusterStatusCh
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $VAClusterStatusChangeEventHealthCheckResult | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

@@ -4,19 +4,32 @@ title: AccessProfileDocumentAllOfSource
 pagination_label: AccessProfileDocumentAllOfSource
 sidebar_label: AccessProfileDocumentAllOfSource
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessProfileDocumentAllOfSource', 'V2025AccessProfileDocumentAllOfSource'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'AccessProfileDocumentAllOfSource',
+    'V2025AccessProfileDocumentAllOfSource',
+  ]
 slug: /tools/sdk/go/v2025/models/access-profile-document-all-of-source
-tags: ['SDK', 'Software Development Kit', 'AccessProfileDocumentAllOfSource', 'V2025AccessProfileDocumentAllOfSource']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessProfileDocumentAllOfSource',
+    'V2025AccessProfileDocumentAllOfSource',
+  ]
 ---
 
 # AccessProfileDocumentAllOfSource
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Source's ID. | [optional] 
-**Name** | Pointer to **string** | Source's name. | [optional] 
+| Name     | Type                  | Description    | Notes      |
+| -------- | --------------------- | -------------- | ---------- |
+| **Id**   | Pointer to **string** | Source's ID.   | [optional] |
+| **Name** | Pointer to **string** | Source's name. | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewAccessProfileDocumentAllOfSource() *AccessProfileDocumentAllOfSource`
 
-NewAccessProfileDocumentAllOfSource instantiates a new AccessProfileDocumentAllOfSource object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessProfileDocumentAllOfSource instantiates a new AccessProfileDocumentAllOfSource object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessProfileDocumentAllOfSourceWithDefaults
 
 `func NewAccessProfileDocumentAllOfSourceWithDefaults() *AccessProfileDocumentAllOfSource`
 
-NewAccessProfileDocumentAllOfSourceWithDefaults instantiates a new AccessProfileDocumentAllOfSource object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessProfileDocumentAllOfSourceWithDefaults instantiates a new AccessProfileDocumentAllOfSource object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -47,8 +55,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *AccessProfileDocumentAllOfSource) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -72,8 +79,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *AccessProfileDocumentAllOfSource) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -86,5 +92,3 @@ SetName sets Name field to given value.
 `func (o *AccessProfileDocumentAllOfSource) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

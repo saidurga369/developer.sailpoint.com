@@ -4,9 +4,22 @@ title: SubscriptionPatchRequestInnerValue
 pagination_label: SubscriptionPatchRequestInnerValue
 sidebar_label: SubscriptionPatchRequestInnerValue
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SubscriptionPatchRequestInnerValue', 'V2024SubscriptionPatchRequestInnerValue'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'SubscriptionPatchRequestInnerValue',
+    'V2024SubscriptionPatchRequestInnerValue',
+  ]
 slug: /tools/sdk/python/v2024/models/subscription-patch-request-inner-value
-tags: ['SDK', 'Software Development Kit', 'SubscriptionPatchRequestInnerValue', 'V2024SubscriptionPatchRequestInnerValue']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SubscriptionPatchRequestInnerValue',
+    'V2024SubscriptionPatchRequestInnerValue',
+  ]
 ---
 
 # SubscriptionPatchRequestInnerValue
@@ -15,8 +28,9 @@ The value to be used for the operation, required for \"add\" and \"replace\" ope
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
+
 }
 
 ## Example
@@ -28,5 +42,5 @@ subscription_patch_request_inner_value = SubscriptionPatchRequestInnerValue(
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -239,17 +239,17 @@ The state that you send using the `saveState` command MUST be a json object, and
 
 Filter resource objects on a source during an account aggregation process. In order to implement, there are a few things that need to be configured.
 
-1. In order to configure Filtering feature, you need to modify the source configurations to add in a `filterString` or `account.filterString` property (The `filterString` applies to all objects which are aggregated. If you want to get more specific to accounts which are filtered, you can use `account.filterString` to denote specific filters for those particular objects). This can be done with a simple partial update to the source, using the REST APIs.   
+1. In order to configure Filtering feature, you need to modify the source configurations to add in a `filterString` or `account.filterString` property (The `filterString` applies to all objects which are aggregated. If you want to get more specific to accounts which are filtered, you can use `account.filterString` to denote specific filters for those particular objects). This can be done with a simple partial update to the source, using the REST APIs.
 
 <details>
  <summary><code>PATCH</code><code>/v3/sources/\{id\}</code></summary>
 
 ##### HTTP Headers
 
-> | Key      |  Value     | Description               |
-> |-----------|-----------|-------------------------|
-> | authorization      |  Bearer \{token\} | This is the JWT OAuth token   |
-> | content-type     |  application/json-patch+json | This is needed for PATCH operations   |
+> | Key | Value | Description |
+> | --- | --- | --- |
+> | authorization | Bearer \{token\} | This is the JWT OAuth token |
+> | content-type | application/json-patch+json | This is needed for PATCH operations |
 
 ##### Path Parameters
 
@@ -272,8 +272,9 @@ content-type: application/json-patch+json
     "path": "/connectorAttributes/filterString",
     "value": "( type != \"Employee\" )"
   }
-] 
+]
 ```
+
 ##### Example
 
 ```curl
@@ -291,37 +292,36 @@ curl -X PATCH \
 ]'
 ```
 
-
 ##### Responses
 
-> | HTTP Code     | HTTP Status                      | Description                                                            |
-> |---------------|-----------------------------------|---------------------------------------------------------------------|
-> | 200         | OK        | Returned if the request was successfully processed                                |
-> | 401         | Unauthorized                | Returned if there is no authorization header, or if the JWT token is expired                            |
-> | 403         | Forbidden         | Returned if the user you are running as, doesn't have access to this end-point                                                            |
-> | 429         | Too Many Requests        | Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again                                |
-> | 500         | Internal Server Error               | Returned if there is an unexpected error                           |
+> | HTTP Code | HTTP Status | Description |
+> | --- | --- | --- |
+> | 200 | OK | Returned if the request was successfully processed |
+> | 401 | Unauthorized | Returned if there is no authorization header, or if the JWT token is expired |
+> | 403 | Forbidden | Returned if the user you are running as, doesn't have access to this end-point |
+> | 429 | Too Many Requests | Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again |
+> | 500 | Internal Server Error | Returned if there is an unexpected error |
 
 ##### Response Body
 
 > content-type: application/json
 
-</details>  
+</details>
 
 2. In the `stdAccountList` command, before sending the Resource Object (accounts), you need to filter the accounts. Accounts which match the filter string will be filtered. Accounts which do not match, will be sent to ISC as normal.
 
 ```javascript
 export class GitHubConnector {
-    constructor(config: GitHubConfig) {
-        // there can either be filterString or account.filterString config which user can input,
-        this.filterString = config.filterString || config['account.filterString'];
-    }
+  constructor(config: GitHubConfig) {
+    // there can either be filterString or account.filterString config which user can input,
+    this.filterString = config.filterString || config['account.filterString'];
+  }
 }
 ```
 
 In the above example, we are setting the constructor with filter string value fetched from the config, this will be required further for filtering.
 
-3. In the `stdAccountList` command, you need to properly handle the filtering by initializing `Filter` class from `@sailpoint/connector-sdk` and calling `matcher()` from `Filter` class. Something like below which initialize Filter class by passing resource object's attributes to    `Filter` class's constructor and call `matcher()` by passing the filter string as an argument to it which we set in connector constructor in Step 2:
+3. In the `stdAccountList` command, you need to properly handle the filtering by initializing `Filter` class from `@sailpoint/connector-sdk` and calling `matcher()` from `Filter` class. Something like below which initialize Filter class by passing resource object's attributes to `Filter` class's constructor and call `matcher()` by passing the filter string as an argument to it which we set in connector constructor in Step 2:
 
 ```javascript
 .stdAccountList(async (context: Context, input: StdAccountListInput, res: Response<StdAccountListOutput>) => {

@@ -4,32 +4,45 @@ title: NonEmployeeRequestBody
 pagination_label: NonEmployeeRequestBody
 sidebar_label: NonEmployeeRequestBody
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'NonEmployeeRequestBody', 'BetaNonEmployeeRequestBody'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'NonEmployeeRequestBody',
+    'BetaNonEmployeeRequestBody',
+  ]
 slug: /tools/sdk/powershell/beta/models/non-employee-request-body
-tags: ['SDK', 'Software Development Kit', 'NonEmployeeRequestBody', 'BetaNonEmployeeRequestBody']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NonEmployeeRequestBody',
+    'BetaNonEmployeeRequestBody',
+  ]
 ---
-
 
 # NonEmployeeRequestBody
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**AccountName** | **String** | Requested identity account name. | [required]
-**FirstName** | **String** | Non-Employee's first name. | [required]
-**LastName** | **String** | Non-Employee's last name. | [required]
-**Email** | **String** | Non-Employee's email. | [required]
-**Phone** | **String** | Non-Employee's phone. | [required]
-**Manager** | **String** | The account ID of a valid identity to serve as this non-employee's manager. | [required]
-**SourceId** | **String** | Non-Employee's source id. | [required]
-**VarData** | **map[string]String** | Additional attributes for a non-employee. Up to 10 custom attributes can be added. | [optional] 
-**StartDate** | **System.DateTime** | Non-Employee employment start date. | [required]
-**EndDate** | **System.DateTime** | Non-Employee employment end date. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **AccountName** | **String** | Requested identity account name. | [required] |
+| **FirstName** | **String** | Non-Employee's first name. | [required] |
+| **LastName** | **String** | Non-Employee's last name. | [required] |
+| **Email** | **String** | Non-Employee's email. | [required] |
+| **Phone** | **String** | Non-Employee's phone. | [required] |
+| **Manager** | **String** | The account ID of a valid identity to serve as this non-employee's manager. | [required] |
+| **SourceId** | **String** | Non-Employee's source id. | [required] |
+| **VarData** | **map[string]String** | Additional attributes for a non-employee. Up to 10 custom attributes can be added. | [optional] |
+| **StartDate** | **System.DateTime** | Non-Employee employment start date. | [required] |
+| **EndDate** | **System.DateTime** | Non-Employee employment end date. | [required] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $NonEmployeeRequestBody = Initialize-BetaNonEmployeeRequestBody  -AccountName william.smith `
  -FirstName William `
@@ -44,10 +57,9 @@ $NonEmployeeRequestBody = Initialize-BetaNonEmployeeRequestBody  -AccountName wi
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $NonEmployeeRequestBody | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

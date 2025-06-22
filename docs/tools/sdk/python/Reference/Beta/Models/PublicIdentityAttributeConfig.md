@@ -4,9 +4,22 @@ title: PublicIdentityAttributeConfig
 pagination_label: PublicIdentityAttributeConfig
 sidebar_label: PublicIdentityAttributeConfig
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'PublicIdentityAttributeConfig', 'BetaPublicIdentityAttributeConfig'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'PublicIdentityAttributeConfig',
+    'BetaPublicIdentityAttributeConfig',
+  ]
 slug: /tools/sdk/python/beta/models/public-identity-attribute-config
-tags: ['SDK', 'Software Development Kit', 'PublicIdentityAttributeConfig', 'BetaPublicIdentityAttributeConfig']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PublicIdentityAttributeConfig',
+    'BetaPublicIdentityAttributeConfig',
+  ]
 ---
 
 # PublicIdentityAttributeConfig
@@ -15,10 +28,11 @@ Used to map an attribute key for an Identity to its display name.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**key** | **str** | the key of the attribute | [optional] 
-**name** | **str** | the display name of the attribute | [optional] 
+| Name     | Type    | Description                       | Notes      |
+| -------- | ------- | --------------------------------- | ---------- |
+| **key**  | **str** | the key of the attribute          | [optional] |
+| **name** | **str** | the display name of the attribute | [optional] |
+
 }
 
 ## Example
@@ -32,5 +46,5 @@ name='Country'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

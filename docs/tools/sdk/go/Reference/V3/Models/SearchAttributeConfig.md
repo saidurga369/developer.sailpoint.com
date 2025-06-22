@@ -4,20 +4,27 @@ title: SearchAttributeConfig
 pagination_label: SearchAttributeConfig
 sidebar_label: SearchAttributeConfig
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SearchAttributeConfig', 'SearchAttributeConfig'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'SearchAttributeConfig', 'SearchAttributeConfig']
 slug: /tools/sdk/go/v3/models/search-attribute-config
-tags: ['SDK', 'Software Development Kit', 'SearchAttributeConfig', 'SearchAttributeConfig']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SearchAttributeConfig',
+    'SearchAttributeConfig',
+  ]
 ---
 
 # SearchAttributeConfig
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | Pointer to **string** | Name of the new attribute | [optional] 
-**DisplayName** | Pointer to **string** | The display name of the new attribute | [optional] 
-**ApplicationAttributes** | Pointer to **map[string]interface{}** | Map of application id and their associated attribute. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | Pointer to **string** | Name of the new attribute | [optional] |
+| **DisplayName** | Pointer to **string** | The display name of the new attribute | [optional] |
+| **ApplicationAttributes** | Pointer to **map[string]interface{}** | Map of application id and their associated attribute. | [optional] |
 
 ## Methods
 
@@ -25,18 +32,13 @@ Name | Type | Description | Notes
 
 `func NewSearchAttributeConfig() *SearchAttributeConfig`
 
-NewSearchAttributeConfig instantiates a new SearchAttributeConfig object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSearchAttributeConfig instantiates a new SearchAttributeConfig object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSearchAttributeConfigWithDefaults
 
 `func NewSearchAttributeConfigWithDefaults() *SearchAttributeConfig`
 
-NewSearchAttributeConfigWithDefaults instantiates a new SearchAttributeConfig object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSearchAttributeConfigWithDefaults instantiates a new SearchAttributeConfig object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -48,8 +50,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *SearchAttributeConfig) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -73,8 +74,7 @@ GetDisplayName returns the DisplayName field if non-nil, zero value otherwise.
 
 `func (o *SearchAttributeConfig) GetDisplayNameOk() (*string, bool)`
 
-GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayName
 
@@ -98,8 +98,7 @@ GetApplicationAttributes returns the ApplicationAttributes field if non-nil, zer
 
 `func (o *SearchAttributeConfig) GetApplicationAttributesOk() (*map[string]interface{}, bool)`
 
-GetApplicationAttributesOk returns a tuple with the ApplicationAttributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApplicationAttributesOk returns a tuple with the ApplicationAttributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApplicationAttributes
 
@@ -112,5 +111,3 @@ SetApplicationAttributes sets ApplicationAttributes field to given value.
 `func (o *SearchAttributeConfig) HasApplicationAttributes() bool`
 
 HasApplicationAttributes returns a boolean if a field has been set.
-
-

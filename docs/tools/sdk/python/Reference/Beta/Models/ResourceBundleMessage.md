@@ -4,20 +4,33 @@ title: ResourceBundleMessage
 pagination_label: ResourceBundleMessage
 sidebar_label: ResourceBundleMessage
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ResourceBundleMessage', 'BetaResourceBundleMessage'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ResourceBundleMessage',
+    'BetaResourceBundleMessage',
+  ]
 slug: /tools/sdk/python/beta/models/resource-bundle-message
-tags: ['SDK', 'Software Development Kit', 'ResourceBundleMessage', 'BetaResourceBundleMessage']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ResourceBundleMessage',
+    'BetaResourceBundleMessage',
+  ]
 ---
 
 # ResourceBundleMessage
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**key** | **str** | The key of the message | [optional] 
-**format** | **str** | The format of the message | [optional] 
+| Name       | Type    | Description               | Notes      |
+| ---------- | ------- | ------------------------- | ---------- |
+| **key**    | **str** | The key of the message    | [optional] |
+| **format** | **str** | The format of the message | [optional] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ format='{0,,\"i18n hint: percentage\"}% of identities with the same {1,,\"i18n h
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

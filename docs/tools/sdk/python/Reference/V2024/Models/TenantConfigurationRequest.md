@@ -4,9 +4,22 @@ title: TenantConfigurationRequest
 pagination_label: TenantConfigurationRequest
 sidebar_label: TenantConfigurationRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'TenantConfigurationRequest', 'V2024TenantConfigurationRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'TenantConfigurationRequest',
+    'V2024TenantConfigurationRequest',
+  ]
 slug: /tools/sdk/python/v2024/models/tenant-configuration-request
-tags: ['SDK', 'Software Development Kit', 'TenantConfigurationRequest', 'V2024TenantConfigurationRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'TenantConfigurationRequest',
+    'V2024TenantConfigurationRequest',
+  ]
 ---
 
 # TenantConfigurationRequest
@@ -15,9 +28,10 @@ Tenant-wide Reassignment Configuration settings
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**config_details** | [**TenantConfigurationDetails**](tenant-configuration-details) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **config_details** | [**TenantConfigurationDetails**](tenant-configuration-details) |  | [optional] |
+
 }
 
 ## Example
@@ -31,5 +45,5 @@ config_details=sailpoint.v2024.models.tenant_configuration_details.TenantConfigu
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

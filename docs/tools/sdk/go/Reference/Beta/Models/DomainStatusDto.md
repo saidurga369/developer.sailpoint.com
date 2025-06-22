@@ -4,22 +4,23 @@ title: DomainStatusDto
 pagination_label: DomainStatusDto
 sidebar_label: DomainStatusDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'DomainStatusDto', 'BetaDomainStatusDto'] 
+keywords: ['go', 'Golang', 'sdk', 'DomainStatusDto', 'BetaDomainStatusDto']
 slug: /tools/sdk/go/beta/models/domain-status-dto
-tags: ['SDK', 'Software Development Kit', 'DomainStatusDto', 'BetaDomainStatusDto']
+tags:
+  ['SDK', 'Software Development Kit', 'DomainStatusDto', 'BetaDomainStatusDto']
 ---
 
 # DomainStatusDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | New UUID associated with domain to be verified | [optional] 
-**Domain** | Pointer to **string** | A domain address | [optional] 
-**DkimEnabled** | Pointer to **map[string]interface{}** | DKIM is enabled for this domain | [optional] [default to false]
-**DkimTokens** | Pointer to **[]string** | DKIM tokens required for authentication | [optional] 
-**DkimVerificationStatus** | Pointer to **string** | Status of DKIM authentication | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | New UUID associated with domain to be verified | [optional] |
+| **Domain** | Pointer to **string** | A domain address | [optional] |
+| **DkimEnabled** | Pointer to **map[string]interface{}** | DKIM is enabled for this domain | [optional] [default to false] |
+| **DkimTokens** | Pointer to **[]string** | DKIM tokens required for authentication | [optional] |
+| **DkimVerificationStatus** | Pointer to **string** | Status of DKIM authentication | [optional] |
 
 ## Methods
 
@@ -27,18 +28,13 @@ Name | Type | Description | Notes
 
 `func NewDomainStatusDto() *DomainStatusDto`
 
-NewDomainStatusDto instantiates a new DomainStatusDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewDomainStatusDto instantiates a new DomainStatusDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewDomainStatusDtoWithDefaults
 
 `func NewDomainStatusDtoWithDefaults() *DomainStatusDto`
 
-NewDomainStatusDtoWithDefaults instantiates a new DomainStatusDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewDomainStatusDtoWithDefaults instantiates a new DomainStatusDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -50,8 +46,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *DomainStatusDto) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -75,8 +70,7 @@ GetDomain returns the Domain field if non-nil, zero value otherwise.
 
 `func (o *DomainStatusDto) GetDomainOk() (*string, bool)`
 
-GetDomainOk returns a tuple with the Domain field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDomainOk returns a tuple with the Domain field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDomain
 
@@ -100,8 +94,7 @@ GetDkimEnabled returns the DkimEnabled field if non-nil, zero value otherwise.
 
 `func (o *DomainStatusDto) GetDkimEnabledOk() (*map[string]interface{}, bool)`
 
-GetDkimEnabledOk returns a tuple with the DkimEnabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDkimEnabledOk returns a tuple with the DkimEnabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDkimEnabled
 
@@ -125,8 +118,7 @@ GetDkimTokens returns the DkimTokens field if non-nil, zero value otherwise.
 
 `func (o *DomainStatusDto) GetDkimTokensOk() (*[]string, bool)`
 
-GetDkimTokensOk returns a tuple with the DkimTokens field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDkimTokensOk returns a tuple with the DkimTokens field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDkimTokens
 
@@ -150,8 +142,7 @@ GetDkimVerificationStatus returns the DkimVerificationStatus field if non-nil, z
 
 `func (o *DomainStatusDto) GetDkimVerificationStatusOk() (*string, bool)`
 
-GetDkimVerificationStatusOk returns a tuple with the DkimVerificationStatus field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDkimVerificationStatusOk returns a tuple with the DkimVerificationStatus field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDkimVerificationStatus
 
@@ -164,5 +155,3 @@ SetDkimVerificationStatus sets DkimVerificationStatus field to given value.
 `func (o *DomainStatusDto) HasDkimVerificationStatus() bool`
 
 HasDkimVerificationStatus returns a boolean if a field has been set.
-
-

@@ -4,9 +4,22 @@ title: AccountAggregationCompletedSource
 pagination_label: AccountAggregationCompletedSource
 sidebar_label: AccountAggregationCompletedSource
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccountAggregationCompletedSource', 'BetaAccountAggregationCompletedSource'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccountAggregationCompletedSource',
+    'BetaAccountAggregationCompletedSource',
+  ]
 slug: /tools/sdk/python/beta/models/account-aggregation-completed-source
-tags: ['SDK', 'Software Development Kit', 'AccountAggregationCompletedSource', 'BetaAccountAggregationCompletedSource']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountAggregationCompletedSource',
+    'BetaAccountAggregationCompletedSource',
+  ]
 ---
 
 # AccountAggregationCompletedSource
@@ -15,11 +28,12 @@ Source ISC is aggregating accounts from.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'SOURCE' ] | Source's DTO type. | [required]
-**id** | **str** | Source's unique ID. | [required]
-**name** | **str** | Source's name. | [required]
+| Name     | Type                  | Description         | Notes      |
+| -------- | --------------------- | ------------------- | ---------- |
+| **type** | **Enum** [ 'SOURCE' ] | Source's DTO type.  | [required] |
+| **id**   | **str**               | Source's unique ID. | [required] |
+| **name** | **str**               | Source's name.      | [required] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='HR Active Directory'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

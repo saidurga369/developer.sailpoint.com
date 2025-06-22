@@ -4,9 +4,22 @@ title: CampaignAllOfRoleCompositionCampaignInfoRemediatorRef
 pagination_label: CampaignAllOfRoleCompositionCampaignInfoRemediatorRef
 sidebar_label: CampaignAllOfRoleCompositionCampaignInfoRemediatorRef
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'CampaignAllOfRoleCompositionCampaignInfoRemediatorRef', 'V2025CampaignAllOfRoleCompositionCampaignInfoRemediatorRef'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'CampaignAllOfRoleCompositionCampaignInfoRemediatorRef',
+    'V2025CampaignAllOfRoleCompositionCampaignInfoRemediatorRef',
+  ]
 slug: /tools/sdk/python/v2025/models/campaign-all-of-role-composition-campaign-info-remediator-ref
-tags: ['SDK', 'Software Development Kit', 'CampaignAllOfRoleCompositionCampaignInfoRemediatorRef', 'V2025CampaignAllOfRoleCompositionCampaignInfoRemediatorRef']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CampaignAllOfRoleCompositionCampaignInfoRemediatorRef',
+    'V2025CampaignAllOfRoleCompositionCampaignInfoRemediatorRef',
+  ]
 ---
 
 # CampaignAllOfRoleCompositionCampaignInfoRemediatorRef
@@ -15,11 +28,12 @@ This determines who remediation tasks will be assigned to. Remediation tasks are
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] | Legal Remediator Type | [required]
-**id** | **str** | The ID of the remediator. | [required]
-**name** | **str** | The name of the remediator. | [optional] [readonly] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'IDENTITY' ] | Legal Remediator Type | [required] |
+| **id** | **str** | The ID of the remediator. | [required] |
+| **name** | **str** | The name of the remediator. | [optional] [readonly] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Role Admin'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

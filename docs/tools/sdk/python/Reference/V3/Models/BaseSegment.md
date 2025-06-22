@@ -4,20 +4,20 @@ title: BaseSegment
 pagination_label: BaseSegment
 sidebar_label: BaseSegment
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'BaseSegment', 'BaseSegment'] 
+keywords: ['python', 'Python', 'sdk', 'BaseSegment', 'BaseSegment']
 slug: /tools/sdk/python/v3/models/base-segment
 tags: ['SDK', 'Software Development Kit', 'BaseSegment', 'BaseSegment']
 ---
 
 # BaseSegment
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Segment's unique ID. | [optional] 
-**name** | **str** | Segment's display name. | [optional] 
+| Name     | Type    | Description             | Notes      |
+| -------- | ------- | ----------------------- | ---------- |
+| **id**   | **str** | Segment's unique ID.    | [optional] |
+| **name** | **str** | Segment's display name. | [optional] |
+
 }
 
 ## Example
@@ -31,5 +31,5 @@ name='Test Segment'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,28 +4,41 @@ title: RoleDocumentAllOfEntitlements
 pagination_label: RoleDocumentAllOfEntitlements
 sidebar_label: RoleDocumentAllOfEntitlements
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RoleDocumentAllOfEntitlements', 'V2025RoleDocumentAllOfEntitlements'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'RoleDocumentAllOfEntitlements',
+    'V2025RoleDocumentAllOfEntitlements',
+  ]
 slug: /tools/sdk/python/v2025/models/role-document-all-of-entitlements
-tags: ['SDK', 'Software Development Kit', 'RoleDocumentAllOfEntitlements', 'V2025RoleDocumentAllOfEntitlements']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleDocumentAllOfEntitlements',
+    'V2025RoleDocumentAllOfEntitlements',
+  ]
 ---
 
 # RoleDocumentAllOfEntitlements
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**has_permissions** | **bool** | Indicates whether the entitlement has permissions. | [optional] [default to False]
-**description** | **str** | Entitlement's description. | [optional] 
-**attribute** | **str** | Entitlement attribute's name. | [optional] 
-**value** | **str** | Entitlement's value. | [optional] 
-**var_schema** | **str** | Entitlement's schema. | [optional] 
-**privileged** | **bool** | Indicates whether the entitlement is privileged. | [optional] [default to False]
-**id** | **str** | Entitlement's ID. | [optional] 
-**name** | **str** | Entitlement's name. | [optional] 
-**source_schema_object_type** | **str** | Schema objectType. | [optional] 
-**hash** | **str** | Read-only calculated hash value of an entitlement. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **has_permissions** | **bool** | Indicates whether the entitlement has permissions. | [optional] [default to False] |
+| **description** | **str** | Entitlement's description. | [optional] |
+| **attribute** | **str** | Entitlement attribute's name. | [optional] |
+| **value** | **str** | Entitlement's value. | [optional] |
+| **var_schema** | **str** | Entitlement's schema. | [optional] |
+| **privileged** | **bool** | Indicates whether the entitlement is privileged. | [optional] [default to False] |
+| **id** | **str** | Entitlement's ID. | [optional] |
+| **name** | **str** | Entitlement's name. | [optional] |
+| **source_schema_object_type** | **str** | Schema objectType. | [optional] |
+| **hash** | **str** | Read-only calculated hash value of an entitlement. | [optional] |
+
 }
 
 ## Example
@@ -47,5 +60,5 @@ hash='c6fab95235584cca98a454a2f51e5683bc77d6a0'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

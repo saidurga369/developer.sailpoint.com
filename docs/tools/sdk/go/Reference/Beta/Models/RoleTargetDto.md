@@ -4,7 +4,7 @@ title: RoleTargetDto
 pagination_label: RoleTargetDto
 sidebar_label: RoleTargetDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleTargetDto', 'BetaRoleTargetDto'] 
+keywords: ['go', 'Golang', 'sdk', 'RoleTargetDto', 'BetaRoleTargetDto']
 slug: /tools/sdk/go/beta/models/role-target-dto
 tags: ['SDK', 'Software Development Kit', 'RoleTargetDto', 'BetaRoleTargetDto']
 ---
@@ -13,11 +13,11 @@ tags: ['SDK', 'Software Development Kit', 'RoleTargetDto', 'BetaRoleTargetDto']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Source** | Pointer to [**BaseReferenceDto1**](base-reference-dto1) |  | [optional] 
-**AccountInfo** | Pointer to [**AccountInfoDto**](account-info-dto) |  | [optional] 
-**RoleName** | Pointer to **string** | Specific role name for this target if using multiple accounts | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Source** | Pointer to [**BaseReferenceDto1**](base-reference-dto1) |  | [optional] |
+| **AccountInfo** | Pointer to [**AccountInfoDto**](account-info-dto) |  | [optional] |
+| **RoleName** | Pointer to **string** | Specific role name for this target if using multiple accounts | [optional] |
 
 ## Methods
 
@@ -25,18 +25,13 @@ Name | Type | Description | Notes
 
 `func NewRoleTargetDto() *RoleTargetDto`
 
-NewRoleTargetDto instantiates a new RoleTargetDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleTargetDto instantiates a new RoleTargetDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleTargetDtoWithDefaults
 
 `func NewRoleTargetDtoWithDefaults() *RoleTargetDto`
 
-NewRoleTargetDtoWithDefaults instantiates a new RoleTargetDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleTargetDtoWithDefaults instantiates a new RoleTargetDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetSource
 
@@ -48,8 +43,7 @@ GetSource returns the Source field if non-nil, zero value otherwise.
 
 `func (o *RoleTargetDto) GetSourceOk() (*BaseReferenceDto1, bool)`
 
-GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSource
 
@@ -73,8 +67,7 @@ GetAccountInfo returns the AccountInfo field if non-nil, zero value otherwise.
 
 `func (o *RoleTargetDto) GetAccountInfoOk() (*AccountInfoDto, bool)`
 
-GetAccountInfoOk returns a tuple with the AccountInfo field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountInfoOk returns a tuple with the AccountInfo field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountInfo
 
@@ -98,8 +91,7 @@ GetRoleName returns the RoleName field if non-nil, zero value otherwise.
 
 `func (o *RoleTargetDto) GetRoleNameOk() (*string, bool)`
 
-GetRoleNameOk returns a tuple with the RoleName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRoleNameOk returns a tuple with the RoleName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRoleName
 
@@ -112,5 +104,3 @@ SetRoleName sets RoleName field to given value.
 `func (o *RoleTargetDto) HasRoleName() bool`
 
 HasRoleName returns a boolean if a field has been set.
-
-

@@ -4,19 +4,32 @@ title: AccessRequestContext
 pagination_label: AccessRequestContext
 sidebar_label: AccessRequestContext
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccessRequestContext', 'V2025AccessRequestContext'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccessRequestContext',
+    'V2025AccessRequestContext',
+  ]
 slug: /tools/sdk/python/v2025/models/access-request-context
-tags: ['SDK', 'Software Development Kit', 'AccessRequestContext', 'V2025AccessRequestContext']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessRequestContext',
+    'V2025AccessRequestContext',
+  ]
 ---
 
 # AccessRequestContext
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**context_attributes** | [**[]ContextAttributeDto**](context-attribute-dto) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **context_attributes** | [**[]ContextAttributeDto**](context-attribute-dto) |  | [optional] |
+
 }
 
 ## Example
@@ -27,12 +40,12 @@ from sailpoint.v2025.models.access_request_context import AccessRequestContext
 access_request_context = AccessRequestContext(
 context_attributes=[
                     sailpoint.v2025.models.context_attribute_dto.ContextAttributeDto(
-                        attribute = 'location', 
-                        value = Austin, 
+                        attribute = 'location',
+                        value = Austin,
                         derived = False, )
                     ]
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

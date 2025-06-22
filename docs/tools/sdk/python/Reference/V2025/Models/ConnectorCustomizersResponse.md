@@ -4,24 +4,37 @@ title: ConnectorCustomizersResponse
 pagination_label: ConnectorCustomizersResponse
 sidebar_label: ConnectorCustomizersResponse
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ConnectorCustomizersResponse', 'V2025ConnectorCustomizersResponse'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ConnectorCustomizersResponse',
+    'V2025ConnectorCustomizersResponse',
+  ]
 slug: /tools/sdk/python/v2025/models/connector-customizers-response
-tags: ['SDK', 'Software Development Kit', 'ConnectorCustomizersResponse', 'V2025ConnectorCustomizersResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ConnectorCustomizersResponse',
+    'V2025ConnectorCustomizersResponse',
+  ]
 ---
 
 # ConnectorCustomizersResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Connector customizer ID. | [optional] [readonly] 
-**name** | **str** | Connector customizer name. | [optional] 
-**image_version** | **int** | Connector customizer image version. | [optional] 
-**image_id** | **str** | Connector customizer image id. | [optional] 
-**tenant_id** | **str** | Connector customizer tenant id. | [optional] 
-**created** | **datetime** | Date-time when the connector customizer was created | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | Connector customizer ID. | [optional] [readonly] |
+| **name** | **str** | Connector customizer name. | [optional] |
+| **image_version** | **int** | Connector customizer image version. | [optional] |
+| **image_id** | **str** | Connector customizer image id. | [optional] |
+| **tenant_id** | **str** | Connector customizer tenant id. | [optional] |
+| **created** | **datetime** | Date-time when the connector customizer was created | [optional] |
+
 }
 
 ## Example
@@ -39,5 +52,5 @@ created=datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

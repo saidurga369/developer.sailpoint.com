@@ -4,45 +4,41 @@ title: OAuthClients
 pagination_label: OAuthClients
 sidebar_label: OAuthClients
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'OAuthClients', 'OAuthClients'] 
+keywords: ['go', 'Golang', 'sdk', 'OAuthClients', 'OAuthClients']
 slug: /tools/sdk/go/v3/methods/o-auth-clients
 tags: ['SDK', 'Software Development Kit', 'OAuthClients', 'OAuthClients']
 ---
 
 # OAuthClientsAPI
-  Use this API to implement OAuth client functionality.   
-With this functionality in place, users with the appropriate security scopes can create and configure OAuth clients to use as a way to obtain authorization to use the Identity Security Cloud REST API.
-Refer to [Authentication](https://developer.sailpoint.com/docs/api/authentication/) for more information about OAuth and how it works with the Identity Security Cloud REST API.
- 
+
+Use this API to implement OAuth client functionality.  
+With this functionality in place, users with the appropriate security scopes can create and configure OAuth clients to use as a way to obtain authorization to use the Identity Security Cloud REST API. Refer to [Authentication](https://developer.sailpoint.com/docs/api/authentication/) for more information about OAuth and how it works with the Identity Security Cloud REST API.
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/v3*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create-oauth-client**](#create-oauth-client) | **Post** `/oauth-clients` | Create oauth client
-[**delete-oauth-client**](#delete-oauth-client) | **Delete** `/oauth-clients/{id}` | Delete oauth client
-[**get-oauth-client**](#get-oauth-client) | **Get** `/oauth-clients/{id}` | Get oauth client
-[**list-oauth-clients**](#list-oauth-clients) | **Get** `/oauth-clients` | List oauth clients
-[**patch-oauth-client**](#patch-oauth-client) | **Patch** `/oauth-clients/{id}` | Patch oauth client
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**create-oauth-client**](#create-oauth-client) | **Post** `/oauth-clients` | Create oauth client |
+| [**delete-oauth-client**](#delete-oauth-client) | **Delete** `/oauth-clients/{id}` | Delete oauth client |
+| [**get-oauth-client**](#get-oauth-client) | **Get** `/oauth-clients/{id}` | Get oauth client |
+| [**list-oauth-clients**](#list-oauth-clients) | **Get** `/oauth-clients` | List oauth clients |
+| [**patch-oauth-client**](#patch-oauth-client) | **Patch** `/oauth-clients/{id}` | Patch oauth client |
 
 ## create-oauth-client
-Create oauth client
-This creates an OAuth client.
+
+Create oauth client This creates an OAuth client.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/create-oauth-client)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCreateOauthClientRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **createOAuthClientRequest** | [**CreateOAuthClientRequest**](../models/create-o-auth-client-request) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **createOAuthClientRequest** | [**CreateOAuthClientRequest**](../models/create-o-auth-client-request) |  |
 
 ### Return type
 
@@ -84,14 +80,14 @@ func main() {
           "scope" : [ "demo:api-client-scope:first", "demo:api-client-scope:second" ],
           "name" : "Demo API Client",
           "claimsSupported" : false
-        }`) // CreateOAuthClientRequest | 
+        }`) // CreateOAuthClientRequest |
 
     var createOAuthClientRequest v3.CreateOAuthClientRequest
     if err := json.Unmarshal(createoauthclientrequest, &createOAuthClientRequest); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -109,31 +105,28 @@ func main() {
 [[Back to top]](#)
 
 ## delete-oauth-client
-Delete oauth client
-This deletes an OAuth client.
+
+Delete oauth client This deletes an OAuth client.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/delete-oauth-client)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The OAuth client id | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The OAuth client id |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteOauthClientRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -149,15 +142,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `ef38f94347e94562b5bb8424a56397d8` // string | The OAuth client id # string | The OAuth client id
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -167,34 +160,31 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `OAuthClientsAPI.DeleteOauthClient``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## get-oauth-client
-Get oauth client
-This gets details of an OAuth client.
+
+Get oauth client This gets details of an OAuth client.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/get-oauth-client)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The OAuth client id | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The OAuth client id |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetOauthClientRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -214,15 +204,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `ef38f94347e94562b5bb8424a56397d8` // string | The OAuth client id # string | The OAuth client id
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -240,23 +230,20 @@ func main() {
 [[Back to top]](#)
 
 ## list-oauth-clients
-List oauth clients
-This gets a list of OAuth clients.
+
+List oauth clients This gets a list of OAuth clients.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/list-oauth-clients)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListOauthClientsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **lastUsed**: *le, isnull* | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **lastUsed**: _le, isnull_ |
 
 ### Return type
 
@@ -276,15 +263,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     filters := `lastUsed le 2023-02-05T10:59:27.214Z` // string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **lastUsed**: *le, isnull* (optional) # string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **lastUsed**: *le, isnull* (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -302,28 +289,26 @@ func main() {
 [[Back to top]](#)
 
 ## patch-oauth-client
-Patch oauth client
-This performs a targeted update to the field(s) of an OAuth client.
+
+Patch oauth client This performs a targeted update to the field(s) of an OAuth client.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/patch-oauth-client)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | The OAuth client id | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | The OAuth client id |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiPatchOauthClientRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **jsonPatchOperation** | [**[]JsonPatchOperation**](../models/json-patch-operation) | A list of OAuth client update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard.  The following fields are patchable: * tenant * businessName * homepageUrl * name * description * accessTokenValiditySeconds * refreshTokenValiditySeconds * redirectUris * grantTypes * accessType * enabled * strongAuthSupported * claimsSupported  | 
+**jsonPatchOperation** | [**[]JsonPatchOperation**](../models/json-patch-operation) | A list of OAuth client update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard. The following fields are patchable: _ tenant _ businessName _ homepageUrl _ name _ description _ accessTokenValiditySeconds _ refreshTokenValiditySeconds _ redirectUris _ grantTypes _ accessType _ enabled _ strongAuthSupported \* claimsSupported |
 
 ### Return type
 
@@ -350,14 +335,14 @@ import (
 
 func main() {
     id := `ef38f94347e94562b5bb8424a56397d8` // string | The OAuth client id # string | The OAuth client id
-    jsonpatchoperation := []byte(`[{op=replace, path=/strongAuthSupported, value=true}, {op=replace, path=/businessName, value=acme-solar}]`) // []JsonPatchOperation | A list of OAuth client update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard.  The following fields are patchable: * tenant * businessName * homepageUrl * name * description * accessTokenValiditySeconds * refreshTokenValiditySeconds * redirectUris * grantTypes * accessType * enabled * strongAuthSupported * claimsSupported 
+    jsonpatchoperation := []byte(`[{op=replace, path=/strongAuthSupported, value=true}, {op=replace, path=/businessName, value=acme-solar}]`) // []JsonPatchOperation | A list of OAuth client update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard.  The following fields are patchable: * tenant * businessName * homepageUrl * name * description * accessTokenValiditySeconds * refreshTokenValiditySeconds * redirectUris * grantTypes * accessType * enabled * strongAuthSupported * claimsSupported
 
     var jsonPatchOperation []v3.JsonPatchOperation
     if err := json.Unmarshal(jsonpatchoperation, &jsonPatchOperation); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -373,4 +358,3 @@ func main() {
 ```
 
 [[Back to top]](#)
-

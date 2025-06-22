@@ -4,28 +4,30 @@ title: FieldDetailsDto
 pagination_label: FieldDetailsDto
 sidebar_label: FieldDetailsDto
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'FieldDetailsDto', 'BetaFieldDetailsDto'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'FieldDetailsDto', 'BetaFieldDetailsDto']
 slug: /tools/sdk/powershell/beta/models/field-details-dto
-tags: ['SDK', 'Software Development Kit', 'FieldDetailsDto', 'BetaFieldDetailsDto']
+tags:
+  ['SDK', 'Software Development Kit', 'FieldDetailsDto', 'BetaFieldDetailsDto']
 ---
-
 
 # FieldDetailsDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | **String** | The name of the attribute. | [optional] 
-**Transform** | [**SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | The transform to apply to the field | [optional] 
-**Attributes** | [**SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | Attributes required for the transform | [optional] 
-**IsRequired** | **Boolean** | Flag indicating whether or not the attribute is required. | [optional] [readonly] [default to $false]
-**Type** | **String** | The type of the attribute. | [optional] 
-**IsMultiValued** | **Boolean** | Flag indicating whether or not the attribute is multi-valued. | [optional] [default to $false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | **String** | The name of the attribute. | [optional] |
+| **Transform** | [**SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | The transform to apply to the field | [optional] |
+| **Attributes** | [**SystemCollectionsHashtable**]https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0 | Attributes required for the transform | [optional] |
+| **IsRequired** | **Boolean** | Flag indicating whether or not the attribute is required. | [optional] [readonly] [default to $false] |
+| **Type** | **String** | The type of the attribute. | [optional] |
+| **IsMultiValued** | **Boolean** | Flag indicating whether or not the attribute is multi-valued. | [optional] [default to $false] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $FieldDetailsDto = Initialize-BetaFieldDetailsDto  -Name userName `
  -Transform {type=rule, attributes={name=Create Unique LDAP Attribute}} `
@@ -36,10 +38,9 @@ $FieldDetailsDto = Initialize-BetaFieldDetailsDto  -Name userName `
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $FieldDetailsDto | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

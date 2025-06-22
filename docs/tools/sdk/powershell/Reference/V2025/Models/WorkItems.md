@@ -4,39 +4,39 @@ title: WorkItems
 pagination_label: WorkItems
 sidebar_label: WorkItems
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'WorkItems', 'V2025WorkItems'] 
+keywords: ['powershell', 'PowerShell', 'sdk', 'WorkItems', 'V2025WorkItems']
 slug: /tools/sdk/powershell/v2025/models/work-items
 tags: ['SDK', 'Software Development Kit', 'WorkItems', 'V2025WorkItems']
 ---
-
 
 # WorkItems
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | ID of the work item | [optional] 
-**RequesterId** | **String** | ID of the requester | [optional] 
-**RequesterDisplayName** | **String** | The displayname of the requester | [optional] 
-**OwnerId** | **String** | The ID of the owner | [optional] 
-**OwnerName** | **String** | The name of the owner | [optional] 
-**Created** | **System.DateTime** | Time when the work item was created | [optional] 
-**Modified** | **System.DateTime** | Time when the work item was last updated | [optional] 
-**Description** | **String** | The description of the work item | [optional] 
-**State** | [**WorkItemStateManualWorkItems**](work-item-state-manual-work-items) |  | [optional] 
-**Type** | [**WorkItemTypeManualWorkItems**](work-item-type-manual-work-items) |  | [optional] 
-**RemediationItems** | [**[]RemediationItemDetails**](remediation-item-details) | A list of remediation items | [optional] 
-**ApprovalItems** | [**[]ApprovalItemDetails**](approval-item-details) | A list of items that need to be approved | [optional] 
-**Name** | **String** | The work item name | [optional] 
-**Completed** | **System.DateTime** | The time at which the work item completed | [optional] 
-**NumItems** | **Int32** | The number of items in the work item | [optional] 
-**Form** | [**WorkItemsForm**](work-items-form) |  | [optional] 
-**Errors** | **[]String** | An array of errors that ocurred during the work item | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | ID of the work item | [optional] |
+| **RequesterId** | **String** | ID of the requester | [optional] |
+| **RequesterDisplayName** | **String** | The displayname of the requester | [optional] |
+| **OwnerId** | **String** | The ID of the owner | [optional] |
+| **OwnerName** | **String** | The name of the owner | [optional] |
+| **Created** | **System.DateTime** | Time when the work item was created | [optional] |
+| **Modified** | **System.DateTime** | Time when the work item was last updated | [optional] |
+| **Description** | **String** | The description of the work item | [optional] |
+| **State** | [**WorkItemStateManualWorkItems**](work-item-state-manual-work-items) |  | [optional] |
+| **Type** | [**WorkItemTypeManualWorkItems**](work-item-type-manual-work-items) |  | [optional] |
+| **RemediationItems** | [**[]RemediationItemDetails**](remediation-item-details) | A list of remediation items | [optional] |
+| **ApprovalItems** | [**[]ApprovalItemDetails**](approval-item-details) | A list of items that need to be approved | [optional] |
+| **Name** | **String** | The work item name | [optional] |
+| **Completed** | **System.DateTime** | The time at which the work item completed | [optional] |
+| **NumItems** | **Int32** | The number of items in the work item | [optional] |
+| **Form** | [**WorkItemsForm**](work-items-form) |  | [optional] |
+| **Errors** | **[]String** | An array of errors that ocurred during the work item | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $WorkItems = Initialize-V2025WorkItems  -Id 2c9180835d2e5168015d32f890ca1581 `
  -RequesterId 2c9180835d2e5168015d32f890ca1581 `
@@ -58,10 +58,9 @@ $WorkItems = Initialize-V2025WorkItems  -Id 2c9180835d2e5168015d32f890ca1581 `
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $WorkItems | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

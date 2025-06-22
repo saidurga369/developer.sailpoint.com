@@ -4,9 +4,22 @@ title: IdentityAttributesChangedIdentity
 pagination_label: IdentityAttributesChangedIdentity
 sidebar_label: IdentityAttributesChangedIdentity
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentityAttributesChangedIdentity', 'BetaIdentityAttributesChangedIdentity'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'IdentityAttributesChangedIdentity',
+    'BetaIdentityAttributesChangedIdentity',
+  ]
 slug: /tools/sdk/python/beta/models/identity-attributes-changed-identity
-tags: ['SDK', 'Software Development Kit', 'IdentityAttributesChangedIdentity', 'BetaIdentityAttributesChangedIdentity']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityAttributesChangedIdentity',
+    'BetaIdentityAttributesChangedIdentity',
+  ]
 ---
 
 # IdentityAttributesChangedIdentity
@@ -15,11 +28,12 @@ Identity whose attributes changed.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] | DTO type of identity whose attributes changed. | [required]
-**id** | **str** | ID of identity whose attributes changed. | [required]
-**name** | **str** | Name of identity whose attributes changed. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'IDENTITY' ] | DTO type of identity whose attributes changed. | [required] |
+| **id** | **str** | ID of identity whose attributes changed. | [required] |
+| **name** | **str** | Name of identity whose attributes changed. | [required] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Michael Michaels'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

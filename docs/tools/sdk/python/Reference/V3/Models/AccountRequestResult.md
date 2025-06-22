@@ -4,21 +4,28 @@ title: AccountRequestResult
 pagination_label: AccountRequestResult
 sidebar_label: AccountRequestResult
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccountRequestResult', 'AccountRequestResult'] 
+keywords:
+  ['python', 'Python', 'sdk', 'AccountRequestResult', 'AccountRequestResult']
 slug: /tools/sdk/python/v3/models/account-request-result
-tags: ['SDK', 'Software Development Kit', 'AccountRequestResult', 'AccountRequestResult']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountRequestResult',
+    'AccountRequestResult',
+  ]
 ---
 
 # AccountRequestResult
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**errors** | **[]str** | Error message. | [optional] 
-**status** | **str** | The status of the account request | [optional] 
-**ticket_id** | **str** | ID of associated ticket. | [optional] 
+| Name          | Type      | Description                       | Notes      |
+| ------------- | --------- | --------------------------------- | ---------- |
+| **errors**    | **[]str** | Error message.                    | [optional] |
+| **status**    | **str**   | The status of the account request | [optional] |
+| **ticket_id** | **str**   | ID of associated ticket.          | [optional] |
+
 }
 
 ## Example
@@ -44,5 +51,5 @@ ticket_id=''
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

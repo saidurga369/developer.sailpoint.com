@@ -4,9 +4,16 @@ title: JsonPatchOperation
 pagination_label: JsonPatchOperation
 sidebar_label: JsonPatchOperation
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'JsonPatchOperation', 'JsonPatchOperation'] 
+keywords:
+  ['python', 'Python', 'sdk', 'JsonPatchOperation', 'JsonPatchOperation']
 slug: /tools/sdk/python/v3/models/json-patch-operation
-tags: ['SDK', 'Software Development Kit', 'JsonPatchOperation', 'JsonPatchOperation']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'JsonPatchOperation',
+    'JsonPatchOperation',
+  ]
 ---
 
 # JsonPatchOperation
@@ -15,11 +22,12 @@ A JSONPatch Operation as defined by [RFC 6902 - JSON Patch](https://tools.ietf.o
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**op** |  **Enum** [  'add',    'remove',    'replace',    'move',    'copy',    'test' ] | The operation to be performed | [required]
-**path** | **str** | A string JSON Pointer representing the target path to an element to be affected by the operation | [required]
-**value** | [**JsonPatchOperationValue**](json-patch-operation-value) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **op** | **Enum** [ 'add', 'remove', 'replace', 'move', 'copy', 'test' ] | The operation to be performed | [required] |
+| **path** | **str** | A string JSON Pointer representing the target path to an element to be affected by the operation | [required] |
+| **value** | [**JsonPatchOperationValue**](json-patch-operation-value) |  | [optional] |
+
 }
 
 ## Example
@@ -34,5 +42,5 @@ value=New description
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

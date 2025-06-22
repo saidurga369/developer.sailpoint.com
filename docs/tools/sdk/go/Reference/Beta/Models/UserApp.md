@@ -4,7 +4,7 @@ title: UserApp
 pagination_label: UserApp
 sidebar_label: UserApp
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'UserApp', 'BetaUserApp'] 
+keywords: ['go', 'Golang', 'sdk', 'UserApp', 'BetaUserApp']
 slug: /tools/sdk/go/beta/models/user-app
 tags: ['SDK', 'Software Development Kit', 'UserApp', 'BetaUserApp']
 ---
@@ -13,19 +13,19 @@ tags: ['SDK', 'Software Development Kit', 'UserApp', 'BetaUserApp']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The user app id | [optional] 
-**Created** | Pointer to **SailPointTime** | Time when the user app was created | [optional] 
-**Modified** | Pointer to **SailPointTime** | Time when the user app was last modified | [optional] 
-**HasMultipleAccounts** | Pointer to **bool** | True if the owner has multiple accounts for the source | [optional] [default to false]
-**UseForPasswordManagement** | Pointer to **bool** | True if the source has password feature | [optional] [default to false]
-**ProvisionRequestEnabled** | Pointer to **bool** | True if the source app related to the user app is provision request enabled | [optional] [default to false]
-**AppCenterEnabled** | Pointer to **bool** | True if the source app related to the user app is shown in the app center | [optional] [default to true]
-**SourceApp** | Pointer to [**UserAppSourceApp**](user-app-source-app) |  | [optional] 
-**Source** | Pointer to [**UserAppSource**](user-app-source) |  | [optional] 
-**Account** | Pointer to [**UserAppAccount**](user-app-account) |  | [optional] 
-**Owner** | Pointer to [**UserAppOwner**](user-app-owner) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The user app id | [optional] |
+| **Created** | Pointer to **SailPointTime** | Time when the user app was created | [optional] |
+| **Modified** | Pointer to **SailPointTime** | Time when the user app was last modified | [optional] |
+| **HasMultipleAccounts** | Pointer to **bool** | True if the owner has multiple accounts for the source | [optional] [default to false] |
+| **UseForPasswordManagement** | Pointer to **bool** | True if the source has password feature | [optional] [default to false] |
+| **ProvisionRequestEnabled** | Pointer to **bool** | True if the source app related to the user app is provision request enabled | [optional] [default to false] |
+| **AppCenterEnabled** | Pointer to **bool** | True if the source app related to the user app is shown in the app center | [optional] [default to true] |
+| **SourceApp** | Pointer to [**UserAppSourceApp**](user-app-source-app) |  | [optional] |
+| **Source** | Pointer to [**UserAppSource**](user-app-source) |  | [optional] |
+| **Account** | Pointer to [**UserAppAccount**](user-app-account) |  | [optional] |
+| **Owner** | Pointer to [**UserAppOwner**](user-app-owner) |  | [optional] |
 
 ## Methods
 
@@ -33,18 +33,13 @@ Name | Type | Description | Notes
 
 `func NewUserApp() *UserApp`
 
-NewUserApp instantiates a new UserApp object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewUserApp instantiates a new UserApp object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewUserAppWithDefaults
 
 `func NewUserAppWithDefaults() *UserApp`
 
-NewUserAppWithDefaults instantiates a new UserApp object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewUserAppWithDefaults instantiates a new UserApp object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -56,8 +51,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *UserApp) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -81,8 +75,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *UserApp) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -106,8 +99,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *UserApp) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -131,8 +123,7 @@ GetHasMultipleAccounts returns the HasMultipleAccounts field if non-nil, zero va
 
 `func (o *UserApp) GetHasMultipleAccountsOk() (*bool, bool)`
 
-GetHasMultipleAccountsOk returns a tuple with the HasMultipleAccounts field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetHasMultipleAccountsOk returns a tuple with the HasMultipleAccounts field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetHasMultipleAccounts
 
@@ -156,8 +147,7 @@ GetUseForPasswordManagement returns the UseForPasswordManagement field if non-ni
 
 `func (o *UserApp) GetUseForPasswordManagementOk() (*bool, bool)`
 
-GetUseForPasswordManagementOk returns a tuple with the UseForPasswordManagement field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUseForPasswordManagementOk returns a tuple with the UseForPasswordManagement field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUseForPasswordManagement
 
@@ -181,8 +171,7 @@ GetProvisionRequestEnabled returns the ProvisionRequestEnabled field if non-nil,
 
 `func (o *UserApp) GetProvisionRequestEnabledOk() (*bool, bool)`
 
-GetProvisionRequestEnabledOk returns a tuple with the ProvisionRequestEnabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProvisionRequestEnabledOk returns a tuple with the ProvisionRequestEnabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProvisionRequestEnabled
 
@@ -206,8 +195,7 @@ GetAppCenterEnabled returns the AppCenterEnabled field if non-nil, zero value ot
 
 `func (o *UserApp) GetAppCenterEnabledOk() (*bool, bool)`
 
-GetAppCenterEnabledOk returns a tuple with the AppCenterEnabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAppCenterEnabledOk returns a tuple with the AppCenterEnabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAppCenterEnabled
 
@@ -231,8 +219,7 @@ GetSourceApp returns the SourceApp field if non-nil, zero value otherwise.
 
 `func (o *UserApp) GetSourceAppOk() (*UserAppSourceApp, bool)`
 
-GetSourceAppOk returns a tuple with the SourceApp field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceAppOk returns a tuple with the SourceApp field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceApp
 
@@ -256,8 +243,7 @@ GetSource returns the Source field if non-nil, zero value otherwise.
 
 `func (o *UserApp) GetSourceOk() (*UserAppSource, bool)`
 
-GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSource
 
@@ -281,8 +267,7 @@ GetAccount returns the Account field if non-nil, zero value otherwise.
 
 `func (o *UserApp) GetAccountOk() (*UserAppAccount, bool)`
 
-GetAccountOk returns a tuple with the Account field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountOk returns a tuple with the Account field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccount
 
@@ -306,8 +291,7 @@ GetOwner returns the Owner field if non-nil, zero value otherwise.
 
 `func (o *UserApp) GetOwnerOk() (*UserAppOwner, bool)`
 
-GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwner
 
@@ -320,5 +304,3 @@ SetOwner sets Owner field to given value.
 `func (o *UserApp) HasOwner() bool`
 
 HasOwner returns a boolean if a field has been set.
-
-

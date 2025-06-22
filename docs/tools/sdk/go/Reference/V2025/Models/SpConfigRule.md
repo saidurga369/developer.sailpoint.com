@@ -4,7 +4,7 @@ title: SpConfigRule
 pagination_label: SpConfigRule
 sidebar_label: SpConfigRule
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SpConfigRule', 'V2025SpConfigRule'] 
+keywords: ['go', 'Golang', 'sdk', 'SpConfigRule', 'V2025SpConfigRule']
 slug: /tools/sdk/go/v2025/models/sp-config-rule
 tags: ['SDK', 'Software Development Kit', 'SpConfigRule', 'V2025SpConfigRule']
 ---
@@ -13,11 +13,11 @@ tags: ['SDK', 'Software Development Kit', 'SpConfigRule', 'V2025SpConfigRule']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Path** | Pointer to **string** | JSONPath expression denoting the path within the object where a value substitution should be applied. | [optional] 
-**Value** | Pointer to [**NullableSpConfigRuleValue**](sp-config-rule-value) |  | [optional] 
-**Modes** | Pointer to **[]string** | Draft modes the rule will apply to. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Path** | Pointer to **string** | JSONPath expression denoting the path within the object where a value substitution should be applied. | [optional] |
+| **Value** | Pointer to [**NullableSpConfigRuleValue**](sp-config-rule-value) |  | [optional] |
+| **Modes** | Pointer to **[]string** | Draft modes the rule will apply to. | [optional] |
 
 ## Methods
 
@@ -25,18 +25,13 @@ Name | Type | Description | Notes
 
 `func NewSpConfigRule() *SpConfigRule`
 
-NewSpConfigRule instantiates a new SpConfigRule object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSpConfigRule instantiates a new SpConfigRule object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSpConfigRuleWithDefaults
 
 `func NewSpConfigRuleWithDefaults() *SpConfigRule`
 
-NewSpConfigRuleWithDefaults instantiates a new SpConfigRule object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSpConfigRuleWithDefaults instantiates a new SpConfigRule object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetPath
 
@@ -48,8 +43,7 @@ GetPath returns the Path field if non-nil, zero value otherwise.
 
 `func (o *SpConfigRule) GetPathOk() (*string, bool)`
 
-GetPathOk returns a tuple with the Path field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPathOk returns a tuple with the Path field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPath
 
@@ -73,8 +67,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *SpConfigRule) GetValueOk() (*SpConfigRuleValue, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -92,12 +85,14 @@ HasValue returns a boolean if a field has been set.
 
 `func (o *SpConfigRule) SetValueNil(b bool)`
 
- SetValueNil sets the value for Value to be an explicit nil
+SetValueNil sets the value for Value to be an explicit nil
 
 ### UnsetValue
+
 `func (o *SpConfigRule) UnsetValue()`
 
 UnsetValue ensures that no value is present for Value, not even an explicit nil
+
 ### GetModes
 
 `func (o *SpConfigRule) GetModes() []string`
@@ -108,8 +103,7 @@ GetModes returns the Modes field if non-nil, zero value otherwise.
 
 `func (o *SpConfigRule) GetModesOk() (*[]string, bool)`
 
-GetModesOk returns a tuple with the Modes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModesOk returns a tuple with the Modes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModes
 
@@ -122,5 +116,3 @@ SetModes sets Modes field to given value.
 `func (o *SpConfigRule) HasModes() bool`
 
 HasModes returns a boolean if a field has been set.
-
-

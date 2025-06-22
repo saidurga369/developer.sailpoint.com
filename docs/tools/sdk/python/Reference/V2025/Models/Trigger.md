@@ -4,26 +4,26 @@ title: Trigger
 pagination_label: Trigger
 sidebar_label: Trigger
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'Trigger', 'V2025Trigger'] 
+keywords: ['python', 'Python', 'sdk', 'Trigger', 'V2025Trigger']
 slug: /tools/sdk/python/v2025/models/trigger
 tags: ['SDK', 'Software Development Kit', 'Trigger', 'V2025Trigger']
 ---
 
 # Trigger
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Unique identifier of the trigger. | [required]
-**name** | **str** | Trigger Name. | [required]
-**type** | [**TriggerType**](trigger-type) |  | [required]
-**description** | **str** | Trigger Description. | [optional] 
-**input_schema** | **str** | The JSON schema of the payload that will be sent by the trigger to the subscribed service. | [required]
-**example_input** | [**TriggerExampleInput**](trigger-example-input) |  | [required]
-**output_schema** | **str** | The JSON schema of the response that will be sent by the subscribed service to the trigger in response to an event.  This only applies to a trigger type of `REQUEST_RESPONSE`. | [optional] 
-**example_output** | [**TriggerExampleOutput**](trigger-example-output) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | Unique identifier of the trigger. | [required] |
+| **name** | **str** | Trigger Name. | [required] |
+| **type** | [**TriggerType**](trigger-type) |  | [required] |
+| **description** | **str** | Trigger Description. | [optional] |
+| **input_schema** | **str** | The JSON schema of the payload that will be sent by the trigger to the subscribed service. | [required] |
+| **example_input** | [**TriggerExampleInput**](trigger-example-input) |  | [required] |
+| **output_schema** | **str** | The JSON schema of the response that will be sent by the subscribed service to the trigger in response to an event. This only applies to a trigger type of `REQUEST_RESPONSE`. | [optional] |
+| **example_output** | [**TriggerExampleOutput**](trigger-example-output) |  | [optional] |
+
 }
 
 ## Example
@@ -43,5 +43,5 @@ example_output=
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

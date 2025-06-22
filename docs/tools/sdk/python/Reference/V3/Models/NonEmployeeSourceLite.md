@@ -4,22 +4,29 @@ title: NonEmployeeSourceLite
 pagination_label: NonEmployeeSourceLite
 sidebar_label: NonEmployeeSourceLite
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'NonEmployeeSourceLite', 'NonEmployeeSourceLite'] 
+keywords:
+  ['python', 'Python', 'sdk', 'NonEmployeeSourceLite', 'NonEmployeeSourceLite']
 slug: /tools/sdk/python/v3/models/non-employee-source-lite
-tags: ['SDK', 'Software Development Kit', 'NonEmployeeSourceLite', 'NonEmployeeSourceLite']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NonEmployeeSourceLite',
+    'NonEmployeeSourceLite',
+  ]
 ---
 
 # NonEmployeeSourceLite
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Non-Employee source id. | [optional] 
-**source_id** | **str** | Source Id associated with this non-employee source. | [optional] 
-**name** | **str** | Source name associated with this non-employee source. | [optional] 
-**description** | **str** | Source description associated with this non-employee source. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | Non-Employee source id. | [optional] |
+| **source_id** | **str** | Source Id associated with this non-employee source. | [optional] |
+| **name** | **str** | Source name associated with this non-employee source. | [optional] |
+| **description** | **str** | Source description associated with this non-employee source. | [optional] |
+
 }
 
 ## Example
@@ -35,5 +42,5 @@ description='Source description'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

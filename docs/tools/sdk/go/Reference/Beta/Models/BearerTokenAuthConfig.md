@@ -4,18 +4,25 @@ title: BearerTokenAuthConfig
 pagination_label: BearerTokenAuthConfig
 sidebar_label: BearerTokenAuthConfig
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'BearerTokenAuthConfig', 'BetaBearerTokenAuthConfig'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'BearerTokenAuthConfig', 'BetaBearerTokenAuthConfig']
 slug: /tools/sdk/go/beta/models/bearer-token-auth-config
-tags: ['SDK', 'Software Development Kit', 'BearerTokenAuthConfig', 'BetaBearerTokenAuthConfig']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'BearerTokenAuthConfig',
+    'BetaBearerTokenAuthConfig',
+  ]
 ---
 
 # BearerTokenAuthConfig
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**BearerToken** | Pointer to **NullableString** | Bearer token | [optional] 
+| Name            | Type                          | Description  | Notes      |
+| --------------- | ----------------------------- | ------------ | ---------- |
+| **BearerToken** | Pointer to **NullableString** | Bearer token | [optional] |
 
 ## Methods
 
@@ -23,18 +30,13 @@ Name | Type | Description | Notes
 
 `func NewBearerTokenAuthConfig() *BearerTokenAuthConfig`
 
-NewBearerTokenAuthConfig instantiates a new BearerTokenAuthConfig object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewBearerTokenAuthConfig instantiates a new BearerTokenAuthConfig object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewBearerTokenAuthConfigWithDefaults
 
 `func NewBearerTokenAuthConfigWithDefaults() *BearerTokenAuthConfig`
 
-NewBearerTokenAuthConfigWithDefaults instantiates a new BearerTokenAuthConfig object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewBearerTokenAuthConfigWithDefaults instantiates a new BearerTokenAuthConfig object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetBearerToken
 
@@ -46,8 +48,7 @@ GetBearerToken returns the BearerToken field if non-nil, zero value otherwise.
 
 `func (o *BearerTokenAuthConfig) GetBearerTokenOk() (*string, bool)`
 
-GetBearerTokenOk returns a tuple with the BearerToken field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetBearerTokenOk returns a tuple with the BearerToken field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetBearerToken
 
@@ -65,10 +66,10 @@ HasBearerToken returns a boolean if a field has been set.
 
 `func (o *BearerTokenAuthConfig) SetBearerTokenNil(b bool)`
 
- SetBearerTokenNil sets the value for BearerToken to be an explicit nil
+SetBearerTokenNil sets the value for BearerToken to be an explicit nil
 
 ### UnsetBearerToken
+
 `func (o *BearerTokenAuthConfig) UnsetBearerToken()`
 
 UnsetBearerToken ensures that no value is present for BearerToken, not even an explicit nil
-

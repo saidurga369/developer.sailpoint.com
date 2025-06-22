@@ -4,27 +4,28 @@ title: SourceHealthDto
 pagination_label: SourceHealthDto
 sidebar_label: SourceHealthDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SourceHealthDto', 'V2025SourceHealthDto'] 
+keywords: ['go', 'Golang', 'sdk', 'SourceHealthDto', 'V2025SourceHealthDto']
 slug: /tools/sdk/go/v2025/models/source-health-dto
-tags: ['SDK', 'Software Development Kit', 'SourceHealthDto', 'V2025SourceHealthDto']
+tags:
+  ['SDK', 'Software Development Kit', 'SourceHealthDto', 'V2025SourceHealthDto']
 ---
 
 # SourceHealthDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | the id of the Source | [optional] [readonly] 
-**Type** | Pointer to **string** | Specifies the type of system being managed e.g. Active Directory, Workday, etc.. If you are creating a Delimited File source, you must set the `provisionasCsv` query parameter to `true`.  | [optional] 
-**Name** | Pointer to **string** | the name of the source | [optional] 
-**Org** | Pointer to **string** | source's org | [optional] 
-**IsAuthoritative** | Pointer to **bool** | Is the source authoritative | [optional] 
-**IsCluster** | Pointer to **bool** | Is the source in a cluster | [optional] 
-**Hostname** | Pointer to **string** | source's hostname | [optional] 
-**Pod** | Pointer to **string** | source's pod | [optional] 
-**IqServiceVersion** | Pointer to **NullableString** | The version of the iqService | [optional] 
-**Status** | Pointer to **string** | connection test result | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | the id of the Source | [optional] [readonly] |
+| **Type** | Pointer to **string** | Specifies the type of system being managed e.g. Active Directory, Workday, etc.. If you are creating a Delimited File source, you must set the `provisionasCsv` query parameter to `true`. | [optional] |
+| **Name** | Pointer to **string** | the name of the source | [optional] |
+| **Org** | Pointer to **string** | source's org | [optional] |
+| **IsAuthoritative** | Pointer to **bool** | Is the source authoritative | [optional] |
+| **IsCluster** | Pointer to **bool** | Is the source in a cluster | [optional] |
+| **Hostname** | Pointer to **string** | source's hostname | [optional] |
+| **Pod** | Pointer to **string** | source's pod | [optional] |
+| **IqServiceVersion** | Pointer to **NullableString** | The version of the iqService | [optional] |
+| **Status** | Pointer to **string** | connection test result | [optional] |
 
 ## Methods
 
@@ -32,18 +33,13 @@ Name | Type | Description | Notes
 
 `func NewSourceHealthDto() *SourceHealthDto`
 
-NewSourceHealthDto instantiates a new SourceHealthDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSourceHealthDto instantiates a new SourceHealthDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSourceHealthDtoWithDefaults
 
 `func NewSourceHealthDtoWithDefaults() *SourceHealthDto`
 
-NewSourceHealthDtoWithDefaults instantiates a new SourceHealthDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSourceHealthDtoWithDefaults instantiates a new SourceHealthDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -55,8 +51,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *SourceHealthDto) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -80,8 +75,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *SourceHealthDto) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -105,8 +99,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *SourceHealthDto) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -130,8 +123,7 @@ GetOrg returns the Org field if non-nil, zero value otherwise.
 
 `func (o *SourceHealthDto) GetOrgOk() (*string, bool)`
 
-GetOrgOk returns a tuple with the Org field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOrgOk returns a tuple with the Org field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOrg
 
@@ -155,8 +147,7 @@ GetIsAuthoritative returns the IsAuthoritative field if non-nil, zero value othe
 
 `func (o *SourceHealthDto) GetIsAuthoritativeOk() (*bool, bool)`
 
-GetIsAuthoritativeOk returns a tuple with the IsAuthoritative field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIsAuthoritativeOk returns a tuple with the IsAuthoritative field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIsAuthoritative
 
@@ -180,8 +171,7 @@ GetIsCluster returns the IsCluster field if non-nil, zero value otherwise.
 
 `func (o *SourceHealthDto) GetIsClusterOk() (*bool, bool)`
 
-GetIsClusterOk returns a tuple with the IsCluster field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIsClusterOk returns a tuple with the IsCluster field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIsCluster
 
@@ -205,8 +195,7 @@ GetHostname returns the Hostname field if non-nil, zero value otherwise.
 
 `func (o *SourceHealthDto) GetHostnameOk() (*string, bool)`
 
-GetHostnameOk returns a tuple with the Hostname field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetHostnameOk returns a tuple with the Hostname field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetHostname
 
@@ -230,8 +219,7 @@ GetPod returns the Pod field if non-nil, zero value otherwise.
 
 `func (o *SourceHealthDto) GetPodOk() (*string, bool)`
 
-GetPodOk returns a tuple with the Pod field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPodOk returns a tuple with the Pod field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPod
 
@@ -255,8 +243,7 @@ GetIqServiceVersion returns the IqServiceVersion field if non-nil, zero value ot
 
 `func (o *SourceHealthDto) GetIqServiceVersionOk() (*string, bool)`
 
-GetIqServiceVersionOk returns a tuple with the IqServiceVersion field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIqServiceVersionOk returns a tuple with the IqServiceVersion field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIqServiceVersion
 
@@ -274,12 +261,14 @@ HasIqServiceVersion returns a boolean if a field has been set.
 
 `func (o *SourceHealthDto) SetIqServiceVersionNil(b bool)`
 
- SetIqServiceVersionNil sets the value for IqServiceVersion to be an explicit nil
+SetIqServiceVersionNil sets the value for IqServiceVersion to be an explicit nil
 
 ### UnsetIqServiceVersion
+
 `func (o *SourceHealthDto) UnsetIqServiceVersion()`
 
 UnsetIqServiceVersion ensures that no value is present for IqServiceVersion, not even an explicit nil
+
 ### GetStatus
 
 `func (o *SourceHealthDto) GetStatus() string`
@@ -290,8 +279,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *SourceHealthDto) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -304,5 +292,3 @@ SetStatus sets Status field to given value.
 `func (o *SourceHealthDto) HasStatus() bool`
 
 HasStatus returns a boolean if a field has been set.
-
-

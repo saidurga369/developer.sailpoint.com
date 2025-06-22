@@ -4,9 +4,22 @@ title: MultiHostIntegrationTemplateType
 pagination_label: MultiHostIntegrationTemplateType
 sidebar_label: MultiHostIntegrationTemplateType
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'MultiHostIntegrationTemplateType', 'BetaMultiHostIntegrationTemplateType'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'MultiHostIntegrationTemplateType',
+    'BetaMultiHostIntegrationTemplateType',
+  ]
 slug: /tools/sdk/python/beta/models/multi-host-integration-template-type
-tags: ['SDK', 'Software Development Kit', 'MultiHostIntegrationTemplateType', 'BetaMultiHostIntegrationTemplateType']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'MultiHostIntegrationTemplateType',
+    'BetaMultiHostIntegrationTemplateType',
+  ]
 ---
 
 # MultiHostIntegrationTemplateType
@@ -15,11 +28,12 @@ This represents a Multi-Host Integration template type.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | This is the name of the type. | [optional] 
-**type** | **str** | This is the type value for the type. | [required]
-**script_name** | **str** | This is the scriptName attribute value for the type. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **name** | **str** | This is the name of the type. | [optional] |
+| **type** | **str** | This is the type value for the type. | [required] |
+| **script_name** | **str** | This is the scriptName attribute value for the type. | [required] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ script_name='aScriptName'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

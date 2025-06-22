@@ -4,19 +4,26 @@ title: PasswordDigitToken
 pagination_label: PasswordDigitToken
 sidebar_label: PasswordDigitToken
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'PasswordDigitToken', 'V2024PasswordDigitToken'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'PasswordDigitToken', 'V2024PasswordDigitToken']
 slug: /tools/sdk/go/v2024/models/password-digit-token
-tags: ['SDK', 'Software Development Kit', 'PasswordDigitToken', 'V2024PasswordDigitToken']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PasswordDigitToken',
+    'V2024PasswordDigitToken',
+  ]
 ---
 
 # PasswordDigitToken
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**DigitToken** | Pointer to **string** | The digit token for password management | [optional] 
-**RequestId** | Pointer to **string** | The reference ID of the digit token generation request | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **DigitToken** | Pointer to **string** | The digit token for password management | [optional] |
+| **RequestId** | Pointer to **string** | The reference ID of the digit token generation request | [optional] |
 
 ## Methods
 
@@ -24,18 +31,13 @@ Name | Type | Description | Notes
 
 `func NewPasswordDigitToken() *PasswordDigitToken`
 
-NewPasswordDigitToken instantiates a new PasswordDigitToken object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewPasswordDigitToken instantiates a new PasswordDigitToken object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewPasswordDigitTokenWithDefaults
 
 `func NewPasswordDigitTokenWithDefaults() *PasswordDigitToken`
 
-NewPasswordDigitTokenWithDefaults instantiates a new PasswordDigitToken object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewPasswordDigitTokenWithDefaults instantiates a new PasswordDigitToken object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetDigitToken
 
@@ -47,8 +49,7 @@ GetDigitToken returns the DigitToken field if non-nil, zero value otherwise.
 
 `func (o *PasswordDigitToken) GetDigitTokenOk() (*string, bool)`
 
-GetDigitTokenOk returns a tuple with the DigitToken field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDigitTokenOk returns a tuple with the DigitToken field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDigitToken
 
@@ -72,8 +73,7 @@ GetRequestId returns the RequestId field if non-nil, zero value otherwise.
 
 `func (o *PasswordDigitToken) GetRequestIdOk() (*string, bool)`
 
-GetRequestIdOk returns a tuple with the RequestId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestIdOk returns a tuple with the RequestId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequestId
 
@@ -86,5 +86,3 @@ SetRequestId sets RequestId field to given value.
 `func (o *PasswordDigitToken) HasRequestId() bool`
 
 HasRequestId returns a boolean if a field has been set.
-
-

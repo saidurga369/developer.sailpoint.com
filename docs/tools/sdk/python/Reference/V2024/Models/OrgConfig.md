@@ -4,7 +4,7 @@ title: OrgConfig
 pagination_label: OrgConfig
 sidebar_label: OrgConfig
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'OrgConfig', 'V2024OrgConfig'] 
+keywords: ['python', 'Python', 'sdk', 'OrgConfig', 'V2024OrgConfig']
 slug: /tools/sdk/python/v2024/models/org-config
 tags: ['SDK', 'Software Development Kit', 'OrgConfig', 'V2024OrgConfig']
 ---
@@ -15,18 +15,19 @@ DTO class for OrgConfig data accessible by customer external org admin (\"ORG_AD
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**org_name** | **str** | The name of the org. | [optional] 
-**time_zone** | **str** | The selected time zone which is to be used for the org.  This directly affects when scheduled tasks are executed.  Valid options can be found at /beta/org-config/valid-time-zones | [optional] 
-**lcs_change_honors_source_enable_feature** | **bool** | Flag to determine whether the LCS_CHANGE_HONORS_SOURCE_ENABLE_FEATURE flag is enabled for the current org. | [optional] 
-**arm_customer_id** | **str** | ARM Customer ID | [optional] 
-**arm_sap_system_id_mappings** | **str** | A list of IDN::sourceId to ARM::systemId mappings. | [optional] 
-**arm_auth** | **str** | ARM authentication string | [optional] 
-**arm_db** | **str** | ARM database name | [optional] 
-**arm_sso_url** | **str** | ARM SSO URL | [optional] 
-**iai_enable_certification_recommendations** | **bool** | Flag to determine whether IAI Certification Recommendations are enabled for the current org | [optional] 
-**sod_report_configs** | [**[]ReportConfigDTO**](report-config-dto) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **org_name** | **str** | The name of the org. | [optional] |
+| **time_zone** | **str** | The selected time zone which is to be used for the org. This directly affects when scheduled tasks are executed. Valid options can be found at /beta/org-config/valid-time-zones | [optional] |
+| **lcs_change_honors_source_enable_feature** | **bool** | Flag to determine whether the LCS_CHANGE_HONORS_SOURCE_ENABLE_FEATURE flag is enabled for the current org. | [optional] |
+| **arm_customer_id** | **str** | ARM Customer ID | [optional] |
+| **arm_sap_system_id_mappings** | **str** | A list of IDN::sourceId to ARM::systemId mappings. | [optional] |
+| **arm_auth** | **str** | ARM authentication string | [optional] |
+| **arm_db** | **str** | ARM database name | [optional] |
+| **arm_sso_url** | **str** | ARM SSO URL | [optional] |
+| **iai_enable_certification_recommendations** | **bool** | Flag to determine whether IAI Certification Recommendations are enabled for the current org | [optional] |
+| **sod_report_configs** | [**[]ReportConfigDTO**](report-config-dto) |  | [optional] |
+
 }
 
 ## Example
@@ -46,13 +47,13 @@ arm_sso_url='https://your-arm-sso-url',
 iai_enable_certification_recommendations=True,
 sod_report_configs=[
                     sailpoint.v2024.models.report_config_dto.ReportConfigDTO(
-                        column_name = 'SOD Business Name', 
-                        required = True, 
-                        included = False, 
+                        column_name = 'SOD Business Name',
+                        required = True,
+                        included = False,
                         order = 2, )
                     ]
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

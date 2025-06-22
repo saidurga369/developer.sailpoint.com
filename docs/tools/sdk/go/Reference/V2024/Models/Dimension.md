@@ -4,7 +4,7 @@ title: Dimension
 pagination_label: Dimension
 sidebar_label: Dimension
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Dimension', 'V2024Dimension'] 
+keywords: ['go', 'Golang', 'sdk', 'Dimension', 'V2024Dimension']
 slug: /tools/sdk/go/v2024/models/dimension
 tags: ['SDK', 'Software Development Kit', 'Dimension', 'V2024Dimension']
 ---
@@ -13,18 +13,18 @@ tags: ['SDK', 'Software Development Kit', 'Dimension', 'V2024Dimension']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The id of the Dimension. This field must be left null when creating a dimension, otherwise a 400 Bad Request error will result. | [optional] 
-**Name** | **string** | The human-readable display name of the Dimension | 
-**Created** | Pointer to **SailPointTime** | Date the Dimension was created | [optional] [readonly] 
-**Modified** | Pointer to **SailPointTime** | Date the Dimension was last modified. | [optional] [readonly] 
-**Description** | Pointer to **NullableString** | A human-readable description of the Dimension | [optional] 
-**Owner** | [**NullableOwnerReference**](owner-reference) |  | 
-**AccessProfiles** | Pointer to [**[]AccessProfileRef**](access-profile-ref) |  | [optional] 
-**Entitlements** | Pointer to [**[]EntitlementRef**](entitlement-ref) |  | [optional] 
-**Membership** | Pointer to [**NullableDimensionMembershipSelector**](dimension-membership-selector) |  | [optional] 
-**ParentId** | Pointer to **NullableString** | The ID of the parent role. This field can be left null when creating a dimension, but if provided, it must match the role ID specified in the path variable of the API call. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The id of the Dimension. This field must be left null when creating a dimension, otherwise a 400 Bad Request error will result. | [optional] |
+| **Name** | **string** | The human-readable display name of the Dimension |
+| **Created** | Pointer to **SailPointTime** | Date the Dimension was created | [optional] [readonly] |
+| **Modified** | Pointer to **SailPointTime** | Date the Dimension was last modified. | [optional] [readonly] |
+| **Description** | Pointer to **NullableString** | A human-readable description of the Dimension | [optional] |
+| **Owner** | [**NullableOwnerReference**](owner-reference) |  |
+| **AccessProfiles** | Pointer to [**[]AccessProfileRef**](access-profile-ref) |  | [optional] |
+| **Entitlements** | Pointer to [**[]EntitlementRef**](entitlement-ref) |  | [optional] |
+| **Membership** | Pointer to [**NullableDimensionMembershipSelector**](dimension-membership-selector) |  | [optional] |
+| **ParentId** | Pointer to **NullableString** | The ID of the parent role. This field can be left null when creating a dimension, but if provided, it must match the role ID specified in the path variable of the API call. | [optional] |
 
 ## Methods
 
@@ -32,18 +32,13 @@ Name | Type | Description | Notes
 
 `func NewDimension(name string, owner NullableOwnerReference, ) *Dimension`
 
-NewDimension instantiates a new Dimension object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewDimension instantiates a new Dimension object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewDimensionWithDefaults
 
 `func NewDimensionWithDefaults() *Dimension`
 
-NewDimensionWithDefaults instantiates a new Dimension object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewDimensionWithDefaults instantiates a new Dimension object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -55,8 +50,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *Dimension) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -80,15 +74,13 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *Dimension) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
 `func (o *Dimension) SetName(v string)`
 
 SetName sets Name field to given value.
-
 
 ### GetCreated
 
@@ -100,8 +92,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *Dimension) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -125,8 +116,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *Dimension) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -150,8 +140,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *Dimension) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -169,12 +158,14 @@ HasDescription returns a boolean if a field has been set.
 
 `func (o *Dimension) SetDescriptionNil(b bool)`
 
- SetDescriptionNil sets the value for Description to be an explicit nil
+SetDescriptionNil sets the value for Description to be an explicit nil
 
 ### UnsetDescription
+
 `func (o *Dimension) UnsetDescription()`
 
 UnsetDescription ensures that no value is present for Description, not even an explicit nil
+
 ### GetOwner
 
 `func (o *Dimension) GetOwner() OwnerReference`
@@ -185,8 +176,7 @@ GetOwner returns the Owner field if non-nil, zero value otherwise.
 
 `func (o *Dimension) GetOwnerOk() (*OwnerReference, bool)`
 
-GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwner
 
@@ -194,17 +184,18 @@ and a boolean to check if the value has been set.
 
 SetOwner sets Owner field to given value.
 
-
 ### SetOwnerNil
 
 `func (o *Dimension) SetOwnerNil(b bool)`
 
- SetOwnerNil sets the value for Owner to be an explicit nil
+SetOwnerNil sets the value for Owner to be an explicit nil
 
 ### UnsetOwner
+
 `func (o *Dimension) UnsetOwner()`
 
 UnsetOwner ensures that no value is present for Owner, not even an explicit nil
+
 ### GetAccessProfiles
 
 `func (o *Dimension) GetAccessProfiles() []AccessProfileRef`
@@ -215,8 +206,7 @@ GetAccessProfiles returns the AccessProfiles field if non-nil, zero value otherw
 
 `func (o *Dimension) GetAccessProfilesOk() (*[]AccessProfileRef, bool)`
 
-GetAccessProfilesOk returns a tuple with the AccessProfiles field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessProfilesOk returns a tuple with the AccessProfiles field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessProfiles
 
@@ -234,12 +224,14 @@ HasAccessProfiles returns a boolean if a field has been set.
 
 `func (o *Dimension) SetAccessProfilesNil(b bool)`
 
- SetAccessProfilesNil sets the value for AccessProfiles to be an explicit nil
+SetAccessProfilesNil sets the value for AccessProfiles to be an explicit nil
 
 ### UnsetAccessProfiles
+
 `func (o *Dimension) UnsetAccessProfiles()`
 
 UnsetAccessProfiles ensures that no value is present for AccessProfiles, not even an explicit nil
+
 ### GetEntitlements
 
 `func (o *Dimension) GetEntitlements() []EntitlementRef`
@@ -250,8 +242,7 @@ GetEntitlements returns the Entitlements field if non-nil, zero value otherwise.
 
 `func (o *Dimension) GetEntitlementsOk() (*[]EntitlementRef, bool)`
 
-GetEntitlementsOk returns a tuple with the Entitlements field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEntitlementsOk returns a tuple with the Entitlements field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEntitlements
 
@@ -275,8 +266,7 @@ GetMembership returns the Membership field if non-nil, zero value otherwise.
 
 `func (o *Dimension) GetMembershipOk() (*DimensionMembershipSelector, bool)`
 
-GetMembershipOk returns a tuple with the Membership field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMembershipOk returns a tuple with the Membership field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMembership
 
@@ -294,12 +284,14 @@ HasMembership returns a boolean if a field has been set.
 
 `func (o *Dimension) SetMembershipNil(b bool)`
 
- SetMembershipNil sets the value for Membership to be an explicit nil
+SetMembershipNil sets the value for Membership to be an explicit nil
 
 ### UnsetMembership
+
 `func (o *Dimension) UnsetMembership()`
 
 UnsetMembership ensures that no value is present for Membership, not even an explicit nil
+
 ### GetParentId
 
 `func (o *Dimension) GetParentId() string`
@@ -310,8 +302,7 @@ GetParentId returns the ParentId field if non-nil, zero value otherwise.
 
 `func (o *Dimension) GetParentIdOk() (*string, bool)`
 
-GetParentIdOk returns a tuple with the ParentId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetParentIdOk returns a tuple with the ParentId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetParentId
 
@@ -329,10 +320,10 @@ HasParentId returns a boolean if a field has been set.
 
 `func (o *Dimension) SetParentIdNil(b bool)`
 
- SetParentIdNil sets the value for ParentId to be an explicit nil
+SetParentIdNil sets the value for ParentId to be an explicit nil
 
 ### UnsetParentId
+
 `func (o *Dimension) UnsetParentId()`
 
 UnsetParentId ensures that no value is present for ParentId, not even an explicit nil
-

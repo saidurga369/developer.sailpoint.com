@@ -4,9 +4,16 @@ title: AccountRequestInfo
 pagination_label: AccountRequestInfo
 sidebar_label: AccountRequestInfo
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccountRequestInfo', 'BetaAccountRequestInfo'] 
+keywords:
+  ['python', 'Python', 'sdk', 'AccountRequestInfo', 'BetaAccountRequestInfo']
 slug: /tools/sdk/python/beta/models/account-request-info
-tags: ['SDK', 'Software Development Kit', 'AccountRequestInfo', 'BetaAccountRequestInfo']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountRequestInfo',
+    'BetaAccountRequestInfo',
+  ]
 ---
 
 # AccountRequestInfo
@@ -15,11 +22,12 @@ If an account activity item is associated with an access request, captures detai
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**requested_object_id** | **str** | Id of requested object | [optional] 
-**requested_object_name** | **str** | Human-readable name of requested object | [optional] 
-**requested_object_type** | [**RequestableObjectType**](requestable-object-type) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **requested_object_id** | **str** | Id of requested object | [optional] |
+| **requested_object_name** | **str** | Human-readable name of requested object | [optional] |
+| **requested_object_type** | [**RequestableObjectType**](requestable-object-type) |  | [optional] |
+
 }
 
 ## Example
@@ -34,5 +42,5 @@ requested_object_type='ACCESS_PROFILE'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

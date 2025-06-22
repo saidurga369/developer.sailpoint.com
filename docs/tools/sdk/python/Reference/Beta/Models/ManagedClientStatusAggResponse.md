@@ -4,9 +4,22 @@ title: ManagedClientStatusAggResponse
 pagination_label: ManagedClientStatusAggResponse
 sidebar_label: ManagedClientStatusAggResponse
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ManagedClientStatusAggResponse', 'BetaManagedClientStatusAggResponse'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ManagedClientStatusAggResponse',
+    'BetaManagedClientStatusAggResponse',
+  ]
 slug: /tools/sdk/python/beta/models/managed-client-status-agg-response
-tags: ['SDK', 'Software Development Kit', 'ManagedClientStatusAggResponse', 'BetaManagedClientStatusAggResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ManagedClientStatusAggResponse',
+    'BetaManagedClientStatusAggResponse',
+  ]
 ---
 
 # ManagedClientStatusAggResponse
@@ -15,12 +28,13 @@ Managed Client Status
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**body** | **object** | ManagedClientStatus body information | [required]
-**status** | [**ManagedClientStatusEnum**](managed-client-status-enum) |  | [required]
-**type** | [**ManagedClientType**](managed-client-type) |  | [required]
-**timestamp** | **datetime** | timestamp on the Client Status update | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **body** | **object** | ManagedClientStatus body information | [required] |
+| **status** | [**ManagedClientStatusEnum**](managed-client-status-enum) |  | [required] |
+| **type** | [**ManagedClientType**](managed-client-type) |  | [required] |
+| **timestamp** | **datetime** | timestamp on the Client Status update | [required] |
+
 }
 
 ## Example
@@ -36,5 +50,5 @@ timestamp='2020-01-01T00:00Z'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

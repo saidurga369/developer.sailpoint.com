@@ -4,9 +4,22 @@ title: BeforeProvisioningRuleDto
 pagination_label: BeforeProvisioningRuleDto
 sidebar_label: BeforeProvisioningRuleDto
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'BeforeProvisioningRuleDto', 'V2025BeforeProvisioningRuleDto'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'BeforeProvisioningRuleDto',
+    'V2025BeforeProvisioningRuleDto',
+  ]
 slug: /tools/sdk/python/v2025/models/before-provisioning-rule-dto
-tags: ['SDK', 'Software Development Kit', 'BeforeProvisioningRuleDto', 'V2025BeforeProvisioningRuleDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'BeforeProvisioningRuleDto',
+    'V2025BeforeProvisioningRuleDto',
+  ]
 ---
 
 # BeforeProvisioningRuleDto
@@ -15,11 +28,12 @@ Before Provisioning Rule.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'RULE' ] | Before Provisioning Rule DTO type. | [optional] 
-**id** | **str** | Before Provisioning Rule ID. | [optional] 
-**name** | **str** | Rule display name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'RULE' ] | Before Provisioning Rule DTO type. | [optional] |
+| **id** | **str** | Before Provisioning Rule ID. | [optional] |
+| **name** | **str** | Rule display name. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Before Provisioning Airtable Rule'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

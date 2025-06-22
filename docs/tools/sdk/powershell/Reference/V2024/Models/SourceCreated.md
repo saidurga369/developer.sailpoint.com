@@ -4,28 +4,29 @@ title: SourceCreated
 pagination_label: SourceCreated
 sidebar_label: SourceCreated
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'SourceCreated', 'V2024SourceCreated'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'SourceCreated', 'V2024SourceCreated']
 slug: /tools/sdk/powershell/v2024/models/source-created
 tags: ['SDK', 'Software Development Kit', 'SourceCreated', 'V2024SourceCreated']
 ---
-
 
 # SourceCreated
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | The unique ID of the source. | [required]
-**Name** | **String** | Human friendly name of the source. | [required]
-**Type** | **String** | The connection type. | [required]
-**Created** | **System.DateTime** | The date and time the source was created. | [required]
-**Connector** | **String** | The connector type used to connect to the source. | [required]
-**Actor** | [**SourceCreatedActor**](source-created-actor) |  | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | The unique ID of the source. | [required] |
+| **Name** | **String** | Human friendly name of the source. | [required] |
+| **Type** | **String** | The connection type. | [required] |
+| **Created** | **System.DateTime** | The date and time the source was created. | [required] |
+| **Connector** | **String** | The connector type used to connect to the source. | [required] |
+| **Actor** | [**SourceCreatedActor**](source-created-actor) |  | [required] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $SourceCreated = Initialize-V2024SourceCreated  -Id 2c9180866166b5b0016167c32ef31a66 `
  -Name Test source `
@@ -36,10 +37,9 @@ $SourceCreated = Initialize-V2024SourceCreated  -Id 2c9180866166b5b0016167c32ef3
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $SourceCreated | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

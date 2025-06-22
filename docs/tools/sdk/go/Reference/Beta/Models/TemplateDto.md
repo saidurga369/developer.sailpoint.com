@@ -4,7 +4,7 @@ title: TemplateDto
 pagination_label: TemplateDto
 sidebar_label: TemplateDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'TemplateDto', 'BetaTemplateDto'] 
+keywords: ['go', 'Golang', 'sdk', 'TemplateDto', 'BetaTemplateDto']
 slug: /tools/sdk/go/beta/models/template-dto
 tags: ['SDK', 'Software Development Kit', 'TemplateDto', 'BetaTemplateDto']
 ---
@@ -13,24 +13,24 @@ tags: ['SDK', 'Software Development Kit', 'TemplateDto', 'BetaTemplateDto']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Key** | **string** | The key of the template | 
-**Name** | Pointer to **string** | The name of the Task Manager Subscription | [optional] 
-**Medium** | **string** | The message medium. More mediums may be added in the future. | 
-**Locale** | **string** | The locale for the message text, a BCP 47 language tag. | 
-**Subject** | Pointer to **string** | The subject line in the template | [optional] 
-**Header** | Pointer to **NullableString** | The header value is now located within the body field. If included with non-null values, will result in a 400. | [optional] 
-**Body** | Pointer to **string** | The body in the template | [optional] 
-**Footer** | Pointer to **NullableString** | The footer value is now located within the body field. If included with non-null values, will result in a 400. | [optional] 
-**From** | Pointer to **string** | The \"From:\" address in the template | [optional] 
-**ReplyTo** | Pointer to **string** | The \"Reply To\" line in the template | [optional] 
-**Description** | Pointer to **string** | The description in the template | [optional] 
-**Id** | Pointer to **string** | This is auto-generated. | [optional] 
-**Created** | Pointer to **SailPointTime** | The time when this template is created. This is auto-generated. | [optional] 
-**Modified** | Pointer to **SailPointTime** | The time when this template was last modified. This is auto-generated. | [optional] 
-**SlackTemplate** | Pointer to **NullableString** |  | [optional] 
-**TeamsTemplate** | Pointer to **NullableString** |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Key** | **string** | The key of the template |
+| **Name** | Pointer to **string** | The name of the Task Manager Subscription | [optional] |
+| **Medium** | **string** | The message medium. More mediums may be added in the future. |
+| **Locale** | **string** | The locale for the message text, a BCP 47 language tag. |
+| **Subject** | Pointer to **string** | The subject line in the template | [optional] |
+| **Header** | Pointer to **NullableString** | The header value is now located within the body field. If included with non-null values, will result in a 400. | [optional] |
+| **Body** | Pointer to **string** | The body in the template | [optional] |
+| **Footer** | Pointer to **NullableString** | The footer value is now located within the body field. If included with non-null values, will result in a 400. | [optional] |
+| **From** | Pointer to **string** | The \"From:\" address in the template | [optional] |
+| **ReplyTo** | Pointer to **string** | The \"Reply To\" line in the template | [optional] |
+| **Description** | Pointer to **string** | The description in the template | [optional] |
+| **Id** | Pointer to **string** | This is auto-generated. | [optional] |
+| **Created** | Pointer to **SailPointTime** | The time when this template is created. This is auto-generated. | [optional] |
+| **Modified** | Pointer to **SailPointTime** | The time when this template was last modified. This is auto-generated. | [optional] |
+| **SlackTemplate** | Pointer to **NullableString** |  | [optional] |
+| **TeamsTemplate** | Pointer to **NullableString** |  | [optional] |
 
 ## Methods
 
@@ -38,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewTemplateDto(key string, medium string, locale string, ) *TemplateDto`
 
-NewTemplateDto instantiates a new TemplateDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewTemplateDto instantiates a new TemplateDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewTemplateDtoWithDefaults
 
 `func NewTemplateDtoWithDefaults() *TemplateDto`
 
-NewTemplateDtoWithDefaults instantiates a new TemplateDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewTemplateDtoWithDefaults instantiates a new TemplateDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetKey
 
@@ -61,15 +56,13 @@ GetKey returns the Key field if non-nil, zero value otherwise.
 
 `func (o *TemplateDto) GetKeyOk() (*string, bool)`
 
-GetKeyOk returns a tuple with the Key field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetKeyOk returns a tuple with the Key field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetKey
 
 `func (o *TemplateDto) SetKey(v string)`
 
 SetKey sets Key field to given value.
-
 
 ### GetName
 
@@ -81,8 +74,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *TemplateDto) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -106,15 +98,13 @@ GetMedium returns the Medium field if non-nil, zero value otherwise.
 
 `func (o *TemplateDto) GetMediumOk() (*string, bool)`
 
-GetMediumOk returns a tuple with the Medium field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMediumOk returns a tuple with the Medium field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMedium
 
 `func (o *TemplateDto) SetMedium(v string)`
 
 SetMedium sets Medium field to given value.
-
 
 ### GetLocale
 
@@ -126,15 +116,13 @@ GetLocale returns the Locale field if non-nil, zero value otherwise.
 
 `func (o *TemplateDto) GetLocaleOk() (*string, bool)`
 
-GetLocaleOk returns a tuple with the Locale field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLocaleOk returns a tuple with the Locale field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLocale
 
 `func (o *TemplateDto) SetLocale(v string)`
 
 SetLocale sets Locale field to given value.
-
 
 ### GetSubject
 
@@ -146,8 +134,7 @@ GetSubject returns the Subject field if non-nil, zero value otherwise.
 
 `func (o *TemplateDto) GetSubjectOk() (*string, bool)`
 
-GetSubjectOk returns a tuple with the Subject field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSubjectOk returns a tuple with the Subject field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSubject
 
@@ -171,8 +158,7 @@ GetHeader returns the Header field if non-nil, zero value otherwise.
 
 `func (o *TemplateDto) GetHeaderOk() (*string, bool)`
 
-GetHeaderOk returns a tuple with the Header field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetHeaderOk returns a tuple with the Header field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetHeader
 
@@ -190,12 +176,14 @@ HasHeader returns a boolean if a field has been set.
 
 `func (o *TemplateDto) SetHeaderNil(b bool)`
 
- SetHeaderNil sets the value for Header to be an explicit nil
+SetHeaderNil sets the value for Header to be an explicit nil
 
 ### UnsetHeader
+
 `func (o *TemplateDto) UnsetHeader()`
 
 UnsetHeader ensures that no value is present for Header, not even an explicit nil
+
 ### GetBody
 
 `func (o *TemplateDto) GetBody() string`
@@ -206,8 +194,7 @@ GetBody returns the Body field if non-nil, zero value otherwise.
 
 `func (o *TemplateDto) GetBodyOk() (*string, bool)`
 
-GetBodyOk returns a tuple with the Body field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetBodyOk returns a tuple with the Body field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetBody
 
@@ -231,8 +218,7 @@ GetFooter returns the Footer field if non-nil, zero value otherwise.
 
 `func (o *TemplateDto) GetFooterOk() (*string, bool)`
 
-GetFooterOk returns a tuple with the Footer field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFooterOk returns a tuple with the Footer field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFooter
 
@@ -250,12 +236,14 @@ HasFooter returns a boolean if a field has been set.
 
 `func (o *TemplateDto) SetFooterNil(b bool)`
 
- SetFooterNil sets the value for Footer to be an explicit nil
+SetFooterNil sets the value for Footer to be an explicit nil
 
 ### UnsetFooter
+
 `func (o *TemplateDto) UnsetFooter()`
 
 UnsetFooter ensures that no value is present for Footer, not even an explicit nil
+
 ### GetFrom
 
 `func (o *TemplateDto) GetFrom() string`
@@ -266,8 +254,7 @@ GetFrom returns the From field if non-nil, zero value otherwise.
 
 `func (o *TemplateDto) GetFromOk() (*string, bool)`
 
-GetFromOk returns a tuple with the From field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFromOk returns a tuple with the From field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFrom
 
@@ -291,8 +278,7 @@ GetReplyTo returns the ReplyTo field if non-nil, zero value otherwise.
 
 `func (o *TemplateDto) GetReplyToOk() (*string, bool)`
 
-GetReplyToOk returns a tuple with the ReplyTo field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReplyToOk returns a tuple with the ReplyTo field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReplyTo
 
@@ -316,8 +302,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *TemplateDto) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -341,8 +326,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *TemplateDto) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -366,8 +350,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *TemplateDto) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -391,8 +374,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *TemplateDto) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -416,8 +398,7 @@ GetSlackTemplate returns the SlackTemplate field if non-nil, zero value otherwis
 
 `func (o *TemplateDto) GetSlackTemplateOk() (*string, bool)`
 
-GetSlackTemplateOk returns a tuple with the SlackTemplate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSlackTemplateOk returns a tuple with the SlackTemplate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSlackTemplate
 
@@ -435,12 +416,14 @@ HasSlackTemplate returns a boolean if a field has been set.
 
 `func (o *TemplateDto) SetSlackTemplateNil(b bool)`
 
- SetSlackTemplateNil sets the value for SlackTemplate to be an explicit nil
+SetSlackTemplateNil sets the value for SlackTemplate to be an explicit nil
 
 ### UnsetSlackTemplate
+
 `func (o *TemplateDto) UnsetSlackTemplate()`
 
 UnsetSlackTemplate ensures that no value is present for SlackTemplate, not even an explicit nil
+
 ### GetTeamsTemplate
 
 `func (o *TemplateDto) GetTeamsTemplate() string`
@@ -451,8 +434,7 @@ GetTeamsTemplate returns the TeamsTemplate field if non-nil, zero value otherwis
 
 `func (o *TemplateDto) GetTeamsTemplateOk() (*string, bool)`
 
-GetTeamsTemplateOk returns a tuple with the TeamsTemplate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTeamsTemplateOk returns a tuple with the TeamsTemplate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTeamsTemplate
 
@@ -470,10 +452,10 @@ HasTeamsTemplate returns a boolean if a field has been set.
 
 `func (o *TemplateDto) SetTeamsTemplateNil(b bool)`
 
- SetTeamsTemplateNil sets the value for TeamsTemplate to be an explicit nil
+SetTeamsTemplateNil sets the value for TeamsTemplate to be an explicit nil
 
 ### UnsetTeamsTemplate
+
 `func (o *TemplateDto) UnsetTeamsTemplate()`
 
 UnsetTeamsTemplate ensures that no value is present for TeamsTemplate, not even an explicit nil
-

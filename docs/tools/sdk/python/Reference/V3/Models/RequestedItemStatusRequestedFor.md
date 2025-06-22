@@ -4,9 +4,22 @@ title: RequestedItemStatusRequestedFor
 pagination_label: RequestedItemStatusRequestedFor
 sidebar_label: RequestedItemStatusRequestedFor
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RequestedItemStatusRequestedFor', 'RequestedItemStatusRequestedFor'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'RequestedItemStatusRequestedFor',
+    'RequestedItemStatusRequestedFor',
+  ]
 slug: /tools/sdk/python/v3/models/requested-item-status-requested-for
-tags: ['SDK', 'Software Development Kit', 'RequestedItemStatusRequestedFor', 'RequestedItemStatusRequestedFor']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RequestedItemStatusRequestedFor',
+    'RequestedItemStatusRequestedFor',
+  ]
 ---
 
 # RequestedItemStatusRequestedFor
@@ -15,11 +28,12 @@ Identity access was requested for.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] | Type of the object to which this reference applies | [optional] 
-**id** | **str** | ID of the object to which this reference applies | [optional] 
-**name** | **str** | Human-readable display name of the object to which this reference applies | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'IDENTITY' ] | Type of the object to which this reference applies | [optional] |
+| **id** | **str** | ID of the object to which this reference applies | [optional] |
+| **name** | **str** | Human-readable display name of the object to which this reference applies | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='William Wilson'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

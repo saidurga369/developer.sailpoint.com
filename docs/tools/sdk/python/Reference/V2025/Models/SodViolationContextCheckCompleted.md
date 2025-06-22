@@ -4,9 +4,22 @@ title: SodViolationContextCheckCompleted
 pagination_label: SodViolationContextCheckCompleted
 sidebar_label: SodViolationContextCheckCompleted
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SodViolationContextCheckCompleted', 'V2025SodViolationContextCheckCompleted'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'SodViolationContextCheckCompleted',
+    'V2025SodViolationContextCheckCompleted',
+  ]
 slug: /tools/sdk/python/v2025/models/sod-violation-context-check-completed
-tags: ['SDK', 'Software Development Kit', 'SodViolationContextCheckCompleted', 'V2025SodViolationContextCheckCompleted']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SodViolationContextCheckCompleted',
+    'V2025SodViolationContextCheckCompleted',
+  ]
 ---
 
 # SodViolationContextCheckCompleted
@@ -15,11 +28,12 @@ An object referencing a completed SOD violation check
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**state** |  **Enum** [  'SUCCESS',    'ERROR' ] | The status of SOD violation check | [optional] 
-**uuid** | **str** | The id of the Violation check event | [optional] 
-**violation_check_result** | [**SodViolationCheckResult**](sod-violation-check-result) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **state** | **Enum** [ 'SUCCESS', 'ERROR' ] | The status of SOD violation check | [optional] |
+| **uuid** | **str** | The id of the Violation check event | [optional] |
+| **violation_check_result** | [**SodViolationCheckResult**](sod-violation-check-result) |  | [optional] |
+
 }
 
 ## Example
@@ -32,34 +46,34 @@ state='SUCCESS',
 uuid='f73d16e9-a038-46c5-b217-1246e15fdbdd',
 violation_check_result=sailpoint.v2025.models.sod_violation_check_result.SodViolationCheckResult(
                     message = sailpoint.v2025.models.error_message_dto.ErrorMessageDto(
-                        locale = 'en-US', 
-                        locale_origin = 'DEFAULT', 
-                        text = 'The request was syntactically correct but its content is semantically invalid.', ), 
-                    client_metadata = {requestedAppName=test-app, requestedAppId=2c91808f7892918f0178b78da4a305a1}, 
+                        locale = 'en-US',
+                        locale_origin = 'DEFAULT',
+                        text = 'The request was syntactically correct but its content is semantically invalid.', ),
+                    client_metadata = {requestedAppName=test-app, requestedAppId=2c91808f7892918f0178b78da4a305a1},
                     violation_contexts = [
                         sailpoint.v2025.models.sod_violation_context.SodViolationContext(
                             policy = sailpoint.v2025.models.sod_policy_dto.SodPolicyDto(
-                                type = 'SOD_POLICY', 
-                                id = '0f11f2a4-7c94-4bf3-a2bd-742580fe3bde', 
-                                name = 'Business SOD Policy', ), 
+                                type = 'SOD_POLICY',
+                                id = '0f11f2a4-7c94-4bf3-a2bd-742580fe3bde',
+                                name = 'Business SOD Policy', ),
                             conflicting_access_criteria = sailpoint.v2025.models.sod_violation_context_conflicting_access_criteria.SodViolationContext_conflictingAccessCriteria(
                                 left_criteria = sailpoint.v2025.models.sod_violation_context_conflicting_access_criteria_left_criteria.SodViolationContext_conflictingAccessCriteria_leftCriteria(
                                     criteria_list = [
                                         sailpoint.v2025.models.sod_exempt_criteria.SodExemptCriteria(
-                                            existing = True, 
-                                            type = 'IDENTITY', 
-                                            id = '2c918085771e9d3301773b3cb66f6398', 
+                                            existing = True,
+                                            type = 'IDENTITY',
+                                            id = '2c918085771e9d3301773b3cb66f6398',
                                             name = 'My HR Entitlement', )
-                                        ], ), 
+                                        ], ),
                                 right_criteria = sailpoint.v2025.models.sod_violation_context_conflicting_access_criteria_left_criteria.SodViolationContext_conflictingAccessCriteria_leftCriteria(), ), )
-                        ], 
+                        ],
                     violated_policies = [
                         sailpoint.v2025.models.sod_policy_dto.SodPolicyDto(
-                            id = '0f11f2a4-7c94-4bf3-a2bd-742580fe3bde', 
+                            id = '0f11f2a4-7c94-4bf3-a2bd-742580fe3bde',
                             name = 'Business SOD Policy', )
                         ], )
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

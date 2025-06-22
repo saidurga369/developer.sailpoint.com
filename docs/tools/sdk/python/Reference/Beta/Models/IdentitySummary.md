@@ -4,22 +4,23 @@ title: IdentitySummary
 pagination_label: IdentitySummary
 sidebar_label: IdentitySummary
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentitySummary', 'BetaIdentitySummary'] 
+keywords: ['python', 'Python', 'sdk', 'IdentitySummary', 'BetaIdentitySummary']
 slug: /tools/sdk/python/beta/models/identity-summary
-tags: ['SDK', 'Software Development Kit', 'IdentitySummary', 'BetaIdentitySummary']
+tags:
+  ['SDK', 'Software Development Kit', 'IdentitySummary', 'BetaIdentitySummary']
 ---
 
 # IdentitySummary
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | ID of this identity summary | [optional] 
-**name** | **str** | Human-readable display name of identity | [optional] 
-**identity_id** | **str** | ID of the identity that this summary represents | [optional] 
-**completed** | **bool** | Indicates if all access items for this summary have been decided on | [optional] [default to False]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | ID of this identity summary | [optional] |
+| **name** | **str** | Human-readable display name of identity | [optional] |
+| **identity_id** | **str** | ID of the identity that this summary represents | [optional] |
+| **completed** | **bool** | Indicates if all access items for this summary have been decided on | [optional] [default to False] |
+
 }
 
 ## Example
@@ -35,5 +36,5 @@ completed=True
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,7 +4,7 @@ title: OwnerDto
 pagination_label: OwnerDto
 sidebar_label: OwnerDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'OwnerDto', 'OwnerDto'] 
+keywords: ['go', 'Golang', 'sdk', 'OwnerDto', 'OwnerDto']
 slug: /tools/sdk/go/v3/models/owner-dto
 tags: ['SDK', 'Software Development Kit', 'OwnerDto', 'OwnerDto']
 ---
@@ -13,11 +13,11 @@ tags: ['SDK', 'Software Development Kit', 'OwnerDto', 'OwnerDto']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | Owner's DTO type. | [optional] 
-**Id** | Pointer to **string** | Owner's identity ID. | [optional] 
-**Name** | Pointer to **string** | Owner's name. | [optional] 
+| Name     | Type                  | Description          | Notes      |
+| -------- | --------------------- | -------------------- | ---------- |
+| **Type** | Pointer to **string** | Owner's DTO type.    | [optional] |
+| **Id**   | Pointer to **string** | Owner's identity ID. | [optional] |
+| **Name** | Pointer to **string** | Owner's name.        | [optional] |
 
 ## Methods
 
@@ -25,18 +25,13 @@ Name | Type | Description | Notes
 
 `func NewOwnerDto() *OwnerDto`
 
-NewOwnerDto instantiates a new OwnerDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewOwnerDto instantiates a new OwnerDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewOwnerDtoWithDefaults
 
 `func NewOwnerDtoWithDefaults() *OwnerDto`
 
-NewOwnerDtoWithDefaults instantiates a new OwnerDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewOwnerDtoWithDefaults instantiates a new OwnerDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -48,8 +43,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *OwnerDto) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -73,8 +67,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *OwnerDto) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -98,8 +91,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *OwnerDto) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -112,5 +104,3 @@ SetName sets Name field to given value.
 `func (o *OwnerDto) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

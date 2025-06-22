@@ -4,9 +4,22 @@ title: ManualWorkItemDetailsOriginalOwner
 pagination_label: ManualWorkItemDetailsOriginalOwner
 sidebar_label: ManualWorkItemDetailsOriginalOwner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ManualWorkItemDetailsOriginalOwner', 'BetaManualWorkItemDetailsOriginalOwner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ManualWorkItemDetailsOriginalOwner',
+    'BetaManualWorkItemDetailsOriginalOwner',
+  ]
 slug: /tools/sdk/python/beta/models/manual-work-item-details-original-owner
-tags: ['SDK', 'Software Development Kit', 'ManualWorkItemDetailsOriginalOwner', 'BetaManualWorkItemDetailsOriginalOwner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ManualWorkItemDetailsOriginalOwner',
+    'BetaManualWorkItemDetailsOriginalOwner',
+  ]
 ---
 
 # ManualWorkItemDetailsOriginalOwner
@@ -15,11 +28,12 @@ Identity of original work item owner, if the work item has been forwarded.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'GOVERNANCE_GROUP',    'IDENTITY' ] | DTO type of original work item owner's identity. | [optional] 
-**id** | **str** | ID of original work item owner's identity. | [optional] 
-**name** | **str** | Display name of original work item owner. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'GOVERNANCE_GROUP', 'IDENTITY' ] | DTO type of original work item owner's identity. | [optional] |
+| **id** | **str** | ID of original work item owner's identity. | [optional] |
+| **name** | **str** | Display name of original work item owner. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Michael Michaels'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

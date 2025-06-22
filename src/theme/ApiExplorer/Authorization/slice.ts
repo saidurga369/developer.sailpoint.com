@@ -1,13 +1,13 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { createStorage, hashArray } from "@theme/ApiExplorer/storage-utils";
+import {createSlice, PayloadAction} from '@reduxjs/toolkit';
+import {createStorage, hashArray} from '@theme/ApiExplorer/storage-utils';
 import {
   SecurityRequirementObject,
   SecuritySchemeObject,
-} from "docusaurus-plugin-openapi-docs/src/openapi/types";
+} from 'docusaurus-plugin-openapi-docs/src/openapi/types';
 /* eslint-disable import/no-extraneous-dependencies*/
-import { ThemeConfig } from "docusaurus-theme-openapi-docs/src/types";
+import {ThemeConfig} from 'docusaurus-theme-openapi-docs/src/types';
 
-import { getAuthDataKeys } from "./auth-types";
+import {getAuthDataKeys} from './auth-types';
 
 // The global definitions
 // "securitySchemes": {
@@ -49,15 +49,15 @@ export function createAuth({
   securitySchemes?: {
     [key: string]: SecuritySchemeObject;
   };
-  options?: ThemeConfig["api"];
+  options?: ThemeConfig['api'];
 }): AuthState {
-  const storage = createStorage("sessionStorage");
+  const storage = createStorage('sessionStorage');
 
-  let data: AuthState["data"] = {};
-  let options: AuthState["options"] = {};
+  let data: AuthState['data'] = {};
+  let options: AuthState['options'] = {};
 
   for (const option of security ?? []) {
-    const id = Object.keys(option).join(" and ");
+    const id = Object.keys(option).join(' and ');
     for (const [schemeID, scopes] of Object.entries(option)) {
       const scheme = securitySchemes?.[schemeID];
       if (scheme) {
@@ -72,7 +72,7 @@ export function createAuth({
 
           let persisted = undefined;
           try {
-            persisted = JSON.parse(storage.getItem(schemeID) ?? "")[key];
+            persisted = JSON.parse(storage.getItem(schemeID) ?? '')[key];
           } catch {}
 
           data[schemeID][key] = persisted;
@@ -118,14 +118,14 @@ export interface AuthState {
 const initialState: AuthState = {} as any;
 
 export const slice = createSlice({
-  name: "auth",
+  name: 'auth',
   initialState,
   reducers: {
     setAuthData: (
       state,
-      action: PayloadAction<{ scheme: string; key: string; value?: string }>
+      action: PayloadAction<{scheme: string; key: string; value?: string}>,
     ) => {
-      const { scheme, key, value } = action.payload;
+      const {scheme, key, value} = action.payload;
       state.data[scheme][key] = value;
     },
     setSelectedAuth: (state, action: PayloadAction<string>) => {
@@ -134,6 +134,6 @@ export const slice = createSlice({
   },
 });
 
-export const { setAuthData, setSelectedAuth } = slice.actions;
+export const {setAuthData, setSelectedAuth} = slice.actions;
 
 export default slice.reducer;

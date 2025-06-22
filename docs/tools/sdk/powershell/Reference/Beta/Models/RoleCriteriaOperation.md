@@ -4,31 +4,40 @@ title: RoleCriteriaOperation
 pagination_label: RoleCriteriaOperation
 sidebar_label: RoleCriteriaOperation
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'RoleCriteriaOperation', 'BetaRoleCriteriaOperation'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'RoleCriteriaOperation',
+    'BetaRoleCriteriaOperation',
+  ]
 slug: /tools/sdk/powershell/beta/models/role-criteria-operation
-tags: ['SDK', 'Software Development Kit', 'RoleCriteriaOperation', 'BetaRoleCriteriaOperation']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleCriteriaOperation',
+    'BetaRoleCriteriaOperation',
+  ]
 ---
-
 
 # RoleCriteriaOperation
 
 ## Enum
 
+- `EQUALS` (value: `"EQUALS"`)
 
-* `EQUALS` (value: `"EQUALS"`)
+- `NOT_EQUALS` (value: `"NOT_EQUALS"`)
 
-* `NOT_EQUALS` (value: `"NOT_EQUALS"`)
+- `CONTAINS` (value: `"CONTAINS"`)
 
-* `CONTAINS` (value: `"CONTAINS"`)
+- `STARTS_WITH` (value: `"STARTS_WITH"`)
 
-* `STARTS_WITH` (value: `"STARTS_WITH"`)
+- `ENDS_WITH` (value: `"ENDS_WITH"`)
 
-* `ENDS_WITH` (value: `"ENDS_WITH"`)
+- `AND` (value: `"AND"`)
 
-* `AND` (value: `"AND"`)
+- `OR` (value: `"OR"`)
 
-* `OR` (value: `"OR"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

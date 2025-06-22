@@ -1,21 +1,21 @@
-import React from "react";
+import React from 'react';
 
-import { ErrorMessage } from "@hookform/error-message";
-import FormSelect from "@theme/ApiExplorer/FormSelect";
-import { Param, setParam } from "@theme/ApiExplorer/ParamOptions/slice";
-import { useTypedDispatch } from "@theme/ApiItem/hooks";
-import { Controller, useFormContext } from "react-hook-form";
+import {ErrorMessage} from '@hookform/error-message';
+import FormSelect from '@theme/ApiExplorer/FormSelect';
+import {Param, setParam} from '@theme/ApiExplorer/ParamOptions/slice';
+import {useTypedDispatch} from '@theme/ApiItem/hooks';
+import {Controller, useFormContext} from 'react-hook-form';
 
 export interface ParamProps {
   param: Param;
 }
 
-export default function ParamBooleanFormItem({ param }: ParamProps) {
+export default function ParamBooleanFormItem({param}: ParamProps) {
   const dispatch = useTypedDispatch();
 
   const {
     control,
-    formState: { errors },
+    formState: {errors},
   } = useFormContext();
 
   const showErrorMessage = errors?.paramBoolean;
@@ -24,19 +24,19 @@ export default function ParamBooleanFormItem({ param }: ParamProps) {
     <>
       <Controller
         control={control}
-        rules={{ required: param.required ? "This field is required" : false }}
+        rules={{required: param.required ? 'This field is required' : false}}
         name="paramBoolean"
-        render={({ field: { onChange, name } }) => (
+        render={({field: {onChange, name}}) => (
           <FormSelect
             name={name}
-            options={["---", "true", "false"]}
+            options={['---', 'true', 'false']}
             onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
               const val = e.target.value;
               dispatch(
                 setParam({
                   ...param,
-                  value: val === "---" ? undefined : val,
-                })
+                  value: val === '---' ? undefined : val,
+                }),
               );
               onChange(val);
             }}
@@ -47,7 +47,7 @@ export default function ParamBooleanFormItem({ param }: ParamProps) {
         <ErrorMessage
           errors={errors}
           name="paramBoolean"
-          render={({ message }) => (
+          render={({message}) => (
             <div className="openapi-explorer__input-error">{message}</div>
           )}
         />

@@ -4,19 +4,26 @@ title: ImportAccountsRequest
 pagination_label: ImportAccountsRequest
 sidebar_label: ImportAccountsRequest
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ImportAccountsRequest', 'V2025ImportAccountsRequest'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'ImportAccountsRequest', 'V2025ImportAccountsRequest']
 slug: /tools/sdk/go/v2025/models/import-accounts-request
-tags: ['SDK', 'Software Development Kit', 'ImportAccountsRequest', 'V2025ImportAccountsRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ImportAccountsRequest',
+    'V2025ImportAccountsRequest',
+  ]
 ---
 
 # ImportAccountsRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**File** | Pointer to ***os.File** | The CSV file containing the source accounts to aggregate. | [optional] 
-**DisableOptimization** | Pointer to **string** | Use this flag to reprocess every account whether or not the data has changed. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **File** | Pointer to **\*os.File** | The CSV file containing the source accounts to aggregate. | [optional] |
+| **DisableOptimization** | Pointer to **string** | Use this flag to reprocess every account whether or not the data has changed. | [optional] |
 
 ## Methods
 
@@ -24,18 +31,13 @@ Name | Type | Description | Notes
 
 `func NewImportAccountsRequest() *ImportAccountsRequest`
 
-NewImportAccountsRequest instantiates a new ImportAccountsRequest object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewImportAccountsRequest instantiates a new ImportAccountsRequest object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewImportAccountsRequestWithDefaults
 
 `func NewImportAccountsRequestWithDefaults() *ImportAccountsRequest`
 
-NewImportAccountsRequestWithDefaults instantiates a new ImportAccountsRequest object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewImportAccountsRequestWithDefaults instantiates a new ImportAccountsRequest object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetFile
 
@@ -47,8 +49,7 @@ GetFile returns the File field if non-nil, zero value otherwise.
 
 `func (o *ImportAccountsRequest) GetFileOk() (**os.File, bool)`
 
-GetFileOk returns a tuple with the File field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFileOk returns a tuple with the File field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFile
 
@@ -72,8 +73,7 @@ GetDisableOptimization returns the DisableOptimization field if non-nil, zero va
 
 `func (o *ImportAccountsRequest) GetDisableOptimizationOk() (*string, bool)`
 
-GetDisableOptimizationOk returns a tuple with the DisableOptimization field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisableOptimizationOk returns a tuple with the DisableOptimization field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisableOptimization
 
@@ -86,5 +86,3 @@ SetDisableOptimization sets DisableOptimization field to given value.
 `func (o *ImportAccountsRequest) HasDisableOptimization() bool`
 
 HasDisableOptimization returns a boolean if a field has been set.
-
-

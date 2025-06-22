@@ -4,29 +4,38 @@ title: ProvisioningState
 pagination_label: ProvisioningState
 sidebar_label: ProvisioningState
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'ProvisioningState', 'BetaProvisioningState'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'ProvisioningState',
+    'BetaProvisioningState',
+  ]
 slug: /tools/sdk/powershell/beta/models/provisioning-state
-tags: ['SDK', 'Software Development Kit', 'ProvisioningState', 'BetaProvisioningState']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ProvisioningState',
+    'BetaProvisioningState',
+  ]
 ---
-
 
 # ProvisioningState
 
 ## Enum
 
+- `PENDING` (value: `"PENDING"`)
 
-* `PENDING` (value: `"PENDING"`)
+- `FINISHED` (value: `"FINISHED"`)
 
-* `FINISHED` (value: `"FINISHED"`)
+- `UNVERIFIABLE` (value: `"UNVERIFIABLE"`)
 
-* `UNVERIFIABLE` (value: `"UNVERIFIABLE"`)
+- `COMMITED` (value: `"COMMITED"`)
 
-* `COMMITED` (value: `"COMMITED"`)
+- `FAILED` (value: `"FAILED"`)
 
-* `FAILED` (value: `"FAILED"`)
+- `RETRY` (value: `"RETRY"`)
 
-* `RETRY` (value: `"RETRY"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

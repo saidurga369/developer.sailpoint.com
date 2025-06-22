@@ -4,24 +4,25 @@ title: AccountRequest
 pagination_label: AccountRequest
 sidebar_label: AccountRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccountRequest', 'V2024AccountRequest'] 
+keywords: ['python', 'Python', 'sdk', 'AccountRequest', 'V2024AccountRequest']
 slug: /tools/sdk/python/v2024/models/account-request
-tags: ['SDK', 'Software Development Kit', 'AccountRequest', 'V2024AccountRequest']
+tags:
+  ['SDK', 'Software Development Kit', 'AccountRequest', 'V2024AccountRequest']
 ---
 
 # AccountRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**account_id** | **str** | Unique ID of the account | [optional] 
-**attribute_requests** | [**[]AttributeRequest**](attribute-request) |  | [optional] 
-**op** | **str** | The operation that was performed | [optional] 
-**provisioning_target** | [**AccountSource**](account-source) |  | [optional] 
-**result** | [**AccountRequestResult**](account-request-result) |  | [optional] 
-**source** | [**AccountSource**](account-source) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **account_id** | **str** | Unique ID of the account | [optional] |
+| **attribute_requests** | [**[]AttributeRequest**](attribute-request) |  | [optional] |
+| **op** | **str** | The operation that was performed | [optional] |
+| **provisioning_target** | [**AccountSource**](account-source) |  | [optional] |
+| **result** | [**AccountRequestResult**](account-request-result) |  | [optional] |
+| **source** | [**AccountSource**](account-source) |  | [optional] |
+
 }
 
 ## Example
@@ -33,8 +34,8 @@ account_request = AccountRequest(
 account_id='John.Doe',
 attribute_requests=[
                     sailpoint.v2024.models.attribute_request.AttributeRequest(
-                        name = 'groups', 
-                        op = 'Add', 
+                        name = 'groups',
+                        op = 'Add',
                         value = null, )
                     ],
 op='Modify',
@@ -51,12 +52,12 @@ result=sailpoint.v2024.models.account_request_result.AccountRequest_result(
     "message": "Unrecognized key(s) in object: 'groups'"
   }
 ] (requestId: 5e9d6df5-9b1b-47d9-9bf1-dc3a2893299e)'
-                        ], 
-                    status = 'failed', 
+                        ],
+                    status = 'failed',
                     ticket_id = '', ),
 source=
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

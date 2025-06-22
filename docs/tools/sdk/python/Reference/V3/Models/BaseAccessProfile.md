@@ -4,20 +4,21 @@ title: BaseAccessProfile
 pagination_label: BaseAccessProfile
 sidebar_label: BaseAccessProfile
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'BaseAccessProfile', 'BaseAccessProfile'] 
+keywords: ['python', 'Python', 'sdk', 'BaseAccessProfile', 'BaseAccessProfile']
 slug: /tools/sdk/python/v3/models/base-access-profile
-tags: ['SDK', 'Software Development Kit', 'BaseAccessProfile', 'BaseAccessProfile']
+tags:
+  ['SDK', 'Software Development Kit', 'BaseAccessProfile', 'BaseAccessProfile']
 ---
 
 # BaseAccessProfile
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Access profile's unique ID. | [optional] 
-**name** | **str** | Access profile's display name. | [optional] 
+| Name     | Type    | Description                    | Notes      |
+| -------- | ------- | ------------------------------ | ---------- |
+| **id**   | **str** | Access profile's unique ID.    | [optional] |
+| **name** | **str** | Access profile's display name. | [optional] |
+
 }
 
 ## Example
@@ -31,5 +32,5 @@ name='Admin Access'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

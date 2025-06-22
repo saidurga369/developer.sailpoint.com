@@ -4,25 +4,23 @@ title: ManagedClientType
 pagination_label: ManagedClientType
 sidebar_label: ManagedClientType
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'ManagedClientType', 'ManagedClientType'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'ManagedClientType', 'ManagedClientType']
 slug: /tools/sdk/powershell/v3/models/managed-client-type
-tags: ['SDK', 'Software Development Kit', 'ManagedClientType', 'ManagedClientType']
+tags:
+  ['SDK', 'Software Development Kit', 'ManagedClientType', 'ManagedClientType']
 ---
-
 
 # ManagedClientType
 
 ## Enum
 
+- `CCG` (value: `"CCG"`)
 
-* `CCG` (value: `"CCG"`)
+- `VA` (value: `"VA"`)
 
-* `VA` (value: `"VA"`)
+- `INTERNAL` (value: `"INTERNAL"`)
 
-* `INTERNAL` (value: `"INTERNAL"`)
+- `IIQ_HARVESTER` (value: `"IIQ_HARVESTER"`)
 
-* `IIQ_HARVESTER` (value: `"IIQ_HARVESTER"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

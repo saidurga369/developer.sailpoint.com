@@ -4,23 +4,36 @@ title: FormDefinitionDynamicSchemaRequest
 pagination_label: FormDefinitionDynamicSchemaRequest
 sidebar_label: FormDefinitionDynamicSchemaRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'FormDefinitionDynamicSchemaRequest', 'BetaFormDefinitionDynamicSchemaRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'FormDefinitionDynamicSchemaRequest',
+    'BetaFormDefinitionDynamicSchemaRequest',
+  ]
 slug: /tools/sdk/python/beta/models/form-definition-dynamic-schema-request
-tags: ['SDK', 'Software Development Kit', 'FormDefinitionDynamicSchemaRequest', 'BetaFormDefinitionDynamicSchemaRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'FormDefinitionDynamicSchemaRequest',
+    'BetaFormDefinitionDynamicSchemaRequest',
+  ]
 ---
 
 # FormDefinitionDynamicSchemaRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**attributes** | [**FormDefinitionDynamicSchemaRequestAttributes**](form-definition-dynamic-schema-request-attributes) |  | [optional] 
-**description** | **str** | Description is the form definition dynamic schema description text | [optional] 
-**id** | **str** | ID is a unique identifier | [optional] 
-**type** | **str** | Type is the form definition dynamic schema type | [optional] 
-**version_number** | **int** | VersionNumber is the form definition dynamic schema version number | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **attributes** | [**FormDefinitionDynamicSchemaRequestAttributes**](form-definition-dynamic-schema-request-attributes) |  | [optional] |
+| **description** | **str** | Description is the form definition dynamic schema description text | [optional] |
+| **id** | **str** | ID is a unique identifier | [optional] |
+| **type** | **str** | Type is the form definition dynamic schema type | [optional] |
+| **version_number** | **int** | VersionNumber is the form definition dynamic schema version number | [optional] |
+
 }
 
 ## Example
@@ -38,5 +51,5 @@ version_number=1
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

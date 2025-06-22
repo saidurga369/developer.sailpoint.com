@@ -4,25 +4,32 @@ title: TaskResultSimplified
 pagination_label: TaskResultSimplified
 sidebar_label: TaskResultSimplified
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'TaskResultSimplified', 'TaskResultSimplified'] 
+keywords:
+  ['python', 'Python', 'sdk', 'TaskResultSimplified', 'TaskResultSimplified']
 slug: /tools/sdk/python/v3/models/task-result-simplified
-tags: ['SDK', 'Software Development Kit', 'TaskResultSimplified', 'TaskResultSimplified']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'TaskResultSimplified',
+    'TaskResultSimplified',
+  ]
 ---
 
 # TaskResultSimplified
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Task identifier | [optional] 
-**name** | **str** | Task name | [optional] 
-**description** | **str** | Task description | [optional] 
-**launcher** | **str** | User or process who launched the task | [optional] 
-**completed** | **datetime** | Date time of completion | [optional] 
-**launched** | **datetime** | Date time when the task was launched | [optional] 
-**completion_status** |  **Enum** [  'Success',    'Warning',    'Error',    'Terminated',    'TempError' ] | Task result status | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | Task identifier | [optional] |
+| **name** | **str** | Task name | [optional] |
+| **description** | **str** | Task description | [optional] |
+| **launcher** | **str** | User or process who launched the task | [optional] |
+| **completed** | **datetime** | Date time of completion | [optional] |
+| **launched** | **datetime** | Date time when the task was launched | [optional] |
+| **completion_status** | **Enum** [ 'Success', 'Warning', 'Error', 'Terminated', 'TempError' ] | Task result status | [optional] |
+
 }
 
 ## Example
@@ -41,5 +48,5 @@ completion_status='Success'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

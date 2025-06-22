@@ -4,7 +4,7 @@ title: TaskResultDto
 pagination_label: TaskResultDto
 sidebar_label: TaskResultDto
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'TaskResultDto', 'BetaTaskResultDto'] 
+keywords: ['python', 'Python', 'sdk', 'TaskResultDto', 'BetaTaskResultDto']
 slug: /tools/sdk/python/beta/models/task-result-dto
 tags: ['SDK', 'Software Development Kit', 'TaskResultDto', 'BetaTaskResultDto']
 ---
@@ -15,11 +15,12 @@ Task result.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'TASK_RESULT' ] | Task result DTO type. | [optional] 
-**id** | **str** | Task result ID. | [optional] 
-**name** | **str** | Task result display name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'TASK_RESULT' ] | Task result DTO type. | [optional] |
+| **id** | **str** | Task result ID. | [optional] |
+| **name** | **str** | Task result display name. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +35,5 @@ name=''
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

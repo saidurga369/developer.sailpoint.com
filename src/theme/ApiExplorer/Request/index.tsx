@@ -1,33 +1,33 @@
 // @ts-nocheck
-import React, { useState } from "react";
+import React, {useState} from 'react';
 
-import { useDoc } from "@docusaurus/plugin-content-docs/client";
-import Accept from "@theme/ApiExplorer/Accept";
-import Authorization from "@theme/ApiExplorer/Authorization";
-import Body from "@theme/ApiExplorer/Body";
-import buildPostmanRequest from "@theme/ApiExplorer/buildPostmanRequest";
-import ContentType from "@theme/ApiExplorer/ContentType";
-import ParamOptions from "@theme/ApiExplorer/ParamOptions";
+import {useDoc} from '@docusaurus/plugin-content-docs/client';
+import Accept from '@theme/ApiExplorer/Accept';
+import Authorization from '@theme/ApiExplorer/Authorization';
+import Body from '@theme/ApiExplorer/Body';
+import buildPostmanRequest from '@theme/ApiExplorer/buildPostmanRequest';
+import ContentType from '@theme/ApiExplorer/ContentType';
+import ParamOptions from '@theme/ApiExplorer/ParamOptions';
 import {
   setResponse,
   setCode,
   clearCode,
   setHeaders,
   clearHeaders,
-} from "@theme/ApiExplorer/Response/slice";
-import Server from "@theme/ApiExplorer/Server";
-import { useTypedDispatch, useTypedSelector } from "@theme/ApiItem/hooks";
-import { ParameterObject } from "docusaurus-plugin-openapi-docs/src/openapi/types";
-import { ApiItem } from "docusaurus-plugin-openapi-docs/src/types";
-import sdk from "postman-collection";
-import { FormProvider, useForm } from "react-hook-form";
+} from '@theme/ApiExplorer/Response/slice';
+import Server from '@theme/ApiExplorer/Server';
+import {useTypedDispatch, useTypedSelector} from '@theme/ApiItem/hooks';
+import {ParameterObject} from 'docusaurus-plugin-openapi-docs/src/openapi/types';
+import {ApiItem} from 'docusaurus-plugin-openapi-docs/src/types';
+import sdk from 'postman-collection';
+import {FormProvider, useForm} from 'react-hook-form';
 
-import makeRequest from "./makeRequest";
+import makeRequest from './makeRequest';
 
-function Request({ item }: { item: ApiItem }) {
+function Request({item}: {item: ApiItem}) {
   const postman = new sdk.Request(item.postman);
   const metadata = useDoc();
-  const { proxy, hide_send_button: hideSendButton } = metadata.frontMatter;
+  const {proxy, hide_send_button: hideSendButton} = metadata.frontMatter;
 
   const pathParams = useTypedSelector((state: any) => state.params.path);
   const queryParams = useTypedSelector((state: any) => state.params.query);
@@ -79,17 +79,17 @@ function Request({ item }: { item: ApiItem }) {
   };
 
   item.parameters?.forEach(
-    (param: { in: "path" | "query" | "header" | "cookie" }) => {
+    (param: {in: 'path' | 'query' | 'header' | 'cookie'}) => {
       const paramType = param.in;
       const paramsArray: ParameterObject[] = paramsObject[paramType];
       paramsArray.push(param as ParameterObject);
-    }
+    },
   );
 
-  const methods = useForm({ shouldFocusError: false });
+  const methods = useForm({shouldFocusError: false});
 
   const onSubmit = async (data) => {
-    dispatch(setResponse("Fetching..."));
+    dispatch(setResponse('Fetching...'));
     try {
       await delay(1200);
       const res = await makeRequest(postmanRequest, proxy, body);
@@ -98,7 +98,7 @@ function Request({ item }: { item: ApiItem }) {
       res.headers && dispatch(setHeaders(Object.fromEntries(res.headers)));
     } catch (e: any) {
       console.log(e);
-      dispatch(setResponse("Connection failed"));
+      dispatch(setResponse('Connection failed'));
       dispatch(clearCode());
       dispatch(clearHeaders());
     }
@@ -145,39 +145,34 @@ function Request({ item }: { item: ApiItem }) {
     <FormProvider {...methods}>
       <form
         className="openapi-explorer__request-form"
-        onSubmit={methods.handleSubmit(onSubmit)}
-      >
+        onSubmit={methods.handleSubmit(onSubmit)}>
         <div className="openapi-explorer__request-header-container">
           <span className="openapi-explorer__request-title">Request </span>
           {allDetailsExpanded ? (
             <span
               className="openapi-explorer__expand-details-btn"
-              onClick={collapseAllDetails}
-            >
+              onClick={collapseAllDetails}>
               Collapse all
             </span>
           ) : (
             <span
               className="openapi-explorer__expand-details-btn"
-              onClick={expandAllDetails}
-            >
+              onClick={expandAllDetails}>
               Expand all
             </span>
           )}
         </div>
         <div className="openapi-explorer__details-outer-container">
-          {showServerOptions && item.method !== "event" && (
+          {showServerOptions && item.method !== 'event' && (
             <details
               open={expandServer}
-              className="openapi-explorer__details-container"
-            >
+              className="openapi-explorer__details-container">
               <summary
                 className="openapi-explorer__details-summary"
                 onClick={(e) => {
                   e.preventDefault();
                   setExpandServer(!expandServer);
-                }}
-              >
+                }}>
                 Base URL
               </summary>
               <Server />
@@ -186,15 +181,13 @@ function Request({ item }: { item: ApiItem }) {
           {showAuth && (
             <details
               open={expandAuth}
-              className="openapi-explorer__details-container"
-            >
+              className="openapi-explorer__details-container">
               <summary
                 className="openapi-explorer__details-summary"
                 onClick={(e) => {
                   e.preventDefault();
                   setExpandAuth(!expandAuth);
-                }}
-              >
+                }}>
                 Auth
               </summary>
               <Authorization />
@@ -205,15 +198,13 @@ function Request({ item }: { item: ApiItem }) {
               open={
                 expandParams || Object.keys(methods.formState.errors).length
               }
-              className="openapi-explorer__details-container"
-            >
+              className="openapi-explorer__details-container">
               <summary
                 className="openapi-explorer__details-summary"
                 onClick={(e) => {
                   e.preventDefault();
                   setExpandParams(!expandParams);
-                }}
-              >
+                }}>
                 Parameters
               </summary>
               <ParamOptions />
@@ -222,15 +213,13 @@ function Request({ item }: { item: ApiItem }) {
           {showRequestBody && (
             <details
               open={expandBody}
-              className="openapi-explorer__details-container"
-            >
+              className="openapi-explorer__details-container">
               <summary
                 className="openapi-explorer__details-summary"
                 onClick={(e) => {
                   e.preventDefault();
                   setExpandBody(!expandBody);
-                }}
-              >
+                }}>
                 Body
                 {requestBodyRequired && (
                   <span className="openapi-schema__required">
@@ -251,21 +240,19 @@ function Request({ item }: { item: ApiItem }) {
           {showAcceptOptions && (
             <details
               open={expandAccept}
-              className="openapi-explorer__details-container"
-            >
+              className="openapi-explorer__details-container">
               <summary
                 className="openapi-explorer__details-summary"
                 onClick={(e) => {
                   e.preventDefault();
                   setExpandAccept(!expandAccept);
-                }}
-              >
+                }}>
                 Accept
               </summary>
               <Accept />
             </details>
           )}
-          {showRequestButton && item.method !== "event" && (
+          {showRequestButton && item.method !== 'event' && (
             <button className="openapi-explorer__request-btn" type="submit">
               Send API Request
             </button>

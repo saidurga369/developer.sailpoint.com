@@ -4,9 +4,22 @@ title: ProvisioningCompletedRecipient
 pagination_label: ProvisioningCompletedRecipient
 sidebar_label: ProvisioningCompletedRecipient
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ProvisioningCompletedRecipient', 'BetaProvisioningCompletedRecipient'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ProvisioningCompletedRecipient',
+    'BetaProvisioningCompletedRecipient',
+  ]
 slug: /tools/sdk/python/beta/models/provisioning-completed-recipient
-tags: ['SDK', 'Software Development Kit', 'ProvisioningCompletedRecipient', 'BetaProvisioningCompletedRecipient']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ProvisioningCompletedRecipient',
+    'BetaProvisioningCompletedRecipient',
+  ]
 ---
 
 # ProvisioningCompletedRecipient
@@ -15,11 +28,12 @@ Provisioning recpient.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] | Provisioning recipient DTO type. | [required]
-**id** | **str** | Provisioning recipient's identity ID. | [required]
-**name** | **str** | Provisioning recipient's name. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'IDENTITY' ] | Provisioning recipient DTO type. | [required] |
+| **id** | **str** | Provisioning recipient's identity ID. | [required] |
+| **name** | **str** | Provisioning recipient's name. | [required] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Michael Michaels'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

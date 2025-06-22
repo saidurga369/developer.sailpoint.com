@@ -4,29 +4,42 @@ title: ApprovalItemDetails
 pagination_label: ApprovalItemDetails
 sidebar_label: ApprovalItemDetails
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'ApprovalItemDetails', 'ApprovalItemDetails'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'ApprovalItemDetails',
+    'ApprovalItemDetails',
+  ]
 slug: /tools/sdk/powershell/v3/models/approval-item-details
-tags: ['SDK', 'Software Development Kit', 'ApprovalItemDetails', 'ApprovalItemDetails']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ApprovalItemDetails',
+    'ApprovalItemDetails',
+  ]
 ---
-
 
 # ApprovalItemDetails
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | The approval item's ID | [optional] 
-**Account** | **String** | The account referenced by the approval item | [optional] 
-**Application** | **String** | The name of the application/source | [optional] 
-**Name** | **String** | The attribute's name | [optional] 
-**Operation** | **String** | The attribute's operation | [optional] 
-**Value** | **String** | The attribute's value | [optional] 
-**State** | [**WorkItemState**](work-item-state) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | The approval item's ID | [optional] |
+| **Account** | **String** | The account referenced by the approval item | [optional] |
+| **Application** | **String** | The name of the application/source | [optional] |
+| **Name** | **String** | The attribute's name | [optional] |
+| **Operation** | **String** | The attribute's operation | [optional] |
+| **Value** | **String** | The attribute's value | [optional] |
+| **State** | [**WorkItemState**](work-item-state) |  | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $ApprovalItemDetails = Initialize-ApprovalItemDetails  -Id 2c9180835d2e5168015d32f890ca1581 `
  -Account john.smith `
@@ -38,10 +51,9 @@ $ApprovalItemDetails = Initialize-ApprovalItemDetails  -Id 2c9180835d2e5168015d3
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $ApprovalItemDetails | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

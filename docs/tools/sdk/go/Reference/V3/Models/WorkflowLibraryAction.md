@@ -4,29 +4,36 @@ title: WorkflowLibraryAction
 pagination_label: WorkflowLibraryAction
 sidebar_label: WorkflowLibraryAction
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'WorkflowLibraryAction', 'WorkflowLibraryAction'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'WorkflowLibraryAction', 'WorkflowLibraryAction']
 slug: /tools/sdk/go/v3/models/workflow-library-action
-tags: ['SDK', 'Software Development Kit', 'WorkflowLibraryAction', 'WorkflowLibraryAction']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'WorkflowLibraryAction',
+    'WorkflowLibraryAction',
+  ]
 ---
 
 # WorkflowLibraryAction
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Action ID. This is a static namespaced ID for the action | [optional] 
-**Name** | Pointer to **string** | Action Name | [optional] 
-**Type** | Pointer to **string** | Action type | [optional] 
-**Description** | Pointer to **string** | Action Description | [optional] 
-**FormFields** | Pointer to [**[]WorkflowLibraryFormFields**](workflow-library-form-fields) | One or more inputs that the action accepts | [optional] 
-**ExampleOutput** | Pointer to [**WorkflowLibraryActionExampleOutput**](workflow-library-action-example-output) |  | [optional] 
-**Deprecated** | Pointer to **bool** |  | [optional] 
-**DeprecatedBy** | Pointer to **SailPointTime** |  | [optional] 
-**VersionNumber** | Pointer to **int32** | Version number | [optional] 
-**IsSimulationEnabled** | Pointer to **bool** |  | [optional] 
-**IsDynamicSchema** | Pointer to **bool** | Determines whether the dynamic output schema is returned in place of the action's output schema. The dynamic schema lists non-static properties, like properties of a workflow form where each form has different fields. These will be provided dynamically based on available form fields. | [optional] [default to false]
-**OutputSchema** | Pointer to **map[string]interface{}** | Defines the output schema, if any, that this action produces. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Action ID. This is a static namespaced ID for the action | [optional] |
+| **Name** | Pointer to **string** | Action Name | [optional] |
+| **Type** | Pointer to **string** | Action type | [optional] |
+| **Description** | Pointer to **string** | Action Description | [optional] |
+| **FormFields** | Pointer to [**[]WorkflowLibraryFormFields**](workflow-library-form-fields) | One or more inputs that the action accepts | [optional] |
+| **ExampleOutput** | Pointer to [**WorkflowLibraryActionExampleOutput**](workflow-library-action-example-output) |  | [optional] |
+| **Deprecated** | Pointer to **bool** |  | [optional] |
+| **DeprecatedBy** | Pointer to **SailPointTime** |  | [optional] |
+| **VersionNumber** | Pointer to **int32** | Version number | [optional] |
+| **IsSimulationEnabled** | Pointer to **bool** |  | [optional] |
+| **IsDynamicSchema** | Pointer to **bool** | Determines whether the dynamic output schema is returned in place of the action's output schema. The dynamic schema lists non-static properties, like properties of a workflow form where each form has different fields. These will be provided dynamically based on available form fields. | [optional] [default to false] |
+| **OutputSchema** | Pointer to **map[string]interface{}** | Defines the output schema, if any, that this action produces. | [optional] |
 
 ## Methods
 
@@ -34,18 +41,13 @@ Name | Type | Description | Notes
 
 `func NewWorkflowLibraryAction() *WorkflowLibraryAction`
 
-NewWorkflowLibraryAction instantiates a new WorkflowLibraryAction object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewWorkflowLibraryAction instantiates a new WorkflowLibraryAction object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewWorkflowLibraryActionWithDefaults
 
 `func NewWorkflowLibraryActionWithDefaults() *WorkflowLibraryAction`
 
-NewWorkflowLibraryActionWithDefaults instantiates a new WorkflowLibraryAction object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewWorkflowLibraryActionWithDefaults instantiates a new WorkflowLibraryAction object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -57,8 +59,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *WorkflowLibraryAction) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -82,8 +83,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *WorkflowLibraryAction) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -107,8 +107,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *WorkflowLibraryAction) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -132,8 +131,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *WorkflowLibraryAction) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -157,8 +155,7 @@ GetFormFields returns the FormFields field if non-nil, zero value otherwise.
 
 `func (o *WorkflowLibraryAction) GetFormFieldsOk() (*[]WorkflowLibraryFormFields, bool)`
 
-GetFormFieldsOk returns a tuple with the FormFields field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFormFieldsOk returns a tuple with the FormFields field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFormFields
 
@@ -176,12 +173,14 @@ HasFormFields returns a boolean if a field has been set.
 
 `func (o *WorkflowLibraryAction) SetFormFieldsNil(b bool)`
 
- SetFormFieldsNil sets the value for FormFields to be an explicit nil
+SetFormFieldsNil sets the value for FormFields to be an explicit nil
 
 ### UnsetFormFields
+
 `func (o *WorkflowLibraryAction) UnsetFormFields()`
 
 UnsetFormFields ensures that no value is present for FormFields, not even an explicit nil
+
 ### GetExampleOutput
 
 `func (o *WorkflowLibraryAction) GetExampleOutput() WorkflowLibraryActionExampleOutput`
@@ -192,8 +191,7 @@ GetExampleOutput returns the ExampleOutput field if non-nil, zero value otherwis
 
 `func (o *WorkflowLibraryAction) GetExampleOutputOk() (*WorkflowLibraryActionExampleOutput, bool)`
 
-GetExampleOutputOk returns a tuple with the ExampleOutput field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetExampleOutputOk returns a tuple with the ExampleOutput field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetExampleOutput
 
@@ -217,8 +215,7 @@ GetDeprecated returns the Deprecated field if non-nil, zero value otherwise.
 
 `func (o *WorkflowLibraryAction) GetDeprecatedOk() (*bool, bool)`
 
-GetDeprecatedOk returns a tuple with the Deprecated field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDeprecatedOk returns a tuple with the Deprecated field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDeprecated
 
@@ -242,8 +239,7 @@ GetDeprecatedBy returns the DeprecatedBy field if non-nil, zero value otherwise.
 
 `func (o *WorkflowLibraryAction) GetDeprecatedByOk() (*SailPointTime, bool)`
 
-GetDeprecatedByOk returns a tuple with the DeprecatedBy field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDeprecatedByOk returns a tuple with the DeprecatedBy field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDeprecatedBy
 
@@ -267,8 +263,7 @@ GetVersionNumber returns the VersionNumber field if non-nil, zero value otherwis
 
 `func (o *WorkflowLibraryAction) GetVersionNumberOk() (*int32, bool)`
 
-GetVersionNumberOk returns a tuple with the VersionNumber field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetVersionNumberOk returns a tuple with the VersionNumber field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetVersionNumber
 
@@ -292,8 +287,7 @@ GetIsSimulationEnabled returns the IsSimulationEnabled field if non-nil, zero va
 
 `func (o *WorkflowLibraryAction) GetIsSimulationEnabledOk() (*bool, bool)`
 
-GetIsSimulationEnabledOk returns a tuple with the IsSimulationEnabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIsSimulationEnabledOk returns a tuple with the IsSimulationEnabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIsSimulationEnabled
 
@@ -317,8 +311,7 @@ GetIsDynamicSchema returns the IsDynamicSchema field if non-nil, zero value othe
 
 `func (o *WorkflowLibraryAction) GetIsDynamicSchemaOk() (*bool, bool)`
 
-GetIsDynamicSchemaOk returns a tuple with the IsDynamicSchema field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIsDynamicSchemaOk returns a tuple with the IsDynamicSchema field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIsDynamicSchema
 
@@ -342,8 +335,7 @@ GetOutputSchema returns the OutputSchema field if non-nil, zero value otherwise.
 
 `func (o *WorkflowLibraryAction) GetOutputSchemaOk() (*map[string]interface{}, bool)`
 
-GetOutputSchemaOk returns a tuple with the OutputSchema field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOutputSchemaOk returns a tuple with the OutputSchema field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOutputSchema
 
@@ -356,5 +348,3 @@ SetOutputSchema sets OutputSchema field to given value.
 `func (o *WorkflowLibraryAction) HasOutputSchema() bool`
 
 HasOutputSchema returns a boolean if a field has been set.
-
-

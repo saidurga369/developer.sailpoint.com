@@ -4,24 +4,37 @@ title: NonEmployeeSchemaAttributeBody
 pagination_label: NonEmployeeSchemaAttributeBody
 sidebar_label: NonEmployeeSchemaAttributeBody
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'NonEmployeeSchemaAttributeBody', 'NonEmployeeSchemaAttributeBody'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'NonEmployeeSchemaAttributeBody',
+    'NonEmployeeSchemaAttributeBody',
+  ]
 slug: /tools/sdk/python/v3/models/non-employee-schema-attribute-body
-tags: ['SDK', 'Software Development Kit', 'NonEmployeeSchemaAttributeBody', 'NonEmployeeSchemaAttributeBody']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NonEmployeeSchemaAttributeBody',
+    'NonEmployeeSchemaAttributeBody',
+  ]
 ---
 
 # NonEmployeeSchemaAttributeBody
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** | **str** | Type of the attribute. Only type 'TEXT' is supported for custom attributes. | [required]
-**label** | **str** | Label displayed on the UI for this schema attribute. | [required]
-**technical_name** | **str** | The technical name of the attribute. Must be unique per source. | [required]
-**help_text** | **str** | help text displayed by UI. | [optional] 
-**placeholder** | **str** | Hint text that fills UI box. | [optional] 
-**required** | **bool** | If true, the schema attribute is required for all non-employees in the source | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **str** | Type of the attribute. Only type 'TEXT' is supported for custom attributes. | [required] |
+| **label** | **str** | Label displayed on the UI for this schema attribute. | [required] |
+| **technical_name** | **str** | The technical name of the attribute. Must be unique per source. | [required] |
+| **help_text** | **str** | help text displayed by UI. | [optional] |
+| **placeholder** | **str** | Hint text that fills UI box. | [optional] |
+| **required** | **bool** | If true, the schema attribute is required for all non-employees in the source | [optional] |
+
 }
 
 ## Example
@@ -39,5 +52,5 @@ required=True
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

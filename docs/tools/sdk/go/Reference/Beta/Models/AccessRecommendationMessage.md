@@ -4,18 +4,31 @@ title: AccessRecommendationMessage
 pagination_label: AccessRecommendationMessage
 sidebar_label: AccessRecommendationMessage
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessRecommendationMessage', 'BetaAccessRecommendationMessage'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'AccessRecommendationMessage',
+    'BetaAccessRecommendationMessage',
+  ]
 slug: /tools/sdk/go/beta/models/access-recommendation-message
-tags: ['SDK', 'Software Development Kit', 'AccessRecommendationMessage', 'BetaAccessRecommendationMessage']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessRecommendationMessage',
+    'BetaAccessRecommendationMessage',
+  ]
 ---
 
 # AccessRecommendationMessage
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Interpretation** | Pointer to **string** | Information about why the access item was recommended. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Interpretation** | Pointer to **string** | Information about why the access item was recommended. | [optional] |
 
 ## Methods
 
@@ -23,18 +36,13 @@ Name | Type | Description | Notes
 
 `func NewAccessRecommendationMessage() *AccessRecommendationMessage`
 
-NewAccessRecommendationMessage instantiates a new AccessRecommendationMessage object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessRecommendationMessage instantiates a new AccessRecommendationMessage object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessRecommendationMessageWithDefaults
 
 `func NewAccessRecommendationMessageWithDefaults() *AccessRecommendationMessage`
 
-NewAccessRecommendationMessageWithDefaults instantiates a new AccessRecommendationMessage object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessRecommendationMessageWithDefaults instantiates a new AccessRecommendationMessage object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetInterpretation
 
@@ -46,8 +54,7 @@ GetInterpretation returns the Interpretation field if non-nil, zero value otherw
 
 `func (o *AccessRecommendationMessage) GetInterpretationOk() (*string, bool)`
 
-GetInterpretationOk returns a tuple with the Interpretation field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetInterpretationOk returns a tuple with the Interpretation field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetInterpretation
 
@@ -60,5 +67,3 @@ SetInterpretation sets Interpretation field to given value.
 `func (o *AccessRecommendationMessage) HasInterpretation() bool`
 
 HasInterpretation returns a boolean if a field has been set.
-
-

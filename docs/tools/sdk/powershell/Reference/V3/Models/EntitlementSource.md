@@ -4,25 +4,27 @@ title: EntitlementSource
 pagination_label: EntitlementSource
 sidebar_label: EntitlementSource
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'EntitlementSource', 'EntitlementSource'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'EntitlementSource', 'EntitlementSource']
 slug: /tools/sdk/powershell/v3/models/entitlement-source
-tags: ['SDK', 'Software Development Kit', 'EntitlementSource', 'EntitlementSource']
+tags:
+  ['SDK', 'Software Development Kit', 'EntitlementSource', 'EntitlementSource']
 ---
-
 
 # EntitlementSource
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | The source ID | [optional] 
-**Type** | **String** | The source type, will always be ""SOURCE"" | [optional] 
-**Name** | **String** | The source name | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | The source ID | [optional] |
+| **Type** | **String** | The source type, will always be ""SOURCE"" | [optional] |
+| **Name** | **String** | The source name | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $EntitlementSource = Initialize-EntitlementSource  -Id 2c9180827ca885d7017ca8ce28a000eb `
  -Type SOURCE `
@@ -30,10 +32,9 @@ $EntitlementSource = Initialize-EntitlementSource  -Id 2c9180827ca885d7017ca8ce2
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $EntitlementSource | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

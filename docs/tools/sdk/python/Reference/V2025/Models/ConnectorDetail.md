@@ -4,34 +4,35 @@ title: ConnectorDetail
 pagination_label: ConnectorDetail
 sidebar_label: ConnectorDetail
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ConnectorDetail', 'V2025ConnectorDetail'] 
+keywords: ['python', 'Python', 'sdk', 'ConnectorDetail', 'V2025ConnectorDetail']
 slug: /tools/sdk/python/v2025/models/connector-detail
-tags: ['SDK', 'Software Development Kit', 'ConnectorDetail', 'V2025ConnectorDetail']
+tags:
+  ['SDK', 'Software Development Kit', 'ConnectorDetail', 'V2025ConnectorDetail']
 ---
 
 # ConnectorDetail
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | The connector name | [optional] 
-**type** | **str** | The connector type | [optional] 
-**class_name** | **str** | The connector class name | [optional] 
-**script_name** | **str** | The connector script name | [optional] 
-**application_xml** | **str** | The connector application xml | [optional] 
-**correlation_config_xml** | **str** | The connector correlation config xml | [optional] 
-**source_config_xml** | **str** | The connector source config xml | [optional] 
-**source_config** | **str** | The connector source config | [optional] 
-**source_config_from** | **str** | The connector source config origin | [optional] 
-**s3_location** | **str** | storage path key for this connector | [optional] 
-**uploaded_files** | **[]str** | The list of uploaded files supported by the connector. If there was any executable files uploaded to thee connector. Typically this be empty as the executable be uploaded at source creation. | [optional] 
-**file_upload** | **bool** | true if the source is file upload | [optional] [default to False]
-**direct_connect** | **bool** | true if the source is a direct connect source | [optional] [default to False]
-**translation_properties** | **map[string]object** | A map containing translation attributes by loacale key | [optional] 
-**connector_metadata** | **map[string]object** | A map containing metadata pertinent to the UI to be used | [optional] 
-**status** |  **Enum** [  'DEPRECATED',    'DEVELOPMENT',    'DEMO',    'RELEASED' ] | The connector status | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **name** | **str** | The connector name | [optional] |
+| **type** | **str** | The connector type | [optional] |
+| **class_name** | **str** | The connector class name | [optional] |
+| **script_name** | **str** | The connector script name | [optional] |
+| **application_xml** | **str** | The connector application xml | [optional] |
+| **correlation_config_xml** | **str** | The connector correlation config xml | [optional] |
+| **source_config_xml** | **str** | The connector source config xml | [optional] |
+| **source_config** | **str** | The connector source config | [optional] |
+| **source_config_from** | **str** | The connector source config origin | [optional] |
+| **s3_location** | **str** | storage path key for this connector | [optional] |
+| **uploaded_files** | **[]str** | The list of uploaded files supported by the connector. If there was any executable files uploaded to thee connector. Typically this be empty as the executable be uploaded at source creation. | [optional] |
+| **file_upload** | **bool** | true if the source is file upload | [optional] [default to False] |
+| **direct_connect** | **bool** | true if the source is a direct connect source | [optional] [default to False] |
+| **translation_properties** | **map[string]object** | A map containing translation attributes by loacale key | [optional] |
+| **connector_metadata** | **map[string]object** | A map containing metadata pertinent to the UI to be used | [optional] |
+| **status** | **Enum** [ 'DEPRECATED', 'DEVELOPMENT', 'DEMO', 'RELEASED' ] | The connector status | [optional] |
+
 }
 
 ## Example
@@ -65,17 +66,17 @@ source_config_xml='<?xml version="1.0" encoding="UTF-8" standalone="no"?><!-- Co
     <BaseConfig>
         <Field maxFiles="10" maxSize="300" name="fileUpload" supportedExtensions="jar" type="fileupload" validateJSON="false"/>
     </BaseConfig>
-  
 
- 
+
+
 </Form>',
 source_config='<?xml version="1.0" encoding="UTF-8" standalone="no"?><!-- Copyright (C) 2023 SailPoint Technologies, Inc.  All rights reserved. --><Form xmlns="http://www.sailpoint.com/xsd/sailpoint_form_2_0.xsd" connectorName="custom Atlassian Suite - Cloud" directConnect="true" fileUpload="true" name="Custom Atlassian Suite - Cloud" status="released" type="SourceConfig">
     <BaseConfig>
         <Field maxFiles="10" maxSize="300" name="fileUpload" supportedExtensions="jar" type="fileupload" validateJSON="false"/>
     </BaseConfig>
-  
 
- 
+
+
 </Form>',
 source_config_from='sp-connect',
 s3_location='custom-connector/scriptname',
@@ -110,5 +111,5 @@ status='RELEASED'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

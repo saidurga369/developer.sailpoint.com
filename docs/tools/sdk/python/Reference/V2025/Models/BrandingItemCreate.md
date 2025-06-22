@@ -4,26 +4,33 @@ title: BrandingItemCreate
 pagination_label: BrandingItemCreate
 sidebar_label: BrandingItemCreate
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'BrandingItemCreate', 'V2025BrandingItemCreate'] 
+keywords:
+  ['python', 'Python', 'sdk', 'BrandingItemCreate', 'V2025BrandingItemCreate']
 slug: /tools/sdk/python/v2025/models/branding-item-create
-tags: ['SDK', 'Software Development Kit', 'BrandingItemCreate', 'V2025BrandingItemCreate']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'BrandingItemCreate',
+    'V2025BrandingItemCreate',
+  ]
 ---
 
 # BrandingItemCreate
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | name of branding item | [required]
-**product_name** | **str** | product name | [required]
-**action_button_color** | **str** | hex value of color for action button | [optional] 
-**active_link_color** | **str** | hex value of color for link | [optional] 
-**navigation_color** | **str** | hex value of color for navigation bar | [optional] 
-**email_from_address** | **str** | email from address | [optional] 
-**login_informational_message** | **str** | login information message | [optional] 
-**file_standard** | **bytearray** | png file with logo | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **name** | **str** | name of branding item | [required] |
+| **product_name** | **str** | product name | [required] |
+| **action_button_color** | **str** | hex value of color for action button | [optional] |
+| **active_link_color** | **str** | hex value of color for link | [optional] |
+| **navigation_color** | **str** | hex value of color for navigation bar | [optional] |
+| **email_from_address** | **str** | email from address | [optional] |
+| **login_informational_message** | **str** | login information message | [optional] |
+| **file_standard** | **bytearray** | png file with logo | [optional] |
+
 }
 
 ## Example
@@ -43,5 +50,5 @@ file_standard='\x00\x00\x00\x02'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

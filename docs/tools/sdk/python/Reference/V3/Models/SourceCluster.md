@@ -4,7 +4,7 @@ title: SourceCluster
 pagination_label: SourceCluster
 sidebar_label: SourceCluster
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SourceCluster', 'SourceCluster'] 
+keywords: ['python', 'Python', 'sdk', 'SourceCluster', 'SourceCluster']
 slug: /tools/sdk/python/v3/models/source-cluster
 tags: ['SDK', 'Software Development Kit', 'SourceCluster', 'SourceCluster']
 ---
@@ -15,11 +15,12 @@ Reference to the source's associated cluster.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'CLUSTER' ] | Type of object being referenced. | [required]
-**id** | **str** | Cluster ID. | [required]
-**name** | **str** | Cluster's human-readable display name. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'CLUSTER' ] | Type of object being referenced. | [required] |
+| **id** | **str** | Cluster ID. | [required] |
+| **name** | **str** | Cluster's human-readable display name. | [required] |
+
 }
 
 ## Example
@@ -34,5 +35,5 @@ name='Corporate Cluster'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

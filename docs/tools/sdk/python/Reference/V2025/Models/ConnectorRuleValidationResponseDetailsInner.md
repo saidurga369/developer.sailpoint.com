@@ -4,9 +4,22 @@ title: ConnectorRuleValidationResponseDetailsInner
 pagination_label: ConnectorRuleValidationResponseDetailsInner
 sidebar_label: ConnectorRuleValidationResponseDetailsInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ConnectorRuleValidationResponseDetailsInner', 'V2025ConnectorRuleValidationResponseDetailsInner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ConnectorRuleValidationResponseDetailsInner',
+    'V2025ConnectorRuleValidationResponseDetailsInner',
+  ]
 slug: /tools/sdk/python/v2025/models/connector-rule-validation-response-details-inner
-tags: ['SDK', 'Software Development Kit', 'ConnectorRuleValidationResponseDetailsInner', 'V2025ConnectorRuleValidationResponseDetailsInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ConnectorRuleValidationResponseDetailsInner',
+    'V2025ConnectorRuleValidationResponseDetailsInner',
+  ]
 ---
 
 # ConnectorRuleValidationResponseDetailsInner
@@ -15,11 +28,12 @@ CodeErrorDetail
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**line** | **int** | The line number where the issue occurred | [required]
-**column** | **int** | the column number where the issue occurred | [required]
-**messsage** | **str** | a description of the issue in the code | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **line** | **int** | The line number where the issue occurred | [required] |
+| **column** | **int** | the column number where the issue occurred | [required] |
+| **messsage** | **str** | a description of the issue in the code | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ messsage='Remove reference to .decrypt('
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

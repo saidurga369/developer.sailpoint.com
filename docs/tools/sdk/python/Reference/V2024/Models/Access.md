@@ -4,22 +4,22 @@ title: Access
 pagination_label: Access
 sidebar_label: Access
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'Access', 'V2024Access'] 
+keywords: ['python', 'Python', 'sdk', 'Access', 'V2024Access']
 slug: /tools/sdk/python/v2024/models/access
 tags: ['SDK', 'Software Development Kit', 'Access', 'V2024Access']
 ---
 
 # Access
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The unique ID of the referenced object. | [optional] 
-**name** | **str** | The human readable name of the referenced object. | [optional] 
-**display_name** | **str** |  | [optional] 
-**description** | **str** | Description of access item. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The unique ID of the referenced object. | [optional] |
+| **name** | **str** | The human readable name of the referenced object. | [optional] |
+| **display_name** | **str** |  | [optional] |
+| **description** | **str** | Description of access item. | [optional] |
+
 }
 
 ## Example
@@ -35,5 +35,5 @@ description=''
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

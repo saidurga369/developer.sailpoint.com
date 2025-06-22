@@ -4,31 +4,44 @@ title: WorkflowLibraryOperator
 pagination_label: WorkflowLibraryOperator
 sidebar_label: WorkflowLibraryOperator
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'WorkflowLibraryOperator', 'BetaWorkflowLibraryOperator'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'WorkflowLibraryOperator',
+    'BetaWorkflowLibraryOperator',
+  ]
 slug: /tools/sdk/powershell/beta/models/workflow-library-operator
-tags: ['SDK', 'Software Development Kit', 'WorkflowLibraryOperator', 'BetaWorkflowLibraryOperator']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'WorkflowLibraryOperator',
+    'BetaWorkflowLibraryOperator',
+  ]
 ---
-
 
 # WorkflowLibraryOperator
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | Operator ID. | [optional] 
-**Name** | **String** | Operator friendly name | [optional] 
-**Type** | **String** | Operator type | [optional] 
-**Description** | **String** | Description of the operator | [optional] 
-**IsDynamicSchema** | **Boolean** | Determines whether the dynamic output schema is returned in place of the action's output schema. The dynamic schema lists non-static properties, like properties of a workflow form where each form has different fields. These will be provided dynamically based on available form fields. | [optional] 
-**Deprecated** | **Boolean** |  | [optional] 
-**DeprecatedBy** | **System.DateTime** |  | [optional] 
-**IsSimulationEnabled** | **Boolean** |  | [optional] 
-**FormFields** | [**[]WorkflowLibraryFormFields**](workflow-library-form-fields) | One or more inputs that the operator accepts | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | Operator ID. | [optional] |
+| **Name** | **String** | Operator friendly name | [optional] |
+| **Type** | **String** | Operator type | [optional] |
+| **Description** | **String** | Description of the operator | [optional] |
+| **IsDynamicSchema** | **Boolean** | Determines whether the dynamic output schema is returned in place of the action's output schema. The dynamic schema lists non-static properties, like properties of a workflow form where each form has different fields. These will be provided dynamically based on available form fields. | [optional] |
+| **Deprecated** | **Boolean** |  | [optional] |
+| **DeprecatedBy** | **System.DateTime** |  | [optional] |
+| **IsSimulationEnabled** | **Boolean** |  | [optional] |
+| **FormFields** | [**[]WorkflowLibraryFormFields**](workflow-library-form-fields) | One or more inputs that the operator accepts | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $WorkflowLibraryOperator = Initialize-BetaWorkflowLibraryOperator  -Id sp:compare-boolean `
  -Name Compare Boolean Values `
@@ -42,10 +55,9 @@ $WorkflowLibraryOperator = Initialize-BetaWorkflowLibraryOperator  -Id sp:compar
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $WorkflowLibraryOperator | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

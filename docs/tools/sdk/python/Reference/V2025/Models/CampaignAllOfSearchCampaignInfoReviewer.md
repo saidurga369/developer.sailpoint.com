@@ -4,9 +4,22 @@ title: CampaignAllOfSearchCampaignInfoReviewer
 pagination_label: CampaignAllOfSearchCampaignInfoReviewer
 sidebar_label: CampaignAllOfSearchCampaignInfoReviewer
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'CampaignAllOfSearchCampaignInfoReviewer', 'V2025CampaignAllOfSearchCampaignInfoReviewer'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'CampaignAllOfSearchCampaignInfoReviewer',
+    'V2025CampaignAllOfSearchCampaignInfoReviewer',
+  ]
 slug: /tools/sdk/python/v2025/models/campaign-all-of-search-campaign-info-reviewer
-tags: ['SDK', 'Software Development Kit', 'CampaignAllOfSearchCampaignInfoReviewer', 'V2025CampaignAllOfSearchCampaignInfoReviewer']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CampaignAllOfSearchCampaignInfoReviewer',
+    'V2025CampaignAllOfSearchCampaignInfoReviewer',
+  ]
 ---
 
 # CampaignAllOfSearchCampaignInfoReviewer
@@ -15,11 +28,12 @@ If specified, this identity or governance group will be the reviewer for all cer
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'GOVERNANCE_GROUP',    'IDENTITY' ] | The reviewer's DTO type. | [optional] 
-**id** | **str** | The reviewer's ID. | [optional] 
-**name** | **str** | The reviewer's name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'GOVERNANCE_GROUP', 'IDENTITY' ] | The reviewer's DTO type. | [optional] |
+| **id** | **str** | The reviewer's ID. | [optional] |
+| **name** | **str** | The reviewer's name. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='William Wilson'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

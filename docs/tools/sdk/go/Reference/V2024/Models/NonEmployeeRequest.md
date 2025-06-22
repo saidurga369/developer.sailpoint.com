@@ -4,37 +4,44 @@ title: NonEmployeeRequest
 pagination_label: NonEmployeeRequest
 sidebar_label: NonEmployeeRequest
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'NonEmployeeRequest', 'V2024NonEmployeeRequest'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'NonEmployeeRequest', 'V2024NonEmployeeRequest']
 slug: /tools/sdk/go/v2024/models/non-employee-request
-tags: ['SDK', 'Software Development Kit', 'NonEmployeeRequest', 'V2024NonEmployeeRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NonEmployeeRequest',
+    'V2024NonEmployeeRequest',
+  ]
 ---
 
 # NonEmployeeRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Non-Employee source id. | [optional] 
-**SourceId** | Pointer to **string** | Source Id associated with this non-employee source. | [optional] 
-**Name** | Pointer to **string** | Source name associated with this non-employee source. | [optional] 
-**Description** | Pointer to **string** | Source description associated with this non-employee source. | [optional] 
-**AccountName** | Pointer to **string** | Requested identity account name. | [optional] 
-**FirstName** | Pointer to **string** | Non-Employee's first name. | [optional] 
-**LastName** | Pointer to **string** | Non-Employee's last name. | [optional] 
-**Email** | Pointer to **string** | Non-Employee's email. | [optional] 
-**Phone** | Pointer to **string** | Non-Employee's phone. | [optional] 
-**Manager** | Pointer to **string** | The account ID of a valid identity to serve as this non-employee's manager. | [optional] 
-**NonEmployeeSource** | Pointer to [**NonEmployeeSourceLite**](non-employee-source-lite) |  | [optional] 
-**Data** | Pointer to **map[string]string** | Additional attributes for a non-employee. Up to 10 custom attributes can be added. | [optional] 
-**ApprovalItems** | Pointer to [**[]NonEmployeeApprovalItemBase**](non-employee-approval-item-base) | List of approval item for the request | [optional] 
-**ApprovalStatus** | Pointer to [**ApprovalStatus**](approval-status) |  | [optional] 
-**Comment** | Pointer to **string** | Comment of requester | [optional] 
-**CompletionDate** | Pointer to **SailPointTime** | When the request was completely approved. | [optional] 
-**StartDate** | Pointer to **SailPointTime** | Non-Employee employment start date. | [optional] 
-**EndDate** | Pointer to **SailPointTime** | Non-Employee employment end date. | [optional] 
-**Modified** | Pointer to **SailPointTime** | When the request was last modified. | [optional] 
-**Created** | Pointer to **SailPointTime** | When the request was created. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Non-Employee source id. | [optional] |
+| **SourceId** | Pointer to **string** | Source Id associated with this non-employee source. | [optional] |
+| **Name** | Pointer to **string** | Source name associated with this non-employee source. | [optional] |
+| **Description** | Pointer to **string** | Source description associated with this non-employee source. | [optional] |
+| **AccountName** | Pointer to **string** | Requested identity account name. | [optional] |
+| **FirstName** | Pointer to **string** | Non-Employee's first name. | [optional] |
+| **LastName** | Pointer to **string** | Non-Employee's last name. | [optional] |
+| **Email** | Pointer to **string** | Non-Employee's email. | [optional] |
+| **Phone** | Pointer to **string** | Non-Employee's phone. | [optional] |
+| **Manager** | Pointer to **string** | The account ID of a valid identity to serve as this non-employee's manager. | [optional] |
+| **NonEmployeeSource** | Pointer to [**NonEmployeeSourceLite**](non-employee-source-lite) |  | [optional] |
+| **Data** | Pointer to **map[string]string** | Additional attributes for a non-employee. Up to 10 custom attributes can be added. | [optional] |
+| **ApprovalItems** | Pointer to [**[]NonEmployeeApprovalItemBase**](non-employee-approval-item-base) | List of approval item for the request | [optional] |
+| **ApprovalStatus** | Pointer to [**ApprovalStatus**](approval-status) |  | [optional] |
+| **Comment** | Pointer to **string** | Comment of requester | [optional] |
+| **CompletionDate** | Pointer to **SailPointTime** | When the request was completely approved. | [optional] |
+| **StartDate** | Pointer to **SailPointTime** | Non-Employee employment start date. | [optional] |
+| **EndDate** | Pointer to **SailPointTime** | Non-Employee employment end date. | [optional] |
+| **Modified** | Pointer to **SailPointTime** | When the request was last modified. | [optional] |
+| **Created** | Pointer to **SailPointTime** | When the request was created. | [optional] |
 
 ## Methods
 
@@ -42,18 +49,13 @@ Name | Type | Description | Notes
 
 `func NewNonEmployeeRequest() *NonEmployeeRequest`
 
-NewNonEmployeeRequest instantiates a new NonEmployeeRequest object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewNonEmployeeRequest instantiates a new NonEmployeeRequest object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewNonEmployeeRequestWithDefaults
 
 `func NewNonEmployeeRequestWithDefaults() *NonEmployeeRequest`
 
-NewNonEmployeeRequestWithDefaults instantiates a new NonEmployeeRequest object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewNonEmployeeRequestWithDefaults instantiates a new NonEmployeeRequest object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -65,8 +67,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRequest) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -90,8 +91,7 @@ GetSourceId returns the SourceId field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRequest) GetSourceIdOk() (*string, bool)`
 
-GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceId
 
@@ -115,8 +115,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRequest) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -140,8 +139,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRequest) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -165,8 +163,7 @@ GetAccountName returns the AccountName field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRequest) GetAccountNameOk() (*string, bool)`
 
-GetAccountNameOk returns a tuple with the AccountName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountNameOk returns a tuple with the AccountName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountName
 
@@ -190,8 +187,7 @@ GetFirstName returns the FirstName field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRequest) GetFirstNameOk() (*string, bool)`
 
-GetFirstNameOk returns a tuple with the FirstName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFirstNameOk returns a tuple with the FirstName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFirstName
 
@@ -215,8 +211,7 @@ GetLastName returns the LastName field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRequest) GetLastNameOk() (*string, bool)`
 
-GetLastNameOk returns a tuple with the LastName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLastNameOk returns a tuple with the LastName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLastName
 
@@ -240,8 +235,7 @@ GetEmail returns the Email field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRequest) GetEmailOk() (*string, bool)`
 
-GetEmailOk returns a tuple with the Email field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEmailOk returns a tuple with the Email field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEmail
 
@@ -265,8 +259,7 @@ GetPhone returns the Phone field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRequest) GetPhoneOk() (*string, bool)`
 
-GetPhoneOk returns a tuple with the Phone field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPhoneOk returns a tuple with the Phone field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPhone
 
@@ -290,8 +283,7 @@ GetManager returns the Manager field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRequest) GetManagerOk() (*string, bool)`
 
-GetManagerOk returns a tuple with the Manager field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetManagerOk returns a tuple with the Manager field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetManager
 
@@ -315,8 +307,7 @@ GetNonEmployeeSource returns the NonEmployeeSource field if non-nil, zero value 
 
 `func (o *NonEmployeeRequest) GetNonEmployeeSourceOk() (*NonEmployeeSourceLite, bool)`
 
-GetNonEmployeeSourceOk returns a tuple with the NonEmployeeSource field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNonEmployeeSourceOk returns a tuple with the NonEmployeeSource field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNonEmployeeSource
 
@@ -340,8 +331,7 @@ GetData returns the Data field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRequest) GetDataOk() (*map[string]string, bool)`
 
-GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetData
 
@@ -365,8 +355,7 @@ GetApprovalItems returns the ApprovalItems field if non-nil, zero value otherwis
 
 `func (o *NonEmployeeRequest) GetApprovalItemsOk() (*[]NonEmployeeApprovalItemBase, bool)`
 
-GetApprovalItemsOk returns a tuple with the ApprovalItems field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApprovalItemsOk returns a tuple with the ApprovalItems field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApprovalItems
 
@@ -390,8 +379,7 @@ GetApprovalStatus returns the ApprovalStatus field if non-nil, zero value otherw
 
 `func (o *NonEmployeeRequest) GetApprovalStatusOk() (*ApprovalStatus, bool)`
 
-GetApprovalStatusOk returns a tuple with the ApprovalStatus field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApprovalStatusOk returns a tuple with the ApprovalStatus field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApprovalStatus
 
@@ -415,8 +403,7 @@ GetComment returns the Comment field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRequest) GetCommentOk() (*string, bool)`
 
-GetCommentOk returns a tuple with the Comment field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCommentOk returns a tuple with the Comment field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetComment
 
@@ -440,8 +427,7 @@ GetCompletionDate returns the CompletionDate field if non-nil, zero value otherw
 
 `func (o *NonEmployeeRequest) GetCompletionDateOk() (*SailPointTime, bool)`
 
-GetCompletionDateOk returns a tuple with the CompletionDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCompletionDateOk returns a tuple with the CompletionDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCompletionDate
 
@@ -465,8 +451,7 @@ GetStartDate returns the StartDate field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRequest) GetStartDateOk() (*SailPointTime, bool)`
 
-GetStartDateOk returns a tuple with the StartDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStartDateOk returns a tuple with the StartDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStartDate
 
@@ -490,8 +475,7 @@ GetEndDate returns the EndDate field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRequest) GetEndDateOk() (*SailPointTime, bool)`
 
-GetEndDateOk returns a tuple with the EndDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEndDateOk returns a tuple with the EndDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEndDate
 
@@ -515,8 +499,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRequest) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -540,8 +523,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *NonEmployeeRequest) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -554,5 +536,3 @@ SetCreated sets Created field to given value.
 `func (o *NonEmployeeRequest) HasCreated() bool`
 
 HasCreated returns a boolean if a field has been set.
-
-

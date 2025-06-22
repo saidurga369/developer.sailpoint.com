@@ -4,25 +4,21 @@ title: QueryType
 pagination_label: QueryType
 sidebar_label: QueryType
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'QueryType', 'V2025QueryType'] 
+keywords: ['powershell', 'PowerShell', 'sdk', 'QueryType', 'V2025QueryType']
 slug: /tools/sdk/powershell/v2025/models/query-type
 tags: ['SDK', 'Software Development Kit', 'QueryType', 'V2025QueryType']
 ---
-
 
 # QueryType
 
 ## Enum
 
+- `DSL` (value: `"DSL"`)
 
-* `DSL` (value: `"DSL"`)
+- `SAILPOINT` (value: `"SAILPOINT"`)
 
-* `SAILPOINT` (value: `"SAILPOINT"`)
+- `TEXT` (value: `"TEXT"`)
 
-* `TEXT` (value: `"TEXT"`)
+- `TYPEAHEAD` (value: `"TYPEAHEAD"`)
 
-* `TYPEAHEAD` (value: `"TYPEAHEAD"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

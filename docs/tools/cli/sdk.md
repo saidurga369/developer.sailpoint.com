@@ -13,12 +13,10 @@ tags: ['CLI']
 
 Learn how to use the SailPoint CLI to setup an SDK project. This command helps you initialize SDK projects across supported languages including Python, Go, PowerShell, and TypeScript.
 
-
 - [Golang](#golang)
 - [Python](#python)
 - [PowerShell](#powershell)
 - [TypeScript](#typescript)
-
 
 ## Golang
 
@@ -47,9 +45,6 @@ go mod tidy
 
 The SDK is now installed. To learn how to configure the SDK, refer to the [Configure section](#configure).
 
-
-
-
 ## Python
 
 The SailPoint CLI offers a few commands that will allow you to quickly get started with the Python SDK. To learn how to install and use the SailPoint CLI, refer to [SailPoint CLI](https://developer.sailpoint.com/idn/tools/cli#get-the-cli).
@@ -75,8 +70,6 @@ pip install -r requirements.txt
 ```
 
 The SDK is now installed. To learn how to configure the SDK, refer to the [Configure section](#configure).
-
-
 
 ## PowerShell
 
@@ -124,7 +117,6 @@ To validate that the module is installed, run this command, `Get-Module -ListAva
 
 The SDK is now installed. To learn how to configure the SDK, refer to the [Configure section](#configure).
 
-
 ## TypeScript
 
 The SailPoint CLI offers a few commands that will allow you to quickly get started with the Typescript SDK. To learn how to install and use the SailPoint CLI, refer to [SailPoint CLI](https://developer.sailpoint.com/idn/tools/cli#get-the-cli).
@@ -167,9 +159,9 @@ The SailPoint CLI offers a command to generate the "config.json" file with your 
 sail sdk init config
 ```
 
-If you have multiple environments configured with the CLI, you can pass an additional parameter to state the environment you wish to create a "config.json" for. 
+If you have multiple environments configured with the CLI, you can pass an additional parameter to state the environment you wish to create a "config.json" for.
 
-To pass an additional parameter that states the environment you want to configure, run this command: 
+To pass an additional parameter that states the environment you want to configure, run this command:
 
 ```bash
 sail sdk init config --env devrel

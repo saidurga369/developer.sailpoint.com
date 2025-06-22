@@ -4,29 +4,30 @@ title: DeployResponse
 pagination_label: DeployResponse
 sidebar_label: DeployResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'DeployResponse', 'V2024DeployResponse'] 
+keywords: ['go', 'Golang', 'sdk', 'DeployResponse', 'V2024DeployResponse']
 slug: /tools/sdk/go/v2024/models/deploy-response
-tags: ['SDK', 'Software Development Kit', 'DeployResponse', 'V2024DeployResponse']
+tags:
+  ['SDK', 'Software Development Kit', 'DeployResponse', 'V2024DeployResponse']
 ---
 
 # DeployResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**JobId** | Pointer to **string** | Unique id assigned to this job. | [optional] 
-**Status** | Pointer to **string** | Status of the job. | [optional] 
-**Type** | Pointer to **string** | Type of the job, will always be CONFIG_DEPLOY_DRAFT for this type of job. | [optional] 
-**Message** | Pointer to **string** | Message providing information about the outcome of the deploy process. | [optional] 
-**RequesterName** | Pointer to **string** | The name of the user that initiated the deploy process. | [optional] 
-**FileExists** | Pointer to **bool** | Whether or not a results file was created and stored for this deploy. | [optional] [default to true]
-**Created** | Pointer to **SailPointTime** | The time the job was started. | [optional] 
-**Modified** | Pointer to **SailPointTime** | The time of the last update to the job. | [optional] 
-**Completed** | Pointer to **SailPointTime** | The time the job was completed. | [optional] 
-**DraftId** | Pointer to **string** | The id of the draft that was used for this deploy. | [optional] 
-**DraftName** | Pointer to **string** | The name of the draft that was used for this deploy. | [optional] 
-**CloudStorageStatus** | Pointer to **string** | Whether this deploy results file has been transferred to a customer storage location. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **JobId** | Pointer to **string** | Unique id assigned to this job. | [optional] |
+| **Status** | Pointer to **string** | Status of the job. | [optional] |
+| **Type** | Pointer to **string** | Type of the job, will always be CONFIG_DEPLOY_DRAFT for this type of job. | [optional] |
+| **Message** | Pointer to **string** | Message providing information about the outcome of the deploy process. | [optional] |
+| **RequesterName** | Pointer to **string** | The name of the user that initiated the deploy process. | [optional] |
+| **FileExists** | Pointer to **bool** | Whether or not a results file was created and stored for this deploy. | [optional] [default to true] |
+| **Created** | Pointer to **SailPointTime** | The time the job was started. | [optional] |
+| **Modified** | Pointer to **SailPointTime** | The time of the last update to the job. | [optional] |
+| **Completed** | Pointer to **SailPointTime** | The time the job was completed. | [optional] |
+| **DraftId** | Pointer to **string** | The id of the draft that was used for this deploy. | [optional] |
+| **DraftName** | Pointer to **string** | The name of the draft that was used for this deploy. | [optional] |
+| **CloudStorageStatus** | Pointer to **string** | Whether this deploy results file has been transferred to a customer storage location. | [optional] |
 
 ## Methods
 
@@ -34,18 +35,13 @@ Name | Type | Description | Notes
 
 `func NewDeployResponse() *DeployResponse`
 
-NewDeployResponse instantiates a new DeployResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewDeployResponse instantiates a new DeployResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewDeployResponseWithDefaults
 
 `func NewDeployResponseWithDefaults() *DeployResponse`
 
-NewDeployResponseWithDefaults instantiates a new DeployResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewDeployResponseWithDefaults instantiates a new DeployResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetJobId
 
@@ -57,8 +53,7 @@ GetJobId returns the JobId field if non-nil, zero value otherwise.
 
 `func (o *DeployResponse) GetJobIdOk() (*string, bool)`
 
-GetJobIdOk returns a tuple with the JobId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetJobIdOk returns a tuple with the JobId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetJobId
 
@@ -82,8 +77,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *DeployResponse) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -107,8 +101,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *DeployResponse) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -132,8 +125,7 @@ GetMessage returns the Message field if non-nil, zero value otherwise.
 
 `func (o *DeployResponse) GetMessageOk() (*string, bool)`
 
-GetMessageOk returns a tuple with the Message field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMessageOk returns a tuple with the Message field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMessage
 
@@ -157,8 +149,7 @@ GetRequesterName returns the RequesterName field if non-nil, zero value otherwis
 
 `func (o *DeployResponse) GetRequesterNameOk() (*string, bool)`
 
-GetRequesterNameOk returns a tuple with the RequesterName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequesterNameOk returns a tuple with the RequesterName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequesterName
 
@@ -182,8 +173,7 @@ GetFileExists returns the FileExists field if non-nil, zero value otherwise.
 
 `func (o *DeployResponse) GetFileExistsOk() (*bool, bool)`
 
-GetFileExistsOk returns a tuple with the FileExists field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFileExistsOk returns a tuple with the FileExists field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFileExists
 
@@ -207,8 +197,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *DeployResponse) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -232,8 +221,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *DeployResponse) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -257,8 +245,7 @@ GetCompleted returns the Completed field if non-nil, zero value otherwise.
 
 `func (o *DeployResponse) GetCompletedOk() (*SailPointTime, bool)`
 
-GetCompletedOk returns a tuple with the Completed field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCompletedOk returns a tuple with the Completed field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCompleted
 
@@ -282,8 +269,7 @@ GetDraftId returns the DraftId field if non-nil, zero value otherwise.
 
 `func (o *DeployResponse) GetDraftIdOk() (*string, bool)`
 
-GetDraftIdOk returns a tuple with the DraftId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDraftIdOk returns a tuple with the DraftId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDraftId
 
@@ -307,8 +293,7 @@ GetDraftName returns the DraftName field if non-nil, zero value otherwise.
 
 `func (o *DeployResponse) GetDraftNameOk() (*string, bool)`
 
-GetDraftNameOk returns a tuple with the DraftName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDraftNameOk returns a tuple with the DraftName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDraftName
 
@@ -332,8 +317,7 @@ GetCloudStorageStatus returns the CloudStorageStatus field if non-nil, zero valu
 
 `func (o *DeployResponse) GetCloudStorageStatusOk() (*string, bool)`
 
-GetCloudStorageStatusOk returns a tuple with the CloudStorageStatus field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCloudStorageStatusOk returns a tuple with the CloudStorageStatus field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCloudStorageStatus
 
@@ -346,5 +330,3 @@ SetCloudStorageStatus sets CloudStorageStatus field to given value.
 `func (o *DeployResponse) HasCloudStorageStatus() bool`
 
 HasCloudStorageStatus returns a boolean if a field has been set.
-
-

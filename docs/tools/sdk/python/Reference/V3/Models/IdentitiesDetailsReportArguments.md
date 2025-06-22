@@ -4,9 +4,22 @@ title: IdentitiesDetailsReportArguments
 pagination_label: IdentitiesDetailsReportArguments
 sidebar_label: IdentitiesDetailsReportArguments
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentitiesDetailsReportArguments', 'IdentitiesDetailsReportArguments'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'IdentitiesDetailsReportArguments',
+    'IdentitiesDetailsReportArguments',
+  ]
 slug: /tools/sdk/python/v3/models/identities-details-report-arguments
-tags: ['SDK', 'Software Development Kit', 'IdentitiesDetailsReportArguments', 'IdentitiesDetailsReportArguments']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentitiesDetailsReportArguments',
+    'IdentitiesDetailsReportArguments',
+  ]
 ---
 
 # IdentitiesDetailsReportArguments
@@ -15,9 +28,10 @@ Arguments for Identities Details report (IDENTITIES_DETAILS)
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**correlated_only** | **bool** | Flag to specify if only correlated identities are included in report. | [required][default to False]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **correlated_only** | **bool** | Flag to specify if only correlated identities are included in report. | [required][default to false] |
+
 }
 
 ## Example
@@ -30,5 +44,5 @@ correlated_only=True
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

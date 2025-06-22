@@ -4,9 +4,22 @@ title: CampaignActivatedCampaignCampaignOwner
 pagination_label: CampaignActivatedCampaignCampaignOwner
 sidebar_label: CampaignActivatedCampaignCampaignOwner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'CampaignActivatedCampaignCampaignOwner', 'V2024CampaignActivatedCampaignCampaignOwner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'CampaignActivatedCampaignCampaignOwner',
+    'V2024CampaignActivatedCampaignCampaignOwner',
+  ]
 slug: /tools/sdk/python/v2024/models/campaign-activated-campaign-campaign-owner
-tags: ['SDK', 'Software Development Kit', 'CampaignActivatedCampaignCampaignOwner', 'V2024CampaignActivatedCampaignCampaignOwner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CampaignActivatedCampaignCampaignOwner',
+    'V2024CampaignActivatedCampaignCampaignOwner',
+  ]
 ---
 
 # CampaignActivatedCampaignCampaignOwner
@@ -15,11 +28,12 @@ Details of the identity that owns the campaign.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The unique ID of the identity. | [required]
-**display_name** | **str** | The human friendly name of the identity. | [required]
-**email** | **str** | The primary email address of the identity. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The unique ID of the identity. | [required] |
+| **display_name** | **str** | The human friendly name of the identity. | [required] |
+| **email** | **str** | The primary email address of the identity. | [required] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ email='john.snow@example.com'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

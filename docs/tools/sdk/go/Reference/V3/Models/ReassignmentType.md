@@ -4,22 +4,20 @@ title: ReassignmentType
 pagination_label: ReassignmentType
 sidebar_label: ReassignmentType
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ReassignmentType', 'ReassignmentType'] 
+keywords: ['go', 'Golang', 'sdk', 'ReassignmentType', 'ReassignmentType']
 slug: /tools/sdk/go/v3/models/reassignment-type
-tags: ['SDK', 'Software Development Kit', 'ReassignmentType', 'ReassignmentType']
+tags:
+  ['SDK', 'Software Development Kit', 'ReassignmentType', 'ReassignmentType']
 ---
 
 # ReassignmentType
 
 ## Enum
 
+- `MANUAL_REASSIGNMENT` (value: `"MANUAL_REASSIGNMENT"`)
 
-* `MANUAL_REASSIGNMENT` (value: `"MANUAL_REASSIGNMENT"`)
+- `AUTOMATIC_REASSIGNMENT` (value: `"AUTOMATIC_REASSIGNMENT"`)
 
-* `AUTOMATIC_REASSIGNMENT` (value: `"AUTOMATIC_REASSIGNMENT"`)
+- `AUTO_ESCALATION` (value: `"AUTO_ESCALATION"`)
 
-* `AUTO_ESCALATION` (value: `"AUTO_ESCALATION"`)
-
-* `SELF_REVIEW_DELEGATION` (value: `"SELF_REVIEW_DELEGATION"`)
-
-
+- `SELF_REVIEW_DELEGATION` (value: `"SELF_REVIEW_DELEGATION"`)

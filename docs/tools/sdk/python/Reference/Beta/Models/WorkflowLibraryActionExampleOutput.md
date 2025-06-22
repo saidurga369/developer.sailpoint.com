@@ -4,18 +4,31 @@ title: WorkflowLibraryActionExampleOutput
 pagination_label: WorkflowLibraryActionExampleOutput
 sidebar_label: WorkflowLibraryActionExampleOutput
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'WorkflowLibraryActionExampleOutput', 'BetaWorkflowLibraryActionExampleOutput'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'WorkflowLibraryActionExampleOutput',
+    'BetaWorkflowLibraryActionExampleOutput',
+  ]
 slug: /tools/sdk/python/beta/models/workflow-library-action-example-output
-tags: ['SDK', 'Software Development Kit', 'WorkflowLibraryActionExampleOutput', 'BetaWorkflowLibraryActionExampleOutput']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'WorkflowLibraryActionExampleOutput',
+    'BetaWorkflowLibraryActionExampleOutput',
+  ]
 ---
 
 # WorkflowLibraryActionExampleOutput
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
+
 }
 
 ## Example
@@ -27,5 +40,5 @@ workflow_library_action_example_output = WorkflowLibraryActionExampleOutput(
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

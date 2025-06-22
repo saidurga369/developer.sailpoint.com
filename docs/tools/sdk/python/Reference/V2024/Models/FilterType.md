@@ -4,7 +4,7 @@ title: FilterType
 pagination_label: FilterType
 sidebar_label: FilterType
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'FilterType', 'V2024FilterType'] 
+keywords: ['python', 'Python', 'sdk', 'FilterType', 'V2024FilterType']
 slug: /tools/sdk/python/v2024/models/filter-type
 tags: ['SDK', 'Software Development Kit', 'FilterType', 'V2024FilterType']
 ---
@@ -15,11 +15,10 @@ Enum representing the currently supported filter types. Additional values may be
 
 ## Enum
 
-* `EXISTS` (value: `'EXISTS'`)
+- `EXISTS` (value: `'EXISTS'`)
 
-* `RANGE` (value: `'RANGE'`)
+- `RANGE` (value: `'RANGE'`)
 
-* `TERMS` (value: `'TERMS'`)
+- `TERMS` (value: `'TERMS'`)
 
-[[Back to top]](#) 
-
+[[Back to top]](#)

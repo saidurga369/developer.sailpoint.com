@@ -4,20 +4,33 @@ title: FullcampaignAllOfSearchCampaignInfoReviewer
 pagination_label: FullcampaignAllOfSearchCampaignInfoReviewer
 sidebar_label: FullcampaignAllOfSearchCampaignInfoReviewer
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'FullcampaignAllOfSearchCampaignInfoReviewer', 'BetaFullcampaignAllOfSearchCampaignInfoReviewer'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'FullcampaignAllOfSearchCampaignInfoReviewer',
+    'BetaFullcampaignAllOfSearchCampaignInfoReviewer',
+  ]
 slug: /tools/sdk/go/beta/models/fullcampaign-all-of-search-campaign-info-reviewer
-tags: ['SDK', 'Software Development Kit', 'FullcampaignAllOfSearchCampaignInfoReviewer', 'BetaFullcampaignAllOfSearchCampaignInfoReviewer']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'FullcampaignAllOfSearchCampaignInfoReviewer',
+    'BetaFullcampaignAllOfSearchCampaignInfoReviewer',
+  ]
 ---
 
 # FullcampaignAllOfSearchCampaignInfoReviewer
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | The reviewer's DTO type. | [optional] 
-**Id** | Pointer to **string** | The reviewer's ID. | [optional] 
-**Name** | Pointer to **string** | The reviewer's name. | [optional] 
+| Name     | Type                  | Description              | Notes      |
+| -------- | --------------------- | ------------------------ | ---------- |
+| **Type** | Pointer to **string** | The reviewer's DTO type. | [optional] |
+| **Id**   | Pointer to **string** | The reviewer's ID.       | [optional] |
+| **Name** | Pointer to **string** | The reviewer's name.     | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewFullcampaignAllOfSearchCampaignInfoReviewer() *FullcampaignAllOfSearchCampaignInfoReviewer`
 
-NewFullcampaignAllOfSearchCampaignInfoReviewer instantiates a new FullcampaignAllOfSearchCampaignInfoReviewer object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewFullcampaignAllOfSearchCampaignInfoReviewer instantiates a new FullcampaignAllOfSearchCampaignInfoReviewer object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewFullcampaignAllOfSearchCampaignInfoReviewerWithDefaults
 
 `func NewFullcampaignAllOfSearchCampaignInfoReviewerWithDefaults() *FullcampaignAllOfSearchCampaignInfoReviewer`
 
-NewFullcampaignAllOfSearchCampaignInfoReviewerWithDefaults instantiates a new FullcampaignAllOfSearchCampaignInfoReviewer object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewFullcampaignAllOfSearchCampaignInfoReviewerWithDefaults instantiates a new FullcampaignAllOfSearchCampaignInfoReviewer object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -48,8 +56,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *FullcampaignAllOfSearchCampaignInfoReviewer) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -73,8 +80,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *FullcampaignAllOfSearchCampaignInfoReviewer) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -98,8 +104,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *FullcampaignAllOfSearchCampaignInfoReviewer) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -112,5 +117,3 @@ SetName sets Name field to given value.
 `func (o *FullcampaignAllOfSearchCampaignInfoReviewer) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

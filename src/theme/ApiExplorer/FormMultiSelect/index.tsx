@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import clsx from "clsx";
+import clsx from 'clsx';
 
 export interface Props {
   value?: string;
@@ -9,7 +9,7 @@ export interface Props {
   showErrors?: boolean;
 }
 
-function FormMultiSelect({ value, options, onChange, showErrors }: Props) {
+function FormMultiSelect({value, options, onChange, showErrors}: Props) {
   if (options.length === 0) {
     return null;
   }
@@ -27,15 +27,14 @@ function FormMultiSelect({ value, options, onChange, showErrors }: Props) {
 
   return (
     <select
-      style={{ height: height }}
-      className={clsx("openapi-explorer__multi-select-input", {
+      style={{height: height}}
+      className={clsx('openapi-explorer__multi-select-input', {
         error: showErrors,
       })}
       value={value}
       onChange={onChange}
       size={Math.min(6, options.length + 1)}
-      multiple
-    >
+      multiple>
       {options.map((option) => {
         return (
           <option key={option} value={option}>

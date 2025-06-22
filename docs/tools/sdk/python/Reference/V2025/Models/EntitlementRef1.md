@@ -4,9 +4,10 @@ title: EntitlementRef1
 pagination_label: EntitlementRef1
 sidebar_label: EntitlementRef1
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'EntitlementRef1', 'V2025EntitlementRef1'] 
+keywords: ['python', 'Python', 'sdk', 'EntitlementRef1', 'V2025EntitlementRef1']
 slug: /tools/sdk/python/v2025/models/entitlement-ref1
-tags: ['SDK', 'Software Development Kit', 'EntitlementRef1', 'V2025EntitlementRef1']
+tags:
+  ['SDK', 'Software Development Kit', 'EntitlementRef1', 'V2025EntitlementRef1']
 ---
 
 # EntitlementRef1
@@ -15,11 +16,12 @@ Entitlement including a specific set of access.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'ENTITLEMENT' ] | Entitlement's DTO type. | [optional] 
-**id** | **str** | Entitlement's ID. | [optional] 
-**name** | **str** | Entitlement's display name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'ENTITLEMENT' ] | Entitlement's DTO type. | [optional] |
+| **id** | **str** | Entitlement's ID. | [optional] |
+| **name** | **str** | Entitlement's display name. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +36,5 @@ name='CN=entitlement.490efde5,OU=OrgCo,OU=ServiceDept,DC=HQAD,DC=local'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

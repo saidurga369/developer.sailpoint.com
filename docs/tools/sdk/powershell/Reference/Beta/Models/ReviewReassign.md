@@ -4,25 +4,27 @@ title: ReviewReassign
 pagination_label: ReviewReassign
 sidebar_label: ReviewReassign
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'ReviewReassign', 'BetaReviewReassign'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'ReviewReassign', 'BetaReviewReassign']
 slug: /tools/sdk/powershell/beta/models/review-reassign
-tags: ['SDK', 'Software Development Kit', 'ReviewReassign', 'BetaReviewReassign']
+tags:
+  ['SDK', 'Software Development Kit', 'ReviewReassign', 'BetaReviewReassign']
 ---
-
 
 # ReviewReassign
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Reassign** | [**[]ReassignReference**](reassign-reference) |  | [required]
-**ReassignTo** | **String** | The ID of the identity to which the certification is reassigned | [required]
-**Reason** | **String** | The reason comment for why the reassign was made | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Reassign** | [**[]ReassignReference**](reassign-reference) |  | [required] |
+| **ReassignTo** | **String** | The ID of the identity to which the certification is reassigned | [required] |
+| **Reason** | **String** | The reason comment for why the reassign was made | [required] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $ReviewReassign = Initialize-BetaReviewReassign  -Reassign null `
  -ReassignTo ef38f94347e94562b5bb8424a56397d8 `
@@ -30,10 +32,9 @@ $ReviewReassign = Initialize-BetaReviewReassign  -Reassign null `
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $ReviewReassign | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

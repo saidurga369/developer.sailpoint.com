@@ -4,24 +4,25 @@ title: AccessRequestItem
 pagination_label: AccessRequestItem
 sidebar_label: AccessRequestItem
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessRequestItem', 'AccessRequestItem'] 
+keywords: ['go', 'Golang', 'sdk', 'AccessRequestItem', 'AccessRequestItem']
 slug: /tools/sdk/go/v3/models/access-request-item
-tags: ['SDK', 'Software Development Kit', 'AccessRequestItem', 'AccessRequestItem']
+tags:
+  ['SDK', 'Software Development Kit', 'AccessRequestItem', 'AccessRequestItem']
 ---
 
 # AccessRequestItem
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | **string** | The type of the item being requested. | 
-**Id** | **string** | ID of Role, Access Profile or Entitlement being requested. | 
-**Comment** | Pointer to **string** | Comment provided by requester. * Comment is required when the request is of type Revoke Access.  | [optional] 
-**ClientMetadata** | Pointer to **map[string]string** | Arbitrary key-value pairs. They will never be processed by the IdentityNow system but will be returned on associated APIs such as /account-activities and /access-request-status. | [optional] 
-**RemoveDate** | Pointer to **SailPointTime** | The date and time the role or access profile or entitlement is no longer assigned to the specified identity. Also known as the expiration date. * Specify a date-time in the future. * The current SLA for the deprovisioning is 24 hours. * This date-time can be used to change the duration of an existing access item assignment for the specified identity. A GRANT_ACCESS request can extend duration or even remove an expiration date, and either a  GRANT_ACCESS or REVOKE_ACCESS request can reduce duration or add an expiration date where one has not previously been present. You can change the expiration date in requests for yourself or others you are authorized to request for.  | [optional] 
-**AssignmentId** | Pointer to **NullableString** | The assignmentId for a specific role assignment on the identity. This id is used to revoke that specific roleAssignment on that identity. * For use with REVOKE_ACCESS requests for roles for identities with multiple accounts on a single source.  | [optional] 
-**NativeIdentity** | Pointer to **NullableString** | The unique identifier for an account on the identity, designated as the account ID attribute in the source's account schema. This is used to revoke a specific attributeAssignment on the identity. * For use with REVOKE_ACCESS requests for entitlements for identities with multiple accounts on a single source.  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | **string** | The type of the item being requested. |
+| **Id** | **string** | ID of Role, Access Profile or Entitlement being requested. |
+| **Comment** | Pointer to **string** | Comment provided by requester. \* Comment is required when the request is of type Revoke Access. | [optional] |
+| **ClientMetadata** | Pointer to **map[string]string** | Arbitrary key-value pairs. They will never be processed by the IdentityNow system but will be returned on associated APIs such as /account-activities and /access-request-status. | [optional] |
+| **RemoveDate** | Pointer to **SailPointTime** | The date and time the role or access profile or entitlement is no longer assigned to the specified identity. Also known as the expiration date. _ Specify a date-time in the future. _ The current SLA for the deprovisioning is 24 hours. \* This date-time can be used to change the duration of an existing access item assignment for the specified identity. A GRANT_ACCESS request can extend duration or even remove an expiration date, and either a GRANT_ACCESS or REVOKE_ACCESS request can reduce duration or add an expiration date where one has not previously been present. You can change the expiration date in requests for yourself or others you are authorized to request for. | [optional] |
+| **AssignmentId** | Pointer to **NullableString** | The assignmentId for a specific role assignment on the identity. This id is used to revoke that specific roleAssignment on that identity. \* For use with REVOKE_ACCESS requests for roles for identities with multiple accounts on a single source. | [optional] |
+| **NativeIdentity** | Pointer to **NullableString** | The unique identifier for an account on the identity, designated as the account ID attribute in the source's account schema. This is used to revoke a specific attributeAssignment on the identity. \* For use with REVOKE_ACCESS requests for entitlements for identities with multiple accounts on a single source. | [optional] |
 
 ## Methods
 
@@ -29,18 +30,13 @@ Name | Type | Description | Notes
 
 `func NewAccessRequestItem(type_ string, id string, ) *AccessRequestItem`
 
-NewAccessRequestItem instantiates a new AccessRequestItem object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessRequestItem instantiates a new AccessRequestItem object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessRequestItemWithDefaults
 
 `func NewAccessRequestItemWithDefaults() *AccessRequestItem`
 
-NewAccessRequestItemWithDefaults instantiates a new AccessRequestItem object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessRequestItemWithDefaults instantiates a new AccessRequestItem object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -52,15 +48,13 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestItem) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
 `func (o *AccessRequestItem) SetType(v string)`
 
 SetType sets Type field to given value.
-
 
 ### GetId
 
@@ -72,15 +66,13 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestItem) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
 `func (o *AccessRequestItem) SetId(v string)`
 
 SetId sets Id field to given value.
-
 
 ### GetComment
 
@@ -92,8 +84,7 @@ GetComment returns the Comment field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestItem) GetCommentOk() (*string, bool)`
 
-GetCommentOk returns a tuple with the Comment field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCommentOk returns a tuple with the Comment field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetComment
 
@@ -117,8 +108,7 @@ GetClientMetadata returns the ClientMetadata field if non-nil, zero value otherw
 
 `func (o *AccessRequestItem) GetClientMetadataOk() (*map[string]string, bool)`
 
-GetClientMetadataOk returns a tuple with the ClientMetadata field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetClientMetadataOk returns a tuple with the ClientMetadata field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetClientMetadata
 
@@ -142,8 +132,7 @@ GetRemoveDate returns the RemoveDate field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestItem) GetRemoveDateOk() (*SailPointTime, bool)`
 
-GetRemoveDateOk returns a tuple with the RemoveDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRemoveDateOk returns a tuple with the RemoveDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRemoveDate
 
@@ -167,8 +156,7 @@ GetAssignmentId returns the AssignmentId field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestItem) GetAssignmentIdOk() (*string, bool)`
 
-GetAssignmentIdOk returns a tuple with the AssignmentId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAssignmentIdOk returns a tuple with the AssignmentId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAssignmentId
 
@@ -186,12 +174,14 @@ HasAssignmentId returns a boolean if a field has been set.
 
 `func (o *AccessRequestItem) SetAssignmentIdNil(b bool)`
 
- SetAssignmentIdNil sets the value for AssignmentId to be an explicit nil
+SetAssignmentIdNil sets the value for AssignmentId to be an explicit nil
 
 ### UnsetAssignmentId
+
 `func (o *AccessRequestItem) UnsetAssignmentId()`
 
 UnsetAssignmentId ensures that no value is present for AssignmentId, not even an explicit nil
+
 ### GetNativeIdentity
 
 `func (o *AccessRequestItem) GetNativeIdentity() string`
@@ -202,8 +192,7 @@ GetNativeIdentity returns the NativeIdentity field if non-nil, zero value otherw
 
 `func (o *AccessRequestItem) GetNativeIdentityOk() (*string, bool)`
 
-GetNativeIdentityOk returns a tuple with the NativeIdentity field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNativeIdentityOk returns a tuple with the NativeIdentity field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNativeIdentity
 
@@ -221,10 +210,10 @@ HasNativeIdentity returns a boolean if a field has been set.
 
 `func (o *AccessRequestItem) SetNativeIdentityNil(b bool)`
 
- SetNativeIdentityNil sets the value for NativeIdentity to be an explicit nil
+SetNativeIdentityNil sets the value for NativeIdentity to be an explicit nil
 
 ### UnsetNativeIdentity
+
 `func (o *AccessRequestItem) UnsetNativeIdentity()`
 
 UnsetNativeIdentity ensures that no value is present for NativeIdentity, not even an explicit nil
-

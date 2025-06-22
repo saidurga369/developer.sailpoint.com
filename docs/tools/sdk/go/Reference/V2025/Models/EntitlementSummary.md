@@ -4,27 +4,34 @@ title: EntitlementSummary
 pagination_label: EntitlementSummary
 sidebar_label: EntitlementSummary
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'EntitlementSummary', 'V2025EntitlementSummary'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'EntitlementSummary', 'V2025EntitlementSummary']
 slug: /tools/sdk/go/v2025/models/entitlement-summary
-tags: ['SDK', 'Software Development Kit', 'EntitlementSummary', 'V2025EntitlementSummary']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'EntitlementSummary',
+    'V2025EntitlementSummary',
+  ]
 ---
 
 # EntitlementSummary
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The unique ID of the referenced object. | [optional] 
-**Name** | Pointer to **string** | The human readable name of the referenced object. | [optional] 
-**DisplayName** | Pointer to **string** |  | [optional] 
-**Description** | Pointer to **NullableString** | Description of access item. | [optional] 
-**Source** | Pointer to [**Reference**](reference) |  | [optional] 
-**Type** | Pointer to **string** | Type of the access item. | [optional] 
-**Privileged** | Pointer to **bool** |  | [optional] 
-**Attribute** | Pointer to **string** |  | [optional] 
-**Value** | Pointer to **string** |  | [optional] 
-**Standalone** | Pointer to **bool** |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The unique ID of the referenced object. | [optional] |
+| **Name** | Pointer to **string** | The human readable name of the referenced object. | [optional] |
+| **DisplayName** | Pointer to **string** |  | [optional] |
+| **Description** | Pointer to **NullableString** | Description of access item. | [optional] |
+| **Source** | Pointer to [**Reference**](reference) |  | [optional] |
+| **Type** | Pointer to **string** | Type of the access item. | [optional] |
+| **Privileged** | Pointer to **bool** |  | [optional] |
+| **Attribute** | Pointer to **string** |  | [optional] |
+| **Value** | Pointer to **string** |  | [optional] |
+| **Standalone** | Pointer to **bool** |  | [optional] |
 
 ## Methods
 
@@ -32,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewEntitlementSummary() *EntitlementSummary`
 
-NewEntitlementSummary instantiates a new EntitlementSummary object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewEntitlementSummary instantiates a new EntitlementSummary object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewEntitlementSummaryWithDefaults
 
 `func NewEntitlementSummaryWithDefaults() *EntitlementSummary`
 
-NewEntitlementSummaryWithDefaults instantiates a new EntitlementSummary object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewEntitlementSummaryWithDefaults instantiates a new EntitlementSummary object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -55,8 +57,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *EntitlementSummary) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -80,8 +81,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *EntitlementSummary) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -105,8 +105,7 @@ GetDisplayName returns the DisplayName field if non-nil, zero value otherwise.
 
 `func (o *EntitlementSummary) GetDisplayNameOk() (*string, bool)`
 
-GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayName
 
@@ -130,8 +129,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *EntitlementSummary) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -149,12 +147,14 @@ HasDescription returns a boolean if a field has been set.
 
 `func (o *EntitlementSummary) SetDescriptionNil(b bool)`
 
- SetDescriptionNil sets the value for Description to be an explicit nil
+SetDescriptionNil sets the value for Description to be an explicit nil
 
 ### UnsetDescription
+
 `func (o *EntitlementSummary) UnsetDescription()`
 
 UnsetDescription ensures that no value is present for Description, not even an explicit nil
+
 ### GetSource
 
 `func (o *EntitlementSummary) GetSource() Reference`
@@ -165,8 +165,7 @@ GetSource returns the Source field if non-nil, zero value otherwise.
 
 `func (o *EntitlementSummary) GetSourceOk() (*Reference, bool)`
 
-GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSource
 
@@ -190,8 +189,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *EntitlementSummary) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -215,8 +213,7 @@ GetPrivileged returns the Privileged field if non-nil, zero value otherwise.
 
 `func (o *EntitlementSummary) GetPrivilegedOk() (*bool, bool)`
 
-GetPrivilegedOk returns a tuple with the Privileged field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPrivilegedOk returns a tuple with the Privileged field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPrivileged
 
@@ -240,8 +237,7 @@ GetAttribute returns the Attribute field if non-nil, zero value otherwise.
 
 `func (o *EntitlementSummary) GetAttributeOk() (*string, bool)`
 
-GetAttributeOk returns a tuple with the Attribute field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributeOk returns a tuple with the Attribute field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttribute
 
@@ -265,8 +261,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *EntitlementSummary) GetValueOk() (*string, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -290,8 +285,7 @@ GetStandalone returns the Standalone field if non-nil, zero value otherwise.
 
 `func (o *EntitlementSummary) GetStandaloneOk() (*bool, bool)`
 
-GetStandaloneOk returns a tuple with the Standalone field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStandaloneOk returns a tuple with the Standalone field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStandalone
 
@@ -304,5 +298,3 @@ SetStandalone sets Standalone field to given value.
 `func (o *EntitlementSummary) HasStandalone() bool`
 
 HasStandalone returns a boolean if a field has been set.
-
-

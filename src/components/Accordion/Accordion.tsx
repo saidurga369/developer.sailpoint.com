@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import Styles from './styles.module.css';
 
 // Define props interface
@@ -17,12 +17,12 @@ const Accordion: React.FC<AccordionProps> = ({
     <div className="flex flex-col gap-2">
       <button
         onClick={() => setOpen(!open)}
-        className={`flex flex-col ${Styles.accordion} text-white overflow-hidden rounded-2xl border-none p-0`}
-      >
+        className={`flex flex-col ${Styles.accordion} text-white overflow-hidden rounded-2xl border-none p-0`}>
         <div className="flex flex-row justify-between p-4 w-full">
           <p className="!my-0 text-start">{title}</p>
           <div className="flex flex-col">
-            <p className={`!my-0 transition ${open ? 'rotate-45' : 'rotate-0'}`}>
+            <p
+              className={`!my-0 transition ${open ? 'rotate-45' : 'rotate-0'}`}>
               +
             </p>
           </div>

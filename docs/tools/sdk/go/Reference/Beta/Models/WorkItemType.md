@@ -4,7 +4,7 @@ title: WorkItemType
 pagination_label: WorkItemType
 sidebar_label: WorkItemType
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'WorkItemType', 'BetaWorkItemType'] 
+keywords: ['go', 'Golang', 'sdk', 'WorkItemType', 'BetaWorkItemType']
 slug: /tools/sdk/go/beta/models/work-item-type
 tags: ['SDK', 'Software Development Kit', 'WorkItemType', 'BetaWorkItemType']
 ---
@@ -13,35 +13,32 @@ tags: ['SDK', 'Software Development Kit', 'WorkItemType', 'BetaWorkItemType']
 
 ## Enum
 
+- `UNKNOWN` (value: `"Unknown"`)
 
-* `UNKNOWN` (value: `"Unknown"`)
+- `GENERIC` (value: `"Generic"`)
 
-* `GENERIC` (value: `"Generic"`)
+- `CERTIFICATION` (value: `"Certification"`)
 
-* `CERTIFICATION` (value: `"Certification"`)
+- `REMEDIATION` (value: `"Remediation"`)
 
-* `REMEDIATION` (value: `"Remediation"`)
+- `DELEGATION` (value: `"Delegation"`)
 
-* `DELEGATION` (value: `"Delegation"`)
+- `APPROVAL` (value: `"Approval"`)
 
-* `APPROVAL` (value: `"Approval"`)
+- `VIOLATION_REVIEW` (value: `"ViolationReview"`)
 
-* `VIOLATION_REVIEW` (value: `"ViolationReview"`)
+- `FORM` (value: `"Form"`)
 
-* `FORM` (value: `"Form"`)
+- `POLICY_VIOLATION` (value: `"PolicyViolation"`)
 
-* `POLICY_VIOLATION` (value: `"PolicyViolation"`)
+- `CHALLENGE` (value: `"Challenge"`)
 
-* `CHALLENGE` (value: `"Challenge"`)
+- `IMPACT_ANALYSIS` (value: `"ImpactAnalysis"`)
 
-* `IMPACT_ANALYSIS` (value: `"ImpactAnalysis"`)
+- `SIGNOFF` (value: `"Signoff"`)
 
-* `SIGNOFF` (value: `"Signoff"`)
+- `EVENT` (value: `"Event"`)
 
-* `EVENT` (value: `"Event"`)
+- `MANUAL_ACTION` (value: `"ManualAction"`)
 
-* `MANUAL_ACTION` (value: `"ManualAction"`)
-
-* `TEST` (value: `"Test"`)
-
-
+- `TEST` (value: `"Test"`)

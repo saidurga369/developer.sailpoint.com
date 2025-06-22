@@ -4,32 +4,32 @@ title: OrgConfig
 pagination_label: OrgConfig
 sidebar_label: OrgConfig
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'OrgConfig', 'V2024OrgConfig'] 
+keywords: ['powershell', 'PowerShell', 'sdk', 'OrgConfig', 'V2024OrgConfig']
 slug: /tools/sdk/powershell/v2024/models/org-config
 tags: ['SDK', 'Software Development Kit', 'OrgConfig', 'V2024OrgConfig']
 ---
-
 
 # OrgConfig
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**OrgName** | **String** | The name of the org. | [optional] 
-**TimeZone** | **String** | The selected time zone which is to be used for the org.  This directly affects when scheduled tasks are executed.  Valid options can be found at /beta/org-config/valid-time-zones | [optional] 
-**LcsChangeHonorsSourceEnableFeature** | **Boolean** | Flag to determine whether the LCS_CHANGE_HONORS_SOURCE_ENABLE_FEATURE flag is enabled for the current org. | [optional] 
-**ArmCustomerId** | **String** | ARM Customer ID | [optional] 
-**ArmSapSystemIdMappings** | **String** | A list of IDN::sourceId to ARM::systemId mappings. | [optional] 
-**ArmAuth** | **String** | ARM authentication string | [optional] 
-**ArmDb** | **String** | ARM database name | [optional] 
-**ArmSsoUrl** | **String** | ARM SSO URL | [optional] 
-**IaiEnableCertificationRecommendations** | **Boolean** | Flag to determine whether IAI Certification Recommendations are enabled for the current org | [optional] 
-**SodReportConfigs** | [**[]ReportConfigDTO**](report-config-dto) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **OrgName** | **String** | The name of the org. | [optional] |
+| **TimeZone** | **String** | The selected time zone which is to be used for the org. This directly affects when scheduled tasks are executed. Valid options can be found at /beta/org-config/valid-time-zones | [optional] |
+| **LcsChangeHonorsSourceEnableFeature** | **Boolean** | Flag to determine whether the LCS_CHANGE_HONORS_SOURCE_ENABLE_FEATURE flag is enabled for the current org. | [optional] |
+| **ArmCustomerId** | **String** | ARM Customer ID | [optional] |
+| **ArmSapSystemIdMappings** | **String** | A list of IDN::sourceId to ARM::systemId mappings. | [optional] |
+| **ArmAuth** | **String** | ARM authentication string | [optional] |
+| **ArmDb** | **String** | ARM database name | [optional] |
+| **ArmSsoUrl** | **String** | ARM SSO URL | [optional] |
+| **IaiEnableCertificationRecommendations** | **Boolean** | Flag to determine whether IAI Certification Recommendations are enabled for the current org | [optional] |
+| **SodReportConfigs** | [**[]ReportConfigDTO**](report-config-dto) |  | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $OrgConfig = Initialize-V2024OrgConfig  -OrgName acme-solar `
  -TimeZone America/Toronto `
@@ -44,10 +44,9 @@ $OrgConfig = Initialize-V2024OrgConfig  -OrgName acme-solar `
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $OrgConfig | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

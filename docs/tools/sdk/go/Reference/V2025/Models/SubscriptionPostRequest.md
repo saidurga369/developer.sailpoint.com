@@ -4,26 +4,39 @@ title: SubscriptionPostRequest
 pagination_label: SubscriptionPostRequest
 sidebar_label: SubscriptionPostRequest
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SubscriptionPostRequest', 'V2025SubscriptionPostRequest'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'SubscriptionPostRequest',
+    'V2025SubscriptionPostRequest',
+  ]
 slug: /tools/sdk/go/v2025/models/subscription-post-request
-tags: ['SDK', 'Software Development Kit', 'SubscriptionPostRequest', 'V2025SubscriptionPostRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SubscriptionPostRequest',
+    'V2025SubscriptionPostRequest',
+  ]
 ---
 
 # SubscriptionPostRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | **string** | Subscription name. | 
-**Description** | Pointer to **string** | Subscription description. | [optional] 
-**TriggerId** | **string** | ID of trigger subscribed to. | 
-**Type** | [**SubscriptionType**](subscription-type) |  | 
-**ResponseDeadline** | Pointer to **string** | Deadline for completing REQUEST_RESPONSE trigger invocation, represented in ISO-8601 duration format. | [optional] [default to "PT1H"]
-**HttpConfig** | Pointer to [**HttpConfig**](http-config) |  | [optional] 
-**EventBridgeConfig** | Pointer to [**EventBridgeConfig**](event-bridge-config) |  | [optional] 
-**Enabled** | Pointer to **bool** | Whether subscription should receive real-time trigger invocations or not.  Test trigger invocations are always enabled regardless of this option. | [optional] [default to true]
-**Filter** | Pointer to **string** | JSONPath filter to conditionally invoke trigger when expression evaluates to true. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | **string** | Subscription name. |
+| **Description** | Pointer to **string** | Subscription description. | [optional] |
+| **TriggerId** | **string** | ID of trigger subscribed to. |
+| **Type** | [**SubscriptionType**](subscription-type) |  |
+| **ResponseDeadline** | Pointer to **string** | Deadline for completing REQUEST_RESPONSE trigger invocation, represented in ISO-8601 duration format. | [optional] [default to "PT1H"] |
+| **HttpConfig** | Pointer to [**HttpConfig**](http-config) |  | [optional] |
+| **EventBridgeConfig** | Pointer to [**EventBridgeConfig**](event-bridge-config) |  | [optional] |
+| **Enabled** | Pointer to **bool** | Whether subscription should receive real-time trigger invocations or not. Test trigger invocations are always enabled regardless of this option. | [optional] [default to true] |
+| **Filter** | Pointer to **string** | JSONPath filter to conditionally invoke trigger when expression evaluates to true. | [optional] |
 
 ## Methods
 
@@ -31,18 +44,13 @@ Name | Type | Description | Notes
 
 `func NewSubscriptionPostRequest(name string, triggerId string, type_ SubscriptionType, ) *SubscriptionPostRequest`
 
-NewSubscriptionPostRequest instantiates a new SubscriptionPostRequest object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSubscriptionPostRequest instantiates a new SubscriptionPostRequest object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSubscriptionPostRequestWithDefaults
 
 `func NewSubscriptionPostRequestWithDefaults() *SubscriptionPostRequest`
 
-NewSubscriptionPostRequestWithDefaults instantiates a new SubscriptionPostRequest object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSubscriptionPostRequestWithDefaults instantiates a new SubscriptionPostRequest object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -54,15 +62,13 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *SubscriptionPostRequest) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
 `func (o *SubscriptionPostRequest) SetName(v string)`
 
 SetName sets Name field to given value.
-
 
 ### GetDescription
 
@@ -74,8 +80,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *SubscriptionPostRequest) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -99,15 +104,13 @@ GetTriggerId returns the TriggerId field if non-nil, zero value otherwise.
 
 `func (o *SubscriptionPostRequest) GetTriggerIdOk() (*string, bool)`
 
-GetTriggerIdOk returns a tuple with the TriggerId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTriggerIdOk returns a tuple with the TriggerId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTriggerId
 
 `func (o *SubscriptionPostRequest) SetTriggerId(v string)`
 
 SetTriggerId sets TriggerId field to given value.
-
 
 ### GetType
 
@@ -119,15 +122,13 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *SubscriptionPostRequest) GetTypeOk() (*SubscriptionType, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
 `func (o *SubscriptionPostRequest) SetType(v SubscriptionType)`
 
 SetType sets Type field to given value.
-
 
 ### GetResponseDeadline
 
@@ -139,8 +140,7 @@ GetResponseDeadline returns the ResponseDeadline field if non-nil, zero value ot
 
 `func (o *SubscriptionPostRequest) GetResponseDeadlineOk() (*string, bool)`
 
-GetResponseDeadlineOk returns a tuple with the ResponseDeadline field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetResponseDeadlineOk returns a tuple with the ResponseDeadline field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetResponseDeadline
 
@@ -164,8 +164,7 @@ GetHttpConfig returns the HttpConfig field if non-nil, zero value otherwise.
 
 `func (o *SubscriptionPostRequest) GetHttpConfigOk() (*HttpConfig, bool)`
 
-GetHttpConfigOk returns a tuple with the HttpConfig field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetHttpConfigOk returns a tuple with the HttpConfig field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetHttpConfig
 
@@ -189,8 +188,7 @@ GetEventBridgeConfig returns the EventBridgeConfig field if non-nil, zero value 
 
 `func (o *SubscriptionPostRequest) GetEventBridgeConfigOk() (*EventBridgeConfig, bool)`
 
-GetEventBridgeConfigOk returns a tuple with the EventBridgeConfig field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEventBridgeConfigOk returns a tuple with the EventBridgeConfig field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEventBridgeConfig
 
@@ -214,8 +212,7 @@ GetEnabled returns the Enabled field if non-nil, zero value otherwise.
 
 `func (o *SubscriptionPostRequest) GetEnabledOk() (*bool, bool)`
 
-GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEnabled
 
@@ -239,8 +236,7 @@ GetFilter returns the Filter field if non-nil, zero value otherwise.
 
 `func (o *SubscriptionPostRequest) GetFilterOk() (*string, bool)`
 
-GetFilterOk returns a tuple with the Filter field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFilterOk returns a tuple with the Filter field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFilter
 
@@ -253,5 +249,3 @@ SetFilter sets Filter field to given value.
 `func (o *SubscriptionPostRequest) HasFilter() bool`
 
 HasFilter returns a boolean if a field has been set.
-
-

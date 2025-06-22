@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import styles from './styles.module.css';
 
 // Define props interface
@@ -7,7 +7,10 @@ interface BlogSidebarButtonProps {
   text: string;
 }
 
-const BlogSidebarButton: React.FC<BlogSidebarButtonProps> = ({ filterCallback, text }) => {
+const BlogSidebarButton: React.FC<BlogSidebarButtonProps> = ({
+  filterCallback,
+  text,
+}) => {
   const [isActive, setIsActive] = useState<boolean>(false);
   const activeClass = isActive ? styles.tagSelected : '';
 
@@ -20,8 +23,7 @@ const BlogSidebarButton: React.FC<BlogSidebarButtonProps> = ({ filterCallback, t
     <div
       key={text}
       onClick={() => setFilters(text)}
-      className={`${activeClass} ${styles.tag}`}
-    >
+      className={`${activeClass} ${styles.tag}`}>
       {text}
     </div>
   );

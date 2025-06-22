@@ -4,7 +4,7 @@ title: StandardLevel
 pagination_label: StandardLevel
 sidebar_label: StandardLevel
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'StandardLevel', 'BetaStandardLevel'] 
+keywords: ['go', 'Golang', 'sdk', 'StandardLevel', 'BetaStandardLevel']
 slug: /tools/sdk/go/beta/models/standard-level
 tags: ['SDK', 'Software Development Kit', 'StandardLevel', 'BetaStandardLevel']
 ---
@@ -13,19 +13,16 @@ tags: ['SDK', 'Software Development Kit', 'StandardLevel', 'BetaStandardLevel']
 
 ## Enum
 
+- `FALSE` (value: `"false"`)
 
-* `FALSE` (value: `"false"`)
+- `FATAL` (value: `"FATAL"`)
 
-* `FATAL` (value: `"FATAL"`)
+- `ERROR` (value: `"ERROR"`)
 
-* `ERROR` (value: `"ERROR"`)
+- `WARN` (value: `"WARN"`)
 
-* `WARN` (value: `"WARN"`)
+- `INFO` (value: `"INFO"`)
 
-* `INFO` (value: `"INFO"`)
+- `DEBUG` (value: `"DEBUG"`)
 
-* `DEBUG` (value: `"DEBUG"`)
-
-* `TRACE` (value: `"TRACE"`)
-
-
+- `TRACE` (value: `"TRACE"`)

@@ -4,23 +4,36 @@ title: TemplateSlackAutoApprovalData
 pagination_label: TemplateSlackAutoApprovalData
 sidebar_label: TemplateSlackAutoApprovalData
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'TemplateSlackAutoApprovalData', 'V2024TemplateSlackAutoApprovalData'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'TemplateSlackAutoApprovalData',
+    'V2024TemplateSlackAutoApprovalData',
+  ]
 slug: /tools/sdk/python/v2024/models/template-slack-auto-approval-data
-tags: ['SDK', 'Software Development Kit', 'TemplateSlackAutoApprovalData', 'V2024TemplateSlackAutoApprovalData']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'TemplateSlackAutoApprovalData',
+    'V2024TemplateSlackAutoApprovalData',
+  ]
 ---
 
 # TemplateSlackAutoApprovalData
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**is_auto_approved** | **str** |  | [optional] 
-**item_id** | **str** |  | [optional] 
-**item_type** | **str** |  | [optional] 
-**auto_approval_message_json** | **str** |  | [optional] 
-**auto_approval_title** | **str** |  | [optional] 
+| Name                           | Type    | Description | Notes      |
+| ------------------------------ | ------- | ----------- | ---------- |
+| **is_auto_approved**           | **str** |             | [optional] |
+| **item_id**                    | **str** |             | [optional] |
+| **item_type**                  | **str** |             | [optional] |
+| **auto_approval_message_json** | **str** |             | [optional] |
+| **auto_approval_title**        | **str** |             | [optional] |
+
 }
 
 ## Example
@@ -37,5 +50,5 @@ auto_approval_title=''
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

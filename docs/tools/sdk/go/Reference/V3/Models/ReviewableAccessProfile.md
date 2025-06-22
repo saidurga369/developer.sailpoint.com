@@ -4,27 +4,34 @@ title: ReviewableAccessProfile
 pagination_label: ReviewableAccessProfile
 sidebar_label: ReviewableAccessProfile
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ReviewableAccessProfile', 'ReviewableAccessProfile'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'ReviewableAccessProfile', 'ReviewableAccessProfile']
 slug: /tools/sdk/go/v3/models/reviewable-access-profile
-tags: ['SDK', 'Software Development Kit', 'ReviewableAccessProfile', 'ReviewableAccessProfile']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ReviewableAccessProfile',
+    'ReviewableAccessProfile',
+  ]
 ---
 
 # ReviewableAccessProfile
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The id of the Access Profile | [optional] 
-**Name** | Pointer to **string** | Name of the Access Profile | [optional] 
-**Description** | Pointer to **string** | Information about the Access Profile | [optional] 
-**Privileged** | Pointer to **bool** | Indicates if the entitlement is a privileged entitlement | [optional] 
-**CloudGoverned** | Pointer to **bool** | True if the entitlement is cloud governed | [optional] 
-**EndDate** | Pointer to **NullableTime** | The date at which a user's access expires | [optional] 
-**Owner** | Pointer to [**NullableIdentityReferenceWithNameAndEmail**](identity-reference-with-name-and-email) |  | [optional] 
-**Entitlements** | Pointer to [**[]ReviewableEntitlement**](reviewable-entitlement) | A list of entitlements associated with this Access Profile | [optional] 
-**Created** | Pointer to **SailPointTime** | Date the Access Profile was created. | [optional] 
-**Modified** | Pointer to **SailPointTime** | Date the Access Profile was last modified. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The id of the Access Profile | [optional] |
+| **Name** | Pointer to **string** | Name of the Access Profile | [optional] |
+| **Description** | Pointer to **string** | Information about the Access Profile | [optional] |
+| **Privileged** | Pointer to **bool** | Indicates if the entitlement is a privileged entitlement | [optional] |
+| **CloudGoverned** | Pointer to **bool** | True if the entitlement is cloud governed | [optional] |
+| **EndDate** | Pointer to **NullableTime** | The date at which a user's access expires | [optional] |
+| **Owner** | Pointer to [**NullableIdentityReferenceWithNameAndEmail**](identity-reference-with-name-and-email) |  | [optional] |
+| **Entitlements** | Pointer to [**[]ReviewableEntitlement**](reviewable-entitlement) | A list of entitlements associated with this Access Profile | [optional] |
+| **Created** | Pointer to **SailPointTime** | Date the Access Profile was created. | [optional] |
+| **Modified** | Pointer to **SailPointTime** | Date the Access Profile was last modified. | [optional] |
 
 ## Methods
 
@@ -32,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewReviewableAccessProfile() *ReviewableAccessProfile`
 
-NewReviewableAccessProfile instantiates a new ReviewableAccessProfile object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewReviewableAccessProfile instantiates a new ReviewableAccessProfile object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewReviewableAccessProfileWithDefaults
 
 `func NewReviewableAccessProfileWithDefaults() *ReviewableAccessProfile`
 
-NewReviewableAccessProfileWithDefaults instantiates a new ReviewableAccessProfile object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewReviewableAccessProfileWithDefaults instantiates a new ReviewableAccessProfile object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -55,8 +57,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *ReviewableAccessProfile) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -80,8 +81,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *ReviewableAccessProfile) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -105,8 +105,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *ReviewableAccessProfile) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -130,8 +129,7 @@ GetPrivileged returns the Privileged field if non-nil, zero value otherwise.
 
 `func (o *ReviewableAccessProfile) GetPrivilegedOk() (*bool, bool)`
 
-GetPrivilegedOk returns a tuple with the Privileged field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPrivilegedOk returns a tuple with the Privileged field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPrivileged
 
@@ -155,8 +153,7 @@ GetCloudGoverned returns the CloudGoverned field if non-nil, zero value otherwis
 
 `func (o *ReviewableAccessProfile) GetCloudGovernedOk() (*bool, bool)`
 
-GetCloudGovernedOk returns a tuple with the CloudGoverned field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCloudGovernedOk returns a tuple with the CloudGoverned field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCloudGoverned
 
@@ -180,8 +177,7 @@ GetEndDate returns the EndDate field if non-nil, zero value otherwise.
 
 `func (o *ReviewableAccessProfile) GetEndDateOk() (*SailPointTime, bool)`
 
-GetEndDateOk returns a tuple with the EndDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEndDateOk returns a tuple with the EndDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEndDate
 
@@ -199,12 +195,14 @@ HasEndDate returns a boolean if a field has been set.
 
 `func (o *ReviewableAccessProfile) SetEndDateNil(b bool)`
 
- SetEndDateNil sets the value for EndDate to be an explicit nil
+SetEndDateNil sets the value for EndDate to be an explicit nil
 
 ### UnsetEndDate
+
 `func (o *ReviewableAccessProfile) UnsetEndDate()`
 
 UnsetEndDate ensures that no value is present for EndDate, not even an explicit nil
+
 ### GetOwner
 
 `func (o *ReviewableAccessProfile) GetOwner() IdentityReferenceWithNameAndEmail`
@@ -215,8 +213,7 @@ GetOwner returns the Owner field if non-nil, zero value otherwise.
 
 `func (o *ReviewableAccessProfile) GetOwnerOk() (*IdentityReferenceWithNameAndEmail, bool)`
 
-GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwner
 
@@ -234,12 +231,14 @@ HasOwner returns a boolean if a field has been set.
 
 `func (o *ReviewableAccessProfile) SetOwnerNil(b bool)`
 
- SetOwnerNil sets the value for Owner to be an explicit nil
+SetOwnerNil sets the value for Owner to be an explicit nil
 
 ### UnsetOwner
+
 `func (o *ReviewableAccessProfile) UnsetOwner()`
 
 UnsetOwner ensures that no value is present for Owner, not even an explicit nil
+
 ### GetEntitlements
 
 `func (o *ReviewableAccessProfile) GetEntitlements() []ReviewableEntitlement`
@@ -250,8 +249,7 @@ GetEntitlements returns the Entitlements field if non-nil, zero value otherwise.
 
 `func (o *ReviewableAccessProfile) GetEntitlementsOk() (*[]ReviewableEntitlement, bool)`
 
-GetEntitlementsOk returns a tuple with the Entitlements field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEntitlementsOk returns a tuple with the Entitlements field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEntitlements
 
@@ -275,8 +273,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *ReviewableAccessProfile) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -300,8 +297,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *ReviewableAccessProfile) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -314,5 +310,3 @@ SetModified sets Modified field to given value.
 `func (o *ReviewableAccessProfile) HasModified() bool`
 
 HasModified returns a boolean if a field has been set.
-
-

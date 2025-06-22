@@ -4,9 +4,22 @@ title: OutlierContributingFeatureValue
 pagination_label: OutlierContributingFeatureValue
 sidebar_label: OutlierContributingFeatureValue
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'OutlierContributingFeatureValue', 'BetaOutlierContributingFeatureValue'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'OutlierContributingFeatureValue',
+    'BetaOutlierContributingFeatureValue',
+  ]
 slug: /tools/sdk/python/beta/models/outlier-contributing-feature-value
-tags: ['SDK', 'Software Development Kit', 'OutlierContributingFeatureValue', 'BetaOutlierContributingFeatureValue']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'OutlierContributingFeatureValue',
+    'BetaOutlierContributingFeatureValue',
+  ]
 ---
 
 # OutlierContributingFeatureValue
@@ -15,8 +28,9 @@ The feature value
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
+
 }
 
 ## Example
@@ -28,5 +42,5 @@ outlier_contributing_feature_value = OutlierContributingFeatureValue(
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

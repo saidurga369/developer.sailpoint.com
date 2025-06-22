@@ -4,7 +4,7 @@ title: Invocation
 pagination_label: Invocation
 sidebar_label: Invocation
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Invocation', 'BetaInvocation'] 
+keywords: ['go', 'Golang', 'sdk', 'Invocation', 'BetaInvocation']
 slug: /tools/sdk/go/beta/models/invocation
 tags: ['SDK', 'Software Development Kit', 'Invocation', 'BetaInvocation']
 ---
@@ -13,12 +13,12 @@ tags: ['SDK', 'Software Development Kit', 'Invocation', 'BetaInvocation']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Invocation ID | [optional] 
-**TriggerId** | Pointer to **string** | Trigger ID | [optional] 
-**Secret** | Pointer to **string** | Unique invocation secret. | [optional] 
-**ContentJson** | Pointer to **map[string]interface{}** | JSON map of invocation metadata. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Invocation ID | [optional] |
+| **TriggerId** | Pointer to **string** | Trigger ID | [optional] |
+| **Secret** | Pointer to **string** | Unique invocation secret. | [optional] |
+| **ContentJson** | Pointer to **map[string]interface{}** | JSON map of invocation metadata. | [optional] |
 
 ## Methods
 
@@ -26,18 +26,13 @@ Name | Type | Description | Notes
 
 `func NewInvocation() *Invocation`
 
-NewInvocation instantiates a new Invocation object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewInvocation instantiates a new Invocation object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewInvocationWithDefaults
 
 `func NewInvocationWithDefaults() *Invocation`
 
-NewInvocationWithDefaults instantiates a new Invocation object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewInvocationWithDefaults instantiates a new Invocation object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -49,8 +44,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *Invocation) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -74,8 +68,7 @@ GetTriggerId returns the TriggerId field if non-nil, zero value otherwise.
 
 `func (o *Invocation) GetTriggerIdOk() (*string, bool)`
 
-GetTriggerIdOk returns a tuple with the TriggerId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTriggerIdOk returns a tuple with the TriggerId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTriggerId
 
@@ -99,8 +92,7 @@ GetSecret returns the Secret field if non-nil, zero value otherwise.
 
 `func (o *Invocation) GetSecretOk() (*string, bool)`
 
-GetSecretOk returns a tuple with the Secret field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSecretOk returns a tuple with the Secret field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSecret
 
@@ -124,8 +116,7 @@ GetContentJson returns the ContentJson field if non-nil, zero value otherwise.
 
 `func (o *Invocation) GetContentJsonOk() (*map[string]interface{}, bool)`
 
-GetContentJsonOk returns a tuple with the ContentJson field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetContentJsonOk returns a tuple with the ContentJson field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetContentJson
 
@@ -138,5 +129,3 @@ SetContentJson sets ContentJson field to given value.
 `func (o *Invocation) HasContentJson() bool`
 
 HasContentJson returns a boolean if a field has been set.
-
-

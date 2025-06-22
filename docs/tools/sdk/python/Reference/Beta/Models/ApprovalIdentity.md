@@ -4,9 +4,16 @@ title: ApprovalIdentity
 pagination_label: ApprovalIdentity
 sidebar_label: ApprovalIdentity
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ApprovalIdentity', 'BetaApprovalIdentity'] 
+keywords:
+  ['python', 'Python', 'sdk', 'ApprovalIdentity', 'BetaApprovalIdentity']
 slug: /tools/sdk/python/beta/models/approval-identity
-tags: ['SDK', 'Software Development Kit', 'ApprovalIdentity', 'BetaApprovalIdentity']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ApprovalIdentity',
+    'BetaApprovalIdentity',
+  ]
 ---
 
 # ApprovalIdentity
@@ -15,11 +22,12 @@ Identity Object
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The identity ID | [optional] 
-**type** |  **Enum** [  'IDENTITY' ] | Indication of what group the identity belongs to. Ie, IDENTITY, GOVERNANCE_GROUP, etc | [optional] 
-**name** | **str** | Name of the identity | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The identity ID | [optional] |
+| **type** | **Enum** [ 'IDENTITY' ] | Indication of what group the identity belongs to. Ie, IDENTITY, GOVERNANCE_GROUP, etc | [optional] |
+| **name** | **str** | Name of the identity | [optional] |
+
 }
 
 ## Example
@@ -34,5 +42,5 @@ name='John Doe'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

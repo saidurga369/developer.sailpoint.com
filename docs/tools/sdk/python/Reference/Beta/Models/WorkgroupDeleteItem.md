@@ -4,21 +4,28 @@ title: WorkgroupDeleteItem
 pagination_label: WorkgroupDeleteItem
 sidebar_label: WorkgroupDeleteItem
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'WorkgroupDeleteItem', 'BetaWorkgroupDeleteItem'] 
+keywords:
+  ['python', 'Python', 'sdk', 'WorkgroupDeleteItem', 'BetaWorkgroupDeleteItem']
 slug: /tools/sdk/python/beta/models/workgroup-delete-item
-tags: ['SDK', 'Software Development Kit', 'WorkgroupDeleteItem', 'BetaWorkgroupDeleteItem']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'WorkgroupDeleteItem',
+    'BetaWorkgroupDeleteItem',
+  ]
 ---
 
 # WorkgroupDeleteItem
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Id of the Governance Group. | [required]
-**status** | **int** |  The HTTP response status code returned for an individual Governance Group that is requested for deletion during a bulk delete operation.  > 204   -  Governance Group deleted successfully.  > 409   - Governance Group is in use,hence can not be deleted.  > 404   - Governance Group not found.  | [required]
-**description** | **str** | Human readable status description and containing additional context information about success or failures etc.  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | Id of the Governance Group. | [required] |
+| **status** | **int** | The HTTP response status code returned for an individual Governance Group that is requested for deletion during a bulk delete operation. > 204 - Governance Group deleted successfully. > 409 - Governance Group is in use,hence can not be deleted. > 404 - Governance Group not found. | [required] |
+| **description** | **str** | Human readable status description and containing additional context information about success or failures etc. | [optional] |
+
 }
 
 ## Example
@@ -39,5 +46,5 @@ description='
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

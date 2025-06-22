@@ -4,9 +4,22 @@ title: AccessProfileDocumentAllOfSource
 pagination_label: AccessProfileDocumentAllOfSource
 sidebar_label: AccessProfileDocumentAllOfSource
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccessProfileDocumentAllOfSource', 'AccessProfileDocumentAllOfSource'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccessProfileDocumentAllOfSource',
+    'AccessProfileDocumentAllOfSource',
+  ]
 slug: /tools/sdk/python/v3/models/access-profile-document-all-of-source
-tags: ['SDK', 'Software Development Kit', 'AccessProfileDocumentAllOfSource', 'AccessProfileDocumentAllOfSource']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessProfileDocumentAllOfSource',
+    'AccessProfileDocumentAllOfSource',
+  ]
 ---
 
 # AccessProfileDocumentAllOfSource
@@ -15,10 +28,11 @@ Access profile's source.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Source's ID. | [optional] 
-**name** | **str** | Source's name. | [optional] 
+| Name     | Type    | Description    | Notes      |
+| -------- | ------- | -------------- | ---------- |
+| **id**   | **str** | Source's ID.   | [optional] |
+| **name** | **str** | Source's name. | [optional] |
+
 }
 
 ## Example
@@ -32,5 +46,5 @@ name='Employees'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

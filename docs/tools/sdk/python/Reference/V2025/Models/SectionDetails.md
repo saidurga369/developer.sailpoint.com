@@ -4,21 +4,22 @@ title: SectionDetails
 pagination_label: SectionDetails
 sidebar_label: SectionDetails
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SectionDetails', 'V2025SectionDetails'] 
+keywords: ['python', 'Python', 'sdk', 'SectionDetails', 'V2025SectionDetails']
 slug: /tools/sdk/python/v2025/models/section-details
-tags: ['SDK', 'Software Development Kit', 'SectionDetails', 'V2025SectionDetails']
+tags:
+  ['SDK', 'Software Development Kit', 'SectionDetails', 'V2025SectionDetails']
 ---
 
 # SectionDetails
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | Name of the FormItem | [optional] 
-**label** | **str** | Label of the section | [optional] 
-**form_items** | **[]object** | List of FormItems. FormItems can be SectionDetails and/or FieldDetails | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **name** | **str** | Name of the FormItem | [optional] |
+| **label** | **str** | Label of the section | [optional] |
+| **form_items** | **[]object** | List of FormItems. FormItems can be SectionDetails and/or FieldDetails | [optional] |
+
 }
 
 ## Example
@@ -33,5 +34,5 @@ form_items=[]
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

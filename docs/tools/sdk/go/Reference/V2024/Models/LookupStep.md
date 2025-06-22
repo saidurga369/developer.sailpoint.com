@@ -4,7 +4,7 @@ title: LookupStep
 pagination_label: LookupStep
 sidebar_label: LookupStep
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'LookupStep', 'V2024LookupStep'] 
+keywords: ['go', 'Golang', 'sdk', 'LookupStep', 'V2024LookupStep']
 slug: /tools/sdk/go/v2024/models/lookup-step
 tags: ['SDK', 'Software Development Kit', 'LookupStep', 'V2024LookupStep']
 ---
@@ -13,11 +13,11 @@ tags: ['SDK', 'Software Development Kit', 'LookupStep', 'V2024LookupStep']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ReassignedToId** | Pointer to **string** | The ID of the Identity who work is reassigned to | [optional] 
-**ReassignedFromId** | Pointer to **string** | The ID of the Identity who work is reassigned from | [optional] 
-**ReassignmentType** | Pointer to [**ReassignmentTypeEnum**](reassignment-type-enum) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ReassignedToId** | Pointer to **string** | The ID of the Identity who work is reassigned to | [optional] |
+| **ReassignedFromId** | Pointer to **string** | The ID of the Identity who work is reassigned from | [optional] |
+| **ReassignmentType** | Pointer to [**ReassignmentTypeEnum**](reassignment-type-enum) |  | [optional] |
 
 ## Methods
 
@@ -25,18 +25,13 @@ Name | Type | Description | Notes
 
 `func NewLookupStep() *LookupStep`
 
-NewLookupStep instantiates a new LookupStep object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewLookupStep instantiates a new LookupStep object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewLookupStepWithDefaults
 
 `func NewLookupStepWithDefaults() *LookupStep`
 
-NewLookupStepWithDefaults instantiates a new LookupStep object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewLookupStepWithDefaults instantiates a new LookupStep object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetReassignedToId
 
@@ -48,8 +43,7 @@ GetReassignedToId returns the ReassignedToId field if non-nil, zero value otherw
 
 `func (o *LookupStep) GetReassignedToIdOk() (*string, bool)`
 
-GetReassignedToIdOk returns a tuple with the ReassignedToId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReassignedToIdOk returns a tuple with the ReassignedToId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReassignedToId
 
@@ -73,8 +67,7 @@ GetReassignedFromId returns the ReassignedFromId field if non-nil, zero value ot
 
 `func (o *LookupStep) GetReassignedFromIdOk() (*string, bool)`
 
-GetReassignedFromIdOk returns a tuple with the ReassignedFromId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReassignedFromIdOk returns a tuple with the ReassignedFromId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReassignedFromId
 
@@ -98,8 +91,7 @@ GetReassignmentType returns the ReassignmentType field if non-nil, zero value ot
 
 `func (o *LookupStep) GetReassignmentTypeOk() (*ReassignmentTypeEnum, bool)`
 
-GetReassignmentTypeOk returns a tuple with the ReassignmentType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReassignmentTypeOk returns a tuple with the ReassignmentType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReassignmentType
 
@@ -112,5 +104,3 @@ SetReassignmentType sets ReassignmentType field to given value.
 `func (o *LookupStep) HasReassignmentType() bool`
 
 HasReassignmentType returns a boolean if a field has been set.
-
-

@@ -4,21 +4,28 @@ title: AccessRequestTracking
 pagination_label: AccessRequestTracking
 sidebar_label: AccessRequestTracking
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessRequestTracking', 'V2024AccessRequestTracking'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'AccessRequestTracking', 'V2024AccessRequestTracking']
 slug: /tools/sdk/go/v2024/models/access-request-tracking
-tags: ['SDK', 'Software Development Kit', 'AccessRequestTracking', 'V2024AccessRequestTracking']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessRequestTracking',
+    'V2024AccessRequestTracking',
+  ]
 ---
 
 # AccessRequestTracking
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**RequestedFor** | Pointer to **string** | The identity id in which the access request is for. | [optional] 
-**RequestedItemsDetails** | Pointer to [**[]RequestedItemDetails**](requested-item-details) | The details of the item requested. | [optional] 
-**AttributesHash** | Pointer to **int32** | a hash representation of the access requested, useful for longer term tracking client side. | [optional] 
-**AccessRequestIds** | Pointer to **[]string** | a list of access request identifiers, generally only one will be populated, but high volume requested may result in multiple ids. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **RequestedFor** | Pointer to **string** | The identity id in which the access request is for. | [optional] |
+| **RequestedItemsDetails** | Pointer to [**[]RequestedItemDetails**](requested-item-details) | The details of the item requested. | [optional] |
+| **AttributesHash** | Pointer to **int32** | a hash representation of the access requested, useful for longer term tracking client side. | [optional] |
+| **AccessRequestIds** | Pointer to **[]string** | a list of access request identifiers, generally only one will be populated, but high volume requested may result in multiple ids. | [optional] |
 
 ## Methods
 
@@ -26,18 +33,13 @@ Name | Type | Description | Notes
 
 `func NewAccessRequestTracking() *AccessRequestTracking`
 
-NewAccessRequestTracking instantiates a new AccessRequestTracking object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessRequestTracking instantiates a new AccessRequestTracking object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessRequestTrackingWithDefaults
 
 `func NewAccessRequestTrackingWithDefaults() *AccessRequestTracking`
 
-NewAccessRequestTrackingWithDefaults instantiates a new AccessRequestTracking object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessRequestTrackingWithDefaults instantiates a new AccessRequestTracking object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetRequestedFor
 
@@ -49,8 +51,7 @@ GetRequestedFor returns the RequestedFor field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestTracking) GetRequestedForOk() (*string, bool)`
 
-GetRequestedForOk returns a tuple with the RequestedFor field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestedForOk returns a tuple with the RequestedFor field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequestedFor
 
@@ -74,8 +75,7 @@ GetRequestedItemsDetails returns the RequestedItemsDetails field if non-nil, zer
 
 `func (o *AccessRequestTracking) GetRequestedItemsDetailsOk() (*[]RequestedItemDetails, bool)`
 
-GetRequestedItemsDetailsOk returns a tuple with the RequestedItemsDetails field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestedItemsDetailsOk returns a tuple with the RequestedItemsDetails field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequestedItemsDetails
 
@@ -99,8 +99,7 @@ GetAttributesHash returns the AttributesHash field if non-nil, zero value otherw
 
 `func (o *AccessRequestTracking) GetAttributesHashOk() (*int32, bool)`
 
-GetAttributesHashOk returns a tuple with the AttributesHash field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributesHashOk returns a tuple with the AttributesHash field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributesHash
 
@@ -124,8 +123,7 @@ GetAccessRequestIds returns the AccessRequestIds field if non-nil, zero value ot
 
 `func (o *AccessRequestTracking) GetAccessRequestIdsOk() (*[]string, bool)`
 
-GetAccessRequestIdsOk returns a tuple with the AccessRequestIds field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessRequestIdsOk returns a tuple with the AccessRequestIds field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessRequestIds
 
@@ -138,5 +136,3 @@ SetAccessRequestIds sets AccessRequestIds field to given value.
 `func (o *AccessRequestTracking) HasAccessRequestIds() bool`
 
 HasAccessRequestIds returns a boolean if a field has been set.
-
-

@@ -18,10 +18,10 @@ function toSentenceCase(str) {
 function updateContent(content, filePath) {
   const patterns = [
     /^(\s*summary:\s*)(["']?)(.+?)(["']?)\s*$/gm,
-    /^(\s*-?\s*name:\s*)(["']?)(.+?)(["']?)\s*$/gm
+    /^(\s*-?\s*name:\s*)(["']?)(.+?)(["']?)\s*$/gm,
   ];
   let updated = content;
-  patterns.forEach(regex => {
+  patterns.forEach((regex) => {
     updated = updated.replace(regex, (_, prefix, openQ, text, closeQ) => {
       const newText = toSentenceCase(text);
       if (newText !== text) {
@@ -46,7 +46,9 @@ async function processPath(inputPath) {
 
   if (stat.isDirectory()) {
     const entries = await fs.readdir(inputPath);
-    await Promise.all(entries.map(name => processPath(path.join(inputPath, name))));
+    await Promise.all(
+      entries.map((name) => processPath(path.join(inputPath, name))),
+    );
     return;
   }
 

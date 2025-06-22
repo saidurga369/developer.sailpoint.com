@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
-import FormItem from "@theme/ApiExplorer/FormItem";
-import FormSelect from "@theme/ApiExplorer/FormSelect";
-import FormTextInput from "@theme/ApiExplorer/FormTextInput";
-import { useTypedDispatch, useTypedSelector } from "@theme/ApiItem/hooks";
+import FormItem from '@theme/ApiExplorer/FormItem';
+import FormSelect from '@theme/ApiExplorer/FormSelect';
+import FormTextInput from '@theme/ApiExplorer/FormTextInput';
+import {useTypedDispatch, useTypedSelector} from '@theme/ApiItem/hooks';
 
-import { setAuthData, setSelectedAuth } from "./slice";
+import {setAuthData, setSelectedAuth} from './slice';
 
 function Authorization() {
   const data = useTypedSelector((state: any) => state.auth.data);
@@ -36,20 +36,20 @@ function Authorization() {
         </FormItem>
       )}
       {selectedAuth.map((a: any) => {
-        if (a.type === "http" && a.scheme === "bearer") {
+        if (a.type === 'http' && a.scheme === 'bearer') {
           return (
-            <FormItem label="Bearer Token" key={a.key + "-bearer"}>
+            <FormItem label="Bearer Token" key={a.key + '-bearer'}>
               <FormTextInput
                 placeholder="Bearer Token"
-                value={data[a.key].token ?? ""}
+                value={data[a.key].token ?? ''}
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                   const value = e.target.value;
                   dispatch(
                     setAuthData({
                       scheme: a.key,
-                      key: "token",
+                      key: 'token',
                       value: value ? value : undefined,
-                    })
+                    }),
                   );
                 }}
               />
@@ -57,20 +57,20 @@ function Authorization() {
           );
         }
 
-        if (a.type === "oauth2") {
+        if (a.type === 'oauth2') {
           return (
-            <FormItem label="Bearer Token" key={a.key + "-oauth2"}>
+            <FormItem label="Bearer Token" key={a.key + '-oauth2'}>
               <FormTextInput
                 placeholder="Bearer Token"
-                value={data[a.key].token ?? ""}
+                value={data[a.key].token ?? ''}
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                   const value = e.target.value;
                   dispatch(
                     setAuthData({
                       scheme: a.key,
-                      key: "token",
+                      key: 'token',
                       value: value ? value : undefined,
-                    })
+                    }),
                   );
                 }}
               />
@@ -78,21 +78,21 @@ function Authorization() {
           );
         }
 
-        if (a.type === "http" && a.scheme === "basic") {
+        if (a.type === 'http' && a.scheme === 'basic') {
           return (
-            <React.Fragment key={a.key + "-basic"}>
+            <React.Fragment key={a.key + '-basic'}>
               <FormItem label="Username">
                 <FormTextInput
                   placeholder="Username"
-                  value={data[a.key].username ?? ""}
+                  value={data[a.key].username ?? ''}
                   onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                     const value = e.target.value;
                     dispatch(
                       setAuthData({
                         scheme: a.key,
-                        key: "username",
+                        key: 'username',
                         value: value ? value : undefined,
-                      })
+                      }),
                     );
                   }}
                 />
@@ -101,15 +101,15 @@ function Authorization() {
                 <FormTextInput
                   placeholder="Password"
                   password
-                  value={data[a.key].password ?? ""}
+                  value={data[a.key].password ?? ''}
                   onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                     const value = e.target.value;
                     dispatch(
                       setAuthData({
                         scheme: a.key,
-                        key: "password",
+                        key: 'password',
                         value: value ? value : undefined,
-                      })
+                      }),
                     );
                   }}
                 />
@@ -118,20 +118,20 @@ function Authorization() {
           );
         }
 
-        if (a.type === "apiKey") {
+        if (a.type === 'apiKey') {
           return (
-            <FormItem label={`${a.key}`} key={a.key + "-apikey"}>
+            <FormItem label={`${a.key}`} key={a.key + '-apikey'}>
               <FormTextInput
                 placeholder={`${a.key}`}
-                value={data[a.key].apiKey ?? ""}
+                value={data[a.key].apiKey ?? ''}
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                   const value = e.target.value;
                   dispatch(
                     setAuthData({
                       scheme: a.key,
-                      key: "apiKey",
+                      key: 'apiKey',
                       value: value ? value : undefined,
-                    })
+                    }),
                   );
                 }}
               />

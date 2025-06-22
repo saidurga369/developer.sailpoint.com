@@ -4,7 +4,7 @@ title: Index
 pagination_label: Index
 sidebar_label: Index
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Index', 'V2024Index'] 
+keywords: ['go', 'Golang', 'sdk', 'Index', 'V2024Index']
 slug: /tools/sdk/go/v2024/models/index
 tags: ['SDK', 'Software Development Kit', 'Index', 'V2024Index']
 ---
@@ -13,19 +13,16 @@ tags: ['SDK', 'Software Development Kit', 'Index', 'V2024Index']
 
 ## Enum
 
+- `ACCESSPROFILES` (value: `"accessprofiles"`)
 
-* `ACCESSPROFILES` (value: `"accessprofiles"`)
+- `ACCOUNTACTIVITIES` (value: `"accountactivities"`)
 
-* `ACCOUNTACTIVITIES` (value: `"accountactivities"`)
+- `ENTITLEMENTS` (value: `"entitlements"`)
 
-* `ENTITLEMENTS` (value: `"entitlements"`)
+- `EVENTS` (value: `"events"`)
 
-* `EVENTS` (value: `"events"`)
+- `IDENTITIES` (value: `"identities"`)
 
-* `IDENTITIES` (value: `"identities"`)
+- `ROLES` (value: `"roles"`)
 
-* `ROLES` (value: `"roles"`)
-
-* `STAR` (value: `"*"`)
-
-
+- `STAR` (value: `"*"`)

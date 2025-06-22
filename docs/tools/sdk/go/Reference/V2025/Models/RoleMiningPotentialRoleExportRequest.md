@@ -4,19 +4,32 @@ title: RoleMiningPotentialRoleExportRequest
 pagination_label: RoleMiningPotentialRoleExportRequest
 sidebar_label: RoleMiningPotentialRoleExportRequest
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleMiningPotentialRoleExportRequest', 'V2025RoleMiningPotentialRoleExportRequest'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'RoleMiningPotentialRoleExportRequest',
+    'V2025RoleMiningPotentialRoleExportRequest',
+  ]
 slug: /tools/sdk/go/v2025/models/role-mining-potential-role-export-request
-tags: ['SDK', 'Software Development Kit', 'RoleMiningPotentialRoleExportRequest', 'V2025RoleMiningPotentialRoleExportRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningPotentialRoleExportRequest',
+    'V2025RoleMiningPotentialRoleExportRequest',
+  ]
 ---
 
 # RoleMiningPotentialRoleExportRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**MinEntitlementPopularity** | Pointer to **int32** | The minimum popularity among identities in the role which an entitlement must have to be included in the report | [optional] 
-**IncludeCommonAccess** | Pointer to **bool** | If false, do not include entitlements that are highly popular among the entire orginization | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **MinEntitlementPopularity** | Pointer to **int32** | The minimum popularity among identities in the role which an entitlement must have to be included in the report | [optional] |
+| **IncludeCommonAccess** | Pointer to **bool** | If false, do not include entitlements that are highly popular among the entire orginization | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewRoleMiningPotentialRoleExportRequest() *RoleMiningPotentialRoleExportRequest`
 
-NewRoleMiningPotentialRoleExportRequest instantiates a new RoleMiningPotentialRoleExportRequest object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleMiningPotentialRoleExportRequest instantiates a new RoleMiningPotentialRoleExportRequest object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleMiningPotentialRoleExportRequestWithDefaults
 
 `func NewRoleMiningPotentialRoleExportRequestWithDefaults() *RoleMiningPotentialRoleExportRequest`
 
-NewRoleMiningPotentialRoleExportRequestWithDefaults instantiates a new RoleMiningPotentialRoleExportRequest object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleMiningPotentialRoleExportRequestWithDefaults instantiates a new RoleMiningPotentialRoleExportRequest object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetMinEntitlementPopularity
 
@@ -47,8 +55,7 @@ GetMinEntitlementPopularity returns the MinEntitlementPopularity field if non-ni
 
 `func (o *RoleMiningPotentialRoleExportRequest) GetMinEntitlementPopularityOk() (*int32, bool)`
 
-GetMinEntitlementPopularityOk returns a tuple with the MinEntitlementPopularity field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMinEntitlementPopularityOk returns a tuple with the MinEntitlementPopularity field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMinEntitlementPopularity
 
@@ -72,8 +79,7 @@ GetIncludeCommonAccess returns the IncludeCommonAccess field if non-nil, zero va
 
 `func (o *RoleMiningPotentialRoleExportRequest) GetIncludeCommonAccessOk() (*bool, bool)`
 
-GetIncludeCommonAccessOk returns a tuple with the IncludeCommonAccess field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIncludeCommonAccessOk returns a tuple with the IncludeCommonAccess field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIncludeCommonAccess
 
@@ -86,5 +92,3 @@ SetIncludeCommonAccess sets IncludeCommonAccess field to given value.
 `func (o *RoleMiningPotentialRoleExportRequest) HasIncludeCommonAccess() bool`
 
 HasIncludeCommonAccess returns a boolean if a field has been set.
-
-

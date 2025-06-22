@@ -4,9 +4,22 @@ title: CampaignTemplateOwnerRef
 pagination_label: CampaignTemplateOwnerRef
 sidebar_label: CampaignTemplateOwnerRef
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'CampaignTemplateOwnerRef', 'BetaCampaignTemplateOwnerRef'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'CampaignTemplateOwnerRef',
+    'BetaCampaignTemplateOwnerRef',
+  ]
 slug: /tools/sdk/python/beta/models/campaign-template-owner-ref
-tags: ['SDK', 'Software Development Kit', 'CampaignTemplateOwnerRef', 'BetaCampaignTemplateOwnerRef']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CampaignTemplateOwnerRef',
+    'BetaCampaignTemplateOwnerRef',
+  ]
 ---
 
 # CampaignTemplateOwnerRef
@@ -15,12 +28,13 @@ The owner of this template, and the owner of campaigns generated from this templ
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Id of the owner | [optional] 
-**type** |  **Enum** [  'IDENTITY' ] | Type of the owner | [optional] 
-**name** | **str** | Name of the owner | [optional] 
-**email** | **str** | Email of the owner | [optional] 
+| Name      | Type                    | Description        | Notes      |
+| --------- | ----------------------- | ------------------ | ---------- |
+| **id**    | **str**                 | Id of the owner    | [optional] |
+| **type**  | **Enum** [ 'IDENTITY' ] | Type of the owner  | [optional] |
+| **name**  | **str**                 | Name of the owner  | [optional] |
+| **email** | **str**                 | Email of the owner | [optional] |
+
 }
 
 ## Example
@@ -36,5 +50,5 @@ email='mr.manager@example.com'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

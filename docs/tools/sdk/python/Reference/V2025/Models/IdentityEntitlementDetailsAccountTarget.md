@@ -4,26 +4,39 @@ title: IdentityEntitlementDetailsAccountTarget
 pagination_label: IdentityEntitlementDetailsAccountTarget
 sidebar_label: IdentityEntitlementDetailsAccountTarget
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentityEntitlementDetailsAccountTarget', 'V2025IdentityEntitlementDetailsAccountTarget'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'IdentityEntitlementDetailsAccountTarget',
+    'V2025IdentityEntitlementDetailsAccountTarget',
+  ]
 slug: /tools/sdk/python/v2025/models/identity-entitlement-details-account-target
-tags: ['SDK', 'Software Development Kit', 'IdentityEntitlementDetailsAccountTarget', 'V2025IdentityEntitlementDetailsAccountTarget']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityEntitlementDetailsAccountTarget',
+    'V2025IdentityEntitlementDetailsAccountTarget',
+  ]
 ---
 
 # IdentityEntitlementDetailsAccountTarget
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**account_id** | **str** | The id of account | [optional] 
-**account_name** | **str** | The name of account | [optional] 
-**account_uuid** | **str** | The UUID representation of the account if available | [optional] 
-**source_id** | **str** | The id of Source | [optional] 
-**source_name** | **str** | The name of Source | [optional] 
-**remove_date** | **str** | The removal date scheduled for the entitlement on the Identity | [optional] 
-**assignment_id** | **str** | The assignmentId of the entitlement on the Identity | [optional] 
-**revocable** | **bool** | If the entitlement can be revoked | [optional] [default to False]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **account_id** | **str** | The id of account | [optional] |
+| **account_name** | **str** | The name of account | [optional] |
+| **account_uuid** | **str** | The UUID representation of the account if available | [optional] |
+| **source_id** | **str** | The id of Source | [optional] |
+| **source_name** | **str** | The name of Source | [optional] |
+| **remove_date** | **str** | The removal date scheduled for the entitlement on the Identity | [optional] |
+| **assignment_id** | **str** | The assignmentId of the entitlement on the Identity | [optional] |
+| **revocable** | **bool** | If the entitlement can be revoked | [optional] [default to False] |
+
 }
 
 ## Example
@@ -43,5 +56,5 @@ revocable=True
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

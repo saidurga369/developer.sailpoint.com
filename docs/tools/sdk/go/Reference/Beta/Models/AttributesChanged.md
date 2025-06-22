@@ -4,21 +4,27 @@ title: AttributesChanged
 pagination_label: AttributesChanged
 sidebar_label: AttributesChanged
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AttributesChanged', 'BetaAttributesChanged'] 
+keywords: ['go', 'Golang', 'sdk', 'AttributesChanged', 'BetaAttributesChanged']
 slug: /tools/sdk/go/beta/models/attributes-changed
-tags: ['SDK', 'Software Development Kit', 'AttributesChanged', 'BetaAttributesChanged']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AttributesChanged',
+    'BetaAttributesChanged',
+  ]
 ---
 
 # AttributesChanged
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Changes** | Pointer to [**[]AttributeChange**](attribute-change) |  | [optional] 
-**EventType** | Pointer to **string** | the event type | [optional] 
-**IdentityId** | Pointer to **string** | the identity id | [optional] 
-**Dt** | Pointer to **string** | the date of event | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Changes** | Pointer to [**[]AttributeChange**](attribute-change) |  | [optional] |
+| **EventType** | Pointer to **string** | the event type | [optional] |
+| **IdentityId** | Pointer to **string** | the identity id | [optional] |
+| **Dt** | Pointer to **string** | the date of event | [optional] |
 
 ## Methods
 
@@ -26,18 +32,13 @@ Name | Type | Description | Notes
 
 `func NewAttributesChanged() *AttributesChanged`
 
-NewAttributesChanged instantiates a new AttributesChanged object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAttributesChanged instantiates a new AttributesChanged object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAttributesChangedWithDefaults
 
 `func NewAttributesChangedWithDefaults() *AttributesChanged`
 
-NewAttributesChangedWithDefaults instantiates a new AttributesChanged object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAttributesChangedWithDefaults instantiates a new AttributesChanged object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetChanges
 
@@ -49,8 +50,7 @@ GetChanges returns the Changes field if non-nil, zero value otherwise.
 
 `func (o *AttributesChanged) GetChangesOk() (*[]AttributeChange, bool)`
 
-GetChangesOk returns a tuple with the Changes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetChangesOk returns a tuple with the Changes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetChanges
 
@@ -74,8 +74,7 @@ GetEventType returns the EventType field if non-nil, zero value otherwise.
 
 `func (o *AttributesChanged) GetEventTypeOk() (*string, bool)`
 
-GetEventTypeOk returns a tuple with the EventType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEventTypeOk returns a tuple with the EventType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEventType
 
@@ -99,8 +98,7 @@ GetIdentityId returns the IdentityId field if non-nil, zero value otherwise.
 
 `func (o *AttributesChanged) GetIdentityIdOk() (*string, bool)`
 
-GetIdentityIdOk returns a tuple with the IdentityId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityIdOk returns a tuple with the IdentityId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityId
 
@@ -124,8 +122,7 @@ GetDt returns the Dt field if non-nil, zero value otherwise.
 
 `func (o *AttributesChanged) GetDtOk() (*string, bool)`
 
-GetDtOk returns a tuple with the Dt field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDtOk returns a tuple with the Dt field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDt
 
@@ -138,5 +135,3 @@ SetDt sets Dt field to given value.
 `func (o *AttributesChanged) HasDt() bool`
 
 HasDt returns a boolean if a field has been set.
-
-

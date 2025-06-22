@@ -4,29 +4,42 @@ title: AccessItemAccessProfileResponse
 pagination_label: AccessItemAccessProfileResponse
 sidebar_label: AccessItemAccessProfileResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessItemAccessProfileResponse', 'V2025AccessItemAccessProfileResponse'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'AccessItemAccessProfileResponse',
+    'V2025AccessItemAccessProfileResponse',
+  ]
 slug: /tools/sdk/go/v2025/models/access-item-access-profile-response
-tags: ['SDK', 'Software Development Kit', 'AccessItemAccessProfileResponse', 'V2025AccessItemAccessProfileResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessItemAccessProfileResponse',
+    'V2025AccessItemAccessProfileResponse',
+  ]
 ---
 
 # AccessItemAccessProfileResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**AccessType** | Pointer to **string** | the access item type. accessProfile in this case | [optional] 
-**Id** | Pointer to **string** | the access item id | [optional] 
-**Name** | Pointer to **string** | the access profile name | [optional] 
-**SourceName** | Pointer to **string** | the name of the source | [optional] 
-**SourceId** | Pointer to **string** | the id of the source | [optional] 
-**Description** | Pointer to **string** | the description for the access profile | [optional] 
-**DisplayName** | Pointer to **string** | the display name of the identity | [optional] 
-**EntitlementCount** | Pointer to **string** | the number of entitlements the access profile will create | [optional] 
-**AppDisplayName** | Pointer to **string** | the name of | [optional] 
-**RemoveDate** | Pointer to **string** | the date the access profile is no longer assigned to the specified identity | [optional] 
-**Standalone** | **bool** | indicates whether the access profile is standalone | 
-**Revocable** | **bool** | indicates whether the access profile is | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **AccessType** | Pointer to **string** | the access item type. accessProfile in this case | [optional] |
+| **Id** | Pointer to **string** | the access item id | [optional] |
+| **Name** | Pointer to **string** | the access profile name | [optional] |
+| **SourceName** | Pointer to **string** | the name of the source | [optional] |
+| **SourceId** | Pointer to **string** | the id of the source | [optional] |
+| **Description** | Pointer to **string** | the description for the access profile | [optional] |
+| **DisplayName** | Pointer to **string** | the display name of the identity | [optional] |
+| **EntitlementCount** | Pointer to **string** | the number of entitlements the access profile will create | [optional] |
+| **AppDisplayName** | Pointer to **string** | the name of | [optional] |
+| **RemoveDate** | Pointer to **string** | the date the access profile is no longer assigned to the specified identity | [optional] |
+| **Standalone** | **bool** | indicates whether the access profile is standalone |
+| **Revocable** | **bool** | indicates whether the access profile is |
 
 ## Methods
 
@@ -34,18 +47,13 @@ Name | Type | Description | Notes
 
 `func NewAccessItemAccessProfileResponse(standalone bool, revocable bool, ) *AccessItemAccessProfileResponse`
 
-NewAccessItemAccessProfileResponse instantiates a new AccessItemAccessProfileResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessItemAccessProfileResponse instantiates a new AccessItemAccessProfileResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessItemAccessProfileResponseWithDefaults
 
 `func NewAccessItemAccessProfileResponseWithDefaults() *AccessItemAccessProfileResponse`
 
-NewAccessItemAccessProfileResponseWithDefaults instantiates a new AccessItemAccessProfileResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessItemAccessProfileResponseWithDefaults instantiates a new AccessItemAccessProfileResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetAccessType
 
@@ -57,8 +65,7 @@ GetAccessType returns the AccessType field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAccessProfileResponse) GetAccessTypeOk() (*string, bool)`
 
-GetAccessTypeOk returns a tuple with the AccessType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessTypeOk returns a tuple with the AccessType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessType
 
@@ -82,8 +89,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAccessProfileResponse) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -107,8 +113,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAccessProfileResponse) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -132,8 +137,7 @@ GetSourceName returns the SourceName field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAccessProfileResponse) GetSourceNameOk() (*string, bool)`
 
-GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceName
 
@@ -157,8 +161,7 @@ GetSourceId returns the SourceId field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAccessProfileResponse) GetSourceIdOk() (*string, bool)`
 
-GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceId
 
@@ -182,8 +185,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAccessProfileResponse) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -207,8 +209,7 @@ GetDisplayName returns the DisplayName field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAccessProfileResponse) GetDisplayNameOk() (*string, bool)`
 
-GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayName
 
@@ -232,8 +233,7 @@ GetEntitlementCount returns the EntitlementCount field if non-nil, zero value ot
 
 `func (o *AccessItemAccessProfileResponse) GetEntitlementCountOk() (*string, bool)`
 
-GetEntitlementCountOk returns a tuple with the EntitlementCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEntitlementCountOk returns a tuple with the EntitlementCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEntitlementCount
 
@@ -257,8 +257,7 @@ GetAppDisplayName returns the AppDisplayName field if non-nil, zero value otherw
 
 `func (o *AccessItemAccessProfileResponse) GetAppDisplayNameOk() (*string, bool)`
 
-GetAppDisplayNameOk returns a tuple with the AppDisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAppDisplayNameOk returns a tuple with the AppDisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAppDisplayName
 
@@ -282,8 +281,7 @@ GetRemoveDate returns the RemoveDate field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAccessProfileResponse) GetRemoveDateOk() (*string, bool)`
 
-GetRemoveDateOk returns a tuple with the RemoveDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRemoveDateOk returns a tuple with the RemoveDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRemoveDate
 
@@ -307,15 +305,13 @@ GetStandalone returns the Standalone field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAccessProfileResponse) GetStandaloneOk() (*bool, bool)`
 
-GetStandaloneOk returns a tuple with the Standalone field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStandaloneOk returns a tuple with the Standalone field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStandalone
 
 `func (o *AccessItemAccessProfileResponse) SetStandalone(v bool)`
 
 SetStandalone sets Standalone field to given value.
-
 
 ### GetRevocable
 
@@ -327,14 +323,10 @@ GetRevocable returns the Revocable field if non-nil, zero value otherwise.
 
 `func (o *AccessItemAccessProfileResponse) GetRevocableOk() (*bool, bool)`
 
-GetRevocableOk returns a tuple with the Revocable field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRevocableOk returns a tuple with the Revocable field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRevocable
 
 `func (o *AccessItemAccessProfileResponse) SetRevocable(v bool)`
 
 SetRevocable sets Revocable field to given value.
-
-
-

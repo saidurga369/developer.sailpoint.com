@@ -4,20 +4,33 @@ title: IdentityReferenceWithId
 pagination_label: IdentityReferenceWithId
 sidebar_label: IdentityReferenceWithId
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentityReferenceWithId', 'BetaIdentityReferenceWithId'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'IdentityReferenceWithId',
+    'BetaIdentityReferenceWithId',
+  ]
 slug: /tools/sdk/python/beta/models/identity-reference-with-id
-tags: ['SDK', 'Software Development Kit', 'IdentityReferenceWithId', 'BetaIdentityReferenceWithId']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityReferenceWithId',
+    'BetaIdentityReferenceWithId',
+  ]
 ---
 
 # IdentityReferenceWithId
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** | [**DtoType**](dto-type) |  | [optional] 
-**id** | **str** | Identity id | [optional] 
+| Name     | Type                    | Description | Notes      |
+| -------- | ----------------------- | ----------- | ---------- |
+| **type** | [**DtoType**](dto-type) |             | [optional] |
+| **id**   | **str**                 | Identity id | [optional] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ id='5168015d32f890ca15812c9180835d2e'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

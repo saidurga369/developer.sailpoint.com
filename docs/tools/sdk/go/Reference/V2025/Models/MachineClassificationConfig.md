@@ -4,22 +4,35 @@ title: MachineClassificationConfig
 pagination_label: MachineClassificationConfig
 sidebar_label: MachineClassificationConfig
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'MachineClassificationConfig', 'V2025MachineClassificationConfig'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'MachineClassificationConfig',
+    'V2025MachineClassificationConfig',
+  ]
 slug: /tools/sdk/go/v2025/models/machine-classification-config
-tags: ['SDK', 'Software Development Kit', 'MachineClassificationConfig', 'V2025MachineClassificationConfig']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'MachineClassificationConfig',
+    'V2025MachineClassificationConfig',
+  ]
 ---
 
 # MachineClassificationConfig
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Enabled** | Pointer to **bool** | Indicates if the Classification is enabled for a Source | [optional] [default to false]
-**ClassificationMethod** | Pointer to **string** | Classification Method | [optional] 
-**Criteria** | Pointer to **NullableString** | A classification criteria object | [optional] 
-**Created** | Pointer to **SailPointTime** | Time when the config was created | [optional] 
-**Modified** | Pointer to **NullableTime** | Time when the config was last updated | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Enabled** | Pointer to **bool** | Indicates if the Classification is enabled for a Source | [optional] [default to false] |
+| **ClassificationMethod** | Pointer to **string** | Classification Method | [optional] |
+| **Criteria** | Pointer to **NullableString** | A classification criteria object | [optional] |
+| **Created** | Pointer to **SailPointTime** | Time when the config was created | [optional] |
+| **Modified** | Pointer to **NullableTime** | Time when the config was last updated | [optional] |
 
 ## Methods
 
@@ -27,18 +40,13 @@ Name | Type | Description | Notes
 
 `func NewMachineClassificationConfig() *MachineClassificationConfig`
 
-NewMachineClassificationConfig instantiates a new MachineClassificationConfig object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewMachineClassificationConfig instantiates a new MachineClassificationConfig object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewMachineClassificationConfigWithDefaults
 
 `func NewMachineClassificationConfigWithDefaults() *MachineClassificationConfig`
 
-NewMachineClassificationConfigWithDefaults instantiates a new MachineClassificationConfig object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewMachineClassificationConfigWithDefaults instantiates a new MachineClassificationConfig object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetEnabled
 
@@ -50,8 +58,7 @@ GetEnabled returns the Enabled field if non-nil, zero value otherwise.
 
 `func (o *MachineClassificationConfig) GetEnabledOk() (*bool, bool)`
 
-GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEnabled
 
@@ -75,8 +82,7 @@ GetClassificationMethod returns the ClassificationMethod field if non-nil, zero 
 
 `func (o *MachineClassificationConfig) GetClassificationMethodOk() (*string, bool)`
 
-GetClassificationMethodOk returns a tuple with the ClassificationMethod field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetClassificationMethodOk returns a tuple with the ClassificationMethod field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetClassificationMethod
 
@@ -100,8 +106,7 @@ GetCriteria returns the Criteria field if non-nil, zero value otherwise.
 
 `func (o *MachineClassificationConfig) GetCriteriaOk() (*string, bool)`
 
-GetCriteriaOk returns a tuple with the Criteria field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCriteriaOk returns a tuple with the Criteria field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCriteria
 
@@ -119,12 +124,14 @@ HasCriteria returns a boolean if a field has been set.
 
 `func (o *MachineClassificationConfig) SetCriteriaNil(b bool)`
 
- SetCriteriaNil sets the value for Criteria to be an explicit nil
+SetCriteriaNil sets the value for Criteria to be an explicit nil
 
 ### UnsetCriteria
+
 `func (o *MachineClassificationConfig) UnsetCriteria()`
 
 UnsetCriteria ensures that no value is present for Criteria, not even an explicit nil
+
 ### GetCreated
 
 `func (o *MachineClassificationConfig) GetCreated() SailPointTime`
@@ -135,8 +142,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *MachineClassificationConfig) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -160,8 +166,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *MachineClassificationConfig) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -179,10 +184,10 @@ HasModified returns a boolean if a field has been set.
 
 `func (o *MachineClassificationConfig) SetModifiedNil(b bool)`
 
- SetModifiedNil sets the value for Modified to be an explicit nil
+SetModifiedNil sets the value for Modified to be an explicit nil
 
 ### UnsetModified
+
 `func (o *MachineClassificationConfig) UnsetModified()`
 
 UnsetModified ensures that no value is present for Modified, not even an explicit nil
-

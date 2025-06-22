@@ -43,10 +43,7 @@ You must use a `firstValid`. If the identity does not have a manager, `getManage
 {
   "type": "firstValid",
   "attributes": {
-    "values": [
-      "$identity.getManager().getId()",
-      "no manager exists"
-    ]
+    "values": ["$identity.getManager().getId()", "no manager exists"]
   }
 }
 ```
@@ -102,18 +99,18 @@ To retrieve an attribute from an identity's account in a specific source, by Sou
 ```json
 {
   "type": "firstValid",
-    "attributes": {
-        "values": [
-            {
-                "type": "static",
-                "attributes": {
-                    "value": "$identity.getLinksByAppIdOrName(\"2c918088814e6a610181686b56977fa8\",null)[0].id"
-                }
-            },
-            null
-        ],
-        "ignoreErrors": true
-    }
+  "attributes": {
+    "values": [
+      {
+        "type": "static",
+        "attributes": {
+          "value": "$identity.getLinksByAppIdOrName(\"2c918088814e6a610181686b56977fa8\",null)[0].id"
+        }
+      },
+      null
+    ],
+    "ignoreErrors": true
+  }
 }
 ```
 
@@ -128,18 +125,18 @@ Note the `[source]` at the end of the Source Name in the below example. This is 
 ```json
 {
   "type": "firstValid",
-    "attributes": {
-        "values": [
-            {
-                "type": "static",
-                "attributes": {
-                    "value": "$identity.getLinksByAppIdOrName(null,\"Active Directory [source]\")[0].id"
-                }
-            },
-            null
-        ],
-        "ignoreErrors": true
-    }
+  "attributes": {
+    "values": [
+      {
+        "type": "static",
+        "attributes": {
+          "value": "$identity.getLinksByAppIdOrName(null,\"Active Directory [source]\")[0].id"
+        }
+      },
+      null
+    ],
+    "ignoreErrors": true
+  }
 }
 ```
 

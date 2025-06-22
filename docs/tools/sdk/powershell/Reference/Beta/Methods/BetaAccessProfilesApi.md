@@ -4,14 +4,16 @@ title: AccessProfiles
 pagination_label: AccessProfiles
 sidebar_label: AccessProfiles
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'AccessProfiles', 'BetaAccessProfiles'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'AccessProfiles', 'BetaAccessProfiles']
 slug: /tools/sdk/powershell/beta/methods/access-profiles
-tags: ['SDK', 'Software Development Kit', 'AccessProfiles', 'BetaAccessProfiles']
+tags:
+  ['SDK', 'Software Development Kit', 'AccessProfiles', 'BetaAccessProfiles']
 ---
 
 # AccessProfiles
-  Use this API to implement and customize access profile functionality.
-With this functionality in place, administrators can create access profiles and configure them for use throughout Identity Security Cloud, enabling users to get the access they need quickly and securely.
+
+Use this API to implement and customize access profile functionality. With this functionality in place, administrators can create access profiles and configure them for use throughout Identity Security Cloud, enabling users to get the access they need quickly and securely.
 
 Access profiles group entitlements, which represent access rights on sources.
 
@@ -33,65 +35,65 @@ Identity Security Cloud uses access profiles in many features, including the fol
 
 - Roles: You can group one or more access profiles into a role to quickly assign access items based on an identity&#39;s role.
 
-In Identity Security Cloud, administrators can use the Access drop-down menu and select Access Profiles to view, configure, and delete existing access profiles, as well as create new ones.
-Administrators can enable and disable an access profile, and they can also make the following configurations:
+In Identity Security Cloud, administrators can use the Access drop-down menu and select Access Profiles to view, configure, and delete existing access profiles, as well as create new ones. Administrators can enable and disable an access profile, and they can also make the following configurations:
 
 - Manage Entitlements: Manage the profile&#39;s access by adding and removing entitlements.
 
-- Access Requests: Configure access profiles to be requestable and establish an approval process for any requests that the access profile be granted or revoked.
-Do not configure an access profile to be requestable without first establishing a secure access request approval process for the access profile.
+- Access Requests: Configure access profiles to be requestable and establish an approval process for any requests that the access profile be granted or revoked. Do not configure an access profile to be requestable without first establishing a secure access request approval process for the access profile.
 
 - Multiple Account Options: Define the logic Identity Security Cloud uses to provision access to an identity with multiple accounts on the source.
 
 Refer to [Managing Access Profiles](https://documentation.sailpoint.com/saas/help/access/access-profiles.html) for more information about access profiles.
- 
-  
 
 All URIs are relative to *https://sailpoint.api.identitynow.com/beta*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**New-BetaAccessProfile**](#create-access-profile) | **POST** `/access-profiles` | Create access profile
-[**Remove-BetaAccessProfile**](#delete-access-profile) | **DELETE** `/access-profiles/{id}` | Delete the specified access profile
-[**Remove-BetaAccessProfilesInBulk**](#delete-access-profiles-in-bulk) | **POST** `/access-profiles/bulk-delete` | Delete access profile(s)
-[**Get-BetaAccessProfile**](#get-access-profile) | **GET** `/access-profiles/{id}` | Get an access profile
-[**Get-BetaAccessProfileEntitlements**](#get-access-profile-entitlements) | **GET** `/access-profiles/{id}/entitlements` | List access profile&#39;s entitlements
-[**Get-BetaAccessProfiles**](#list-access-profiles) | **GET** `/access-profiles` | List access profiles
-[**Update-BetaAccessProfile**](#patch-access-profile) | **PATCH** `/access-profiles/{id}` | Patch a specified access profile
-[**Update-BetaAccessProfilesInBulk**](#update-access-profiles-in-bulk) | **POST** `/access-profiles/bulk-update-requestable` | Update access profile(s) requestable field.
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**New-BetaAccessProfile**](#create-access-profile) | **POST** `/access-profiles` | Create access profile |
+| [**Remove-BetaAccessProfile**](#delete-access-profile) | **DELETE** `/access-profiles/{id}` | Delete the specified access profile |
+| [**Remove-BetaAccessProfilesInBulk**](#delete-access-profiles-in-bulk) | **POST** `/access-profiles/bulk-delete` | Delete access profile(s) |
+| [**Get-BetaAccessProfile**](#get-access-profile) | **GET** `/access-profiles/{id}` | Get an access profile |
+| [**Get-BetaAccessProfileEntitlements**](#get-access-profile-entitlements) | **GET** `/access-profiles/{id}/entitlements` | List access profile&#39;s entitlements |
+| [**Get-BetaAccessProfiles**](#list-access-profiles) | **GET** `/access-profiles` | List access profiles |
+| [**Update-BetaAccessProfile**](#patch-access-profile) | **PATCH** `/access-profiles/{id}` | Patch a specified access profile |
+| [**Update-BetaAccessProfilesInBulk**](#update-access-profiles-in-bulk) | **POST** `/access-profiles/bulk-update-requestable` | Update access profile(s) requestable field. |
 
 ## create-access-profile
-Create an access profile.
-A user with `ROLE_SUBADMIN` or `SOURCE_SUBADMIN` authority must be associated with the access profile's source.
-The maximum supported length for the description field is 2000 characters. Longer descriptions will be preserved for existing access profiles. However, any new access profiles as well as any updates to existing descriptions are limited to 2000 characters.
->**Note:** To use this endpoint, you need all the listed scopes.
+
+Create an access profile. A user with `ROLE_SUBADMIN` or `SOURCE_SUBADMIN` authority must be associated with the access profile's source. The maximum supported length for the description field is 2000 characters. Longer descriptions will be preserved for existing access profiles. However, any new access profiles as well as any updates to existing descriptions are limited to 2000 characters.
+
+> **Note:** To use this endpoint, you need all the listed scopes.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/create-access-profile)
 
-### Parameters 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
- Body  | AccessProfile | [**AccessProfile**](../models/access-profile) | True  | 
+### Parameters
+
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Body | AccessProfile | [**AccessProfile**](../models/access-profile) | True |
 
 ### Return type
+
 [**AccessProfile**](../models/access-profile)
 
 ### Responses
-Code | Description  | Data Type
-------------- | ------------- | -------------
-201 | Access profile created. | AccessProfile
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto
+
+| Code | Description | Data Type |
+| --- | --- | --- |
+| 201 | Access profile created. | AccessProfile |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |
 
 ### HTTP request headers
+
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 ### Example
+
 ```powershell
 $AccessProfile = @"{
   "owner" : {
@@ -184,18 +186,20 @@ $AccessProfile = @"{
 
 try {
     $Result = ConvertFrom-JsonToAccessProfile -Json $AccessProfile
-    New-BetaAccessProfile -AccessProfile $Result 
-    
+    New-BetaAccessProfile -AccessProfile $Result
+
     # Below is a request that includes all optional parameters
-    # New-BetaAccessProfile -AccessProfile $Result  
+    # New-BetaAccessProfile -AccessProfile $Result
 } catch {
     Write-Host $_.Exception.Response.StatusCode.value__ "Exception occurred when calling New-BetaAccessProfile"
     Write-Host $_.ErrorDetails
 }
 ```
-[[Back to top]](#) 
+
+[[Back to top]](#)
 
 ## delete-access-profile
+
 This API deletes an existing Access Profile.
 
 The Access Profile must not be in use, for example, Access Profile can not be deleted if they belong to an Application, Life Cycle State or a Role. If it is, a 400 error is returned.
@@ -204,78 +208,87 @@ A token with API, ORG_ADMIN, SOURCE_ADMIN, or SOURCE_SUBADMIN authority is requi
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/delete-access-profile)
 
-### Parameters 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | Id | **String** | True  | ID of the Access Profile to delete
+### Parameters
+
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | Id | **String** | True | ID of the Access Profile to delete |
 
 ### Return type
- (empty response body)
+
+(empty response body)
 
 ### Responses
-Code | Description  | Data Type
-------------- | ------------- | -------------
-204 | No content - indicates the request was successful but there is no content to be returned in the response. | 
-400 | Returned when an access profile cannot be deleted as it&#39;s being used. | ErrorResponseDto
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto
+
+| Code | Description | Data Type |
+| --- | --- | --- |
+| 204 | No content - indicates the request was successful but there is no content to be returned in the response. |
+| 400 | Returned when an access profile cannot be deleted as it&#39;s being used. | ErrorResponseDto |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |
 
 ### HTTP request headers
+
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 ### Example
+
 ```powershell
 $Id = "2c91808a7813090a017814121919ecca" # String | ID of the Access Profile to delete
 
 # Delete the specified access profile
 
 try {
-    Remove-BetaAccessProfile -Id $Id 
-    
+    Remove-BetaAccessProfile -Id $Id
+
     # Below is a request that includes all optional parameters
-    # Remove-BetaAccessProfile -Id $Id  
+    # Remove-BetaAccessProfile -Id $Id
 } catch {
     Write-Host $_.Exception.Response.StatusCode.value__ "Exception occurred when calling Remove-BetaAccessProfile"
     Write-Host $_.ErrorDetails
 }
 ```
-[[Back to top]](#) 
+
+[[Back to top]](#)
 
 ## delete-access-profiles-in-bulk
-This endpoint initiates a bulk deletion of one or more access profiles.
-When the request is successful, the endpoint returns the bulk delete's task result ID.  To follow the task, you can use [Get Task Status by ID](https://developer.sailpoint.com/docs/api/beta/get-task-status), which will return the task result's status and information. 
-This endpoint can only bulk delete up to a limit of 50 access profiles per request. 
-By default, if any of the indicated access profiles are in use, no deletions will be performed and the **inUse** field of the response indicates the usages that must be removed first. If the request field **bestEffortOnly** is **true**, however, usages are reported in the **inUse** response field but all other indicated access profiles will be deleted.
+
+This endpoint initiates a bulk deletion of one or more access profiles. When the request is successful, the endpoint returns the bulk delete's task result ID. To follow the task, you can use [Get Task Status by ID](https://developer.sailpoint.com/docs/api/beta/get-task-status), which will return the task result's status and information. This endpoint can only bulk delete up to a limit of 50 access profiles per request. By default, if any of the indicated access profiles are in use, no deletions will be performed and the **inUse** field of the response indicates the usages that must be removed first. If the request field **bestEffortOnly** is **true**, however, usages are reported in the **inUse** response field but all other indicated access profiles will be deleted.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/delete-access-profiles-in-bulk)
 
-### Parameters 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
- Body  | AccessProfileBulkDeleteRequest | [**AccessProfileBulkDeleteRequest**](../models/access-profile-bulk-delete-request) | True  | 
+### Parameters
+
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Body | AccessProfileBulkDeleteRequest | [**AccessProfileBulkDeleteRequest**](../models/access-profile-bulk-delete-request) | True |
 
 ### Return type
+
 [**AccessProfileBulkDeleteResponse**](../models/access-profile-bulk-delete-response)
 
 ### Responses
-Code | Description  | Data Type
-------------- | ------------- | -------------
-200 | Returned only if **bestEffortOnly** is **false**, and one or more Access Profiles are in use. | AccessProfileBulkDeleteResponse
-202 | Returned if at least one deletion will be performed. | AccessProfileBulkDeleteResponse
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto
+
+| Code | Description | Data Type |
+| --- | --- | --- |
+| 200 | Returned only if **bestEffortOnly** is **false**, and one or more Access Profiles are in use. | AccessProfileBulkDeleteResponse |
+| 202 | Returned if at least one deletion will be performed. | AccessProfileBulkDeleteResponse |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |
 
 ### HTTP request headers
+
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 ### Example
+
 ```powershell
 $AccessProfileBulkDeleteRequest = @"{
   "accessProfileIds" : [ "2c9180847812e0b1017817051919ecca", "2c9180887812e0b201781e129f151816" ],
@@ -286,96 +299,109 @@ $AccessProfileBulkDeleteRequest = @"{
 
 try {
     $Result = ConvertFrom-JsonToAccessProfileBulkDeleteRequest -Json $AccessProfileBulkDeleteRequest
-    Remove-BetaAccessProfilesInBulk -AccessProfileBulkDeleteRequest $Result 
-    
+    Remove-BetaAccessProfilesInBulk -AccessProfileBulkDeleteRequest $Result
+
     # Below is a request that includes all optional parameters
-    # Remove-BetaAccessProfilesInBulk -AccessProfileBulkDeleteRequest $Result  
+    # Remove-BetaAccessProfilesInBulk -AccessProfileBulkDeleteRequest $Result
 } catch {
     Write-Host $_.Exception.Response.StatusCode.value__ "Exception occurred when calling Remove-BetaAccessProfilesInBulk"
     Write-Host $_.ErrorDetails
 }
 ```
-[[Back to top]](#) 
+
+[[Back to top]](#)
 
 ## get-access-profile
+
 This API returns an Access Profile by its ID.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-access-profile)
 
-### Parameters 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | Id | **String** | True  | ID of the Access Profile
+### Parameters
+
+| Param Type | Name | Data Type  | Required | Description              |
+| ---------- | ---- | ---------- | -------- | ------------------------ |
+| Path       | Id   | **String** | True     | ID of the Access Profile |
 
 ### Return type
+
 [**AccessProfile**](../models/access-profile)
 
 ### Responses
-Code | Description  | Data Type
-------------- | ------------- | -------------
-200 | An AccessProfile | AccessProfile
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto
+
+| Code | Description | Data Type |
+| --- | --- | --- |
+| 200 | An AccessProfile | AccessProfile |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |
 
 ### HTTP request headers
+
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 ### Example
+
 ```powershell
 $Id = "2c9180837ca6693d017ca8d097500149" # String | ID of the Access Profile
 
 # Get an access profile
 
 try {
-    Get-BetaAccessProfile -Id $Id 
-    
+    Get-BetaAccessProfile -Id $Id
+
     # Below is a request that includes all optional parameters
-    # Get-BetaAccessProfile -Id $Id  
+    # Get-BetaAccessProfile -Id $Id
 } catch {
     Write-Host $_.Exception.Response.StatusCode.value__ "Exception occurred when calling Get-BetaAccessProfile"
     Write-Host $_.ErrorDetails
 }
 ```
-[[Back to top]](#) 
+
+[[Back to top]](#)
 
 ## get-access-profile-entitlements
-Use this API to get a list of an access profile's entitlements. 
-A user with SOURCE_SUBADMIN authority must have access to the source associated with the specified access profile.
+
+Use this API to get a list of an access profile's entitlements. A user with SOURCE_SUBADMIN authority must have access to the source associated with the specified access profile.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-access-profile-entitlements)
 
-### Parameters 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | Id | **String** | True  | ID of the access profile containing the entitlements.
-  Query | Limit | **Int32** |   (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | Offset | **Int32** |   (optional) (default to 0) | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | Count | **Boolean** |   (optional) (default to $false) | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | Filters | **String** |   (optional) | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, in*  **name**: *eq, sw*  **attribute**: *eq, sw*  **value**: *eq, sw*  **created**: *gt, lt, ge, le*  **modified**: *gt, lt, ge, le*  **owner.id**: *eq, in*  **source.id**: *eq, in*  Filtering is not supported for access profiles and entitlements that have the '+' symbol in their names.  
-  Query | Sorters | **String** |   (optional) | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **name, attribute, value, created, modified**
+### Parameters
+
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | Id | **String** | True | ID of the access profile containing the entitlements. |
+| Query | Limit | **Int32** | (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | Offset | **Int32** | (optional) (default to 0) | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | Count | **Boolean** | (optional) (default to $false) | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | Filters | **String** | (optional) | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **id**: _eq, in_ **name**: _eq, sw_ **attribute**: _eq, sw_ **value**: _eq, sw_ **created**: _gt, lt, ge, le_ **modified**: _gt, lt, ge, le_ **owner.id**: _eq, in_ **source.id**: _eq, in_ Filtering is not supported for access profiles and entitlements that have the '+' symbol in their names. |
+| Query | Sorters | **String** | (optional) | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results) Sorting is supported for the following fields: **name, attribute, value, created, modified** |
 
 ### Return type
+
 [**Entitlement[]**](../models/entitlement)
 
 ### Responses
-Code | Description  | Data Type
-------------- | ------------- | -------------
-200 | List of entitlements. | Entitlement[]
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto
+
+| Code | Description | Data Type |
+| --- | --- | --- |
+| 200 | List of entitlements. | Entitlement[] |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |
 
 ### HTTP request headers
+
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 ### Example
+
 ```powershell
 $Id = "2c91808a7813090a017814121919ecca" # String | ID of the access profile containing the entitlements.
 $Limit = 250 # Int32 | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 250)
@@ -387,53 +413,61 @@ $Sorters = "name,-modified" # String | Sort results using the standard syntax de
 # List access profile's entitlements
 
 try {
-    Get-BetaAccessProfileEntitlements -Id $Id 
-    
+    Get-BetaAccessProfileEntitlements -Id $Id
+
     # Below is a request that includes all optional parameters
-    # Get-BetaAccessProfileEntitlements -Id $Id -Limit $Limit -Offset $Offset -Count $Count -Filters $Filters -Sorters $Sorters  
+    # Get-BetaAccessProfileEntitlements -Id $Id -Limit $Limit -Offset $Offset -Count $Count -Filters $Filters -Sorters $Sorters
 } catch {
     Write-Host $_.Exception.Response.StatusCode.value__ "Exception occurred when calling Get-BetaAccessProfileEntitlements"
     Write-Host $_.ErrorDetails
 }
 ```
-[[Back to top]](#) 
+
+[[Back to top]](#)
 
 ## list-access-profiles
+
 Get a list of access profiles.
->**Note:** When you filter for access profiles that have the '+' symbol in their names, the response is blank. 
+
+> **Note:** When you filter for access profiles that have the '+' symbol in their names, the response is blank.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/list-access-profiles)
 
-### Parameters 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-  Query | ForSubadmin | **String** |   (optional) | Filters the returned list according to what is visible to the indicated ROLE_SUBADMIN or SOURCE_SUBADMIN identity. The value of the parameter is either an identity ID or the special value **me**, which is shorthand for the calling identity's ID.  If you specify an identity that isn't a subadmin, the API returns a 400 Bad Request error.
-  Query | Limit | **Int32** |   (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | Offset | **Int32** |   (optional) (default to 0) | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | Count | **Boolean** |   (optional) (default to $false) | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | Filters | **String** |   (optional) | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq, in*  **name**: *eq, sw*  **created**: *gt, ge, le*  **modified**: *gt, lt, ge, le*  **owner.id**: *eq, in*  **requestable**: *eq*  **source.id**: *eq, in*  Filtering is not supported for access profiles and entitlements that have the '+' symbol in their names. 
-  Query | Sorters | **String** |   (optional) | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **name, created, modified**
-  Query | ForSegmentIds | **String** |   (optional) | Filters access profiles to only those assigned to the segment(s) with the specified IDs. If segmentation is currently unavailable, specifying this parameter results in an error.
-  Query | IncludeUnsegmented | **Boolean** |   (optional) (default to $true) | Indicates whether the response list should contain unsegmented access profiles. If `for-segment-ids` is absent or empty, specifying *include-unsegmented* as `false` results in an error.
+### Parameters
+
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Query | ForSubadmin | **String** | (optional) | Filters the returned list according to what is visible to the indicated ROLE_SUBADMIN or SOURCE_SUBADMIN identity. The value of the parameter is either an identity ID or the special value **me**, which is shorthand for the calling identity's ID. If you specify an identity that isn't a subadmin, the API returns a 400 Bad Request error. |
+| Query | Limit | **Int32** | (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | Offset | **Int32** | (optional) (default to 0) | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | Count | **Boolean** | (optional) (default to $false) | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | Filters | **String** | (optional) | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **id**: _eq, in_ **name**: _eq, sw_ **created**: _gt, ge, le_ **modified**: _gt, lt, ge, le_ **owner.id**: _eq, in_ **requestable**: _eq_ **source.id**: _eq, in_ Filtering is not supported for access profiles and entitlements that have the '+' symbol in their names. |
+| Query | Sorters | **String** | (optional) | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results) Sorting is supported for the following fields: **name, created, modified** |
+| Query | ForSegmentIds | **String** | (optional) | Filters access profiles to only those assigned to the segment(s) with the specified IDs. If segmentation is currently unavailable, specifying this parameter results in an error. |
+| Query | IncludeUnsegmented | **Boolean** | (optional) (default to $true) | Indicates whether the response list should contain unsegmented access profiles. If `for-segment-ids` is absent or empty, specifying _include-unsegmented_ as `false` results in an error. |
 
 ### Return type
+
 [**AccessProfile[]**](../models/access-profile)
 
 ### Responses
-Code | Description  | Data Type
-------------- | ------------- | -------------
-200 | List of access profiles. | AccessProfile[]
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto
+
+| Code | Description | Data Type |
+| --- | --- | --- |
+| 200 | List of access profiles. | AccessProfile[] |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |
 
 ### HTTP request headers
+
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 ### Example
+
 ```powershell
 $ForSubadmin = "8c190e6787aa4ed9a90bd9d5344523fb" # String | Filters the returned list according to what is visible to the indicated ROLE_SUBADMIN or SOURCE_SUBADMIN identity. The value of the parameter is either an identity ID or the special value **me**, which is shorthand for the calling identity's ID.  If you specify an identity that isn't a subadmin, the API returns a 400 Bad Request error. (optional)
 $Limit = 250 # Int32 | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. (optional) (default to 250)
@@ -447,125 +481,139 @@ $IncludeUnsegmented = $false # Boolean | Indicates whether the response list sho
 # List access profiles
 
 try {
-    Get-BetaAccessProfiles 
-    
+    Get-BetaAccessProfiles
+
     # Below is a request that includes all optional parameters
-    # Get-BetaAccessProfiles -ForSubadmin $ForSubadmin -Limit $Limit -Offset $Offset -Count $Count -Filters $Filters -Sorters $Sorters -ForSegmentIds $ForSegmentIds -IncludeUnsegmented $IncludeUnsegmented  
+    # Get-BetaAccessProfiles -ForSubadmin $ForSubadmin -Limit $Limit -Offset $Offset -Count $Count -Filters $Filters -Sorters $Sorters -ForSegmentIds $ForSegmentIds -IncludeUnsegmented $IncludeUnsegmented
 } catch {
     Write-Host $_.Exception.Response.StatusCode.value__ "Exception occurred when calling Get-BetaAccessProfiles"
     Write-Host $_.ErrorDetails
 }
 ```
-[[Back to top]](#) 
+
+[[Back to top]](#)
 
 ## patch-access-profile
-This API updates an existing Access Profile. The following fields are patchable:
-**name**, **description**, **enabled**, **owner**, **requestable**, **accessRequestConfig**, **revokeRequestConfig**, **segments**, **entitlements**, **provisioningCriteria**
-A token with API, ORG_ADMIN, SOURCE_ADMIN, or SOURCE_SUBADMIN authority is required to call this API. In addition, a SOURCE_SUBADMIN may only use this API to patch Access Profiles which are associated with Sources they are able to administer.
->  The maximum supported length for the description field is 2000 characters. Longer descriptions will be preserved for existing access profiles, however, any new access profiles as well as any updates to existing descriptions will be limited to 2000 characters.
+
+This API updates an existing Access Profile. The following fields are patchable: **name**, **description**, **enabled**, **owner**, **requestable**, **accessRequestConfig**, **revokeRequestConfig**, **segments**, **entitlements**, **provisioningCriteria** A token with API, ORG_ADMIN, SOURCE_ADMIN, or SOURCE_SUBADMIN authority is required to call this API. In addition, a SOURCE_SUBADMIN may only use this API to patch Access Profiles which are associated with Sources they are able to administer.
+
+> The maximum supported length for the description field is 2000 characters. Longer descriptions will be preserved for existing access profiles, however, any new access profiles as well as any updates to existing descriptions will be limited to 2000 characters.
 
 > You can only add or replace **entitlements** that exist on the source that the access profile is attached to. You can use the **list entitlements** endpoint with the **filters** query parameter to get a list of available entitlements on the access profile's source.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/patch-access-profile)
 
-### Parameters 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | Id | **String** | True  | ID of the Access Profile to patch
- Body  | JsonPatchOperation | [**[]JsonPatchOperation**](../models/json-patch-operation) | True  | 
+### Parameters
+
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | Id | **String** | True | ID of the Access Profile to patch |
+| Body | JsonPatchOperation | [**[]JsonPatchOperation**](../models/json-patch-operation) | True |
 
 ### Return type
+
 [**AccessProfile**](../models/access-profile)
 
 ### Responses
-Code | Description  | Data Type
-------------- | ------------- | -------------
-200 | Responds with the Access Profile as updated. | AccessProfile
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto
+
+| Code | Description | Data Type |
+| --- | --- | --- |
+| 200 | Responds with the Access Profile as updated. | AccessProfile |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |
 
 ### HTTP request headers
+
 - **Content-Type**: application/json-patch+json
 - **Accept**: application/json
 
 ### Example
+
 ```powershell
 $Id = "2c91808a7813090a017814121919ecca" # String | ID of the Access Profile to patch
  $JsonPatchOperation = @"{
   "op" : "replace",
   "path" : "/description",
   "value" : "New description"
-}"@ # JsonPatchOperation[] | 
- 
+}"@ # JsonPatchOperation[] |
+
 
 # Patch a specified access profile
 
 try {
     $Result = ConvertFrom-JsonToJsonPatchOperation -Json $JsonPatchOperation
-    Update-BetaAccessProfile -Id $Id -JsonPatchOperation $Result 
-    
+    Update-BetaAccessProfile -Id $Id -JsonPatchOperation $Result
+
     # Below is a request that includes all optional parameters
-    # Update-BetaAccessProfile -Id $Id -JsonPatchOperation $Result  
+    # Update-BetaAccessProfile -Id $Id -JsonPatchOperation $Result
 } catch {
     Write-Host $_.Exception.Response.StatusCode.value__ "Exception occurred when calling Update-BetaAccessProfile"
     Write-Host $_.ErrorDetails
 }
 ```
-[[Back to top]](#) 
+
+[[Back to top]](#)
 
 ## update-access-profiles-in-bulk
+
 This API initiates a bulk update of field requestable for one or more Access Profiles.
 
->  If any of the indicated Access Profiles is exists in Organization,then those Access Profiles will be added in **updated**
+> If any of the indicated Access Profiles is exists in Organization,then those Access Profiles will be added in **updated**
+
     list of the response.Requestable field of these Access Profiles marked as **true** or **false**.
 
->  If any of the indicated Access Profiles is not does not exists in Organization,then those Access Profiles will be added in **notFound** list of the response. Access Profiles marked as **notFound** will not be updated.
-A SOURCE_SUBADMIN user may only use this API to update Access Profiles which are associated with Sources they are able to administer.
+> If any of the indicated Access Profiles is not does not exists in Organization,then those Access Profiles will be added in **notFound** list of the response. Access Profiles marked as **notFound** will not be updated. A SOURCE_SUBADMIN user may only use this API to update Access Profiles which are associated with Sources they are able to administer.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/update-access-profiles-in-bulk)
 
-### Parameters 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
- Body  | AccessProfileBulkUpdateRequestInner | [**[]AccessProfileBulkUpdateRequestInner**](../models/access-profile-bulk-update-request-inner) | True  | 
+### Parameters
+
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Body | AccessProfileBulkUpdateRequestInner | [**[]AccessProfileBulkUpdateRequestInner**](../models/access-profile-bulk-update-request-inner) | True |
 
 ### Return type
+
 [**AccessProfileUpdateItem[]**](../models/access-profile-update-item)
 
 ### Responses
-Code | Description  | Data Type
-------------- | ------------- | -------------
-207 | List of updated and not updated Access Profiles. | AccessProfileUpdateItem[]
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto
-412 | Precondition Failed - Returned in response if API/Feature not enabled for an organization. | UpdateAccessProfilesInBulk412Response
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto
+
+| Code | Description | Data Type |
+| --- | --- | --- |
+| 207 | List of updated and not updated Access Profiles. | AccessProfileUpdateItem[] |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessModelMetadataAttribute401Response |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |
+| 412 | Precondition Failed - Returned in response if API/Feature not enabled for an organization. | UpdateAccessProfilesInBulk412Response |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessModelMetadataAttribute429Response |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |
 
 ### HTTP request headers
+
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 ### Example
+
 ```powershell
- $AccessProfileBulkUpdateRequestInner = @"[{id=464ae7bf-791e-49fd-b746-06a2e4a89635, requestable=false}]"@ # AccessProfileBulkUpdateRequestInner[] | 
- 
+ $AccessProfileBulkUpdateRequestInner = @"[{id=464ae7bf-791e-49fd-b746-06a2e4a89635, requestable=false}]"@ # AccessProfileBulkUpdateRequestInner[] |
+
 
 # Update access profile(s) requestable field.
 
 try {
     $Result = ConvertFrom-JsonToAccessProfileBulkUpdateRequestInner -Json $AccessProfileBulkUpdateRequestInner
-    Update-BetaAccessProfilesInBulk -AccessProfileBulkUpdateRequestInner $Result 
-    
+    Update-BetaAccessProfilesInBulk -AccessProfileBulkUpdateRequestInner $Result
+
     # Below is a request that includes all optional parameters
-    # Update-BetaAccessProfilesInBulk -AccessProfileBulkUpdateRequestInner $Result  
+    # Update-BetaAccessProfilesInBulk -AccessProfileBulkUpdateRequestInner $Result
 } catch {
     Write-Host $_.Exception.Response.StatusCode.value__ "Exception occurred when calling Update-BetaAccessProfilesInBulk"
     Write-Host $_.ErrorDetails
 }
 ```
-[[Back to top]](#) 
+
+[[Back to top]](#)

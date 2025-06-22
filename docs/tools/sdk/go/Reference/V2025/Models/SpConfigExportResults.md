@@ -4,23 +4,30 @@ title: SpConfigExportResults
 pagination_label: SpConfigExportResults
 sidebar_label: SpConfigExportResults
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SpConfigExportResults', 'V2025SpConfigExportResults'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'SpConfigExportResults', 'V2025SpConfigExportResults']
 slug: /tools/sdk/go/v2025/models/sp-config-export-results
-tags: ['SDK', 'Software Development Kit', 'SpConfigExportResults', 'V2025SpConfigExportResults']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SpConfigExportResults',
+    'V2025SpConfigExportResults',
+  ]
 ---
 
 # SpConfigExportResults
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Version** | Pointer to **int32** | Current version of the export results object. | [optional] 
-**Timestamp** | Pointer to **SailPointTime** | Time the export was completed. | [optional] 
-**Tenant** | Pointer to **string** | Name of the tenant where this export originated. | [optional] 
-**Description** | Pointer to **string** | Optional user defined description/name for export job. | [optional] 
-**Options** | Pointer to [**ExportOptions1**](export-options1) |  | [optional] 
-**Objects** | Pointer to [**[]ConfigObject**](config-object) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Version** | Pointer to **int32** | Current version of the export results object. | [optional] |
+| **Timestamp** | Pointer to **SailPointTime** | Time the export was completed. | [optional] |
+| **Tenant** | Pointer to **string** | Name of the tenant where this export originated. | [optional] |
+| **Description** | Pointer to **string** | Optional user defined description/name for export job. | [optional] |
+| **Options** | Pointer to [**ExportOptions1**](export-options1) |  | [optional] |
+| **Objects** | Pointer to [**[]ConfigObject**](config-object) |  | [optional] |
 
 ## Methods
 
@@ -28,18 +35,13 @@ Name | Type | Description | Notes
 
 `func NewSpConfigExportResults() *SpConfigExportResults`
 
-NewSpConfigExportResults instantiates a new SpConfigExportResults object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSpConfigExportResults instantiates a new SpConfigExportResults object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSpConfigExportResultsWithDefaults
 
 `func NewSpConfigExportResultsWithDefaults() *SpConfigExportResults`
 
-NewSpConfigExportResultsWithDefaults instantiates a new SpConfigExportResults object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSpConfigExportResultsWithDefaults instantiates a new SpConfigExportResults object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetVersion
 
@@ -51,8 +53,7 @@ GetVersion returns the Version field if non-nil, zero value otherwise.
 
 `func (o *SpConfigExportResults) GetVersionOk() (*int32, bool)`
 
-GetVersionOk returns a tuple with the Version field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetVersionOk returns a tuple with the Version field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetVersion
 
@@ -76,8 +77,7 @@ GetTimestamp returns the Timestamp field if non-nil, zero value otherwise.
 
 `func (o *SpConfigExportResults) GetTimestampOk() (*SailPointTime, bool)`
 
-GetTimestampOk returns a tuple with the Timestamp field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTimestampOk returns a tuple with the Timestamp field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTimestamp
 
@@ -101,8 +101,7 @@ GetTenant returns the Tenant field if non-nil, zero value otherwise.
 
 `func (o *SpConfigExportResults) GetTenantOk() (*string, bool)`
 
-GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTenant
 
@@ -126,8 +125,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *SpConfigExportResults) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -151,8 +149,7 @@ GetOptions returns the Options field if non-nil, zero value otherwise.
 
 `func (o *SpConfigExportResults) GetOptionsOk() (*ExportOptions1, bool)`
 
-GetOptionsOk returns a tuple with the Options field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOptionsOk returns a tuple with the Options field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOptions
 
@@ -176,8 +173,7 @@ GetObjects returns the Objects field if non-nil, zero value otherwise.
 
 `func (o *SpConfigExportResults) GetObjectsOk() (*[]ConfigObject, bool)`
 
-GetObjectsOk returns a tuple with the Objects field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetObjectsOk returns a tuple with the Objects field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetObjects
 
@@ -190,5 +186,3 @@ SetObjects sets Objects field to given value.
 `func (o *SpConfigExportResults) HasObjects() bool`
 
 HasObjects returns a boolean if a field has been set.
-
-

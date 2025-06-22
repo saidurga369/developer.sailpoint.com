@@ -4,9 +4,16 @@ title: ConnectedObjectType
 pagination_label: ConnectedObjectType
 sidebar_label: ConnectedObjectType
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ConnectedObjectType', 'BetaConnectedObjectType'] 
+keywords:
+  ['python', 'Python', 'sdk', 'ConnectedObjectType', 'BetaConnectedObjectType']
 slug: /tools/sdk/python/beta/models/connected-object-type
-tags: ['SDK', 'Software Development Kit', 'ConnectedObjectType', 'BetaConnectedObjectType']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ConnectedObjectType',
+    'BetaConnectedObjectType',
+  ]
 ---
 
 # ConnectedObjectType
@@ -15,13 +22,12 @@ An enumeration of the types of Objects associated with a Governance Group. Suppo
 
 ## Enum
 
-* `ACCESS_PROFILE` (value: `'ACCESS_PROFILE'`)
+- `ACCESS_PROFILE` (value: `'ACCESS_PROFILE'`)
 
-* `ROLE` (value: `'ROLE'`)
+- `ROLE` (value: `'ROLE'`)
 
-* `SOD_POLICY` (value: `'SOD_POLICY'`)
+- `SOD_POLICY` (value: `'SOD_POLICY'`)
 
-* `SOURCE` (value: `'SOURCE'`)
+- `SOURCE` (value: `'SOURCE'`)
 
-[[Back to top]](#) 
-
+[[Back to top]](#)

@@ -4,25 +4,38 @@ title: AccessRequestItemResponse
 pagination_label: AccessRequestItemResponse
 sidebar_label: AccessRequestItemResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessRequestItemResponse', 'BetaAccessRequestItemResponse'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'AccessRequestItemResponse',
+    'BetaAccessRequestItemResponse',
+  ]
 slug: /tools/sdk/go/beta/models/access-request-item-response
-tags: ['SDK', 'Software Development Kit', 'AccessRequestItemResponse', 'BetaAccessRequestItemResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessRequestItemResponse',
+    'BetaAccessRequestItemResponse',
+  ]
 ---
 
 # AccessRequestItemResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Operation** | Pointer to **string** | the access request item operation | [optional] 
-**AccessItemType** | Pointer to **string** | the access item type | [optional] 
-**Name** | Pointer to **string** | the name of access request item | [optional] 
-**Decision** | Pointer to **string** | the final decision for the access request | [optional] 
-**Description** | Pointer to **string** | the description of access request item | [optional] 
-**SourceId** | Pointer to **string** | the source id | [optional] 
-**SourceName** | Pointer to **string** | the source Name | [optional] 
-**ApprovalInfos** | Pointer to [**[]ApprovalInfoResponse**](approval-info-response) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Operation** | Pointer to **string** | the access request item operation | [optional] |
+| **AccessItemType** | Pointer to **string** | the access item type | [optional] |
+| **Name** | Pointer to **string** | the name of access request item | [optional] |
+| **Decision** | Pointer to **string** | the final decision for the access request | [optional] |
+| **Description** | Pointer to **string** | the description of access request item | [optional] |
+| **SourceId** | Pointer to **string** | the source id | [optional] |
+| **SourceName** | Pointer to **string** | the source Name | [optional] |
+| **ApprovalInfos** | Pointer to [**[]ApprovalInfoResponse**](approval-info-response) |  | [optional] |
 
 ## Methods
 
@@ -30,18 +43,13 @@ Name | Type | Description | Notes
 
 `func NewAccessRequestItemResponse() *AccessRequestItemResponse`
 
-NewAccessRequestItemResponse instantiates a new AccessRequestItemResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessRequestItemResponse instantiates a new AccessRequestItemResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessRequestItemResponseWithDefaults
 
 `func NewAccessRequestItemResponseWithDefaults() *AccessRequestItemResponse`
 
-NewAccessRequestItemResponseWithDefaults instantiates a new AccessRequestItemResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessRequestItemResponseWithDefaults instantiates a new AccessRequestItemResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetOperation
 
@@ -53,8 +61,7 @@ GetOperation returns the Operation field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestItemResponse) GetOperationOk() (*string, bool)`
 
-GetOperationOk returns a tuple with the Operation field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOperationOk returns a tuple with the Operation field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOperation
 
@@ -78,8 +85,7 @@ GetAccessItemType returns the AccessItemType field if non-nil, zero value otherw
 
 `func (o *AccessRequestItemResponse) GetAccessItemTypeOk() (*string, bool)`
 
-GetAccessItemTypeOk returns a tuple with the AccessItemType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessItemTypeOk returns a tuple with the AccessItemType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessItemType
 
@@ -103,8 +109,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestItemResponse) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -128,8 +133,7 @@ GetDecision returns the Decision field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestItemResponse) GetDecisionOk() (*string, bool)`
 
-GetDecisionOk returns a tuple with the Decision field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDecisionOk returns a tuple with the Decision field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDecision
 
@@ -153,8 +157,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestItemResponse) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -178,8 +181,7 @@ GetSourceId returns the SourceId field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestItemResponse) GetSourceIdOk() (*string, bool)`
 
-GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceId
 
@@ -203,8 +205,7 @@ GetSourceName returns the SourceName field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestItemResponse) GetSourceNameOk() (*string, bool)`
 
-GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceName
 
@@ -228,8 +229,7 @@ GetApprovalInfos returns the ApprovalInfos field if non-nil, zero value otherwis
 
 `func (o *AccessRequestItemResponse) GetApprovalInfosOk() (*[]ApprovalInfoResponse, bool)`
 
-GetApprovalInfosOk returns a tuple with the ApprovalInfos field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApprovalInfosOk returns a tuple with the ApprovalInfos field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApprovalInfos
 
@@ -242,5 +242,3 @@ SetApprovalInfos sets ApprovalInfos field to given value.
 `func (o *AccessRequestItemResponse) HasApprovalInfos() bool`
 
 HasApprovalInfos returns a boolean if a field has been set.
-
-

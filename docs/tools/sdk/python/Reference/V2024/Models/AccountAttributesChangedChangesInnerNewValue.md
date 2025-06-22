@@ -4,9 +4,22 @@ title: AccountAttributesChangedChangesInnerNewValue
 pagination_label: AccountAttributesChangedChangesInnerNewValue
 sidebar_label: AccountAttributesChangedChangesInnerNewValue
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccountAttributesChangedChangesInnerNewValue', 'V2024AccountAttributesChangedChangesInnerNewValue'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccountAttributesChangedChangesInnerNewValue',
+    'V2024AccountAttributesChangedChangesInnerNewValue',
+  ]
 slug: /tools/sdk/python/v2024/models/account-attributes-changed-changes-inner-new-value
-tags: ['SDK', 'Software Development Kit', 'AccountAttributesChangedChangesInnerNewValue', 'V2024AccountAttributesChangedChangesInnerNewValue']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountAttributesChangedChangesInnerNewValue',
+    'V2024AccountAttributesChangedChangesInnerNewValue',
+  ]
 ---
 
 # AccountAttributesChangedChangesInnerNewValue
@@ -15,8 +28,9 @@ The new value of the attribute.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
+
 }
 
 ## Example
@@ -28,5 +42,5 @@ account_attributes_changed_changes_inner_new_value = AccountAttributesChangedCha
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

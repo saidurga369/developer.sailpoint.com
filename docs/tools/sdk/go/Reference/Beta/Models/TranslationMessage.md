@@ -4,19 +4,26 @@ title: TranslationMessage
 pagination_label: TranslationMessage
 sidebar_label: TranslationMessage
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'TranslationMessage', 'BetaTranslationMessage'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'TranslationMessage', 'BetaTranslationMessage']
 slug: /tools/sdk/go/beta/models/translation-message
-tags: ['SDK', 'Software Development Kit', 'TranslationMessage', 'BetaTranslationMessage']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'TranslationMessage',
+    'BetaTranslationMessage',
+  ]
 ---
 
 # TranslationMessage
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Key** | Pointer to **string** | The key of the translation message | [optional] 
-**Values** | Pointer to **[]string** | The values corresponding to the translation messages | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Key** | Pointer to **string** | The key of the translation message | [optional] |
+| **Values** | Pointer to **[]string** | The values corresponding to the translation messages | [optional] |
 
 ## Methods
 
@@ -24,18 +31,13 @@ Name | Type | Description | Notes
 
 `func NewTranslationMessage() *TranslationMessage`
 
-NewTranslationMessage instantiates a new TranslationMessage object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewTranslationMessage instantiates a new TranslationMessage object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewTranslationMessageWithDefaults
 
 `func NewTranslationMessageWithDefaults() *TranslationMessage`
 
-NewTranslationMessageWithDefaults instantiates a new TranslationMessage object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewTranslationMessageWithDefaults instantiates a new TranslationMessage object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetKey
 
@@ -47,8 +49,7 @@ GetKey returns the Key field if non-nil, zero value otherwise.
 
 `func (o *TranslationMessage) GetKeyOk() (*string, bool)`
 
-GetKeyOk returns a tuple with the Key field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetKeyOk returns a tuple with the Key field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetKey
 
@@ -72,8 +73,7 @@ GetValues returns the Values field if non-nil, zero value otherwise.
 
 `func (o *TranslationMessage) GetValuesOk() (*[]string, bool)`
 
-GetValuesOk returns a tuple with the Values field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValuesOk returns a tuple with the Values field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValues
 
@@ -86,5 +86,3 @@ SetValues sets Values field to given value.
 `func (o *TranslationMessage) HasValues() bool`
 
 HasValues returns a boolean if a field has been set.
-
-

@@ -4,25 +4,26 @@ title: SearchSchedule
 pagination_label: SearchSchedule
 sidebar_label: SearchSchedule
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SearchSchedule', 'V2024SearchSchedule'] 
+keywords: ['go', 'Golang', 'sdk', 'SearchSchedule', 'V2024SearchSchedule']
 slug: /tools/sdk/go/v2024/models/search-schedule
-tags: ['SDK', 'Software Development Kit', 'SearchSchedule', 'V2024SearchSchedule']
+tags:
+  ['SDK', 'Software Development Kit', 'SearchSchedule', 'V2024SearchSchedule']
 ---
 
 # SearchSchedule
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**SavedSearchId** | **string** | The ID of the saved search that will be executed. | 
-**Created** | Pointer to **NullableTime** | The date the scheduled search was initially created. | [optional] [readonly] 
-**Modified** | Pointer to **NullableTime** | The last date the scheduled search was modified. | [optional] [readonly] 
-**Schedule** | [**Schedule2**](schedule2) |  | 
-**Recipients** | [**[]SearchScheduleRecipientsInner**](search-schedule-recipients-inner) | A list of identities that should receive the scheduled search report via email. | 
-**Enabled** | Pointer to **bool** | Indicates if the scheduled search is enabled.  | [optional] [default to false]
-**EmailEmptyResults** | Pointer to **bool** | Indicates if email generation should occur when search returns no results.  | [optional] [default to false]
-**DisplayQueryDetails** | Pointer to **bool** | Indicates if the generated email should include the query and search results preview (which could include PII).  | [optional] [default to false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **SavedSearchId** | **string** | The ID of the saved search that will be executed. |
+| **Created** | Pointer to **NullableTime** | The date the scheduled search was initially created. | [optional] [readonly] |
+| **Modified** | Pointer to **NullableTime** | The last date the scheduled search was modified. | [optional] [readonly] |
+| **Schedule** | [**Schedule2**](schedule2) |  |
+| **Recipients** | [**[]SearchScheduleRecipientsInner**](search-schedule-recipients-inner) | A list of identities that should receive the scheduled search report via email. |
+| **Enabled** | Pointer to **bool** | Indicates if the scheduled search is enabled. | [optional] [default to false] |
+| **EmailEmptyResults** | Pointer to **bool** | Indicates if email generation should occur when search returns no results. | [optional] [default to false] |
+| **DisplayQueryDetails** | Pointer to **bool** | Indicates if the generated email should include the query and search results preview (which could include PII). | [optional] [default to false] |
 
 ## Methods
 
@@ -30,18 +31,13 @@ Name | Type | Description | Notes
 
 `func NewSearchSchedule(savedSearchId string, schedule Schedule2, recipients []SearchScheduleRecipientsInner, ) *SearchSchedule`
 
-NewSearchSchedule instantiates a new SearchSchedule object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSearchSchedule instantiates a new SearchSchedule object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSearchScheduleWithDefaults
 
 `func NewSearchScheduleWithDefaults() *SearchSchedule`
 
-NewSearchScheduleWithDefaults instantiates a new SearchSchedule object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSearchScheduleWithDefaults instantiates a new SearchSchedule object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetSavedSearchId
 
@@ -53,15 +49,13 @@ GetSavedSearchId returns the SavedSearchId field if non-nil, zero value otherwis
 
 `func (o *SearchSchedule) GetSavedSearchIdOk() (*string, bool)`
 
-GetSavedSearchIdOk returns a tuple with the SavedSearchId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSavedSearchIdOk returns a tuple with the SavedSearchId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSavedSearchId
 
 `func (o *SearchSchedule) SetSavedSearchId(v string)`
 
 SetSavedSearchId sets SavedSearchId field to given value.
-
 
 ### GetCreated
 
@@ -73,8 +67,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *SearchSchedule) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -92,12 +85,14 @@ HasCreated returns a boolean if a field has been set.
 
 `func (o *SearchSchedule) SetCreatedNil(b bool)`
 
- SetCreatedNil sets the value for Created to be an explicit nil
+SetCreatedNil sets the value for Created to be an explicit nil
 
 ### UnsetCreated
+
 `func (o *SearchSchedule) UnsetCreated()`
 
 UnsetCreated ensures that no value is present for Created, not even an explicit nil
+
 ### GetModified
 
 `func (o *SearchSchedule) GetModified() SailPointTime`
@@ -108,8 +103,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *SearchSchedule) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -127,12 +121,14 @@ HasModified returns a boolean if a field has been set.
 
 `func (o *SearchSchedule) SetModifiedNil(b bool)`
 
- SetModifiedNil sets the value for Modified to be an explicit nil
+SetModifiedNil sets the value for Modified to be an explicit nil
 
 ### UnsetModified
+
 `func (o *SearchSchedule) UnsetModified()`
 
 UnsetModified ensures that no value is present for Modified, not even an explicit nil
+
 ### GetSchedule
 
 `func (o *SearchSchedule) GetSchedule() Schedule2`
@@ -143,15 +139,13 @@ GetSchedule returns the Schedule field if non-nil, zero value otherwise.
 
 `func (o *SearchSchedule) GetScheduleOk() (*Schedule2, bool)`
 
-GetScheduleOk returns a tuple with the Schedule field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetScheduleOk returns a tuple with the Schedule field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSchedule
 
 `func (o *SearchSchedule) SetSchedule(v Schedule2)`
 
 SetSchedule sets Schedule field to given value.
-
 
 ### GetRecipients
 
@@ -163,15 +157,13 @@ GetRecipients returns the Recipients field if non-nil, zero value otherwise.
 
 `func (o *SearchSchedule) GetRecipientsOk() (*[]SearchScheduleRecipientsInner, bool)`
 
-GetRecipientsOk returns a tuple with the Recipients field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRecipientsOk returns a tuple with the Recipients field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRecipients
 
 `func (o *SearchSchedule) SetRecipients(v []SearchScheduleRecipientsInner)`
 
 SetRecipients sets Recipients field to given value.
-
 
 ### GetEnabled
 
@@ -183,8 +175,7 @@ GetEnabled returns the Enabled field if non-nil, zero value otherwise.
 
 `func (o *SearchSchedule) GetEnabledOk() (*bool, bool)`
 
-GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEnabled
 
@@ -208,8 +199,7 @@ GetEmailEmptyResults returns the EmailEmptyResults field if non-nil, zero value 
 
 `func (o *SearchSchedule) GetEmailEmptyResultsOk() (*bool, bool)`
 
-GetEmailEmptyResultsOk returns a tuple with the EmailEmptyResults field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEmailEmptyResultsOk returns a tuple with the EmailEmptyResults field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEmailEmptyResults
 
@@ -233,8 +223,7 @@ GetDisplayQueryDetails returns the DisplayQueryDetails field if non-nil, zero va
 
 `func (o *SearchSchedule) GetDisplayQueryDetailsOk() (*bool, bool)`
 
-GetDisplayQueryDetailsOk returns a tuple with the DisplayQueryDetails field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayQueryDetailsOk returns a tuple with the DisplayQueryDetails field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayQueryDetails
 
@@ -247,5 +236,3 @@ SetDisplayQueryDetails sets DisplayQueryDetails field to given value.
 `func (o *SearchSchedule) HasDisplayQueryDetails() bool`
 
 HasDisplayQueryDetails returns a boolean if a field has been set.
-
-

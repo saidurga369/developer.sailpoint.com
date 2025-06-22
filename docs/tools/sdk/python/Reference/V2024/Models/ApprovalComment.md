@@ -4,23 +4,24 @@ title: ApprovalComment
 pagination_label: ApprovalComment
 sidebar_label: ApprovalComment
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ApprovalComment', 'V2024ApprovalComment'] 
+keywords: ['python', 'Python', 'sdk', 'ApprovalComment', 'V2024ApprovalComment']
 slug: /tools/sdk/python/v2024/models/approval-comment
-tags: ['SDK', 'Software Development Kit', 'ApprovalComment', 'V2024ApprovalComment']
+tags:
+  ['SDK', 'Software Development Kit', 'ApprovalComment', 'V2024ApprovalComment']
 ---
 
 # ApprovalComment
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**comment** | **str** | Comment provided either by the approval requester or the approver. | [required]
-**timestamp** | **datetime** | The time when this comment was provided. | [required]
-**user** | **str** | Name of the user that provided this comment. | [required]
-**id** | **str** | Id of the user that provided this comment. | [required]
-**changed_to_status** |  **Enum** [  'PENDING_APPROVAL',    'APPROVED',    'REJECTED' ] | Status transition of the draft. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **comment** | **str** | Comment provided either by the approval requester or the approver. | [required] |
+| **timestamp** | **datetime** | The time when this comment was provided. | [required] |
+| **user** | **str** | Name of the user that provided this comment. | [required] |
+| **id** | **str** | Id of the user that provided this comment. | [required] |
+| **changed_to_status** | **Enum** [ 'PENDING_APPROVAL', 'APPROVED', 'REJECTED' ] | Status transition of the draft. | [required] |
+
 }
 
 ## Example
@@ -37,5 +38,5 @@ changed_to_status='PENDING_APPROVAL'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

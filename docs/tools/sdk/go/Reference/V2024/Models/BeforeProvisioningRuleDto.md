@@ -4,20 +4,33 @@ title: BeforeProvisioningRuleDto
 pagination_label: BeforeProvisioningRuleDto
 sidebar_label: BeforeProvisioningRuleDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'BeforeProvisioningRuleDto', 'V2024BeforeProvisioningRuleDto'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'BeforeProvisioningRuleDto',
+    'V2024BeforeProvisioningRuleDto',
+  ]
 slug: /tools/sdk/go/v2024/models/before-provisioning-rule-dto
-tags: ['SDK', 'Software Development Kit', 'BeforeProvisioningRuleDto', 'V2024BeforeProvisioningRuleDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'BeforeProvisioningRuleDto',
+    'V2024BeforeProvisioningRuleDto',
+  ]
 ---
 
 # BeforeProvisioningRuleDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | Before Provisioning Rule DTO type. | [optional] 
-**Id** | Pointer to **string** | Before Provisioning Rule ID. | [optional] 
-**Name** | Pointer to **string** | Rule display name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to **string** | Before Provisioning Rule DTO type. | [optional] |
+| **Id** | Pointer to **string** | Before Provisioning Rule ID. | [optional] |
+| **Name** | Pointer to **string** | Rule display name. | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewBeforeProvisioningRuleDto() *BeforeProvisioningRuleDto`
 
-NewBeforeProvisioningRuleDto instantiates a new BeforeProvisioningRuleDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewBeforeProvisioningRuleDto instantiates a new BeforeProvisioningRuleDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewBeforeProvisioningRuleDtoWithDefaults
 
 `func NewBeforeProvisioningRuleDtoWithDefaults() *BeforeProvisioningRuleDto`
 
-NewBeforeProvisioningRuleDtoWithDefaults instantiates a new BeforeProvisioningRuleDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewBeforeProvisioningRuleDtoWithDefaults instantiates a new BeforeProvisioningRuleDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -48,8 +56,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *BeforeProvisioningRuleDto) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -73,8 +80,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *BeforeProvisioningRuleDto) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -98,8 +104,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *BeforeProvisioningRuleDto) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -112,5 +117,3 @@ SetName sets Name field to given value.
 `func (o *BeforeProvisioningRuleDto) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

@@ -4,7 +4,7 @@ title: ImportOptions
 pagination_label: ImportOptions
 sidebar_label: ImportOptions
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ImportOptions', 'BetaImportOptions'] 
+keywords: ['go', 'Golang', 'sdk', 'ImportOptions', 'BetaImportOptions']
 slug: /tools/sdk/go/beta/models/import-options
 tags: ['SDK', 'Software Development Kit', 'ImportOptions', 'BetaImportOptions']
 ---
@@ -13,13 +13,13 @@ tags: ['SDK', 'Software Development Kit', 'ImportOptions', 'BetaImportOptions']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ExcludeTypes** | Pointer to **[]string** | Object type names to be excluded from an sp-config export command. | [optional] 
-**IncludeTypes** | Pointer to **[]string** | Object type names to be included in an sp-config export command. IncludeTypes takes precedence over excludeTypes. | [optional] 
-**ObjectOptions** | Pointer to [**map[string]ObjectExportImportOptions**](object-export-import-options) | Additional options targeting specific objects related to each item in the includeTypes field | [optional] 
-**DefaultReferences** | Pointer to **[]string** | List of object types that can be used to resolve references on import. | [optional] 
-**ExcludeBackup** | Pointer to **bool** | By default, every import will first export all existing objects supported by sp-config as a backup before the import is attempted. If excludeBackup is true, the backup will not be performed. | [optional] [default to false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ExcludeTypes** | Pointer to **[]string** | Object type names to be excluded from an sp-config export command. | [optional] |
+| **IncludeTypes** | Pointer to **[]string** | Object type names to be included in an sp-config export command. IncludeTypes takes precedence over excludeTypes. | [optional] |
+| **ObjectOptions** | Pointer to [**map[string]ObjectExportImportOptions**](object-export-import-options) | Additional options targeting specific objects related to each item in the includeTypes field | [optional] |
+| **DefaultReferences** | Pointer to **[]string** | List of object types that can be used to resolve references on import. | [optional] |
+| **ExcludeBackup** | Pointer to **bool** | By default, every import will first export all existing objects supported by sp-config as a backup before the import is attempted. If excludeBackup is true, the backup will not be performed. | [optional] [default to false] |
 
 ## Methods
 
@@ -27,18 +27,13 @@ Name | Type | Description | Notes
 
 `func NewImportOptions() *ImportOptions`
 
-NewImportOptions instantiates a new ImportOptions object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewImportOptions instantiates a new ImportOptions object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewImportOptionsWithDefaults
 
 `func NewImportOptionsWithDefaults() *ImportOptions`
 
-NewImportOptionsWithDefaults instantiates a new ImportOptions object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewImportOptionsWithDefaults instantiates a new ImportOptions object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetExcludeTypes
 
@@ -50,8 +45,7 @@ GetExcludeTypes returns the ExcludeTypes field if non-nil, zero value otherwise.
 
 `func (o *ImportOptions) GetExcludeTypesOk() (*[]string, bool)`
 
-GetExcludeTypesOk returns a tuple with the ExcludeTypes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetExcludeTypesOk returns a tuple with the ExcludeTypes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetExcludeTypes
 
@@ -75,8 +69,7 @@ GetIncludeTypes returns the IncludeTypes field if non-nil, zero value otherwise.
 
 `func (o *ImportOptions) GetIncludeTypesOk() (*[]string, bool)`
 
-GetIncludeTypesOk returns a tuple with the IncludeTypes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIncludeTypesOk returns a tuple with the IncludeTypes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIncludeTypes
 
@@ -100,8 +93,7 @@ GetObjectOptions returns the ObjectOptions field if non-nil, zero value otherwis
 
 `func (o *ImportOptions) GetObjectOptionsOk() (*map[string]ObjectExportImportOptions, bool)`
 
-GetObjectOptionsOk returns a tuple with the ObjectOptions field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetObjectOptionsOk returns a tuple with the ObjectOptions field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetObjectOptions
 
@@ -125,8 +117,7 @@ GetDefaultReferences returns the DefaultReferences field if non-nil, zero value 
 
 `func (o *ImportOptions) GetDefaultReferencesOk() (*[]string, bool)`
 
-GetDefaultReferencesOk returns a tuple with the DefaultReferences field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDefaultReferencesOk returns a tuple with the DefaultReferences field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDefaultReferences
 
@@ -150,8 +141,7 @@ GetExcludeBackup returns the ExcludeBackup field if non-nil, zero value otherwis
 
 `func (o *ImportOptions) GetExcludeBackupOk() (*bool, bool)`
 
-GetExcludeBackupOk returns a tuple with the ExcludeBackup field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetExcludeBackupOk returns a tuple with the ExcludeBackup field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetExcludeBackup
 
@@ -164,5 +154,3 @@ SetExcludeBackup sets ExcludeBackup field to given value.
 `func (o *ImportOptions) HasExcludeBackup() bool`
 
 HasExcludeBackup returns a boolean if a field has been set.
-
-

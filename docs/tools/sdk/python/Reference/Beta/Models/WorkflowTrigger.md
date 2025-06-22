@@ -4,9 +4,10 @@ title: WorkflowTrigger
 pagination_label: WorkflowTrigger
 sidebar_label: WorkflowTrigger
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'WorkflowTrigger', 'BetaWorkflowTrigger'] 
+keywords: ['python', 'Python', 'sdk', 'WorkflowTrigger', 'BetaWorkflowTrigger']
 slug: /tools/sdk/python/beta/models/workflow-trigger
-tags: ['SDK', 'Software Development Kit', 'WorkflowTrigger', 'BetaWorkflowTrigger']
+tags:
+  ['SDK', 'Software Development Kit', 'WorkflowTrigger', 'BetaWorkflowTrigger']
 ---
 
 # WorkflowTrigger
@@ -15,11 +16,12 @@ The trigger that starts the workflow
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'EVENT',    'EXTERNAL',    'SCHEDULED',    '' ] | The trigger type | [required]
-**display_name** | **str** |  | [optional] 
-**attributes** | [**WorkflowTriggerAttributes**](workflow-trigger-attributes) |  | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'EVENT', 'EXTERNAL', 'SCHEDULED', '' ] | The trigger type | [required] |
+| **display_name** | **str** |  | [optional] |
+| **attributes** | [**WorkflowTriggerAttributes**](workflow-trigger-attributes) |  | [required] |
+
 }
 
 ## Example
@@ -34,5 +36,5 @@ attributes=
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

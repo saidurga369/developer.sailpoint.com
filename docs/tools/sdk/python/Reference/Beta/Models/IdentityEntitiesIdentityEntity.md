@@ -4,21 +4,34 @@ title: IdentityEntitiesIdentityEntity
 pagination_label: IdentityEntitiesIdentityEntity
 sidebar_label: IdentityEntitiesIdentityEntity
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentityEntitiesIdentityEntity', 'BetaIdentityEntitiesIdentityEntity'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'IdentityEntitiesIdentityEntity',
+    'BetaIdentityEntitiesIdentityEntity',
+  ]
 slug: /tools/sdk/python/beta/models/identity-entities-identity-entity
-tags: ['SDK', 'Software Development Kit', 'IdentityEntitiesIdentityEntity', 'BetaIdentityEntitiesIdentityEntity']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityEntitiesIdentityEntity',
+    'BetaIdentityEntitiesIdentityEntity',
+  ]
 ---
 
 # IdentityEntitiesIdentityEntity
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | id of the resource to which the identity is associated | [optional] 
-**name** | **str** | name of the resource to which the identity is associated | [optional] 
-**type** | **str** | type of the resource to which the identity is associated | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | id of the resource to which the identity is associated | [optional] |
+| **name** | **str** | name of the resource to which the identity is associated | [optional] |
+| **type** | **str** | type of the resource to which the identity is associated | [optional] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ type='CAMPAIGN_CAMPAIGNER'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,9 +4,22 @@ title: DependantAppConnectionsAccountSource
 pagination_label: DependantAppConnectionsAccountSource
 sidebar_label: DependantAppConnectionsAccountSource
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'DependantAppConnectionsAccountSource', 'V2024DependantAppConnectionsAccountSource'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'DependantAppConnectionsAccountSource',
+    'V2024DependantAppConnectionsAccountSource',
+  ]
 slug: /tools/sdk/python/v2024/models/dependant-app-connections-account-source
-tags: ['SDK', 'Software Development Kit', 'DependantAppConnectionsAccountSource', 'V2024DependantAppConnectionsAccountSource']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'DependantAppConnectionsAccountSource',
+    'V2024DependantAppConnectionsAccountSource',
+  ]
 ---
 
 # DependantAppConnectionsAccountSource
@@ -15,10 +28,11 @@ The Account Source of the connected Application
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**use_for_password_management** | **bool** | Use this Account Source for password management | [optional] [default to False]
-**password_policies** | [**[]DependantAppConnectionsAccountSourcePasswordPoliciesInner**](dependant-app-connections-account-source-password-policies-inner) | A list of Password Policies for this Account Source | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **use_for_password_management** | **bool** | Use this Account Source for password management | [optional] [default to False] |
+| **password_policies** | [**[]DependantAppConnectionsAccountSourcePasswordPoliciesInner**](dependant-app-connections-account-source-password-policies-inner) | A list of Password Policies for this Account Source | [optional] |
+
 }
 
 ## Example
@@ -30,12 +44,12 @@ dependant_app_connections_account_source = DependantAppConnectionsAccountSource(
 use_for_password_management=False,
 password_policies=[
                     sailpoint.v2024.models.dependant_app_connections_account_source_password_policies_inner.DependantAppConnections_accountSource_passwordPolicies_inner(
-                        type = 'PASSWORD_POLICY', 
-                        id = '2c91808568c529c60168cca6f90c1313', 
+                        type = 'PASSWORD_POLICY',
+                        id = '2c91808568c529c60168cca6f90c1313',
                         name = 'Policy ODS', )
                     ]
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

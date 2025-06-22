@@ -4,31 +4,40 @@ title: ManagedClientStatusCode
 pagination_label: ManagedClientStatusCode
 sidebar_label: ManagedClientStatusCode
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'ManagedClientStatusCode', 'V2024ManagedClientStatusCode'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'ManagedClientStatusCode',
+    'V2024ManagedClientStatusCode',
+  ]
 slug: /tools/sdk/powershell/v2024/models/managed-client-status-code
-tags: ['SDK', 'Software Development Kit', 'ManagedClientStatusCode', 'V2024ManagedClientStatusCode']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ManagedClientStatusCode',
+    'V2024ManagedClientStatusCode',
+  ]
 ---
-
 
 # ManagedClientStatusCode
 
 ## Enum
 
+- `NORMAL` (value: `"NORMAL"`)
 
-* `NORMAL` (value: `"NORMAL"`)
+- `UNDEFINED` (value: `"UNDEFINED"`)
 
-* `UNDEFINED` (value: `"UNDEFINED"`)
+- `NOT_CONFIGURED` (value: `"NOT_CONFIGURED"`)
 
-* `NOT_CONFIGURED` (value: `"NOT_CONFIGURED"`)
+- `CONFIGURING` (value: `"CONFIGURING"`)
 
-* `CONFIGURING` (value: `"CONFIGURING"`)
+- `WARNING` (value: `"WARNING"`)
 
-* `WARNING` (value: `"WARNING"`)
+- `ERROR` (value: `"ERROR"`)
 
-* `ERROR` (value: `"ERROR"`)
+- `FAILED` (value: `"FAILED"`)
 
-* `FAILED` (value: `"FAILED"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

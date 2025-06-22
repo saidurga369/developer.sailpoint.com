@@ -4,28 +4,41 @@ title: CampaignFilterDetailsCriteriaListInner
 pagination_label: CampaignFilterDetailsCriteriaListInner
 sidebar_label: CampaignFilterDetailsCriteriaListInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'CampaignFilterDetailsCriteriaListInner', 'V2025CampaignFilterDetailsCriteriaListInner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'CampaignFilterDetailsCriteriaListInner',
+    'V2025CampaignFilterDetailsCriteriaListInner',
+  ]
 slug: /tools/sdk/python/v2025/models/campaign-filter-details-criteria-list-inner
-tags: ['SDK', 'Software Development Kit', 'CampaignFilterDetailsCriteriaListInner', 'V2025CampaignFilterDetailsCriteriaListInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CampaignFilterDetailsCriteriaListInner',
+    'V2025CampaignFilterDetailsCriteriaListInner',
+  ]
 ---
 
 # CampaignFilterDetailsCriteriaListInner
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** | [**CriteriaType**](criteria-type) |  | [required]
-**operation** | [**Operation**](operation) |  | [optional] 
-**var_property** | **str** | Specified key from the type of criteria. | [required]
-**value** | **str** | Value for the specified key from the type of criteria. | [required]
-**negate_result** | **bool** | If true, the filter will negate the result of the criteria. | [optional] [default to False]
-**short_circuit** | **bool** | If true, the filter will short circuit the evaluation of the criteria. | [optional] [default to False]
-**record_child_matches** | **bool** | If true, the filter will record child matches for the criteria. | [optional] [default to False]
-**id** | **str** | The unique ID of the criteria. | [optional] 
-**suppress_matched_items** | **bool** | If this value is true, then matched items will not only be excluded from the campaign, they will also not have archived certification items created.  Such items will not appear in the exclusion report.  | [optional] [default to False]
-**children** | **[]object** | List of child criteria. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | [**CriteriaType**](criteria-type) |  | [required] |
+| **operation** | [**Operation**](operation) |  | [optional] |
+| **var_property** | **str** | Specified key from the type of criteria. | [required] |
+| **value** | **str** | Value for the specified key from the type of criteria. | [required] |
+| **negate_result** | **bool** | If true, the filter will negate the result of the criteria. | [optional] [default to False] |
+| **short_circuit** | **bool** | If true, the filter will short circuit the evaluation of the criteria. | [optional] [default to False] |
+| **record_child_matches** | **bool** | If true, the filter will record child matches for the criteria. | [optional] [default to False] |
+| **id** | **str** | The unique ID of the criteria. | [optional] |
+| **suppress_matched_items** | **bool** | If this value is true, then matched items will not only be excluded from the campaign, they will also not have archived certification items created. Such items will not appear in the exclusion report. | [optional] [default to False] |
+| **children** | **[]object** | List of child criteria. | [optional] |
+
 }
 
 ## Example
@@ -49,5 +62,5 @@ children=[
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

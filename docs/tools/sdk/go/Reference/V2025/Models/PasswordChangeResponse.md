@@ -4,19 +4,32 @@ title: PasswordChangeResponse
 pagination_label: PasswordChangeResponse
 sidebar_label: PasswordChangeResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'PasswordChangeResponse', 'V2025PasswordChangeResponse'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'PasswordChangeResponse',
+    'V2025PasswordChangeResponse',
+  ]
 slug: /tools/sdk/go/v2025/models/password-change-response
-tags: ['SDK', 'Software Development Kit', 'PasswordChangeResponse', 'V2025PasswordChangeResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PasswordChangeResponse',
+    'V2025PasswordChangeResponse',
+  ]
 ---
 
 # PasswordChangeResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**RequestId** | Pointer to **NullableString** | The password change request ID | [optional] 
-**State** | Pointer to **string** | Password change state | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **RequestId** | Pointer to **NullableString** | The password change request ID | [optional] |
+| **State** | Pointer to **string** | Password change state | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewPasswordChangeResponse() *PasswordChangeResponse`
 
-NewPasswordChangeResponse instantiates a new PasswordChangeResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewPasswordChangeResponse instantiates a new PasswordChangeResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewPasswordChangeResponseWithDefaults
 
 `func NewPasswordChangeResponseWithDefaults() *PasswordChangeResponse`
 
-NewPasswordChangeResponseWithDefaults instantiates a new PasswordChangeResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewPasswordChangeResponseWithDefaults instantiates a new PasswordChangeResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetRequestId
 
@@ -47,8 +55,7 @@ GetRequestId returns the RequestId field if non-nil, zero value otherwise.
 
 `func (o *PasswordChangeResponse) GetRequestIdOk() (*string, bool)`
 
-GetRequestIdOk returns a tuple with the RequestId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestIdOk returns a tuple with the RequestId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequestId
 
@@ -66,12 +73,14 @@ HasRequestId returns a boolean if a field has been set.
 
 `func (o *PasswordChangeResponse) SetRequestIdNil(b bool)`
 
- SetRequestIdNil sets the value for RequestId to be an explicit nil
+SetRequestIdNil sets the value for RequestId to be an explicit nil
 
 ### UnsetRequestId
+
 `func (o *PasswordChangeResponse) UnsetRequestId()`
 
 UnsetRequestId ensures that no value is present for RequestId, not even an explicit nil
+
 ### GetState
 
 `func (o *PasswordChangeResponse) GetState() string`
@@ -82,8 +91,7 @@ GetState returns the State field if non-nil, zero value otherwise.
 
 `func (o *PasswordChangeResponse) GetStateOk() (*string, bool)`
 
-GetStateOk returns a tuple with the State field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStateOk returns a tuple with the State field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetState
 
@@ -96,5 +104,3 @@ SetState sets State field to given value.
 `func (o *PasswordChangeResponse) HasState() bool`
 
 HasState returns a boolean if a field has been set.
-
-

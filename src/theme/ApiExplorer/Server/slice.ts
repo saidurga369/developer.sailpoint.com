@@ -1,5 +1,5 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { ServerObject } from "docusaurus-plugin-openapi-docs/src/openapi/types";
+import {createSlice, PayloadAction} from '@reduxjs/toolkit';
+import {ServerObject} from 'docusaurus-plugin-openapi-docs/src/openapi/types';
 // TODO: we might want to export this
 
 export interface State {
@@ -10,12 +10,12 @@ export interface State {
 const initialState: State = {} as any;
 
 export const slice = createSlice({
-  name: "server",
+  name: 'server',
   initialState,
   reducers: {
     setServer: (state, action: PayloadAction<string>) => {
       state.value = state.options.find(
-        (s) => s.url === JSON.parse(action.payload).url
+        (s) => s.url === JSON.parse(action.payload).url,
       );
     },
     setServerVariable: (state, action: PayloadAction<string>) => {
@@ -27,6 +27,6 @@ export const slice = createSlice({
   },
 });
 
-export const { setServer, setServerVariable } = slice.actions;
+export const {setServer, setServerVariable} = slice.actions;
 
 export default slice.reducer;

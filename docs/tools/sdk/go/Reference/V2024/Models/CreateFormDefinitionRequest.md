@@ -4,24 +4,37 @@ title: CreateFormDefinitionRequest
 pagination_label: CreateFormDefinitionRequest
 sidebar_label: CreateFormDefinitionRequest
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'CreateFormDefinitionRequest', 'V2024CreateFormDefinitionRequest'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'CreateFormDefinitionRequest',
+    'V2024CreateFormDefinitionRequest',
+  ]
 slug: /tools/sdk/go/v2024/models/create-form-definition-request
-tags: ['SDK', 'Software Development Kit', 'CreateFormDefinitionRequest', 'V2024CreateFormDefinitionRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CreateFormDefinitionRequest',
+    'V2024CreateFormDefinitionRequest',
+  ]
 ---
 
 # CreateFormDefinitionRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Description** | Pointer to **string** | Description is the form definition description | [optional] 
-**FormConditions** | Pointer to [**[]FormCondition**](form-condition) | FormConditions is the conditional logic that modify the form dynamically modify the form as the recipient is interacting out the form | [optional] 
-**FormElements** | Pointer to [**[]FormElement**](form-element) | FormElements is a list of nested form elements | [optional] 
-**FormInput** | Pointer to [**[]FormDefinitionInput**](form-definition-input) | FormInput is a list of form inputs that are required when creating a form-instance object | [optional] 
-**Name** | **string** | Name is the form definition name | 
-**Owner** | [**FormOwner**](form-owner) |  | 
-**UsedBy** | Pointer to [**[]FormUsedBy**](form-used-by) | UsedBy is a list of objects where when any system uses a particular form it reaches out to the form service to record it is currently being used | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Description** | Pointer to **string** | Description is the form definition description | [optional] |
+| **FormConditions** | Pointer to [**[]FormCondition**](form-condition) | FormConditions is the conditional logic that modify the form dynamically modify the form as the recipient is interacting out the form | [optional] |
+| **FormElements** | Pointer to [**[]FormElement**](form-element) | FormElements is a list of nested form elements | [optional] |
+| **FormInput** | Pointer to [**[]FormDefinitionInput**](form-definition-input) | FormInput is a list of form inputs that are required when creating a form-instance object | [optional] |
+| **Name** | **string** | Name is the form definition name |
+| **Owner** | [**FormOwner**](form-owner) |  |
+| **UsedBy** | Pointer to [**[]FormUsedBy**](form-used-by) | UsedBy is a list of objects where when any system uses a particular form it reaches out to the form service to record it is currently being used | [optional] |
 
 ## Methods
 
@@ -29,18 +42,13 @@ Name | Type | Description | Notes
 
 `func NewCreateFormDefinitionRequest(name string, owner FormOwner, ) *CreateFormDefinitionRequest`
 
-NewCreateFormDefinitionRequest instantiates a new CreateFormDefinitionRequest object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewCreateFormDefinitionRequest instantiates a new CreateFormDefinitionRequest object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewCreateFormDefinitionRequestWithDefaults
 
 `func NewCreateFormDefinitionRequestWithDefaults() *CreateFormDefinitionRequest`
 
-NewCreateFormDefinitionRequestWithDefaults instantiates a new CreateFormDefinitionRequest object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewCreateFormDefinitionRequestWithDefaults instantiates a new CreateFormDefinitionRequest object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetDescription
 
@@ -52,8 +60,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *CreateFormDefinitionRequest) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -77,8 +84,7 @@ GetFormConditions returns the FormConditions field if non-nil, zero value otherw
 
 `func (o *CreateFormDefinitionRequest) GetFormConditionsOk() (*[]FormCondition, bool)`
 
-GetFormConditionsOk returns a tuple with the FormConditions field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFormConditionsOk returns a tuple with the FormConditions field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFormConditions
 
@@ -102,8 +108,7 @@ GetFormElements returns the FormElements field if non-nil, zero value otherwise.
 
 `func (o *CreateFormDefinitionRequest) GetFormElementsOk() (*[]FormElement, bool)`
 
-GetFormElementsOk returns a tuple with the FormElements field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFormElementsOk returns a tuple with the FormElements field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFormElements
 
@@ -127,8 +132,7 @@ GetFormInput returns the FormInput field if non-nil, zero value otherwise.
 
 `func (o *CreateFormDefinitionRequest) GetFormInputOk() (*[]FormDefinitionInput, bool)`
 
-GetFormInputOk returns a tuple with the FormInput field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFormInputOk returns a tuple with the FormInput field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFormInput
 
@@ -152,15 +156,13 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *CreateFormDefinitionRequest) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
 `func (o *CreateFormDefinitionRequest) SetName(v string)`
 
 SetName sets Name field to given value.
-
 
 ### GetOwner
 
@@ -172,15 +174,13 @@ GetOwner returns the Owner field if non-nil, zero value otherwise.
 
 `func (o *CreateFormDefinitionRequest) GetOwnerOk() (*FormOwner, bool)`
 
-GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwner
 
 `func (o *CreateFormDefinitionRequest) SetOwner(v FormOwner)`
 
 SetOwner sets Owner field to given value.
-
 
 ### GetUsedBy
 
@@ -192,8 +192,7 @@ GetUsedBy returns the UsedBy field if non-nil, zero value otherwise.
 
 `func (o *CreateFormDefinitionRequest) GetUsedByOk() (*[]FormUsedBy, bool)`
 
-GetUsedByOk returns a tuple with the UsedBy field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUsedByOk returns a tuple with the UsedBy field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUsedBy
 
@@ -206,5 +205,3 @@ SetUsedBy sets UsedBy field to given value.
 `func (o *CreateFormDefinitionRequest) HasUsedBy() bool`
 
 HasUsedBy returns a boolean if a field has been set.
-
-

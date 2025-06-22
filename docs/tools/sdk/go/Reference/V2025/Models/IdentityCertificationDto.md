@@ -4,34 +4,47 @@ title: IdentityCertificationDto
 pagination_label: IdentityCertificationDto
 sidebar_label: IdentityCertificationDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IdentityCertificationDto', 'V2025IdentityCertificationDto'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'IdentityCertificationDto',
+    'V2025IdentityCertificationDto',
+  ]
 slug: /tools/sdk/go/v2025/models/identity-certification-dto
-tags: ['SDK', 'Software Development Kit', 'IdentityCertificationDto', 'V2025IdentityCertificationDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityCertificationDto',
+    'V2025IdentityCertificationDto',
+  ]
 ---
 
 # IdentityCertificationDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | id of the certification | [optional] 
-**Name** | Pointer to **string** | name of the certification | [optional] 
-**Campaign** | Pointer to [**CampaignReference**](campaign-reference) |  | [optional] 
-**Completed** | Pointer to **bool** | Have all decisions been made? | [optional] 
-**IdentitiesCompleted** | Pointer to **int32** | The number of identities for whom all decisions have been made and are complete. | [optional] 
-**IdentitiesTotal** | Pointer to **int32** | The total number of identities in the Certification, both complete and incomplete. | [optional] 
-**Created** | Pointer to **SailPointTime** | created date | [optional] 
-**Modified** | Pointer to **SailPointTime** | modified date | [optional] 
-**DecisionsMade** | Pointer to **int32** | The number of approve/revoke/acknowledge decisions that have been made. | [optional] 
-**DecisionsTotal** | Pointer to **int32** | The total number of approve/revoke/acknowledge decisions. | [optional] 
-**Due** | Pointer to **NullableTime** | The due date of the certification. | [optional] 
-**Signed** | Pointer to **NullableTime** | The date the reviewer signed off on the Certification. | [optional] 
-**Reviewer** | Pointer to [**Reviewer**](reviewer) |  | [optional] 
-**Reassignment** | Pointer to [**NullableReassignment**](reassignment) |  | [optional] 
-**HasErrors** | Pointer to **bool** | Identifies if the certification has an error | [optional] 
-**ErrorMessage** | Pointer to **NullableString** | Description of the certification error | [optional] 
-**Phase** | Pointer to [**CertificationPhase**](certification-phase) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | id of the certification | [optional] |
+| **Name** | Pointer to **string** | name of the certification | [optional] |
+| **Campaign** | Pointer to [**CampaignReference**](campaign-reference) |  | [optional] |
+| **Completed** | Pointer to **bool** | Have all decisions been made? | [optional] |
+| **IdentitiesCompleted** | Pointer to **int32** | The number of identities for whom all decisions have been made and are complete. | [optional] |
+| **IdentitiesTotal** | Pointer to **int32** | The total number of identities in the Certification, both complete and incomplete. | [optional] |
+| **Created** | Pointer to **SailPointTime** | created date | [optional] |
+| **Modified** | Pointer to **SailPointTime** | modified date | [optional] |
+| **DecisionsMade** | Pointer to **int32** | The number of approve/revoke/acknowledge decisions that have been made. | [optional] |
+| **DecisionsTotal** | Pointer to **int32** | The total number of approve/revoke/acknowledge decisions. | [optional] |
+| **Due** | Pointer to **NullableTime** | The due date of the certification. | [optional] |
+| **Signed** | Pointer to **NullableTime** | The date the reviewer signed off on the Certification. | [optional] |
+| **Reviewer** | Pointer to [**Reviewer**](reviewer) |  | [optional] |
+| **Reassignment** | Pointer to [**NullableReassignment**](reassignment) |  | [optional] |
+| **HasErrors** | Pointer to **bool** | Identifies if the certification has an error | [optional] |
+| **ErrorMessage** | Pointer to **NullableString** | Description of the certification error | [optional] |
+| **Phase** | Pointer to [**CertificationPhase**](certification-phase) |  | [optional] |
 
 ## Methods
 
@@ -39,18 +52,13 @@ Name | Type | Description | Notes
 
 `func NewIdentityCertificationDto() *IdentityCertificationDto`
 
-NewIdentityCertificationDto instantiates a new IdentityCertificationDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewIdentityCertificationDto instantiates a new IdentityCertificationDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewIdentityCertificationDtoWithDefaults
 
 `func NewIdentityCertificationDtoWithDefaults() *IdentityCertificationDto`
 
-NewIdentityCertificationDtoWithDefaults instantiates a new IdentityCertificationDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewIdentityCertificationDtoWithDefaults instantiates a new IdentityCertificationDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -62,8 +70,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *IdentityCertificationDto) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -87,8 +94,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *IdentityCertificationDto) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -112,8 +118,7 @@ GetCampaign returns the Campaign field if non-nil, zero value otherwise.
 
 `func (o *IdentityCertificationDto) GetCampaignOk() (*CampaignReference, bool)`
 
-GetCampaignOk returns a tuple with the Campaign field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCampaignOk returns a tuple with the Campaign field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCampaign
 
@@ -137,8 +142,7 @@ GetCompleted returns the Completed field if non-nil, zero value otherwise.
 
 `func (o *IdentityCertificationDto) GetCompletedOk() (*bool, bool)`
 
-GetCompletedOk returns a tuple with the Completed field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCompletedOk returns a tuple with the Completed field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCompleted
 
@@ -162,8 +166,7 @@ GetIdentitiesCompleted returns the IdentitiesCompleted field if non-nil, zero va
 
 `func (o *IdentityCertificationDto) GetIdentitiesCompletedOk() (*int32, bool)`
 
-GetIdentitiesCompletedOk returns a tuple with the IdentitiesCompleted field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentitiesCompletedOk returns a tuple with the IdentitiesCompleted field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentitiesCompleted
 
@@ -187,8 +190,7 @@ GetIdentitiesTotal returns the IdentitiesTotal field if non-nil, zero value othe
 
 `func (o *IdentityCertificationDto) GetIdentitiesTotalOk() (*int32, bool)`
 
-GetIdentitiesTotalOk returns a tuple with the IdentitiesTotal field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentitiesTotalOk returns a tuple with the IdentitiesTotal field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentitiesTotal
 
@@ -212,8 +214,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *IdentityCertificationDto) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -237,8 +238,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *IdentityCertificationDto) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -262,8 +262,7 @@ GetDecisionsMade returns the DecisionsMade field if non-nil, zero value otherwis
 
 `func (o *IdentityCertificationDto) GetDecisionsMadeOk() (*int32, bool)`
 
-GetDecisionsMadeOk returns a tuple with the DecisionsMade field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDecisionsMadeOk returns a tuple with the DecisionsMade field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDecisionsMade
 
@@ -287,8 +286,7 @@ GetDecisionsTotal returns the DecisionsTotal field if non-nil, zero value otherw
 
 `func (o *IdentityCertificationDto) GetDecisionsTotalOk() (*int32, bool)`
 
-GetDecisionsTotalOk returns a tuple with the DecisionsTotal field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDecisionsTotalOk returns a tuple with the DecisionsTotal field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDecisionsTotal
 
@@ -312,8 +310,7 @@ GetDue returns the Due field if non-nil, zero value otherwise.
 
 `func (o *IdentityCertificationDto) GetDueOk() (*SailPointTime, bool)`
 
-GetDueOk returns a tuple with the Due field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDueOk returns a tuple with the Due field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDue
 
@@ -331,12 +328,14 @@ HasDue returns a boolean if a field has been set.
 
 `func (o *IdentityCertificationDto) SetDueNil(b bool)`
 
- SetDueNil sets the value for Due to be an explicit nil
+SetDueNil sets the value for Due to be an explicit nil
 
 ### UnsetDue
+
 `func (o *IdentityCertificationDto) UnsetDue()`
 
 UnsetDue ensures that no value is present for Due, not even an explicit nil
+
 ### GetSigned
 
 `func (o *IdentityCertificationDto) GetSigned() SailPointTime`
@@ -347,8 +346,7 @@ GetSigned returns the Signed field if non-nil, zero value otherwise.
 
 `func (o *IdentityCertificationDto) GetSignedOk() (*SailPointTime, bool)`
 
-GetSignedOk returns a tuple with the Signed field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSignedOk returns a tuple with the Signed field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSigned
 
@@ -366,12 +364,14 @@ HasSigned returns a boolean if a field has been set.
 
 `func (o *IdentityCertificationDto) SetSignedNil(b bool)`
 
- SetSignedNil sets the value for Signed to be an explicit nil
+SetSignedNil sets the value for Signed to be an explicit nil
 
 ### UnsetSigned
+
 `func (o *IdentityCertificationDto) UnsetSigned()`
 
 UnsetSigned ensures that no value is present for Signed, not even an explicit nil
+
 ### GetReviewer
 
 `func (o *IdentityCertificationDto) GetReviewer() Reviewer`
@@ -382,8 +382,7 @@ GetReviewer returns the Reviewer field if non-nil, zero value otherwise.
 
 `func (o *IdentityCertificationDto) GetReviewerOk() (*Reviewer, bool)`
 
-GetReviewerOk returns a tuple with the Reviewer field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReviewerOk returns a tuple with the Reviewer field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReviewer
 
@@ -407,8 +406,7 @@ GetReassignment returns the Reassignment field if non-nil, zero value otherwise.
 
 `func (o *IdentityCertificationDto) GetReassignmentOk() (*Reassignment, bool)`
 
-GetReassignmentOk returns a tuple with the Reassignment field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReassignmentOk returns a tuple with the Reassignment field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReassignment
 
@@ -426,12 +424,14 @@ HasReassignment returns a boolean if a field has been set.
 
 `func (o *IdentityCertificationDto) SetReassignmentNil(b bool)`
 
- SetReassignmentNil sets the value for Reassignment to be an explicit nil
+SetReassignmentNil sets the value for Reassignment to be an explicit nil
 
 ### UnsetReassignment
+
 `func (o *IdentityCertificationDto) UnsetReassignment()`
 
 UnsetReassignment ensures that no value is present for Reassignment, not even an explicit nil
+
 ### GetHasErrors
 
 `func (o *IdentityCertificationDto) GetHasErrors() bool`
@@ -442,8 +442,7 @@ GetHasErrors returns the HasErrors field if non-nil, zero value otherwise.
 
 `func (o *IdentityCertificationDto) GetHasErrorsOk() (*bool, bool)`
 
-GetHasErrorsOk returns a tuple with the HasErrors field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetHasErrorsOk returns a tuple with the HasErrors field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetHasErrors
 
@@ -467,8 +466,7 @@ GetErrorMessage returns the ErrorMessage field if non-nil, zero value otherwise.
 
 `func (o *IdentityCertificationDto) GetErrorMessageOk() (*string, bool)`
 
-GetErrorMessageOk returns a tuple with the ErrorMessage field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetErrorMessageOk returns a tuple with the ErrorMessage field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetErrorMessage
 
@@ -486,12 +484,14 @@ HasErrorMessage returns a boolean if a field has been set.
 
 `func (o *IdentityCertificationDto) SetErrorMessageNil(b bool)`
 
- SetErrorMessageNil sets the value for ErrorMessage to be an explicit nil
+SetErrorMessageNil sets the value for ErrorMessage to be an explicit nil
 
 ### UnsetErrorMessage
+
 `func (o *IdentityCertificationDto) UnsetErrorMessage()`
 
 UnsetErrorMessage ensures that no value is present for ErrorMessage, not even an explicit nil
+
 ### GetPhase
 
 `func (o *IdentityCertificationDto) GetPhase() CertificationPhase`
@@ -502,8 +502,7 @@ GetPhase returns the Phase field if non-nil, zero value otherwise.
 
 `func (o *IdentityCertificationDto) GetPhaseOk() (*CertificationPhase, bool)`
 
-GetPhaseOk returns a tuple with the Phase field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPhaseOk returns a tuple with the Phase field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPhase
 
@@ -516,5 +515,3 @@ SetPhase sets Phase field to given value.
 `func (o *IdentityCertificationDto) HasPhase() bool`
 
 HasPhase returns a boolean if a field has been set.
-
-

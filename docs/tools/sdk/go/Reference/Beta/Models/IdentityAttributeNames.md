@@ -4,18 +4,31 @@ title: IdentityAttributeNames
 pagination_label: IdentityAttributeNames
 sidebar_label: IdentityAttributeNames
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IdentityAttributeNames', 'BetaIdentityAttributeNames'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'IdentityAttributeNames',
+    'BetaIdentityAttributeNames',
+  ]
 slug: /tools/sdk/go/beta/models/identity-attribute-names
-tags: ['SDK', 'Software Development Kit', 'IdentityAttributeNames', 'BetaIdentityAttributeNames']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityAttributeNames',
+    'BetaIdentityAttributeNames',
+  ]
 ---
 
 # IdentityAttributeNames
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Ids** | Pointer to **[]string** | List of identity attributes' technical names. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Ids** | Pointer to **[]string** | List of identity attributes' technical names. | [optional] |
 
 ## Methods
 
@@ -23,18 +36,13 @@ Name | Type | Description | Notes
 
 `func NewIdentityAttributeNames() *IdentityAttributeNames`
 
-NewIdentityAttributeNames instantiates a new IdentityAttributeNames object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewIdentityAttributeNames instantiates a new IdentityAttributeNames object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewIdentityAttributeNamesWithDefaults
 
 `func NewIdentityAttributeNamesWithDefaults() *IdentityAttributeNames`
 
-NewIdentityAttributeNamesWithDefaults instantiates a new IdentityAttributeNames object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewIdentityAttributeNamesWithDefaults instantiates a new IdentityAttributeNames object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetIds
 
@@ -46,8 +54,7 @@ GetIds returns the Ids field if non-nil, zero value otherwise.
 
 `func (o *IdentityAttributeNames) GetIdsOk() (*[]string, bool)`
 
-GetIdsOk returns a tuple with the Ids field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdsOk returns a tuple with the Ids field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIds
 
@@ -60,5 +67,3 @@ SetIds sets Ids field to given value.
 `func (o *IdentityAttributeNames) HasIds() bool`
 
 HasIds returns a boolean if a field has been set.
-
-

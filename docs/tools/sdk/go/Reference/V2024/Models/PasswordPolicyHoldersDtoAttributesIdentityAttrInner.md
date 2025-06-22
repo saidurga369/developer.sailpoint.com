@@ -4,19 +4,32 @@ title: PasswordPolicyHoldersDtoAttributesIdentityAttrInner
 pagination_label: PasswordPolicyHoldersDtoAttributesIdentityAttrInner
 sidebar_label: PasswordPolicyHoldersDtoAttributesIdentityAttrInner
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'PasswordPolicyHoldersDtoAttributesIdentityAttrInner', 'V2024PasswordPolicyHoldersDtoAttributesIdentityAttrInner'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'PasswordPolicyHoldersDtoAttributesIdentityAttrInner',
+    'V2024PasswordPolicyHoldersDtoAttributesIdentityAttrInner',
+  ]
 slug: /tools/sdk/go/v2024/models/password-policy-holders-dto-attributes-identity-attr-inner
-tags: ['SDK', 'Software Development Kit', 'PasswordPolicyHoldersDtoAttributesIdentityAttrInner', 'V2024PasswordPolicyHoldersDtoAttributesIdentityAttrInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PasswordPolicyHoldersDtoAttributesIdentityAttrInner',
+    'V2024PasswordPolicyHoldersDtoAttributesIdentityAttrInner',
+  ]
 ---
 
 # PasswordPolicyHoldersDtoAttributesIdentityAttrInner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | Pointer to **string** | Attribute's name | [optional] 
-**Value** | Pointer to **string** | Attribute's value | [optional] 
+| Name      | Type                  | Description       | Notes      |
+| --------- | --------------------- | ----------------- | ---------- |
+| **Name**  | Pointer to **string** | Attribute's name  | [optional] |
+| **Value** | Pointer to **string** | Attribute's value | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewPasswordPolicyHoldersDtoAttributesIdentityAttrInner() *PasswordPolicyHoldersDtoAttributesIdentityAttrInner`
 
-NewPasswordPolicyHoldersDtoAttributesIdentityAttrInner instantiates a new PasswordPolicyHoldersDtoAttributesIdentityAttrInner object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewPasswordPolicyHoldersDtoAttributesIdentityAttrInner instantiates a new PasswordPolicyHoldersDtoAttributesIdentityAttrInner object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewPasswordPolicyHoldersDtoAttributesIdentityAttrInnerWithDefaults
 
 `func NewPasswordPolicyHoldersDtoAttributesIdentityAttrInnerWithDefaults() *PasswordPolicyHoldersDtoAttributesIdentityAttrInner`
 
-NewPasswordPolicyHoldersDtoAttributesIdentityAttrInnerWithDefaults instantiates a new PasswordPolicyHoldersDtoAttributesIdentityAttrInner object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewPasswordPolicyHoldersDtoAttributesIdentityAttrInnerWithDefaults instantiates a new PasswordPolicyHoldersDtoAttributesIdentityAttrInner object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -47,8 +55,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *PasswordPolicyHoldersDtoAttributesIdentityAttrInner) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -72,8 +79,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *PasswordPolicyHoldersDtoAttributesIdentityAttrInner) GetValueOk() (*string, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -86,5 +92,3 @@ SetValue sets Value field to given value.
 `func (o *PasswordPolicyHoldersDtoAttributesIdentityAttrInner) HasValue() bool`
 
 HasValue returns a boolean if a field has been set.
-
-

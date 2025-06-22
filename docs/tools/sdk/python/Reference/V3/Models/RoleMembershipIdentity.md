@@ -4,9 +4,22 @@ title: RoleMembershipIdentity
 pagination_label: RoleMembershipIdentity
 sidebar_label: RoleMembershipIdentity
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RoleMembershipIdentity', 'RoleMembershipIdentity'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'RoleMembershipIdentity',
+    'RoleMembershipIdentity',
+  ]
 slug: /tools/sdk/python/v3/models/role-membership-identity
-tags: ['SDK', 'Software Development Kit', 'RoleMembershipIdentity', 'RoleMembershipIdentity']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMembershipIdentity',
+    'RoleMembershipIdentity',
+  ]
 ---
 
 # RoleMembershipIdentity
@@ -15,12 +28,13 @@ A reference to an Identity in an IDENTITY_LIST role membership criteria.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** | [**DtoType**](dto-type) |  | [optional] 
-**id** | **str** | Identity id | [optional] 
-**name** | **str** | Human-readable display name of the Identity. | [optional] 
-**alias_name** | **str** | User name of the Identity | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | [**DtoType**](dto-type) |  | [optional] |
+| **id** | **str** | Identity id | [optional] |
+| **name** | **str** | Human-readable display name of the Identity. | [optional] |
+| **alias_name** | **str** | User name of the Identity | [optional] |
+
 }
 
 ## Example
@@ -36,5 +50,5 @@ alias_name='t.edison'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

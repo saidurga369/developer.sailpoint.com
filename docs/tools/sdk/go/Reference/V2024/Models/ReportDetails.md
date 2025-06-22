@@ -4,7 +4,7 @@ title: ReportDetails
 pagination_label: ReportDetails
 sidebar_label: ReportDetails
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ReportDetails', 'V2024ReportDetails'] 
+keywords: ['go', 'Golang', 'sdk', 'ReportDetails', 'V2024ReportDetails']
 slug: /tools/sdk/go/v2024/models/report-details
 tags: ['SDK', 'Software Development Kit', 'ReportDetails', 'V2024ReportDetails']
 ---
@@ -13,10 +13,10 @@ tags: ['SDK', 'Software Development Kit', 'ReportDetails', 'V2024ReportDetails']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ReportType** | Pointer to **string** | Use this property to define what report should be processed in the RDE service. | [optional] 
-**Arguments** | Pointer to [**ReportDetailsArguments**](report-details-arguments) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ReportType** | Pointer to **string** | Use this property to define what report should be processed in the RDE service. | [optional] |
+| **Arguments** | Pointer to [**ReportDetailsArguments**](report-details-arguments) |  | [optional] |
 
 ## Methods
 
@@ -24,18 +24,13 @@ Name | Type | Description | Notes
 
 `func NewReportDetails() *ReportDetails`
 
-NewReportDetails instantiates a new ReportDetails object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewReportDetails instantiates a new ReportDetails object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewReportDetailsWithDefaults
 
 `func NewReportDetailsWithDefaults() *ReportDetails`
 
-NewReportDetailsWithDefaults instantiates a new ReportDetails object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewReportDetailsWithDefaults instantiates a new ReportDetails object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetReportType
 
@@ -47,8 +42,7 @@ GetReportType returns the ReportType field if non-nil, zero value otherwise.
 
 `func (o *ReportDetails) GetReportTypeOk() (*string, bool)`
 
-GetReportTypeOk returns a tuple with the ReportType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReportTypeOk returns a tuple with the ReportType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReportType
 
@@ -72,8 +66,7 @@ GetArguments returns the Arguments field if non-nil, zero value otherwise.
 
 `func (o *ReportDetails) GetArgumentsOk() (*ReportDetailsArguments, bool)`
 
-GetArgumentsOk returns a tuple with the Arguments field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetArgumentsOk returns a tuple with the Arguments field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetArguments
 
@@ -86,5 +79,3 @@ SetArguments sets Arguments field to given value.
 `func (o *ReportDetails) HasArguments() bool`
 
 HasArguments returns a boolean if a field has been set.
-
-

@@ -4,9 +4,22 @@ title: AccessModelMetadataValuesInner
 pagination_label: AccessModelMetadataValuesInner
 sidebar_label: AccessModelMetadataValuesInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccessModelMetadataValuesInner', 'V2024AccessModelMetadataValuesInner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccessModelMetadataValuesInner',
+    'V2024AccessModelMetadataValuesInner',
+  ]
 slug: /tools/sdk/python/v2024/models/access-model-metadata-values-inner
-tags: ['SDK', 'Software Development Kit', 'AccessModelMetadataValuesInner', 'V2024AccessModelMetadataValuesInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessModelMetadataValuesInner',
+    'V2024AccessModelMetadataValuesInner',
+  ]
 ---
 
 # AccessModelMetadataValuesInner
@@ -15,11 +28,12 @@ An individual value to assign to the metadata item
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**value** | **str** | The value to assign to the metdata item | [optional] 
-**name** | **str** | Display name of the value | [optional] 
-**status** | **str** | The status of the individual value | [optional] 
+| Name       | Type    | Description                             | Notes      |
+| ---------- | ------- | --------------------------------------- | ---------- |
+| **value**  | **str** | The value to assign to the metdata item | [optional] |
+| **name**   | **str** | Display name of the value               | [optional] |
+| **status** | **str** | The status of the individual value      | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ status='active'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,22 +4,35 @@ title: WorkgroupConnectionDtoObject
 pagination_label: WorkgroupConnectionDtoObject
 sidebar_label: WorkgroupConnectionDtoObject
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'WorkgroupConnectionDtoObject', 'V2024WorkgroupConnectionDtoObject'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'WorkgroupConnectionDtoObject',
+    'V2024WorkgroupConnectionDtoObject',
+  ]
 slug: /tools/sdk/python/v2024/models/workgroup-connection-dto-object
-tags: ['SDK', 'Software Development Kit', 'WorkgroupConnectionDtoObject', 'V2024WorkgroupConnectionDtoObject']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'WorkgroupConnectionDtoObject',
+    'V2024WorkgroupConnectionDtoObject',
+  ]
 ---
 
 # WorkgroupConnectionDtoObject
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** | [**ConnectedObjectType**](connected-object-type) |  | [optional] 
-**id** | **str** | ID of the object to which this reference applies | [optional] 
-**name** | **str** | Human-readable name of Connected object | [optional] 
-**description** | **str** | Description of the Connected object. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | [**ConnectedObjectType**](connected-object-type) |  | [optional] |
+| **id** | **str** | ID of the object to which this reference applies | [optional] |
+| **name** | **str** | Human-readable name of Connected object | [optional] |
+| **description** | **str** | Description of the Connected object. | [optional] |
+
 }
 
 ## Example
@@ -35,5 +48,5 @@ description='Collection of entitlements to read/write the employee database.'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

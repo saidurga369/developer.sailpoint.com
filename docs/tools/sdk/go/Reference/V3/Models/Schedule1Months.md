@@ -4,7 +4,7 @@ title: Schedule1Months
 pagination_label: Schedule1Months
 sidebar_label: Schedule1Months
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Schedule1Months', 'Schedule1Months'] 
+keywords: ['go', 'Golang', 'sdk', 'Schedule1Months', 'Schedule1Months']
 slug: /tools/sdk/go/v3/models/schedule1-months
 tags: ['SDK', 'Software Development Kit', 'Schedule1Months', 'Schedule1Months']
 ---
@@ -13,11 +13,11 @@ tags: ['SDK', 'Software Development Kit', 'Schedule1Months', 'Schedule1Months']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | [**SelectorType**](selector-type) |  | 
-**Values** | **[]string** | The selected values.  | 
-**Interval** | Pointer to **NullableInt32** | The selected interval for RANGE selectors.  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | [**SelectorType**](selector-type) |  |
+| **Values** | **[]string** | The selected values. |
+| **Interval** | Pointer to **NullableInt32** | The selected interval for RANGE selectors. | [optional] |
 
 ## Methods
 
@@ -25,18 +25,13 @@ Name | Type | Description | Notes
 
 `func NewSchedule1Months(type_ SelectorType, values []string, ) *Schedule1Months`
 
-NewSchedule1Months instantiates a new Schedule1Months object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSchedule1Months instantiates a new Schedule1Months object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSchedule1MonthsWithDefaults
 
 `func NewSchedule1MonthsWithDefaults() *Schedule1Months`
 
-NewSchedule1MonthsWithDefaults instantiates a new Schedule1Months object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSchedule1MonthsWithDefaults instantiates a new Schedule1Months object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -48,15 +43,13 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *Schedule1Months) GetTypeOk() (*SelectorType, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
 `func (o *Schedule1Months) SetType(v SelectorType)`
 
 SetType sets Type field to given value.
-
 
 ### GetValues
 
@@ -68,15 +61,13 @@ GetValues returns the Values field if non-nil, zero value otherwise.
 
 `func (o *Schedule1Months) GetValuesOk() (*[]string, bool)`
 
-GetValuesOk returns a tuple with the Values field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValuesOk returns a tuple with the Values field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValues
 
 `func (o *Schedule1Months) SetValues(v []string)`
 
 SetValues sets Values field to given value.
-
 
 ### GetInterval
 
@@ -88,8 +79,7 @@ GetInterval returns the Interval field if non-nil, zero value otherwise.
 
 `func (o *Schedule1Months) GetIntervalOk() (*int32, bool)`
 
-GetIntervalOk returns a tuple with the Interval field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIntervalOk returns a tuple with the Interval field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetInterval
 
@@ -107,10 +97,10 @@ HasInterval returns a boolean if a field has been set.
 
 `func (o *Schedule1Months) SetIntervalNil(b bool)`
 
- SetIntervalNil sets the value for Interval to be an explicit nil
+SetIntervalNil sets the value for Interval to be an explicit nil
 
 ### UnsetInterval
+
 `func (o *Schedule1Months) UnsetInterval()`
 
 UnsetInterval ensures that no value is present for Interval, not even an explicit nil
-

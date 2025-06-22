@@ -4,7 +4,7 @@ title: RoleSummary
 pagination_label: RoleSummary
 sidebar_label: RoleSummary
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RoleSummary', 'V2025RoleSummary'] 
+keywords: ['python', 'Python', 'sdk', 'RoleSummary', 'V2025RoleSummary']
 slug: /tools/sdk/python/v2025/models/role-summary
 tags: ['SDK', 'Software Development Kit', 'RoleSummary', 'V2025RoleSummary']
 ---
@@ -15,16 +15,17 @@ Role
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The unique ID of the referenced object. | [optional] 
-**name** | **str** | The human readable name of the referenced object. | [optional] 
-**display_name** | **str** |  | [optional] 
-**description** | **str** | Description of access item. | [optional] 
-**type** | **str** | Type of the access item. | [optional] 
-**owner** | [**DisplayReference**](display-reference) |  | [optional] 
-**disabled** | **bool** |  | [optional] 
-**revocable** | **bool** |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The unique ID of the referenced object. | [optional] |
+| **name** | **str** | The human readable name of the referenced object. | [optional] |
+| **display_name** | **str** |  | [optional] |
+| **description** | **str** | Description of access item. | [optional] |
+| **type** | **str** | Type of the access item. | [optional] |
+| **owner** | [**DisplayReference**](display-reference) |  | [optional] |
+| **disabled** | **bool** |  | [optional] |
+| **revocable** | **bool** |  | [optional] |
+
 }
 
 ## Example
@@ -44,5 +45,5 @@ revocable=True
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,19 +4,20 @@ title: TokenAuthResponse
 pagination_label: TokenAuthResponse
 sidebar_label: TokenAuthResponse
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'TokenAuthResponse', 'TokenAuthResponse'] 
+keywords: ['python', 'Python', 'sdk', 'TokenAuthResponse', 'TokenAuthResponse']
 slug: /tools/sdk/python/v3/models/token-auth-response
-tags: ['SDK', 'Software Development Kit', 'TokenAuthResponse', 'TokenAuthResponse']
+tags:
+  ['SDK', 'Software Development Kit', 'TokenAuthResponse', 'TokenAuthResponse']
 ---
 
 # TokenAuthResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**status** |  **Enum** [  'PENDING',    'SUCCESS',    'FAILED',    'LOCKOUT',    'NOT_ENOUGH_DATA' ] | MFA Authentication status | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **status** | **Enum** [ 'PENDING', 'SUCCESS', 'FAILED', 'LOCKOUT', 'NOT_ENOUGH_DATA' ] | MFA Authentication status | [optional] |
+
 }
 
 ## Example
@@ -29,5 +30,5 @@ status='PENDING'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,9 +4,22 @@ title: MultiHostIntegrationsAccountsFile
 pagination_label: MultiHostIntegrationsAccountsFile
 sidebar_label: MultiHostIntegrationsAccountsFile
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'MultiHostIntegrationsAccountsFile', 'V2025MultiHostIntegrationsAccountsFile'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'MultiHostIntegrationsAccountsFile',
+    'V2025MultiHostIntegrationsAccountsFile',
+  ]
 slug: /tools/sdk/python/v2025/models/multi-host-integrations-accounts-file
-tags: ['SDK', 'Software Development Kit', 'MultiHostIntegrationsAccountsFile', 'V2025MultiHostIntegrationsAccountsFile']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'MultiHostIntegrationsAccountsFile',
+    'V2025MultiHostIntegrationsAccountsFile',
+  ]
 ---
 
 # MultiHostIntegrationsAccountsFile
@@ -15,13 +28,14 @@ Reference to accounts file for the source.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | Name of the accounts file. | [optional] 
-**key** | **str** | The accounts file key. | [optional] 
-**upload_time** | **datetime** | Date-time when the file was uploaded | [optional] 
-**expiry** | **datetime** | Date-time when the accounts file expired. | [optional] 
-**expired** | **bool** | If this is true, it indicates that the accounts file has expired. | [optional] [default to False]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **name** | **str** | Name of the accounts file. | [optional] |
+| **key** | **str** | The accounts file key. | [optional] |
+| **upload_time** | **datetime** | Date-time when the file was uploaded | [optional] |
+| **expiry** | **datetime** | Date-time when the accounts file expired. | [optional] |
+| **expired** | **bool** | If this is true, it indicates that the accounts file has expired. | [optional] [default to False] |
+
 }
 
 ## Example
@@ -38,5 +52,5 @@ expired=False
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

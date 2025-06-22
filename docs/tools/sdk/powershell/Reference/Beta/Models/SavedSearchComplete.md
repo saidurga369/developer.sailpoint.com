@@ -4,29 +4,42 @@ title: SavedSearchComplete
 pagination_label: SavedSearchComplete
 sidebar_label: SavedSearchComplete
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'SavedSearchComplete', 'BetaSavedSearchComplete'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'SavedSearchComplete',
+    'BetaSavedSearchComplete',
+  ]
 slug: /tools/sdk/powershell/beta/models/saved-search-complete
-tags: ['SDK', 'Software Development Kit', 'SavedSearchComplete', 'BetaSavedSearchComplete']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SavedSearchComplete',
+    'BetaSavedSearchComplete',
+  ]
 ---
-
 
 # SavedSearchComplete
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**FileName** | **String** | Report file name. | [required]
-**OwnerEmail** | **String** | Email address of the identity who owns the saved search. | [required]
-**OwnerName** | **String** | Name of the identity who owns the saved search. | [required]
-**Query** | **String** | Search query used to generate the report. | [required]
-**SearchName** | **String** | Saved search name. | [required]
-**SearchResults** | [**SavedSearchCompleteSearchResults**](saved-search-complete-search-results) |  | [required]
-**SignedS3Url** | **String** | The Amazon S3 URL to download the report from. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **FileName** | **String** | Report file name. | [required] |
+| **OwnerEmail** | **String** | Email address of the identity who owns the saved search. | [required] |
+| **OwnerName** | **String** | Name of the identity who owns the saved search. | [required] |
+| **Query** | **String** | Search query used to generate the report. | [required] |
+| **SearchName** | **String** | Saved search name. | [required] |
+| **SearchResults** | [**SavedSearchCompleteSearchResults**](saved-search-complete-search-results) |  | [required] |
+| **SignedS3Url** | **String** | The Amazon S3 URL to download the report from. | [required] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $SavedSearchComplete = Initialize-BetaSavedSearchComplete  -FileName Modified.zip `
  -OwnerEmail test@sailpoint.com `
@@ -38,10 +51,9 @@ $SavedSearchComplete = Initialize-BetaSavedSearchComplete  -FileName Modified.zi
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $SavedSearchComplete | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

@@ -1,7 +1,7 @@
-import React, { useState, FocusEvent, ChangeEvent } from 'react';
+import React, {useState, FocusEvent, ChangeEvent} from 'react';
 import TextField from '@mui/material/TextField';
-import { useColorMode } from '@docusaurus/theme-common';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import {useColorMode} from '@docusaurus/theme-common';
+import {createTheme, ThemeProvider} from '@mui/material/styles';
 
 // Define props interface
 interface JsonPathQueryInputProps {
@@ -11,8 +11,13 @@ interface JsonPathQueryInputProps {
   onBlur?: (event: FocusEvent<HTMLInputElement>) => void;
 }
 
-const JsonPathQueryInput: React.FC<JsonPathQueryInputProps> = ({ value, onChange, onFocus, onBlur }) => {
-  const { colorMode } = useColorMode();
+const JsonPathQueryInput: React.FC<JsonPathQueryInputProps> = ({
+  value,
+  onChange,
+  onFocus,
+  onBlur,
+}) => {
+  const {colorMode} = useColorMode();
   const [isFocused, setIsFocused] = useState<boolean>(false);
 
   const theme = createTheme({
@@ -25,7 +30,8 @@ const JsonPathQueryInput: React.FC<JsonPathQueryInputProps> = ({ value, onChange
               borderWidth: 1,
             },
             '&:hover .MuiOutlinedInput-notchedOutline': {
-              borderColor: colorMode === 'dark' ? 'rgb(115,200,235)' : 'rgb(4,125,246)',
+              borderColor:
+                colorMode === 'dark' ? 'rgb(115,200,235)' : 'rgb(4,125,246)',
             },
           },
         },
@@ -48,11 +54,16 @@ const JsonPathQueryInput: React.FC<JsonPathQueryInputProps> = ({ value, onChange
           m: 1,
           minWidth: 800,
           '& .MuiInputLabel-root': {
-            color: isFocused ? (colorMode === 'dark' ? 'rgb(115,200,235)' : 'rgb(4,125,246)') : 'initial',
+            color: isFocused
+              ? colorMode === 'dark'
+                ? 'rgb(115,200,235)'
+                : 'rgb(4,125,246)'
+              : 'initial',
           },
           '& .MuiOutlinedInput-root.Mui-focused': {
             '& fieldset': {
-              borderColor: colorMode === 'dark' ? 'rgb(115,200,235)' : 'rgb(4,125,246)',
+              borderColor:
+                colorMode === 'dark' ? 'rgb(115,200,235)' : 'rgb(4,125,246)',
             },
           },
         }}

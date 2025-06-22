@@ -4,23 +4,32 @@ title: NonEmployeeSchemaAttributeType
 pagination_label: NonEmployeeSchemaAttributeType
 sidebar_label: NonEmployeeSchemaAttributeType
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'NonEmployeeSchemaAttributeType', 'NonEmployeeSchemaAttributeType'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'NonEmployeeSchemaAttributeType',
+    'NonEmployeeSchemaAttributeType',
+  ]
 slug: /tools/sdk/powershell/v3/models/non-employee-schema-attribute-type
-tags: ['SDK', 'Software Development Kit', 'NonEmployeeSchemaAttributeType', 'NonEmployeeSchemaAttributeType']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NonEmployeeSchemaAttributeType',
+    'NonEmployeeSchemaAttributeType',
+  ]
 ---
-
 
 # NonEmployeeSchemaAttributeType
 
 ## Enum
 
+- `TEXT` (value: `"TEXT"`)
 
-* `TEXT` (value: `"TEXT"`)
+- `DATE` (value: `"DATE"`)
 
-* `DATE` (value: `"DATE"`)
+- `IDENTITY` (value: `"IDENTITY"`)
 
-* `IDENTITY` (value: `"IDENTITY"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

@@ -4,19 +4,25 @@ title: LauncherReference
 pagination_label: LauncherReference
 sidebar_label: LauncherReference
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'LauncherReference', 'BetaLauncherReference'] 
+keywords: ['go', 'Golang', 'sdk', 'LauncherReference', 'BetaLauncherReference']
 slug: /tools/sdk/go/beta/models/launcher-reference
-tags: ['SDK', 'Software Development Kit', 'LauncherReference', 'BetaLauncherReference']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'LauncherReference',
+    'BetaLauncherReference',
+  ]
 ---
 
 # LauncherReference
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | Type of Launcher reference | [optional] 
-**Id** | Pointer to **string** | ID of Launcher reference | [optional] 
+| Name     | Type                  | Description                | Notes      |
+| -------- | --------------------- | -------------------------- | ---------- |
+| **Type** | Pointer to **string** | Type of Launcher reference | [optional] |
+| **Id**   | Pointer to **string** | ID of Launcher reference   | [optional] |
 
 ## Methods
 
@@ -24,18 +30,13 @@ Name | Type | Description | Notes
 
 `func NewLauncherReference() *LauncherReference`
 
-NewLauncherReference instantiates a new LauncherReference object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewLauncherReference instantiates a new LauncherReference object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewLauncherReferenceWithDefaults
 
 `func NewLauncherReferenceWithDefaults() *LauncherReference`
 
-NewLauncherReferenceWithDefaults instantiates a new LauncherReference object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewLauncherReferenceWithDefaults instantiates a new LauncherReference object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -47,8 +48,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *LauncherReference) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -72,8 +72,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *LauncherReference) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -86,5 +85,3 @@ SetId sets Id field to given value.
 `func (o *LauncherReference) HasId() bool`
 
 HasId returns a boolean if a field has been set.
-
-

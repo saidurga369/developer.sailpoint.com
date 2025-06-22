@@ -4,9 +4,16 @@ title: SodExemptCriteria
 pagination_label: SodExemptCriteria
 sidebar_label: SodExemptCriteria
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SodExemptCriteria', 'BetaSodExemptCriteria'] 
+keywords:
+  ['python', 'Python', 'sdk', 'SodExemptCriteria', 'BetaSodExemptCriteria']
 slug: /tools/sdk/python/beta/models/sod-exempt-criteria
-tags: ['SDK', 'Software Development Kit', 'SodExemptCriteria', 'BetaSodExemptCriteria']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SodExemptCriteria',
+    'BetaSodExemptCriteria',
+  ]
 ---
 
 # SodExemptCriteria
@@ -15,12 +22,13 @@ Details of the Entitlement criteria
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**existing** | **bool** | If the entitlement already belonged to the user or not. | [optional] [default to False]
-**type** | [**DtoType**](dto-type) |  | [optional] 
-**id** | **str** | Entitlement ID | [optional] 
-**name** | **str** | Entitlement name | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **existing** | **bool** | If the entitlement already belonged to the user or not. | [optional] [default to False] |
+| **type** | [**DtoType**](dto-type) |  | [optional] |
+| **id** | **str** | Entitlement ID | [optional] |
+| **name** | **str** | Entitlement name | [optional] |
+
 }
 
 ## Example
@@ -36,5 +44,5 @@ name='My HR Entitlement'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

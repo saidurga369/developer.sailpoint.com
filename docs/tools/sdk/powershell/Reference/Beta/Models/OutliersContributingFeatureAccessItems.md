@@ -4,28 +4,41 @@ title: OutliersContributingFeatureAccessItems
 pagination_label: OutliersContributingFeatureAccessItems
 sidebar_label: OutliersContributingFeatureAccessItems
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'OutliersContributingFeatureAccessItems', 'BetaOutliersContributingFeatureAccessItems'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'OutliersContributingFeatureAccessItems',
+    'BetaOutliersContributingFeatureAccessItems',
+  ]
 slug: /tools/sdk/powershell/beta/models/outliers-contributing-feature-access-items
-tags: ['SDK', 'Software Development Kit', 'OutliersContributingFeatureAccessItems', 'BetaOutliersContributingFeatureAccessItems']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'OutliersContributingFeatureAccessItems',
+    'BetaOutliersContributingFeatureAccessItems',
+  ]
 ---
-
 
 # OutliersContributingFeatureAccessItems
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | The ID of the access item | [optional] 
-**DisplayName** | **String** | the display name of the access item | [optional] 
-**Description** | **String** | Description of the access item. | [optional] 
-**AccessType** |  **Enum** [  "ENTITLEMENT",    "ACCESS_PROFILE",    "ROLE" ] | The type of the access item. | [optional] 
-**SourceName** | **String** | the associated source name if it exists | [optional] 
-**ExtremelyRare** | **Boolean** | rarest access | [optional] [default to $false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | The ID of the access item | [optional] |
+| **DisplayName** | **String** | the display name of the access item | [optional] |
+| **Description** | **String** | Description of the access item. | [optional] |
+| **AccessType** | **Enum** [ "ENTITLEMENT", "ACCESS_PROFILE", "ROLE" ] | The type of the access item. | [optional] |
+| **SourceName** | **String** | the associated source name if it exists | [optional] |
+| **ExtremelyRare** | **Boolean** | rarest access | [optional] [default to $false] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $OutliersContributingFeatureAccessItems = Initialize-BetaOutliersContributingFeatureAccessItems  -Id 2c938083633d259901633d2623ec0375 `
  -DisplayName Applied Research Access `
@@ -36,10 +49,9 @@ $OutliersContributingFeatureAccessItems = Initialize-BetaOutliersContributingFea
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $OutliersContributingFeatureAccessItems | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

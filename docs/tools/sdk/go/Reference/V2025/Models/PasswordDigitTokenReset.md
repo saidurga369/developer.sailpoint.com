@@ -4,20 +4,33 @@ title: PasswordDigitTokenReset
 pagination_label: PasswordDigitTokenReset
 sidebar_label: PasswordDigitTokenReset
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'PasswordDigitTokenReset', 'V2025PasswordDigitTokenReset'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'PasswordDigitTokenReset',
+    'V2025PasswordDigitTokenReset',
+  ]
 slug: /tools/sdk/go/v2025/models/password-digit-token-reset
-tags: ['SDK', 'Software Development Kit', 'PasswordDigitTokenReset', 'V2025PasswordDigitTokenReset']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PasswordDigitTokenReset',
+    'V2025PasswordDigitTokenReset',
+  ]
 ---
 
 # PasswordDigitTokenReset
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**UserId** | **string** | The uid of the user requested for digit token | 
-**Length** | Pointer to **int32** | The length of digit token. It should be from 6 to 18, inclusive. The default value is 6. | [optional] 
-**DurationMinutes** | Pointer to **int32** | The time to live for the digit token in minutes. The default value is 5 minutes. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **UserId** | **string** | The uid of the user requested for digit token |
+| **Length** | Pointer to **int32** | The length of digit token. It should be from 6 to 18, inclusive. The default value is 6. | [optional] |
+| **DurationMinutes** | Pointer to **int32** | The time to live for the digit token in minutes. The default value is 5 minutes. | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewPasswordDigitTokenReset(userId string, ) *PasswordDigitTokenReset`
 
-NewPasswordDigitTokenReset instantiates a new PasswordDigitTokenReset object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewPasswordDigitTokenReset instantiates a new PasswordDigitTokenReset object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewPasswordDigitTokenResetWithDefaults
 
 `func NewPasswordDigitTokenResetWithDefaults() *PasswordDigitTokenReset`
 
-NewPasswordDigitTokenResetWithDefaults instantiates a new PasswordDigitTokenReset object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewPasswordDigitTokenResetWithDefaults instantiates a new PasswordDigitTokenReset object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetUserId
 
@@ -48,15 +56,13 @@ GetUserId returns the UserId field if non-nil, zero value otherwise.
 
 `func (o *PasswordDigitTokenReset) GetUserIdOk() (*string, bool)`
 
-GetUserIdOk returns a tuple with the UserId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUserIdOk returns a tuple with the UserId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUserId
 
 `func (o *PasswordDigitTokenReset) SetUserId(v string)`
 
 SetUserId sets UserId field to given value.
-
 
 ### GetLength
 
@@ -68,8 +74,7 @@ GetLength returns the Length field if non-nil, zero value otherwise.
 
 `func (o *PasswordDigitTokenReset) GetLengthOk() (*int32, bool)`
 
-GetLengthOk returns a tuple with the Length field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLengthOk returns a tuple with the Length field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLength
 
@@ -93,8 +98,7 @@ GetDurationMinutes returns the DurationMinutes field if non-nil, zero value othe
 
 `func (o *PasswordDigitTokenReset) GetDurationMinutesOk() (*int32, bool)`
 
-GetDurationMinutesOk returns a tuple with the DurationMinutes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDurationMinutesOk returns a tuple with the DurationMinutes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDurationMinutes
 
@@ -107,5 +111,3 @@ SetDurationMinutes sets DurationMinutes field to given value.
 `func (o *PasswordDigitTokenReset) HasDurationMinutes() bool`
 
 HasDurationMinutes returns a boolean if a field has been set.
-
-

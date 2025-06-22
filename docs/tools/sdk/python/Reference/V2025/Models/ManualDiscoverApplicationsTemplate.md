@@ -4,20 +4,33 @@ title: ManualDiscoverApplicationsTemplate
 pagination_label: ManualDiscoverApplicationsTemplate
 sidebar_label: ManualDiscoverApplicationsTemplate
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ManualDiscoverApplicationsTemplate', 'V2025ManualDiscoverApplicationsTemplate'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ManualDiscoverApplicationsTemplate',
+    'V2025ManualDiscoverApplicationsTemplate',
+  ]
 slug: /tools/sdk/python/v2025/models/manual-discover-applications-template
-tags: ['SDK', 'Software Development Kit', 'ManualDiscoverApplicationsTemplate', 'V2025ManualDiscoverApplicationsTemplate']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ManualDiscoverApplicationsTemplate',
+    'V2025ManualDiscoverApplicationsTemplate',
+  ]
 ---
 
 # ManualDiscoverApplicationsTemplate
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**application_name** | **str** | Name of the application. | [optional] 
-**description** | **str** | Description of the application. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **application_name** | **str** | Name of the application. | [optional] |
+| **description** | **str** | Description of the application. | [optional] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ description='Example Description'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

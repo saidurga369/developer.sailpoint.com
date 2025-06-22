@@ -4,46 +4,43 @@ title: Approvals
 pagination_label: Approvals
 sidebar_label: Approvals
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Approvals', 'BetaApprovals'] 
+keywords: ['go', 'Golang', 'sdk', 'Approvals', 'BetaApprovals']
 slug: /tools/sdk/go/beta/methods/approvals
 tags: ['SDK', 'Software Development Kit', 'Approvals', 'BetaApprovals']
 ---
 
 # ApprovalsAPI
-  Use this API to implement approval functionality. With this functionality in place, you can get generic approvals and modify them. 
+
+Use this API to implement approval functionality. With this functionality in place, you can get generic approvals and modify them.
 
 The main advantages this API has vs [Access Request Approvals](https://developer.sailpoint.com/docs/api/beta/access-request-approvals) are that you can use it to get generic approvals individually or in batches and make changes to those approvals.
- 
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/beta*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**get-approval**](#get-approval) | **Get** `/generic-approvals/{id}` | Get approval
-[**get-approvals**](#get-approvals) | **Get** `/generic-approvals` | Get approvals
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**get-approval**](#get-approval) | **Get** `/generic-approvals/{id}` | Get approval |
+| [**get-approvals**](#get-approvals) | **Get** `/generic-approvals` | Get approvals |
 
 ## get-approval
-Get approval
-Get a single approval for a given approval ID. This endpoint is for generic approvals, unlike the access-request-approval endpoint, and doesn't include access-request-approvals.
+
+Get approval Get a single approval for a given approval ID. This endpoint is for generic approvals, unlike the access-request-approval endpoint, and doesn't include access-request-approvals.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-approval)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | ID of the approval that to be returned. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | ID of the approval that to be returned. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetApprovalRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -63,15 +60,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `38453251-6be2-5f8f-df93-5ce19e295837` // string | ID of the approval that to be returned. # string | ID of the approval that to be returned.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -89,26 +86,22 @@ func main() {
 [[Back to top]](#)
 
 ## get-approvals
-Get approvals
-Get a list of approvals, which can be filtered by requester ID, status, or reference type. You can use the "Mine" query parameter to return all approvals for the current approver. This endpoint is for generic approvals, unlike the access-request-approval endpoint, and does not include access-request-approvals. 
-Absence of all query parameters will will default to mine=true.
+
+Get approvals Get a list of approvals, which can be filtered by requester ID, status, or reference type. You can use the "Mine" query parameter to return all approvals for the current approver. This endpoint is for generic approvals, unlike the access-request-approval endpoint, and does not include access-request-approvals. Absence of all query parameters will will default to mine=true.
 
 [API Spec](https://developer.sailpoint.com/docs/api/beta/get-approvals)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetApprovalsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **mine** | **bool** | Returns the list of approvals for the current caller. | 
- **requesterId** | **string** | Returns the list of approvals for a given requester ID. | 
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **status**: *eq*  **referenceType**: *eq* | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **mine** | **bool** | Returns the list of approvals for the current caller. |
+| **requesterId** | **string** | Returns the list of approvals for a given requester ID. |
+| **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **status**: _eq_ **referenceType**: _eq_ |
 
 ### Return type
 
@@ -128,8 +121,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -138,7 +131,7 @@ func main() {
     requesterId := `17e633e7d57e481569df76323169deb6a` // string | Returns the list of approvals for a given requester ID. (optional) # string | Returns the list of approvals for a given requester ID. (optional)
     filters := `filters=status eq PENDING` // string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **status**: *eq*  **referenceType**: *eq* (optional) # string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **status**: *eq*  **referenceType**: *eq* (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -154,4 +147,3 @@ func main() {
 ```
 
 [[Back to top]](#)
-

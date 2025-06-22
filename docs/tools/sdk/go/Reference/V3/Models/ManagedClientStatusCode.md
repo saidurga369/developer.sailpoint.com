@@ -4,28 +4,32 @@ title: ManagedClientStatusCode
 pagination_label: ManagedClientStatusCode
 sidebar_label: ManagedClientStatusCode
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ManagedClientStatusCode', 'ManagedClientStatusCode'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'ManagedClientStatusCode', 'ManagedClientStatusCode']
 slug: /tools/sdk/go/v3/models/managed-client-status-code
-tags: ['SDK', 'Software Development Kit', 'ManagedClientStatusCode', 'ManagedClientStatusCode']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ManagedClientStatusCode',
+    'ManagedClientStatusCode',
+  ]
 ---
 
 # ManagedClientStatusCode
 
 ## Enum
 
+- `NORMAL` (value: `"NORMAL"`)
 
-* `NORMAL` (value: `"NORMAL"`)
+- `UNDEFINED` (value: `"UNDEFINED"`)
 
-* `UNDEFINED` (value: `"UNDEFINED"`)
+- `NOT_CONFIGURED` (value: `"NOT_CONFIGURED"`)
 
-* `NOT_CONFIGURED` (value: `"NOT_CONFIGURED"`)
+- `CONFIGURING` (value: `"CONFIGURING"`)
 
-* `CONFIGURING` (value: `"CONFIGURING"`)
+- `WARNING` (value: `"WARNING"`)
 
-* `WARNING` (value: `"WARNING"`)
+- `ERROR` (value: `"ERROR"`)
 
-* `ERROR` (value: `"ERROR"`)
-
-* `FAILED` (value: `"FAILED"`)
-
-
+- `FAILED` (value: `"FAILED"`)

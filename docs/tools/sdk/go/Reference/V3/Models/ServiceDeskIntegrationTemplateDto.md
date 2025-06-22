@@ -4,24 +4,37 @@ title: ServiceDeskIntegrationTemplateDto
 pagination_label: ServiceDeskIntegrationTemplateDto
 sidebar_label: ServiceDeskIntegrationTemplateDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ServiceDeskIntegrationTemplateDto', 'ServiceDeskIntegrationTemplateDto'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ServiceDeskIntegrationTemplateDto',
+    'ServiceDeskIntegrationTemplateDto',
+  ]
 slug: /tools/sdk/go/v3/models/service-desk-integration-template-dto
-tags: ['SDK', 'Software Development Kit', 'ServiceDeskIntegrationTemplateDto', 'ServiceDeskIntegrationTemplateDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ServiceDeskIntegrationTemplateDto',
+    'ServiceDeskIntegrationTemplateDto',
+  ]
 ---
 
 # ServiceDeskIntegrationTemplateDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | System-generated unique ID of the Object | [optional] [readonly] 
-**Name** | **NullableString** | Name of the Object | 
-**Created** | Pointer to **SailPointTime** | Creation date of the Object | [optional] [readonly] 
-**Modified** | Pointer to **SailPointTime** | Last modification date of the Object | [optional] [readonly] 
-**Type** | **string** | The 'type' property specifies the type of the Service Desk integration template. | [default to "Web Service SDIM"]
-**Attributes** | **map[string]interface{}** | The 'attributes' property value is a map of attributes available for integrations using this Service Desk integration template. | 
-**ProvisioningConfig** | [**ProvisioningConfig**](provisioning-config) |  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | System-generated unique ID of the Object | [optional] [readonly] |
+| **Name** | **NullableString** | Name of the Object |
+| **Created** | Pointer to **SailPointTime** | Creation date of the Object | [optional] [readonly] |
+| **Modified** | Pointer to **SailPointTime** | Last modification date of the Object | [optional] [readonly] |
+| **Type** | **string** | The 'type' property specifies the type of the Service Desk integration template. | [default to "Web Service SDIM"] |
+| **Attributes** | **map[string]interface{}** | The 'attributes' property value is a map of attributes available for integrations using this Service Desk integration template. |
+| **ProvisioningConfig** | [**ProvisioningConfig**](provisioning-config) |  |
 
 ## Methods
 
@@ -29,18 +42,13 @@ Name | Type | Description | Notes
 
 `func NewServiceDeskIntegrationTemplateDto(name NullableString, type_ string, attributes map[string]interface{}, provisioningConfig ProvisioningConfig, ) *ServiceDeskIntegrationTemplateDto`
 
-NewServiceDeskIntegrationTemplateDto instantiates a new ServiceDeskIntegrationTemplateDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewServiceDeskIntegrationTemplateDto instantiates a new ServiceDeskIntegrationTemplateDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewServiceDeskIntegrationTemplateDtoWithDefaults
 
 `func NewServiceDeskIntegrationTemplateDtoWithDefaults() *ServiceDeskIntegrationTemplateDto`
 
-NewServiceDeskIntegrationTemplateDtoWithDefaults instantiates a new ServiceDeskIntegrationTemplateDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewServiceDeskIntegrationTemplateDtoWithDefaults instantiates a new ServiceDeskIntegrationTemplateDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -52,8 +60,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *ServiceDeskIntegrationTemplateDto) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -77,8 +84,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *ServiceDeskIntegrationTemplateDto) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -86,17 +92,18 @@ and a boolean to check if the value has been set.
 
 SetName sets Name field to given value.
 
-
 ### SetNameNil
 
 `func (o *ServiceDeskIntegrationTemplateDto) SetNameNil(b bool)`
 
- SetNameNil sets the value for Name to be an explicit nil
+SetNameNil sets the value for Name to be an explicit nil
 
 ### UnsetName
+
 `func (o *ServiceDeskIntegrationTemplateDto) UnsetName()`
 
 UnsetName ensures that no value is present for Name, not even an explicit nil
+
 ### GetCreated
 
 `func (o *ServiceDeskIntegrationTemplateDto) GetCreated() SailPointTime`
@@ -107,8 +114,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *ServiceDeskIntegrationTemplateDto) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -132,8 +138,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *ServiceDeskIntegrationTemplateDto) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -157,15 +162,13 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *ServiceDeskIntegrationTemplateDto) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
 `func (o *ServiceDeskIntegrationTemplateDto) SetType(v string)`
 
 SetType sets Type field to given value.
-
 
 ### GetAttributes
 
@@ -177,15 +180,13 @@ GetAttributes returns the Attributes field if non-nil, zero value otherwise.
 
 `func (o *ServiceDeskIntegrationTemplateDto) GetAttributesOk() (*map[string]interface{}, bool)`
 
-GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributes
 
 `func (o *ServiceDeskIntegrationTemplateDto) SetAttributes(v map[string]interface{})`
 
 SetAttributes sets Attributes field to given value.
-
 
 ### GetProvisioningConfig
 
@@ -197,14 +198,10 @@ GetProvisioningConfig returns the ProvisioningConfig field if non-nil, zero valu
 
 `func (o *ServiceDeskIntegrationTemplateDto) GetProvisioningConfigOk() (*ProvisioningConfig, bool)`
 
-GetProvisioningConfigOk returns a tuple with the ProvisioningConfig field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProvisioningConfigOk returns a tuple with the ProvisioningConfig field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProvisioningConfig
 
 `func (o *ServiceDeskIntegrationTemplateDto) SetProvisioningConfig(v ProvisioningConfig)`
 
 SetProvisioningConfig sets ProvisioningConfig field to given value.
-
-
-

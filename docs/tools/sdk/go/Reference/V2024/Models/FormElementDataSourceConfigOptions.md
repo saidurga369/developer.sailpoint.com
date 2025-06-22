@@ -4,20 +4,33 @@ title: FormElementDataSourceConfigOptions
 pagination_label: FormElementDataSourceConfigOptions
 sidebar_label: FormElementDataSourceConfigOptions
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'FormElementDataSourceConfigOptions', 'V2024FormElementDataSourceConfigOptions'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'FormElementDataSourceConfigOptions',
+    'V2024FormElementDataSourceConfigOptions',
+  ]
 slug: /tools/sdk/go/v2024/models/form-element-data-source-config-options
-tags: ['SDK', 'Software Development Kit', 'FormElementDataSourceConfigOptions', 'V2024FormElementDataSourceConfigOptions']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'FormElementDataSourceConfigOptions',
+    'V2024FormElementDataSourceConfigOptions',
+  ]
 ---
 
 # FormElementDataSourceConfigOptions
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Label** | Pointer to **string** | Label is the main label to display to the user when selecting this option | [optional] 
-**SubLabel** | Pointer to **string** | SubLabel is the sub label to display below the label in diminutive styling to help describe or identify this option | [optional] 
-**Value** | Pointer to **string** | Value is the value to save as an entry when the user selects this option | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Label** | Pointer to **string** | Label is the main label to display to the user when selecting this option | [optional] |
+| **SubLabel** | Pointer to **string** | SubLabel is the sub label to display below the label in diminutive styling to help describe or identify this option | [optional] |
+| **Value** | Pointer to **string** | Value is the value to save as an entry when the user selects this option | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewFormElementDataSourceConfigOptions() *FormElementDataSourceConfigOptions`
 
-NewFormElementDataSourceConfigOptions instantiates a new FormElementDataSourceConfigOptions object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewFormElementDataSourceConfigOptions instantiates a new FormElementDataSourceConfigOptions object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewFormElementDataSourceConfigOptionsWithDefaults
 
 `func NewFormElementDataSourceConfigOptionsWithDefaults() *FormElementDataSourceConfigOptions`
 
-NewFormElementDataSourceConfigOptionsWithDefaults instantiates a new FormElementDataSourceConfigOptions object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewFormElementDataSourceConfigOptionsWithDefaults instantiates a new FormElementDataSourceConfigOptions object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetLabel
 
@@ -48,8 +56,7 @@ GetLabel returns the Label field if non-nil, zero value otherwise.
 
 `func (o *FormElementDataSourceConfigOptions) GetLabelOk() (*string, bool)`
 
-GetLabelOk returns a tuple with the Label field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLabelOk returns a tuple with the Label field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLabel
 
@@ -73,8 +80,7 @@ GetSubLabel returns the SubLabel field if non-nil, zero value otherwise.
 
 `func (o *FormElementDataSourceConfigOptions) GetSubLabelOk() (*string, bool)`
 
-GetSubLabelOk returns a tuple with the SubLabel field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSubLabelOk returns a tuple with the SubLabel field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSubLabel
 
@@ -98,8 +104,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *FormElementDataSourceConfigOptions) GetValueOk() (*string, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -112,5 +117,3 @@ SetValue sets Value field to given value.
 `func (o *FormElementDataSourceConfigOptions) HasValue() bool`
 
 HasValue returns a boolean if a field has been set.
-
-

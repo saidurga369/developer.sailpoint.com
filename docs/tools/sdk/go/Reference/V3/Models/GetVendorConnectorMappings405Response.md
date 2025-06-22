@@ -4,20 +4,33 @@ title: GetVendorConnectorMappings405Response
 pagination_label: GetVendorConnectorMappings405Response
 sidebar_label: GetVendorConnectorMappings405Response
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'GetVendorConnectorMappings405Response', 'GetVendorConnectorMappings405Response'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'GetVendorConnectorMappings405Response',
+    'GetVendorConnectorMappings405Response',
+  ]
 slug: /tools/sdk/go/v3/models/get-vendor-connector-mappings405-response
-tags: ['SDK', 'Software Development Kit', 'GetVendorConnectorMappings405Response', 'GetVendorConnectorMappings405Response']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'GetVendorConnectorMappings405Response',
+    'GetVendorConnectorMappings405Response',
+  ]
 ---
 
 # GetVendorConnectorMappings405Response
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ErrorName** | Pointer to **map[string]interface{}** | A message describing the error | [optional] 
-**ErrorMessage** | Pointer to **map[string]interface{}** | Description of the error | [optional] 
-**TrackingId** | Pointer to **string** | Unique tracking id for the error. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ErrorName** | Pointer to **map[string]interface{}** | A message describing the error | [optional] |
+| **ErrorMessage** | Pointer to **map[string]interface{}** | Description of the error | [optional] |
+| **TrackingId** | Pointer to **string** | Unique tracking id for the error. | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewGetVendorConnectorMappings405Response() *GetVendorConnectorMappings405Response`
 
-NewGetVendorConnectorMappings405Response instantiates a new GetVendorConnectorMappings405Response object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewGetVendorConnectorMappings405Response instantiates a new GetVendorConnectorMappings405Response object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewGetVendorConnectorMappings405ResponseWithDefaults
 
 `func NewGetVendorConnectorMappings405ResponseWithDefaults() *GetVendorConnectorMappings405Response`
 
-NewGetVendorConnectorMappings405ResponseWithDefaults instantiates a new GetVendorConnectorMappings405Response object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewGetVendorConnectorMappings405ResponseWithDefaults instantiates a new GetVendorConnectorMappings405Response object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetErrorName
 
@@ -48,8 +56,7 @@ GetErrorName returns the ErrorName field if non-nil, zero value otherwise.
 
 `func (o *GetVendorConnectorMappings405Response) GetErrorNameOk() (*map[string]interface{}, bool)`
 
-GetErrorNameOk returns a tuple with the ErrorName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetErrorNameOk returns a tuple with the ErrorName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetErrorName
 
@@ -73,8 +80,7 @@ GetErrorMessage returns the ErrorMessage field if non-nil, zero value otherwise.
 
 `func (o *GetVendorConnectorMappings405Response) GetErrorMessageOk() (*map[string]interface{}, bool)`
 
-GetErrorMessageOk returns a tuple with the ErrorMessage field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetErrorMessageOk returns a tuple with the ErrorMessage field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetErrorMessage
 
@@ -98,8 +104,7 @@ GetTrackingId returns the TrackingId field if non-nil, zero value otherwise.
 
 `func (o *GetVendorConnectorMappings405Response) GetTrackingIdOk() (*string, bool)`
 
-GetTrackingIdOk returns a tuple with the TrackingId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTrackingIdOk returns a tuple with the TrackingId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTrackingId
 
@@ -112,5 +117,3 @@ SetTrackingId sets TrackingId field to given value.
 `func (o *GetVendorConnectorMappings405Response) HasTrackingId() bool`
 
 HasTrackingId returns a boolean if a field has been set.
-
-

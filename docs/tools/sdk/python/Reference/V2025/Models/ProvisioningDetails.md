@@ -4,9 +4,16 @@ title: ProvisioningDetails
 pagination_label: ProvisioningDetails
 sidebar_label: ProvisioningDetails
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ProvisioningDetails', 'V2025ProvisioningDetails'] 
+keywords:
+  ['python', 'Python', 'sdk', 'ProvisioningDetails', 'V2025ProvisioningDetails']
 slug: /tools/sdk/python/v2025/models/provisioning-details
-tags: ['SDK', 'Software Development Kit', 'ProvisioningDetails', 'V2025ProvisioningDetails']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ProvisioningDetails',
+    'V2025ProvisioningDetails',
+  ]
 ---
 
 # ProvisioningDetails
@@ -15,9 +22,10 @@ Provides additional details about provisioning for this request.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ordered_sub_phase_references** | **str** | Ordered CSV of sub phase references to objects that contain more information about provisioning. For example, this can contain \"manualWorkItemDetails\" which indicate that there is further information in that object for this phase. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ordered_sub_phase_references** | **str** | Ordered CSV of sub phase references to objects that contain more information about provisioning. For example, this can contain \"manualWorkItemDetails\" which indicate that there is further information in that object for this phase. | [optional] |
+
 }
 
 ## Example
@@ -30,5 +38,5 @@ ordered_sub_phase_references='manualWorkItemDetails'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,26 +4,39 @@ title: NonEmployeeRequestSummary
 pagination_label: NonEmployeeRequestSummary
 sidebar_label: NonEmployeeRequestSummary
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'NonEmployeeRequestSummary', 'V2025NonEmployeeRequestSummary'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'NonEmployeeRequestSummary',
+    'V2025NonEmployeeRequestSummary',
+  ]
 slug: /tools/sdk/powershell/v2025/models/non-employee-request-summary
-tags: ['SDK', 'Software Development Kit', 'NonEmployeeRequestSummary', 'V2025NonEmployeeRequestSummary']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NonEmployeeRequestSummary',
+    'V2025NonEmployeeRequestSummary',
+  ]
 ---
-
 
 # NonEmployeeRequestSummary
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Approved** | **Int32** | The number of approved non-employee requests on all sources that *requested-for* user manages. | [optional] 
-**Rejected** | **Int32** | The number of rejected non-employee requests on all sources that *requested-for* user manages. | [optional] 
-**Pending** | **Int32** | The number of pending non-employee requests on all sources that *requested-for* user manages. | [optional] 
-**NonEmployeeCount** | **Int32** | The number of non-employee records on all sources that *requested-for* user manages. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Approved** | **Int32** | The number of approved non-employee requests on all sources that _requested-for_ user manages. | [optional] |
+| **Rejected** | **Int32** | The number of rejected non-employee requests on all sources that _requested-for_ user manages. | [optional] |
+| **Pending** | **Int32** | The number of pending non-employee requests on all sources that _requested-for_ user manages. | [optional] |
+| **NonEmployeeCount** | **Int32** | The number of non-employee records on all sources that _requested-for_ user manages. | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $NonEmployeeRequestSummary = Initialize-V2025NonEmployeeRequestSummary  -Approved 2 `
  -Rejected 2 `
@@ -32,10 +45,9 @@ $NonEmployeeRequestSummary = Initialize-V2025NonEmployeeRequestSummary  -Approve
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $NonEmployeeRequestSummary | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

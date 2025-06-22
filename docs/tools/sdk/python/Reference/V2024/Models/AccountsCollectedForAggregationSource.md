@@ -4,9 +4,22 @@ title: AccountsCollectedForAggregationSource
 pagination_label: AccountsCollectedForAggregationSource
 sidebar_label: AccountsCollectedForAggregationSource
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccountsCollectedForAggregationSource', 'V2024AccountsCollectedForAggregationSource'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccountsCollectedForAggregationSource',
+    'V2024AccountsCollectedForAggregationSource',
+  ]
 slug: /tools/sdk/python/v2024/models/accounts-collected-for-aggregation-source
-tags: ['SDK', 'Software Development Kit', 'AccountsCollectedForAggregationSource', 'V2024AccountsCollectedForAggregationSource']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountsCollectedForAggregationSource',
+    'V2024AccountsCollectedForAggregationSource',
+  ]
 ---
 
 # AccountsCollectedForAggregationSource
@@ -15,11 +28,12 @@ Reference to the source that has been aggregated.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | ID of the object to which this reference applies | [required]
-**type** |  **Enum** [  'SOURCE' ] | The type of object that is referenced | [required]
-**name** | **str** | Human-readable display name of the object to which this reference applies | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | ID of the object to which this reference applies | [required] |
+| **type** | **Enum** [ 'SOURCE' ] | The type of object that is referenced | [required] |
+| **name** | **str** | Human-readable display name of the object to which this reference applies | [required] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Corporate Active Directory'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

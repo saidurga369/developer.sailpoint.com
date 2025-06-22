@@ -4,25 +4,26 @@ title: PublicIdentity
 pagination_label: PublicIdentity
 sidebar_label: PublicIdentity
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'PublicIdentity', 'V2024PublicIdentity'] 
+keywords: ['go', 'Golang', 'sdk', 'PublicIdentity', 'V2024PublicIdentity']
 slug: /tools/sdk/go/v2024/models/public-identity
-tags: ['SDK', 'Software Development Kit', 'PublicIdentity', 'V2024PublicIdentity']
+tags:
+  ['SDK', 'Software Development Kit', 'PublicIdentity', 'V2024PublicIdentity']
 ---
 
 # PublicIdentity
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Identity id | [optional] 
-**Name** | Pointer to **string** | Human-readable display name of identity. | [optional] 
-**Alias** | Pointer to **string** | Alternate unique identifier for the identity. | [optional] 
-**Email** | Pointer to **NullableString** | Email address of identity. | [optional] 
-**Status** | Pointer to **NullableString** | The lifecycle status for the identity | [optional] 
-**IdentityState** | Pointer to **NullableString** | The current state of the identity, which determines how Identity Security Cloud interacts with the identity. An identity that is Active will be included identity picklists in Request Center, identity processing, and more. Identities that are Inactive will be excluded from these features.  | [optional] 
-**Manager** | Pointer to [**NullableIdentityReference**](identity-reference) |  | [optional] 
-**Attributes** | Pointer to [**[]PublicIdentityAttributesInner**](public-identity-attributes-inner) | The public identity attributes of the identity | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Identity id | [optional] |
+| **Name** | Pointer to **string** | Human-readable display name of identity. | [optional] |
+| **Alias** | Pointer to **string** | Alternate unique identifier for the identity. | [optional] |
+| **Email** | Pointer to **NullableString** | Email address of identity. | [optional] |
+| **Status** | Pointer to **NullableString** | The lifecycle status for the identity | [optional] |
+| **IdentityState** | Pointer to **NullableString** | The current state of the identity, which determines how Identity Security Cloud interacts with the identity. An identity that is Active will be included identity picklists in Request Center, identity processing, and more. Identities that are Inactive will be excluded from these features. | [optional] |
+| **Manager** | Pointer to [**NullableIdentityReference**](identity-reference) |  | [optional] |
+| **Attributes** | Pointer to [**[]PublicIdentityAttributesInner**](public-identity-attributes-inner) | The public identity attributes of the identity | [optional] |
 
 ## Methods
 
@@ -30,18 +31,13 @@ Name | Type | Description | Notes
 
 `func NewPublicIdentity() *PublicIdentity`
 
-NewPublicIdentity instantiates a new PublicIdentity object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewPublicIdentity instantiates a new PublicIdentity object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewPublicIdentityWithDefaults
 
 `func NewPublicIdentityWithDefaults() *PublicIdentity`
 
-NewPublicIdentityWithDefaults instantiates a new PublicIdentity object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewPublicIdentityWithDefaults instantiates a new PublicIdentity object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -53,8 +49,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *PublicIdentity) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -78,8 +73,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *PublicIdentity) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -103,8 +97,7 @@ GetAlias returns the Alias field if non-nil, zero value otherwise.
 
 `func (o *PublicIdentity) GetAliasOk() (*string, bool)`
 
-GetAliasOk returns a tuple with the Alias field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAliasOk returns a tuple with the Alias field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAlias
 
@@ -128,8 +121,7 @@ GetEmail returns the Email field if non-nil, zero value otherwise.
 
 `func (o *PublicIdentity) GetEmailOk() (*string, bool)`
 
-GetEmailOk returns a tuple with the Email field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEmailOk returns a tuple with the Email field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEmail
 
@@ -147,12 +139,14 @@ HasEmail returns a boolean if a field has been set.
 
 `func (o *PublicIdentity) SetEmailNil(b bool)`
 
- SetEmailNil sets the value for Email to be an explicit nil
+SetEmailNil sets the value for Email to be an explicit nil
 
 ### UnsetEmail
+
 `func (o *PublicIdentity) UnsetEmail()`
 
 UnsetEmail ensures that no value is present for Email, not even an explicit nil
+
 ### GetStatus
 
 `func (o *PublicIdentity) GetStatus() string`
@@ -163,8 +157,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *PublicIdentity) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -182,12 +175,14 @@ HasStatus returns a boolean if a field has been set.
 
 `func (o *PublicIdentity) SetStatusNil(b bool)`
 
- SetStatusNil sets the value for Status to be an explicit nil
+SetStatusNil sets the value for Status to be an explicit nil
 
 ### UnsetStatus
+
 `func (o *PublicIdentity) UnsetStatus()`
 
 UnsetStatus ensures that no value is present for Status, not even an explicit nil
+
 ### GetIdentityState
 
 `func (o *PublicIdentity) GetIdentityState() string`
@@ -198,8 +193,7 @@ GetIdentityState returns the IdentityState field if non-nil, zero value otherwis
 
 `func (o *PublicIdentity) GetIdentityStateOk() (*string, bool)`
 
-GetIdentityStateOk returns a tuple with the IdentityState field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityStateOk returns a tuple with the IdentityState field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityState
 
@@ -217,12 +211,14 @@ HasIdentityState returns a boolean if a field has been set.
 
 `func (o *PublicIdentity) SetIdentityStateNil(b bool)`
 
- SetIdentityStateNil sets the value for IdentityState to be an explicit nil
+SetIdentityStateNil sets the value for IdentityState to be an explicit nil
 
 ### UnsetIdentityState
+
 `func (o *PublicIdentity) UnsetIdentityState()`
 
 UnsetIdentityState ensures that no value is present for IdentityState, not even an explicit nil
+
 ### GetManager
 
 `func (o *PublicIdentity) GetManager() IdentityReference`
@@ -233,8 +229,7 @@ GetManager returns the Manager field if non-nil, zero value otherwise.
 
 `func (o *PublicIdentity) GetManagerOk() (*IdentityReference, bool)`
 
-GetManagerOk returns a tuple with the Manager field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetManagerOk returns a tuple with the Manager field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetManager
 
@@ -252,12 +247,14 @@ HasManager returns a boolean if a field has been set.
 
 `func (o *PublicIdentity) SetManagerNil(b bool)`
 
- SetManagerNil sets the value for Manager to be an explicit nil
+SetManagerNil sets the value for Manager to be an explicit nil
 
 ### UnsetManager
+
 `func (o *PublicIdentity) UnsetManager()`
 
 UnsetManager ensures that no value is present for Manager, not even an explicit nil
+
 ### GetAttributes
 
 `func (o *PublicIdentity) GetAttributes() []PublicIdentityAttributesInner`
@@ -268,8 +265,7 @@ GetAttributes returns the Attributes field if non-nil, zero value otherwise.
 
 `func (o *PublicIdentity) GetAttributesOk() (*[]PublicIdentityAttributesInner, bool)`
 
-GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributes
 
@@ -282,5 +278,3 @@ SetAttributes sets Attributes field to given value.
 `func (o *PublicIdentity) HasAttributes() bool`
 
 HasAttributes returns a boolean if a field has been set.
-
-

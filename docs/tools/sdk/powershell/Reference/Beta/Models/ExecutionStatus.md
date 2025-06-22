@@ -4,25 +4,23 @@ title: ExecutionStatus
 pagination_label: ExecutionStatus
 sidebar_label: ExecutionStatus
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'ExecutionStatus', 'BetaExecutionStatus'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'ExecutionStatus', 'BetaExecutionStatus']
 slug: /tools/sdk/powershell/beta/models/execution-status
-tags: ['SDK', 'Software Development Kit', 'ExecutionStatus', 'BetaExecutionStatus']
+tags:
+  ['SDK', 'Software Development Kit', 'ExecutionStatus', 'BetaExecutionStatus']
 ---
-
 
 # ExecutionStatus
 
 ## Enum
 
+- `EXECUTING` (value: `"EXECUTING"`)
 
-* `EXECUTING` (value: `"EXECUTING"`)
+- `VERIFYING` (value: `"VERIFYING"`)
 
-* `VERIFYING` (value: `"VERIFYING"`)
+- `TERMINATED` (value: `"TERMINATED"`)
 
-* `TERMINATED` (value: `"TERMINATED"`)
+- `COMPLETED` (value: `"COMPLETED"`)
 
-* `COMPLETED` (value: `"COMPLETED"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

@@ -4,25 +4,38 @@ title: SpConfigImportJobStatus
 pagination_label: SpConfigImportJobStatus
 sidebar_label: SpConfigImportJobStatus
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SpConfigImportJobStatus', 'V2024SpConfigImportJobStatus'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'SpConfigImportJobStatus',
+    'V2024SpConfigImportJobStatus',
+  ]
 slug: /tools/sdk/go/v2024/models/sp-config-import-job-status
-tags: ['SDK', 'Software Development Kit', 'SpConfigImportJobStatus', 'V2024SpConfigImportJobStatus']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SpConfigImportJobStatus',
+    'V2024SpConfigImportJobStatus',
+  ]
 ---
 
 # SpConfigImportJobStatus
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**JobId** | **string** | Unique id assigned to this job. | 
-**Status** | **string** | Status of the job. | 
-**Type** | **string** | Type of the job, either export or import. | 
-**Expiration** | **SailPointTime** | The time until which the artifacts will be available for download. | 
-**Created** | **SailPointTime** | The time the job was started. | 
-**Modified** | **SailPointTime** | The time of the last update to the job. | 
-**Message** | Pointer to **string** | This message contains additional information about the overall status of the job. | [optional] 
-**Completed** | Pointer to **SailPointTime** | The time the job was completed. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **JobId** | **string** | Unique id assigned to this job. |
+| **Status** | **string** | Status of the job. |
+| **Type** | **string** | Type of the job, either export or import. |
+| **Expiration** | **SailPointTime** | The time until which the artifacts will be available for download. |
+| **Created** | **SailPointTime** | The time the job was started. |
+| **Modified** | **SailPointTime** | The time of the last update to the job. |
+| **Message** | Pointer to **string** | This message contains additional information about the overall status of the job. | [optional] |
+| **Completed** | Pointer to **SailPointTime** | The time the job was completed. | [optional] |
 
 ## Methods
 
@@ -30,18 +43,13 @@ Name | Type | Description | Notes
 
 `func NewSpConfigImportJobStatus(jobId string, status string, type_ string, expiration SailPointTime, created SailPointTime, modified SailPointTime, ) *SpConfigImportJobStatus`
 
-NewSpConfigImportJobStatus instantiates a new SpConfigImportJobStatus object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSpConfigImportJobStatus instantiates a new SpConfigImportJobStatus object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSpConfigImportJobStatusWithDefaults
 
 `func NewSpConfigImportJobStatusWithDefaults() *SpConfigImportJobStatus`
 
-NewSpConfigImportJobStatusWithDefaults instantiates a new SpConfigImportJobStatus object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSpConfigImportJobStatusWithDefaults instantiates a new SpConfigImportJobStatus object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetJobId
 
@@ -53,15 +61,13 @@ GetJobId returns the JobId field if non-nil, zero value otherwise.
 
 `func (o *SpConfigImportJobStatus) GetJobIdOk() (*string, bool)`
 
-GetJobIdOk returns a tuple with the JobId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetJobIdOk returns a tuple with the JobId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetJobId
 
 `func (o *SpConfigImportJobStatus) SetJobId(v string)`
 
 SetJobId sets JobId field to given value.
-
 
 ### GetStatus
 
@@ -73,15 +79,13 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *SpConfigImportJobStatus) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
 `func (o *SpConfigImportJobStatus) SetStatus(v string)`
 
 SetStatus sets Status field to given value.
-
 
 ### GetType
 
@@ -93,15 +97,13 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *SpConfigImportJobStatus) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
 `func (o *SpConfigImportJobStatus) SetType(v string)`
 
 SetType sets Type field to given value.
-
 
 ### GetExpiration
 
@@ -113,15 +115,13 @@ GetExpiration returns the Expiration field if non-nil, zero value otherwise.
 
 `func (o *SpConfigImportJobStatus) GetExpirationOk() (*SailPointTime, bool)`
 
-GetExpirationOk returns a tuple with the Expiration field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetExpirationOk returns a tuple with the Expiration field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetExpiration
 
 `func (o *SpConfigImportJobStatus) SetExpiration(v SailPointTime)`
 
 SetExpiration sets Expiration field to given value.
-
 
 ### GetCreated
 
@@ -133,15 +133,13 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *SpConfigImportJobStatus) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
 `func (o *SpConfigImportJobStatus) SetCreated(v SailPointTime)`
 
 SetCreated sets Created field to given value.
-
 
 ### GetModified
 
@@ -153,15 +151,13 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *SpConfigImportJobStatus) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
 `func (o *SpConfigImportJobStatus) SetModified(v SailPointTime)`
 
 SetModified sets Modified field to given value.
-
 
 ### GetMessage
 
@@ -173,8 +169,7 @@ GetMessage returns the Message field if non-nil, zero value otherwise.
 
 `func (o *SpConfigImportJobStatus) GetMessageOk() (*string, bool)`
 
-GetMessageOk returns a tuple with the Message field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMessageOk returns a tuple with the Message field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMessage
 
@@ -198,8 +193,7 @@ GetCompleted returns the Completed field if non-nil, zero value otherwise.
 
 `func (o *SpConfigImportJobStatus) GetCompletedOk() (*SailPointTime, bool)`
 
-GetCompletedOk returns a tuple with the Completed field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCompletedOk returns a tuple with the Completed field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCompleted
 
@@ -212,5 +206,3 @@ SetCompleted sets Completed field to given value.
 `func (o *SpConfigImportJobStatus) HasCompleted() bool`
 
 HasCompleted returns a boolean if a field has been set.
-
-

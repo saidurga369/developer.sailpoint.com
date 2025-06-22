@@ -4,19 +4,20 @@ title: AccountItemRef
 pagination_label: AccountItemRef
 sidebar_label: AccountItemRef
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccountItemRef', 'V2025AccountItemRef'] 
+keywords: ['go', 'Golang', 'sdk', 'AccountItemRef', 'V2025AccountItemRef']
 slug: /tools/sdk/go/v2025/models/account-item-ref
-tags: ['SDK', 'Software Development Kit', 'AccountItemRef', 'V2025AccountItemRef']
+tags:
+  ['SDK', 'Software Development Kit', 'AccountItemRef', 'V2025AccountItemRef']
 ---
 
 # AccountItemRef
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**AccountUuid** | Pointer to **NullableString** | The uuid for the account, available under the 'objectguid' attribute | [optional] 
-**NativeIdentity** | Pointer to **string** | The 'distinguishedName' attribute for the account | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **AccountUuid** | Pointer to **NullableString** | The uuid for the account, available under the 'objectguid' attribute | [optional] |
+| **NativeIdentity** | Pointer to **string** | The 'distinguishedName' attribute for the account | [optional] |
 
 ## Methods
 
@@ -24,18 +25,13 @@ Name | Type | Description | Notes
 
 `func NewAccountItemRef() *AccountItemRef`
 
-NewAccountItemRef instantiates a new AccountItemRef object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccountItemRef instantiates a new AccountItemRef object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccountItemRefWithDefaults
 
 `func NewAccountItemRefWithDefaults() *AccountItemRef`
 
-NewAccountItemRefWithDefaults instantiates a new AccountItemRef object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccountItemRefWithDefaults instantiates a new AccountItemRef object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetAccountUuid
 
@@ -47,8 +43,7 @@ GetAccountUuid returns the AccountUuid field if non-nil, zero value otherwise.
 
 `func (o *AccountItemRef) GetAccountUuidOk() (*string, bool)`
 
-GetAccountUuidOk returns a tuple with the AccountUuid field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountUuidOk returns a tuple with the AccountUuid field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountUuid
 
@@ -66,12 +61,14 @@ HasAccountUuid returns a boolean if a field has been set.
 
 `func (o *AccountItemRef) SetAccountUuidNil(b bool)`
 
- SetAccountUuidNil sets the value for AccountUuid to be an explicit nil
+SetAccountUuidNil sets the value for AccountUuid to be an explicit nil
 
 ### UnsetAccountUuid
+
 `func (o *AccountItemRef) UnsetAccountUuid()`
 
 UnsetAccountUuid ensures that no value is present for AccountUuid, not even an explicit nil
+
 ### GetNativeIdentity
 
 `func (o *AccountItemRef) GetNativeIdentity() string`
@@ -82,8 +79,7 @@ GetNativeIdentity returns the NativeIdentity field if non-nil, zero value otherw
 
 `func (o *AccountItemRef) GetNativeIdentityOk() (*string, bool)`
 
-GetNativeIdentityOk returns a tuple with the NativeIdentity field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNativeIdentityOk returns a tuple with the NativeIdentity field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNativeIdentity
 
@@ -96,5 +92,3 @@ SetNativeIdentity sets NativeIdentity field to given value.
 `func (o *AccountItemRef) HasNativeIdentity() bool`
 
 HasNativeIdentity returns a boolean if a field has been set.
-
-

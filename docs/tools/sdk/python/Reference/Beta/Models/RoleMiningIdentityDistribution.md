@@ -4,20 +4,33 @@ title: RoleMiningIdentityDistribution
 pagination_label: RoleMiningIdentityDistribution
 sidebar_label: RoleMiningIdentityDistribution
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RoleMiningIdentityDistribution', 'BetaRoleMiningIdentityDistribution'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'RoleMiningIdentityDistribution',
+    'BetaRoleMiningIdentityDistribution',
+  ]
 slug: /tools/sdk/python/beta/models/role-mining-identity-distribution
-tags: ['SDK', 'Software Development Kit', 'RoleMiningIdentityDistribution', 'BetaRoleMiningIdentityDistribution']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningIdentityDistribution',
+    'BetaRoleMiningIdentityDistribution',
+  ]
 ---
 
 # RoleMiningIdentityDistribution
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**attribute_name** | **str** | Id of the potential role | [optional] 
-**distribution** | **[]Dict[str, str]** |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **attribute_name** | **str** | Id of the potential role | [optional] |
+| **distribution** | **[]Dict[str, str]** |  | [optional] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ distribution=[{attributeValue=NM Tier 3, count=6}]
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

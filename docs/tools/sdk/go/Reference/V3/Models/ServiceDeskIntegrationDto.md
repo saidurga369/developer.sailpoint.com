@@ -4,30 +4,43 @@ title: ServiceDeskIntegrationDto
 pagination_label: ServiceDeskIntegrationDto
 sidebar_label: ServiceDeskIntegrationDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ServiceDeskIntegrationDto', 'ServiceDeskIntegrationDto'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ServiceDeskIntegrationDto',
+    'ServiceDeskIntegrationDto',
+  ]
 slug: /tools/sdk/go/v3/models/service-desk-integration-dto
-tags: ['SDK', 'Software Development Kit', 'ServiceDeskIntegrationDto', 'ServiceDeskIntegrationDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ServiceDeskIntegrationDto',
+    'ServiceDeskIntegrationDto',
+  ]
 ---
 
 # ServiceDeskIntegrationDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Unique identifier for the Service Desk integration | [optional] 
-**Name** | **string** | Service Desk integration's name. The name must be unique. | 
-**Created** | Pointer to **SailPointTime** | The date and time the Service Desk integration was created | [optional] 
-**Modified** | Pointer to **SailPointTime** | The date and time the Service Desk integration was last modified | [optional] 
-**Description** | **string** | Service Desk integration's description. | 
-**Type** | **string** | Service Desk integration types:  - ServiceNowSDIM - ServiceNow  | [default to "ServiceNowSDIM"]
-**OwnerRef** | Pointer to [**OwnerDto**](owner-dto) |  | [optional] 
-**ClusterRef** | Pointer to [**SourceClusterDto**](source-cluster-dto) |  | [optional] 
-**Cluster** | Pointer to **NullableString** | Cluster ID for the Service Desk integration (replaced by clusterRef, retained for backward compatibility). | [optional] 
-**ManagedSources** | Pointer to **[]string** | Source IDs for the Service Desk integration (replaced by provisioningConfig.managedSResourceRefs, but retained here for backward compatibility). | [optional] 
-**ProvisioningConfig** | Pointer to [**ProvisioningConfig**](provisioning-config) |  | [optional] 
-**Attributes** | **map[string]interface{}** | Service Desk integration's attributes. Validation constraints enforced by the implementation. | 
-**BeforeProvisioningRule** | Pointer to [**BeforeProvisioningRuleDto**](before-provisioning-rule-dto) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Unique identifier for the Service Desk integration | [optional] |
+| **Name** | **string** | Service Desk integration's name. The name must be unique. |
+| **Created** | Pointer to **SailPointTime** | The date and time the Service Desk integration was created | [optional] |
+| **Modified** | Pointer to **SailPointTime** | The date and time the Service Desk integration was last modified | [optional] |
+| **Description** | **string** | Service Desk integration's description. |
+| **Type** | **string** | Service Desk integration types: - ServiceNowSDIM - ServiceNow | [default to "ServiceNowSDIM"] |
+| **OwnerRef** | Pointer to [**OwnerDto**](owner-dto) |  | [optional] |
+| **ClusterRef** | Pointer to [**SourceClusterDto**](source-cluster-dto) |  | [optional] |
+| **Cluster** | Pointer to **NullableString** | Cluster ID for the Service Desk integration (replaced by clusterRef, retained for backward compatibility). | [optional] |
+| **ManagedSources** | Pointer to **[]string** | Source IDs for the Service Desk integration (replaced by provisioningConfig.managedSResourceRefs, but retained here for backward compatibility). | [optional] |
+| **ProvisioningConfig** | Pointer to [**ProvisioningConfig**](provisioning-config) |  | [optional] |
+| **Attributes** | **map[string]interface{}** | Service Desk integration's attributes. Validation constraints enforced by the implementation. |
+| **BeforeProvisioningRule** | Pointer to [**BeforeProvisioningRuleDto**](before-provisioning-rule-dto) |  | [optional] |
 
 ## Methods
 
@@ -35,18 +48,13 @@ Name | Type | Description | Notes
 
 `func NewServiceDeskIntegrationDto(name string, description string, type_ string, attributes map[string]interface{}, ) *ServiceDeskIntegrationDto`
 
-NewServiceDeskIntegrationDto instantiates a new ServiceDeskIntegrationDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewServiceDeskIntegrationDto instantiates a new ServiceDeskIntegrationDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewServiceDeskIntegrationDtoWithDefaults
 
 `func NewServiceDeskIntegrationDtoWithDefaults() *ServiceDeskIntegrationDto`
 
-NewServiceDeskIntegrationDtoWithDefaults instantiates a new ServiceDeskIntegrationDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewServiceDeskIntegrationDtoWithDefaults instantiates a new ServiceDeskIntegrationDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -58,8 +66,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *ServiceDeskIntegrationDto) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -83,15 +90,13 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *ServiceDeskIntegrationDto) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
 `func (o *ServiceDeskIntegrationDto) SetName(v string)`
 
 SetName sets Name field to given value.
-
 
 ### GetCreated
 
@@ -103,8 +108,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *ServiceDeskIntegrationDto) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -128,8 +132,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *ServiceDeskIntegrationDto) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -153,15 +156,13 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *ServiceDeskIntegrationDto) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
 `func (o *ServiceDeskIntegrationDto) SetDescription(v string)`
 
 SetDescription sets Description field to given value.
-
 
 ### GetType
 
@@ -173,15 +174,13 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *ServiceDeskIntegrationDto) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
 `func (o *ServiceDeskIntegrationDto) SetType(v string)`
 
 SetType sets Type field to given value.
-
 
 ### GetOwnerRef
 
@@ -193,8 +192,7 @@ GetOwnerRef returns the OwnerRef field if non-nil, zero value otherwise.
 
 `func (o *ServiceDeskIntegrationDto) GetOwnerRefOk() (*OwnerDto, bool)`
 
-GetOwnerRefOk returns a tuple with the OwnerRef field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerRefOk returns a tuple with the OwnerRef field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwnerRef
 
@@ -218,8 +216,7 @@ GetClusterRef returns the ClusterRef field if non-nil, zero value otherwise.
 
 `func (o *ServiceDeskIntegrationDto) GetClusterRefOk() (*SourceClusterDto, bool)`
 
-GetClusterRefOk returns a tuple with the ClusterRef field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetClusterRefOk returns a tuple with the ClusterRef field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetClusterRef
 
@@ -243,8 +240,7 @@ GetCluster returns the Cluster field if non-nil, zero value otherwise.
 
 `func (o *ServiceDeskIntegrationDto) GetClusterOk() (*string, bool)`
 
-GetClusterOk returns a tuple with the Cluster field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetClusterOk returns a tuple with the Cluster field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCluster
 
@@ -262,12 +258,14 @@ HasCluster returns a boolean if a field has been set.
 
 `func (o *ServiceDeskIntegrationDto) SetClusterNil(b bool)`
 
- SetClusterNil sets the value for Cluster to be an explicit nil
+SetClusterNil sets the value for Cluster to be an explicit nil
 
 ### UnsetCluster
+
 `func (o *ServiceDeskIntegrationDto) UnsetCluster()`
 
 UnsetCluster ensures that no value is present for Cluster, not even an explicit nil
+
 ### GetManagedSources
 
 `func (o *ServiceDeskIntegrationDto) GetManagedSources() []string`
@@ -278,8 +276,7 @@ GetManagedSources returns the ManagedSources field if non-nil, zero value otherw
 
 `func (o *ServiceDeskIntegrationDto) GetManagedSourcesOk() (*[]string, bool)`
 
-GetManagedSourcesOk returns a tuple with the ManagedSources field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetManagedSourcesOk returns a tuple with the ManagedSources field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetManagedSources
 
@@ -303,8 +300,7 @@ GetProvisioningConfig returns the ProvisioningConfig field if non-nil, zero valu
 
 `func (o *ServiceDeskIntegrationDto) GetProvisioningConfigOk() (*ProvisioningConfig, bool)`
 
-GetProvisioningConfigOk returns a tuple with the ProvisioningConfig field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProvisioningConfigOk returns a tuple with the ProvisioningConfig field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProvisioningConfig
 
@@ -328,15 +324,13 @@ GetAttributes returns the Attributes field if non-nil, zero value otherwise.
 
 `func (o *ServiceDeskIntegrationDto) GetAttributesOk() (*map[string]interface{}, bool)`
 
-GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributes
 
 `func (o *ServiceDeskIntegrationDto) SetAttributes(v map[string]interface{})`
 
 SetAttributes sets Attributes field to given value.
-
 
 ### GetBeforeProvisioningRule
 
@@ -348,8 +342,7 @@ GetBeforeProvisioningRule returns the BeforeProvisioningRule field if non-nil, z
 
 `func (o *ServiceDeskIntegrationDto) GetBeforeProvisioningRuleOk() (*BeforeProvisioningRuleDto, bool)`
 
-GetBeforeProvisioningRuleOk returns a tuple with the BeforeProvisioningRule field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetBeforeProvisioningRuleOk returns a tuple with the BeforeProvisioningRule field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetBeforeProvisioningRule
 
@@ -362,5 +355,3 @@ SetBeforeProvisioningRule sets BeforeProvisioningRule field to given value.
 `func (o *ServiceDeskIntegrationDto) HasBeforeProvisioningRule() bool`
 
 HasBeforeProvisioningRule returns a boolean if a field has been set.
-
-

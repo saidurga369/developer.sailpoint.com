@@ -4,9 +4,16 @@ title: CommonAccessType
 pagination_label: CommonAccessType
 sidebar_label: CommonAccessType
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'CommonAccessType', 'V2025CommonAccessType'] 
+keywords:
+  ['python', 'Python', 'sdk', 'CommonAccessType', 'V2025CommonAccessType']
 slug: /tools/sdk/python/v2025/models/common-access-type
-tags: ['SDK', 'Software Development Kit', 'CommonAccessType', 'V2025CommonAccessType']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CommonAccessType',
+    'V2025CommonAccessType',
+  ]
 ---
 
 # CommonAccessType
@@ -15,9 +22,8 @@ The type of access item.
 
 ## Enum
 
-* `ACCESS_PROFILE` (value: `'ACCESS_PROFILE'`)
+- `ACCESS_PROFILE` (value: `'ACCESS_PROFILE'`)
 
-* `ROLE` (value: `'ROLE'`)
+- `ROLE` (value: `'ROLE'`)
 
-[[Back to top]](#) 
-
+[[Back to top]](#)

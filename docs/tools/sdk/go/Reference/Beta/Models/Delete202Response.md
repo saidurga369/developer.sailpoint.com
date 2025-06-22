@@ -4,20 +4,26 @@ title: Delete202Response
 pagination_label: Delete202Response
 sidebar_label: Delete202Response
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Delete202Response', 'BetaDelete202Response'] 
+keywords: ['go', 'Golang', 'sdk', 'Delete202Response', 'BetaDelete202Response']
 slug: /tools/sdk/go/beta/models/delete202-response
-tags: ['SDK', 'Software Development Kit', 'Delete202Response', 'BetaDelete202Response']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'Delete202Response',
+    'BetaDelete202Response',
+  ]
 ---
 
 # Delete202Response
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | Type of object being referenced. | [optional] 
-**Id** | Pointer to **string** | Task result ID. | [optional] 
-**Name** | Pointer to **string** | Task result's human-readable display name (this should be null/empty). | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to **string** | Type of object being referenced. | [optional] |
+| **Id** | Pointer to **string** | Task result ID. | [optional] |
+| **Name** | Pointer to **string** | Task result's human-readable display name (this should be null/empty). | [optional] |
 
 ## Methods
 
@@ -25,18 +31,13 @@ Name | Type | Description | Notes
 
 `func NewDelete202Response() *Delete202Response`
 
-NewDelete202Response instantiates a new Delete202Response object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewDelete202Response instantiates a new Delete202Response object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewDelete202ResponseWithDefaults
 
 `func NewDelete202ResponseWithDefaults() *Delete202Response`
 
-NewDelete202ResponseWithDefaults instantiates a new Delete202Response object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewDelete202ResponseWithDefaults instantiates a new Delete202Response object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -48,8 +49,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *Delete202Response) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -73,8 +73,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *Delete202Response) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -98,8 +97,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *Delete202Response) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -112,5 +110,3 @@ SetName sets Name field to given value.
 `func (o *Delete202Response) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

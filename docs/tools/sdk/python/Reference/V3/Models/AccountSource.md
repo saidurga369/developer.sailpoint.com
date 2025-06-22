@@ -4,21 +4,21 @@ title: AccountSource
 pagination_label: AccountSource
 sidebar_label: AccountSource
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccountSource', 'AccountSource'] 
+keywords: ['python', 'Python', 'sdk', 'AccountSource', 'AccountSource']
 slug: /tools/sdk/python/v3/models/account-source
 tags: ['SDK', 'Software Development Kit', 'AccountSource', 'AccountSource']
 ---
 
 # AccountSource
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The unique ID of the referenced object. | [optional] 
-**name** | **str** | The human readable name of the referenced object. | [optional] 
-**type** | **str** | Type of source returned. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The unique ID of the referenced object. | [optional] |
+| **name** | **str** | The human readable name of the referenced object. | [optional] |
+| **type** | **str** | Type of source returned. | [optional] |
+
 }
 
 ## Example
@@ -33,5 +33,5 @@ type='Delimited File'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

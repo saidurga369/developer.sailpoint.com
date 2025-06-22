@@ -69,7 +69,7 @@ export function generateLanguageSet() {
 
   // Create a list of prioritized languages (in order)
   const priorityOrder = ['go', 'powershell', 'python', 'typescript'];
-  
+
   // First, push all languages into the languageSet
   codegen.getLanguageList().forEach((language: any) => {
     const variants: any = [];
@@ -93,7 +93,9 @@ export function generateLanguageSet() {
       },
       variant: variants[0],
       variants: variants,
-      tag: ['powershell', 'python', 'go'].includes(language.key) ? 'sailpoint-sdk' : '',
+      tag: ['powershell', 'python', 'go'].includes(language.key)
+        ? 'sailpoint-sdk'
+        : '',
     });
   });
 

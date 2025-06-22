@@ -4,22 +4,36 @@ title: MultiHostSourcesBeforeProvisioningRule
 pagination_label: MultiHostSourcesBeforeProvisioningRule
 sidebar_label: MultiHostSourcesBeforeProvisioningRule
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'MultiHostSourcesBeforeProvisioningRule', 'BetaMultiHostSourcesBeforeProvisioningRule'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'MultiHostSourcesBeforeProvisioningRule',
+    'BetaMultiHostSourcesBeforeProvisioningRule',
+  ]
 slug: /tools/sdk/python/beta/models/multi-host-sources-before-provisioning-rule
-tags: ['SDK', 'Software Development Kit', 'MultiHostSourcesBeforeProvisioningRule', 'BetaMultiHostSourcesBeforeProvisioningRule']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'MultiHostSourcesBeforeProvisioningRule',
+    'BetaMultiHostSourcesBeforeProvisioningRule',
+  ]
 ---
 
 # MultiHostSourcesBeforeProvisioningRule
 
-Rule that runs on the CCG and allows for customization of provisioning plans before the API calls the connector. 
+Rule that runs on the CCG and allows for customization of provisioning plans before the API calls the connector.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'RULE' ] | Type of object being referenced. | [optional] 
-**id** | **str** | Rule ID. | [optional] 
-**name** | **str** | Rule's human-readable display name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'RULE' ] | Type of object being referenced. | [optional] |
+| **id** | **str** | Rule ID. | [optional] |
+| **name** | **str** | Rule's human-readable display name. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Example Rule'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

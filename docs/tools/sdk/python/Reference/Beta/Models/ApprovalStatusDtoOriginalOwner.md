@@ -4,9 +4,22 @@ title: ApprovalStatusDtoOriginalOwner
 pagination_label: ApprovalStatusDtoOriginalOwner
 sidebar_label: ApprovalStatusDtoOriginalOwner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ApprovalStatusDtoOriginalOwner', 'BetaApprovalStatusDtoOriginalOwner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ApprovalStatusDtoOriginalOwner',
+    'BetaApprovalStatusDtoOriginalOwner',
+  ]
 slug: /tools/sdk/python/beta/models/approval-status-dto-original-owner
-tags: ['SDK', 'Software Development Kit', 'ApprovalStatusDtoOriginalOwner', 'BetaApprovalStatusDtoOriginalOwner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ApprovalStatusDtoOriginalOwner',
+    'BetaApprovalStatusDtoOriginalOwner',
+  ]
 ---
 
 # ApprovalStatusDtoOriginalOwner
@@ -15,11 +28,12 @@ Identity of orginal approval owner.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'GOVERNANCE_GROUP',    'IDENTITY' ] | DTO type of original approval owner's identity. | [optional] 
-**id** | **str** | ID of original approval owner's identity. | [optional] 
-**name** | **str** | Display name of original approval owner. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'GOVERNANCE_GROUP', 'IDENTITY' ] | DTO type of original approval owner's identity. | [optional] |
+| **id** | **str** | ID of original approval owner's identity. | [optional] |
+| **name** | **str** | Display name of original approval owner. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Michael Michaels'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

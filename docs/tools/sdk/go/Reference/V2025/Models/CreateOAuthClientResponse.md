@@ -4,36 +4,49 @@ title: CreateOAuthClientResponse
 pagination_label: CreateOAuthClientResponse
 sidebar_label: CreateOAuthClientResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'CreateOAuthClientResponse', 'V2025CreateOAuthClientResponse'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'CreateOAuthClientResponse',
+    'V2025CreateOAuthClientResponse',
+  ]
 slug: /tools/sdk/go/v2025/models/create-o-auth-client-response
-tags: ['SDK', 'Software Development Kit', 'CreateOAuthClientResponse', 'V2025CreateOAuthClientResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CreateOAuthClientResponse',
+    'V2025CreateOAuthClientResponse',
+  ]
 ---
 
 # CreateOAuthClientResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **string** | ID of the OAuth client | 
-**Secret** | **string** | Secret of the OAuth client (This field is only returned on the intial create call.) | 
-**BusinessName** | **string** | The name of the business the API Client should belong to | 
-**HomepageUrl** | **string** | The homepage URL associated with the owner of the API Client | 
-**Name** | **string** | A human-readable name for the API Client | 
-**Description** | **string** | A description of the API Client | 
-**AccessTokenValiditySeconds** | **int32** | The number of seconds an access token generated for this API Client is valid for | 
-**RefreshTokenValiditySeconds** | **int32** | The number of seconds a refresh token generated for this API Client is valid for | 
-**RedirectUris** | **[]string** | A list of the approved redirect URIs used with the authorization_code flow | 
-**GrantTypes** | [**[]GrantType**](grant-type) | A list of OAuth 2.0 grant types this API Client can be used with | 
-**AccessType** | [**AccessType**](access-type) |  | 
-**Type** | [**ClientType**](client-type) |  | 
-**Internal** | **bool** | An indicator of whether the API Client can be used for requests internal to IDN | 
-**Enabled** | **bool** | An indicator of whether the API Client is enabled for use | 
-**StrongAuthSupported** | **bool** | An indicator of whether the API Client supports strong authentication | 
-**ClaimsSupported** | **bool** | An indicator of whether the API Client supports the serialization of SAML claims when used with the authorization_code flow | 
-**Created** | **SailPointTime** | The date and time, down to the millisecond, when the API Client was created | 
-**Modified** | **SailPointTime** | The date and time, down to the millisecond, when the API Client was last updated | 
-**Scope** | **[]string** | Scopes of the API Client. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **string** | ID of the OAuth client |
+| **Secret** | **string** | Secret of the OAuth client (This field is only returned on the intial create call.) |
+| **BusinessName** | **string** | The name of the business the API Client should belong to |
+| **HomepageUrl** | **string** | The homepage URL associated with the owner of the API Client |
+| **Name** | **string** | A human-readable name for the API Client |
+| **Description** | **string** | A description of the API Client |
+| **AccessTokenValiditySeconds** | **int32** | The number of seconds an access token generated for this API Client is valid for |
+| **RefreshTokenValiditySeconds** | **int32** | The number of seconds a refresh token generated for this API Client is valid for |
+| **RedirectUris** | **[]string** | A list of the approved redirect URIs used with the authorization_code flow |
+| **GrantTypes** | [**[]GrantType**](grant-type) | A list of OAuth 2.0 grant types this API Client can be used with |
+| **AccessType** | [**AccessType**](access-type) |  |
+| **Type** | [**ClientType**](client-type) |  |
+| **Internal** | **bool** | An indicator of whether the API Client can be used for requests internal to IDN |
+| **Enabled** | **bool** | An indicator of whether the API Client is enabled for use |
+| **StrongAuthSupported** | **bool** | An indicator of whether the API Client supports strong authentication |
+| **ClaimsSupported** | **bool** | An indicator of whether the API Client supports the serialization of SAML claims when used with the authorization_code flow |
+| **Created** | **SailPointTime** | The date and time, down to the millisecond, when the API Client was created |
+| **Modified** | **SailPointTime** | The date and time, down to the millisecond, when the API Client was last updated |
+| **Scope** | **[]string** | Scopes of the API Client. |
 
 ## Methods
 
@@ -41,18 +54,13 @@ Name | Type | Description | Notes
 
 `func NewCreateOAuthClientResponse(id string, secret string, businessName string, homepageUrl string, name string, description string, accessTokenValiditySeconds int32, refreshTokenValiditySeconds int32, redirectUris []string, grantTypes []GrantType, accessType AccessType, type_ ClientType, internal bool, enabled bool, strongAuthSupported bool, claimsSupported bool, created SailPointTime, modified SailPointTime, scope []string, ) *CreateOAuthClientResponse`
 
-NewCreateOAuthClientResponse instantiates a new CreateOAuthClientResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewCreateOAuthClientResponse instantiates a new CreateOAuthClientResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewCreateOAuthClientResponseWithDefaults
 
 `func NewCreateOAuthClientResponseWithDefaults() *CreateOAuthClientResponse`
 
-NewCreateOAuthClientResponseWithDefaults instantiates a new CreateOAuthClientResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewCreateOAuthClientResponseWithDefaults instantiates a new CreateOAuthClientResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -64,15 +72,13 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *CreateOAuthClientResponse) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
 `func (o *CreateOAuthClientResponse) SetId(v string)`
 
 SetId sets Id field to given value.
-
 
 ### GetSecret
 
@@ -84,15 +90,13 @@ GetSecret returns the Secret field if non-nil, zero value otherwise.
 
 `func (o *CreateOAuthClientResponse) GetSecretOk() (*string, bool)`
 
-GetSecretOk returns a tuple with the Secret field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSecretOk returns a tuple with the Secret field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSecret
 
 `func (o *CreateOAuthClientResponse) SetSecret(v string)`
 
 SetSecret sets Secret field to given value.
-
 
 ### GetBusinessName
 
@@ -104,15 +108,13 @@ GetBusinessName returns the BusinessName field if non-nil, zero value otherwise.
 
 `func (o *CreateOAuthClientResponse) GetBusinessNameOk() (*string, bool)`
 
-GetBusinessNameOk returns a tuple with the BusinessName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetBusinessNameOk returns a tuple with the BusinessName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetBusinessName
 
 `func (o *CreateOAuthClientResponse) SetBusinessName(v string)`
 
 SetBusinessName sets BusinessName field to given value.
-
 
 ### GetHomepageUrl
 
@@ -124,15 +126,13 @@ GetHomepageUrl returns the HomepageUrl field if non-nil, zero value otherwise.
 
 `func (o *CreateOAuthClientResponse) GetHomepageUrlOk() (*string, bool)`
 
-GetHomepageUrlOk returns a tuple with the HomepageUrl field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetHomepageUrlOk returns a tuple with the HomepageUrl field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetHomepageUrl
 
 `func (o *CreateOAuthClientResponse) SetHomepageUrl(v string)`
 
 SetHomepageUrl sets HomepageUrl field to given value.
-
 
 ### GetName
 
@@ -144,15 +144,13 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *CreateOAuthClientResponse) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
 `func (o *CreateOAuthClientResponse) SetName(v string)`
 
 SetName sets Name field to given value.
-
 
 ### GetDescription
 
@@ -164,15 +162,13 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *CreateOAuthClientResponse) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
 `func (o *CreateOAuthClientResponse) SetDescription(v string)`
 
 SetDescription sets Description field to given value.
-
 
 ### GetAccessTokenValiditySeconds
 
@@ -184,15 +180,13 @@ GetAccessTokenValiditySeconds returns the AccessTokenValiditySeconds field if no
 
 `func (o *CreateOAuthClientResponse) GetAccessTokenValiditySecondsOk() (*int32, bool)`
 
-GetAccessTokenValiditySecondsOk returns a tuple with the AccessTokenValiditySeconds field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessTokenValiditySecondsOk returns a tuple with the AccessTokenValiditySeconds field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessTokenValiditySeconds
 
 `func (o *CreateOAuthClientResponse) SetAccessTokenValiditySeconds(v int32)`
 
 SetAccessTokenValiditySeconds sets AccessTokenValiditySeconds field to given value.
-
 
 ### GetRefreshTokenValiditySeconds
 
@@ -204,15 +198,13 @@ GetRefreshTokenValiditySeconds returns the RefreshTokenValiditySeconds field if 
 
 `func (o *CreateOAuthClientResponse) GetRefreshTokenValiditySecondsOk() (*int32, bool)`
 
-GetRefreshTokenValiditySecondsOk returns a tuple with the RefreshTokenValiditySeconds field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRefreshTokenValiditySecondsOk returns a tuple with the RefreshTokenValiditySeconds field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRefreshTokenValiditySeconds
 
 `func (o *CreateOAuthClientResponse) SetRefreshTokenValiditySeconds(v int32)`
 
 SetRefreshTokenValiditySeconds sets RefreshTokenValiditySeconds field to given value.
-
 
 ### GetRedirectUris
 
@@ -224,15 +216,13 @@ GetRedirectUris returns the RedirectUris field if non-nil, zero value otherwise.
 
 `func (o *CreateOAuthClientResponse) GetRedirectUrisOk() (*[]string, bool)`
 
-GetRedirectUrisOk returns a tuple with the RedirectUris field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRedirectUrisOk returns a tuple with the RedirectUris field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRedirectUris
 
 `func (o *CreateOAuthClientResponse) SetRedirectUris(v []string)`
 
 SetRedirectUris sets RedirectUris field to given value.
-
 
 ### GetGrantTypes
 
@@ -244,15 +234,13 @@ GetGrantTypes returns the GrantTypes field if non-nil, zero value otherwise.
 
 `func (o *CreateOAuthClientResponse) GetGrantTypesOk() (*[]GrantType, bool)`
 
-GetGrantTypesOk returns a tuple with the GrantTypes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetGrantTypesOk returns a tuple with the GrantTypes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetGrantTypes
 
 `func (o *CreateOAuthClientResponse) SetGrantTypes(v []GrantType)`
 
 SetGrantTypes sets GrantTypes field to given value.
-
 
 ### GetAccessType
 
@@ -264,15 +252,13 @@ GetAccessType returns the AccessType field if non-nil, zero value otherwise.
 
 `func (o *CreateOAuthClientResponse) GetAccessTypeOk() (*AccessType, bool)`
 
-GetAccessTypeOk returns a tuple with the AccessType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessTypeOk returns a tuple with the AccessType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessType
 
 `func (o *CreateOAuthClientResponse) SetAccessType(v AccessType)`
 
 SetAccessType sets AccessType field to given value.
-
 
 ### GetType
 
@@ -284,15 +270,13 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *CreateOAuthClientResponse) GetTypeOk() (*ClientType, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
 `func (o *CreateOAuthClientResponse) SetType(v ClientType)`
 
 SetType sets Type field to given value.
-
 
 ### GetInternal
 
@@ -304,15 +288,13 @@ GetInternal returns the Internal field if non-nil, zero value otherwise.
 
 `func (o *CreateOAuthClientResponse) GetInternalOk() (*bool, bool)`
 
-GetInternalOk returns a tuple with the Internal field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetInternalOk returns a tuple with the Internal field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetInternal
 
 `func (o *CreateOAuthClientResponse) SetInternal(v bool)`
 
 SetInternal sets Internal field to given value.
-
 
 ### GetEnabled
 
@@ -324,15 +306,13 @@ GetEnabled returns the Enabled field if non-nil, zero value otherwise.
 
 `func (o *CreateOAuthClientResponse) GetEnabledOk() (*bool, bool)`
 
-GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEnabled
 
 `func (o *CreateOAuthClientResponse) SetEnabled(v bool)`
 
 SetEnabled sets Enabled field to given value.
-
 
 ### GetStrongAuthSupported
 
@@ -344,15 +324,13 @@ GetStrongAuthSupported returns the StrongAuthSupported field if non-nil, zero va
 
 `func (o *CreateOAuthClientResponse) GetStrongAuthSupportedOk() (*bool, bool)`
 
-GetStrongAuthSupportedOk returns a tuple with the StrongAuthSupported field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStrongAuthSupportedOk returns a tuple with the StrongAuthSupported field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStrongAuthSupported
 
 `func (o *CreateOAuthClientResponse) SetStrongAuthSupported(v bool)`
 
 SetStrongAuthSupported sets StrongAuthSupported field to given value.
-
 
 ### GetClaimsSupported
 
@@ -364,15 +342,13 @@ GetClaimsSupported returns the ClaimsSupported field if non-nil, zero value othe
 
 `func (o *CreateOAuthClientResponse) GetClaimsSupportedOk() (*bool, bool)`
 
-GetClaimsSupportedOk returns a tuple with the ClaimsSupported field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetClaimsSupportedOk returns a tuple with the ClaimsSupported field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetClaimsSupported
 
 `func (o *CreateOAuthClientResponse) SetClaimsSupported(v bool)`
 
 SetClaimsSupported sets ClaimsSupported field to given value.
-
 
 ### GetCreated
 
@@ -384,15 +360,13 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *CreateOAuthClientResponse) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
 `func (o *CreateOAuthClientResponse) SetCreated(v SailPointTime)`
 
 SetCreated sets Created field to given value.
-
 
 ### GetModified
 
@@ -404,15 +378,13 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *CreateOAuthClientResponse) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
 `func (o *CreateOAuthClientResponse) SetModified(v SailPointTime)`
 
 SetModified sets Modified field to given value.
-
 
 ### GetScope
 
@@ -424,8 +396,7 @@ GetScope returns the Scope field if non-nil, zero value otherwise.
 
 `func (o *CreateOAuthClientResponse) GetScopeOk() (*[]string, bool)`
 
-GetScopeOk returns a tuple with the Scope field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetScopeOk returns a tuple with the Scope field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetScope
 
@@ -433,15 +404,14 @@ and a boolean to check if the value has been set.
 
 SetScope sets Scope field to given value.
 
-
 ### SetScopeNil
 
 `func (o *CreateOAuthClientResponse) SetScopeNil(b bool)`
 
- SetScopeNil sets the value for Scope to be an explicit nil
+SetScopeNil sets the value for Scope to be an explicit nil
 
 ### UnsetScope
+
 `func (o *CreateOAuthClientResponse) UnsetScope()`
 
 UnsetScope ensures that no value is present for Scope, not even an explicit nil
-

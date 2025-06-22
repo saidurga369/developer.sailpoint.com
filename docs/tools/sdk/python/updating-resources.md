@@ -13,9 +13,9 @@ tags: ['SDK']
 
 You can use the SDK to update resources.
 
-For example, you can run a script to update a work group, also known as a [governance group](https://documentation.sailpoint.com/saas/help/common/users/governance_groups.html). 
+For example, you can run a script to update a work group, also known as a [governance group](https://documentation.sailpoint.com/saas/help/common/users/governance_groups.html).
 
-This example 'update WorkGroup' script updates the description for the work group created in [Create a Resource](./creating-resources.md). Copy it into your Python project to try it out: 
+This example 'update WorkGroup' script updates the description for the work group created in [Create a Resource](./creating-resources.md). Copy it into your Python project to try it out:
 
 ```python
 import sailpoint
@@ -61,13 +61,13 @@ The SDK will return the updated work group with its new description:
 ```python
 The response of GovernanceGroupsApi->patch_workgroup:
 
-id='d287a1e2-81fc-474e-bc0c-155bd8ab0899' 
-name='DB Access Governance Group' 
-description='This is an updated description for the workgroup.' 
-member_count=0 
+id='d287a1e2-81fc-474e-bc0c-155bd8ab0899'
+name='DB Access Governance Group'
+description='This is an updated description for the workgroup.'
+member_count=0
 connection_count=0
 owner=OwnerDto(
-    type='IDENTITY', 
-    id='0003c25c365e492381d4e557b6159f9b', 
+    type='IDENTITY',
+    id='0003c25c365e492381d4e557b6159f9b',
     name='Brian Mendoza')
 ```

@@ -4,23 +4,29 @@ title: IdentityListItem
 pagination_label: IdentityListItem
 sidebar_label: IdentityListItem
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IdentityListItem', 'V2025IdentityListItem'] 
+keywords: ['go', 'Golang', 'sdk', 'IdentityListItem', 'V2025IdentityListItem']
 slug: /tools/sdk/go/v2025/models/identity-list-item
-tags: ['SDK', 'Software Development Kit', 'IdentityListItem', 'V2025IdentityListItem']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityListItem',
+    'V2025IdentityListItem',
+  ]
 ---
 
 # IdentityListItem
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | the identity ID | [optional] 
-**DisplayName** | Pointer to **string** | the display name of the identity | [optional] 
-**FirstName** | Pointer to **NullableString** | the first name of the identity | [optional] 
-**LastName** | Pointer to **NullableString** | the last name of the identity | [optional] 
-**Active** | Pointer to **bool** | indicates if an identity is active or not | [optional] [default to true]
-**DeletedDate** | Pointer to **NullableString** | the date when the identity was deleted | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | the identity ID | [optional] |
+| **DisplayName** | Pointer to **string** | the display name of the identity | [optional] |
+| **FirstName** | Pointer to **NullableString** | the first name of the identity | [optional] |
+| **LastName** | Pointer to **NullableString** | the last name of the identity | [optional] |
+| **Active** | Pointer to **bool** | indicates if an identity is active or not | [optional] [default to true] |
+| **DeletedDate** | Pointer to **NullableString** | the date when the identity was deleted | [optional] |
 
 ## Methods
 
@@ -28,18 +34,13 @@ Name | Type | Description | Notes
 
 `func NewIdentityListItem() *IdentityListItem`
 
-NewIdentityListItem instantiates a new IdentityListItem object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewIdentityListItem instantiates a new IdentityListItem object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewIdentityListItemWithDefaults
 
 `func NewIdentityListItemWithDefaults() *IdentityListItem`
 
-NewIdentityListItemWithDefaults instantiates a new IdentityListItem object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewIdentityListItemWithDefaults instantiates a new IdentityListItem object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -51,8 +52,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *IdentityListItem) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -76,8 +76,7 @@ GetDisplayName returns the DisplayName field if non-nil, zero value otherwise.
 
 `func (o *IdentityListItem) GetDisplayNameOk() (*string, bool)`
 
-GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayName
 
@@ -101,8 +100,7 @@ GetFirstName returns the FirstName field if non-nil, zero value otherwise.
 
 `func (o *IdentityListItem) GetFirstNameOk() (*string, bool)`
 
-GetFirstNameOk returns a tuple with the FirstName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFirstNameOk returns a tuple with the FirstName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFirstName
 
@@ -120,12 +118,14 @@ HasFirstName returns a boolean if a field has been set.
 
 `func (o *IdentityListItem) SetFirstNameNil(b bool)`
 
- SetFirstNameNil sets the value for FirstName to be an explicit nil
+SetFirstNameNil sets the value for FirstName to be an explicit nil
 
 ### UnsetFirstName
+
 `func (o *IdentityListItem) UnsetFirstName()`
 
 UnsetFirstName ensures that no value is present for FirstName, not even an explicit nil
+
 ### GetLastName
 
 `func (o *IdentityListItem) GetLastName() string`
@@ -136,8 +136,7 @@ GetLastName returns the LastName field if non-nil, zero value otherwise.
 
 `func (o *IdentityListItem) GetLastNameOk() (*string, bool)`
 
-GetLastNameOk returns a tuple with the LastName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLastNameOk returns a tuple with the LastName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLastName
 
@@ -155,12 +154,14 @@ HasLastName returns a boolean if a field has been set.
 
 `func (o *IdentityListItem) SetLastNameNil(b bool)`
 
- SetLastNameNil sets the value for LastName to be an explicit nil
+SetLastNameNil sets the value for LastName to be an explicit nil
 
 ### UnsetLastName
+
 `func (o *IdentityListItem) UnsetLastName()`
 
 UnsetLastName ensures that no value is present for LastName, not even an explicit nil
+
 ### GetActive
 
 `func (o *IdentityListItem) GetActive() bool`
@@ -171,8 +172,7 @@ GetActive returns the Active field if non-nil, zero value otherwise.
 
 `func (o *IdentityListItem) GetActiveOk() (*bool, bool)`
 
-GetActiveOk returns a tuple with the Active field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetActiveOk returns a tuple with the Active field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetActive
 
@@ -196,8 +196,7 @@ GetDeletedDate returns the DeletedDate field if non-nil, zero value otherwise.
 
 `func (o *IdentityListItem) GetDeletedDateOk() (*string, bool)`
 
-GetDeletedDateOk returns a tuple with the DeletedDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDeletedDateOk returns a tuple with the DeletedDate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDeletedDate
 
@@ -215,10 +214,10 @@ HasDeletedDate returns a boolean if a field has been set.
 
 `func (o *IdentityListItem) SetDeletedDateNil(b bool)`
 
- SetDeletedDateNil sets the value for DeletedDate to be an explicit nil
+SetDeletedDateNil sets the value for DeletedDate to be an explicit nil
 
 ### UnsetDeletedDate
+
 `func (o *IdentityListItem) UnsetDeletedDate()`
 
 UnsetDeletedDate ensures that no value is present for DeletedDate, not even an explicit nil
-

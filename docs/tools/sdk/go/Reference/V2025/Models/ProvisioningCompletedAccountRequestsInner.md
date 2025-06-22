@@ -4,24 +4,37 @@ title: ProvisioningCompletedAccountRequestsInner
 pagination_label: ProvisioningCompletedAccountRequestsInner
 sidebar_label: ProvisioningCompletedAccountRequestsInner
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ProvisioningCompletedAccountRequestsInner', 'V2025ProvisioningCompletedAccountRequestsInner'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ProvisioningCompletedAccountRequestsInner',
+    'V2025ProvisioningCompletedAccountRequestsInner',
+  ]
 slug: /tools/sdk/go/v2025/models/provisioning-completed-account-requests-inner
-tags: ['SDK', 'Software Development Kit', 'ProvisioningCompletedAccountRequestsInner', 'V2025ProvisioningCompletedAccountRequestsInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ProvisioningCompletedAccountRequestsInner',
+    'V2025ProvisioningCompletedAccountRequestsInner',
+  ]
 ---
 
 # ProvisioningCompletedAccountRequestsInner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Source** | [**ProvisioningCompletedAccountRequestsInnerSource**](provisioning-completed-account-requests-inner-source) |  | 
-**AccountId** | Pointer to **string** | The unique idenfier of the account being provisioned. | [optional] 
-**AccountOperation** | **string** | The provisioning operation; typically Create, Modify, Enable, Disable, Unlock, or Delete. | 
-**ProvisioningResult** | **map[string]interface{}** | The overall result of the provisioning transaction; this could be success, pending, failed, etc. | 
-**ProvisioningTarget** | **string** | The name of the provisioning channel selected; this could be the same as the source, or could be a Service Desk Integration Module (SDIM). | 
-**TicketId** | Pointer to **NullableString** | A reference to a tracking number, if this is sent to a Service Desk Integration Module (SDIM). | [optional] 
-**AttributeRequests** | Pointer to [**[]ProvisioningCompletedAccountRequestsInnerAttributeRequestsInner**](provisioning-completed-account-requests-inner-attribute-requests-inner) | A list of attributes as part of the provisioning transaction. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Source** | [**ProvisioningCompletedAccountRequestsInnerSource**](provisioning-completed-account-requests-inner-source) |  |
+| **AccountId** | Pointer to **string** | The unique idenfier of the account being provisioned. | [optional] |
+| **AccountOperation** | **string** | The provisioning operation; typically Create, Modify, Enable, Disable, Unlock, or Delete. |
+| **ProvisioningResult** | **map[string]interface{}** | The overall result of the provisioning transaction; this could be success, pending, failed, etc. |
+| **ProvisioningTarget** | **string** | The name of the provisioning channel selected; this could be the same as the source, or could be a Service Desk Integration Module (SDIM). |
+| **TicketId** | Pointer to **NullableString** | A reference to a tracking number, if this is sent to a Service Desk Integration Module (SDIM). | [optional] |
+| **AttributeRequests** | Pointer to [**[]ProvisioningCompletedAccountRequestsInnerAttributeRequestsInner**](provisioning-completed-account-requests-inner-attribute-requests-inner) | A list of attributes as part of the provisioning transaction. | [optional] |
 
 ## Methods
 
@@ -29,18 +42,13 @@ Name | Type | Description | Notes
 
 `func NewProvisioningCompletedAccountRequestsInner(source ProvisioningCompletedAccountRequestsInnerSource, accountOperation string, provisioningResult map[string]interface{}, provisioningTarget string, ) *ProvisioningCompletedAccountRequestsInner`
 
-NewProvisioningCompletedAccountRequestsInner instantiates a new ProvisioningCompletedAccountRequestsInner object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewProvisioningCompletedAccountRequestsInner instantiates a new ProvisioningCompletedAccountRequestsInner object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewProvisioningCompletedAccountRequestsInnerWithDefaults
 
 `func NewProvisioningCompletedAccountRequestsInnerWithDefaults() *ProvisioningCompletedAccountRequestsInner`
 
-NewProvisioningCompletedAccountRequestsInnerWithDefaults instantiates a new ProvisioningCompletedAccountRequestsInner object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewProvisioningCompletedAccountRequestsInnerWithDefaults instantiates a new ProvisioningCompletedAccountRequestsInner object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetSource
 
@@ -52,15 +60,13 @@ GetSource returns the Source field if non-nil, zero value otherwise.
 
 `func (o *ProvisioningCompletedAccountRequestsInner) GetSourceOk() (*ProvisioningCompletedAccountRequestsInnerSource, bool)`
 
-GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSource
 
 `func (o *ProvisioningCompletedAccountRequestsInner) SetSource(v ProvisioningCompletedAccountRequestsInnerSource)`
 
 SetSource sets Source field to given value.
-
 
 ### GetAccountId
 
@@ -72,8 +78,7 @@ GetAccountId returns the AccountId field if non-nil, zero value otherwise.
 
 `func (o *ProvisioningCompletedAccountRequestsInner) GetAccountIdOk() (*string, bool)`
 
-GetAccountIdOk returns a tuple with the AccountId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountIdOk returns a tuple with the AccountId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountId
 
@@ -97,15 +102,13 @@ GetAccountOperation returns the AccountOperation field if non-nil, zero value ot
 
 `func (o *ProvisioningCompletedAccountRequestsInner) GetAccountOperationOk() (*string, bool)`
 
-GetAccountOperationOk returns a tuple with the AccountOperation field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountOperationOk returns a tuple with the AccountOperation field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountOperation
 
 `func (o *ProvisioningCompletedAccountRequestsInner) SetAccountOperation(v string)`
 
 SetAccountOperation sets AccountOperation field to given value.
-
 
 ### GetProvisioningResult
 
@@ -117,15 +120,13 @@ GetProvisioningResult returns the ProvisioningResult field if non-nil, zero valu
 
 `func (o *ProvisioningCompletedAccountRequestsInner) GetProvisioningResultOk() (*map[string]interface{}, bool)`
 
-GetProvisioningResultOk returns a tuple with the ProvisioningResult field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProvisioningResultOk returns a tuple with the ProvisioningResult field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProvisioningResult
 
 `func (o *ProvisioningCompletedAccountRequestsInner) SetProvisioningResult(v map[string]interface{})`
 
 SetProvisioningResult sets ProvisioningResult field to given value.
-
 
 ### GetProvisioningTarget
 
@@ -137,15 +138,13 @@ GetProvisioningTarget returns the ProvisioningTarget field if non-nil, zero valu
 
 `func (o *ProvisioningCompletedAccountRequestsInner) GetProvisioningTargetOk() (*string, bool)`
 
-GetProvisioningTargetOk returns a tuple with the ProvisioningTarget field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProvisioningTargetOk returns a tuple with the ProvisioningTarget field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProvisioningTarget
 
 `func (o *ProvisioningCompletedAccountRequestsInner) SetProvisioningTarget(v string)`
 
 SetProvisioningTarget sets ProvisioningTarget field to given value.
-
 
 ### GetTicketId
 
@@ -157,8 +156,7 @@ GetTicketId returns the TicketId field if non-nil, zero value otherwise.
 
 `func (o *ProvisioningCompletedAccountRequestsInner) GetTicketIdOk() (*string, bool)`
 
-GetTicketIdOk returns a tuple with the TicketId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTicketIdOk returns a tuple with the TicketId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTicketId
 
@@ -176,12 +174,14 @@ HasTicketId returns a boolean if a field has been set.
 
 `func (o *ProvisioningCompletedAccountRequestsInner) SetTicketIdNil(b bool)`
 
- SetTicketIdNil sets the value for TicketId to be an explicit nil
+SetTicketIdNil sets the value for TicketId to be an explicit nil
 
 ### UnsetTicketId
+
 `func (o *ProvisioningCompletedAccountRequestsInner) UnsetTicketId()`
 
 UnsetTicketId ensures that no value is present for TicketId, not even an explicit nil
+
 ### GetAttributeRequests
 
 `func (o *ProvisioningCompletedAccountRequestsInner) GetAttributeRequests() []ProvisioningCompletedAccountRequestsInnerAttributeRequestsInner`
@@ -192,8 +192,7 @@ GetAttributeRequests returns the AttributeRequests field if non-nil, zero value 
 
 `func (o *ProvisioningCompletedAccountRequestsInner) GetAttributeRequestsOk() (*[]ProvisioningCompletedAccountRequestsInnerAttributeRequestsInner, bool)`
 
-GetAttributeRequestsOk returns a tuple with the AttributeRequests field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributeRequestsOk returns a tuple with the AttributeRequests field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributeRequests
 
@@ -211,10 +210,10 @@ HasAttributeRequests returns a boolean if a field has been set.
 
 `func (o *ProvisioningCompletedAccountRequestsInner) SetAttributeRequestsNil(b bool)`
 
- SetAttributeRequestsNil sets the value for AttributeRequests to be an explicit nil
+SetAttributeRequestsNil sets the value for AttributeRequests to be an explicit nil
 
 ### UnsetAttributeRequests
+
 `func (o *ProvisioningCompletedAccountRequestsInner) UnsetAttributeRequests()`
 
 UnsetAttributeRequests ensures that no value is present for AttributeRequests, not even an explicit nil
-

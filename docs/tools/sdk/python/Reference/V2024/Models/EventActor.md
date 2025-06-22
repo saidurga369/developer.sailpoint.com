@@ -4,19 +4,19 @@ title: EventActor
 pagination_label: EventActor
 sidebar_label: EventActor
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'EventActor', 'V2024EventActor'] 
+keywords: ['python', 'Python', 'sdk', 'EventActor', 'V2024EventActor']
 slug: /tools/sdk/python/v2024/models/event-actor
 tags: ['SDK', 'Software Development Kit', 'EventActor', 'V2024EventActor']
 ---
 
 # EventActor
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | Name of the actor that generated the event. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **name** | **str** | Name of the actor that generated the event. | [optional] |
+
 }
 
 ## Example
@@ -29,5 +29,5 @@ name='System'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

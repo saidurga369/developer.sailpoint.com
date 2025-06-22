@@ -4,9 +4,22 @@ title: VendorConnectorMappingUpdatedAt
 pagination_label: VendorConnectorMappingUpdatedAt
 sidebar_label: VendorConnectorMappingUpdatedAt
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'VendorConnectorMappingUpdatedAt', 'VendorConnectorMappingUpdatedAt'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'VendorConnectorMappingUpdatedAt',
+    'VendorConnectorMappingUpdatedAt',
+  ]
 slug: /tools/sdk/python/v3/models/vendor-connector-mapping-updated-at
-tags: ['SDK', 'Software Development Kit', 'VendorConnectorMappingUpdatedAt', 'VendorConnectorMappingUpdatedAt']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'VendorConnectorMappingUpdatedAt',
+    'VendorConnectorMappingUpdatedAt',
+  ]
 ---
 
 # VendorConnectorMappingUpdatedAt
@@ -15,10 +28,11 @@ An object representing the nullable timestamp of the last update.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**time** | **datetime** | The timestamp when the mapping was last updated, represented in ISO 8601 format. | [optional] 
-**valid** | **bool** | A flag indicating if the 'Time' field is set and valid. | [optional] [default to False]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **time** | **datetime** | The timestamp when the mapping was last updated, represented in ISO 8601 format. | [optional] |
+| **valid** | **bool** | A flag indicating if the 'Time' field is set and valid. | [optional] [default to False] |
+
 }
 
 ## Example
@@ -32,5 +46,5 @@ valid=True
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

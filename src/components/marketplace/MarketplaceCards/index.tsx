@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import styles from './styles.module.css';
 import MarketplaceCard from '../MarketplaceCard';
 import Modal from 'react-modal';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import NewtonsCradle from '../../newtonsCradle';
-import { discourseBaseURL, developerWebsiteDomain } from '../../../util/util';
+import {discourseBaseURL, developerWebsiteDomain} from '../../../util/util';
 import {
   getMarketplacePosts,
   getMarketplaceTopicRaw,
@@ -49,7 +49,7 @@ const MarketplaceCards: React.FC<MarketplaceCardsProps> = ({
 }) => {
   const [cardData, setCardData] = useState<Post[] | undefined>();
   const [detailsOpen, setDetailsOpen] = useState<boolean>(false);
-  const [details, setDetails] = useState<{ data?: Post; raw?: string }>({});
+  const [details, setDetails] = useState<{data?: Post; raw?: string}>({});
   const [loadingCards, setLoadingCards] = useState<boolean>(true);
   const xImage = useBaseUrl('/icons/circle-xmark-regular.svg');
 
@@ -60,11 +60,11 @@ const MarketplaceCards: React.FC<MarketplaceCardsProps> = ({
     }
     const data = await getMarketplacePosts(
       tags ? tags.join('+') : '',
-      filterCallback.category
+      filterCallback.category,
     );
 
     const resultset: Post[] = [];
-    const titleList: { group: string; title: string }[] = [];
+    const titleList: {group: string; title: string}[] = [];
 
     if (data.topic_list) {
       for (const topic of data.topic_list.topics) {
@@ -74,17 +74,27 @@ const MarketplaceCards: React.FC<MarketplaceCardsProps> = ({
             if (topicUser.description.includes('Original Poster')) {
               for (const user of data.users) {
                 if (user.id === topicUser.user_id) {
-                  if (!titleList.find((x) => x.group === user.primary_group_name)) {
+                  if (
+                    !titleList.find((x) => x.group === user.primary_group_name)
+                  ) {
                     let usertitle = await getUserTitle(user.primary_group_name);
 
                     if (usertitle.group === undefined) {
-                      titleList.push({ group: user.primary_group_name, title: '' });
+                      titleList.push({
+                        group: user.primary_group_name,
+                        title: '',
+                      });
                     } else {
-                      titleList.push({ group: user.primary_group_name, title: usertitle.group.title || '' });
+                      titleList.push({
+                        group: user.primary_group_name,
+                        title: usertitle.group.title || '',
+                      });
                       user.title = usertitle.group.title;
                     }
                   } else {
-                    user.title = titleList.find((x) => x.group === user.primary_group_name)?.title || '';
+                    user.title =
+                      titleList.find((x) => x.group === user.primary_group_name)
+                        ?.title || '';
                   }
                   poster = user;
                 }
@@ -105,11 +115,11 @@ const MarketplaceCards: React.FC<MarketplaceCardsProps> = ({
 
   const getDetails = async (data: Post) => {
     const raw = await getMarketplaceTopicRaw(data.id);
-    setDetails({ data, raw });
+    setDetails({data, raw});
   };
 
   const openDialog = (data: Post) => {
-    setDetails({ data: undefined, raw: undefined });
+    setDetails({data: undefined, raw: undefined});
     getDetails(data);
     setDetailsOpen(true);
   };
@@ -133,7 +143,12 @@ const MarketplaceCards: React.FC<MarketplaceCardsProps> = ({
               <NewtonsCradle />
             </div>
           ) : (
-            <div className={multiple ? styles.spinnerCenterMultiple : styles.spinnerCenterSingle}>
+            <div
+              className={
+                multiple
+                  ? styles.spinnerCenterMultiple
+                  : styles.spinnerCenterSingle
+              }>
               <NewtonsCradle />
             </div>
           )}
@@ -143,13 +158,26 @@ const MarketplaceCards: React.FC<MarketplaceCardsProps> = ({
           {multiple ? (
             <div className={styles.multipleGridContainer}>
               {cardData.map((a, index) => (
-                <MarketplaceCard key={index + a.link} featured={featured} post={a} openDialogFunc={openDialog} />
+                <MarketplaceCard
+                  key={index + a.link}
+                  featured={featured}
+                  post={a}
+                  openDialogFunc={openDialog}
+                />
               ))}
             </div>
           ) : (
-            <div className={featured ? styles.featuredGridContainer : styles.gridContainer}>
+            <div
+              className={
+                featured ? styles.featuredGridContainer : styles.gridContainer
+              }>
               {cardData.map((a, index) => (
-                <MarketplaceCard key={index + a.link} featured={featured} post={a} openDialogFunc={openDialog} />
+                <MarketplaceCard
+                  key={index + a.link}
+                  featured={featured}
+                  post={a}
+                  openDialogFunc={openDialog}
+                />
               ))}
             </div>
           )}
@@ -201,7 +229,9 @@ async function getPostList(topic: any, user: any): Promise<Post> {
 
 function getAvatarURL(avatar: string): string {
   if (avatar.includes(developerWebsiteDomain())) {
-    return 'https://' + developerWebsiteDomain() + avatar.replace('{size}', '120');
+    return (
+      'https://' + developerWebsiteDomain() + avatar.replace('{size}', '120')
+    );
   } else {
     return avatar.replace('{size}', '120');
   }
@@ -219,7 +249,9 @@ function styleExcerpt(excerpt: string | undefined): string {
     excerpt = match[1].trim();
   }
 
-  return excerpt.length > 150 ? excerpt.slice(0, 100) + '...' : excerpt.replace('&hellip;', '');
+  return excerpt.length > 150
+    ? excerpt.slice(0, 100) + '...'
+    : excerpt.replace('&hellip;', '');
 }
 
 export default MarketplaceCards;

@@ -4,18 +4,31 @@ title: TenantConfigurationRequest
 pagination_label: TenantConfigurationRequest
 sidebar_label: TenantConfigurationRequest
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'TenantConfigurationRequest', 'V2025TenantConfigurationRequest'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'TenantConfigurationRequest',
+    'V2025TenantConfigurationRequest',
+  ]
 slug: /tools/sdk/go/v2025/models/tenant-configuration-request
-tags: ['SDK', 'Software Development Kit', 'TenantConfigurationRequest', 'V2025TenantConfigurationRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'TenantConfigurationRequest',
+    'V2025TenantConfigurationRequest',
+  ]
 ---
 
 # TenantConfigurationRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ConfigDetails** | Pointer to [**TenantConfigurationDetails**](tenant-configuration-details) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ConfigDetails** | Pointer to [**TenantConfigurationDetails**](tenant-configuration-details) |  | [optional] |
 
 ## Methods
 
@@ -23,18 +36,13 @@ Name | Type | Description | Notes
 
 `func NewTenantConfigurationRequest() *TenantConfigurationRequest`
 
-NewTenantConfigurationRequest instantiates a new TenantConfigurationRequest object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewTenantConfigurationRequest instantiates a new TenantConfigurationRequest object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewTenantConfigurationRequestWithDefaults
 
 `func NewTenantConfigurationRequestWithDefaults() *TenantConfigurationRequest`
 
-NewTenantConfigurationRequestWithDefaults instantiates a new TenantConfigurationRequest object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewTenantConfigurationRequestWithDefaults instantiates a new TenantConfigurationRequest object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetConfigDetails
 
@@ -46,8 +54,7 @@ GetConfigDetails returns the ConfigDetails field if non-nil, zero value otherwis
 
 `func (o *TenantConfigurationRequest) GetConfigDetailsOk() (*TenantConfigurationDetails, bool)`
 
-GetConfigDetailsOk returns a tuple with the ConfigDetails field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConfigDetailsOk returns a tuple with the ConfigDetails field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConfigDetails
 
@@ -60,5 +67,3 @@ SetConfigDetails sets ConfigDetails field to given value.
 `func (o *TenantConfigurationRequest) HasConfigDetails() bool`
 
 HasConfigDetails returns a boolean if a field has been set.
-
-

@@ -4,9 +4,22 @@ title: AccountAllOfSourceOwner
 pagination_label: AccountAllOfSourceOwner
 sidebar_label: AccountAllOfSourceOwner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccountAllOfSourceOwner', 'V2025AccountAllOfSourceOwner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccountAllOfSourceOwner',
+    'V2025AccountAllOfSourceOwner',
+  ]
 slug: /tools/sdk/python/v2025/models/account-all-of-source-owner
-tags: ['SDK', 'Software Development Kit', 'AccountAllOfSourceOwner', 'V2025AccountAllOfSourceOwner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccountAllOfSourceOwner',
+    'V2025AccountAllOfSourceOwner',
+  ]
 ---
 
 # AccountAllOfSourceOwner
@@ -15,11 +28,12 @@ The owner of the source this account belongs to.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The ID of the identity | [optional] 
-**type** |  **Enum** [  'IDENTITY' ] | The type of object being referenced | [optional] 
-**name** | **str** | display name of identity | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The ID of the identity | [optional] |
+| **type** | **Enum** [ 'IDENTITY' ] | The type of object being referenced | [optional] |
+| **name** | **str** | display name of identity | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Adam Kennedy'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

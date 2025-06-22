@@ -4,25 +4,38 @@ title: SourceUpdatedActor
 pagination_label: SourceUpdatedActor
 sidebar_label: SourceUpdatedActor
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'SourceUpdatedActor', 'BetaSourceUpdatedActor'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'SourceUpdatedActor',
+    'BetaSourceUpdatedActor',
+  ]
 slug: /tools/sdk/powershell/beta/models/source-updated-actor
-tags: ['SDK', 'Software Development Kit', 'SourceUpdatedActor', 'BetaSourceUpdatedActor']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SourceUpdatedActor',
+    'BetaSourceUpdatedActor',
+  ]
 ---
-
 
 # SourceUpdatedActor
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** |  **Enum** [  "IDENTITY" ] | DTO type of the identity who updated the source. | [required]
-**Id** | **String** | ID of the identity who updated the source. | [required]
-**Name** | **String** | Name of the identity who updated the source. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | **Enum** [ "IDENTITY" ] | DTO type of the identity who updated the source. | [required] |
+| **Id** | **String** | ID of the identity who updated the source. | [required] |
+| **Name** | **String** | Name of the identity who updated the source. | [required] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $SourceUpdatedActor = Initialize-BetaSourceUpdatedActor  -Type IDENTITY `
  -Id 2c7180a46faadee4016fb4e018c20648 `
@@ -30,10 +43,9 @@ $SourceUpdatedActor = Initialize-BetaSourceUpdatedActor  -Type IDENTITY `
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $SourceUpdatedActor | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

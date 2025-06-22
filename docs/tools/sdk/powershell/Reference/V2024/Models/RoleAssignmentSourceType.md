@@ -4,21 +4,30 @@ title: RoleAssignmentSourceType
 pagination_label: RoleAssignmentSourceType
 sidebar_label: RoleAssignmentSourceType
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'RoleAssignmentSourceType', 'V2024RoleAssignmentSourceType'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'RoleAssignmentSourceType',
+    'V2024RoleAssignmentSourceType',
+  ]
 slug: /tools/sdk/powershell/v2024/models/role-assignment-source-type
-tags: ['SDK', 'Software Development Kit', 'RoleAssignmentSourceType', 'V2024RoleAssignmentSourceType']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleAssignmentSourceType',
+    'V2024RoleAssignmentSourceType',
+  ]
 ---
-
 
 # RoleAssignmentSourceType
 
 ## Enum
 
+- `ACCESS_REQUEST` (value: `"ACCESS_REQUEST"`)
 
-* `ACCESS_REQUEST` (value: `"ACCESS_REQUEST"`)
+- `ROLE_MEMBERSHIP` (value: `"ROLE_MEMBERSHIP"`)
 
-* `ROLE_MEMBERSHIP` (value: `"ROLE_MEMBERSHIP"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

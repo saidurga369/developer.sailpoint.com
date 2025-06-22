@@ -4,18 +4,31 @@ title: FormElementValidationsSet
 pagination_label: FormElementValidationsSet
 sidebar_label: FormElementValidationsSet
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'FormElementValidationsSet', 'V2024FormElementValidationsSet'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'FormElementValidationsSet',
+    'V2024FormElementValidationsSet',
+  ]
 slug: /tools/sdk/go/v2024/models/form-element-validations-set
-tags: ['SDK', 'Software Development Kit', 'FormElementValidationsSet', 'V2024FormElementValidationsSet']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'FormElementValidationsSet',
+    'V2024FormElementValidationsSet',
+  ]
 ---
 
 # FormElementValidationsSet
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ValidationType** | Pointer to **string** | The type of data validation that you wish to enforce, e.g., a required field, a minimum length, etc. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ValidationType** | Pointer to **string** | The type of data validation that you wish to enforce, e.g., a required field, a minimum length, etc. | [optional] |
 
 ## Methods
 
@@ -23,18 +36,13 @@ Name | Type | Description | Notes
 
 `func NewFormElementValidationsSet() *FormElementValidationsSet`
 
-NewFormElementValidationsSet instantiates a new FormElementValidationsSet object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewFormElementValidationsSet instantiates a new FormElementValidationsSet object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewFormElementValidationsSetWithDefaults
 
 `func NewFormElementValidationsSetWithDefaults() *FormElementValidationsSet`
 
-NewFormElementValidationsSetWithDefaults instantiates a new FormElementValidationsSet object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewFormElementValidationsSetWithDefaults instantiates a new FormElementValidationsSet object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetValidationType
 
@@ -46,8 +54,7 @@ GetValidationType returns the ValidationType field if non-nil, zero value otherw
 
 `func (o *FormElementValidationsSet) GetValidationTypeOk() (*string, bool)`
 
-GetValidationTypeOk returns a tuple with the ValidationType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValidationTypeOk returns a tuple with the ValidationType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValidationType
 
@@ -60,5 +67,3 @@ SetValidationType sets ValidationType field to given value.
 `func (o *FormElementValidationsSet) HasValidationType() bool`
 
 HasValidationType returns a boolean if a field has been set.
-
-

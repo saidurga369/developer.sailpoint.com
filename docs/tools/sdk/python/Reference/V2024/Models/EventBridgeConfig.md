@@ -4,20 +4,27 @@ title: EventBridgeConfig
 pagination_label: EventBridgeConfig
 sidebar_label: EventBridgeConfig
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'EventBridgeConfig', 'V2024EventBridgeConfig'] 
+keywords:
+  ['python', 'Python', 'sdk', 'EventBridgeConfig', 'V2024EventBridgeConfig']
 slug: /tools/sdk/python/v2024/models/event-bridge-config
-tags: ['SDK', 'Software Development Kit', 'EventBridgeConfig', 'V2024EventBridgeConfig']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'EventBridgeConfig',
+    'V2024EventBridgeConfig',
+  ]
 ---
 
 # EventBridgeConfig
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**aws_account** | **str** | AWS Account Number (12-digit number) that has the EventBridge Partner Event Source Resource. | [required]
-**aws_region** | **str** | AWS Region that has the EventBridge Partner Event Source Resource. See https://docs.aws.amazon.com/general/latest/gr/rande.html for a full list of available values. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **aws_account** | **str** | AWS Account Number (12-digit number) that has the EventBridge Partner Event Source Resource. | [required] |
+| **aws_region** | **str** | AWS Region that has the EventBridge Partner Event Source Resource. See https://docs.aws.amazon.com/general/latest/gr/rande.html for a full list of available values. | [required] |
+
 }
 
 ## Example
@@ -31,5 +38,5 @@ aws_region='us-west-1'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,22 +4,22 @@ title: Invocation
 pagination_label: Invocation
 sidebar_label: Invocation
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'Invocation', 'BetaInvocation'] 
+keywords: ['python', 'Python', 'sdk', 'Invocation', 'BetaInvocation']
 slug: /tools/sdk/python/beta/models/invocation
 tags: ['SDK', 'Software Development Kit', 'Invocation', 'BetaInvocation']
 ---
 
 # Invocation
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Invocation ID | [optional] 
-**trigger_id** | **str** | Trigger ID | [optional] 
-**secret** | **str** | Unique invocation secret. | [optional] 
-**content_json** | **object** | JSON map of invocation metadata. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | Invocation ID | [optional] |
+| **trigger_id** | **str** | Trigger ID | [optional] |
+| **secret** | **str** | Unique invocation secret. | [optional] |
+| **content_json** | **object** | JSON map of invocation metadata. | [optional] |
+
 }
 
 ## Example
@@ -35,5 +35,5 @@ content_json={workflowId=1234}
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

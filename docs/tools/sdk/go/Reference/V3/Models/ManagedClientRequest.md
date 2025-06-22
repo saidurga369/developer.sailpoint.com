@@ -4,21 +4,28 @@ title: ManagedClientRequest
 pagination_label: ManagedClientRequest
 sidebar_label: ManagedClientRequest
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ManagedClientRequest', 'ManagedClientRequest'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'ManagedClientRequest', 'ManagedClientRequest']
 slug: /tools/sdk/go/v3/models/managed-client-request
-tags: ['SDK', 'Software Development Kit', 'ManagedClientRequest', 'ManagedClientRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ManagedClientRequest',
+    'ManagedClientRequest',
+  ]
 ---
 
 # ManagedClientRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ClusterId** | **string** | Cluster ID that the ManagedClient is linked to | 
-**Description** | Pointer to **NullableString** | description for the ManagedClient to create | [optional] 
-**Name** | Pointer to **NullableString** | name for the ManagedClient to create | [optional] 
-**Type** | Pointer to **NullableString** | Type of the ManagedClient (VA, CCG) to create | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ClusterId** | **string** | Cluster ID that the ManagedClient is linked to |
+| **Description** | Pointer to **NullableString** | description for the ManagedClient to create | [optional] |
+| **Name** | Pointer to **NullableString** | name for the ManagedClient to create | [optional] |
+| **Type** | Pointer to **NullableString** | Type of the ManagedClient (VA, CCG) to create | [optional] |
 
 ## Methods
 
@@ -26,18 +33,13 @@ Name | Type | Description | Notes
 
 `func NewManagedClientRequest(clusterId string, ) *ManagedClientRequest`
 
-NewManagedClientRequest instantiates a new ManagedClientRequest object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewManagedClientRequest instantiates a new ManagedClientRequest object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewManagedClientRequestWithDefaults
 
 `func NewManagedClientRequestWithDefaults() *ManagedClientRequest`
 
-NewManagedClientRequestWithDefaults instantiates a new ManagedClientRequest object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewManagedClientRequestWithDefaults instantiates a new ManagedClientRequest object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetClusterId
 
@@ -49,15 +51,13 @@ GetClusterId returns the ClusterId field if non-nil, zero value otherwise.
 
 `func (o *ManagedClientRequest) GetClusterIdOk() (*string, bool)`
 
-GetClusterIdOk returns a tuple with the ClusterId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetClusterIdOk returns a tuple with the ClusterId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetClusterId
 
 `func (o *ManagedClientRequest) SetClusterId(v string)`
 
 SetClusterId sets ClusterId field to given value.
-
 
 ### GetDescription
 
@@ -69,8 +69,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *ManagedClientRequest) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -88,12 +87,14 @@ HasDescription returns a boolean if a field has been set.
 
 `func (o *ManagedClientRequest) SetDescriptionNil(b bool)`
 
- SetDescriptionNil sets the value for Description to be an explicit nil
+SetDescriptionNil sets the value for Description to be an explicit nil
 
 ### UnsetDescription
+
 `func (o *ManagedClientRequest) UnsetDescription()`
 
 UnsetDescription ensures that no value is present for Description, not even an explicit nil
+
 ### GetName
 
 `func (o *ManagedClientRequest) GetName() string`
@@ -104,8 +105,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *ManagedClientRequest) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -123,12 +123,14 @@ HasName returns a boolean if a field has been set.
 
 `func (o *ManagedClientRequest) SetNameNil(b bool)`
 
- SetNameNil sets the value for Name to be an explicit nil
+SetNameNil sets the value for Name to be an explicit nil
 
 ### UnsetName
+
 `func (o *ManagedClientRequest) UnsetName()`
 
 UnsetName ensures that no value is present for Name, not even an explicit nil
+
 ### GetType
 
 `func (o *ManagedClientRequest) GetType() string`
@@ -139,8 +141,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *ManagedClientRequest) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -158,10 +159,10 @@ HasType returns a boolean if a field has been set.
 
 `func (o *ManagedClientRequest) SetTypeNil(b bool)`
 
- SetTypeNil sets the value for Type to be an explicit nil
+SetTypeNil sets the value for Type to be an explicit nil
 
 ### UnsetType
+
 `func (o *ManagedClientRequest) UnsetType()`
 
 UnsetType ensures that no value is present for Type, not even an explicit nil
-

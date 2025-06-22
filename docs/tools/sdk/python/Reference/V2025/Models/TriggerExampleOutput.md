@@ -4,9 +4,22 @@ title: TriggerExampleOutput
 pagination_label: TriggerExampleOutput
 sidebar_label: TriggerExampleOutput
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'TriggerExampleOutput', 'V2025TriggerExampleOutput'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'TriggerExampleOutput',
+    'V2025TriggerExampleOutput',
+  ]
 slug: /tools/sdk/python/v2025/models/trigger-example-output
-tags: ['SDK', 'Software Development Kit', 'TriggerExampleOutput', 'V2025TriggerExampleOutput']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'TriggerExampleOutput',
+    'V2025TriggerExampleOutput',
+  ]
 ---
 
 # TriggerExampleOutput
@@ -15,14 +28,15 @@ An example of the JSON payload that will be sent by the subscribed service to th
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The unique ID of the identity to add to the approver list for the access request. | [required]
-**name** | **str** | The name of the identity to add to the approver list for the access request. | [required]
-**type** |  **Enum** [  'IDENTITY',    'GOVERNANCE_GROUP' ] | The type of object being referenced. | [required]
-**approved** | **bool** | Whether or not to approve the access request. | [required]
-**comment** | **str** | A comment about the decision to approve or deny the request. | [required]
-**approver** | **str** | The name of the entity that approved or denied the request. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The unique ID of the identity to add to the approver list for the access request. | [required] |
+| **name** | **str** | The name of the identity to add to the approver list for the access request. | [required] |
+| **type** | **Enum** [ 'IDENTITY', 'GOVERNANCE_GROUP' ] | The type of object being referenced. | [required] |
+| **approved** | **bool** | Whether or not to approve the access request. | [required] |
+| **comment** | **str** | A comment about the decision to approve or deny the request. | [required] |
+| **approver** | **str** | The name of the entity that approved or denied the request. | [required] |
+
 }
 
 ## Example
@@ -40,5 +54,5 @@ approver='AcmeCorpExternalIntegration'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

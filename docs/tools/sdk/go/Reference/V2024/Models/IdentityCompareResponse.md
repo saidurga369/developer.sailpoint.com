@@ -4,18 +4,31 @@ title: IdentityCompareResponse
 pagination_label: IdentityCompareResponse
 sidebar_label: IdentityCompareResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IdentityCompareResponse', 'V2024IdentityCompareResponse'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'IdentityCompareResponse',
+    'V2024IdentityCompareResponse',
+  ]
 slug: /tools/sdk/go/v2024/models/identity-compare-response
-tags: ['SDK', 'Software Development Kit', 'IdentityCompareResponse', 'V2024IdentityCompareResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityCompareResponse',
+    'V2024IdentityCompareResponse',
+  ]
 ---
 
 # IdentityCompareResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**AccessItemDiff** | Pointer to **map[string]map[string]interface{}** | Arbitrary key-value pairs. They will never be processed by the IdentityNow system but will be returned on completion of the violation check. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **AccessItemDiff** | Pointer to **map[string]map[string]interface{}** | Arbitrary key-value pairs. They will never be processed by the IdentityNow system but will be returned on completion of the violation check. | [optional] |
 
 ## Methods
 
@@ -23,18 +36,13 @@ Name | Type | Description | Notes
 
 `func NewIdentityCompareResponse() *IdentityCompareResponse`
 
-NewIdentityCompareResponse instantiates a new IdentityCompareResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewIdentityCompareResponse instantiates a new IdentityCompareResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewIdentityCompareResponseWithDefaults
 
 `func NewIdentityCompareResponseWithDefaults() *IdentityCompareResponse`
 
-NewIdentityCompareResponseWithDefaults instantiates a new IdentityCompareResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewIdentityCompareResponseWithDefaults instantiates a new IdentityCompareResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetAccessItemDiff
 
@@ -46,8 +54,7 @@ GetAccessItemDiff returns the AccessItemDiff field if non-nil, zero value otherw
 
 `func (o *IdentityCompareResponse) GetAccessItemDiffOk() (*map[string]map[string]interface{}, bool)`
 
-GetAccessItemDiffOk returns a tuple with the AccessItemDiff field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessItemDiffOk returns a tuple with the AccessItemDiff field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessItemDiff
 
@@ -60,5 +67,3 @@ SetAccessItemDiff sets AccessItemDiff field to given value.
 `func (o *IdentityCompareResponse) HasAccessItemDiff() bool`
 
 HasAccessItemDiff returns a boolean if a field has been set.
-
-

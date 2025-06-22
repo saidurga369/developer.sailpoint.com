@@ -4,19 +4,32 @@ title: SetLifecycleStateRequest
 pagination_label: SetLifecycleStateRequest
 sidebar_label: SetLifecycleStateRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SetLifecycleStateRequest', 'SetLifecycleStateRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'SetLifecycleStateRequest',
+    'SetLifecycleStateRequest',
+  ]
 slug: /tools/sdk/python/v3/models/set-lifecycle-state-request
-tags: ['SDK', 'Software Development Kit', 'SetLifecycleStateRequest', 'SetLifecycleStateRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SetLifecycleStateRequest',
+    'SetLifecycleStateRequest',
+  ]
 ---
 
 # SetLifecycleStateRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**lifecycle_state_id** | **str** | ID of the lifecycle state to set. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **lifecycle_state_id** | **str** | ID of the lifecycle state to set. | [optional] |
+
 }
 
 ## Example
@@ -29,5 +42,5 @@ lifecycle_state_id='2c9180877a86e408017a8c19fefe046c'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

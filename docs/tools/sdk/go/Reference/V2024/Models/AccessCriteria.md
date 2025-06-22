@@ -4,19 +4,20 @@ title: AccessCriteria
 pagination_label: AccessCriteria
 sidebar_label: AccessCriteria
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessCriteria', 'V2024AccessCriteria'] 
+keywords: ['go', 'Golang', 'sdk', 'AccessCriteria', 'V2024AccessCriteria']
 slug: /tools/sdk/go/v2024/models/access-criteria
-tags: ['SDK', 'Software Development Kit', 'AccessCriteria', 'V2024AccessCriteria']
+tags:
+  ['SDK', 'Software Development Kit', 'AccessCriteria', 'V2024AccessCriteria']
 ---
 
 # AccessCriteria
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | Pointer to **string** | Business name for the access construct list | [optional] 
-**CriteriaList** | Pointer to [**[]AccessCriteriaCriteriaListInner**](access-criteria-criteria-list-inner) | List of criteria. There is a min of 1 and max of 50 items in the list. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | Pointer to **string** | Business name for the access construct list | [optional] |
+| **CriteriaList** | Pointer to [**[]AccessCriteriaCriteriaListInner**](access-criteria-criteria-list-inner) | List of criteria. There is a min of 1 and max of 50 items in the list. | [optional] |
 
 ## Methods
 
@@ -24,18 +25,13 @@ Name | Type | Description | Notes
 
 `func NewAccessCriteria() *AccessCriteria`
 
-NewAccessCriteria instantiates a new AccessCriteria object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessCriteria instantiates a new AccessCriteria object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessCriteriaWithDefaults
 
 `func NewAccessCriteriaWithDefaults() *AccessCriteria`
 
-NewAccessCriteriaWithDefaults instantiates a new AccessCriteria object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessCriteriaWithDefaults instantiates a new AccessCriteria object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -47,8 +43,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *AccessCriteria) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -72,8 +67,7 @@ GetCriteriaList returns the CriteriaList field if non-nil, zero value otherwise.
 
 `func (o *AccessCriteria) GetCriteriaListOk() (*[]AccessCriteriaCriteriaListInner, bool)`
 
-GetCriteriaListOk returns a tuple with the CriteriaList field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCriteriaListOk returns a tuple with the CriteriaList field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCriteriaList
 
@@ -86,5 +80,3 @@ SetCriteriaList sets CriteriaList field to given value.
 `func (o *AccessCriteria) HasCriteriaList() bool`
 
 HasCriteriaList returns a boolean if a field has been set.
-
-

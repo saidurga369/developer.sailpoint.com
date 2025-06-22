@@ -4,22 +4,35 @@ title: FormDefinitionDynamicSchemaRequest
 pagination_label: FormDefinitionDynamicSchemaRequest
 sidebar_label: FormDefinitionDynamicSchemaRequest
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'FormDefinitionDynamicSchemaRequest', 'BetaFormDefinitionDynamicSchemaRequest'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'FormDefinitionDynamicSchemaRequest',
+    'BetaFormDefinitionDynamicSchemaRequest',
+  ]
 slug: /tools/sdk/go/beta/models/form-definition-dynamic-schema-request
-tags: ['SDK', 'Software Development Kit', 'FormDefinitionDynamicSchemaRequest', 'BetaFormDefinitionDynamicSchemaRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'FormDefinitionDynamicSchemaRequest',
+    'BetaFormDefinitionDynamicSchemaRequest',
+  ]
 ---
 
 # FormDefinitionDynamicSchemaRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Attributes** | Pointer to [**FormDefinitionDynamicSchemaRequestAttributes**](form-definition-dynamic-schema-request-attributes) |  | [optional] 
-**Description** | Pointer to **string** | Description is the form definition dynamic schema description text | [optional] 
-**Id** | Pointer to **string** | ID is a unique identifier | [optional] 
-**Type** | Pointer to **string** | Type is the form definition dynamic schema type | [optional] 
-**VersionNumber** | Pointer to **int64** | VersionNumber is the form definition dynamic schema version number | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Attributes** | Pointer to [**FormDefinitionDynamicSchemaRequestAttributes**](form-definition-dynamic-schema-request-attributes) |  | [optional] |
+| **Description** | Pointer to **string** | Description is the form definition dynamic schema description text | [optional] |
+| **Id** | Pointer to **string** | ID is a unique identifier | [optional] |
+| **Type** | Pointer to **string** | Type is the form definition dynamic schema type | [optional] |
+| **VersionNumber** | Pointer to **int64** | VersionNumber is the form definition dynamic schema version number | [optional] |
 
 ## Methods
 
@@ -27,18 +40,13 @@ Name | Type | Description | Notes
 
 `func NewFormDefinitionDynamicSchemaRequest() *FormDefinitionDynamicSchemaRequest`
 
-NewFormDefinitionDynamicSchemaRequest instantiates a new FormDefinitionDynamicSchemaRequest object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewFormDefinitionDynamicSchemaRequest instantiates a new FormDefinitionDynamicSchemaRequest object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewFormDefinitionDynamicSchemaRequestWithDefaults
 
 `func NewFormDefinitionDynamicSchemaRequestWithDefaults() *FormDefinitionDynamicSchemaRequest`
 
-NewFormDefinitionDynamicSchemaRequestWithDefaults instantiates a new FormDefinitionDynamicSchemaRequest object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewFormDefinitionDynamicSchemaRequestWithDefaults instantiates a new FormDefinitionDynamicSchemaRequest object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetAttributes
 
@@ -50,8 +58,7 @@ GetAttributes returns the Attributes field if non-nil, zero value otherwise.
 
 `func (o *FormDefinitionDynamicSchemaRequest) GetAttributesOk() (*FormDefinitionDynamicSchemaRequestAttributes, bool)`
 
-GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributes
 
@@ -75,8 +82,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *FormDefinitionDynamicSchemaRequest) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -100,8 +106,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *FormDefinitionDynamicSchemaRequest) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -125,8 +130,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *FormDefinitionDynamicSchemaRequest) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -150,8 +154,7 @@ GetVersionNumber returns the VersionNumber field if non-nil, zero value otherwis
 
 `func (o *FormDefinitionDynamicSchemaRequest) GetVersionNumberOk() (*int64, bool)`
 
-GetVersionNumberOk returns a tuple with the VersionNumber field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetVersionNumberOk returns a tuple with the VersionNumber field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetVersionNumber
 
@@ -164,5 +167,3 @@ SetVersionNumber sets VersionNumber field to given value.
 `func (o *FormDefinitionDynamicSchemaRequest) HasVersionNumber() bool`
 
 HasVersionNumber returns a boolean if a field has been set.
-
-

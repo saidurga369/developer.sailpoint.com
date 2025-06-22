@@ -4,9 +4,16 @@ title: IdentityWithNewAccess
 pagination_label: IdentityWithNewAccess
 sidebar_label: IdentityWithNewAccess
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentityWithNewAccess', 'IdentityWithNewAccess'] 
+keywords:
+  ['python', 'Python', 'sdk', 'IdentityWithNewAccess', 'IdentityWithNewAccess']
 slug: /tools/sdk/python/v3/models/identity-with-new-access
-tags: ['SDK', 'Software Development Kit', 'IdentityWithNewAccess', 'IdentityWithNewAccess']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityWithNewAccess',
+    'IdentityWithNewAccess',
+  ]
 ---
 
 # IdentityWithNewAccess
@@ -15,10 +22,11 @@ An identity with a set of access to be added
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**identity_id** | **str** | Identity id to be checked. | [required]
-**access_refs** | [**[]IdentityWithNewAccessAccessRefsInner**](identity-with-new-access-access-refs-inner) | The list of entitlements to consider for possible violations in a preventive check. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **identity_id** | **str** | Identity id to be checked. | [required] |
+| **access_refs** | [**[]IdentityWithNewAccessAccessRefsInner**](identity-with-new-access-access-refs-inner) | The list of entitlements to consider for possible violations in a preventive check. | [required] |
+
 }
 
 ## Example
@@ -32,5 +40,5 @@ access_refs=[{type=ENTITLEMENT, id=2c918087682f9a86016839c050861ab1, name=CN=Inf
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

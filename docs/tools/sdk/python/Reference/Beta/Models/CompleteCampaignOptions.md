@@ -4,19 +4,32 @@ title: CompleteCampaignOptions
 pagination_label: CompleteCampaignOptions
 sidebar_label: CompleteCampaignOptions
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'CompleteCampaignOptions', 'BetaCompleteCampaignOptions'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'CompleteCampaignOptions',
+    'BetaCompleteCampaignOptions',
+  ]
 slug: /tools/sdk/python/beta/models/complete-campaign-options
-tags: ['SDK', 'Software Development Kit', 'CompleteCampaignOptions', 'BetaCompleteCampaignOptions']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CompleteCampaignOptions',
+    'BetaCompleteCampaignOptions',
+  ]
 ---
 
 # CompleteCampaignOptions
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**auto_complete_action** |  **Enum** [  'APPROVE',    'REVOKE' ] | Determines whether to auto-approve(APPROVE) or auto-revoke(REVOKE) upon campaign completion. | [optional] [default to 'APPROVE']
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **auto_complete_action** | **Enum** [ 'APPROVE', 'REVOKE' ] | Determines whether to auto-approve(APPROVE) or auto-revoke(REVOKE) upon campaign completion. | [optional] [default to 'APPROVE'] |
+
 }
 
 ## Example
@@ -29,5 +42,5 @@ auto_complete_action='APPROVE'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

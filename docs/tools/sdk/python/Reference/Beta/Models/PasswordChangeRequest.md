@@ -4,23 +4,36 @@ title: PasswordChangeRequest
 pagination_label: PasswordChangeRequest
 sidebar_label: PasswordChangeRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'PasswordChangeRequest', 'BetaPasswordChangeRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'PasswordChangeRequest',
+    'BetaPasswordChangeRequest',
+  ]
 slug: /tools/sdk/python/beta/models/password-change-request
-tags: ['SDK', 'Software Development Kit', 'PasswordChangeRequest', 'BetaPasswordChangeRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PasswordChangeRequest',
+    'BetaPasswordChangeRequest',
+  ]
 ---
 
 # PasswordChangeRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**identity_id** | **str** | The identity ID that requested the password change | [optional] 
-**encrypted_password** | **str** | The RSA encrypted password | [optional] 
-**public_key_id** | **str** | The encryption key ID | [optional] 
-**account_id** | **str** | Account ID of the account This is specified per account schema in the source configuration. It is used to distinguish accounts. More info can be found here https://community.sailpoint.com/t5/IdentityNow-Connectors/How-do-I-designate-an-account-attribute-as-the-Account-ID-for-a/ta-p/80350 | [optional] 
-**source_id** | **str** | The ID of the source for which identity is requesting the password change | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **identity_id** | **str** | The identity ID that requested the password change | [optional] |
+| **encrypted_password** | **str** | The RSA encrypted password | [optional] |
+| **public_key_id** | **str** | The encryption key ID | [optional] |
+| **account_id** | **str** | Account ID of the account This is specified per account schema in the source configuration. It is used to distinguish accounts. More info can be found here https://community.sailpoint.com/t5/IdentityNow-Connectors/How-do-I-designate-an-account-attribute-as-the-Account-ID-for-a/ta-p/80350 | [optional] |
+| **source_id** | **str** | The ID of the source for which identity is requesting the password change | [optional] |
+
 }
 
 ## Example
@@ -37,5 +50,5 @@ source_id='8a807d4c73c545510173c545d4b60246'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

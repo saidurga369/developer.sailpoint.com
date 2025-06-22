@@ -4,22 +4,35 @@ title: TemplateSlackCustomFields
 pagination_label: TemplateSlackCustomFields
 sidebar_label: TemplateSlackCustomFields
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'TemplateSlackCustomFields', 'BetaTemplateSlackCustomFields'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'TemplateSlackCustomFields',
+    'BetaTemplateSlackCustomFields',
+  ]
 slug: /tools/sdk/python/beta/models/template-slack-custom-fields
-tags: ['SDK', 'Software Development Kit', 'TemplateSlackCustomFields', 'BetaTemplateSlackCustomFields']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'TemplateSlackCustomFields',
+    'BetaTemplateSlackCustomFields',
+  ]
 ---
 
 # TemplateSlackCustomFields
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**request_type** | **str** |  | [optional] 
-**contains_deny** | **str** |  | [optional] 
-**campaign_id** | **str** |  | [optional] 
-**campaign_status** | **str** |  | [optional] 
+| Name                | Type    | Description | Notes      |
+| ------------------- | ------- | ----------- | ---------- |
+| **request_type**    | **str** |             | [optional] |
+| **contains_deny**   | **str** |             | [optional] |
+| **campaign_id**     | **str** |             | [optional] |
+| **campaign_status** | **str** |             | [optional] |
+
 }
 
 ## Example
@@ -35,5 +48,5 @@ campaign_status=''
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

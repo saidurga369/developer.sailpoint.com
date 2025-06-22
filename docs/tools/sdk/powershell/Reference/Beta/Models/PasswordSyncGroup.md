@@ -4,28 +4,41 @@ title: PasswordSyncGroup
 pagination_label: PasswordSyncGroup
 sidebar_label: PasswordSyncGroup
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'PasswordSyncGroup', 'BetaPasswordSyncGroup'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'PasswordSyncGroup',
+    'BetaPasswordSyncGroup',
+  ]
 slug: /tools/sdk/powershell/beta/models/password-sync-group
-tags: ['SDK', 'Software Development Kit', 'PasswordSyncGroup', 'BetaPasswordSyncGroup']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PasswordSyncGroup',
+    'BetaPasswordSyncGroup',
+  ]
 ---
-
 
 # PasswordSyncGroup
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | **String** | ID of the sync group | [optional] 
-**Name** | **String** | Name of the sync group | [optional] 
-**PasswordPolicyId** | **String** | ID of the password policy | [optional] 
-**SourceIds** | **[]String** | List of password managed sources IDs | [optional] 
-**Created** | **System.DateTime** | The date and time this sync group was created | [optional] 
-**Modified** | **System.DateTime** | The date and time this sync group was last modified | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | **String** | ID of the sync group | [optional] |
+| **Name** | **String** | Name of the sync group | [optional] |
+| **PasswordPolicyId** | **String** | ID of the password policy | [optional] |
+| **SourceIds** | **[]String** | List of password managed sources IDs | [optional] |
+| **Created** | **System.DateTime** | The date and time this sync group was created | [optional] |
+| **Modified** | **System.DateTime** | The date and time this sync group was last modified | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $PasswordSyncGroup = Initialize-BetaPasswordSyncGroup  -Id 6881f631-3bd5-4213-9c75-8e05cc3e35dd `
  -Name Password Sync Group 1 `
@@ -36,10 +49,9 @@ $PasswordSyncGroup = Initialize-BetaPasswordSyncGroup  -Id 6881f631-3bd5-4213-9c
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $PasswordSyncGroup | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

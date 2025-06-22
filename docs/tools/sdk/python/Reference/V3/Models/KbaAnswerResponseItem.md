@@ -4,21 +4,28 @@ title: KbaAnswerResponseItem
 pagination_label: KbaAnswerResponseItem
 sidebar_label: KbaAnswerResponseItem
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'KbaAnswerResponseItem', 'KbaAnswerResponseItem'] 
+keywords:
+  ['python', 'Python', 'sdk', 'KbaAnswerResponseItem', 'KbaAnswerResponseItem']
 slug: /tools/sdk/python/v3/models/kba-answer-response-item
-tags: ['SDK', 'Software Development Kit', 'KbaAnswerResponseItem', 'KbaAnswerResponseItem']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'KbaAnswerResponseItem',
+    'KbaAnswerResponseItem',
+  ]
 ---
 
 # KbaAnswerResponseItem
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Question Id | [required]
-**question** | **str** | Question description | [required]
-**has_answer** | **bool** | Denotes whether the KBA question has an answer configured for the current user | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | Question Id | [required] |
+| **question** | **str** | Question description | [required] |
+| **has_answer** | **bool** | Denotes whether the KBA question has an answer configured for the current user | [required] |
+
 }
 
 ## Example
@@ -33,5 +40,5 @@ has_answer=True
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

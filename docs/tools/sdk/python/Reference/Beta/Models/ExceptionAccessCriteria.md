@@ -4,20 +4,33 @@ title: ExceptionAccessCriteria
 pagination_label: ExceptionAccessCriteria
 sidebar_label: ExceptionAccessCriteria
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ExceptionAccessCriteria', 'BetaExceptionAccessCriteria'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ExceptionAccessCriteria',
+    'BetaExceptionAccessCriteria',
+  ]
 slug: /tools/sdk/python/beta/models/exception-access-criteria
-tags: ['SDK', 'Software Development Kit', 'ExceptionAccessCriteria', 'BetaExceptionAccessCriteria']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ExceptionAccessCriteria',
+    'BetaExceptionAccessCriteria',
+  ]
 ---
 
 # ExceptionAccessCriteria
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**left_criteria** | [**ExceptionCriteria**](exception-criteria) |  | [optional] 
-**right_criteria** | [**ExceptionCriteria**](exception-criteria) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **left_criteria** | [**ExceptionCriteria**](exception-criteria) |  | [optional] |
+| **right_criteria** | [**ExceptionCriteria**](exception-criteria) |  | [optional] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ right_criteria=sailpoint.beta.models.exception_criteria.ExceptionCriteria(
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

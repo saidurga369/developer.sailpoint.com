@@ -4,26 +4,33 @@ title: CertificationTask
 pagination_label: CertificationTask
 sidebar_label: CertificationTask
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'CertificationTask', 'V2025CertificationTask'] 
+keywords:
+  ['python', 'Python', 'sdk', 'CertificationTask', 'V2025CertificationTask']
 slug: /tools/sdk/python/v2025/models/certification-task
-tags: ['SDK', 'Software Development Kit', 'CertificationTask', 'V2025CertificationTask']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CertificationTask',
+    'V2025CertificationTask',
+  ]
 ---
 
 # CertificationTask
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The ID of the certification task. | [optional] 
-**type** |  **Enum** [  'REASSIGN',    'ADMIN_REASSIGN',    'COMPLETE_CERTIFICATION',    'FINISH_CERTIFICATION',    'COMPLETE_CAMPAIGN',    'ACTIVATE_CAMPAIGN',    'CAMPAIGN_CREATE',    'CAMPAIGN_DELETE' ] | The type of the certification task. More values may be added in the future. | [optional] 
-**target_type** |  **Enum** [  'CERTIFICATION',    'CAMPAIGN' ] | The type of item that is being operated on by this task whose ID is stored in the targetId field. | [optional] 
-**target_id** | **str** | The ID of the item being operated on by this task. | [optional] 
-**status** |  **Enum** [  'QUEUED',    'IN_PROGRESS',    'SUCCESS',    'ERROR' ] | The status of the task. | [optional] 
-**errors** | [**[]ErrorMessageDto**](error-message-dto) | List of error messages | [optional] 
-**reassignment_trail_dtos** | [**[]ReassignmentTrailDTO**](reassignment-trail-dto) | Reassignment trails that lead to self certification identity | [optional] 
-**created** | **datetime** | The date and time on which this task was created. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The ID of the certification task. | [optional] |
+| **type** | **Enum** [ 'REASSIGN', 'ADMIN_REASSIGN', 'COMPLETE_CERTIFICATION', 'FINISH_CERTIFICATION', 'COMPLETE_CAMPAIGN', 'ACTIVATE_CAMPAIGN', 'CAMPAIGN_CREATE', 'CAMPAIGN_DELETE' ] | The type of the certification task. More values may be added in the future. | [optional] |
+| **target_type** | **Enum** [ 'CERTIFICATION', 'CAMPAIGN' ] | The type of item that is being operated on by this task whose ID is stored in the targetId field. | [optional] |
+| **target_id** | **str** | The ID of the item being operated on by this task. | [optional] |
+| **status** | **Enum** [ 'QUEUED', 'IN_PROGRESS', 'SUCCESS', 'ERROR' ] | The status of the task. | [optional] |
+| **errors** | [**[]ErrorMessageDto**](error-message-dto) | List of error messages | [optional] |
+| **reassignment_trail_dtos** | [**[]ReassignmentTrailDTO**](reassignment-trail-dto) | Reassignment trails that lead to self certification identity | [optional] |
+| **created** | **datetime** | The date and time on which this task was created. | [optional] |
+
 }
 
 ## Example
@@ -43,5 +50,5 @@ created='2020-09-24T18:10:47.693Z'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

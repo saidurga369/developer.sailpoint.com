@@ -4,19 +4,32 @@ title: RoleMiningSessionStatus
 pagination_label: RoleMiningSessionStatus
 sidebar_label: RoleMiningSessionStatus
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RoleMiningSessionStatus', 'V2024RoleMiningSessionStatus'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'RoleMiningSessionStatus',
+    'V2024RoleMiningSessionStatus',
+  ]
 slug: /tools/sdk/python/v2024/models/role-mining-session-status
-tags: ['SDK', 'Software Development Kit', 'RoleMiningSessionStatus', 'V2024RoleMiningSessionStatus']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningSessionStatus',
+    'V2024RoleMiningSessionStatus',
+  ]
 ---
 
 # RoleMiningSessionStatus
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**state** | [**RoleMiningSessionState**](role-mining-session-state) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **state** | [**RoleMiningSessionState**](role-mining-session-state) |  | [optional] |
+
 }
 
 ## Example
@@ -29,5 +42,5 @@ state='CREATED'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

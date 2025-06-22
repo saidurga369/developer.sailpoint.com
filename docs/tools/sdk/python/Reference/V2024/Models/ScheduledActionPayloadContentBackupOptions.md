@@ -4,9 +4,22 @@ title: ScheduledActionPayloadContentBackupOptions
 pagination_label: ScheduledActionPayloadContentBackupOptions
 sidebar_label: ScheduledActionPayloadContentBackupOptions
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ScheduledActionPayloadContentBackupOptions', 'V2024ScheduledActionPayloadContentBackupOptions'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ScheduledActionPayloadContentBackupOptions',
+    'V2024ScheduledActionPayloadContentBackupOptions',
+  ]
 slug: /tools/sdk/python/v2024/models/scheduled-action-payload-content-backup-options
-tags: ['SDK', 'Software Development Kit', 'ScheduledActionPayloadContentBackupOptions', 'V2024ScheduledActionPayloadContentBackupOptions']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ScheduledActionPayloadContentBackupOptions',
+    'V2024ScheduledActionPayloadContentBackupOptions',
+  ]
 ---
 
 # ScheduledActionPayloadContentBackupOptions
@@ -15,10 +28,11 @@ Options for BACKUP type jobs. Required for BACKUP jobs.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**include_types** | **[]str** | Object types that are to be included in the backup. | [optional] 
-**object_options** | [**map[string]ScheduledActionResponseContentBackupOptionsObjectOptionsValue**](scheduled-action-response-content-backup-options-object-options-value) | Map of objectType string to the options to be passed to the target service for that objectType. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **include_types** | **[]str** | Object types that are to be included in the backup. | [optional] |
+| **object_options** | [**map[string]ScheduledActionResponseContentBackupOptionsObjectOptionsValue**](scheduled-action-response-content-backup-options-object-options-value) | Map of objectType string to the options to be passed to the target service for that objectType. | [optional] |
+
 }
 
 ## Example
@@ -32,5 +46,5 @@ object_options={SOURCE={includedNames=[Source1, Source2]}, ROLE={includedNames=[
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

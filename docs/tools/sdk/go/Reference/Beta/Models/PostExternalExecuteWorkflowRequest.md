@@ -4,18 +4,31 @@ title: PostExternalExecuteWorkflowRequest
 pagination_label: PostExternalExecuteWorkflowRequest
 sidebar_label: PostExternalExecuteWorkflowRequest
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'PostExternalExecuteWorkflowRequest', 'BetaPostExternalExecuteWorkflowRequest'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'PostExternalExecuteWorkflowRequest',
+    'BetaPostExternalExecuteWorkflowRequest',
+  ]
 slug: /tools/sdk/go/beta/models/post-external-execute-workflow-request
-tags: ['SDK', 'Software Development Kit', 'PostExternalExecuteWorkflowRequest', 'BetaPostExternalExecuteWorkflowRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PostExternalExecuteWorkflowRequest',
+    'BetaPostExternalExecuteWorkflowRequest',
+  ]
 ---
 
 # PostExternalExecuteWorkflowRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Input** | Pointer to **map[string]interface{}** | The input for the workflow | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Input** | Pointer to **map[string]interface{}** | The input for the workflow | [optional] |
 
 ## Methods
 
@@ -23,18 +36,13 @@ Name | Type | Description | Notes
 
 `func NewPostExternalExecuteWorkflowRequest() *PostExternalExecuteWorkflowRequest`
 
-NewPostExternalExecuteWorkflowRequest instantiates a new PostExternalExecuteWorkflowRequest object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewPostExternalExecuteWorkflowRequest instantiates a new PostExternalExecuteWorkflowRequest object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewPostExternalExecuteWorkflowRequestWithDefaults
 
 `func NewPostExternalExecuteWorkflowRequestWithDefaults() *PostExternalExecuteWorkflowRequest`
 
-NewPostExternalExecuteWorkflowRequestWithDefaults instantiates a new PostExternalExecuteWorkflowRequest object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewPostExternalExecuteWorkflowRequestWithDefaults instantiates a new PostExternalExecuteWorkflowRequest object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetInput
 
@@ -46,8 +54,7 @@ GetInput returns the Input field if non-nil, zero value otherwise.
 
 `func (o *PostExternalExecuteWorkflowRequest) GetInputOk() (*map[string]interface{}, bool)`
 
-GetInputOk returns a tuple with the Input field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetInputOk returns a tuple with the Input field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetInput
 
@@ -60,5 +67,3 @@ SetInput sets Input field to given value.
 `func (o *PostExternalExecuteWorkflowRequest) HasInput() bool`
 
 HasInput returns a boolean if a field has been set.
-
-

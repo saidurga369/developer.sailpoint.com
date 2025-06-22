@@ -4,22 +4,23 @@ title: OriginalRequest
 pagination_label: OriginalRequest
 sidebar_label: OriginalRequest
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'OriginalRequest', 'V2025OriginalRequest'] 
+keywords: ['go', 'Golang', 'sdk', 'OriginalRequest', 'V2025OriginalRequest']
 slug: /tools/sdk/go/v2025/models/original-request
-tags: ['SDK', 'Software Development Kit', 'OriginalRequest', 'V2025OriginalRequest']
+tags:
+  ['SDK', 'Software Development Kit', 'OriginalRequest', 'V2025OriginalRequest']
 ---
 
 # OriginalRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**AccountId** | Pointer to **string** | Account ID. | [optional] 
-**Result** | Pointer to [**Result**](result) |  | [optional] 
-**AttributeRequests** | Pointer to [**[]AttributeRequest**](attribute-request) | Attribute changes requested for account. | [optional] 
-**Op** | Pointer to **string** | Operation used. | [optional] 
-**Source** | Pointer to [**AccountSource**](account-source) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **AccountId** | Pointer to **string** | Account ID. | [optional] |
+| **Result** | Pointer to [**Result**](result) |  | [optional] |
+| **AttributeRequests** | Pointer to [**[]AttributeRequest**](attribute-request) | Attribute changes requested for account. | [optional] |
+| **Op** | Pointer to **string** | Operation used. | [optional] |
+| **Source** | Pointer to [**AccountSource**](account-source) |  | [optional] |
 
 ## Methods
 
@@ -27,18 +28,13 @@ Name | Type | Description | Notes
 
 `func NewOriginalRequest() *OriginalRequest`
 
-NewOriginalRequest instantiates a new OriginalRequest object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewOriginalRequest instantiates a new OriginalRequest object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewOriginalRequestWithDefaults
 
 `func NewOriginalRequestWithDefaults() *OriginalRequest`
 
-NewOriginalRequestWithDefaults instantiates a new OriginalRequest object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewOriginalRequestWithDefaults instantiates a new OriginalRequest object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetAccountId
 
@@ -50,8 +46,7 @@ GetAccountId returns the AccountId field if non-nil, zero value otherwise.
 
 `func (o *OriginalRequest) GetAccountIdOk() (*string, bool)`
 
-GetAccountIdOk returns a tuple with the AccountId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountIdOk returns a tuple with the AccountId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountId
 
@@ -75,8 +70,7 @@ GetResult returns the Result field if non-nil, zero value otherwise.
 
 `func (o *OriginalRequest) GetResultOk() (*Result, bool)`
 
-GetResultOk returns a tuple with the Result field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetResultOk returns a tuple with the Result field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetResult
 
@@ -100,8 +94,7 @@ GetAttributeRequests returns the AttributeRequests field if non-nil, zero value 
 
 `func (o *OriginalRequest) GetAttributeRequestsOk() (*[]AttributeRequest, bool)`
 
-GetAttributeRequestsOk returns a tuple with the AttributeRequests field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributeRequestsOk returns a tuple with the AttributeRequests field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributeRequests
 
@@ -125,8 +118,7 @@ GetOp returns the Op field if non-nil, zero value otherwise.
 
 `func (o *OriginalRequest) GetOpOk() (*string, bool)`
 
-GetOpOk returns a tuple with the Op field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOpOk returns a tuple with the Op field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOp
 
@@ -150,8 +142,7 @@ GetSource returns the Source field if non-nil, zero value otherwise.
 
 `func (o *OriginalRequest) GetSourceOk() (*AccountSource, bool)`
 
-GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSource
 
@@ -164,5 +155,3 @@ SetSource sets Source field to given value.
 `func (o *OriginalRequest) HasSource() bool`
 
 HasSource returns a boolean if a field has been set.
-
-

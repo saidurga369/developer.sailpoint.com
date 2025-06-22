@@ -4,21 +4,22 @@ title: AccessItemDiff
 pagination_label: AccessItemDiff
 sidebar_label: AccessItemDiff
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessItemDiff', 'BetaAccessItemDiff'] 
+keywords: ['go', 'Golang', 'sdk', 'AccessItemDiff', 'BetaAccessItemDiff']
 slug: /tools/sdk/go/beta/models/access-item-diff
-tags: ['SDK', 'Software Development Kit', 'AccessItemDiff', 'BetaAccessItemDiff']
+tags:
+  ['SDK', 'Software Development Kit', 'AccessItemDiff', 'BetaAccessItemDiff']
 ---
 
 # AccessItemDiff
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | the id of the access item | [optional] 
-**EventType** | Pointer to **string** |  | [optional] 
-**DisplayName** | Pointer to **string** | the display name of the access item | [optional] 
-**SourceName** | Pointer to **string** | the source name of the access item | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | the id of the access item | [optional] |
+| **EventType** | Pointer to **string** |  | [optional] |
+| **DisplayName** | Pointer to **string** | the display name of the access item | [optional] |
+| **SourceName** | Pointer to **string** | the source name of the access item | [optional] |
 
 ## Methods
 
@@ -26,18 +27,13 @@ Name | Type | Description | Notes
 
 `func NewAccessItemDiff() *AccessItemDiff`
 
-NewAccessItemDiff instantiates a new AccessItemDiff object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessItemDiff instantiates a new AccessItemDiff object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessItemDiffWithDefaults
 
 `func NewAccessItemDiffWithDefaults() *AccessItemDiff`
 
-NewAccessItemDiffWithDefaults instantiates a new AccessItemDiff object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessItemDiffWithDefaults instantiates a new AccessItemDiff object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -49,8 +45,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *AccessItemDiff) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -74,8 +69,7 @@ GetEventType returns the EventType field if non-nil, zero value otherwise.
 
 `func (o *AccessItemDiff) GetEventTypeOk() (*string, bool)`
 
-GetEventTypeOk returns a tuple with the EventType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEventTypeOk returns a tuple with the EventType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEventType
 
@@ -99,8 +93,7 @@ GetDisplayName returns the DisplayName field if non-nil, zero value otherwise.
 
 `func (o *AccessItemDiff) GetDisplayNameOk() (*string, bool)`
 
-GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayName
 
@@ -124,8 +117,7 @@ GetSourceName returns the SourceName field if non-nil, zero value otherwise.
 
 `func (o *AccessItemDiff) GetSourceNameOk() (*string, bool)`
 
-GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceNameOk returns a tuple with the SourceName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceName
 
@@ -138,5 +130,3 @@ SetSourceName sets SourceName field to given value.
 `func (o *AccessItemDiff) HasSourceName() bool`
 
 HasSourceName returns a boolean if a field has been set.
-
-

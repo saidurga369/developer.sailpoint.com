@@ -4,21 +4,34 @@ title: RoleMiningEntitlementRef
 pagination_label: RoleMiningEntitlementRef
 sidebar_label: RoleMiningEntitlementRef
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleMiningEntitlementRef', 'BetaRoleMiningEntitlementRef'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'RoleMiningEntitlementRef',
+    'BetaRoleMiningEntitlementRef',
+  ]
 slug: /tools/sdk/go/beta/models/role-mining-entitlement-ref
-tags: ['SDK', 'Software Development Kit', 'RoleMiningEntitlementRef', 'BetaRoleMiningEntitlementRef']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningEntitlementRef',
+    'BetaRoleMiningEntitlementRef',
+  ]
 ---
 
 # RoleMiningEntitlementRef
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Id of the entitlement | [optional] 
-**Name** | Pointer to **string** | Name of the entitlement | [optional] 
-**Description** | Pointer to **NullableString** | Description forthe entitlement | [optional] 
-**Attribute** | Pointer to **string** | The entitlement attribute | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Id of the entitlement | [optional] |
+| **Name** | Pointer to **string** | Name of the entitlement | [optional] |
+| **Description** | Pointer to **NullableString** | Description forthe entitlement | [optional] |
+| **Attribute** | Pointer to **string** | The entitlement attribute | [optional] |
 
 ## Methods
 
@@ -26,18 +39,13 @@ Name | Type | Description | Notes
 
 `func NewRoleMiningEntitlementRef() *RoleMiningEntitlementRef`
 
-NewRoleMiningEntitlementRef instantiates a new RoleMiningEntitlementRef object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleMiningEntitlementRef instantiates a new RoleMiningEntitlementRef object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleMiningEntitlementRefWithDefaults
 
 `func NewRoleMiningEntitlementRefWithDefaults() *RoleMiningEntitlementRef`
 
-NewRoleMiningEntitlementRefWithDefaults instantiates a new RoleMiningEntitlementRef object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleMiningEntitlementRefWithDefaults instantiates a new RoleMiningEntitlementRef object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -49,8 +57,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningEntitlementRef) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -74,8 +81,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningEntitlementRef) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -99,8 +105,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningEntitlementRef) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -118,12 +123,14 @@ HasDescription returns a boolean if a field has been set.
 
 `func (o *RoleMiningEntitlementRef) SetDescriptionNil(b bool)`
 
- SetDescriptionNil sets the value for Description to be an explicit nil
+SetDescriptionNil sets the value for Description to be an explicit nil
 
 ### UnsetDescription
+
 `func (o *RoleMiningEntitlementRef) UnsetDescription()`
 
 UnsetDescription ensures that no value is present for Description, not even an explicit nil
+
 ### GetAttribute
 
 `func (o *RoleMiningEntitlementRef) GetAttribute() string`
@@ -134,8 +141,7 @@ GetAttribute returns the Attribute field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningEntitlementRef) GetAttributeOk() (*string, bool)`
 
-GetAttributeOk returns a tuple with the Attribute field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributeOk returns a tuple with the Attribute field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttribute
 
@@ -148,5 +154,3 @@ SetAttribute sets Attribute field to given value.
 `func (o *RoleMiningEntitlementRef) HasAttribute() bool`
 
 HasAttribute returns a boolean if a field has been set.
-
-

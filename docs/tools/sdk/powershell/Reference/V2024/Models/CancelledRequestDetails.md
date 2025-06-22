@@ -4,25 +4,38 @@ title: CancelledRequestDetails
 pagination_label: CancelledRequestDetails
 sidebar_label: CancelledRequestDetails
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'CancelledRequestDetails', 'V2024CancelledRequestDetails'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'CancelledRequestDetails',
+    'V2024CancelledRequestDetails',
+  ]
 slug: /tools/sdk/powershell/v2024/models/cancelled-request-details
-tags: ['SDK', 'Software Development Kit', 'CancelledRequestDetails', 'V2024CancelledRequestDetails']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'CancelledRequestDetails',
+    'V2024CancelledRequestDetails',
+  ]
 ---
-
 
 # CancelledRequestDetails
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Comment** | **String** | Comment made by the owner when cancelling the associated request. | [optional] 
-**Owner** | [**OwnerDto**](owner-dto) |  | [optional] 
-**Modified** | **System.DateTime** | Date comment was added by the owner when cancelling the associated request. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Comment** | **String** | Comment made by the owner when cancelling the associated request. | [optional] |
+| **Owner** | [**OwnerDto**](owner-dto) |  | [optional] |
+| **Modified** | **System.DateTime** | Date comment was added by the owner when cancelling the associated request. | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $CancelledRequestDetails = Initialize-V2024CancelledRequestDetails  -Comment This request must be cancelled. `
  -Owner null `
@@ -30,10 +43,9 @@ $CancelledRequestDetails = Initialize-V2024CancelledRequestDetails  -Comment Thi
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $CancelledRequestDetails | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

@@ -4,9 +4,22 @@ title: BulkIdentitiesAccountsResponse
 pagination_label: BulkIdentitiesAccountsResponse
 sidebar_label: BulkIdentitiesAccountsResponse
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'BulkIdentitiesAccountsResponse', 'V2025BulkIdentitiesAccountsResponse'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'BulkIdentitiesAccountsResponse',
+    'V2025BulkIdentitiesAccountsResponse',
+  ]
 slug: /tools/sdk/python/v2025/models/bulk-identities-accounts-response
-tags: ['SDK', 'Software Development Kit', 'BulkIdentitiesAccountsResponse', 'V2025BulkIdentitiesAccountsResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'BulkIdentitiesAccountsResponse',
+    'V2025BulkIdentitiesAccountsResponse',
+  ]
 ---
 
 # BulkIdentitiesAccountsResponse
@@ -15,11 +28,12 @@ Bulk response object.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Identifier of bulk request item. | [optional] 
-**status_code** | **int** | Response status value. | [optional] 
-**message** | **str** | Status containing additional context information about failures. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | Identifier of bulk request item. | [optional] |
+| **status_code** | **int** | Response status value. | [optional] |
+| **message** | **str** | Status containing additional context information about failures. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ message='Referenced identity "2c9180858082150f0180893dbaf553fe" was not found.'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

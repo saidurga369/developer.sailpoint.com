@@ -4,24 +4,31 @@ title: PasswordSyncGroup
 pagination_label: PasswordSyncGroup
 sidebar_label: PasswordSyncGroup
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'PasswordSyncGroup', 'V2025PasswordSyncGroup'] 
+keywords:
+  ['python', 'Python', 'sdk', 'PasswordSyncGroup', 'V2025PasswordSyncGroup']
 slug: /tools/sdk/python/v2025/models/password-sync-group
-tags: ['SDK', 'Software Development Kit', 'PasswordSyncGroup', 'V2025PasswordSyncGroup']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PasswordSyncGroup',
+    'V2025PasswordSyncGroup',
+  ]
 ---
 
 # PasswordSyncGroup
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | ID of the sync group | [optional] 
-**name** | **str** | Name of the sync group | [optional] 
-**password_policy_id** | **str** | ID of the password policy | [optional] 
-**source_ids** | **[]str** | List of password managed sources IDs | [optional] 
-**created** | **datetime** | The date and time this sync group was created | [optional] 
-**modified** | **datetime** | The date and time this sync group was last modified | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | ID of the sync group | [optional] |
+| **name** | **str** | Name of the sync group | [optional] |
+| **password_policy_id** | **str** | ID of the password policy | [optional] |
+| **source_ids** | **[]str** | List of password managed sources IDs | [optional] |
+| **created** | **datetime** | The date and time this sync group was created | [optional] |
+| **modified** | **datetime** | The date and time this sync group was last modified | [optional] |
+
 }
 
 ## Example
@@ -39,5 +46,5 @@ modified='2023-03-16T04:00Z'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

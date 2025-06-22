@@ -4,21 +4,34 @@ title: SendTestNotificationRequestDto
 pagination_label: SendTestNotificationRequestDto
 sidebar_label: SendTestNotificationRequestDto
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SendTestNotificationRequestDto', 'V2025SendTestNotificationRequestDto'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'SendTestNotificationRequestDto',
+    'V2025SendTestNotificationRequestDto',
+  ]
 slug: /tools/sdk/python/v2025/models/send-test-notification-request-dto
-tags: ['SDK', 'Software Development Kit', 'SendTestNotificationRequestDto', 'V2025SendTestNotificationRequestDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SendTestNotificationRequestDto',
+    'V2025SendTestNotificationRequestDto',
+  ]
 ---
 
 # SendTestNotificationRequestDto
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**key** | **str** | The template notification key. | [optional] 
-**medium** |  **Enum** [  'EMAIL',    'SLACK',    'TEAMS' ] | The notification medium. Has to be one of the following enum values. | [optional] 
-**context** | **object** | A Json object that denotes the context specific to the template. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **key** | **str** | The template notification key. | [optional] |
+| **medium** | **Enum** [ 'EMAIL', 'SLACK', 'TEAMS' ] | The notification medium. Has to be one of the following enum values. | [optional] |
+| **context** | **object** | A Json object that denotes the context specific to the template. | [optional] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ context=None
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

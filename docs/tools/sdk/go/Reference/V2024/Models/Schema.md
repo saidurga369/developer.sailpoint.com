@@ -4,7 +4,7 @@ title: Schema
 pagination_label: Schema
 sidebar_label: Schema
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Schema', 'V2024Schema'] 
+keywords: ['go', 'Golang', 'sdk', 'Schema', 'V2024Schema']
 slug: /tools/sdk/go/v2024/models/schema
 tags: ['SDK', 'Software Development Kit', 'Schema', 'V2024Schema']
 ---
@@ -13,20 +13,20 @@ tags: ['SDK', 'Software Development Kit', 'Schema', 'V2024Schema']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The id of the Schema. | [optional] 
-**Name** | Pointer to **string** | The name of the Schema. | [optional] 
-**NativeObjectType** | Pointer to **string** | The name of the object type on the native system that the schema represents. | [optional] 
-**IdentityAttribute** | Pointer to **string** | The name of the attribute used to calculate the unique identifier for an object in the schema. | [optional] 
-**DisplayAttribute** | Pointer to **string** | The name of the attribute used to calculate the display value for an object in the schema. | [optional] 
-**HierarchyAttribute** | Pointer to **NullableString** | The name of the attribute whose values represent other objects in a hierarchy. Only relevant to group schemas. | [optional] 
-**IncludePermissions** | Pointer to **bool** | Flag indicating whether or not the include permissions with the object data when aggregating the schema. | [optional] 
-**Features** | Pointer to **[]string** | Optional features that can be supported by a source. Modifying the features array may cause source configuration errors that are unsupportable. It is recommended to not modify this array for SailPoint supported connectors. * AUTHENTICATE: The source supports pass-through authentication. * COMPOSITE: The source supports composite source creation. * DIRECT_PERMISSIONS: The source supports returning DirectPermissions. * DISCOVER_SCHEMA: The source supports discovering schemas for users and groups. * ENABLE The source supports reading if an account is enabled or disabled. * MANAGER_LOOKUP: The source supports looking up managers as they are encountered in a feed. This is the opposite of NO_RANDOM_ACCESS. * NO_RANDOM_ACCESS: The source does not support random access and the getObject() methods should not be called and expected to perform. * PROXY: The source can serve as a proxy for another source. When an source has a proxy, all connector calls made with that source are redirected through the connector for the proxy source. * SEARCH * TEMPLATE * UNLOCK: The source supports reading if an account is locked or unlocked. * UNSTRUCTURED_TARGETS: The source supports returning unstructured Targets. * SHAREPOINT_TARGET: The source supports returning unstructured Target data for SharePoint. It will be typically used by AD, LDAP sources. * PROVISIONING: The source can both read and write accounts. Having this feature implies that the provision() method is implemented. It also means that direct and target permissions can also be provisioned if they can be returned by aggregation. * GROUP_PROVISIONING: The source can both read and write groups. Having this feature implies that the provision() method is implemented. * SYNC_PROVISIONING: The source can provision accounts synchronously. * PASSWORD: The source can provision password changes. Since sources can never read passwords, this is should only be used in conjunction with the PROVISIONING feature. * CURRENT_PASSWORD: Some source types support verification of the current password * ACCOUNT_ONLY_REQUEST: The source supports requesting accounts without entitlements. * ADDITIONAL_ACCOUNT_REQUEST: The source supports requesting additional accounts. * NO_AGGREGATION: A source that does not support aggregation. * GROUPS_HAVE_MEMBERS: The source models group memberships with a member attribute on the group object rather than a groups attribute on the account object. This effects the implementation of delta account aggregation. * NO_PERMISSIONS_PROVISIONING: Indicates that the connector cannot provision direct or target permissions for accounts. When DIRECT_PERMISSIONS and PROVISIONING features are present, it is assumed that the connector can also provision direct permissions. This feature disables that assumption and causes permission request to be converted to work items for accounts. * NO_GROUP_PERMISSIONS_PROVISIONING: Indicates that the connector cannot provision direct or target permissions for groups. When DIRECT_PERMISSIONS and PROVISIONING features are present, it is assumed that the connector can also provision direct permissions. This feature disables that assumption and causes permission request to be converted to work items for groups. * NO_UNSTRUCTURED_TARGETS_PROVISIONING: This string will be replaced by NO_GROUP_PERMISSIONS_PROVISIONING and NO_PERMISSIONS_PROVISIONING. * NO_DIRECT_PERMISSIONS_PROVISIONING: This string will be replaced by NO_GROUP_PERMISSIONS_PROVISIONING and NO_PERMISSIONS_PROVISIONING. * USES_UUID: Connectivity 2.0 flag used to indicate that the connector supports a compound naming structure. * PREFER_UUID: Used in ISC Provisioning AND Aggregation to decide if it should prefer account.uuid to account.nativeIdentity when data is read in through aggregation OR pushed out through provisioning. * ARM_SECURITY_EXTRACT: Indicates the application supports Security extracts for ARM * ARM_UTILIZATION_EXTRACT: Indicates the application supports Utilization extracts for ARM * ARM_CHANGELOG_EXTRACT: Indicates the application supports Change-log extracts for ARM | [optional] 
-**Configuration** | Pointer to **map[string]interface{}** | Holds any extra configuration data that the schema may require. | [optional] 
-**Attributes** | Pointer to [**[]AttributeDefinition**](attribute-definition) | The attribute definitions which form the schema. | [optional] 
-**Created** | Pointer to **SailPointTime** | The date the Schema was created. | [optional] 
-**Modified** | Pointer to **NullableTime** | The date the Schema was last modified. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The id of the Schema. | [optional] |
+| **Name** | Pointer to **string** | The name of the Schema. | [optional] |
+| **NativeObjectType** | Pointer to **string** | The name of the object type on the native system that the schema represents. | [optional] |
+| **IdentityAttribute** | Pointer to **string** | The name of the attribute used to calculate the unique identifier for an object in the schema. | [optional] |
+| **DisplayAttribute** | Pointer to **string** | The name of the attribute used to calculate the display value for an object in the schema. | [optional] |
+| **HierarchyAttribute** | Pointer to **NullableString** | The name of the attribute whose values represent other objects in a hierarchy. Only relevant to group schemas. | [optional] |
+| **IncludePermissions** | Pointer to **bool** | Flag indicating whether or not the include permissions with the object data when aggregating the schema. | [optional] |
+| **Features** | Pointer to **[]string** | Optional features that can be supported by a source. Modifying the features array may cause source configuration errors that are unsupportable. It is recommended to not modify this array for SailPoint supported connectors. _ AUTHENTICATE: The source supports pass-through authentication. _ COMPOSITE: The source supports composite source creation. _ DIRECT_PERMISSIONS: The source supports returning DirectPermissions. _ DISCOVER_SCHEMA: The source supports discovering schemas for users and groups. _ ENABLE The source supports reading if an account is enabled or disabled. _ MANAGER_LOOKUP: The source supports looking up managers as they are encountered in a feed. This is the opposite of NO_RANDOM_ACCESS. _ NO_RANDOM_ACCESS: The source does not support random access and the getObject() methods should not be called and expected to perform. _ PROXY: The source can serve as a proxy for another source. When an source has a proxy, all connector calls made with that source are redirected through the connector for the proxy source. _ SEARCH _ TEMPLATE _ UNLOCK: The source supports reading if an account is locked or unlocked. _ UNSTRUCTURED_TARGETS: The source supports returning unstructured Targets. _ SHAREPOINT_TARGET: The source supports returning unstructured Target data for SharePoint. It will be typically used by AD, LDAP sources. _ PROVISIONING: The source can both read and write accounts. Having this feature implies that the provision() method is implemented. It also means that direct and target permissions can also be provisioned if they can be returned by aggregation. _ GROUP_PROVISIONING: The source can both read and write groups. Having this feature implies that the provision() method is implemented. _ SYNC_PROVISIONING: The source can provision accounts synchronously. _ PASSWORD: The source can provision password changes. Since sources can never read passwords, this is should only be used in conjunction with the PROVISIONING feature. _ CURRENT_PASSWORD: Some source types support verification of the current password _ ACCOUNT_ONLY_REQUEST: The source supports requesting accounts without entitlements. _ ADDITIONAL_ACCOUNT_REQUEST: The source supports requesting additional accounts. _ NO_AGGREGATION: A source that does not support aggregation. _ GROUPS_HAVE_MEMBERS: The source models group memberships with a member attribute on the group object rather than a groups attribute on the account object. This effects the implementation of delta account aggregation. _ NO_PERMISSIONS_PROVISIONING: Indicates that the connector cannot provision direct or target permissions for accounts. When DIRECT_PERMISSIONS and PROVISIONING features are present, it is assumed that the connector can also provision direct permissions. This feature disables that assumption and causes permission request to be converted to work items for accounts. _ NO_GROUP_PERMISSIONS_PROVISIONING: Indicates that the connector cannot provision direct or target permissions for groups. When DIRECT_PERMISSIONS and PROVISIONING features are present, it is assumed that the connector can also provision direct permissions. This feature disables that assumption and causes permission request to be converted to work items for groups. _ NO_UNSTRUCTURED_TARGETS_PROVISIONING: This string will be replaced by NO_GROUP_PERMISSIONS_PROVISIONING and NO_PERMISSIONS_PROVISIONING. _ NO_DIRECT_PERMISSIONS_PROVISIONING: This string will be replaced by NO_GROUP_PERMISSIONS_PROVISIONING and NO_PERMISSIONS_PROVISIONING. _ USES_UUID: Connectivity 2.0 flag used to indicate that the connector supports a compound naming structure. _ PREFER_UUID: Used in ISC Provisioning AND Aggregation to decide if it should prefer account.uuid to account.nativeIdentity when data is read in through aggregation OR pushed out through provisioning. _ ARM_SECURITY_EXTRACT: Indicates the application supports Security extracts for ARM _ ARM_UTILIZATION_EXTRACT: Indicates the application supports Utilization extracts for ARM \* ARM_CHANGELOG_EXTRACT: Indicates the application supports Change-log extracts for ARM | [optional] |
+| **Configuration** | Pointer to **map[string]interface{}** | Holds any extra configuration data that the schema may require. | [optional] |
+| **Attributes** | Pointer to [**[]AttributeDefinition**](attribute-definition) | The attribute definitions which form the schema. | [optional] |
+| **Created** | Pointer to **SailPointTime** | The date the Schema was created. | [optional] |
+| **Modified** | Pointer to **NullableTime** | The date the Schema was last modified. | [optional] |
 
 ## Methods
 
@@ -34,18 +34,13 @@ Name | Type | Description | Notes
 
 `func NewSchema() *Schema`
 
-NewSchema instantiates a new Schema object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSchema instantiates a new Schema object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSchemaWithDefaults
 
 `func NewSchemaWithDefaults() *Schema`
 
-NewSchemaWithDefaults instantiates a new Schema object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSchemaWithDefaults instantiates a new Schema object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -57,8 +52,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *Schema) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -82,8 +76,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *Schema) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -107,8 +100,7 @@ GetNativeObjectType returns the NativeObjectType field if non-nil, zero value ot
 
 `func (o *Schema) GetNativeObjectTypeOk() (*string, bool)`
 
-GetNativeObjectTypeOk returns a tuple with the NativeObjectType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNativeObjectTypeOk returns a tuple with the NativeObjectType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNativeObjectType
 
@@ -132,8 +124,7 @@ GetIdentityAttribute returns the IdentityAttribute field if non-nil, zero value 
 
 `func (o *Schema) GetIdentityAttributeOk() (*string, bool)`
 
-GetIdentityAttributeOk returns a tuple with the IdentityAttribute field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityAttributeOk returns a tuple with the IdentityAttribute field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityAttribute
 
@@ -157,8 +148,7 @@ GetDisplayAttribute returns the DisplayAttribute field if non-nil, zero value ot
 
 `func (o *Schema) GetDisplayAttributeOk() (*string, bool)`
 
-GetDisplayAttributeOk returns a tuple with the DisplayAttribute field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayAttributeOk returns a tuple with the DisplayAttribute field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayAttribute
 
@@ -182,8 +172,7 @@ GetHierarchyAttribute returns the HierarchyAttribute field if non-nil, zero valu
 
 `func (o *Schema) GetHierarchyAttributeOk() (*string, bool)`
 
-GetHierarchyAttributeOk returns a tuple with the HierarchyAttribute field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetHierarchyAttributeOk returns a tuple with the HierarchyAttribute field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetHierarchyAttribute
 
@@ -201,12 +190,14 @@ HasHierarchyAttribute returns a boolean if a field has been set.
 
 `func (o *Schema) SetHierarchyAttributeNil(b bool)`
 
- SetHierarchyAttributeNil sets the value for HierarchyAttribute to be an explicit nil
+SetHierarchyAttributeNil sets the value for HierarchyAttribute to be an explicit nil
 
 ### UnsetHierarchyAttribute
+
 `func (o *Schema) UnsetHierarchyAttribute()`
 
 UnsetHierarchyAttribute ensures that no value is present for HierarchyAttribute, not even an explicit nil
+
 ### GetIncludePermissions
 
 `func (o *Schema) GetIncludePermissions() bool`
@@ -217,8 +208,7 @@ GetIncludePermissions returns the IncludePermissions field if non-nil, zero valu
 
 `func (o *Schema) GetIncludePermissionsOk() (*bool, bool)`
 
-GetIncludePermissionsOk returns a tuple with the IncludePermissions field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIncludePermissionsOk returns a tuple with the IncludePermissions field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIncludePermissions
 
@@ -242,8 +232,7 @@ GetFeatures returns the Features field if non-nil, zero value otherwise.
 
 `func (o *Schema) GetFeaturesOk() (*[]string, bool)`
 
-GetFeaturesOk returns a tuple with the Features field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFeaturesOk returns a tuple with the Features field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFeatures
 
@@ -267,8 +256,7 @@ GetConfiguration returns the Configuration field if non-nil, zero value otherwis
 
 `func (o *Schema) GetConfigurationOk() (*map[string]interface{}, bool)`
 
-GetConfigurationOk returns a tuple with the Configuration field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConfigurationOk returns a tuple with the Configuration field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConfiguration
 
@@ -292,8 +280,7 @@ GetAttributes returns the Attributes field if non-nil, zero value otherwise.
 
 `func (o *Schema) GetAttributesOk() (*[]AttributeDefinition, bool)`
 
-GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributes
 
@@ -317,8 +304,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *Schema) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -342,8 +328,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *Schema) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -361,10 +346,10 @@ HasModified returns a boolean if a field has been set.
 
 `func (o *Schema) SetModifiedNil(b bool)`
 
- SetModifiedNil sets the value for Modified to be an explicit nil
+SetModifiedNil sets the value for Modified to be an explicit nil
 
 ### UnsetModified
+
 `func (o *Schema) UnsetModified()`
 
 UnsetModified ensures that no value is present for Modified, not even an explicit nil
-

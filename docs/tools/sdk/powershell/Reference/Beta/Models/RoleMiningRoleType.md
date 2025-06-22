@@ -4,21 +4,30 @@ title: RoleMiningRoleType
 pagination_label: RoleMiningRoleType
 sidebar_label: RoleMiningRoleType
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'RoleMiningRoleType', 'BetaRoleMiningRoleType'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'RoleMiningRoleType',
+    'BetaRoleMiningRoleType',
+  ]
 slug: /tools/sdk/powershell/beta/models/role-mining-role-type
-tags: ['SDK', 'Software Development Kit', 'RoleMiningRoleType', 'BetaRoleMiningRoleType']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningRoleType',
+    'BetaRoleMiningRoleType',
+  ]
 ---
-
 
 # RoleMiningRoleType
 
 ## Enum
 
+- `SPECIALIZED` (value: `"SPECIALIZED"`)
 
-* `SPECIALIZED` (value: `"SPECIALIZED"`)
+- `COMMON` (value: `"COMMON"`)
 
-* `COMMON` (value: `"COMMON"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

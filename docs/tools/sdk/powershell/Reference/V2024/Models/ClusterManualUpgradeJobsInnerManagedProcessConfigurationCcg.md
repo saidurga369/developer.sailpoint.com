@@ -4,27 +4,40 @@ title: ClusterManualUpgradeJobsInnerManagedProcessConfigurationCcg
 pagination_label: ClusterManualUpgradeJobsInnerManagedProcessConfigurationCcg
 sidebar_label: ClusterManualUpgradeJobsInnerManagedProcessConfigurationCcg
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'ClusterManualUpgradeJobsInnerManagedProcessConfigurationCcg', 'V2024ClusterManualUpgradeJobsInnerManagedProcessConfigurationCcg'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'ClusterManualUpgradeJobsInnerManagedProcessConfigurationCcg',
+    'V2024ClusterManualUpgradeJobsInnerManagedProcessConfigurationCcg',
+  ]
 slug: /tools/sdk/powershell/v2024/models/cluster-manual-upgrade-jobs-inner-managed-process-configuration-ccg
-tags: ['SDK', 'Software Development Kit', 'ClusterManualUpgradeJobsInnerManagedProcessConfigurationCcg', 'V2024ClusterManualUpgradeJobsInnerManagedProcessConfigurationCcg']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ClusterManualUpgradeJobsInnerManagedProcessConfigurationCcg',
+    'V2024ClusterManualUpgradeJobsInnerManagedProcessConfigurationCcg',
+  ]
 ---
-
 
 # ClusterManualUpgradeJobsInnerManagedProcessConfigurationCcg
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Version** | **String** | Version of the 'ccg' process. | [required]
-**Path** | **String** | Path to the 'ccg' process. | [required]
-**Description** | **String** | A brief description of the 'ccg' process. | [required]
-**RestartNeeded** | **Boolean** | Indicates whether the process needs to be restarted. | [required]
-**Dependencies** | **map[string]String** | A map of dependencies for the 'ccg' process. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Version** | **String** | Version of the 'ccg' process. | [required] |
+| **Path** | **String** | Path to the 'ccg' process. | [required] |
+| **Description** | **String** | A brief description of the 'ccg' process. | [required] |
+| **RestartNeeded** | **Boolean** | Indicates whether the process needs to be restarted. | [required] |
+| **Dependencies** | **map[string]String** | A map of dependencies for the 'ccg' process. | [required] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $ClusterManualUpgradeJobsInnerManagedProcessConfigurationCcg = Initialize-V2024ClusterManualUpgradeJobsInnerManagedProcessConfigurationCcg  -Version 1798_1054_241.0.0 `
  -Path sailpoint/ccg `
@@ -34,10 +47,9 @@ $ClusterManualUpgradeJobsInnerManagedProcessConfigurationCcg = Initialize-V2024C
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $ClusterManualUpgradeJobsInnerManagedProcessConfigurationCcg | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

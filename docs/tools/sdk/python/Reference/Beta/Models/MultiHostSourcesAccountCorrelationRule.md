@@ -4,9 +4,22 @@ title: MultiHostSourcesAccountCorrelationRule
 pagination_label: MultiHostSourcesAccountCorrelationRule
 sidebar_label: MultiHostSourcesAccountCorrelationRule
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'MultiHostSourcesAccountCorrelationRule', 'BetaMultiHostSourcesAccountCorrelationRule'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'MultiHostSourcesAccountCorrelationRule',
+    'BetaMultiHostSourcesAccountCorrelationRule',
+  ]
 slug: /tools/sdk/python/beta/models/multi-host-sources-account-correlation-rule
-tags: ['SDK', 'Software Development Kit', 'MultiHostSourcesAccountCorrelationRule', 'BetaMultiHostSourcesAccountCorrelationRule']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'MultiHostSourcesAccountCorrelationRule',
+    'BetaMultiHostSourcesAccountCorrelationRule',
+  ]
 ---
 
 # MultiHostSourcesAccountCorrelationRule
@@ -15,11 +28,12 @@ Reference to a rule that can do COMPLEX correlation. Only use this rule when you
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'RULE' ] | Type of object being referenced. | [optional] 
-**id** | **str** | Rule ID. | [optional] 
-**name** | **str** | Rule's human-readable display name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'RULE' ] | Type of object being referenced. | [optional] |
+| **id** | **str** | Rule ID. | [optional] |
+| **name** | **str** | Rule's human-readable display name. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Example Rule'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

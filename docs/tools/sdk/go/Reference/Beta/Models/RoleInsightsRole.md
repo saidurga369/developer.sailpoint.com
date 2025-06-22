@@ -4,22 +4,28 @@ title: RoleInsightsRole
 pagination_label: RoleInsightsRole
 sidebar_label: RoleInsightsRole
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleInsightsRole', 'BetaRoleInsightsRole'] 
+keywords: ['go', 'Golang', 'sdk', 'RoleInsightsRole', 'BetaRoleInsightsRole']
 slug: /tools/sdk/go/beta/models/role-insights-role
-tags: ['SDK', 'Software Development Kit', 'RoleInsightsRole', 'BetaRoleInsightsRole']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleInsightsRole',
+    'BetaRoleInsightsRole',
+  ]
 ---
 
 # RoleInsightsRole
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | Pointer to **string** | Role name | [optional] 
-**Id** | Pointer to **string** | Role id | [optional] 
-**Description** | Pointer to **string** | Role description | [optional] 
-**OwnerName** | Pointer to **string** | Role owner name | [optional] 
-**OwnerId** | Pointer to **string** | Role owner id | [optional] 
+| Name            | Type                  | Description      | Notes      |
+| --------------- | --------------------- | ---------------- | ---------- |
+| **Name**        | Pointer to **string** | Role name        | [optional] |
+| **Id**          | Pointer to **string** | Role id          | [optional] |
+| **Description** | Pointer to **string** | Role description | [optional] |
+| **OwnerName**   | Pointer to **string** | Role owner name  | [optional] |
+| **OwnerId**     | Pointer to **string** | Role owner id    | [optional] |
 
 ## Methods
 
@@ -27,18 +33,13 @@ Name | Type | Description | Notes
 
 `func NewRoleInsightsRole() *RoleInsightsRole`
 
-NewRoleInsightsRole instantiates a new RoleInsightsRole object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleInsightsRole instantiates a new RoleInsightsRole object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleInsightsRoleWithDefaults
 
 `func NewRoleInsightsRoleWithDefaults() *RoleInsightsRole`
 
-NewRoleInsightsRoleWithDefaults instantiates a new RoleInsightsRole object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleInsightsRoleWithDefaults instantiates a new RoleInsightsRole object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -50,8 +51,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *RoleInsightsRole) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -75,8 +75,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *RoleInsightsRole) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -100,8 +99,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *RoleInsightsRole) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -125,8 +123,7 @@ GetOwnerName returns the OwnerName field if non-nil, zero value otherwise.
 
 `func (o *RoleInsightsRole) GetOwnerNameOk() (*string, bool)`
 
-GetOwnerNameOk returns a tuple with the OwnerName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerNameOk returns a tuple with the OwnerName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwnerName
 
@@ -150,8 +147,7 @@ GetOwnerId returns the OwnerId field if non-nil, zero value otherwise.
 
 `func (o *RoleInsightsRole) GetOwnerIdOk() (*string, bool)`
 
-GetOwnerIdOk returns a tuple with the OwnerId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerIdOk returns a tuple with the OwnerId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwnerId
 
@@ -164,5 +160,3 @@ SetOwnerId sets OwnerId field to given value.
 `func (o *RoleInsightsRole) HasOwnerId() bool`
 
 HasOwnerId returns a boolean if a field has been set.
-
-

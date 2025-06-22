@@ -4,22 +4,29 @@ title: PasswordChangeRequest
 pagination_label: PasswordChangeRequest
 sidebar_label: PasswordChangeRequest
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'PasswordChangeRequest', 'PasswordChangeRequest'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'PasswordChangeRequest', 'PasswordChangeRequest']
 slug: /tools/sdk/go/v3/models/password-change-request
-tags: ['SDK', 'Software Development Kit', 'PasswordChangeRequest', 'PasswordChangeRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PasswordChangeRequest',
+    'PasswordChangeRequest',
+  ]
 ---
 
 # PasswordChangeRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**IdentityId** | Pointer to **string** | The identity ID that requested the password change | [optional] 
-**EncryptedPassword** | Pointer to **string** | The RSA encrypted password | [optional] 
-**PublicKeyId** | Pointer to **string** | The encryption key ID | [optional] 
-**AccountId** | Pointer to **string** | Account ID of the account This is specified per account schema in the source configuration. It is used to distinguish accounts. More info can be found here https://community.sailpoint.com/t5/IdentityNow-Connectors/How-do-I-designate-an-account-attribute-as-the-Account-ID-for-a/ta-p/80350 | [optional] 
-**SourceId** | Pointer to **string** | The ID of the source for which identity is requesting the password change | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **IdentityId** | Pointer to **string** | The identity ID that requested the password change | [optional] |
+| **EncryptedPassword** | Pointer to **string** | The RSA encrypted password | [optional] |
+| **PublicKeyId** | Pointer to **string** | The encryption key ID | [optional] |
+| **AccountId** | Pointer to **string** | Account ID of the account This is specified per account schema in the source configuration. It is used to distinguish accounts. More info can be found here https://community.sailpoint.com/t5/IdentityNow-Connectors/How-do-I-designate-an-account-attribute-as-the-Account-ID-for-a/ta-p/80350 | [optional] |
+| **SourceId** | Pointer to **string** | The ID of the source for which identity is requesting the password change | [optional] |
 
 ## Methods
 
@@ -27,18 +34,13 @@ Name | Type | Description | Notes
 
 `func NewPasswordChangeRequest() *PasswordChangeRequest`
 
-NewPasswordChangeRequest instantiates a new PasswordChangeRequest object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewPasswordChangeRequest instantiates a new PasswordChangeRequest object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewPasswordChangeRequestWithDefaults
 
 `func NewPasswordChangeRequestWithDefaults() *PasswordChangeRequest`
 
-NewPasswordChangeRequestWithDefaults instantiates a new PasswordChangeRequest object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewPasswordChangeRequestWithDefaults instantiates a new PasswordChangeRequest object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetIdentityId
 
@@ -50,8 +52,7 @@ GetIdentityId returns the IdentityId field if non-nil, zero value otherwise.
 
 `func (o *PasswordChangeRequest) GetIdentityIdOk() (*string, bool)`
 
-GetIdentityIdOk returns a tuple with the IdentityId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityIdOk returns a tuple with the IdentityId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityId
 
@@ -75,8 +76,7 @@ GetEncryptedPassword returns the EncryptedPassword field if non-nil, zero value 
 
 `func (o *PasswordChangeRequest) GetEncryptedPasswordOk() (*string, bool)`
 
-GetEncryptedPasswordOk returns a tuple with the EncryptedPassword field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEncryptedPasswordOk returns a tuple with the EncryptedPassword field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEncryptedPassword
 
@@ -100,8 +100,7 @@ GetPublicKeyId returns the PublicKeyId field if non-nil, zero value otherwise.
 
 `func (o *PasswordChangeRequest) GetPublicKeyIdOk() (*string, bool)`
 
-GetPublicKeyIdOk returns a tuple with the PublicKeyId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPublicKeyIdOk returns a tuple with the PublicKeyId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPublicKeyId
 
@@ -125,8 +124,7 @@ GetAccountId returns the AccountId field if non-nil, zero value otherwise.
 
 `func (o *PasswordChangeRequest) GetAccountIdOk() (*string, bool)`
 
-GetAccountIdOk returns a tuple with the AccountId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccountIdOk returns a tuple with the AccountId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccountId
 
@@ -150,8 +148,7 @@ GetSourceId returns the SourceId field if non-nil, zero value otherwise.
 
 `func (o *PasswordChangeRequest) GetSourceIdOk() (*string, bool)`
 
-GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceIdOk returns a tuple with the SourceId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceId
 
@@ -164,5 +161,3 @@ SetSourceId sets SourceId field to given value.
 `func (o *PasswordChangeRequest) HasSourceId() bool`
 
 HasSourceId returns a boolean if a field has been set.
-
-

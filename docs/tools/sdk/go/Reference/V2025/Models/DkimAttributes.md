@@ -4,22 +4,23 @@ title: DkimAttributes
 pagination_label: DkimAttributes
 sidebar_label: DkimAttributes
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'DkimAttributes', 'V2025DkimAttributes'] 
+keywords: ['go', 'Golang', 'sdk', 'DkimAttributes', 'V2025DkimAttributes']
 slug: /tools/sdk/go/v2025/models/dkim-attributes
-tags: ['SDK', 'Software Development Kit', 'DkimAttributes', 'V2025DkimAttributes']
+tags:
+  ['SDK', 'Software Development Kit', 'DkimAttributes', 'V2025DkimAttributes']
 ---
 
 # DkimAttributes
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | UUID associated with domain to be verified | [optional] 
-**Address** | Pointer to **string** | The identity or domain address | [optional] 
-**DkimEnabled** | Pointer to **bool** | Whether or not DKIM has been enabled for this domain / identity | [optional] [default to false]
-**DkimTokens** | Pointer to **[]string** | The tokens to be added to a DNS for verification | [optional] 
-**DkimVerificationStatus** | Pointer to **string** | The current status if the domain /identity has been verified. Ie Success, Failed, Pending | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | UUID associated with domain to be verified | [optional] |
+| **Address** | Pointer to **string** | The identity or domain address | [optional] |
+| **DkimEnabled** | Pointer to **bool** | Whether or not DKIM has been enabled for this domain / identity | [optional] [default to false] |
+| **DkimTokens** | Pointer to **[]string** | The tokens to be added to a DNS for verification | [optional] |
+| **DkimVerificationStatus** | Pointer to **string** | The current status if the domain /identity has been verified. Ie Success, Failed, Pending | [optional] |
 
 ## Methods
 
@@ -27,18 +28,13 @@ Name | Type | Description | Notes
 
 `func NewDkimAttributes() *DkimAttributes`
 
-NewDkimAttributes instantiates a new DkimAttributes object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewDkimAttributes instantiates a new DkimAttributes object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewDkimAttributesWithDefaults
 
 `func NewDkimAttributesWithDefaults() *DkimAttributes`
 
-NewDkimAttributesWithDefaults instantiates a new DkimAttributes object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewDkimAttributesWithDefaults instantiates a new DkimAttributes object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -50,8 +46,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *DkimAttributes) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -75,8 +70,7 @@ GetAddress returns the Address field if non-nil, zero value otherwise.
 
 `func (o *DkimAttributes) GetAddressOk() (*string, bool)`
 
-GetAddressOk returns a tuple with the Address field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAddressOk returns a tuple with the Address field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAddress
 
@@ -100,8 +94,7 @@ GetDkimEnabled returns the DkimEnabled field if non-nil, zero value otherwise.
 
 `func (o *DkimAttributes) GetDkimEnabledOk() (*bool, bool)`
 
-GetDkimEnabledOk returns a tuple with the DkimEnabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDkimEnabledOk returns a tuple with the DkimEnabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDkimEnabled
 
@@ -125,8 +118,7 @@ GetDkimTokens returns the DkimTokens field if non-nil, zero value otherwise.
 
 `func (o *DkimAttributes) GetDkimTokensOk() (*[]string, bool)`
 
-GetDkimTokensOk returns a tuple with the DkimTokens field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDkimTokensOk returns a tuple with the DkimTokens field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDkimTokens
 
@@ -150,8 +142,7 @@ GetDkimVerificationStatus returns the DkimVerificationStatus field if non-nil, z
 
 `func (o *DkimAttributes) GetDkimVerificationStatusOk() (*string, bool)`
 
-GetDkimVerificationStatusOk returns a tuple with the DkimVerificationStatus field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDkimVerificationStatusOk returns a tuple with the DkimVerificationStatus field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDkimVerificationStatus
 
@@ -164,5 +155,3 @@ SetDkimVerificationStatus sets DkimVerificationStatus field to given value.
 `func (o *DkimAttributes) HasDkimVerificationStatus() bool`
 
 HasDkimVerificationStatus returns a boolean if a field has been set.
-
-

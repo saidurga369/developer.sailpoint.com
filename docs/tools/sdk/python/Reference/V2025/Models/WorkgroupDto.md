@@ -4,26 +4,26 @@ title: WorkgroupDto
 pagination_label: WorkgroupDto
 sidebar_label: WorkgroupDto
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'WorkgroupDto', 'V2025WorkgroupDto'] 
+keywords: ['python', 'Python', 'sdk', 'WorkgroupDto', 'V2025WorkgroupDto']
 slug: /tools/sdk/python/v2025/models/workgroup-dto
 tags: ['SDK', 'Software Development Kit', 'WorkgroupDto', 'V2025WorkgroupDto']
 ---
 
 # WorkgroupDto
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**owner** | [**WorkgroupDtoOwner**](workgroup-dto-owner) |  | [optional] 
-**id** | **str** | Governance group ID. | [optional] [readonly] 
-**name** | **str** | Governance group name. | [optional] 
-**description** | **str** | Governance group description. | [optional] 
-**member_count** | **int** | Number of members in the governance group. | [optional] [readonly] 
-**connection_count** | **int** | Number of connections in the governance group. | [optional] [readonly] 
-**created** | **datetime** |  | [optional] 
-**modified** | **datetime** |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **owner** | [**WorkgroupDtoOwner**](workgroup-dto-owner) |  | [optional] |
+| **id** | **str** | Governance group ID. | [optional] [readonly] |
+| **name** | **str** | Governance group name. | [optional] |
+| **description** | **str** | Governance group description. | [optional] |
+| **member_count** | **int** | Number of members in the governance group. | [optional] [readonly] |
+| **connection_count** | **int** | Number of connections in the governance group. | [optional] [readonly] |
+| **created** | **datetime** |  | [optional] |
+| **modified** | **datetime** |  | [optional] |
+
 }
 
 ## Example
@@ -43,5 +43,5 @@ modified='2022-01-06T19:51:13Z'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

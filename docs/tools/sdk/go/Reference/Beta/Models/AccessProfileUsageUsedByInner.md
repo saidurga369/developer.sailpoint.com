@@ -4,20 +4,33 @@ title: AccessProfileUsageUsedByInner
 pagination_label: AccessProfileUsageUsedByInner
 sidebar_label: AccessProfileUsageUsedByInner
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessProfileUsageUsedByInner', 'BetaAccessProfileUsageUsedByInner'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'AccessProfileUsageUsedByInner',
+    'BetaAccessProfileUsageUsedByInner',
+  ]
 slug: /tools/sdk/go/beta/models/access-profile-usage-used-by-inner
-tags: ['SDK', 'Software Development Kit', 'AccessProfileUsageUsedByInner', 'BetaAccessProfileUsageUsedByInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessProfileUsageUsedByInner',
+    'BetaAccessProfileUsageUsedByInner',
+  ]
 ---
 
 # AccessProfileUsageUsedByInner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | DTO type of role using the access profile. | [optional] 
-**Id** | Pointer to **string** | ID of role using the access profile. | [optional] 
-**Name** | Pointer to **string** | Display name of role using the access profile. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to **string** | DTO type of role using the access profile. | [optional] |
+| **Id** | Pointer to **string** | ID of role using the access profile. | [optional] |
+| **Name** | Pointer to **string** | Display name of role using the access profile. | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewAccessProfileUsageUsedByInner() *AccessProfileUsageUsedByInner`
 
-NewAccessProfileUsageUsedByInner instantiates a new AccessProfileUsageUsedByInner object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessProfileUsageUsedByInner instantiates a new AccessProfileUsageUsedByInner object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessProfileUsageUsedByInnerWithDefaults
 
 `func NewAccessProfileUsageUsedByInnerWithDefaults() *AccessProfileUsageUsedByInner`
 
-NewAccessProfileUsageUsedByInnerWithDefaults instantiates a new AccessProfileUsageUsedByInner object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessProfileUsageUsedByInnerWithDefaults instantiates a new AccessProfileUsageUsedByInner object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -48,8 +56,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *AccessProfileUsageUsedByInner) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -73,8 +80,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *AccessProfileUsageUsedByInner) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -98,8 +104,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *AccessProfileUsageUsedByInner) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -112,5 +117,3 @@ SetName sets Name field to given value.
 `func (o *AccessProfileUsageUsedByInner) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

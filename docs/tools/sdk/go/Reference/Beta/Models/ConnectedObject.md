@@ -4,21 +4,22 @@ title: ConnectedObject
 pagination_label: ConnectedObject
 sidebar_label: ConnectedObject
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ConnectedObject', 'BetaConnectedObject'] 
+keywords: ['go', 'Golang', 'sdk', 'ConnectedObject', 'BetaConnectedObject']
 slug: /tools/sdk/go/beta/models/connected-object
-tags: ['SDK', 'Software Development Kit', 'ConnectedObject', 'BetaConnectedObject']
+tags:
+  ['SDK', 'Software Development Kit', 'ConnectedObject', 'BetaConnectedObject']
 ---
 
 # ConnectedObject
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to [**ConnectedObjectType**](connected-object-type) |  | [optional] 
-**Id** | Pointer to **string** | ID of the object to which this reference applies | [optional] 
-**Name** | Pointer to **string** | Human-readable name of Connected object | [optional] 
-**Description** | Pointer to **string** | Description of the Connected object. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to [**ConnectedObjectType**](connected-object-type) |  | [optional] |
+| **Id** | Pointer to **string** | ID of the object to which this reference applies | [optional] |
+| **Name** | Pointer to **string** | Human-readable name of Connected object | [optional] |
+| **Description** | Pointer to **string** | Description of the Connected object. | [optional] |
 
 ## Methods
 
@@ -26,18 +27,13 @@ Name | Type | Description | Notes
 
 `func NewConnectedObject() *ConnectedObject`
 
-NewConnectedObject instantiates a new ConnectedObject object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewConnectedObject instantiates a new ConnectedObject object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewConnectedObjectWithDefaults
 
 `func NewConnectedObjectWithDefaults() *ConnectedObject`
 
-NewConnectedObjectWithDefaults instantiates a new ConnectedObject object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewConnectedObjectWithDefaults instantiates a new ConnectedObject object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -49,8 +45,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *ConnectedObject) GetTypeOk() (*ConnectedObjectType, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -74,8 +69,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *ConnectedObject) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -99,8 +93,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *ConnectedObject) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -124,8 +117,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *ConnectedObject) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -138,5 +130,3 @@ SetDescription sets Description field to given value.
 `func (o *ConnectedObject) HasDescription() bool`
 
 HasDescription returns a boolean if a field has been set.
-
-

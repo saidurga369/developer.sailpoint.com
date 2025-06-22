@@ -4,23 +4,32 @@ title: RequestableObjectRequestStatus
 pagination_label: RequestableObjectRequestStatus
 sidebar_label: RequestableObjectRequestStatus
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'RequestableObjectRequestStatus', 'BetaRequestableObjectRequestStatus'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'RequestableObjectRequestStatus',
+    'BetaRequestableObjectRequestStatus',
+  ]
 slug: /tools/sdk/powershell/beta/models/requestable-object-request-status
-tags: ['SDK', 'Software Development Kit', 'RequestableObjectRequestStatus', 'BetaRequestableObjectRequestStatus']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RequestableObjectRequestStatus',
+    'BetaRequestableObjectRequestStatus',
+  ]
 ---
-
 
 # RequestableObjectRequestStatus
 
 ## Enum
 
+- `AVAILABLE` (value: `"AVAILABLE"`)
 
-* `AVAILABLE` (value: `"AVAILABLE"`)
+- `PENDING` (value: `"PENDING"`)
 
-* `PENDING` (value: `"PENDING"`)
+- `ASSIGNED` (value: `"ASSIGNED"`)
 
-* `ASSIGNED` (value: `"ASSIGNED"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

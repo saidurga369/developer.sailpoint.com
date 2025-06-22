@@ -4,25 +4,38 @@ title: IdentityAttributesChangedChangesInner
 pagination_label: IdentityAttributesChangedChangesInner
 sidebar_label: IdentityAttributesChangedChangesInner
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'IdentityAttributesChangedChangesInner', 'V2024IdentityAttributesChangedChangesInner'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'IdentityAttributesChangedChangesInner',
+    'V2024IdentityAttributesChangedChangesInner',
+  ]
 slug: /tools/sdk/powershell/v2024/models/identity-attributes-changed-changes-inner
-tags: ['SDK', 'Software Development Kit', 'IdentityAttributesChangedChangesInner', 'V2024IdentityAttributesChangedChangesInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityAttributesChangedChangesInner',
+    'V2024IdentityAttributesChangedChangesInner',
+  ]
 ---
-
 
 # IdentityAttributesChangedChangesInner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Attribute** | **String** | The name of the identity attribute that changed. | [required]
-**OldValue** | [**IdentityAttributesChangedChangesInnerOldValue**](identity-attributes-changed-changes-inner-old-value) |  | [optional] 
-**NewValue** | [**IdentityAttributesChangedChangesInnerNewValue**](identity-attributes-changed-changes-inner-new-value) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Attribute** | **String** | The name of the identity attribute that changed. | [required] |
+| **OldValue** | [**IdentityAttributesChangedChangesInnerOldValue**](identity-attributes-changed-changes-inner-old-value) |  | [optional] |
+| **NewValue** | [**IdentityAttributesChangedChangesInnerNewValue**](identity-attributes-changed-changes-inner-new-value) |  | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $IdentityAttributesChangedChangesInner = Initialize-V2024IdentityAttributesChangedChangesInner  -Attribute department `
  -OldValue null `
@@ -30,10 +43,9 @@ $IdentityAttributesChangedChangesInner = Initialize-V2024IdentityAttributesChang
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $IdentityAttributesChangedChangesInner | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

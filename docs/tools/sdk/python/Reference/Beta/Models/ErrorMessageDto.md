@@ -4,21 +4,22 @@ title: ErrorMessageDto
 pagination_label: ErrorMessageDto
 sidebar_label: ErrorMessageDto
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ErrorMessageDto', 'BetaErrorMessageDto'] 
+keywords: ['python', 'Python', 'sdk', 'ErrorMessageDto', 'BetaErrorMessageDto']
 slug: /tools/sdk/python/beta/models/error-message-dto
-tags: ['SDK', 'Software Development Kit', 'ErrorMessageDto', 'BetaErrorMessageDto']
+tags:
+  ['SDK', 'Software Development Kit', 'ErrorMessageDto', 'BetaErrorMessageDto']
 ---
 
 # ErrorMessageDto
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**locale** | **str** | The locale for the message text, a BCP 47 language tag. | [optional] 
-**locale_origin** | [**LocaleOrigin**](locale-origin) |  | [optional] 
-**text** | **str** | Actual text of the error message in the indicated locale. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **locale** | **str** | The locale for the message text, a BCP 47 language tag. | [optional] |
+| **locale_origin** | [**LocaleOrigin**](locale-origin) |  | [optional] |
+| **text** | **str** | Actual text of the error message in the indicated locale. | [optional] |
+
 }
 
 ## Example
@@ -33,5 +34,5 @@ text='The request was syntactically correct but its content is semantically inva
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

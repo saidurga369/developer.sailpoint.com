@@ -4,27 +4,40 @@ title: FormDefinitionResponse
 pagination_label: FormDefinitionResponse
 sidebar_label: FormDefinitionResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'FormDefinitionResponse', 'BetaFormDefinitionResponse'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'FormDefinitionResponse',
+    'BetaFormDefinitionResponse',
+  ]
 slug: /tools/sdk/go/beta/models/form-definition-response
-tags: ['SDK', 'Software Development Kit', 'FormDefinitionResponse', 'BetaFormDefinitionResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'FormDefinitionResponse',
+    'BetaFormDefinitionResponse',
+  ]
 ---
 
 # FormDefinitionResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Unique guid identifying the form definition. | [optional] 
-**Name** | Pointer to **string** | Name of the form definition. | [optional] 
-**Description** | Pointer to **string** | Form definition's description. | [optional] 
-**Owner** | Pointer to [**FormOwner**](form-owner) |  | [optional] 
-**UsedBy** | Pointer to [**[]FormUsedBy**](form-used-by) | List of objects using the form definition. Whenever a system uses a form, the API reaches out to the form service to record that the system is currently using it. | [optional] 
-**FormInput** | Pointer to [**[]FormDefinitionInput**](form-definition-input) | List of form inputs required to create a form-instance object. | [optional] 
-**FormElements** | Pointer to [**[]FormElement**](form-element) | List of nested form elements. | [optional] 
-**FormConditions** | Pointer to [**[]FormCondition**](form-condition) | Conditional logic that can dynamically modify the form as the recipient is interacting with it. | [optional] 
-**Created** | Pointer to **SailPointTime** | Created is the date the form definition was created | [optional] 
-**Modified** | Pointer to **SailPointTime** | Modified is the last date the form definition was modified | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Unique guid identifying the form definition. | [optional] |
+| **Name** | Pointer to **string** | Name of the form definition. | [optional] |
+| **Description** | Pointer to **string** | Form definition's description. | [optional] |
+| **Owner** | Pointer to [**FormOwner**](form-owner) |  | [optional] |
+| **UsedBy** | Pointer to [**[]FormUsedBy**](form-used-by) | List of objects using the form definition. Whenever a system uses a form, the API reaches out to the form service to record that the system is currently using it. | [optional] |
+| **FormInput** | Pointer to [**[]FormDefinitionInput**](form-definition-input) | List of form inputs required to create a form-instance object. | [optional] |
+| **FormElements** | Pointer to [**[]FormElement**](form-element) | List of nested form elements. | [optional] |
+| **FormConditions** | Pointer to [**[]FormCondition**](form-condition) | Conditional logic that can dynamically modify the form as the recipient is interacting with it. | [optional] |
+| **Created** | Pointer to **SailPointTime** | Created is the date the form definition was created | [optional] |
+| **Modified** | Pointer to **SailPointTime** | Modified is the last date the form definition was modified | [optional] |
 
 ## Methods
 
@@ -32,18 +45,13 @@ Name | Type | Description | Notes
 
 `func NewFormDefinitionResponse() *FormDefinitionResponse`
 
-NewFormDefinitionResponse instantiates a new FormDefinitionResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewFormDefinitionResponse instantiates a new FormDefinitionResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewFormDefinitionResponseWithDefaults
 
 `func NewFormDefinitionResponseWithDefaults() *FormDefinitionResponse`
 
-NewFormDefinitionResponseWithDefaults instantiates a new FormDefinitionResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewFormDefinitionResponseWithDefaults instantiates a new FormDefinitionResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -55,8 +63,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *FormDefinitionResponse) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -80,8 +87,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *FormDefinitionResponse) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -105,8 +111,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *FormDefinitionResponse) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -130,8 +135,7 @@ GetOwner returns the Owner field if non-nil, zero value otherwise.
 
 `func (o *FormDefinitionResponse) GetOwnerOk() (*FormOwner, bool)`
 
-GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwner
 
@@ -155,8 +159,7 @@ GetUsedBy returns the UsedBy field if non-nil, zero value otherwise.
 
 `func (o *FormDefinitionResponse) GetUsedByOk() (*[]FormUsedBy, bool)`
 
-GetUsedByOk returns a tuple with the UsedBy field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetUsedByOk returns a tuple with the UsedBy field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetUsedBy
 
@@ -180,8 +183,7 @@ GetFormInput returns the FormInput field if non-nil, zero value otherwise.
 
 `func (o *FormDefinitionResponse) GetFormInputOk() (*[]FormDefinitionInput, bool)`
 
-GetFormInputOk returns a tuple with the FormInput field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFormInputOk returns a tuple with the FormInput field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFormInput
 
@@ -205,8 +207,7 @@ GetFormElements returns the FormElements field if non-nil, zero value otherwise.
 
 `func (o *FormDefinitionResponse) GetFormElementsOk() (*[]FormElement, bool)`
 
-GetFormElementsOk returns a tuple with the FormElements field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFormElementsOk returns a tuple with the FormElements field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFormElements
 
@@ -230,8 +231,7 @@ GetFormConditions returns the FormConditions field if non-nil, zero value otherw
 
 `func (o *FormDefinitionResponse) GetFormConditionsOk() (*[]FormCondition, bool)`
 
-GetFormConditionsOk returns a tuple with the FormConditions field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFormConditionsOk returns a tuple with the FormConditions field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFormConditions
 
@@ -255,8 +255,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *FormDefinitionResponse) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -280,8 +279,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *FormDefinitionResponse) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -294,5 +292,3 @@ SetModified sets Modified field to given value.
 `func (o *FormDefinitionResponse) HasModified() bool`
 
 HasModified returns a boolean if a field has been set.
-
-

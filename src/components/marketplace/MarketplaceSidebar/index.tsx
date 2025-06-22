@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import styles from './styles.module.css';
-import { getCatagories, getTags } from '../../../services/DiscourseService';
+import {getCatagories, getTags} from '../../../services/DiscourseService';
 import MarketplaceSidebarButton from './MarketplaceSidebarButton';
 import {
   discourseMarketplaceCatagoryId,
@@ -9,7 +9,7 @@ import {
 
 // Define the props interface
 interface MarketplaceSidebarProps {
-  filterCallback: (filter: { category?: string; tag?: string }) => void;
+  filterCallback: (filter: {category?: string; tag?: string}) => void;
   selectedCategory?: string;
 }
 
@@ -19,10 +19,17 @@ interface Category {
   slug: string;
 }
 
-const MarketplaceSidebar: React.FC<MarketplaceSidebarProps> = ({ filterCallback, selectedCategory }) => {
+const MarketplaceSidebar: React.FC<MarketplaceSidebarProps> = ({
+  filterCallback,
+  selectedCategory,
+}) => {
   const [tagProductData, setTagProductData] = useState<string[] | null>(null);
-  const [tagTechnologyData, setTagTechnologyData] = useState<string[] | null>(null);
-  const [catIntegrationTypeData, setCatIntegrationTypeData] = useState<Category[] | null>(null);
+  const [tagTechnologyData, setTagTechnologyData] = useState<string[] | null>(
+    null,
+  );
+  const [catIntegrationTypeData, setCatIntegrationTypeData] = useState<
+    Category[] | null
+  >(null);
   const [filterTags, setFilterTags] = useState<boolean>(true);
 
   const getTagData = async () => {

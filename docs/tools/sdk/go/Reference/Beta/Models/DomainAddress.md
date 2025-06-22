@@ -4,7 +4,7 @@ title: DomainAddress
 pagination_label: DomainAddress
 sidebar_label: DomainAddress
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'DomainAddress', 'BetaDomainAddress'] 
+keywords: ['go', 'Golang', 'sdk', 'DomainAddress', 'BetaDomainAddress']
 slug: /tools/sdk/go/beta/models/domain-address
 tags: ['SDK', 'Software Development Kit', 'DomainAddress', 'BetaDomainAddress']
 ---
@@ -13,9 +13,9 @@ tags: ['SDK', 'Software Development Kit', 'DomainAddress', 'BetaDomainAddress']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Domain** | Pointer to **string** | A domain address | [optional] 
+| Name       | Type                  | Description      | Notes      |
+| ---------- | --------------------- | ---------------- | ---------- |
+| **Domain** | Pointer to **string** | A domain address | [optional] |
 
 ## Methods
 
@@ -23,18 +23,13 @@ Name | Type | Description | Notes
 
 `func NewDomainAddress() *DomainAddress`
 
-NewDomainAddress instantiates a new DomainAddress object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewDomainAddress instantiates a new DomainAddress object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewDomainAddressWithDefaults
 
 `func NewDomainAddressWithDefaults() *DomainAddress`
 
-NewDomainAddressWithDefaults instantiates a new DomainAddress object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewDomainAddressWithDefaults instantiates a new DomainAddress object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetDomain
 
@@ -46,8 +41,7 @@ GetDomain returns the Domain field if non-nil, zero value otherwise.
 
 `func (o *DomainAddress) GetDomainOk() (*string, bool)`
 
-GetDomainOk returns a tuple with the Domain field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDomainOk returns a tuple with the Domain field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDomain
 
@@ -60,5 +54,3 @@ SetDomain sets Domain field to given value.
 `func (o *DomainAddress) HasDomain() bool`
 
 HasDomain returns a boolean if a field has been set.
-
-

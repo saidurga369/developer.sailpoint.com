@@ -6,7 +6,11 @@ interface VideoProps {
   container?: 'youtube' | 'vidyard';
 }
 
-const Video: React.FC<VideoProps> = ({ children, source, container = 'youtube' }) => {
+const Video: React.FC<VideoProps> = ({
+  children,
+  source,
+  container = 'youtube',
+}) => {
   let html = (
     <iframe
       style={{
@@ -17,8 +21,7 @@ const Video: React.FC<VideoProps> = ({ children, source, container = 'youtube' }
       title="YouTube video player"
       frameBorder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowFullScreen
-    ></iframe>
+      allowFullScreen></iframe>
   );
 
   if (container === 'vidyard') {
@@ -34,8 +37,7 @@ const Video: React.FC<VideoProps> = ({ children, source, container = 'youtube' }
         scrolling="no"
         frameBorder="0"
         allowTransparency={true}
-        allowFullScreen
-      ></iframe>
+        allowFullScreen></iframe>
     );
   }
 

@@ -12,6 +12,6 @@ export async function getItem(cmsurl: string, itemId: string): Promise<any> {
     const response = await fetch(`${cmsurl}${itemId}`);
     return await response.json();
   } catch (error) {
-    return "";
+    return '';
   }
 }

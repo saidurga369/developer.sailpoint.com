@@ -4,25 +4,38 @@ title: AccessRequestRecommendationItemDetail
 pagination_label: AccessRequestRecommendationItemDetail
 sidebar_label: AccessRequestRecommendationItemDetail
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccessRequestRecommendationItemDetail', 'BetaAccessRequestRecommendationItemDetail'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccessRequestRecommendationItemDetail',
+    'BetaAccessRequestRecommendationItemDetail',
+  ]
 slug: /tools/sdk/python/beta/models/access-request-recommendation-item-detail
-tags: ['SDK', 'Software Development Kit', 'AccessRequestRecommendationItemDetail', 'BetaAccessRequestRecommendationItemDetail']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessRequestRecommendationItemDetail',
+    'BetaAccessRequestRecommendationItemDetail',
+  ]
 ---
 
 # AccessRequestRecommendationItemDetail
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**identity_id** | **str** | Identity ID for the recommendation | [optional] 
-**access** | [**AccessRequestRecommendationItemDetailAccess**](access-request-recommendation-item-detail-access) |  | [optional] 
-**ignored** | **bool** | Whether or not the identity has already chosen to ignore this recommendation. | [optional] 
-**requested** | **bool** | Whether or not the identity has already chosen to request this recommendation. | [optional] 
-**viewed** | **bool** | Whether or not the identity reportedly viewed this recommendation. | [optional] 
-**messages** | [**[]AccessRecommendationMessage**](access-recommendation-message) |  | [optional] 
-**translation_messages** | [**[]TranslationMessage**](translation-message) | The list of translation messages | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **identity_id** | **str** | Identity ID for the recommendation | [optional] |
+| **access** | [**AccessRequestRecommendationItemDetailAccess**](access-request-recommendation-item-detail-access) |  | [optional] |
+| **ignored** | **bool** | Whether or not the identity has already chosen to ignore this recommendation. | [optional] |
+| **requested** | **bool** | Whether or not the identity has already chosen to request this recommendation. | [optional] |
+| **viewed** | **bool** | Whether or not the identity reportedly viewed this recommendation. | [optional] |
+| **messages** | [**[]AccessRecommendationMessage**](access-recommendation-message) |  | [optional] |
+| **translation_messages** | [**[]TranslationMessage**](translation-message) | The list of translation messages | [optional] |
+
 }
 
 ## Example
@@ -33,9 +46,9 @@ from sailpoint.beta.models.access_request_recommendation_item_detail import Acce
 access_request_recommendation_item_detail = AccessRequestRecommendationItemDetail(
 identity_id='2c91808570313110017040b06f344ec9',
 access=sailpoint.beta.models.access_request_recommendation_item_detail_access.AccessRequestRecommendationItemDetail_access(
-                    id = '2c9180835d2e5168015d32f890ca1581', 
-                    type = 'ACCESS_PROFILE', 
-                    name = 'Employee-database-read-write', 
+                    id = '2c9180835d2e5168015d32f890ca1581',
+                    type = 'ACCESS_PROFILE',
+                    name = 'Employee-database-read-write',
                     description = 'This item grants an employee read and write access to the database', ),
 ignored=True,
 requested=True,
@@ -48,5 +61,5 @@ translation_messages=[{key=recommender-api.V2_WEIGHT_FEATURE_PRODUCT_INTERPRETAT
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

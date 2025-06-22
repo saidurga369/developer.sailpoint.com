@@ -4,7 +4,7 @@ title: MfaOktaConfig
 pagination_label: MfaOktaConfig
 sidebar_label: MfaOktaConfig
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'MfaOktaConfig', 'BetaMfaOktaConfig'] 
+keywords: ['go', 'Golang', 'sdk', 'MfaOktaConfig', 'BetaMfaOktaConfig']
 slug: /tools/sdk/go/beta/models/mfa-okta-config
 tags: ['SDK', 'Software Development Kit', 'MfaOktaConfig', 'BetaMfaOktaConfig']
 ---
@@ -13,13 +13,13 @@ tags: ['SDK', 'Software Development Kit', 'MfaOktaConfig', 'BetaMfaOktaConfig']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**MfaMethod** | Pointer to **NullableString** | Mfa method name | [optional] 
-**Enabled** | Pointer to **bool** | If MFA method is enabled. | [optional] [default to false]
-**Host** | Pointer to **NullableString** | The server host name or IP address of the MFA provider. | [optional] 
-**AccessKey** | Pointer to **NullableString** | The secret key for authenticating requests to the MFA provider. | [optional] 
-**IdentityAttribute** | Pointer to **NullableString** | Optional. The name of the attribute for mapping IdentityNow identity to the MFA provider. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **MfaMethod** | Pointer to **NullableString** | Mfa method name | [optional] |
+| **Enabled** | Pointer to **bool** | If MFA method is enabled. | [optional] [default to false] |
+| **Host** | Pointer to **NullableString** | The server host name or IP address of the MFA provider. | [optional] |
+| **AccessKey** | Pointer to **NullableString** | The secret key for authenticating requests to the MFA provider. | [optional] |
+| **IdentityAttribute** | Pointer to **NullableString** | Optional. The name of the attribute for mapping IdentityNow identity to the MFA provider. | [optional] |
 
 ## Methods
 
@@ -27,18 +27,13 @@ Name | Type | Description | Notes
 
 `func NewMfaOktaConfig() *MfaOktaConfig`
 
-NewMfaOktaConfig instantiates a new MfaOktaConfig object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewMfaOktaConfig instantiates a new MfaOktaConfig object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewMfaOktaConfigWithDefaults
 
 `func NewMfaOktaConfigWithDefaults() *MfaOktaConfig`
 
-NewMfaOktaConfigWithDefaults instantiates a new MfaOktaConfig object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewMfaOktaConfigWithDefaults instantiates a new MfaOktaConfig object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetMfaMethod
 
@@ -50,8 +45,7 @@ GetMfaMethod returns the MfaMethod field if non-nil, zero value otherwise.
 
 `func (o *MfaOktaConfig) GetMfaMethodOk() (*string, bool)`
 
-GetMfaMethodOk returns a tuple with the MfaMethod field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMfaMethodOk returns a tuple with the MfaMethod field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMfaMethod
 
@@ -69,12 +63,14 @@ HasMfaMethod returns a boolean if a field has been set.
 
 `func (o *MfaOktaConfig) SetMfaMethodNil(b bool)`
 
- SetMfaMethodNil sets the value for MfaMethod to be an explicit nil
+SetMfaMethodNil sets the value for MfaMethod to be an explicit nil
 
 ### UnsetMfaMethod
+
 `func (o *MfaOktaConfig) UnsetMfaMethod()`
 
 UnsetMfaMethod ensures that no value is present for MfaMethod, not even an explicit nil
+
 ### GetEnabled
 
 `func (o *MfaOktaConfig) GetEnabled() bool`
@@ -85,8 +81,7 @@ GetEnabled returns the Enabled field if non-nil, zero value otherwise.
 
 `func (o *MfaOktaConfig) GetEnabledOk() (*bool, bool)`
 
-GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEnabled
 
@@ -110,8 +105,7 @@ GetHost returns the Host field if non-nil, zero value otherwise.
 
 `func (o *MfaOktaConfig) GetHostOk() (*string, bool)`
 
-GetHostOk returns a tuple with the Host field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetHostOk returns a tuple with the Host field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetHost
 
@@ -129,12 +123,14 @@ HasHost returns a boolean if a field has been set.
 
 `func (o *MfaOktaConfig) SetHostNil(b bool)`
 
- SetHostNil sets the value for Host to be an explicit nil
+SetHostNil sets the value for Host to be an explicit nil
 
 ### UnsetHost
+
 `func (o *MfaOktaConfig) UnsetHost()`
 
 UnsetHost ensures that no value is present for Host, not even an explicit nil
+
 ### GetAccessKey
 
 `func (o *MfaOktaConfig) GetAccessKey() string`
@@ -145,8 +141,7 @@ GetAccessKey returns the AccessKey field if non-nil, zero value otherwise.
 
 `func (o *MfaOktaConfig) GetAccessKeyOk() (*string, bool)`
 
-GetAccessKeyOk returns a tuple with the AccessKey field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessKeyOk returns a tuple with the AccessKey field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessKey
 
@@ -164,12 +159,14 @@ HasAccessKey returns a boolean if a field has been set.
 
 `func (o *MfaOktaConfig) SetAccessKeyNil(b bool)`
 
- SetAccessKeyNil sets the value for AccessKey to be an explicit nil
+SetAccessKeyNil sets the value for AccessKey to be an explicit nil
 
 ### UnsetAccessKey
+
 `func (o *MfaOktaConfig) UnsetAccessKey()`
 
 UnsetAccessKey ensures that no value is present for AccessKey, not even an explicit nil
+
 ### GetIdentityAttribute
 
 `func (o *MfaOktaConfig) GetIdentityAttribute() string`
@@ -180,8 +177,7 @@ GetIdentityAttribute returns the IdentityAttribute field if non-nil, zero value 
 
 `func (o *MfaOktaConfig) GetIdentityAttributeOk() (*string, bool)`
 
-GetIdentityAttributeOk returns a tuple with the IdentityAttribute field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityAttributeOk returns a tuple with the IdentityAttribute field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityAttribute
 
@@ -199,10 +195,10 @@ HasIdentityAttribute returns a boolean if a field has been set.
 
 `func (o *MfaOktaConfig) SetIdentityAttributeNil(b bool)`
 
- SetIdentityAttributeNil sets the value for IdentityAttribute to be an explicit nil
+SetIdentityAttributeNil sets the value for IdentityAttribute to be an explicit nil
 
 ### UnsetIdentityAttribute
+
 `func (o *MfaOktaConfig) UnsetIdentityAttribute()`
 
 UnsetIdentityAttribute ensures that no value is present for IdentityAttribute, not even an explicit nil
-

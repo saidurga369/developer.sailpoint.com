@@ -4,9 +4,22 @@ title: BulkApproveAccessRequest
 pagination_label: BulkApproveAccessRequest
 sidebar_label: BulkApproveAccessRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'BulkApproveAccessRequest', 'V2025BulkApproveAccessRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'BulkApproveAccessRequest',
+    'V2025BulkApproveAccessRequest',
+  ]
 slug: /tools/sdk/python/v2025/models/bulk-approve-access-request
-tags: ['SDK', 'Software Development Kit', 'BulkApproveAccessRequest', 'V2025BulkApproveAccessRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'BulkApproveAccessRequest',
+    'V2025BulkApproveAccessRequest',
+  ]
 ---
 
 # BulkApproveAccessRequest
@@ -15,10 +28,11 @@ Request body payload for bulk approve access request endpoint.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**approval_ids** | **[]str** | List of approval ids to approve the pending requests | [required]
-**comment** | **str** | Reason for approving the pending access request. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **approval_ids** | **[]str** | List of approval ids to approve the pending requests | [required] |
+| **comment** | **str** | Reason for approving the pending access request. | [required] |
+
 }
 
 ## Example
@@ -32,5 +46,5 @@ comment='I approve these request items'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

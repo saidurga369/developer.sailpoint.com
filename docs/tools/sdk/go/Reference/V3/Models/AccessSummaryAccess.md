@@ -4,20 +4,26 @@ title: AccessSummaryAccess
 pagination_label: AccessSummaryAccess
 sidebar_label: AccessSummaryAccess
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessSummaryAccess', 'AccessSummaryAccess'] 
+keywords: ['go', 'Golang', 'sdk', 'AccessSummaryAccess', 'AccessSummaryAccess']
 slug: /tools/sdk/go/v3/models/access-summary-access
-tags: ['SDK', 'Software Development Kit', 'AccessSummaryAccess', 'AccessSummaryAccess']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessSummaryAccess',
+    'AccessSummaryAccess',
+  ]
 ---
 
 # AccessSummaryAccess
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to [**DtoType**](dto-type) |  | [optional] 
-**Id** | Pointer to **string** | The ID of the item being certified | [optional] 
-**Name** | Pointer to **string** | The name of the item being certified | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to [**DtoType**](dto-type) |  | [optional] |
+| **Id** | Pointer to **string** | The ID of the item being certified | [optional] |
+| **Name** | Pointer to **string** | The name of the item being certified | [optional] |
 
 ## Methods
 
@@ -25,18 +31,13 @@ Name | Type | Description | Notes
 
 `func NewAccessSummaryAccess() *AccessSummaryAccess`
 
-NewAccessSummaryAccess instantiates a new AccessSummaryAccess object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessSummaryAccess instantiates a new AccessSummaryAccess object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessSummaryAccessWithDefaults
 
 `func NewAccessSummaryAccessWithDefaults() *AccessSummaryAccess`
 
-NewAccessSummaryAccessWithDefaults instantiates a new AccessSummaryAccess object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessSummaryAccessWithDefaults instantiates a new AccessSummaryAccess object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -48,8 +49,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *AccessSummaryAccess) GetTypeOk() (*DtoType, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -73,8 +73,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *AccessSummaryAccess) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -98,8 +97,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *AccessSummaryAccess) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -112,5 +110,3 @@ SetName sets Name field to given value.
 `func (o *AccessSummaryAccess) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

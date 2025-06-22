@@ -4,7 +4,7 @@ title: PatOwner
 pagination_label: PatOwner
 sidebar_label: PatOwner
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'PatOwner', 'V2024PatOwner'] 
+keywords: ['go', 'Golang', 'sdk', 'PatOwner', 'V2024PatOwner']
 slug: /tools/sdk/go/v2024/models/pat-owner
 tags: ['SDK', 'Software Development Kit', 'PatOwner', 'V2024PatOwner']
 ---
@@ -13,11 +13,11 @@ tags: ['SDK', 'Software Development Kit', 'PatOwner', 'V2024PatOwner']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | Personal access token owner's DTO type. | [optional] 
-**Id** | Pointer to **string** | Personal access token owner's identity ID. | [optional] 
-**Name** | Pointer to **string** | Personal access token owner's human-readable display name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Type** | Pointer to **string** | Personal access token owner's DTO type. | [optional] |
+| **Id** | Pointer to **string** | Personal access token owner's identity ID. | [optional] |
+| **Name** | Pointer to **string** | Personal access token owner's human-readable display name. | [optional] |
 
 ## Methods
 
@@ -25,18 +25,13 @@ Name | Type | Description | Notes
 
 `func NewPatOwner() *PatOwner`
 
-NewPatOwner instantiates a new PatOwner object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewPatOwner instantiates a new PatOwner object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewPatOwnerWithDefaults
 
 `func NewPatOwnerWithDefaults() *PatOwner`
 
-NewPatOwnerWithDefaults instantiates a new PatOwner object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewPatOwnerWithDefaults instantiates a new PatOwner object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetType
 
@@ -48,8 +43,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *PatOwner) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -73,8 +67,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *PatOwner) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -98,8 +91,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *PatOwner) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -112,5 +104,3 @@ SetName sets Name field to given value.
 `func (o *PatOwner) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-

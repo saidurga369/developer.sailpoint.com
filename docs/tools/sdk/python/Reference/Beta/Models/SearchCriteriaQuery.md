@@ -4,19 +4,26 @@ title: SearchCriteriaQuery
 pagination_label: SearchCriteriaQuery
 sidebar_label: SearchCriteriaQuery
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SearchCriteriaQuery', 'BetaSearchCriteriaQuery'] 
+keywords:
+  ['python', 'Python', 'sdk', 'SearchCriteriaQuery', 'BetaSearchCriteriaQuery']
 slug: /tools/sdk/python/beta/models/search-criteria-query
-tags: ['SDK', 'Software Development Kit', 'SearchCriteriaQuery', 'BetaSearchCriteriaQuery']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SearchCriteriaQuery',
+    'BetaSearchCriteriaQuery',
+  ]
 ---
 
 # SearchCriteriaQuery
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**query** | **str** | A structured query for advanced search. | [optional] 
+| Name      | Type    | Description                             | Notes      |
+| --------- | ------- | --------------------------------------- | ---------- |
+| **query** | **str** | A structured query for advanced search. | [optional] |
+
 }
 
 ## Example
@@ -29,5 +36,5 @@ query='status:active'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,9 +4,22 @@ title: DimensionCriteriaKeyType
 pagination_label: DimensionCriteriaKeyType
 sidebar_label: DimensionCriteriaKeyType
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'DimensionCriteriaKeyType', 'V2025DimensionCriteriaKeyType'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'DimensionCriteriaKeyType',
+    'V2025DimensionCriteriaKeyType',
+  ]
 slug: /tools/sdk/python/v2025/models/dimension-criteria-key-type
-tags: ['SDK', 'Software Development Kit', 'DimensionCriteriaKeyType', 'V2025DimensionCriteriaKeyType']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'DimensionCriteriaKeyType',
+    'V2025DimensionCriteriaKeyType',
+  ]
 ---
 
 # DimensionCriteriaKeyType
@@ -15,7 +28,6 @@ Indicates whether the associated criteria represents an expression on identity a
 
 ## Enum
 
-* `IDENTITY` (value: `'IDENTITY'`)
+- `IDENTITY` (value: `'IDENTITY'`)
 
-[[Back to top]](#) 
-
+[[Back to top]](#)

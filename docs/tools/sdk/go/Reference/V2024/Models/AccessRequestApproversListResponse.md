@@ -4,22 +4,35 @@ title: AccessRequestApproversListResponse
 pagination_label: AccessRequestApproversListResponse
 sidebar_label: AccessRequestApproversListResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessRequestApproversListResponse', 'V2024AccessRequestApproversListResponse'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'AccessRequestApproversListResponse',
+    'V2024AccessRequestApproversListResponse',
+  ]
 slug: /tools/sdk/go/v2024/models/access-request-approvers-list-response
-tags: ['SDK', 'Software Development Kit', 'AccessRequestApproversListResponse', 'V2024AccessRequestApproversListResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessRequestApproversListResponse',
+    'V2024AccessRequestApproversListResponse',
+  ]
 ---
 
 # AccessRequestApproversListResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Approver id. | [optional] 
-**Email** | Pointer to **string** | Email of the approver. | [optional] 
-**Name** | Pointer to **string** | Name of the approver. | [optional] 
-**ApprovalId** | Pointer to **string** | Id of the approval item. | [optional] 
-**Type** | Pointer to **string** | Type of the object returned. In this case, the value for this field will always Identity. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Approver id. | [optional] |
+| **Email** | Pointer to **string** | Email of the approver. | [optional] |
+| **Name** | Pointer to **string** | Name of the approver. | [optional] |
+| **ApprovalId** | Pointer to **string** | Id of the approval item. | [optional] |
+| **Type** | Pointer to **string** | Type of the object returned. In this case, the value for this field will always Identity. | [optional] |
 
 ## Methods
 
@@ -27,18 +40,13 @@ Name | Type | Description | Notes
 
 `func NewAccessRequestApproversListResponse() *AccessRequestApproversListResponse`
 
-NewAccessRequestApproversListResponse instantiates a new AccessRequestApproversListResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessRequestApproversListResponse instantiates a new AccessRequestApproversListResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessRequestApproversListResponseWithDefaults
 
 `func NewAccessRequestApproversListResponseWithDefaults() *AccessRequestApproversListResponse`
 
-NewAccessRequestApproversListResponseWithDefaults instantiates a new AccessRequestApproversListResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessRequestApproversListResponseWithDefaults instantiates a new AccessRequestApproversListResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -50,8 +58,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestApproversListResponse) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -75,8 +82,7 @@ GetEmail returns the Email field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestApproversListResponse) GetEmailOk() (*string, bool)`
 
-GetEmailOk returns a tuple with the Email field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEmailOk returns a tuple with the Email field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEmail
 
@@ -100,8 +106,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestApproversListResponse) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -125,8 +130,7 @@ GetApprovalId returns the ApprovalId field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestApproversListResponse) GetApprovalIdOk() (*string, bool)`
 
-GetApprovalIdOk returns a tuple with the ApprovalId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApprovalIdOk returns a tuple with the ApprovalId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApprovalId
 
@@ -150,8 +154,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestApproversListResponse) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -164,5 +167,3 @@ SetType sets Type field to given value.
 `func (o *AccessRequestApproversListResponse) HasType() bool`
 
 HasType returns a boolean if a field has been set.
-
-

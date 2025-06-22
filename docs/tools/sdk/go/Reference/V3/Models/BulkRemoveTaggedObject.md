@@ -4,19 +4,26 @@ title: BulkRemoveTaggedObject
 pagination_label: BulkRemoveTaggedObject
 sidebar_label: BulkRemoveTaggedObject
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'BulkRemoveTaggedObject', 'BulkRemoveTaggedObject'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'BulkRemoveTaggedObject', 'BulkRemoveTaggedObject']
 slug: /tools/sdk/go/v3/models/bulk-remove-tagged-object
-tags: ['SDK', 'Software Development Kit', 'BulkRemoveTaggedObject', 'BulkRemoveTaggedObject']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'BulkRemoveTaggedObject',
+    'BulkRemoveTaggedObject',
+  ]
 ---
 
 # BulkRemoveTaggedObject
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ObjectRefs** | Pointer to [**[]TaggedObjectDto**](tagged-object-dto) |  | [optional] 
-**Tags** | Pointer to **[]string** | Label to be applied to an Object | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ObjectRefs** | Pointer to [**[]TaggedObjectDto**](tagged-object-dto) |  | [optional] |
+| **Tags** | Pointer to **[]string** | Label to be applied to an Object | [optional] |
 
 ## Methods
 
@@ -24,18 +31,13 @@ Name | Type | Description | Notes
 
 `func NewBulkRemoveTaggedObject() *BulkRemoveTaggedObject`
 
-NewBulkRemoveTaggedObject instantiates a new BulkRemoveTaggedObject object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewBulkRemoveTaggedObject instantiates a new BulkRemoveTaggedObject object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewBulkRemoveTaggedObjectWithDefaults
 
 `func NewBulkRemoveTaggedObjectWithDefaults() *BulkRemoveTaggedObject`
 
-NewBulkRemoveTaggedObjectWithDefaults instantiates a new BulkRemoveTaggedObject object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewBulkRemoveTaggedObjectWithDefaults instantiates a new BulkRemoveTaggedObject object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetObjectRefs
 
@@ -47,8 +49,7 @@ GetObjectRefs returns the ObjectRefs field if non-nil, zero value otherwise.
 
 `func (o *BulkRemoveTaggedObject) GetObjectRefsOk() (*[]TaggedObjectDto, bool)`
 
-GetObjectRefsOk returns a tuple with the ObjectRefs field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetObjectRefsOk returns a tuple with the ObjectRefs field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetObjectRefs
 
@@ -72,8 +73,7 @@ GetTags returns the Tags field if non-nil, zero value otherwise.
 
 `func (o *BulkRemoveTaggedObject) GetTagsOk() (*[]string, bool)`
 
-GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTags
 
@@ -86,5 +86,3 @@ SetTags sets Tags field to given value.
 `func (o *BulkRemoveTaggedObject) HasTags() bool`
 
 HasTags returns a boolean if a field has been set.
-
-

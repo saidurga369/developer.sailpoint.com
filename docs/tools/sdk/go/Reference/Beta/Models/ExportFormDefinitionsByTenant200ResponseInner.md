@@ -4,20 +4,33 @@ title: ExportFormDefinitionsByTenant200ResponseInner
 pagination_label: ExportFormDefinitionsByTenant200ResponseInner
 sidebar_label: ExportFormDefinitionsByTenant200ResponseInner
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ExportFormDefinitionsByTenant200ResponseInner', 'BetaExportFormDefinitionsByTenant200ResponseInner'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ExportFormDefinitionsByTenant200ResponseInner',
+    'BetaExportFormDefinitionsByTenant200ResponseInner',
+  ]
 slug: /tools/sdk/go/beta/models/export-form-definitions-by-tenant200-response-inner
-tags: ['SDK', 'Software Development Kit', 'ExportFormDefinitionsByTenant200ResponseInner', 'BetaExportFormDefinitionsByTenant200ResponseInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ExportFormDefinitionsByTenant200ResponseInner',
+    'BetaExportFormDefinitionsByTenant200ResponseInner',
+  ]
 ---
 
 # ExportFormDefinitionsByTenant200ResponseInner
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Object** | Pointer to [**FormDefinitionResponse**](form-definition-response) |  | [optional] 
-**Self** | Pointer to [**FormDefinitionSelfImportExportDto**](form-definition-self-import-export-dto) |  | [optional] 
-**Version** | Pointer to **int32** |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Object** | Pointer to [**FormDefinitionResponse**](form-definition-response) |  | [optional] |
+| **Self** | Pointer to [**FormDefinitionSelfImportExportDto**](form-definition-self-import-export-dto) |  | [optional] |
+| **Version** | Pointer to **int32** |  | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewExportFormDefinitionsByTenant200ResponseInner() *ExportFormDefinitionsByTenant200ResponseInner`
 
-NewExportFormDefinitionsByTenant200ResponseInner instantiates a new ExportFormDefinitionsByTenant200ResponseInner object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewExportFormDefinitionsByTenant200ResponseInner instantiates a new ExportFormDefinitionsByTenant200ResponseInner object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewExportFormDefinitionsByTenant200ResponseInnerWithDefaults
 
 `func NewExportFormDefinitionsByTenant200ResponseInnerWithDefaults() *ExportFormDefinitionsByTenant200ResponseInner`
 
-NewExportFormDefinitionsByTenant200ResponseInnerWithDefaults instantiates a new ExportFormDefinitionsByTenant200ResponseInner object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewExportFormDefinitionsByTenant200ResponseInnerWithDefaults instantiates a new ExportFormDefinitionsByTenant200ResponseInner object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetObject
 
@@ -48,8 +56,7 @@ GetObject returns the Object field if non-nil, zero value otherwise.
 
 `func (o *ExportFormDefinitionsByTenant200ResponseInner) GetObjectOk() (*FormDefinitionResponse, bool)`
 
-GetObjectOk returns a tuple with the Object field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetObjectOk returns a tuple with the Object field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetObject
 
@@ -73,8 +80,7 @@ GetSelf returns the Self field if non-nil, zero value otherwise.
 
 `func (o *ExportFormDefinitionsByTenant200ResponseInner) GetSelfOk() (*FormDefinitionSelfImportExportDto, bool)`
 
-GetSelfOk returns a tuple with the Self field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSelfOk returns a tuple with the Self field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSelf
 
@@ -98,8 +104,7 @@ GetVersion returns the Version field if non-nil, zero value otherwise.
 
 `func (o *ExportFormDefinitionsByTenant200ResponseInner) GetVersionOk() (*int32, bool)`
 
-GetVersionOk returns a tuple with the Version field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetVersionOk returns a tuple with the Version field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetVersion
 
@@ -112,5 +117,3 @@ SetVersion sets Version field to given value.
 `func (o *ExportFormDefinitionsByTenant200ResponseInner) HasVersion() bool`
 
 HasVersion returns a boolean if a field has been set.
-
-

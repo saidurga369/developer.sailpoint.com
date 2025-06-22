@@ -4,24 +4,30 @@ title: AttributeDefinition
 pagination_label: AttributeDefinition
 sidebar_label: AttributeDefinition
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AttributeDefinition', 'AttributeDefinition'] 
+keywords: ['go', 'Golang', 'sdk', 'AttributeDefinition', 'AttributeDefinition']
 slug: /tools/sdk/go/v3/models/attribute-definition
-tags: ['SDK', 'Software Development Kit', 'AttributeDefinition', 'AttributeDefinition']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AttributeDefinition',
+    'AttributeDefinition',
+  ]
 ---
 
 # AttributeDefinition
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | Pointer to **string** | The name of the attribute. | [optional] 
-**Type** | Pointer to [**AttributeDefinitionType**](attribute-definition-type) |  | [optional] 
-**Schema** | Pointer to [**AttributeDefinitionSchema**](attribute-definition-schema) |  | [optional] 
-**Description** | Pointer to **string** | A human-readable description of the attribute. | [optional] 
-**IsMulti** | Pointer to **bool** | Flag indicating whether or not the attribute is multi-valued. | [optional] [default to false]
-**IsEntitlement** | Pointer to **bool** | Flag indicating whether or not the attribute is an entitlement. | [optional] [default to false]
-**IsGroup** | Pointer to **bool** | Flag indicating whether or not the attribute represents a group. This can only be `true` if `isEntitlement` is also `true` **and** there is a schema defined for the attribute..  | [optional] [default to false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | Pointer to **string** | The name of the attribute. | [optional] |
+| **Type** | Pointer to [**AttributeDefinitionType**](attribute-definition-type) |  | [optional] |
+| **Schema** | Pointer to [**AttributeDefinitionSchema**](attribute-definition-schema) |  | [optional] |
+| **Description** | Pointer to **string** | A human-readable description of the attribute. | [optional] |
+| **IsMulti** | Pointer to **bool** | Flag indicating whether or not the attribute is multi-valued. | [optional] [default to false] |
+| **IsEntitlement** | Pointer to **bool** | Flag indicating whether or not the attribute is an entitlement. | [optional] [default to false] |
+| **IsGroup** | Pointer to **bool** | Flag indicating whether or not the attribute represents a group. This can only be `true` if `isEntitlement` is also `true` **and** there is a schema defined for the attribute.. | [optional] [default to false] |
 
 ## Methods
 
@@ -29,18 +35,13 @@ Name | Type | Description | Notes
 
 `func NewAttributeDefinition() *AttributeDefinition`
 
-NewAttributeDefinition instantiates a new AttributeDefinition object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAttributeDefinition instantiates a new AttributeDefinition object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAttributeDefinitionWithDefaults
 
 `func NewAttributeDefinitionWithDefaults() *AttributeDefinition`
 
-NewAttributeDefinitionWithDefaults instantiates a new AttributeDefinition object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAttributeDefinitionWithDefaults instantiates a new AttributeDefinition object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -52,8 +53,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *AttributeDefinition) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -77,8 +77,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *AttributeDefinition) GetTypeOk() (*AttributeDefinitionType, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -102,8 +101,7 @@ GetSchema returns the Schema field if non-nil, zero value otherwise.
 
 `func (o *AttributeDefinition) GetSchemaOk() (*AttributeDefinitionSchema, bool)`
 
-GetSchemaOk returns a tuple with the Schema field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSchemaOk returns a tuple with the Schema field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSchema
 
@@ -127,8 +125,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *AttributeDefinition) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -152,8 +149,7 @@ GetIsMulti returns the IsMulti field if non-nil, zero value otherwise.
 
 `func (o *AttributeDefinition) GetIsMultiOk() (*bool, bool)`
 
-GetIsMultiOk returns a tuple with the IsMulti field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIsMultiOk returns a tuple with the IsMulti field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIsMulti
 
@@ -177,8 +173,7 @@ GetIsEntitlement returns the IsEntitlement field if non-nil, zero value otherwis
 
 `func (o *AttributeDefinition) GetIsEntitlementOk() (*bool, bool)`
 
-GetIsEntitlementOk returns a tuple with the IsEntitlement field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIsEntitlementOk returns a tuple with the IsEntitlement field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIsEntitlement
 
@@ -202,8 +197,7 @@ GetIsGroup returns the IsGroup field if non-nil, zero value otherwise.
 
 `func (o *AttributeDefinition) GetIsGroupOk() (*bool, bool)`
 
-GetIsGroupOk returns a tuple with the IsGroup field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIsGroupOk returns a tuple with the IsGroup field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIsGroup
 
@@ -216,5 +210,3 @@ SetIsGroup sets IsGroup field to given value.
 `func (o *AttributeDefinition) HasIsGroup() bool`
 
 HasIsGroup returns a boolean if a field has been set.
-
-

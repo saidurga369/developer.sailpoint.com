@@ -113,9 +113,7 @@ Use this command to preview a transform in your environment. The command offers 
 
 Both modes display the transform result along with the associated identity attributes in a table format, giving you a clear overview of the applied transformation.
 
-:::warning
-This command temporarily creates and deletes a transform in your environment to generate the preview.
-:::
+:::warning This command temporarily creates and deletes a transform in your environment to generate the preview. :::
 
 Below is an example of Interactive Mode, where you'll provide inputs dynamically:
 

@@ -4,9 +4,10 @@ title: SourceHealthDto
 pagination_label: SourceHealthDto
 sidebar_label: SourceHealthDto
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SourceHealthDto', 'V2024SourceHealthDto'] 
+keywords: ['python', 'Python', 'sdk', 'SourceHealthDto', 'V2024SourceHealthDto']
 slug: /tools/sdk/python/v2024/models/source-health-dto
-tags: ['SDK', 'Software Development Kit', 'SourceHealthDto', 'V2024SourceHealthDto']
+tags:
+  ['SDK', 'Software Development Kit', 'SourceHealthDto', 'V2024SourceHealthDto']
 ---
 
 # SourceHealthDto
@@ -15,18 +16,19 @@ Dto for source health data
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | the id of the Source | [optional] [readonly] 
-**type** | **str** | Specifies the type of system being managed e.g. Active Directory, Workday, etc.. If you are creating a Delimited File source, you must set the `provisionasCsv` query parameter to `true`.  | [optional] 
-**name** | **str** | the name of the source | [optional] 
-**org** | **str** | source's org | [optional] 
-**is_authoritative** | **bool** | Is the source authoritative | [optional] 
-**is_cluster** | **bool** | Is the source in a cluster | [optional] 
-**hostname** | **str** | source's hostname | [optional] 
-**pod** | **str** | source's pod | [optional] 
-**iq_service_version** | **str** | The version of the iqService | [optional] 
-**status** |  **Enum** [  'SOURCE_STATE_ERROR_CLUSTER',    'SOURCE_STATE_ERROR_SOURCE',    'SOURCE_STATE_ERROR_VA',    'SOURCE_STATE_FAILURE_CLUSTER',    'SOURCE_STATE_FAILURE_SOURCE',    'SOURCE_STATE_HEALTHY',    'SOURCE_STATE_UNCHECKED_CLUSTER',    'SOURCE_STATE_UNCHECKED_CLUSTER_NO_SOURCES',    'SOURCE_STATE_UNCHECKED_SOURCE',    'SOURCE_STATE_UNCHECKED_SOURCE_NO_ACCOUNTS',    'SOURCE_STATE_ERROR_ACCOUNT_FILE_IMPORT' ] | connection test result | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | the id of the Source | [optional] [readonly] |
+| **type** | **str** | Specifies the type of system being managed e.g. Active Directory, Workday, etc.. If you are creating a Delimited File source, you must set the `provisionasCsv` query parameter to `true`. | [optional] |
+| **name** | **str** | the name of the source | [optional] |
+| **org** | **str** | source's org | [optional] |
+| **is_authoritative** | **bool** | Is the source authoritative | [optional] |
+| **is_cluster** | **bool** | Is the source in a cluster | [optional] |
+| **hostname** | **str** | source's hostname | [optional] |
+| **pod** | **str** | source's pod | [optional] |
+| **iq_service_version** | **str** | The version of the iqService | [optional] |
+| **status** | **Enum** [ 'SOURCE_STATE_ERROR_CLUSTER', 'SOURCE_STATE_ERROR_SOURCE', 'SOURCE_STATE_ERROR_VA', 'SOURCE_STATE_FAILURE_CLUSTER', 'SOURCE_STATE_FAILURE_SOURCE', 'SOURCE_STATE_HEALTHY', 'SOURCE_STATE_UNCHECKED_CLUSTER', 'SOURCE_STATE_UNCHECKED_CLUSTER_NO_SOURCES', 'SOURCE_STATE_UNCHECKED_SOURCE', 'SOURCE_STATE_UNCHECKED_SOURCE_NO_ACCOUNTS', 'SOURCE_STATE_ERROR_ACCOUNT_FILE_IMPORT' ] | connection test result | [optional] |
+
 }
 
 ## Example
@@ -48,5 +50,5 @@ status='SOURCE_STATE_UNCHECKED_SOURCE'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

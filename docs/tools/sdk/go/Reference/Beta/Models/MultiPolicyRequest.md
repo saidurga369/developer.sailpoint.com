@@ -4,18 +4,25 @@ title: MultiPolicyRequest
 pagination_label: MultiPolicyRequest
 sidebar_label: MultiPolicyRequest
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'MultiPolicyRequest', 'BetaMultiPolicyRequest'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'MultiPolicyRequest', 'BetaMultiPolicyRequest']
 slug: /tools/sdk/go/beta/models/multi-policy-request
-tags: ['SDK', 'Software Development Kit', 'MultiPolicyRequest', 'BetaMultiPolicyRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'MultiPolicyRequest',
+    'BetaMultiPolicyRequest',
+  ]
 ---
 
 # MultiPolicyRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**FilteredPolicyList** | Pointer to **[]string** | Multi-policy report will be run for this list of ids | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **FilteredPolicyList** | Pointer to **[]string** | Multi-policy report will be run for this list of ids | [optional] |
 
 ## Methods
 
@@ -23,18 +30,13 @@ Name | Type | Description | Notes
 
 `func NewMultiPolicyRequest() *MultiPolicyRequest`
 
-NewMultiPolicyRequest instantiates a new MultiPolicyRequest object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewMultiPolicyRequest instantiates a new MultiPolicyRequest object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewMultiPolicyRequestWithDefaults
 
 `func NewMultiPolicyRequestWithDefaults() *MultiPolicyRequest`
 
-NewMultiPolicyRequestWithDefaults instantiates a new MultiPolicyRequest object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewMultiPolicyRequestWithDefaults instantiates a new MultiPolicyRequest object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetFilteredPolicyList
 
@@ -46,8 +48,7 @@ GetFilteredPolicyList returns the FilteredPolicyList field if non-nil, zero valu
 
 `func (o *MultiPolicyRequest) GetFilteredPolicyListOk() (*[]string, bool)`
 
-GetFilteredPolicyListOk returns a tuple with the FilteredPolicyList field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFilteredPolicyListOk returns a tuple with the FilteredPolicyList field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFilteredPolicyList
 
@@ -60,5 +61,3 @@ SetFilteredPolicyList sets FilteredPolicyList field to given value.
 `func (o *MultiPolicyRequest) HasFilteredPolicyList() bool`
 
 HasFilteredPolicyList returns a boolean if a field has been set.
-
-

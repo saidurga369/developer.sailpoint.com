@@ -4,7 +4,7 @@ title: ReviewReassign
 pagination_label: ReviewReassign
 sidebar_label: ReviewReassign
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ReviewReassign', 'ReviewReassign'] 
+keywords: ['go', 'Golang', 'sdk', 'ReviewReassign', 'ReviewReassign']
 slug: /tools/sdk/go/v3/models/review-reassign
 tags: ['SDK', 'Software Development Kit', 'ReviewReassign', 'ReviewReassign']
 ---
@@ -13,11 +13,11 @@ tags: ['SDK', 'Software Development Kit', 'ReviewReassign', 'ReviewReassign']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Reassign** | [**[]ReassignReference**](reassign-reference) |  | 
-**ReassignTo** | **string** | The ID of the identity to which the certification is reassigned | 
-**Reason** | **string** | The reason comment for why the reassign was made | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Reassign** | [**[]ReassignReference**](reassign-reference) |  |
+| **ReassignTo** | **string** | The ID of the identity to which the certification is reassigned |
+| **Reason** | **string** | The reason comment for why the reassign was made |
 
 ## Methods
 
@@ -25,18 +25,13 @@ Name | Type | Description | Notes
 
 `func NewReviewReassign(reassign []ReassignReference, reassignTo string, reason string, ) *ReviewReassign`
 
-NewReviewReassign instantiates a new ReviewReassign object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewReviewReassign instantiates a new ReviewReassign object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewReviewReassignWithDefaults
 
 `func NewReviewReassignWithDefaults() *ReviewReassign`
 
-NewReviewReassignWithDefaults instantiates a new ReviewReassign object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewReviewReassignWithDefaults instantiates a new ReviewReassign object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetReassign
 
@@ -48,15 +43,13 @@ GetReassign returns the Reassign field if non-nil, zero value otherwise.
 
 `func (o *ReviewReassign) GetReassignOk() (*[]ReassignReference, bool)`
 
-GetReassignOk returns a tuple with the Reassign field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReassignOk returns a tuple with the Reassign field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReassign
 
 `func (o *ReviewReassign) SetReassign(v []ReassignReference)`
 
 SetReassign sets Reassign field to given value.
-
 
 ### GetReassignTo
 
@@ -68,15 +61,13 @@ GetReassignTo returns the ReassignTo field if non-nil, zero value otherwise.
 
 `func (o *ReviewReassign) GetReassignToOk() (*string, bool)`
 
-GetReassignToOk returns a tuple with the ReassignTo field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReassignToOk returns a tuple with the ReassignTo field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReassignTo
 
 `func (o *ReviewReassign) SetReassignTo(v string)`
 
 SetReassignTo sets ReassignTo field to given value.
-
 
 ### GetReason
 
@@ -88,14 +79,10 @@ GetReason returns the Reason field if non-nil, zero value otherwise.
 
 `func (o *ReviewReassign) GetReasonOk() (*string, bool)`
 
-GetReasonOk returns a tuple with the Reason field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReasonOk returns a tuple with the Reason field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReason
 
 `func (o *ReviewReassign) SetReason(v string)`
 
 SetReason sets Reason field to given value.
-
-
-

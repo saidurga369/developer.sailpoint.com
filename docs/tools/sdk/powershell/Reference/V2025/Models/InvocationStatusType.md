@@ -4,21 +4,30 @@ title: InvocationStatusType
 pagination_label: InvocationStatusType
 sidebar_label: InvocationStatusType
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'InvocationStatusType', 'V2025InvocationStatusType'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'InvocationStatusType',
+    'V2025InvocationStatusType',
+  ]
 slug: /tools/sdk/powershell/v2025/models/invocation-status-type
-tags: ['SDK', 'Software Development Kit', 'InvocationStatusType', 'V2025InvocationStatusType']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'InvocationStatusType',
+    'V2025InvocationStatusType',
+  ]
 ---
-
 
 # InvocationStatusType
 
 ## Enum
 
+- `TEST` (value: `"TEST"`)
 
-* `TEST` (value: `"TEST"`)
+- `REAL_TIME` (value: `"REAL_TIME"`)
 
-* `REAL_TIME` (value: `"REAL_TIME"`)
-
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

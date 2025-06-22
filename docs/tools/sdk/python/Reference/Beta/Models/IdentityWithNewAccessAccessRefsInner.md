@@ -4,9 +4,22 @@ title: IdentityWithNewAccessAccessRefsInner
 pagination_label: IdentityWithNewAccessAccessRefsInner
 sidebar_label: IdentityWithNewAccessAccessRefsInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentityWithNewAccessAccessRefsInner', 'BetaIdentityWithNewAccessAccessRefsInner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'IdentityWithNewAccessAccessRefsInner',
+    'BetaIdentityWithNewAccessAccessRefsInner',
+  ]
 slug: /tools/sdk/python/beta/models/identity-with-new-access-access-refs-inner
-tags: ['SDK', 'Software Development Kit', 'IdentityWithNewAccessAccessRefsInner', 'BetaIdentityWithNewAccessAccessRefsInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityWithNewAccessAccessRefsInner',
+    'BetaIdentityWithNewAccessAccessRefsInner',
+  ]
 ---
 
 # IdentityWithNewAccessAccessRefsInner
@@ -15,11 +28,12 @@ Entitlement including a specific set of access.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'ENTITLEMENT' ] | Entitlement's DTO type. | [optional] 
-**id** | **str** | Entitlement's ID. | [optional] 
-**name** | **str** | Entitlement's display name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'ENTITLEMENT' ] | Entitlement's DTO type. | [optional] |
+| **id** | **str** | Entitlement's ID. | [optional] |
+| **name** | **str** | Entitlement's display name. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='CN=entitlement.490efde5,OU=OrgCo,OU=ServiceDept,DC=HQAD,DC=local'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

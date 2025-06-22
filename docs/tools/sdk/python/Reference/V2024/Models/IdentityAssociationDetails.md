@@ -4,20 +4,33 @@ title: IdentityAssociationDetails
 pagination_label: IdentityAssociationDetails
 sidebar_label: IdentityAssociationDetails
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentityAssociationDetails', 'V2024IdentityAssociationDetails'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'IdentityAssociationDetails',
+    'V2024IdentityAssociationDetails',
+  ]
 slug: /tools/sdk/python/v2024/models/identity-association-details
-tags: ['SDK', 'Software Development Kit', 'IdentityAssociationDetails', 'V2024IdentityAssociationDetails']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityAssociationDetails',
+    'V2024IdentityAssociationDetails',
+  ]
 ---
 
 # IdentityAssociationDetails
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**message** | **str** | any additional context information of the http call result | [optional] 
-**association_details** | [**[]IdentityAssociationDetailsAssociationDetailsInner**](identity-association-details-association-details-inner) | list of all the resource associations for the identity | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **message** | **str** | any additional context information of the http call result | [optional] |
+| **association_details** | [**[]IdentityAssociationDetailsAssociationDetailsInner**](identity-association-details-association-details-inner) | list of all the resource associations for the identity | [optional] |
+
 }
 
 ## Example
@@ -29,11 +42,11 @@ identity_association_details = IdentityAssociationDetails(
 message='Identity cannot be deleted as it is owner of following resources',
 association_details=[
                     sailpoint.v2024.models.identity_association_details_association_details_inner.IdentityAssociationDetails_associationDetails_inner(
-                        association_type = 'CAMPAIGN_OWNER', 
+                        association_type = 'CAMPAIGN_OWNER',
                         entities = {id=b660a232f05b4e04812ca974b3011e0f, name=Gaston.800ddf9640a, type=CAMPAIGN_CAMPAIGNER}, )
                     ]
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

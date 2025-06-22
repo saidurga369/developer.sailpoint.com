@@ -4,9 +4,22 @@ title: IdentityProfileExportedObjectSelf
 pagination_label: IdentityProfileExportedObjectSelf
 sidebar_label: IdentityProfileExportedObjectSelf
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'IdentityProfileExportedObjectSelf', 'IdentityProfileExportedObjectSelf'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'IdentityProfileExportedObjectSelf',
+    'IdentityProfileExportedObjectSelf',
+  ]
 slug: /tools/sdk/python/v3/models/identity-profile-exported-object-self
-tags: ['SDK', 'Software Development Kit', 'IdentityProfileExportedObjectSelf', 'IdentityProfileExportedObjectSelf']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityProfileExportedObjectSelf',
+    'IdentityProfileExportedObjectSelf',
+  ]
 ---
 
 # IdentityProfileExportedObjectSelf
@@ -15,11 +28,12 @@ Self block for exported object.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'ACCESS_PROFILE',    'ACCESS_REQUEST_CONFIG',    'ATTR_SYNC_SOURCE_CONFIG',    'AUTH_ORG',    'CAMPAIGN_FILTER',    'FORM_DEFINITION',    'GOVERNANCE_GROUP',    'IDENTITY_OBJECT_CONFIG',    'IDENTITY_PROFILE',    'LIFECYCLE_STATE',    'NOTIFICATION_TEMPLATE',    'PASSWORD_POLICY',    'PASSWORD_SYNC_GROUP',    'PUBLIC_IDENTITIES_CONFIG',    'ROLE',    'RULE',    'SEGMENT',    'SERVICE_DESK_INTEGRATION',    'SOD_POLICY',    'SOURCE',    'TAG',    'TRANSFORM',    'TRIGGER_SUBSCRIPTION',    'WORKFLOW' ] | Exported object's DTO type. | [optional] 
-**id** | **str** | Exported object's ID. | [optional] 
-**name** | **str** | Exported object's display name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'ACCESS_PROFILE', 'ACCESS_REQUEST_CONFIG', 'ATTR_SYNC_SOURCE_CONFIG', 'AUTH_ORG', 'CAMPAIGN_FILTER', 'FORM_DEFINITION', 'GOVERNANCE_GROUP', 'IDENTITY_OBJECT_CONFIG', 'IDENTITY_PROFILE', 'LIFECYCLE_STATE', 'NOTIFICATION_TEMPLATE', 'PASSWORD_POLICY', 'PASSWORD_SYNC_GROUP', 'PUBLIC_IDENTITIES_CONFIG', 'ROLE', 'RULE', 'SEGMENT', 'SERVICE_DESK_INTEGRATION', 'SOD_POLICY', 'SOURCE', 'TAG', 'TRANSFORM', 'TRIGGER_SUBSCRIPTION', 'WORKFLOW' ] | Exported object's DTO type. | [optional] |
+| **id** | **str** | Exported object's ID. | [optional] |
+| **name** | **str** | Exported object's display name. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='HR Active Directory'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

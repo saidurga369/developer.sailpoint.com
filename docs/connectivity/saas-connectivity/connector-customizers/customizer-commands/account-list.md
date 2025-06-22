@@ -13,9 +13,9 @@ tags: ['Connectivity', 'Connector Command']
 
 Use these commands to intercept the [account-list](../../commands/account-list) command.
 
-| Input/Output |      Data Type      |
-| :----------- | :-----------------: |
-| Input        | StdAccountListInput |
+| Input/Output |      Data Type       |
+| :----------- | :------------------: |
+| Input        | StdAccountListInput  |
 | Output       | StdAccountListOutput |
 
 ### Example StdAccountListInput
@@ -77,6 +77,4 @@ Use this logic to implement the command:
 
 The `output` object can be mutated and returned, but the same data type must still be returned.
 
-:::caution CAUTION
-There will be delay in the aggregation process due to this customization process that involves additional processing.
-:::
+:::caution CAUTION There will be delay in the aggregation process due to this customization process that involves additional processing. :::

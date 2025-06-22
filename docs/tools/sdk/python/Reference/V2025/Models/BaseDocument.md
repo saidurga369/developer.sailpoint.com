@@ -4,20 +4,20 @@ title: BaseDocument
 pagination_label: BaseDocument
 sidebar_label: BaseDocument
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'BaseDocument', 'V2025BaseDocument'] 
+keywords: ['python', 'Python', 'sdk', 'BaseDocument', 'V2025BaseDocument']
 slug: /tools/sdk/python/v2025/models/base-document
 tags: ['SDK', 'Software Development Kit', 'BaseDocument', 'V2025BaseDocument']
 ---
 
 # BaseDocument
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | ID of the referenced object. | [required]
-**name** | **str** | The human readable name of the referenced object. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | ID of the referenced object. | [required] |
+| **name** | **str** | The human readable name of the referenced object. | [required] |
+
 }
 
 ## Example
@@ -31,5 +31,5 @@ name='john.doe'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -1,21 +1,20 @@
-import React from "react";
+import React from 'react';
 
-import fileSaver from "file-saver";
+import fileSaver from 'file-saver';
 
 const saveFile = (url: string) => {
   let fileName;
-  if (url.endsWith("json") || url.endsWith("yaml") || url.endsWith("yml")) {
-    fileName = url.substring(url.lastIndexOf("/") + 1);
+  if (url.endsWith('json') || url.endsWith('yaml') || url.endsWith('yml')) {
+    fileName = url.substring(url.lastIndexOf('/') + 1);
   }
-  fileSaver.saveAs(url, fileName ? fileName : "openapi.txt");
+  fileSaver.saveAs(url, fileName ? fileName : 'openapi.txt');
 };
 
-function Export({ url, proxy }: any) {
+function Export({url, proxy}: any) {
   return (
     <div
-      style={{ float: "right" }}
-      className="dropdown dropdown--hoverable dropdown--right"
-    >
+      style={{float: 'right'}}
+      className="dropdown dropdown--hoverable dropdown--right">
       <button className="export-button button button--sm button--secondary">
         Export
       </button>
@@ -27,8 +26,7 @@ function Export({ url, proxy }: any) {
               saveFile(`${url}`);
             }}
             className="dropdown__link"
-            href={`${url}`}
-          >
+            href={`${url}`}>
             OpenAPI Spec
           </a>
         </li>

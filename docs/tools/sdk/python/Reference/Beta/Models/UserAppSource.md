@@ -4,21 +4,21 @@ title: UserAppSource
 pagination_label: UserAppSource
 sidebar_label: UserAppSource
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'UserAppSource', 'BetaUserAppSource'] 
+keywords: ['python', 'Python', 'sdk', 'UserAppSource', 'BetaUserAppSource']
 slug: /tools/sdk/python/beta/models/user-app-source
 tags: ['SDK', 'Software Development Kit', 'UserAppSource', 'BetaUserAppSource']
 ---
 
 # UserAppSource
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | the source ID | [optional] 
-**type** | **str** | It will always be \"SOURCE\" | [optional] 
-**name** | **str** | the source name | [optional] 
+| Name     | Type    | Description                  | Notes      |
+| -------- | ------- | ---------------------------- | ---------- |
+| **id**   | **str** | the source ID                | [optional] |
+| **type** | **str** | It will always be \"SOURCE\" | [optional] |
+| **name** | **str** | the source name              | [optional] |
+
 }
 
 ## Example
@@ -33,5 +33,5 @@ name='test-source'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

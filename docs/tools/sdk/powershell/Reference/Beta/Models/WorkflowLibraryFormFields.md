@@ -4,28 +4,41 @@ title: WorkflowLibraryFormFields
 pagination_label: WorkflowLibraryFormFields
 sidebar_label: WorkflowLibraryFormFields
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'WorkflowLibraryFormFields', 'BetaWorkflowLibraryFormFields'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'WorkflowLibraryFormFields',
+    'BetaWorkflowLibraryFormFields',
+  ]
 slug: /tools/sdk/powershell/beta/models/workflow-library-form-fields
-tags: ['SDK', 'Software Development Kit', 'WorkflowLibraryFormFields', 'BetaWorkflowLibraryFormFields']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'WorkflowLibraryFormFields',
+    'BetaWorkflowLibraryFormFields',
+  ]
 ---
-
 
 # WorkflowLibraryFormFields
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Description** | **String** | Description of the form field | [optional] 
-**HelpText** | **String** | Describes the form field in the UI | [optional] 
-**Label** | **String** | A human readable name for this form field in the UI | [optional] 
-**Name** | **String** | The name of the input attribute | [optional] 
-**Required** | **Boolean** | Denotes if this field is a required attribute | [optional] 
-**Type** |  **Enum** [  "text",    "textarea",    "boolean",    "email",    "url",    "number",    "json",    "checkbox",    "jsonpath",    "select",    "multiType",    "duration",    "toggle",    "formPicker",    "identityPicker",    "governanceGroupPicker",    "string",    "object",    "array",    "secret",    "keyValuePairs",    "emailPicker",    "advancedToggle",    "variableCreator",    "htmlEditor" ] | The type of the form field | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Description** | **String** | Description of the form field | [optional] |
+| **HelpText** | **String** | Describes the form field in the UI | [optional] |
+| **Label** | **String** | A human readable name for this form field in the UI | [optional] |
+| **Name** | **String** | The name of the input attribute | [optional] |
+| **Required** | **Boolean** | Denotes if this field is a required attribute | [optional] |
+| **Type** | **Enum** [ "text", "textarea", "boolean", "email", "url", "number", "json", "checkbox", "jsonpath", "select", "multiType", "duration", "toggle", "formPicker", "identityPicker", "governanceGroupPicker", "string", "object", "array", "secret", "keyValuePairs", "emailPicker", "advancedToggle", "variableCreator", "htmlEditor" ] | The type of the form field | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $WorkflowLibraryFormFields = Initialize-BetaWorkflowLibraryFormFields  -Description First value to compare `
  -HelpText The name to give to this certification campaign. `
@@ -36,10 +49,9 @@ $WorkflowLibraryFormFields = Initialize-BetaWorkflowLibraryFormFields  -Descript
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $WorkflowLibraryFormFields | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

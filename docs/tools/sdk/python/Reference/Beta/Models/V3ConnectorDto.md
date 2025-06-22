@@ -4,26 +4,27 @@ title: V3ConnectorDto
 pagination_label: V3ConnectorDto
 sidebar_label: V3ConnectorDto
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'V3ConnectorDto', 'BetaV3ConnectorDto'] 
+keywords: ['python', 'Python', 'sdk', 'V3ConnectorDto', 'BetaV3ConnectorDto']
 slug: /tools/sdk/python/beta/models/v3-connector-dto
-tags: ['SDK', 'Software Development Kit', 'V3ConnectorDto', 'BetaV3ConnectorDto']
+tags:
+  ['SDK', 'Software Development Kit', 'V3ConnectorDto', 'BetaV3ConnectorDto']
 ---
 
 # V3ConnectorDto
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | The connector name | [optional] 
-**type** | **str** | The connector type | [optional] 
-**script_name** | **str** | The connector script name | [optional] 
-**class_name** | **str** | The connector class name. | [optional] 
-**features** | **[]str** | The list of features supported by the connector | [optional] 
-**direct_connect** | **bool** | true if the source is a direct connect source | [optional] [default to False]
-**connector_metadata** | **object** | Object containing metadata pertinent to the UI to be used | [optional] 
-**status** | **str** | The connector status | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **name** | **str** | The connector name | [optional] |
+| **type** | **str** | The connector type | [optional] |
+| **script_name** | **str** | The connector script name | [optional] |
+| **class_name** | **str** | The connector class name. | [optional] |
+| **features** | **[]str** | The list of features supported by the connector | [optional] |
+| **direct_connect** | **bool** | true if the source is a direct connect source | [optional] [default to False] |
+| **connector_metadata** | **object** | Object containing metadata pertinent to the UI to be used | [optional] |
+| **status** | **str** | The connector status | [optional] |
+
 }
 
 ## Example
@@ -43,5 +44,5 @@ status='RELEASED'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

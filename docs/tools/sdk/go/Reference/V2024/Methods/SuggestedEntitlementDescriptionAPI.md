@@ -4,55 +4,61 @@ title: SuggestedEntitlementDescription
 pagination_label: SuggestedEntitlementDescription
 sidebar_label: SuggestedEntitlementDescription
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SuggestedEntitlementDescription', 'V2024SuggestedEntitlementDescription'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'SuggestedEntitlementDescription',
+    'V2024SuggestedEntitlementDescription',
+  ]
 slug: /tools/sdk/go/v2024/methods/suggested-entitlement-description
-tags: ['SDK', 'Software Development Kit', 'SuggestedEntitlementDescription', 'V2024SuggestedEntitlementDescription']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SuggestedEntitlementDescription',
+    'V2024SuggestedEntitlementDescription',
+  ]
 ---
 
 # SuggestedEntitlementDescriptionAPI
-  Use this API to implement Suggested Entitlement Description (SED) functionality. 
-SED functionality leverages the power of LLM to generate suggested entitlement descriptions. 
-Refer to [GenAI Entitlement Descriptions](https://documentation.sailpoint.com/saas/help/access/entitlements.html#genai-entitlement-descriptions) to learn more about SED in Identity Security Cloud (ISC). 
- 
+
+Use this API to implement Suggested Entitlement Description (SED) functionality. SED functionality leverages the power of LLM to generate suggested entitlement descriptions. Refer to [GenAI Entitlement Descriptions](https://documentation.sailpoint.com/saas/help/access/entitlements.html#genai-entitlement-descriptions) to learn more about SED in Identity Security Cloud (ISC).
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/v2024*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**get-sed-batch-stats**](#get-sed-batch-stats) | **Get** `/suggested-entitlement-description-batches/{batchId}/stats` | Submit sed batch stats request
-[**get-sed-batches**](#get-sed-batches) | **Get** `/suggested-entitlement-description-batches` | List Sed Batch Record
-[**list-seds**](#list-seds) | **Get** `/suggested-entitlement-descriptions` | List suggested entitlement descriptions
-[**patch-sed**](#patch-sed) | **Patch** `/suggested-entitlement-descriptions` | Patch suggested entitlement description
-[**submit-sed-approval**](#submit-sed-approval) | **Post** `/suggested-entitlement-description-approvals` | Submit bulk approval request
-[**submit-sed-assignment**](#submit-sed-assignment) | **Post** `/suggested-entitlement-description-assignments` | Submit sed assignment request
-[**submit-sed-batch-request**](#submit-sed-batch-request) | **Post** `/suggested-entitlement-description-batches` | Submit sed batch request
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**get-sed-batch-stats**](#get-sed-batch-stats) | **Get** `/suggested-entitlement-description-batches/{batchId}/stats` | Submit sed batch stats request |
+| [**get-sed-batches**](#get-sed-batches) | **Get** `/suggested-entitlement-description-batches` | List Sed Batch Record |
+| [**list-seds**](#list-seds) | **Get** `/suggested-entitlement-descriptions` | List suggested entitlement descriptions |
+| [**patch-sed**](#patch-sed) | **Patch** `/suggested-entitlement-descriptions` | Patch suggested entitlement description |
+| [**submit-sed-approval**](#submit-sed-approval) | **Post** `/suggested-entitlement-description-approvals` | Submit bulk approval request |
+| [**submit-sed-assignment**](#submit-sed-assignment) | **Post** `/suggested-entitlement-description-assignments` | Submit sed assignment request |
+| [**submit-sed-batch-request**](#submit-sed-batch-request) | **Post** `/suggested-entitlement-description-batches` | Submit sed batch request |
 
 ## get-sed-batch-stats
-Submit sed batch stats request
-'Submit Sed Batch Stats Request.
 
- Submits batchId in the path param `(e.g. {batchId}/stats)`. API responses with stats
- of the batchId.'
+Submit sed batch stats request 'Submit Sed Batch Stats Request.
 
+Submits batchId in the path param `(e.g. {batchId}/stats)`. API responses with stats of the batchId.'
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/get-sed-batch-stats)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**batchId** | **string** | Batch Id | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **batchId** | **string** | Batch Id |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetSedBatchStatsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -72,15 +78,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     batchId := `8c190e67-87aa-4ed9-a90b-d9d5344523fb` // string | Batch Id # string | Batch Id
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -98,28 +104,24 @@ func main() {
 [[Back to top]](#)
 
 ## get-sed-batches
-List Sed Batch Record
-List Sed Batches.
-API responses with Sed Batch Records
+
+List Sed Batch Record List Sed Batches. API responses with Sed Batch Records
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/get-sed-batches)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetSedBatchesRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **offset** | **int64** | Offset  Integer specifying the offset of the first result from the beginning of the collection. The standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#paginating-results). The offset value is record-based, not page-based, and the index starts at 0. | [default to 0]
- **limit** | **int64** | Limit  Integer specifying the maximum number of records to return in a single API call. The standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#paginating-results). If it is not specified, a default limit is used. | [default to 250]
- **count** | **bool** | If &#x60;true&#x60; it will populate the &#x60;X-Total-Count&#x60; response header with the number of results that would be returned if &#x60;limit&#x60; and &#x60;offset&#x60; were ignored.  The standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#paginating-results). Since requesting a total count can have a performance impact, it is recommended not to send &#x60;count&#x3D;true&#x60; if that value will not be used. | [default to false]
- **countOnly** | **bool** | If &#x60;true&#x60; it will populate the &#x60;X-Total-Count&#x60; response header with the number of results that would be returned if &#x60;limit&#x60; and &#x60;offset&#x60; were ignored. This parameter differs from the &#x60;count&#x60; parameter in that this one skips executing the actual query and always return an empty array. | [default to false]
- **status** | **string** | Batch Status | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **offset** | **int64** | Offset Integer specifying the offset of the first result from the beginning of the collection. The standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#paginating-results). The offset value is record-based, not page-based, and the index starts at 0. | [default to 0] |
+| **limit** | **int64** | Limit Integer specifying the maximum number of records to return in a single API call. The standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#paginating-results). If it is not specified, a default limit is used. | [default to 250] |
+| **count** | **bool** | If &#x60;true&#x60; it will populate the &#x60;X-Total-Count&#x60; response header with the number of results that would be returned if &#x60;limit&#x60; and &#x60;offset&#x60; were ignored. The standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#paginating-results). Since requesting a total count can have a performance impact, it is recommended not to send &#x60;count&#x3D;true&#x60; if that value will not be used. | [default to false] |
+| **countOnly** | **bool** | If &#x60;true&#x60; it will populate the &#x60;X-Total-Count&#x60; response header with the number of results that would be returned if &#x60;limit&#x60; and &#x60;offset&#x60; were ignored. This parameter differs from the &#x60;count&#x60; parameter in that this one skips executing the actual query and always return an empty array. | [default to false] |
+| **status** | **string** | Batch Status |
 
 ### Return type
 
@@ -139,8 +141,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -151,7 +153,7 @@ func main() {
     countOnly := true // bool | If `true` it will populate the `X-Total-Count` response header with the number of results that would be returned if `limit` and `offset` were ignored. This parameter differs from the `count` parameter in that this one skips executing the actual query and always return an empty array. (optional) (default to false) # bool | If `true` it will populate the `X-Total-Count` response header with the number of results that would be returned if `limit` and `offset` were ignored. This parameter differs from the `count` parameter in that this one skips executing the actual query and always return an empty array. (optional) (default to false)
     status := `completed, failed, submitted, materialized, failed` // string | Batch Status (optional) # string | Batch Status (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -169,8 +171,8 @@ func main() {
 [[Back to top]](#)
 
 ## list-seds
-List suggested entitlement descriptions
-List of Suggested Entitlement Descriptions (SED)
+
+List suggested entitlement descriptions List of Suggested Entitlement Descriptions (SED)
 
 SED field descriptions:
 
@@ -190,23 +192,20 @@ SED field descriptions:
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListSedsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **batchId**: *eq, ne*  **displayName**: *eq, ne, co*  **sourceName**: *eq, ne, co*  **sourceId**: *eq, ne*  **status**: *eq, ne*  **fullText**: *co* | 
- **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **displayName, sourceName, status** | 
- **countOnly** | **bool** | If &#x60;true&#x60; it will populate the &#x60;X-Total-Count&#x60; response header with the number of results that would be returned if &#x60;limit&#x60; and &#x60;offset&#x60; were ignored. This parameter differs from the count parameter in that this one skips executing the actual query and always return an empty array. | [default to false]
- **requestedByAnyone** | **bool** | By default, the ListSeds API will only return items that you have requested to be generated.   This option will allow you to see all items that have been requested | [default to false]
- **showPendingStatusOnly** | **bool** | Will limit records to items that are in \&quot;suggested\&quot; or \&quot;approved\&quot; status | [default to false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
+| **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false] |
+| **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **batchId**: _eq, ne_ **displayName**: _eq, ne, co_ **sourceName**: _eq, ne, co_ **sourceId**: _eq, ne_ **status**: _eq, ne_ **fullText**: _co_ |
+| **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results) Sorting is supported for the following fields: **displayName, sourceName, status** |
+| **countOnly** | **bool** | If &#x60;true&#x60; it will populate the &#x60;X-Total-Count&#x60; response header with the number of results that would be returned if &#x60;limit&#x60; and &#x60;offset&#x60; were ignored. This parameter differs from the count parameter in that this one skips executing the actual query and always return an empty array. | [default to false] |
+| **requestedByAnyone** | **bool** | By default, the ListSeds API will only return items that you have requested to be generated. This option will allow you to see all items that have been requested | [default to false] |
+| **showPendingStatusOnly** | **bool** | Will limit records to items that are in \&quot;suggested\&quot; or \&quot;approved\&quot; status | [default to false] |
 
 ### Return type
 
@@ -226,8 +225,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -241,7 +240,7 @@ func main() {
     requestedByAnyone := requested-by-anyone=true // bool | By default, the ListSeds API will only return items that you have requested to be generated.   This option will allow you to see all items that have been requested (optional) (default to false) # bool | By default, the ListSeds API will only return items that you have requested to be generated.   This option will allow you to see all items that have been requested (optional) (default to false)
     showPendingStatusOnly := show-pending-status-only=true // bool | Will limit records to items that are in \"suggested\" or \"approved\" status (optional) (default to false) # bool | Will limit records to items that are in \"suggested\" or \"approved\" status (optional) (default to false)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -259,28 +258,26 @@ func main() {
 [[Back to top]](#)
 
 ## patch-sed
-Patch suggested entitlement description
-Patch Suggested Entitlement Description
+
+Patch suggested entitlement description Patch Suggested Entitlement Description
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/patch-sed)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | id is sed id | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | id is sed id |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiPatchSedRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **sedPatch** | [**[]SedPatch**](../models/sed-patch) | Sed Patch Request | 
+**sedPatch** | [**[]SedPatch**](../models/sed-patch) | Sed Patch Request |
 
 ### Return type
 
@@ -314,7 +311,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -332,24 +329,20 @@ func main() {
 [[Back to top]](#)
 
 ## submit-sed-approval
-Submit bulk approval request
-Submit Bulk Approval Request for SED.
-Request body takes list of SED Ids. API responses with list of SED Approval Status
+
+Submit bulk approval request Submit Bulk Approval Request for SED. Request body takes list of SED Ids. API responses with list of SED Approval Status
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/submit-sed-approval)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSubmitSedApprovalRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **sedApproval** | [**[]SedApproval**](../models/sed-approval) | Sed Approval | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **sedApproval** | [**[]SedApproval**](../models/sed-approval) | Sed Approval |
 
 ### Return type
 
@@ -382,7 +375,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -400,24 +393,20 @@ func main() {
 [[Back to top]](#)
 
 ## submit-sed-assignment
-Submit sed assignment request
-Submit Assignment Request.
-Request body has an assignee, and list of SED Ids that are assigned to that assignee API responses with batchId that groups all approval requests together
+
+Submit sed assignment request Submit Assignment Request. Request body has an assignee, and list of SED Ids that are assigned to that assignee API responses with batchId that groups all approval requests together
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/submit-sed-assignment)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSubmitSedAssignmentRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **sedAssignment** | [**SedAssignment**](../models/sed-assignment) | Sed Assignment Request | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **sedAssignment** | [**SedAssignment**](../models/sed-assignment) | Sed Assignment Request |
 
 ### Return type
 
@@ -456,7 +445,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -474,24 +463,20 @@ func main() {
 [[Back to top]](#)
 
 ## submit-sed-batch-request
-Submit sed batch request
-Submit Sed Batch Request.
-Request body has one of the following: - a list of entitlement Ids - a list of SED Ids that user wants to have description generated by LLM. API responses with batchId that groups Ids together
+
+Submit sed batch request Submit Sed Batch Request. Request body has one of the following: - a list of entitlement Ids - a list of SED Ids that user wants to have description generated by LLM. API responses with batchId that groups Ids together
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/submit-sed-batch-request)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSubmitSedBatchRequestRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **sedBatchRequest** | [**SedBatchRequest**](../models/sed-batch-request) | Sed Batch Request | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **sedBatchRequest** | [**SedBatchRequest**](../models/sed-batch-request) | Sed Batch Request |
 
 ### Return type
 
@@ -511,8 +496,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -545,7 +530,7 @@ func main() {
           }
         }`) // SedBatchRequest | Sed Batch Request (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -561,4 +546,3 @@ func main() {
 ```
 
 [[Back to top]](#)
-

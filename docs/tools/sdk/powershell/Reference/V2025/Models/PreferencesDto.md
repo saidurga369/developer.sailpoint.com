@@ -4,25 +4,27 @@ title: PreferencesDto
 pagination_label: PreferencesDto
 sidebar_label: PreferencesDto
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'PreferencesDto', 'V2025PreferencesDto'] 
+keywords:
+  ['powershell', 'PowerShell', 'sdk', 'PreferencesDto', 'V2025PreferencesDto']
 slug: /tools/sdk/powershell/v2025/models/preferences-dto
-tags: ['SDK', 'Software Development Kit', 'PreferencesDto', 'V2025PreferencesDto']
+tags:
+  ['SDK', 'Software Development Kit', 'PreferencesDto', 'V2025PreferencesDto']
 ---
-
 
 # PreferencesDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Key** | **String** | The template notification key. | [optional] 
-**Mediums** | [**[]Medium**](medium) | List of preferred notification mediums, i.e., the mediums (or method) for which notifications are enabled. More mediums may be added in the future. | [optional] 
-**Modified** | **System.DateTime** | Modified date of preference | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Key** | **String** | The template notification key. | [optional] |
+| **Mediums** | [**[]Medium**](medium) | List of preferred notification mediums, i.e., the mediums (or method) for which notifications are enabled. More mediums may be added in the future. | [optional] |
+| **Modified** | **System.DateTime** | Modified date of preference | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $PreferencesDto = Initialize-V2025PreferencesDto  -Key cloud_manual_work_item_summary `
  -Mediums [EMAIL] `
@@ -30,10 +32,9 @@ $PreferencesDto = Initialize-V2025PreferencesDto  -Key cloud_manual_work_item_su
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $PreferencesDto | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

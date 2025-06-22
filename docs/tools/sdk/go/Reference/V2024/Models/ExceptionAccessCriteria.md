@@ -4,19 +4,32 @@ title: ExceptionAccessCriteria
 pagination_label: ExceptionAccessCriteria
 sidebar_label: ExceptionAccessCriteria
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ExceptionAccessCriteria', 'V2024ExceptionAccessCriteria'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ExceptionAccessCriteria',
+    'V2024ExceptionAccessCriteria',
+  ]
 slug: /tools/sdk/go/v2024/models/exception-access-criteria
-tags: ['SDK', 'Software Development Kit', 'ExceptionAccessCriteria', 'V2024ExceptionAccessCriteria']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ExceptionAccessCriteria',
+    'V2024ExceptionAccessCriteria',
+  ]
 ---
 
 # ExceptionAccessCriteria
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**LeftCriteria** | Pointer to [**ExceptionCriteria**](exception-criteria) |  | [optional] 
-**RightCriteria** | Pointer to [**ExceptionCriteria**](exception-criteria) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **LeftCriteria** | Pointer to [**ExceptionCriteria**](exception-criteria) |  | [optional] |
+| **RightCriteria** | Pointer to [**ExceptionCriteria**](exception-criteria) |  | [optional] |
 
 ## Methods
 
@@ -24,18 +37,13 @@ Name | Type | Description | Notes
 
 `func NewExceptionAccessCriteria() *ExceptionAccessCriteria`
 
-NewExceptionAccessCriteria instantiates a new ExceptionAccessCriteria object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewExceptionAccessCriteria instantiates a new ExceptionAccessCriteria object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewExceptionAccessCriteriaWithDefaults
 
 `func NewExceptionAccessCriteriaWithDefaults() *ExceptionAccessCriteria`
 
-NewExceptionAccessCriteriaWithDefaults instantiates a new ExceptionAccessCriteria object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewExceptionAccessCriteriaWithDefaults instantiates a new ExceptionAccessCriteria object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetLeftCriteria
 
@@ -47,8 +55,7 @@ GetLeftCriteria returns the LeftCriteria field if non-nil, zero value otherwise.
 
 `func (o *ExceptionAccessCriteria) GetLeftCriteriaOk() (*ExceptionCriteria, bool)`
 
-GetLeftCriteriaOk returns a tuple with the LeftCriteria field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLeftCriteriaOk returns a tuple with the LeftCriteria field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLeftCriteria
 
@@ -72,8 +79,7 @@ GetRightCriteria returns the RightCriteria field if non-nil, zero value otherwis
 
 `func (o *ExceptionAccessCriteria) GetRightCriteriaOk() (*ExceptionCriteria, bool)`
 
-GetRightCriteriaOk returns a tuple with the RightCriteria field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRightCriteriaOk returns a tuple with the RightCriteria field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRightCriteria
 
@@ -86,5 +92,3 @@ SetRightCriteria sets RightCriteria field to given value.
 `func (o *ExceptionAccessCriteria) HasRightCriteria() bool`
 
 HasRightCriteria returns a boolean if a field has been set.
-
-

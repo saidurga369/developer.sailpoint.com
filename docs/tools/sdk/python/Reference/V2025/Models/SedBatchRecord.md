@@ -4,9 +4,10 @@ title: SedBatchRecord
 pagination_label: SedBatchRecord
 sidebar_label: SedBatchRecord
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SedBatchRecord', 'V2025SedBatchRecord'] 
+keywords: ['python', 'Python', 'sdk', 'SedBatchRecord', 'V2025SedBatchRecord']
 slug: /tools/sdk/python/v2025/models/sed-batch-record
-tags: ['SDK', 'Software Development Kit', 'SedBatchRecord', 'V2025SedBatchRecord']
+tags:
+  ['SDK', 'Software Development Kit', 'SedBatchRecord', 'V2025SedBatchRecord']
 ---
 
 # SedBatchRecord
@@ -15,17 +16,18 @@ Sed Batch Record
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**tenant_id** | **str** | The tenant ID associated with the batch. | [optional] 
-**batch_id** | **str** | The unique ID of the batch. | [optional] 
-**name** | **str** | The name of the batch. | [optional] 
-**processed_state** | **str** | The current state of the batch (e.g., submitted, materialized, completed). | [optional] 
-**requested_by** | **str** | The ID of the user who requested the batch. | [optional] 
-**materialized_count** | **int** | The number of items materialized in the batch. | [optional] 
-**processed_count** | **int** | The number of items processed in the batch. | [optional] 
-**created_at** | **datetime** | The timestamp when the batch was created. | [optional] 
-**updated_at** | **datetime** | The timestamp when the batch was last updated. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **tenant_id** | **str** | The tenant ID associated with the batch. | [optional] |
+| **batch_id** | **str** | The unique ID of the batch. | [optional] |
+| **name** | **str** | The name of the batch. | [optional] |
+| **processed_state** | **str** | The current state of the batch (e.g., submitted, materialized, completed). | [optional] |
+| **requested_by** | **str** | The ID of the user who requested the batch. | [optional] |
+| **materialized_count** | **int** | The number of items materialized in the batch. | [optional] |
+| **processed_count** | **int** | The number of items processed in the batch. | [optional] |
+| **created_at** | **datetime** | The timestamp when the batch was created. | [optional] |
+| **updated_at** | **datetime** | The timestamp when the batch was last updated. | [optional] |
+
 }
 
 ## Example
@@ -46,5 +48,5 @@ updated_at='2023-10-02T15:30Z'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

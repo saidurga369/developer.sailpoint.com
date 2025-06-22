@@ -4,34 +4,47 @@ title: ReviewableEntitlementAccount
 pagination_label: ReviewableEntitlementAccount
 sidebar_label: ReviewableEntitlementAccount
 sidebar_class_name: powershellsdk
-keywords: ['powershell', 'PowerShell', 'sdk', 'ReviewableEntitlementAccount', 'ReviewableEntitlementAccount'] 
+keywords:
+  [
+    'powershell',
+    'PowerShell',
+    'sdk',
+    'ReviewableEntitlementAccount',
+    'ReviewableEntitlementAccount',
+  ]
 slug: /tools/sdk/powershell/v3/models/reviewable-entitlement-account
-tags: ['SDK', 'Software Development Kit', 'ReviewableEntitlementAccount', 'ReviewableEntitlementAccount']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ReviewableEntitlementAccount',
+    'ReviewableEntitlementAccount',
+  ]
 ---
-
 
 # ReviewableEntitlementAccount
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**NativeIdentity** | **String** | The native identity for this account | [optional] 
-**Disabled** | **Boolean** | Indicates whether this account is currently disabled | [optional] [default to $false]
-**Locked** | **Boolean** | Indicates whether this account is currently locked | [optional] [default to $false]
-**Type** | [**DtoType**](dto-type) |  | [optional] 
-**Id** | **String** | The id associated with the account | [optional] 
-**Name** | **String** | The account name | [optional] 
-**Created** | **System.DateTime** | When the account was created | [optional] 
-**Modified** | **System.DateTime** | When the account was last modified | [optional] 
-**ActivityInsights** | [**ActivityInsights**](activity-insights) |  | [optional] 
-**Description** | **String** | Information about the account | [optional] 
-**GovernanceGroupId** | **String** | The id associated with the machine Account Governance Group | [optional] 
-**Owner** | [**ReviewableEntitlementAccountOwner**](reviewable-entitlement-account-owner) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **NativeIdentity** | **String** | The native identity for this account | [optional] |
+| **Disabled** | **Boolean** | Indicates whether this account is currently disabled | [optional] [default to $false] |
+| **Locked** | **Boolean** | Indicates whether this account is currently locked | [optional] [default to $false] |
+| **Type** | [**DtoType**](dto-type) |  | [optional] |
+| **Id** | **String** | The id associated with the account | [optional] |
+| **Name** | **String** | The account name | [optional] |
+| **Created** | **System.DateTime** | When the account was created | [optional] |
+| **Modified** | **System.DateTime** | When the account was last modified | [optional] |
+| **ActivityInsights** | [**ActivityInsights**](activity-insights) |  | [optional] |
+| **Description** | **String** | Information about the account | [optional] |
+| **GovernanceGroupId** | **String** | The id associated with the machine Account Governance Group | [optional] |
+| **Owner** | [**ReviewableEntitlementAccountOwner**](reviewable-entitlement-account-owner) |  | [optional] |
 
 ## Examples
 
 - Prepare the resource
+
 ```powershell
 $ReviewableEntitlementAccount = Initialize-ReviewableEntitlementAccount  -NativeIdentity CN=Alison Ferguso `
  -Disabled false `
@@ -48,10 +61,9 @@ $ReviewableEntitlementAccount = Initialize-ReviewableEntitlementAccount  -Native
 ```
 
 - Convert the resource to JSON
+
 ```powershell
 $ReviewableEntitlementAccount | ConvertTo-JSON
 ```
 
-
-[[Back to top]](#) 
-
+[[Back to top]](#)

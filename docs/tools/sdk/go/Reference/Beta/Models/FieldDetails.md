@@ -4,7 +4,7 @@ title: FieldDetails
 pagination_label: FieldDetails
 sidebar_label: FieldDetails
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'FieldDetails', 'BetaFieldDetails'] 
+keywords: ['go', 'Golang', 'sdk', 'FieldDetails', 'BetaFieldDetails']
 slug: /tools/sdk/go/beta/models/field-details
 tags: ['SDK', 'Software Development Kit', 'FieldDetails', 'BetaFieldDetails']
 ---
@@ -13,14 +13,14 @@ tags: ['SDK', 'Software Development Kit', 'FieldDetails', 'BetaFieldDetails']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Name** | Pointer to **string** | Name of the FormItem | [optional] 
-**DisplayName** | Pointer to **string** | Display name of the field | [optional] 
-**DisplayType** | Pointer to **string** | Type of the field to display | [optional] 
-**Required** | Pointer to **bool** | True if the field is required | [optional] 
-**AllowedValuesList** | Pointer to **[]map[string]interface{}** | List of allowed values for the field | [optional] 
-**Value** | Pointer to **map[string]interface{}** | Value of the field | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Name** | Pointer to **string** | Name of the FormItem | [optional] |
+| **DisplayName** | Pointer to **string** | Display name of the field | [optional] |
+| **DisplayType** | Pointer to **string** | Type of the field to display | [optional] |
+| **Required** | Pointer to **bool** | True if the field is required | [optional] |
+| **AllowedValuesList** | Pointer to **[]map[string]interface{}** | List of allowed values for the field | [optional] |
+| **Value** | Pointer to **map[string]interface{}** | Value of the field | [optional] |
 
 ## Methods
 
@@ -28,18 +28,13 @@ Name | Type | Description | Notes
 
 `func NewFieldDetails() *FieldDetails`
 
-NewFieldDetails instantiates a new FieldDetails object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewFieldDetails instantiates a new FieldDetails object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewFieldDetailsWithDefaults
 
 `func NewFieldDetailsWithDefaults() *FieldDetails`
 
-NewFieldDetailsWithDefaults instantiates a new FieldDetails object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewFieldDetailsWithDefaults instantiates a new FieldDetails object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
@@ -51,8 +46,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *FieldDetails) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -76,8 +70,7 @@ GetDisplayName returns the DisplayName field if non-nil, zero value otherwise.
 
 `func (o *FieldDetails) GetDisplayNameOk() (*string, bool)`
 
-GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayNameOk returns a tuple with the DisplayName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayName
 
@@ -101,8 +94,7 @@ GetDisplayType returns the DisplayType field if non-nil, zero value otherwise.
 
 `func (o *FieldDetails) GetDisplayTypeOk() (*string, bool)`
 
-GetDisplayTypeOk returns a tuple with the DisplayType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisplayTypeOk returns a tuple with the DisplayType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisplayType
 
@@ -126,8 +118,7 @@ GetRequired returns the Required field if non-nil, zero value otherwise.
 
 `func (o *FieldDetails) GetRequiredOk() (*bool, bool)`
 
-GetRequiredOk returns a tuple with the Required field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequiredOk returns a tuple with the Required field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequired
 
@@ -151,8 +142,7 @@ GetAllowedValuesList returns the AllowedValuesList field if non-nil, zero value 
 
 `func (o *FieldDetails) GetAllowedValuesListOk() (*[]map[string]interface{}, bool)`
 
-GetAllowedValuesListOk returns a tuple with the AllowedValuesList field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAllowedValuesListOk returns a tuple with the AllowedValuesList field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAllowedValuesList
 
@@ -176,8 +166,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *FieldDetails) GetValueOk() (*map[string]interface{}, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -190,5 +179,3 @@ SetValue sets Value field to given value.
 `func (o *FieldDetails) HasValue() bool`
 
 HasValue returns a boolean if a field has been set.
-
-

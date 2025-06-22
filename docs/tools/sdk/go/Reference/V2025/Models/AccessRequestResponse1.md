@@ -4,20 +4,33 @@ title: AccessRequestResponse1
 pagination_label: AccessRequestResponse1
 sidebar_label: AccessRequestResponse1
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'AccessRequestResponse1', 'V2025AccessRequestResponse1'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'AccessRequestResponse1',
+    'V2025AccessRequestResponse1',
+  ]
 slug: /tools/sdk/go/v2025/models/access-request-response1
-tags: ['SDK', 'Software Development Kit', 'AccessRequestResponse1', 'V2025AccessRequestResponse1']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessRequestResponse1',
+    'V2025AccessRequestResponse1',
+  ]
 ---
 
 # AccessRequestResponse1
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**RequesterId** | Pointer to **string** | the requester Id | [optional] 
-**RequesterName** | Pointer to **string** | the requesterName | [optional] 
-**Items** | Pointer to [**[]AccessRequestItemResponse**](access-request-item-response) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **RequesterId** | Pointer to **string** | the requester Id | [optional] |
+| **RequesterName** | Pointer to **string** | the requesterName | [optional] |
+| **Items** | Pointer to [**[]AccessRequestItemResponse**](access-request-item-response) |  | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewAccessRequestResponse1() *AccessRequestResponse1`
 
-NewAccessRequestResponse1 instantiates a new AccessRequestResponse1 object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccessRequestResponse1 instantiates a new AccessRequestResponse1 object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccessRequestResponse1WithDefaults
 
 `func NewAccessRequestResponse1WithDefaults() *AccessRequestResponse1`
 
-NewAccessRequestResponse1WithDefaults instantiates a new AccessRequestResponse1 object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccessRequestResponse1WithDefaults instantiates a new AccessRequestResponse1 object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetRequesterId
 
@@ -48,8 +56,7 @@ GetRequesterId returns the RequesterId field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestResponse1) GetRequesterIdOk() (*string, bool)`
 
-GetRequesterIdOk returns a tuple with the RequesterId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequesterIdOk returns a tuple with the RequesterId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequesterId
 
@@ -73,8 +80,7 @@ GetRequesterName returns the RequesterName field if non-nil, zero value otherwis
 
 `func (o *AccessRequestResponse1) GetRequesterNameOk() (*string, bool)`
 
-GetRequesterNameOk returns a tuple with the RequesterName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequesterNameOk returns a tuple with the RequesterName field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequesterName
 
@@ -98,8 +104,7 @@ GetItems returns the Items field if non-nil, zero value otherwise.
 
 `func (o *AccessRequestResponse1) GetItemsOk() (*[]AccessRequestItemResponse, bool)`
 
-GetItemsOk returns a tuple with the Items field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetItemsOk returns a tuple with the Items field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetItems
 
@@ -112,5 +117,3 @@ SetItems sets Items field to given value.
 `func (o *AccessRequestResponse1) HasItems() bool`
 
 HasItems returns a boolean if a field has been set.
-
-

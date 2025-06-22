@@ -4,105 +4,106 @@ title: NonEmployeeLifecycleManagement
 pagination_label: NonEmployeeLifecycleManagement
 sidebar_label: NonEmployeeLifecycleManagement
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'NonEmployeeLifecycleManagement', 'V2024NonEmployeeLifecycleManagement'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'NonEmployeeLifecycleManagement',
+    'V2024NonEmployeeLifecycleManagement',
+  ]
 slug: /tools/sdk/go/v2024/methods/non-employee-lifecycle-management
-tags: ['SDK', 'Software Development Kit', 'NonEmployeeLifecycleManagement', 'V2024NonEmployeeLifecycleManagement']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'NonEmployeeLifecycleManagement',
+    'V2024NonEmployeeLifecycleManagement',
+  ]
 ---
 
 # NonEmployeeLifecycleManagementAPI
-  Use this API to implement non-employee lifecycle management functionality. 
-With this functionality in place, administrators can create non-employee records and configure them for use in their organizations. 
-This allows organizations to provide secure access to non-employees and control that access. 
 
-The &#39;non-employee&#39; term refers to any consultant, contractor, intern, or other user in an organization who is not a full-time permanent employee. 
-Organizations can track non-employees&#39; access and activity in Identity Security Cloud by creating and maintaining non-employee sources. 
-Organizations can have a maximum of 50 non-employee sources. 
+Use this API to implement non-employee lifecycle management functionality. With this functionality in place, administrators can create non-employee records and configure them for use in their organizations. This allows organizations to provide secure access to non-employees and control that access.
+
+The &#39;non-employee&#39; term refers to any consultant, contractor, intern, or other user in an organization who is not a full-time permanent employee. Organizations can track non-employees&#39; access and activity in Identity Security Cloud by creating and maintaining non-employee sources. Organizations can have a maximum of 50 non-employee sources.
 
 By using SailPoint&#39;s Non-Employee Lifecycle Management functionality, you agree to the following:
 
-- SailPoint is not responsible for storing sensitive data. 
-You may only add account attributes to non-employee identities that are necessary for business operations and are consistent with your contractual limitations on data that may be sent or stored in Identity Security Cloud.
+- SailPoint is not responsible for storing sensitive data. You may only add account attributes to non-employee identities that are necessary for business operations and are consistent with your contractual limitations on data that may be sent or stored in Identity Security Cloud.
 
 - You are responsible for regularly downloading your list of non-employee accounts for all the sources you create and storing this list of accounts in a managed location to maintain an authoritative system of record and backup data for these accounts.
 
-To manage non-employees in Identity Security Cloud, administrators must create a non-employee source and add accounts to the source. 
+To manage non-employees in Identity Security Cloud, administrators must create a non-employee source and add accounts to the source.
 
-To create a non-employee source in Identity Security Cloud, administrators must use the Admin panel to go to Connections &gt; Sources.
-They must then specify &#39;Non-Employee&#39; in the &#39;Source Type&#39; field. 
-Refer to [Creating a Non-Employee Source](https://documentation.sailpoint.com/saas/help/common/non-employee-mgmt.html#creating-a-non-employee-source) for more details about how to create non-employee sources.
+To create a non-employee source in Identity Security Cloud, administrators must use the Admin panel to go to Connections &gt; Sources. They must then specify &#39;Non-Employee&#39; in the &#39;Source Type&#39; field. Refer to [Creating a Non-Employee Source](https://documentation.sailpoint.com/saas/help/common/non-employee-mgmt.html#creating-a-non-employee-source) for more details about how to create non-employee sources.
 
-To add accounts to a non-employee source in Identity Security Cloud, administrators can select the non-employee source and add the accounts. 
-They can also use the &#39;Manage Non-Employees&#39; widget on their user dashboards to reach the list of sources and then select the non-employee source they want to add the accounts to. 
+To add accounts to a non-employee source in Identity Security Cloud, administrators can select the non-employee source and add the accounts. They can also use the &#39;Manage Non-Employees&#39; widget on their user dashboards to reach the list of sources and then select the non-employee source they want to add the accounts to.
 
-Administrators can either add accounts individually or in bulk. Each non-employee source can have a maximum of 20,000 accounts. 
-To add accounts in bulk, they must select the &#39;Bulk Upload&#39; option and upload a CSV file. 
-Refer to [Adding Accounts](https://documentation.sailpoint.com/saas/help/common/non-employee-mgmt.html#adding-accounts) for more details about how to add accounts to non-employee sources.
+Administrators can either add accounts individually or in bulk. Each non-employee source can have a maximum of 20,000 accounts. To add accounts in bulk, they must select the &#39;Bulk Upload&#39; option and upload a CSV file. Refer to [Adding Accounts](https://documentation.sailpoint.com/saas/help/common/non-employee-mgmt.html#adding-accounts) for more details about how to add accounts to non-employee sources.
 
-Once administrators have created the non-employee source and added accounts to it, they can create identity profiles to generate identities for the non-employee accounts and manage the non-employee identities the same way they would any other identities. 
+Once administrators have created the non-employee source and added accounts to it, they can create identity profiles to generate identities for the non-employee accounts and manage the non-employee identities the same way they would any other identities.
 
 Refer to [Managing Non-Employee Sources and Accounts](https://documentation.sailpoint.com/saas/help/common/non-employee-mgmt.html) for more information about non-employee lifecycle management.
- 
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/v2024*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**approve-non-employee-request**](#approve-non-employee-request) | **Post** `/non-employee-approvals/{id}/approve` | Approve a non-employee request
-[**create-non-employee-record**](#create-non-employee-record) | **Post** `/non-employee-records` | Create non-employee record
-[**create-non-employee-request**](#create-non-employee-request) | **Post** `/non-employee-requests` | Create non-employee request
-[**create-non-employee-source**](#create-non-employee-source) | **Post** `/non-employee-sources` | Create non-employee source
-[**create-non-employee-source-schema-attributes**](#create-non-employee-source-schema-attributes) | **Post** `/non-employee-sources/{sourceId}/schema-attributes` | Create a new schema attribute for non-employee source
-[**delete-non-employee-record**](#delete-non-employee-record) | **Delete** `/non-employee-records/{id}` | Delete non-employee record
-[**delete-non-employee-records-in-bulk**](#delete-non-employee-records-in-bulk) | **Post** `/non-employee-records/bulk-delete` | Delete multiple non-employee records
-[**delete-non-employee-request**](#delete-non-employee-request) | **Delete** `/non-employee-requests/{id}` | Delete non-employee request
-[**delete-non-employee-schema-attribute**](#delete-non-employee-schema-attribute) | **Delete** `/non-employee-sources/{sourceId}/schema-attributes/{attributeId}` | Delete a schema attribute for non-employee source
-[**delete-non-employee-source**](#delete-non-employee-source) | **Delete** `/non-employee-sources/{sourceId}` | Delete non-employee source
-[**delete-non-employee-source-schema-attributes**](#delete-non-employee-source-schema-attributes) | **Delete** `/non-employee-sources/{sourceId}/schema-attributes` | Delete all custom schema attributes for non-employee source
-[**export-non-employee-records**](#export-non-employee-records) | **Get** `/non-employee-sources/{id}/non-employees/download` | Exports non-employee records to csv
-[**export-non-employee-source-schema-template**](#export-non-employee-source-schema-template) | **Get** `/non-employee-sources/{id}/schema-attributes-template/download` | Exports source schema template
-[**get-non-employee-approval**](#get-non-employee-approval) | **Get** `/non-employee-approvals/{id}` | Get a non-employee approval item detail
-[**get-non-employee-approval-summary**](#get-non-employee-approval-summary) | **Get** `/non-employee-approvals/summary/{requested-for}` | Get summary of non-employee approval requests
-[**get-non-employee-bulk-upload-status**](#get-non-employee-bulk-upload-status) | **Get** `/non-employee-sources/{id}/non-employee-bulk-upload/status` | Obtain the status of bulk upload on the source
-[**get-non-employee-record**](#get-non-employee-record) | **Get** `/non-employee-records/{id}` | Get a non-employee record
-[**get-non-employee-request**](#get-non-employee-request) | **Get** `/non-employee-requests/{id}` | Get a non-employee request
-[**get-non-employee-request-summary**](#get-non-employee-request-summary) | **Get** `/non-employee-requests/summary/{requested-for}` | Get summary of non-employee requests
-[**get-non-employee-schema-attribute**](#get-non-employee-schema-attribute) | **Get** `/non-employee-sources/{sourceId}/schema-attributes/{attributeId}` | Get schema attribute non-employee source
-[**get-non-employee-source**](#get-non-employee-source) | **Get** `/non-employee-sources/{sourceId}` | Get a non-employee source
-[**get-non-employee-source-schema-attributes**](#get-non-employee-source-schema-attributes) | **Get** `/non-employee-sources/{sourceId}/schema-attributes` | List schema attributes non-employee source
-[**import-non-employee-records-in-bulk**](#import-non-employee-records-in-bulk) | **Post** `/non-employee-sources/{id}/non-employee-bulk-upload` | Imports, or updates, non-employee records
-[**list-non-employee-approvals**](#list-non-employee-approvals) | **Get** `/non-employee-approvals` | Get list of non-employee approval requests
-[**list-non-employee-records**](#list-non-employee-records) | **Get** `/non-employee-records` | List non-employee records
-[**list-non-employee-requests**](#list-non-employee-requests) | **Get** `/non-employee-requests` | List non-employee requests
-[**list-non-employee-sources**](#list-non-employee-sources) | **Get** `/non-employee-sources` | List non-employee sources
-[**patch-non-employee-record**](#patch-non-employee-record) | **Patch** `/non-employee-records/{id}` | Patch non-employee record
-[**patch-non-employee-schema-attribute**](#patch-non-employee-schema-attribute) | **Patch** `/non-employee-sources/{sourceId}/schema-attributes/{attributeId}` | Patch a schema attribute for non-employee source
-[**patch-non-employee-source**](#patch-non-employee-source) | **Patch** `/non-employee-sources/{sourceId}` | Patch a non-employee source
-[**reject-non-employee-request**](#reject-non-employee-request) | **Post** `/non-employee-approvals/{id}/reject` | Reject a non-employee request
-[**update-non-employee-record**](#update-non-employee-record) | **Put** `/non-employee-records/{id}` | Update non-employee record
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**approve-non-employee-request**](#approve-non-employee-request) | **Post** `/non-employee-approvals/{id}/approve` | Approve a non-employee request |
+| [**create-non-employee-record**](#create-non-employee-record) | **Post** `/non-employee-records` | Create non-employee record |
+| [**create-non-employee-request**](#create-non-employee-request) | **Post** `/non-employee-requests` | Create non-employee request |
+| [**create-non-employee-source**](#create-non-employee-source) | **Post** `/non-employee-sources` | Create non-employee source |
+| [**create-non-employee-source-schema-attributes**](#create-non-employee-source-schema-attributes) | **Post** `/non-employee-sources/{sourceId}/schema-attributes` | Create a new schema attribute for non-employee source |
+| [**delete-non-employee-record**](#delete-non-employee-record) | **Delete** `/non-employee-records/{id}` | Delete non-employee record |
+| [**delete-non-employee-records-in-bulk**](#delete-non-employee-records-in-bulk) | **Post** `/non-employee-records/bulk-delete` | Delete multiple non-employee records |
+| [**delete-non-employee-request**](#delete-non-employee-request) | **Delete** `/non-employee-requests/{id}` | Delete non-employee request |
+| [**delete-non-employee-schema-attribute**](#delete-non-employee-schema-attribute) | **Delete** `/non-employee-sources/{sourceId}/schema-attributes/{attributeId}` | Delete a schema attribute for non-employee source |
+| [**delete-non-employee-source**](#delete-non-employee-source) | **Delete** `/non-employee-sources/{sourceId}` | Delete non-employee source |
+| [**delete-non-employee-source-schema-attributes**](#delete-non-employee-source-schema-attributes) | **Delete** `/non-employee-sources/{sourceId}/schema-attributes` | Delete all custom schema attributes for non-employee source |
+| [**export-non-employee-records**](#export-non-employee-records) | **Get** `/non-employee-sources/{id}/non-employees/download` | Exports non-employee records to csv |
+| [**export-non-employee-source-schema-template**](#export-non-employee-source-schema-template) | **Get** `/non-employee-sources/{id}/schema-attributes-template/download` | Exports source schema template |
+| [**get-non-employee-approval**](#get-non-employee-approval) | **Get** `/non-employee-approvals/{id}` | Get a non-employee approval item detail |
+| [**get-non-employee-approval-summary**](#get-non-employee-approval-summary) | **Get** `/non-employee-approvals/summary/{requested-for}` | Get summary of non-employee approval requests |
+| [**get-non-employee-bulk-upload-status**](#get-non-employee-bulk-upload-status) | **Get** `/non-employee-sources/{id}/non-employee-bulk-upload/status` | Obtain the status of bulk upload on the source |
+| [**get-non-employee-record**](#get-non-employee-record) | **Get** `/non-employee-records/{id}` | Get a non-employee record |
+| [**get-non-employee-request**](#get-non-employee-request) | **Get** `/non-employee-requests/{id}` | Get a non-employee request |
+| [**get-non-employee-request-summary**](#get-non-employee-request-summary) | **Get** `/non-employee-requests/summary/{requested-for}` | Get summary of non-employee requests |
+| [**get-non-employee-schema-attribute**](#get-non-employee-schema-attribute) | **Get** `/non-employee-sources/{sourceId}/schema-attributes/{attributeId}` | Get schema attribute non-employee source |
+| [**get-non-employee-source**](#get-non-employee-source) | **Get** `/non-employee-sources/{sourceId}` | Get a non-employee source |
+| [**get-non-employee-source-schema-attributes**](#get-non-employee-source-schema-attributes) | **Get** `/non-employee-sources/{sourceId}/schema-attributes` | List schema attributes non-employee source |
+| [**import-non-employee-records-in-bulk**](#import-non-employee-records-in-bulk) | **Post** `/non-employee-sources/{id}/non-employee-bulk-upload` | Imports, or updates, non-employee records |
+| [**list-non-employee-approvals**](#list-non-employee-approvals) | **Get** `/non-employee-approvals` | Get list of non-employee approval requests |
+| [**list-non-employee-records**](#list-non-employee-records) | **Get** `/non-employee-records` | List non-employee records |
+| [**list-non-employee-requests**](#list-non-employee-requests) | **Get** `/non-employee-requests` | List non-employee requests |
+| [**list-non-employee-sources**](#list-non-employee-sources) | **Get** `/non-employee-sources` | List non-employee sources |
+| [**patch-non-employee-record**](#patch-non-employee-record) | **Patch** `/non-employee-records/{id}` | Patch non-employee record |
+| [**patch-non-employee-schema-attribute**](#patch-non-employee-schema-attribute) | **Patch** `/non-employee-sources/{sourceId}/schema-attributes/{attributeId}` | Patch a schema attribute for non-employee source |
+| [**patch-non-employee-source**](#patch-non-employee-source) | **Patch** `/non-employee-sources/{sourceId}` | Patch a non-employee source |
+| [**reject-non-employee-request**](#reject-non-employee-request) | **Post** `/non-employee-approvals/{id}/reject` | Reject a non-employee request |
+| [**update-non-employee-record**](#update-non-employee-record) | **Put** `/non-employee-records/{id}` | Update non-employee record |
 
 ## approve-non-employee-request
-Approve a non-employee request
-Approves a non-employee approval request and notifies the next approver. The current user must be the requested approver.
+
+Approve a non-employee request Approves a non-employee approval request and notifies the next approver. The current user must be the requested approver.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/approve-non-employee-request)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Non-Employee approval item id (UUID) | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Non-Employee approval item id (UUID) |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiApproveNonEmployeeRequestRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **nonEmployeeApprovalDecision** | [**NonEmployeeApprovalDecision**](../models/non-employee-approval-decision) |  | 
+**nonEmployeeApprovalDecision** | [**NonEmployeeApprovalDecision**](../models/non-employee-approval-decision) | |
 
 ### Return type
 
@@ -131,14 +132,14 @@ func main() {
     id := `e136567de87e4d029e60b3c3c55db56d` // string | Non-Employee approval item id (UUID) # string | Non-Employee approval item id (UUID)
     nonemployeeapprovaldecision := []byte(`{
           "comment" : "Approved by manager"
-        }`) // NonEmployeeApprovalDecision | 
+        }`) // NonEmployeeApprovalDecision |
 
     var nonEmployeeApprovalDecision v2024.NonEmployeeApprovalDecision
     if err := json.Unmarshal(nonemployeeapprovaldecision, &nonEmployeeApprovalDecision); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -156,24 +157,20 @@ func main() {
 [[Back to top]](#)
 
 ## create-non-employee-record
-Create non-employee record
-This request will create a non-employee record.
-Requires role context of `idn:nesr:create`
+
+Create non-employee record This request will create a non-employee record. Requires role context of `idn:nesr:create`
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/create-non-employee-record)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCreateNonEmployeeRecordRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **nonEmployeeRequestBody** | [**NonEmployeeRequestBody**](../models/non-employee-request-body) | Non-Employee record creation request body. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **nonEmployeeRequestBody** | [**NonEmployeeRequestBody**](../models/non-employee-request-body) | Non-Employee record creation request body. |
 
 ### Return type
 
@@ -194,7 +191,7 @@ import (
 	"fmt"
 	"os"
   "encoding/json"
-    
+
     v2024 "github.com/sailpoint-oss/golang-sdk/v2/api_v2024"
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
@@ -220,7 +217,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -238,23 +235,20 @@ func main() {
 [[Back to top]](#)
 
 ## create-non-employee-request
-Create non-employee request
-This request will create a non-employee request and notify the approver. Requires role context of `idn:nesr:create` or the user must own the source.
+
+Create non-employee request This request will create a non-employee request and notify the approver. Requires role context of `idn:nesr:create` or the user must own the source.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/create-non-employee-request)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCreateNonEmployeeRequestRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **nonEmployeeRequestBody** | [**NonEmployeeRequestBody**](../models/non-employee-request-body) | Non-Employee creation request body | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **nonEmployeeRequestBody** | [**NonEmployeeRequestBody**](../models/non-employee-request-body) | Non-Employee creation request body |
 
 ### Return type
 
@@ -275,7 +269,7 @@ import (
 	"fmt"
 	"os"
   "encoding/json"
-    
+
     v2024 "github.com/sailpoint-oss/golang-sdk/v2/api_v2024"
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
@@ -301,7 +295,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -319,23 +313,20 @@ func main() {
 [[Back to top]](#)
 
 ## create-non-employee-source
-Create non-employee source
-Create a non-employee source. 
+
+Create non-employee source Create a non-employee source.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/create-non-employee-source)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCreateNonEmployeeSourceRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **nonEmployeeSourceRequestBody** | [**NonEmployeeSourceRequestBody**](../models/non-employee-source-request-body) | Non-Employee source creation request body. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **nonEmployeeSourceRequestBody** | [**NonEmployeeSourceRequestBody**](../models/non-employee-source-request-body) | Non-Employee source creation request body. |
 
 ### Return type
 
@@ -393,7 +384,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -411,29 +402,26 @@ func main() {
 [[Back to top]](#)
 
 ## create-non-employee-source-schema-attributes
-Create a new schema attribute for non-employee source
-This API creates a new schema attribute for Non-Employee Source. The schema technical name must be unique in the source. Attempts to create a schema attribute with an existing name will result in a "400.1.409 Reference conflict" response. At most, 10 custom attributes can be created per schema. Attempts to create more than 10 will result in a "400.1.4 Limit violation" response.
-Requires role context of `idn:nesr:create`
+
+Create a new schema attribute for non-employee source This API creates a new schema attribute for Non-Employee Source. The schema technical name must be unique in the source. Attempts to create a schema attribute with an existing name will result in a "400.1.409 Reference conflict" response. At most, 10 custom attributes can be created per schema. Attempts to create more than 10 will result in a "400.1.4 Limit violation" response. Requires role context of `idn:nesr:create`
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/create-non-employee-source-schema-attributes)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**sourceId** | **string** | The Source id | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **sourceId** | **string** | The Source id |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCreateNonEmployeeSourceSchemaAttributesRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **nonEmployeeSchemaAttributeBody** | [**NonEmployeeSchemaAttributeBody**](../models/non-employee-schema-attribute-body) |  | 
+**nonEmployeeSchemaAttributeBody** | [**NonEmployeeSchemaAttributeBody**](../models/non-employee-schema-attribute-body) | |
 
 ### Return type
 
@@ -467,14 +455,14 @@ func main() {
           "type" : "TEXT",
           "technicalName" : "account.name",
           "required" : true
-        }`) // NonEmployeeSchemaAttributeBody | 
+        }`) // NonEmployeeSchemaAttributeBody |
 
     var nonEmployeeSchemaAttributeBody v2024.NonEmployeeSchemaAttributeBody
     if err := json.Unmarshal(nonemployeeschemaattributebody, &nonEmployeeSchemaAttributeBody); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -492,32 +480,28 @@ func main() {
 [[Back to top]](#)
 
 ## delete-non-employee-record
-Delete non-employee record
-This request will delete a non-employee record.
-Requires role context of `idn:nesr:delete`
+
+Delete non-employee record This request will delete a non-employee record. Requires role context of `idn:nesr:delete`
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/delete-non-employee-record)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Non-Employee record id (UUID) | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Non-Employee record id (UUID) |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteNonEmployeeRecordRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -533,15 +517,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `ef38f94347e94562b5bb8424a56397d8` // string | Non-Employee record id (UUID) # string | Non-Employee record id (UUID)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -551,34 +535,31 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `NonEmployeeLifecycleManagementAPI.DeleteNonEmployeeRecord``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## delete-non-employee-records-in-bulk
-Delete multiple non-employee records
-This request will delete multiple non-employee records based on the non-employee ids provided. Requires role context of `idn:nesr:delete`
+
+Delete multiple non-employee records This request will delete multiple non-employee records based on the non-employee ids provided. Requires role context of `idn:nesr:delete`
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/delete-non-employee-records-in-bulk)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteNonEmployeeRecordsInBulkRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **deleteNonEmployeeRecordsInBulkRequest** | [**DeleteNonEmployeeRecordsInBulkRequest**](../models/delete-non-employee-records-in-bulk-request) | Non-Employee bulk delete request body. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **deleteNonEmployeeRecordsInBulkRequest** | [**DeleteNonEmployeeRecordsInBulkRequest**](../models/delete-non-employee-records-in-bulk-request) | Non-Employee bulk delete request body. |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -607,7 +588,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -617,39 +598,35 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `NonEmployeeLifecycleManagementAPI.DeleteNonEmployeeRecordsInBulk``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## delete-non-employee-request
-Delete non-employee request
-This request will delete a non-employee request. 
-Requires role context of `idn:nesr:delete`
+
+Delete non-employee request This request will delete a non-employee request. Requires role context of `idn:nesr:delete`
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/delete-non-employee-request)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Non-Employee request id in the UUID format | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Non-Employee request id in the UUID format |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteNonEmployeeRequestRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -665,15 +642,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `ac110005-7156-1150-8171-5b292e3e0084` // string | Non-Employee request id in the UUID format # string | Non-Employee request id in the UUID format
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -683,42 +660,36 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `NonEmployeeLifecycleManagementAPI.DeleteNonEmployeeRequest``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## delete-non-employee-schema-attribute
-Delete a schema attribute for non-employee source
-This end-point deletes a specific schema attribute for a non-employee source.
-Requires role context of `idn:nesr:delete`
 
+Delete a schema attribute for non-employee source This end-point deletes a specific schema attribute for a non-employee source. Requires role context of `idn:nesr:delete`
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/delete-non-employee-schema-attribute)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**attributeId** | **string** | The Schema Attribute Id (UUID) | 
-**sourceId** | **string** | The Source id | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **attributeId** | **string** | The Schema Attribute Id (UUID) |
+| **sourceId** | **string** | The Source id |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteNonEmployeeSchemaAttributeRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -734,8 +705,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -743,7 +714,7 @@ func main() {
     attributeId := `ef38f94347e94562b5bb8424a56397d8` // string | The Schema Attribute Id (UUID) # string | The Schema Attribute Id (UUID)
     sourceId := `ef38f94347e94562b5bb8424a56397d8` // string | The Source id # string | The Source id
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -753,38 +724,35 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `NonEmployeeLifecycleManagementAPI.DeleteNonEmployeeSchemaAttribute``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## delete-non-employee-source
-Delete non-employee source
-This request will delete a non-employee source. Requires role context of `idn:nesr:delete`.
+
+Delete non-employee source This request will delete a non-employee source. Requires role context of `idn:nesr:delete`.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/delete-non-employee-source)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**sourceId** | **string** | Source Id | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **sourceId** | **string** | Source Id |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteNonEmployeeSourceRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -800,15 +768,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     sourceId := `e136567de87e4d029e60b3c3c55db56d` // string | Source Id # string | Source Id
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -818,38 +786,35 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `NonEmployeeLifecycleManagementAPI.DeleteNonEmployeeSource``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## delete-non-employee-source-schema-attributes
-Delete all custom schema attributes for non-employee source
-This end-point deletes all custom schema attributes for a non-employee source. Requires role context of `idn:nesr:delete`
+
+Delete all custom schema attributes for non-employee source This end-point deletes all custom schema attributes for a non-employee source. Requires role context of `idn:nesr:delete`
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/delete-non-employee-source-schema-attributes)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**sourceId** | **string** | The Source id | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **sourceId** | **string** | The Source id |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteNonEmployeeSourceSchemaAttributesRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -865,15 +830,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     sourceId := `ef38f94347e94562b5bb8424a56397d8` // string | The Source id # string | The Source id
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -883,38 +848,35 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `NonEmployeeLifecycleManagementAPI.DeleteNonEmployeeSourceSchemaAttributes``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## export-non-employee-records
-Exports non-employee records to csv
-This requests a CSV download for all non-employees from a provided source. Requires role context of `idn:nesr:read`
+
+Exports non-employee records to csv This requests a CSV download for all non-employees from a provided source. Requires role context of `idn:nesr:read`
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/export-non-employee-records)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Source Id (UUID) | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Source Id (UUID) |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiExportNonEmployeeRecordsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -930,15 +892,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `e136567de87e4d029e60b3c3c55db56d` // string | Source Id (UUID) # string | Source Id (UUID)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -948,38 +910,35 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `NonEmployeeLifecycleManagementAPI.ExportNonEmployeeRecords``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## export-non-employee-source-schema-template
-Exports source schema template
-This requests a download for the Source Schema Template for a provided source. Requires role context of `idn:nesr:read`
+
+Exports source schema template This requests a download for the Source Schema Template for a provided source. Requires role context of `idn:nesr:read`
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/export-non-employee-source-schema-template)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Source Id (UUID) | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Source Id (UUID) |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiExportNonEmployeeSourceSchemaTemplateRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
- (empty response body)
+(empty response body)
 
 ### HTTP request headers
 
@@ -995,15 +954,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `ef38f94347e94562b5bb8424a56397d8` // string | Source Id (UUID) # string | Source Id (UUID)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1013,38 +972,36 @@ func main() {
 	    fmt.Fprintf(os.Stderr, "Error when calling `NonEmployeeLifecycleManagementAPI.ExportNonEmployeeSourceSchemaTemplate``: %v\n", err)
 	    fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    
+
 }
 ```
 
 [[Back to top]](#)
 
 ## get-non-employee-approval
-Get a non-employee approval item detail
-Gets a non-employee approval item detail. There are two contextual uses for this endpoint:
-  1. The user has the role context of `idn:nesr:read`, in which case they
-can get any approval.
-  2. The user owns the requested approval.
+
+Get a non-employee approval item detail Gets a non-employee approval item detail. There are two contextual uses for this endpoint:
+
+1. The user has the role context of `idn:nesr:read`, in which case they can get any approval.
+2. The user owns the requested approval.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/get-non-employee-approval)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Non-Employee approval item id (UUID) | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Non-Employee approval item id (UUID) |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetNonEmployeeApprovalRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **includeDetail** | **bool** | The object nonEmployeeRequest will not be included detail when set to false. *Default value is true* | 
+**includeDetail** | **bool** | The object nonEmployeeRequest will not be included detail when set to false. _Default value is true_ |
 
 ### Return type
 
@@ -1064,8 +1021,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -1073,7 +1030,7 @@ func main() {
     id := `e136567de87e4d029e60b3c3c55db56d` // string | Non-Employee approval item id (UUID) # string | Non-Employee approval item id (UUID)
     includeDetail := true // bool | The object nonEmployeeRequest will not be included detail when set to false. *Default value is true* (optional) # bool | The object nonEmployeeRequest will not be included detail when set to false. *Default value is true* (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1091,31 +1048,27 @@ func main() {
 [[Back to top]](#)
 
 ## get-non-employee-approval-summary
-Get summary of non-employee approval requests
-This request will retrieve a summary of non-employee approval requests. There are two contextual uses for the `requested-for` path parameter:
-  1. The user has the role context of `idn:nesr:read`, in which case he or
-she may request a summary of all non-employee approval requests assigned to a particular approver by passing in that approver's id.
-  2. The current user is an approver, in which case "me" should be provided
-as the `requested-for` value. This will provide the approver with a summary of the approval items assigned to him or her.
+
+Get summary of non-employee approval requests This request will retrieve a summary of non-employee approval requests. There are two contextual uses for the `requested-for` path parameter:
+
+1. The user has the role context of `idn:nesr:read`, in which case he or she may request a summary of all non-employee approval requests assigned to a particular approver by passing in that approver's id.
+2. The current user is an approver, in which case "me" should be provided as the `requested-for` value. This will provide the approver with a summary of the approval items assigned to him or her.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/get-non-employee-approval-summary)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**requestedFor** | **string** | The identity (UUID) of the approver for whom for whom the summary is being retrieved. Use \&quot;me\&quot; instead to indicate the current user. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **requestedFor** | **string** | The identity (UUID) of the approver for whom for whom the summary is being retrieved. Use \&quot;me\&quot; instead to indicate the current user. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetNonEmployeeApprovalSummaryRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -1135,15 +1088,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     requestedFor := `2c91808280430dfb0180431a59440460` // string | The identity (UUID) of the approver for whom for whom the summary is being retrieved. Use \"me\" instead to indicate the current user. # string | The identity (UUID) of the approver for whom for whom the summary is being retrieved. Use \"me\" instead to indicate the current user.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1161,29 +1114,24 @@ func main() {
 [[Back to top]](#)
 
 ## get-non-employee-bulk-upload-status
-Obtain the status of bulk upload on the source
-The nonEmployeeBulkUploadStatus API returns the status of the newest bulk upload job for the specified source.
-Requires role context of `idn:nesr:read`
 
+Obtain the status of bulk upload on the source The nonEmployeeBulkUploadStatus API returns the status of the newest bulk upload job for the specified source. Requires role context of `idn:nesr:read`
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/get-non-employee-bulk-upload-status)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Source ID (UUID) | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Source ID (UUID) |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetNonEmployeeBulkUploadStatusRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -1203,15 +1151,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `e136567de87e4d029e60b3c3c55db56d` // string | Source ID (UUID) # string | Source ID (UUID)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1229,28 +1177,24 @@ func main() {
 [[Back to top]](#)
 
 ## get-non-employee-record
-Get a non-employee record
-This gets a non-employee record.
-Requires role context of `idn:nesr:read`
+
+Get a non-employee record This gets a non-employee record. Requires role context of `idn:nesr:read`
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/get-non-employee-record)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Non-Employee record id (UUID) | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Non-Employee record id (UUID) |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetNonEmployeeRecordRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -1270,15 +1214,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `ef38f94347e94562b5bb8424a56397d8` // string | Non-Employee record id (UUID) # string | Non-Employee record id (UUID)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1296,31 +1240,27 @@ func main() {
 [[Back to top]](#)
 
 ## get-non-employee-request
-Get a non-employee request
-This gets a non-employee request.
-There are two contextual uses for this endpoint:
-  1. The user has the role context of `idn:nesr:read`, in this case the user
-can get the non-employee request for any user.
-  2. The user must be the owner of the non-employee request.
+
+Get a non-employee request This gets a non-employee request. There are two contextual uses for this endpoint:
+
+1. The user has the role context of `idn:nesr:read`, in this case the user can get the non-employee request for any user.
+2. The user must be the owner of the non-employee request.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/get-non-employee-request)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Non-Employee request id (UUID) | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Non-Employee request id (UUID) |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetNonEmployeeRequestRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -1340,15 +1280,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `ac110005-7156-1150-8171-5b292e3e0084` // string | Non-Employee request id (UUID) # string | Non-Employee request id (UUID)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1366,31 +1306,27 @@ func main() {
 [[Back to top]](#)
 
 ## get-non-employee-request-summary
-Get summary of non-employee requests
-This request will retrieve a summary of non-employee requests. There are two contextual uses for the `requested-for` path parameter:
-  1. The user has the role context of `idn:nesr:read`, in which case he or
-she may request a summary of all non-employee approval requests assigned to a particular account manager by passing in that manager's id.
-  2. The current user is an account manager, in which case "me" should be
-provided as the `requested-for` value. This will provide the user with a summary of the non-employee requests in the source(s) he or she manages.
+
+Get summary of non-employee requests This request will retrieve a summary of non-employee requests. There are two contextual uses for the `requested-for` path parameter:
+
+1. The user has the role context of `idn:nesr:read`, in which case he or she may request a summary of all non-employee approval requests assigned to a particular account manager by passing in that manager's id.
+2. The current user is an account manager, in which case "me" should be provided as the `requested-for` value. This will provide the user with a summary of the non-employee requests in the source(s) he or she manages.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/get-non-employee-request-summary)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**requestedFor** | **string** | The identity (UUID) of the non-employee account manager for whom the summary is being retrieved. Use \&quot;me\&quot; instead to indicate the current user. | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **requestedFor** | **string** | The identity (UUID) of the non-employee account manager for whom the summary is being retrieved. Use \&quot;me\&quot; instead to indicate the current user. |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetNonEmployeeRequestSummaryRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -1410,15 +1346,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     requestedFor := `2c91808280430dfb0180431a59440460` // string | The identity (UUID) of the non-employee account manager for whom the summary is being retrieved. Use \"me\" instead to indicate the current user. # string | The identity (UUID) of the non-employee account manager for whom the summary is being retrieved. Use \"me\" instead to indicate the current user.
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1436,29 +1372,25 @@ func main() {
 [[Back to top]](#)
 
 ## get-non-employee-schema-attribute
-Get schema attribute non-employee source
-This API gets a schema attribute by Id for the specified Non-Employee SourceId. Requires role context of `idn:nesr:read` or the user must be an account manager of the source.
+
+Get schema attribute non-employee source This API gets a schema attribute by Id for the specified Non-Employee SourceId. Requires role context of `idn:nesr:read` or the user must be an account manager of the source.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/get-non-employee-schema-attribute)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**attributeId** | **string** | The Schema Attribute Id (UUID) | 
-**sourceId** | **string** | The Source id | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **attributeId** | **string** | The Schema Attribute Id (UUID) |
+| **sourceId** | **string** | The Source id |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetNonEmployeeSchemaAttributeRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -1478,8 +1410,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -1487,7 +1419,7 @@ func main() {
     attributeId := `ef38f94347e94562b5bb8424a56397d8` // string | The Schema Attribute Id (UUID) # string | The Schema Attribute Id (UUID)
     sourceId := `ef38f94347e94562b5bb8424a56397d8` // string | The Source id # string | The Source id
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1505,31 +1437,27 @@ func main() {
 [[Back to top]](#)
 
 ## get-non-employee-source
-Get a non-employee source
-This gets a non-employee source. There are two contextual uses for the requested-for path parameter: 
-  1. The user has the role context of `idn:nesr:read`, in which case he or
-she may request any source.
-  2. The current user is an account manager, in which case the user can only
-request sources that they own.
+
+Get a non-employee source This gets a non-employee source. There are two contextual uses for the requested-for path parameter:
+
+1. The user has the role context of `idn:nesr:read`, in which case he or she may request any source.
+2. The current user is an account manager, in which case the user can only request sources that they own.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/get-non-employee-source)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**sourceId** | **string** | Source Id | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **sourceId** | **string** | Source Id |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetNonEmployeeSourceRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -1549,15 +1477,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     sourceId := `2c91808b7c28b350017c2a2ec5790aa1` // string | Source Id # string | Source Id
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1575,28 +1503,24 @@ func main() {
 [[Back to top]](#)
 
 ## get-non-employee-source-schema-attributes
-List schema attributes non-employee source
-This API gets the list of schema attributes for the specified Non-Employee SourceId. There are 8 mandatory attributes added to each new Non-Employee Source automatically. Additionaly, user can add up to 10 custom attributes. This interface returns all the mandatory attributes followed by any custom attributes. At most, a total of 18 attributes will be returned.
-Requires role context of `idn:nesr:read` or the user must be an account manager of the source.
+
+List schema attributes non-employee source This API gets the list of schema attributes for the specified Non-Employee SourceId. There are 8 mandatory attributes added to each new Non-Employee Source automatically. Additionaly, user can add up to 10 custom attributes. This interface returns all the mandatory attributes followed by any custom attributes. At most, a total of 18 attributes will be returned. Requires role context of `idn:nesr:read` or the user must be an account manager of the source.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/get-non-employee-source-schema-attributes)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**sourceId** | **string** | The Source id | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **sourceId** | **string** | The Source id |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetNonEmployeeSourceSchemaAttributesRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
 ### Return type
 
@@ -1616,15 +1540,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     sourceId := `ef38f94347e94562b5bb8424a56397d8` // string | The Source id # string | The Source id
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1642,28 +1566,26 @@ func main() {
 [[Back to top]](#)
 
 ## import-non-employee-records-in-bulk
-Imports, or updates, non-employee records
-This post will import, or update, Non-Employee records found in the CSV. Requires role context of `idn:nesr:create`
+
+Imports, or updates, non-employee records This post will import, or update, Non-Employee records found in the CSV. Requires role context of `idn:nesr:create`
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/import-non-employee-records-in-bulk)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Source Id (UUID) | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Source Id (UUID) |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiImportNonEmployeeRecordsInBulkRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **data** | ***os.File** |  | 
+**data** | **\*os.File** | |
 
 ### Return type
 
@@ -1683,16 +1605,16 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
 func main() {
     id := `e136567de87e4d029e60b3c3c55db56d` // string | Source Id (UUID) # string | Source Id (UUID)
-    data := BINARY_DATA_HERE // *os.File |  # *os.File | 
+    data := BINARY_DATA_HERE // *os.File |  # *os.File |
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1710,32 +1632,28 @@ func main() {
 [[Back to top]](#)
 
 ## list-non-employee-approvals
-Get list of non-employee approval requests
-This gets a list of non-employee approval requests.
-There are two contextual uses for this endpoint:
-  1. The user has the role context of `idn:nesr:read`, in which case they
-can list the approvals for any approver.
-  2. The user owns the requested approval.
+
+Get list of non-employee approval requests This gets a list of non-employee approval requests. There are two contextual uses for this endpoint:
+
+1. The user has the role context of `idn:nesr:read`, in which case they can list the approvals for any approver.
+2. The user owns the requested approval.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/list-non-employee-approvals)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListNonEmployeeApprovalsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **requestedFor** | **string** | The identity for whom the request was made. *me* indicates the current user. | 
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **approvalStatus**: *eq* | 
- **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **created, modified** | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **requestedFor** | **string** | The identity for whom the request was made. _me_ indicates the current user. |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
+| **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false] |
+| **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **approvalStatus**: _eq_ |
+| **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results) Sorting is supported for the following fields: **created, modified** |
 
 ### Return type
 
@@ -1755,8 +1673,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -1768,7 +1686,7 @@ func main() {
     filters := `approvalStatus eq "Pending"` // string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **approvalStatus**: *eq* (optional) # string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **approvalStatus**: *eq* (optional)
     sorters := `created` // string | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **created, modified** (optional) # string | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **created, modified** (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1786,29 +1704,27 @@ func main() {
 [[Back to top]](#)
 
 ## list-non-employee-records
-List non-employee records
-This gets a list of non-employee records. There are two contextual uses for this endpoint:
-  1. The user has the role context of `idn:nesr:read`, in which case they can get a list of all of the non-employees.
-  2. The user is an account manager, in which case they can get a list of the non-employees that they manage.
+
+List non-employee records This gets a list of non-employee records. There are two contextual uses for this endpoint:
+
+1. The user has the role context of `idn:nesr:read`, in which case they can get a list of all of the non-employees.
+2. The user is an account manager, in which case they can get a list of the non-employees that they manage.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/list-non-employee-records)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListNonEmployeeRecordsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
- **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **id, accountName, sourceId, manager, firstName, lastName, email, phone, startDate, endDate, created, modified** | 
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **sourceId**: *eq* | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
+| **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false] |
+| **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results) Sorting is supported for the following fields: **id, accountName, sourceId, manager, firstName, lastName, email, phone, startDate, endDate, created, modified** |
+| **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **sourceId**: _eq_ |
 
 ### Return type
 
@@ -1828,8 +1744,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -1840,7 +1756,7 @@ func main() {
     sorters := `accountName,sourceId` // string | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **id, accountName, sourceId, manager, firstName, lastName, email, phone, startDate, endDate, created, modified** (optional) # string | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **id, accountName, sourceId, manager, firstName, lastName, email, phone, startDate, endDate, created, modified** (optional)
     filters := `sourceId eq "2c91808568c529c60168cca6f90c1313"` // string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **sourceId**: *eq* (optional) # string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **sourceId**: *eq* (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1858,32 +1774,28 @@ func main() {
 [[Back to top]](#)
 
 ## list-non-employee-requests
-List non-employee requests
-This gets a list of non-employee requests. There are two contextual uses for the `requested-for` path parameter:
-  1. The user has the role context of `idn:nesr:read`, in which case he or
-she may request a list non-employee requests assigned to a particular account manager by passing in that manager's id.
-  2. The current user is an account manager, in which case "me" should be
-provided as the `requested-for` value. This will provide the user with a list of the non-employee requests in the source(s) he or she manages.
+
+List non-employee requests This gets a list of non-employee requests. There are two contextual uses for the `requested-for` path parameter:
+
+1. The user has the role context of `idn:nesr:read`, in which case he or she may request a list non-employee requests assigned to a particular account manager by passing in that manager's id.
+2. The current user is an account manager, in which case "me" should be provided as the `requested-for` value. This will provide the user with a list of the non-employee requests in the source(s) he or she manages.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/list-non-employee-requests)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListNonEmployeeRequestsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **requestedFor** | **string** | The identity for whom the request was made. *me* indicates the current user. | 
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
- **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **created, approvalStatus, firstName, lastName, email, phone, accountName, startDate, endDate** | 
- **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **sourceId**: *eq*  | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **requestedFor** | **string** | The identity for whom the request was made. _me_ indicates the current user. |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
+| **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false] |
+| **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results) Sorting is supported for the following fields: **created, approvalStatus, firstName, lastName, email, phone, accountName, startDate, endDate** |
+| **filters** | **string** | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **sourceId**: _eq_ |
 
 ### Return type
 
@@ -1903,8 +1815,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -1916,7 +1828,7 @@ func main() {
     sorters := `created,approvalStatus` // string | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **created, approvalStatus, firstName, lastName, email, phone, accountName, startDate, endDate** (optional) # string | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **created, approvalStatus, firstName, lastName, email, phone, accountName, startDate, endDate** (optional)
     filters := `sourceId eq "2c91808568c529c60168cca6f90c1313"` // string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **sourceId**: *eq*  (optional) # string | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **sourceId**: *eq*  (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -1934,30 +1846,28 @@ func main() {
 [[Back to top]](#)
 
 ## list-non-employee-sources
-List non-employee sources
-Get a list of non-employee sources. There are two contextual uses for the `requested-for` path parameter: 
-  1. If the user has the role context of `idn:nesr:read`, he or she may request a list sources assigned to a particular account manager by passing in that manager's `id`.
-  2. If the current user is an account manager, the user should provide 'me' as the `requested-for` value. Doing so provide the user with a list of the sources he or she owns.
+
+List non-employee sources Get a list of non-employee sources. There are two contextual uses for the `requested-for` path parameter:
+
+1. If the user has the role context of `idn:nesr:read`, he or she may request a list sources assigned to a particular account manager by passing in that manager's `id`.
+2. If the current user is an account manager, the user should provide 'me' as the `requested-for` value. Doing so provide the user with a list of the sources he or she owns.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/list-non-employee-sources)
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListNonEmployeeSourcesRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250]
- **offset** | **int32** | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0]
- **count** | **bool** | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false]
- **requestedFor** | **string** | Identity the request was made for. Use &#39;me&#39; to indicate the current user. | 
- **nonEmployeeCount** | **bool** | Flag that determines whether the API will return a non-employee count associated with the source. | [default to false]
- **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **name, created, sourceId** | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **limit** | **int32** | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 250] |
+| **offset** | **int32** | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to 0] |
+| **count** | **bool** | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count&#x3D;true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. | [default to false] |
+| **requestedFor** | **string** | Identity the request was made for. Use &#39;me&#39; to indicate the current user. |
+| **nonEmployeeCount** | **bool** | Flag that determines whether the API will return a non-employee count associated with the source. | [default to false] |
+| **sorters** | **string** | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results) Sorting is supported for the following fields: **name, created, sourceId** |
 
 ### Return type
 
@@ -1977,8 +1887,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-  
-    
+
+
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
 
@@ -1990,7 +1900,7 @@ func main() {
     nonEmployeeCount := true // bool | Flag that determines whether the API will return a non-employee count associated with the source. (optional) (default to false) # bool | Flag that determines whether the API will return a non-employee count associated with the source. (optional) (default to false)
     sorters := `name,created` // string | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **name, created, sourceId** (optional) # string | Sort results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#sorting-results)  Sorting is supported for the following fields: **name, created, sourceId** (optional)
 
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -2008,32 +1918,29 @@ func main() {
 [[Back to top]](#)
 
 ## patch-non-employee-record
-Patch non-employee record
-This request will patch a non-employee record. There are two contextual uses for this endpoint:
-  1. The user has the role context of `idn:nesr:update`, in which case they
-update all available fields.
-  2. The user is owner of the source, in this case they can only update the
-end date.
+
+Patch non-employee record This request will patch a non-employee record. There are two contextual uses for this endpoint:
+
+1. The user has the role context of `idn:nesr:update`, in which case they update all available fields.
+2. The user is owner of the source, in this case they can only update the end date.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/patch-non-employee-record)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Non-employee record id (UUID) | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Non-employee record id (UUID) |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiPatchNonEmployeeRecordRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **jsonPatchOperation** | [**[]JsonPatchOperation**](../models/json-patch-operation) | A list of non-employee update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard. Attributes are restricted by user type. Owner of source can update end date. Organization admins can update all available fields. | 
+**jsonPatchOperation** | [**[]JsonPatchOperation**](../models/json-patch-operation) | A list of non-employee update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard. Attributes are restricted by user type. Owner of source can update end date. Organization admins can update all available fields. |
 
 ### Return type
 
@@ -2067,7 +1974,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -2085,32 +1992,27 @@ func main() {
 [[Back to top]](#)
 
 ## patch-non-employee-schema-attribute
-Patch a schema attribute for non-employee source
-This end-point patches a specific schema attribute for a non-employee SourceId.
-Requires role context of `idn:nesr:update`
 
+Patch a schema attribute for non-employee source This end-point patches a specific schema attribute for a non-employee SourceId. Requires role context of `idn:nesr:update`
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/patch-non-employee-schema-attribute)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**attributeId** | **string** | The Schema Attribute Id (UUID) | 
-**sourceId** | **string** | The Source id | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **attributeId** | **string** | The Schema Attribute Id (UUID) |
+| **sourceId** | **string** | The Source id |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiPatchNonEmployeeSchemaAttributeRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
-
- **jsonPatchOperation** | [**[]JsonPatchOperation**](../models/json-patch-operation) | A list of schema attribute update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard. The following properties are allowed for update &#39;:&#39; &#39;label&#39;, &#39;helpText&#39;, &#39;placeholder&#39;, &#39;required&#39;. | 
+**jsonPatchOperation** | [**[]JsonPatchOperation**](../models/json-patch-operation) | A list of schema attribute update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard. The following properties are allowed for update &#39;:&#39; &#39;label&#39;, &#39;helpText&#39;, &#39;placeholder&#39;, &#39;required&#39;. |
 
 ### Return type
 
@@ -2145,7 +2047,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -2163,28 +2065,26 @@ func main() {
 [[Back to top]](#)
 
 ## patch-non-employee-source
-Patch a non-employee source
-patch a non-employee source. (partial update) <br/> Patchable field: **name, description, approvers, accountManagers** Requires role context of `idn:nesr:update`.
+
+Patch a non-employee source patch a non-employee source. (partial update) <br/> Patchable field: **name, description, approvers, accountManagers** Requires role context of `idn:nesr:update`.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/patch-non-employee-source)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**sourceId** | **string** | Source Id | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **sourceId** | **string** | Source Id |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiPatchNonEmployeeSourceRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **jsonPatchOperation** | [**[]JsonPatchOperation**](../models/json-patch-operation) | A list of non-employee source update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard. | 
+**jsonPatchOperation** | [**[]JsonPatchOperation**](../models/json-patch-operation) | A list of non-employee source update operations according to the [JSON Patch](https://tools.ietf.org/html/rfc6902) standard. |
 
 ### Return type
 
@@ -2218,7 +2118,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -2236,28 +2136,26 @@ func main() {
 [[Back to top]](#)
 
 ## reject-non-employee-request
-Reject a non-employee request
-This endpoint will reject an approval item request and notify user. The current user must be the requested approver.
+
+Reject a non-employee request This endpoint will reject an approval item request and notify user. The current user must be the requested approver.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/reject-non-employee-request)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Non-Employee approval item id (UUID) | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Non-Employee approval item id (UUID) |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiRejectNonEmployeeRequestRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **nonEmployeeRejectApprovalDecision** | [**NonEmployeeRejectApprovalDecision**](../models/non-employee-reject-approval-decision) |  | 
+**nonEmployeeRejectApprovalDecision** | [**NonEmployeeRejectApprovalDecision**](../models/non-employee-reject-approval-decision) | |
 
 ### Return type
 
@@ -2286,14 +2184,14 @@ func main() {
     id := `e136567de87e4d029e60b3c3c55db56d` // string | Non-Employee approval item id (UUID) # string | Non-Employee approval item id (UUID)
     nonemployeerejectapprovaldecision := []byte(`{
           "comment" : "approved"
-        }`) // NonEmployeeRejectApprovalDecision | 
+        }`) // NonEmployeeRejectApprovalDecision |
 
     var nonEmployeeRejectApprovalDecision v2024.NonEmployeeRejectApprovalDecision
     if err := json.Unmarshal(nonemployeerejectapprovaldecision, &nonEmployeeRejectApprovalDecision); err != nil {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -2311,32 +2209,29 @@ func main() {
 [[Back to top]](#)
 
 ## update-non-employee-record
-Update non-employee record
-This request will update a non-employee record. There are two contextual uses for this endpoint:
-  1. The user has the role context of `idn:nesr:update`, in which case they
-update all available fields.
-  2. The user is owner of the source, in this case they can only update the
-end date.
+
+Update non-employee record This request will update a non-employee record. There are two contextual uses for this endpoint:
+
+1. The user has the role context of `idn:nesr:update`, in which case they update all available fields.
+2. The user is owner of the source, in this case they can only update the end date.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v2024/update-non-employee-record)
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | Non-employee record id (UUID) | 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |
+| **id** | **string** | Non-employee record id (UUID) |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiUpdateNonEmployeeRecordRequest struct via the builder pattern
 
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **nonEmployeeRequestBody** | [**NonEmployeeRequestBody**](../models/non-employee-request-body) | Non-employee record creation request body. Attributes are restricted by user type. Owner of source can update end date. Organization admins can update all available fields. | 
+**nonEmployeeRequestBody** | [**NonEmployeeRequestBody**](../models/non-employee-request-body) | Non-employee record creation request body. Attributes are restricted by user type. Owner of source can update end date. Organization admins can update all available fields. |
 
 ### Return type
 
@@ -2357,7 +2252,7 @@ import (
 	"fmt"
 	"os"
   "encoding/json"
-    
+
     v2024 "github.com/sailpoint-oss/golang-sdk/v2/api_v2024"
 	sailpoint "github.com/sailpoint-oss/golang-sdk/v2"
 )
@@ -2384,7 +2279,7 @@ func main() {
       fmt.Println("Error:", err)
       return
     }
-    
+
 
     configuration := sailpoint.NewDefaultConfiguration()
     apiClient := sailpoint.NewAPIClient(configuration)
@@ -2400,4 +2295,3 @@ func main() {
 ```
 
 [[Back to top]](#)
-

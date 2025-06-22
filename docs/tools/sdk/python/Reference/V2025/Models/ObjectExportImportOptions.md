@@ -4,20 +4,33 @@ title: ObjectExportImportOptions
 pagination_label: ObjectExportImportOptions
 sidebar_label: ObjectExportImportOptions
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ObjectExportImportOptions', 'V2025ObjectExportImportOptions'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ObjectExportImportOptions',
+    'V2025ObjectExportImportOptions',
+  ]
 slug: /tools/sdk/python/v2025/models/object-export-import-options
-tags: ['SDK', 'Software Development Kit', 'ObjectExportImportOptions', 'V2025ObjectExportImportOptions']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ObjectExportImportOptions',
+    'V2025ObjectExportImportOptions',
+  ]
 ---
 
 # ObjectExportImportOptions
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**included_ids** | **[]str** | Object ids to be included in an import or export. | [optional] 
-**included_names** | **[]str** | Object names to be included in an import or export. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **included_ids** | **[]str** | Object ids to be included in an import or export. | [optional] |
+| **included_names** | **[]str** | Object names to be included in an import or export. | [optional] |
+
 }
 
 ## Example
@@ -35,5 +48,5 @@ included_names=[
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,7 +4,7 @@ title: Approval
 pagination_label: Approval
 sidebar_label: Approval
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Approval', 'Approval'] 
+keywords: ['go', 'Golang', 'sdk', 'Approval', 'Approval']
 slug: /tools/sdk/go/v3/models/approval
 tags: ['SDK', 'Software Development Kit', 'Approval', 'Approval']
 ---
@@ -13,14 +13,14 @@ tags: ['SDK', 'Software Development Kit', 'Approval', 'Approval']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Comments** | Pointer to [**[]ApprovalComment**](approval-comment) |  | [optional] 
-**Modified** | Pointer to **NullableTime** | A date-time in ISO-8601 format | [optional] 
-**Owner** | Pointer to [**ActivityIdentity**](activity-identity) |  | [optional] 
-**Result** | Pointer to **string** | The result of the approval | [optional] 
-**AttributeRequest** | Pointer to [**AttributeRequest**](attribute-request) |  | [optional] 
-**Source** | Pointer to [**AccountSource**](account-source) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Comments** | Pointer to [**[]ApprovalComment**](approval-comment) |  | [optional] |
+| **Modified** | Pointer to **NullableTime** | A date-time in ISO-8601 format | [optional] |
+| **Owner** | Pointer to [**ActivityIdentity**](activity-identity) |  | [optional] |
+| **Result** | Pointer to **string** | The result of the approval | [optional] |
+| **AttributeRequest** | Pointer to [**AttributeRequest**](attribute-request) |  | [optional] |
+| **Source** | Pointer to [**AccountSource**](account-source) |  | [optional] |
 
 ## Methods
 
@@ -28,18 +28,13 @@ Name | Type | Description | Notes
 
 `func NewApproval() *Approval`
 
-NewApproval instantiates a new Approval object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewApproval instantiates a new Approval object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewApprovalWithDefaults
 
 `func NewApprovalWithDefaults() *Approval`
 
-NewApprovalWithDefaults instantiates a new Approval object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewApprovalWithDefaults instantiates a new Approval object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetComments
 
@@ -51,8 +46,7 @@ GetComments returns the Comments field if non-nil, zero value otherwise.
 
 `func (o *Approval) GetCommentsOk() (*[]ApprovalComment, bool)`
 
-GetCommentsOk returns a tuple with the Comments field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCommentsOk returns a tuple with the Comments field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetComments
 
@@ -76,8 +70,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *Approval) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -95,12 +88,14 @@ HasModified returns a boolean if a field has been set.
 
 `func (o *Approval) SetModifiedNil(b bool)`
 
- SetModifiedNil sets the value for Modified to be an explicit nil
+SetModifiedNil sets the value for Modified to be an explicit nil
 
 ### UnsetModified
+
 `func (o *Approval) UnsetModified()`
 
 UnsetModified ensures that no value is present for Modified, not even an explicit nil
+
 ### GetOwner
 
 `func (o *Approval) GetOwner() ActivityIdentity`
@@ -111,8 +106,7 @@ GetOwner returns the Owner field if non-nil, zero value otherwise.
 
 `func (o *Approval) GetOwnerOk() (*ActivityIdentity, bool)`
 
-GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwner
 
@@ -136,8 +130,7 @@ GetResult returns the Result field if non-nil, zero value otherwise.
 
 `func (o *Approval) GetResultOk() (*string, bool)`
 
-GetResultOk returns a tuple with the Result field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetResultOk returns a tuple with the Result field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetResult
 
@@ -161,8 +154,7 @@ GetAttributeRequest returns the AttributeRequest field if non-nil, zero value ot
 
 `func (o *Approval) GetAttributeRequestOk() (*AttributeRequest, bool)`
 
-GetAttributeRequestOk returns a tuple with the AttributeRequest field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributeRequestOk returns a tuple with the AttributeRequest field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributeRequest
 
@@ -186,8 +178,7 @@ GetSource returns the Source field if non-nil, zero value otherwise.
 
 `func (o *Approval) GetSourceOk() (*AccountSource, bool)`
 
-GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSource
 
@@ -200,5 +191,3 @@ SetSource sets Source field to given value.
 `func (o *Approval) HasSource() bool`
 
 HasSource returns a boolean if a field has been set.
-
-

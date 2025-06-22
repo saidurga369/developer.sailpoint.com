@@ -4,21 +4,28 @@ title: WorkflowModifiedBy
 pagination_label: WorkflowModifiedBy
 sidebar_label: WorkflowModifiedBy
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'WorkflowModifiedBy', 'WorkflowModifiedBy'] 
+keywords:
+  ['python', 'Python', 'sdk', 'WorkflowModifiedBy', 'WorkflowModifiedBy']
 slug: /tools/sdk/python/v3/models/workflow-modified-by
-tags: ['SDK', 'Software Development Kit', 'WorkflowModifiedBy', 'WorkflowModifiedBy']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'WorkflowModifiedBy',
+    'WorkflowModifiedBy',
+  ]
 ---
 
 # WorkflowModifiedBy
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] |  | [optional] 
-**id** | **str** | Identity ID | [optional] 
-**name** | **str** | Human-readable display name of identity. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'IDENTITY' ] |  | [optional] |
+| **id** | **str** | Identity ID | [optional] |
+| **name** | **str** | Human-readable display name of identity. | [optional] |
+
 }
 
 ## Example
@@ -33,5 +40,5 @@ name='Thomas Edison'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

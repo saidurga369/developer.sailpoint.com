@@ -4,9 +4,22 @@ title: AccessItemReviewedBy
 pagination_label: AccessItemReviewedBy
 sidebar_label: AccessItemReviewedBy
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccessItemReviewedBy', 'BetaAccessItemReviewedBy'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccessItemReviewedBy',
+    'BetaAccessItemReviewedBy',
+  ]
 slug: /tools/sdk/python/beta/models/access-item-reviewed-by
-tags: ['SDK', 'Software Development Kit', 'AccessItemReviewedBy', 'BetaAccessItemReviewedBy']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessItemReviewedBy',
+    'BetaAccessItemReviewedBy',
+  ]
 ---
 
 # AccessItemReviewedBy
@@ -15,11 +28,12 @@ Identity who reviewed the access item request.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] | DTO type of identity who reviewed the access item request. | [optional] 
-**id** | **str** | ID of identity who reviewed the access item request. | [optional] 
-**name** | **str** | Human-readable display name of identity who reviewed the access item request. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'IDENTITY' ] | DTO type of identity who reviewed the access item request. | [optional] |
+| **id** | **str** | ID of identity who reviewed the access item request. | [optional] |
+| **name** | **str** | Human-readable display name of identity who reviewed the access item request. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Allen Albertson'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

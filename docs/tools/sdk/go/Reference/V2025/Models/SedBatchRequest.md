@@ -4,20 +4,21 @@ title: SedBatchRequest
 pagination_label: SedBatchRequest
 sidebar_label: SedBatchRequest
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SedBatchRequest', 'V2025SedBatchRequest'] 
+keywords: ['go', 'Golang', 'sdk', 'SedBatchRequest', 'V2025SedBatchRequest']
 slug: /tools/sdk/go/v2025/models/sed-batch-request
-tags: ['SDK', 'Software Development Kit', 'SedBatchRequest', 'V2025SedBatchRequest']
+tags:
+  ['SDK', 'Software Development Kit', 'SedBatchRequest', 'V2025SedBatchRequest']
 ---
 
 # SedBatchRequest
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Entitlements** | Pointer to **[]string** | list of entitlement ids | [optional] 
-**Seds** | Pointer to **[]string** | list of sed ids | [optional] 
-**SearchCriteria** | Pointer to [**map[string]SearchCriteria**](search-criteria) | Search criteria for the batch request. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Entitlements** | Pointer to **[]string** | list of entitlement ids | [optional] |
+| **Seds** | Pointer to **[]string** | list of sed ids | [optional] |
+| **SearchCriteria** | Pointer to [**map[string]SearchCriteria**](search-criteria) | Search criteria for the batch request. | [optional] |
 
 ## Methods
 
@@ -25,18 +26,13 @@ Name | Type | Description | Notes
 
 `func NewSedBatchRequest() *SedBatchRequest`
 
-NewSedBatchRequest instantiates a new SedBatchRequest object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSedBatchRequest instantiates a new SedBatchRequest object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSedBatchRequestWithDefaults
 
 `func NewSedBatchRequestWithDefaults() *SedBatchRequest`
 
-NewSedBatchRequestWithDefaults instantiates a new SedBatchRequest object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSedBatchRequestWithDefaults instantiates a new SedBatchRequest object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetEntitlements
 
@@ -48,8 +44,7 @@ GetEntitlements returns the Entitlements field if non-nil, zero value otherwise.
 
 `func (o *SedBatchRequest) GetEntitlementsOk() (*[]string, bool)`
 
-GetEntitlementsOk returns a tuple with the Entitlements field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEntitlementsOk returns a tuple with the Entitlements field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEntitlements
 
@@ -67,12 +62,14 @@ HasEntitlements returns a boolean if a field has been set.
 
 `func (o *SedBatchRequest) SetEntitlementsNil(b bool)`
 
- SetEntitlementsNil sets the value for Entitlements to be an explicit nil
+SetEntitlementsNil sets the value for Entitlements to be an explicit nil
 
 ### UnsetEntitlements
+
 `func (o *SedBatchRequest) UnsetEntitlements()`
 
 UnsetEntitlements ensures that no value is present for Entitlements, not even an explicit nil
+
 ### GetSeds
 
 `func (o *SedBatchRequest) GetSeds() []string`
@@ -83,8 +80,7 @@ GetSeds returns the Seds field if non-nil, zero value otherwise.
 
 `func (o *SedBatchRequest) GetSedsOk() (*[]string, bool)`
 
-GetSedsOk returns a tuple with the Seds field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSedsOk returns a tuple with the Seds field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSeds
 
@@ -102,12 +98,14 @@ HasSeds returns a boolean if a field has been set.
 
 `func (o *SedBatchRequest) SetSedsNil(b bool)`
 
- SetSedsNil sets the value for Seds to be an explicit nil
+SetSedsNil sets the value for Seds to be an explicit nil
 
 ### UnsetSeds
+
 `func (o *SedBatchRequest) UnsetSeds()`
 
 UnsetSeds ensures that no value is present for Seds, not even an explicit nil
+
 ### GetSearchCriteria
 
 `func (o *SedBatchRequest) GetSearchCriteria() map[string]SearchCriteria`
@@ -118,8 +116,7 @@ GetSearchCriteria returns the SearchCriteria field if non-nil, zero value otherw
 
 `func (o *SedBatchRequest) GetSearchCriteriaOk() (*map[string]SearchCriteria, bool)`
 
-GetSearchCriteriaOk returns a tuple with the SearchCriteria field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSearchCriteriaOk returns a tuple with the SearchCriteria field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSearchCriteria
 
@@ -137,10 +134,10 @@ HasSearchCriteria returns a boolean if a field has been set.
 
 `func (o *SedBatchRequest) SetSearchCriteriaNil(b bool)`
 
- SetSearchCriteriaNil sets the value for SearchCriteria to be an explicit nil
+SetSearchCriteriaNil sets the value for SearchCriteria to be an explicit nil
 
 ### UnsetSearchCriteria
+
 `func (o *SedBatchRequest) UnsetSearchCriteria()`
 
 UnsetSearchCriteria ensures that no value is present for SearchCriteria, not even an explicit nil
-

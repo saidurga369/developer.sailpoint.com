@@ -4,22 +4,35 @@ title: ResourceObjectsResponse
 pagination_label: ResourceObjectsResponse
 sidebar_label: ResourceObjectsResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ResourceObjectsResponse', 'BetaResourceObjectsResponse'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ResourceObjectsResponse',
+    'BetaResourceObjectsResponse',
+  ]
 slug: /tools/sdk/go/beta/models/resource-objects-response
-tags: ['SDK', 'Software Development Kit', 'ResourceObjectsResponse', 'BetaResourceObjectsResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ResourceObjectsResponse',
+    'BetaResourceObjectsResponse',
+  ]
 ---
 
 # ResourceObjectsResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | ID of the source | [optional] [readonly] 
-**Name** | Pointer to **string** | Name of the source | [optional] [readonly] 
-**ObjectCount** | Pointer to **int32** | The number of objects that were fetched by the connector. | [optional] [readonly] 
-**ElapsedMillis** | Pointer to **int32** | The number of milliseconds spent on the entire request. | [optional] [readonly] 
-**ResourceObjects** | Pointer to [**[]ResourceObject**](resource-object) | Fetched objects from the source connector. | [optional] [readonly] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | ID of the source | [optional] [readonly] |
+| **Name** | Pointer to **string** | Name of the source | [optional] [readonly] |
+| **ObjectCount** | Pointer to **int32** | The number of objects that were fetched by the connector. | [optional] [readonly] |
+| **ElapsedMillis** | Pointer to **int32** | The number of milliseconds spent on the entire request. | [optional] [readonly] |
+| **ResourceObjects** | Pointer to [**[]ResourceObject**](resource-object) | Fetched objects from the source connector. | [optional] [readonly] |
 
 ## Methods
 
@@ -27,18 +40,13 @@ Name | Type | Description | Notes
 
 `func NewResourceObjectsResponse() *ResourceObjectsResponse`
 
-NewResourceObjectsResponse instantiates a new ResourceObjectsResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewResourceObjectsResponse instantiates a new ResourceObjectsResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewResourceObjectsResponseWithDefaults
 
 `func NewResourceObjectsResponseWithDefaults() *ResourceObjectsResponse`
 
-NewResourceObjectsResponseWithDefaults instantiates a new ResourceObjectsResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewResourceObjectsResponseWithDefaults instantiates a new ResourceObjectsResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -50,8 +58,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *ResourceObjectsResponse) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -75,8 +82,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *ResourceObjectsResponse) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -100,8 +106,7 @@ GetObjectCount returns the ObjectCount field if non-nil, zero value otherwise.
 
 `func (o *ResourceObjectsResponse) GetObjectCountOk() (*int32, bool)`
 
-GetObjectCountOk returns a tuple with the ObjectCount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetObjectCountOk returns a tuple with the ObjectCount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetObjectCount
 
@@ -125,8 +130,7 @@ GetElapsedMillis returns the ElapsedMillis field if non-nil, zero value otherwis
 
 `func (o *ResourceObjectsResponse) GetElapsedMillisOk() (*int32, bool)`
 
-GetElapsedMillisOk returns a tuple with the ElapsedMillis field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetElapsedMillisOk returns a tuple with the ElapsedMillis field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetElapsedMillis
 
@@ -150,8 +154,7 @@ GetResourceObjects returns the ResourceObjects field if non-nil, zero value othe
 
 `func (o *ResourceObjectsResponse) GetResourceObjectsOk() (*[]ResourceObject, bool)`
 
-GetResourceObjectsOk returns a tuple with the ResourceObjects field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetResourceObjectsOk returns a tuple with the ResourceObjects field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetResourceObjects
 
@@ -164,5 +167,3 @@ SetResourceObjects sets ResourceObjects field to given value.
 `func (o *ResourceObjectsResponse) HasResourceObjects() bool`
 
 HasResourceObjects returns a boolean if a field has been set.
-
-

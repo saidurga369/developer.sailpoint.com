@@ -4,20 +4,33 @@ title: IdentityEntitiesIdentityEntity
 pagination_label: IdentityEntitiesIdentityEntity
 sidebar_label: IdentityEntitiesIdentityEntity
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'IdentityEntitiesIdentityEntity', 'V2024IdentityEntitiesIdentityEntity'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'IdentityEntitiesIdentityEntity',
+    'V2024IdentityEntitiesIdentityEntity',
+  ]
 slug: /tools/sdk/go/v2024/models/identity-entities-identity-entity
-tags: ['SDK', 'Software Development Kit', 'IdentityEntitiesIdentityEntity', 'V2024IdentityEntitiesIdentityEntity']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'IdentityEntitiesIdentityEntity',
+    'V2024IdentityEntitiesIdentityEntity',
+  ]
 ---
 
 # IdentityEntitiesIdentityEntity
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | id of the resource to which the identity is associated | [optional] 
-**Name** | Pointer to **string** | name of the resource to which the identity is associated | [optional] 
-**Type** | Pointer to **string** | type of the resource to which the identity is associated | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | id of the resource to which the identity is associated | [optional] |
+| **Name** | Pointer to **string** | name of the resource to which the identity is associated | [optional] |
+| **Type** | Pointer to **string** | type of the resource to which the identity is associated | [optional] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewIdentityEntitiesIdentityEntity() *IdentityEntitiesIdentityEntity`
 
-NewIdentityEntitiesIdentityEntity instantiates a new IdentityEntitiesIdentityEntity object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewIdentityEntitiesIdentityEntity instantiates a new IdentityEntitiesIdentityEntity object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewIdentityEntitiesIdentityEntityWithDefaults
 
 `func NewIdentityEntitiesIdentityEntityWithDefaults() *IdentityEntitiesIdentityEntity`
 
-NewIdentityEntitiesIdentityEntityWithDefaults instantiates a new IdentityEntitiesIdentityEntity object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewIdentityEntitiesIdentityEntityWithDefaults instantiates a new IdentityEntitiesIdentityEntity object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -48,8 +56,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *IdentityEntitiesIdentityEntity) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -73,8 +80,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *IdentityEntitiesIdentityEntity) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -98,8 +104,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *IdentityEntitiesIdentityEntity) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -112,5 +117,3 @@ SetType sets Type field to given value.
 `func (o *IdentityEntitiesIdentityEntity) HasType() bool`
 
 HasType returns a boolean if a field has been set.
-
-

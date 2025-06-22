@@ -4,9 +4,22 @@ title: WorkflowAllOfCreator
 pagination_label: WorkflowAllOfCreator
 sidebar_label: WorkflowAllOfCreator
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'WorkflowAllOfCreator', 'BetaWorkflowAllOfCreator'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'WorkflowAllOfCreator',
+    'BetaWorkflowAllOfCreator',
+  ]
 slug: /tools/sdk/python/beta/models/workflow-all-of-creator
-tags: ['SDK', 'Software Development Kit', 'WorkflowAllOfCreator', 'BetaWorkflowAllOfCreator']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'WorkflowAllOfCreator',
+    'BetaWorkflowAllOfCreator',
+  ]
 ---
 
 # WorkflowAllOfCreator
@@ -15,11 +28,12 @@ Workflow creator's identity.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'IDENTITY' ] | Workflow creator's DTO type. | [optional] 
-**id** | **str** | Workflow creator's identity ID. | [optional] 
-**name** | **str** | Workflow creator's display name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'IDENTITY' ] | Workflow creator's DTO type. | [optional] |
+| **id** | **str** | Workflow creator's identity ID. | [optional] |
+| **name** | **str** | Workflow creator's display name. | [optional] |
+
 }
 
 ## Example
@@ -34,5 +48,5 @@ name='Michael Michaels'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

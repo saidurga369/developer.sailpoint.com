@@ -4,20 +4,33 @@ title: RoleMiningPotentialRoleRef
 pagination_label: RoleMiningPotentialRoleRef
 sidebar_label: RoleMiningPotentialRoleRef
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RoleMiningPotentialRoleRef', 'BetaRoleMiningPotentialRoleRef'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'RoleMiningPotentialRoleRef',
+    'BetaRoleMiningPotentialRoleRef',
+  ]
 slug: /tools/sdk/python/beta/models/role-mining-potential-role-ref
-tags: ['SDK', 'Software Development Kit', 'RoleMiningPotentialRoleRef', 'BetaRoleMiningPotentialRoleRef']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningPotentialRoleRef',
+    'BetaRoleMiningPotentialRoleRef',
+  ]
 ---
 
 # RoleMiningPotentialRoleRef
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Id of the potential role | [optional] 
-**name** | **str** | Name of the potential role | [optional] 
+| Name     | Type    | Description                | Notes      |
+| -------- | ------- | -------------------------- | ---------- |
+| **id**   | **str** | Id of the potential role   | [optional] |
+| **name** | **str** | Name of the potential role | [optional] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ name='Potential Role - e0cc5d'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,19 +4,26 @@ title: FormInstanceCreatedBy
 pagination_label: FormInstanceCreatedBy
 sidebar_label: FormInstanceCreatedBy
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'FormInstanceCreatedBy', 'BetaFormInstanceCreatedBy'] 
+keywords:
+  ['go', 'Golang', 'sdk', 'FormInstanceCreatedBy', 'BetaFormInstanceCreatedBy']
 slug: /tools/sdk/go/beta/models/form-instance-created-by
-tags: ['SDK', 'Software Development Kit', 'FormInstanceCreatedBy', 'BetaFormInstanceCreatedBy']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'FormInstanceCreatedBy',
+    'BetaFormInstanceCreatedBy',
+  ]
 ---
 
 # FormInstanceCreatedBy
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | ID is a unique identifier | [optional] 
-**Type** | Pointer to **string** | Type is a form instance created by type enum value WORKFLOW_EXECUTION FormInstanceCreatedByTypeWorkflowExecution SOURCE FormInstanceCreatedByTypeSource | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | ID is a unique identifier | [optional] |
+| **Type** | Pointer to **string** | Type is a form instance created by type enum value WORKFLOW_EXECUTION FormInstanceCreatedByTypeWorkflowExecution SOURCE FormInstanceCreatedByTypeSource | [optional] |
 
 ## Methods
 
@@ -24,18 +31,13 @@ Name | Type | Description | Notes
 
 `func NewFormInstanceCreatedBy() *FormInstanceCreatedBy`
 
-NewFormInstanceCreatedBy instantiates a new FormInstanceCreatedBy object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewFormInstanceCreatedBy instantiates a new FormInstanceCreatedBy object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewFormInstanceCreatedByWithDefaults
 
 `func NewFormInstanceCreatedByWithDefaults() *FormInstanceCreatedBy`
 
-NewFormInstanceCreatedByWithDefaults instantiates a new FormInstanceCreatedBy object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewFormInstanceCreatedByWithDefaults instantiates a new FormInstanceCreatedBy object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -47,8 +49,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *FormInstanceCreatedBy) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -72,8 +73,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *FormInstanceCreatedBy) GetTypeOk() (*string, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -86,5 +86,3 @@ SetType sets Type field to given value.
 `func (o *FormInstanceCreatedBy) HasType() bool`
 
 HasType returns a boolean if a field has been set.
-
-

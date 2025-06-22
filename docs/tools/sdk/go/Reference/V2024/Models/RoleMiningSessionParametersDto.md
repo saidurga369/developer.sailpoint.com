@@ -4,26 +4,39 @@ title: RoleMiningSessionParametersDto
 pagination_label: RoleMiningSessionParametersDto
 sidebar_label: RoleMiningSessionParametersDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'RoleMiningSessionParametersDto', 'V2024RoleMiningSessionParametersDto'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'RoleMiningSessionParametersDto',
+    'V2024RoleMiningSessionParametersDto',
+  ]
 slug: /tools/sdk/go/v2024/models/role-mining-session-parameters-dto
-tags: ['SDK', 'Software Development Kit', 'RoleMiningSessionParametersDto', 'V2024RoleMiningSessionParametersDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningSessionParametersDto',
+    'V2024RoleMiningSessionParametersDto',
+  ]
 ---
 
 # RoleMiningSessionParametersDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The ID of the role mining session | [optional] 
-**Name** | Pointer to **NullableString** | The session's saved name | [optional] 
-**MinNumIdentitiesInPotentialRole** | Pointer to **NullableInt32** | Minimum number of identities in a potential role | [optional] 
-**PruneThreshold** | Pointer to **NullableInt32** | The prune threshold to be used or null to calculate prescribedPruneThreshold | [optional] 
-**Saved** | Pointer to **bool** | The session's saved status | [optional] [default to true]
-**Scope** | Pointer to [**RoleMiningSessionScope**](role-mining-session-scope) |  | [optional] 
-**Type** | Pointer to [**RoleMiningRoleType**](role-mining-role-type) |  | [optional] 
-**State** | Pointer to [**RoleMiningSessionState**](role-mining-session-state) |  | [optional] 
-**ScopingMethod** | Pointer to [**RoleMiningSessionScopingMethod**](role-mining-session-scoping-method) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The ID of the role mining session | [optional] |
+| **Name** | Pointer to **NullableString** | The session's saved name | [optional] |
+| **MinNumIdentitiesInPotentialRole** | Pointer to **NullableInt32** | Minimum number of identities in a potential role | [optional] |
+| **PruneThreshold** | Pointer to **NullableInt32** | The prune threshold to be used or null to calculate prescribedPruneThreshold | [optional] |
+| **Saved** | Pointer to **bool** | The session's saved status | [optional] [default to true] |
+| **Scope** | Pointer to [**RoleMiningSessionScope**](role-mining-session-scope) |  | [optional] |
+| **Type** | Pointer to [**RoleMiningRoleType**](role-mining-role-type) |  | [optional] |
+| **State** | Pointer to [**RoleMiningSessionState**](role-mining-session-state) |  | [optional] |
+| **ScopingMethod** | Pointer to [**RoleMiningSessionScopingMethod**](role-mining-session-scoping-method) |  | [optional] |
 
 ## Methods
 
@@ -31,18 +44,13 @@ Name | Type | Description | Notes
 
 `func NewRoleMiningSessionParametersDto() *RoleMiningSessionParametersDto`
 
-NewRoleMiningSessionParametersDto instantiates a new RoleMiningSessionParametersDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewRoleMiningSessionParametersDto instantiates a new RoleMiningSessionParametersDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewRoleMiningSessionParametersDtoWithDefaults
 
 `func NewRoleMiningSessionParametersDtoWithDefaults() *RoleMiningSessionParametersDto`
 
-NewRoleMiningSessionParametersDtoWithDefaults instantiates a new RoleMiningSessionParametersDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewRoleMiningSessionParametersDtoWithDefaults instantiates a new RoleMiningSessionParametersDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -54,8 +62,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningSessionParametersDto) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -79,8 +86,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningSessionParametersDto) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -98,12 +104,14 @@ HasName returns a boolean if a field has been set.
 
 `func (o *RoleMiningSessionParametersDto) SetNameNil(b bool)`
 
- SetNameNil sets the value for Name to be an explicit nil
+SetNameNil sets the value for Name to be an explicit nil
 
 ### UnsetName
+
 `func (o *RoleMiningSessionParametersDto) UnsetName()`
 
 UnsetName ensures that no value is present for Name, not even an explicit nil
+
 ### GetMinNumIdentitiesInPotentialRole
 
 `func (o *RoleMiningSessionParametersDto) GetMinNumIdentitiesInPotentialRole() int32`
@@ -114,8 +122,7 @@ GetMinNumIdentitiesInPotentialRole returns the MinNumIdentitiesInPotentialRole f
 
 `func (o *RoleMiningSessionParametersDto) GetMinNumIdentitiesInPotentialRoleOk() (*int32, bool)`
 
-GetMinNumIdentitiesInPotentialRoleOk returns a tuple with the MinNumIdentitiesInPotentialRole field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMinNumIdentitiesInPotentialRoleOk returns a tuple with the MinNumIdentitiesInPotentialRole field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMinNumIdentitiesInPotentialRole
 
@@ -133,12 +140,14 @@ HasMinNumIdentitiesInPotentialRole returns a boolean if a field has been set.
 
 `func (o *RoleMiningSessionParametersDto) SetMinNumIdentitiesInPotentialRoleNil(b bool)`
 
- SetMinNumIdentitiesInPotentialRoleNil sets the value for MinNumIdentitiesInPotentialRole to be an explicit nil
+SetMinNumIdentitiesInPotentialRoleNil sets the value for MinNumIdentitiesInPotentialRole to be an explicit nil
 
 ### UnsetMinNumIdentitiesInPotentialRole
+
 `func (o *RoleMiningSessionParametersDto) UnsetMinNumIdentitiesInPotentialRole()`
 
 UnsetMinNumIdentitiesInPotentialRole ensures that no value is present for MinNumIdentitiesInPotentialRole, not even an explicit nil
+
 ### GetPruneThreshold
 
 `func (o *RoleMiningSessionParametersDto) GetPruneThreshold() int32`
@@ -149,8 +158,7 @@ GetPruneThreshold returns the PruneThreshold field if non-nil, zero value otherw
 
 `func (o *RoleMiningSessionParametersDto) GetPruneThresholdOk() (*int32, bool)`
 
-GetPruneThresholdOk returns a tuple with the PruneThreshold field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPruneThresholdOk returns a tuple with the PruneThreshold field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPruneThreshold
 
@@ -168,12 +176,14 @@ HasPruneThreshold returns a boolean if a field has been set.
 
 `func (o *RoleMiningSessionParametersDto) SetPruneThresholdNil(b bool)`
 
- SetPruneThresholdNil sets the value for PruneThreshold to be an explicit nil
+SetPruneThresholdNil sets the value for PruneThreshold to be an explicit nil
 
 ### UnsetPruneThreshold
+
 `func (o *RoleMiningSessionParametersDto) UnsetPruneThreshold()`
 
 UnsetPruneThreshold ensures that no value is present for PruneThreshold, not even an explicit nil
+
 ### GetSaved
 
 `func (o *RoleMiningSessionParametersDto) GetSaved() bool`
@@ -184,8 +194,7 @@ GetSaved returns the Saved field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningSessionParametersDto) GetSavedOk() (*bool, bool)`
 
-GetSavedOk returns a tuple with the Saved field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSavedOk returns a tuple with the Saved field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSaved
 
@@ -209,8 +218,7 @@ GetScope returns the Scope field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningSessionParametersDto) GetScopeOk() (*RoleMiningSessionScope, bool)`
 
-GetScopeOk returns a tuple with the Scope field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetScopeOk returns a tuple with the Scope field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetScope
 
@@ -234,8 +242,7 @@ GetType returns the Type field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningSessionParametersDto) GetTypeOk() (*RoleMiningRoleType, bool)`
 
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetType
 
@@ -259,8 +266,7 @@ GetState returns the State field if non-nil, zero value otherwise.
 
 `func (o *RoleMiningSessionParametersDto) GetStateOk() (*RoleMiningSessionState, bool)`
 
-GetStateOk returns a tuple with the State field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStateOk returns a tuple with the State field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetState
 
@@ -284,8 +290,7 @@ GetScopingMethod returns the ScopingMethod field if non-nil, zero value otherwis
 
 `func (o *RoleMiningSessionParametersDto) GetScopingMethodOk() (*RoleMiningSessionScopingMethod, bool)`
 
-GetScopingMethodOk returns a tuple with the ScopingMethod field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetScopingMethodOk returns a tuple with the ScopingMethod field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetScopingMethod
 
@@ -298,5 +303,3 @@ SetScopingMethod sets ScopingMethod field to given value.
 `func (o *RoleMiningSessionParametersDto) HasScopingMethod() bool`
 
 HasScopingMethod returns a boolean if a field has been set.
-
-

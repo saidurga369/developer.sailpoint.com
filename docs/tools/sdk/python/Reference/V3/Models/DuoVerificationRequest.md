@@ -4,20 +4,33 @@ title: DuoVerificationRequest
 pagination_label: DuoVerificationRequest
 sidebar_label: DuoVerificationRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'DuoVerificationRequest', 'DuoVerificationRequest'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'DuoVerificationRequest',
+    'DuoVerificationRequest',
+  ]
 slug: /tools/sdk/python/v3/models/duo-verification-request
-tags: ['SDK', 'Software Development Kit', 'DuoVerificationRequest', 'DuoVerificationRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'DuoVerificationRequest',
+    'DuoVerificationRequest',
+  ]
 ---
 
 # DuoVerificationRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**user_id** | **str** | User id for Verification request. | [required]
-**signed_response** | **str** | User id for Verification request. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **user_id** | **str** | User id for Verification request. | [required] |
+| **signed_response** | **str** | User id for Verification request. | [required] |
+
 }
 
 ## Example
@@ -31,5 +44,5 @@ signed_response='AUTH|d2lsbC5hbGJpbnxESTZNMFpHSThKQVRWTVpZN0M5VXwxNzAxMjUzMDg5|f
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

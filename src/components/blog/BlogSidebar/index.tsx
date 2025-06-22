@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import styles from './styles.module.css';
-import { getTags } from '../../../services/DiscourseService';
+import {getTags} from '../../../services/DiscourseService';
 
 // Define props interface
 interface BlogSidebarProps {
@@ -8,7 +8,10 @@ interface BlogSidebarProps {
   defaultValue?: string;
 }
 
-const BlogSidebar: React.FC<BlogSidebarProps> = ({ filterCallback, defaultValue }) => {
+const BlogSidebar: React.FC<BlogSidebarProps> = ({
+  filterCallback,
+  defaultValue,
+}) => {
   const [tagProductData, setTagProductData] = useState<string[] | undefined>();
   const initialCheckState = defaultValue === 'Identityiq';
   const [isChecked, setIsChecked] = useState<boolean>(initialCheckState);

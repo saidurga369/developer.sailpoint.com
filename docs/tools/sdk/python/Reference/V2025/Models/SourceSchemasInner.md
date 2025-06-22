@@ -4,21 +4,28 @@ title: SourceSchemasInner
 pagination_label: SourceSchemasInner
 sidebar_label: SourceSchemasInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'SourceSchemasInner', 'V2025SourceSchemasInner'] 
+keywords:
+  ['python', 'Python', 'sdk', 'SourceSchemasInner', 'V2025SourceSchemasInner']
 slug: /tools/sdk/python/v2025/models/source-schemas-inner
-tags: ['SDK', 'Software Development Kit', 'SourceSchemasInner', 'V2025SourceSchemasInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'SourceSchemasInner',
+    'V2025SourceSchemasInner',
+  ]
 ---
 
 # SourceSchemasInner
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'CONNECTOR_SCHEMA' ] | Type of object being referenced. | [optional] 
-**id** | **str** | Schema ID. | [optional] 
-**name** | **str** | Schema's human-readable display name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'CONNECTOR_SCHEMA' ] | Type of object being referenced. | [optional] |
+| **id** | **str** | Schema ID. | [optional] |
+| **name** | **str** | Schema's human-readable display name. | [optional] |
+
 }
 
 ## Example
@@ -33,5 +40,5 @@ name='MySchema'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

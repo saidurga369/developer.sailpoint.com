@@ -4,29 +4,42 @@ title: WorkflowLibraryTrigger
 pagination_label: WorkflowLibraryTrigger
 sidebar_label: WorkflowLibraryTrigger
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'WorkflowLibraryTrigger', 'V2025WorkflowLibraryTrigger'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'WorkflowLibraryTrigger',
+    'V2025WorkflowLibraryTrigger',
+  ]
 slug: /tools/sdk/python/v2025/models/workflow-library-trigger
-tags: ['SDK', 'Software Development Kit', 'WorkflowLibraryTrigger', 'V2025WorkflowLibraryTrigger']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'WorkflowLibraryTrigger',
+    'V2025WorkflowLibraryTrigger',
+  ]
 ---
 
 # WorkflowLibraryTrigger
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Trigger ID. This is a static namespaced ID for the trigger. | [optional] 
-**type** |  **Enum** [  'EVENT',    'SCHEDULED',    'EXTERNAL' ] | Trigger type | [optional] 
-**deprecated** | **bool** |  | [optional] 
-**deprecated_by** | **datetime** |  | [optional] 
-**is_simulation_enabled** | **bool** |  | [optional] 
-**output_schema** | **object** | Example output schema | [optional] 
-**name** | **str** | Trigger Name | [optional] 
-**description** | **str** | Trigger Description | [optional] 
-**is_dynamic_schema** | **bool** | Determines whether the dynamic output schema is returned in place of the action's output schema. The dynamic schema lists non-static properties, like properties of a workflow form where each form has different fields. These will be provided dynamically based on available form fields. | [optional] [default to False]
-**input_example** | **object** | Example trigger payload if applicable | [optional] 
-**form_fields** | [**[]WorkflowLibraryFormFields**](workflow-library-form-fields) | One or more inputs that the trigger accepts | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | Trigger ID. This is a static namespaced ID for the trigger. | [optional] |
+| **type** | **Enum** [ 'EVENT', 'SCHEDULED', 'EXTERNAL' ] | Trigger type | [optional] |
+| **deprecated** | **bool** |  | [optional] |
+| **deprecated_by** | **datetime** |  | [optional] |
+| **is_simulation_enabled** | **bool** |  | [optional] |
+| **output_schema** | **object** | Example output schema | [optional] |
+| **name** | **str** | Trigger Name | [optional] |
+| **description** | **str** | Trigger Description | [optional] |
+| **is_dynamic_schema** | **bool** | Determines whether the dynamic output schema is returned in place of the action's output schema. The dynamic schema lists non-static properties, like properties of a workflow form where each form has different fields. These will be provided dynamically based on available form fields. | [optional] [default to False] |
+| **input_example** | **object** | Example trigger payload if applicable | [optional] |
+| **form_fields** | [**[]WorkflowLibraryFormFields**](workflow-library-form-fields) | One or more inputs that the trigger accepts | [optional] |
+
 }
 
 ## Example
@@ -49,5 +62,5 @@ form_fields=[]
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,21 +4,28 @@ title: AttributeRequest
 pagination_label: AttributeRequest
 sidebar_label: AttributeRequest
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AttributeRequest', 'V2025AttributeRequest'] 
+keywords:
+  ['python', 'Python', 'sdk', 'AttributeRequest', 'V2025AttributeRequest']
 slug: /tools/sdk/python/v2025/models/attribute-request
-tags: ['SDK', 'Software Development Kit', 'AttributeRequest', 'V2025AttributeRequest']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AttributeRequest',
+    'V2025AttributeRequest',
+  ]
 ---
 
 # AttributeRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | Attribute name. | [optional] 
-**op** | **str** | Operation to perform on attribute. | [optional] 
-**value** | [**AttributeRequestValue**](attribute-request-value) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **name** | **str** | Attribute name. | [optional] |
+| **op** | **str** | Operation to perform on attribute. | [optional] |
+| **value** | [**AttributeRequestValue**](attribute-request-value) |  | [optional] |
+
 }
 
 ## Example
@@ -33,5 +40,5 @@ value=
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

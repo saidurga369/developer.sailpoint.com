@@ -4,20 +4,33 @@ title: ValidateFilterOutputDto
 pagination_label: ValidateFilterOutputDto
 sidebar_label: ValidateFilterOutputDto
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ValidateFilterOutputDto', 'V2024ValidateFilterOutputDto'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ValidateFilterOutputDto',
+    'V2024ValidateFilterOutputDto',
+  ]
 slug: /tools/sdk/go/v2024/models/validate-filter-output-dto
-tags: ['SDK', 'Software Development Kit', 'ValidateFilterOutputDto', 'V2024ValidateFilterOutputDto']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ValidateFilterOutputDto',
+    'V2024ValidateFilterOutputDto',
+  ]
 ---
 
 # ValidateFilterOutputDto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**IsValid** | Pointer to **bool** | When this field is true, the filter expression is valid against the input. | [optional] [default to false]
-**IsValidJSONPath** | Pointer to **bool** | When this field is true, the filter expression is using a valid JSON path. | [optional] [default to false]
-**IsPathExist** | Pointer to **bool** | When this field is true, the filter expression is using an existing path. | [optional] [default to false]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **IsValid** | Pointer to **bool** | When this field is true, the filter expression is valid against the input. | [optional] [default to false] |
+| **IsValidJSONPath** | Pointer to **bool** | When this field is true, the filter expression is using a valid JSON path. | [optional] [default to false] |
+| **IsPathExist** | Pointer to **bool** | When this field is true, the filter expression is using an existing path. | [optional] [default to false] |
 
 ## Methods
 
@@ -25,18 +38,13 @@ Name | Type | Description | Notes
 
 `func NewValidateFilterOutputDto() *ValidateFilterOutputDto`
 
-NewValidateFilterOutputDto instantiates a new ValidateFilterOutputDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewValidateFilterOutputDto instantiates a new ValidateFilterOutputDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewValidateFilterOutputDtoWithDefaults
 
 `func NewValidateFilterOutputDtoWithDefaults() *ValidateFilterOutputDto`
 
-NewValidateFilterOutputDtoWithDefaults instantiates a new ValidateFilterOutputDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewValidateFilterOutputDtoWithDefaults instantiates a new ValidateFilterOutputDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetIsValid
 
@@ -48,8 +56,7 @@ GetIsValid returns the IsValid field if non-nil, zero value otherwise.
 
 `func (o *ValidateFilterOutputDto) GetIsValidOk() (*bool, bool)`
 
-GetIsValidOk returns a tuple with the IsValid field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIsValidOk returns a tuple with the IsValid field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIsValid
 
@@ -73,8 +80,7 @@ GetIsValidJSONPath returns the IsValidJSONPath field if non-nil, zero value othe
 
 `func (o *ValidateFilterOutputDto) GetIsValidJSONPathOk() (*bool, bool)`
 
-GetIsValidJSONPathOk returns a tuple with the IsValidJSONPath field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIsValidJSONPathOk returns a tuple with the IsValidJSONPath field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIsValidJSONPath
 
@@ -98,8 +104,7 @@ GetIsPathExist returns the IsPathExist field if non-nil, zero value otherwise.
 
 `func (o *ValidateFilterOutputDto) GetIsPathExistOk() (*bool, bool)`
 
-GetIsPathExistOk returns a tuple with the IsPathExist field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIsPathExistOk returns a tuple with the IsPathExist field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIsPathExist
 
@@ -112,5 +117,3 @@ SetIsPathExist sets IsPathExist field to given value.
 `func (o *ValidateFilterOutputDto) HasIsPathExist() bool`
 
 HasIsPathExist returns a boolean if a field has been set.
-
-

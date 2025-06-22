@@ -4,7 +4,7 @@ title: KbaQuestion
 pagination_label: KbaQuestion
 sidebar_label: KbaQuestion
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'KbaQuestion', 'V2025KbaQuestion'] 
+keywords: ['python', 'Python', 'sdk', 'KbaQuestion', 'V2025KbaQuestion']
 slug: /tools/sdk/python/v2025/models/kba-question
 tags: ['SDK', 'Software Development Kit', 'KbaQuestion', 'V2025KbaQuestion']
 ---
@@ -15,12 +15,13 @@ KBA Configuration
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | KBA Question Id | [required]
-**text** | **str** | KBA Question description | [required]
-**has_answer** | **bool** | Denotes whether the KBA question has an answer configured for any user in the tenant | [required]
-**num_answers** | **int** | Denotes the number of KBA configurations for this question | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | KBA Question Id | [required] |
+| **text** | **str** | KBA Question description | [required] |
+| **has_answer** | **bool** | Denotes whether the KBA question has an answer configured for any user in the tenant | [required] |
+| **num_answers** | **int** | Denotes the number of KBA configurations for this question | [required] |
+
 }
 
 ## Example
@@ -36,5 +37,5 @@ num_answers=5
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,9 +4,22 @@ title: AccessProfileBulkUpdateRequestInner
 pagination_label: AccessProfileBulkUpdateRequestInner
 sidebar_label: AccessProfileBulkUpdateRequestInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'AccessProfileBulkUpdateRequestInner', 'BetaAccessProfileBulkUpdateRequestInner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'AccessProfileBulkUpdateRequestInner',
+    'BetaAccessProfileBulkUpdateRequestInner',
+  ]
 slug: /tools/sdk/python/beta/models/access-profile-bulk-update-request-inner
-tags: ['SDK', 'Software Development Kit', 'AccessProfileBulkUpdateRequestInner', 'BetaAccessProfileBulkUpdateRequestInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'AccessProfileBulkUpdateRequestInner',
+    'BetaAccessProfileBulkUpdateRequestInner',
+  ]
 ---
 
 # AccessProfileBulkUpdateRequestInner
@@ -15,10 +28,11 @@ Access Profile's basic details.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Access Profile ID. | [optional] 
-**requestable** | **bool** | Access Profile is requestable or not. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | Access Profile ID. | [optional] |
+| **requestable** | **bool** | Access Profile is requestable or not. | [optional] |
+
 }
 
 ## Example
@@ -32,5 +46,5 @@ requestable=False
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

@@ -4,7 +4,7 @@ title: Entitlement
 pagination_label: Entitlement
 sidebar_label: Entitlement
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'Entitlement', 'BetaEntitlement'] 
+keywords: ['go', 'Golang', 'sdk', 'Entitlement', 'BetaEntitlement']
 slug: /tools/sdk/go/beta/models/entitlement
 tags: ['SDK', 'Software Development Kit', 'Entitlement', 'BetaEntitlement']
 ---
@@ -13,26 +13,26 @@ tags: ['SDK', 'Software Development Kit', 'Entitlement', 'BetaEntitlement']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | The entitlement id | [optional] 
-**Name** | Pointer to **string** | The entitlement name | [optional] 
-**Created** | Pointer to **SailPointTime** | Time when the entitlement was created | [optional] 
-**Modified** | Pointer to **SailPointTime** | Time when the entitlement was last modified | [optional] 
-**Attribute** | Pointer to **NullableString** | The entitlement attribute name | [optional] 
-**Value** | Pointer to **string** | The value of the entitlement | [optional] 
-**SourceSchemaObjectType** | Pointer to **string** | The object type of the entitlement from the source schema | [optional] 
-**Privileged** | Pointer to **bool** | True if the entitlement is privileged | [optional] [default to false]
-**CloudGoverned** | Pointer to **bool** | True if the entitlement is cloud governed | [optional] [default to false]
-**Description** | Pointer to **NullableString** | The description of the entitlement | [optional] 
-**Requestable** | Pointer to **bool** | True if the entitlement is requestable | [optional] [default to false]
-**Attributes** | Pointer to **map[string]interface{}** | A map of free-form key-value pairs from the source system | [optional] 
-**Source** | Pointer to [**EntitlementSource**](entitlement-source) |  | [optional] 
-**Owner** | Pointer to [**EntitlementOwner**](entitlement-owner) |  | [optional] 
-**DirectPermissions** | Pointer to [**[]PermissionDto**](permission-dto) |  | [optional] 
-**Segments** | Pointer to **[]string** | List of IDs of segments, if any, to which this Entitlement is assigned. | [optional] 
-**ManuallyUpdatedFields** | Pointer to [**EntitlementManuallyUpdatedFields**](entitlement-manually-updated-fields) |  | [optional] 
-**AccessModelMetadata** | Pointer to [**EntitlementAccessModelMetadata**](entitlement-access-model-metadata) |  | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | The entitlement id | [optional] |
+| **Name** | Pointer to **string** | The entitlement name | [optional] |
+| **Created** | Pointer to **SailPointTime** | Time when the entitlement was created | [optional] |
+| **Modified** | Pointer to **SailPointTime** | Time when the entitlement was last modified | [optional] |
+| **Attribute** | Pointer to **NullableString** | The entitlement attribute name | [optional] |
+| **Value** | Pointer to **string** | The value of the entitlement | [optional] |
+| **SourceSchemaObjectType** | Pointer to **string** | The object type of the entitlement from the source schema | [optional] |
+| **Privileged** | Pointer to **bool** | True if the entitlement is privileged | [optional] [default to false] |
+| **CloudGoverned** | Pointer to **bool** | True if the entitlement is cloud governed | [optional] [default to false] |
+| **Description** | Pointer to **NullableString** | The description of the entitlement | [optional] |
+| **Requestable** | Pointer to **bool** | True if the entitlement is requestable | [optional] [default to false] |
+| **Attributes** | Pointer to **map[string]interface{}** | A map of free-form key-value pairs from the source system | [optional] |
+| **Source** | Pointer to [**EntitlementSource**](entitlement-source) |  | [optional] |
+| **Owner** | Pointer to [**EntitlementOwner**](entitlement-owner) |  | [optional] |
+| **DirectPermissions** | Pointer to [**[]PermissionDto**](permission-dto) |  | [optional] |
+| **Segments** | Pointer to **[]string** | List of IDs of segments, if any, to which this Entitlement is assigned. | [optional] |
+| **ManuallyUpdatedFields** | Pointer to [**EntitlementManuallyUpdatedFields**](entitlement-manually-updated-fields) |  | [optional] |
+| **AccessModelMetadata** | Pointer to [**EntitlementAccessModelMetadata**](entitlement-access-model-metadata) |  | [optional] |
 
 ## Methods
 
@@ -40,18 +40,13 @@ Name | Type | Description | Notes
 
 `func NewEntitlement() *Entitlement`
 
-NewEntitlement instantiates a new Entitlement object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewEntitlement instantiates a new Entitlement object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewEntitlementWithDefaults
 
 `func NewEntitlementWithDefaults() *Entitlement`
 
-NewEntitlementWithDefaults instantiates a new Entitlement object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewEntitlementWithDefaults instantiates a new Entitlement object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -63,8 +58,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *Entitlement) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -88,8 +82,7 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *Entitlement) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
@@ -113,8 +106,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *Entitlement) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -138,8 +130,7 @@ GetModified returns the Modified field if non-nil, zero value otherwise.
 
 `func (o *Entitlement) GetModifiedOk() (*SailPointTime, bool)`
 
-GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetModifiedOk returns a tuple with the Modified field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetModified
 
@@ -163,8 +154,7 @@ GetAttribute returns the Attribute field if non-nil, zero value otherwise.
 
 `func (o *Entitlement) GetAttributeOk() (*string, bool)`
 
-GetAttributeOk returns a tuple with the Attribute field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributeOk returns a tuple with the Attribute field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttribute
 
@@ -182,12 +172,14 @@ HasAttribute returns a boolean if a field has been set.
 
 `func (o *Entitlement) SetAttributeNil(b bool)`
 
- SetAttributeNil sets the value for Attribute to be an explicit nil
+SetAttributeNil sets the value for Attribute to be an explicit nil
 
 ### UnsetAttribute
+
 `func (o *Entitlement) UnsetAttribute()`
 
 UnsetAttribute ensures that no value is present for Attribute, not even an explicit nil
+
 ### GetValue
 
 `func (o *Entitlement) GetValue() string`
@@ -198,8 +190,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *Entitlement) GetValueOk() (*string, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -223,8 +214,7 @@ GetSourceSchemaObjectType returns the SourceSchemaObjectType field if non-nil, z
 
 `func (o *Entitlement) GetSourceSchemaObjectTypeOk() (*string, bool)`
 
-GetSourceSchemaObjectTypeOk returns a tuple with the SourceSchemaObjectType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceSchemaObjectTypeOk returns a tuple with the SourceSchemaObjectType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSourceSchemaObjectType
 
@@ -248,8 +238,7 @@ GetPrivileged returns the Privileged field if non-nil, zero value otherwise.
 
 `func (o *Entitlement) GetPrivilegedOk() (*bool, bool)`
 
-GetPrivilegedOk returns a tuple with the Privileged field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPrivilegedOk returns a tuple with the Privileged field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPrivileged
 
@@ -273,8 +262,7 @@ GetCloudGoverned returns the CloudGoverned field if non-nil, zero value otherwis
 
 `func (o *Entitlement) GetCloudGovernedOk() (*bool, bool)`
 
-GetCloudGovernedOk returns a tuple with the CloudGoverned field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCloudGovernedOk returns a tuple with the CloudGoverned field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCloudGoverned
 
@@ -298,8 +286,7 @@ GetDescription returns the Description field if non-nil, zero value otherwise.
 
 `func (o *Entitlement) GetDescriptionOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDescription
 
@@ -317,12 +304,14 @@ HasDescription returns a boolean if a field has been set.
 
 `func (o *Entitlement) SetDescriptionNil(b bool)`
 
- SetDescriptionNil sets the value for Description to be an explicit nil
+SetDescriptionNil sets the value for Description to be an explicit nil
 
 ### UnsetDescription
+
 `func (o *Entitlement) UnsetDescription()`
 
 UnsetDescription ensures that no value is present for Description, not even an explicit nil
+
 ### GetRequestable
 
 `func (o *Entitlement) GetRequestable() bool`
@@ -333,8 +322,7 @@ GetRequestable returns the Requestable field if non-nil, zero value otherwise.
 
 `func (o *Entitlement) GetRequestableOk() (*bool, bool)`
 
-GetRequestableOk returns a tuple with the Requestable field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestableOk returns a tuple with the Requestable field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequestable
 
@@ -358,8 +346,7 @@ GetAttributes returns the Attributes field if non-nil, zero value otherwise.
 
 `func (o *Entitlement) GetAttributesOk() (*map[string]interface{}, bool)`
 
-GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAttributes
 
@@ -383,8 +370,7 @@ GetSource returns the Source field if non-nil, zero value otherwise.
 
 `func (o *Entitlement) GetSourceOk() (*EntitlementSource, bool)`
 
-GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSource
 
@@ -408,8 +394,7 @@ GetOwner returns the Owner field if non-nil, zero value otherwise.
 
 `func (o *Entitlement) GetOwnerOk() (*EntitlementOwner, bool)`
 
-GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetOwner
 
@@ -433,8 +418,7 @@ GetDirectPermissions returns the DirectPermissions field if non-nil, zero value 
 
 `func (o *Entitlement) GetDirectPermissionsOk() (*[]PermissionDto, bool)`
 
-GetDirectPermissionsOk returns a tuple with the DirectPermissions field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDirectPermissionsOk returns a tuple with the DirectPermissions field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDirectPermissions
 
@@ -458,8 +442,7 @@ GetSegments returns the Segments field if non-nil, zero value otherwise.
 
 `func (o *Entitlement) GetSegmentsOk() (*[]string, bool)`
 
-GetSegmentsOk returns a tuple with the Segments field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSegmentsOk returns a tuple with the Segments field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSegments
 
@@ -477,12 +460,14 @@ HasSegments returns a boolean if a field has been set.
 
 `func (o *Entitlement) SetSegmentsNil(b bool)`
 
- SetSegmentsNil sets the value for Segments to be an explicit nil
+SetSegmentsNil sets the value for Segments to be an explicit nil
 
 ### UnsetSegments
+
 `func (o *Entitlement) UnsetSegments()`
 
 UnsetSegments ensures that no value is present for Segments, not even an explicit nil
+
 ### GetManuallyUpdatedFields
 
 `func (o *Entitlement) GetManuallyUpdatedFields() EntitlementManuallyUpdatedFields`
@@ -493,8 +478,7 @@ GetManuallyUpdatedFields returns the ManuallyUpdatedFields field if non-nil, zer
 
 `func (o *Entitlement) GetManuallyUpdatedFieldsOk() (*EntitlementManuallyUpdatedFields, bool)`
 
-GetManuallyUpdatedFieldsOk returns a tuple with the ManuallyUpdatedFields field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetManuallyUpdatedFieldsOk returns a tuple with the ManuallyUpdatedFields field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetManuallyUpdatedFields
 
@@ -518,8 +502,7 @@ GetAccessModelMetadata returns the AccessModelMetadata field if non-nil, zero va
 
 `func (o *Entitlement) GetAccessModelMetadataOk() (*EntitlementAccessModelMetadata, bool)`
 
-GetAccessModelMetadataOk returns a tuple with the AccessModelMetadata field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAccessModelMetadataOk returns a tuple with the AccessModelMetadata field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAccessModelMetadata
 
@@ -532,5 +515,3 @@ SetAccessModelMetadata sets AccessModelMetadata field to given value.
 `func (o *Entitlement) HasAccessModelMetadata() bool`
 
 HasAccessModelMetadata returns a boolean if a field has been set.
-
-

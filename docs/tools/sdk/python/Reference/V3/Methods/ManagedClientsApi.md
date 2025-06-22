@@ -4,56 +4,57 @@ title: Managed_Clients
 pagination_label: Managed_Clients
 sidebar_label: Managed_Clients
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'Managed_Clients', 'Managed_Clients'] 
+keywords: ['python', 'Python', 'sdk', 'Managed_Clients', 'Managed_Clients']
 slug: /tools/sdk/python/v3/methods/managed-clients
 tags: ['SDK', 'Software Development Kit', 'Managed_Clients', 'Managed_Clients']
 ---
 
 # sailpoint.v3.ManagedClientsApi
-  Use this API to implement managed client functionality. 
-With this functionality in place, administrators can modify and delete existing managed clients, create new ones, and view and make changes to their log configurations. 
- 
+
+Use this API to implement managed client functionality. With this functionality in place, administrators can modify and delete existing managed clients, create new ones, and view and make changes to their log configurations.
+
 All URIs are relative to *https://sailpoint.api.identitynow.com/v3*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create-managed-client**](#create-managed-client) | **POST** `/managed-clients` | Create managed client
-[**delete-managed-client**](#delete-managed-client) | **DELETE** `/managed-clients/{id}` | Delete managed client
-[**get-managed-client**](#get-managed-client) | **GET** `/managed-clients/{id}` | Get managed client
-[**get-managed-client-status**](#get-managed-client-status) | **GET** `/managed-clients/{id}/status` | Get managed client status
-[**get-managed-clients**](#get-managed-clients) | **GET** `/managed-clients` | Get managed clients
-[**update-managed-client**](#update-managed-client) | **PATCH** `/managed-clients/{id}` | Update managed client
-
+| Method | HTTP request | Description |
+| --- | --- | --- |
+| [**create-managed-client**](#create-managed-client) | **POST** `/managed-clients` | Create managed client |
+| [**delete-managed-client**](#delete-managed-client) | **DELETE** `/managed-clients/{id}` | Delete managed client |
+| [**get-managed-client**](#get-managed-client) | **GET** `/managed-clients/{id}` | Get managed client |
+| [**get-managed-client-status**](#get-managed-client-status) | **GET** `/managed-clients/{id}/status` | Get managed client status |
+| [**get-managed-clients**](#get-managed-clients) | **GET** `/managed-clients` | Get managed clients |
+| [**update-managed-client**](#update-managed-client) | **PATCH** `/managed-clients/{id}` | Update managed client |
 
 ## create-managed-client
-Create managed client
-Create a new managed client.
-The API returns a result that includes the managed client ID.
+
+Create managed client Create a new managed client. The API returns a result that includes the managed client ID.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/create-managed-client)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
- Body  | managed_client_request | [**ManagedClientRequest**](../models/managed-client-request) | True  | 
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Body | managed_client_request | [**ManagedClientRequest**](../models/managed-client-request) | True |
 
 ### Return type
+
 [**ManagedClient**](../models/managed-client)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Created managed client. | ManagedClient |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Created managed client. | ManagedClient | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json
- - **Accept**: application/json
+
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### Example
 
@@ -72,7 +73,7 @@ with ApiClient(configuration) as api_client:
           "description" : "A short description of the ManagedClient",
           "clusterId" : "aClusterId",
           "type" : "VA"
-        }''' # ManagedClientRequest | 
+        }''' # ManagedClientRequest |
 
     try:
         # Create managed client
@@ -86,38 +87,39 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling ManagedClientsApi->create_managed_client: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## delete-managed-client
-Delete managed client
-Delete an existing managed client.
+
+Delete managed client Delete an existing managed client.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/delete-managed-client)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | id | **str** | True  | Managed client ID.
+| Param Type | Name | Data Type | Required | Description        |
+| ---------- | ---- | --------- | -------- | ------------------ |
+| Path       | id   | **str**   | True     | Managed client ID. |
 
 ### Return type
- (empty response body)
+
+(empty response body)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-204 | No content - indicates the request was successful but there is no content to be returned in the response. |  |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 204 | No content - indicates the request was successful but there is no content to be returned in the response. |  | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -133,7 +135,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Delete managed client
-        
+
         ManagedClientsApi(api_client).delete_managed_client(id=id)
         # Below is a request that includes all optional parameters
         # ManagedClientsApi(api_client).delete_managed_client(id)
@@ -141,39 +143,40 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling ManagedClientsApi->delete_managed_client: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## get-managed-client
-Get managed client
-Get managed client by ID. 
+
+Get managed client Get managed client by ID.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/get-managed-client)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | id | **str** | True  | Managed client ID.
+| Param Type | Name | Data Type | Required | Description        |
+| ---------- | ---- | --------- | -------- | ------------------ |
+| Path       | id   | **str**   | True     | Managed client ID. |
 
 ### Return type
+
 [**ManagedClient**](../models/managed-client)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Managed client response. | ManagedClient |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Managed client response. | ManagedClient | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -190,7 +193,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Get managed client
-        
+
         results = ManagedClientsApi(api_client).get_managed_client(id=id)
         # Below is a request that includes all optional parameters
         # results = ManagedClientsApi(api_client).get_managed_client(id)
@@ -200,40 +203,41 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling ManagedClientsApi->get_managed_client: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## get-managed-client-status
-Get managed client status
-Get a managed client's status, using its ID.
+
+Get managed client status Get a managed client's status, using its ID.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/get-managed-client-status)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | id | **str** | True  | Managed client ID to get status for.
-  Query | type | [**ManagedClientType**](../models/managed-client-type) | True  | Managed client type to get status for.
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | id | **str** | True | Managed client ID to get status for. |
+| Query | type | [**ManagedClientType**](../models/managed-client-type) | True | Managed client type to get status for. |
 
 ### Return type
+
 [**ManagedClientStatus**](../models/managed-client-status)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Response with the managed client status, with the given ID and type. | ManagedClientStatus |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Response with the managed client status, with the given ID and type. | ManagedClientStatus | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -252,7 +256,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Get managed client status
-        
+
         results = ManagedClientsApi(api_client).get_managed_client_status(id=id, type=type)
         # Below is a request that includes all optional parameters
         # results = ManagedClientsApi(api_client).get_managed_client_status(id, type)
@@ -262,41 +266,42 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling ManagedClientsApi->get_managed_client_status: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## get-managed-clients
-Get managed clients
-List managed clients.
+
+Get managed clients List managed clients.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/get-managed-clients)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-  Query | offset | **int** |   (optional) (default to 0) | Offset into the full result set. Usually specified with *limit* to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | limit | **int** |   (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | count | **bool** |   (optional) (default to False) | If *true* it will populate the *X-Total-Count* response header with the number of results that would be returned if *limit* and *offset* were ignored.  Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used.  See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information.
-  Query | filters | **str** |   (optional) | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results)  Filtering is supported for the following fields and operators:  **id**: *eq*  **name**: *eq*  **clientId**: *eq*  **clusterId**: *eq*
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Query | offset | **int** | (optional) (default to 0) | Offset into the full result set. Usually specified with _limit_ to paginate through the results. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | limit | **int** | (optional) (default to 250) | Max number of results to return. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | count | **bool** | (optional) (default to False) | If _true_ it will populate the _X-Total-Count_ response header with the number of results that would be returned if _limit_ and _offset_ were ignored. Since requesting a total count can have a performance impact, it is recommended not to send **count=true** if that value will not be used. See [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters) for more information. |
+| Query | filters | **str** | (optional) | Filter results using the standard syntax described in [V3 API Standard Collection Parameters](https://developer.sailpoint.com/idn/api/standard-collection-parameters#filtering-results) Filtering is supported for the following fields and operators: **id**: _eq_ **name**: _eq_ **clientId**: _eq_ **clusterId**: _eq_ |
 
 ### Return type
+
 [**List[ManagedClient]**](../models/managed-client)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Response with a list of managed clients, based on the specified query parameters. | List[ManagedClient] |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Response with a list of managed clients, based on the specified query parameters. | List[ManagedClient] | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: Not defined
- - **Accept**: application/json
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### Example
 
@@ -316,7 +321,7 @@ with ApiClient(configuration) as api_client:
 
     try:
         # Get managed clients
-        
+
         results = ManagedClientsApi(api_client).get_managed_clients()
         # Below is a request that includes all optional parameters
         # results = ManagedClientsApi(api_client).get_managed_clients(offset, limit, count, filters)
@@ -327,40 +332,41 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling ManagedClientsApi->get_managed_clients: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
+[[Back to top]](#)
 
 ## update-managed-client
-Update managed client
-Update an existing managed client.
+
+Update managed client Update an existing managed client.
 
 [API Spec](https://developer.sailpoint.com/docs/api/v3/update-managed-client)
 
-### Parameters 
+### Parameters
 
-Param Type | Name | Data Type | Required  | Description
-------------- | ------------- | ------------- | ------------- | ------------- 
-Path   | id | **str** | True  | Managed client ID.
- Body  | json_patch_operation | [**[]JsonPatchOperation**](../models/json-patch-operation) | True  | JSONPatch payload used to update the object.
+| Param Type | Name | Data Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| Path | id | **str** | True | Managed client ID. |
+| Body | json_patch_operation | [**[]JsonPatchOperation**](../models/json-patch-operation) | True | JSONPatch payload used to update the object. |
 
 ### Return type
+
 [**ManagedClient**](../models/managed-client)
 
 ### Responses
-Code | Description  | Data Type | Response headers |
-------------- | ------------- | ------------- |------------------|
-200 | Updated managed client. | ManagedClient |  -  |
-400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto |  -  |
-401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response |  -  |
-403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto |  -  |
-404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto |  -  |
-429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response |  -  |
-500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto |  -  |
+
+| Code | Description | Data Type | Response headers |
+| --- | --- | --- | --- |
+| 200 | Updated managed client. | ManagedClient | - |
+| 400 | Client Error - Returned if the request body is invalid. | ErrorResponseDto | - |
+| 401 | Unauthorized - Returned if there is no authorization header, or if the JWT token is expired. | ListAccessProfiles401Response | - |
+| 403 | Forbidden - Returned if the user you are running as, doesn&#39;t have access to this end-point. | ErrorResponseDto | - |
+| 404 | Not Found - returned if the request URL refers to a resource or object that does not exist | ErrorResponseDto | - |
+| 429 | Too Many Requests - Returned in response to too many requests in a given period of time - rate limited. The Retry-After header in the response includes how long to wait before trying again. | ListAccessProfiles429Response | - |
+| 500 | Internal Server Error - Returned if there is an unexpected error. | ErrorResponseDto | - |
 
 ### HTTP request headers
- - **Content-Type**: application/json-patch+json
- - **Accept**: application/json
+
+- **Content-Type**: application/json-patch+json
+- **Accept**: application/json
 
 ### Example
 
@@ -389,9 +395,4 @@ with ApiClient(configuration) as api_client:
         print("Exception when calling ManagedClientsApi->update_managed_client: %s\n" % e)
 ```
 
-
-
-[[Back to top]](#) 
-
-
-
+[[Back to top]](#)

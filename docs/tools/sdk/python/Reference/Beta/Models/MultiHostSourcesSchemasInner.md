@@ -4,21 +4,34 @@ title: MultiHostSourcesSchemasInner
 pagination_label: MultiHostSourcesSchemasInner
 sidebar_label: MultiHostSourcesSchemasInner
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'MultiHostSourcesSchemasInner', 'BetaMultiHostSourcesSchemasInner'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'MultiHostSourcesSchemasInner',
+    'BetaMultiHostSourcesSchemasInner',
+  ]
 slug: /tools/sdk/python/beta/models/multi-host-sources-schemas-inner
-tags: ['SDK', 'Software Development Kit', 'MultiHostSourcesSchemasInner', 'BetaMultiHostSourcesSchemasInner']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'MultiHostSourcesSchemasInner',
+    'BetaMultiHostSourcesSchemasInner',
+  ]
 ---
 
 # MultiHostSourcesSchemasInner
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** |  **Enum** [  'CONNECTOR_SCHEMA' ] | Type of object being referenced. | [optional] 
-**id** | **str** | Schema ID. | [optional] 
-**name** | **str** | Schema's human-readable display name. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **type** | **Enum** [ 'CONNECTOR_SCHEMA' ] | Type of object being referenced. | [optional] |
+| **id** | **str** | Schema ID. | [optional] |
+| **name** | **str** | Schema's human-readable display name. | [optional] |
+
 }
 
 ## Example
@@ -33,5 +46,5 @@ name='MySchema'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

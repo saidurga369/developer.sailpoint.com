@@ -4,7 +4,7 @@ title: FormError
 pagination_label: FormError
 sidebar_label: FormError
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'FormError', 'V2025FormError'] 
+keywords: ['go', 'Golang', 'sdk', 'FormError', 'V2025FormError']
 slug: /tools/sdk/go/v2025/models/form-error
 tags: ['SDK', 'Software Development Kit', 'FormError', 'V2025FormError']
 ---
@@ -13,11 +13,11 @@ tags: ['SDK', 'Software Development Kit', 'FormError', 'V2025FormError']
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Key** | Pointer to **string** | Key is the technical key | [optional] 
-**Messages** | Pointer to [**[]ErrorMessage**](error-message) | Messages is a list of web.ErrorMessage items | [optional] 
-**Value** | Pointer to **map[string]interface{}** | Value is the value associated with a Key | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Key** | Pointer to **string** | Key is the technical key | [optional] |
+| **Messages** | Pointer to [**[]ErrorMessage**](error-message) | Messages is a list of web.ErrorMessage items | [optional] |
+| **Value** | Pointer to **map[string]interface{}** | Value is the value associated with a Key | [optional] |
 
 ## Methods
 
@@ -25,18 +25,13 @@ Name | Type | Description | Notes
 
 `func NewFormError() *FormError`
 
-NewFormError instantiates a new FormError object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewFormError instantiates a new FormError object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewFormErrorWithDefaults
 
 `func NewFormErrorWithDefaults() *FormError`
 
-NewFormErrorWithDefaults instantiates a new FormError object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewFormErrorWithDefaults instantiates a new FormError object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetKey
 
@@ -48,8 +43,7 @@ GetKey returns the Key field if non-nil, zero value otherwise.
 
 `func (o *FormError) GetKeyOk() (*string, bool)`
 
-GetKeyOk returns a tuple with the Key field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetKeyOk returns a tuple with the Key field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetKey
 
@@ -73,8 +67,7 @@ GetMessages returns the Messages field if non-nil, zero value otherwise.
 
 `func (o *FormError) GetMessagesOk() (*[]ErrorMessage, bool)`
 
-GetMessagesOk returns a tuple with the Messages field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMessagesOk returns a tuple with the Messages field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMessages
 
@@ -98,8 +91,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *FormError) GetValueOk() (*map[string]interface{}, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -112,5 +104,3 @@ SetValue sets Value field to given value.
 `func (o *FormError) HasValue() bool`
 
 HasValue returns a boolean if a field has been set.
-
-

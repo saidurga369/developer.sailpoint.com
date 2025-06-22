@@ -4,24 +4,37 @@ title: ScheduledActionResponse
 pagination_label: ScheduledActionResponse
 sidebar_label: ScheduledActionResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'ScheduledActionResponse', 'V2024ScheduledActionResponse'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'ScheduledActionResponse',
+    'V2024ScheduledActionResponse',
+  ]
 slug: /tools/sdk/go/v2024/models/scheduled-action-response
-tags: ['SDK', 'Software Development Kit', 'ScheduledActionResponse', 'V2024ScheduledActionResponse']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ScheduledActionResponse',
+    'V2024ScheduledActionResponse',
+  ]
 ---
 
 # ScheduledActionResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Id** | Pointer to **string** | Unique identifier for this scheduled action. | [optional] 
-**Created** | Pointer to **SailPointTime** | The time when this scheduled action was created. | [optional] 
-**JobType** | Pointer to **string** | Type of the scheduled job. | [optional] 
-**Content** | Pointer to [**ScheduledActionResponseContent**](scheduled-action-response-content) |  | [optional] 
-**StartTime** | Pointer to **SailPointTime** | The time when this scheduled action should start. | [optional] 
-**CronString** | Pointer to **string** | Cron expression defining the schedule for this action. | [optional] 
-**TimeZoneId** | Pointer to **string** | Time zone ID for interpreting the cron expression. | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **Id** | Pointer to **string** | Unique identifier for this scheduled action. | [optional] |
+| **Created** | Pointer to **SailPointTime** | The time when this scheduled action was created. | [optional] |
+| **JobType** | Pointer to **string** | Type of the scheduled job. | [optional] |
+| **Content** | Pointer to [**ScheduledActionResponseContent**](scheduled-action-response-content) |  | [optional] |
+| **StartTime** | Pointer to **SailPointTime** | The time when this scheduled action should start. | [optional] |
+| **CronString** | Pointer to **string** | Cron expression defining the schedule for this action. | [optional] |
+| **TimeZoneId** | Pointer to **string** | Time zone ID for interpreting the cron expression. | [optional] |
 
 ## Methods
 
@@ -29,18 +42,13 @@ Name | Type | Description | Notes
 
 `func NewScheduledActionResponse() *ScheduledActionResponse`
 
-NewScheduledActionResponse instantiates a new ScheduledActionResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewScheduledActionResponse instantiates a new ScheduledActionResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewScheduledActionResponseWithDefaults
 
 `func NewScheduledActionResponseWithDefaults() *ScheduledActionResponse`
 
-NewScheduledActionResponseWithDefaults instantiates a new ScheduledActionResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewScheduledActionResponseWithDefaults instantiates a new ScheduledActionResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
@@ -52,8 +60,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *ScheduledActionResponse) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -77,8 +84,7 @@ GetCreated returns the Created field if non-nil, zero value otherwise.
 
 `func (o *ScheduledActionResponse) GetCreatedOk() (*SailPointTime, bool)`
 
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCreated
 
@@ -102,8 +108,7 @@ GetJobType returns the JobType field if non-nil, zero value otherwise.
 
 `func (o *ScheduledActionResponse) GetJobTypeOk() (*string, bool)`
 
-GetJobTypeOk returns a tuple with the JobType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetJobTypeOk returns a tuple with the JobType field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetJobType
 
@@ -127,8 +132,7 @@ GetContent returns the Content field if non-nil, zero value otherwise.
 
 `func (o *ScheduledActionResponse) GetContentOk() (*ScheduledActionResponseContent, bool)`
 
-GetContentOk returns a tuple with the Content field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetContentOk returns a tuple with the Content field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetContent
 
@@ -152,8 +156,7 @@ GetStartTime returns the StartTime field if non-nil, zero value otherwise.
 
 `func (o *ScheduledActionResponse) GetStartTimeOk() (*SailPointTime, bool)`
 
-GetStartTimeOk returns a tuple with the StartTime field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStartTimeOk returns a tuple with the StartTime field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStartTime
 
@@ -177,8 +180,7 @@ GetCronString returns the CronString field if non-nil, zero value otherwise.
 
 `func (o *ScheduledActionResponse) GetCronStringOk() (*string, bool)`
 
-GetCronStringOk returns a tuple with the CronString field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCronStringOk returns a tuple with the CronString field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCronString
 
@@ -202,8 +204,7 @@ GetTimeZoneId returns the TimeZoneId field if non-nil, zero value otherwise.
 
 `func (o *ScheduledActionResponse) GetTimeZoneIdOk() (*string, bool)`
 
-GetTimeZoneIdOk returns a tuple with the TimeZoneId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTimeZoneIdOk returns a tuple with the TimeZoneId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTimeZoneId
 
@@ -216,5 +217,3 @@ SetTimeZoneId sets TimeZoneId field to given value.
 `func (o *ScheduledActionResponse) HasTimeZoneId() bool`
 
 HasTimeZoneId returns a boolean if a field has been set.
-
-

@@ -4,27 +4,34 @@ title: RemediationItems
 pagination_label: RemediationItems
 sidebar_label: RemediationItems
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RemediationItems', 'BetaRemediationItems'] 
+keywords:
+  ['python', 'Python', 'sdk', 'RemediationItems', 'BetaRemediationItems']
 slug: /tools/sdk/python/beta/models/remediation-items
-tags: ['SDK', 'Software Development Kit', 'RemediationItems', 'BetaRemediationItems']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RemediationItems',
+    'BetaRemediationItems',
+  ]
 ---
 
 # RemediationItems
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | The ID of the certification | [optional] 
-**target_id** | **str** | The ID of the certification target | [optional] 
-**target_name** | **str** | The name of the certification target | [optional] 
-**target_display_name** | **str** | The display name of the certification target | [optional] 
-**application_name** | **str** | The name of the application/source | [optional] 
-**attribute_name** | **str** | The name of the attribute being certified | [optional] 
-**attribute_operation** | **str** | The operation of the certification on the attribute | [optional] 
-**attribute_value** | **str** | The value of the attribute being certified | [optional] 
-**native_identity** | **str** | The native identity of the target | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **id** | **str** | The ID of the certification | [optional] |
+| **target_id** | **str** | The ID of the certification target | [optional] |
+| **target_name** | **str** | The name of the certification target | [optional] |
+| **target_display_name** | **str** | The display name of the certification target | [optional] |
+| **application_name** | **str** | The name of the application/source | [optional] |
+| **attribute_name** | **str** | The name of the attribute being certified | [optional] |
+| **attribute_operation** | **str** | The operation of the certification on the attribute | [optional] |
+| **attribute_value** | **str** | The value of the attribute being certified | [optional] |
+| **native_identity** | **str** | The native identity of the target | [optional] |
+
 }
 
 ## Example
@@ -45,5 +52,5 @@ native_identity='jason.smith2'
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

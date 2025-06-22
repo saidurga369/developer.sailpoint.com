@@ -4,9 +4,22 @@ title: RoleMiningPotentialRoleProvisionState
 pagination_label: RoleMiningPotentialRoleProvisionState
 sidebar_label: RoleMiningPotentialRoleProvisionState
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'RoleMiningPotentialRoleProvisionState', 'V2025RoleMiningPotentialRoleProvisionState'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'RoleMiningPotentialRoleProvisionState',
+    'V2025RoleMiningPotentialRoleProvisionState',
+  ]
 slug: /tools/sdk/python/v2025/models/role-mining-potential-role-provision-state
-tags: ['SDK', 'Software Development Kit', 'RoleMiningPotentialRoleProvisionState', 'V2025RoleMiningPotentialRoleProvisionState']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'RoleMiningPotentialRoleProvisionState',
+    'V2025RoleMiningPotentialRoleProvisionState',
+  ]
 ---
 
 # RoleMiningPotentialRoleProvisionState
@@ -15,13 +28,12 @@ Provision state
 
 ## Enum
 
-* `POTENTIAL` (value: `'POTENTIAL'`)
+- `POTENTIAL` (value: `'POTENTIAL'`)
 
-* `PENDING` (value: `'PENDING'`)
+- `PENDING` (value: `'PENDING'`)
 
-* `COMPLETE` (value: `'COMPLETE'`)
+- `COMPLETE` (value: `'COMPLETE'`)
 
-* `FAILED` (value: `'FAILED'`)
+- `FAILED` (value: `'FAILED'`)
 
-[[Back to top]](#) 
-
+[[Back to top]](#)

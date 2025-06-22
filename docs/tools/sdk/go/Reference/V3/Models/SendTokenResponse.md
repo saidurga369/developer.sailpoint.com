@@ -4,20 +4,21 @@ title: SendTokenResponse
 pagination_label: SendTokenResponse
 sidebar_label: SendTokenResponse
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'SendTokenResponse', 'SendTokenResponse'] 
+keywords: ['go', 'Golang', 'sdk', 'SendTokenResponse', 'SendTokenResponse']
 slug: /tools/sdk/go/v3/models/send-token-response
-tags: ['SDK', 'Software Development Kit', 'SendTokenResponse', 'SendTokenResponse']
+tags:
+  ['SDK', 'Software Development Kit', 'SendTokenResponse', 'SendTokenResponse']
 ---
 
 # SendTokenResponse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**RequestId** | Pointer to **NullableString** | The token request ID | [optional] 
-**Status** | Pointer to **string** | Status of sending token | [optional] 
-**ErrorMessage** | Pointer to **NullableString** | Error messages from token send request | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **RequestId** | Pointer to **NullableString** | The token request ID | [optional] |
+| **Status** | Pointer to **string** | Status of sending token | [optional] |
+| **ErrorMessage** | Pointer to **NullableString** | Error messages from token send request | [optional] |
 
 ## Methods
 
@@ -25,18 +26,13 @@ Name | Type | Description | Notes
 
 `func NewSendTokenResponse() *SendTokenResponse`
 
-NewSendTokenResponse instantiates a new SendTokenResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSendTokenResponse instantiates a new SendTokenResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSendTokenResponseWithDefaults
 
 `func NewSendTokenResponseWithDefaults() *SendTokenResponse`
 
-NewSendTokenResponseWithDefaults instantiates a new SendTokenResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSendTokenResponseWithDefaults instantiates a new SendTokenResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetRequestId
 
@@ -48,8 +44,7 @@ GetRequestId returns the RequestId field if non-nil, zero value otherwise.
 
 `func (o *SendTokenResponse) GetRequestIdOk() (*string, bool)`
 
-GetRequestIdOk returns a tuple with the RequestId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRequestIdOk returns a tuple with the RequestId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRequestId
 
@@ -67,12 +62,14 @@ HasRequestId returns a boolean if a field has been set.
 
 `func (o *SendTokenResponse) SetRequestIdNil(b bool)`
 
- SetRequestIdNil sets the value for RequestId to be an explicit nil
+SetRequestIdNil sets the value for RequestId to be an explicit nil
 
 ### UnsetRequestId
+
 `func (o *SendTokenResponse) UnsetRequestId()`
 
 UnsetRequestId ensures that no value is present for RequestId, not even an explicit nil
+
 ### GetStatus
 
 `func (o *SendTokenResponse) GetStatus() string`
@@ -83,8 +80,7 @@ GetStatus returns the Status field if non-nil, zero value otherwise.
 
 `func (o *SendTokenResponse) GetStatusOk() (*string, bool)`
 
-GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetStatus
 
@@ -108,8 +104,7 @@ GetErrorMessage returns the ErrorMessage field if non-nil, zero value otherwise.
 
 `func (o *SendTokenResponse) GetErrorMessageOk() (*string, bool)`
 
-GetErrorMessageOk returns a tuple with the ErrorMessage field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetErrorMessageOk returns a tuple with the ErrorMessage field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetErrorMessage
 
@@ -127,10 +122,10 @@ HasErrorMessage returns a boolean if a field has been set.
 
 `func (o *SendTokenResponse) SetErrorMessageNil(b bool)`
 
- SetErrorMessageNil sets the value for ErrorMessage to be an explicit nil
+SetErrorMessageNil sets the value for ErrorMessage to be an explicit nil
 
 ### UnsetErrorMessage
+
 `func (o *SendTokenResponse) UnsetErrorMessage()`
 
 UnsetErrorMessage ensures that no value is present for ErrorMessage, not even an explicit nil
-

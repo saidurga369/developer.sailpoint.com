@@ -1,4 +1,4 @@
-import crypto from "crypto-js";
+import crypto from 'crypto-js';
 
 export function hashArray(arr: string[]) {
   function hash(message: string) {
@@ -10,7 +10,7 @@ export function hashArray(arr: string[]) {
   return hash(res);
 }
 
-type Persistance = false | "localStorage" | "sessionStorage" | undefined;
+type Persistance = false | 'localStorage' | 'sessionStorage' | undefined;
 
 export function createStorage(persistance: Persistance): Storage {
   if (persistance === false) {
@@ -24,7 +24,7 @@ export function createStorage(persistance: Persistance): Storage {
     };
   }
 
-  if (persistance === "sessionStorage") {
+  if (persistance === 'sessionStorage') {
     return sessionStorage;
   }
 

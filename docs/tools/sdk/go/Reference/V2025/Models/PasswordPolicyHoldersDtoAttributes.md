@@ -4,18 +4,31 @@ title: PasswordPolicyHoldersDtoAttributes
 pagination_label: PasswordPolicyHoldersDtoAttributes
 sidebar_label: PasswordPolicyHoldersDtoAttributes
 sidebar_class_name: gosdk
-keywords: ['go', 'Golang', 'sdk', 'PasswordPolicyHoldersDtoAttributes', 'V2025PasswordPolicyHoldersDtoAttributes'] 
+keywords:
+  [
+    'go',
+    'Golang',
+    'sdk',
+    'PasswordPolicyHoldersDtoAttributes',
+    'V2025PasswordPolicyHoldersDtoAttributes',
+  ]
 slug: /tools/sdk/go/v2025/models/password-policy-holders-dto-attributes
-tags: ['SDK', 'Software Development Kit', 'PasswordPolicyHoldersDtoAttributes', 'V2025PasswordPolicyHoldersDtoAttributes']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'PasswordPolicyHoldersDtoAttributes',
+    'V2025PasswordPolicyHoldersDtoAttributes',
+  ]
 ---
 
 # PasswordPolicyHoldersDtoAttributes
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**IdentityAttr** | Pointer to [**[]PasswordPolicyHoldersDtoAttributesIdentityAttrInner**](password-policy-holders-dto-attributes-identity-attr-inner) | Attributes of PasswordPolicyHoldersDto | [optional] 
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **IdentityAttr** | Pointer to [**[]PasswordPolicyHoldersDtoAttributesIdentityAttrInner**](password-policy-holders-dto-attributes-identity-attr-inner) | Attributes of PasswordPolicyHoldersDto | [optional] |
 
 ## Methods
 
@@ -23,18 +36,13 @@ Name | Type | Description | Notes
 
 `func NewPasswordPolicyHoldersDtoAttributes() *PasswordPolicyHoldersDtoAttributes`
 
-NewPasswordPolicyHoldersDtoAttributes instantiates a new PasswordPolicyHoldersDtoAttributes object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewPasswordPolicyHoldersDtoAttributes instantiates a new PasswordPolicyHoldersDtoAttributes object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewPasswordPolicyHoldersDtoAttributesWithDefaults
 
 `func NewPasswordPolicyHoldersDtoAttributesWithDefaults() *PasswordPolicyHoldersDtoAttributes`
 
-NewPasswordPolicyHoldersDtoAttributesWithDefaults instantiates a new PasswordPolicyHoldersDtoAttributes object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewPasswordPolicyHoldersDtoAttributesWithDefaults instantiates a new PasswordPolicyHoldersDtoAttributes object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetIdentityAttr
 
@@ -46,8 +54,7 @@ GetIdentityAttr returns the IdentityAttr field if non-nil, zero value otherwise.
 
 `func (o *PasswordPolicyHoldersDtoAttributes) GetIdentityAttrOk() (*[]PasswordPolicyHoldersDtoAttributesIdentityAttrInner, bool)`
 
-GetIdentityAttrOk returns a tuple with the IdentityAttr field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdentityAttrOk returns a tuple with the IdentityAttr field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIdentityAttr
 
@@ -60,5 +67,3 @@ SetIdentityAttr sets IdentityAttr field to given value.
 `func (o *PasswordPolicyHoldersDtoAttributes) HasIdentityAttr() bool`
 
 HasIdentityAttr returns a boolean if a field has been set.
-
-

@@ -4,9 +4,22 @@ title: ClusterManualUpgradeJobsInnerManagedProcessConfigurationToolbox
 pagination_label: ClusterManualUpgradeJobsInnerManagedProcessConfigurationToolbox
 sidebar_label: ClusterManualUpgradeJobsInnerManagedProcessConfigurationToolbox
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'ClusterManualUpgradeJobsInnerManagedProcessConfigurationToolbox', 'V2025ClusterManualUpgradeJobsInnerManagedProcessConfigurationToolbox'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'ClusterManualUpgradeJobsInnerManagedProcessConfigurationToolbox',
+    'V2025ClusterManualUpgradeJobsInnerManagedProcessConfigurationToolbox',
+  ]
 slug: /tools/sdk/python/v2025/models/cluster-manual-upgrade-jobs-inner-managed-process-configuration-toolbox
-tags: ['SDK', 'Software Development Kit', 'ClusterManualUpgradeJobsInnerManagedProcessConfigurationToolbox', 'V2025ClusterManualUpgradeJobsInnerManagedProcessConfigurationToolbox']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'ClusterManualUpgradeJobsInnerManagedProcessConfigurationToolbox',
+    'V2025ClusterManualUpgradeJobsInnerManagedProcessConfigurationToolbox',
+  ]
 ---
 
 # ClusterManualUpgradeJobsInnerManagedProcessConfigurationToolbox
@@ -15,12 +28,13 @@ Configuration details for the 'toolbox' process.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**version** | **str** | Version of the 'toolbox' process. | [required]
-**path** | **str** | Path to the 'toolbox' process. | [required]
-**description** | **str** | A brief description of the 'toolbox' process. | [required]
-**restart_needed** | **bool** | Indicates whether the process needs to be restarted. | [required]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **version** | **str** | Version of the 'toolbox' process. | [required] |
+| **path** | **str** | Path to the 'toolbox' process. | [required] |
+| **description** | **str** | A brief description of the 'toolbox' process. | [required] |
+| **restart_needed** | **bool** | Indicates whether the process needs to be restarted. | [required] |
+
 }
 
 ## Example
@@ -36,5 +50,5 @@ restart_needed=True
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)

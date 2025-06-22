@@ -4,9 +4,22 @@ title: VendorConnectorMappingUpdatedBy
 pagination_label: VendorConnectorMappingUpdatedBy
 sidebar_label: VendorConnectorMappingUpdatedBy
 sidebar_class_name: pythonsdk
-keywords: ['python', 'Python', 'sdk', 'VendorConnectorMappingUpdatedBy', 'V2025VendorConnectorMappingUpdatedBy'] 
+keywords:
+  [
+    'python',
+    'Python',
+    'sdk',
+    'VendorConnectorMappingUpdatedBy',
+    'V2025VendorConnectorMappingUpdatedBy',
+  ]
 slug: /tools/sdk/python/v2025/models/vendor-connector-mapping-updated-by
-tags: ['SDK', 'Software Development Kit', 'VendorConnectorMappingUpdatedBy', 'V2025VendorConnectorMappingUpdatedBy']
+tags:
+  [
+    'SDK',
+    'Software Development Kit',
+    'VendorConnectorMappingUpdatedBy',
+    'V2025VendorConnectorMappingUpdatedBy',
+  ]
 ---
 
 # VendorConnectorMappingUpdatedBy
@@ -15,10 +28,11 @@ An object representing the nullable identifier of the user who last updated the 
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**string** | **str** | The identifier of the user who last updated the mapping, if available. | [optional] 
-**valid** | **bool** | A flag indicating if the 'String' field is set and valid. | [optional] [default to False]
+| Name | Type | Description | Notes |
+| --- | --- | --- | --- |
+| **string** | **str** | The identifier of the user who last updated the mapping, if available. | [optional] |
+| **valid** | **bool** | A flag indicating if the 'String' field is set and valid. | [optional] [default to False] |
+
 }
 
 ## Example
@@ -32,5 +46,5 @@ valid=True
 )
 
 ```
-[[Back to top]](#) 
 
+[[Back to top]](#)
